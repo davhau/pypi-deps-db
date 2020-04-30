@@ -4901,6 +4901,52 @@
       "37": "27",
       "38": "27"
     },
+    "1.9.0": {
+      "35": {
+        "install_requires": [
+          "logzero>=1.5.0",
+          "requests>=2.21",
+          "pyyaml>=5.3.1"
+        ],
+        "extras_require": {
+          "vault": [
+            "hvac>=0.7.2"
+          ],
+          "decoders": [
+            "cchardet>=2.1.4",
+            "chardet>=3.0.4"
+          ],
+          "jsonpath": [
+            "jsonpath2>=0.2.1"
+          ],
+          ":python_version < \"3.7\"": [
+            "contextvars"
+          ],
+          ":python_version < \"3.8\"": [
+            "importlib-metadata>=1.2.0"
+          ]
+        },
+        "tests_require": [
+          "requests-mock",
+          "coverage",
+          "pycodestyle",
+          "pytest>=2.8",
+          "pytest-cov",
+          "pytest-sugar",
+          "ply==3.4",
+          "pyhcl>=0.2.1,<0.3.0",
+          "hvac",
+          "jsonpath2",
+          "chardet"
+        ],
+        "python_requires": [
+          ">=3.5.*"
+        ]
+      },
+      "36": "35",
+      "37": "35",
+      "38": "35"
+    },
     "1.8.1": {
       "35": {
         "install_requires": [
@@ -17979,6 +18025,17 @@
     }
   },
   "expressintegrations": {
+    "0.6": {
+      "27": {
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    },
     "0.5": {
       "27": {
         "python_requires": [
@@ -22152,6 +22209,277 @@
     }
   },
   "garage": {
+    "2020.4rc1": {
+      "27": {
+        "install_requires": [
+          "akro",
+          "cached_property",
+          "click",
+          "cloudpickle",
+          "cma==2.7.0",
+          "dowel==0.0.3",
+          "gym[atari,box2d,classic_control]==0.15.4",
+          "joblib<0.13,>=0.12",
+          "numpy>=1.14.5",
+          "psutil",
+          "pyglet<1.4.0,>=1.3.0",
+          "pyprind",
+          "python-dateutil",
+          "ray",
+          "scikit-image",
+          "scipy",
+          "setproctitle>=1.0",
+          "tensorflow",
+          "tensorflow-probability",
+          "torch<1.5.0,>=1.0.0",
+          "torchvision>=0.2.1"
+        ],
+        "extras_require": {
+          "all": [
+            "dm_control==0.0.300771433",
+            "mujoco-py<2.1,>=2.0",
+            "gym[all]==0.15.4"
+          ],
+          "dev": [
+            "baselines@ https://git@api.github.com/repos/openai/baselines/tarball/ea25b9e8b234e6ee1bca43083f8f3cf974143998",
+            "flake8",
+            "flake8-docstrings>=1.5.0",
+            "flake8-import-order",
+            "gtimer",
+            "matplotlib",
+            "metaworld@ https://git@api.github.com/repos/rlworkgroup/metaworld/tarball/861ae8d8c4bef80a7ed86f47f47acaa494d4ab77",
+            "pandas",
+            "pep8-naming==0.7.0",
+            "pre-commit",
+            "pycodestyle>=2.5.0",
+            "pydocstyle>=4.0.0",
+            "pylint>=2.4.3",
+            "pytest>=4.5.0",
+            "pytest-cov",
+            "pytest-timeout",
+            "pytest-xdist",
+            "recommonmark",
+            "rlkit@ https://git@api.github.com/repos/vitchyr/rlkit/tarball/1d469a509b797ca04a39b8734c1816ca7d108fc8",
+            "seaborn",
+            "sphinx==2.4.4",
+            "sphinx_rtd_theme",
+            "yapf==0.28.0"
+          ],
+          "mujoco": [
+            "mujoco-py<2.1,>=2.0",
+            "gym[all]==0.15.4"
+          ],
+          "dm_control": [
+            "dm_control==0.0.300771433"
+          ]
+        },
+        "python_requires": [
+          ">=3.5"
+        ]
+      },
+      "35": {
+        "install_requires": [
+          "akro",
+          "cached_property",
+          "click",
+          "cloudpickle",
+          "cma==2.7.0",
+          "dowel==0.0.3",
+          "gym[atari,box2d,classic_control]==0.15.4",
+          "joblib<0.13,>=0.12",
+          "numpy>=1.14.5",
+          "psutil",
+          "pyglet<1.4.0,>=1.3.0",
+          "pyprind",
+          "python-dateutil",
+          "ray",
+          "scikit-image",
+          "scipy",
+          "setproctitle>=1.0",
+          "tensorflow",
+          "tensorflow-probability",
+          "torch<1.5.0,>=1.0.0",
+          "torchvision>=0.2.1"
+        ],
+        "extras_require": {
+          "all": [
+            "gym[all]==0.15.4",
+            "mujoco-py<2.1,>=2.0",
+            "dm_control==0.0.300771433"
+          ],
+          "dev": [
+            "baselines@ https://git@api.github.com/repos/openai/baselines/tarball/ea25b9e8b234e6ee1bca43083f8f3cf974143998",
+            "flake8",
+            "flake8-docstrings>=1.5.0",
+            "flake8-import-order",
+            "gtimer",
+            "matplotlib",
+            "metaworld@ https://git@api.github.com/repos/rlworkgroup/metaworld/tarball/861ae8d8c4bef80a7ed86f47f47acaa494d4ab77",
+            "pandas",
+            "pep8-naming==0.7.0",
+            "pre-commit",
+            "pycodestyle>=2.5.0",
+            "pydocstyle>=4.0.0",
+            "pylint>=2.4.3",
+            "pytest>=4.5.0",
+            "pytest-cov",
+            "pytest-timeout",
+            "pytest-xdist",
+            "recommonmark",
+            "rlkit@ https://git@api.github.com/repos/vitchyr/rlkit/tarball/1d469a509b797ca04a39b8734c1816ca7d108fc8",
+            "seaborn",
+            "sphinx==2.4.4",
+            "sphinx_rtd_theme",
+            "yapf==0.28.0"
+          ],
+          "mujoco": [
+            "mujoco-py<2.1,>=2.0",
+            "gym[all]==0.15.4"
+          ],
+          "dm_control": [
+            "dm_control==0.0.300771433"
+          ]
+        },
+        "python_requires": [
+          ">=3.5"
+        ]
+      },
+      "36": {
+        "install_requires": [
+          "akro",
+          "cached_property",
+          "click",
+          "cloudpickle",
+          "cma==2.7.0",
+          "dowel==0.0.3",
+          "gym[atari,box2d,classic_control]==0.15.4",
+          "joblib<0.13,>=0.12",
+          "numpy>=1.14.5",
+          "psutil",
+          "pyglet<1.4.0,>=1.3.0",
+          "pyprind",
+          "python-dateutil",
+          "ray",
+          "scikit-image",
+          "scipy",
+          "setproctitle>=1.0",
+          "tensorflow",
+          "tensorflow-probability",
+          "torch<1.5.0,>=1.0.0",
+          "torchvision>=0.2.1"
+        ],
+        "extras_require": {
+          "all": [
+            "mujoco-py<2.1,>=2.0",
+            "gym[all]==0.15.4",
+            "dm_control==0.0.300771433"
+          ],
+          "dev": [
+            "baselines@ https://git@api.github.com/repos/openai/baselines/tarball/ea25b9e8b234e6ee1bca43083f8f3cf974143998",
+            "flake8",
+            "flake8-docstrings>=1.5.0",
+            "flake8-import-order",
+            "gtimer",
+            "matplotlib",
+            "metaworld@ https://git@api.github.com/repos/rlworkgroup/metaworld/tarball/861ae8d8c4bef80a7ed86f47f47acaa494d4ab77",
+            "pandas",
+            "pep8-naming==0.7.0",
+            "pre-commit",
+            "pycodestyle>=2.5.0",
+            "pydocstyle>=4.0.0",
+            "pylint>=2.4.3",
+            "pytest>=4.5.0",
+            "pytest-cov",
+            "pytest-timeout",
+            "pytest-xdist",
+            "recommonmark",
+            "rlkit@ https://git@api.github.com/repos/vitchyr/rlkit/tarball/1d469a509b797ca04a39b8734c1816ca7d108fc8",
+            "seaborn",
+            "sphinx==2.4.4",
+            "sphinx_rtd_theme",
+            "yapf==0.28.0"
+          ],
+          "mujoco": [
+            "mujoco-py<2.1,>=2.0",
+            "gym[all]==0.15.4"
+          ],
+          "dm_control": [
+            "dm_control==0.0.300771433"
+          ]
+        },
+        "python_requires": [
+          ">=3.5"
+        ]
+      },
+      "37": {
+        "install_requires": [
+          "akro",
+          "cached_property",
+          "click",
+          "cloudpickle",
+          "cma==2.7.0",
+          "dowel==0.0.3",
+          "gym[atari,box2d,classic_control]==0.15.4",
+          "joblib<0.13,>=0.12",
+          "numpy>=1.14.5",
+          "psutil",
+          "pyglet<1.4.0,>=1.3.0",
+          "pyprind",
+          "python-dateutil",
+          "ray",
+          "scikit-image",
+          "scipy",
+          "setproctitle>=1.0",
+          "tensorflow",
+          "tensorflow-probability",
+          "torch<1.5.0,>=1.0.0",
+          "torchvision>=0.2.1"
+        ],
+        "extras_require": {
+          "all": [
+            "gym[all]==0.15.4",
+            "dm_control==0.0.300771433",
+            "mujoco-py<2.1,>=2.0"
+          ],
+          "dev": [
+            "baselines@ https://git@api.github.com/repos/openai/baselines/tarball/ea25b9e8b234e6ee1bca43083f8f3cf974143998",
+            "flake8",
+            "flake8-docstrings>=1.5.0",
+            "flake8-import-order",
+            "gtimer",
+            "matplotlib",
+            "metaworld@ https://git@api.github.com/repos/rlworkgroup/metaworld/tarball/861ae8d8c4bef80a7ed86f47f47acaa494d4ab77",
+            "pandas",
+            "pep8-naming==0.7.0",
+            "pre-commit",
+            "pycodestyle>=2.5.0",
+            "pydocstyle>=4.0.0",
+            "pylint>=2.4.3",
+            "pytest>=4.5.0",
+            "pytest-cov",
+            "pytest-timeout",
+            "pytest-xdist",
+            "recommonmark",
+            "rlkit@ https://git@api.github.com/repos/vitchyr/rlkit/tarball/1d469a509b797ca04a39b8734c1816ca7d108fc8",
+            "seaborn",
+            "sphinx==2.4.4",
+            "sphinx_rtd_theme",
+            "yapf==0.28.0"
+          ],
+          "mujoco": [
+            "mujoco-py<2.1,>=2.0",
+            "gym[all]==0.15.4"
+          ],
+          "dm_control": [
+            "dm_control==0.0.300771433"
+          ]
+        },
+        "python_requires": [
+          ">=3.5"
+        ]
+      },
+      "38": "35"
+    },
     "2020.2.0rc2": {
       "27": {
         "install_requires": [
@@ -37564,6 +37892,22 @@
     }
   },
   "mypy-boto3-apigatewayv2": {
+    "1.12.49.0": {
+      "27": {
+        "extras_require": {
+          ":python_version < \"3.8\"": [
+            "typing_extensions"
+          ]
+        },
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    },
     "1.12.48.0": {
       "27": {
         "extras_require": {
@@ -39502,6 +39846,22 @@
     }
   },
   "mypy-boto3-fsx": {
+    "1.12.49.0": {
+      "27": {
+        "extras_require": {
+          ":python_version < \"3.8\"": [
+            "typing_extensions"
+          ]
+        },
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    },
     "1.12.48.0": {
       "27": {
         "extras_require": {
@@ -45570,6 +45930,18 @@
     }
   },
   "panasonic-viera": {
+    "0.3.6": {
+      "27": {
+        "install_requires": [
+          "pycryptodome",
+          "xmltodict"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    },
     "0.3.5": {
       "27": {
         "install_requires": [
@@ -62890,6 +63262,40 @@
           "riotwatcher<3.0.0,>=2.7.1",
           "royalnet[alchemy_easy,bard,coloredlogs,constellation,discord,herald,sentry,telegram]<6.0.0,>=5.1.6",
           "royalspells<4.0,>=3.2"
+        ],
+        "python_requires": [
+          ">=3.8,<4.0"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    },
+    "5.7.11": {
+      "27": {
+        "install_requires": [
+          "riotwatcher<3.0.0,>=2.7.1",
+          "royalnet[alchemy_easy,bard,coloredlogs,constellation,discord,herald,matrix,sentry,telegram]<6.0.0,>=5.7.7",
+          "royalspells<4.0,>=3.2",
+          "steam<0.10.0,>=0.9.1"
+        ],
+        "python_requires": [
+          ">=3.8,<4.0"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    },
+    "5.7.10": {
+      "27": {
+        "install_requires": [
+          "riotwatcher<3.0.0,>=2.7.1",
+          "royalnet[alchemy_easy,bard,coloredlogs,constellation,discord,herald,matrix,sentry,telegram]<6.0.0,>=5.7.7",
+          "royalspells<4.0,>=3.2",
+          "steam<0.10.0,>=0.9.1"
         ],
         "python_requires": [
           ">=3.8,<4.0"
