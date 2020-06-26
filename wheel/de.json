@@ -71,6 +71,55 @@
       }
     }
   },
+  "acct": {
+    "py3": {
+      "1": {
+        "acct-1-py3-none-any.whl": {
+          "requires_dist": [
+            "pop",
+            "cryptography"
+          ]
+        }
+      },
+      "1.1": {
+        "acct-1.1-py3-none-any.whl": "1@acct-1-py3-none-any.whl"
+      },
+      "1.2": {
+        "acct-1.2-py3-none-any.whl": "1@acct-1-py3-none-any.whl"
+      },
+      "1.3": {
+        "acct-1.3-py3-none-any.whl": "1@acct-1-py3-none-any.whl"
+      },
+      "1.4": {
+        "acct-1.4-py3-none-any.whl": {
+          "requires_dist": [
+            "pop",
+            "cryptography",
+            "msgpack (>=1.0.0)"
+          ]
+        }
+      },
+      "1.5": {
+        "acct-1.5-py3-none-any.whl": "1.4@acct-1.4-py3-none-any.whl"
+      },
+      "2.0": {
+        "acct-2.0-py3-none-any.whl": "1.4@acct-1.4-py3-none-any.whl"
+      },
+      "2.1": {
+        "acct-2.1-py3-none-any.whl": {
+          "requires_dist": [
+            "pop",
+            "cryptography",
+            "msgpack",
+            "dict-toolbox (>=1.8)"
+          ]
+        }
+      },
+      "2.2": {
+        "acct-2.2-py3-none-any.whl": "2.1@acct-2.1-py3-none-any.whl"
+      }
+    }
+  },
   "across": {
     "py3": {
       "0.1.0": {
@@ -93,6 +142,47 @@
             "future"
           ]
         }
+      }
+    }
+  },
+  "ae-enaml-app": {
+    "py3": {
+      "0.0.1": {
+        "ae_enaml_app-0.0.1-py3-none-any.whl": {
+          "provides_extras": [
+            "dev",
+            "docs",
+            "tests"
+          ],
+          "requires_dist": [
+            "enaml",
+            "pyqt5",
+            "qtpy",
+            "ae-gui-app",
+            "flake8 ; extra == 'dev'",
+            "mypy ; extra == 'dev'",
+            "pylint ; extra == 'dev'",
+            "pylint-exit ; extra == 'dev'",
+            "pytest ; extra == 'dev'",
+            "pytest-cov ; extra == 'dev'",
+            "anybadge ; extra == 'dev'",
+            "coverage-badge ; extra == 'dev'",
+            "flake8 ; extra == 'tests'",
+            "mypy ; extra == 'tests'",
+            "pylint ; extra == 'tests'",
+            "pylint-exit ; extra == 'tests'",
+            "pytest ; extra == 'tests'",
+            "pytest-cov ; extra == 'tests'",
+            "anybadge ; extra == 'tests'",
+            "coverage-badge ; extra == 'tests'"
+          ]
+        }
+      },
+      "0.0.2": {
+        "ae_enaml_app-0.0.2-py3-none-any.whl": "0.0.1@ae_enaml_app-0.0.1-py3-none-any.whl"
+      },
+      "0.0.3": {
+        "ae_enaml_app-0.0.3-py3-none-any.whl": "0.0.1@ae_enaml_app-0.0.1-py3-none-any.whl"
       }
     }
   },
@@ -303,6 +393,26 @@
             "click",
             "pint",
             "adafruit-circuitpython-dht ; \"arm\" in platform_machine",
+            "flask ; extra == 'webapp'"
+          ]
+        }
+      },
+      "2.2.1": {
+        "apd.sensors-2.2.1-py3-none-any.whl": {
+          "provides_extras": [
+            "scheduled",
+            "storedapi",
+            "webapp"
+          ],
+          "requires_dist": [
+            "psutil",
+            "click",
+            "pint",
+            "adafruit-circuitpython-dht ; \"arm\" in platform_machine",
+            "sqlalchemy ; extra == 'scheduled'",
+            "alembic ; extra == 'scheduled'",
+            "flask-sqlalchemy ; extra == 'storedapi'",
+            "python-dateutil ; extra == 'storedapi'",
             "flask ; extra == 'webapp'"
           ]
         }
@@ -711,6 +821,16 @@
       },
       "0.2.1": {
         "aws_credentials-0.2.1-py3-none-any.whl": "0.1.0@aws_credentials-0.1.0-py3-none-any.whl"
+      },
+      "0.3.0": {
+        "aws_credentials-0.3.0-py3-none-any.whl": {
+          "requires_dist": [
+            "boto3 (>=1.12.37,<2.0.0)"
+          ]
+        }
+      },
+      "1.0.0": {
+        "aws_credentials-1.0.0-py3-none-any.whl": "0.3.0@aws_credentials-0.3.0-py3-none-any.whl"
       }
     }
   },
@@ -727,6 +847,21 @@
             "aws-cdk.aws-s3 (<1.26.0,>=1.25.0)",
             "aws-cdk.core (<1.26.0,>=1.25.0)",
             "aws-solutions-konstruk.core (<0.9.0,>=0.8.0)"
+          ]
+        }
+      },
+      "0.8.1": {
+        "aws_solutions_konstruk.aws_kinesis_firehose_s3-0.8.1-py3-none-any.whl": {
+          "requires_dist": [
+            "jsii (<2.0.0,>=1.5.0)",
+            "publication (>=0.0.3)",
+            "aws-cdk.aws-iam (<1.41.0,>=1.40.0)",
+            "aws-cdk.aws-kinesisfirehose (<1.41.0,>=1.40.0)",
+            "aws-cdk.aws-logs (<1.41.0,>=1.40.0)",
+            "aws-cdk.aws-s3 (<1.41.0,>=1.40.0)",
+            "aws-cdk.core (<1.41.0,>=1.40.0)",
+            "aws-solutions-konstruk.core (<0.9.0,>=0.8.1)",
+            "constructs (<4.0.0,>=3.0.2)"
           ]
         }
       }
@@ -751,6 +886,9 @@
             "typing ; python_version<'3.5'"
           ]
         }
+      },
+      "1.1.0": {
+        "azure_mgmt_core-1.1.0-py2.py3-none-any.whl": "1.0.0@azure_mgmt_core-1.0.0-py2.py3-none-any.whl"
       }
     }
   },
@@ -776,6 +914,44 @@
       },
       "0.0.7": {
         "b3futurecontracts-0.0.7-py3-none-any.whl": "0.0.1@b3futurecontracts-0.0.1-py3-none-any.whl"
+      }
+    }
+  },
+  "bark-ml": {
+    "cp37": {
+      "0.2.0": {
+        "bark_ml-0.2.0-cp37-cp37m-macosx_10_15_x86_64.whl": {
+          "requires_dist": [
+            "pygame (>=1.9.6)",
+            "gym (>=0.17.2)",
+            "tensorflow (>=2.2.0)",
+            "tensorboard (>=2.2.2)",
+            "tf-agents (>=0.5.0)",
+            "tensorflow-probability (>=0.10.0)",
+            "bark-simulator (>=0.1.0)"
+          ]
+        }
+      },
+      "0.2.1": {
+        "bark_ml-0.2.1-cp37-cp37m-macosx_10_15_x86_64.whl": "0.2.0@bark_ml-0.2.0-cp37-cp37m-macosx_10_15_x86_64.whl"
+      },
+      "0.2.2": {
+        "bark_ml-0.2.2-cp37-cp37m-macosx_10_15_x86_64.whl": "0.2.0@bark_ml-0.2.0-cp37-cp37m-macosx_10_15_x86_64.whl"
+      }
+    },
+    "py3": {
+      "0.2.2": {
+        "bark_ml-0.2.2-py3-none-any.whl": {
+          "requires_dist": [
+            "pygame (>=1.9.6)",
+            "gym (>=0.17.2)",
+            "tensorflow (>=2.2.0)",
+            "tensorboard (>=2.2.2)",
+            "tf-agents (>=0.5.0)",
+            "tensorflow-probability (>=0.10.0)",
+            "bark-simulator (>=0.1.0)"
+          ]
+        }
       }
     }
   },
@@ -1040,6 +1216,13 @@
       }
     }
   },
+  "blenderer": {
+    "py3": {
+      "0.0.1": {
+        "blenderer-0.0.1-py3-none-any.whl": {}
+      }
+    }
+  },
   "blog": {
     "py3": {
       "0.1.0": {
@@ -1133,6 +1316,16 @@
       },
       "0.0.5": {
         "botoinator-0.0.5-py2.py3-none-any.whl": "0.0.3@botoinator-0.0.3-py2.py3-none-any.whl"
+      },
+      "0.0.6": {
+        "botoinator-0.0.6-py2.py3-none-any.whl": {
+          "provides_extras": [
+            "boto3"
+          ],
+          "requires_dist": [
+            "boto3 ; extra == 'boto3'"
+          ]
+        }
       }
     }
   },
@@ -2237,11 +2430,38 @@
       "2.1.13": {
         "c2cgeoform-2.1.13-py2.py3-none-any.whl": "2.1.10@c2cgeoform-2.1.10-py2.py3-none-any.whl"
       },
+      "2.1.14": {
+        "c2cgeoform-2.1.14-py2.py3-none-any.whl": "2.1.10@c2cgeoform-2.1.10-py2.py3-none-any.whl"
+      },
       "2.1.14.dev20200424": {
         "c2cgeoform-2.1.14.dev20200424-py2.py3-none-any.whl": "2.1.10@c2cgeoform-2.1.10-py2.py3-none-any.whl"
       },
       "2.1.14.dev20200501": {
         "c2cgeoform-2.1.14.dev20200501-py2.py3-none-any.whl": "2.1.10@c2cgeoform-2.1.10-py2.py3-none-any.whl"
+      },
+      "2.1.14.dev20200508": {
+        "c2cgeoform-2.1.14.dev20200508-py2.py3-none-any.whl": "2.1.10@c2cgeoform-2.1.10-py2.py3-none-any.whl"
+      },
+      "2.1.14.dev20200515": {
+        "c2cgeoform-2.1.14.dev20200515-py2.py3-none-any.whl": "2.1.10@c2cgeoform-2.1.10-py2.py3-none-any.whl"
+      },
+      "2.1.14.dev20200522": {
+        "c2cgeoform-2.1.14.dev20200522-py2.py3-none-any.whl": "2.1.10@c2cgeoform-2.1.10-py2.py3-none-any.whl"
+      },
+      "2.1.14.dev20200529": {
+        "c2cgeoform-2.1.14.dev20200529-py2.py3-none-any.whl": "2.1.10@c2cgeoform-2.1.10-py2.py3-none-any.whl"
+      },
+      "2.1.14.dev20200605": {
+        "c2cgeoform-2.1.14.dev20200605-py2.py3-none-any.whl": "2.1.10@c2cgeoform-2.1.10-py2.py3-none-any.whl"
+      },
+      "2.1.15": {
+        "c2cgeoform-2.1.15-py2.py3-none-any.whl": "2.1.10@c2cgeoform-2.1.10-py2.py3-none-any.whl"
+      },
+      "2.1.15.dev20200612": {
+        "c2cgeoform-2.1.15.dev20200612-py2.py3-none-any.whl": "2.1.10@c2cgeoform-2.1.10-py2.py3-none-any.whl"
+      },
+      "2.1.16.dev20200619": {
+        "c2cgeoform-2.1.16.dev20200619-py2.py3-none-any.whl": "2.1.10@c2cgeoform-2.1.10-py2.py3-none-any.whl"
       },
       "2.1.4": {
         "c2cgeoform-2.1.4-py2.py3-none-any.whl": "2.1.10@c2cgeoform-2.1.10-py2.py3-none-any.whl"
@@ -2542,6 +2762,13 @@
             "click"
           ]
         }
+      }
+    }
+  },
+  "cosmos-ingest": {
+    "py3": {
+      "0.1": {
+        "cosmos_ingest-0.1-py3-none-any.whl": {}
       }
     }
   },
@@ -2885,6 +3112,116 @@
             "dbt-redshift (==0.16.1rc1)",
             "dbt-snowflake (==0.16.1rc1)",
             "dbt-bigquery (==0.16.1rc1)"
+          ]
+        }
+      },
+      "0.17.0": {
+        "dbt-0.17.0-py3-none-any.whl": {
+          "requires_dist": [
+            "dbt-core (==0.17.0)",
+            "dbt-postgres (==0.17.0)",
+            "dbt-redshift (==0.17.0)",
+            "dbt-snowflake (==0.17.0)",
+            "dbt-bigquery (==0.17.0)"
+          ]
+        }
+      },
+      "0.17.0b1": {
+        "dbt-0.17.0b1-py3-none-any.whl": {
+          "requires_dist": [
+            "dbt-core (==0.17.0b1)",
+            "dbt-postgres (==0.17.0b1)",
+            "dbt-redshift (==0.17.0b1)",
+            "dbt-snowflake (==0.17.0b1)",
+            "dbt-bigquery (==0.17.0b1)"
+          ]
+        }
+      },
+      "0.17.0b2": {
+        "dbt-0.17.0b2-py3-none-any.whl": {
+          "requires_dist": [
+            "dbt-core (==0.17.0b2)",
+            "dbt-postgres (==0.17.0b2)",
+            "dbt-redshift (==0.17.0b2)",
+            "dbt-snowflake (==0.17.0b2)",
+            "dbt-bigquery (==0.17.0b2)"
+          ]
+        }
+      },
+      "0.17.0rc1": {
+        "dbt-0.17.0rc1-py3-none-any.whl": {
+          "requires_dist": [
+            "dbt-core (==0.17.0rc1)",
+            "dbt-postgres (==0.17.0rc1)",
+            "dbt-redshift (==0.17.0rc1)",
+            "dbt-snowflake (==0.17.0rc1)",
+            "dbt-bigquery (==0.17.0rc1)"
+          ]
+        }
+      },
+      "0.17.0rc2": {
+        "dbt-0.17.0rc2-py3-none-any.whl": {
+          "requires_dist": [
+            "dbt-core (==0.17.0rc2)",
+            "dbt-postgres (==0.17.0rc2)",
+            "dbt-redshift (==0.17.0rc2)",
+            "dbt-snowflake (==0.17.0rc2)",
+            "dbt-bigquery (==0.17.0rc2)"
+          ]
+        }
+      },
+      "0.17.0rc3": {
+        "dbt-0.17.0rc3-py3-none-any.whl": {
+          "requires_dist": [
+            "dbt-core (==0.17.0rc3)",
+            "dbt-postgres (==0.17.0rc3)",
+            "dbt-redshift (==0.17.0rc3)",
+            "dbt-snowflake (==0.17.0rc3)",
+            "dbt-bigquery (==0.17.0rc3)"
+          ]
+        }
+      },
+      "0.17.0rc4": {
+        "dbt-0.17.0rc4-py3-none-any.whl": {
+          "requires_dist": [
+            "dbt-core (==0.17.0rc4)",
+            "dbt-postgres (==0.17.0rc4)",
+            "dbt-redshift (==0.17.0rc4)",
+            "dbt-snowflake (==0.17.0rc4)",
+            "dbt-bigquery (==0.17.0rc4)"
+          ]
+        }
+      },
+      "0.17.1rc1": {
+        "dbt-0.17.1rc1-py3-none-any.whl": {
+          "requires_dist": [
+            "dbt-core (==0.17.1rc1)",
+            "dbt-postgres (==0.17.1rc1)",
+            "dbt-redshift (==0.17.1rc1)",
+            "dbt-snowflake (==0.17.1rc1)",
+            "dbt-bigquery (==0.17.1rc1)"
+          ]
+        }
+      },
+      "0.17.1rc2": {
+        "dbt-0.17.1rc2-py3-none-any.whl": {
+          "requires_dist": [
+            "dbt-core (==0.17.1rc2)",
+            "dbt-postgres (==0.17.1rc2)",
+            "dbt-redshift (==0.17.1rc2)",
+            "dbt-snowflake (==0.17.1rc2)",
+            "dbt-bigquery (==0.17.1rc2)"
+          ]
+        }
+      },
+      "0.18.0b1": {
+        "dbt-0.18.0b1-py3-none-any.whl": {
+          "requires_dist": [
+            "dbt-core (==0.18.0b1)",
+            "dbt-postgres (==0.18.0b1)",
+            "dbt-redshift (==0.18.0b1)",
+            "dbt-snowflake (==0.18.0b1)",
+            "dbt-bigquery (==0.18.0b1)"
           ]
         }
       }
@@ -3403,6 +3740,15 @@
             "Pillow (==6.2.0)"
           ]
         }
+      },
+      "3.0.5": {
+        "dialog_bot_sdk-3.0.5-py3-none-any.whl": "3.0.4@dialog_bot_sdk-3.0.4-py3-none-any.whl"
+      },
+      "3.0.6": {
+        "dialog_bot_sdk-3.0.6-py3-none-any.whl": "3.0.4@dialog_bot_sdk-3.0.4-py3-none-any.whl"
+      },
+      "3.0.7": {
+        "dialog_bot_sdk-3.0.7-py3-none-any.whl": "3.0.4@dialog_bot_sdk-3.0.4-py3-none-any.whl"
       }
     }
   },
@@ -3769,6 +4115,12 @@
       },
       "0.1.3": {
         "django_pgpy-0.1.3-py3-none-any.whl": "0.1.2@django_pgpy-0.1.2-py3-none-any.whl"
+      },
+      "0.1.4": {
+        "django_pgpy-0.1.4-py3-none-any.whl": "0.1.2@django_pgpy-0.1.2-py3-none-any.whl"
+      },
+      "0.1.5": {
+        "django_pgpy-0.1.5-py3-none-any.whl": "0.1.2@django_pgpy-0.1.2-py3-none-any.whl"
       }
     }
   },
@@ -4107,6 +4459,12 @@
       },
       "0.5.0": {
         "dsntnn-0.5.0-py3-none-any.whl": "0.4.0@dsntnn-0.4.0-py3-none-any.whl"
+      },
+      "0.5.1": {
+        "dsntnn-0.5.1-py3-none-any.whl": "0.4.0@dsntnn-0.4.0-py3-none-any.whl"
+      },
+      "0.5.2": {
+        "dsntnn-0.5.2-py3-none-any.whl": "0.4.0@dsntnn-0.4.0-py3-none-any.whl"
       }
     }
   },
@@ -4511,6 +4869,18 @@
             "werkzeug (>0.16.0)"
           ]
         }
+      },
+      "0.0.2": {
+        "enhancedSchemathesis-0.0.2-py3-none-any.whl": "0.0.1@enhancedSchemathesis-0.0.1-py3-none-any.whl"
+      },
+      "1.0.0": {
+        "enhancedSchemathesis-1.0.0-py3-none-any.whl": "0.0.1@enhancedSchemathesis-0.0.1-py3-none-any.whl"
+      },
+      "1.0.1": {
+        "enhancedSchemathesis-1.0.1-py3-none-any.whl": "0.0.1@enhancedSchemathesis-0.0.1-py3-none-any.whl"
+      },
+      "1.0.2": {
+        "enhancedSchemathesis-1.0.2-py3-none-any.whl": "0.0.1@enhancedSchemathesis-0.0.1-py3-none-any.whl"
       }
     }
   },
@@ -4858,6 +5228,12 @@
       },
       "0.44.0": {
         "factorytest_pinephone-0.44.0-py3-none-any.whl": "0.10.0@factorytest_pinephone-0.10.0-py3-none-any.whl"
+      },
+      "0.45.0": {
+        "factorytest_pinephone-0.45.0-py3-none-any.whl": "0.10.0@factorytest_pinephone-0.10.0-py3-none-any.whl"
+      },
+      "0.46.0": {
+        "factorytest_pinephone-0.46.0-py3-none-any.whl": "0.10.0@factorytest_pinephone-0.10.0-py3-none-any.whl"
       },
       "0.5.0": {
         "factorytest_pinephone-0.5.0-py3-none-any.whl": "0.4.0@factorytest_pinephone-0.4.0-py3-none-any.whl"
@@ -5445,6 +5821,20 @@
             "scipy",
             "pandas; extra == 'dev'",
             "pytest; extra == 'dev'"
+          ]
+        }
+      },
+      "0.2.0": {
+        "fipt-0.2.0-py3-none-any.whl": {
+          "provides_extras": [
+            "dev"
+          ],
+          "requires_dist": [
+            "lmfit (>=1.0.0)",
+            "numpy (>=1.16.5)",
+            "scipy (>=1.3.1)",
+            "pandas (>=0.25.1) ; extra == 'dev'",
+            "pytest (>=5.2.1) ; extra == 'dev'"
           ]
         }
       }
@@ -6460,8 +6850,8 @@
       }
     },
     "py3": {
-      "8.0.0.0rc1": {
-        "freezer-8.0.0.0rc1-py3-none-any.whl": {
+      "8.0.0": {
+        "freezer-8.0.0-py3-none-any.whl": {
           "requires_dist": [
             "botocore (>=1.5.1)",
             "setuptools (!=24.0.0,!=34.0.0,!=34.0.1,!=34.0.2,!=34.0.3,!=34.1.0,!=34.1.1,!=34.2.0,!=34.3.0,!=34.3.1,!=34.3.2,!=36.2.0,>=21.0.0)",
@@ -6488,6 +6878,9 @@
             "psutil (>=3.2.2)"
           ]
         }
+      },
+      "8.0.0.0rc1": {
+        "freezer-8.0.0.0rc1-py3-none-any.whl": "8.0.0@freezer-8.0.0-py3-none-any.whl"
       }
     }
   },
@@ -6652,6 +7045,70 @@
             "TorMySQL ; extra == 'test'"
           ]
         }
+      },
+      "4.0.0": {
+        "fsqlfly-4.0.0-py2.py3-none-any.whl": {
+          "provides_extras": [
+            "airflow",
+            "all",
+            "canal",
+            "es",
+            "hbase",
+            "hive",
+            "mysql",
+            "postgresql",
+            "test"
+          ],
+          "requires_dist": [
+            "tornado (<=6.0.4)",
+            "terminado (<=0.8.3)",
+            "python-dotenv (<=0.12.0)",
+            "logzero (<=1.5.0)",
+            "PyYAML (<=5.3.1)",
+            "Jinja2 (<=2.11.1)",
+            "python-magic (<=0.4.15)",
+            "requests (<=2.23.0)",
+            "attrs (<=19.3.0)",
+            "sqlalchemy (<=1.3.15)",
+            "sqlalchemy-utils (<=0.36.3)",
+            "apache-airflow ; extra == 'airflow'",
+            "PyMySQL (<=0.9.3) ; extra == 'all'",
+            "psycopg2 (<=2.8.4) ; extra == 'all'",
+            "canal-python (<=0.4) ; extra == 'all'",
+            "kafka-python (<=1.4.7,>=1.3.4) ; extra == 'all'",
+            "protobuf (<=3.11.3) ; extra == 'all'",
+            "sqlalchemy (<=1.3.15) ; extra == 'all'",
+            "apache-airflow ; extra == 'all'",
+            "PyHive (<=0.6.2) ; extra == 'all'",
+            "thrift (<=0.13.0) ; extra == 'all'",
+            "sasl (<=0.2.1) ; extra == 'all'",
+            "thrift-sasl (<=0.4.2,>0.4.1) ; extra == 'all'",
+            "elasticsearch (<8.0.0,>=7.0.0) ; extra == 'all'",
+            "happybase (<=1.2.0) ; extra == 'all'",
+            "canal-python (<=0.4) ; extra == 'canal'",
+            "kafka-python (<=1.4.7,>=1.3.4) ; extra == 'canal'",
+            "protobuf (<=3.11.3) ; extra == 'canal'",
+            "sqlalchemy (<=1.3.15) ; extra == 'canal'",
+            "elasticsearch (<8.0.0,>=7.0.0) ; extra == 'es'",
+            "happybase (<=1.2.0) ; extra == 'hbase'",
+            "PyHive (<=0.6.2) ; extra == 'hive'",
+            "thrift (<=0.13.0) ; extra == 'hive'",
+            "sasl (<=0.2.1) ; extra == 'hive'",
+            "thrift-sasl (<=0.4.2,>0.4.1) ; extra == 'hive'",
+            "PyMySQL (<=0.9.3) ; extra == 'mysql'",
+            "psycopg2 (<=2.8.4) ; extra == 'postgresql'",
+            "TorMySQL ; extra == 'test'"
+          ]
+        }
+      },
+      "4.0.1": {
+        "fsqlfly-4.0.1-py2.py3-none-any.whl": "4.0.0@fsqlfly-4.0.0-py2.py3-none-any.whl"
+      },
+      "5.0.0": {
+        "fsqlfly-5.0.0-py2.py3-none-any.whl": "4.0.0@fsqlfly-4.0.0-py2.py3-none-any.whl"
+      },
+      "5.0.1": {
+        "fsqlfly-5.0.1-py2.py3-none-any.whl": "4.0.0@fsqlfly-4.0.0-py2.py3-none-any.whl"
       }
     }
   },
@@ -6662,11 +7119,27 @@
       },
       "0.0.2": {
         "ftests-0.0.2-py3-none-any.whl": "0.0.1@ftests-0.0.1-py3-none-any.whl"
+      },
+      "0.0.3": {
+        "ftests-0.0.3-py3-none-any.whl": "0.0.1@ftests-0.0.1-py3-none-any.whl"
       }
     }
   },
   "func-adl-xaod": {
     "py3": {
+      "1.0.0": {
+        "func_adl_xAOD-1.0.0-py3-none-any.whl": {
+          "requires_dist": [
+            "requests (~=2.0)",
+            "pandas (~=1.0)",
+            "uproot (~=3.7)",
+            "retry (~=0.9)",
+            "func-adl.ast (==1.0.0)",
+            "qastle (==0.7)",
+            "servicex (~=1.0)"
+          ]
+        }
+      },
       "1.0.0a1": {
         "func_adl.xAOD-1.0.0a1-py3-none-any.whl": {
           "requires_dist": [
@@ -6870,6 +7343,19 @@
         "func_adl_xAOD.backend-1.0.0a7-py3-none-any.whl": "1.0.0a1@func_adl_xAOD-1.0.0a1-py3-none-any.whl",
         "func_adl_xAOD.backend-1.0.0a8-py3-none-any.whl": "1.0.0a1@func_adl_xAOD-1.0.0a1-py3-none-any.whl"
       },
+      "1.0.0b1": {
+        "func_adl_xAOD-1.0.0b1-py3-none-any.whl": {
+          "requires_dist": [
+            "requests (~=2.0)",
+            "pandas (~=1.0)",
+            "uproot (~=3.7)",
+            "retry (~=0.9)",
+            "func-adl.ast (==1.0.0a22)",
+            "qastle (==0.7)",
+            "servicex"
+          ]
+        }
+      },
       "1.0.0b3": {
         "func_adl_xAOD-1.0.0b3-py3-none-any.whl": {
           "requires_dist": [
@@ -6885,6 +7371,25 @@
       },
       "1.0.0b4": {
         "func_adl_xAOD-1.0.0b4-py3-none-any.whl": "1.0.0b3@func_adl_xAOD-1.0.0b3-py3-none-any.whl"
+      },
+      "1.0.0b5": {
+        "func_adl_xAOD-1.0.0b5-py3-none-any.whl": "1.0.0b1@func_adl_xAOD-1.0.0b1-py3-none-any.whl"
+      },
+      "1.1.0b1": {
+        "func_adl_xAOD-1.1.0b1-py3-none-any.whl": "1.0.0@func_adl_xAOD-1.0.0-py3-none-any.whl"
+      },
+      "1.1.0b2": {
+        "func_adl_xAOD-1.1.0b2-py3-none-any.whl": {
+          "requires_dist": [
+            "requests (~=2.0)",
+            "pandas (~=1.0)",
+            "uproot (~=3.7)",
+            "retry (~=0.9)",
+            "func-adl.ast (==1.1.0b3)",
+            "qastle (==0.7)",
+            "servicex (==2.0.0b2)"
+          ]
+        }
       }
     }
   },
@@ -6912,6 +7417,34 @@
           "requires_dist": [
             "fasteners (>=0.14.1)",
             "numpy (<1.17,>=1.11.2)",
+            "requests (>=2.20.1)",
+            "six (>=1.12.0)",
+            "tox (>=3.2) ; extra == 'dev'",
+            "boto3 ; extra == 'test'",
+            "celery ; extra == 'test'",
+            "django ; extra == 'test'",
+            "django-chartjs ; extra == 'test'",
+            "djangorestframework ; extra == 'test'",
+            "laniakea ; extra == 'test'",
+            "pytest ; extra == 'test'",
+            "pytest-cov ; extra == 'test'",
+            "pytest-django ; extra == 'test'",
+            "pytest-flake8 ; extra == 'test'",
+            "pytest-mock ; extra == 'test'",
+            "pytest-pythonpath ; extra == 'test'",
+            "pyyaml ; extra == 'test'",
+            "redis ; extra == 'test'"
+          ]
+        }
+      },
+      "0.4.0": {
+        "FuzzManager-0.4.0-py2.py3-none-any.whl": {
+          "provides_extras": [
+            "dev",
+            "test"
+          ],
+          "requires_dist": [
+            "fasteners (>=0.14.1)",
             "requests (>=2.20.1)",
             "six (>=1.12.0)",
             "tox (>=3.2) ; extra == 'dev'",
@@ -7496,6 +8029,665 @@
       "0.0.31": {
         "genutility-0.0.31-py2.py3-none-any.whl": "0.0.22@genutility-0.0.22-py2.py3-none-any.whl"
       },
+      "0.0.32": {
+        "genutility-0.0.32-py2.py3-none-any.whl": "0.0.22@genutility-0.0.22-py2.py3-none-any.whl"
+      },
+      "0.0.33": {
+        "genutility-0.0.33-py2.py3-none-any.whl": "0.0.22@genutility-0.0.22-py2.py3-none-any.whl"
+      },
+      "0.0.34": {
+        "genutility-0.0.34-py2.py3-none-any.whl": {
+          "provides_extras": [
+            "algorithms",
+            "all",
+            "args",
+            "aria",
+            "atomic",
+            "av",
+            "binary",
+            "cholesky",
+            "concurrency",
+            "config",
+            "constants_physics",
+            "constants_video",
+            "csv",
+            "cv",
+            "datastructures",
+            "datetime",
+            "debug",
+            "dict",
+            "downloadmanager",
+            "encoder",
+            "error",
+            "exceptions",
+            "factorial",
+            "file",
+            "filesystem",
+            "flask",
+            "func",
+            "gensim",
+            "geometry",
+            "hash",
+            "html",
+            "http",
+            "http2",
+            "image",
+            "imdb",
+            "indexing",
+            "iter",
+            "json",
+            "latex",
+            "lda",
+            "math",
+            "mediainfo",
+            "metrics",
+            "mongo",
+            "mp4",
+            "msgpack",
+            "multihash",
+            "net",
+            "networkx",
+            "nlp",
+            "nltk",
+            "numba",
+            "numpy",
+            "object",
+            "ops",
+            "os",
+            "pandas",
+            "pdf",
+            "pickle",
+            "pillow",
+            "powerpoint",
+            "profile",
+            "rand",
+            "regression",
+            "resizing",
+            "ringlist",
+            "scene_change_detection",
+            "scipy",
+            "search",
+            "sequence",
+            "set",
+            "signal",
+            "sort",
+            "sql",
+            "sqlite",
+            "statistics",
+            "stdio",
+            "string",
+            "sudoku",
+            "tensorflow",
+            "test",
+            "text",
+            "time",
+            "tls",
+            "toml",
+            "torch",
+            "torrent",
+            "twisted",
+            "twitch",
+            "typing",
+            "url",
+            "videofile",
+            "widgets",
+            "win32",
+            "xsl"
+          ],
+          "requires_dist": [
+            "future",
+            "mock ; python_version < \"3.3\"",
+            "contextlib2 ; python_version < \"3.3\"",
+            "pathlib2 ; python_version < \"3.4\"",
+            "typing ; python_version < \"3.5\"",
+            "scandir ; python_version < \"3.5\"",
+            "PyPDF2 ; extra == 'all'",
+            "aiohttp (>=0.16.3) ; extra == 'all'",
+            "aria2p ; extra == 'all'",
+            "av ; extra == 'all'",
+            "beautifulsoup4 ; extra == 'all'",
+            "bencode.py (>=2.0.0) ; extra == 'all'",
+            "cryptography ; extra == 'all'",
+            "flask ; extra == 'all'",
+            "gensim (>=3.3.0) ; extra == 'all'",
+            "hyper ; extra == 'all'",
+            "jsonschema ; extra == 'all'",
+            "lxml ; extra == 'all'",
+            "msgpack (>=0.6.0) ; extra == 'all'",
+            "netifaces ; extra == 'all'",
+            "networkx ; extra == 'all'",
+            "nltk ; extra == 'all'",
+            "numba ; extra == 'all'",
+            "numpy ; extra == 'all'",
+            "opencv-python ; extra == 'all'",
+            "orderedset ; extra == 'all'",
+            "piexif ; extra == 'all'",
+            "pillow ; extra == 'all'",
+            "pyOpenSSL (>=17.5.0) ; extra == 'all'",
+            "pymediainfo ; extra == 'all'",
+            "pypiwin32 ; extra == 'all'",
+            "python-pptx ; extra == 'all'",
+            "requests ; extra == 'all'",
+            "rhash ; extra == 'all'",
+            "scikit-learn ; extra == 'all'",
+            "scipy ; extra == 'all'",
+            "setuptools ; extra == 'all'",
+            "sortedcontainers ; extra == 'all'",
+            "tensorflow ; extra == 'all'",
+            "toml ; extra == 'all'",
+            "torch ; extra == 'all'",
+            "twisted ; extra == 'all'",
+            "werkzeug (>=0.11.11) ; extra == 'all'",
+            "wmi ; extra == 'all'",
+            "wxPython ; extra == 'all'",
+            "ctypes-windows-sdk (>=0.0.4) ; (sys_platform == \"win32\") and extra == 'all'",
+            "aria2p ; extra == 'aria'",
+            "requests ; extra == 'aria'",
+            "av ; extra == 'av'",
+            "numpy ; extra == 'cholesky'",
+            "numba ; extra == 'cholesky'",
+            "jsonschema ; extra == 'config'",
+            "sortedcontainers ; extra == 'config'",
+            "opencv-python ; extra == 'cv'",
+            "numpy ; extra == 'cv'",
+            "aiohttp (>=0.16.3) ; extra == 'downloadmanager'",
+            "orderedset ; extra == 'downloadmanager'",
+            "numpy ; extra == 'encoder'",
+            "nltk ; extra == 'encoder'",
+            "flask ; extra == 'flask'",
+            "werkzeug (>=0.11.11) ; extra == 'flask'",
+            "gensim (>=3.3.0) ; extra == 'gensim'",
+            "numpy ; extra == 'gensim'",
+            "beautifulsoup4 ; extra == 'html'",
+            "requests ; extra == 'http'",
+            "hyper ; extra == 'http2'",
+            "numpy ; extra == 'image'",
+            "jsonschema ; extra == 'json'",
+            "numpy ; extra == 'lda'",
+            "nltk ; extra == 'lda'",
+            "pymediainfo ; extra == 'mediainfo'",
+            "numpy ; extra == 'metrics'",
+            "setuptools ; extra == 'mp4'",
+            "msgpack (>=0.6.0) ; extra == 'msgpack'",
+            "rhash ; extra == 'multihash'",
+            "netifaces ; extra == 'net'",
+            "networkx ; extra == 'networkx'",
+            "nltk ; extra == 'nlp'",
+            "nltk ; extra == 'nltk'",
+            "numba ; extra == 'numba'",
+            "numpy ; extra == 'numpy'",
+            "ctypes-windows-sdk (>=0.0.4) ; (sys_platform == \"win32\") and extra == 'os'",
+            "PyPDF2 ; extra == 'pdf'",
+            "pillow ; extra == 'pillow'",
+            "piexif ; extra == 'pillow'",
+            "python-pptx ; extra == 'powerpoint'",
+            "numpy ; extra == 'regression'",
+            "numpy ; extra == 'resizing'",
+            "opencv-python ; extra == 'resizing'",
+            "scikit-learn ; extra == 'resizing'",
+            "numpy ; extra == 'scene_change_detection'",
+            "numpy ; extra == 'scipy'",
+            "scipy ; extra == 'scipy'",
+            "tensorflow ; extra == 'tensorflow'",
+            "cryptography ; extra == 'tls'",
+            "pyOpenSSL (>=17.5.0) ; extra == 'tls'",
+            "toml ; extra == 'toml'",
+            "torch ; extra == 'torch'",
+            "bencode.py (>=2.0.0) ; extra == 'torrent'",
+            "twisted ; extra == 'twisted'",
+            "opencv-python ; extra == 'videofile'",
+            "av ; extra == 'videofile'",
+            "wxPython ; extra == 'widgets'",
+            "wmi ; extra == 'win32'",
+            "pypiwin32 ; extra == 'win32'",
+            "lxml ; extra == 'xsl'"
+          ]
+        }
+      },
+      "0.0.35": {
+        "genutility-0.0.35-py2.py3-none-any.whl": "0.0.34@genutility-0.0.34-py2.py3-none-any.whl"
+      },
+      "0.0.36": {
+        "genutility-0.0.36-py2.py3-none-any.whl": "0.0.34@genutility-0.0.34-py2.py3-none-any.whl"
+      },
+      "0.0.37": {
+        "genutility-0.0.37-py2.py3-none-any.whl": "0.0.34@genutility-0.0.34-py2.py3-none-any.whl"
+      },
+      "0.0.38": {
+        "genutility-0.0.38-py2.py3-none-any.whl": {
+          "provides_extras": [
+            "algorithms",
+            "all",
+            "args",
+            "aria",
+            "atomic",
+            "av",
+            "binary",
+            "cholesky",
+            "concurrency",
+            "config",
+            "constants_physics",
+            "constants_video",
+            "csv",
+            "cv",
+            "datastructures",
+            "datetime",
+            "debug",
+            "dict",
+            "downloadmanager",
+            "encoder",
+            "error",
+            "exceptions",
+            "factorial",
+            "file",
+            "filesystem",
+            "flask",
+            "func",
+            "gensim",
+            "geometry",
+            "hash",
+            "html",
+            "http",
+            "http2",
+            "image",
+            "imdb",
+            "indexing",
+            "iter",
+            "json",
+            "latex",
+            "lda",
+            "math",
+            "mediainfo",
+            "metrics",
+            "mongo",
+            "mp4",
+            "msgpack",
+            "multihash",
+            "net",
+            "networkx",
+            "nlp",
+            "nltk",
+            "numba",
+            "numpy",
+            "object",
+            "ops",
+            "os",
+            "pandas",
+            "pdf",
+            "pickle",
+            "pillow",
+            "powerpoint",
+            "profile",
+            "rand",
+            "regression",
+            "resizing",
+            "ringlist",
+            "salesforce",
+            "scene_change_detection",
+            "scipy",
+            "search",
+            "sequence",
+            "set",
+            "signal",
+            "sort",
+            "sql",
+            "sqlite",
+            "statistics",
+            "stdio",
+            "string",
+            "sudoku",
+            "tensorflow",
+            "test",
+            "text",
+            "time",
+            "tls",
+            "toml",
+            "torch",
+            "torrent",
+            "twisted",
+            "twitch",
+            "typing",
+            "url",
+            "videofile",
+            "widgets",
+            "win32",
+            "xsl"
+          ],
+          "requires_dist": [
+            "future",
+            "mock ; python_version < \"3.3\"",
+            "contextlib2 ; python_version < \"3.3\"",
+            "pathlib2 ; python_version < \"3.4\"",
+            "typing ; python_version < \"3.5\"",
+            "scandir ; python_version < \"3.5\"",
+            "PyPDF2 ; extra == 'all'",
+            "aiohttp (>=0.16.3) ; extra == 'all'",
+            "aria2p ; extra == 'all'",
+            "av ; extra == 'all'",
+            "beautifulsoup4 ; extra == 'all'",
+            "bencode.py (>=2.0.0) ; extra == 'all'",
+            "cryptography ; extra == 'all'",
+            "flask ; extra == 'all'",
+            "gensim (>=3.3.0) ; extra == 'all'",
+            "hyper ; extra == 'all'",
+            "jsonschema ; extra == 'all'",
+            "lxml ; extra == 'all'",
+            "msgpack (>=0.6.0) ; extra == 'all'",
+            "netifaces ; extra == 'all'",
+            "networkx ; extra == 'all'",
+            "nltk ; extra == 'all'",
+            "numba ; extra == 'all'",
+            "numpy ; extra == 'all'",
+            "opencv-python ; extra == 'all'",
+            "orderedset ; extra == 'all'",
+            "piexif ; extra == 'all'",
+            "pillow ; extra == 'all'",
+            "pyOpenSSL (>=17.5.0) ; extra == 'all'",
+            "pymediainfo ; extra == 'all'",
+            "pypiwin32 ; extra == 'all'",
+            "python-pptx ; extra == 'all'",
+            "requests ; extra == 'all'",
+            "rhash ; extra == 'all'",
+            "scikit-learn ; extra == 'all'",
+            "scipy ; extra == 'all'",
+            "setuptools ; extra == 'all'",
+            "simple-salesforce (>=1.1.0) ; extra == 'all'",
+            "sortedcontainers ; extra == 'all'",
+            "tensorflow ; extra == 'all'",
+            "toml ; extra == 'all'",
+            "torch ; extra == 'all'",
+            "twisted ; extra == 'all'",
+            "werkzeug (>=0.11.11) ; extra == 'all'",
+            "wmi ; extra == 'all'",
+            "wxPython ; extra == 'all'",
+            "ctypes-windows-sdk (>=0.0.7) ; (sys_platform == \"win32\") and extra == 'all'",
+            "aria2p ; extra == 'aria'",
+            "requests ; extra == 'aria'",
+            "av ; extra == 'av'",
+            "numpy ; extra == 'cholesky'",
+            "numba ; extra == 'cholesky'",
+            "jsonschema ; extra == 'config'",
+            "sortedcontainers ; extra == 'config'",
+            "opencv-python ; extra == 'cv'",
+            "numpy ; extra == 'cv'",
+            "aiohttp (>=0.16.3) ; extra == 'downloadmanager'",
+            "orderedset ; extra == 'downloadmanager'",
+            "numpy ; extra == 'encoder'",
+            "nltk ; extra == 'encoder'",
+            "flask ; extra == 'flask'",
+            "werkzeug (>=0.11.11) ; extra == 'flask'",
+            "gensim (>=3.3.0) ; extra == 'gensim'",
+            "numpy ; extra == 'gensim'",
+            "beautifulsoup4 ; extra == 'html'",
+            "requests ; extra == 'http'",
+            "hyper ; extra == 'http2'",
+            "numpy ; extra == 'image'",
+            "jsonschema ; extra == 'json'",
+            "numpy ; extra == 'lda'",
+            "nltk ; extra == 'lda'",
+            "pymediainfo ; extra == 'mediainfo'",
+            "numpy ; extra == 'metrics'",
+            "setuptools ; extra == 'mp4'",
+            "msgpack (>=0.6.0) ; extra == 'msgpack'",
+            "rhash ; extra == 'multihash'",
+            "netifaces ; extra == 'net'",
+            "networkx ; extra == 'networkx'",
+            "nltk ; extra == 'nlp'",
+            "nltk ; extra == 'nltk'",
+            "numba ; extra == 'numba'",
+            "numpy ; extra == 'numpy'",
+            "ctypes-windows-sdk (>=0.0.7) ; (sys_platform == \"win32\") and extra == 'os'",
+            "PyPDF2 ; extra == 'pdf'",
+            "pillow ; extra == 'pillow'",
+            "piexif ; extra == 'pillow'",
+            "python-pptx ; extra == 'powerpoint'",
+            "numpy ; extra == 'regression'",
+            "numpy ; extra == 'resizing'",
+            "opencv-python ; extra == 'resizing'",
+            "scikit-learn ; extra == 'resizing'",
+            "simple-salesforce (>=1.1.0) ; extra == 'salesforce'",
+            "numpy ; extra == 'scene_change_detection'",
+            "numpy ; extra == 'scipy'",
+            "scipy ; extra == 'scipy'",
+            "tensorflow ; extra == 'tensorflow'",
+            "cryptography ; extra == 'tls'",
+            "pyOpenSSL (>=17.5.0) ; extra == 'tls'",
+            "toml ; extra == 'toml'",
+            "torch ; extra == 'torch'",
+            "bencode.py (>=2.0.0) ; extra == 'torrent'",
+            "twisted ; extra == 'twisted'",
+            "opencv-python ; extra == 'videofile'",
+            "av ; extra == 'videofile'",
+            "wxPython ; extra == 'widgets'",
+            "wmi ; extra == 'win32'",
+            "pypiwin32 ; extra == 'win32'",
+            "lxml ; extra == 'xsl'"
+          ]
+        }
+      },
+      "0.0.39": {
+        "genutility-0.0.39-py2.py3-none-any.whl": {
+          "provides_extras": [
+            "algorithms",
+            "all",
+            "args",
+            "aria",
+            "atomic",
+            "av",
+            "binary",
+            "cholesky",
+            "concurrency",
+            "config",
+            "constants_physics",
+            "constants_video",
+            "csv",
+            "cv",
+            "datastructures",
+            "datetime",
+            "debug",
+            "dict",
+            "downloadmanager",
+            "encoder",
+            "error",
+            "exceptions",
+            "factorial",
+            "file",
+            "filesystem",
+            "fingerprinting",
+            "flask",
+            "func",
+            "gensim",
+            "geometry",
+            "hash",
+            "html",
+            "http",
+            "http2",
+            "image",
+            "imdb",
+            "indexing",
+            "iter",
+            "json",
+            "latex",
+            "lda",
+            "math",
+            "mediainfo",
+            "metrics",
+            "mongo",
+            "mp4",
+            "msgpack",
+            "multihash",
+            "net",
+            "networkx",
+            "nlp",
+            "nltk",
+            "numba",
+            "numpy",
+            "object",
+            "ops",
+            "os",
+            "pandas",
+            "pdf",
+            "pickle",
+            "pillow",
+            "powerpoint",
+            "profile",
+            "rand",
+            "regression",
+            "resizing",
+            "ringlist",
+            "salesforce",
+            "scene_change_detection",
+            "scipy",
+            "search",
+            "sequence",
+            "set",
+            "signal",
+            "sort",
+            "sql",
+            "sqlite",
+            "statistics",
+            "stdio",
+            "string",
+            "sudoku",
+            "tensorflow",
+            "test",
+            "text",
+            "time",
+            "tls",
+            "toml",
+            "torch",
+            "torrent",
+            "twisted",
+            "twitch",
+            "typing",
+            "url",
+            "videofile",
+            "widgets",
+            "win32",
+            "xsl"
+          ],
+          "requires_dist": [
+            "future",
+            "mock ; python_version < \"3.3\"",
+            "contextlib2 ; python_version < \"3.3\"",
+            "pathlib2 ; python_version < \"3.4\"",
+            "typing ; python_version < \"3.5\"",
+            "scandir ; python_version < \"3.5\"",
+            "PyPDF2 ; extra == 'all'",
+            "aiohttp (>=0.16.3) ; extra == 'all'",
+            "aria2p ; extra == 'all'",
+            "av ; extra == 'all'",
+            "beautifulsoup4 ; extra == 'all'",
+            "bencode.py (>=2.0.0) ; extra == 'all'",
+            "cryptography ; extra == 'all'",
+            "flask ; extra == 'all'",
+            "gensim (>=3.3.0) ; extra == 'all'",
+            "hyper ; extra == 'all'",
+            "jsonschema ; extra == 'all'",
+            "lxml ; extra == 'all'",
+            "msgpack (>=0.6.0) ; extra == 'all'",
+            "netifaces ; extra == 'all'",
+            "networkx ; extra == 'all'",
+            "numba ; extra == 'all'",
+            "numpy ; extra == 'all'",
+            "opencv-python ; extra == 'all'",
+            "orderedset ; extra == 'all'",
+            "piexif ; extra == 'all'",
+            "pillow ; extra == 'all'",
+            "pyOpenSSL (>=17.5.0) ; extra == 'all'",
+            "pymediainfo ; extra == 'all'",
+            "pypiwin32 ; extra == 'all'",
+            "python-pptx ; extra == 'all'",
+            "requests ; extra == 'all'",
+            "rhash ; extra == 'all'",
+            "scikit-learn ; extra == 'all'",
+            "scipy ; extra == 'all'",
+            "setuptools ; extra == 'all'",
+            "simple-salesforce (>=1.1.0) ; extra == 'all'",
+            "simplejson ; extra == 'all'",
+            "sortedcontainers ; extra == 'all'",
+            "tensorflow ; extra == 'all'",
+            "toml ; extra == 'all'",
+            "torch ; extra == 'all'",
+            "twisted ; extra == 'all'",
+            "werkzeug (>=0.11.11) ; extra == 'all'",
+            "wmi ; extra == 'all'",
+            "wxPython ; extra == 'all'",
+            "nltk (<3.5) ; (python_version < \"3\") and extra == 'all'",
+            "nltk ; (python_version >= \"3\") and extra == 'all'",
+            "ctypes-windows-sdk (>=0.0.7) ; (sys_platform == \"win32\") and extra == 'all'",
+            "aria2p ; extra == 'aria'",
+            "requests ; extra == 'aria'",
+            "av ; extra == 'av'",
+            "numpy ; extra == 'cholesky'",
+            "numba ; extra == 'cholesky'",
+            "jsonschema ; extra == 'config'",
+            "sortedcontainers ; extra == 'config'",
+            "opencv-python ; extra == 'cv'",
+            "numpy ; extra == 'cv'",
+            "aiohttp (>=0.16.3) ; extra == 'downloadmanager'",
+            "orderedset ; extra == 'downloadmanager'",
+            "numpy ; extra == 'encoder'",
+            "nltk (<3.5) ; (python_version < \"3\") and extra == 'encoder'",
+            "nltk ; (python_version >= \"3\") and extra == 'encoder'",
+            "numpy ; extra == 'fingerprinting'",
+            "numba ; extra == 'fingerprinting'",
+            "pillow ; extra == 'fingerprinting'",
+            "flask ; extra == 'flask'",
+            "werkzeug (>=0.11.11) ; extra == 'flask'",
+            "gensim (>=3.3.0) ; extra == 'gensim'",
+            "numpy ; extra == 'gensim'",
+            "beautifulsoup4 ; extra == 'html'",
+            "requests ; extra == 'http'",
+            "hyper ; extra == 'http2'",
+            "numpy ; extra == 'image'",
+            "jsonschema ; extra == 'json'",
+            "numpy ; extra == 'lda'",
+            "nltk (<3.5) ; (python_version < \"3\") and extra == 'lda'",
+            "nltk ; (python_version >= \"3\") and extra == 'lda'",
+            "pymediainfo ; extra == 'mediainfo'",
+            "numpy ; extra == 'metrics'",
+            "setuptools ; extra == 'mp4'",
+            "msgpack (>=0.6.0) ; extra == 'msgpack'",
+            "rhash ; extra == 'multihash'",
+            "netifaces ; extra == 'net'",
+            "networkx ; extra == 'networkx'",
+            "nltk (<3.5) ; (python_version < \"3\") and extra == 'nlp'",
+            "nltk ; (python_version >= \"3\") and extra == 'nlp'",
+            "nltk (<3.5) ; (python_version < \"3\") and extra == 'nltk'",
+            "nltk ; (python_version >= \"3\") and extra == 'nltk'",
+            "numba ; extra == 'numba'",
+            "numpy ; extra == 'numpy'",
+            "ctypes-windows-sdk (>=0.0.7) ; (sys_platform == \"win32\") and extra == 'os'",
+            "PyPDF2 ; extra == 'pdf'",
+            "pillow ; extra == 'pillow'",
+            "piexif ; extra == 'pillow'",
+            "python-pptx ; extra == 'powerpoint'",
+            "numpy ; extra == 'regression'",
+            "numpy ; extra == 'resizing'",
+            "opencv-python ; extra == 'resizing'",
+            "scikit-learn ; extra == 'resizing'",
+            "simple-salesforce (>=1.1.0) ; extra == 'salesforce'",
+            "simplejson ; extra == 'salesforce'",
+            "numpy ; extra == 'scene_change_detection'",
+            "numpy ; extra == 'scipy'",
+            "scipy ; extra == 'scipy'",
+            "tensorflow ; extra == 'tensorflow'",
+            "cryptography ; extra == 'tls'",
+            "pyOpenSSL (>=17.5.0) ; extra == 'tls'",
+            "toml ; extra == 'toml'",
+            "torch ; extra == 'torch'",
+            "bencode.py (>=2.0.0) ; extra == 'torrent'",
+            "twisted ; extra == 'twisted'",
+            "opencv-python ; extra == 'videofile'",
+            "av ; extra == 'videofile'",
+            "wxPython ; extra == 'widgets'",
+            "wmi ; extra == 'win32'",
+            "pypiwin32 ; extra == 'win32'",
+            "lxml ; extra == 'xsl'"
+          ]
+        }
+      },
       "0.0.4": {
         "genutility-0.0.4-py2.py3-none-any.whl": {
           "provides_extras": [
@@ -7960,6 +9152,38 @@
           ]
         }
       },
+      "1.21": {
+        "gluetool-1.21-py2-none-any.whl": "1.20@gluetool-1.20-py2-none-any.whl"
+      },
+      "1.22": {
+        "gluetool-1.22-py2-none-any.whl": {
+          "requires_dist": [
+            "beautifulsoup4 (==4.6.3)",
+            "colorama (==0.3.9)",
+            "docutils (==0.14)",
+            "future (==0.16.0)",
+            "Jinja2 (==2.10)",
+            "lxml (==4.2.4)",
+            "mock (==3.0.5)",
+            "mypy-extensions (==0.4.1)",
+            "packaging (==17.1)",
+            "raven (==6.9.0)",
+            "requests (==2.19.1)",
+            "requests-toolbelt (==0.8.0)",
+            "ruamel.yaml (==0.15.51)",
+            "six (==1.12.0)",
+            "Sphinx (==1.5.2)",
+            "sphinx-rtd-theme (==0.4.1)",
+            "tabulate (==0.8.2)",
+            "typing (==3.7.4)",
+            "typing-extensions (==3.7.4)",
+            "urlnormalizer (==1.2.0)",
+            "pyparsing (==2.3.0)",
+            "MarkupSafe (==1.1.0)",
+            "enum34 (==1.1.6) ; python_version == \"2.7\""
+          ]
+        }
+      },
       "1.4.1": {
         "gluetool-1.4.1-py2-none-any.whl": {
           "requires_dist": [
@@ -8049,6 +9273,18 @@
       },
       "0.7.9": {
         "gnomehat-0.7.9-py2.py3-none-any.whl": "0.7.10@gnomehat-0.7.10-py2.py3-none-any.whl"
+      }
+    }
+  },
+  "google-datacatalog-vertica-connector": {
+    "py2.py3": {
+      "0.5.0": {
+        "google_datacatalog_vertica_connector-0.5.0-py2.py3-none-any.whl": {
+          "requires_dist": [
+            "vertica-python",
+            "google-datacatalog-rdbms-connector"
+          ]
+        }
       }
     }
   },
@@ -8220,6 +9456,16 @@
       },
       "0.1.6": {
         "hdrstats-0.1.6-py2.py3-none-any.whl": "0.1.1@hdrstats-0.1.1-py2.py3-none-any.whl"
+      },
+      "0.1.7": {
+        "hdrstats-0.1.7-py2.py3-none-any.whl": {
+          "requires_dist": [
+            "clasp",
+            "scipy",
+            "numpy",
+            "sklearn"
+          ]
+        }
       }
     }
   },
@@ -8689,6 +9935,31 @@
       },
       "0.6.6": {
         "HinetPy-0.6.6-py3-none-any.whl": "0.5.2@HinetPy-0.5.2-py3-none-any.whl"
+      },
+      "0.6.7": {
+        "HinetPy-0.6.7-py3-none-any.whl": "0.3.2@HinetPy-0.3.2-py3-none-any.whl"
+      }
+    }
+  },
+  "histoday": {
+    "py2": {
+      "0.1": {
+        "histoday-0.1-py2-none-any.whl": {}
+      }
+    },
+    "py3": {
+      "0.1.2": {
+        "histoday-0.1.2-py3-none-any.whl": {}
+      },
+      "0.1.3": {
+        "histoday-0.1.3-py3-none-any.whl": {
+          "requires_dist": [
+            "feedparser"
+          ]
+        }
+      },
+      "0.1.4": {
+        "histoday-0.1.4-py3-none-any.whl": "0.1.3@histoday-0.1.3-py3-none-any.whl"
       }
     }
   },
@@ -8698,6 +9969,27 @@
         "HolyGrail-0.2.1.Perceval-py2-none-any.whl": {
           "requires_dist": [
             "sqlobject"
+          ]
+        }
+      }
+    }
+  },
+  "hsnneo-obs": {
+    "py2.py3": {
+      "0.2.7": {
+        "hsnneo_obs-0.2.7-py2.py3-none-any.whl": {
+          "requires_dist": [
+            "Click (==7.0)",
+            "boto3 (==1.9.227)",
+            "python-dotenv (==0.10.3)",
+            "requests (==2.22.0)",
+            "cloudianapi (==0.2.4)",
+            "tzlocal (==2.0.0)",
+            "bitmath (==1.3.3.1)",
+            "tabulate (==0.8.3)",
+            "xmltodict (==0.12.0)",
+            "requests-aws4auth (==0.9)",
+            "PyYAML (==5.1.2)"
           ]
         }
       }
@@ -10042,6 +11334,13 @@
       }
     }
   },
+  "ipad": {
+    "2.7": {
+      "0.1": {
+        "ipad-0.1-py2-none-any.whl": {}
+      }
+    }
+  },
   "jcapi": {
     "py3": {
       "0.0.3": {
@@ -10069,6 +11368,14 @@
       },
       "0.1.4": {
         "jeffy-0.1.4-py3-none-any.whl": "0.1.0@jeffy-0.1.0-py3-none-any.whl"
+      },
+      "1.0.0": {
+        "jeffy-1.0.0-py3-none-any.whl": {
+          "requires_dist": [
+            "jsonschema",
+            "boto3"
+          ]
+        }
       }
     }
   },
@@ -10170,6 +11477,16 @@
       },
       "2.0.0.dev3": {
         "jj-2.0.0.dev3-py3-none-any.whl": "2.0.0.dev1@jj-2.0.0.dev1-py3-none-any.whl"
+      },
+      "2.0.0.dev4": {
+        "jj-2.0.0.dev4-py3-none-any.whl": {
+          "requires_dist": [
+            "aiohttp (<4.0,>=3.5)",
+            "multidict (<5.0,>=4.5)",
+            "packed (<0.2,>=0.1)",
+            "undecorated (<0.4,>=0.3)"
+          ]
+        }
       }
     }
   },
@@ -10334,6 +11651,24 @@
             "pyyaml (>=5.1)"
           ]
         }
+      },
+      "2.3.0": {
+        "jutge_toolkit-2.3.0-py3-none-any.whl": "2.0.0@jutge_toolkit-2.0.0-py3-none-any.whl"
+      },
+      "2.4.0": {
+        "jutge_toolkit-2.4.0-py3-none-any.whl": {
+          "requires_dist": [
+            "jutge-util",
+            "pyyaml (>=5.1)",
+            "colorama"
+          ]
+        }
+      },
+      "2.5.0": {
+        "jutge_toolkit-2.5.0-py3-none-any.whl": "2.4.0@jutge_toolkit-2.4.0-py3-none-any.whl"
+      },
+      "2.5.1": {
+        "jutge_toolkit-2.5.1-py3-none-any.whl": "2.4.0@jutge_toolkit-2.4.0-py3-none-any.whl"
       }
     }
   },
@@ -10530,6 +11865,9 @@
       },
       "0.1.1": {
         "labelme2coco-0.1.1-py3-none-any.whl": "0.1.0@labelme2coco-0.1.0-py3-none-any.whl"
+      },
+      "0.1.2": {
+        "labelme2coco-0.1.2-py3-none-any.whl": "0.1.0@labelme2coco-0.1.0-py3-none-any.whl"
       }
     }
   },
@@ -11340,6 +12678,7 @@
         "libsass-0.19.4-cp27-cp27mu-manylinux1_x86_64.whl": "0.19.0@libsass-0.19.0-cp27-cp27m-macosx_10_14_intel.whl"
       },
       "0.20.0": {
+        "libsass-0.20.0-cp27-cp27m-macosx_10_14_intel.whl": "0.19.0@libsass-0.19.0-cp27-cp27m-macosx_10_14_intel.whl",
         "libsass-0.20.0-cp27-cp27m-win32.whl": "0.19.0@libsass-0.19.0-cp27-cp27m-macosx_10_14_intel.whl",
         "libsass-0.20.0-cp27-cp27m-win_amd64.whl": "0.19.0@libsass-0.19.0-cp27-cp27m-macosx_10_14_intel.whl",
         "libsass-0.20.0-cp27-cp27mu-manylinux1_x86_64.whl": "0.19.0@libsass-0.19.0-cp27-cp27m-macosx_10_14_intel.whl"
@@ -12166,6 +13505,7 @@
         "libsass-0.19.4-cp37-cp37m-win_amd64.whl": "0.19.0@libsass-0.19.0-cp37-cp37m-macosx_10_14_x86_64.whl"
       },
       "0.20.0": {
+        "libsass-0.20.0-cp37-abi3-macosx_10_14_x86_64.whl": "0.19.0@libsass-0.19.0-cp37-cp37m-macosx_10_14_x86_64.whl",
         "libsass-0.20.0-cp37-cp37m-win32.whl": "0.19.0@libsass-0.19.0-cp37-cp37m-macosx_10_14_x86_64.whl",
         "libsass-0.20.0-cp37-cp37m-win_amd64.whl": "0.19.0@libsass-0.19.0-cp37-cp37m-macosx_10_14_x86_64.whl"
       }
@@ -12188,6 +13528,50 @@
       "0.20.0": {
         "libsass-0.20.0-cp38-cp38-win32.whl": "0.19.2@libsass-0.19.2-cp38-cp38-manylinux1_x86_64.whl",
         "libsass-0.20.0-cp38-cp38-win_amd64.whl": "0.19.2@libsass-0.19.2-cp38-cp38-manylinux1_x86_64.whl"
+      }
+    }
+  },
+  "logger-tt": {
+    "py3": {
+      "1.0.0": {
+        "logger_tt-1.0.0-py3-none-any.whl": {}
+      },
+      "1.1.0": {
+        "logger_tt-1.1.0-py3-none-any.whl": "1.0.0@logger_tt-1.0.0-py3-none-any.whl"
+      },
+      "1.1.1": {
+        "logger_tt-1.1.1-py3-none-any.whl": "1.0.0@logger_tt-1.0.0-py3-none-any.whl"
+      },
+      "1.2.0": {
+        "logger_tt-1.2.0-py3-none-any.whl": "1.0.0@logger_tt-1.0.0-py3-none-any.whl"
+      },
+      "1.2.1": {
+        "logger_tt-1.2.1-py3-none-any.whl": "1.0.0@logger_tt-1.0.0-py3-none-any.whl"
+      },
+      "1.3.0": {
+        "logger_tt-1.3.0-py3-none-any.whl": "1.0.0@logger_tt-1.0.0-py3-none-any.whl"
+      },
+      "1.3.1": {
+        "logger_tt-1.3.1-py3-none-any.whl": "1.0.0@logger_tt-1.0.0-py3-none-any.whl"
+      },
+      "1.3.2": {
+        "logger_tt-1.3.2-py3-none-any.whl": "1.0.0@logger_tt-1.0.0-py3-none-any.whl"
+      },
+      "1.4.0": {
+        "logger_tt-1.4.0-py3-none-any.whl": "1.0.0@logger_tt-1.0.0-py3-none-any.whl"
+      }
+    }
+  },
+  "lonny-config": {
+    "py3": {
+      "0.1.0": {
+        "lonny_config-0.1.0-py3-none-any.whl": {}
+      },
+      "0.1.1": {
+        "lonny_config-0.1.1-py3-none-any.whl": "0.1.0@lonny_config-0.1.0-py3-none-any.whl"
+      },
+      "0.1.2": {
+        "lonny_config-0.1.2-py3-none-any.whl": "0.1.0@lonny_config-0.1.0-py3-none-any.whl"
       }
     }
   },
@@ -12238,6 +13622,9 @@
       },
       "0.2.1": {
         "MacSesh-0.2.1-py3-none-any.whl": "0.2.0@MacSesh-0.2.0-py3-none-any.whl"
+      },
+      "0.3.0": {
+        "MacSesh-0.3.0-py3-none-any.whl": "0.2.0@MacSesh-0.2.0-py3-none-any.whl"
       }
     }
   },
@@ -12415,6 +13802,26 @@
       "0.100.2": {
         "meraki-0.100.2-py3-none-any.whl": "0.100.0@meraki-0.100.0-py3-none-any.whl"
       },
+      "0.110.0": {
+        "meraki-0.110.0-py3-none-any.whl": {
+          "requires_dist": [
+            "requests",
+            "aiohttp"
+          ]
+        }
+      },
+      "0.110.1": {
+        "meraki-0.110.1-py3-none-any.whl": "0.110.0@meraki-0.110.0-py3-none-any.whl"
+      },
+      "0.110.2": {
+        "meraki-0.110.2-py3-none-any.whl": "0.110.0@meraki-0.110.0-py3-none-any.whl"
+      },
+      "0.110.3": {
+        "meraki-0.110.3-py3-none-any.whl": "0.110.0@meraki-0.110.0-py3-none-any.whl"
+      },
+      "0.110.4": {
+        "meraki-0.110.4-py3-none-any.whl": "0.110.0@meraki-0.110.0-py3-none-any.whl"
+      },
       "0.70.1": {
         "meraki-0.70.1-py3-none-any.whl": "0.100.0@meraki-0.100.0-py3-none-any.whl"
       },
@@ -12454,8 +13861,32 @@
       "1.0.0b1": {
         "meraki-1.0.0b1-py3-none-any.whl": "0.100.0@meraki-0.100.0-py3-none-any.whl"
       },
+      "1.0.0b10": {
+        "meraki-1.0.0b10-py3-none-any.whl": "0.110.0@meraki-0.110.0-py3-none-any.whl"
+      },
       "1.0.0b2": {
         "meraki-1.0.0b2-py3-none-any.whl": "0.100.0@meraki-0.100.0-py3-none-any.whl"
+      },
+      "1.0.0b3": {
+        "meraki-1.0.0b3-py3-none-any.whl": "0.110.0@meraki-0.110.0-py3-none-any.whl"
+      },
+      "1.0.0b4": {
+        "meraki-1.0.0b4-py3-none-any.whl": "0.110.0@meraki-0.110.0-py3-none-any.whl"
+      },
+      "1.0.0b5": {
+        "meraki-1.0.0b5-py3-none-any.whl": "0.110.0@meraki-0.110.0-py3-none-any.whl"
+      },
+      "1.0.0b6": {
+        "meraki-1.0.0b6-py3-none-any.whl": "0.110.0@meraki-0.110.0-py3-none-any.whl"
+      },
+      "1.0.0b7": {
+        "meraki-1.0.0b7-py3-none-any.whl": "0.110.0@meraki-0.110.0-py3-none-any.whl"
+      },
+      "1.0.0b8": {
+        "meraki-1.0.0b8-py3-none-any.whl": "0.110.0@meraki-0.110.0-py3-none-any.whl"
+      },
+      "1.0.0b9": {
+        "meraki-1.0.0b9-py3-none-any.whl": "0.110.0@meraki-0.110.0-py3-none-any.whl"
       }
     }
   },
@@ -12658,6 +14089,20 @@
     "py3": {
       "0.0.0": {
         "mlbazaar-0.0.0-py3-none-any.whl": {}
+      },
+      "1.0.0": {
+        "mlbazaar-1.0.0-py3-none-any.whl": {
+          "requires_dist": [
+            "autobazaar",
+            "mit-d3m",
+            "mlblocks",
+            "mlprimitives",
+            "baytune (<0.3,>=0.2.1)",
+            "pandas (<0.25,>=0.23.4)",
+            "gitpython (==3.0.2)",
+            "gitdb2 (==3.0.1)"
+          ]
+        }
       }
     }
   },
@@ -12727,6 +14172,32 @@
       },
       "0.1.0rc2": {
         "monai-0.1.0rc2-py3-none-any.whl": "0.1.0@monai-0.1.0-202004191421-py3-none-any.whl"
+      },
+      "0.2.0rc1": {
+        "monai-0.2.0rc1-202006231908-py3-none-any.whl": {
+          "provides_extras": [
+            "all",
+            "ignite",
+            "nibabel",
+            "pillow",
+            "skimage",
+            "tensorboard"
+          ],
+          "requires_dist": [
+            "torch (>=1.4)",
+            "numpy (>=1.17)",
+            "nibabel ; extra == 'all'",
+            "scikit-image (>=0.14.2) ; extra == 'all'",
+            "pillow ; extra == 'all'",
+            "tensorboard ; extra == 'all'",
+            "pytorch-ignite (==0.3.0) ; extra == 'all'",
+            "pytorch-ignite (==0.3.0) ; extra == 'ignite'",
+            "nibabel ; extra == 'nibabel'",
+            "pillow ; extra == 'pillow'",
+            "scikit-image (>=0.14.2) ; extra == 'skimage'",
+            "tensorboard ; extra == 'tensorboard'"
+          ]
+        }
       }
     }
   },
@@ -13193,6 +14664,23 @@
       }
     }
   },
+  "msedge-selenium-tools": {
+    "py3": {
+      "3.141.0": {
+        "msedge_selenium_tools-3.141.0-py3-none-any.whl": {
+          "requires_dist": [
+            "selenium (==3.141)"
+          ]
+        }
+      },
+      "3.141.1": {
+        "msedge_selenium_tools-3.141.1-py3-none-any.whl": "3.141.0@msedge_selenium_tools-3.141.0-py3-none-any.whl"
+      },
+      "3.141.2": {
+        "msedge_selenium_tools-3.141.2-py3-none-any.whl": "3.141.0@msedge_selenium_tools-3.141.0-py3-none-any.whl"
+      }
+    }
+  },
   "mtcnn": {
     "py3": {
       "0.1.0": {
@@ -13370,6 +14858,67 @@
             "mypy-boto3 (==1.10.38.0) ; extra == 'master'"
           ]
         }
+      },
+      "1.13.24.3": {
+        "mypy_boto3_rekognition-1.13.24.3-py3-none-any.whl": {
+          "requires_dist": [
+            "typing-extensions ; python_version < \"3.8\""
+          ]
+        }
+      },
+      "1.13.25.0": {
+        "mypy_boto3_rekognition-1.13.25.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_rekognition-1.13.24.3-py3-none-any.whl"
+      },
+      "1.13.26.0": {
+        "mypy_boto3_rekognition-1.13.26.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_rekognition-1.13.24.3-py3-none-any.whl"
+      },
+      "1.13.26.1": {
+        "mypy_boto3_rekognition-1.13.26.1-py3-none-any.whl": "1.13.24.3@mypy_boto3_rekognition-1.13.24.3-py3-none-any.whl"
+      },
+      "1.13.26.2": {
+        "mypy_boto3_rekognition-1.13.26.2-py3-none-any.whl": "1.13.24.3@mypy_boto3_rekognition-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.0.0": {
+        "mypy_boto3_rekognition-1.14.0.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_rekognition-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.0.1": {
+        "mypy_boto3_rekognition-1.14.0.1-py3-none-any.whl": "1.13.24.3@mypy_boto3_rekognition-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.0.2": {
+        "mypy_boto3_rekognition-1.14.0.2-py3-none-any.whl": "1.13.24.3@mypy_boto3_rekognition-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.1.0": {
+        "mypy_boto3_rekognition-1.14.1.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_rekognition-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.10.0": {
+        "mypy_boto3_rekognition-1.14.10.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_rekognition-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.11.0": {
+        "mypy_boto3_rekognition-1.14.11.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_rekognition-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.2.0": {
+        "mypy_boto3_rekognition-1.14.2.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_rekognition-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.3.0": {
+        "mypy_boto3_rekognition-1.14.3.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_rekognition-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.4.0": {
+        "mypy_boto3_rekognition-1.14.4.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_rekognition-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.5.0": {
+        "mypy_boto3_rekognition-1.14.5.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_rekognition-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.6.0": {
+        "mypy_boto3_rekognition-1.14.6.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_rekognition-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.7.0": {
+        "mypy_boto3_rekognition-1.14.7.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_rekognition-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.8.0": {
+        "mypy_boto3_rekognition-1.14.8.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_rekognition-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.9.0": {
+        "mypy_boto3_rekognition-1.14.9.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_rekognition-1.13.24.3-py3-none-any.whl"
       }
     }
   },
@@ -13528,6 +15077,67 @@
             "mypy-boto3 (==1.10.38.0) ; extra == 'master'"
           ]
         }
+      },
+      "1.13.24.3": {
+        "mypy_boto3_route53resolver-1.13.24.3-py3-none-any.whl": {
+          "requires_dist": [
+            "typing-extensions ; python_version < \"3.8\""
+          ]
+        }
+      },
+      "1.13.25.0": {
+        "mypy_boto3_route53resolver-1.13.25.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_route53resolver-1.13.24.3-py3-none-any.whl"
+      },
+      "1.13.26.0": {
+        "mypy_boto3_route53resolver-1.13.26.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_route53resolver-1.13.24.3-py3-none-any.whl"
+      },
+      "1.13.26.1": {
+        "mypy_boto3_route53resolver-1.13.26.1-py3-none-any.whl": "1.13.24.3@mypy_boto3_route53resolver-1.13.24.3-py3-none-any.whl"
+      },
+      "1.13.26.2": {
+        "mypy_boto3_route53resolver-1.13.26.2-py3-none-any.whl": "1.13.24.3@mypy_boto3_route53resolver-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.0.0": {
+        "mypy_boto3_route53resolver-1.14.0.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_route53resolver-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.0.1": {
+        "mypy_boto3_route53resolver-1.14.0.1-py3-none-any.whl": "1.13.24.3@mypy_boto3_route53resolver-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.0.2": {
+        "mypy_boto3_route53resolver-1.14.0.2-py3-none-any.whl": "1.13.24.3@mypy_boto3_route53resolver-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.1.0": {
+        "mypy_boto3_route53resolver-1.14.1.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_route53resolver-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.10.0": {
+        "mypy_boto3_route53resolver-1.14.10.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_route53resolver-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.11.0": {
+        "mypy_boto3_route53resolver-1.14.11.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_route53resolver-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.2.0": {
+        "mypy_boto3_route53resolver-1.14.2.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_route53resolver-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.3.0": {
+        "mypy_boto3_route53resolver-1.14.3.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_route53resolver-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.4.0": {
+        "mypy_boto3_route53resolver-1.14.4.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_route53resolver-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.5.0": {
+        "mypy_boto3_route53resolver-1.14.5.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_route53resolver-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.6.0": {
+        "mypy_boto3_route53resolver-1.14.6.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_route53resolver-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.7.0": {
+        "mypy_boto3_route53resolver-1.14.7.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_route53resolver-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.8.0": {
+        "mypy_boto3_route53resolver-1.14.8.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_route53resolver-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.9.0": {
+        "mypy_boto3_route53resolver-1.14.9.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_route53resolver-1.13.24.3-py3-none-any.whl"
       }
     }
   },
@@ -13638,6 +15248,17 @@
       }
     }
   },
+  "new-era": {
+    "py3": {
+      "2.0.0": {
+        "new_era-2.0.0-py3-none-any.whl": {
+          "requires_dist": [
+            "pyserial"
+          ]
+        }
+      }
+    }
+  },
   "nidcpower": {
     "py2.py3": {
       "0.3.0": {
@@ -13725,6 +15346,37 @@
       },
       "1.2.1": {
         "nidcpower-1.2.1-py2.py3-none-any.whl": "1.2.0@nidcpower-1.2.0-py2.py3-none-any.whl"
+      },
+      "1.3.0": {
+        "nidcpower-1.3.0-py2.py3-none-any.whl": {
+          "requires_dist": [
+            "hightime",
+            "enum34 ; python_version < \"3.4\"",
+            "singledispatch ; python_version < \"3.4\""
+          ]
+        }
+      },
+      "1.3.1": {
+        "nidcpower-1.3.1-py2.py3-none-any.whl": {
+          "requires_dist": [
+            "hightime (>=0.2.0)",
+            "enum34 ; python_version < \"3.4\"",
+            "singledispatch ; python_version < \"3.4\""
+          ]
+        }
+      }
+    }
+  },
+  "nonfig-sdk": {
+    "py3": {
+      "0.0.1": {
+        "nonfig_sdk-0.0.1-py3-none-any.whl": {}
+      },
+      "0.0.2": {
+        "nonfig_sdk-0.0.2-py3-none-any.whl": "0.0.1@nonfig_sdk-0.0.1-py3-none-any.whl"
+      },
+      "0.0.3": {
+        "nonfig_sdk-0.0.3-py3-none-any.whl": "0.0.1@nonfig_sdk-0.0.1-py3-none-any.whl"
       }
     }
   },
@@ -13742,6 +15394,13 @@
       },
       "0.4": {
         "nose_sfd-0.4-py2.py3-none-any.whl": "0.2@nose_sfd-0.2-py2.py3-none-any.whl"
+      }
+    }
+  },
+  "noteable": {
+    "py3": {
+      "0.0.1": {
+        "noteable-0.0.1-py3-none-any.whl": {}
       }
     }
   },
@@ -13788,6 +15447,54 @@
             "pyqt5"
           ]
         }
+      },
+      "0.5": {
+        "novelWriter-0.5-py3-none-any.whl": "0.4.5@novelWriter-0.4.5-py3-none-any.whl"
+      },
+      "0.5.1": {
+        "novelWriter-0.5.1-py3-none-any.whl": "0.4.5@novelWriter-0.4.5-py3-none-any.whl"
+      },
+      "0.5.2": {
+        "novelWriter-0.5.2-py3-none-any.whl": "0.4.5@novelWriter-0.4.5-py3-none-any.whl"
+      },
+      "0.6": {
+        "novelWriter-0.6-py3-none-any.whl": {
+          "requires_dist": [
+            "lxml",
+            "pyenchant",
+            "pyqt5"
+          ]
+        }
+      },
+      "0.6.1": {
+        "novelWriter-0.6.1-py3-none-any.whl": {
+          "requires_dist": [
+            "lxml (>=4.2.0)",
+            "pyenchant (>=3.0.0)",
+            "pyqt5 (>=5.2.1)"
+          ]
+        }
+      },
+      "0.6.2": {
+        "novelWriter-0.6.2-py3-none-any.whl": "0.6.1@novelWriter-0.6.1-py3-none-any.whl"
+      },
+      "0.6.3": {
+        "novelWriter-0.6.3-py3-none-any.whl": "0.6.1@novelWriter-0.6.1-py3-none-any.whl"
+      },
+      "0.7": {
+        "novelWriter-0.7-py3-none-any.whl": "0.6.1@novelWriter-0.6.1-py3-none-any.whl"
+      },
+      "0.7.1": {
+        "novelWriter-0.7.1-py3-none-any.whl": "0.6.1@novelWriter-0.6.1-py3-none-any.whl"
+      },
+      "0.8": {
+        "novelWriter-0.8-py3-none-any.whl": "0.6.1@novelWriter-0.6.1-py3-none-any.whl"
+      },
+      "0.9": {
+        "novelWriter-0.9-py3-none-any.whl": "0.6.1@novelWriter-0.6.1-py3-none-any.whl"
+      },
+      "0.9.1": {
+        "novelWriter-0.9.1-py3-none-any.whl": "0.6.1@novelWriter-0.6.1-py3-none-any.whl"
       }
     }
   },
@@ -13842,6 +15549,9 @@
       },
       "10.0.1.0.0.99.dev11": {
         "odoo10_addon_l10n_fr_chorus_factur_x-10.0.1.0.0.99.dev11-py2-none-any.whl": "10.0.1.0.0.99.dev10@odoo10_addon_l10n_fr_chorus_factur_x-10.0.1.0.0.99.dev10-py2-none-any.whl"
+      },
+      "10.0.1.0.0.99.dev13": {
+        "odoo10_addon_l10n_fr_chorus_factur_x-10.0.1.0.0.99.dev13-py2-none-any.whl": "10.0.1.0.0.99.dev10@odoo10_addon_l10n_fr_chorus_factur_x-10.0.1.0.0.99.dev10-py2-none-any.whl"
       },
       "10.0.1.0.0.99.dev4": {
         "odoo10_addon_l10n_fr_chorus_factur_x-10.0.1.0.0.99.dev4-py2-none-any.whl": "10.0.1.0.0@odoo10_addon_l10n_fr_chorus_factur_x-10.0.1.0.0-py2-none-any.whl"
@@ -13904,6 +15614,9 @@
       },
       "10.0.1.1.0.99.dev5": {
         "odoo10_addon_l10n_nl_xaf_auditfile_export-10.0.1.1.0.99.dev5-py2-none-any.whl": "10.0.1.0.0@odoo10_addon_l10n_nl_xaf_auditfile_export-10.0.1.0.0-py2-none-any.whl"
+      },
+      "10.0.1.2.0": {
+        "odoo10_addon_l10n_nl_xaf_auditfile_export-10.0.1.2.0-py2-none-any.whl": "10.0.1.0.0@odoo10_addon_l10n_nl_xaf_auditfile_export-10.0.1.0.0-py2-none-any.whl"
       }
     }
   },
@@ -14412,6 +16125,9 @@
       },
       "11.0.2.1.0.99.dev2": {
         "odoo11_addon_crm_claim-11.0.2.1.0.99.dev2-py2.py3-none-any.whl": "11.0.1.0.0@odoo11_addon_crm_claim-11.0.1.0.0-py2.py3-none-any.whl"
+      },
+      "11.0.2.1.0.99.dev4": {
+        "odoo11_addon_crm_claim-11.0.2.1.0.99.dev4-py2.py3-none-any.whl": "11.0.1.0.0@odoo11_addon_crm_claim-11.0.1.0.0-py2.py3-none-any.whl"
       }
     }
   },
@@ -14986,6 +16702,9 @@
       },
       "12.0.1.3.0.99.dev6": {
         "odoo12_addon_l10n_cl_toponym-12.0.1.3.0.99.dev6-py3-none-any.whl": "12.0.1.0.0.99.dev2@odoo12_addon_l10n_cl_toponym-12.0.1.0.0.99.dev2-py3-none-any.whl"
+      },
+      "12.0.1.3.1": {
+        "odoo12_addon_l10n_cl_toponym-12.0.1.3.1-py3-none-any.whl": "12.0.1.0.0.99.dev2@odoo12_addon_l10n_cl_toponym-12.0.1.0.0.99.dev2-py3-none-any.whl"
       }
     }
   },
@@ -15055,6 +16774,34 @@
       },
       "12.0.1.0.0.99.dev6": {
         "odoo12_addon_stock_production_lot_multi_company-12.0.1.0.0.99.dev6-py3-none-any.whl": "12.0.1.0.0.99.dev4@odoo12_addon_stock_production_lot_multi_company-12.0.1.0.0.99.dev4-py3-none-any.whl"
+      }
+    }
+  },
+  "odoo12-addon-website-sale-category-description": {
+    "py3": {
+      "12.0.1.0.1": {
+        "odoo12_addon_website_sale_category_description-12.0.1.0.1-py3-none-any.whl": {
+          "requires_dist": [
+            "odoo (<12.1dev,>=12.0a)"
+          ]
+        }
+      },
+      "12.0.1.0.1.99.dev1": {
+        "odoo12_addon_website_sale_category_description-12.0.1.0.1.99.dev1-py3-none-any.whl": "12.0.1.0.1@odoo12_addon_website_sale_category_description-12.0.1.0.1-py3-none-any.whl"
+      },
+      "12.0.1.0.2": {
+        "odoo12_addon_website_sale_category_description-12.0.1.0.2-py3-none-any.whl": "12.0.1.0.1@odoo12_addon_website_sale_category_description-12.0.1.0.1-py3-none-any.whl"
+      }
+    }
+  },
+  "odoo13-addon-website-analytics-piwik": {
+    "py3": {
+      "13.0.1.0.1.dev1": {
+        "odoo13_addon_website_analytics_piwik-13.0.1.0.1.dev1-py3-none-any.whl": {
+          "requires_dist": [
+            "odoo (<13.1dev,>=13.0a)"
+          ]
+        }
       }
     }
   },
@@ -15504,6 +17251,14 @@
             "newrelic-telemetry-sdk (<0.4,>=0.3.0)"
           ]
         }
+      },
+      "0.2.1": {
+        "opencensus_ext_newrelic-0.2.1-py2.py3-none-any.whl": {
+          "requires_dist": [
+            "opencensus (~=0.7)",
+            "newrelic-telemetry-sdk (<0.5,>=0.4.0)"
+          ]
+        }
       }
     }
   },
@@ -15641,6 +17396,58 @@
       }
     }
   },
+  "opentelemetry-ext-aiohttp-client": {
+    "py3": {
+      "0.10b0": {
+        "opentelemetry_ext_aiohttp_client-0.10b0-py3-none-any.whl": {
+          "provides_extras": [
+            "test"
+          ],
+          "requires_dist": [
+            "opentelemetry-api (>=0.10b0)",
+            "opentelemetry-instrumentation (==0.10b0)",
+            "aiohttp (~=3.0)"
+          ]
+        }
+      },
+      "0.7b0": {
+        "opentelemetry_ext_aiohttp_client-0.7b0-py3-none-any.whl": {
+          "requires_dist": [
+            "opentelemetry-api (>=0.7b0)",
+            "aiohttp (~=3.0)"
+          ]
+        }
+      },
+      "0.7b1": {
+        "opentelemetry_ext_aiohttp_client-0.7b1-py3-none-any.whl": {
+          "requires_dist": [
+            "opentelemetry-api (>=0.7b1)",
+            "aiohttp (~=3.0)"
+          ]
+        }
+      },
+      "0.8b0": {
+        "opentelemetry_ext_aiohttp_client-0.8b0-py3-none-any.whl": {
+          "requires_dist": [
+            "opentelemetry-api (>=0.8b0)",
+            "aiohttp (~=3.0)"
+          ]
+        }
+      },
+      "0.9b0": {
+        "opentelemetry_ext_aiohttp_client-0.9b0-py3-none-any.whl": {
+          "provides_extras": [
+            "test"
+          ],
+          "requires_dist": [
+            "opentelemetry-api (>=0.9b0)",
+            "opentelemetry-instrumentation (==0.9b0)",
+            "aiohttp (~=3.0)"
+          ]
+        }
+      }
+    }
+  },
   "oppaipy": {
     "py3": {
       "1.0.0": {
@@ -15662,6 +17469,48 @@
             "oppai"
           ]
         }
+      }
+    }
+  },
+  "opt3001": {
+    "py2": {
+      "1.0.0": {
+        "opt3001-1.0.0-py2-none-any.whl": {}
+      },
+      "1.0.1": {
+        "opt3001-1.0.1-py2-none-any.whl": "1.0.0@opt3001-1.0.0-py2-none-any.whl"
+      },
+      "1.0.2": {
+        "opt3001-1.0.2-py2-none-any.whl": "1.0.0@opt3001-1.0.0-py2-none-any.whl"
+      },
+      "1.0.3": {
+        "opt3001-1.0.3-py2-none-any.whl": "1.0.0@opt3001-1.0.0-py2-none-any.whl"
+      },
+      "1.0.4": {
+        "opt3001-1.0.4-py2-none-any.whl": "1.0.0@opt3001-1.0.0-py2-none-any.whl"
+      },
+      "1.1.0": {
+        "opt3001-1.1.0-py2-none-any.whl": "1.0.0@opt3001-1.0.0-py2-none-any.whl"
+      },
+      "1.1.1": {
+        "opt3001-1.1.1-py2-none-any.whl": "1.0.0@opt3001-1.0.0-py2-none-any.whl"
+      },
+      "1.1.2": {
+        "opt3001-1.1.2-py2-none-any.whl": "1.0.0@opt3001-1.0.0-py2-none-any.whl"
+      },
+      "1.1.3": {
+        "opt3001-1.1.3-py2-none-any.whl": "1.0.0@opt3001-1.0.0-py2-none-any.whl"
+      },
+      "1.1.4": {
+        "opt3001-1.1.4-py2-none-any.whl": "1.0.0@opt3001-1.0.0-py2-none-any.whl"
+      }
+    },
+    "py3": {
+      "0.0.1": {
+        "opt3001-0.0.1-py3-none-any.whl": {}
+      },
+      "0.0.2": {
+        "opt3001-0.0.2-py3-none-any.whl": "0.0.1@opt3001-0.0.1-py3-none-any.whl"
       }
     }
   },
@@ -15756,6 +17605,49 @@
       },
       "0.7.0a0": {
         "orient-0.7.0a0-py3-none-any.whl": "0.2.2@orient-0.2.2-py3-none-any.whl"
+      },
+      "0.8.0": {
+        "orient-0.8.0-py3-none-any.whl": {
+          "requires_dist": [
+            "dendroid (>=0.4.2)",
+            "prioq (>=0.1.1)",
+            "reprit (>=0.2.2)",
+            "robust (>=0.2.3)"
+          ]
+        }
+      },
+      "0.8.0a0": {
+        "orient-0.8.0a0-py3-none-any.whl": "0.8.0@orient-0.8.0-py3-none-any.whl"
+      },
+      "0.9.0": {
+        "orient-0.9.0-py3-none-any.whl": "0.8.0@orient-0.8.0-py3-none-any.whl"
+      },
+      "0.9.0a0": {
+        "orient-0.9.0a0-py3-none-any.whl": "0.8.0@orient-0.8.0-py3-none-any.whl"
+      },
+      "0.9.1": {
+        "orient-0.9.1-py3-none-any.whl": "0.8.0@orient-0.8.0-py3-none-any.whl"
+      },
+      "0.9.1a0": {
+        "orient-0.9.1a0-py3-none-any.whl": "0.8.0@orient-0.8.0-py3-none-any.whl"
+      },
+      "0.9.2": {
+        "orient-0.9.2-py3-none-any.whl": "0.8.0@orient-0.8.0-py3-none-any.whl"
+      },
+      "0.9.2a0": {
+        "orient-0.9.2a0-py3-none-any.whl": "0.8.0@orient-0.8.0-py3-none-any.whl"
+      },
+      "0.9.3": {
+        "orient-0.9.3-py3-none-any.whl": "0.8.0@orient-0.8.0-py3-none-any.whl"
+      },
+      "0.9.3a0": {
+        "orient-0.9.3a0-py3-none-any.whl": "0.8.0@orient-0.8.0-py3-none-any.whl"
+      },
+      "0.9.4": {
+        "orient-0.9.4-py3-none-any.whl": "0.8.0@orient-0.8.0-py3-none-any.whl"
+      },
+      "0.9.4a0": {
+        "orient-0.9.4a0-py3-none-any.whl": "0.8.0@orient-0.8.0-py3-none-any.whl"
       }
     }
   },
@@ -16083,6 +17975,9 @@
             "six (>=1.10.0)"
           ]
         }
+      },
+      "11.2.0": {
+        "os_apply_config-11.2.0-py3-none-any.whl": "11.1.0@os_apply_config-11.1.0-py3-none-any.whl"
       }
     }
   },
@@ -16289,6 +18184,18 @@
           "requires_dist": [
             "requests (<3.0,>=2.9.1)",
             "jsonpickle (<1.0,>=0.7.1)",
+            "cachecontrol (<1.0,>=0.11.7)",
+            "python-dateutil (<3.0,>=2.5.3)"
+          ]
+        }
+      }
+    },
+    "py3": {
+      "5.0.0": {
+        "pepipost-5.0.0-py3-none-any.whl": {
+          "requires_dist": [
+            "requests (<3.0,>=2.20.0)",
+            "jsonpickle (<2.0,>=0.7.1)",
             "cachecontrol (<1.0,>=0.11.7)",
             "python-dateutil (<3.0,>=2.5.3)"
           ]
@@ -16987,6 +18894,33 @@
       },
       "0.3.51": {
         "photo_grid-0.3.51-py3-none-any.whl": "0.3.5@photo_grid-0.3.5-py3-none-any.whl"
+      },
+      "1.0": {
+        "photo_grid-1.0-py3-none-any.whl": "0.3.5@photo_grid-0.3.5-py3-none-any.whl"
+      },
+      "1.0.1": {
+        "photo_grid-1.0.1-py3-none-any.whl": "0.3.5@photo_grid-0.3.5-py3-none-any.whl"
+      },
+      "1.0.2": {
+        "photo_grid-1.0.2-py3-none-any.whl": "0.3.5@photo_grid-0.3.5-py3-none-any.whl"
+      },
+      "1.0.3": {
+        "photo_grid-1.0.3-py3-none-any.whl": "0.3.5@photo_grid-0.3.5-py3-none-any.whl"
+      },
+      "1.1": {
+        "photo_grid-1.1-py3-none-any.whl": "0.3.5@photo_grid-0.3.5-py3-none-any.whl"
+      },
+      "1.1.1": {
+        "photo_grid-1.1.1-py3-none-any.whl": "0.3.5@photo_grid-0.3.5-py3-none-any.whl"
+      },
+      "1.1.2": {
+        "photo_grid-1.1.2-py3-none-any.whl": "0.3.5@photo_grid-0.3.5-py3-none-any.whl"
+      },
+      "1.1.3": {
+        "photo_grid-1.1.3-py3-none-any.whl": "0.3.5@photo_grid-0.3.5-py3-none-any.whl"
+      },
+      "1.1.4": {
+        "photo_grid-1.1.4-py3-none-any.whl": "0.3.5@photo_grid-0.3.5-py3-none-any.whl"
       }
     }
   },
@@ -17216,6 +19150,13 @@
       }
     }
   },
+  "pr0cks-extension": {
+    "py3": {
+      "0.1.0": {
+        "pr0cks_extension-0.1.0-py3-none-any.whl": {}
+      }
+    }
+  },
   "process-wrapper": {
     "py2.py3": {
       "0.3.0": {
@@ -17224,6 +19165,114 @@
             "psutil (>=2.2.1)"
           ]
         }
+      }
+    }
+  },
+  "progplot": {
+    "py3": {
+      "0.1.1": {
+        "progplot-0.1.1-py3-none-any.whl": {
+          "requires_dist": [
+            "pandas (>=1.0.3)",
+            "seaborn (>=0.10.1)",
+            "matplotlib (>=3.1.3)",
+            "Pillow (>=7.1.1)",
+            "numpy (>=1.18.1)",
+            "opencv-python (>=4.1)"
+          ]
+        }
+      },
+      "0.1.2": {
+        "progplot-0.1.2-py3-none-any.whl": "0.1.1@progplot-0.1.1-py3-none-any.whl"
+      },
+      "0.1.3": {
+        "progplot-0.1.3-py3-none-any.whl": "0.1.1@progplot-0.1.1-py3-none-any.whl"
+      },
+      "0.1.4": {
+        "progplot-0.1.4-py3-none-any.whl": "0.1.1@progplot-0.1.1-py3-none-any.whl"
+      },
+      "0.1.7.0": {
+        "progplot-0.1.7.0-py3-none-any.whl": "0.1.1@progplot-0.1.1-py3-none-any.whl"
+      },
+      "0.1.7.1": {
+        "progplot-0.1.7.1-py3-none-any.whl": {
+          "requires_dist": [
+            "pandas (>=1.0.3)",
+            "seaborn (>=0.10.1)",
+            "matplotlib (>=3.1.3)",
+            "Pillow (>=7.1.1)",
+            "numpy (>=1.18.1)",
+            "opencv-python (>=4.1)",
+            "ipython (>=7.13.0)",
+            "setuptools (>=46.4.0)"
+          ]
+        }
+      },
+      "0.2.0": {
+        "progplot-0.2.0-py3-none-any.whl": "0.1.1@progplot-0.1.1-py3-none-any.whl"
+      },
+      "0.2.1": {
+        "progplot-0.2.1-py3-none-any.whl": "0.1.1@progplot-0.1.1-py3-none-any.whl"
+      },
+      "0.2.10": {
+        "progplot-0.2.10-py3-none-any.whl": "0.1.1@progplot-0.1.1-py3-none-any.whl"
+      },
+      "0.2.11": {
+        "progplot-0.2.11-py3-none-any.whl": "0.1.1@progplot-0.1.1-py3-none-any.whl"
+      },
+      "0.2.12": {
+        "progplot-0.2.12-py3-none-any.whl": "0.1.1@progplot-0.1.1-py3-none-any.whl"
+      },
+      "0.2.13": {
+        "progplot-0.2.13-py3-none-any.whl": "0.1.1@progplot-0.1.1-py3-none-any.whl"
+      },
+      "0.2.14": {
+        "progplot-0.2.14-py3-none-any.whl": "0.1.1@progplot-0.1.1-py3-none-any.whl"
+      },
+      "0.2.15": {
+        "progplot-0.2.15-py3-none-any.whl": "0.1.1@progplot-0.1.1-py3-none-any.whl"
+      },
+      "0.2.16": {
+        "progplot-0.2.16-py3-none-any.whl": "0.1.1@progplot-0.1.1-py3-none-any.whl"
+      },
+      "0.2.17": {
+        "progplot-0.2.17-py3-none-any.whl": "0.1.1@progplot-0.1.1-py3-none-any.whl"
+      },
+      "0.2.18": {
+        "progplot-0.2.18-py3-none-any.whl": "0.1.1@progplot-0.1.1-py3-none-any.whl"
+      },
+      "0.2.19": {
+        "progplot-0.2.19-py3-none-any.whl": "0.1.1@progplot-0.1.1-py3-none-any.whl"
+      },
+      "0.2.2": {
+        "progplot-0.2.2-py3-none-any.whl": "0.1.1@progplot-0.1.1-py3-none-any.whl"
+      },
+      "0.2.20": {
+        "progplot-0.2.20-py3-none-any.whl": "0.1.1@progplot-0.1.1-py3-none-any.whl"
+      },
+      "0.2.21": {
+        "progplot-0.2.21-py3-none-any.whl": "0.1.1@progplot-0.1.1-py3-none-any.whl"
+      },
+      "0.2.22": {
+        "progplot-0.2.22-py3-none-any.whl": "0.1.1@progplot-0.1.1-py3-none-any.whl"
+      },
+      "0.2.3": {
+        "progplot-0.2.3-py3-none-any.whl": "0.1.1@progplot-0.1.1-py3-none-any.whl"
+      },
+      "0.2.4": {
+        "progplot-0.2.4-py3-none-any.whl": "0.1.1@progplot-0.1.1-py3-none-any.whl"
+      },
+      "0.2.6": {
+        "progplot-0.2.6-py3-none-any.whl": "0.1.1@progplot-0.1.1-py3-none-any.whl"
+      },
+      "0.2.7": {
+        "progplot-0.2.7-py3-none-any.whl": "0.1.1@progplot-0.1.1-py3-none-any.whl"
+      },
+      "0.2.8": {
+        "progplot-0.2.8-py3-none-any.whl": "0.1.1@progplot-0.1.1-py3-none-any.whl"
+      },
+      "0.2.9": {
+        "progplot-0.2.9-py3-none-any.whl": "0.1.1@progplot-0.1.1-py3-none-any.whl"
       }
     }
   },
@@ -17306,6 +19355,9 @@
       },
       "0.2": {
         "py_droplets-0.2-py3-none-any.whl": "0.1@py_droplets-0.1-py3-none-any.whl"
+      },
+      "0.3": {
+        "py_droplets-0.3-py3-none-any.whl": "0.1@py_droplets-0.1-py3-none-any.whl"
       }
     }
   },
@@ -17340,6 +19392,70 @@
           "requires_dist": [
             "numpy (>=1.7)",
             "cosmolopy"
+          ]
+        }
+      }
+    }
+  },
+  "pyail": {
+    "py3": {
+      "0.0.1": {
+        "pyail-0.0.1-py3-none-any.whl": {
+          "requires_dist": [
+            "requests (>=2.23.0,<3.0.0)"
+          ]
+        }
+      }
+    }
+  },
+  "pybrasilmf": {
+    "py3": {
+      "0.1.0": {
+        "PyBrasilMF-0.1.0-py3-none-any.whl": {}
+      },
+      "0.1.1": {
+        "PyBrasilMF-0.1.1-py3-none-any.whl": "0.1.0@PyBrasilMF-0.1.0-py3-none-any.whl"
+      },
+      "0.1.2": {
+        "PyBrasilMF-0.1.2-py3-none-any.whl": "0.1.0@PyBrasilMF-0.1.0-py3-none-any.whl"
+      },
+      "0.1.3": {
+        "PyBrasilMF-0.1.3-py3-none-any.whl": "0.1.0@PyBrasilMF-0.1.0-py3-none-any.whl"
+      },
+      "0.1.4": {
+        "PyBrasilMF-0.1.4-py3-none-any.whl": {
+          "requires_dist": [
+            "requests-html",
+            "requests",
+            "pandas",
+            "numpy",
+            "zipfile",
+            "datetime",
+            "io",
+            "ast"
+          ]
+        }
+      },
+      "0.1.5": {
+        "PyBrasilMF-0.1.5-py3-none-any.whl": {
+          "requires_dist": [
+            "requests-html",
+            "requests",
+            "pandas",
+            "numpy",
+            "zipfile",
+            "datetime"
+          ]
+        }
+      },
+      "0.1.5.1": {
+        "PyBrasilMF-0.1.5.1-py3-none-any.whl": {
+          "requires_dist": [
+            "requests-html",
+            "requests",
+            "pandas",
+            "numpy",
+            "datetime"
           ]
         }
       }
@@ -17771,6 +19887,26 @@
       },
       "0.5.13": {
         "pyexcel-0.5.13-py2.py3-none-any.whl": "0.5.12@pyexcel-0.5.12-py2.py3-none-any.whl"
+      },
+      "0.6.1": {
+        "pyexcel-0.6.1-py2.py3-none-any.whl": {
+          "provides_extras": [
+            "ods",
+            "xls",
+            "xlsx"
+          ],
+          "requires_dist": [
+            "lml (>=0.0.4)",
+            "pyexcel-io (>=0.5.19)",
+            "texttable (>=0.8.2)",
+            "pyexcel-ods3 (>=0.5.0) ; extra == 'ods'",
+            "pyexcel-xls (>=0.5.0) ; extra == 'xls'",
+            "pyexcel-xlsx (>=0.5.0) ; extra == 'xlsx'"
+          ]
+        }
+      },
+      "0.6.2": {
+        "pyexcel-0.6.2-py2.py3-none-any.whl": "0.6.1@pyexcel-0.6.1-py2.py3-none-any.whl"
       }
     }
   },
@@ -17824,6 +19960,55 @@
       },
       "0.9.5": {
         "pyfb_reporting-0.9.5-py2.py3-none-any.whl": "0.9.2@pyfb_reporting-0.9.2-py2.py3-none-any.whl"
+      },
+      "1.0.0": {
+        "pyfb_reporting-1.0.0-py2.py3-none-any.whl": {
+          "requires_dist": [
+            "django (<3,>=2.1.5)",
+            "django-model-utils (>=2.0)",
+            "djangorestframework (>=3.7.7)",
+            "django-crispy-forms (>=1.7.0)",
+            "pygments (>=2.4.2)",
+            "pyfb-company",
+            "pyfb-endpoint",
+            "pyfb-rating",
+            "pyfb-routing",
+            "pyfb-direction",
+            "pyfb-kamailio",
+            "pyfb-did"
+          ]
+        }
+      },
+      "1.1.0": {
+        "pyfb_reporting-1.1.0-py2.py3-none-any.whl": {
+          "requires_dist": [
+            "django (<3,>=2.2.12)",
+            "django-model-utils (>=2.0)",
+            "django-import-export (>=2.1.0)",
+            "djangorestframework (>=3.7.7)",
+            "django-crispy-forms (>=1.7.0)",
+            "pygments (>=2.4.2)",
+            "pyfb-company (>=1.0.0)",
+            "pyfb-endpoint (>=1.1.0)",
+            "pyfb-rating (>=1.0.0)",
+            "pyfb-routing (>=1.0.1)",
+            "pyfb-direction (>=1.0.4)",
+            "pyfb-kamailio (>=1.2.1)",
+            "pyfb-did (>=1.0.3)"
+          ]
+        }
+      },
+      "1.1.1": {
+        "pyfb_reporting-1.1.1-py2.py3-none-any.whl": "1.1.0@pyfb_reporting-1.1.0-py2.py3-none-any.whl"
+      },
+      "1.1.2": {
+        "pyfb_reporting-1.1.2-py2.py3-none-any.whl": "1.1.0@pyfb_reporting-1.1.0-py2.py3-none-any.whl"
+      },
+      "1.2.0": {
+        "pyfb_reporting-1.2.0-py2.py3-none-any.whl": "1.1.0@pyfb_reporting-1.1.0-py2.py3-none-any.whl"
+      },
+      "1.2.1": {
+        "pyfb_reporting-1.2.1-py2.py3-none-any.whl": "1.1.0@pyfb_reporting-1.1.0-py2.py3-none-any.whl"
       }
     }
   },
@@ -17947,6 +20132,18 @@
       },
       "3.1.3.dev0": {
         "pygna-3.1.3.dev0-py3-none-any.whl": "3.0.0.dev0@pygna-3.0.0.dev0-py3-none-any.whl"
+      },
+      "3.1.4.dev0": {
+        "pygna-3.1.4.dev0-py3-none-any.whl": "3.0.0.dev0@pygna-3.0.0.dev0-py3-none-any.whl"
+      },
+      "3.1.5.dev0": {
+        "pygna-3.1.5.dev0-py3-none-any.whl": "3.0.0.dev0@pygna-3.0.0.dev0-py3-none-any.whl"
+      },
+      "3.1.6.dev0": {
+        "pygna-3.1.6.dev0-py3-none-any.whl": "3.0.0.dev0@pygna-3.0.0.dev0-py3-none-any.whl"
+      },
+      "3.1.7.dev0": {
+        "pygna-3.1.7.dev0-py3-none-any.whl": "3.0.0.dev0@pygna-3.0.0.dev0-py3-none-any.whl"
       }
     }
   },
@@ -18758,6 +20955,12 @@
       },
       "0.0.4": {
         "pyppl_export-0.0.4-py3-none-any.whl": "0.0.1@pyppl_export-0.0.1-py3-none-any.whl"
+      },
+      "0.0.5": {
+        "pyppl_export-0.0.5-py3-none-any.whl": "0.0.1@pyppl_export-0.0.1-py3-none-any.whl"
+      },
+      "0.0.6": {
+        "pyppl_export-0.0.6-py3-none-any.whl": "0.0.1@pyppl_export-0.0.1-py3-none-any.whl"
       }
     }
   },
@@ -18848,6 +21051,18 @@
       }
     }
   },
+  "pyscan-annek": {
+    "py3": {
+      "0.2.0": {
+        "pyscan_annek-0.2.0-py3-none-any.whl": {
+          "requires_dist": [
+            "click (>=7.1.1,<8.0.0)",
+            "pywinrm (>=0.4.1,<0.5.0)"
+          ]
+        }
+      }
+    }
+  },
   "pysportsref": {
     "py3": {
       "0.0.0": {
@@ -18874,6 +21089,15 @@
     "3.7": {
       "0.1.0": {
         "pytest_doctest_ufunc-0.1.0-py2.py3-none-any.whl": {
+          "requires_dist": [
+            "pytest (>=3.5.0)"
+          ]
+        }
+      }
+    },
+    "py2.py3": {
+      "0.1.1": {
+        "pytest_doctest_ufunc-0.1.1-py2.py3-none-any.whl": {
           "requires_dist": [
             "pytest (>=3.5.0)"
           ]
@@ -19394,6 +21618,14 @@
       "0.4.15": {
         "python_magic-0.4.15-py2.py3-none-any.whl": "0.4.13@python_magic-0.4.13-py2.py3-none-any.whl"
       }
+    },
+    "py2.py3": {
+      "0.4.17": {
+        "python_magic-0.4.17-py2.py3-none-any.whl": {}
+      },
+      "0.4.18": {
+        "python_magic-0.4.18-py2.py3-none-any.whl": "0.4.17@python_magic-0.4.17-py2.py3-none-any.whl"
+      }
     }
   },
   "python-marketing-research": {
@@ -19424,6 +21656,16 @@
       },
       "0.2.0": {
         "pythontexfigures-0.2.0-py3-none-any.whl": "0.1.0@pythontexfigures-0.1.0-py3-none-any.whl"
+      }
+    }
+  },
+  "pytime-converter": {
+    "py3": {
+      "0.1.7": {
+        "pytime_converter-0.1.7-py3-none-any.whl": {}
+      },
+      "0.1.8": {
+        "pytime_converter-0.1.8-py3-none-any.whl": "0.1.7@pytime_converter-0.1.7-py3-none-any.whl"
       }
     }
   },
@@ -19812,6 +22054,9 @@
       },
       "0.7.3": {
         "quantulum3-0.7.3-py3-none-any.whl": "0.3.5@quantulum3-0.3.5-py3-none-any.whl"
+      },
+      "0.7.4": {
+        "quantulum3-0.7.4-py3-none-any.whl": "0.3.5@quantulum3-0.3.5-py3-none-any.whl"
       }
     }
   },
@@ -19874,6 +22119,19 @@
     "py3": {
       "0.0.0": {
         "QuickDynamics-0.0.0-py3-none-any.whl": {}
+      }
+    }
+  },
+  "qytools": {
+    "py3": {
+      "0.0.1": {
+        "qytools-0.0.1-py3-none-any.whl": {}
+      },
+      "0.0.2": {
+        "qytools-0.0.2-py3-none-any.whl": "0.0.1@qytools-0.0.1-py3-none-any.whl"
+      },
+      "0.0.3": {
+        "qytools-0.0.3-py3-none-any.whl": "0.0.1@qytools-0.0.1-py3-none-any.whl"
       }
     }
   },
@@ -20113,6 +22371,27 @@
     }
   },
   "rlschool": {
+    "py2": {
+      "0.3.0": {
+        "rlschool-0.3.0-py2-none-any.whl": {
+          "requires_dist": [
+            "Pillow (>=6.2.2)",
+            "six (>=1.12.0)",
+            "numpy (>=1.16.4)",
+            "configparser (>=3.7.4)",
+            "trimesh (>=3.2.39)",
+            "networkx (>=2.2)",
+            "colour (>=0.1.5)",
+            "scipy (>=0.12.0)",
+            "pyglet (==1.4.0) ; python_version < \"3\"",
+            "pyglet (==1.5.0) ; python_version >= \"3\""
+          ]
+        }
+      },
+      "0.3.1": {
+        "rlschool-0.3.1-py2-none-any.whl": "0.3.0@rlschool-0.3.0-py2-none-any.whl"
+      }
+    },
     "py2.py3": {
       "0.0.1": {
         "rlschool-0.0.1-py2.py3-none-any.whl": {
@@ -20135,6 +22414,25 @@
             "configparser (>=3.7.4)"
           ]
         }
+      },
+      "0.3.0": {
+        "rlschool-0.3.0-py3-none-any.whl": {
+          "requires_dist": [
+            "Pillow (>=6.2.2)",
+            "six (>=1.12.0)",
+            "numpy (>=1.16.4)",
+            "configparser (>=3.7.4)",
+            "trimesh (>=3.2.39)",
+            "networkx (>=2.2)",
+            "colour (>=0.1.5)",
+            "scipy (>=0.12.0)",
+            "pyglet (==1.4.0) ; python_version < \"3\"",
+            "pyglet (==1.5.0) ; python_version >= \"3\""
+          ]
+        }
+      },
+      "0.3.1": {
+        "rlschool-0.3.1-py3-none-any.whl": "0.3.0@rlschool-0.3.0-py3-none-any.whl"
       }
     }
   },
@@ -20149,6 +22447,20 @@
             "nolds"
           ]
         }
+      }
+    }
+  },
+  "rssh": {
+    "py3": {
+      "1.0": {
+        "rssh-1.0-py3-none-any.whl": {
+          "requires_dist": [
+            "pycryptodome (>=3.9.4)"
+          ]
+        }
+      },
+      "1.1": {
+        "rssh-1.1-py3-none-any.whl": "1.0@rssh-1.0-py3-none-any.whl"
       }
     }
   },
@@ -20202,6 +22514,19 @@
           "requires_dist": [
             "SQLAlchemy (>=0.5)",
             "AsynQueue (>=0.9.4)"
+          ]
+        }
+      }
+    }
+  },
+  "scabha": {
+    "py3": {
+      "0.3.0": {
+        "scabha-0.3.0-py3-none-any.whl": {
+          "requires_dist": [
+            "pyyaml",
+            "nose (>=1.3.7)",
+            "future-fstrings"
           ]
         }
       }
@@ -20342,6 +22667,17 @@
       }
     }
   },
+  "scriptengine-tasks-ecearth": {
+    "py3": {
+      "0.1.0": {
+        "scriptengine_tasks_ecearth-0.1.0-py3-none-any.whl": {
+          "requires_dist": [
+            "scriptengine (>=0.5)"
+          ]
+        }
+      }
+    }
+  },
   "sdk-ada": {
     "py3": {
       "0.0.1": {
@@ -20371,6 +22707,9 @@
       },
       "0.8.0": {
         "secretpy-0.8.0-py2.py3-none-any.whl": "0.4.0@secretpy-0.4.0-py2.py3-none-any.whl"
+      },
+      "0.9.0": {
+        "secretpy-0.9.0-py2.py3-none-any.whl": "0.4.0@secretpy-0.4.0-py2.py3-none-any.whl"
       }
     }
   },
@@ -20470,6 +22809,12 @@
       },
       "0.0.38": {
         "SeedsLabeler-0.0.38-py2.py3-none-any.whl": "0.0.10@SeedsLabeler-0.0.10-py2.py3-none-any.whl"
+      },
+      "0.0.39": {
+        "SeedsLabeler-0.0.39-py2.py3-none-any.whl": "0.0.10@SeedsLabeler-0.0.10-py2.py3-none-any.whl"
+      },
+      "0.0.40": {
+        "SeedsLabeler-0.0.40-py2.py3-none-any.whl": "0.0.10@SeedsLabeler-0.0.10-py2.py3-none-any.whl"
       },
       "0.0.6": {
         "SeedsLabeler-0.0.6-py2.py3-none-any.whl": "0.0.10@SeedsLabeler-0.0.10-py2.py3-none-any.whl"
@@ -20966,6 +23311,9 @@
       },
       "0.8.2": {
         "shiftboiler-0.8.2-py3-none-any.whl": "0.7.12@shiftboiler-0.7.12-py3-none-any.whl"
+      },
+      "0.8.3": {
+        "shiftboiler-0.8.3-py3-none-any.whl": "0.7.12@shiftboiler-0.7.12-py3-none-any.whl"
       }
     }
   },
@@ -21244,6 +23592,38 @@
     "py3": {
       "0.0.1": {
         "skytemple-0.0.1-py3-none-any.whl": {}
+      },
+      "0.0.3": {
+        "skytemple-0.0.3-py3-none-any.whl": {
+          "requires_dist": [
+            "ndspy (>=3.0.0)",
+            "skytemple-files (>=0.0.3)",
+            "pygobject (>=3.26.0)",
+            "pycairo (>=1.16.0)",
+            "natsort (>=7.0.0)",
+            "tilequant (>=0.0.1)",
+            "skytemple-ssb-debugger (>=0.0.3)"
+          ]
+        }
+      },
+      "0.0.3.post1": {
+        "skytemple-0.0.3.post1-py3-none-any.whl": "0.0.3@skytemple-0.0.3-py3-none-any.whl"
+      },
+      "0.0.4.post1": {
+        "skytemple-0.0.4.post1-py3-none-any.whl": {
+          "requires_dist": [
+            "ndspy (>=3.0.0)",
+            "skytemple-files (>=0.0.4)",
+            "pygobject (>=3.26.0)",
+            "pycairo (>=1.16.0)",
+            "natsort (>=7.0.0)",
+            "tilequant (>=0.0.1)",
+            "skytemple-ssb-debugger (>=0.0.4)"
+          ]
+        }
+      },
+      "0.0.4.post2": {
+        "skytemple-0.0.4.post2-py3-none-any.whl": "0.0.4.post1@skytemple-0.0.4.post1-py3-none-any.whl"
       }
     }
   },
@@ -21378,6 +23758,81 @@
     "py3": {
       "1.0.0": {
         "song_toollib2-1.0.0-py3-none-any.whl": {}
+      }
+    }
+  },
+  "spb-cli": {
+    "py3": {
+      "0.0.24": {
+        "spb_cli-0.0.24-py3-none-any.whl": {
+          "requires_dist": [
+            "bleach (==3.1.5)",
+            "certifi (==2020.4.5.1)",
+            "chardet (==3.0.4)",
+            "click (==7.1.2)",
+            "colorama (==0.4.3)",
+            "commonmark (==0.9.1)",
+            "docutils (==0.16)",
+            "idna (==2.9)",
+            "keyring (==21.2.1)",
+            "packaging (==20.4)",
+            "pkginfo (==1.5.0.1)",
+            "pprintpp (==0.4.0)",
+            "pygments (==2.6.1)",
+            "pyparsing (==2.4.7)",
+            "python-datauri (==0.2.8)",
+            "readme-renderer (==26.0)",
+            "requests (==2.23.0)",
+            "requests-toolbelt (==0.9.1)",
+            "rich (==1.1.6)",
+            "six (==1.14.0)",
+            "stringcase (==1.2.0)",
+            "tqdm (==4.46.0)",
+            "twine (==3.1.1)",
+            "typing-extensions (==3.7.4.2)",
+            "urllib3 (==1.25.9)",
+            "webencodings (==0.5.1)",
+            "zipp (==3.1.0)",
+            "importlib-metadata (==1.6.0) ; python_version < \"3.8\""
+          ]
+        }
+      },
+      "0.0.25": {
+        "spb_cli-0.0.25-py3-none-any.whl": {
+          "requires_dist": [
+            "bleach (==3.1.5)",
+            "certifi (==2020.4.5.1)",
+            "chardet (==3.0.4)",
+            "click (==7.1.2)",
+            "colorama (==0.4.3)",
+            "commonmark (==0.9.1)",
+            "docutils (==0.16)",
+            "idna (==2.9)",
+            "keyring (==21.2.1)",
+            "packaging (==20.4)",
+            "pkginfo (==1.5.0.1)",
+            "pprintpp (==0.4.0)",
+            "pygments (==2.6.1)",
+            "pyparsing (==2.4.7)",
+            "python-datauri (==0.2.8)",
+            "readme-renderer (==26.0)",
+            "requests (==2.23.0)",
+            "requests-toolbelt (==0.9.1)",
+            "rich (==1.2.3)",
+            "six (==1.15.0)",
+            "stringcase (==1.2.0)",
+            "tqdm (==4.46.0)",
+            "twine (==3.1.1)",
+            "typing-extensions (==3.7.4.2)",
+            "urllib3 (==1.25.9)",
+            "webencodings (==0.5.1)",
+            "zipp (==3.1.0)",
+            "importlib-metadata (==1.6.0) ; python_version < \"3.8\""
+          ]
+        }
+      },
+      "0.0.26": {
+        "spb_cli-0.0.26-py3-none-any.whl": "0.0.25@spb_cli-0.0.25-py3-none-any.whl"
       }
     }
   },
@@ -21845,6 +24300,90 @@
         "taichi-0.6.0-cp36-cp36m-macosx_10_14_x86_64.whl": "0.5.11@taichi-0.5.11-cp36-cp36m-macosx_10_14_x86_64.whl",
         "taichi-0.6.0-cp36-cp36m-manylinux1_x86_64.whl": "0.5.11@taichi-0.5.11-cp36-cp36m-macosx_10_14_x86_64.whl",
         "taichi-0.6.0-cp36-cp36m-win_amd64.whl": "0.5.11@taichi-0.5.11-cp36-cp36m-macosx_10_14_x86_64.whl"
+      },
+      "0.6.1": {
+        "taichi-0.6.1-cp36-cp36m-macosx_10_14_x86_64.whl": "0.5.11@taichi-0.5.11-cp36-cp36m-macosx_10_14_x86_64.whl",
+        "taichi-0.6.1-cp36-cp36m-manylinux1_x86_64.whl": "0.5.11@taichi-0.5.11-cp36-cp36m-macosx_10_14_x86_64.whl",
+        "taichi-0.6.1-cp36-cp36m-win_amd64.whl": "0.5.11@taichi-0.5.11-cp36-cp36m-macosx_10_14_x86_64.whl"
+      },
+      "0.6.10": {
+        "taichi-0.6.10-cp36-cp36m-macosx_10_14_x86_64.whl": {
+          "requires_dist": [
+            "numpy",
+            "pybind11 (>=2.5.0)",
+            "colorama",
+            "setuptools",
+            "astor",
+            "pytest",
+            "pytest-xdist"
+          ]
+        },
+        "taichi-0.6.10-cp36-cp36m-manylinux1_x86_64.whl": "0.6.10@taichi-0.6.10-cp36-cp36m-macosx_10_14_x86_64.whl",
+        "taichi-0.6.10-cp36-cp36m-win_amd64.whl": "0.6.10@taichi-0.6.10-cp36-cp36m-macosx_10_14_x86_64.whl"
+      },
+      "0.6.11": {
+        "taichi-0.6.11-cp36-cp36m-macosx_10_14_x86_64.whl": "0.6.10@taichi-0.6.10-cp36-cp36m-macosx_10_14_x86_64.whl",
+        "taichi-0.6.11-cp36-cp36m-manylinux1_x86_64.whl": "0.6.10@taichi-0.6.10-cp36-cp36m-macosx_10_14_x86_64.whl",
+        "taichi-0.6.11-cp36-cp36m-win_amd64.whl": "0.6.10@taichi-0.6.10-cp36-cp36m-macosx_10_14_x86_64.whl"
+      },
+      "0.6.12": {
+        "taichi-0.6.12-cp36-cp36m-macosx_10_14_x86_64.whl": "0.6.10@taichi-0.6.10-cp36-cp36m-macosx_10_14_x86_64.whl",
+        "taichi-0.6.12-cp36-cp36m-manylinux1_x86_64.whl": "0.6.10@taichi-0.6.10-cp36-cp36m-macosx_10_14_x86_64.whl",
+        "taichi-0.6.12-cp36-cp36m-win_amd64.whl": "0.6.10@taichi-0.6.10-cp36-cp36m-macosx_10_14_x86_64.whl"
+      },
+      "0.6.13": {
+        "taichi-0.6.13-cp36-cp36m-macosx_10_14_x86_64.whl": "0.6.10@taichi-0.6.10-cp36-cp36m-macosx_10_14_x86_64.whl",
+        "taichi-0.6.13-cp36-cp36m-manylinux1_x86_64.whl": "0.6.10@taichi-0.6.10-cp36-cp36m-macosx_10_14_x86_64.whl",
+        "taichi-0.6.13-cp36-cp36m-win_amd64.whl": "0.6.10@taichi-0.6.10-cp36-cp36m-macosx_10_14_x86_64.whl"
+      },
+      "0.6.2": {
+        "taichi-0.6.2-cp36-cp36m-macosx_10_14_x86_64.whl": "0.5.11@taichi-0.5.11-cp36-cp36m-macosx_10_14_x86_64.whl",
+        "taichi-0.6.2-cp36-cp36m-manylinux1_x86_64.whl": "0.5.11@taichi-0.5.11-cp36-cp36m-macosx_10_14_x86_64.whl",
+        "taichi-0.6.2-cp36-cp36m-win_amd64.whl": "0.5.11@taichi-0.5.11-cp36-cp36m-macosx_10_14_x86_64.whl"
+      },
+      "0.6.3": {
+        "taichi-0.6.3-cp36-cp36m-macosx_10_14_x86_64.whl": "0.5.11@taichi-0.5.11-cp36-cp36m-macosx_10_14_x86_64.whl",
+        "taichi-0.6.3-cp36-cp36m-manylinux1_x86_64.whl": "0.5.11@taichi-0.5.11-cp36-cp36m-macosx_10_14_x86_64.whl",
+        "taichi-0.6.3-cp36-cp36m-win_amd64.whl": "0.5.11@taichi-0.5.11-cp36-cp36m-macosx_10_14_x86_64.whl"
+      },
+      "0.6.4": {
+        "taichi-0.6.4-cp36-cp36m-macosx_10_14_x86_64.whl": "0.5.11@taichi-0.5.11-cp36-cp36m-macosx_10_14_x86_64.whl",
+        "taichi-0.6.4-cp36-cp36m-manylinux1_x86_64.whl": "0.5.11@taichi-0.5.11-cp36-cp36m-macosx_10_14_x86_64.whl",
+        "taichi-0.6.4-cp36-cp36m-win_amd64.whl": "0.5.11@taichi-0.5.11-cp36-cp36m-macosx_10_14_x86_64.whl"
+      },
+      "0.6.5": {
+        "taichi-0.6.5-cp36-cp36m-macosx_10_14_x86_64.whl": "0.5.11@taichi-0.5.11-cp36-cp36m-macosx_10_14_x86_64.whl",
+        "taichi-0.6.5-cp36-cp36m-manylinux1_x86_64.whl": "0.5.11@taichi-0.5.11-cp36-cp36m-macosx_10_14_x86_64.whl",
+        "taichi-0.6.5-cp36-cp36m-win_amd64.whl": "0.5.11@taichi-0.5.11-cp36-cp36m-macosx_10_14_x86_64.whl"
+      },
+      "0.6.6": {
+        "taichi-0.6.6-cp36-cp36m-macosx_10_14_x86_64.whl": {
+          "requires_dist": [
+            "numpy",
+            "pybind11 (>=2.5.0)",
+            "colorama",
+            "setuptools",
+            "astor",
+            "pytest"
+          ]
+        },
+        "taichi-0.6.6-cp36-cp36m-manylinux1_x86_64.whl": "0.6.6@taichi-0.6.6-cp36-cp36m-macosx_10_14_x86_64.whl",
+        "taichi-0.6.6-cp36-cp36m-win_amd64.whl": "0.6.6@taichi-0.6.6-cp36-cp36m-macosx_10_14_x86_64.whl"
+      },
+      "0.6.7": {
+        "taichi-0.6.7-cp36-cp36m-macosx_10_14_x86_64.whl": "0.6.6@taichi-0.6.6-cp36-cp36m-macosx_10_14_x86_64.whl",
+        "taichi-0.6.7-cp36-cp36m-manylinux1_x86_64.whl": "0.6.6@taichi-0.6.6-cp36-cp36m-macosx_10_14_x86_64.whl",
+        "taichi-0.6.7-cp36-cp36m-win_amd64.whl": "0.6.6@taichi-0.6.6-cp36-cp36m-macosx_10_14_x86_64.whl"
+      },
+      "0.6.8": {
+        "taichi-0.6.8-cp36-cp36m-macosx_10_14_x86_64.whl": "0.6.6@taichi-0.6.6-cp36-cp36m-macosx_10_14_x86_64.whl",
+        "taichi-0.6.8-cp36-cp36m-manylinux1_x86_64.whl": "0.6.6@taichi-0.6.6-cp36-cp36m-macosx_10_14_x86_64.whl",
+        "taichi-0.6.8-cp36-cp36m-win_amd64.whl": "0.6.6@taichi-0.6.6-cp36-cp36m-macosx_10_14_x86_64.whl"
+      },
+      "0.6.9": {
+        "taichi-0.6.9-cp36-cp36m-macosx_10_14_x86_64.whl": "0.6.10@taichi-0.6.10-cp36-cp36m-macosx_10_14_x86_64.whl",
+        "taichi-0.6.9-cp36-cp36m-manylinux1_x86_64.whl": "0.6.10@taichi-0.6.10-cp36-cp36m-macosx_10_14_x86_64.whl",
+        "taichi-0.6.9-cp36-cp36m-win_amd64.whl": "0.6.10@taichi-0.6.10-cp36-cp36m-macosx_10_14_x86_64.whl"
       }
     },
     "cp37": {
@@ -21886,6 +24425,90 @@
         "taichi-0.6.0-cp37-cp37m-macosx_10_14_x86_64.whl": "0.5.11@taichi-0.5.11-cp37-cp37m-macosx_10_14_x86_64.whl",
         "taichi-0.6.0-cp37-cp37m-manylinux1_x86_64.whl": "0.5.11@taichi-0.5.11-cp37-cp37m-macosx_10_14_x86_64.whl",
         "taichi-0.6.0-cp37-cp37m-win_amd64.whl": "0.5.11@taichi-0.5.11-cp37-cp37m-macosx_10_14_x86_64.whl"
+      },
+      "0.6.1": {
+        "taichi-0.6.1-cp37-cp37m-macosx_10_14_x86_64.whl": "0.5.11@taichi-0.5.11-cp37-cp37m-macosx_10_14_x86_64.whl",
+        "taichi-0.6.1-cp37-cp37m-manylinux1_x86_64.whl": "0.5.11@taichi-0.5.11-cp37-cp37m-macosx_10_14_x86_64.whl",
+        "taichi-0.6.1-cp37-cp37m-win_amd64.whl": "0.5.11@taichi-0.5.11-cp37-cp37m-macosx_10_14_x86_64.whl"
+      },
+      "0.6.10": {
+        "taichi-0.6.10-cp37-cp37m-macosx_10_14_x86_64.whl": {
+          "requires_dist": [
+            "numpy",
+            "pybind11 (>=2.5.0)",
+            "colorama",
+            "setuptools",
+            "astor",
+            "pytest",
+            "pytest-xdist"
+          ]
+        },
+        "taichi-0.6.10-cp37-cp37m-manylinux1_x86_64.whl": "0.6.10@taichi-0.6.10-cp37-cp37m-macosx_10_14_x86_64.whl",
+        "taichi-0.6.10-cp37-cp37m-win_amd64.whl": "0.6.10@taichi-0.6.10-cp37-cp37m-macosx_10_14_x86_64.whl"
+      },
+      "0.6.11": {
+        "taichi-0.6.11-cp37-cp37m-macosx_10_14_x86_64.whl": "0.6.10@taichi-0.6.10-cp37-cp37m-macosx_10_14_x86_64.whl",
+        "taichi-0.6.11-cp37-cp37m-manylinux1_x86_64.whl": "0.6.10@taichi-0.6.10-cp37-cp37m-macosx_10_14_x86_64.whl",
+        "taichi-0.6.11-cp37-cp37m-win_amd64.whl": "0.6.10@taichi-0.6.10-cp37-cp37m-macosx_10_14_x86_64.whl"
+      },
+      "0.6.12": {
+        "taichi-0.6.12-cp37-cp37m-macosx_10_14_x86_64.whl": "0.6.10@taichi-0.6.10-cp37-cp37m-macosx_10_14_x86_64.whl",
+        "taichi-0.6.12-cp37-cp37m-manylinux1_x86_64.whl": "0.6.10@taichi-0.6.10-cp37-cp37m-macosx_10_14_x86_64.whl",
+        "taichi-0.6.12-cp37-cp37m-win_amd64.whl": "0.6.10@taichi-0.6.10-cp37-cp37m-macosx_10_14_x86_64.whl"
+      },
+      "0.6.13": {
+        "taichi-0.6.13-cp37-cp37m-macosx_10_14_x86_64.whl": "0.6.10@taichi-0.6.10-cp37-cp37m-macosx_10_14_x86_64.whl",
+        "taichi-0.6.13-cp37-cp37m-manylinux1_x86_64.whl": "0.6.10@taichi-0.6.10-cp37-cp37m-macosx_10_14_x86_64.whl",
+        "taichi-0.6.13-cp37-cp37m-win_amd64.whl": "0.6.10@taichi-0.6.10-cp37-cp37m-macosx_10_14_x86_64.whl"
+      },
+      "0.6.2": {
+        "taichi-0.6.2-cp37-cp37m-macosx_10_14_x86_64.whl": "0.5.11@taichi-0.5.11-cp37-cp37m-macosx_10_14_x86_64.whl",
+        "taichi-0.6.2-cp37-cp37m-manylinux1_x86_64.whl": "0.5.11@taichi-0.5.11-cp37-cp37m-macosx_10_14_x86_64.whl",
+        "taichi-0.6.2-cp37-cp37m-win_amd64.whl": "0.5.11@taichi-0.5.11-cp37-cp37m-macosx_10_14_x86_64.whl"
+      },
+      "0.6.3": {
+        "taichi-0.6.3-cp37-cp37m-macosx_10_14_x86_64.whl": "0.5.11@taichi-0.5.11-cp37-cp37m-macosx_10_14_x86_64.whl",
+        "taichi-0.6.3-cp37-cp37m-manylinux1_x86_64.whl": "0.5.11@taichi-0.5.11-cp37-cp37m-macosx_10_14_x86_64.whl",
+        "taichi-0.6.3-cp37-cp37m-win_amd64.whl": "0.5.11@taichi-0.5.11-cp37-cp37m-macosx_10_14_x86_64.whl"
+      },
+      "0.6.4": {
+        "taichi-0.6.4-cp37-cp37m-macosx_10_14_x86_64.whl": "0.5.11@taichi-0.5.11-cp37-cp37m-macosx_10_14_x86_64.whl",
+        "taichi-0.6.4-cp37-cp37m-manylinux1_x86_64.whl": "0.5.11@taichi-0.5.11-cp37-cp37m-macosx_10_14_x86_64.whl",
+        "taichi-0.6.4-cp37-cp37m-win_amd64.whl": "0.5.11@taichi-0.5.11-cp37-cp37m-macosx_10_14_x86_64.whl"
+      },
+      "0.6.5": {
+        "taichi-0.6.5-cp37-cp37m-macosx_10_14_x86_64.whl": "0.5.11@taichi-0.5.11-cp37-cp37m-macosx_10_14_x86_64.whl",
+        "taichi-0.6.5-cp37-cp37m-manylinux1_x86_64.whl": "0.5.11@taichi-0.5.11-cp37-cp37m-macosx_10_14_x86_64.whl",
+        "taichi-0.6.5-cp37-cp37m-win_amd64.whl": "0.5.11@taichi-0.5.11-cp37-cp37m-macosx_10_14_x86_64.whl"
+      },
+      "0.6.6": {
+        "taichi-0.6.6-cp37-cp37m-macosx_10_14_x86_64.whl": {
+          "requires_dist": [
+            "numpy",
+            "pybind11 (>=2.5.0)",
+            "colorama",
+            "setuptools",
+            "astor",
+            "pytest"
+          ]
+        },
+        "taichi-0.6.6-cp37-cp37m-manylinux1_x86_64.whl": "0.6.6@taichi-0.6.6-cp37-cp37m-macosx_10_14_x86_64.whl",
+        "taichi-0.6.6-cp37-cp37m-win_amd64.whl": "0.6.6@taichi-0.6.6-cp37-cp37m-macosx_10_14_x86_64.whl"
+      },
+      "0.6.7": {
+        "taichi-0.6.7-cp37-cp37m-macosx_10_14_x86_64.whl": "0.6.6@taichi-0.6.6-cp37-cp37m-macosx_10_14_x86_64.whl",
+        "taichi-0.6.7-cp37-cp37m-manylinux1_x86_64.whl": "0.6.6@taichi-0.6.6-cp37-cp37m-macosx_10_14_x86_64.whl",
+        "taichi-0.6.7-cp37-cp37m-win_amd64.whl": "0.6.6@taichi-0.6.6-cp37-cp37m-macosx_10_14_x86_64.whl"
+      },
+      "0.6.8": {
+        "taichi-0.6.8-cp37-cp37m-macosx_10_14_x86_64.whl": "0.6.6@taichi-0.6.6-cp37-cp37m-macosx_10_14_x86_64.whl",
+        "taichi-0.6.8-cp37-cp37m-manylinux1_x86_64.whl": "0.6.6@taichi-0.6.6-cp37-cp37m-macosx_10_14_x86_64.whl",
+        "taichi-0.6.8-cp37-cp37m-win_amd64.whl": "0.6.6@taichi-0.6.6-cp37-cp37m-macosx_10_14_x86_64.whl"
+      },
+      "0.6.9": {
+        "taichi-0.6.9-cp37-cp37m-macosx_10_14_x86_64.whl": "0.6.10@taichi-0.6.10-cp37-cp37m-macosx_10_14_x86_64.whl",
+        "taichi-0.6.9-cp37-cp37m-manylinux1_x86_64.whl": "0.6.10@taichi-0.6.10-cp37-cp37m-macosx_10_14_x86_64.whl",
+        "taichi-0.6.9-cp37-cp37m-win_amd64.whl": "0.6.10@taichi-0.6.10-cp37-cp37m-macosx_10_14_x86_64.whl"
       }
     },
     "cp38": {
@@ -21927,6 +24550,101 @@
         "taichi-0.6.0-cp38-cp38-macosx_10_14_x86_64.whl": "0.5.11@taichi-0.5.11-cp38-cp38-macosx_10_14_x86_64.whl",
         "taichi-0.6.0-cp38-cp38-manylinux1_x86_64.whl": "0.5.11@taichi-0.5.11-cp38-cp38-macosx_10_14_x86_64.whl",
         "taichi-0.6.0-cp38-cp38-win_amd64.whl": "0.5.11@taichi-0.5.11-cp38-cp38-macosx_10_14_x86_64.whl"
+      },
+      "0.6.1": {
+        "taichi-0.6.1-cp38-cp38-macosx_10_14_x86_64.whl": "0.5.11@taichi-0.5.11-cp38-cp38-macosx_10_14_x86_64.whl",
+        "taichi-0.6.1-cp38-cp38-manylinux1_x86_64.whl": "0.5.11@taichi-0.5.11-cp38-cp38-macosx_10_14_x86_64.whl",
+        "taichi-0.6.1-cp38-cp38-win_amd64.whl": "0.5.11@taichi-0.5.11-cp38-cp38-macosx_10_14_x86_64.whl"
+      },
+      "0.6.10": {
+        "taichi-0.6.10-cp38-cp38-macosx_10_14_x86_64.whl": {
+          "requires_dist": [
+            "numpy",
+            "pybind11 (>=2.5.0)",
+            "colorama",
+            "setuptools",
+            "astor",
+            "pytest",
+            "pytest-xdist"
+          ]
+        },
+        "taichi-0.6.10-cp38-cp38-manylinux1_x86_64.whl": "0.6.10@taichi-0.6.10-cp38-cp38-macosx_10_14_x86_64.whl",
+        "taichi-0.6.10-cp38-cp38-win_amd64.whl": "0.6.10@taichi-0.6.10-cp38-cp38-macosx_10_14_x86_64.whl"
+      },
+      "0.6.11": {
+        "taichi-0.6.11-cp38-cp38-macosx_10_14_x86_64.whl": "0.6.10@taichi-0.6.10-cp38-cp38-macosx_10_14_x86_64.whl",
+        "taichi-0.6.11-cp38-cp38-manylinux1_x86_64.whl": "0.6.10@taichi-0.6.10-cp38-cp38-macosx_10_14_x86_64.whl",
+        "taichi-0.6.11-cp38-cp38-win_amd64.whl": "0.6.10@taichi-0.6.10-cp38-cp38-macosx_10_14_x86_64.whl"
+      },
+      "0.6.12": {
+        "taichi-0.6.12-cp38-cp38-macosx_10_14_x86_64.whl": "0.6.10@taichi-0.6.10-cp38-cp38-macosx_10_14_x86_64.whl",
+        "taichi-0.6.12-cp38-cp38-manylinux1_x86_64.whl": "0.6.10@taichi-0.6.10-cp38-cp38-macosx_10_14_x86_64.whl",
+        "taichi-0.6.12-cp38-cp38-win_amd64.whl": "0.6.10@taichi-0.6.10-cp38-cp38-macosx_10_14_x86_64.whl"
+      },
+      "0.6.13": {
+        "taichi-0.6.13-cp38-cp38-macosx_10_14_x86_64.whl": "0.6.10@taichi-0.6.10-cp38-cp38-macosx_10_14_x86_64.whl",
+        "taichi-0.6.13-cp38-cp38-manylinux1_x86_64.whl": {
+          "requires_dist": [
+            "numpy",
+            "pybind11 (>=2.5.0)",
+            "colorama",
+            "setuptools",
+            "astor",
+            "dill",
+            "pytest",
+            "pytest-xdist"
+          ]
+        },
+        "taichi-0.6.13-cp38-cp38-win_amd64.whl": "0.6.10@taichi-0.6.10-cp38-cp38-macosx_10_14_x86_64.whl"
+      },
+      "0.6.2": {
+        "taichi-0.6.2-cp38-cp38-macosx_10_14_x86_64.whl": "0.5.11@taichi-0.5.11-cp38-cp38-macosx_10_14_x86_64.whl",
+        "taichi-0.6.2-cp38-cp38-manylinux1_x86_64.whl": "0.5.11@taichi-0.5.11-cp38-cp38-macosx_10_14_x86_64.whl",
+        "taichi-0.6.2-cp38-cp38-win_amd64.whl": "0.5.11@taichi-0.5.11-cp38-cp38-macosx_10_14_x86_64.whl"
+      },
+      "0.6.3": {
+        "taichi-0.6.3-cp38-cp38-macosx_10_14_x86_64.whl": "0.5.11@taichi-0.5.11-cp38-cp38-macosx_10_14_x86_64.whl",
+        "taichi-0.6.3-cp38-cp38-manylinux1_x86_64.whl": "0.5.11@taichi-0.5.11-cp38-cp38-macosx_10_14_x86_64.whl",
+        "taichi-0.6.3-cp38-cp38-win_amd64.whl": "0.5.11@taichi-0.5.11-cp38-cp38-macosx_10_14_x86_64.whl"
+      },
+      "0.6.4": {
+        "taichi-0.6.4-cp38-cp38-macosx_10_14_x86_64.whl": "0.5.11@taichi-0.5.11-cp38-cp38-macosx_10_14_x86_64.whl",
+        "taichi-0.6.4-cp38-cp38-manylinux1_x86_64.whl": "0.5.11@taichi-0.5.11-cp38-cp38-macosx_10_14_x86_64.whl",
+        "taichi-0.6.4-cp38-cp38-win_amd64.whl": "0.5.11@taichi-0.5.11-cp38-cp38-macosx_10_14_x86_64.whl"
+      },
+      "0.6.5": {
+        "taichi-0.6.5-cp38-cp38-macosx_10_14_x86_64.whl": "0.5.11@taichi-0.5.11-cp38-cp38-macosx_10_14_x86_64.whl",
+        "taichi-0.6.5-cp38-cp38-manylinux1_x86_64.whl": "0.5.11@taichi-0.5.11-cp38-cp38-macosx_10_14_x86_64.whl",
+        "taichi-0.6.5-cp38-cp38-win_amd64.whl": "0.5.11@taichi-0.5.11-cp38-cp38-macosx_10_14_x86_64.whl"
+      },
+      "0.6.6": {
+        "taichi-0.6.6-cp38-cp38-macosx_10_14_x86_64.whl": {
+          "requires_dist": [
+            "numpy",
+            "pybind11 (>=2.5.0)",
+            "colorama",
+            "setuptools",
+            "astor",
+            "pytest"
+          ]
+        },
+        "taichi-0.6.6-cp38-cp38-manylinux1_x86_64.whl": "0.6.6@taichi-0.6.6-cp38-cp38-macosx_10_14_x86_64.whl",
+        "taichi-0.6.6-cp38-cp38-win_amd64.whl": "0.6.6@taichi-0.6.6-cp38-cp38-macosx_10_14_x86_64.whl"
+      },
+      "0.6.7": {
+        "taichi-0.6.7-cp38-cp38-macosx_10_14_x86_64.whl": "0.6.6@taichi-0.6.6-cp38-cp38-macosx_10_14_x86_64.whl",
+        "taichi-0.6.7-cp38-cp38-manylinux1_x86_64.whl": "0.6.6@taichi-0.6.6-cp38-cp38-macosx_10_14_x86_64.whl",
+        "taichi-0.6.7-cp38-cp38-win_amd64.whl": "0.6.6@taichi-0.6.6-cp38-cp38-macosx_10_14_x86_64.whl"
+      },
+      "0.6.8": {
+        "taichi-0.6.8-cp38-cp38-macosx_10_14_x86_64.whl": "0.6.6@taichi-0.6.6-cp38-cp38-macosx_10_14_x86_64.whl",
+        "taichi-0.6.8-cp38-cp38-manylinux1_x86_64.whl": "0.6.6@taichi-0.6.6-cp38-cp38-macosx_10_14_x86_64.whl",
+        "taichi-0.6.8-cp38-cp38-win_amd64.whl": "0.6.6@taichi-0.6.6-cp38-cp38-macosx_10_14_x86_64.whl"
+      },
+      "0.6.9": {
+        "taichi-0.6.9-cp38-cp38-macosx_10_14_x86_64.whl": "0.6.10@taichi-0.6.10-cp38-cp38-macosx_10_14_x86_64.whl",
+        "taichi-0.6.9-cp38-cp38-manylinux1_x86_64.whl": "0.6.10@taichi-0.6.10-cp38-cp38-macosx_10_14_x86_64.whl",
+        "taichi-0.6.9-cp38-cp38-win_amd64.whl": "0.6.10@taichi-0.6.10-cp38-cp38-macosx_10_14_x86_64.whl"
       }
     }
   },
@@ -22372,6 +25090,231 @@
       },
       "2.2.0.dev20200502": {
         "tf_nightly_gpu-2.2.0.dev20200502-cp35-cp35m-manylinux2010_x86_64.whl": "2.2.0.dev20200331@tf_nightly_gpu-2.2.0.dev20200331-cp35-cp35m-manylinux2010_x86_64.whl"
+      },
+      "2.2.0.dev20200503": {
+        "tf_nightly_gpu-2.2.0.dev20200503-cp35-cp35m-manylinux2010_x86_64.whl": "2.2.0.dev20200331@tf_nightly_gpu-2.2.0.dev20200331-cp35-cp35m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.2.0.dev20200503-cp35-cp35m-win_amd64.whl": "2.2.0.dev20200331@tf_nightly_gpu-2.2.0.dev20200331-cp35-cp35m-win_amd64.whl"
+      },
+      "2.2.0.dev20200504": {
+        "tf_nightly_gpu-2.2.0.dev20200504-cp35-cp35m-manylinux2010_x86_64.whl": "2.2.0.dev20200331@tf_nightly_gpu-2.2.0.dev20200331-cp35-cp35m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.2.0.dev20200504-cp35-cp35m-win_amd64.whl": "2.2.0.dev20200331@tf_nightly_gpu-2.2.0.dev20200331-cp35-cp35m-win_amd64.whl"
+      },
+      "2.2.0.dev20200505": {
+        "tf_nightly_gpu-2.2.0.dev20200505-cp35-cp35m-manylinux2010_x86_64.whl": "2.2.0.dev20200331@tf_nightly_gpu-2.2.0.dev20200331-cp35-cp35m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.2.0.dev20200505-cp35-cp35m-win_amd64.whl": "2.2.0.dev20200331@tf_nightly_gpu-2.2.0.dev20200331-cp35-cp35m-win_amd64.whl"
+      },
+      "2.2.0.dev20200506": {
+        "tf_nightly_gpu-2.2.0.dev20200506-cp35-cp35m-manylinux2010_x86_64.whl": "2.2.0.dev20200331@tf_nightly_gpu-2.2.0.dev20200331-cp35-cp35m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.2.0.dev20200506-cp35-cp35m-win_amd64.whl": "2.2.0.dev20200331@tf_nightly_gpu-2.2.0.dev20200331-cp35-cp35m-win_amd64.whl"
+      },
+      "2.2.0.dev20200507": {
+        "tf_nightly_gpu-2.2.0.dev20200507-cp35-cp35m-manylinux2010_x86_64.whl": "2.2.0.dev20200331@tf_nightly_gpu-2.2.0.dev20200331-cp35-cp35m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.2.0.dev20200507-cp35-cp35m-win_amd64.whl": "2.2.0.dev20200331@tf_nightly_gpu-2.2.0.dev20200331-cp35-cp35m-win_amd64.whl"
+      },
+      "2.2.0.dev20200508": {
+        "tf_nightly_gpu-2.2.0.dev20200508-cp35-cp35m-manylinux2010_x86_64.whl": "2.2.0.dev20200331@tf_nightly_gpu-2.2.0.dev20200331-cp35-cp35m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.2.0.dev20200508-cp35-cp35m-win_amd64.whl": "2.2.0.dev20200331@tf_nightly_gpu-2.2.0.dev20200331-cp35-cp35m-win_amd64.whl"
+      },
+      "2.3.0.dev20200512": {
+        "tf_nightly_gpu-2.3.0.dev20200512-cp35-cp35m-manylinux2010_x86_64.whl": "2.2.0.dev20200331@tf_nightly_gpu-2.2.0.dev20200331-cp35-cp35m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200513": {
+        "tf_nightly_gpu-2.3.0.dev20200513-cp35-cp35m-manylinux2010_x86_64.whl": "2.2.0.dev20200331@tf_nightly_gpu-2.2.0.dev20200331-cp35-cp35m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200514": {
+        "tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-manylinux2010_x86_64.whl": {
+          "requires_dist": [
+            "absl-py (>=0.7.0)",
+            "astunparse (==1.6.3)",
+            "gast (==0.3.3)",
+            "google-pasta (>=0.1.8)",
+            "h5py (<2.11.0,>=2.10.0)",
+            "keras-preprocessing (<1.2,>=1.1.1)",
+            "numpy (<2.0,>=1.16.0)",
+            "opt-einsum (>=2.3.2)",
+            "protobuf (>=3.9.2)",
+            "tb-nightly (<2.4.0a0,>=2.3.0a0)",
+            "tf-estimator-nightly",
+            "termcolor (>=1.1.0)",
+            "wrapt (>=1.11.1)",
+            "wheel (>=0.26)",
+            "six (>=1.12.0)",
+            "scipy (==1.4.1)",
+            "grpcio (>=1.8.6)"
+          ]
+        },
+        "tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200515": {
+        "tf_nightly_gpu-2.3.0.dev20200515-cp35-cp35m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200515-cp35-cp35m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200516": {
+        "tf_nightly_gpu-2.3.0.dev20200516-cp35-cp35m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200516-cp35-cp35m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200518": {
+        "tf_nightly_gpu-2.3.0.dev20200518-cp35-cp35m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200518-cp35-cp35m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200519": {
+        "tf_nightly_gpu-2.3.0.dev20200519-cp35-cp35m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200519-cp35-cp35m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200520": {
+        "tf_nightly_gpu-2.3.0.dev20200520-cp35-cp35m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200521": {
+        "tf_nightly_gpu-2.3.0.dev20200521-cp35-cp35m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200521-cp35-cp35m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200522": {
+        "tf_nightly_gpu-2.3.0.dev20200522-cp35-cp35m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200522-cp35-cp35m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200523": {
+        "tf_nightly_gpu-2.3.0.dev20200523-cp35-cp35m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200524": {
+        "tf_nightly_gpu-2.3.0.dev20200524-cp35-cp35m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200524-cp35-cp35m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200525": {
+        "tf_nightly_gpu-2.3.0.dev20200525-cp35-cp35m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200525-cp35-cp35m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200526": {
+        "tf_nightly_gpu-2.3.0.dev20200526-cp35-cp35m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200526-cp35-cp35m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200527": {
+        "tf_nightly_gpu-2.3.0.dev20200527-cp35-cp35m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200528": {
+        "tf_nightly_gpu-2.3.0.dev20200528-cp35-cp35m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200528-cp35-cp35m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200529": {
+        "tf_nightly_gpu-2.3.0.dev20200529-cp35-cp35m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200529-cp35-cp35m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200530": {
+        "tf_nightly_gpu-2.3.0.dev20200530-cp35-cp35m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200530-cp35-cp35m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200531": {
+        "tf_nightly_gpu-2.3.0.dev20200531-cp35-cp35m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200601": {
+        "tf_nightly_gpu-2.3.0.dev20200601-cp35-cp35m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200602": {
+        "tf_nightly_gpu-2.3.0.dev20200602-cp35-cp35m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200602-cp35-cp35m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200603": {
+        "tf_nightly_gpu-2.3.0.dev20200603-cp35-cp35m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200603-cp35-cp35m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200604": {
+        "tf_nightly_gpu-2.3.0.dev20200604-cp35-cp35m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200604-cp35-cp35m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200605": {
+        "tf_nightly_gpu-2.3.0.dev20200605-cp35-cp35m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200605-cp35-cp35m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200608": {
+        "tf_nightly_gpu-2.3.0.dev20200608-cp35-cp35m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200608-cp35-cp35m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200609": {
+        "tf_nightly_gpu-2.3.0.dev20200609-cp35-cp35m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200609-cp35-cp35m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200610": {
+        "tf_nightly_gpu-2.3.0.dev20200610-cp35-cp35m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200610-cp35-cp35m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200611": {
+        "tf_nightly_gpu-2.3.0.dev20200611-cp35-cp35m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200611-cp35-cp35m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200612": {
+        "tf_nightly_gpu-2.3.0.dev20200612-cp35-cp35m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200612-cp35-cp35m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200613": {
+        "tf_nightly_gpu-2.3.0.dev20200613-cp35-cp35m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200613-cp35-cp35m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200614": {
+        "tf_nightly_gpu-2.3.0.dev20200614-cp35-cp35m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200614-cp35-cp35m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200615": {
+        "tf_nightly_gpu-2.3.0.dev20200615-cp35-cp35m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200615-cp35-cp35m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200616": {
+        "tf_nightly_gpu-2.3.0.dev20200616-cp35-cp35m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200616-cp35-cp35m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200617": {
+        "tf_nightly_gpu-2.3.0.dev20200617-cp35-cp35m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200617-cp35-cp35m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200618": {
+        "tf_nightly_gpu-2.3.0.dev20200618-cp35-cp35m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200618-cp35-cp35m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200619": {
+        "tf_nightly_gpu-2.3.0.dev20200619-cp35-cp35m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200619-cp35-cp35m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200620": {
+        "tf_nightly_gpu-2.3.0.dev20200620-cp35-cp35m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200620-cp35-cp35m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200621": {
+        "tf_nightly_gpu-2.3.0.dev20200621-cp35-cp35m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200621-cp35-cp35m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200622": {
+        "tf_nightly_gpu-2.3.0.dev20200622-cp35-cp35m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200622-cp35-cp35m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp35-cp35m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200623": {
+        "tf_nightly_gpu-2.3.0.dev20200623-cp35-cp35m-manylinux2010_x86_64.whl": {
+          "requires_dist": [
+            "absl-py (>=0.7.0)",
+            "astunparse (==1.6.3)",
+            "gast (==0.3.3)",
+            "google-pasta (>=0.1.8)",
+            "h5py (<2.11.0,>=2.10.0)",
+            "keras-preprocessing (<1.2,>=1.1.1)",
+            "numpy (<1.19.0,>=1.16.0)",
+            "opt-einsum (>=2.3.2)",
+            "protobuf (>=3.9.2)",
+            "tb-nightly (<2.4.0a0,>=2.3.0a0)",
+            "tf-estimator-nightly",
+            "termcolor (>=1.1.0)",
+            "wrapt (>=1.11.1)",
+            "wheel (>=0.26)",
+            "six (>=1.12.0)",
+            "scipy (==1.4.1)",
+            "grpcio (>=1.8.6)"
+          ]
+        },
+        "tf_nightly_gpu-2.3.0.dev20200623-cp35-cp35m-win_amd64.whl": "2.3.0.dev20200623@tf_nightly_gpu-2.3.0.dev20200623-cp35-cp35m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200624": {
+        "tf_nightly_gpu-2.3.0.dev20200624-cp35-cp35m-manylinux2010_x86_64.whl": "2.3.0.dev20200623@tf_nightly_gpu-2.3.0.dev20200623-cp35-cp35m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200624-cp35-cp35m-win_amd64.whl": "2.3.0.dev20200623@tf_nightly_gpu-2.3.0.dev20200623-cp35-cp35m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200625": {
+        "tf_nightly_gpu-2.3.0.dev20200625-cp35-cp35m-manylinux2010_x86_64.whl": "2.3.0.dev20200623@tf_nightly_gpu-2.3.0.dev20200623-cp35-cp35m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200625-cp35-cp35m-win_amd64.whl": "2.3.0.dev20200623@tf_nightly_gpu-2.3.0.dev20200623-cp35-cp35m-manylinux2010_x86_64.whl"
       }
     },
     "cp36": {
@@ -22684,6 +25627,225 @@
       },
       "2.2.0.dev20200502": {
         "tf_nightly_gpu-2.2.0.dev20200502-cp36-cp36m-manylinux2010_x86_64.whl": "2.2.0.dev20200331@tf_nightly_gpu-2.2.0.dev20200331-cp36-cp36m-manylinux2010_x86_64.whl"
+      },
+      "2.2.0.dev20200503": {
+        "tf_nightly_gpu-2.2.0.dev20200503-cp36-cp36m-manylinux2010_x86_64.whl": "2.2.0.dev20200331@tf_nightly_gpu-2.2.0.dev20200331-cp36-cp36m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.2.0.dev20200503-cp36-cp36m-win_amd64.whl": "2.2.0.dev20200331@tf_nightly_gpu-2.2.0.dev20200331-cp36-cp36m-manylinux2010_x86_64.whl"
+      },
+      "2.2.0.dev20200504": {
+        "tf_nightly_gpu-2.2.0.dev20200504-cp36-cp36m-manylinux2010_x86_64.whl": "2.2.0.dev20200331@tf_nightly_gpu-2.2.0.dev20200331-cp36-cp36m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.2.0.dev20200504-cp36-cp36m-win_amd64.whl": "2.2.0.dev20200331@tf_nightly_gpu-2.2.0.dev20200331-cp36-cp36m-manylinux2010_x86_64.whl"
+      },
+      "2.2.0.dev20200505": {
+        "tf_nightly_gpu-2.2.0.dev20200505-cp36-cp36m-manylinux2010_x86_64.whl": "2.2.0.dev20200331@tf_nightly_gpu-2.2.0.dev20200331-cp36-cp36m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.2.0.dev20200505-cp36-cp36m-win_amd64.whl": "2.2.0.dev20200331@tf_nightly_gpu-2.2.0.dev20200331-cp36-cp36m-manylinux2010_x86_64.whl"
+      },
+      "2.2.0.dev20200506": {
+        "tf_nightly_gpu-2.2.0.dev20200506-cp36-cp36m-manylinux2010_x86_64.whl": "2.2.0.dev20200331@tf_nightly_gpu-2.2.0.dev20200331-cp36-cp36m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.2.0.dev20200506-cp36-cp36m-win_amd64.whl": "2.2.0.dev20200331@tf_nightly_gpu-2.2.0.dev20200331-cp36-cp36m-manylinux2010_x86_64.whl"
+      },
+      "2.2.0.dev20200507": {
+        "tf_nightly_gpu-2.2.0.dev20200507-cp36-cp36m-manylinux2010_x86_64.whl": "2.2.0.dev20200331@tf_nightly_gpu-2.2.0.dev20200331-cp36-cp36m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.2.0.dev20200507-cp36-cp36m-win_amd64.whl": "2.2.0.dev20200331@tf_nightly_gpu-2.2.0.dev20200331-cp36-cp36m-manylinux2010_x86_64.whl"
+      },
+      "2.2.0.dev20200508": {
+        "tf_nightly_gpu-2.2.0.dev20200508-cp36-cp36m-manylinux2010_x86_64.whl": "2.2.0.dev20200331@tf_nightly_gpu-2.2.0.dev20200331-cp36-cp36m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.2.0.dev20200508-cp36-cp36m-win_amd64.whl": "2.2.0.dev20200331@tf_nightly_gpu-2.2.0.dev20200331-cp36-cp36m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200512": {
+        "tf_nightly_gpu-2.3.0.dev20200512-cp36-cp36m-manylinux2010_x86_64.whl": "2.2.0.dev20200331@tf_nightly_gpu-2.2.0.dev20200331-cp36-cp36m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200513": {
+        "tf_nightly_gpu-2.3.0.dev20200513-cp36-cp36m-manylinux2010_x86_64.whl": "2.2.0.dev20200331@tf_nightly_gpu-2.2.0.dev20200331-cp36-cp36m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200514": {
+        "tf_nightly_gpu-2.3.0.dev20200514-cp36-cp36m-manylinux2010_x86_64.whl": {
+          "requires_dist": [
+            "absl-py (>=0.7.0)",
+            "astunparse (==1.6.3)",
+            "gast (==0.3.3)",
+            "google-pasta (>=0.1.8)",
+            "h5py (<2.11.0,>=2.10.0)",
+            "keras-preprocessing (<1.2,>=1.1.1)",
+            "numpy (<2.0,>=1.16.0)",
+            "opt-einsum (>=2.3.2)",
+            "protobuf (>=3.9.2)",
+            "tb-nightly (<2.4.0a0,>=2.3.0a0)",
+            "tf-estimator-nightly",
+            "termcolor (>=1.1.0)",
+            "wrapt (>=1.11.1)",
+            "wheel (>=0.26)",
+            "six (>=1.12.0)",
+            "scipy (==1.4.1)",
+            "grpcio (>=1.8.6)"
+          ]
+        },
+        "tf_nightly_gpu-2.3.0.dev20200514-cp36-cp36m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp36-cp36m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200515": {
+        "tf_nightly_gpu-2.3.0.dev20200515-cp36-cp36m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp36-cp36m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200515-cp36-cp36m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp36-cp36m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200516": {
+        "tf_nightly_gpu-2.3.0.dev20200516-cp36-cp36m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp36-cp36m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200516-cp36-cp36m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp36-cp36m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200518": {
+        "tf_nightly_gpu-2.3.0.dev20200518-cp36-cp36m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp36-cp36m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200519": {
+        "tf_nightly_gpu-2.3.0.dev20200519-cp36-cp36m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp36-cp36m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200519-cp36-cp36m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp36-cp36m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200520": {
+        "tf_nightly_gpu-2.3.0.dev20200520-cp36-cp36m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp36-cp36m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200521": {
+        "tf_nightly_gpu-2.3.0.dev20200521-cp36-cp36m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp36-cp36m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200521-cp36-cp36m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp36-cp36m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200522": {
+        "tf_nightly_gpu-2.3.0.dev20200522-cp36-cp36m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp36-cp36m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200522-cp36-cp36m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp36-cp36m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200523": {
+        "tf_nightly_gpu-2.3.0.dev20200523-cp36-cp36m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp36-cp36m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200523-cp36-cp36m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp36-cp36m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200524": {
+        "tf_nightly_gpu-2.3.0.dev20200524-cp36-cp36m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp36-cp36m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200524-cp36-cp36m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp36-cp36m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200525": {
+        "tf_nightly_gpu-2.3.0.dev20200525-cp36-cp36m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp36-cp36m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200525-cp36-cp36m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp36-cp36m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200526": {
+        "tf_nightly_gpu-2.3.0.dev20200526-cp36-cp36m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp36-cp36m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200526-cp36-cp36m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp36-cp36m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200527": {
+        "tf_nightly_gpu-2.3.0.dev20200527-cp36-cp36m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp36-cp36m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200528": {
+        "tf_nightly_gpu-2.3.0.dev20200528-cp36-cp36m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp36-cp36m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200528-cp36-cp36m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp36-cp36m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200529": {
+        "tf_nightly_gpu-2.3.0.dev20200529-cp36-cp36m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp36-cp36m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200529-cp36-cp36m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp36-cp36m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200530": {
+        "tf_nightly_gpu-2.3.0.dev20200530-cp36-cp36m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp36-cp36m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200530-cp36-cp36m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp36-cp36m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200531": {
+        "tf_nightly_gpu-2.3.0.dev20200531-cp36-cp36m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp36-cp36m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200601": {
+        "tf_nightly_gpu-2.3.0.dev20200601-cp36-cp36m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp36-cp36m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200602": {
+        "tf_nightly_gpu-2.3.0.dev20200602-cp36-cp36m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp36-cp36m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200602-cp36-cp36m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp36-cp36m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200603": {
+        "tf_nightly_gpu-2.3.0.dev20200603-cp36-cp36m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp36-cp36m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200603-cp36-cp36m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp36-cp36m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200604": {
+        "tf_nightly_gpu-2.3.0.dev20200604-cp36-cp36m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp36-cp36m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200604-cp36-cp36m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp36-cp36m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200605": {
+        "tf_nightly_gpu-2.3.0.dev20200605-cp36-cp36m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp36-cp36m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200605-cp36-cp36m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp36-cp36m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200608": {
+        "tf_nightly_gpu-2.3.0.dev20200608-cp36-cp36m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp36-cp36m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200608-cp36-cp36m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp36-cp36m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200609": {
+        "tf_nightly_gpu-2.3.0.dev20200609-cp36-cp36m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp36-cp36m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200609-cp36-cp36m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp36-cp36m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200610": {
+        "tf_nightly_gpu-2.3.0.dev20200610-cp36-cp36m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp36-cp36m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200610-cp36-cp36m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp36-cp36m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200611": {
+        "tf_nightly_gpu-2.3.0.dev20200611-cp36-cp36m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp36-cp36m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200611-cp36-cp36m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp36-cp36m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200612": {
+        "tf_nightly_gpu-2.3.0.dev20200612-cp36-cp36m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp36-cp36m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200613": {
+        "tf_nightly_gpu-2.3.0.dev20200613-cp36-cp36m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp36-cp36m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200613-cp36-cp36m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp36-cp36m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200614": {
+        "tf_nightly_gpu-2.3.0.dev20200614-cp36-cp36m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp36-cp36m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200614-cp36-cp36m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp36-cp36m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200615": {
+        "tf_nightly_gpu-2.3.0.dev20200615-cp36-cp36m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp36-cp36m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200615-cp36-cp36m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp36-cp36m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200616": {
+        "tf_nightly_gpu-2.3.0.dev20200616-cp36-cp36m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp36-cp36m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200617": {
+        "tf_nightly_gpu-2.3.0.dev20200617-cp36-cp36m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp36-cp36m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200618": {
+        "tf_nightly_gpu-2.3.0.dev20200618-cp36-cp36m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp36-cp36m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200618-cp36-cp36m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp36-cp36m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200619": {
+        "tf_nightly_gpu-2.3.0.dev20200619-cp36-cp36m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp36-cp36m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200619-cp36-cp36m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp36-cp36m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200620": {
+        "tf_nightly_gpu-2.3.0.dev20200620-cp36-cp36m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp36-cp36m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200620-cp36-cp36m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp36-cp36m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200621": {
+        "tf_nightly_gpu-2.3.0.dev20200621-cp36-cp36m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp36-cp36m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200622": {
+        "tf_nightly_gpu-2.3.0.dev20200622-cp36-cp36m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp36-cp36m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200623": {
+        "tf_nightly_gpu-2.3.0.dev20200623-cp36-cp36m-manylinux2010_x86_64.whl": {
+          "requires_dist": [
+            "absl-py (>=0.7.0)",
+            "astunparse (==1.6.3)",
+            "gast (==0.3.3)",
+            "google-pasta (>=0.1.8)",
+            "h5py (<2.11.0,>=2.10.0)",
+            "keras-preprocessing (<1.2,>=1.1.1)",
+            "numpy (<1.19.0,>=1.16.0)",
+            "opt-einsum (>=2.3.2)",
+            "protobuf (>=3.9.2)",
+            "tb-nightly (<2.4.0a0,>=2.3.0a0)",
+            "tf-estimator-nightly",
+            "termcolor (>=1.1.0)",
+            "wrapt (>=1.11.1)",
+            "wheel (>=0.26)",
+            "six (>=1.12.0)",
+            "scipy (==1.4.1)",
+            "grpcio (>=1.8.6)"
+          ]
+        },
+        "tf_nightly_gpu-2.3.0.dev20200623-cp36-cp36m-win_amd64.whl": "2.3.0.dev20200623@tf_nightly_gpu-2.3.0.dev20200623-cp36-cp36m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200624": {
+        "tf_nightly_gpu-2.3.0.dev20200624-cp36-cp36m-manylinux2010_x86_64.whl": "2.3.0.dev20200623@tf_nightly_gpu-2.3.0.dev20200623-cp36-cp36m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200624-cp36-cp36m-win_amd64.whl": "2.3.0.dev20200623@tf_nightly_gpu-2.3.0.dev20200623-cp36-cp36m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200625": {
+        "tf_nightly_gpu-2.3.0.dev20200625-cp36-cp36m-manylinux2010_x86_64.whl": "2.3.0.dev20200623@tf_nightly_gpu-2.3.0.dev20200623-cp36-cp36m-manylinux2010_x86_64.whl"
       }
     },
     "cp37": {
@@ -22996,6 +26158,228 @@
       },
       "2.2.0.dev20200502": {
         "tf_nightly_gpu-2.2.0.dev20200502-cp37-cp37m-manylinux2010_x86_64.whl": "2.2.0.dev20200331@tf_nightly_gpu-2.2.0.dev20200331-cp37-cp37m-manylinux2010_x86_64.whl"
+      },
+      "2.2.0.dev20200503": {
+        "tf_nightly_gpu-2.2.0.dev20200503-cp37-cp37m-manylinux2010_x86_64.whl": "2.2.0.dev20200331@tf_nightly_gpu-2.2.0.dev20200331-cp37-cp37m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.2.0.dev20200503-cp37-cp37m-win_amd64.whl": "2.2.0.dev20200331@tf_nightly_gpu-2.2.0.dev20200331-cp37-cp37m-manylinux2010_x86_64.whl"
+      },
+      "2.2.0.dev20200504": {
+        "tf_nightly_gpu-2.2.0.dev20200504-cp37-cp37m-manylinux2010_x86_64.whl": "2.2.0.dev20200331@tf_nightly_gpu-2.2.0.dev20200331-cp37-cp37m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.2.0.dev20200504-cp37-cp37m-win_amd64.whl": "2.2.0.dev20200331@tf_nightly_gpu-2.2.0.dev20200331-cp37-cp37m-manylinux2010_x86_64.whl"
+      },
+      "2.2.0.dev20200505": {
+        "tf_nightly_gpu-2.2.0.dev20200505-cp37-cp37m-manylinux2010_x86_64.whl": "2.2.0.dev20200331@tf_nightly_gpu-2.2.0.dev20200331-cp37-cp37m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.2.0.dev20200505-cp37-cp37m-win_amd64.whl": "2.2.0.dev20200331@tf_nightly_gpu-2.2.0.dev20200331-cp37-cp37m-manylinux2010_x86_64.whl"
+      },
+      "2.2.0.dev20200506": {
+        "tf_nightly_gpu-2.2.0.dev20200506-cp37-cp37m-manylinux2010_x86_64.whl": "2.2.0.dev20200331@tf_nightly_gpu-2.2.0.dev20200331-cp37-cp37m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.2.0.dev20200506-cp37-cp37m-win_amd64.whl": "2.2.0.dev20200331@tf_nightly_gpu-2.2.0.dev20200331-cp37-cp37m-manylinux2010_x86_64.whl"
+      },
+      "2.2.0.dev20200507": {
+        "tf_nightly_gpu-2.2.0.dev20200507-cp37-cp37m-manylinux2010_x86_64.whl": "2.2.0.dev20200331@tf_nightly_gpu-2.2.0.dev20200331-cp37-cp37m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.2.0.dev20200507-cp37-cp37m-win_amd64.whl": "2.2.0.dev20200331@tf_nightly_gpu-2.2.0.dev20200331-cp37-cp37m-manylinux2010_x86_64.whl"
+      },
+      "2.2.0.dev20200508": {
+        "tf_nightly_gpu-2.2.0.dev20200508-cp37-cp37m-manylinux2010_x86_64.whl": "2.2.0.dev20200331@tf_nightly_gpu-2.2.0.dev20200331-cp37-cp37m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.2.0.dev20200508-cp37-cp37m-win_amd64.whl": "2.2.0.dev20200331@tf_nightly_gpu-2.2.0.dev20200331-cp37-cp37m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200512": {
+        "tf_nightly_gpu-2.3.0.dev20200512-cp37-cp37m-manylinux2010_x86_64.whl": "2.2.0.dev20200331@tf_nightly_gpu-2.2.0.dev20200331-cp37-cp37m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200513": {
+        "tf_nightly_gpu-2.3.0.dev20200513-cp37-cp37m-manylinux2010_x86_64.whl": "2.2.0.dev20200331@tf_nightly_gpu-2.2.0.dev20200331-cp37-cp37m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200514": {
+        "tf_nightly_gpu-2.3.0.dev20200514-cp37-cp37m-manylinux2010_x86_64.whl": {
+          "requires_dist": [
+            "absl-py (>=0.7.0)",
+            "astunparse (==1.6.3)",
+            "gast (==0.3.3)",
+            "google-pasta (>=0.1.8)",
+            "h5py (<2.11.0,>=2.10.0)",
+            "keras-preprocessing (<1.2,>=1.1.1)",
+            "numpy (<2.0,>=1.16.0)",
+            "opt-einsum (>=2.3.2)",
+            "protobuf (>=3.9.2)",
+            "tb-nightly (<2.4.0a0,>=2.3.0a0)",
+            "tf-estimator-nightly",
+            "termcolor (>=1.1.0)",
+            "wrapt (>=1.11.1)",
+            "wheel (>=0.26)",
+            "six (>=1.12.0)",
+            "scipy (==1.4.1)",
+            "grpcio (>=1.8.6)"
+          ]
+        },
+        "tf_nightly_gpu-2.3.0.dev20200514-cp37-cp37m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp37-cp37m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200515": {
+        "tf_nightly_gpu-2.3.0.dev20200515-cp37-cp37m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp37-cp37m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200515-cp37-cp37m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp37-cp37m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200516": {
+        "tf_nightly_gpu-2.3.0.dev20200516-cp37-cp37m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp37-cp37m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200518": {
+        "tf_nightly_gpu-2.3.0.dev20200518-cp37-cp37m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp37-cp37m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200518-cp37-cp37m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp37-cp37m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200519": {
+        "tf_nightly_gpu-2.3.0.dev20200519-cp37-cp37m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp37-cp37m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200519-cp37-cp37m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp37-cp37m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200520": {
+        "tf_nightly_gpu-2.3.0.dev20200520-cp37-cp37m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp37-cp37m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200521": {
+        "tf_nightly_gpu-2.3.0.dev20200521-cp37-cp37m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp37-cp37m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200521-cp37-cp37m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp37-cp37m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200522": {
+        "tf_nightly_gpu-2.3.0.dev20200522-cp37-cp37m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp37-cp37m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200522-cp37-cp37m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp37-cp37m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200523": {
+        "tf_nightly_gpu-2.3.0.dev20200523-cp37-cp37m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp37-cp37m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200524": {
+        "tf_nightly_gpu-2.3.0.dev20200524-cp37-cp37m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp37-cp37m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200524-cp37-cp37m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp37-cp37m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200525": {
+        "tf_nightly_gpu-2.3.0.dev20200525-cp37-cp37m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp37-cp37m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200525-cp37-cp37m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp37-cp37m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200526": {
+        "tf_nightly_gpu-2.3.0.dev20200526-cp37-cp37m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp37-cp37m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200526-cp37-cp37m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp37-cp37m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200527": {
+        "tf_nightly_gpu-2.3.0.dev20200527-cp37-cp37m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp37-cp37m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200528": {
+        "tf_nightly_gpu-2.3.0.dev20200528-cp37-cp37m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp37-cp37m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200528-cp37-cp37m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp37-cp37m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200529": {
+        "tf_nightly_gpu-2.3.0.dev20200529-cp37-cp37m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp37-cp37m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200529-cp37-cp37m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp37-cp37m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200530": {
+        "tf_nightly_gpu-2.3.0.dev20200530-cp37-cp37m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp37-cp37m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200530-cp37-cp37m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp37-cp37m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200531": {
+        "tf_nightly_gpu-2.3.0.dev20200531-cp37-cp37m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp37-cp37m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200601": {
+        "tf_nightly_gpu-2.3.0.dev20200601-cp37-cp37m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp37-cp37m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200602": {
+        "tf_nightly_gpu-2.3.0.dev20200602-cp37-cp37m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp37-cp37m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200602-cp37-cp37m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp37-cp37m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200603": {
+        "tf_nightly_gpu-2.3.0.dev20200603-cp37-cp37m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp37-cp37m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200603-cp37-cp37m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp37-cp37m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200604": {
+        "tf_nightly_gpu-2.3.0.dev20200604-cp37-cp37m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp37-cp37m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200604-cp37-cp37m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp37-cp37m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200605": {
+        "tf_nightly_gpu-2.3.0.dev20200605-cp37-cp37m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp37-cp37m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200605-cp37-cp37m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp37-cp37m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200608": {
+        "tf_nightly_gpu-2.3.0.dev20200608-cp37-cp37m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp37-cp37m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200608-cp37-cp37m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp37-cp37m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200609": {
+        "tf_nightly_gpu-2.3.0.dev20200609-cp37-cp37m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp37-cp37m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200609-cp37-cp37m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp37-cp37m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200610": {
+        "tf_nightly_gpu-2.3.0.dev20200610-cp37-cp37m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp37-cp37m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200610-cp37-cp37m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp37-cp37m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200611": {
+        "tf_nightly_gpu-2.3.0.dev20200611-cp37-cp37m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp37-cp37m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200611-cp37-cp37m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp37-cp37m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200612": {
+        "tf_nightly_gpu-2.3.0.dev20200612-cp37-cp37m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp37-cp37m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200612-cp37-cp37m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp37-cp37m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200613": {
+        "tf_nightly_gpu-2.3.0.dev20200613-cp37-cp37m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp37-cp37m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200613-cp37-cp37m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp37-cp37m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200614": {
+        "tf_nightly_gpu-2.3.0.dev20200614-cp37-cp37m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp37-cp37m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200614-cp37-cp37m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp37-cp37m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200615": {
+        "tf_nightly_gpu-2.3.0.dev20200615-cp37-cp37m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp37-cp37m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200615-cp37-cp37m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp37-cp37m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200616": {
+        "tf_nightly_gpu-2.3.0.dev20200616-cp37-cp37m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp37-cp37m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200616-cp37-cp37m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp37-cp37m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200617": {
+        "tf_nightly_gpu-2.3.0.dev20200617-cp37-cp37m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp37-cp37m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200617-cp37-cp37m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp37-cp37m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200618": {
+        "tf_nightly_gpu-2.3.0.dev20200618-cp37-cp37m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp37-cp37m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200618-cp37-cp37m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp37-cp37m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200619": {
+        "tf_nightly_gpu-2.3.0.dev20200619-cp37-cp37m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp37-cp37m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200619-cp37-cp37m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp37-cp37m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200620": {
+        "tf_nightly_gpu-2.3.0.dev20200620-cp37-cp37m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp37-cp37m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200620-cp37-cp37m-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp37-cp37m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200621": {
+        "tf_nightly_gpu-2.3.0.dev20200621-cp37-cp37m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp37-cp37m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200622": {
+        "tf_nightly_gpu-2.3.0.dev20200622-cp37-cp37m-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp37-cp37m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200623": {
+        "tf_nightly_gpu-2.3.0.dev20200623-cp37-cp37m-manylinux2010_x86_64.whl": {
+          "requires_dist": [
+            "absl-py (>=0.7.0)",
+            "astunparse (==1.6.3)",
+            "gast (==0.3.3)",
+            "google-pasta (>=0.1.8)",
+            "h5py (<2.11.0,>=2.10.0)",
+            "keras-preprocessing (<1.2,>=1.1.1)",
+            "numpy (<1.19.0,>=1.16.0)",
+            "opt-einsum (>=2.3.2)",
+            "protobuf (>=3.9.2)",
+            "tb-nightly (<2.4.0a0,>=2.3.0a0)",
+            "tf-estimator-nightly",
+            "termcolor (>=1.1.0)",
+            "wrapt (>=1.11.1)",
+            "wheel (>=0.26)",
+            "six (>=1.12.0)",
+            "scipy (==1.4.1)",
+            "grpcio (>=1.8.6)"
+          ]
+        },
+        "tf_nightly_gpu-2.3.0.dev20200623-cp37-cp37m-win_amd64.whl": "2.3.0.dev20200623@tf_nightly_gpu-2.3.0.dev20200623-cp37-cp37m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200624": {
+        "tf_nightly_gpu-2.3.0.dev20200624-cp37-cp37m-manylinux2010_x86_64.whl": "2.3.0.dev20200623@tf_nightly_gpu-2.3.0.dev20200623-cp37-cp37m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200624-cp37-cp37m-win_amd64.whl": "2.3.0.dev20200623@tf_nightly_gpu-2.3.0.dev20200623-cp37-cp37m-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200625": {
+        "tf_nightly_gpu-2.3.0.dev20200625-cp37-cp37m-manylinux2010_x86_64.whl": "2.3.0.dev20200623@tf_nightly_gpu-2.3.0.dev20200623-cp37-cp37m-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200625-cp37-cp37m-win_amd64.whl": "2.3.0.dev20200623@tf_nightly_gpu-2.3.0.dev20200623-cp37-cp37m-manylinux2010_x86_64.whl"
       }
     },
     "cp38": {
@@ -23296,6 +26680,227 @@
       },
       "2.2.0.dev20200502": {
         "tf_nightly_gpu-2.2.0.dev20200502-cp38-cp38-manylinux2010_x86_64.whl": "2.2.0.dev20200331@tf_nightly_gpu-2.2.0.dev20200331-cp38-cp38-manylinux2010_x86_64.whl"
+      },
+      "2.2.0.dev20200503": {
+        "tf_nightly_gpu-2.2.0.dev20200503-cp38-cp38-manylinux2010_x86_64.whl": "2.2.0.dev20200331@tf_nightly_gpu-2.2.0.dev20200331-cp38-cp38-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.2.0.dev20200503-cp38-cp38-win_amd64.whl": "2.2.0.dev20200331@tf_nightly_gpu-2.2.0.dev20200331-cp38-cp38-manylinux2010_x86_64.whl"
+      },
+      "2.2.0.dev20200504": {
+        "tf_nightly_gpu-2.2.0.dev20200504-cp38-cp38-manylinux2010_x86_64.whl": "2.2.0.dev20200331@tf_nightly_gpu-2.2.0.dev20200331-cp38-cp38-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.2.0.dev20200504-cp38-cp38-win_amd64.whl": "2.2.0.dev20200331@tf_nightly_gpu-2.2.0.dev20200331-cp38-cp38-manylinux2010_x86_64.whl"
+      },
+      "2.2.0.dev20200505": {
+        "tf_nightly_gpu-2.2.0.dev20200505-cp38-cp38-manylinux2010_x86_64.whl": "2.2.0.dev20200331@tf_nightly_gpu-2.2.0.dev20200331-cp38-cp38-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.2.0.dev20200505-cp38-cp38-win_amd64.whl": "2.2.0.dev20200331@tf_nightly_gpu-2.2.0.dev20200331-cp38-cp38-manylinux2010_x86_64.whl"
+      },
+      "2.2.0.dev20200506": {
+        "tf_nightly_gpu-2.2.0.dev20200506-cp38-cp38-manylinux2010_x86_64.whl": "2.2.0.dev20200331@tf_nightly_gpu-2.2.0.dev20200331-cp38-cp38-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.2.0.dev20200506-cp38-cp38-win_amd64.whl": "2.2.0.dev20200331@tf_nightly_gpu-2.2.0.dev20200331-cp38-cp38-manylinux2010_x86_64.whl"
+      },
+      "2.2.0.dev20200507": {
+        "tf_nightly_gpu-2.2.0.dev20200507-cp38-cp38-manylinux2010_x86_64.whl": "2.2.0.dev20200331@tf_nightly_gpu-2.2.0.dev20200331-cp38-cp38-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.2.0.dev20200507-cp38-cp38-win_amd64.whl": "2.2.0.dev20200331@tf_nightly_gpu-2.2.0.dev20200331-cp38-cp38-manylinux2010_x86_64.whl"
+      },
+      "2.2.0.dev20200508": {
+        "tf_nightly_gpu-2.2.0.dev20200508-cp38-cp38-manylinux2010_x86_64.whl": "2.2.0.dev20200331@tf_nightly_gpu-2.2.0.dev20200331-cp38-cp38-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.2.0.dev20200508-cp38-cp38-win_amd64.whl": "2.2.0.dev20200331@tf_nightly_gpu-2.2.0.dev20200331-cp38-cp38-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200512": {
+        "tf_nightly_gpu-2.3.0.dev20200512-cp38-cp38-manylinux2010_x86_64.whl": "2.2.0.dev20200331@tf_nightly_gpu-2.2.0.dev20200331-cp38-cp38-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200513": {
+        "tf_nightly_gpu-2.3.0.dev20200513-cp38-cp38-manylinux2010_x86_64.whl": "2.2.0.dev20200331@tf_nightly_gpu-2.2.0.dev20200331-cp38-cp38-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200514": {
+        "tf_nightly_gpu-2.3.0.dev20200514-cp38-cp38-manylinux2010_x86_64.whl": {
+          "requires_dist": [
+            "absl-py (>=0.7.0)",
+            "astunparse (==1.6.3)",
+            "gast (==0.3.3)",
+            "google-pasta (>=0.1.8)",
+            "h5py (<2.11.0,>=2.10.0)",
+            "keras-preprocessing (<1.2,>=1.1.1)",
+            "numpy (<2.0,>=1.16.0)",
+            "opt-einsum (>=2.3.2)",
+            "protobuf (>=3.9.2)",
+            "tb-nightly (<2.4.0a0,>=2.3.0a0)",
+            "tf-estimator-nightly",
+            "termcolor (>=1.1.0)",
+            "wrapt (>=1.11.1)",
+            "wheel (>=0.26)",
+            "six (>=1.12.0)",
+            "scipy (==1.4.1)",
+            "grpcio (>=1.8.6)"
+          ]
+        },
+        "tf_nightly_gpu-2.3.0.dev20200514-cp38-cp38-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp38-cp38-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200515": {
+        "tf_nightly_gpu-2.3.0.dev20200515-cp38-cp38-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp38-cp38-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200515-cp38-cp38-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp38-cp38-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200516": {
+        "tf_nightly_gpu-2.3.0.dev20200516-cp38-cp38-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp38-cp38-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200516-cp38-cp38-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp38-cp38-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200518": {
+        "tf_nightly_gpu-2.3.0.dev20200518-cp38-cp38-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp38-cp38-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200518-cp38-cp38-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp38-cp38-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200519": {
+        "tf_nightly_gpu-2.3.0.dev20200519-cp38-cp38-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp38-cp38-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200519-cp38-cp38-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp38-cp38-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200521": {
+        "tf_nightly_gpu-2.3.0.dev20200521-cp38-cp38-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp38-cp38-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200521-cp38-cp38-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp38-cp38-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200522": {
+        "tf_nightly_gpu-2.3.0.dev20200522-cp38-cp38-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp38-cp38-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200522-cp38-cp38-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp38-cp38-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200523": {
+        "tf_nightly_gpu-2.3.0.dev20200523-cp38-cp38-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp38-cp38-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200523-cp38-cp38-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp38-cp38-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200524": {
+        "tf_nightly_gpu-2.3.0.dev20200524-cp38-cp38-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp38-cp38-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200524-cp38-cp38-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp38-cp38-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200525": {
+        "tf_nightly_gpu-2.3.0.dev20200525-cp38-cp38-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp38-cp38-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200525-cp38-cp38-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp38-cp38-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200526": {
+        "tf_nightly_gpu-2.3.0.dev20200526-cp38-cp38-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp38-cp38-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200526-cp38-cp38-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp38-cp38-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200527": {
+        "tf_nightly_gpu-2.3.0.dev20200527-cp38-cp38-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp38-cp38-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200528": {
+        "tf_nightly_gpu-2.3.0.dev20200528-cp38-cp38-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp38-cp38-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200528-cp38-cp38-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp38-cp38-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200529": {
+        "tf_nightly_gpu-2.3.0.dev20200529-cp38-cp38-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp38-cp38-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200529-cp38-cp38-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp38-cp38-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200530": {
+        "tf_nightly_gpu-2.3.0.dev20200530-cp38-cp38-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp38-cp38-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200530-cp38-cp38-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp38-cp38-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200531": {
+        "tf_nightly_gpu-2.3.0.dev20200531-cp38-cp38-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp38-cp38-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200601": {
+        "tf_nightly_gpu-2.3.0.dev20200601-cp38-cp38-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp38-cp38-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200602": {
+        "tf_nightly_gpu-2.3.0.dev20200602-cp38-cp38-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp38-cp38-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200602-cp38-cp38-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp38-cp38-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200603": {
+        "tf_nightly_gpu-2.3.0.dev20200603-cp38-cp38-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp38-cp38-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200603-cp38-cp38-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp38-cp38-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200604": {
+        "tf_nightly_gpu-2.3.0.dev20200604-cp38-cp38-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp38-cp38-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200604-cp38-cp38-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp38-cp38-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200605": {
+        "tf_nightly_gpu-2.3.0.dev20200605-cp38-cp38-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp38-cp38-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200605-cp38-cp38-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp38-cp38-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200608": {
+        "tf_nightly_gpu-2.3.0.dev20200608-cp38-cp38-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp38-cp38-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200608-cp38-cp38-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp38-cp38-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200609": {
+        "tf_nightly_gpu-2.3.0.dev20200609-cp38-cp38-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp38-cp38-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200609-cp38-cp38-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp38-cp38-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200610": {
+        "tf_nightly_gpu-2.3.0.dev20200610-cp38-cp38-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp38-cp38-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200610-cp38-cp38-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp38-cp38-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200611": {
+        "tf_nightly_gpu-2.3.0.dev20200611-cp38-cp38-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp38-cp38-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200611-cp38-cp38-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp38-cp38-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200612": {
+        "tf_nightly_gpu-2.3.0.dev20200612-cp38-cp38-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp38-cp38-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200612-cp38-cp38-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp38-cp38-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200613": {
+        "tf_nightly_gpu-2.3.0.dev20200613-cp38-cp38-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp38-cp38-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200613-cp38-cp38-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp38-cp38-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200614": {
+        "tf_nightly_gpu-2.3.0.dev20200614-cp38-cp38-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp38-cp38-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200614-cp38-cp38-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp38-cp38-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200615": {
+        "tf_nightly_gpu-2.3.0.dev20200615-cp38-cp38-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp38-cp38-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200615-cp38-cp38-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp38-cp38-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200616": {
+        "tf_nightly_gpu-2.3.0.dev20200616-cp38-cp38-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp38-cp38-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200616-cp38-cp38-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp38-cp38-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200617": {
+        "tf_nightly_gpu-2.3.0.dev20200617-cp38-cp38-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp38-cp38-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200617-cp38-cp38-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp38-cp38-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200618": {
+        "tf_nightly_gpu-2.3.0.dev20200618-cp38-cp38-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp38-cp38-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200618-cp38-cp38-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp38-cp38-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200619": {
+        "tf_nightly_gpu-2.3.0.dev20200619-cp38-cp38-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp38-cp38-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200619-cp38-cp38-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp38-cp38-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200620": {
+        "tf_nightly_gpu-2.3.0.dev20200620-cp38-cp38-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp38-cp38-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200620-cp38-cp38-win_amd64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp38-cp38-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200621": {
+        "tf_nightly_gpu-2.3.0.dev20200621-cp38-cp38-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp38-cp38-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200622": {
+        "tf_nightly_gpu-2.3.0.dev20200622-cp38-cp38-manylinux2010_x86_64.whl": "2.3.0.dev20200514@tf_nightly_gpu-2.3.0.dev20200514-cp38-cp38-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200623": {
+        "tf_nightly_gpu-2.3.0.dev20200623-cp38-cp38-manylinux2010_x86_64.whl": {
+          "requires_dist": [
+            "absl-py (>=0.7.0)",
+            "astunparse (==1.6.3)",
+            "gast (==0.3.3)",
+            "google-pasta (>=0.1.8)",
+            "h5py (<2.11.0,>=2.10.0)",
+            "keras-preprocessing (<1.2,>=1.1.1)",
+            "numpy (<1.19.0,>=1.16.0)",
+            "opt-einsum (>=2.3.2)",
+            "protobuf (>=3.9.2)",
+            "tb-nightly (<2.4.0a0,>=2.3.0a0)",
+            "tf-estimator-nightly",
+            "termcolor (>=1.1.0)",
+            "wrapt (>=1.11.1)",
+            "wheel (>=0.26)",
+            "six (>=1.12.0)",
+            "scipy (==1.4.1)",
+            "grpcio (>=1.8.6)"
+          ]
+        },
+        "tf_nightly_gpu-2.3.0.dev20200623-cp38-cp38-win_amd64.whl": "2.3.0.dev20200623@tf_nightly_gpu-2.3.0.dev20200623-cp38-cp38-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200624": {
+        "tf_nightly_gpu-2.3.0.dev20200624-cp38-cp38-manylinux2010_x86_64.whl": "2.3.0.dev20200623@tf_nightly_gpu-2.3.0.dev20200623-cp38-cp38-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200624-cp38-cp38-win_amd64.whl": "2.3.0.dev20200623@tf_nightly_gpu-2.3.0.dev20200623-cp38-cp38-manylinux2010_x86_64.whl"
+      },
+      "2.3.0.dev20200625": {
+        "tf_nightly_gpu-2.3.0.dev20200625-cp38-cp38-manylinux2010_x86_64.whl": "2.3.0.dev20200623@tf_nightly_gpu-2.3.0.dev20200623-cp38-cp38-manylinux2010_x86_64.whl",
+        "tf_nightly_gpu-2.3.0.dev20200625-cp38-cp38-win_amd64.whl": "2.3.0.dev20200623@tf_nightly_gpu-2.3.0.dev20200623-cp38-cp38-manylinux2010_x86_64.whl"
       }
     }
   },
@@ -23734,6 +27339,15 @@
       "9.1.1": {
         "tripleo_puppet_elements-9.1.1-py2.py3-none-any.whl": "10.0.0@tripleo_puppet_elements-10.0.0-py2.py3-none-any.whl"
       }
+    },
+    "py3": {
+      "12.3.0": {
+        "tripleo_puppet_elements-12.3.0-py3-none-any.whl": {
+          "requires_dist": [
+            "pbr (!=2.1.0,>=2.0.0)"
+          ]
+        }
+      }
     }
   },
   "trivial-sudoku": {
@@ -24069,6 +27683,28 @@
             "trytond (<5.5,>=5.4)"
           ]
         }
+      },
+      "5.6.0": {
+        "trytond_stock_package_shipping_dpd-5.6.0-py3-none-any.whl": {
+          "requires_dist": [
+            "zeep (>=0.12)",
+            "PyPDF2",
+            "trytond-party (<5.7,>=5.6)",
+            "trytond-product (<5.7,>=5.6)",
+            "trytond-stock (<5.7,>=5.6)",
+            "trytond-stock-shipment-measurements (<5.7,>=5.6)",
+            "trytond-stock-package (<5.7,>=5.6)",
+            "trytond-stock-package-shipping (<5.7,>=5.6)",
+            "trytond (<5.7,>=5.6)"
+          ]
+        }
+      }
+    }
+  },
+  "tylerpdff": {
+    "py3": {
+      "1.0": {
+        "tylerpdff-1.0-py3-none-any.whl": {}
       }
     }
   },
@@ -24303,6 +27939,18 @@
             "wagtail (>=1.0)"
           ]
         }
+      },
+      "0.5.1": {
+        "wagtail_linkchecker-0.5.1-py3-none-any.whl": {
+          "requires_dist": [
+            "wagtail (>=1.0)",
+            "requests (>=2.9.1)",
+            "celery (<5,>=4.0)"
+          ]
+        }
+      },
+      "0.5.2": {
+        "wagtail_linkchecker-0.5.2-py3-none-any.whl": "0.5.1@wagtail_linkchecker-0.5.1-py3-none-any.whl"
       }
     }
   },
@@ -24362,6 +28010,26 @@
           "requires_dist": [
             "allennlp (==0.9.0)",
             "wandb (>=0.8.15)"
+          ]
+        }
+      },
+      "0.0.4": {
+        "wandb_allennlp-0.0.4-py3-none-any.whl": {
+          "requires_dist": [
+            "allennlp (==0.9.0)",
+            "wandb (>=0.8.35)"
+          ]
+        }
+      },
+      "0.1.0": {
+        "wandb_allennlp-0.1.0-py3-none-any.whl": "0.0.4@wandb_allennlp-0.0.4-py3-none-any.whl"
+      },
+      "0.2.0": {
+        "wandb_allennlp-0.2.0-py3-none-any.whl": {
+          "requires_dist": [
+            "allennlp (>=0.9.0)",
+            "wandb (>=0.8.35)",
+            "pyyaml"
           ]
         }
       }
@@ -24424,6 +28092,9 @@
       },
       "1.2.1": {
         "WaterPinch-1.2.1-py3-none-any.whl": "1.0.9@WaterPinch-1.0.9-py3-none-any.whl"
+      },
+      "1.2.2": {
+        "WaterPinch-1.2.2-py3-none-any.whl": "1.0.9@WaterPinch-1.0.9-py3-none-any.whl"
       }
     }
   },
@@ -24642,6 +28313,27 @@
       }
     }
   },
+  "yliveticker-test": {
+    "py3": {
+      "0.2.5": {
+        "yliveticker_test-0.2.5-py3-none-any.whl": {
+          "requires_dist": [
+            "protobuf (>=3.11.0)",
+            "websocket-client (>=0.57.0)"
+          ]
+        }
+      },
+      "0.3.0": {
+        "yliveticker_test-0.3.0-py3-none-any.whl": "0.2.5@yliveticker_test-0.2.5-py3-none-any.whl"
+      },
+      "0.3.1": {
+        "yliveticker_test-0.3.1-py3-none-any.whl": "0.2.5@yliveticker_test-0.2.5-py3-none-any.whl"
+      },
+      "0.3.2": {
+        "yliveticker_test-0.3.2-py3-none-any.whl": "0.2.5@yliveticker_test-0.2.5-py3-none-any.whl"
+      }
+    }
+  },
   "yo-fluq": {
     "py3": {
       "0.9.9": {
@@ -24842,6 +28534,53 @@
     "py3": {
       "0.3": {
         "zsharp-0.3-py3-none-any.whl": {}
+      }
+    }
+  },
+  "zthreading": {
+    "py2.py3": {
+      "0.1.0": {
+        "zthreading-0.1.0-py2.py3-none-any.whl": {}
+      },
+      "0.1.1": {
+        "zthreading-0.1.1-py2.py3-none-any.whl": "0.1.0@zthreading-0.1.0-py2.py3-none-any.whl"
+      }
+    }
+  },
+  "zucked": {
+    "py3": {
+      "0.1.0": {
+        "zucked-0.1.0-py3-none-any.whl": {}
+      },
+      "0.1.1": {
+        "zucked-0.1.1-py3-none-any.whl": "0.1.0@zucked-0.1.0-py3-none-any.whl"
+      },
+      "0.1.2": {
+        "zucked-0.1.2-py3-none-any.whl": "0.1.0@zucked-0.1.0-py3-none-any.whl"
+      },
+      "0.1.3": {
+        "zucked-0.1.3-py3-none-any.whl": "0.1.0@zucked-0.1.0-py3-none-any.whl"
+      },
+      "0.1.4": {
+        "zucked-0.1.4-py3-none-any.whl": "0.1.0@zucked-0.1.0-py3-none-any.whl"
+      },
+      "0.1.5": {
+        "zucked-0.1.5-py3-none-any.whl": "0.1.0@zucked-0.1.0-py3-none-any.whl"
+      },
+      "0.1.6": {
+        "zucked-0.1.6-py3-none-any.whl": "0.1.0@zucked-0.1.0-py3-none-any.whl"
+      },
+      "0.1.9": {
+        "zucked-0.1.9-py3-none-any.whl": "0.1.0@zucked-0.1.0-py3-none-any.whl"
+      },
+      "0.2.0": {
+        "zucked-0.2.0-py3-none-any.whl": "0.1.0@zucked-0.1.0-py3-none-any.whl"
+      },
+      "0.2.1": {
+        "zucked-0.2.1-py3-none-any.whl": "0.1.0@zucked-0.1.0-py3-none-any.whl"
+      },
+      "1.0.0": {
+        "zucked-1.0.0-py3-none-any.whl": "0.1.0@zucked-0.1.0-py3-none-any.whl"
       }
     }
   },
