@@ -144,7 +144,8 @@
     "0.3.0": "0.2.0",
     "0.3.1": "0.2.0",
     "0.3.2": "0.2.0",
-    "0.4.0": "0.2.0"
+    "0.4.0": "0.2.0",
+    "0.4.1": "0.2.0"
   },
   "add-demo": {
     "1.0.0": {
@@ -15100,47 +15101,7 @@
       "37": "27",
       "38": "27"
     },
-    "3.1.0a1": {
-      "27": {
-        "install_requires": [
-          "Products.GenericSetup>=1.8.2",
-          "Products.BeakerSessionDataManager",
-          "cioppino.twothumbs",
-          "collective.behavior.banner",
-          "collective.behavior.richdescription",
-          "collective.excelexport",
-          "collective.disclaimer",
-          "collective.taxonomy",
-          "collective.z3cform.select2",
-          "iaweb.mosaic",
-          "ideabox.diazotheme.spirit",
-          "ideabox.theme",
-          "ideabox.stats",
-          "imio.gdpr",
-          "pas.plugins.imio",
-          "password-generator",
-          "plone.api",
-          "plone.app.discussion",
-          "plone.app.imagecropping",
-          "plone.app.mosaic",
-          "plone.dexterity",
-          "setuptools",
-          "z3c.jbot"
-        ],
-        "extras_require": {
-          "test": [
-            "plone.app.testing",
-            "plone.testing",
-            "plone.app.robotframework[debug]"
-          ]
-        }
-      },
-      "35": "27",
-      "36": "27",
-      "37": "27",
-      "38": "27"
-    },
-    "3.1.0a10": {
+    "3.1.0": {
       "27": {
         "install_requires": [
           "Products.GenericSetup>=1.8.2",
@@ -15181,15 +15142,56 @@
       "37": "27",
       "38": "27"
     },
-    "3.1.0a11": "3.1.0a10",
+    "3.1.0a1": {
+      "27": {
+        "install_requires": [
+          "Products.GenericSetup>=1.8.2",
+          "Products.BeakerSessionDataManager",
+          "cioppino.twothumbs",
+          "collective.behavior.banner",
+          "collective.behavior.richdescription",
+          "collective.excelexport",
+          "collective.disclaimer",
+          "collective.taxonomy",
+          "collective.z3cform.select2",
+          "iaweb.mosaic",
+          "ideabox.diazotheme.spirit",
+          "ideabox.theme",
+          "ideabox.stats",
+          "imio.gdpr",
+          "pas.plugins.imio",
+          "password-generator",
+          "plone.api",
+          "plone.app.discussion",
+          "plone.app.imagecropping",
+          "plone.app.mosaic",
+          "plone.dexterity",
+          "setuptools",
+          "z3c.jbot"
+        ],
+        "extras_require": {
+          "test": [
+            "plone.app.testing",
+            "plone.testing",
+            "plone.app.robotframework[debug]"
+          ]
+        }
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    },
+    "3.1.0a10": "3.1.0",
+    "3.1.0a11": "3.1.0",
     "3.1.0a2": "3.1.0a1",
     "3.1.0a3": "3.1.0a1",
     "3.1.0a4": "3.1.0a1",
     "3.1.0a5": "3.1.0a1",
-    "3.1.0a6": "3.1.0a10",
-    "3.1.0a7": "3.1.0a10",
-    "3.1.0a8": "3.1.0a10",
-    "3.1.0a9": "3.1.0a10"
+    "3.1.0a6": "3.1.0",
+    "3.1.0a7": "3.1.0",
+    "3.1.0a8": "3.1.0",
+    "3.1.0a9": "3.1.0"
   },
   "idesolver": {
     "1.0.0": {
@@ -24402,6 +24404,7 @@
     "1.14.10.0": "1.11.10.0",
     "1.14.11.0": "1.11.10.0",
     "1.14.12.0": "1.11.10.0",
+    "1.14.13.0": "1.11.10.0",
     "1.14.2.0": "1.11.10.0",
     "1.14.3.0": "1.11.10.0",
     "1.14.4.0": "1.11.10.0",
@@ -24806,6 +24809,7 @@
     "1.14.10.0": "1.11.10.0",
     "1.14.11.0": "1.11.10.0",
     "1.14.12.0": "1.11.10.0",
+    "1.14.13.0": "1.11.10.0",
     "1.14.2.0": "1.11.10.0",
     "1.14.3.0": "1.11.10.0",
     "1.14.4.0": "1.11.10.0",
@@ -29471,6 +29475,78 @@
           "kubernetes>=10.0.1",
           "marshmallow<=3.6.1,>=3.4.0",
           "polyaxon-sdk==1.0.99rc5",
+          "python-dateutil>=2.7.3",
+          "pytz>=2019.2",
+          "PyYAML>=5.1",
+          "ujson>=1.35",
+          "requests>=2.20.1",
+          "requests-toolbelt>=0.8.0",
+          "sentry-sdk>=0.12.3",
+          "urllib3>=1.25.6",
+          "certifi>=2019.9.11",
+          "psutil",
+          "nvidia-ml-py3"
+        ],
+        "extras_require": {
+          "s3": [
+            "boto3",
+            "botocore"
+          ],
+          "gcs": [
+            "google-cloud-storage"
+          ],
+          "git": [
+            "gitpython"
+          ],
+          "azure": [
+            "azure-storage-blob>=12.3.1"
+          ],
+          "docker": [
+            "docker"
+          ],
+          "streams": [
+            "kubernetes-asyncio==11.2.0",
+            "starlette==0.13.4",
+            "aiofiles==0.5.0",
+            "uvicorn==0.11.5",
+            "pandas"
+          ],
+          "polytune": [
+            "scikit-learn==0.22.2",
+            "hyperopt==0.2.4"
+          ],
+          "polyboard": [
+            "Pillow",
+            "matplotlib",
+            "moviepy",
+            "plotly",
+            "bokeh",
+            "pandas",
+            "altair"
+          ]
+        },
+        "tests_require": [
+          "pytest"
+        ],
+        "python_requires": [
+          ">=3.5"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    },
+    "1.1.0": {
+      "27": {
+        "install_requires": [
+          "click<8.0",
+          "click-completion<0.6",
+          "tabulate<=0.8.7",
+          "Jinja2>=2.10.3",
+          "kubernetes>=10.0.1",
+          "marshmallow<=3.6.1,>=3.4.0",
+          "polyaxon-sdk==1.1.0",
           "python-dateutil>=2.7.3",
           "pytz>=2019.2",
           "PyYAML>=5.1",
@@ -40209,7 +40285,8 @@
     "2.3.2": "2.0.2",
     "2.3.3": "2.0.2",
     "2.3.4": "2.0.2",
-    "2.3.5": "2.0.2"
+    "2.3.5": "2.0.2",
+    "2.3.6": "2.0.2"
   },
   "yamlsettings-s3": {
     "1.0.0": {
