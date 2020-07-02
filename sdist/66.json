@@ -22177,6 +22177,51 @@
       },
       "37": "36",
       "38": "36"
+    },
+    "0.2.6": {
+      "36": {
+        "install_requires": [
+          "mongoengine<0.19,>=0.18",
+          "dill"
+        ],
+        "extras_require": {
+          "all": [
+            "kafka-python==1.4.7",
+            "paho-mqtt==1.5.0",
+            "pymongo==3.10.1",
+            "flask",
+            "dash"
+          ],
+          "dev": [
+            "kafka-python==1.4.7",
+            "paho-mqtt==1.5.0",
+            "pymongo==3.10.1",
+            "omegaml[all-client]",
+            "nose",
+            "twine",
+            "flake8"
+          ],
+          "apps": [
+            "flask",
+            "dash"
+          ],
+          "mqtt": [
+            "paho-mqtt==1.5.0"
+          ],
+          "kafka": [
+            "kafka-python==1.4.7"
+          ],
+          "mongodb": [
+            "pymongo==3.10.1"
+          ],
+          "omegaml": [
+            "pymongo==3.10.1",
+            "omegaml[all-client]"
+          ]
+        }
+      },
+      "37": "36",
+      "38": "36"
     }
   },
   "minimatic": {
@@ -25947,7 +25992,9 @@
       "36": "27",
       "37": "27",
       "38": "27"
-    }
+    },
+    "0.1.2": "0.1.1",
+    "0.1.3": "0.1.1"
   },
   "paunch": {
     "1.0.0": {
@@ -28107,6 +28154,66 @@
           "mock;python_version<\"3.0\"",
           "pytest",
           "pytest-cov",
+          "tox",
+          "wheel"
+        ],
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "37": "36",
+      "38": "36"
+    },
+    "2.0.1": {
+      "36": {
+        "install_requires": [
+          "dill",
+          "six"
+        ],
+        "extras_require": {
+          "dev": [
+            "coverage",
+            "pytest>=4.6",
+            "tox",
+            "wheel"
+          ],
+          ":python_version < \"3.5\"": [
+            "typing"
+          ],
+          "dev:python_version < \"3.0\"": [
+            "mock"
+          ],
+          "dev:python_version <= \"3.7\"": [
+            "pytest-cov==2.8.1"
+          ],
+          "dev:implementation_name == \"pypy\"": [
+            "pytest-cov==2.8.1"
+          ],
+          "dev:implementation_name == \"cpython\"": [
+            "flake8",
+            "ipdb",
+            "mypy",
+            "pylint",
+            "pytest-cov"
+          ],
+          "dev:python_version > \"3.5\" and implementation_name == \"cpython\"": [
+            "black"
+          ]
+        },
+        "tests_require": [
+          "",
+          "black;python_version>\"3.5\" and implementation_name==\"cpython\"",
+          "flake8;implementation_name==\"cpython\"",
+          "ipdb;implementation_name==\"cpython\"",
+          "mypy;implementation_name==\"cpython\"",
+          "pylint;implementation_name==\"cpython\"",
+          "",
+          "coverage",
+          "mock;python_version<\"3.0\"",
+          "pytest>=4.6",
+          "pytest-cov;implementation_name==\"cpython\"",
+          "pytest-cov==2.8.1;implementation_name==\"pypy\"",
+          "pytest-cov==2.8.1;python_version<=\"3.7\"",
           "tox",
           "wheel"
         ],
