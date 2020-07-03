@@ -91,7 +91,30 @@
       "36": "27",
       "37": "27",
       "38": "27"
-    }
+    },
+    "0.4.1": {
+      "27": {
+        "install_requires": [
+          "iopy>=0.2.0"
+        ],
+        "extras_require": {
+          "AD9854_support": [
+            "pyparallel"
+          ],
+          "PyQt_signalslot_facilities": [
+            "PyQt5"
+          ],
+          "Pure_Python_signalslot_facilities": [
+            "signalslot"
+          ]
+        }
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    },
+    "0.4.2": "0.4.1"
   },
   "adder": {
     "1.0": {
@@ -4763,7 +4786,9 @@
     "0.8.4": "0.7.10",
     "0.8.4rc0": "0.7.10",
     "0.8.5": "0.7.10",
-    "0.8.5rc0": "0.7.10"
+    "0.8.5rc0": "0.7.10",
+    "0.8.6": "0.7.10",
+    "0.8.6rc1": "0.7.10"
   },
   "dankerize": {
     "0.1": {
@@ -6613,7 +6638,9 @@
       "38": "27"
     },
     "1.2.3": "1.1.0",
-    "1.2.4": "1.1.0"
+    "1.2.4": "1.1.0",
+    "1.3.0": "1.1.0",
+    "1.3.1": "1.1.0"
   },
   "django-requests-monitoring": {
     "0.1.0": {
@@ -16017,6 +16044,236 @@
           "azure": [
             "azure-storage-blob==2.1.0",
             "azure-cli-core>=2.0.70"
+          ],
+          "tests": [
+            "wheel>=0.31.1",
+            "pytest>=4.6.0",
+            "pytest-timeout>=1.3.3",
+            "pytest-cov>=2.6.1",
+            "pytest-xdist>=1.26.1",
+            "pytest-mock==1.11.2",
+            "pytest-lazy-fixture",
+            "flaky>=3.5.3",
+            "mock>=3.0.0",
+            "xmltodict>=0.11.0",
+            "awscli>=1.16.297",
+            "google-compute-engine==2.8.13",
+            "Pygments",
+            "collective.checkdocs",
+            "flake8==3.7.9",
+            "psutil",
+            "flake8-docstrings",
+            "pydocstyle<4.0",
+            "jaraco.windows==3.9.2",
+            "mock-ssh-server>=0.8.2",
+            "moto==1.3.14.dev464",
+            "rangehttpserver==1.2.0",
+            "beautifulsoup4==4.4.0",
+            "flake8-bugbear",
+            "flake8-comprehensions",
+            "flake8-string-format",
+            "pylint",
+            "pylint-pytest",
+            "pylint-plugin-utils",
+            "black==19.10b0"
+          ],
+          "gdrive": [
+            "pydrive2>=1.4.14"
+          ],
+          "ssh_gssapi": [
+            "paramiko[gssapi]>=2.5.0"
+          ],
+          ":sys_platform == \"win32\"": [
+            "win-unicode-console>=0.5",
+            "pywin32>=225"
+          ],
+          ":python_version < \"3.8\" and sys_platform == \"win32\"": [
+            "speedcopy>=2.0.1"
+          ]
+        },
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "38": "37"
+    },
+    "1.1.4": {
+      "37": {
+        "install_requires": [
+          "ply>=3.9",
+          "colorama>=0.3.9",
+          "configobj>=5.0.6",
+          "gitpython>3",
+          "setuptools>=34.0.0",
+          "nanotime>=0.5.2",
+          "pyasn1>=0.4.1",
+          "voluptuous>=0.11.7",
+          "jsonpath-ng>=1.5.1",
+          "requests>=2.22.0",
+          "grandalf==0.6",
+          "distro>=1.3.0",
+          "appdirs>=1.4.3",
+          "PyYAML<5.4,>=5.1.2",
+          "ruamel.yaml>=0.16.1",
+          "funcy>=1.14",
+          "pathspec>=0.6.0",
+          "shortuuid>=0.5.0",
+          "tqdm<5,>=4.45.0",
+          "packaging>=19.0",
+          "zc.lockfile>=1.2.1",
+          "flufl.lock<4,>=3.2",
+          "networkx<2.4,>=2.1",
+          "pydot>=1.2.4",
+          "flatten_json>=0.1.6",
+          "tabulate>=0.8.7",
+          "pygtrie==2.3.2",
+          "dpath<3,>=2.0.1",
+          "shtab>=1.0.3"
+        ],
+        "extras_require": {
+          "gs": [
+            "google-cloud-storage==1.19.0"
+          ],
+          "s3": [
+            "boto3>=1.9.201"
+          ],
+          "all": [
+            "google-cloud-storage==1.19.0",
+            "boto3>=1.9.201",
+            "azure-storage-blob==2.1.0",
+            "knack",
+            "paramiko>=2.5.0",
+            "oss2==2.6.1",
+            "pydrive2>=1.4.14",
+            "pyarrow>=0.17.0"
+          ],
+          "oss": [
+            "oss2==2.6.1"
+          ],
+          "ssh": [
+            "paramiko>=2.5.0"
+          ],
+          "hdfs": [
+            "pyarrow>=0.17.0"
+          ],
+          "azure": [
+            "azure-storage-blob==2.1.0",
+            "knack"
+          ],
+          "tests": [
+            "wheel>=0.31.1",
+            "pytest>=4.6.0",
+            "pytest-timeout>=1.3.3",
+            "pytest-cov>=2.6.1",
+            "pytest-xdist>=1.26.1",
+            "pytest-mock==1.11.2",
+            "pytest-lazy-fixture",
+            "flaky>=3.5.3",
+            "mock>=3.0.0",
+            "xmltodict>=0.11.0",
+            "awscli>=1.16.297",
+            "google-compute-engine==2.8.13",
+            "Pygments",
+            "collective.checkdocs",
+            "flake8==3.7.9",
+            "psutil",
+            "flake8-docstrings",
+            "pydocstyle<4.0",
+            "jaraco.windows==3.9.2",
+            "mock-ssh-server>=0.8.2",
+            "moto==1.3.14.dev464",
+            "rangehttpserver==1.2.0",
+            "beautifulsoup4==4.4.0",
+            "flake8-bugbear",
+            "flake8-comprehensions",
+            "flake8-string-format",
+            "pylint",
+            "pylint-pytest",
+            "pylint-plugin-utils",
+            "black==19.10b0"
+          ],
+          "gdrive": [
+            "pydrive2>=1.4.14"
+          ],
+          "ssh_gssapi": [
+            "paramiko[gssapi]>=2.5.0"
+          ],
+          ":sys_platform == \"win32\"": [
+            "win-unicode-console>=0.5",
+            "pywin32>=225"
+          ],
+          ":python_version < \"3.8\" and sys_platform == \"win32\"": [
+            "speedcopy>=2.0.1"
+          ]
+        },
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "38": "37"
+    },
+    "1.1.6": {
+      "37": {
+        "install_requires": [
+          "ply>=3.9",
+          "colorama>=0.3.9",
+          "configobj>=5.0.6",
+          "gitpython>3",
+          "setuptools>=34.0.0",
+          "nanotime>=0.5.2",
+          "pyasn1>=0.4.1",
+          "voluptuous>=0.11.7",
+          "jsonpath-ng>=1.5.1",
+          "requests>=2.22.0",
+          "grandalf==0.6",
+          "distro>=1.3.0",
+          "appdirs>=1.4.3",
+          "PyYAML<5.4,>=5.1.2",
+          "ruamel.yaml>=0.16.1",
+          "funcy>=1.14",
+          "pathspec>=0.6.0",
+          "shortuuid>=0.5.0",
+          "tqdm<5,>=4.45.0",
+          "packaging>=19.0",
+          "zc.lockfile>=1.2.1",
+          "flufl.lock<4,>=3.2",
+          "networkx<2.4,>=2.1",
+          "pydot>=1.2.4",
+          "flatten_json>=0.1.6",
+          "tabulate>=0.8.7",
+          "pygtrie==2.3.2",
+          "dpath<3,>=2.0.1",
+          "shtab<2,>=1.1.0"
+        ],
+        "extras_require": {
+          "gs": [
+            "google-cloud-storage==1.19.0"
+          ],
+          "s3": [
+            "boto3>=1.9.201"
+          ],
+          "all": [
+            "google-cloud-storage==1.19.0",
+            "boto3>=1.9.201",
+            "azure-storage-blob==2.1.0",
+            "knack",
+            "paramiko>=2.5.0",
+            "oss2==2.6.1",
+            "pydrive2>=1.4.14",
+            "pyarrow>=0.17.0"
+          ],
+          "oss": [
+            "oss2==2.6.1"
+          ],
+          "ssh": [
+            "paramiko>=2.5.0"
+          ],
+          "hdfs": [
+            "pyarrow>=0.17.0"
+          ],
+          "azure": [
+            "azure-storage-blob==2.1.0",
+            "knack"
           ],
           "tests": [
             "wheel>=0.31.1",
@@ -30657,6 +30914,7 @@
     "0.0.20": "0.0.10",
     "0.0.21": "0.0.10",
     "0.0.22": "0.0.10",
+    "0.0.23": "0.0.10",
     "0.0.9": "0.0.10"
   },
   "pygal-maps-se": {
@@ -33442,6 +33700,7 @@
     "0.2.34": "0.2.25",
     "0.2.35": "0.2.25",
     "0.2.36": "0.2.25",
+    "0.2.37": "0.2.25",
     "0.2.4": {
       "27": {
         "install_requires": [
