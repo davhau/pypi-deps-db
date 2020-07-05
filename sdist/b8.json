@@ -20052,7 +20052,46 @@
       "37": "27",
       "38": "27"
     },
-    "1.4.1": "1.4.0"
+    "1.4.1": "1.4.0",
+    "1.5.0": {
+      "27": {
+        "install_requires": [
+          "luma.core>=1.14.0"
+        ],
+        "extras_require": {
+          "qa": [
+            "rstcheck",
+            "flake8"
+          ],
+          "docs": [
+            "sphinx>=1.5.1"
+          ],
+          "test": [
+            "pytest<=4.5",
+            "pytest-cov"
+          ],
+          "test:python_version < \"3.3\"": [
+            "mock"
+          ],
+          ":platform_machine==\"armv7l\" and platform_system==\"Linux\"": [
+            "ws2812",
+            "rpi_ws281x"
+          ]
+        },
+        "tests_require": [
+          "mock;python_version<\"3.3\"",
+          "pytest<=4.5",
+          "pytest-cov"
+        ],
+        "python_requires": [
+          ">=3.5, <4"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    }
   },
   "lx-pylib": {
     "0.3.0": {
@@ -21016,7 +21055,20 @@
       "37": "27",
       "38": "27"
     },
-    "1.4.5": "1.4.4"
+    "1.4.5": "1.4.4",
+    "1.4.6": {
+      "27": {
+        "install_requires": [
+          "canari<4,>=3.3.10",
+          "PyMISP>=2.4.127"
+        ],
+        "python_requires": [
+          ">=3.5"
+        ]
+      },
+      "37": "27",
+      "38": "27"
+    }
   },
   "mktree": {
     "0.1": {
