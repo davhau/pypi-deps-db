@@ -1614,6 +1614,20 @@
     },
     "0.1.1": "0.1.0"
   },
+  "augaudio": {
+    "1.0.0": {
+      "27": {
+        "install_requires": [
+          "numpy>=1.16.2",
+          "librosa>=0.7.2"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    }
+  },
   "auroraplot": {
     "0.2.0": {
       "27": {
@@ -7841,6 +7855,15 @@
       "38": "27"
     }
   },
+  "dist-gaussbinom": {
+    "0.1": {
+      "27": {},
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    }
+  },
   "distconfig": {
     "0.1.0": {
       "27": {
@@ -9218,12 +9241,17 @@
     "0.1.9": "0.1.6",
     "0.2.0": "0.1.6",
     "0.2.1": "0.1.6",
+    "0.2.10": "0.1.6",
     "0.2.2": "0.1.6",
     "0.2.3": "0.1.6",
     "0.2.4": "0.1.6",
     "0.2.5": "0.1.6",
     "0.2.6": "0.1.6",
-    "0.2.7": "0.1.6"
+    "0.2.7": "0.1.6",
+    "0.2.8": "0.1.6",
+    "0.2.9": "0.1.6",
+    "0.3.0": "0.1.6",
+    "0.3.1a0": "0.1.6"
   },
   "drf-rbac": {
     "0.1": {
@@ -12565,7 +12593,7 @@
     },
     "0.2.0": "0.1.95",
     "0.2.1": "0.1.95",
-    "0.2.2": {
+    "0.2.10": {
       "27": {
         "install_requires": [
           "apscheduler",
@@ -12584,12 +12612,14 @@
       "37": "27",
       "38": "27"
     },
-    "0.2.3": "0.2.2",
-    "0.2.4": "0.2.2",
-    "0.2.5": "0.2.2",
-    "0.2.6": "0.2.2",
-    "0.2.7": "0.2.2",
-    "0.2.8": "0.2.2"
+    "0.2.2": "0.2.10",
+    "0.2.3": "0.2.10",
+    "0.2.4": "0.2.10",
+    "0.2.5": "0.2.10",
+    "0.2.6": "0.2.10",
+    "0.2.7": "0.2.10",
+    "0.2.8": "0.2.10",
+    "0.2.9": "0.2.10"
   },
   "infra-agent": {
     "1.0.0": {
@@ -45664,6 +45694,182 @@
             "sphinx-rtd-theme",
             "sphinx-autodoc-typehints",
             "sphinxcontrib-apidoc"
+          ],
+          "docs": [
+            "Sphinx>=3.0",
+            "sphinx-rtd-theme",
+            "sphinx-autodoc-typehints",
+            "sphinxcontrib-apidoc"
+          ],
+          "test": [
+            "black",
+            "flake8",
+            "mypy",
+            "pytest>=5.0",
+            "pytest-cov",
+            "requests-mock>=1.7",
+            "tox>=3.15"
+          ],
+          "build": [
+            "coveralls",
+            "tox-travis"
+          ]
+        }
+      },
+      "36": {
+        "install_requires": [
+          "python-dateutil>=2.0",
+          "requests>=2.21.0"
+        ],
+        "extras_require": {
+          "dev": [
+            "coveralls",
+            "tox-travis",
+            "Sphinx>=3.0",
+            "sphinx-rtd-theme",
+            "sphinx-autodoc-typehints",
+            "sphinxcontrib-apidoc",
+            "black",
+            "flake8",
+            "mypy",
+            "pytest>=5.0",
+            "pytest-cov",
+            "requests-mock>=1.7",
+            "tox>=3.15"
+          ],
+          "docs": [
+            "Sphinx>=3.0",
+            "sphinx-rtd-theme",
+            "sphinx-autodoc-typehints",
+            "sphinxcontrib-apidoc"
+          ],
+          "test": [
+            "black",
+            "flake8",
+            "mypy",
+            "pytest>=5.0",
+            "pytest-cov",
+            "requests-mock>=1.7",
+            "tox>=3.15"
+          ],
+          "build": [
+            "coveralls",
+            "tox-travis"
+          ]
+        }
+      },
+      "37": "36",
+      "38": "36"
+    },
+    "0.11.0.dev253": {
+      "35": {
+        "install_requires": [
+          "python-dateutil>=2.0",
+          "requests>=2.21.0"
+        ],
+        "extras_require": {
+          "dev": [
+            "Sphinx>=3.0",
+            "sphinx-rtd-theme",
+            "sphinx-autodoc-typehints",
+            "sphinxcontrib-apidoc",
+            "coveralls",
+            "tox-travis",
+            "black",
+            "flake8",
+            "mypy",
+            "pytest>=5.0",
+            "pytest-cov",
+            "requests-mock>=1.7",
+            "tox>=3.15"
+          ],
+          "docs": [
+            "Sphinx>=3.0",
+            "sphinx-rtd-theme",
+            "sphinx-autodoc-typehints",
+            "sphinxcontrib-apidoc"
+          ],
+          "test": [
+            "black",
+            "flake8",
+            "mypy",
+            "pytest>=5.0",
+            "pytest-cov",
+            "requests-mock>=1.7",
+            "tox>=3.15"
+          ],
+          "build": [
+            "coveralls",
+            "tox-travis"
+          ]
+        }
+      },
+      "36": {
+        "install_requires": [
+          "python-dateutil>=2.0",
+          "requests>=2.21.0"
+        ],
+        "extras_require": {
+          "dev": [
+            "coveralls",
+            "tox-travis",
+            "Sphinx>=3.0",
+            "sphinx-rtd-theme",
+            "sphinx-autodoc-typehints",
+            "sphinxcontrib-apidoc",
+            "black",
+            "flake8",
+            "mypy",
+            "pytest>=5.0",
+            "pytest-cov",
+            "requests-mock>=1.7",
+            "tox>=3.15"
+          ],
+          "docs": [
+            "Sphinx>=3.0",
+            "sphinx-rtd-theme",
+            "sphinx-autodoc-typehints",
+            "sphinxcontrib-apidoc"
+          ],
+          "test": [
+            "black",
+            "flake8",
+            "mypy",
+            "pytest>=5.0",
+            "pytest-cov",
+            "requests-mock>=1.7",
+            "tox>=3.15"
+          ],
+          "build": [
+            "coveralls",
+            "tox-travis"
+          ]
+        }
+      },
+      "37": "36",
+      "38": "36"
+    },
+    "0.11.0.dev254": {
+      "35": {
+        "install_requires": [
+          "python-dateutil>=2.0",
+          "requests>=2.21.0"
+        ],
+        "extras_require": {
+          "dev": [
+            "black",
+            "flake8",
+            "mypy",
+            "pytest>=5.0",
+            "pytest-cov",
+            "requests-mock>=1.7",
+            "tox>=3.15",
+            "Sphinx>=3.0",
+            "sphinx-rtd-theme",
+            "sphinx-autodoc-typehints",
+            "sphinxcontrib-apidoc",
+            "coveralls",
+            "tox-travis"
           ],
           "docs": [
             "Sphinx>=3.0",
