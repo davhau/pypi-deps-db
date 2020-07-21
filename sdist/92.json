@@ -39129,6 +39129,7 @@
     "1.14.21.0": "1.11.10.0",
     "1.14.22.0": "1.11.10.0",
     "1.14.23.0": "1.11.10.0",
+    "1.14.24.0": "1.11.10.0",
     "1.14.3.0": "1.11.10.0",
     "1.14.4.0": "1.11.10.0",
     "1.14.5.0": "1.11.10.0",
@@ -39563,6 +39564,7 @@
     "1.14.21.0": "1.11.10.0",
     "1.14.22.0": "1.11.10.0",
     "1.14.23.0": "1.11.10.0",
+    "1.14.24.0": "1.11.10.0",
     "1.14.3.0": "1.11.10.0",
     "1.14.4.0": "1.11.10.0",
     "1.14.5.0": "1.11.10.0",
@@ -40933,6 +40935,74 @@
           "OctoBot-Channels>=1.4.9, <1.5\n",
           "OctoBot-Commons>=1.3.38, <1.4\n",
           "OctoBot-Trading>=1.8.2, <1.9\n",
+          "\n",
+          "# Services\n",
+          "# Reddit\n",
+          "praw==6.5.1\n",
+          "# Telegram\n",
+          "python-telegram-bot==12.7.0\n",
+          "# Twitter\n",
+          "Python-Twitter==3.5\n",
+          "# Google\n",
+          "simplifiedpytrends>=1.1.0\n",
+          "# Ngrok\n",
+          "pyngrok==2.1.4\n",
+          "# Web\n",
+          "## http server\n",
+          "flask==1.1.2\n",
+          "## flask user authentication management\n",
+          "flask-login==0.5.0\n",
+          "## user form validators\n",
+          "WTForms==2.3.1\n",
+          "Flask-WTF==0.14.3\n",
+          "## websockets\n",
+          "### used by the webhook service and flask-socketio for the web interface\n",
+          "gevent==1.5.0\n",
+          "### used by flask-socketio with gevent (listed here because multiple libs are usable, force this one)\n",
+          "gevent-websocket==0.10.1\n",
+          "flask-socketio==4.2.1\n",
+          "\n",
+          "# Analysis tools\n",
+          "newspaper3k==0.2.8\n",
+          "vaderSentiment==3.3.1\n"
+        ],
+        "tests_require": [
+          "pytest"
+        ],
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "36": "35",
+      "37": "35",
+      "38": "35"
+    },
+    "1.1.18": {
+      "35": {
+        "install_requires": [
+          "OctoBot-Channels<1.5,>=1.4.9",
+          "OctoBot-Commons<1.4,>=1.3.40",
+          "OctoBot-Trading<1.9,>=1.8.8",
+          "praw==6.5.1",
+          "python-telegram-bot==12.7.0",
+          "Python-Twitter==3.5",
+          "simplifiedpytrends>=1.1.0",
+          "pyngrok==2.1.4",
+          "flask==1.1.2",
+          "flask-login==0.5.0",
+          "WTForms==2.3.1",
+          "Flask-WTF==0.14.3",
+          "gevent==1.5.0",
+          "gevent-websocket==0.10.1",
+          "flask-socketio==4.2.1",
+          "newspaper3k==0.2.8",
+          "vaderSentiment==3.3.1"
+        ],
+        "setup_requires": [
+          "# Drakkar-Software requirements\n",
+          "OctoBot-Channels>=1.4.9, <1.5\n",
+          "OctoBot-Commons>=1.3.40, <1.4\n",
+          "OctoBot-Trading>=1.8.8, <1.9\n",
           "\n",
           "# Services\n",
           "# Reddit\n",
@@ -42870,7 +42940,35 @@
     "20200124": "20200104",
     "20200401": "20200104",
     "20200402": "20200104",
-    "20200517": "20200104"
+    "20200517": "20200104",
+    "20200720": {
+      "27": {
+        "install_requires": [
+          "cryptography",
+          "sortedcontainers"
+        ],
+        "extras_require": {
+          "dev": [
+            "nose",
+            "tox"
+          ],
+          "docs": [
+            "sphinx",
+            "sphinx-argparse"
+          ],
+          ":python_version > \"3.0\"": [
+            "chardet"
+          ]
+        },
+        "python_requires": [
+          ">=3.4"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    }
   },
   "peachapisec-api": {
     "1.3.10": {
