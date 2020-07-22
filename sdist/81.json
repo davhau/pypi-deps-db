@@ -19502,6 +19502,67 @@
     "0.8.152": "0.8.144",
     "0.8.153": "0.8.144",
     "0.8.154": "0.8.144",
+    "0.8.155": {
+      "37": {
+        "install_requires": [
+          "backoff",
+          "cachetools",
+          "configparser",
+          "funcsigs",
+          "future",
+          "inflection",
+          "lmfit",
+          "msgpack",
+          "nest-asyncio",
+          "pandas",
+          "python-dateutil>=2.7.0",
+          "requests",
+          "scipy>=1.2.0",
+          "six",
+          "statsmodels",
+          "websockets",
+          "pydash",
+          "tqdm",
+          "certifi"
+        ],
+        "extras_require": {
+          "test": [
+            "pytest",
+            "pytest-cov",
+            "pytest-mock",
+            "testfixtures",
+            "nbconvert",
+            "nbformat",
+            "jupyter_client"
+          ],
+          "develop": [
+            "wheel",
+            "sphinx",
+            "sphinx_rtd_theme",
+            "sphinx_autodoc_typehints",
+            "pytest",
+            "pytest-cov",
+            "pytest-mock",
+            "testfixtures"
+          ],
+          "internal": [
+            "gs_quant_internal>=0.4.1",
+            "requests_kerberos"
+          ],
+          "notebook": [
+            "jupyter",
+            "matplotlib~=2.1.0",
+            "pprint",
+            "seaborn"
+          ],
+          ":python_version < \"3.7\"": [
+            "dataclasses",
+            "typing"
+          ]
+        }
+      },
+      "38": "37"
+    },
     "0.8.73": {
       "35": {
         "install_requires": [
@@ -26567,6 +26628,113 @@
           "invenio[tests,base,auth,metadata,postgresql,elasticsearch6]~=3.2.1",
           "invenio-oarepo~=1.1",
           "invenio-oarepo-ui~=1.0",
+          "check-manifest~=0.25",
+          "isort~=4.3",
+          "Sphinx>=1.5.1"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    },
+    "3.2.1.4": {
+      "27": {
+        "setup_requires": [
+          "pytest-runner>=3.0.0,<5"
+        ],
+        "extras_require": {
+          "acls": [
+            "invenio-explicit-acls>=4.4.0"
+          ],
+          "iiif": [
+            "invenio-iiif<1.1.0,>=1.0.0"
+          ],
+          "draft": [
+            "oarepo-invenio-records-draft~=4.0"
+          ],
+          "files": [
+            "invenio-files-rest<1.1.0,>=1.0.0",
+            "invenio-records-files<=1.2.1,>=1.1.0"
+          ],
+          "links": [
+            "invenio-records-links>=1.0.0"
+          ],
+          "tests": [
+            "Flask-CeleryExt>=0.3.4",
+            "marshmallow~=3.0",
+            "invenio[auth,base,elasticsearch6,metadata,postgresql,tests]~=3.2.1",
+            "invenio-oarepo~=1.1",
+            "invenio-oarepo-ui~=1.0",
+            "oarepo-micro-api>=1.0.0",
+            "check-manifest~=0.25",
+            "isort~=4.3",
+            "Sphinx>=1.5.1"
+          ],
+          "deploy": [
+            "Flask-CeleryExt>=0.3.4",
+            "marshmallow~=3.0",
+            "invenio[auth,base,elasticsearch6,metadata,postgresql]~=3.2.1",
+            "invenio-oarepo~=1.1",
+            "invenio-oarepo-ui~=1.0",
+            "oarepo-micro-api>=1.0.0"
+          ],
+          "models": [
+            "marshmallow~=3.0",
+            "invenio-oarepo-dc>=1.1.0",
+            "invenio-oarepo-invenio-model>=1.1.0",
+            "invenio-oarepo-multilingual>=1.0.0"
+          ],
+          "openid": [
+            "invenio-openid-connect>=1.1.0"
+          ],
+          "includes": [
+            "invenio-oarepo-mapping-includes>=1.1.0"
+          ],
+          "multisum": [
+            "invenio-files-multisum-storage<1.1.0,>=1.0.0",
+            "invenio-oarepo-files-rest>=1.0.0"
+          ],
+          "heartbeat": [
+            "oarepo-heartbeat>=1.0.0",
+            "oarepo-heartbeat-common>=1.0.0"
+          ],
+          "micro-api": [
+            "oarepo-micro-api>=1.0.0"
+          ],
+          "tests-es7": [
+            "Flask-CeleryExt>=0.3.4",
+            "marshmallow~=3.0",
+            "invenio[auth,base,elasticsearch7,metadata,postgresql,tests]~=3.2.1",
+            "invenio-oarepo~=1.1",
+            "invenio-oarepo-ui>=1.0.0",
+            "oarepo-micro-api>=1.0.0",
+            "check-manifest~=0.25",
+            "isort~=4.3",
+            "Sphinx>=1.5.1"
+          ],
+          "deploy-es7": [
+            "Flask-CeleryExt>=0.3.4",
+            "marshmallow~=3.0",
+            "invenio[auth,base,elasticsearch7,metadata,postgresql]~=3.2.1",
+            "invenio-oarepo~=1.1",
+            "invenio-oarepo-ui>=1.0.0",
+            "oarepo-micro-api>=1.0.0"
+          ],
+          "references": [
+            "oarepo-references~=1.4.0"
+          ],
+          "taxonomies": [
+            "flask-taxonomies>=6.2.1"
+          ]
+        },
+        "tests_require": [
+          "Flask-CeleryExt>=0.3.4",
+          "marshmallow~=3.0",
+          "invenio[tests,base,auth,metadata,postgresql,elasticsearch6]~=3.2.1",
+          "invenio-oarepo~=1.1",
+          "invenio-oarepo-ui~=1.0",
+          "oarepo-micro-api>=1.0.0",
           "check-manifest~=0.25",
           "isort~=4.3",
           "Sphinx>=1.5.1"
@@ -41300,6 +41468,17 @@
       "27": {
         "install_requires": [
           "tencentcloud-sdk-python>=3.0.220"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    },
+    "3.0.221.1": {
+      "27": {
+        "install_requires": [
+          "tencentcloud-sdk-python>=3.0.221"
         ]
       },
       "35": "27",
