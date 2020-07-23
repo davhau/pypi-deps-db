@@ -14713,6 +14713,74 @@
       "36": "35",
       "37": "35",
       "38": "35"
+    },
+    "20.3.0rc1": {
+      "35": {
+        "install_requires": [
+          "Click>=7.1",
+          "aiodocker>=0.18.0",
+          "aiofiles~=0.4.0",
+          "aiojobs>=0.2.2",
+          "aiohttp~=3.6.2",
+          "aioredis~=1.3.1",
+          "aiotools~=0.9.1",
+          "async_timeout~=3.0",
+          "attrs~=19.3",
+          "callosum~=0.9.6",
+          "psutil~=5.7.0",
+          "python-snappy~=0.5.1",
+          "pyzmq~=19.0.1",
+          "trafaret~=2.0.1",
+          "uvloop~=0.14.0",
+          "setproctitle~=1.1.10",
+          "typing-extensions==3.7.4",
+          "netifaces~=0.10.0",
+          "backend.ai-common>=20.03.0rc0",
+          "backend.ai-cli~=0.3",
+          "backend.ai-krunner-alpine~=3.2",
+          "backend.ai-krunner-centos~=3.2",
+          "backend.ai-krunner-ubuntu~=3.4"
+        ],
+        "setup_requires": [
+          "setuptools>=41.2.0"
+        ],
+        "extras_require": {
+          "dev": [],
+          "lint": [
+            "flake8>=3.8.1"
+          ],
+          "test": [
+            "pytest~=5.4.2",
+            "pytest-asyncio>=0.12.0",
+            "pytest-cov",
+            "pytest-mock>=3.1.0",
+            "asynctest>=0.13.0",
+            "aioresponses~=0.6.3",
+            "codecov"
+          ],
+          "build": [
+            "wheel>=0.33.6",
+            "twine>=1.14.0",
+            "towncrier~=19.2.0"
+          ],
+          "monitor": [
+            "backend.ai-stats-monitor",
+            "backend.ai-error-monitor"
+          ],
+          "typecheck": [
+            "mypy>=0.780"
+          ],
+          ":python_version < \"3.7\"": [
+            "dataclasses"
+          ]
+        },
+        "python_requires": [
+          ">=3.8"
+        ]
+      },
+      "36": "35",
+      "37": "35",
+      "38": "35"
     }
   },
   "background_zmq_ipython": {
@@ -21623,6 +21691,71 @@
           "psutil>=3.3.0",
           "requests>=2.8.0",
           "cryptography<=2.2.2"
+        ],
+        "extras_require": {
+          ":sys_platform == \"darwin\"": [
+            "gnureadline==6.3.8"
+          ],
+          ":sys_platform == \"linux2\" or sys_platform == \"linux\"": [
+            "xattr==0.9.6"
+          ]
+        },
+        "tests_require": [
+          "pexpect==4.6",
+          "pyopenssl==17.5.0",
+          "mock==2.0.0",
+          "pytest==4.6.9",
+          "pytest-xdist==1.31.0",
+          "pytest-timeout==1.3.4"
+        ]
+      },
+      "36": "35",
+      "37": "35",
+      "38": "35"
+    },
+    "0.297.1": {
+      "27": {
+        "install_requires": [
+          "argcomplete>=1.9.4",
+          "websocket-client==0.53.0",
+          "python-dateutil>=2.5",
+          "python-magic==0.4.6",
+          "beautifulsoup4==4.4.1",
+          "psutil>=3.3.0",
+          "requests>=2.8.0",
+          "cryptography<3.0,>=2.3",
+          "backports.ssl_match_hostname==3.5.0.1"
+        ],
+        "extras_require": {
+          ":python_version == \"2.7\"": [
+            "futures>=3.2"
+          ],
+          ":sys_platform == \"darwin\"": [
+            "gnureadline==6.3.8"
+          ],
+          ":sys_platform == \"linux2\" or sys_platform == \"linux\"": [
+            "xattr==0.9.6"
+          ]
+        },
+        "tests_require": [
+          "pexpect==4.6",
+          "pyopenssl==17.5.0",
+          "mock==2.0.0",
+          "pytest==4.6.9",
+          "pytest-xdist==1.31.0",
+          "pytest-timeout==1.3.4"
+        ]
+      },
+      "35": {
+        "install_requires": [
+          "argcomplete>=1.9.4",
+          "websocket-client==0.53.0",
+          "python-dateutil>=2.5",
+          "python-magic==0.4.6",
+          "beautifulsoup4==4.4.1",
+          "psutil>=3.3.0",
+          "requests>=2.8.0",
+          "cryptography<3.0,>=2.3"
         ],
         "extras_require": {
           ":sys_platform == \"darwin\"": [
@@ -34023,6 +34156,49 @@
       "38": "27"
     }
   },
+  "mechelastic": {
+    "1.1.1": {
+      "35": {
+        "install_requires": [
+          "numpy",
+          "spglib",
+          "prettytable"
+        ]
+      },
+      "36": "35",
+      "37": "35",
+      "38": "35"
+    },
+    "1.1.2": {
+      "35": {
+        "install_requires": [
+          "numpy",
+          "spglib",
+          "prettytable",
+          "pathlib",
+          "json",
+          "pyvista"
+        ]
+      },
+      "36": "35",
+      "37": "35",
+      "38": "35"
+    },
+    "1.1.3": {
+      "35": {
+        "install_requires": [
+          "numpy",
+          "spglib",
+          "prettytable",
+          "pathlib",
+          "pyvista"
+        ]
+      },
+      "36": "35",
+      "37": "35",
+      "38": "35"
+    }
+  },
   "meds": {
     "1": {
       "35": {
@@ -35825,6 +36001,7 @@
     "1.14.23.0": "1.11.10.0",
     "1.14.24.0": "1.11.10.0",
     "1.14.25.0": "1.11.10.0",
+    "1.14.26.0": "1.11.10.0",
     "1.14.3.0": "1.11.10.0",
     "1.14.4.0": "1.11.10.0",
     "1.14.5.0": "1.11.10.0",
@@ -36261,6 +36438,7 @@
     "1.14.23.0": "1.11.10.0",
     "1.14.24.0": "1.11.10.0",
     "1.14.25.0": "1.11.10.0",
+    "1.14.26.0": "1.11.10.0",
     "1.14.3.0": "1.11.10.0",
     "1.14.4.0": "1.11.10.0",
     "1.14.5.0": "1.11.10.0",
@@ -37533,7 +37711,8 @@
       "36": "27",
       "37": "27",
       "38": "27"
-    }
+    },
+    "0.4.0": "0.3.0"
   },
   "octave-kernel": {
     "0.1": {
@@ -41613,7 +41792,8 @@
     },
     "0.91": "0.6",
     "1.0": "0.6",
-    "1.1": "0.6"
+    "1.1": "0.6",
+    "1.16": "0.6"
   },
   "pretix-passbook": {
     "1.0.0": {
@@ -41839,7 +42019,8 @@
     "0.0.13": "0.0.11",
     "0.0.14": "0.0.11",
     "0.0.15": "0.0.11",
-    "0.0.16": "0.0.11"
+    "0.0.16": "0.0.11",
+    "0.0.17": "0.0.11"
   },
   "py-kqueue": {
     "2.0": {
@@ -42677,6 +42858,7 @@
     "0.5": "0.3.0.3",
     "0.5.1": "0.3.0.3",
     "0.6": "0.3.0.3",
+    "0.6.1": "0.3.0.3",
     "0.6.dev1": "0.3.0.3"
   },
   "pyramid-jsroutes": {
@@ -48417,6 +48599,27 @@
       "36": "27",
       "37": "27",
       "38": "27"
+    },
+    "0.1.0rc1": {
+      "27": {
+        "install_requires": [
+          "tqdm",
+          "astropy",
+          "astroquery",
+          "sklearn",
+          "setuptools>=41.0.0",
+          "more-itertools",
+          "matplotlib",
+          "numpy",
+          "scipy==1.4.1",
+          "tensorflow>2.0.0",
+          "lightkurve==1.9.0"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
     }
   },
   "stf-selector": {
@@ -53166,7 +53369,8 @@
       "37": "36",
       "38": "36"
     },
-    "0.2.0": "0.1.0"
+    "0.2.0": "0.1.0",
+    "0.3.0": "0.1.0"
   },
   "xtsv": {
     "0.0.1": {
