@@ -348,6 +348,20 @@
           ]
         }
       },
+      "4.11.0": {
+        "apache_bookkeeper_client-4.11.0-py2.py3-none-any.whl": {
+          "requires_dist": [
+            "protobuf (>=3.0.0)",
+            "requests (<3.0.0dev,>=2.18.0)",
+            "setuptools (>=34.0.0)",
+            "six (>=1.10.0)",
+            "pytz",
+            "grpcio (<1.26.0,>=1.8.2)",
+            "pymmh3 (>=0.0.3)",
+            "futures (>=3.2.0) ; python_version < \"3.2\""
+          ]
+        }
+      },
       "4.9.0": {
         "apache_bookkeeper_client-4.9.0-py2.py3-none-any.whl": {
           "requires_dist": [
@@ -723,6 +737,19 @@
             "argparse (>=1.1.0) ; python_version in \"2.4, 2.5, 2.6\""
           ]
         }
+      },
+      "0.13.0": {
+        "awslogs-0.13.0-py2.py3-none-any.whl": {
+          "requires_dist": [
+            "boto3 (>=1.5.0)",
+            "jmespath (<1.0.0,>=0.7.1)",
+            "termcolor (>=1.1.0)",
+            "python-dateutil (>=2.4.0)"
+          ]
+        }
+      },
+      "0.14.0": {
+        "awslogs-0.14.0-py2.py3-none-any.whl": "0.13.0@awslogs-0.13.0-py2.py3-none-any.whl"
       }
     }
   },
@@ -1025,6 +1052,17 @@
       }
     }
   },
+  "beancount2ledger": {
+    "py3": {
+      "1.1": {
+        "beancount2ledger-1.1-py3-none-any.whl": {
+          "requires_dist": [
+            "beancount (>=2.0.0)"
+          ]
+        }
+      }
+    }
+  },
   "beavr": {
     "py3": {
       "1.0.0": {
@@ -1071,6 +1109,28 @@
     "py3": {
       "0.2": {
         "bestcaptchasolverapi3-0.2-py3-none-any.whl": {}
+      }
+    }
+  },
+  "bitranox-coloredlogs": {
+    "py3": {
+      "14.0.1": {
+        "bitranox_coloredlogs-14.0.1-py3-none-any.whl": {
+          "requires_dist": [
+            "humanfriendly (>=7.1)"
+          ]
+        }
+      },
+      "14.0.3a0": {
+        "bitranox_coloredlogs-14.0.3a0-py3-none-any.whl": {
+          "requires_dist": [
+            "click",
+            "humanfriendly (>=7.1)"
+          ]
+        }
+      },
+      "14.0.4": {
+        "bitranox_coloredlogs-14.0.4-py3-none-any.whl": "14.0.3a0@bitranox_coloredlogs-14.0.3a0-py3-none-any.whl"
       }
     }
   },
@@ -1647,6 +1707,17 @@
             "colorama"
           ]
         }
+      },
+      "1.5.1": {
+        "boxcli-1.5.1-py3-none-any.whl": "1.0.0@boxcli-1.0.0-py3-none-any.whl"
+      },
+      "1.5.2": {
+        "boxcli-1.5.2-py3-none-any.whl": {
+          "requires_dist": [
+            "colorama (>=0.4.3,<0.5.0)",
+            "wcwidth (>=0.2.5,<0.3.0)"
+          ]
+        }
       }
     }
   },
@@ -1838,6 +1909,27 @@
             "stats-arrays"
           ]
         }
+      }
+    }
+  },
+  "cad-to-shapely": {
+    "py3": {
+      "0.1.7": {
+        "cad_to_shapely-0.1.7-py3-none-any.whl": {
+          "provides_extras": [
+            "dev"
+          ],
+          "requires_dist": [
+            "ezdxf",
+            "numpy",
+            "shapely",
+            "geomdl",
+            "matplotlib ; extra == 'dev'"
+          ]
+        }
+      },
+      "0.1.8": {
+        "cad_to_shapely-0.1.8-py3-none-any.whl": "0.1.7@cad_to_shapely-0.1.7-py3-none-any.whl"
       }
     }
   },
@@ -2067,6 +2159,40 @@
       },
       "0.5.9": {
         "camphr-0.5.9-py3-none-any.whl": "0.5.10@camphr-0.5.10-py3-none-any.whl"
+      },
+      "0.6.0": {
+        "camphr-0.6.0-py3-none-any.whl": {
+          "provides_extras": [
+            "all",
+            "allennlp",
+            "juman",
+            "mecab",
+            "udify"
+          ],
+          "requires_dist": [
+            "Cython; extra == \"all\" or extra == \"juman\"",
+            "allennlp (>=1.0.0,<2.0.0); extra == \"all\" or extra == \"allennlp\" or extra == \"udify\"",
+            "boto3 (>=1.14,<2.0); extra == \"allennlp\" or extra == \"udify\"",
+            "catalogue (>=1.0.0,<2.0.0)",
+            "dataclasses (>=0.6,<0.7)",
+            "fire (>=0.2.1,<1.0)",
+            "hydra-core (>=0.11.3,<0.12.0)",
+            "hydra_colorlog (>=0.1.4,<0.2.0)",
+            "mecab-python3 (>=0.996.3,<0.997.0); extra == \"all\" or extra == \"mecab\"",
+            "mojimoji2; extra == \"all\" or extra == \"juman\"",
+            "more-itertools",
+            "pyahocorasick (>=1.4.0,<2.0.0)",
+            "pytokenizations (>=0.4.8)",
+            "scikit-learn (>=0.22,<0.23)",
+            "spacy (>=2.2.3,<3.0.0)",
+            "toolz (>=0.10.0,<0.11.0)",
+            "torch (>=1.0,<2.0)",
+            "transformers (>=2.10,<3.0)",
+            "typing-extensions (>=3.7.4)",
+            "unofficial-pyknp; extra == \"all\" or extra == \"juman\"",
+            "unofficial-udify (>=0.2.1,<0.3.0); extra == \"all\" or extra == \"udify\""
+          ]
+        }
       }
     }
   },
@@ -2114,6 +2240,9 @@
       },
       "3.3.0": {
         "castle-3.3.0-py2.py3-none-any.whl": "1.0.0@castle-1.0.0-py2.py3-none-any.whl"
+      },
+      "4.0.0": {
+        "castle-4.0.0-py2.py3-none-any.whl": "1.0.0@castle-1.0.0-py2.py3-none-any.whl"
       }
     }
   },
@@ -3047,6 +3176,30 @@
       },
       "2.0.1": {
         "clockify_seon_client-2.0.1-py3-none-any.whl": "2.0.0@clockify_seon_client-2.0.0-py3-none-any.whl"
+      }
+    }
+  },
+  "cloudcomponents.cdk-stripe-webhook": {
+    "py3": {
+      "1.0.43": {
+        "cloudcomponents.cdk_stripe_webhook-1.0.43-py3-none-any.whl": {
+          "requires_dist": [
+            "jsii (<2.0.0,>=1.9.0)",
+            "publication (>=0.0.3)",
+            "aws-cdk.aws-lambda (<2.0.0,>=1.53.0)",
+            "aws-cdk.core (<2.0.0,>=1.53.0)"
+          ]
+        }
+      },
+      "1.0.44": {
+        "cloudcomponents.cdk_stripe_webhook-1.0.44-py3-none-any.whl": {
+          "requires_dist": [
+            "jsii (<2.0.0,>=1.9.0)",
+            "publication (>=0.0.3)",
+            "aws-cdk.aws-lambda (<2.0.0,>=1.54.0)",
+            "aws-cdk.core (<2.0.0,>=1.54.0)"
+          ]
+        }
       }
     }
   },
@@ -4408,6 +4561,9 @@
       },
       "1.9.2": {
         "django_baton-1.9.2-py3-none-any.whl": "1.2.1@django_baton-1.2.1-py3-none-any.whl"
+      },
+      "1.9.3": {
+        "django_baton-1.9.3-py3-none-any.whl": "1.2.1@django_baton-1.2.1-py3-none-any.whl"
       }
     }
   },
@@ -5695,6 +5851,9 @@
       },
       "0.2.65": {
         "edc_lab-0.2.65-py3-none-any.whl": "0.2.18@edc_lab-0.2.18-py3-none-any.whl"
+      },
+      "0.2.66": {
+        "edc_lab-0.2.66-py3-none-any.whl": "0.2.18@edc_lab-0.2.18-py3-none-any.whl"
       }
     }
   },
@@ -5827,6 +5986,16 @@
           ]
         }
       }
+    },
+    "py3": {
+      "0.0.9": {
+        "edx_tincan_py35-0.0.9-py3-none-any.whl": {
+          "requires_dist": [
+            "pytz",
+            "aniso8601"
+          ]
+        }
+      }
     }
   },
   "edxia": {
@@ -5923,6 +6092,97 @@
       },
       "0.2.3": {
         "elastictools-0.2.3-py3-none-any.whl": "0.2.0@elastictools-0.2.0-py3-none-any.whl"
+      }
+    }
+  },
+  "enan": {
+    "py3": {
+      "0.0.1": {
+        "enan-0.0.1-py3-none-any.whl": {
+          "requires_dist": [
+            "numpy",
+            "scipy",
+            "pandas"
+          ]
+        }
+      },
+      "0.0.10": {
+        "enan-0.0.10-py3-none-any.whl": {
+          "requires_dist": [
+            "numpy",
+            "scipy",
+            "pandas",
+            "statsmodels",
+            "tqdm",
+            "xlrd",
+            "matplotlib"
+          ]
+        }
+      },
+      "0.0.11": {
+        "enan-0.0.11-py3-none-any.whl": {
+          "requires_dist": [
+            "numpy",
+            "scipy",
+            "pandas",
+            "statsmodels",
+            "tqdm",
+            "xlrd",
+            "matplotlib",
+            "seaborn"
+          ]
+        }
+      },
+      "0.0.12": {
+        "enan-0.0.12-py3-none-any.whl": "0.0.11@enan-0.0.11-py3-none-any.whl"
+      },
+      "0.0.2": {
+        "enan-0.0.2-py3-none-any.whl": "0.0.1@enan-0.0.1-py3-none-any.whl"
+      },
+      "0.0.3": {
+        "enan-0.0.3-py3-none-any.whl": "0.0.1@enan-0.0.1-py3-none-any.whl"
+      },
+      "0.0.4": {
+        "enan-0.0.4-py3-none-any.whl": {
+          "requires_dist": [
+            "numpy",
+            "scipy",
+            "pandas",
+            "tqdm"
+          ]
+        }
+      },
+      "0.0.5": {
+        "enan-0.0.5-py3-none-any.whl": "0.0.4@enan-0.0.4-py3-none-any.whl"
+      },
+      "0.0.6": {
+        "enan-0.0.6-py3-none-any.whl": {
+          "requires_dist": [
+            "numpy",
+            "scipy",
+            "pandas",
+            "tqdm",
+            "xlrd"
+          ]
+        }
+      },
+      "0.0.7": {
+        "enan-0.0.7-py3-none-any.whl": {
+          "requires_dist": [
+            "numpy",
+            "scipy",
+            "pandas",
+            "statsmodels",
+            "tqdm",
+            "xlrd"
+          ]
+        }
+      },
+      "0.0.8": {
+        "enan-0.0.8-py3-none-any.whl": "0.0.7@enan-0.0.7-py3-none-any.whl"
+      },
+      "0.0.9": {
+        "enan-0.0.9-py3-none-any.whl": "0.0.10@enan-0.0.10-py3-none-any.whl"
       }
     }
   },
@@ -7267,6 +7527,33 @@
             "xlsxwriter"
           ]
         }
+      },
+      "0.2.8": {
+        "fastapi_admin-0.2.8-py3-none-any.whl": {
+          "provides_extras": [
+            "uvloop"
+          ],
+          "requires_dist": [
+            "aiomysql",
+            "aiosqlite",
+            "bcrypt",
+            "colorama",
+            "fastapi",
+            "jinja2",
+            "passlib",
+            "prompt_toolkit",
+            "pyjwt",
+            "python-dotenv",
+            "python-rapidjson",
+            "tortoise-orm",
+            "uvicorn",
+            "uvloop; extra == \"uvloop\"",
+            "xlsxwriter"
+          ]
+        }
+      },
+      "0.2.9": {
+        "fastapi_admin-0.2.9-py3-none-any.whl": "0.2.8@fastapi_admin-0.2.8-py3-none-any.whl"
       }
     }
   },
@@ -7284,6 +7571,24 @@
             "cython (>=0.29,<0.30); extra == \"cython\"",
             "humanize (>=2.4.0,<3.0.0)",
             "py-cpuinfo (>=5.0.0,<6.0.0)"
+          ]
+        }
+      },
+      "1.3.0": {
+        "fastcdc-1.3.0-cp38-cp38m-win_amd64.whl": {
+          "provides_extras": [
+            "cython",
+            "hashes"
+          ],
+          "requires_dist": [
+            "blake3 (>=0.1.5,<0.2.0); extra == \"hashes\"",
+            "click (>=7.1.2,<8.0.0)",
+            "click-default-group (>=1.2.2,<2.0.0)",
+            "codetiming (>=1.2.0,<2.0.0)",
+            "cython (>=0.29,<0.30); extra == \"cython\"",
+            "humanize (>=2.4.0,<3.0.0)",
+            "py-cpuinfo (>=6.0.0,<7.0.0)",
+            "xxhash (>=1.4.4,<2.0.0); extra == \"hashes\""
           ]
         }
       }
@@ -7381,6 +7686,9 @@
             "user-agent (>=0.1.9,<0.2.0)"
           ]
         }
+      },
+      "0.2": {
+        "find_the_site-0.2-py3-none-any.whl": "0.1.0@find_the_site-0.1.0-py3-none-any.whl"
       }
     }
   },
@@ -8544,6 +8852,30 @@
       }
     }
   },
+  "gtirb-capstone": {
+    "py3": {
+      "1.0.0": {
+        "gtirb_capstone-1.0.0-py3-none-any.whl": {
+          "provides_extras": [
+            "test"
+          ],
+          "requires_dist": [
+            "capstone",
+            "dataclasses",
+            "gtirb",
+            "keystone-engine",
+            "flake8 ; extra == 'test'",
+            "isort ; extra == 'test'",
+            "pytest ; extra == 'test'",
+            "pytest-cov ; extra == 'test'",
+            "tox ; extra == 'test'",
+            "tox-wheel ; extra == 'test'",
+            "pre-commit ; extra == 'test'"
+          ]
+        }
+      }
+    }
+  },
   "guess-xsd-type": {
     "py3": {
       "0.1": {
@@ -8627,6 +8959,35 @@
       },
       "0.6.3": {
         "hallgrimJS-0.6.3-py3-none-any.whl": "0.5.1.2@hallgrimJS-0.5.1.2-py3-none-any.whl"
+      },
+      "0.6.4": {
+        "hallgrimJS-0.6.4-py3-none-any.whl": "0.5.1.2@hallgrimJS-0.5.1.2-py3-none-any.whl"
+      }
+    }
+  },
+  "hangthepyman": {
+    "py3": {
+      "0.0.1": {
+        "hangthepyman-0.0.1-py3-none-any.whl": {
+          "requires_dist": [
+            "pygame (>=1.9.6,<2.0.0)"
+          ]
+        }
+      },
+      "0.0.2": {
+        "hangthepyman-0.0.2-py3-none-any.whl": "0.0.1@hangthepyman-0.0.1-py3-none-any.whl"
+      },
+      "0.1.0": {
+        "hangthepyman-0.1.0-py3-none-any.whl": "0.0.1@hangthepyman-0.0.1-py3-none-any.whl"
+      },
+      "0.1.1": {
+        "hangthepyman-0.1.1-py3-none-any.whl": "0.0.1@hangthepyman-0.0.1-py3-none-any.whl"
+      },
+      "0.1.2": {
+        "hangthepyman-0.1.2-py3-none-any.whl": "0.0.1@hangthepyman-0.0.1-py3-none-any.whl"
+      },
+      "0.1.3": {
+        "hangthepyman-0.1.3-py3-none-any.whl": "0.0.1@hangthepyman-0.0.1-py3-none-any.whl"
       }
     }
   },
@@ -8780,6 +9141,20 @@
       },
       "1.9.0": {
         "helmstack-1.9.0-py3-none-any.whl": "1.0.0@helmstack-1.0.0-py3-none-any.whl"
+      }
+    }
+  },
+  "higgsbacktest": {
+    "py3": {
+      "0.1.0": {
+        "higgsbacktest-0.1.0-py3-none-any.whl": {
+          "requires_dist": [
+            "numpy",
+            "higgsboom",
+            "pandas",
+            "matplotlib"
+          ]
+        }
       }
     }
   },
@@ -9097,6 +9472,9 @@
     "py3": {
       "1.0.0": {
         "imusensor-1.0.0-py3-none-any.whl": {}
+      },
+      "1.0.1": {
+        "imusensor-1.0.1-py3-none-any.whl": "1.0.0@imusensor-1.0.0-py3-none-any.whl"
       }
     }
   },
@@ -9606,6 +9984,19 @@
             "pytest-flake8 ; extra == 'testing'"
           ]
         }
+      }
+    }
+  },
+  "jgf": {
+    "py3": {
+      "0.1": {
+        "jgf-0.1-py3-none-any.whl": {}
+      },
+      "0.2": {
+        "jgf-0.2-py3-none-any.whl": "0.1@jgf-0.1-py3-none-any.whl"
+      },
+      "0.2.1": {
+        "jgf-0.2.1-py3-none-any.whl": "0.1@jgf-0.1-py3-none-any.whl"
       }
     }
   },
@@ -10868,6 +11259,12 @@
       },
       "1.0.1": {
         "Mopidy_Sangu-1.0.1-py3-none-any.whl": "1.0.0@Mopidy_Sangu-1.0.0-py3-none-any.whl"
+      },
+      "1.1.0": {
+        "Mopidy_Sangu-1.1.0-py3-none-any.whl": "1.0.0@Mopidy_Sangu-1.0.0-py3-none-any.whl"
+      },
+      "1.1.1": {
+        "Mopidy_Sangu-1.1.1-py3-none-any.whl": "1.0.0@Mopidy_Sangu-1.0.0-py3-none-any.whl"
       }
     }
   },
@@ -11342,8 +11739,53 @@
       "1.14.12.0": {
         "mypy_boto3_logs-1.14.12.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_logs-1.13.24.3-py3-none-any.whl"
       },
+      "1.14.13.0": {
+        "mypy_boto3_logs-1.14.13.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_logs-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.14.0": {
+        "mypy_boto3_logs-1.14.14.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_logs-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.15.0": {
+        "mypy_boto3_logs-1.14.15.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_logs-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.16.0": {
+        "mypy_boto3_logs-1.14.16.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_logs-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.17.0": {
+        "mypy_boto3_logs-1.14.17.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_logs-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.18.0": {
+        "mypy_boto3_logs-1.14.18.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_logs-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.19.0": {
+        "mypy_boto3_logs-1.14.19.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_logs-1.13.24.3-py3-none-any.whl"
+      },
       "1.14.2.0": {
         "mypy_boto3_logs-1.14.2.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_logs-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.20.0": {
+        "mypy_boto3_logs-1.14.20.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_logs-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.21.0": {
+        "mypy_boto3_logs-1.14.21.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_logs-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.22.0": {
+        "mypy_boto3_logs-1.14.22.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_logs-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.23.0": {
+        "mypy_boto3_logs-1.14.23.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_logs-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.24.0": {
+        "mypy_boto3_logs-1.14.24.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_logs-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.25.0": {
+        "mypy_boto3_logs-1.14.25.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_logs-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.26.0": {
+        "mypy_boto3_logs-1.14.26.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_logs-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.27.0": {
+        "mypy_boto3_logs-1.14.27.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_logs-1.13.24.3-py3-none-any.whl"
       },
       "1.14.3.0": {
         "mypy_boto3_logs-1.14.3.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_logs-1.13.24.3-py3-none-any.whl"
@@ -11564,8 +12006,53 @@
       "1.14.12.0": {
         "mypy_boto3_s3control-1.14.12.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_s3control-1.13.24.3-py3-none-any.whl"
       },
+      "1.14.13.0": {
+        "mypy_boto3_s3control-1.14.13.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_s3control-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.14.0": {
+        "mypy_boto3_s3control-1.14.14.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_s3control-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.15.0": {
+        "mypy_boto3_s3control-1.14.15.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_s3control-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.16.0": {
+        "mypy_boto3_s3control-1.14.16.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_s3control-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.17.0": {
+        "mypy_boto3_s3control-1.14.17.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_s3control-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.18.0": {
+        "mypy_boto3_s3control-1.14.18.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_s3control-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.19.0": {
+        "mypy_boto3_s3control-1.14.19.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_s3control-1.13.24.3-py3-none-any.whl"
+      },
       "1.14.2.0": {
         "mypy_boto3_s3control-1.14.2.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_s3control-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.20.0": {
+        "mypy_boto3_s3control-1.14.20.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_s3control-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.21.0": {
+        "mypy_boto3_s3control-1.14.21.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_s3control-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.22.0": {
+        "mypy_boto3_s3control-1.14.22.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_s3control-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.23.0": {
+        "mypy_boto3_s3control-1.14.23.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_s3control-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.24.0": {
+        "mypy_boto3_s3control-1.14.24.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_s3control-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.25.0": {
+        "mypy_boto3_s3control-1.14.25.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_s3control-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.26.0": {
+        "mypy_boto3_s3control-1.14.26.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_s3control-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.27.0": {
+        "mypy_boto3_s3control-1.14.27.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_s3control-1.13.24.3-py3-none-any.whl"
       },
       "1.14.3.0": {
         "mypy_boto3_s3control-1.14.3.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_s3control-1.13.24.3-py3-none-any.whl"
@@ -11786,8 +12273,53 @@
       "1.14.12.0": {
         "mypy_boto3_workmail-1.14.12.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_workmail-1.13.24.3-py3-none-any.whl"
       },
+      "1.14.13.0": {
+        "mypy_boto3_workmail-1.14.13.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_workmail-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.14.0": {
+        "mypy_boto3_workmail-1.14.14.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_workmail-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.15.0": {
+        "mypy_boto3_workmail-1.14.15.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_workmail-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.16.0": {
+        "mypy_boto3_workmail-1.14.16.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_workmail-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.17.0": {
+        "mypy_boto3_workmail-1.14.17.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_workmail-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.18.0": {
+        "mypy_boto3_workmail-1.14.18.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_workmail-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.19.0": {
+        "mypy_boto3_workmail-1.14.19.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_workmail-1.13.24.3-py3-none-any.whl"
+      },
       "1.14.2.0": {
         "mypy_boto3_workmail-1.14.2.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_workmail-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.20.0": {
+        "mypy_boto3_workmail-1.14.20.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_workmail-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.21.0": {
+        "mypy_boto3_workmail-1.14.21.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_workmail-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.22.0": {
+        "mypy_boto3_workmail-1.14.22.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_workmail-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.23.0": {
+        "mypy_boto3_workmail-1.14.23.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_workmail-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.24.0": {
+        "mypy_boto3_workmail-1.14.24.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_workmail-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.25.0": {
+        "mypy_boto3_workmail-1.14.25.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_workmail-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.26.0": {
+        "mypy_boto3_workmail-1.14.26.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_workmail-1.13.24.3-py3-none-any.whl"
+      },
+      "1.14.27.0": {
+        "mypy_boto3_workmail-1.14.27.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_workmail-1.13.24.3-py3-none-any.whl"
       },
       "1.14.3.0": {
         "mypy_boto3_workmail-1.14.3.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_workmail-1.13.24.3-py3-none-any.whl"
@@ -11819,6 +12351,9 @@
       },
       "1.0.1": {
         "mzmlripper-1.0.1-py3-none-any.whl": "1.0.0@mzmlripper-1.0.0-py3-none-any.whl"
+      },
+      "1.1.0": {
+        "mzmlripper-1.1.0-py3-none-any.whl": "1.0.0@mzmlripper-1.0.0-py3-none-any.whl"
       }
     }
   },
@@ -12185,6 +12720,39 @@
             "tqdm (>=4.46.0,<5.0.0)"
           ]
         }
+      },
+      "0.1.8": {
+        "nlp_db-0.1.8-py3-none-any.whl": {
+          "requires_dist": [
+            "flask (>=1.1.2,<2.0.0)",
+            "openpyxl (>=3.0.3,<4.0.0)",
+            "requests (>=2.24.0,<3.0.0)",
+            "scikit-learn (>=0.23.1,<0.24.0)",
+            "sentence_transformers (>=0.2.6,<0.3.0)",
+            "tensorflow (>=2.2.0,<3.0.0)",
+            "tensorflow-hub (>=0.8.0,<0.9.0)",
+            "toolz (>=0.10.0,<0.11.0)",
+            "torch (==1.5.0)",
+            "tqdm (>=4.46.0,<5.0.0)"
+          ]
+        }
+      },
+      "0.1.9": {
+        "nlp_db-0.1.9-py3-none-any.whl": {
+          "requires_dist": [
+            "flask (>=1.1.2,<2.0.0)",
+            "gdown (>=3.11.1,<4.0.0)",
+            "openpyxl (>=3.0.3,<4.0.0)",
+            "requests (>=2.24.0,<3.0.0)",
+            "scikit-learn (>=0.23.1,<0.24.0)",
+            "sentence_transformers (>=0.2.6,<0.3.0)",
+            "tensorflow (>=2.2.0,<3.0.0)",
+            "tensorflow-hub (>=0.8.0,<0.9.0)",
+            "toolz (>=0.10.0,<0.11.0)",
+            "torch (==1.5.0)",
+            "tqdm (>=4.46.0,<5.0.0)"
+          ]
+        }
       }
     }
   },
@@ -12243,6 +12811,32 @@
             "gdal (>=2.1.3)"
           ]
         }
+      }
+    }
+  },
+  "objmpp-classification": {
+    "py3": {
+      "0.0.1": {
+        "objmpp_classification-0.0.1-py3-none-any.whl": {
+          "requires_dist": [
+            "click",
+            "numpy",
+            "pathlib",
+            "matplotlib",
+            "pandas",
+            "imageio",
+            "scikit-image",
+            "opencv-python",
+            "Pillow",
+            "scipy"
+          ]
+        }
+      },
+      "0.0.2": {
+        "objmpp_classification-0.0.2-py3-none-any.whl": "0.0.1@objmpp_classification-0.0.1-py3-none-any.whl"
+      },
+      "0.0.4": {
+        "objmpp_classification-0.0.4-py3-none-any.whl": "0.0.1@objmpp_classification-0.0.1-py3-none-any.whl"
       }
     }
   },
@@ -12646,18 +13240,27 @@
   },
   "odoo12-addon-web-advanced-search-wildcard": {
     "py3": {
-      "12.0.1.0.0.99.dev5": {
-        "odoo12_addon_web_advanced_search_wildcard-12.0.1.0.0.99.dev5-py3-none-any.whl": {
+      "12.0.1.0.0.99.dev10": {
+        "odoo12_addon_web_advanced_search_wildcard-12.0.1.0.0.99.dev10-py3-none-any.whl": {
           "requires_dist": [
             "odoo (<12.1dev,>=12.0a)"
           ]
         }
       },
+      "12.0.1.0.0.99.dev11": {
+        "odoo12_addon_web_advanced_search_wildcard-12.0.1.0.0.99.dev11-py3-none-any.whl": "12.0.1.0.0.99.dev10@odoo12_addon_web_advanced_search_wildcard-12.0.1.0.0.99.dev10-py3-none-any.whl"
+      },
+      "12.0.1.0.0.99.dev5": {
+        "odoo12_addon_web_advanced_search_wildcard-12.0.1.0.0.99.dev5-py3-none-any.whl": "12.0.1.0.0.99.dev10@odoo12_addon_web_advanced_search_wildcard-12.0.1.0.0.99.dev10-py3-none-any.whl"
+      },
       "12.0.1.0.0.99.dev6": {
-        "odoo12_addon_web_advanced_search_wildcard-12.0.1.0.0.99.dev6-py3-none-any.whl": "12.0.1.0.0.99.dev5@odoo12_addon_web_advanced_search_wildcard-12.0.1.0.0.99.dev5-py3-none-any.whl"
+        "odoo12_addon_web_advanced_search_wildcard-12.0.1.0.0.99.dev6-py3-none-any.whl": "12.0.1.0.0.99.dev10@odoo12_addon_web_advanced_search_wildcard-12.0.1.0.0.99.dev10-py3-none-any.whl"
       },
       "12.0.1.0.0.99.dev8": {
-        "odoo12_addon_web_advanced_search_wildcard-12.0.1.0.0.99.dev8-py3-none-any.whl": "12.0.1.0.0.99.dev5@odoo12_addon_web_advanced_search_wildcard-12.0.1.0.0.99.dev5-py3-none-any.whl"
+        "odoo12_addon_web_advanced_search_wildcard-12.0.1.0.0.99.dev8-py3-none-any.whl": "12.0.1.0.0.99.dev10@odoo12_addon_web_advanced_search_wildcard-12.0.1.0.0.99.dev10-py3-none-any.whl"
+      },
+      "12.0.1.0.0.99.dev9": {
+        "odoo12_addon_web_advanced_search_wildcard-12.0.1.0.0.99.dev9-py3-none-any.whl": "12.0.1.0.0.99.dev10@odoo12_addon_web_advanced_search_wildcard-12.0.1.0.0.99.dev10-py3-none-any.whl"
       }
     }
   },
@@ -12675,6 +13278,15 @@
       },
       "12.0.1.0.0.99.dev12": {
         "odoo12_addon_web_export_view-12.0.1.0.0.99.dev12-py3-none-any.whl": "12.0.1.0.0.99.dev10@odoo12_addon_web_export_view-12.0.1.0.0.99.dev10-py3-none-any.whl"
+      },
+      "12.0.1.0.0.99.dev14": {
+        "odoo12_addon_web_export_view-12.0.1.0.0.99.dev14-py3-none-any.whl": "12.0.1.0.0.99.dev10@odoo12_addon_web_export_view-12.0.1.0.0.99.dev10-py3-none-any.whl"
+      },
+      "12.0.1.0.0.99.dev15": {
+        "odoo12_addon_web_export_view-12.0.1.0.0.99.dev15-py3-none-any.whl": "12.0.1.0.0.99.dev10@odoo12_addon_web_export_view-12.0.1.0.0.99.dev10-py3-none-any.whl"
+      },
+      "12.0.1.0.0.99.dev16": {
+        "odoo12_addon_web_export_view-12.0.1.0.0.99.dev16-py3-none-any.whl": "12.0.1.0.0.99.dev10@odoo12_addon_web_export_view-12.0.1.0.0.99.dev10-py3-none-any.whl"
       },
       "12.0.1.0.0.99.dev2": {
         "odoo12_addon_web_export_view-12.0.1.0.0.99.dev2-py3-none-any.whl": "12.0.1.0.0.99.dev10@odoo12_addon_web_export_view-12.0.1.0.0.99.dev10-py3-none-any.whl"
@@ -12716,6 +13328,20 @@
       }
     }
   },
+  "odoo13-addon-project-template": {
+    "py3": {
+      "13.0.1.0.1.dev3": {
+        "odoo13_addon_project_template-13.0.1.0.1.dev3-py3-none-any.whl": {
+          "requires_dist": [
+            "odoo (<13.1dev,>=13.0a)"
+          ]
+        }
+      },
+      "13.0.1.0.1.dev4": {
+        "odoo13_addon_project_template-13.0.1.0.1.dev4-py3-none-any.whl": "13.0.1.0.1.dev3@odoo13_addon_project_template-13.0.1.0.1.dev3-py3-none-any.whl"
+      }
+    }
+  },
   "odoo13-addon-server-environment": {
     "py3": {
       "13.0.2.0.1": {
@@ -12737,6 +13363,9 @@
       "13.0.2.2.0": {
         "odoo13_addon_server_environment-13.0.2.2.0-py3-none-any.whl": "13.0.2.0.1@odoo13_addon_server_environment-13.0.2.0.1-py3-none-any.whl"
       },
+      "13.0.2.2.1": {
+        "odoo13_addon_server_environment-13.0.2.2.1-py3-none-any.whl": "13.0.2.0.1@odoo13_addon_server_environment-13.0.2.0.1-py3-none-any.whl"
+      },
       "13.0.2.2.1.dev1": {
         "odoo13_addon_server_environment-13.0.2.2.1.dev1-py3-none-any.whl": "13.0.2.0.1@odoo13_addon_server_environment-13.0.2.0.1-py3-none-any.whl"
       },
@@ -12748,6 +13377,9 @@
       },
       "13.0.2.2.1.dev8": {
         "odoo13_addon_server_environment-13.0.2.2.1.dev8-py3-none-any.whl": "13.0.2.0.1@odoo13_addon_server_environment-13.0.2.0.1-py3-none-any.whl"
+      },
+      "13.0.2.3.0": {
+        "odoo13_addon_server_environment-13.0.2.3.0-py3-none-any.whl": "13.0.2.0.1@odoo13_addon_server_environment-13.0.2.0.1-py3-none-any.whl"
       }
     }
   },
@@ -13887,6 +14519,28 @@
       },
       "1.6.6": {
         "pipelinewise_target_snowflake-1.6.6-py3-none-any.whl": "1.5.0@pipelinewise_target_snowflake-1.5.0-py3-none-any.whl"
+      },
+      "1.7.0": {
+        "pipelinewise_target_snowflake-1.7.0-py3-none-any.whl": {
+          "provides_extras": [
+            "test"
+          ],
+          "requires_dist": [
+            "idna (==2.7)",
+            "pipelinewise-singer-python (==1.*)",
+            "snowflake-connector-python (==2.0.3)",
+            "boto3 (==1.10.8)",
+            "botocore (==1.13.8)",
+            "urllib3 (==1.24.3)",
+            "inflection (==0.3.1)",
+            "joblib (==0.13.2)",
+            "python-dateutil (==2.8.1)",
+            "nose (==1.3.7) ; extra == 'test'",
+            "mock (==3.0.5) ; extra == 'test'",
+            "pylint (==2.4.2) ; extra == 'test'",
+            "python-dotenv (==0.14.0) ; extra == 'test'"
+          ]
+        }
       }
     }
   },
@@ -14606,6 +15260,15 @@
       "0.0.1b1": {
         "pycamunda-0.0.1b1-py3-none-any.whl": "0.0.1a1@pycamunda-0.0.1a1-py3-none-any.whl"
       },
+      "0.0.1b2": {
+        "pycamunda-0.0.1b2-py3-none-any.whl": "0.0.1a1@pycamunda-0.0.1a1-py3-none-any.whl"
+      },
+      "0.0.1b3": {
+        "pycamunda-0.0.1b3-py3-none-any.whl": "0.0.1a1@pycamunda-0.0.1a1-py3-none-any.whl"
+      },
+      "0.0.1b4": {
+        "pycamunda-0.0.1b4-py3-none-any.whl": "0.0.1a1@pycamunda-0.0.1a1-py3-none-any.whl"
+      },
       "0.0.1rc1": {
         "pycamunda-0.0.1rc1-py3-none-any.whl": "0.0.1a1@pycamunda-0.0.1a1-py3-none-any.whl"
       }
@@ -14837,6 +15500,12 @@
       },
       "0.2.4.1": {
         "pyJoules-0.2.4.1-py2.py3-none-any.whl": "0.2.0@pyJoules-0.2.0-py2.py3-none-any.whl"
+      },
+      "0.2.5": {
+        "pyJoules-0.2.5-py2.py3-none-any.whl": "0.2.0@pyJoules-0.2.0-py2.py3-none-any.whl"
+      },
+      "0.3.0": {
+        "pyJoules-0.3.0-py2.py3-none-any.whl": "0.2.0@pyJoules-0.2.0-py2.py3-none-any.whl"
       }
     }
   },
@@ -14862,6 +15531,18 @@
       },
       "3.2.0": {
         "pykeepass-3.2.0-py3-none-any.whl": "3.1.0@pykeepass-3.1.0-py3-none-any.whl"
+      },
+      "3.2.1": {
+        "pykeepass-3.2.1-py3-none-any.whl": {
+          "requires_dist": [
+            "python-dateutil",
+            "construct (==2.10.54)",
+            "argon2-cffi",
+            "pycryptodomex (>=3.6.2)",
+            "lxml",
+            "future"
+          ]
+        }
       }
     }
   },
@@ -15201,6 +15882,20 @@
             "pyramid",
             "PyJWT",
             "WebTest ; extra == 'testing'"
+          ]
+        }
+      },
+      "1.6.0": {
+        "pyramid_jwt-1.6.0-py2.py3-none-any.whl": {
+          "provides_extras": [
+            "testing"
+          ],
+          "requires_dist": [
+            "pyramid",
+            "PyJWT",
+            "WebTest ; extra == 'testing'",
+            "pytest ; extra == 'testing'",
+            "pytest-freezegun ; extra == 'testing'"
           ]
         }
       }
@@ -15697,6 +16392,9 @@
       },
       "1.2.0": {
         "rayvision_houdini-1.2.0-py2.py3-none-any.whl": "1.1.0@rayvision_houdini-1.1.0-py2.py3-none-any.whl"
+      },
+      "1.2.1": {
+        "rayvision_houdini-1.2.1-py2.py3-none-any.whl": "1.1.0@rayvision_houdini-1.1.0-py2.py3-none-any.whl"
       }
     }
   },
@@ -16100,6 +16798,18 @@
       },
       "1.0.5": {
         "redvid-1.0.5-py3-none-any.whl": "1.0.0@redvid-1.0.0-py3-none-any.whl"
+      },
+      "1.0.6": {
+        "redvid-1.0.6-py3-none-any.whl": "1.0.0@redvid-1.0.0-py3-none-any.whl"
+      },
+      "1.0.7": {
+        "redvid-1.0.7-py3-none-any.whl": "1.0.0@redvid-1.0.0-py3-none-any.whl"
+      },
+      "1.0.8": {
+        "redvid-1.0.8-py3-none-any.whl": "1.0.0@redvid-1.0.0-py3-none-any.whl"
+      },
+      "1.0.9": {
+        "redvid-1.0.9-py3-none-any.whl": "1.0.0@redvid-1.0.0-py3-none-any.whl"
       }
     }
   },
@@ -16719,6 +17429,12 @@
       },
       "2.4.4": {
         "seafoam-2.4.4-py2.py3-none-any.whl": "2.4.2@seafoam-2.4.2-py2.py3-none-any.whl"
+      },
+      "2.4.5": {
+        "seafoam-2.4.5-py2.py3-none-any.whl": "2.4.2@seafoam-2.4.2-py2.py3-none-any.whl"
+      },
+      "2.4.6": {
+        "seafoam-2.4.6-py2.py3-none-any.whl": "2.4.2@seafoam-2.4.2-py2.py3-none-any.whl"
       }
     },
     "py3": {
@@ -16921,6 +17637,13 @@
       }
     }
   },
+  "simplebayesuncertainty": {
+    "py3": {
+      "0.0.1": {
+        "simplebayesuncertainty-0.0.1-py3-none-any.whl": {}
+      }
+    }
+  },
   "simplecodecompresser": {
     "py3": {
       "1.0": {
@@ -16968,6 +17691,9 @@
       },
       "0.1.2rc0": {
         "singlearity-0.1.2rc0-py3-none-any.whl": "0.1.0@singlearity-0.1.0-py3-none-any.whl"
+      },
+      "0.1.3": {
+        "singlearity-0.1.3-py3-none-any.whl": "0.1.0@singlearity-0.1.0-py3-none-any.whl"
       }
     }
   },
@@ -17521,6 +18247,69 @@
       },
       "0.2.3": {
         "SpikingFlow-0.2.3-py3-none-any.whl": "0.1@SpikingFlow-0.1-py3-none-any.whl"
+      },
+      "0.2.4": {
+        "SpikingFlow-0.2.4-py3-none-any.whl": "0.1@SpikingFlow-0.1-py3-none-any.whl"
+      },
+      "0.2.4.1": {
+        "SpikingFlow-0.2.4.1-py3-none-any.whl": "0.1@SpikingFlow-0.1-py3-none-any.whl"
+      },
+      "0.2.4.2": {
+        "SpikingFlow-0.2.4.2-py3-none-any.whl": "0.1@SpikingFlow-0.1-py3-none-any.whl"
+      },
+      "0.2.4.3": {
+        "SpikingFlow-0.2.4.3-py3-none-any.whl": "0.1@SpikingFlow-0.1-py3-none-any.whl"
+      },
+      "0.2.4.4": {
+        "SpikingFlow-0.2.4.4-py3-none-any.whl": "0.1@SpikingFlow-0.1-py3-none-any.whl"
+      },
+      "0.2.4.5": {
+        "SpikingFlow-0.2.4.5-py3-none-any.whl": "0.1@SpikingFlow-0.1-py3-none-any.whl"
+      },
+      "0.2.4.5.1": {
+        "SpikingFlow-0.2.4.5.1-py3-none-any.whl": "0.1@SpikingFlow-0.1-py3-none-any.whl"
+      },
+      "0.2.4.5.2": {
+        "SpikingFlow-0.2.4.5.2-py3-none-any.whl": "0.1@SpikingFlow-0.1-py3-none-any.whl"
+      },
+      "0.2.4.5.3": {
+        "SpikingFlow-0.2.4.5.3-py3-none-any.whl": "0.1@SpikingFlow-0.1-py3-none-any.whl"
+      },
+      "0.2.4.5.4": {
+        "SpikingFlow-0.2.4.5.4-py3-none-any.whl": "0.1@SpikingFlow-0.1-py3-none-any.whl"
+      },
+      "0.2.4.5.5": {
+        "SpikingFlow-0.2.4.5.5-py3-none-any.whl": "0.1@SpikingFlow-0.1-py3-none-any.whl"
+      },
+      "0.2.4.5.6": {
+        "SpikingFlow-0.2.4.5.6-py3-none-any.whl": "0.1@SpikingFlow-0.1-py3-none-any.whl"
+      },
+      "0.2.4.5.7": {
+        "SpikingFlow-0.2.4.5.7-py3-none-any.whl": "0.1@SpikingFlow-0.1-py3-none-any.whl"
+      },
+      "0.2.4.5.8": {
+        "SpikingFlow-0.2.4.5.8-py3-none-any.whl": "0.1@SpikingFlow-0.1-py3-none-any.whl"
+      },
+      "0.2.4.5.9": {
+        "SpikingFlow-0.2.4.5.9-py3-none-any.whl": "0.1@SpikingFlow-0.1-py3-none-any.whl"
+      },
+      "0.2.4.5.91": {
+        "SpikingFlow-0.2.4.5.91-py3-none-any.whl": "0.1@SpikingFlow-0.1-py3-none-any.whl"
+      },
+      "0.2.4.5.92": {
+        "SpikingFlow-0.2.4.5.92-py3-none-any.whl": "0.1@SpikingFlow-0.1-py3-none-any.whl"
+      },
+      "0.2.4.5.921": {
+        "SpikingFlow-0.2.4.5.921-py3-none-any.whl": "0.1@SpikingFlow-0.1-py3-none-any.whl"
+      },
+      "0.2.4.5.922": {
+        "SpikingFlow-0.2.4.5.922-py3-none-any.whl": "0.1@SpikingFlow-0.1-py3-none-any.whl"
+      },
+      "0.2.4.5.923": {
+        "SpikingFlow-0.2.4.5.923-py3-none-any.whl": "0.1@SpikingFlow-0.1-py3-none-any.whl"
+      },
+      "0.2.4.5.924": {
+        "SpikingFlow-0.2.4.5.924-py3-none-any.whl": "0.1@SpikingFlow-0.1-py3-none-any.whl"
       }
     }
   },
@@ -18090,6 +18879,9 @@
       "0.0.24": {
         "TAcharts-0.0.24-py3-none-any.whl": "0.0.18@TAcharts-0.0.18-py3-none-any.whl"
       },
+      "0.0.25": {
+        "TAcharts-0.0.25-py3-none-any.whl": "0.0.18@TAcharts-0.0.18-py3-none-any.whl"
+      },
       "0.0.3": {
         "TAcharts-0.0.3-py3-none-any.whl": "0.0.1@TAcharts-0.0.1-py3-none-any.whl"
       },
@@ -18253,6 +19045,18 @@
           "requires_dist": [
             "numpy (>=1.13.3)",
             "sklearn (>=0.19.1)"
+          ]
+        }
+      }
+    }
+  },
+  "thepipe": {
+    "py3": {
+      "1.1.1": {
+        "thepipe-1.1.1-py3-none-any.whl": {
+          "requires_dist": [
+            "setuptools-scm",
+            "toml"
           ]
         }
       }
@@ -18652,6 +19456,17 @@
       },
       "0.0.7": {
         "to_dict-0.0.7-py3-none-any.whl": "0.0.2@to_dict-0.0.2-py3-none-any.whl"
+      }
+    }
+  },
+  "to-ico": {
+    "py3": {
+      "1.1": {
+        "to_ico-1.1-py3-none-any.whl": {
+          "requires_dist": [
+            "Pillow"
+          ]
+        }
       }
     }
   },
@@ -20025,6 +20840,19 @@
       }
     }
   },
+  "xcrypto": {
+    "py3": {
+      "1.3.1": {
+        "xcrypto-1.3.1-py3-none-any.whl": {
+          "requires_dist": [
+            "PyCrypto",
+            "requests",
+            "pymongo"
+          ]
+        }
+      }
+    }
+  },
   "xplane-airports": {
     "py3": {
       "0.0.1": {
@@ -20142,6 +20970,9 @@
       },
       "1.3.1": {
         "yoshi_otter-1.3.1-py3-none-any.whl": "1.2@yoshi_otter-1.2-py3-none-any.whl"
+      },
+      "1.3.2": {
+        "yoshi_otter-1.3.2-py3-none-any.whl": "1.2@yoshi_otter-1.2-py3-none-any.whl"
       }
     }
   },
