@@ -15595,7 +15595,20 @@
       "37": "27",
       "38": "27"
     },
-    "0.3.2": "0.3.1"
+    "0.3.2": "0.3.1",
+    "0.3.3": {
+      "27": {
+        "install_requires": [
+          "django<3.1,>=2.2",
+          "django-leaflet<0.28,>=0.23",
+          "channels<2.5.0,>=2.1.3",
+          "Pillow~=7.2.0",
+          "openwisp-utils~=0.5.1"
+        ]
+      },
+      "37": "27",
+      "38": "27"
+    }
   },
   "django-model-documentation": {
     "0.2": {
@@ -17144,6 +17157,17 @@
       "38": "27"
     },
     "0.6.0": "0.5.0"
+  },
+  "extra": {
+    "0.0.0.20200726": {
+      "36": {
+        "python_requires": [
+          ">=3.5"
+        ]
+      },
+      "37": "36",
+      "38": "36"
+    }
   },
   "ezrecords": {
     "0.3.0": {
@@ -23709,6 +23733,21 @@
     "0.2.5": "0.2.1",
     "0.2.6": "0.2.1"
   },
+  "mastobot": {
+    "0.1.0": {
+      "27": {
+        "install_requires": [
+          "Mastodon.py",
+          "lxml"
+        ],
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "37": "27",
+      "38": "27"
+    }
+  },
   "matchsticks": {
     "0.0.1": {
       "27": {},
@@ -28757,7 +28796,8 @@
     "0.1.1": "0.0.1",
     "0.1.2": "0.0.1",
     "0.1.3": "0.0.1",
-    "0.1.4": "0.0.1"
+    "0.1.4": "0.0.1",
+    "0.1.5": "0.0.1"
   },
   "optimage": {
     "0.0.1": {
@@ -29051,7 +29091,8 @@
     "8.0.3": "3.23.0",
     "8.1.0": "3.23.0",
     "8.2.0": "3.23.0",
-    "8.3.0": "3.23.0"
+    "8.3.0": "3.23.0",
+    "8.3.1": "3.23.0"
   },
   "osmtogtfs": {
     "0.1.1": {
@@ -29661,7 +29702,8 @@
       "36": "27",
       "37": "27",
       "38": "27"
-    }
+    },
+    "1.0.0": "0.0.5"
   },
   "pbtools": {
     "0.1.0": {
@@ -34539,7 +34581,8 @@
       "36": "27",
       "37": "27",
       "38": "27"
-    }
+    },
+    "1.1.0": "1.0"
   },
   "rentry": {
     "1.0.1": {
@@ -40966,6 +41009,367 @@
           "!=3.2.*"
         ]
       }
+    },
+    "7.0.5": {
+      "27": {
+        "install_requires": [
+          "pytz",
+          "praw<6.0.0,>=4.0.0",
+          "requests<3.0.0,>=2.0.0",
+          "backports.ssl_match_hostname"
+        ],
+        "extras_require": {
+          "dev": [
+            "pytz",
+            "praw<6.0.0,>=4.0.0",
+            "requests<3.0.0,>=2.0.0",
+            "backports.ssl_match_hostname",
+            "coveralls",
+            "flake8-coding",
+            "flake8-future-import<0.4.6",
+            "sphinx",
+            "sphinxcontrib-autoprogram"
+          ],
+          ":python_version < \"3.3\"": [
+            "ipaddress<2.0"
+          ],
+          ":python_version < \"3.6\"": [
+            "maxminddb<2.0"
+          ],
+          ":python_version != \"3.3\"": [
+            "xmltodict==0.12",
+            "sqlalchemy<1.4"
+          ],
+          ":python_version == \"2.7\"": [
+            "geoip2<4.0,>=3.0",
+            "dnspython<2.0"
+          ],
+          ":python_version == \"3.3\"": [
+            "xmltodict<0.12.0",
+            "urllib3<1.23",
+            "dnspython<1.16.0",
+            "sqlalchemy<1.3"
+          ],
+          ":python_version >= \"3.4\"": [
+            "dnspython<3.0"
+          ],
+          ":python_version >= \"3.6\"": [
+            "geoip2<5.0,>=4.0"
+          ],
+          "dev:python_version < \"3.3\"": [
+            "ipaddress<2.0"
+          ],
+          "dev:python_version < \"3.6\"": [
+            "maxminddb<2.0"
+          ],
+          "dev:python_version != \"3.3\"": [
+            "xmltodict==0.12",
+            "sqlalchemy<1.4",
+            "pytest<4.7,>=4.6",
+            "flake8<3.8.0,>=3.7.0"
+          ],
+          "dev:python_version == \"2.7\"": [
+            "geoip2<4.0,>=3.0",
+            "dnspython<2.0"
+          ],
+          "dev:python_version == \"3.3\"": [
+            "xmltodict<0.12.0",
+            "urllib3<1.23",
+            "dnspython<1.16.0",
+            "sqlalchemy<1.3",
+            "pytest<3.3",
+            "flake8<3.6.0",
+            "setuptools<40.0"
+          ],
+          "dev:python_version >= \"3.4\"": [
+            "dnspython<3.0"
+          ],
+          "dev:python_version >= \"3.6\"": [
+            "geoip2<5.0,>=4.0"
+          ],
+          ":python_version <= \"3.5\" and python_version != \"2.7\"": [
+            "geoip2<3.0"
+          ],
+          "dev:python_version <= \"3.5\" and python_version != \"2.7\"": [
+            "geoip2<3.0"
+          ]
+        },
+        "python_requires": [
+          ">=2.7",
+          "!=3.0.*",
+          "!=3.1.*",
+          "!=3.2.*",
+          "<4"
+        ]
+      },
+      "35": {
+        "install_requires": [
+          "pytz",
+          "praw<6.0.0,>=4.0.0",
+          "requests<3.0.0,>=2.0.0"
+        ],
+        "extras_require": {
+          "dev": [
+            "pytz",
+            "praw<6.0.0,>=4.0.0",
+            "requests<3.0.0,>=2.0.0",
+            "coveralls",
+            "flake8-coding",
+            "flake8-future-import<0.4.6",
+            "sphinx",
+            "sphinxcontrib-autoprogram"
+          ],
+          ":python_version < \"3.3\"": [
+            "ipaddress<2.0"
+          ],
+          ":python_version < \"3.6\"": [
+            "maxminddb<2.0"
+          ],
+          ":python_version != \"3.3\"": [
+            "xmltodict==0.12",
+            "sqlalchemy<1.4"
+          ],
+          ":python_version == \"2.7\"": [
+            "geoip2<4.0,>=3.0",
+            "dnspython<2.0"
+          ],
+          ":python_version == \"3.3\"": [
+            "xmltodict<0.12.0",
+            "urllib3<1.23",
+            "dnspython<1.16.0",
+            "sqlalchemy<1.3"
+          ],
+          ":python_version >= \"3.4\"": [
+            "dnspython<3.0"
+          ],
+          ":python_version >= \"3.6\"": [
+            "geoip2<5.0,>=4.0"
+          ],
+          "dev:python_version < \"3.3\"": [
+            "ipaddress<2.0"
+          ],
+          "dev:python_version < \"3.6\"": [
+            "maxminddb<2.0"
+          ],
+          "dev:python_version != \"3.3\"": [
+            "xmltodict==0.12",
+            "sqlalchemy<1.4",
+            "pytest<4.7,>=4.6",
+            "flake8<3.8.0,>=3.7.0"
+          ],
+          "dev:python_version == \"2.7\"": [
+            "geoip2<4.0,>=3.0",
+            "dnspython<2.0"
+          ],
+          "dev:python_version == \"3.3\"": [
+            "xmltodict<0.12.0",
+            "urllib3<1.23",
+            "dnspython<1.16.0",
+            "sqlalchemy<1.3",
+            "pytest<3.3",
+            "flake8<3.6.0",
+            "setuptools<40.0"
+          ],
+          "dev:python_version >= \"3.4\"": [
+            "dnspython<3.0"
+          ],
+          "dev:python_version >= \"3.6\"": [
+            "geoip2<5.0,>=4.0"
+          ],
+          ":python_version <= \"3.5\" and python_version != \"2.7\"": [
+            "geoip2<3.0"
+          ],
+          "dev:python_version <= \"3.5\" and python_version != \"2.7\"": [
+            "geoip2<3.0"
+          ]
+        },
+        "python_requires": [
+          ">=2.7",
+          "!=3.0.*",
+          "<4",
+          "!=3.2.*",
+          "!=3.1.*"
+        ]
+      },
+      "36": {
+        "install_requires": [
+          "pytz",
+          "praw<6.0.0,>=4.0.0",
+          "requests<3.0.0,>=2.0.0"
+        ],
+        "extras_require": {
+          "dev": [
+            "pytz",
+            "praw<6.0.0,>=4.0.0",
+            "requests<3.0.0,>=2.0.0",
+            "coveralls",
+            "flake8-coding",
+            "flake8-future-import<0.4.6",
+            "sphinx",
+            "sphinxcontrib-autoprogram"
+          ],
+          ":python_version < \"3.3\"": [
+            "ipaddress<2.0"
+          ],
+          ":python_version < \"3.6\"": [
+            "maxminddb<2.0"
+          ],
+          ":python_version != \"3.3\"": [
+            "xmltodict==0.12",
+            "sqlalchemy<1.4"
+          ],
+          ":python_version == \"2.7\"": [
+            "geoip2<4.0,>=3.0",
+            "dnspython<2.0"
+          ],
+          ":python_version == \"3.3\"": [
+            "xmltodict<0.12.0",
+            "urllib3<1.23",
+            "dnspython<1.16.0",
+            "sqlalchemy<1.3"
+          ],
+          ":python_version >= \"3.4\"": [
+            "dnspython<3.0"
+          ],
+          ":python_version >= \"3.6\"": [
+            "geoip2<5.0,>=4.0"
+          ],
+          "dev:python_version < \"3.3\"": [
+            "ipaddress<2.0"
+          ],
+          "dev:python_version < \"3.6\"": [
+            "maxminddb<2.0"
+          ],
+          "dev:python_version != \"3.3\"": [
+            "xmltodict==0.12",
+            "sqlalchemy<1.4",
+            "pytest<4.7,>=4.6",
+            "flake8<3.8.0,>=3.7.0"
+          ],
+          "dev:python_version == \"2.7\"": [
+            "geoip2<4.0,>=3.0",
+            "dnspython<2.0"
+          ],
+          "dev:python_version == \"3.3\"": [
+            "xmltodict<0.12.0",
+            "urllib3<1.23",
+            "dnspython<1.16.0",
+            "sqlalchemy<1.3",
+            "pytest<3.3",
+            "flake8<3.6.0",
+            "setuptools<40.0"
+          ],
+          "dev:python_version >= \"3.4\"": [
+            "dnspython<3.0"
+          ],
+          "dev:python_version >= \"3.6\"": [
+            "geoip2<5.0,>=4.0"
+          ],
+          ":python_version <= \"3.5\" and python_version != \"2.7\"": [
+            "geoip2<3.0"
+          ],
+          "dev:python_version <= \"3.5\" and python_version != \"2.7\"": [
+            "geoip2<3.0"
+          ]
+        },
+        "python_requires": [
+          ">=2.7",
+          "<4",
+          "!=3.0.*",
+          "!=3.2.*",
+          "!=3.1.*"
+        ]
+      },
+      "37": "36",
+      "38": {
+        "install_requires": [
+          "pytz",
+          "praw<6.0.0,>=4.0.0",
+          "requests<3.0.0,>=2.0.0"
+        ],
+        "extras_require": {
+          "dev": [
+            "pytz",
+            "praw<6.0.0,>=4.0.0",
+            "requests<3.0.0,>=2.0.0",
+            "coveralls",
+            "flake8-coding",
+            "flake8-future-import<0.4.6",
+            "sphinx",
+            "sphinxcontrib-autoprogram"
+          ],
+          ":python_version < \"3.3\"": [
+            "ipaddress<2.0"
+          ],
+          ":python_version < \"3.6\"": [
+            "maxminddb<2.0"
+          ],
+          ":python_version != \"3.3\"": [
+            "xmltodict==0.12",
+            "sqlalchemy<1.4"
+          ],
+          ":python_version == \"2.7\"": [
+            "geoip2<4.0,>=3.0",
+            "dnspython<2.0"
+          ],
+          ":python_version == \"3.3\"": [
+            "xmltodict<0.12.0",
+            "urllib3<1.23",
+            "dnspython<1.16.0",
+            "sqlalchemy<1.3"
+          ],
+          ":python_version >= \"3.4\"": [
+            "dnspython<3.0"
+          ],
+          ":python_version >= \"3.6\"": [
+            "geoip2<5.0,>=4.0"
+          ],
+          "dev:python_version < \"3.3\"": [
+            "ipaddress<2.0"
+          ],
+          "dev:python_version < \"3.6\"": [
+            "maxminddb<2.0"
+          ],
+          "dev:python_version != \"3.3\"": [
+            "xmltodict==0.12",
+            "sqlalchemy<1.4",
+            "pytest<4.7,>=4.6",
+            "flake8<3.8.0,>=3.7.0"
+          ],
+          "dev:python_version == \"2.7\"": [
+            "geoip2<4.0,>=3.0",
+            "dnspython<2.0"
+          ],
+          "dev:python_version == \"3.3\"": [
+            "xmltodict<0.12.0",
+            "urllib3<1.23",
+            "dnspython<1.16.0",
+            "sqlalchemy<1.3",
+            "pytest<3.3",
+            "flake8<3.6.0",
+            "setuptools<40.0"
+          ],
+          "dev:python_version >= \"3.4\"": [
+            "dnspython<3.0"
+          ],
+          "dev:python_version >= \"3.6\"": [
+            "geoip2<5.0,>=4.0"
+          ],
+          ":python_version <= \"3.5\" and python_version != \"2.7\"": [
+            "geoip2<3.0"
+          ],
+          "dev:python_version <= \"3.5\" and python_version != \"2.7\"": [
+            "geoip2<3.0"
+          ]
+        },
+        "python_requires": [
+          "!=3.2.*",
+          "!=3.1.*",
+          ">=2.7",
+          "!=3.0.*",
+          "<4"
+        ]
+      }
     }
   },
   "sorna-manager": {
@@ -41990,6 +42394,7 @@
       "38": "27"
     },
     "0.11.2": "0.11.1",
+    "0.12.0": "0.11.1",
     "0.2.0": {
       "27": {
         "install_requires": [
@@ -47459,7 +47864,8 @@
       "36": "27",
       "37": "27",
       "38": "27"
-    }
+    },
+    "0.6.4.1": "0.6.4.0"
   },
   "yadokari": {
     "0.1.1": {
