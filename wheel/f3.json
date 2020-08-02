@@ -74,7 +74,8 @@
             "dateparser",
             "parsedatetime",
             "click"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
       },
       "2019.9.16": {
@@ -87,7 +88,8 @@
             "dateparser",
             "parsedatetime",
             "click"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
       },
       "2019.9.9": {
@@ -207,7 +209,8 @@
         "airflow_plugin_glue_presto_apas-0.0.1-py3-none-any.whl": {
           "requires_dist": [
             "apache-airflow (>=1.10,<2.0)"
-          ]
+          ],
+          "requires_python": ">=3.7,<4.0"
         }
       },
       "0.0.10": {
@@ -215,23 +218,29 @@
           "requires_dist": [
             "apache-airflow (>=1.10,<2.0)",
             "presto-python-client (>=0.5.1,<0.6.0)"
-          ]
+          ],
+          "requires_python": ">=3.6,<4.0"
         }
       },
       "0.0.11": {
         "airflow_plugin_glue_presto_apas-0.0.11-py3-none-any.whl": "0.0.10@airflow_plugin_glue_presto_apas-0.0.10-py3-none-any.whl"
       },
       "0.0.2": {
-        "airflow_plugin_glue_presto_apas-0.0.2-py3-none-any.whl": "0.0.1@airflow_plugin_glue_presto_apas-0.0.1-py3-none-any.whl"
+        "airflow_plugin_glue_presto_apas-0.0.2-py3-none-any.whl": {
+          "requires_dist": [
+            "apache-airflow (>=1.10,<2.0)"
+          ],
+          "requires_python": ">=3.6,<4.0"
+        }
       },
       "0.0.3": {
-        "airflow_plugin_glue_presto_apas-0.0.3-py3-none-any.whl": "0.0.1@airflow_plugin_glue_presto_apas-0.0.1-py3-none-any.whl"
+        "airflow_plugin_glue_presto_apas-0.0.3-py3-none-any.whl": "0.0.2@airflow_plugin_glue_presto_apas-0.0.2-py3-none-any.whl"
       },
       "0.0.4": {
-        "airflow_plugin_glue_presto_apas-0.0.4-py3-none-any.whl": "0.0.1@airflow_plugin_glue_presto_apas-0.0.1-py3-none-any.whl"
+        "airflow_plugin_glue_presto_apas-0.0.4-py3-none-any.whl": "0.0.2@airflow_plugin_glue_presto_apas-0.0.2-py3-none-any.whl"
       },
       "0.0.6": {
-        "airflow_plugin_glue_presto_apas-0.0.6-py3-none-any.whl": "0.0.1@airflow_plugin_glue_presto_apas-0.0.1-py3-none-any.whl"
+        "airflow_plugin_glue_presto_apas-0.0.6-py3-none-any.whl": "0.0.2@airflow_plugin_glue_presto_apas-0.0.2-py3-none-any.whl"
       },
       "0.0.8": {
         "airflow_plugin_glue_presto_apas-0.0.8-py3-none-any.whl": "0.0.10@airflow_plugin_glue_presto_apas-0.0.10-py3-none-any.whl"
@@ -273,7 +282,8 @@
           "requires_dist": [
             "requests",
             "pandas"
-          ]
+          ],
+          "requires_python": ">=3.4"
         }
       }
     }
@@ -332,7 +342,9 @@
   "angreal-python3": {
     "3.7": {
       "0.5.2": {
-        "angreal_python3-0.5.2-py3-none-any.whl": {}
+        "angreal_python3-0.5.2-py3-none-any.whl": {
+          "requires_python": ">=3"
+        }
       },
       "0.5.3": {
         "angreal_python3-0.5.3-py3-none-any.whl": "0.5.2@angreal_python3-0.5.2-py3-none-any.whl"
@@ -340,7 +352,9 @@
     },
     "3.8": {
       "0.5.4": {
-        "angreal_python3-0.5.4-py3-none-any.whl": {}
+        "angreal_python3-0.5.4-py3-none-any.whl": {
+          "requires_python": ">=3"
+        }
       }
     }
   },
@@ -474,7 +488,8 @@
         "architecture_tools_RafaelGB-0.0.3-py3-none-any.whl": {
           "requires_dist": [
             "markdown"
-          ]
+          ],
+          "requires_python": ">=3.7"
         }
       },
       "0.0.8": {
@@ -484,7 +499,8 @@
             "dependency-injector (==3.15.6)",
             "flask",
             "pylint (==2.4.4)"
-          ]
+          ],
+          "requires_python": ">=3.7"
         }
       },
       "0.0.9": {
@@ -497,8 +513,52 @@
             "cachetools (==4.0.0)",
             "redis (==3.4.1)",
             "docker"
-          ]
+          ],
+          "requires_python": ">=3.7"
         }
+      }
+    }
+  },
+  "archivebox": {
+    "py3": {
+      "0.4.6": {
+        "archivebox-0.4.6-py3-none-any.whl": {
+          "provides_extras": [
+            "dev"
+          ],
+          "requires_dist": [
+            "requests (==2.24.0)",
+            "atomicwrites (==1.4.0)",
+            "mypy-extensions (==0.4.3)",
+            "base32-crockford (==0.3.0)",
+            "django (==3.0.8)",
+            "django-extensions (==3.0.3)",
+            "dateparser",
+            "ipython",
+            "youtube-dl",
+            "python-crontab (==2.5.1)",
+            "w3lib (==1.22.0)",
+            "setuptools ; extra == 'dev'",
+            "wheel ; extra == 'dev'",
+            "twine ; extra == 'dev'",
+            "flake8 ; extra == 'dev'",
+            "ipdb ; extra == 'dev'",
+            "mypy ; extra == 'dev'",
+            "django-stubs ; extra == 'dev'",
+            "sphinx ; extra == 'dev'",
+            "sphinx-rtd-theme ; extra == 'dev'",
+            "recommonmark ; extra == 'dev'",
+            "pytest ; extra == 'dev'",
+            "bottle ; extra == 'dev'"
+          ],
+          "requires_python": ">=3.7"
+        }
+      },
+      "0.4.8": {
+        "archivebox-0.4.8-py3-none-any.whl": "0.4.6@archivebox-0.4.6-py3-none-any.whl"
+      },
+      "0.4.9": {
+        "archivebox-0.4.9-py3-none-any.whl": "0.4.6@archivebox-0.4.6-py3-none-any.whl"
       }
     }
   },
@@ -1140,7 +1200,8 @@
             "opencv-python (>=4.1.0.25)",
             "scikit-learn (>=0.21.1)",
             "atari-py (>=0.1.14)"
-          ]
+          ],
+          "requires_python": ">=3.5"
         }
       }
     }
@@ -1227,7 +1288,8 @@
             "virtualenv (==16.7.5)",
             "websocket-client (==0.56.0)",
             "zipp (==0.6.0)"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
       },
       "0.1.0.post1": {
@@ -1253,7 +1315,8 @@
             "semantic-version (>=2.8.0,<2.9.0)",
             "tqdm (>=4.36.1,<4.37.0)",
             "validate-email (>=1.3,<2.0)"
-          ]
+          ],
+          "requires_python": ">=3.6,<4.0"
         }
       },
       "0.10.1": {
@@ -1278,7 +1341,8 @@
             "semantic-version (>=2.8.0,<2.9.0)",
             "tqdm (>=4.36.1,<4.37.0)",
             "validate-email (>=1.3,<2.0)"
-          ]
+          ],
+          "requires_python": ">=3.6,<4.0"
         }
       },
       "0.11.1": {
@@ -1316,7 +1380,8 @@
             "pyyaml (>=5.1.2)",
             "semantic-version (~=2.6)",
             "tqdm (~=4.36.1)"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
       },
       "0.2.1": {
@@ -1337,7 +1402,8 @@
             "pyyaml (>=5.1.2)",
             "semantic-version (~=2.8.0)",
             "tqdm (~=4.36.1)"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
       },
       "0.3.1": {
@@ -1355,7 +1421,8 @@
             "pyyaml (>=5.1.2)",
             "semantic-version (~=2.8.0)",
             "tqdm (~=4.36.1)"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
       },
       "0.4.0": {
@@ -1375,7 +1442,8 @@
             "semantic-version (~=2.8.0)",
             "tqdm (~=4.36.1)",
             "validate-email (~=1.3)"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
       },
       "0.4.1": {
@@ -1400,7 +1468,8 @@
             "semantic-version (~=2.8.0)",
             "tqdm (~=4.36.1)",
             "validate-email (~=1.3)"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
       },
       "0.6.2": {
@@ -1420,7 +1489,8 @@
             "semantic-version (~=2.8.0)",
             "tqdm (~=4.36.1)",
             "validate-email (~=1.3)"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
       },
       "0.7.0": {
@@ -1449,7 +1519,9 @@
   "bitbot": {
     "py3": {
       "1.12.0": {
-        "bitbot-1.12.0-py3-none-any.whl": {}
+        "bitbot-1.12.0-py3-none-any.whl": {
+          "requires_python": ">=3.6"
+        }
       }
     }
   },
@@ -1463,7 +1535,8 @@
             "click",
             "croniter",
             "asyncpg"
-          ]
+          ],
+          "requires_python": ">=3.6.0"
         }
       }
     }
@@ -1684,7 +1757,8 @@
             "pep8 ; extra == 'dev'",
             "yapf ; extra == 'dev'",
             "coverage ; extra == 'test'"
-          ]
+          ],
+          "requires_python": ">=3.5, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, <4"
         }
       }
     }
@@ -1758,7 +1832,9 @@
   "calendar-plus": {
     "py3": {
       "0.0.1": {
-        "calendar_plus-0.0.1-py3-none-any.whl": {}
+        "calendar_plus-0.0.1-py3-none-any.whl": {
+          "requires_python": ">=3.6.0"
+        }
       }
     }
   },
@@ -1962,7 +2038,8 @@
             "pylint ; extra == 'dev'",
             "pytest ; extra == 'dev'",
             "tox ; extra == 'dev'"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
       },
       "1.0b1": {
@@ -2002,7 +2079,8 @@
             "mypy ; extra == 'dev'",
             "pylint ; extra == 'dev'",
             "pytest ; extra == 'dev'"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
       }
     }
@@ -2021,7 +2099,8 @@
             "scikit-learn (==0.20.2)",
             "scipy (<1.3,>=1.2.0)",
             "wrapt (<1.12,>=1.11.0)"
-          ]
+          ],
+          "requires_python": ">=3.5, <3.8"
         }
       },
       "0.4.1": {
@@ -2050,7 +2129,8 @@
             "wrapt (<1.12,>=1.11.0)",
             "pygraphviz (<2.0,>=1.5) ; extra == 'all'",
             "pygraphviz (<2.0,>=1.5) ; extra == 'plot'"
-          ]
+          ],
+          "requires_python": ">=3.5, <3.8"
         }
       },
       "0.6.0": {
@@ -2070,7 +2150,8 @@
             "wrapt (<1.12,>=1.11.0)",
             "pygraphviz (<2.0,>=1.5) ; extra == 'all'",
             "pygraphviz (<2.0,>=1.5) ; extra == 'plot'"
-          ]
+          ],
+          "requires_python": ">=3.5, <3.8"
         }
       },
       "0.7.0": {
@@ -2090,7 +2171,8 @@
             "wrapt (<1.12,>=1.11.0)",
             "pygraphviz (<2.0,>=1.5) ; extra == 'all'",
             "pygraphviz (<2.0,>=1.5) ; extra == 'plot'"
-          ]
+          ],
+          "requires_python": ">=3.5, <3.8"
         }
       }
     }
@@ -2104,7 +2186,8 @@
             "tqdm",
             "pandas",
             "matplotlib"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
       },
       "0.2.1": {
@@ -2121,7 +2204,9 @@
   "cgminerhttpinterface": {
     "py3": {
       "0.1.3": {
-        "cgminerhttpinterface-0.1.3-py3-none-any.whl": {}
+        "cgminerhttpinterface-0.1.3-py3-none-any.whl": {
+          "requires_python": ">=3"
+        }
       }
     }
   },
@@ -2148,7 +2233,8 @@
             "pytest (>=5) ; extra == 'test'",
             "pyfakefs (==3.7) ; extra == 'test'",
             "pytest-subprocess ; extra == 'test'"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
       },
       "0.1.2": {
@@ -2175,7 +2261,8 @@
             "pytest (>=5) ; extra == 'test'",
             "pyfakefs (==3.7) ; extra == 'test'",
             "pytest-subprocess ; extra == 'test'"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
       },
       "0.1.4": {
@@ -2313,74 +2400,96 @@
   "chily": {
     "cp35": {
       "0.2.0": {
-        "chily-0.2.0-cp35-none-win_amd64.whl": {}
+        "chily-0.2.0-cp35-none-win_amd64.whl": {
+          "requires_python": ">=3.6*"
+        }
       },
       "0.2.1": {
-        "chily-0.2.1-cp35-none-win_amd64.whl": "0.2.0@chily-0.2.0-cp35-none-win_amd64.whl"
+        "chily-0.2.1-cp35-none-win_amd64.whl": {
+          "requires_python": ">=3.6"
+        }
       },
       "0.2.2": {
-        "chily-0.2.2-cp35-none-win_amd64.whl": "0.2.0@chily-0.2.0-cp35-none-win_amd64.whl"
+        "chily-0.2.2-cp35-none-win_amd64.whl": "0.2.1@chily-0.2.1-cp35-none-win_amd64.whl"
       }
     },
     "cp36": {
       "0.1.2": {
-        "chily-0.1.2-cp36-cp36m-macosx_10_7_x86_64.whl": {},
+        "chily-0.1.2-cp36-cp36m-macosx_10_7_x86_64.whl": {
+          "requires_python": "==3.6.*"
+        },
         "chily-0.1.2-cp36-cp36m-manylinux2010_x86_64.whl": "0.1.2@chily-0.1.2-cp36-cp36m-macosx_10_7_x86_64.whl"
       },
       "0.2.0": {
-        "chily-0.2.0-cp36-cp36m-macosx_10_7_x86_64.whl": "0.1.2@chily-0.1.2-cp36-cp36m-macosx_10_7_x86_64.whl",
-        "chily-0.2.0-cp36-cp36m-manylinux2010_x86_64.whl": "0.1.2@chily-0.1.2-cp36-cp36m-macosx_10_7_x86_64.whl",
-        "chily-0.2.0-cp36-none-win_amd64.whl": "0.1.2@chily-0.1.2-cp36-cp36m-macosx_10_7_x86_64.whl"
+        "chily-0.2.0-cp36-cp36m-macosx_10_7_x86_64.whl": {
+          "requires_python": ">=3.6*"
+        },
+        "chily-0.2.0-cp36-cp36m-manylinux2010_x86_64.whl": "0.2.0@chily-0.2.0-cp36-cp36m-macosx_10_7_x86_64.whl",
+        "chily-0.2.0-cp36-none-win_amd64.whl": "0.2.0@chily-0.2.0-cp36-cp36m-macosx_10_7_x86_64.whl"
       },
       "0.2.1": {
-        "chily-0.2.1-cp36-cp36m-macosx_10_7_x86_64.whl": "0.1.2@chily-0.1.2-cp36-cp36m-macosx_10_7_x86_64.whl",
-        "chily-0.2.1-cp36-cp36m-manylinux2010_x86_64.whl": "0.1.2@chily-0.1.2-cp36-cp36m-macosx_10_7_x86_64.whl",
-        "chily-0.2.1-cp36-none-win_amd64.whl": "0.1.2@chily-0.1.2-cp36-cp36m-macosx_10_7_x86_64.whl"
+        "chily-0.2.1-cp36-cp36m-macosx_10_7_x86_64.whl": {
+          "requires_python": ">=3.6"
+        },
+        "chily-0.2.1-cp36-cp36m-manylinux2010_x86_64.whl": "0.2.1@chily-0.2.1-cp36-cp36m-macosx_10_7_x86_64.whl",
+        "chily-0.2.1-cp36-none-win_amd64.whl": "0.2.1@chily-0.2.1-cp36-cp36m-macosx_10_7_x86_64.whl"
       },
       "0.2.2": {
-        "chily-0.2.2-cp36-cp36m-macosx_10_7_x86_64.whl": "0.1.2@chily-0.1.2-cp36-cp36m-macosx_10_7_x86_64.whl",
-        "chily-0.2.2-cp36-cp36m-manylinux2010_x86_64.whl": "0.1.2@chily-0.1.2-cp36-cp36m-macosx_10_7_x86_64.whl",
-        "chily-0.2.2-cp36-none-win_amd64.whl": "0.1.2@chily-0.1.2-cp36-cp36m-macosx_10_7_x86_64.whl"
+        "chily-0.2.2-cp36-cp36m-macosx_10_7_x86_64.whl": "0.2.1@chily-0.2.1-cp36-cp36m-macosx_10_7_x86_64.whl",
+        "chily-0.2.2-cp36-cp36m-manylinux2010_x86_64.whl": "0.2.1@chily-0.2.1-cp36-cp36m-macosx_10_7_x86_64.whl",
+        "chily-0.2.2-cp36-none-win_amd64.whl": "0.2.1@chily-0.2.1-cp36-cp36m-macosx_10_7_x86_64.whl"
       }
     },
     "cp37": {
       "0.1.0": {
-        "chily-0.1.0-cp37-cp37m-macosx_10_7_x86_64.whl": {},
+        "chily-0.1.0-cp37-cp37m-macosx_10_7_x86_64.whl": {
+          "requires_python": "==3.7"
+        },
         "chily-0.1.0-cp37-cp37m-manylinux1_x86_64.whl": "0.1.0@chily-0.1.0-cp37-cp37m-macosx_10_7_x86_64.whl",
         "chily-0.1.0-cp37-none-win_amd64.whl": "0.1.0@chily-0.1.0-cp37-cp37m-macosx_10_7_x86_64.whl"
       },
       "0.1.1": {
-        "chily-0.1.1-cp37-cp37m-macosx_10_7_x86_64.whl": "0.1.0@chily-0.1.0-cp37-cp37m-macosx_10_7_x86_64.whl",
-        "chily-0.1.1-cp37-cp37m-manylinux1_x86_64.whl": "0.1.0@chily-0.1.0-cp37-cp37m-macosx_10_7_x86_64.whl",
-        "chily-0.1.1-cp37-none-win_amd64.whl": "0.1.0@chily-0.1.0-cp37-cp37m-macosx_10_7_x86_64.whl"
+        "chily-0.1.1-cp37-cp37m-macosx_10_7_x86_64.whl": {
+          "requires_python": "==3.7.*"
+        },
+        "chily-0.1.1-cp37-cp37m-manylinux1_x86_64.whl": "0.1.1@chily-0.1.1-cp37-cp37m-macosx_10_7_x86_64.whl",
+        "chily-0.1.1-cp37-none-win_amd64.whl": "0.1.1@chily-0.1.1-cp37-cp37m-macosx_10_7_x86_64.whl"
       },
       "0.2.0": {
-        "chily-0.2.0-cp37-cp37m-macosx_10_7_x86_64.whl": "0.1.0@chily-0.1.0-cp37-cp37m-macosx_10_7_x86_64.whl",
-        "chily-0.2.0-cp37-cp37m-manylinux2010_x86_64.whl": "0.1.0@chily-0.1.0-cp37-cp37m-macosx_10_7_x86_64.whl",
-        "chily-0.2.0-cp37-none-win_amd64.whl": "0.1.0@chily-0.1.0-cp37-cp37m-macosx_10_7_x86_64.whl"
+        "chily-0.2.0-cp37-cp37m-macosx_10_7_x86_64.whl": "0.1.1@chily-0.1.1-cp37-cp37m-macosx_10_7_x86_64.whl",
+        "chily-0.2.0-cp37-cp37m-manylinux2010_x86_64.whl": {
+          "requires_python": ">=3.6*"
+        },
+        "chily-0.2.0-cp37-none-win_amd64.whl": "0.2.0@chily-0.2.0-cp37-cp37m-manylinux2010_x86_64.whl"
       },
       "0.2.1": {
-        "chily-0.2.1-cp37-cp37m-macosx_10_7_x86_64.whl": "0.1.0@chily-0.1.0-cp37-cp37m-macosx_10_7_x86_64.whl",
-        "chily-0.2.1-cp37-cp37m-manylinux2010_x86_64.whl": "0.1.0@chily-0.1.0-cp37-cp37m-macosx_10_7_x86_64.whl",
-        "chily-0.2.1-cp37-none-win_amd64.whl": "0.1.0@chily-0.1.0-cp37-cp37m-macosx_10_7_x86_64.whl"
+        "chily-0.2.1-cp37-cp37m-macosx_10_7_x86_64.whl": {
+          "requires_python": ">=3.6"
+        },
+        "chily-0.2.1-cp37-cp37m-manylinux2010_x86_64.whl": "0.2.1@chily-0.2.1-cp37-cp37m-macosx_10_7_x86_64.whl",
+        "chily-0.2.1-cp37-none-win_amd64.whl": "0.2.1@chily-0.2.1-cp37-cp37m-macosx_10_7_x86_64.whl"
       },
       "0.2.2": {
-        "chily-0.2.2-cp37-cp37m-macosx_10_7_x86_64.whl": "0.1.0@chily-0.1.0-cp37-cp37m-macosx_10_7_x86_64.whl",
-        "chily-0.2.2-cp37-cp37m-manylinux2010_x86_64.whl": "0.1.0@chily-0.1.0-cp37-cp37m-macosx_10_7_x86_64.whl",
-        "chily-0.2.2-cp37-none-win_amd64.whl": "0.1.0@chily-0.1.0-cp37-cp37m-macosx_10_7_x86_64.whl"
+        "chily-0.2.2-cp37-cp37m-macosx_10_7_x86_64.whl": "0.2.1@chily-0.2.1-cp37-cp37m-macosx_10_7_x86_64.whl",
+        "chily-0.2.2-cp37-cp37m-manylinux2010_x86_64.whl": "0.2.1@chily-0.2.1-cp37-cp37m-macosx_10_7_x86_64.whl",
+        "chily-0.2.2-cp37-none-win_amd64.whl": "0.2.1@chily-0.2.1-cp37-cp37m-macosx_10_7_x86_64.whl"
       }
     },
     "cp38": {
       "0.2.0": {
-        "chily-0.2.0-cp38-none-win_amd64.whl": {}
+        "chily-0.2.0-cp38-none-win_amd64.whl": {
+          "requires_python": ">=3.6*"
+        }
       },
       "0.2.1": {
-        "chily-0.2.1-cp38-none-win_amd64.whl": "0.2.0@chily-0.2.0-cp38-none-win_amd64.whl"
+        "chily-0.2.1-cp38-none-win_amd64.whl": {
+          "requires_python": ">=3.6"
+        }
       },
       "0.2.2": {
-        "chily-0.2.2-cp38-cp38-macosx_10_7_x86_64.whl": "0.2.0@chily-0.2.0-cp38-none-win_amd64.whl",
-        "chily-0.2.2-cp38-cp38-manylinux2010_x86_64.whl": "0.2.0@chily-0.2.0-cp38-none-win_amd64.whl",
-        "chily-0.2.2-cp38-none-win_amd64.whl": "0.2.0@chily-0.2.0-cp38-none-win_amd64.whl"
+        "chily-0.2.2-cp38-cp38-macosx_10_7_x86_64.whl": "0.2.1@chily-0.2.1-cp38-none-win_amd64.whl",
+        "chily-0.2.2-cp38-cp38-manylinux2010_x86_64.whl": "0.2.1@chily-0.2.1-cp38-none-win_amd64.whl",
+        "chily-0.2.2-cp38-none-win_amd64.whl": "0.2.1@chily-0.2.1-cp38-none-win_amd64.whl"
       }
     }
   },
@@ -2397,7 +2506,8 @@
         "chuck_says-0.1.0-py3-none-any.whl": {
           "requires_dist": [
             "requests (>=2.22,<3.0)"
-          ]
+          ],
+          "requires_python": ">=3.7,<4.0"
         }
       },
       "0.1.1": {
@@ -2405,7 +2515,8 @@
           "requires_dist": [
             "click (>=7.0,<8.0)",
             "requests (>=2.22,<3.0)"
-          ]
+          ],
+          "requires_python": ">=3.7,<4.0"
         }
       }
     }
@@ -2617,6 +2728,9 @@
       },
       "1.2.44": {
         "cloudscraper-1.2.44-py2.py3-none-any.whl": "1.2.36@cloudscraper-1.2.36-py2.py3-none-any.whl"
+      },
+      "1.2.46": {
+        "cloudscraper-1.2.46-py2.py3-none-any.whl": "1.2.36@cloudscraper-1.2.36-py2.py3-none-any.whl"
       },
       "1.2.5": {
         "cloudscraper-1.2.5-py2.py3-none-any.whl": "1.1.30@cloudscraper-1.1.30-py2.py3-none-any.whl"
@@ -3009,7 +3123,9 @@
   "cmdq": {
     "py3": {
       "0.1": {
-        "cmdq-0.1-py3-none-any.whl": {}
+        "cmdq-0.1-py3-none-any.whl": {
+          "requires_python": ">=3.5"
+        }
       }
     }
   },
@@ -3110,7 +3226,8 @@
             "chardet (>=3.0.4,<4.0.0); extra == \"autodetect\"",
             "clevercsv (>=0.6.3,<0.7.0); extra == \"autodetect\"",
             "requests (>=2.23.0,<3.0.0); extra == \"net\""
-          ]
+          ],
+          "requires_python": ">=3.8,<4.0"
         }
       },
       "0.1.3": {
@@ -3129,7 +3246,19 @@
         "comma-0.5.0-py3-none-any.whl": "0.1.2@comma-0.1.2-py3-none-any.whl"
       },
       "0.5.1": {
-        "comma-0.5.1-py3-none-any.whl": "0.1.2@comma-0.1.2-py3-none-any.whl"
+        "comma-0.5.1-py3-none-any.whl": {
+          "provides_extras": [
+            "autodetect",
+            "net"
+          ],
+          "requires_dist": [
+            "binaryornot (>=0.4.4,<0.5.0); extra == \"autodetect\"",
+            "chardet (>=3.0.4,<4.0.0); extra == \"autodetect\"",
+            "clevercsv (>=0.6.3,<0.7.0); extra == \"autodetect\"",
+            "requests (>=2.23.0,<3.0.0); extra == \"net\""
+          ],
+          "requires_python": ">=3.6,<4.0"
+        }
       },
       "0.5.2": {
         "comma-0.5.2-py3-none-any.whl": {
@@ -3142,7 +3271,8 @@
             "chardet (>=3.0.4,<4.0.0); extra == \"autodetect\"",
             "clevercsv (>=0.6.3,<0.7.0); (python_version >= \"3.6\" and python_version < \"4.0\") and (extra == \"autodetect\")",
             "requests (>=2.23.0,<3.0.0); extra == \"net\""
-          ]
+          ],
+          "requires_python": ">=3.6,<4.0"
         }
       }
     }
@@ -3365,7 +3495,8 @@
           "requires_dist": [
             "requests (>=2.23.0,<3.0.0)",
             "tqdm (>=4.46.0,<5.0.0)"
-          ]
+          ],
+          "requires_python": ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, !=3.5.*"
         }
       },
       "0.5.1": {
@@ -3377,7 +3508,8 @@
             "colorama (>=0.4.3,<0.5.0)",
             "requests (>=2.23.0,<3.0.0)",
             "tqdm (>=4.46.0,<5.0.0)"
-          ]
+          ],
+          "requires_python": ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, !=3.5.*"
         }
       },
       "0.5.3": {
@@ -3387,7 +3519,8 @@
             "psutil (>=5.7.0,<6.0.0)",
             "requests (>=2.23.0,<3.0.0)",
             "tqdm (>=4.46.0,<5.0.0)"
-          ]
+          ],
+          "requires_python": ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, !=3.5.*"
         }
       },
       "0.5.4": {
@@ -3399,7 +3532,8 @@
             "colorama (>=0.4.3,<0.5.0)",
             "psutil (>=5.7.0,<6.0.0)",
             "tqdm (>=4.46.0,<5.0.0)"
-          ]
+          ],
+          "requires_python": ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, !=3.5.*"
         }
       },
       "0.5.6": {
@@ -3659,7 +3793,8 @@
             "ruamel-yaml (>=0.16.5)",
             "ipython ; extra == 'dev'",
             "twine ; extra == 'dev'"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
       }
     }
@@ -3673,7 +3808,8 @@
             "pandas",
             "jellyfish",
             "joblib"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
       },
       "0.1.1": {
@@ -3690,7 +3826,8 @@
             "jellyfish",
             "joblib",
             "d6tstack"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
       }
     }
@@ -3809,7 +3946,8 @@
             "pytest ; extra == 'testing'",
             "pytest-flake8 ; extra == 'testing'",
             "xarray (>0.12.0) ; (python_version >= \"3.5\") and extra == 'xarray'"
-          ]
+          ],
+          "requires_python": ">=3.5"
         }
       },
       "0.2.0rc2": {
@@ -3825,7 +3963,8 @@
             "pytest ; extra == 'testing'",
             "pytest-flake8 ; extra == 'testing'",
             "xarray (>0.12.0) ; (python_version >= \"3.5\") and extra == 'xarray'"
-          ]
+          ],
+          "requires_python": ">=3.5"
         }
       },
       "0.2.0rc3": {
@@ -3844,7 +3983,8 @@
             "pytest ; extra == 'testing'",
             "pytest-flake8 ; extra == 'testing'",
             "xarray (>0.12.0) ; (python_version >= \"3.5\") and extra == 'xarray'"
-          ]
+          ],
+          "requires_python": ">=3.5"
         }
       },
       "0.2.2": {
@@ -3866,7 +4006,8 @@
             "pytest ; extra == 'testing'",
             "pytest-flake8 ; extra == 'testing'",
             "xarray (>0.12.0) ; extra == 'xarray'"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
       },
       "0.2.5": {
@@ -3878,20 +4019,6 @@
     "py2.py3": {
       "0.0.1": {
         "dask2py-0.0.1-py2.py3-none-any.whl": {}
-      }
-    }
-  },
-  "demo-action": {
-    "py3": {
-      "1.0.0": {
-        "demo_action-1.0.0-py3-none-any.whl": {
-          "requires_dist": [
-            "flask"
-          ]
-        }
-      },
-      "1.0.1": {
-        "demo_action-1.0.1-py3-none-any.whl": "1.0.0@demo_action-1.0.0-py3-none-any.whl"
       }
     }
   },
@@ -3971,7 +4098,8 @@
             "outlier-utils",
             "textblob",
             "googletrans"
-          ]
+          ],
+          "requires_python": ">=3.5"
         }
       },
       "0.9": {
@@ -3997,7 +4125,8 @@
             "textblob",
             "googletrans",
             "diskcache"
-          ]
+          ],
+          "requires_python": ">=3.5"
         }
       },
       "0.9.3": {
@@ -4024,7 +4153,8 @@
             "googletrans",
             "diskcache",
             "requests-html"
-          ]
+          ],
+          "requires_python": ">=3.5"
         }
       },
       "0.9.4": {
@@ -4048,7 +4178,8 @@
             "outlier-utils",
             "requests-html",
             "aioredis"
-          ]
+          ],
+          "requires_python": ">=3.5"
         }
       },
       "0.9.6": {
@@ -4068,7 +4199,8 @@
         "devo-0.1.0-py3-none-any.whl": {
           "requires_dist": [
             "click (>=7.0,<8.0)"
-          ]
+          ],
+          "requires_python": ">=3.6,<4.0"
         }
       },
       "0.1.2": {
@@ -4080,7 +4212,8 @@
             "click (>=7.0,<8.0)",
             "cookiecutter (>=1.6.0,<2.0.0)",
             "ruamel.yaml (>=0.15.94,<0.16.0)"
-          ]
+          ],
+          "requires_python": ">=3.6,<4.0"
         }
       },
       "0.3.0": {
@@ -4090,7 +4223,8 @@
             "cookiecutter (>=1.6.0,<2.0.0)",
             "python-gitlab (>=1.8,<2.0)",
             "ruamel.yaml (>=0.15.94,<0.16.0)"
-          ]
+          ],
+          "requires_python": ">=3.6,<4.0"
         }
       },
       "0.3.1": {
@@ -4127,7 +4261,8 @@
             "jinja2 (>=2.10,<3.0)",
             "python-gitlab (>=1.8,<2.0)",
             "ruamel.yaml (>=0.15.94,<0.16.0)"
-          ]
+          ],
+          "requires_python": ">=3.6,<4.0"
         }
       },
       "0.4.1": {
@@ -4217,7 +4352,9 @@
   "dghello": {
     "py3": {
       "0.1.0": {
-        "dghello-0.1.0-py3-none-any.whl": {}
+        "dghello-0.1.0-py3-none-any.whl": {
+          "requires_python": ">=3.6"
+        }
       },
       "0.1.1": {
         "dghello-0.1.1-py3-none-any.whl": "0.1.0@dghello-0.1.0-py3-none-any.whl"
@@ -4271,7 +4408,8 @@
         "dikicli-0.1-py2.py3-none-any.whl": {
           "requires_dist": [
             "beautifulsoup4"
-          ]
+          ],
+          "requires_python": ">=3.4.0"
         }
       },
       "0.2": {
@@ -4312,7 +4450,8 @@
         "dikicli-0.3-py3-none-any.whl": {
           "requires_dist": [
             "beautifulsoup4"
-          ]
+          ],
+          "requires_python": ">=3.4,<4.0"
         }
       },
       "0.3.1": {
@@ -4378,7 +4517,8 @@
           "requires_dist": [
             "six",
             "beautifulsoup4 ; extra == 'smart-breadcrumbs'"
-          ]
+          ],
+          "requires_python": ">=2.7, !=3.0*, !=3.1.*, !=3.2.*, !=3.3.*, <4"
         }
       },
       "1.0.0.dev18": {
@@ -4771,7 +4911,8 @@
             "flake8 (==3.7.9) ; extra == 'dev'",
             "flake8 (==3.7.9) ; extra == 'linter'",
             "eth-tester[py-evm] (==v0.2.0-beta.2) ; extra == 'tester'"
-          ]
+          ],
+          "requires_python": ">=3.6,<4"
         }
       },
       "4.1.0": {
@@ -4974,7 +5115,8 @@
             "pytest-cov ; extra == 'tests'",
             "pytest-django ; extra == 'tests'",
             "pytest-parallel ; extra == 'tests'"
-          ]
+          ],
+          "requires_python": ">=3.5"
         }
       }
     }
@@ -5069,7 +5211,9 @@
   "dmlibrary": {
     "py3": {
       "2.1.0": {
-        "DMLibrary-2.1.0-py3-none-any.whl": {}
+        "DMLibrary-2.1.0-py3-none-any.whl": {
+          "requires_python": ">=3.0"
+        }
       }
     }
   },
@@ -5079,11 +5223,22 @@
         "docker_entrypoint-0.1.0-py3-none-any.whl": {
           "requires_dist": [
             "python-dotenv"
-          ]
+          ],
+          "requires_python": ">=3.7"
         }
       },
       "0.1.1": {
         "docker_entrypoint-0.1.1-py3-none-any.whl": "0.1.0@docker_entrypoint-0.1.0-py3-none-any.whl"
+      },
+      "0.1.2": {
+        "docker_entrypoint-0.1.2-py3-none-any.whl": {
+          "requires_dist": [
+            "python-dotenv",
+            "ptvsd",
+            "pydevd-pycharm"
+          ],
+          "requires_python": ">=3.7"
+        }
       }
     }
   },
@@ -5094,6 +5249,15 @@
       },
       "1.0.1": {
         "dockerfileparser-1.0.1-py3-none-any.whl": "1.0@dockerfileparser-1.0-py3-none-any.whl"
+      }
+    }
+  },
+  "document-vision": {
+    "py3": {
+      "0.0.1": {
+        "document_vision-0.0.1-py3-none-any.whl": {
+          "requires_python": ">=3.8,<4.0"
+        }
       }
     }
   },
@@ -5174,17 +5338,24 @@
           "requires_dist": [
             "ruamel.yaml (>=0.15.100)",
             "dploy (>=0.1.2)"
-          ]
+          ],
+          "requires_python": ">=3.7"
         }
       },
       "0.3.2": {
-        "dotsecrets-0.3.2-py3-none-any.whl": "0.3.1@dotsecrets-0.3.1-py3-none-any.whl"
+        "dotsecrets-0.3.2-py3-none-any.whl": {
+          "requires_dist": [
+            "ruamel.yaml (>=0.15.100)",
+            "dploy (>=0.1.2)"
+          ],
+          "requires_python": ">=3.5"
+        }
       },
       "0.3.3": {
-        "dotsecrets-0.3.3-py3-none-any.whl": "0.3.1@dotsecrets-0.3.1-py3-none-any.whl"
+        "dotsecrets-0.3.3-py3-none-any.whl": "0.3.2@dotsecrets-0.3.2-py3-none-any.whl"
       },
       "0.4": {
-        "dotsecrets-0.4-py3-none-any.whl": "0.3.1@dotsecrets-0.3.1-py3-none-any.whl"
+        "dotsecrets-0.4-py3-none-any.whl": "0.3.2@dotsecrets-0.3.2-py3-none-any.whl"
       }
     }
   },
@@ -5201,6 +5372,19 @@
       }
     }
   },
+  "drf-confidential": {
+    "py3": {
+      "0.1.1": {
+        "drf_confidential-0.1.1-py3-none-any.whl": {
+          "requires_dist": [
+            "django (<3.0)",
+            "djangorestframework (>=3.11.0,<4.0.0)"
+          ],
+          "requires_python": ">=3.7,<4.0"
+        }
+      }
+    }
+  },
   "driverlessai": {
     "py3": {
       "1.8.6.3b0": {
@@ -5209,7 +5393,8 @@
             "requests",
             "tabulate",
             "tornado"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
       },
       "1.8.6.3b1": {
@@ -5508,6 +5693,27 @@
         "duckdb-0.2.0-cp27-cp27mu-manylinux1_i686.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp27-cp27m-macosx_10_7_intel.whl",
         "duckdb-0.2.0-cp27-cp27mu-manylinux1_x86_64.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp27-cp27m-macosx_10_7_intel.whl"
       },
+      "0.2.1.dev117": {
+        "duckdb-0.2.1.dev117-cp27-cp27m-macosx_10_7_intel.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp27-cp27m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev117-cp27-cp27m-manylinux1_i686.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp27-cp27m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev117-cp27-cp27m-manylinux1_x86_64.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp27-cp27m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev117-cp27-cp27mu-manylinux1_i686.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp27-cp27m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev117-cp27-cp27mu-manylinux1_x86_64.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp27-cp27m-macosx_10_7_intel.whl"
+      },
+      "0.2.1.dev122": {
+        "duckdb-0.2.1.dev122-cp27-cp27m-macosx_10_7_intel.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp27-cp27m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev122-cp27-cp27m-manylinux1_i686.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp27-cp27m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev122-cp27-cp27m-manylinux1_x86_64.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp27-cp27m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev122-cp27-cp27mu-manylinux1_i686.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp27-cp27m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev122-cp27-cp27mu-manylinux1_x86_64.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp27-cp27m-macosx_10_7_intel.whl"
+      },
+      "0.2.1.dev209": {
+        "duckdb-0.2.1.dev209-cp27-cp27m-macosx_10_7_intel.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp27-cp27m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev209-cp27-cp27m-manylinux1_i686.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp27-cp27m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev209-cp27-cp27m-manylinux1_x86_64.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp27-cp27m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev209-cp27-cp27mu-manylinux1_i686.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp27-cp27m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev209-cp27-cp27mu-manylinux1_x86_64.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp27-cp27m-macosx_10_7_intel.whl"
+      },
       "0.2.1.dev32": {
         "duckdb-0.2.1.dev32-cp27-cp27m-macosx_10_7_intel.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp27-cp27m-macosx_10_7_intel.whl",
         "duckdb-0.2.1.dev32-cp27-cp27m-manylinux1_i686.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp27-cp27m-macosx_10_7_intel.whl",
@@ -5535,6 +5741,48 @@
         "duckdb-0.2.1.dev63-cp27-cp27m-manylinux1_x86_64.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp27-cp27m-macosx_10_7_intel.whl",
         "duckdb-0.2.1.dev63-cp27-cp27mu-manylinux1_i686.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp27-cp27m-macosx_10_7_intel.whl",
         "duckdb-0.2.1.dev63-cp27-cp27mu-manylinux1_x86_64.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp27-cp27m-macosx_10_7_intel.whl"
+      },
+      "0.2.1.dev65": {
+        "duckdb-0.2.1.dev65-cp27-cp27m-macosx_10_7_intel.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp27-cp27m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev65-cp27-cp27m-manylinux1_i686.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp27-cp27m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev65-cp27-cp27m-manylinux1_x86_64.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp27-cp27m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev65-cp27-cp27mu-manylinux1_i686.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp27-cp27m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev65-cp27-cp27mu-manylinux1_x86_64.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp27-cp27m-macosx_10_7_intel.whl"
+      },
+      "0.2.1.dev68": {
+        "duckdb-0.2.1.dev68-cp27-cp27m-macosx_10_7_intel.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp27-cp27m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev68-cp27-cp27m-manylinux1_i686.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp27-cp27m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev68-cp27-cp27m-manylinux1_x86_64.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp27-cp27m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev68-cp27-cp27mu-manylinux1_i686.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp27-cp27m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev68-cp27-cp27mu-manylinux1_x86_64.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp27-cp27m-macosx_10_7_intel.whl"
+      },
+      "0.2.1.dev69": {
+        "duckdb-0.2.1.dev69-cp27-cp27m-macosx_10_7_intel.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp27-cp27m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev69-cp27-cp27m-manylinux1_i686.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp27-cp27m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev69-cp27-cp27m-manylinux1_x86_64.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp27-cp27m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev69-cp27-cp27mu-manylinux1_i686.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp27-cp27m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev69-cp27-cp27mu-manylinux1_x86_64.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp27-cp27m-macosx_10_7_intel.whl"
+      },
+      "0.2.1.dev70": {
+        "duckdb-0.2.1.dev70-cp27-cp27m-macosx_10_7_intel.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp27-cp27m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev70-cp27-cp27m-manylinux1_i686.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp27-cp27m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev70-cp27-cp27m-manylinux1_x86_64.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp27-cp27m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev70-cp27-cp27mu-manylinux1_i686.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp27-cp27m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev70-cp27-cp27mu-manylinux1_x86_64.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp27-cp27m-macosx_10_7_intel.whl"
+      },
+      "0.2.1.dev72": {
+        "duckdb-0.2.1.dev72-cp27-cp27m-macosx_10_7_intel.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp27-cp27m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev72-cp27-cp27m-manylinux1_i686.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp27-cp27m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev72-cp27-cp27m-manylinux1_x86_64.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp27-cp27m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev72-cp27-cp27mu-manylinux1_i686.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp27-cp27m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev72-cp27-cp27mu-manylinux1_x86_64.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp27-cp27m-macosx_10_7_intel.whl"
+      },
+      "0.2.1.dev78": {
+        "duckdb-0.2.1.dev78-cp27-cp27m-macosx_10_7_intel.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp27-cp27m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev78-cp27-cp27m-manylinux1_i686.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp27-cp27m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev78-cp27-cp27m-manylinux1_x86_64.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp27-cp27m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev78-cp27-cp27mu-manylinux1_i686.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp27-cp27m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev78-cp27-cp27mu-manylinux1_x86_64.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp27-cp27m-macosx_10_7_intel.whl"
       }
     },
     "cp36": {
@@ -5626,6 +5874,18 @@
         "duckdb-0.2.0-cp36-cp36m-manylinux1_i686.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp36-cp36m-manylinux1_i686.whl",
         "duckdb-0.2.0-cp36-cp36m-manylinux1_x86_64.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp36-cp36m-manylinux1_i686.whl"
       },
+      "0.2.1.dev117": {
+        "duckdb-0.2.1.dev117-cp36-cp36m-manylinux1_i686.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp36-cp36m-manylinux1_i686.whl",
+        "duckdb-0.2.1.dev117-cp36-cp36m-manylinux1_x86_64.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp36-cp36m-manylinux1_i686.whl"
+      },
+      "0.2.1.dev122": {
+        "duckdb-0.2.1.dev122-cp36-cp36m-manylinux1_i686.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp36-cp36m-manylinux1_i686.whl",
+        "duckdb-0.2.1.dev122-cp36-cp36m-manylinux1_x86_64.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp36-cp36m-manylinux1_i686.whl"
+      },
+      "0.2.1.dev209": {
+        "duckdb-0.2.1.dev209-cp36-cp36m-manylinux1_i686.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp36-cp36m-manylinux1_i686.whl",
+        "duckdb-0.2.1.dev209-cp36-cp36m-manylinux1_x86_64.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp36-cp36m-manylinux1_i686.whl"
+      },
       "0.2.1.dev32": {
         "duckdb-0.2.1.dev32-cp36-cp36m-manylinux1_i686.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp36-cp36m-manylinux1_i686.whl",
         "duckdb-0.2.1.dev32-cp36-cp36m-manylinux1_x86_64.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp36-cp36m-manylinux1_i686.whl"
@@ -5641,6 +5901,30 @@
       "0.2.1.dev63": {
         "duckdb-0.2.1.dev63-cp36-cp36m-manylinux1_i686.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp36-cp36m-manylinux1_i686.whl",
         "duckdb-0.2.1.dev63-cp36-cp36m-manylinux1_x86_64.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp36-cp36m-manylinux1_i686.whl"
+      },
+      "0.2.1.dev65": {
+        "duckdb-0.2.1.dev65-cp36-cp36m-manylinux1_i686.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp36-cp36m-manylinux1_i686.whl",
+        "duckdb-0.2.1.dev65-cp36-cp36m-manylinux1_x86_64.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp36-cp36m-manylinux1_i686.whl"
+      },
+      "0.2.1.dev68": {
+        "duckdb-0.2.1.dev68-cp36-cp36m-manylinux1_i686.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp36-cp36m-manylinux1_i686.whl",
+        "duckdb-0.2.1.dev68-cp36-cp36m-manylinux1_x86_64.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp36-cp36m-manylinux1_i686.whl"
+      },
+      "0.2.1.dev69": {
+        "duckdb-0.2.1.dev69-cp36-cp36m-manylinux1_i686.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp36-cp36m-manylinux1_i686.whl",
+        "duckdb-0.2.1.dev69-cp36-cp36m-manylinux1_x86_64.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp36-cp36m-manylinux1_i686.whl"
+      },
+      "0.2.1.dev70": {
+        "duckdb-0.2.1.dev70-cp36-cp36m-manylinux1_i686.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp36-cp36m-manylinux1_i686.whl",
+        "duckdb-0.2.1.dev70-cp36-cp36m-manylinux1_x86_64.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp36-cp36m-manylinux1_i686.whl"
+      },
+      "0.2.1.dev72": {
+        "duckdb-0.2.1.dev72-cp36-cp36m-manylinux1_i686.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp36-cp36m-manylinux1_i686.whl",
+        "duckdb-0.2.1.dev72-cp36-cp36m-manylinux1_x86_64.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp36-cp36m-manylinux1_i686.whl"
+      },
+      "0.2.1.dev78": {
+        "duckdb-0.2.1.dev78-cp36-cp36m-manylinux1_i686.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp36-cp36m-manylinux1_i686.whl",
+        "duckdb-0.2.1.dev78-cp36-cp36m-manylinux1_x86_64.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp36-cp36m-manylinux1_i686.whl"
       }
     },
     "cp37": {
@@ -6023,6 +6307,27 @@
         "duckdb-0.2.0-cp37-cp37m-win32.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp37-cp37m-macosx_10_7_intel.whl",
         "duckdb-0.2.0-cp37-cp37m-win_amd64.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp37-cp37m-macosx_10_7_intel.whl"
       },
+      "0.2.1.dev117": {
+        "duckdb-0.2.1.dev117-cp37-cp37m-macosx_10_7_intel.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp37-cp37m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev117-cp37-cp37m-manylinux1_i686.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp37-cp37m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev117-cp37-cp37m-manylinux1_x86_64.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp37-cp37m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev117-cp37-cp37m-win32.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp37-cp37m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev117-cp37-cp37m-win_amd64.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp37-cp37m-macosx_10_7_intel.whl"
+      },
+      "0.2.1.dev122": {
+        "duckdb-0.2.1.dev122-cp37-cp37m-macosx_10_7_intel.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp37-cp37m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev122-cp37-cp37m-manylinux1_i686.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp37-cp37m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev122-cp37-cp37m-manylinux1_x86_64.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp37-cp37m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev122-cp37-cp37m-win32.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp37-cp37m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev122-cp37-cp37m-win_amd64.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp37-cp37m-macosx_10_7_intel.whl"
+      },
+      "0.2.1.dev209": {
+        "duckdb-0.2.1.dev209-cp37-cp37m-macosx_10_7_intel.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp37-cp37m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev209-cp37-cp37m-manylinux1_i686.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp37-cp37m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev209-cp37-cp37m-manylinux1_x86_64.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp37-cp37m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev209-cp37-cp37m-win32.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp37-cp37m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev209-cp37-cp37m-win_amd64.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp37-cp37m-macosx_10_7_intel.whl"
+      },
       "0.2.1.dev32": {
         "duckdb-0.2.1.dev32-cp37-cp37m-macosx_10_7_intel.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp37-cp37m-macosx_10_7_intel.whl",
         "duckdb-0.2.1.dev32-cp37-cp37m-manylinux1_i686.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp37-cp37m-macosx_10_7_intel.whl",
@@ -6050,6 +6355,48 @@
         "duckdb-0.2.1.dev63-cp37-cp37m-manylinux1_x86_64.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp37-cp37m-macosx_10_7_intel.whl",
         "duckdb-0.2.1.dev63-cp37-cp37m-win32.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp37-cp37m-macosx_10_7_intel.whl",
         "duckdb-0.2.1.dev63-cp37-cp37m-win_amd64.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp37-cp37m-macosx_10_7_intel.whl"
+      },
+      "0.2.1.dev65": {
+        "duckdb-0.2.1.dev65-cp37-cp37m-macosx_10_7_intel.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp37-cp37m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev65-cp37-cp37m-manylinux1_i686.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp37-cp37m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev65-cp37-cp37m-manylinux1_x86_64.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp37-cp37m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev65-cp37-cp37m-win32.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp37-cp37m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev65-cp37-cp37m-win_amd64.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp37-cp37m-macosx_10_7_intel.whl"
+      },
+      "0.2.1.dev68": {
+        "duckdb-0.2.1.dev68-cp37-cp37m-macosx_10_7_intel.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp37-cp37m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev68-cp37-cp37m-manylinux1_i686.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp37-cp37m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev68-cp37-cp37m-manylinux1_x86_64.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp37-cp37m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev68-cp37-cp37m-win32.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp37-cp37m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev68-cp37-cp37m-win_amd64.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp37-cp37m-macosx_10_7_intel.whl"
+      },
+      "0.2.1.dev69": {
+        "duckdb-0.2.1.dev69-cp37-cp37m-macosx_10_7_intel.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp37-cp37m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev69-cp37-cp37m-manylinux1_i686.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp37-cp37m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev69-cp37-cp37m-manylinux1_x86_64.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp37-cp37m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev69-cp37-cp37m-win32.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp37-cp37m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev69-cp37-cp37m-win_amd64.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp37-cp37m-macosx_10_7_intel.whl"
+      },
+      "0.2.1.dev70": {
+        "duckdb-0.2.1.dev70-cp37-cp37m-macosx_10_7_intel.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp37-cp37m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev70-cp37-cp37m-manylinux1_i686.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp37-cp37m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev70-cp37-cp37m-manylinux1_x86_64.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp37-cp37m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev70-cp37-cp37m-win32.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp37-cp37m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev70-cp37-cp37m-win_amd64.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp37-cp37m-macosx_10_7_intel.whl"
+      },
+      "0.2.1.dev72": {
+        "duckdb-0.2.1.dev72-cp37-cp37m-macosx_10_7_intel.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp37-cp37m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev72-cp37-cp37m-manylinux1_i686.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp37-cp37m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev72-cp37-cp37m-manylinux1_x86_64.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp37-cp37m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev72-cp37-cp37m-win32.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp37-cp37m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev72-cp37-cp37m-win_amd64.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp37-cp37m-macosx_10_7_intel.whl"
+      },
+      "0.2.1.dev78": {
+        "duckdb-0.2.1.dev78-cp37-cp37m-macosx_10_7_intel.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp37-cp37m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev78-cp37-cp37m-manylinux1_i686.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp37-cp37m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev78-cp37-cp37m-manylinux1_x86_64.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp37-cp37m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev78-cp37-cp37m-win32.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp37-cp37m-macosx_10_7_intel.whl",
+        "duckdb-0.2.1.dev78-cp37-cp37m-win_amd64.whl": "0.1.10.dev108@duckdb-0.1.10.dev108-cp37-cp37m-macosx_10_7_intel.whl"
       }
     }
   },
@@ -6059,7 +6406,8 @@
         "dumpster-0.1a0-py3-none-any.whl": {
           "requires_dist": [
             "google-cloud-storage (>=1.20.0)"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
       }
     }
@@ -6075,7 +6423,9 @@
     },
     "py3": {
       "2.0.0": {
-        "duviz-2.0.0-py3-none-any.whl": {}
+        "duviz-2.0.0-py3-none-any.whl": {
+          "requires_python": ">=3.5"
+        }
       },
       "2.0.1": {
         "duviz-2.0.1-py3-none-any.whl": "2.0.0@duviz-2.0.0-py3-none-any.whl"
@@ -6092,7 +6442,8 @@
           "requires_dist": [
             "pyopencl",
             "PyQt5"
-          ]
+          ],
+          "requires_python": ">=3"
         }
       }
     }
@@ -6104,7 +6455,8 @@
           "requires_dist": [
             "numpy",
             "scipy"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
       },
       "0.2": {
@@ -6143,7 +6495,9 @@
   "example-pkg-zhang-demo": {
     "py3": {
       "0.0.1": {
-        "example_pkg_zhang_demo-0.0.1-py3-none-any.whl": {}
+        "example_pkg_zhang_demo-0.0.1-py3-none-any.whl": {
+          "requires_python": ">=3.6"
+        }
       }
     }
   },
@@ -6203,11 +6557,17 @@
           "requires_dist": [
             "Pillow",
             "pngquant"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
       },
       "0.0.4": {
         "ezutils-0.0.4-py3-none-any.whl": "0.0.3@ezutils-0.0.3-py3-none-any.whl"
+      },
+      "0.0.5": {
+        "ezutils-0.0.5-py3-none-any.whl": {
+          "requires_python": ">=3.6"
+        }
       }
     }
   },
@@ -6272,7 +6632,9 @@
   "fastdist": {
     "py3": {
       "1.0.0": {
-        "fastdist-1.0.0-py3-none-any.whl": {}
+        "fastdist-1.0.0-py3-none-any.whl": {
+          "requires_python": ">=3.6"
+        }
       }
     }
   },
@@ -6755,7 +7117,8 @@
             "python-version (>=3.6)",
             "web3 (==5.4.0)",
             "retrying (==1.3.3)"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
       },
       "0.0.3": {
@@ -6764,7 +7127,8 @@
             "requests (==2.22)",
             "web3 (==5.4.0)",
             "retrying (==1.3.3)"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
       },
       "0.0.4": {
@@ -6841,7 +7205,8 @@
         "fugue-0.0.2-py3-none-any.whl": {
           "requires_dist": [
             "pandas"
-          ]
+          ],
+          "requires_python": ">=3"
         }
       }
     }
@@ -6852,7 +7217,8 @@
         "gallery_dl-0.6.3_py3-none-any.whl": {
           "requires_dist": [
             "requests (>=2.4.2)"
-          ]
+          ],
+          "requires_python": ">=3.3"
         }
       }
     },
@@ -6861,7 +7227,8 @@
         "gallery_dl-0.6.1-py3-none-any.whl": {
           "requires_dist": [
             "requests (>=2.4.2)"
-          ]
+          ],
+          "requires_python": ">=3.3"
         }
       },
       "0.6.2": {
@@ -6916,7 +7283,8 @@
         "gallery_dl-1.10.0-py3-none-any.whl": {
           "requires_dist": [
             "requests (>=2.11.0)"
-          ]
+          ],
+          "requires_python": ">=3.4"
         }
       },
       "1.10.1": {
@@ -6948,7 +7316,8 @@
             "pyOpenSSL (>=19.0.0) ; extra == 'cloudflare'",
             "cryptography (>=2.8.0) ; extra == 'cloudflare'",
             "youtube-dl ; extra == 'video'"
-          ]
+          ],
+          "requires_python": ">=3.4"
         }
       },
       "1.11.1": {
@@ -6971,7 +7340,8 @@
           "requires_dist": [
             "requests (>=2.11.0)",
             "youtube-dl ; extra == 'video'"
-          ]
+          ],
+          "requires_python": ">=3.4"
         }
       },
       "1.13.0": {
@@ -7038,37 +7408,42 @@
         "gallery_dl-1.4.2-py3-none-any.whl": "0.6.1@gallery_dl-0.6.1-py3-none-any.whl"
       },
       "1.5.0": {
-        "gallery_dl-1.5.0-py3-none-any.whl": "0.6.1@gallery_dl-0.6.1-py3-none-any.whl"
+        "gallery_dl-1.5.0-py3-none-any.whl": {
+          "requires_dist": [
+            "requests (>=2.4.2)"
+          ],
+          "requires_python": ">=3.4"
+        }
       },
       "1.5.1": {
-        "gallery_dl-1.5.1-py3-none-any.whl": "0.6.1@gallery_dl-0.6.1-py3-none-any.whl"
+        "gallery_dl-1.5.1-py3-none-any.whl": "1.5.0@gallery_dl-1.5.0-py3-none-any.whl"
       },
       "1.5.2": {
-        "gallery_dl-1.5.2-py3-none-any.whl": "0.6.1@gallery_dl-0.6.1-py3-none-any.whl"
+        "gallery_dl-1.5.2-py3-none-any.whl": "1.5.0@gallery_dl-1.5.0-py3-none-any.whl"
       },
       "1.5.3": {
-        "gallery_dl-1.5.3-py3-none-any.whl": "0.6.1@gallery_dl-0.6.1-py3-none-any.whl"
+        "gallery_dl-1.5.3-py3-none-any.whl": "1.5.0@gallery_dl-1.5.0-py3-none-any.whl"
       },
       "1.6.0": {
-        "gallery_dl-1.6.0-py3-none-any.whl": "0.6.1@gallery_dl-0.6.1-py3-none-any.whl"
+        "gallery_dl-1.6.0-py3-none-any.whl": "1.5.0@gallery_dl-1.5.0-py3-none-any.whl"
       },
       "1.6.1": {
-        "gallery_dl-1.6.1-py3-none-any.whl": "0.6.1@gallery_dl-0.6.1-py3-none-any.whl"
+        "gallery_dl-1.6.1-py3-none-any.whl": "1.5.0@gallery_dl-1.5.0-py3-none-any.whl"
       },
       "1.6.2": {
-        "gallery_dl-1.6.2-py3-none-any.whl": "0.6.1@gallery_dl-0.6.1-py3-none-any.whl"
+        "gallery_dl-1.6.2-py3-none-any.whl": "1.5.0@gallery_dl-1.5.0-py3-none-any.whl"
       },
       "1.6.3": {
-        "gallery_dl-1.6.3-py3-none-any.whl": "0.6.1@gallery_dl-0.6.1-py3-none-any.whl"
+        "gallery_dl-1.6.3-py3-none-any.whl": "1.5.0@gallery_dl-1.5.0-py3-none-any.whl"
       },
       "1.7.0": {
-        "gallery_dl-1.7.0-py3-none-any.whl": "0.6.1@gallery_dl-0.6.1-py3-none-any.whl"
+        "gallery_dl-1.7.0-py3-none-any.whl": "1.5.0@gallery_dl-1.5.0-py3-none-any.whl"
       },
       "1.8.0": {
-        "gallery_dl-1.8.0-py3-none-any.whl": "0.6.1@gallery_dl-0.6.1-py3-none-any.whl"
+        "gallery_dl-1.8.0-py3-none-any.whl": "1.5.0@gallery_dl-1.5.0-py3-none-any.whl"
       },
       "1.8.1": {
-        "gallery_dl-1.8.1-py3-none-any.whl": "0.6.1@gallery_dl-0.6.1-py3-none-any.whl"
+        "gallery_dl-1.8.1-py3-none-any.whl": "1.5.0@gallery_dl-1.5.0-py3-none-any.whl"
       },
       "1.8.2": {
         "gallery_dl-1.8.2-py3-none-any.whl": "1.10.0@gallery_dl-1.10.0-py3-none-any.whl"
@@ -7144,7 +7519,8 @@
             "tornado",
             "requests",
             "requests-toolbelt"
-          ]
+          ],
+          "requires_python": ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, <4"
         }
       },
       "0.1.3": {
@@ -7187,20 +7563,14 @@
       }
     }
   },
-  "grapylib": {
-    "py3": {
-      "1.0.1": {
-        "grapylib-1.0.1-py3-none-any.whl": {}
-      }
-    }
-  },
   "gubbe": {
     "py3": {
       "0.0.0.dev0": {
         "gubbe-0.0.0.dev0-py3-none-any.whl": {
           "requires_dist": [
             "click"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
       }
     }
@@ -7213,7 +7583,8 @@
             "gym (>=0.13.1)",
             "numpy",
             "pybullet"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
       },
       "1.0b1.dev28": {
@@ -7259,7 +7630,8 @@
             "numpy",
             "pybullet",
             "gym-ignition-models"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
       },
       "1.0b1.post1.dev139": {
@@ -7323,7 +7695,8 @@
             "numpy",
             "gym-ignition-models",
             "lxml"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
       },
       "1.0b1.post1.dev460": {
@@ -7929,7 +8302,9 @@
   "hnbex-cli": {
     "py2.py3": {
       "0.3.0": {
-        "hnbex_cli-0.3.0-py2.py3-none-any.whl": {}
+        "hnbex_cli-0.3.0-py2.py3-none-any.whl": {
+          "requires_python": ">=3.3"
+        }
       },
       "0.4.0": {
         "hnbex_cli-0.4.0-py2.py3-none-any.whl": "0.3.0@hnbex_cli-0.3.0-py2.py3-none-any.whl"
@@ -8050,7 +8425,8 @@
         "http_tarpit-0.1.0-py3-none-any.whl": {
           "requires_dist": [
             "aiohttp (>=3.4.4)"
-          ]
+          ],
+          "requires_python": ">=3.5.3"
         }
       },
       "0.1.1": {
@@ -8131,11 +8507,14 @@
             "codecov (>=2.0,<3.0)",
             "flake8 (>=3.7,<4.0)",
             "pytest (>=5.1,<6.0)"
-          ]
+          ],
+          "requires_python": ">=3.5,<4.0"
         }
       },
       "1.0.1": {
-        "humanice-1.0.1-py3-none-any.whl": {}
+        "humanice-1.0.1-py3-none-any.whl": {
+          "requires_python": ">=3.5,<4.0"
+        }
       },
       "1.0.2": {
         "humanice-1.0.2-py3-none-any.whl": "1.0.1@humanice-1.0.1-py3-none-any.whl"
@@ -8162,7 +8541,8 @@
             "importlib-resources ; python_version < \"3.7\"",
             "spacy (==2.*) ; extra == 'full'",
             "scikit-learn ; extra == 'full'"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
       },
       "0.1.1": {
@@ -8204,13 +8584,16 @@
   "import-it": {
     "py3": {
       "0.1.0": {
-        "import_it-0.1.0-py3-none-any.whl": {}
+        "import_it-0.1.0-py3-none-any.whl": {
+          "requires_python": ">=3.6,<4.0"
+        }
       },
       "0.2.0": {
         "import_it-0.2.0-py3-none-any.whl": {
           "requires_dist": [
             "ripgrepy (>=1.0,<2.0)"
-          ]
+          ],
+          "requires_python": ">=3.7,<4.0"
         }
       },
       "0.2.1": {
@@ -8227,7 +8610,8 @@
         "importgraph-0.1-py3-none-any.whl": {
           "requires_dist": [
             "graphviz"
-          ]
+          ],
+          "requires_python": ">=3"
         }
       }
     }
@@ -8235,7 +8619,9 @@
   "incached": {
     "py3": {
       "1.1.2": {
-        "incached-1.1.2-py3-none-any.whl": {}
+        "incached-1.1.2-py3-none-any.whl": {
+          "requires_python": ">=3.6"
+        }
       },
       "1.3": {
         "incached-1.3-py3-none-any.whl": "1.1.2@incached-1.1.2-py3-none-any.whl"
@@ -8978,7 +9364,8 @@
             "starlette",
             "mypy_extensions",
             "typing_extensions"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
       },
       "1.0.1": {
@@ -8989,7 +9376,8 @@
             "starlette",
             "mypy-extensions",
             "typing_extensions"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
       }
     }
@@ -8997,13 +9385,16 @@
   "jddf": {
     "py3": {
       "0.0.1": {
-        "jddf-0.0.1-py3-none-any.whl": {}
+        "jddf-0.0.1-py3-none-any.whl": {
+          "requires_python": ">=3.6"
+        }
       },
       "0.1.0": {
         "jddf-0.1.0-py3-none-any.whl": {
           "requires_dist": [
             "strict-rfc3339 (==0.7)"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
       }
     }
@@ -9026,7 +9417,8 @@
             "gseapy",
             "bokeh",
             "igv"
-          ]
+          ],
+          "requires_python": ">=3.5"
         }
       }
     }
@@ -9118,7 +9510,9 @@
     },
     "py3": {
       "0.0.3.dev0": {
-        "jx_argparse-0.0.3.dev0-py3-none-any.whl": {}
+        "jx_argparse-0.0.3.dev0-py3-none-any.whl": {
+          "requires_python": ">=2.7"
+        }
       }
     }
   },
@@ -9130,7 +9524,8 @@
             "matplotlib (>=3.0)",
             "numpy (>=1.15.0)",
             "scipy"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
       },
       "0.1.1": {
@@ -9155,7 +9550,8 @@
             "numpy (>=1.15.0)",
             "scipy",
             "ipywidgets"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
       }
     }
@@ -9263,7 +9659,8 @@
         "lattu-0.1-py2.py3-none-any.whl": {
           "requires_dist": [
             "pexpect"
-          ]
+          ],
+          "requires_python": ">=3"
         }
       },
       "0.2": {
@@ -9274,7 +9671,9 @@
   "lazylog-python": {
     "py3": {
       "0.1.0": {
-        "lazylog_python-0.1.0-py3-none-any.whl": {}
+        "lazylog_python-0.1.0-py3-none-any.whl": {
+          "requires_python": ">=3"
+        }
       }
     }
   },
@@ -9293,7 +9692,8 @@
             "jupyterlab",
             "xrft",
             "pip"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
       },
       "0.2": {
@@ -9311,7 +9711,8 @@
             "pip",
             "cartopy",
             "dask"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
       },
       "0.3": {
@@ -9328,7 +9729,28 @@
             "xrft",
             "pip",
             "dask[complete]"
-          ]
+          ],
+          "requires_python": ">=3.6"
+        }
+      },
+      "0.4": {
+        "ldcpy-0.4-py3-none-any.whl": {
+          "requires_dist": [
+            "xarray",
+            "numpy",
+            "netcdf4",
+            "cython",
+            "scipy",
+            "matplotlib",
+            "cmocean",
+            "jupyterlab",
+            "xrft",
+            "pip",
+            "dask[complete]",
+            "opencv-python",
+            "scikit-image"
+          ],
+          "requires_python": ">=3.6"
         }
       }
     }
@@ -9407,7 +9829,8 @@
         "lifester-1.0.0-py3-none-any.whl": {
           "requires_dist": [
             "tabulate (>=0.8.2)"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
       },
       "1.1.0": {
@@ -9481,7 +9904,9 @@
   "lonny-proc": {
     "py3": {
       "0.1.0": {
-        "lonny_proc-0.1.0-py3-none-any.whl": {}
+        "lonny_proc-0.1.0-py3-none-any.whl": {
+          "requires_python": ">=3.8,<4.0"
+        }
       },
       "0.1.1": {
         "lonny_proc-0.1.1-py3-none-any.whl": "0.1.0@lonny_proc-0.1.0-py3-none-any.whl"
@@ -9527,7 +9952,8 @@
             "dateutils (>=0.6.6)",
             "certifi",
             "mock ; extra == 'test'"
-          ]
+          ],
+          "requires_python": ">=2.7, !=3.0.*, !=3.1.*"
         }
       },
       "1.6.1": {
@@ -9570,7 +9996,8 @@
             "click",
             "toml",
             "flask"
-          ]
+          ],
+          "requires_python": ">=3.7"
         }
       }
     }
@@ -9597,7 +10024,9 @@
   "maji": {
     "py2.py3": {
       "0.0.1": {
-        "maji-0.0.1-py2.py3-none-any.whl": {}
+        "maji-0.0.1-py2.py3-none-any.whl": {
+          "requires_python": ">=3.7, <4"
+        }
       }
     }
   },
@@ -9610,7 +10039,8 @@
             "typing",
             "pathlib2",
             "setuptools"
-          ]
+          ],
+          "requires_python": ">=2.7"
         }
       },
       "201904.3b0": {
@@ -9632,7 +10062,8 @@
             "pathlib2",
             "setuptools",
             "typing ; python_version < \"3.5\""
-          ]
+          ],
+          "requires_python": ">=2.7"
         }
       },
       "202001.11b0": {
@@ -9711,7 +10142,8 @@
             "pytest-cov ; extra == 'dev'",
             "black ; extra == 'dev'",
             "flake8 ; extra == 'dev'"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
       },
       "0.7.16": {
@@ -9731,7 +10163,9 @@
   "mc.py": {
     "py3": {
       "3.0.0": {
-        "mc.py-3.0.0-py3-none-any.whl": {}
+        "mc.py-3.0.0-py3-none-any.whl": {
+          "requires_python": ">=3"
+        }
       },
       "3.0.1": {
         "mc.py-3.0.1-py3-none-any.whl": "3.0.0@mc.py-3.0.0-py3-none-any.whl"
@@ -9750,7 +10184,8 @@
         "mcdm-1.0-py3-none-any.whl": {
           "requires_dist": [
             "numpy (>=1.18.3)"
-          ]
+          ],
+          "requires_python": ">=3.5.3"
         }
       },
       "1.1": {
@@ -10329,7 +10764,8 @@
             "pytest ; extra == 'dev'",
             "pytest-cov ; extra == 'dev'",
             "coveralls ; extra == 'dev'"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
       }
     },
@@ -10343,7 +10779,13 @@
         }
       },
       "0.1.1": {
-        "motherjokes-0.1.1-py3-none-any.whl": "0.1@motherjokes-0.1-py3-none-any.whl"
+        "motherjokes-0.1.1-py3-none-any.whl": {
+          "requires_dist": [
+            "pymorphy2 (==0.8)",
+            "mosestokenizer (==1.0.0)"
+          ],
+          "requires_python": ">=3.6"
+        }
       }
     }
   },
@@ -10382,7 +10824,8 @@
             "mistune",
             "plac",
             "pygments"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
       },
       "0.1.5": {
@@ -10399,14 +10842,17 @@
         "mta-0.0.1-py3-none-any.whl": {
           "requires_dist": [
             "unidecode"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
       },
       "0.0.2": {
         "mta-0.0.2-py3-none-any.whl": "0.0.1@mta-0.0.1-py3-none-any.whl"
       },
       "0.0.3": {
-        "mta-0.0.3-py3-none-any.whl": {}
+        "mta-0.0.3-py3-none-any.whl": {
+          "requires_python": ">=3.6"
+        }
       },
       "0.0.4": {
         "mta-0.0.4-py3-none-any.whl": "0.0.3@mta-0.0.3-py3-none-any.whl"
@@ -10478,7 +10924,8 @@
             "pytest ; extra == 'tests'",
             "pytest-cov ; extra == 'tests'",
             "pytest-mock ; extra == 'tests'"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
       }
     }
@@ -10502,7 +10949,8 @@
         "naive_feature_selection-0.0.1-py3-none-any.whl": {
           "requires_dist": [
             "scikit-learn"
-          ]
+          ],
+          "requires_python": ">=3.5.0"
         }
       }
     }
@@ -10688,7 +11136,8 @@
             "boto3",
             "requests (<3.0.0,>=2.13.0)",
             "spacy (>=2.1.0)"
-          ]
+          ],
+          "requires_python": ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*"
         },
         "neuralcoref-3.9-cp35-cp35m-manylinux1_x86_64.whl": "3.9@neuralcoref-3.9-cp35-cp35m-macosx_10_6_x86_64.whl",
         "neuralcoref-3.9-cp35-cp35m-win_amd64.whl": "3.9@neuralcoref-3.9-cp35-cp35m-macosx_10_6_x86_64.whl"
@@ -10713,7 +11162,8 @@
             "boto3",
             "requests (<3.0.0,>=2.13.0)",
             "spacy (>=2.1.0)"
-          ]
+          ],
+          "requires_python": ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*"
         },
         "neuralcoref-3.9-cp36-cp36m-manylinux1_x86_64.whl": "3.9@neuralcoref-3.9-cp36-cp36m-macosx_10_6_intel.macosx_10_9_intel.macosx_10_9_x86_64.macosx_10_10_intel.macosx_10_10_x86_64.whl",
         "neuralcoref-3.9-cp36-cp36m-win_amd64.whl": "3.9@neuralcoref-3.9-cp36-cp36m-macosx_10_6_intel.macosx_10_9_intel.macosx_10_9_x86_64.macosx_10_10_intel.macosx_10_10_x86_64.whl"
@@ -10732,7 +11182,8 @@
             "boto3",
             "requests (<3.0.0,>=2.13.0)",
             "spacy (>=2.1.0)"
-          ]
+          ],
+          "requires_python": ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*"
         },
         "neuralcoref-3.9-cp37-cp37m-manylinux1_x86_64.whl": "3.9@neuralcoref-3.9-cp37-cp37m-macosx_10_6_intel.macosx_10_9_intel.macosx_10_9_x86_64.macosx_10_10_intel.macosx_10_10_x86_64.whl",
         "neuralcoref-3.9-cp37-cp37m-win_amd64.whl": "3.9@neuralcoref-3.9-cp37-cp37m-macosx_10_6_intel.macosx_10_9_intel.macosx_10_9_x86_64.macosx_10_10_intel.macosx_10_10_x86_64.whl"
@@ -10757,7 +11208,8 @@
         "newrelic_asyncpg-0.1.3-py3-none-any.whl": {
           "requires_dist": [
             "newrelic (>=4.10.0.112)"
-          ]
+          ],
+          "requires_python": ">=3.5"
         }
       }
     }
@@ -10826,7 +11278,8 @@
           "requires_dist": [
             "setuptools",
             "nnabla (==1.9.0)"
-          ]
+          ],
+          "requires_python": ">=3.5"
         }
       }
     }
@@ -11015,7 +11468,8 @@
             "tomlkit (>=0.5.8,<0.6.0)",
             "typing (>=3.6,<4.0); python_version >= \"2.7\" and python_version < \"2.8\" or python_version >= \"3.4\" and python_version < \"3.5\"",
             "virtualenv (>=16.0,<17.0); python_version >= \"2.7\" and python_version < \"2.8\""
-          ]
+          ],
+          "requires_python": ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
         }
       },
       "1.0.0b101": {
@@ -11032,7 +11486,8 @@
             "jsonref (>=0.2,<0.3)",
             "more-itertools (>=8.3.0,<9.0.0)",
             "pydantic (>=1.5.1,<2.0.0)"
-          ]
+          ],
+          "requires_python": ">=3.8,<4.0"
         }
       },
       "0.1.2": {
@@ -11043,7 +11498,8 @@
             "jsonref (>=0.2,<0.3)",
             "more-itertools (>=8.3.0,<9.0.0)",
             "pydantic (>=1.5.1,<2.0.0)"
-          ]
+          ],
+          "requires_python": ">=3.8,<4.0"
         }
       },
       "0.1.3": {
@@ -11156,14 +11612,21 @@
         "odoo10_addon_crm_location-10.0.1.0.0.99.dev2-py2-none-any.whl": "10.0.1.0.0@odoo10_addon_crm_location-10.0.1.0.0-py2-none-any.whl"
       },
       "10.0.1.0.0.99.dev3": {
-        "odoo10_addon_crm_location-10.0.1.0.0.99.dev3-py2-none-any.whl": "10.0.1.0.0@odoo10_addon_crm_location-10.0.1.0.0-py2-none-any.whl"
+        "odoo10_addon_crm_location-10.0.1.0.0.99.dev3-py2-none-any.whl": {
+          "requires_dist": [
+            "odoo (<10.1dev,>=10.0)",
+            "odoo10-addon-base-location"
+          ],
+          "requires_python": "~=2.7"
+        }
       },
       "10.0.1.0.0.99.dev4": {
         "odoo10_addon_crm_location-10.0.1.0.0.99.dev4-py2-none-any.whl": {
           "requires_dist": [
             "odoo10-addon-base-location",
             "odoo (<10.1dev,>=10.0)"
-          ]
+          ],
+          "requires_python": "~=2.7"
         }
       }
     }
@@ -11174,7 +11637,8 @@
         "odoo10_addon_product_margin_classification-10.0.2.0.0.99.dev4-py2-none-any.whl": {
           "requires_dist": [
             "odoo (<10.1dev,>=10.0)"
-          ]
+          ],
+          "requires_python": "~=2.7"
         }
       },
       "10.0.2.0.0.99.dev5": {
@@ -11197,13 +11661,20 @@
         }
       },
       "10.0.1.0.0.99.dev1": {
-        "odoo10_addon_project_task_material_analytic_partner-10.0.1.0.0.99.dev1-py2-none-any.whl": "10.0.1.0.0@odoo10_addon_project_task_material_analytic_partner-10.0.1.0.0-py2-none-any.whl"
+        "odoo10_addon_project_task_material_analytic_partner-10.0.1.0.0.99.dev1-py2-none-any.whl": {
+          "requires_dist": [
+            "odoo (<10.1dev,>=10.0)",
+            "odoo10-addon-analytic-partner",
+            "odoo10-addon-project-task-material-stock"
+          ],
+          "requires_python": "~=2.7"
+        }
       },
       "10.0.1.0.0.99.dev2": {
-        "odoo10_addon_project_task_material_analytic_partner-10.0.1.0.0.99.dev2-py2-none-any.whl": "10.0.1.0.0@odoo10_addon_project_task_material_analytic_partner-10.0.1.0.0-py2-none-any.whl"
+        "odoo10_addon_project_task_material_analytic_partner-10.0.1.0.0.99.dev2-py2-none-any.whl": "10.0.1.0.0.99.dev1@odoo10_addon_project_task_material_analytic_partner-10.0.1.0.0.99.dev1-py2-none-any.whl"
       },
       "10.0.1.0.0.99.dev4": {
-        "odoo10_addon_project_task_material_analytic_partner-10.0.1.0.0.99.dev4-py2-none-any.whl": "10.0.1.0.0@odoo10_addon_project_task_material_analytic_partner-10.0.1.0.0-py2-none-any.whl"
+        "odoo10_addon_project_task_material_analytic_partner-10.0.1.0.0.99.dev4-py2-none-any.whl": "10.0.1.0.0.99.dev1@odoo10_addon_project_task_material_analytic_partner-10.0.1.0.0.99.dev1-py2-none-any.whl"
       },
       "10.0.1.0.0.99.dev5": {
         "odoo10_addon_project_task_material_analytic_partner-10.0.1.0.0.99.dev5-py2-none-any.whl": {
@@ -11211,7 +11682,8 @@
             "odoo10-addon-analytic-partner",
             "odoo10-addon-project-task-material-stock",
             "odoo (<10.1dev,>=10.0)"
-          ]
+          ],
+          "requires_python": "~=2.7"
         }
       }
     }
@@ -11223,7 +11695,8 @@
           "requires_dist": [
             "odoo11-addon-base-view-inheritance-extension",
             "odoo (<11.1dev,>=11.0a)"
-          ]
+          ],
+          "requires_python": ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
         }
       },
       "11.0.1.0.0.99.dev4": {
@@ -11241,7 +11714,8 @@
             "odoo11-addon-account-tax-unece",
             "odoo11-addon-base-vat-sanitized",
             "odoo11-addon-product-uom-unece"
-          ]
+          ],
+          "requires_python": ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
         }
       },
       "11.0.1.0.0.99.dev3": {
@@ -11252,7 +11726,8 @@
             "odoo11-addon-base-vat-sanitized",
             "odoo11-addon-product-uom-unece",
             "odoo (<11.1dev,>=11.0a)"
-          ]
+          ],
+          "requires_python": ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
         }
       },
       "11.0.1.0.0.99.dev4": {
@@ -11273,7 +11748,8 @@
           "requires_dist": [
             "odoo11-addon-document-page-work-instruction",
             "odoo (<11.1dev,>=11.0a)"
-          ]
+          ],
+          "requires_python": ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
         }
       },
       "11.0.1.0.0.99.dev6": {
@@ -11291,7 +11767,8 @@
           "requires_dist": [
             "odoo11-addon-hotel",
             "odoo (<11.1dev,>=11.0a)"
-          ]
+          ],
+          "requires_python": ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
         }
       },
       "11.0.1.0.0.99.dev16": {
@@ -11338,7 +11815,8 @@
         "odoo11_addon_mobile_app_abstract-11.0.2.0.0.99.dev7-py2.py3-none-any.whl": {
           "requires_dist": [
             "odoo (<11.1dev,>=11.0a)"
-          ]
+          ],
+          "requires_python": ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
         }
       }
     }
@@ -11350,7 +11828,8 @@
           "requires_dist": [
             "odoo11-addon-base-ubl",
             "odoo (<11.1dev,>=11.0a)"
-          ]
+          ],
+          "requires_python": ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
         }
       },
       "11.0.1.0.0.99.dev3": {
@@ -11368,7 +11847,8 @@
           "requires_dist": [
             "odoo12-addon-analytic-partner",
             "odoo (<12.1dev,>=12.0a)"
-          ]
+          ],
+          "requires_python": ">=3.5"
         }
       },
       "12.0.1.0.0.99.dev11": {
@@ -11416,7 +11896,8 @@
           "requires_dist": [
             "odoo12-addon-base-geoengine",
             "odoo (<12.1dev,>=12.0a)"
-          ]
+          ],
+          "requires_python": ">=3.5"
         }
       },
       "12.0.1.0.0.99.dev3": {
@@ -11432,7 +11913,8 @@
             "odoo12-addon-base-report-to-printer",
             "odoo (<12.1dev,>=12.0a)",
             "zpl2"
-          ]
+          ],
+          "requires_python": ">=3.5"
         }
       },
       "12.0.1.0.0.99.dev4": {
@@ -11446,7 +11928,8 @@
         "odoo12_addon_sale_mrp_link-12.0.1.0.0.99.dev1-py3-none-any.whl": {
           "requires_dist": [
             "odoo (<12.1dev,>=12.0a)"
-          ]
+          ],
+          "requires_python": ">=3.5"
         }
       },
       "12.0.1.0.0.99.dev2": {
@@ -11468,8 +11951,12 @@
             "odoo12-addon-base-gs1-barcode",
             "odoo12-addon-stock-barcodes",
             "odoo (<12.1dev,>=12.0a)"
-          ]
+          ],
+          "requires_python": ">=3.5"
         }
+      },
+      "12.0.1.0.1": {
+        "odoo12_addon_stock_barcodes_gs1-12.0.1.0.1-py3-none-any.whl": "12.0.1.0.0.99.dev2@odoo12_addon_stock_barcodes_gs1-12.0.1.0.0.99.dev2-py3-none-any.whl"
       }
     }
   },
@@ -11479,7 +11966,8 @@
         "odoo13_addon_account_cutoff_base-13.0.1.0.1.dev11-py3-none-any.whl": {
           "requires_dist": [
             "odoo (<13.1dev,>=13.0a)"
-          ]
+          ],
+          "requires_python": ">=3.5"
         }
       },
       "13.0.1.0.1.dev13": {
@@ -11500,7 +11988,8 @@
           "requires_dist": [
             "odoo (<13.1dev,>=13.0a)",
             "python-dateutil"
-          ]
+          ],
+          "requires_python": ">=3.5"
         }
       },
       "13.0.1.0.1.dev3": {
@@ -11515,7 +12004,8 @@
           "requires_dist": [
             "odoo13-addon-product-assortment",
             "odoo (<13.1dev,>=13.0a)"
-          ]
+          ],
+          "requires_python": ">=3.5"
         }
       }
     }
@@ -11526,7 +12016,8 @@
         "odoo13_addon_stock_production_lot_active-13.0.1.0.1.dev2-py3-none-any.whl": {
           "requires_dist": [
             "odoo (<13.1dev,>=13.0a)"
-          ]
+          ],
+          "requires_python": ">=3.5"
         }
       }
     }
@@ -11556,7 +12047,12 @@
         "odoo8_addon_account_financial_report_horizontal-8.0.0.3.0.99.dev5-py2-none-any.whl": "8.0.0.3.0@odoo8_addon_account_financial_report_horizontal-8.0.0.3.0-py2-none-any.whl"
       },
       "8.0.0.3.0.99.dev6": {
-        "odoo8_addon_account_financial_report_horizontal-8.0.0.3.0.99.dev6-py2-none-any.whl": "8.0.0.3.0@odoo8_addon_account_financial_report_horizontal-8.0.0.3.0-py2-none-any.whl"
+        "odoo8_addon_account_financial_report_horizontal-8.0.0.3.0.99.dev6-py2-none-any.whl": {
+          "requires_dist": [
+            "odoo (<9.0a,>=8.0a)"
+          ],
+          "requires_python": "~=2.7"
+        }
       }
     }
   },
@@ -11575,13 +12071,20 @@
         "odoo8_addon_hw_customer_display-8.0.0.1.0.99.dev3-py2-none-any.whl": "8.0.0.1.0@odoo8_addon_hw_customer_display-8.0.0.1.0-py2-none-any.whl"
       },
       "8.0.0.1.0.99.dev5": {
-        "odoo8_addon_hw_customer_display-8.0.0.1.0.99.dev5-py2-none-any.whl": "8.0.0.1.0@odoo8_addon_hw_customer_display-8.0.0.1.0-py2-none-any.whl"
+        "odoo8_addon_hw_customer_display-8.0.0.1.0.99.dev5-py2-none-any.whl": {
+          "requires_dist": [
+            "odoo (<9.0a,>=8.0a)",
+            "pyserial",
+            "unidecode"
+          ],
+          "requires_python": "~=2.7"
+        }
       },
       "8.0.0.1.0.99.dev6": {
-        "odoo8_addon_hw_customer_display-8.0.0.1.0.99.dev6-py2-none-any.whl": "8.0.0.1.0@odoo8_addon_hw_customer_display-8.0.0.1.0-py2-none-any.whl"
+        "odoo8_addon_hw_customer_display-8.0.0.1.0.99.dev6-py2-none-any.whl": "8.0.0.1.0.99.dev5@odoo8_addon_hw_customer_display-8.0.0.1.0.99.dev5-py2-none-any.whl"
       },
       "8.0.0.1.0.99.dev7": {
-        "odoo8_addon_hw_customer_display-8.0.0.1.0.99.dev7-py2-none-any.whl": "8.0.0.1.0@odoo8_addon_hw_customer_display-8.0.0.1.0-py2-none-any.whl"
+        "odoo8_addon_hw_customer_display-8.0.0.1.0.99.dev7-py2-none-any.whl": "8.0.0.1.0.99.dev5@odoo8_addon_hw_customer_display-8.0.0.1.0.99.dev5-py2-none-any.whl"
       }
     }
   },
@@ -11598,16 +12101,21 @@
         "odoo8_addon_product_pricelist_fixed_price-8.0.1.0.1.99.dev16-py2-none-any.whl": "8.0.1.0.1.99.dev15@odoo8_addon_product_pricelist_fixed_price-8.0.1.0.1.99.dev15-py2-none-any.whl"
       },
       "8.0.1.0.1.99.dev17": {
-        "odoo8_addon_product_pricelist_fixed_price-8.0.1.0.1.99.dev17-py2-none-any.whl": "8.0.1.0.1.99.dev15@odoo8_addon_product_pricelist_fixed_price-8.0.1.0.1.99.dev15-py2-none-any.whl"
+        "odoo8_addon_product_pricelist_fixed_price-8.0.1.0.1.99.dev17-py2-none-any.whl": {
+          "requires_dist": [
+            "odoo (<9.0a,>=8.0a)"
+          ],
+          "requires_python": "~=2.7"
+        }
       },
       "8.0.1.0.1.99.dev18": {
-        "odoo8_addon_product_pricelist_fixed_price-8.0.1.0.1.99.dev18-py2-none-any.whl": "8.0.1.0.1.99.dev15@odoo8_addon_product_pricelist_fixed_price-8.0.1.0.1.99.dev15-py2-none-any.whl"
+        "odoo8_addon_product_pricelist_fixed_price-8.0.1.0.1.99.dev18-py2-none-any.whl": "8.0.1.0.1.99.dev17@odoo8_addon_product_pricelist_fixed_price-8.0.1.0.1.99.dev17-py2-none-any.whl"
       },
       "8.0.1.0.1.99.dev20": {
-        "odoo8_addon_product_pricelist_fixed_price-8.0.1.0.1.99.dev20-py2-none-any.whl": "8.0.1.0.1.99.dev15@odoo8_addon_product_pricelist_fixed_price-8.0.1.0.1.99.dev15-py2-none-any.whl"
+        "odoo8_addon_product_pricelist_fixed_price-8.0.1.0.1.99.dev20-py2-none-any.whl": "8.0.1.0.1.99.dev17@odoo8_addon_product_pricelist_fixed_price-8.0.1.0.1.99.dev17-py2-none-any.whl"
       },
       "8.0.1.0.1.99.dev21": {
-        "odoo8_addon_product_pricelist_fixed_price-8.0.1.0.1.99.dev21-py2-none-any.whl": "8.0.1.0.1.99.dev15@odoo8_addon_product_pricelist_fixed_price-8.0.1.0.1.99.dev15-py2-none-any.whl"
+        "odoo8_addon_product_pricelist_fixed_price-8.0.1.0.1.99.dev21-py2-none-any.whl": "8.0.1.0.1.99.dev17@odoo8_addon_product_pricelist_fixed_price-8.0.1.0.1.99.dev17-py2-none-any.whl"
       }
     }
   },
@@ -11624,7 +12132,12 @@
         "odoo8_addon_purchase_requisition_auto_rfq-8.0.0.2.0.99.dev4-py2-none-any.whl": "8.0.0.2.0.99.dev3@odoo8_addon_purchase_requisition_auto_rfq-8.0.0.2.0.99.dev3-py2-none-any.whl"
       },
       "8.0.0.2.0.99.dev5": {
-        "odoo8_addon_purchase_requisition_auto_rfq-8.0.0.2.0.99.dev5-py2-none-any.whl": "8.0.0.2.0.99.dev3@odoo8_addon_purchase_requisition_auto_rfq-8.0.0.2.0.99.dev3-py2-none-any.whl"
+        "odoo8_addon_purchase_requisition_auto_rfq-8.0.0.2.0.99.dev5-py2-none-any.whl": {
+          "requires_dist": [
+            "odoo (<9.0a,>=8.0a)"
+          ],
+          "requires_python": "~=2.7"
+        }
       }
     }
   },
@@ -11662,34 +12175,39 @@
         "odoo8_addon_sale_payment_method-8.0.0.2.1.99.dev17-py2-none-any.whl": "8.0.0.2.1.99.dev1@odoo8_addon_sale_payment_method-8.0.0.2.1.99.dev1-py2-none-any.whl"
       },
       "8.0.0.2.1.99.dev18": {
-        "odoo8_addon_sale_payment_method-8.0.0.2.1.99.dev18-py2-none-any.whl": "8.0.0.2.1.99.dev1@odoo8_addon_sale_payment_method-8.0.0.2.1.99.dev1-py2-none-any.whl"
+        "odoo8_addon_sale_payment_method-8.0.0.2.1.99.dev18-py2-none-any.whl": {
+          "requires_dist": [
+            "odoo (<9.0a,>=8.0a)"
+          ],
+          "requires_python": "~=2.7"
+        }
       },
       "8.0.0.2.1.99.dev19": {
-        "odoo8_addon_sale_payment_method-8.0.0.2.1.99.dev19-py2-none-any.whl": "8.0.0.2.1.99.dev1@odoo8_addon_sale_payment_method-8.0.0.2.1.99.dev1-py2-none-any.whl"
+        "odoo8_addon_sale_payment_method-8.0.0.2.1.99.dev19-py2-none-any.whl": "8.0.0.2.1.99.dev18@odoo8_addon_sale_payment_method-8.0.0.2.1.99.dev18-py2-none-any.whl"
       },
       "8.0.0.2.1.99.dev2": {
         "odoo8_addon_sale_payment_method-8.0.0.2.1.99.dev2-py2-none-any.whl": "8.0.0.2.1.99.dev1@odoo8_addon_sale_payment_method-8.0.0.2.1.99.dev1-py2-none-any.whl"
       },
       "8.0.0.2.1.99.dev20": {
-        "odoo8_addon_sale_payment_method-8.0.0.2.1.99.dev20-py2-none-any.whl": "8.0.0.2.1.99.dev1@odoo8_addon_sale_payment_method-8.0.0.2.1.99.dev1-py2-none-any.whl"
+        "odoo8_addon_sale_payment_method-8.0.0.2.1.99.dev20-py2-none-any.whl": "8.0.0.2.1.99.dev18@odoo8_addon_sale_payment_method-8.0.0.2.1.99.dev18-py2-none-any.whl"
       },
       "8.0.0.2.1.99.dev21": {
-        "odoo8_addon_sale_payment_method-8.0.0.2.1.99.dev21-py2-none-any.whl": "8.0.0.2.1.99.dev1@odoo8_addon_sale_payment_method-8.0.0.2.1.99.dev1-py2-none-any.whl"
+        "odoo8_addon_sale_payment_method-8.0.0.2.1.99.dev21-py2-none-any.whl": "8.0.0.2.1.99.dev18@odoo8_addon_sale_payment_method-8.0.0.2.1.99.dev18-py2-none-any.whl"
       },
       "8.0.0.2.1.99.dev22": {
-        "odoo8_addon_sale_payment_method-8.0.0.2.1.99.dev22-py2-none-any.whl": "8.0.0.2.1.99.dev1@odoo8_addon_sale_payment_method-8.0.0.2.1.99.dev1-py2-none-any.whl"
+        "odoo8_addon_sale_payment_method-8.0.0.2.1.99.dev22-py2-none-any.whl": "8.0.0.2.1.99.dev18@odoo8_addon_sale_payment_method-8.0.0.2.1.99.dev18-py2-none-any.whl"
       },
       "8.0.0.2.1.99.dev23": {
-        "odoo8_addon_sale_payment_method-8.0.0.2.1.99.dev23-py2-none-any.whl": "8.0.0.2.1.99.dev1@odoo8_addon_sale_payment_method-8.0.0.2.1.99.dev1-py2-none-any.whl"
+        "odoo8_addon_sale_payment_method-8.0.0.2.1.99.dev23-py2-none-any.whl": "8.0.0.2.1.99.dev18@odoo8_addon_sale_payment_method-8.0.0.2.1.99.dev18-py2-none-any.whl"
       },
       "8.0.0.2.1.99.dev24": {
-        "odoo8_addon_sale_payment_method-8.0.0.2.1.99.dev24-py2-none-any.whl": "8.0.0.2.1.99.dev1@odoo8_addon_sale_payment_method-8.0.0.2.1.99.dev1-py2-none-any.whl"
+        "odoo8_addon_sale_payment_method-8.0.0.2.1.99.dev24-py2-none-any.whl": "8.0.0.2.1.99.dev18@odoo8_addon_sale_payment_method-8.0.0.2.1.99.dev18-py2-none-any.whl"
       },
       "8.0.0.2.1.99.dev25": {
-        "odoo8_addon_sale_payment_method-8.0.0.2.1.99.dev25-py2-none-any.whl": "8.0.0.2.1.99.dev1@odoo8_addon_sale_payment_method-8.0.0.2.1.99.dev1-py2-none-any.whl"
+        "odoo8_addon_sale_payment_method-8.0.0.2.1.99.dev25-py2-none-any.whl": "8.0.0.2.1.99.dev18@odoo8_addon_sale_payment_method-8.0.0.2.1.99.dev18-py2-none-any.whl"
       },
       "8.0.0.2.1.99.dev26": {
-        "odoo8_addon_sale_payment_method-8.0.0.2.1.99.dev26-py2-none-any.whl": "8.0.0.2.1.99.dev1@odoo8_addon_sale_payment_method-8.0.0.2.1.99.dev1-py2-none-any.whl"
+        "odoo8_addon_sale_payment_method-8.0.0.2.1.99.dev26-py2-none-any.whl": "8.0.0.2.1.99.dev18@odoo8_addon_sale_payment_method-8.0.0.2.1.99.dev18-py2-none-any.whl"
       },
       "8.0.0.2.1.99.dev3": {
         "odoo8_addon_sale_payment_method-8.0.0.2.1.99.dev3-py2-none-any.whl": "8.0.0.2.1.99.dev1@odoo8_addon_sale_payment_method-8.0.0.2.1.99.dev1-py2-none-any.whl"
@@ -11734,7 +12252,8 @@
             "odoo8-addon-base-business-document-import-stock",
             "odoo8-addon-sale-order-import",
             "odoo (<9.0a,>=8.0a)"
-          ]
+          ],
+          "requires_python": "~=2.7"
         }
       },
       "8.0.1.0.0.99.dev5": {
@@ -11774,20 +12293,27 @@
         "odoo8_addon_service_desk_issue-8.0.1.1.0.99.dev17-py2-none-any.whl": "8.0.1.1.0.99.dev10@odoo8_addon_service_desk_issue-8.0.1.1.0.99.dev10-py2-none-any.whl"
       },
       "8.0.1.1.0.99.dev18": {
-        "odoo8_addon_service_desk_issue-8.0.1.1.0.99.dev18-py2-none-any.whl": "8.0.1.1.0.99.dev10@odoo8_addon_service_desk_issue-8.0.1.1.0.99.dev10-py2-none-any.whl"
+        "odoo8_addon_service_desk_issue-8.0.1.1.0.99.dev18-py2-none-any.whl": {
+          "requires_dist": [
+            "odoo (<9.0a,>=8.0a)",
+            "odoo8-addon-service-desk"
+          ],
+          "requires_python": "~=2.7"
+        }
       },
       "8.0.1.1.0.99.dev19": {
-        "odoo8_addon_service_desk_issue-8.0.1.1.0.99.dev19-py2-none-any.whl": "8.0.1.1.0.99.dev10@odoo8_addon_service_desk_issue-8.0.1.1.0.99.dev10-py2-none-any.whl"
+        "odoo8_addon_service_desk_issue-8.0.1.1.0.99.dev19-py2-none-any.whl": "8.0.1.1.0.99.dev18@odoo8_addon_service_desk_issue-8.0.1.1.0.99.dev18-py2-none-any.whl"
       },
       "8.0.1.1.0.99.dev20": {
-        "odoo8_addon_service_desk_issue-8.0.1.1.0.99.dev20-py2-none-any.whl": "8.0.1.1.0.99.dev10@odoo8_addon_service_desk_issue-8.0.1.1.0.99.dev10-py2-none-any.whl"
+        "odoo8_addon_service_desk_issue-8.0.1.1.0.99.dev20-py2-none-any.whl": "8.0.1.1.0.99.dev18@odoo8_addon_service_desk_issue-8.0.1.1.0.99.dev18-py2-none-any.whl"
       },
       "8.0.1.1.0.99.dev21": {
         "odoo8_addon_service_desk_issue-8.0.1.1.0.99.dev21-py2-none-any.whl": {
           "requires_dist": [
             "odoo8-addon-service-desk",
             "odoo (<9.0a,>=8.0a)"
-          ]
+          ],
+          "requires_python": "~=2.7"
         }
       },
       "8.0.1.1.0.99.dev8": {
@@ -11814,13 +12340,18 @@
         "odoo9_addon_auth_supplier-9.0.2.0.0.99.dev12-py2-none-any.whl": "9.0.2.0.0.99.dev10@odoo9_addon_auth_supplier-9.0.2.0.0.99.dev10-py2-none-any.whl"
       },
       "9.0.2.0.0.99.dev13": {
-        "odoo9_addon_auth_supplier-9.0.2.0.0.99.dev13-py2-none-any.whl": "9.0.2.0.0.99.dev10@odoo9_addon_auth_supplier-9.0.2.0.0.99.dev10-py2-none-any.whl"
+        "odoo9_addon_auth_supplier-9.0.2.0.0.99.dev13-py2-none-any.whl": {
+          "requires_dist": [
+            "odoo (<9.1a,>=9.0a)"
+          ],
+          "requires_python": "~=2.7"
+        }
       },
       "9.0.2.0.0.99.dev14": {
-        "odoo9_addon_auth_supplier-9.0.2.0.0.99.dev14-py2-none-any.whl": "9.0.2.0.0.99.dev10@odoo9_addon_auth_supplier-9.0.2.0.0.99.dev10-py2-none-any.whl"
+        "odoo9_addon_auth_supplier-9.0.2.0.0.99.dev14-py2-none-any.whl": "9.0.2.0.0.99.dev13@odoo9_addon_auth_supplier-9.0.2.0.0.99.dev13-py2-none-any.whl"
       },
       "9.0.2.0.0.99.dev15": {
-        "odoo9_addon_auth_supplier-9.0.2.0.0.99.dev15-py2-none-any.whl": "9.0.2.0.0.99.dev10@odoo9_addon_auth_supplier-9.0.2.0.0.99.dev10-py2-none-any.whl"
+        "odoo9_addon_auth_supplier-9.0.2.0.0.99.dev15-py2-none-any.whl": "9.0.2.0.0.99.dev13@odoo9_addon_auth_supplier-9.0.2.0.0.99.dev13-py2-none-any.whl"
       },
       "9.0.2.0.0.99.dev3": {
         "odoo9_addon_auth_supplier-9.0.2.0.0.99.dev3-py2-none-any.whl": "9.0.2.0.0.99.dev10@odoo9_addon_auth_supplier-9.0.2.0.0.99.dev10-py2-none-any.whl"
@@ -11852,7 +12383,8 @@
           "requires_dist": [
             "odoo (<9.1a,>=9.0a)",
             "odoo9-addon-mis-builder"
-          ]
+          ],
+          "requires_python": "~=2.7"
         }
       },
       "9.0.1.0.0.99.dev3": {
@@ -11863,7 +12395,8 @@
           "requires_dist": [
             "odoo9-addon-mis-builder",
             "odoo (<9.1a,>=9.0a)"
-          ]
+          ],
+          "requires_python": "~=2.7"
         }
       },
       "9.0.1.0.0.99.dev5": {
@@ -11900,7 +12433,13 @@
         "odoo9_addon_medical_manufacturer-9.0.1.0.0.99.dev5-py2-none-any.whl": "9.0.1.0.0.99.dev1@odoo9_addon_medical_manufacturer-9.0.1.0.0.99.dev1-py2-none-any.whl"
       },
       "9.0.1.0.0.99.dev6": {
-        "odoo9_addon_medical_manufacturer-9.0.1.0.0.99.dev6-py2-none-any.whl": "9.0.1.0.0.99.dev1@odoo9_addon_medical_manufacturer-9.0.1.0.0.99.dev1-py2-none-any.whl"
+        "odoo9_addon_medical_manufacturer-9.0.1.0.0.99.dev6-py2-none-any.whl": {
+          "requires_dist": [
+            "odoo (<9.1a,>=9.0a)",
+            "odoo9-addon-medical-medicament"
+          ],
+          "requires_python": "~=2.7"
+        }
       }
     }
   },
@@ -11921,7 +12460,13 @@
         "odoo9_addon_sale_crm_medical_prescription-9.0.1.0.0.99.dev2-py2-none-any.whl": "9.0.1.0.0@odoo9_addon_sale_crm_medical_prescription-9.0.1.0.0-py2-none-any.whl"
       },
       "9.0.1.0.0.99.dev3": {
-        "odoo9_addon_sale_crm_medical_prescription-9.0.1.0.0.99.dev3-py2-none-any.whl": "9.0.1.0.0@odoo9_addon_sale_crm_medical_prescription-9.0.1.0.0-py2-none-any.whl"
+        "odoo9_addon_sale_crm_medical_prescription-9.0.1.0.0.99.dev3-py2-none-any.whl": {
+          "requires_dist": [
+            "odoo (<9.1a,>=9.0a)",
+            "odoo9-addon-sale-medical-prescription"
+          ],
+          "requires_python": "~=2.7"
+        }
       }
     }
   },
@@ -11941,10 +12486,15 @@
         "odoo9_addon_web_advanced_search_x2x-9.0.1.0.1-py2-none-any.whl": "9.0.1.0.0.99.dev4@odoo9_addon_web_advanced_search_x2x-9.0.1.0.0.99.dev4-py2-none-any.whl"
       },
       "9.0.1.0.1.99.dev1": {
-        "odoo9_addon_web_advanced_search_x2x-9.0.1.0.1.99.dev1-py2-none-any.whl": "9.0.1.0.0.99.dev4@odoo9_addon_web_advanced_search_x2x-9.0.1.0.0.99.dev4-py2-none-any.whl"
+        "odoo9_addon_web_advanced_search_x2x-9.0.1.0.1.99.dev1-py2-none-any.whl": {
+          "requires_dist": [
+            "odoo (<9.1a,>=9.0a)"
+          ],
+          "requires_python": "~=2.7"
+        }
       },
       "9.0.1.0.1.99.dev2": {
-        "odoo9_addon_web_advanced_search_x2x-9.0.1.0.1.99.dev2-py2-none-any.whl": "9.0.1.0.0.99.dev4@odoo9_addon_web_advanced_search_x2x-9.0.1.0.0.99.dev4-py2-none-any.whl"
+        "odoo9_addon_web_advanced_search_x2x-9.0.1.0.1.99.dev2-py2-none-any.whl": "9.0.1.0.1.99.dev1@odoo9_addon_web_advanced_search_x2x-9.0.1.0.1.99.dev1-py2-none-any.whl"
       }
     }
   },
@@ -12033,7 +12583,8 @@
             "vatnumber (==1.2)",
             "xlrd (==1.0.0)",
             "xlwt (==1.3.0)"
-          ]
+          ],
+          "requires_python": ">=3.5"
         }
       },
       "11.0.1": {
@@ -12066,7 +12617,8 @@
             "pytz (==2016.7)",
             "psycopg2 (==2.7.3)",
             "xlrd (==1.0.0)"
-          ]
+          ],
+          "requires_python": ">=3.5"
         }
       },
       "11.0.2": {
@@ -12099,7 +12651,8 @@
             "vatnumber (==1.2)",
             "xlrd (==1.0.0)",
             "xlwt (==1.3.0)"
-          ]
+          ],
+          "requires_python": ">=3.5"
         }
       },
       "11.0.3": {
@@ -12133,7 +12686,8 @@
             "Jinja2 (==2.8)",
             "Babel (==2.3.4)",
             "psutil (==5.2.2)"
-          ]
+          ],
+          "requires_python": ">=3.5"
         }
       },
       "11.0.4": {
@@ -12167,7 +12721,8 @@
             "greenlet (==0.4.10)",
             "vatnumber (==1.2)",
             "Jinja2 (==2.8)"
-          ]
+          ],
+          "requires_python": ">=3.5"
         }
       },
       "11.0.5": {
@@ -12201,7 +12756,8 @@
             "Werkzeug (==0.11.11)",
             "reportlab (==3.4.0)",
             "greenlet (==0.4.10)"
-          ]
+          ],
+          "requires_python": ">=3.5"
         }
       },
       "11.0.6": {
@@ -12235,7 +12791,8 @@
             "Mako (==1.0.7)",
             "num2words (==0.5.5)",
             "html2text (==2017.10.4)"
-          ]
+          ],
+          "requires_python": ">=3.5"
         }
       },
       "11.0.7": {
@@ -12269,7 +12826,8 @@
             "Pillow (>=4.3.0)",
             "PyYAML (>=3.12)",
             "Werkzeug (>=0.11.11)"
-          ]
+          ],
+          "requires_python": ">=3.5"
         }
       }
     }
@@ -12286,7 +12844,8 @@
             "pytest; extra == 'tests'",
             "pytest-runner; extra == 'tests'",
             "responses; extra == 'tests'"
-          ]
+          ],
+          "requires_python": ">=3.5.*, <4"
         }
       },
       "0.1.1": {
@@ -12393,7 +12952,8 @@
             "sslpsk",
             "wxPython",
             "zeroconf (==0.19.1)"
-          ]
+          ],
+          "requires_python": ">=2.6"
         }
       },
       "1.1.2": {
@@ -12404,7 +12964,8 @@
             "numpy (==1.16.5)",
             "sslpsk",
             "zeroconf (==0.19.1)"
-          ]
+          ],
+          "requires_python": ">=2.6"
         }
       },
       "1.1.3": {
@@ -12760,12 +13321,16 @@
   "pals-pathway": {
     "py2": {
       "1.1.3": {
-        "PALS_pathway-1.1.3-py2-none-any.whl": {}
+        "PALS_pathway-1.1.3-py2-none-any.whl": {
+          "requires_python": ">=3.6"
+        }
       }
     },
     "py3": {
       "1.0.0": {
-        "PALS_pathway-1.0.0-py3-none-any.whl": {}
+        "PALS_pathway-1.0.0-py3-none-any.whl": {
+          "requires_python": ">=3.6"
+        }
       },
       "1.0.1": {
         "PALS_pathway-1.0.1-py3-none-any.whl": "1.0.0@PALS_pathway-1.0.0-py3-none-any.whl"
@@ -12841,7 +13406,8 @@
             "streamlit",
             "tqdm",
             "pillow"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
       },
       "1.4.1": {
@@ -13317,7 +13883,8 @@
             "pytest-xdist (<2.0,>=1.23) ; extra == 'test'",
             "tweepy (<4.0,>=3.5) ; extra == 'twitter'",
             "graphviz (>=0.8.3) ; extra == 'viz'"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
       },
       "0.10.1": {
@@ -13434,7 +14001,8 @@
             "pytest-xdist (<2.0,>=1.23) ; extra == 'test'",
             "tweepy (<4.0,>=3.5) ; extra == 'twitter'",
             "graphviz (>=0.8.3) ; extra == 'viz'"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
       },
       "0.10.4": {
@@ -13551,7 +14119,8 @@
             "pytest-xdist (<2.0,>=1.23) ; extra == 'test'",
             "tweepy (<4.0,>=3.5) ; extra == 'twitter'",
             "graphviz (>=0.8.3) ; extra == 'viz'"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
       },
       "0.10.6": {
@@ -13668,7 +14237,8 @@
             "pytest-xdist (<2.0,>=1.23) ; extra == 'test'",
             "tweepy (<4.0,>=3.5) ; extra == 'twitter'",
             "graphviz (>=0.8.3) ; extra == 'viz'"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
       },
       "0.10.7": {
@@ -13788,7 +14358,8 @@
             "pytest-xdist (<1.32.0,>=1.23) ; extra == 'test'",
             "tweepy (<4.0,>=3.5) ; extra == 'twitter'",
             "graphviz (>=0.8.3) ; extra == 'viz'"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
       },
       "0.11.1": {
@@ -13923,7 +14494,8 @@
             "pytest-xdist (<1.32.0,>=1.23) ; extra == 'test'",
             "tweepy (<4.0,>=3.5) ; extra == 'twitter'",
             "graphviz (>=0.8.3) ; extra == 'viz'"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
       },
       "0.12.1": {
@@ -14052,7 +14624,8 @@
             "pytest-xdist (<1.32.0,>=1.23) ; extra == 'test'",
             "tweepy (<4.0,>=3.5) ; extra == 'twitter'",
             "graphviz (>=0.8.3) ; extra == 'viz'"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
       },
       "0.12.2": {
@@ -14184,7 +14757,8 @@
             "pytest-xdist (<1.32.0,>=1.23) ; extra == 'test'",
             "tweepy (<4.0,>=3.5) ; extra == 'twitter'",
             "graphviz (>=0.8.3) ; extra == 'viz'"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
       },
       "0.12.4": {
@@ -14313,7 +14887,8 @@
             "pytest-xdist (<1.34.0,>=1.23) ; extra == 'test'",
             "tweepy (<4.0,>=3.5) ; extra == 'twitter'",
             "graphviz (>=0.8.3) ; extra == 'viz'"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
       },
       "0.12.5": {
@@ -14445,8 +15020,12 @@
             "pytest-xdist (<1.34.0,>=1.23) ; extra == 'test'",
             "tweepy (<4.0,>=3.5) ; extra == 'twitter'",
             "graphviz (>=0.8.3) ; extra == 'viz'"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
+      },
+      "0.12.6": {
+        "prefect-0.12.6-py3-none-any.whl": "0.12.4@prefect-0.12.4-py3-none-any.whl"
       },
       "0.5.0": {
         "prefect-0.5.0-py3-none-any.whl": {
@@ -14521,7 +15100,8 @@
             "jinja2 (<3.0,>=2.0) ; extra == 'templates'",
             "tweepy (<4.0,>=3.5) ; extra == 'twitter'",
             "graphviz (>=0.8.3) ; extra == 'viz'"
-          ]
+          ],
+          "requires_python": ">=3.5"
         }
       },
       "0.5.1": {
@@ -14600,7 +15180,8 @@
             "jinja2 (<3.0,>=2.0) ; extra == 'templates'",
             "tweepy (<4.0,>=3.5) ; extra == 'twitter'",
             "graphviz (>=0.8.3) ; extra == 'viz'"
-          ]
+          ],
+          "requires_python": ">=3.5"
         }
       },
       "0.5.2": {
@@ -14679,7 +15260,8 @@
             "jinja2 (<3.0,>=2.0) ; extra == 'templates'",
             "tweepy (<4.0,>=3.5) ; extra == 'twitter'",
             "graphviz (>=0.8.3) ; extra == 'viz'"
-          ]
+          ],
+          "requires_python": ">=3.5"
         }
       },
       "0.5.3": {
@@ -14757,7 +15339,8 @@
             "jinja2 (<3.0,>=2.0) ; extra == 'templates'",
             "tweepy (<4.0,>=3.5) ; extra == 'twitter'",
             "graphviz (>=0.8.3) ; extra == 'viz'"
-          ]
+          ],
+          "requires_python": ">=3.5"
         }
       },
       "0.5.4": {
@@ -14841,7 +15424,8 @@
             "jinja2 (<3.0,>=2.0) ; extra == 'templates'",
             "tweepy (<4.0,>=3.5) ; extra == 'twitter'",
             "graphviz (>=0.8.3) ; extra == 'viz'"
-          ]
+          ],
+          "requires_python": ">=3.5"
         }
       },
       "0.5.5": {
@@ -14925,7 +15509,8 @@
             "jinja2 (<3.0,>=2.0) ; extra == 'templates'",
             "tweepy (<4.0,>=3.5) ; extra == 'twitter'",
             "graphviz (>=0.8.3) ; extra == 'viz'"
-          ]
+          ],
+          "requires_python": ">=3.5"
         }
       },
       "0.6.0": {
@@ -15012,7 +15597,8 @@
             "jinja2 (<3.0,>=2.0) ; extra == 'templates'",
             "tweepy (<4.0,>=3.5) ; extra == 'twitter'",
             "graphviz (>=0.8.3) ; extra == 'viz'"
-          ]
+          ],
+          "requires_python": ">=3.5"
         }
       },
       "0.6.1": {
@@ -15098,7 +15684,8 @@
             "jinja2 (<3.0,>=2.0) ; extra == 'templates'",
             "tweepy (<4.0,>=3.5) ; extra == 'twitter'",
             "graphviz (>=0.8.3) ; extra == 'viz'"
-          ]
+          ],
+          "requires_python": ">=3.5.2"
         }
       },
       "0.6.2": {
@@ -15190,7 +15777,8 @@
             "jinja2 (<3.0,>=2.0) ; extra == 'templates'",
             "tweepy (<4.0,>=3.5) ; extra == 'twitter'",
             "graphviz (>=0.8.3) ; extra == 'viz'"
-          ]
+          ],
+          "requires_python": ">=3.5.2"
         }
       },
       "0.6.3": {
@@ -15288,7 +15876,8 @@
             "jinja2 (<3.0,>=2.0) ; extra == 'templates'",
             "tweepy (<4.0,>=3.5) ; extra == 'twitter'",
             "graphviz (>=0.8.3) ; extra == 'viz'"
-          ]
+          ],
+          "requires_python": ">=3.5.2"
         }
       },
       "0.6.6": {
@@ -15383,7 +15972,8 @@
             "jinja2 (<3.0,>=2.0) ; extra == 'templates'",
             "tweepy (<4.0,>=3.5) ; extra == 'twitter'",
             "graphviz (>=0.8.3) ; extra == 'viz'"
-          ]
+          ],
+          "requires_python": ">=3.5.2"
         }
       },
       "0.6.7": {
@@ -15480,7 +16070,8 @@
             "jinja2 (<3.0,>=2.0) ; extra == 'templates'",
             "tweepy (<4.0,>=3.5) ; extra == 'twitter'",
             "graphviz (>=0.8.3) ; extra == 'viz'"
-          ]
+          ],
+          "requires_python": ">=3.5.2"
         }
       },
       "0.7.0": {
@@ -15577,7 +16168,8 @@
             "jinja2 (<3.0,>=2.0) ; extra == 'templates'",
             "tweepy (<4.0,>=3.5) ; extra == 'twitter'",
             "graphviz (>=0.8.3) ; extra == 'viz'"
-          ]
+          ],
+          "requires_python": ">=3.5.2"
         }
       },
       "0.7.1": {
@@ -15677,7 +16269,8 @@
             "jinja2 (<3.0,>=2.0) ; extra == 'templates'",
             "tweepy (<4.0,>=3.5) ; extra == 'twitter'",
             "graphviz (>=0.8.3) ; extra == 'viz'"
-          ]
+          ],
+          "requires_python": ">=3.5.2"
         }
       },
       "0.7.3": {
@@ -15775,7 +16368,8 @@
             "jinja2 (<3.0,>=2.0) ; extra == 'templates'",
             "tweepy (<4.0,>=3.5) ; extra == 'twitter'",
             "graphviz (>=0.8.3) ; extra == 'viz'"
-          ]
+          ],
+          "requires_python": ">=3.5.2"
         }
       },
       "0.8.0": {
@@ -15882,7 +16476,8 @@
             "pytest-xdist (<2.0,>=1.23) ; extra == 'test'",
             "tweepy (<4.0,>=3.5) ; extra == 'twitter'",
             "graphviz (>=0.8.3) ; extra == 'viz'"
-          ]
+          ],
+          "requires_python": ">=3.5.2"
         }
       },
       "0.8.1": {
@@ -15989,7 +16584,8 @@
             "pytest-xdist (<2.0,>=1.23) ; extra == 'test'",
             "tweepy (<4.0,>=3.5) ; extra == 'twitter'",
             "graphviz (>=0.8.3) ; extra == 'viz'"
-          ]
+          ],
+          "requires_python": ">=3.5.2"
         }
       },
       "0.9.0": {
@@ -16099,7 +16695,8 @@
             "pytest-xdist (<2.0,>=1.23) ; extra == 'test'",
             "tweepy (<4.0,>=3.5) ; extra == 'twitter'",
             "graphviz (>=0.8.3) ; extra == 'viz'"
-          ]
+          ],
+          "requires_python": ">=3.5.2"
         }
       },
       "0.9.1": {
@@ -16209,7 +16806,8 @@
             "pytest-xdist (<2.0,>=1.23) ; extra == 'test'",
             "tweepy (<4.0,>=3.5) ; extra == 'twitter'",
             "graphviz (>=0.8.3) ; extra == 'viz'"
-          ]
+          ],
+          "requires_python": ">=3.5.2"
         }
       },
       "0.9.2": {
@@ -16326,7 +16924,8 @@
             "pytest-xdist (<2.0,>=1.23) ; extra == 'test'",
             "tweepy (<4.0,>=3.5) ; extra == 'twitter'",
             "graphviz (>=0.8.3) ; extra == 'viz'"
-          ]
+          ],
+          "requires_python": ">=3.5.2"
         }
       },
       "0.9.6": {
@@ -16440,14 +17039,127 @@
             "pytest-xdist (<2.0,>=1.23) ; extra == 'test'",
             "tweepy (<4.0,>=3.5) ; extra == 'twitter'",
             "graphviz (>=0.8.3) ; extra == 'viz'"
-          ]
+          ],
+          "requires_python": ">=3.5.2"
         }
       },
       "0.9.7": {
         "prefect-0.9.7-py3-none-any.whl": "0.9.6@prefect-0.9.6-py3-none-any.whl"
       },
       "0.9.8": {
-        "prefect-0.9.8-py3-none-any.whl": "0.10.0@prefect-0.10.0-py3-none-any.whl"
+        "prefect-0.9.8-py3-none-any.whl": {
+          "provides_extras": [
+            "airtable",
+            "all_extras",
+            "aws",
+            "azure",
+            "dev",
+            "dropbox",
+            "gcp",
+            "google",
+            "jira",
+            "kubernetes",
+            "postgres",
+            "redis",
+            "rss",
+            "snowflake",
+            "spacy",
+            "templates",
+            "test",
+            "twitter",
+            "viz"
+          ],
+          "requires_dist": [
+            "click (<8.0,>=7.0)",
+            "cloudpickle (<1.4,>=0.6.0)",
+            "croniter (<1.0,>=0.3.24)",
+            "dask[bag] (<3.0,>=0.19.3)",
+            "distributed (<3.0,>=1.26.1)",
+            "docker (<5.0,>=3.4.1)",
+            "marshmallow (<3.5.2,>=3.0.0b19)",
+            "marshmallow-oneofschema (<3.0,>=2.0.0b2)",
+            "mypy-extensions (<1.0,>=0.4.0)",
+            "pendulum (<3.0,>=2.0.4)",
+            "python-dateutil (~=2.7)",
+            "pyyaml (<5.4,>=3.13)",
+            "python-box (<5.0,>=3.4.4)",
+            "python-slugify (<5.0,>=1.2.6)",
+            "pytz (>=2018.7)",
+            "requests (<3.0,>=2.20)",
+            "supervisor (<5.0,>=4.0)",
+            "tabulate (<1.0,>=0.8.0)",
+            "toml (<1.0,>=0.9.4)",
+            "typing (<4.0,>=3.6.1)",
+            "typing-extensions (<4.0,>=3.6.2)",
+            "urllib3 (>=1.24.3)",
+            "msgpack (<1.0,>=0.6.0) ; python_version < \"3.6\"",
+            "airtable-python-wrapper (<0.12,>=0.11) ; extra == 'airtable'",
+            "airtable-python-wrapper (<0.12,>=0.11) ; extra == 'all_extras'",
+            "boto3 (<2.0,>=1.9) ; extra == 'all_extras'",
+            "azure-storage-blob (<13.0,>=12.1.0) ; extra == 'all_extras'",
+            "azureml-sdk (<1.1,>=1.0.65) ; extra == 'all_extras'",
+            "azure-cosmos (<3.2,>=3.1.1) ; extra == 'all_extras'",
+            "black ; extra == 'all_extras'",
+            "graphviz (<0.14,>=0.8) ; extra == 'all_extras'",
+            "jinja2 (<3.0,>=2.0) ; extra == 'all_extras'",
+            "mypy (<0.800,>=0.600) ; extra == 'all_extras'",
+            "Pygments (<3.0,>=2.2) ; extra == 'all_extras'",
+            "pytest (<6.0,>=5.0) ; extra == 'all_extras'",
+            "testfixtures (<7.0,>=6.10.3) ; extra == 'all_extras'",
+            "pytest-cov (<3.0,>=2.6) ; extra == 'all_extras'",
+            "pytest-env (<0.7.0,>=0.6.0) ; extra == 'all_extras'",
+            "pytest-xdist (<2.0,>=1.23) ; extra == 'all_extras'",
+            "dropbox (~=9.0) ; extra == 'all_extras'",
+            "google-cloud-bigquery (<2.0,>=1.6.0) ; extra == 'all_extras'",
+            "google-cloud-storage (<2.0,>=1.13) ; extra == 'all_extras'",
+            "jira (>=2.0.0) ; extra == 'all_extras'",
+            "kubernetes (<=11.0.0b2,>=9.0.0a1) ; extra == 'all_extras'",
+            "dask-kubernetes (>=0.8.0) ; extra == 'all_extras'",
+            "psycopg2-binary (>=2.8.2) ; extra == 'all_extras'",
+            "redis (>=3.2.1) ; extra == 'all_extras'",
+            "feedparser (<6.0,>=5.0.1) ; extra == 'all_extras'",
+            "snowflake-connector-python (<2.0,>=1.8.2) ; extra == 'all_extras'",
+            "spacy (<3.0.0,>=2.0.0) ; extra == 'all_extras'",
+            "graphviz (>=0.8.3) ; extra == 'all_extras'",
+            "tweepy (<4.0,>=3.5) ; extra == 'all_extras'",
+            "boto3 (<2.0,>=1.9) ; extra == 'aws'",
+            "azure-storage-blob (<13.0,>=12.1.0) ; extra == 'azure'",
+            "azureml-sdk (<1.1,>=1.0.65) ; extra == 'azure'",
+            "azure-cosmos (<3.2,>=3.1.1) ; extra == 'azure'",
+            "black ; extra == 'dev'",
+            "graphviz (<0.14,>=0.8) ; extra == 'dev'",
+            "jinja2 (<3.0,>=2.0) ; extra == 'dev'",
+            "mypy (<0.800,>=0.600) ; extra == 'dev'",
+            "Pygments (<3.0,>=2.2) ; extra == 'dev'",
+            "pytest (<6.0,>=5.0) ; extra == 'dev'",
+            "testfixtures (<7.0,>=6.10.3) ; extra == 'dev'",
+            "pytest-cov (<3.0,>=2.6) ; extra == 'dev'",
+            "pytest-env (<0.7.0,>=0.6.0) ; extra == 'dev'",
+            "pytest-xdist (<2.0,>=1.23) ; extra == 'dev'",
+            "dropbox (~=9.0) ; extra == 'dropbox'",
+            "google-cloud-bigquery (<2.0,>=1.6.0) ; extra == 'gcp'",
+            "google-cloud-storage (<2.0,>=1.13) ; extra == 'gcp'",
+            "google-cloud-bigquery (<2.0,>=1.6.0) ; extra == 'google'",
+            "google-cloud-storage (<2.0,>=1.13) ; extra == 'google'",
+            "jira (>=2.0.0) ; extra == 'jira'",
+            "kubernetes (<=11.0.0b2,>=9.0.0a1) ; extra == 'kubernetes'",
+            "dask-kubernetes (>=0.8.0) ; extra == 'kubernetes'",
+            "psycopg2-binary (>=2.8.2) ; extra == 'postgres'",
+            "redis (>=3.2.1) ; extra == 'redis'",
+            "feedparser (<6.0,>=5.0.1) ; extra == 'rss'",
+            "snowflake-connector-python (<2.0,>=1.8.2) ; extra == 'snowflake'",
+            "spacy (<3.0.0,>=2.0.0) ; extra == 'spacy'",
+            "jinja2 (<3.0,>=2.0) ; extra == 'templates'",
+            "pytest (<6.0,>=5.0) ; extra == 'test'",
+            "testfixtures (<7.0,>=6.10.3) ; extra == 'test'",
+            "pytest-cov (<3.0,>=2.6) ; extra == 'test'",
+            "pytest-env (<0.7.0,>=0.6.0) ; extra == 'test'",
+            "pytest-xdist (<2.0,>=1.23) ; extra == 'test'",
+            "tweepy (<4.0,>=3.5) ; extra == 'twitter'",
+            "graphviz (>=0.8.3) ; extra == 'viz'"
+          ],
+          "requires_python": ">=3.5.2"
+        }
       }
     }
   },
@@ -16501,7 +17213,8 @@
             "Products.ZCatalog",
             "Sphinx ; extra == 'docs'",
             "repoze.sphinx.autointerface ; extra == 'docs'"
-          ]
+          ],
+          "requires_python": ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*"
         }
       },
       "2.0.1": {
@@ -16658,7 +17371,9 @@
   "pwsh-astremy-1": {
     "py3": {
       "1.3.3": {
-        "PWSH_Astremy_1-1.3.3-py3-none-any.whl": {}
+        "PWSH_Astremy_1-1.3.3-py3-none-any.whl": {
+          "requires_python": ">=3.6"
+        }
       }
     }
   },
@@ -16853,19 +17568,23 @@
   "py365": {
     "py3": {
       "0.0.1": {
-        "py365-0.0.1-py3-none-any.whl": {}
+        "py365-0.0.1-py3-none-any.whl": {
+          "requires_python": ">=3.7"
+        }
       },
       "0.0.2": {
-        "py365-0.0.2-py3-none-any.whl": "0.0.1@py365-0.0.1-py3-none-any.whl"
+        "py365-0.0.2-py3-none-any.whl": {
+          "requires_python": ">=3.6"
+        }
       },
       "0.0.3": {
-        "py365-0.0.3-py3-none-any.whl": "0.0.1@py365-0.0.1-py3-none-any.whl"
+        "py365-0.0.3-py3-none-any.whl": "0.0.2@py365-0.0.2-py3-none-any.whl"
       },
       "0.0.4": {
-        "py365-0.0.4-py3-none-any.whl": "0.0.1@py365-0.0.1-py3-none-any.whl"
+        "py365-0.0.4-py3-none-any.whl": "0.0.2@py365-0.0.2-py3-none-any.whl"
       },
       "0.1.1": {
-        "py365-0.1.1-py3-none-any.whl": "0.0.1@py365-0.0.1-py3-none-any.whl"
+        "py365-0.1.1-py3-none-any.whl": "0.0.2@py365-0.0.2-py3-none-any.whl"
       },
       "0.1.2": {
         "py365-0.1.2-py3-none-any.whl": {
@@ -16873,7 +17592,8 @@
             "adal (>=1.2.1)",
             "requests (>=2.21.0)",
             "urllib3 (>=1.24.2)"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
       }
     }
@@ -16890,10 +17610,17 @@
         }
       },
       "0.0.17": {
-        "pyanyzip-0.0.17-py3-none-any.whl": "0.0.16@pyanyzip-0.0.16-py3-none-any.whl"
+        "pyanyzip-0.0.17-py3-none-any.whl": {
+          "requires_dist": [
+            "pylzma",
+            "pypipegzip",
+            "typing"
+          ],
+          "requires_python": ">=3.6"
+        }
       },
       "0.0.18": {
-        "pyanyzip-0.0.18-py3-none-any.whl": "0.0.16@pyanyzip-0.0.16-py3-none-any.whl"
+        "pyanyzip-0.0.18-py3-none-any.whl": "0.0.17@pyanyzip-0.0.17-py3-none-any.whl"
       }
     }
   },
@@ -17299,7 +18026,8 @@
             "pyqtgraph ; extra == 'tests'",
             "scipy ; extra == 'tests'",
             "PyQt5 ; extra == 'tests'"
-          ]
+          ],
+          "requires_python": ">=3"
         }
       },
       "0.0.2": {
@@ -17323,7 +18051,8 @@
             "pyqtgraph ; extra == 'tests'",
             "scipy ; extra == 'tests'",
             "PyQt5 ; extra == 'tests'"
-          ]
+          ],
+          "requires_python": ">=3"
         }
       },
       "0.0.4": {
@@ -17364,7 +18093,8 @@
             "pyqtgraph ; extra == 'tests'",
             "scipy ; extra == 'tests'",
             "PyQt5 ; extra == 'tests'"
-          ]
+          ],
+          "requires_python": ">=3.8"
         }
       }
     }
@@ -17376,7 +18106,8 @@
           "requires_dist": [
             "zeep (>=3)",
             "zipp (>=3)"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
       },
       "0.1.1": {
@@ -17390,8 +18121,10 @@
   "pygeostandards": {
     "py3": {
       "0.1.0": {
-        "pygeostandards-0.1-py3-none-any.whl": {},
-        "pygeostandards-0.1.0-py3-none-any.whl": "0.1.0@pygeostandards-0.1-py3-none-any.whl"
+        "pygeostandards-0.1-py3-none-any.whl": {
+          "requires_python": ">=3.5"
+        },
+        "pygeostandards-0.1.0-py3-none-any.whl": {}
       },
       "0.2": {
         "pygeostandards-0.2-py3-none-any.whl": "0.1.0@pygeostandards-0.1-py3-none-any.whl"
@@ -17698,7 +18431,8 @@
         "pylbc-1.0-py3-none-any.whl": {
           "requires_dist": [
             "requests"
-          ]
+          ],
+          "requires_python": ">=3"
         }
       },
       "1.0.1": {
@@ -17725,7 +18459,8 @@
             "pytest (>=5.1.3) ; extra == 'dev'",
             "sphinx ; extra == 'dev'",
             "sphinx-rtd-theme ; extra == 'dev'"
-          ]
+          ],
+          "requires_python": ">=3.7"
         }
       },
       "0.1.1": {
@@ -17738,7 +18473,8 @@
             "pytest (>=5.1.3) ; extra == 'dev'",
             "sphinx ; extra == 'dev'",
             "sphinx-rtd-theme ; extra == 'dev'"
-          ]
+          ],
+          "requires_python": ">=3.7"
         }
       },
       "0.1.3": {
@@ -17752,7 +18488,8 @@
             "pytest (>=5.1.3) ; extra == 'dev'",
             "sphinx ; extra == 'dev'",
             "sphinx-rtd-theme ; extra == 'dev'"
-          ]
+          ],
+          "requires_python": ">=3.7"
         }
       },
       "0.1.4": {
@@ -17767,17 +18504,31 @@
             "pytest (>=5.1.3) ; extra == 'dev'",
             "sphinx ; extra == 'dev'",
             "sphinx-rtd-theme ; extra == 'dev'"
-          ]
+          ],
+          "requires_python": ">=3.7"
         }
       },
       "0.1.5": {
         "PyLibSIMBA-0.1.5-py3-none-any.whl": "0.1.4@PyLibSIMBA-0.1.4-py3-none-any.whl"
       },
       "0.1.6": {
-        "PyLibSIMBA-0.1.6-py3-none-any.whl": "0.1.4@PyLibSIMBA-0.1.4-py3-none-any.whl"
+        "PyLibSIMBA-0.1.6-py3-none-any.whl": {
+          "provides_extras": [
+            "dev"
+          ],
+          "requires_dist": [
+            "web3 (>=5.1.0)",
+            "pywallet (>=0.1.0)",
+            "ecdsa (>=0.13.3)",
+            "pytest (>=5.1.3) ; extra == 'dev'",
+            "sphinx ; extra == 'dev'",
+            "sphinx-rtd-theme ; extra == 'dev'"
+          ],
+          "requires_python": ">=3.6"
+        }
       },
       "0.1.7": {
-        "PyLibSIMBA-0.1.7-py3-none-any.whl": "0.1.4@PyLibSIMBA-0.1.4-py3-none-any.whl"
+        "PyLibSIMBA-0.1.7-py3-none-any.whl": "0.1.6@PyLibSIMBA-0.1.6-py3-none-any.whl"
       }
     }
   },
@@ -17805,7 +18556,8 @@
         "pylint_requests-0.1.0-py3-none-any.whl": {
           "requires_dist": [
             "pylint (>=2.0,<3.0)"
-          ]
+          ],
+          "requires_python": ">=3.6,<4.0"
         }
       },
       "0.1.1": {
@@ -18389,52 +19141,58 @@
         "pymchelper-0.10.0-py2.py3-none-any.whl": "0.1.1@pymchelper-0.1.1-py2.py3-none-any.whl"
       },
       "0.10.1": {
-        "pymchelper-0.10.1-py2.py3-none-any.whl": "0.1.1@pymchelper-0.1.1-py2.py3-none-any.whl"
+        "pymchelper-0.10.1-py2.py3-none-any.whl": {
+          "requires_dist": [
+            "enum34",
+            "numpy"
+          ],
+          "requires_python": ">=2.7, !=3.0.*, !=3.1.*, !=3.3.*"
+        }
       },
       "0.10.2": {
-        "pymchelper-0.10.2-py2.py3-none-any.whl": "0.1.1@pymchelper-0.1.1-py2.py3-none-any.whl"
+        "pymchelper-0.10.2-py2.py3-none-any.whl": "0.10.1@pymchelper-0.10.1-py2.py3-none-any.whl"
       },
       "0.11.0": {
-        "pymchelper-0.11.0-py2.py3-none-any.whl": "0.1.1@pymchelper-0.1.1-py2.py3-none-any.whl"
+        "pymchelper-0.11.0-py2.py3-none-any.whl": "0.10.1@pymchelper-0.10.1-py2.py3-none-any.whl"
       },
       "0.11.1": {
-        "pymchelper-0.11.1-py2.py3-none-any.whl": "0.1.1@pymchelper-0.1.1-py2.py3-none-any.whl"
+        "pymchelper-0.11.1-py2.py3-none-any.whl": "0.10.1@pymchelper-0.10.1-py2.py3-none-any.whl"
       },
       "0.12.0": {
-        "pymchelper-0.12.0-py2.py3-none-any.whl": "0.1.1@pymchelper-0.1.1-py2.py3-none-any.whl"
+        "pymchelper-0.12.0-py2.py3-none-any.whl": "0.10.1@pymchelper-0.10.1-py2.py3-none-any.whl"
       },
       "0.12.1": {
-        "pymchelper-0.12.1-py2.py3-none-any.whl": "0.1.1@pymchelper-0.1.1-py2.py3-none-any.whl"
+        "pymchelper-0.12.1-py2.py3-none-any.whl": "0.10.1@pymchelper-0.10.1-py2.py3-none-any.whl"
       },
       "0.12.2": {
-        "pymchelper-0.12.2-py2.py3-none-any.whl": "0.1.1@pymchelper-0.1.1-py2.py3-none-any.whl"
+        "pymchelper-0.12.2-py2.py3-none-any.whl": "0.10.1@pymchelper-0.10.1-py2.py3-none-any.whl"
       },
       "0.12.3": {
-        "pymchelper-0.12.3-py2.py3-none-any.whl": "0.1.1@pymchelper-0.1.1-py2.py3-none-any.whl"
+        "pymchelper-0.12.3-py2.py3-none-any.whl": "0.10.1@pymchelper-0.10.1-py2.py3-none-any.whl"
       },
       "0.12.4": {
-        "pymchelper-0.12.4-py2.py3-none-any.whl": "0.1.1@pymchelper-0.1.1-py2.py3-none-any.whl"
+        "pymchelper-0.12.4-py2.py3-none-any.whl": "0.10.1@pymchelper-0.10.1-py2.py3-none-any.whl"
       },
       "0.12.5": {
-        "pymchelper-0.12.5-py2.py3-none-any.whl": "0.1.1@pymchelper-0.1.1-py2.py3-none-any.whl"
+        "pymchelper-0.12.5-py2.py3-none-any.whl": "0.10.1@pymchelper-0.10.1-py2.py3-none-any.whl"
       },
       "0.13.0": {
-        "pymchelper-0.13.0-py2.py3-none-any.whl": "0.1.1@pymchelper-0.1.1-py2.py3-none-any.whl"
+        "pymchelper-0.13.0-py2.py3-none-any.whl": "0.10.1@pymchelper-0.10.1-py2.py3-none-any.whl"
       },
       "0.14.0": {
-        "pymchelper-0.14.0-py2.py3-none-any.whl": "0.1.1@pymchelper-0.1.1-py2.py3-none-any.whl"
+        "pymchelper-0.14.0-py2.py3-none-any.whl": "0.10.1@pymchelper-0.10.1-py2.py3-none-any.whl"
       },
       "0.14.1": {
-        "pymchelper-0.14.1-py2.py3-none-any.whl": "0.1.1@pymchelper-0.1.1-py2.py3-none-any.whl"
+        "pymchelper-0.14.1-py2.py3-none-any.whl": "0.10.1@pymchelper-0.10.1-py2.py3-none-any.whl"
       },
       "0.14.2": {
-        "pymchelper-0.14.2-py2.py3-none-any.whl": "0.1.1@pymchelper-0.1.1-py2.py3-none-any.whl"
+        "pymchelper-0.14.2-py2.py3-none-any.whl": "0.10.1@pymchelper-0.10.1-py2.py3-none-any.whl"
       },
       "0.14.3": {
-        "pymchelper-0.14.3-py2.py3-none-any.whl": "0.1.1@pymchelper-0.1.1-py2.py3-none-any.whl"
+        "pymchelper-0.14.3-py2.py3-none-any.whl": "0.10.1@pymchelper-0.10.1-py2.py3-none-any.whl"
       },
       "0.14.4": {
-        "pymchelper-0.14.4-py2.py3-none-any.whl": "0.1.1@pymchelper-0.1.1-py2.py3-none-any.whl"
+        "pymchelper-0.14.4-py2.py3-none-any.whl": "0.10.1@pymchelper-0.10.1-py2.py3-none-any.whl"
       },
       "0.2.0": {
         "pymchelper-0.2.0-py2.py3-none-any.whl": "0.1.1@pymchelper-0.1.1-py2.py3-none-any.whl"
@@ -18533,7 +19291,8 @@
         "pymchelper-1.0.0-py2.py3-none-any.whl": {
           "requires_dist": [
             "numpy"
-          ]
+          ],
+          "requires_python": ">=2.7, !=3.0.*, !=3.1.*, !=3.3.*"
         }
       },
       "1.1.0": {
@@ -18554,11 +19313,14 @@
           "requires_dist": [
             "pytest; extra == 'test'",
             "pylint; extra == 'test'"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
       },
       "1.1.0": {
-        "pymessagebus-1.1.0-py3-none-any.whl": {}
+        "pymessagebus-1.1.0-py3-none-any.whl": {
+          "requires_python": ">=3.6"
+        }
       },
       "1.2.0": {
         "pymessagebus-1.2.0-py3-none-any.whl": "1.1.0@pymessagebus-1.1.0-py3-none-any.whl"
@@ -18607,12 +19369,16 @@
   "pypits": {
     "py2": {
       "0.0.4": {
-        "pypits-0.0.4-py2-none-any.whl": {}
+        "pypits-0.0.4-py2-none-any.whl": {
+          "requires_python": ">=2.6"
+        }
       }
     },
     "py3": {
       "0.0.4": {
-        "pypits-0.0.4-py3-none-any.whl": {}
+        "pypits-0.0.4-py3-none-any.whl": {
+          "requires_python": ">=2.6"
+        }
       }
     }
   },
@@ -18719,7 +19485,8 @@
           "requires_dist": [
             "aiodns",
             "aiohttp"
-          ]
+          ],
+          "requires_python": ">=3.5.0"
         }
       }
     },
@@ -18742,29 +19509,43 @@
           "requires_dist": [
             "aiodns",
             "aiohttp"
-          ]
+          ],
+          "requires_python": ">=3.5.0"
         }
       },
       "2.1.0": {
         "pypollencom-2.1.0-py3-none-any.whl": "2.0.0@pypollencom-2.0.0-py3-none-any.whl"
       },
       "2.1.1": {
-        "pypollencom-2.1.1-py3-none-any.whl": "2.0.0@pypollencom-2.0.0-py3-none-any.whl"
+        "pypollencom-2.1.1-py3-none-any.whl": {
+          "requires_dist": [
+            "aiodns",
+            "aiohttp"
+          ],
+          "requires_python": ">=3.6.0"
+        }
       },
       "2.2.0": {
-        "pypollencom-2.2.0-py3-none-any.whl": "2.0.0@pypollencom-2.0.0-py3-none-any.whl"
+        "pypollencom-2.2.0-py3-none-any.whl": "2.1.1@pypollencom-2.1.1-py3-none-any.whl"
       },
       "2.2.1": {
-        "pypollencom-2.2.1-py3-none-any.whl": "2.0.0@pypollencom-2.0.0-py3-none-any.whl"
+        "pypollencom-2.2.1-py3-none-any.whl": "2.1.1@pypollencom-2.1.1-py3-none-any.whl"
       },
       "2.2.2": {
-        "pypollencom-2.2.2-py3-none-any.whl": "2.0.0@pypollencom-2.0.0-py3-none-any.whl"
+        "pypollencom-2.2.2-py3-none-any.whl": {
+          "requires_dist": [
+            "aiodns",
+            "aiohttp"
+          ],
+          "requires_python": ">=3.5.3"
+        }
       },
       "2.2.3": {
         "pypollencom-2.2.3-py3-none-any.whl": {
           "requires_dist": [
             "aiohttp"
-          ]
+          ],
+          "requires_python": ">=3.5.3"
         }
       },
       "2.2.4": {
@@ -18933,7 +19714,8 @@
             "cartopy ; extra == 'quicklook'",
             "pillow ; extra == 'quicklook'",
             "rasterio ; extra == 'rasterio'"
-          ]
+          ],
+          "requires_python": ">=3.4"
         },
         "pyresample-1.15.0-cp36-cp36m-manylinux1_i686.whl": {
           "provides_extras": [
@@ -18959,7 +19741,8 @@
             "cartopy; extra == 'quicklook'",
             "pillow; extra == 'quicklook'",
             "rasterio; extra == 'rasterio'"
-          ]
+          ],
+          "requires_python": ">=3.4"
         },
         "pyresample-1.15.0-cp36-cp36m-manylinux1_x86_64.whl": "1.15.0@pyresample-1.15.0-cp36-cp36m-manylinux1_i686.whl",
         "pyresample-1.15.0-cp36-cp36m-manylinux2010_i686.whl": "1.15.0@pyresample-1.15.0-cp36-cp36m-manylinux1_i686.whl",
@@ -18992,7 +19775,8 @@
             "cartopy ; extra == 'quicklook'",
             "pillow ; extra == 'quicklook'",
             "rasterio ; extra == 'rasterio'"
-          ]
+          ],
+          "requires_python": ">=3.4"
         },
         "pyresample-1.16.0-cp36-cp36m-manylinux1_i686.whl": "1.16.0@pyresample-1.16.0-cp36-cp36m-macosx_10_9_x86_64.whl",
         "pyresample-1.16.0-cp36-cp36m-manylinux1_x86_64.whl": "1.16.0@pyresample-1.16.0-cp36-cp36m-macosx_10_9_x86_64.whl",
@@ -19024,7 +19808,8 @@
             "cartopy ; extra == 'quicklook'",
             "pillow ; extra == 'quicklook'",
             "rasterio ; extra == 'rasterio'"
-          ]
+          ],
+          "requires_python": ">=3.4"
         },
         "pyresample-1.15.0-cp37-cp37m-manylinux1_i686.whl": {
           "provides_extras": [
@@ -19050,7 +19835,8 @@
             "cartopy; extra == 'quicklook'",
             "pillow; extra == 'quicklook'",
             "rasterio; extra == 'rasterio'"
-          ]
+          ],
+          "requires_python": ">=3.4"
         },
         "pyresample-1.15.0-cp37-cp37m-manylinux1_x86_64.whl": "1.15.0@pyresample-1.15.0-cp37-cp37m-manylinux1_i686.whl",
         "pyresample-1.15.0-cp37-cp37m-manylinux2010_i686.whl": "1.15.0@pyresample-1.15.0-cp37-cp37m-manylinux1_i686.whl",
@@ -19083,7 +19869,8 @@
             "cartopy ; extra == 'quicklook'",
             "pillow ; extra == 'quicklook'",
             "rasterio ; extra == 'rasterio'"
-          ]
+          ],
+          "requires_python": ">=3.4"
         },
         "pyresample-1.16.0-cp37-cp37m-manylinux1_i686.whl": "1.16.0@pyresample-1.16.0-cp37-cp37m-macosx_10_9_x86_64.whl",
         "pyresample-1.16.0-cp37-cp37m-manylinux1_x86_64.whl": "1.16.0@pyresample-1.16.0-cp37-cp37m-macosx_10_9_x86_64.whl",
@@ -19115,7 +19902,8 @@
             "cartopy ; extra == 'quicklook'",
             "pillow ; extra == 'quicklook'",
             "rasterio ; extra == 'rasterio'"
-          ]
+          ],
+          "requires_python": ">=3.4"
         },
         "pyresample-1.15.0-cp38-cp38-manylinux1_i686.whl": {
           "provides_extras": [
@@ -19141,7 +19929,8 @@
             "cartopy; extra == 'quicklook'",
             "pillow; extra == 'quicklook'",
             "rasterio; extra == 'rasterio'"
-          ]
+          ],
+          "requires_python": ">=3.4"
         },
         "pyresample-1.15.0-cp38-cp38-manylinux1_x86_64.whl": "1.15.0@pyresample-1.15.0-cp38-cp38-manylinux1_i686.whl",
         "pyresample-1.15.0-cp38-cp38-manylinux2010_i686.whl": "1.15.0@pyresample-1.15.0-cp38-cp38-manylinux1_i686.whl",
@@ -19174,7 +19963,8 @@
             "cartopy ; extra == 'quicklook'",
             "pillow ; extra == 'quicklook'",
             "rasterio ; extra == 'rasterio'"
-          ]
+          ],
+          "requires_python": ">=3.4"
         },
         "pyresample-1.16.0-cp38-cp38-manylinux1_i686.whl": "1.16.0@pyresample-1.16.0-cp38-cp38-macosx_10_9_x86_64.whl",
         "pyresample-1.16.0-cp38-cp38-manylinux1_x86_64.whl": "1.16.0@pyresample-1.16.0-cp38-cp38-macosx_10_9_x86_64.whl",
@@ -19262,7 +20052,8 @@
           "requires_dist": [
             "attrs",
             "bytecode (>=0.10.0)"
-          ]
+          ],
+          "requires_python": ">=3.6.0"
         }
       },
       "0.2.2": {
@@ -19272,14 +20063,21 @@
         "pysexpr-0.3-py3-none-any.whl": "0.2.1@pysexpr-0.2.1-py3-none-any.whl"
       },
       "0.4": {
-        "pysexpr-0.4-py3-none-any.whl": "0.2.1@pysexpr-0.2.1-py3-none-any.whl"
+        "pysexpr-0.4-py3-none-any.whl": {
+          "requires_dist": [
+            "attrs",
+            "bytecode (>=0.10.0)"
+          ],
+          "requires_python": ">=3.5.0"
+        }
       },
       "0.5": {
         "pysexpr-0.5-py3-none-any.whl": {
           "requires_dist": [
             "attrs",
             "bytecode (<0.12.0,>=0.10.0)"
-          ]
+          ],
+          "requires_python": ">=3.5.0"
         }
       },
       "0.6": {
@@ -19407,7 +20205,23 @@
   "pyspark-sparkutils": {
     "py3": {
       "0.0.1": {
-        "pyspark_sparkutils-0.0.1-py3-none-any.whl": {}
+        "pyspark_sparkutils-0.0.1-py3-none-any.whl": {
+          "requires_python": ">=3.6"
+        }
+      }
+    }
+  },
+  "pyspex": {
+    "py3": {
+      "1.1.2": {
+        "pyspex-1.1.2-py3-none-any.whl": {
+          "requires_dist": [
+            "numpy (>=1.17)",
+            "h5py (>=2.10)",
+            "netCDF4 (>=1.5)",
+            "pys5p (>=1.0)"
+          ]
+        }
       }
     }
   },
@@ -19437,7 +20251,8 @@
         "python_countries-0.0.1-py3-none-any.whl": {
           "requires_dist": [
             "requests"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
       },
       "0.0.3": {
@@ -19470,7 +20285,8 @@
             "voluptuous (>=0.11.7,<0.12.0)",
             "w3lib (>=1.21.0,<2.0.0)",
             "websocket-client (>=0.57.0,<0.58.0)"
-          ]
+          ],
+          "requires_python": ">=3.6.1,<4.0.0"
         }
       },
       "1.0.1": {
@@ -19490,7 +20306,8 @@
             "voluptuous (>=0.11.7,<0.12.0)",
             "w3lib (>=1.21.0,<2.0.0)",
             "websocket-client (>=0.56,<0.57)"
-          ]
+          ],
+          "requires_python": ">=3.6.1,<4.0.0"
         }
       },
       "1.0.2": {
@@ -19509,7 +20326,8 @@
             "voluptuous (>=0.11.7,<0.12.0)",
             "w3lib (>=1.21.0,<2.0.0)",
             "websocket-client (>=0.56,<0.57)"
-          ]
+          ],
+          "requires_python": ">=3.6.1,<4.0.0"
         }
       },
       "1.1.0": {
@@ -19532,7 +20350,8 @@
             "voluptuous (>=0.11.7,<0.12.0)",
             "w3lib (>=1.21.0,<2.0.0)",
             "websocket-client (>=0.56,<0.57)"
-          ]
+          ],
+          "requires_python": ">=3.6.1,<4.0.0"
         }
       }
     }
@@ -19562,7 +20381,8 @@
           "requires_dist": [
             "pyvista (>=0.25.0)",
             "PyQt5 (>=5.11.3)"
-          ]
+          ],
+          "requires_python": ">=3.5.*"
         }
       },
       "0.1.1": {
@@ -19573,7 +20393,9 @@
   "pyvltree": {
     "py3": {
       "0.5.0": {
-        "pyvltree-0.5.0-py3-none-any.whl": {}
+        "pyvltree-0.5.0-py3-none-any.whl": {
+          "requires_python": ">=3"
+        }
       },
       "0.5.1": {
         "pyvltree-0.5.1-py3-none-any.whl": "0.5.0@pyvltree-0.5.0-py3-none-any.whl"
@@ -19588,7 +20410,8 @@
             "googleapis-common-protos (>=1.5,<2.0)",
             "grpcio (>=1.18,<2.0)",
             "grpcio-tools (>=1.18,<2.0)"
-          ]
+          ],
+          "requires_python": ">=3.5,<4.0"
         }
       },
       "0.1.4": {
@@ -19623,7 +20446,8 @@
             "jq (>=0.1.6,<0.2.0)",
             "tlslite-ng (>=0.7.5,<0.8.0)",
             "xxhash (>=1.3,<2.0)"
-          ]
+          ],
+          "requires_python": ">=3.6,<4.0"
         }
       },
       "0.2.11": {
@@ -19650,7 +20474,8 @@
             "tlslite-ng (>=0.7.5,<0.8.0)",
             "toml (>=0.10.0,<0.11.0)",
             "xxhash (>=1.3,<2.0)"
-          ]
+          ],
+          "requires_python": ">=3.6,<4.0"
         }
       },
       "0.2.16": {
@@ -19672,7 +20497,8 @@
             "grpcio (>=1.18,<2.0)",
             "grpcio-tools (>=1.18,<2.0)",
             "tlslite-ng (>=0.7.5,<0.8.0)"
-          ]
+          ],
+          "requires_python": ">=3.5,<4.0"
         }
       },
       "0.2.20": {
@@ -19797,14 +20623,20 @@
         "qbertclient-0.0.1-py3-none-any.whl": {
           "requires_dist": [
             "requests"
-          ]
+          ],
+          "requires_python": ">=3.7"
         }
       },
       "0.0.10": {
         "qbertclient-0.0.10-py3-none-any.whl": "0.0.1@qbertclient-0.0.1-py3-none-any.whl"
       },
       "0.0.11": {
-        "qbertclient-0.0.11-py3-none-any.whl": "0.0.1@qbertclient-0.0.1-py3-none-any.whl"
+        "qbertclient-0.0.11-py3-none-any.whl": {
+          "requires_dist": [
+            "requests"
+          ],
+          "requires_python": ">=3.5"
+        }
       },
       "0.0.2": {
         "qbertclient-0.0.2-py3-none-any.whl": "0.0.1@qbertclient-0.0.1-py3-none-any.whl"
@@ -22113,6 +22945,9 @@
           ]
         }
       },
+      "1.9.28": {
+        "quantaxis-1.9.28-py3-none-any.whl": "1.9.27@quantaxis-1.9.27-py3-none-any.whl"
+      },
       "1.9.3": {
         "quantaxis-1.9.3-py3-none-any.whl": "1.8.5@quantaxis-1.8.5-py3-none-any.whl"
       },
@@ -22142,7 +22977,8 @@
         "quickcerts-0.2.0-py3-none-any.whl": {
           "requires_dist": [
             "cryptography (>=1.6)"
-          ]
+          ],
+          "requires_python": ">=3.4"
         }
       },
       "0.2.1": {
@@ -23326,7 +24162,9 @@
   "reportforce": {
     "py3": {
       "0.0.1": {
-        "reportforce-0.0.1-py3-none-any.whl": {}
+        "reportforce-0.0.1-py3-none-any.whl": {
+          "requires_python": ">=3.6"
+        }
       },
       "0.0.2": {
         "reportforce-0.0.2-py3-none-any.whl": "0.0.1@reportforce-0.0.1-py3-none-any.whl"
@@ -23339,7 +24177,8 @@
           "requires_dist": [
             "pandas",
             "requests"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
       },
       "0.0.5": {
@@ -24424,7 +25263,8 @@
             "textstat (<0.3.999,>=0.3.1)",
             "tqdm (>=4.15.0,<4.15.9999)",
             "yamlconf (<0.2.999,>=0.2.0)"
-          ]
+          ],
+          "requires_python": ">=3"
         }
       },
       "2.2.0": {
@@ -24453,7 +25293,8 @@
             "textstat (<0.3.999,>=0.3.1)",
             "tqdm (>=4.15.0,<4.15.9999)",
             "yamlconf (<0.2.999,>=0.2.0)"
-          ]
+          ],
+          "requires_python": ">=3"
         }
       },
       "2.2.1": {
@@ -24483,7 +25324,8 @@
             "textstat (<0.3.999,>=0.3.1)",
             "tqdm (>=4.15.0,<4.15.9999)",
             "yamlconf (<0.2.999,>=0.2.0)"
-          ]
+          ],
+          "requires_python": ">=3"
         }
       },
       "2.2.2": {
@@ -24513,7 +25355,8 @@
             "textstat (>=0.3.1,<0.3.999)",
             "tqdm (>=4.15.0,<4.15.9999)",
             "yamlconf (<0.2.999,>=0.2.0)"
-          ]
+          ],
+          "requires_python": ">=3"
         }
       },
       "2.2.6": {
@@ -24543,7 +25386,8 @@
             "textstat (<0.3.999,>=0.3.1)",
             "tqdm (<4.15.9999,>=4.15.0)",
             "yamlconf (<0.2.999,>=0.2.0)"
-          ]
+          ],
+          "requires_python": ">=3"
         }
       },
       "2.3.0": {
@@ -24573,7 +25417,8 @@
             "textstat (<0.3.999,>=0.3.1)",
             "tqdm (>=4.15.0,<4.15.9999)",
             "yamlconf (>=0.2.0,<0.2.999)"
-          ]
+          ],
+          "requires_python": ">=3"
         }
       },
       "2.3.1": {
@@ -24603,7 +25448,8 @@
             "textstat (>=0.3.1,<0.3.999)",
             "tqdm (>=4.15.0,<4.15.9999)",
             "yamlconf (<0.2.999,>=0.2.0)"
-          ]
+          ],
+          "requires_python": ">=3"
         }
       },
       "2.3.4": {
@@ -24633,7 +25479,8 @@
             "textstat (>=0.3.1,<0.3.999)",
             "tqdm (<4.15.9999,>=4.15.0)",
             "yamlconf (>=0.2.4,<0.2.999)"
-          ]
+          ],
+          "requires_python": ">=3"
         }
       }
     },
@@ -24665,7 +25512,8 @@
             "textstat (<0.3.999,>=0.3.1)",
             "tqdm (<4.15.9999,>=4.15.0)",
             "yamlconf (<0.2.999,>=0.2.0)"
-          ]
+          ],
+          "requires_python": ">=3"
         }
       },
       "2.4.0": {
@@ -24695,7 +25543,8 @@
             "textstat (<0.3.999,>=0.3.1)",
             "tqdm (<4.15.9999,>=4.15.0)",
             "yamlconf (<0.2.999,>=0.2.4)"
-          ]
+          ],
+          "requires_python": ">=3"
         }
       },
       "2.5.0": {
@@ -24725,7 +25574,8 @@
             "textstat (<0.3.999,>=0.3.1)",
             "tqdm (<4.15.9999,>=4.15.0)",
             "yamlconf (<0.2.999,>=0.2.4)"
-          ]
+          ],
+          "requires_python": ">=3"
         }
       },
       "2.5.1": {
@@ -24755,7 +25605,8 @@
             "textstat (<0.3.999,>=0.3.1)",
             "tqdm (<4.15.9999,>=4.15.0)",
             "yamlconf (<0.2.999,>=0.2.4)"
-          ]
+          ],
+          "requires_python": ">=3"
         }
       },
       "2.5.2": {
@@ -24785,7 +25636,8 @@
             "textstat (<0.3.999,>=0.3.1)",
             "tqdm (<4.15.9999,>=4.15.0)",
             "yamlconf (<0.2.999,>=0.2.4)"
-          ]
+          ],
+          "requires_python": ">=3"
         }
       },
       "2.6.0": {
@@ -24815,7 +25667,8 @@
             "textstat (<0.3.999,>=0.3.1)",
             "tqdm (<4.15.9999,>=4.15.0)",
             "yamlconf (<0.2.999,>=0.2.4)"
-          ]
+          ],
+          "requires_python": ">=3"
         }
       },
       "2.6.1": {
@@ -24854,7 +25707,8 @@
             "textstat (<0.3.999,>=0.3.1)",
             "tqdm (<4.15.9999,>=4.15.0)",
             "yamlconf (<0.2.999,>=0.2.4)"
-          ]
+          ],
+          "requires_python": ">=3"
         }
       },
       "2.6.5": {
@@ -24898,7 +25752,8 @@
             "tabulate (<0.7.999,>=0.7.5)",
             "tqdm (<4.15.9999,>=4.15.0)",
             "yamlconf (<0.2.999,>=0.2.4)"
-          ]
+          ],
+          "requires_python": ">=3"
         }
       },
       "2.7.1": {
@@ -24932,7 +25787,8 @@
             "tabulate (<0.8.999,>=0.8.7)",
             "tqdm (<4.15.9999,>=4.15.0)",
             "yamlconf (<0.2.999,>=0.2.4)"
-          ]
+          ],
+          "requires_python": ">=3"
         }
       },
       "2.8.1": {
@@ -24961,7 +25817,8 @@
             "tqdm (<4.15.9999,>=4.15.0)",
             "yamlconf (<0.2.999,>=0.2.4)",
             "flashtext (==2.7)"
-          ]
+          ],
+          "requires_python": ">=3"
         }
       },
       "2.8.2": {
@@ -24990,7 +25847,8 @@
             "tqdm (<4.15.9999,>=4.15.0)",
             "yamlconf (<0.2.999,>=0.2.4)",
             "flashtext (==2.7)"
-          ]
+          ],
+          "requires_python": ">=3"
         }
       }
     }
@@ -25003,7 +25861,8 @@
             "robotframework",
             "datetime",
             "requests"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
       },
       "0.2.0": {
@@ -25015,8 +25874,12 @@
             "flask",
             "flask-cors",
             "gevent"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
+      },
+      "0.3.1": {
+        "rf_service-0.3.1-py3-none-any.whl": "0.2.0@rf_service-0.2.0-py3-none-any.whl"
       }
     }
   },
@@ -25296,7 +26159,8 @@
             "pandas (>=0.25,<0.26)",
             "scipy (>=1.4,<2.0)",
             "statsmodels (>=0.10,<0.11)"
-          ]
+          ],
+          "requires_python": ">=3.6,<4.0"
         }
       },
       "0.0.11": {
@@ -25321,7 +26185,8 @@
             "pandas (>=0.25,<0.26)",
             "scipy (>=1.4,<2.0)",
             "statsmodels (>=0.10,<0.11)"
-          ]
+          ],
+          "requires_python": ">=3.6,<4.0"
         }
       },
       "0.0.3": {
@@ -25368,7 +26233,8 @@
             "pandas (>=1.0,<2.0)",
             "scipy (>=1.4,<2.0)",
             "statsmodels (>=0.10,<0.11)"
-          ]
+          ],
+          "requires_python": ">=3.6,<4.0"
         }
       },
       "0.2.4": {
@@ -25379,7 +26245,8 @@
             "pandas (>=1.0.1,<2.0.0)",
             "scipy (>=1.4.1,<2.0.0)",
             "statsmodels (>=0.10.1,<0.11.0)"
-          ]
+          ],
+          "requires_python": ">=3.6.1,<4.0.0"
         }
       },
       "0.2.5": {
@@ -25393,7 +26260,8 @@
         "sandcastle-0.1.0-py3-none-any.whl": {
           "requires_dist": [
             "kubernetes (<9)"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
       }
     }
@@ -25437,7 +26305,8 @@
             "numpy",
             "scipy",
             "matplotlib"
-          ]
+          ],
+          "requires_python": ">=3"
         }
       },
       "0.1.11": {
@@ -25460,7 +26329,8 @@
             "matplotlib",
             "pint",
             "pyyaml"
-          ]
+          ],
+          "requires_python": ">=3"
         }
       },
       "1.0.0a2": {
@@ -25477,7 +26347,8 @@
         "scrapy_wayback_middleware-0.0.1-py3-none-any.whl": {
           "requires_dist": [
             "scrapy"
-          ]
+          ],
+          "requires_python": ">=3.5,<4.0"
         }
       },
       "0.0.2": {
@@ -25514,13 +26385,16 @@
   "segdtw": {
     "py3": {
       "0.0.1": {
-        "segdtw-0.0.1-py3-none-any.whl": {}
+        "segdtw-0.0.1-py3-none-any.whl": {
+          "requires_python": ">=3.5"
+        }
       },
       "0.1.0": {
         "segdtw-0.1.0-py3-none-any.whl": {
           "requires_dist": [
             "numpy (>=1.18.2,<2.0.0)"
-          ]
+          ],
+          "requires_python": ">=3.5"
         }
       }
     }
@@ -25699,6 +26573,21 @@
       },
       "0.1.3": {
         "sharkiqpy-0.1.3-py3-none-any.whl": "0.1.0@sharkiqpy-0.1.0-py3-none-any.whl"
+      },
+      "0.1.4": {
+        "sharkiqpy-0.1.4-py3-none-any.whl": "0.1.0@sharkiqpy-0.1.0-py3-none-any.whl"
+      },
+      "0.1.5": {
+        "sharkiqpy-0.1.5-py3-none-any.whl": "0.1.0@sharkiqpy-0.1.0-py3-none-any.whl"
+      },
+      "0.1.6": {
+        "sharkiqpy-0.1.6-py3-none-any.whl": "0.1.0@sharkiqpy-0.1.0-py3-none-any.whl"
+      },
+      "0.1.7": {
+        "sharkiqpy-0.1.7-py3-none-any.whl": "0.1.0@sharkiqpy-0.1.0-py3-none-any.whl"
+      },
+      "0.1.8": {
+        "sharkiqpy-0.1.8-py3-none-any.whl": "0.1.0@sharkiqpy-0.1.0-py3-none-any.whl"
       }
     }
   },
@@ -25789,6 +26678,22 @@
       },
       "0.8.5": {
         "signalrcore-0.8.5-py3-none-any.whl": "0.6.0@signalrcore-0.6.0-py3-none-any.whl"
+      },
+      "0.8.6": {
+        "signalrcore-0.8.6-py3-none-any.whl": {
+          "requires_dist": [
+            "requests (>=2.22.0)",
+            "websocket-client (>=0.55.0)"
+          ]
+        }
+      },
+      "0.8.7": {
+        "signalrcore-0.8.7-py3-none-any.whl": {
+          "requires_dist": [
+            "requests (>=2.22.0)",
+            "websocket-client (>=0.54.0)"
+          ]
+        }
       }
     }
   },
@@ -25813,7 +26718,8 @@
           "requires_dist": [
             "beautifulsoup4",
             "lxml"
-          ]
+          ],
+          "requires_python": ">=3.5, <4"
         }
       },
       "0.5.73": {
@@ -25835,7 +26741,8 @@
             "lxml",
             "langcodes",
             "PyHyphen"
-          ]
+          ],
+          "requires_python": ">=3.5, <4"
         }
       },
       "0.9.184": {
@@ -25926,24 +26833,20 @@
           "requires_dist": [
             "setuptools",
             "ldap0 (>=0.2.1)"
-          ]
+          ],
+          "requires_python": "==2.7.*"
         }
       }
     },
     "3.8": {
-      "1.0.1": {
-        "slapdsock-1.0.1-py3-none-any.whl": {
+      "1.0.4": {
+        "slapdsock-1.0.4-py3-none-any.whl": {
           "requires_dist": [
             "ldap0 (>=1.0.0)",
             "setuptools"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
-      },
-      "1.0.2": {
-        "slapdsock-1.0.2-py3-none-any.whl": "1.0.1@slapdsock-1.0.1-py3-none-any.whl"
-      },
-      "1.0.4": {
-        "slapdsock-1.0.4-py3-none-any.whl": "1.0.1@slapdsock-1.0.1-py3-none-any.whl"
       }
     }
   },
@@ -26245,7 +27148,8 @@
             "colorama (>=0.4.3,<0.5.0)",
             "names (>=0.3.0,<0.4.0)",
             "requests (>=2.22.0,<3.0.0)"
-          ]
+          ],
+          "requires_python": ">=3.8,<4.0"
         }
       },
       "0.1.1": {
@@ -26321,7 +27225,8 @@
             "sphinx (>=2)",
             "clang (>=6)",
             "beautifulsoup4"
-          ]
+          ],
+          "requires_python": ">=3.7"
         }
       },
       "0.1.1": {
@@ -26333,7 +27238,8 @@
             "sphinx (<3,>=2)",
             "clang (>=6)",
             "beautifulsoup4"
-          ]
+          ],
+          "requires_python": ">=3.7"
         }
       }
     }
@@ -26358,7 +27264,8 @@
             "gitpython ; extra == 'dev'",
             "coveralls ; extra == 'dev'",
             "coverage (<=4.5.4) ; extra == 'dev'"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
       },
       "0.0.3": {
@@ -26382,7 +27289,8 @@
             "gitpython ; extra == 'dev'",
             "coveralls ; extra == 'dev'",
             "coverage (<=4.5.4) ; extra == 'dev'"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
       },
       "0.0.4": {
@@ -26400,7 +27308,8 @@
           "requires_dist": [
             "numpy",
             "pillow"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
       }
     }
@@ -26408,7 +27317,9 @@
   "sqlhelper": {
     "py3": {
       "1.0.0": {
-        "sqlHelper-1.0.0-py3-none-any.whl": {}
+        "sqlHelper-1.0.0-py3-none-any.whl": {
+          "requires_python": ">=3"
+        }
       },
       "1.0.5a0": {
         "sqlHelper-1.0.5a0-py3-none-any.whl": "1.0.0@sqlHelper-1.0.0-py3-none-any.whl"
@@ -26456,7 +27367,8 @@
             "pkginfo",
             "requirements-parser",
             "pandas"
-          ]
+          ],
+          "requires_python": ">=3.5"
         }
       },
       "0.7.2": {
@@ -26474,7 +27386,8 @@
             "pkginfo",
             "requirements-parser",
             "pandas"
-          ]
+          ],
+          "requires_python": ">=3.5"
         }
       },
       "1.0.1": {
@@ -26491,11 +27404,14 @@
             "json",
             "pprint",
             "HTTPBasicAuth"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
       },
       "0.0.2": {
-        "SSG_API_test-0.0.2-py3-none-any.whl": {}
+        "SSG_API_test-0.0.2-py3-none-any.whl": {
+          "requires_python": ">=3.6"
+        }
       },
       "0.0.3": {
         "SSG_API_test-0.0.3-py3-none-any.whl": "0.0.2@SSG_API_test-0.0.2-py3-none-any.whl"
@@ -26584,7 +27500,8 @@
             "botocore (>=1.13.8)",
             "singer-python (==5.9.0)",
             "jsonschema (==2.6.0)"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
       },
       "0.2.15": {
@@ -26616,7 +27533,8 @@
             "py-sr25519-bindings (>=0.1.0)",
             "coverage ; extra == 'test'",
             "pytest ; extra == 'test'"
-          ]
+          ],
+          "requires_python": ">=3.6, <4"
         }
       },
       "0.9.11": {
@@ -26639,7 +27557,8 @@
             "py-sr25519-bindings (>=0.1.0)",
             "coverage ; extra == 'test'",
             "pytest ; extra == 'test'"
-          ]
+          ],
+          "requires_python": ">=3.6, <4"
         }
       },
       "0.9.12": {
@@ -26663,7 +27582,8 @@
             "py-bip39-bindings (>=0.1.4)",
             "coverage ; extra == 'test'",
             "pytest ; extra == 'test'"
-          ]
+          ],
+          "requires_python": ">=3.6, <4"
         }
       },
       "0.9.13": {
@@ -26693,7 +27613,8 @@
             "py-bip39-bindings (>=0.1.4)",
             "coverage ; extra == 'test'",
             "pytest ; extra == 'test'"
-          ]
+          ],
+          "requires_python": ">=3.6, <4"
         }
       },
       "0.9.16": {
@@ -26720,7 +27641,8 @@
             "py-bip39-bindings (>=0.1.4)",
             "coverage ; extra == 'test'",
             "pytest ; extra == 'test'"
-          ]
+          ],
+          "requires_python": ">=3.6, <4"
         }
       },
       "0.9.3": {
@@ -26741,7 +27663,8 @@
             "scalecodec (>=0.9.3)",
             "coverage ; extra == 'test'",
             "pytest ; extra == 'test'"
-          ]
+          ],
+          "requires_python": ">=3.6, <4"
         }
       },
       "0.9.4": {
@@ -26768,7 +27691,8 @@
             "scalecodec (>=0.9.19)",
             "coverage ; extra == 'test'",
             "pytest ; extra == 'test'"
-          ]
+          ],
+          "requires_python": ">=3.6, <4"
         }
       },
       "0.9.7": {
@@ -26789,7 +27713,8 @@
             "scalecodec (>=0.9.25)",
             "coverage ; extra == 'test'",
             "pytest ; extra == 'test'"
-          ]
+          ],
+          "requires_python": ">=3.6, <4"
         }
       },
       "0.9.8": {
@@ -26810,7 +27735,8 @@
             "scalecodec (>=0.9.26)",
             "coverage ; extra == 'test'",
             "pytest ; extra == 'test'"
-          ]
+          ],
+          "requires_python": ">=3.6, <4"
         }
       },
       "0.9.9": {
@@ -26992,7 +27918,9 @@
   "tendencia": {
     "py3": {
       "0.1.1": {
-        "tendencia-0.1.1-py3-none-any.whl": {}
+        "tendencia-0.1.1-py3-none-any.whl": {
+          "requires_python": ">=3.7,<4.0"
+        }
       },
       "0.1.11": {
         "tendencia-0.1.11-py3-none-any.whl": "0.1.1@tendencia-0.1.1-py3-none-any.whl"
@@ -27326,7 +28254,8 @@
             "futures; python_version == \"2.7\"",
             "matplotlib (>=2.2); extra == 'all'",
             "matplotlib (>=2.2); extra == 'imshow'"
-          ]
+          ],
+          "requires_python": ">=2.7"
         }
       },
       "2018.10.18": {
@@ -27352,7 +28281,8 @@
             "futures; python_version == \"2.7\"",
             "matplotlib (>=2.2); extra == 'all'",
             "matplotlib (>=2.2); extra == 'imshow'"
-          ]
+          ],
+          "requires_python": ">=2.7"
         }
       },
       "2018.9.27": {
@@ -27371,7 +28301,8 @@
             "futures; python_version == \"2.7\"",
             "matplotlib (>=2.2); extra == 'all'",
             "matplotlib (>=2.2); extra == 'imshow'"
-          ]
+          ],
+          "requires_python": ">=2.7"
         }
       }
     }
@@ -27379,7 +28310,9 @@
   "timelinenetworkutility-zzenlightenzz": {
     "py3": {
       "0.0.1": {
-        "TimelineNetworkUtility_zzenlightenzz-0.0.1-py3-none-any.whl": {}
+        "TimelineNetworkUtility_zzenlightenzz-0.0.1-py3-none-any.whl": {
+          "requires_python": ">=3.6"
+        }
       },
       "0.0.3": {
         "TimelineNetworkUtility_zzenlightenzz-0.0.3-py3-none-any.whl": "0.0.1@TimelineNetworkUtility_zzenlightenzz-0.0.1-py3-none-any.whl"
@@ -27391,7 +28324,9 @@
         "TimelineNetworkUtility_zzenlightenzz-0.0.5-py3-none-any.whl": "0.0.1@TimelineNetworkUtility_zzenlightenzz-0.0.1-py3-none-any.whl"
       },
       "0.0.6": {
-        "TimelineNetworkUtility_zzenlightenzz-0.0.6-py3-none-any.whl": "0.0.1@TimelineNetworkUtility_zzenlightenzz-0.0.1-py3-none-any.whl"
+        "TimelineNetworkUtility_zzenlightenzz-0.0.6-py3-none-any.whl": {
+          "requires_python": ">=3.0"
+        }
       },
       "0.0.7": {
         "TimelineNetworkUtility_zzenlightenzz-0.0.7-py3-none-any.whl": "0.0.1@TimelineNetworkUtility_zzenlightenzz-0.0.1-py3-none-any.whl"
@@ -27425,7 +28360,9 @@
   "timeseries-fastai": {
     "py3": {
       "0.0.1": {
-        "timeseries_fastai-0.0.1-py3-none-any.whl": {}
+        "timeseries_fastai-0.0.1-py3-none-any.whl": {
+          "requires_python": ">=3.6"
+        }
       },
       "0.0.2": {
         "timeseries_fastai-0.0.2-py3-none-any.whl": "0.0.1@timeseries_fastai-0.0.1-py3-none-any.whl"
@@ -27434,7 +28371,8 @@
         "timeseries_fastai-0.0.3-py3-none-any.whl": {
           "requires_dist": [
             "fastai2"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
       },
       "2.0.0": {
@@ -27475,7 +28413,8 @@
             "pytest (>=3.5.0)",
             "pytest-pythonpath (>=0.7.2)",
             "pytest-cov (>=2.5.1)"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
       },
       "0.6.3": {
@@ -27487,7 +28426,8 @@
             "pytest (>=3.5.0)",
             "pytest-pythonpath (>=0.7.2)",
             "pytest-cov (>=2.5.1)"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
       }
     }
@@ -27499,7 +28439,8 @@
           "requires_dist": [
             "pytest-cov (>=2.8.1,<3.0.0)",
             "toml (>=0.10.0,<0.11.0)"
-          ]
+          ],
+          "requires_python": ">=3.6,<4.0"
         }
       },
       "0.1.1": {
@@ -27515,7 +28456,8 @@
         "tomlcheck-0.2.2-py3-none-any.whl": {
           "requires_dist": [
             "toml (>=0.10.0,<0.11.0)"
-          ]
+          ],
+          "requires_python": ">=3.6,<4.0"
         }
       }
     }
@@ -27565,7 +28507,9 @@
   "transformerbellikan": {
     "py3": {
       "0.0.1": {
-        "transformerbellikan-0.0.1-py3-none-any.whl": {}
+        "transformerbellikan-0.0.1-py3-none-any.whl": {
+          "requires_python": ">=3.6"
+        }
       }
     }
   },
@@ -27781,7 +28725,8 @@
             "trezor (==0.11.6)",
             "colorama (==0.4.3)",
             "pycryptodome (==3.9.6)"
-          ]
+          ],
+          "requires_python": ">=3.7"
         }
       },
       "0.0.2": {
@@ -28236,7 +29181,8 @@
           "requires_dist": [
             "termcolor",
             "unicorn"
-          ]
+          ],
+          "requires_python": "==2.*"
         }
       }
     }
@@ -28345,7 +29291,8 @@
         "vcrypto-1.0.4-py3-none-any.whl": {
           "requires_dist": [
             "cryptography (>=2.9.2,<3.0.0)"
-          ]
+          ],
+          "requires_python": ">=3.6.1,<4.0.0"
         }
       },
       "2.0.0": {
@@ -28382,7 +29329,8 @@
             "hybrid-vector-model",
             "lopaths",
             "ci-rvm"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
       }
     }
@@ -28510,7 +29458,8 @@
         "vredis.py-1.1.2-py3-none-any.whl": {
           "requires_dist": [
             "redis"
-          ]
+          ],
+          "requires_python": ">=3.6"
         }
       },
       "1.1.3": {
@@ -28554,7 +29503,9 @@
   "wagtail-draftail-snippet": {
     "py3": {
       "0.2.1": {
-        "wagtail_draftail_snippet-0.2.1-py3-none-any.whl": {}
+        "wagtail_draftail_snippet-0.2.1-py3-none-any.whl": {
+          "requires_python": ">=3.6,<4.0"
+        }
       }
     }
   },
@@ -28565,7 +29516,8 @@
           "requires_dist": [
             "phonenumbers",
             "requests"
-          ]
+          ],
+          "requires_python": ">=3.5"
         }
       }
     }
@@ -28714,7 +29666,8 @@
             "pytest-flake8 ; extra == 'testing'",
             "pytest-isort ; extra == 'testing'",
             "pytest-mypy ; extra == 'testing'"
-          ]
+          ],
+          "requires_python": ">=3.8"
         }
       }
     }
@@ -28740,7 +29693,8 @@
         "xxhash_cffi-1.3.0-cp27-cp27m-macosx_10_6_intel.whl": {
           "requires_dist": [
             "cffi"
-          ]
+          ],
+          "requires_python": ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
         },
         "xxhash_cffi-1.3.0-cp27-cp27m-manylinux1_i686.whl": "1.3.0@xxhash_cffi-1.3.0-cp27-cp27m-macosx_10_6_intel.whl",
         "xxhash_cffi-1.3.0-cp27-cp27m-manylinux1_x86_64.whl": "1.3.0@xxhash_cffi-1.3.0-cp27-cp27m-macosx_10_6_intel.whl",
@@ -28755,7 +29709,8 @@
         "xxhash_cffi-1.3.0-cp34-cp34m-macosx_10_6_intel.whl": {
           "requires_dist": [
             "cffi"
-          ]
+          ],
+          "requires_python": ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
         },
         "xxhash_cffi-1.3.0-cp34-cp34m-manylinux1_i686.whl": "1.3.0@xxhash_cffi-1.3.0-cp34-cp34m-macosx_10_6_intel.whl",
         "xxhash_cffi-1.3.0-cp34-cp34m-manylinux1_x86_64.whl": "1.3.0@xxhash_cffi-1.3.0-cp34-cp34m-macosx_10_6_intel.whl",
@@ -28768,7 +29723,8 @@
         "xxhash_cffi-1.3.0-cp35-cp35m-macosx_10_6_intel.whl": {
           "requires_dist": [
             "cffi"
-          ]
+          ],
+          "requires_python": ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
         },
         "xxhash_cffi-1.3.0-cp35-cp35m-manylinux1_i686.whl": "1.3.0@xxhash_cffi-1.3.0-cp35-cp35m-macosx_10_6_intel.whl",
         "xxhash_cffi-1.3.0-cp35-cp35m-manylinux1_x86_64.whl": "1.3.0@xxhash_cffi-1.3.0-cp35-cp35m-macosx_10_6_intel.whl",
@@ -28781,7 +29737,8 @@
         "xxhash_cffi-1.3.0-cp36-cp36m-macosx_10_6_intel.whl": {
           "requires_dist": [
             "cffi"
-          ]
+          ],
+          "requires_python": ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
         },
         "xxhash_cffi-1.3.0-cp36-cp36m-manylinux1_i686.whl": "1.3.0@xxhash_cffi-1.3.0-cp36-cp36m-macosx_10_6_intel.whl",
         "xxhash_cffi-1.3.0-cp36-cp36m-manylinux1_x86_64.whl": "1.3.0@xxhash_cffi-1.3.0-cp36-cp36m-macosx_10_6_intel.whl",
@@ -28794,7 +29751,8 @@
         "xxhash_cffi-1.3.0-cp37-cp37m-macosx_10_6_intel.whl": {
           "requires_dist": [
             "cffi"
-          ]
+          ],
+          "requires_python": ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
         },
         "xxhash_cffi-1.3.0-cp37-cp37m-manylinux1_i686.whl": "1.3.0@xxhash_cffi-1.3.0-cp37-cp37m-macosx_10_6_intel.whl",
         "xxhash_cffi-1.3.0-cp37-cp37m-manylinux1_x86_64.whl": "1.3.0@xxhash_cffi-1.3.0-cp37-cp37m-macosx_10_6_intel.whl",
@@ -29062,23 +30020,29 @@
   "yks": {
     "py3": {
       "0.0.1": {
-        "yks-0.0.1-py3-none-any.whl": {}
+        "yks-0.0.1-py3-none-any.whl": {
+          "requires_python": ">=3.5"
+        }
       },
       "0.0.7": {
-        "yks-0.0.7-py3-none-any.whl": "0.0.1@yks-0.0.1-py3-none-any.whl"
+        "yks-0.0.7-py3-none-any.whl": {
+          "requires_python": ">=3.6"
+        }
       },
       "0.0.8": {
-        "yks-0.0.8-py3-none-any.whl": "0.0.1@yks-0.0.1-py3-none-any.whl"
+        "yks-0.0.8-py3-none-any.whl": "0.0.7@yks-0.0.7-py3-none-any.whl"
       },
       "0.0.9": {
-        "yks-0.0.9-py3-none-any.whl": "0.0.1@yks-0.0.1-py3-none-any.whl"
+        "yks-0.0.9-py3-none-any.whl": "0.0.7@yks-0.0.7-py3-none-any.whl"
       }
     }
   },
   "zach-sanders": {
     "py3": {
       "0.0.1": {
-        "Zach_Sanders-0.0.1-py3-none-any.whl": {}
+        "Zach_Sanders-0.0.1-py3-none-any.whl": {
+          "requires_python": ">=3.7"
+        }
       }
     }
   },
@@ -29123,7 +30087,9 @@
   "zipstreamer": {
     "py2.py3": {
       "0.1.3": {
-        "zipstreamer-0.1.3-py2.py3-none-any.whl": {}
+        "zipstreamer-0.1.3-py2.py3-none-any.whl": {
+          "requires_python": ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+        }
       }
     }
   },
