@@ -6043,7 +6043,8 @@
       "36": "27",
       "37": "27",
       "38": "27"
-    }
+    },
+    "1.1.6": "1.1.5"
   },
   "cloudmersive-virus-api-client": {
     "2.0.2": {
@@ -11506,6 +11507,28 @@
     "1.0.8": "1.0",
     "1.0.9": "1.0"
   },
+  "emoticon-fix": {
+    "0.0.1": {
+      "27": {
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    },
+    "0.0.2": {
+      "27": {
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "37": "27",
+      "38": "27"
+    }
+  },
   "emq_celery": {
     "0.0.5": {
       "27": {
@@ -14399,6 +14422,47 @@
           "io": [
             "imagecodecs",
             "opencv-python>=4"
+          ],
+          ":python_version < \"3.7\"": [
+            "dataclasses"
+          ],
+          ":python_version < \"3.8\"": [
+            "pickle5"
+          ]
+        },
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "36": "35",
+      "37": "35",
+      "38": "35"
+    },
+    "0.8.6.dev2": {
+      "35": {
+        "install_requires": [
+          "loky>=2.8.0",
+          "numpy>=1.17",
+          "typing-extensions>=3.7",
+          "wrapt"
+        ],
+        "setup_requires": [
+          "tqdm"
+        ],
+        "extras_require": {
+          "cv": [
+            "graphviz",
+            "matplotlib",
+            "numba",
+            "opencv-python>=4",
+            "py3nvml",
+            "torch>=1.6"
+          ],
+          "io": [
+            "imagecodecs",
+            "opencv-python>=4",
+            "pyaudio",
+            "soundfile"
           ],
           ":python_version < \"3.7\"": [
             "dataclasses"
