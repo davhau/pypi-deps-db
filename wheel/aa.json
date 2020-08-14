@@ -2181,6 +2181,26 @@
       }
     }
   },
+  "b-cfn-lambda-integration": {
+    "py3": {
+      "0.0.1": {
+        "b_cfn_lambda_integration-0.0.1-py3-none-any.whl": {
+          "requires_dist": [
+            "aws-cdk.aws-lambda (<2.0.0,>=1.54.0)",
+            "aws-cdk.aws-apigateway (<2.0.0,>=1.54.0)",
+            "aws-cdk.aws-apigatewayv2 (<2.0.0,>=1.54.0)"
+          ]
+        }
+      },
+      "0.0.2": {
+        "b_cfn_lambda_integration-0.0.2-py3-none-any.whl": {
+          "requires_dist": [
+            "aws-cdk.aws-apigatewayv2 (<2.0.0,>=1.54.0)"
+          ]
+        }
+      }
+    }
+  },
   "baseqdrops": {
     "py2.py3": {
       "1.5": {
@@ -11649,8 +11669,8 @@
   },
   "odoo13-addon-l10n-es-aeat-mod111": {
     "py3": {
-      "13.0.1.0.1.dev2": {
-        "odoo13_addon_l10n_es_aeat_mod111-13.0.1.0.1.dev2-py3-none-any.whl": {
+      "13.0.1.0.1": {
+        "odoo13_addon_l10n_es_aeat_mod111-13.0.1.0.1-py3-none-any.whl": {
           "requires_dist": [
             "odoo13-addon-l10n-es-aeat",
             "odoo (<13.1dev,>=13.0a)"
@@ -11658,14 +11678,17 @@
           "requires_python": ">=3.5"
         }
       },
+      "13.0.1.0.1.dev2": {
+        "odoo13_addon_l10n_es_aeat_mod111-13.0.1.0.1.dev2-py3-none-any.whl": "13.0.1.0.1@odoo13_addon_l10n_es_aeat_mod111-13.0.1.0.1-py3-none-any.whl"
+      },
       "13.0.1.0.1.dev3": {
-        "odoo13_addon_l10n_es_aeat_mod111-13.0.1.0.1.dev3-py3-none-any.whl": "13.0.1.0.1.dev2@odoo13_addon_l10n_es_aeat_mod111-13.0.1.0.1.dev2-py3-none-any.whl"
+        "odoo13_addon_l10n_es_aeat_mod111-13.0.1.0.1.dev3-py3-none-any.whl": "13.0.1.0.1@odoo13_addon_l10n_es_aeat_mod111-13.0.1.0.1-py3-none-any.whl"
       },
       "13.0.1.0.1.dev4": {
-        "odoo13_addon_l10n_es_aeat_mod111-13.0.1.0.1.dev4-py3-none-any.whl": "13.0.1.0.1.dev2@odoo13_addon_l10n_es_aeat_mod111-13.0.1.0.1.dev2-py3-none-any.whl"
+        "odoo13_addon_l10n_es_aeat_mod111-13.0.1.0.1.dev4-py3-none-any.whl": "13.0.1.0.1@odoo13_addon_l10n_es_aeat_mod111-13.0.1.0.1-py3-none-any.whl"
       },
       "13.0.1.0.1.dev5": {
-        "odoo13_addon_l10n_es_aeat_mod111-13.0.1.0.1.dev5-py3-none-any.whl": "13.0.1.0.1.dev2@odoo13_addon_l10n_es_aeat_mod111-13.0.1.0.1.dev2-py3-none-any.whl"
+        "odoo13_addon_l10n_es_aeat_mod111-13.0.1.0.1.dev5-py3-none-any.whl": "13.0.1.0.1@odoo13_addon_l10n_es_aeat_mod111-13.0.1.0.1-py3-none-any.whl"
       }
     }
   },
@@ -12773,6 +12796,28 @@
             "typer[all]",
             "typing-extensions ; python_version < \"3.8\"",
             "importlib-resources ; python_version < \"3.9\"",
+            "mypy ; extra == 'mypy'",
+            "pytest ; extra == 'test'",
+            "pytest-cov ; extra == 'test'",
+            "pytest-xdist ; extra == 'test'",
+            "virtualenv ; extra == 'test'"
+          ],
+          "requires_python": ">=3.6"
+        }
+      },
+      "0.7.0": {
+        "pip_deepfreeze-0.7.0-py3-none-any.whl": {
+          "provides_extras": [
+            "mypy",
+            "test"
+          ],
+          "requires_dist": [
+            "httpx",
+            "packaging (>=20.4)",
+            "toml",
+            "typer[all]",
+            "importlib-resources ; python_version < \"3.7\"",
+            "typing-extensions ; python_version < \"3.8\"",
             "mypy ; extra == 'mypy'",
             "pytest ; extra == 'test'",
             "pytest-cov ; extra == 'test'",
