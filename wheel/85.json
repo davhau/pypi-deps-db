@@ -14400,6 +14400,9 @@
       "1.14.41.0": {
         "mypy_boto3_s3-1.14.41.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_s3-1.13.24.3-py3-none-any.whl"
       },
+      "1.14.42.0": {
+        "mypy_boto3_s3-1.14.42.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_s3-1.13.24.3-py3-none-any.whl"
+      },
       "1.14.5.0": {
         "mypy_boto3_s3-1.14.5.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_s3-1.13.24.3-py3-none-any.whl"
       },
@@ -28949,6 +28952,33 @@
       },
       "0.4.8": {
         "sql_runner-0.4.8-py3-none-any.whl": "0.4.7@sql_runner-0.4.7-py3-none-any.whl"
+      },
+      "0.4.9": {
+        "sql_runner-0.4.9-py3-none-any.whl": {
+          "provides_extras": [
+            "azuredwh",
+            "bigquery",
+            "postgres",
+            "redshift",
+            "s3",
+            "snowflake"
+          ],
+          "requires_dist": [
+            "networkx (==2.2)",
+            "pydot (==1.4.1)",
+            "graphviz (==0.10.1)",
+            "pythondialog",
+            "sqlparse",
+            "pyodbc ; extra == 'azuredwh'",
+            "google-cloud-bigquery (==1.23.1) ; extra == 'bigquery'",
+            "psycopg2-binary ; extra == 'postgres'",
+            "psycopg2-binary ; extra == 'redshift'",
+            "boto3 (<1.11.0,>=1.4.4) ; extra == 's3'",
+            "snowflake-connector-python (==2.0.4) ; extra == 'snowflake'",
+            "idna (<2.9,>=2.5) ; extra == 'snowflake'"
+          ],
+          "requires_python": "~=3.6"
+        }
       }
     }
   },
