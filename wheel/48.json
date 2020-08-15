@@ -923,6 +923,29 @@
       },
       "2.0.0": {
         "apd.aggregation-2.0.0-py3-none-any.whl": "1.0.0@apd.aggregation-1.0.0-py3-none-any.whl"
+      },
+      "2.0.1": {
+        "apd.aggregation-2.0.1-py3-none-any.whl": {
+          "provides_extras": [
+            "jupyter",
+            "yappi"
+          ],
+          "requires_dist": [
+            "sqlalchemy",
+            "aiohttp",
+            "pint",
+            "psycopg2",
+            "alembic",
+            "click",
+            "typing-extensions ; python_version < \"3.8\"",
+            "ipywidgets ; extra == 'jupyter'",
+            "matplotlib ; extra == 'jupyter'",
+            "yappi ; extra == 'yappi'"
+          ]
+        }
+      },
+      "2.0.2": {
+        "apd.aggregation-2.0.2-py3-none-any.whl": "2.0.1@apd.aggregation-2.0.1-py3-none-any.whl"
       }
     }
   },
@@ -11329,6 +11352,9 @@
       "1.14.42.0": {
         "mypy_boto3_directconnect-1.14.42.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_directconnect-1.13.24.3-py3-none-any.whl"
       },
+      "1.14.43.0": {
+        "mypy_boto3_directconnect-1.14.43.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_directconnect-1.13.24.3-py3-none-any.whl"
+      },
       "1.14.5.0": {
         "mypy_boto3_directconnect-1.14.5.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_directconnect-1.13.24.3-py3-none-any.whl"
       },
@@ -11916,6 +11942,35 @@
         "nrlmsise00-0.0.1-cp27-cp27mu-manylinux2010_i686.whl": "0.0.1@nrlmsise00-0.0.1-cp27-cp27m-manylinux1_i686.whl",
         "nrlmsise00-0.0.1-cp27-cp27mu-manylinux2010_x86_64.whl": "0.0.1@nrlmsise00-0.0.1-cp27-cp27m-manylinux1_i686.whl"
       },
+      "0.0.2": {
+        "nrlmsise00-0.0.2-cp27-cp27m-macosx_10_9_x86_64.whl": {
+          "provides_extras": [
+            "all",
+            "dataset",
+            "docs",
+            "tests"
+          ],
+          "requires_dist": [
+            "numpy (>=1.13.0)",
+            "pytest ; extra == 'all'",
+            "spaceweather ; extra == 'all'",
+            "sphinx (!=3.2.0) ; extra == 'all'",
+            "xarray ; extra == 'all'",
+            "spaceweather ; extra == 'dataset'",
+            "xarray ; extra == 'dataset'",
+            "sphinx (!=3.2.0) ; extra == 'docs'",
+            "pytest ; extra == 'tests'"
+          ]
+        },
+        "nrlmsise00-0.0.2-cp27-cp27m-manylinux1_i686.whl": "0.0.2@nrlmsise00-0.0.2-cp27-cp27m-macosx_10_9_x86_64.whl",
+        "nrlmsise00-0.0.2-cp27-cp27m-manylinux1_x86_64.whl": "0.0.2@nrlmsise00-0.0.2-cp27-cp27m-macosx_10_9_x86_64.whl",
+        "nrlmsise00-0.0.2-cp27-cp27m-manylinux2010_i686.whl": "0.0.2@nrlmsise00-0.0.2-cp27-cp27m-macosx_10_9_x86_64.whl",
+        "nrlmsise00-0.0.2-cp27-cp27m-manylinux2010_x86_64.whl": "0.0.2@nrlmsise00-0.0.2-cp27-cp27m-macosx_10_9_x86_64.whl",
+        "nrlmsise00-0.0.2-cp27-cp27mu-manylinux1_i686.whl": "0.0.2@nrlmsise00-0.0.2-cp27-cp27m-macosx_10_9_x86_64.whl",
+        "nrlmsise00-0.0.2-cp27-cp27mu-manylinux1_x86_64.whl": "0.0.2@nrlmsise00-0.0.2-cp27-cp27m-macosx_10_9_x86_64.whl",
+        "nrlmsise00-0.0.2-cp27-cp27mu-manylinux2010_i686.whl": "0.0.2@nrlmsise00-0.0.2-cp27-cp27m-macosx_10_9_x86_64.whl",
+        "nrlmsise00-0.0.2-cp27-cp27mu-manylinux2010_x86_64.whl": "0.0.2@nrlmsise00-0.0.2-cp27-cp27m-macosx_10_9_x86_64.whl"
+      },
       "0.0.2rc1": {
         "nrlmsise00-0.0.2rc1-cp27-cp27m-manylinux1_i686.whl": {
           "provides_extras": [
@@ -11942,6 +11997,56 @@
         "nrlmsise00-0.0.2rc1-cp27-cp27mu-manylinux2010_x86_64.whl": "0.0.2rc1@nrlmsise00-0.0.2rc1-cp27-cp27m-manylinux1_i686.whl"
       }
     },
+    "cp34": {
+      "0.0.2": {
+        "nrlmsise00-0.0.2-cp34-cp34m-manylinux1_i686.whl": {
+          "provides_extras": [
+            "docs",
+            "dataset",
+            "tests",
+            "all",
+            "all",
+            "dataset",
+            "docs",
+            "tests"
+          ],
+          "requires_dist": [
+            "numpy (>=1.13.0)",
+            "pytest; extra == 'all'",
+            "spaceweather; extra == 'all'",
+            "sphinx (!=3.2.0); extra == 'all'",
+            "xarray; extra == 'all'",
+            "spaceweather; extra == 'dataset'",
+            "xarray; extra == 'dataset'",
+            "sphinx (!=3.2.0); extra == 'docs'",
+            "pytest; extra == 'tests'"
+          ]
+        },
+        "nrlmsise00-0.0.2-cp34-cp34m-manylinux1_x86_64.whl": {
+          "provides_extras": [
+            "dataset",
+            "tests",
+            "all",
+            "docs",
+            "all",
+            "dataset",
+            "docs",
+            "tests"
+          ],
+          "requires_dist": [
+            "numpy (>=1.13.0)",
+            "pytest; extra == 'all'",
+            "spaceweather; extra == 'all'",
+            "sphinx (!=3.2.0); extra == 'all'",
+            "xarray; extra == 'all'",
+            "spaceweather; extra == 'dataset'",
+            "xarray; extra == 'dataset'",
+            "sphinx (!=3.2.0); extra == 'docs'",
+            "pytest; extra == 'tests'"
+          ]
+        }
+      }
+    },
     "cp35": {
       "0.0.1": {
         "nrlmsise00-0.0.1-cp35-cp35m-manylinux1_i686.whl": {
@@ -11961,6 +12066,33 @@
         "nrlmsise00-0.0.1-cp35-cp35m-manylinux1_x86_64.whl": "0.0.1@nrlmsise00-0.0.1-cp35-cp35m-manylinux1_i686.whl",
         "nrlmsise00-0.0.1-cp35-cp35m-manylinux2010_i686.whl": "0.0.1@nrlmsise00-0.0.1-cp35-cp35m-manylinux1_i686.whl",
         "nrlmsise00-0.0.1-cp35-cp35m-manylinux2010_x86_64.whl": "0.0.1@nrlmsise00-0.0.1-cp35-cp35m-manylinux1_i686.whl"
+      },
+      "0.0.2": {
+        "nrlmsise00-0.0.2-cp35-cp35m-macosx_10_9_x86_64.whl": {
+          "provides_extras": [
+            "all",
+            "dataset",
+            "docs",
+            "tests"
+          ],
+          "requires_dist": [
+            "numpy (>=1.13.0)",
+            "pytest ; extra == 'all'",
+            "spaceweather ; extra == 'all'",
+            "sphinx (!=3.2.0) ; extra == 'all'",
+            "xarray ; extra == 'all'",
+            "spaceweather ; extra == 'dataset'",
+            "xarray ; extra == 'dataset'",
+            "sphinx (!=3.2.0) ; extra == 'docs'",
+            "pytest ; extra == 'tests'"
+          ]
+        },
+        "nrlmsise00-0.0.2-cp35-cp35m-manylinux1_i686.whl": "0.0.2@nrlmsise00-0.0.2-cp35-cp35m-macosx_10_9_x86_64.whl",
+        "nrlmsise00-0.0.2-cp35-cp35m-manylinux1_x86_64.whl": "0.0.2@nrlmsise00-0.0.2-cp35-cp35m-macosx_10_9_x86_64.whl",
+        "nrlmsise00-0.0.2-cp35-cp35m-manylinux2010_i686.whl": "0.0.2@nrlmsise00-0.0.2-cp35-cp35m-macosx_10_9_x86_64.whl",
+        "nrlmsise00-0.0.2-cp35-cp35m-manylinux2010_x86_64.whl": "0.0.2@nrlmsise00-0.0.2-cp35-cp35m-macosx_10_9_x86_64.whl",
+        "nrlmsise00-0.0.2-cp35-cp35m-win32.whl": "0.0.2@nrlmsise00-0.0.2-cp35-cp35m-macosx_10_9_x86_64.whl",
+        "nrlmsise00-0.0.2-cp35-cp35m-win_amd64.whl": "0.0.2@nrlmsise00-0.0.2-cp35-cp35m-macosx_10_9_x86_64.whl"
       },
       "0.0.2rc1": {
         "nrlmsise00-0.0.2rc1-cp35-cp35m-manylinux1_i686.whl": {
@@ -12006,6 +12138,33 @@
         "nrlmsise00-0.0.1-cp36-cp36m-manylinux2010_i686.whl": "0.0.1@nrlmsise00-0.0.1-cp36-cp36m-manylinux1_i686.whl",
         "nrlmsise00-0.0.1-cp36-cp36m-manylinux2010_x86_64.whl": "0.0.1@nrlmsise00-0.0.1-cp36-cp36m-manylinux1_i686.whl"
       },
+      "0.0.2": {
+        "nrlmsise00-0.0.2-cp36-cp36m-macosx_10_9_x86_64.whl": {
+          "provides_extras": [
+            "all",
+            "dataset",
+            "docs",
+            "tests"
+          ],
+          "requires_dist": [
+            "numpy (>=1.13.0)",
+            "pytest ; extra == 'all'",
+            "spaceweather ; extra == 'all'",
+            "sphinx (!=3.2.0) ; extra == 'all'",
+            "xarray ; extra == 'all'",
+            "spaceweather ; extra == 'dataset'",
+            "xarray ; extra == 'dataset'",
+            "sphinx (!=3.2.0) ; extra == 'docs'",
+            "pytest ; extra == 'tests'"
+          ]
+        },
+        "nrlmsise00-0.0.2-cp36-cp36m-manylinux1_i686.whl": "0.0.2@nrlmsise00-0.0.2-cp36-cp36m-macosx_10_9_x86_64.whl",
+        "nrlmsise00-0.0.2-cp36-cp36m-manylinux1_x86_64.whl": "0.0.2@nrlmsise00-0.0.2-cp36-cp36m-macosx_10_9_x86_64.whl",
+        "nrlmsise00-0.0.2-cp36-cp36m-manylinux2010_i686.whl": "0.0.2@nrlmsise00-0.0.2-cp36-cp36m-macosx_10_9_x86_64.whl",
+        "nrlmsise00-0.0.2-cp36-cp36m-manylinux2010_x86_64.whl": "0.0.2@nrlmsise00-0.0.2-cp36-cp36m-macosx_10_9_x86_64.whl",
+        "nrlmsise00-0.0.2-cp36-cp36m-win32.whl": "0.0.2@nrlmsise00-0.0.2-cp36-cp36m-macosx_10_9_x86_64.whl",
+        "nrlmsise00-0.0.2-cp36-cp36m-win_amd64.whl": "0.0.2@nrlmsise00-0.0.2-cp36-cp36m-macosx_10_9_x86_64.whl"
+      },
       "0.0.2rc1": {
         "nrlmsise00-0.0.2rc1-cp36-cp36m-manylinux1_i686.whl": {
           "provides_extras": [
@@ -12049,6 +12208,33 @@
         "nrlmsise00-0.0.1-cp37-cp37m-manylinux1_x86_64.whl": "0.0.1@nrlmsise00-0.0.1-cp37-cp37m-manylinux1_i686.whl",
         "nrlmsise00-0.0.1-cp37-cp37m-manylinux2010_i686.whl": "0.0.1@nrlmsise00-0.0.1-cp37-cp37m-manylinux1_i686.whl",
         "nrlmsise00-0.0.1-cp37-cp37m-manylinux2010_x86_64.whl": "0.0.1@nrlmsise00-0.0.1-cp37-cp37m-manylinux1_i686.whl"
+      },
+      "0.0.2": {
+        "nrlmsise00-0.0.2-cp37-cp37m-macosx_10_9_x86_64.whl": {
+          "provides_extras": [
+            "all",
+            "dataset",
+            "docs",
+            "tests"
+          ],
+          "requires_dist": [
+            "numpy (>=1.13.0)",
+            "pytest ; extra == 'all'",
+            "spaceweather ; extra == 'all'",
+            "sphinx (!=3.2.0) ; extra == 'all'",
+            "xarray ; extra == 'all'",
+            "spaceweather ; extra == 'dataset'",
+            "xarray ; extra == 'dataset'",
+            "sphinx (!=3.2.0) ; extra == 'docs'",
+            "pytest ; extra == 'tests'"
+          ]
+        },
+        "nrlmsise00-0.0.2-cp37-cp37m-manylinux1_i686.whl": "0.0.2@nrlmsise00-0.0.2-cp37-cp37m-macosx_10_9_x86_64.whl",
+        "nrlmsise00-0.0.2-cp37-cp37m-manylinux1_x86_64.whl": "0.0.2@nrlmsise00-0.0.2-cp37-cp37m-macosx_10_9_x86_64.whl",
+        "nrlmsise00-0.0.2-cp37-cp37m-manylinux2010_i686.whl": "0.0.2@nrlmsise00-0.0.2-cp37-cp37m-macosx_10_9_x86_64.whl",
+        "nrlmsise00-0.0.2-cp37-cp37m-manylinux2010_x86_64.whl": "0.0.2@nrlmsise00-0.0.2-cp37-cp37m-macosx_10_9_x86_64.whl",
+        "nrlmsise00-0.0.2-cp37-cp37m-win32.whl": "0.0.2@nrlmsise00-0.0.2-cp37-cp37m-macosx_10_9_x86_64.whl",
+        "nrlmsise00-0.0.2-cp37-cp37m-win_amd64.whl": "0.0.2@nrlmsise00-0.0.2-cp37-cp37m-macosx_10_9_x86_64.whl"
       },
       "0.0.2rc1": {
         "nrlmsise00-0.0.2rc1-cp37-cp37m-manylinux1_i686.whl": {
@@ -12094,6 +12280,33 @@
         "nrlmsise00-0.0.1-cp38-cp38-manylinux2010_i686.whl": "0.0.1@nrlmsise00-0.0.1-cp38-cp38-manylinux1_i686.whl",
         "nrlmsise00-0.0.1-cp38-cp38-manylinux2010_x86_64.whl": "0.0.1@nrlmsise00-0.0.1-cp38-cp38-manylinux1_i686.whl"
       },
+      "0.0.2": {
+        "nrlmsise00-0.0.2-cp38-cp38-macosx_10_9_x86_64.whl": {
+          "provides_extras": [
+            "all",
+            "dataset",
+            "docs",
+            "tests"
+          ],
+          "requires_dist": [
+            "numpy (>=1.13.0)",
+            "pytest ; extra == 'all'",
+            "spaceweather ; extra == 'all'",
+            "sphinx (!=3.2.0) ; extra == 'all'",
+            "xarray ; extra == 'all'",
+            "spaceweather ; extra == 'dataset'",
+            "xarray ; extra == 'dataset'",
+            "sphinx (!=3.2.0) ; extra == 'docs'",
+            "pytest ; extra == 'tests'"
+          ]
+        },
+        "nrlmsise00-0.0.2-cp38-cp38-manylinux1_i686.whl": "0.0.2@nrlmsise00-0.0.2-cp38-cp38-macosx_10_9_x86_64.whl",
+        "nrlmsise00-0.0.2-cp38-cp38-manylinux1_x86_64.whl": "0.0.2@nrlmsise00-0.0.2-cp38-cp38-macosx_10_9_x86_64.whl",
+        "nrlmsise00-0.0.2-cp38-cp38-manylinux2010_i686.whl": "0.0.2@nrlmsise00-0.0.2-cp38-cp38-macosx_10_9_x86_64.whl",
+        "nrlmsise00-0.0.2-cp38-cp38-manylinux2010_x86_64.whl": "0.0.2@nrlmsise00-0.0.2-cp38-cp38-macosx_10_9_x86_64.whl",
+        "nrlmsise00-0.0.2-cp38-cp38-win32.whl": "0.0.2@nrlmsise00-0.0.2-cp38-cp38-macosx_10_9_x86_64.whl",
+        "nrlmsise00-0.0.2-cp38-cp38-win_amd64.whl": "0.0.2@nrlmsise00-0.0.2-cp38-cp38-macosx_10_9_x86_64.whl"
+      },
       "0.0.2rc1": {
         "nrlmsise00-0.0.2rc1-cp38-cp38-manylinux1_i686.whl": {
           "provides_extras": [
@@ -12119,6 +12332,28 @@
       }
     },
     "pp27": {
+      "0.0.2": {
+        "nrlmsise00-0.0.2-pp27-pypy_73-manylinux1_x86_64.whl": {
+          "provides_extras": [
+            "all",
+            "dataset",
+            "docs",
+            "tests"
+          ],
+          "requires_dist": [
+            "numpy (>=1.13.0)",
+            "pytest ; extra == 'all'",
+            "spaceweather ; extra == 'all'",
+            "sphinx (!=3.2.0) ; extra == 'all'",
+            "xarray ; extra == 'all'",
+            "spaceweather ; extra == 'dataset'",
+            "xarray ; extra == 'dataset'",
+            "sphinx (!=3.2.0) ; extra == 'docs'",
+            "pytest ; extra == 'tests'"
+          ]
+        },
+        "nrlmsise00-0.0.2-pp27-pypy_73-manylinux2010_x86_64.whl": "0.0.2@nrlmsise00-0.0.2-pp27-pypy_73-manylinux1_x86_64.whl"
+      },
       "0.0.2rc1": {
         "nrlmsise00-0.0.2rc1-pp27-pypy_73-manylinux1_x86_64.whl": {
           "provides_extras": [
@@ -12140,6 +12375,29 @@
       }
     },
     "pp36": {
+      "0.0.2": {
+        "nrlmsise00-0.0.2-pp36-pypy36_pp73-manylinux1_x86_64.whl": {
+          "provides_extras": [
+            "all",
+            "dataset",
+            "docs",
+            "tests"
+          ],
+          "requires_dist": [
+            "numpy (>=1.13.0)",
+            "pytest ; extra == 'all'",
+            "spaceweather ; extra == 'all'",
+            "sphinx (!=3.2.0) ; extra == 'all'",
+            "xarray ; extra == 'all'",
+            "spaceweather ; extra == 'dataset'",
+            "xarray ; extra == 'dataset'",
+            "sphinx (!=3.2.0) ; extra == 'docs'",
+            "pytest ; extra == 'tests'"
+          ]
+        },
+        "nrlmsise00-0.0.2-pp36-pypy36_pp73-manylinux2010_x86_64.whl": "0.0.2@nrlmsise00-0.0.2-pp36-pypy36_pp73-manylinux1_x86_64.whl",
+        "nrlmsise00-0.0.2-pp36-pypy36_pp73-win32.whl": "0.0.2@nrlmsise00-0.0.2-pp36-pypy36_pp73-manylinux1_x86_64.whl"
+      },
       "0.0.2rc1": {
         "nrlmsise00-0.0.2rc1-pp36-pypy36_pp73-manylinux1_x86_64.whl": {
           "provides_extras": [
@@ -13569,6 +13827,23 @@
       },
       "1.0.5": {
         "opensesame_plugin_parallel_port_trigger-1.0.5-py2.py3-none-any.whl": "1.0.0@opensesame_plugin_parallel_port_trigger-1.0.0-py2.py3-none-any.whl"
+      }
+    }
+  },
+  "opentelemetry-exporter-jaeger": {
+    "py3": {
+      "0.12b0": {
+        "opentelemetry_exporter_jaeger-0.12b0-py3-none-any.whl": {
+          "provides_extras": [
+            "test"
+          ],
+          "requires_dist": [
+            "thrift (>=0.10.0)",
+            "opentelemetry-api (==0.12b0)",
+            "opentelemetry-sdk (==0.12b0)"
+          ],
+          "requires_python": ">=3.4"
+        }
       }
     }
   },
@@ -16193,6 +16468,21 @@
       },
       "1.1.9.1": {
         "pyspace_toolkit-1.1.9.1-py3-none-any.whl": "1.0.8@pyspace_toolkit-1.0.8-py3-none-any.whl"
+      },
+      "1.1.9.10": {
+        "pyspace_toolkit-1.1.9.10-py3-none-any.whl": "1.0.8@pyspace_toolkit-1.0.8-py3-none-any.whl"
+      },
+      "1.1.9.11": {
+        "pyspace_toolkit-1.1.9.11-py3-none-any.whl": "1.0.8@pyspace_toolkit-1.0.8-py3-none-any.whl"
+      },
+      "1.1.9.12": {
+        "pyspace_toolkit-1.1.9.12-py3-none-any.whl": "1.0.8@pyspace_toolkit-1.0.8-py3-none-any.whl"
+      },
+      "1.1.9.13": {
+        "pyspace_toolkit-1.1.9.13-py3-none-any.whl": "1.0.8@pyspace_toolkit-1.0.8-py3-none-any.whl"
+      },
+      "1.1.9.14": {
+        "pyspace_toolkit-1.1.9.14-py3-none-any.whl": "1.0.8@pyspace_toolkit-1.0.8-py3-none-any.whl"
       },
       "1.1.9.2": {
         "pyspace_toolkit-1.1.9.2-py3-none-any.whl": "1.0.8@pyspace_toolkit-1.0.8-py3-none-any.whl"
