@@ -24692,7 +24692,42 @@
     "0.3.3": "0.3.0",
     "0.3.4": "0.3.0",
     "0.3.5": "0.3.0",
-    "0.3.6": "0.3.0"
+    "0.3.6": "0.3.0",
+    "0.4.0": {
+      "35": {
+        "install_requires": [
+          "hdrhistogram",
+          "pandas",
+          "pandas-appender>=0.9.1"
+        ],
+        "setup_requires": [
+          "setuptools_scm"
+        ],
+        "extras_require": {
+          "mpi": [
+            "mpi4py"
+          ],
+          "ray": [
+            "ray",
+            "pyarrow"
+          ],
+          "test": [
+            "pytest>=4.6",
+            "coverage",
+            "pytest-cov",
+            "pytest-sugar",
+            "coveralls",
+            "numpy"
+          ]
+        },
+        "python_requires": [
+          ">=3.5.*"
+        ]
+      },
+      "36": "35",
+      "37": "35",
+      "38": "35"
+    }
   },
   "parser_shenghui": {
     "0.1.0": {
@@ -25959,6 +25994,33 @@
           "attrs",
           "async-property",
           "privex-helpers[cache]>=2.10.0"
+        ],
+        "extras_require": {
+          "dev": [
+            "jupyter",
+            "wheel",
+            "setuptools",
+            "twine",
+            "privex-helpers[dev]",
+            "pytest",
+            "pytest-cov",
+            "coverage",
+            "codecov",
+            "pytest-asyncio",
+            "nest-asyncio"
+          ]
+        }
+      },
+      "38": "37"
+    },
+    "0.2.0": {
+      "37": {
+        "install_requires": [
+          "httpx>=0.12.0",
+          "attrs",
+          "async-property",
+          "privex-helpers[cache]>=2.18.0",
+          "privex-steemengine>=2.1.0"
         ],
         "extras_require": {
           "dev": [
