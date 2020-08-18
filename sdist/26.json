@@ -5582,6 +5582,23 @@
       "37": "27",
       "38": "27"
     },
+    "2.20.15": {
+      "27": {
+        "install_requires": [
+          "IPython>=7.9.0",
+          "biorefineries>=2.15.10",
+          "thermosteam>=0.20.10",
+          "graphviz>=0.8.3",
+          "chaospy>=3.0.11",
+          "pipeml>=0.1"
+        ],
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "37": "27",
+      "38": "27"
+    },
     "2.20.2": {
       "27": {
         "install_requires": [
@@ -15167,7 +15184,9 @@
     "2.91": "0.1",
     "2.92": "0.1",
     "2.96": "0.1",
-    "2.98": "0.1"
+    "2.98": "0.1",
+    "2.99": "0.1",
+    "3.11": "0.1"
   },
   "fastuaparser": {
     "0.1.3": {
@@ -19593,6 +19612,7 @@
     "1.2.14": "1.2.10",
     "1.2.15": "1.2.10",
     "1.2.16": "1.2.10",
+    "1.2.17": "1.2.10",
     "1.2.2": "1.0.10",
     "1.2.3": "1.0.10",
     "1.2.4": "1.0.10",
@@ -24011,6 +24031,25 @@
     "1.0.8": "1.0.1",
     "1.1.0": "1.0.1",
     "1.2.0": "1.0.1"
+  },
+  "nanomethphase": {
+    "0.0": {
+      "27": {
+        "install_requires": [
+          "numpy>=1.18.1",
+          "pysam>=0.15.4",
+          "pytabix>=0.0.2",
+          "tqdm>=4.44.1"
+        ],
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    }
   },
   "nb-courselevels": {
     "0.1.0": {
@@ -32984,6 +33023,42 @@
         ],
         "setup_requires": [
           "vcversioner"
+        ],
+        "extras_require": {
+          "testing": [
+            "pytest",
+            "pytest-aiohttp",
+            "pytest-postgresql",
+            "dulwich>=0.18.7",
+            "swh.loader.git>=0.0.52",
+            "swh.storage[testing]"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    },
+    "0.0.34": {
+      "27": {
+        "install_requires": [
+          "click",
+          "flask",
+          "psycopg2",
+          "python-dateutil",
+          "fastimport",
+          "swh.core[db,http]>=0.0.65",
+          "swh.model>=0.3",
+          "swh.objstorage>=0.0.17",
+          "swh.scheduler>=0.0.39",
+          "swh.storage>=0.0.106"
+        ],
+        "setup_requires": [
+          "setuptools-scm"
         ],
         "extras_require": {
           "testing": [
