@@ -8793,6 +8793,26 @@
       "38": "27"
     }
   },
+  "datasette-render-images": {
+    "0.3.2": {
+      "35": {
+        "install_requires": [
+          "datasette"
+        ],
+        "extras_require": {
+          "test": [
+            "pytest"
+          ]
+        },
+        "tests_require": [
+          "datasette-auth-tokens[test]"
+        ]
+      },
+      "36": "35",
+      "37": "35",
+      "38": "35"
+    }
+  },
   "dbca-utils": {
     "1.1.0": {
       "27": {
@@ -9938,6 +9958,15 @@
       "38": "27"
     },
     "0.0.2": "0.0.1"
+  },
+  "distributions-modupe": {
+    "1.0": {
+      "27": {},
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    }
   },
   "distributions-test-file": {
     "0.1": {
@@ -42462,6 +42491,74 @@
           "# Web\n",
           "## http server\n",
           "flask==1.1.2\n",
+          "## websockets\n",
+          "### used by the webhook service and flask-socketio for the web interface\n",
+          "gevent==1.5.0\n",
+          "### used by flask-socketio with gevent (listed here because multiple libs are usable, force this one)\n",
+          "gevent-websocket==0.10.1\n",
+          "flask-socketio==4.2.1\n",
+          "\n",
+          "# Analysis tools\n",
+          "newspaper3k==0.2.8\n",
+          "vaderSentiment==3.3.1\n"
+        ],
+        "tests_require": [
+          "pytest"
+        ],
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "36": "35",
+      "37": "35",
+      "38": "35"
+    },
+    "1.1.20": {
+      "35": {
+        "install_requires": [
+          "OctoBot-Channels<1.5,>=1.4.10",
+          "OctoBot-Commons<1.4,>=1.3.43",
+          "OctoBot-Trading<1.10,>=1.9.3",
+          "praw==6.5.1",
+          "python-telegram-bot==12.7.0",
+          "Python-Twitter==3.5",
+          "simplifiedpytrends>=1.1.0",
+          "pyngrok==2.1.4",
+          "flask==1.1.2",
+          "flask-login==0.5.0",
+          "WTForms==2.3.3",
+          "Flask-WTF==0.14.3",
+          "gevent==1.5.0",
+          "gevent-websocket==0.10.1",
+          "flask-socketio==4.2.1",
+          "newspaper3k==0.2.8",
+          "vaderSentiment==3.3.1"
+        ],
+        "setup_requires": [
+          "# Drakkar-Software requirements\n",
+          "OctoBot-Channels>=1.4.10, <1.5\n",
+          "OctoBot-Commons>=1.3.43, <1.4\n",
+          "OctoBot-Trading>=1.9.3, <1.10\n",
+          "\n",
+          "# Services\n",
+          "# Reddit\n",
+          "praw==6.5.1\n",
+          "# Telegram\n",
+          "python-telegram-bot==12.7.0\n",
+          "# Twitter\n",
+          "Python-Twitter==3.5\n",
+          "# Google\n",
+          "simplifiedpytrends>=1.1.0\n",
+          "# Ngrok\n",
+          "pyngrok==2.1.4\n",
+          "# Web\n",
+          "## http server\n",
+          "flask==1.1.2\n",
+          "## flask user authentication management\n",
+          "flask-login==0.5.0\n",
+          "## user form validators\n",
+          "WTForms==2.3.3\n",
+          "Flask-WTF==0.14.3\n",
           "## websockets\n",
           "### used by the webhook service and flask-socketio for the web interface\n",
           "gevent==1.5.0\n",
