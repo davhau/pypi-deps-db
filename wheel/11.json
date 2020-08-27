@@ -101,6 +101,35 @@
       }
     }
   },
+  "actuarydesk": {
+    "py3": {
+      "0.0.1": {
+        "actuarydesk-0.0.1-py3-none-any.whl": {
+          "requires_python": ">=3.6"
+        }
+      },
+      "0.0.2": {
+        "actuarydesk-0.0.2-py3-none-any.whl": {
+          "requires_dist": [
+            "pandas",
+            "matplotlib"
+          ],
+          "requires_python": ">=3.6"
+        }
+      },
+      "0.0.3": {
+        "actuarydesk-0.0.3-py3-none-any.whl": "0.0.2@actuarydesk-0.0.2-py3-none-any.whl"
+      },
+      "0.0.4": {
+        "actuarydesk-0.0.4-py3-none-any.whl": {
+          "requires_dist": [
+            "pandas"
+          ],
+          "requires_python": ">=3.6"
+        }
+      }
+    }
+  },
   "adbb": {
     "3.7": {
       "2": {
@@ -12174,6 +12203,9 @@
       "0.0.32": {
         "IPythonDisplayTurtle-0.0.32-py3-none-any.whl": "0.0.10@IPythonDisplayTurtle-0.0.10-py3-none-any.whl"
       },
+      "0.0.33": {
+        "IPythonDisplayTurtle-0.0.33-py3-none-any.whl": "0.0.10@IPythonDisplayTurtle-0.0.10-py3-none-any.whl"
+      },
       "0.0.5": {
         "IPythonDisplayTurtle-0.0.5-py3-none-any.whl": "0.0.10@IPythonDisplayTurtle-0.0.10-py3-none-any.whl"
       },
@@ -12313,28 +12345,31 @@
   },
   "jupytab-server": {
     "py3": {
-      "0.9.3": {
-        "jupytab_server-0.9.3-py3-none-any.whl": {
+      "0.9.10": {
+        "jupytab_server-0.9.10-py3-none-any.whl": {
           "requires_dist": [
             "jupyter-kernel-gateway"
           ],
           "requires_python": ">=3.6"
         }
       },
+      "0.9.3": {
+        "jupytab_server-0.9.3-py3-none-any.whl": "0.9.10@jupytab_server-0.9.10-py3-none-any.whl"
+      },
       "0.9.4": {
-        "jupytab_server-0.9.4-py3-none-any.whl": "0.9.3@jupytab_server-0.9.3-py3-none-any.whl"
+        "jupytab_server-0.9.4-py3-none-any.whl": "0.9.10@jupytab_server-0.9.10-py3-none-any.whl"
       },
       "0.9.5": {
-        "jupytab_server-0.9.5-py3-none-any.whl": "0.9.3@jupytab_server-0.9.3-py3-none-any.whl"
+        "jupytab_server-0.9.5-py3-none-any.whl": "0.9.10@jupytab_server-0.9.10-py3-none-any.whl"
       },
       "0.9.7": {
-        "jupytab_server-0.9.7-py3-none-any.whl": "0.9.3@jupytab_server-0.9.3-py3-none-any.whl"
+        "jupytab_server-0.9.7-py3-none-any.whl": "0.9.10@jupytab_server-0.9.10-py3-none-any.whl"
       },
       "0.9.8": {
-        "jupytab_server-0.9.8-py3-none-any.whl": "0.9.3@jupytab_server-0.9.3-py3-none-any.whl"
+        "jupytab_server-0.9.8-py3-none-any.whl": "0.9.10@jupytab_server-0.9.10-py3-none-any.whl"
       },
       "0.9.9": {
-        "jupytab_server-0.9.9-py3-none-any.whl": "0.9.3@jupytab_server-0.9.3-py3-none-any.whl"
+        "jupytab_server-0.9.9-py3-none-any.whl": "0.9.10@jupytab_server-0.9.10-py3-none-any.whl"
       }
     }
   },
@@ -14644,6 +14679,9 @@
       "1.14.48.0": {
         "mypy_boto3_iotevents_data-1.14.48.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_iotevents_data-1.13.24.3-py3-none-any.whl"
       },
+      "1.14.49.0": {
+        "mypy_boto3_iotevents_data-1.14.49.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_iotevents_data-1.13.24.3-py3-none-any.whl"
+      },
       "1.14.5.0": {
         "mypy_boto3_iotevents_data-1.14.5.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_iotevents_data-1.13.24.3-py3-none-any.whl"
       },
@@ -16845,6 +16883,28 @@
             "ipywidgets (>=7.5.1)",
             "seaborn (>=0.10.1)",
             "pyqt5 (>=5.14.1) ; extra == 'app'",
+            "jupyter-client (>=6.0.0) ; extra == 'notebook'",
+            "jupyter-core (>=4.6.3) ; extra == 'notebook'"
+          ],
+          "requires_python": ">=3.6"
+        }
+      }
+    }
+  },
+  "pandas-visual-analysis": {
+    "py3": {
+      "0.0.2": {
+        "pandas_visual_analysis-0.0.2-py3-none-any.whl": {
+          "provides_extras": [
+            "notebook"
+          ],
+          "requires_dist": [
+            "setuptools (~=49.2.0)",
+            "traitlets (~=4.3.3)",
+            "pandas (~=1.1.0)",
+            "ipywidgets (~=7.5.1)",
+            "numpy (~=1.19.1)",
+            "plotly (~=4.9.0)",
             "jupyter-client (>=6.0.0) ; extra == 'notebook'",
             "jupyter-core (>=4.6.3) ; extra == 'notebook'"
           ],
