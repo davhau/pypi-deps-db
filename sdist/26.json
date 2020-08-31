@@ -714,7 +714,8 @@
     "1.62": "1.0",
     "1.63": "1.0",
     "1.64": "1.0",
-    "1.65": "1.0"
+    "1.65": "1.0",
+    "1.66": "1.0"
   },
   "ansible-docgenerator": {
     "0.1.0": {
@@ -20053,6 +20054,44 @@
       "36": "35",
       "37": "35",
       "38": "35"
+    },
+    "3.0.0b1": {
+      "36": {
+        "install_requires": [
+          "ipython",
+          "tornado!=6.0.0,!=6.0.1,!=6.0.2",
+          "jupyterlab_server~=2.0.0b5",
+          "nbclassic~=0.2.0rc4",
+          "jinja2>=2.10"
+        ],
+        "extras_require": {
+          "docs": [
+            "jsx-lexer",
+            "recommonmark",
+            "sphinx",
+            "sphinx_rtd_theme",
+            "sphinx-copybutton"
+          ],
+          "test": [
+            "pytest==5.3.2",
+            "pytest-cov",
+            "pytest-tornasync",
+            "pytest-console-scripts",
+            "pytest-check-links",
+            "requests",
+            "wheel",
+            "virtualenv"
+          ],
+          "test:sys_platform == \"win32\"": [
+            "nose-exclude"
+          ]
+        },
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "37": "36",
+      "38": "36"
     }
   },
   "jupyterlab-thredds": {
