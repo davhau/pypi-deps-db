@@ -10528,6 +10528,7 @@
       "37": "27",
       "38": "27"
     },
+    "0.0.17": "0.0.16",
     "0.0.3": {
       "27": {
         "install_requires": [
@@ -17225,7 +17226,69 @@
       "37": "27",
       "38": "27"
     },
-    "0.5.0b1": "0.4.0b2"
+    "0.5.0b1": "0.4.0b2",
+    "0.5.0b2": {
+      "27": {
+        "install_requires": [
+          "eth-abi<3.0.0,>=2.0.0b4",
+          "eth-keys<0.4.0,>=0.2.1",
+          "eth-utils<2.0.0,>=1.4.1",
+          "rlp<=2.0.0-alpha.1,>=1.1.0",
+          "semantic_version<3.0.0,>=2.6.0"
+        ],
+        "extras_require": {
+          "dev": [
+            "bumpversion<1.0.0,>=0.5.3",
+            "tox<3.0.0,>=2.9.1",
+            "wheel<1.0.0,>=0.30.0",
+            "pytest<5.0.0,>=4.4.0",
+            "pytest-xdist<2,>=1.22.2",
+            "eth-hash[pycryptodome]<1.0.0,>=0.1.4",
+            "py-evm==0.3.0a19",
+            "flake8<4.0.0,>=3.5.0"
+          ],
+          "lint": [
+            "flake8<4.0.0,>=3.5.0"
+          ],
+          "test": [
+            "pytest<5.0.0,>=4.4.0",
+            "pytest-xdist<2,>=1.22.2",
+            "eth-hash[pycryptodome]<1.0.0,>=0.1.4"
+          ],
+          "pyevm": [
+            "py-evm==0.3.0a19"
+          ],
+          "py-evm": [
+            "py-evm==0.3.0a19"
+          ],
+          "dev:implementation_name == \"pypy\"": [
+            "eth-hash[pycryptodome]<1.0.0,>=0.1.4"
+          ],
+          "pyevm:implementation_name == \"pypy\"": [
+            "eth-hash[pycryptodome]<1.0.0,>=0.1.4"
+          ],
+          "dev:implementation_name == \"cpython\"": [
+            "eth-hash[pysha3]<1.0.0,>=0.1.4"
+          ],
+          "py-evm:implementation_name == \"pypy\"": [
+            "eth-hash[pycryptodome]<1.0.0,>=0.1.4"
+          ],
+          "pyevm:implementation_name == \"cpython\"": [
+            "eth-hash[pysha3]<1.0.0,>=0.1.4"
+          ],
+          "py-evm:implementation_name == \"cpython\"": [
+            "eth-hash[pysha3]<1.0.0,>=0.1.4"
+          ]
+        },
+        "python_requires": [
+          ">=3.6.8,<4"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    }
   },
   "eveparser": {
     "0.10": {
@@ -21180,6 +21243,28 @@
         "extras_require": {
           "protobuf": [
             "grpcio-tools>=1.31.0rc2"
+          ],
+          ":python_version < \"3.2\"": [
+            "futures>=2.2.0"
+          ],
+          ":python_version < \"3.4\"": [
+            "enum34>=1.0.4"
+          ]
+        }
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    },
+    "1.32.0rc1": {
+      "27": {
+        "install_requires": [
+          "six>=1.5.2"
+        ],
+        "extras_require": {
+          "protobuf": [
+            "grpcio-tools>=1.32.0rc1"
           ],
           ":python_version < \"3.2\"": [
             "futures>=2.2.0"
