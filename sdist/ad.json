@@ -5986,7 +5986,8 @@
       "37": "27",
       "38": "27"
     },
-    "1.11": "1.1"
+    "1.11": "1.1",
+    "1.111": "1.1"
   },
   "cmd3": {
     "0.8.1": {
@@ -7900,6 +7901,7 @@
       "37": "27",
       "38": "27"
     },
+    "2.9.20": "2.9.13",
     "2.9.3": "2.9.2",
     "2.9.4": "2.9.2",
     "2.9.5": "2.9.2",
@@ -30267,6 +30269,7 @@
     "2.35.8": "2.31.1",
     "2.35.9": "2.31.1",
     "2.36.1": "2.31.1",
+    "2.36.2": "2.31.1",
     "2.3a": "1.19a",
     "2.3b": "1.19a",
     "2.4a": "1.19a",
@@ -42365,7 +42368,8 @@
     "0.3.4.dev200827": "0.3.4.dev200826",
     "0.3.4.dev200828": "0.3.4.dev200826",
     "0.3.4.dev200829": "0.3.4.dev200826",
-    "0.3.4.dev200831": "0.3.4.dev200826"
+    "0.3.4.dev200831": "0.3.4.dev200826",
+    "0.3.4.dev200901": "0.3.4.dev200826"
   },
   "marionette-client-mozilla-b2g32-v2-0": {
     "0.1": {
@@ -53689,6 +53693,20 @@
       "38": "27"
     }
   },
+  "sphinxcontrib.relative-link-corrector": {
+    "0.0.1": {
+      "27": {
+        "install_requires": [
+          "beautifulsoup4"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    },
+    "0.0.2": "0.0.1"
+  },
   "split": {
     "0.3": {
       "27": {},
@@ -56773,6 +56791,106 @@
             "pytest-xdist",
             "timeout-decorator",
             "psutil"
+          ],
+          ":python_version < \"3.7\"": [
+            "dataclasses"
+          ]
+        },
+        "python_requires": [
+          ">=3.6.0"
+        ]
+      },
+      "36": "35",
+      "37": "35",
+      "38": "35"
+    },
+    "3.1.0": {
+      "35": {
+        "install_requires": [
+          "numpy",
+          "tokenizers==0.8.1.rc2",
+          "packaging",
+          "filelock",
+          "requests",
+          "tqdm>=4.27",
+          "regex!=2019.12.17",
+          "sentencepiece!=0.1.92",
+          "sacremoses"
+        ],
+        "extras_require": {
+          "ja": [
+            "fugashi>=1.0",
+            "ipadic<2.0,>=1.0.0",
+            "unidic_lite>=1.0.7",
+            "unidic>=1.0.2"
+          ],
+          "tf": [
+            "tensorflow",
+            "onnxconverter-common",
+            "keras2onnx"
+          ],
+          "all": [
+            "pydantic",
+            "uvicorn",
+            "fastapi",
+            "starlette",
+            "tensorflow",
+            "torch"
+          ],
+          "dev": [
+            "pytest",
+            "pytest-xdist",
+            "timeout-decorator",
+            "psutil",
+            "black>=20.8b1",
+            "isort>=5",
+            "flake8",
+            "fugashi>=1.0",
+            "ipadic<2.0,>=1.0.0",
+            "unidic_lite>=1.0.7",
+            "unidic>=1.0.2",
+            "scikit-learn",
+            "tensorflow",
+            "torch"
+          ],
+          "docs": [
+            "recommonmark",
+            "sphinx",
+            "sphinx-markdown-tables",
+            "sphinx-rtd-theme==0.4.3",
+            "sphinx-copybutton"
+          ],
+          "torch": [
+            "torch"
+          ],
+          "tf-cpu": [
+            "tensorflow-cpu",
+            "onnxconverter-common",
+            "keras2onnx"
+          ],
+          "quality": [
+            "black>=20.8b1",
+            "isort>=5",
+            "flake8"
+          ],
+          "serving": [
+            "pydantic",
+            "uvicorn",
+            "fastapi",
+            "starlette"
+          ],
+          "sklearn": [
+            "scikit-learn"
+          ],
+          "testing": [
+            "pytest",
+            "pytest-xdist",
+            "timeout-decorator",
+            "psutil"
+          ],
+          "onnxruntime": [
+            "onnxruntime>=1.4.0",
+            "onnxruntime-tools>=1.4.2"
           ],
           ":python_version < \"3.7\"": [
             "dataclasses"
