@@ -2526,7 +2526,54 @@
       "37": "27",
       "38": "27"
     },
-    "0.9.5": "0.9.4"
+    "0.9.5": "0.9.4",
+    "0.9.6": {
+      "27": {
+        "install_requires": [
+          "requests",
+          "wheel",
+          "py7zr>=0.9.1",
+          "packaging"
+        ],
+        "setup_requires": [
+          "setuptools-scm[toml]>=3.3.3",
+          "setuptools>=42.0"
+        ],
+        "extras_require": {
+          "docs": [
+            "sphinx>=1.8",
+            "sphinx_rtd_theme"
+          ],
+          "test": [
+            "pytest",
+            "pytest-pep8",
+            "pytest-remotedata",
+            "pytest-cov"
+          ],
+          "check": [
+            "flake8",
+            "docutils",
+            "check-manifest",
+            "readme-renderer",
+            "pygments",
+            "isort",
+            "pep517",
+            "packaging",
+            "twine"
+          ],
+          ":python_version < \"3.8\"": [
+            "importlib-metadata"
+          ]
+        },
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    }
   },
   "arcane-pubsub": {
     "0.1.2": {
@@ -7489,6 +7536,34 @@
       "38": "27"
     },
     "0.1.58": "0.1.57",
+    "0.1.59": {
+      "27": {
+        "install_requires": [
+          "cognite-geospatial-sdk<0.2.0,>=0.1.8",
+          "deprecation<3.0.0,>=2.1.0",
+          "grpcio-tools<2.0,>=1.31",
+          "numpy<2.0,>=1.17",
+          "pip<21.0.0,>=20.2.2",
+          "protobuf<4.0,>=3.12",
+          "python-dateutil<3.0,>=2.8",
+          "setuptools<50.0,>=49.0",
+          "six<2.0,>=1.14",
+          "urllib3<2.0,>=1.24"
+        ],
+        "extras_require": {
+          ":python_version < \"3.8\"": [
+            "importlib-metadata<2.0,>=1.0"
+          ]
+        },
+        "python_requires": [
+          ">=3.6,<4.0"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    },
     "0.1.6": {
       "27": {
         "install_requires": [
@@ -11625,6 +11700,70 @@
       "38": "27"
     }
   },
+  "eth-utils-qtum": {
+    "1.9.5": {
+      "27": {
+        "install_requires": [
+          "eth-hash-qtum<1.0.0,>=0.1.0",
+          "eth-typing<3.0.0,>=2.2.1"
+        ],
+        "extras_require": {
+          "dev": [
+            "twine<2,>=1.13",
+            "Sphinx<2,>=1.5.5",
+            "sphinx_rtd_theme<2,>=0.1.9",
+            "towncrier<20,>=19.2.0",
+            "black<19,>=18.6b4",
+            "flake8<4.0.0,>=3.7.0",
+            "isort==4.3.18",
+            "mypy==0.720",
+            "pytest<4.0.0,>=3.4.1",
+            "hypothesis<5.0.0,>=4.43.0",
+            "pytest<4.0.0,>=3.4.1",
+            "pytest-pythonpath<1.0,>=0.3",
+            "bumpversion<1.0.0,>=0.5.3",
+            "tox<3.0.0,>=2.9.1",
+            "wheel<1.0.0,>=0.30.0"
+          ],
+          "doc": [
+            "Sphinx<2,>=1.5.5",
+            "sphinx_rtd_theme<2,>=0.1.9",
+            "towncrier<20,>=19.2.0"
+          ],
+          "lint": [
+            "black<19,>=18.6b4",
+            "flake8<4.0.0,>=3.7.0",
+            "isort==4.3.18",
+            "mypy==0.720",
+            "pytest<4.0.0,>=3.4.1"
+          ],
+          "test": [
+            "hypothesis<5.0.0,>=4.43.0",
+            "pytest<4.0.0,>=3.4.1",
+            "pytest-pythonpath<1.0,>=0.3"
+          ],
+          "deploy": [
+            "bumpversion<1.0.0,>=0.5.3",
+            "tox<3.0.0,>=2.9.1",
+            "wheel<1.0.0,>=0.30.0"
+          ],
+          ":implementation_name == \"pypy\"": [
+            "toolz<1,>0.8.2"
+          ],
+          ":implementation_name == \"cpython\"": [
+            "cytoolz<1.0.0,>=0.10.1"
+          ]
+        },
+        "python_requires": [
+          ">=3.5,!=3.5.2,<4"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    }
+  },
   "everysport": {
     "1.0": {
       "27": {},
@@ -14514,7 +14653,8 @@
       "37": "27",
       "38": "27"
     },
-    "0.1.8": "0.1.7"
+    "0.1.8": "0.1.7",
+    "0.1.9": "0.1.7"
   },
   "gitlab-exporter": {
     "0.0.6": {
@@ -20243,6 +20383,7 @@
     "1.3.285": "1.3.258",
     "1.3.286": "1.3.258",
     "1.3.287": "1.3.258",
+    "1.3.288": "1.3.258",
     "1.3.29": "1.3.10",
     "1.3.3": "0.0.1",
     "1.3.30": "1.3.10",
@@ -31894,6 +32035,24 @@
     "0.5.2.dev1": "0.0.0",
     "0.5.3": "0.0.0",
     "0.5.4": "0.0.0"
+  },
+  "sivscriptsparsehlk": {
+    "1.2.0": {
+      "27": {
+        "install_requires": [
+          "pandas",
+          "xmltodict",
+          "sqlalchemy",
+          "Fernet",
+          "cryptography",
+          "mysql.connector"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    }
   },
   "sl4a_pydroid_mock_api": {
     "0.2": {
