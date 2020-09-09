@@ -4133,7 +4133,8 @@
     },
     "2.2.1": "2.2",
     "2.2.2": "2.2",
-    "2.2.3": "2.2"
+    "2.2.3": "2.2",
+    "2.2.4": "2.2"
   },
   "comtele_sdk": {
     "1.0.0": {
@@ -11973,6 +11974,25 @@
       "27": {
         "install_requires": [
           "psycopg2-binary",
+          "sqlalchemy",
+          "google-datacatalog-connectors-commons"
+        ],
+        "setup_requires": [
+          "pytest-runner"
+        ],
+        "tests_require": [
+          "pytest-cov",
+          "google-datacatalog-connectors-commons-test"
+        ]
+      },
+      "37": "27",
+      "38": "27"
+    },
+    "0.6.0": {
+      "27": {
+        "install_requires": [
+          "psycopg2-binary",
+          "mysqlclient",
           "sqlalchemy",
           "google-datacatalog-connectors-commons"
         ],
@@ -21547,6 +21567,7 @@
     "1.14.55.1": "1.11.10.0",
     "1.14.55.2": "1.11.10.0",
     "1.14.56.0": "1.11.10.0",
+    "1.14.57.0": "1.11.10.0",
     "1.14.6.0": "1.11.10.0",
     "1.14.7.0": "1.11.10.0",
     "1.14.8.0": "1.11.10.0",
@@ -22019,6 +22040,7 @@
     "1.14.55.1": "1.11.10.0",
     "1.14.55.2": "1.11.10.0",
     "1.14.56.0": "1.11.10.0",
+    "1.14.57.0": "1.11.10.0",
     "1.14.6.0": "1.11.10.0",
     "1.14.7.0": "1.11.10.0",
     "1.14.8.0": "1.11.10.0",
@@ -22472,6 +22494,7 @@
     "1.14.55.1": "1.11.10.0",
     "1.14.55.2": "1.11.10.0",
     "1.14.56.0": "1.11.10.0",
+    "1.14.57.0": "1.11.10.0",
     "1.14.6.0": "1.11.10.0",
     "1.14.7.0": "1.11.10.0",
     "1.14.8.0": "1.11.10.0",
@@ -32709,6 +32732,7 @@
     "0.14.0": "0.12.2",
     "0.14.1": "0.12.2",
     "0.14.2": "0.12.2",
+    "0.14.3": "0.12.2",
     "0.2.0": "0.1.0",
     "0.2.1": "0.1.0",
     "0.3.0": {
@@ -38181,6 +38205,90 @@
             "flake8==3.7.9",
             "flake8-bugbear==20.1.4",
             "pre-commit<3.0,>=1.20"
+          ],
+          "tests": [
+            "pytest",
+            "webtest==2.0.35",
+            "webtest-aiohttp==2.0.0",
+            "pytest-aiohttp>=0.3.0",
+            "Flask>=0.12.2",
+            "Django>=1.11.16",
+            "bottle>=0.12.13",
+            "tornado>=4.5.2",
+            "pyramid>=1.9.1",
+            "webapp2>=3.0.0b1",
+            "falcon>=2.0.0",
+            "aiohttp>=3.0.0"
+          ],
+          "frameworks": [
+            "Flask>=0.12.2",
+            "Django>=1.11.16",
+            "bottle>=0.12.13",
+            "tornado>=4.5.2",
+            "pyramid>=1.9.1",
+            "webapp2>=3.0.0b1",
+            "falcon>=2.0.0",
+            "aiohttp>=3.0.0"
+          ],
+          "dev:python_version == \"3.5\"": [
+            "mock"
+          ],
+          "tests:python_version == \"3.5\"": [
+            "mock"
+          ]
+        },
+        "python_requires": [
+          ">=3.5"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    },
+    "6.1.1": {
+      "27": {
+        "install_requires": [
+          "marshmallow>=2.15.2"
+        ],
+        "extras_require": {
+          "dev": [
+            "pytest",
+            "webtest==2.0.35",
+            "webtest-aiohttp==2.0.0",
+            "pytest-aiohttp>=0.3.0",
+            "Flask>=0.12.2",
+            "Django>=1.11.16",
+            "bottle>=0.12.13",
+            "tornado>=4.5.2",
+            "pyramid>=1.9.1",
+            "webapp2>=3.0.0b1",
+            "falcon>=2.0.0",
+            "aiohttp>=3.0.0",
+            "mypy==0.782",
+            "flake8==3.8.3",
+            "flake8-bugbear==20.1.4",
+            "pre-commit~=2.4",
+            "tox"
+          ],
+          "docs": [
+            "Sphinx==3.2.1",
+            "sphinx-issues==1.2.0",
+            "sphinx-typlog-theme==0.8.0",
+            "Flask>=0.12.2",
+            "Django>=1.11.16",
+            "bottle>=0.12.13",
+            "tornado>=4.5.2",
+            "pyramid>=1.9.1",
+            "webapp2>=3.0.0b1",
+            "falcon>=2.0.0",
+            "aiohttp>=3.0.0"
+          ],
+          "lint": [
+            "mypy==0.782",
+            "flake8==3.8.3",
+            "flake8-bugbear==20.1.4",
+            "pre-commit~=2.4"
           ],
           "tests": [
             "pytest",
