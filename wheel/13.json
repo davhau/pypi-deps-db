@@ -1252,6 +1252,23 @@
           ]
         }
       },
+      "0.1.10": {
+        "borisml-0.1.10-py3-none-any.whl": {
+          "provides_extras": [
+            "lightning"
+          ],
+          "requires_dist": [
+            "tqdm",
+            "torchvision",
+            "pandas (>=1.0.3)",
+            "hydra-core (>=0.11.3)",
+            "numpy (>=1.18.1)",
+            "requests (>=2.23.0)",
+            "pytorch-lightning (<=0.8.5) ; extra == 'lightning'",
+            "opencv-python ; extra == 'lightning'"
+          ]
+        }
+      },
       "0.1.2": {
         "borisml-0.1.2-py3-none-any.whl": "0.1.1@borisml-0.1.1-py3-none-any.whl"
       },
@@ -1271,24 +1288,7 @@
         "borisml-0.1.7-py3-none-any.whl": "0.1.1@borisml-0.1.1-py3-none-any.whl"
       },
       "0.1.8": {
-        "borisml-0.1.8-py3-none-any.whl": {
-          "provides_extras": [
-            "lightning"
-          ],
-          "requires_dist": [
-            "tqdm",
-            "torchvision",
-            "pandas (>=1.0.3)",
-            "hydra-core (>=0.11.3)",
-            "numpy (>=1.18.1)",
-            "requests (>=2.23.0)",
-            "pytorch-lightning (<=0.8.5) ; extra == 'lightning'",
-            "opencv-python ; extra == 'lightning'"
-          ]
-        }
-      },
-      "0.1.9": {
-        "borisml-0.1.9-py3-none-any.whl": "0.1.8@borisml-0.1.8-py3-none-any.whl"
+        "borisml-0.1.8-py3-none-any.whl": "0.1.10@borisml-0.1.10-py3-none-any.whl"
       }
     }
   },
@@ -7597,6 +7597,38 @@
       "12.4.1rc0": {
         "flywheel_cli-12.4.1rc0-py3-none-any.whl": "12.4.0@flywheel_cli-12.4.0-py3-none-any.whl"
       },
+      "14.1.0rc0": {
+        "flywheel_cli-14.1.0rc0-py3-none-any.whl": {
+          "provides_extras": [
+            "dev"
+          ],
+          "requires_dist": [
+            "boto3",
+            "crayons",
+            "fs",
+            "flywheel-bids",
+            "flywheel-migration (>=11.4.0)",
+            "flywheel-sdk (==12.4.3-dev0)",
+            "tzlocal",
+            "urllib3",
+            "pathvalidate",
+            "psycopg2-binary",
+            "pydantic (>=1.6)",
+            "pytz",
+            "sqlalchemy",
+            "sqlalchemy-utils",
+            "ipython ; extra == 'dev'",
+            "isort ; extra == 'dev'",
+            "mypy ; extra == 'dev'",
+            "pip-compile-multi ; extra == 'dev'",
+            "pycodestyle ; extra == 'dev'",
+            "pylint (~=2.6.0) ; extra == 'dev'",
+            "pytest ; extra == 'dev'",
+            "pytest-cov ; extra == 'dev'",
+            "pytest-mock ; extra == 'dev'"
+          ]
+        }
+      },
       "8.0.0": {
         "flywheel_cli-8.0.0-py3-none-any.whl": {
           "requires_dist": [
@@ -9472,6 +9504,9 @@
       },
       "2020.902.1614": {
         "jpylib_jyrgenn-2020.902.1614-py3-none-any.whl": "2020.709.1140@jpylib_jyrgenn-2020.709.1140-py3-none-any.whl"
+      },
+      "2020.910.858": {
+        "jpylib_jyrgenn-2020.910.858-py3-none-any.whl": "2020.709.1140@jpylib_jyrgenn-2020.709.1140-py3-none-any.whl"
       }
     }
   },
@@ -10619,6 +10654,21 @@
           "requires_dist": [
             "honeybee-radiance (==1.26.12)",
             "honeybee-energy (==1.55.16)",
+            "honeybee-energy-standards (==2.0.1)",
+            "lbt-ladybug (==0.25.16)",
+            "click (==7.1.2) ; extra == 'cli'",
+            "honeybee-schema (==1.38.2) ; (python_version >= \"3.6\") and extra == 'cli'"
+          ]
+        }
+      },
+      "0.2.142": {
+        "lbt_honeybee-0.2.142-py2.py3-none-any.whl": {
+          "provides_extras": [
+            "cli"
+          ],
+          "requires_dist": [
+            "honeybee-radiance (==1.26.12)",
+            "honeybee-energy (==1.55.17)",
             "honeybee-energy-standards (==2.0.1)",
             "lbt-ladybug (==0.25.16)",
             "click (==7.1.2) ; extra == 'cli'",
@@ -15748,6 +15798,18 @@
       },
       "13.0.1.0.1.dev3": {
         "odoo13_addon_partner_employee_quantity-13.0.1.0.1.dev3-py3-none-any.whl": "13.0.1.0.1.dev2@odoo13_addon_partner_employee_quantity-13.0.1.0.1.dev2-py3-none-any.whl"
+      }
+    }
+  },
+  "odoo13-addon-partner-event": {
+    "py3": {
+      "13.0.1.0.1.dev2": {
+        "odoo13_addon_partner_event-13.0.1.0.1.dev2-py3-none-any.whl": {
+          "requires_dist": [
+            "odoo (<13.1dev,>=13.0a)"
+          ],
+          "requires_python": ">=3.5"
+        }
       }
     }
   },
@@ -24161,6 +24223,17 @@
           ]
         }
       },
+      "3.2.3": {
+        "testwizard.web-3.2.3-py3-none-any.whl": {
+          "requires_dist": [
+            "testwizard.test (==3.2.3)",
+            "testwizard.testobjects-core (==3.2.3)",
+            "testwizard.commands-audio (==3.2.3)",
+            "testwizard.commands-video (==3.2.3)",
+            "testwizard.commands-web (==3.2.3)"
+          ]
+        }
+      },
       "3.4.0": {
         "testwizard.web-3.4.0-py3-none-any.whl": {
           "requires_dist": [
@@ -26053,6 +26126,9 @@
       },
       "0.0.20": {
         "watertools-0.0.20-py3-none-any.whl": "0.0.10@watertools-0.0.10-py3-none-any.whl"
+      },
+      "0.0.21": {
+        "watertools-0.0.21-py3-none-any.whl": "0.0.10@watertools-0.0.10-py3-none-any.whl"
       },
       "0.0.3": {
         "watertools-0.0.3-py3-none-any.whl": {
