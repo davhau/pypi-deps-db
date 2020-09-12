@@ -18,6 +18,16 @@
       },
       "1.1": {
         "abra-1.1-py3-none-any.whl": "0.1@abra-0.1-py3-none-any.whl"
+      },
+      "1.2": {
+        "abra-1.2-py3-none-any.whl": {
+          "requires_dist": [
+            "abra",
+            "numpy",
+            "scipy",
+            "matplotlib"
+          ]
+        }
       }
     }
   },
@@ -6980,6 +6990,17 @@
       "0.1.1": {
         "fakeit-0.1.1-py3-none-any.whl": "0.1.0@fakeit-0.1.0-py3-none-any.whl"
       },
+      "0.1.10": {
+        "fakeit-0.1.10-py3-none-any.whl": {
+          "provides_extras": [
+            "all",
+            "django",
+            "pydantic",
+            "sqlalchemy"
+          ],
+          "requires_python": ">=3.6"
+        }
+      },
       "0.1.2": {
         "fakeit-0.1.2-py3-none-any.whl": "0.1.0@fakeit-0.1.0-py3-none-any.whl"
       },
@@ -6996,21 +7017,13 @@
         "fakeit-0.1.6-py3-none-any.whl": "0.1.0@fakeit-0.1.0-py3-none-any.whl"
       },
       "0.1.7": {
-        "fakeit-0.1.7-py3-none-any.whl": {
-          "provides_extras": [
-            "all",
-            "django",
-            "pydantic",
-            "sqlalchemy"
-          ],
-          "requires_python": ">=3.6"
-        }
+        "fakeit-0.1.7-py3-none-any.whl": "0.1.10@fakeit-0.1.10-py3-none-any.whl"
       },
       "0.1.8": {
-        "fakeit-0.1.8-py3-none-any.whl": "0.1.7@fakeit-0.1.7-py3-none-any.whl"
+        "fakeit-0.1.8-py3-none-any.whl": "0.1.10@fakeit-0.1.10-py3-none-any.whl"
       },
       "0.1.9": {
-        "fakeit-0.1.9-py3-none-any.whl": "0.1.7@fakeit-0.1.7-py3-none-any.whl"
+        "fakeit-0.1.9-py3-none-any.whl": "0.1.10@fakeit-0.1.10-py3-none-any.whl"
       }
     }
   },
@@ -20941,6 +20954,43 @@
       },
       "0.14.1": {
         "swh.storage-0.14.1-py3-none-any.whl": "0.13.2@swh.storage-0.13.2-py3-none-any.whl"
+      },
+      "0.14.2": {
+        "swh.storage-0.14.2-py3-none-any.whl": {
+          "provides_extras": [
+            "journal",
+            "schemata",
+            "testing"
+          ],
+          "requires_dist": [
+            "click",
+            "flask",
+            "psycopg2",
+            "vcversioner",
+            "aiohttp",
+            "tenacity",
+            "cassandra-driver (!=3.21.0,>=3.19.0)",
+            "deprecated",
+            "typing-extensions",
+            "mypy-extensions",
+            "iso8601",
+            "swh.core[db,http] (>=0.2.0)",
+            "swh.model (>=0.6.6)",
+            "swh.objstorage (>=0.0.40)",
+            "swh.journal (>=0.4) ; extra == 'journal'",
+            "SQLAlchemy ; extra == 'schemata'",
+            "hypothesis (>=3.11.0) ; extra == 'testing'",
+            "pytest ; extra == 'testing'",
+            "pytest-mock ; extra == 'testing'",
+            "pytest-postgresql (>=2.1.0) ; extra == 'testing'",
+            "sqlalchemy-stubs ; extra == 'testing'",
+            "swh.model[testing] (>=0.0.50) ; extra == 'testing'",
+            "pytz ; extra == 'testing'",
+            "pytest-xdist ; extra == 'testing'",
+            "swh.journal (>=0.4) ; extra == 'testing'"
+          ],
+          "requires_python": ">=3.7"
+        }
       },
       "0.2.0": {
         "swh.storage-0.2.0-py3-none-any.whl": "0.1.0@swh.storage-0.1.0-py3-none-any.whl"
