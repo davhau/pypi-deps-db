@@ -12124,7 +12124,9 @@
       "37": "27",
       "38": "27"
     },
-    "0.3.1": "0.3.0"
+    "0.3.1": "0.3.0",
+    "0.3.2": "0.3.0",
+    "0.3.3": "0.2.9"
   },
   "echo_api": {
     "1.0.0.dev0": {
@@ -22654,6 +22656,8 @@
       "37": "27",
       "38": "27"
     },
+    "2.1.11": "2.1.10",
+    "2.1.12": "2.1.10",
     "2.1.2": "2.0.75",
     "2.1.3": "2.1.10",
     "2.1.4": "2.1.10",
@@ -23458,6 +23462,40 @@
     "0.7": "0.10",
     "0.8": "0.10",
     "0.9": "0.10"
+  },
+  "minecli": {
+    "0.1.0": {
+      "27": {
+        "install_requires": [
+          "appdirs<2.0.0,>=1.4.4",
+          "click<8.0.0,>=7.1.2",
+          "minelib<0.2.0,>=0.1.4"
+        ],
+        "python_requires": [
+          ">=3.8,<4.0"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    },
+    "0.1.1": {
+      "27": {
+        "install_requires": [
+          "appdirs<2.0.0,>=1.4.4",
+          "click<8.0.0,>=7.1.2",
+          "minelib<0.2.0,>=0.1.5"
+        ],
+        "python_requires": [
+          ">=3.8,<4.0"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    }
   },
   "minigym": {
     "0.1.0": {
@@ -41188,7 +41226,122 @@
       "37": "27",
       "38": "27"
     },
-    "3.2.1": "3.2.0"
+    "3.2.1": "3.2.0",
+    "3.3.0": {
+      "27": {
+        "install_requires": [
+          "perfmetrics>=3.0.0",
+          "zope.interface",
+          "zope.dottedname",
+          "zc.lockfile",
+          "BTrees>=4.7.2",
+          "ZODB>=5.5",
+          "transaction>=2.4.0"
+        ],
+        "extras_require": {
+          "docs": [
+            "sphinx",
+            "sphinxcontrib-programoutput",
+            "repoze.sphinx.autointerface",
+            "sphinx_rtd_theme"
+          ],
+          "test": [
+            "random2",
+            "zope.testing",
+            "ZODB[test]",
+            "zc.zlibstorage",
+            "zope.testrunner",
+            "nti.testing",
+            "pyperf"
+          ],
+          "oracle": [
+            "cx_Oracle>=6.0"
+          ],
+          "sqlite": [],
+          "sqlite3": [],
+          "memcache": [],
+          "all_tested_drivers": [],
+          "test:python_version > \"2.7\"": [
+            "ZEO>=5.2"
+          ],
+          "test:python_version == \"2.7\"": [
+            "mock"
+          ],
+          "test:sys_platform != \"win32\"": [
+            "gevent>=1.5a1"
+          ],
+          "postgresql: platform_python_implementation == \"PyPy\"": [
+            "psycopg2cffi>=2.8.1"
+          ],
+          "postgresql: platform_python_implementation == \"CPython\"": [
+            "psycopg2>=2.8.3"
+          ],
+          "all_tested_drivers:platform_python_implementation == \"CPython\"": [
+            "psycopg2>=2.8.3"
+          ],
+          "test:platform_python_implementation == \"PyPy\" or sys_platform == \"win32\"": [
+            "python-memcached"
+          ],
+          "mysql:platform_python_implementation==\"PyPy\" or (sys_platform == \"win32\")": [
+            "PyMySQL>=0.6.6"
+          ],
+          "test:platform_python_implementation == \"PyPy\" and python_version == \"2.7\"": [
+            "psutil==5.6.3"
+          ],
+          "test:platform_python_implementation == \"CPython\" or python_version != \"2.7\"": [
+            "psutil"
+          ],
+          "memcache:platform_python_implementation == \"PyPy\" or sys_platform == \"win32\"": [
+            "python-memcached"
+          ],
+          "test:platform_python_implementation == \"CPython\" and sys_platform != \"win32\"": [
+            "pylibmc"
+          ],
+          "mysql:platform_python_implementation==\"CPython\" and (sys_platform != \"win32\")": [
+            "mysqlclient!=2.0.0,>=1.4"
+          ],
+          "memcache:platform_python_implementation == \"CPython\" and sys_platform != \"win32\"": [
+            "pylibmc"
+          ],
+          "all_tested_drivers:python_version == \"2.7\" or platform_python_implementation == \"PyPy\"": [
+            "pg8000>=1.11.0"
+          ],
+          "all_tested_drivers:python_version == \"3.5\" or platform_python_implementation == \"PyPy\"": [
+            "psycopg2cffi>=2.7.4"
+          ],
+          "all_tested_drivers:python_version == \"3.7\" or platform_python_implementation == \"PyPy\"": [
+            "mysql-connector-python>=8.0.16"
+          ],
+          "all_tested_drivers:platform_python_implementation == \"CPython\" and sys_platform != \"win32\"": [
+            "mysqlclient!=2.0.0,>=1.4"
+          ],
+          "all_tested_drivers:python_version == \"3.6\" or platform_python_implementation == \"PyPy\" or sys_platform == \"win32\"": [
+            "PyMySQL>=0.6.6"
+          ]
+        },
+        "tests_require": [
+          "mock ; python_version == \"2.7\"",
+          "random2",
+          "zope.testing",
+          "ZODB [test]",
+          "ZEO >= 5.2; python_version > \"2.7\"",
+          "zc.zlibstorage",
+          "zope.testrunner",
+          "nti.testing",
+          "gevent >= 1.5a1; sys_platform != \"win32\"",
+          "pyperf",
+          "psutil; platform_python_implementation==\"CPython\" or python_version!=\"2.7\"",
+          "psutil == 5.6.3; platform_python_implementation==\"PyPy\" and python_version==\"2.7\"",
+          "pylibmc; platform_python_implementation==\"CPython\" and sys_platform != \"win32\"",
+          "python-memcached; platform_python_implementation==\"PyPy\" or sys_platform == \"win32\""
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    },
+    "3.3.1": "3.3.0"
   },
   "requests-aws": {
     "0.1.2": {
@@ -45460,7 +45613,8 @@
     },
     "3.0.253": "3.0.252",
     "3.0.254": "3.0.252",
-    "3.0.255": "3.0.252"
+    "3.0.255": "3.0.252",
+    "3.0.256": "3.0.252"
   },
   "tendril-costing": {
     "0.1.1": {
