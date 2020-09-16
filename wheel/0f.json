@@ -9790,6 +9790,9 @@
           ],
           "requires_python": ">=3.5, <4"
         }
+      },
+      "0.9.5": {
+        "e13tools-0.9.5-py3-none-any.whl": "0.9.4@e13tools-0.9.4-py3-none-any.whl"
       }
     }
   },
@@ -20828,6 +20831,21 @@
       },
       "0.8.1": {
         "nojava_ipmi_kvm-0.8.1-py3-none-any.whl": "0.3.1@nojava_ipmi_kvm-0.3.1-py3-none-any.whl"
+      },
+      "0.9.0": {
+        "nojava_ipmi_kvm-0.9.0-py3-none-any.whl": {
+          "provides_extras": [
+            "gui"
+          ],
+          "requires_dist": [
+            "requests",
+            "yacl",
+            "pyyaml",
+            "PyQt5 (>=5.12) ; extra == 'gui'",
+            "PyQtWebEngine (>=5.12) ; extra == 'gui'"
+          ],
+          "requires_python": "~=3.5"
+        }
       }
     }
   },
@@ -22810,6 +22828,27 @@
       "0.0.12": {
         "ome_zarr-0.0.12-py3-none-any.whl": "0.0.11@ome_zarr-0.0.11-py3-none-any.whl"
       },
+      "0.0.13": {
+        "ome_zarr-0.0.13-py3-none-any.whl": {
+          "provides_extras": [
+            "napari"
+          ],
+          "requires_dist": [
+            "numpy",
+            "dask",
+            "zarr",
+            "s3fs",
+            "aiohttp",
+            "requests",
+            "toolz",
+            "vispy",
+            "opencv-contrib-python-headless",
+            "dataclasses ; python_version < \"3.7\"",
+            "napari ; extra == 'napari'"
+          ],
+          "requires_python": ">=3.6"
+        }
+      },
       "0.0.2": {
         "ome_zarr-0.0.2-py3-none-any.whl": "0.0.1@ome_zarr-0.0.1-py3-none-any.whl"
       },
@@ -23863,26 +23902,6 @@
       },
       "0.6.9": {
         "powerapi-0.6.9-py2.py3-none-any.whl": "0.6.10@powerapi-0.6.10-py2.py3-none-any.whl"
-      },
-      "0.7.1": {
-        "powerapi-0.7.1-py2.py3-none-any.whl": {
-          "provides_extras": [
-            "docs",
-            "influxdb",
-            "mongodb",
-            "opentsdb"
-          ],
-          "requires_dist": [
-            "pyzmq (>=17.1)",
-            "setproctitle (>=1.1.10)",
-            "sphinx (>=1.8.1) ; extra == 'docs'",
-            "sphinx-autodoc-typehints (>=1.6.0) ; extra == 'docs'",
-            "influxdb (>=5.2.2) ; extra == 'influxdb'",
-            "pymongo (>=3.7.2) ; extra == 'mongodb'",
-            "opentsdb-py (>=0.6.0) ; extra == 'opentsdb'"
-          ],
-          "requires_python": ">=3.8"
-        }
       }
     }
   },
