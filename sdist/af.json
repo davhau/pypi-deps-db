@@ -7185,7 +7185,8 @@
       },
       "37": "27",
       "38": "27"
-    }
+    },
+    "1.2.0": "1.1.3"
   },
   "ceshicat": {
     "1.0": {
@@ -11048,6 +11049,72 @@
           "plotly",
           "dash_renderer==1.8.0",
           "dash-core-components==1.12.0",
+          "dash-html-components==1.1.1",
+          "dash-table==4.10.1",
+          "future"
+        ],
+        "extras_require": {
+          "dev": [
+            "dash_flow_example==0.0.5",
+            "dash-dangerously-set-inner-html",
+            "isort==4.3.21",
+            "flake8==3.7.9",
+            "PyYAML==5.3",
+            "fire==0.2.1",
+            "coloredlogs==14.0"
+          ],
+          "testing": [
+            "pytest-sugar==0.9.4",
+            "lxml==4.5.0",
+            "selenium==3.141.0",
+            "percy==2.0.2",
+            "cryptography==3.0",
+            "requests[security]==2.21.0",
+            "beautifulsoup4==4.8.2",
+            "waitress==1.4.3",
+            "flask-talisman==0.7.0"
+          ],
+          "dev:python_version < \"3.7\"": [
+            "pylint==1.9.4"
+          ],
+          "dev:python_version == \"2.7\"": [
+            "mock==3.0.5",
+            "virtualenv==20.0.10"
+          ],
+          "dev:python_version == \"3.7\"": [
+            "pylint==2.3.1",
+            "astroid==2.2.5"
+          ],
+          "dev:python_version >= \"3.0\"": [
+            "mock==4.0.1",
+            "black==19.10b0"
+          ],
+          "testing:python_version == \"2.7\"": [
+            "pytest==4.6.9",
+            "pytest-mock==2.0.0"
+          ],
+          "testing:python_version >= \"3.0\"": [
+            "pytest==6.0.1",
+            "pytest-mock==3.2.0"
+          ]
+        },
+        "python_requires": [
+          ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    },
+    "1.16.1": {
+      "27": {
+        "install_requires": [
+          "Flask>=1.0.2",
+          "flask-compress",
+          "plotly",
+          "dash_renderer==1.8.1",
+          "dash-core-components==1.12.1",
           "dash-html-components==1.1.1",
           "dash-table==4.10.1",
           "future"
@@ -25131,6 +25198,7 @@
     "1.14.60.0": "1.11.10.0",
     "1.14.61.0": "1.11.10.0",
     "1.14.62.0": "1.11.10.0",
+    "1.14.63.0": "1.11.10.0",
     "1.14.7.0": "1.11.10.0",
     "1.14.8.0": "1.11.10.0",
     "1.14.9.0": "1.11.10.0"
@@ -27081,7 +27149,118 @@
     },
     "1.2.0": "1.1.0",
     "1.2.1": "1.1.0",
-    "1.3.0": "1.1.0"
+    "1.3.0": "1.1.0",
+    "1.3.1": {
+      "27": {
+        "install_requires": [
+          "numpy>=1.18.0",
+          "gym>=0.17.2"
+        ],
+        "extras_require": {
+          "all": [
+            "multi_agent_ale_py==0.1.8",
+            "hanabi_learning_environment==0.0.1",
+            "pymunk==5.6.0",
+            "box2d-py",
+            "pygame==2.0.0.dev10",
+            "scikit-image>=0.16.2",
+            "python-shogi",
+            "rlcard>=0.2.5",
+            "gym[box2d]>=0.17.2",
+            "python-chess",
+            "opencv-python",
+            "magent==0.1.12"
+          ],
+          "mpe": [],
+          "sisl": [
+            "pygame==2.0.0.dev10",
+            "opencv-python",
+            "scikit-image>=0.16.2",
+            "gym[box2d]>=0.17.2",
+            "box2d-py"
+          ],
+          "atari": [
+            "multi_agent_ale_py==0.1.8",
+            "pygame==2.0.0.dev10"
+          ],
+          "tests": [
+            "pynput"
+          ],
+          "magent": [
+            "magent==0.1.12"
+          ],
+          "classic": [
+            "python-chess",
+            "rlcard>=0.2.5",
+            "python-shogi",
+            "hanabi_learning_environment==0.0.1"
+          ],
+          "butterfly": [
+            "pygame==2.0.0.dev10",
+            "pymunk==5.6.0"
+          ]
+        },
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "35": {
+        "install_requires": [
+          "numpy>=1.18.0",
+          "gym>=0.17.2"
+        ],
+        "extras_require": {
+          "all": [
+            "pygame==2.0.0.dev10",
+            "opencv-python",
+            "pymunk==5.6.0",
+            "multi_agent_ale_py==0.1.8",
+            "hanabi_learning_environment==0.0.1",
+            "box2d-py",
+            "gym[box2d]>=0.17.2",
+            "magent==0.1.12",
+            "scikit-image>=0.16.2",
+            "rlcard>=0.2.5",
+            "python-shogi",
+            "python-chess"
+          ],
+          "mpe": [],
+          "sisl": [
+            "pygame==2.0.0.dev10",
+            "opencv-python",
+            "scikit-image>=0.16.2",
+            "gym[box2d]>=0.17.2",
+            "box2d-py"
+          ],
+          "atari": [
+            "multi_agent_ale_py==0.1.8",
+            "pygame==2.0.0.dev10"
+          ],
+          "tests": [
+            "pynput"
+          ],
+          "magent": [
+            "magent==0.1.12"
+          ],
+          "classic": [
+            "python-chess",
+            "rlcard>=0.2.5",
+            "python-shogi",
+            "hanabi_learning_environment==0.0.1"
+          ],
+          "butterfly": [
+            "pygame==2.0.0.dev10",
+            "pymunk==5.6.0"
+          ]
+        },
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "36": "35",
+      "37": "35",
+      "38": "35"
+    }
   },
   "pgjobs": {
     "0.1.0": {
@@ -33297,7 +33476,8 @@
       "36": "27",
       "37": "27",
       "38": "27"
-    }
+    },
+    "1.1.1": "1.0.0"
   },
   "singleurlcrud": {
     "0.16": {
