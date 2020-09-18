@@ -24801,7 +24801,31 @@
     "0.5.0a11": "0.4.0a10",
     "0.5.0a12": "0.4.0a10",
     "0.6.0a13": "0.4.0a10",
-    "0.7.0a14": "0.4.0a10"
+    "0.7.0a14": "0.4.0a10",
+    "0.8.0rc16": {
+      "35": {
+        "install_requires": [
+          "Django>=2.1",
+          "djangorestframework>=3.10",
+          "django-countries>=5",
+          "django-phonenumber-field[phonenumberslite]>=2.3",
+          "drf-nested-routers>=0.90",
+          "python-dateutil>=2.7"
+        ],
+        "extras_require": {
+          "testing": [
+            "tox",
+            "watchdog"
+          ],
+          "development": [
+            "psycopg2-binary"
+          ]
+        }
+      },
+      "36": "35",
+      "37": "35",
+      "38": "35"
+    }
   },
   "hwinfo": {
     "0.1.0": {
@@ -30167,7 +30191,8 @@
     "1.14.63.0": "1.11.10.0",
     "1.14.7.0": "1.11.10.0",
     "1.14.8.0": "1.11.10.0",
-    "1.14.9.0": "1.11.10.0"
+    "1.14.9.0": "1.11.10.0",
+    "1.15.0.0": "1.11.10.0"
   },
   "mypy-boto3-lightsail": {
     "0.1.10": {
@@ -30647,7 +30672,8 @@
     "1.14.63.0": "1.11.10.0",
     "1.14.7.0": "1.11.10.0",
     "1.14.8.0": "1.11.10.0",
-    "1.14.9.0": "1.11.10.0"
+    "1.14.9.0": "1.11.10.0",
+    "1.15.0.0": "1.11.10.0"
   },
   "mypyprotobuf": {
     "0.1.1": {
@@ -41985,6 +42011,55 @@
           "radio_beam",
           "six"
         ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    },
+    "0.5.0": {
+      "27": {
+        "install_requires": [
+          "astropy",
+          "numpy>=1.8.0",
+          "radio_beam",
+          "six",
+          "dask[array]",
+          "joblib"
+        ],
+        "extras_require": {
+          "all": [
+            "zarr",
+            "fsspec",
+            "aplpy",
+            "glue-core[qt]",
+            "matplotlib",
+            "pvextractor",
+            "reproject",
+            "scipy"
+          ],
+          "docs": [
+            "sphinx-astropy"
+          ],
+          "test": [
+            "pytest-astropy",
+            "pytest-cov"
+          ],
+          "novis": [
+            "zarr",
+            "fsspec",
+            "pvextractor",
+            "reproject",
+            "scipy"
+          ],
+          "all:python_version < \"3.8\"": [
+            "regions",
+            "yt"
+          ],
+          "novis:python_version < \"3.8\"": [
+            "regions"
+          ]
+        }
       },
       "35": "27",
       "36": "27",
