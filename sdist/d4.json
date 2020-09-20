@@ -87699,7 +87699,8 @@
     "0.0.3": "0.0.1",
     "0.0.3.1": "0.0.1",
     "0.0.3.2": "0.0.1",
-    "0.0.3.3": "0.0.1"
+    "0.0.3.3": "0.0.1",
+    "0.0.3.4": "0.0.1"
   },
   "nlgen": {
     "0.0.2": {
@@ -93609,6 +93610,72 @@
             "click"
           ],
           "tests:sys_platform == \"linux\"": [
+            "pytest-xvfb"
+          ]
+        },
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "36": "35",
+      "37": "35",
+      "38": "35"
+    },
+    "0.2.0": {
+      "35": {
+        "install_requires": [
+          "async_generator",
+          "attrs",
+          "decorator",
+          "outcome",
+          "qtpy",
+          "trio>=0.16"
+        ],
+        "extras_require": {
+          "cli": [
+            "click"
+          ],
+          "pyqt5": [
+            "pyqt5>=5.15.1",
+            "pyqt5-stubs"
+          ],
+          "p_docs": [
+            "pytest>=6",
+            "sphinx>=3.2.1",
+            "sphinx-autodoc-typehints",
+            "sphinx-qt-documentation>=0.3",
+            "sphinx_rtd_theme",
+            "sphinxcontrib-trio",
+            "towncrier>=19.9.0rc1"
+          ],
+          "p_tests": [
+            "click",
+            "click",
+            "click",
+            "coverage",
+            "pytest>=6",
+            "pytest-cov",
+            "pytest-faulthandler",
+            "pytest-qt",
+            "pytest-trio"
+          ],
+          "pyside2": [
+            "pyside2"
+          ],
+          "examples": [
+            "click"
+          ],
+          "p_checks": [
+            "black",
+            "flake8",
+            "mypy",
+            "pytest>=6",
+            "towncrier>=19.9.0rc1"
+          ],
+          ":python_version < \"3.8\"": [
+            "typing-extensions"
+          ],
+          "p_tests:sys_platform == \"linux\"": [
             "pytest-xvfb"
           ]
         },
