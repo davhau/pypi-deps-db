@@ -3302,6 +3302,9 @@
       "0.0.13a131": {
         "binalyzer_core-0.0.13a131-py3-none-any.whl": "0.0.13a104@binalyzer_core-0.0.13a104-py3-none-any.whl"
       },
+      "0.0.13a132": {
+        "binalyzer_core-0.0.13a132-py3-none-any.whl": "0.0.13a104@binalyzer_core-0.0.13a104-py3-none-any.whl"
+      },
       "0.0.13a78": {
         "binalyzer_core-0.0.13a78-py3-none-any.whl": "0.0.13a100@binalyzer_core-0.0.13a100-py3-none-any.whl"
       },
@@ -6444,9 +6447,9 @@
     }
   },
   "cupy-cuda110": {
-    "cp36": {
+    "cp35": {
       "7.8.0": {
-        "cupy_cuda110-7.8.0-cp36-cp36m-win_amd64.whl": {
+        "cupy_cuda110-7.8.0-cp35-cp35m-manylinux1_x86_64.whl": {
           "provides_extras": [
             "appveyor",
             "docs",
@@ -6493,7 +6496,7 @@
         }
       },
       "8.0.0rc1": {
-        "cupy_cuda110-8.0.0rc1-cp36-cp36m-win_amd64.whl": {
+        "cupy_cuda110-8.0.0rc1-cp35-cp35m-manylinux1_x86_64.whl": {
           "provides_extras": [
             "appveyor",
             "docs",
@@ -6535,11 +6538,106 @@
           ],
           "requires_python": ">=3.5.0"
         }
+      }
+    },
+    "cp36": {
+      "7.8.0": {
+        "cupy_cuda110-7.8.0-cp36-cp36m-manylinux1_x86_64.whl": {
+          "provides_extras": [
+            "appveyor",
+            "docs",
+            "doctest",
+            "jenkins",
+            "setup",
+            "stylecheck",
+            "test",
+            "travis"
+          ],
+          "requires_dist": [
+            "numpy (>=1.9.0)",
+            "six (>=1.9.0)",
+            "fastrlock (>=0.3)",
+            "pytest (<4.2.0) ; extra == 'appveyor'",
+            "attrs (<19.2.0) ; extra == 'appveyor'",
+            "mock ; extra == 'appveyor'",
+            "sphinx (==3.0.4) ; extra == 'docs'",
+            "sphinx-rtd-theme ; extra == 'docs'",
+            "matplotlib ; extra == 'doctest'",
+            "pytest (<4.2.0) ; extra == 'jenkins'",
+            "attrs (<19.2.0) ; extra == 'jenkins'",
+            "mock ; extra == 'jenkins'",
+            "pytest-timeout ; extra == 'jenkins'",
+            "pytest-cov ; extra == 'jenkins'",
+            "coveralls ; extra == 'jenkins'",
+            "codecov ; extra == 'jenkins'",
+            "fastrlock (>=0.3) ; extra == 'setup'",
+            "autopep8 (==1.4.4) ; extra == 'stylecheck'",
+            "flake8 (==3.7.9) ; extra == 'stylecheck'",
+            "pbr (==4.0.4) ; extra == 'stylecheck'",
+            "pycodestyle (==2.5.0) ; extra == 'stylecheck'",
+            "pytest (<4.2.0) ; extra == 'test'",
+            "attrs (<19.2.0) ; extra == 'test'",
+            "mock ; extra == 'test'",
+            "autopep8 (==1.4.4) ; extra == 'travis'",
+            "flake8 (==3.7.9) ; extra == 'travis'",
+            "pbr (==4.0.4) ; extra == 'travis'",
+            "pycodestyle (==2.5.0) ; extra == 'travis'",
+            "sphinx (==3.0.4) ; extra == 'travis'",
+            "sphinx-rtd-theme ; extra == 'travis'"
+          ],
+          "requires_python": ">=3.5.0"
+        },
+        "cupy_cuda110-7.8.0-cp36-cp36m-win_amd64.whl": "7.8.0@cupy_cuda110-7.8.0-cp36-cp36m-manylinux1_x86_64.whl"
+      },
+      "8.0.0rc1": {
+        "cupy_cuda110-8.0.0rc1-cp36-cp36m-manylinux1_x86_64.whl": {
+          "provides_extras": [
+            "appveyor",
+            "docs",
+            "doctest",
+            "jenkins",
+            "setup",
+            "stylecheck",
+            "test",
+            "travis"
+          ],
+          "requires_dist": [
+            "numpy (>=1.15)",
+            "fastrlock (>=0.3)",
+            "pytest (<4.2.0) ; extra == 'appveyor'",
+            "attrs (<19.2.0) ; extra == 'appveyor'",
+            "sphinx (==3.0.4) ; extra == 'docs'",
+            "sphinx-rtd-theme ; extra == 'docs'",
+            "matplotlib ; extra == 'doctest'",
+            "optuna ; extra == 'doctest'",
+            "pytest (<4.2.0) ; extra == 'jenkins'",
+            "attrs (<19.2.0) ; extra == 'jenkins'",
+            "pytest-timeout ; extra == 'jenkins'",
+            "pytest-cov ; extra == 'jenkins'",
+            "coveralls ; extra == 'jenkins'",
+            "codecov ; extra == 'jenkins'",
+            "fastrlock (>=0.3) ; extra == 'setup'",
+            "autopep8 (==1.4.4) ; extra == 'stylecheck'",
+            "flake8 (==3.7.9) ; extra == 'stylecheck'",
+            "pbr (==4.0.4) ; extra == 'stylecheck'",
+            "pycodestyle (==2.5.0) ; extra == 'stylecheck'",
+            "pytest (<4.2.0) ; extra == 'test'",
+            "attrs (<19.2.0) ; extra == 'test'",
+            "autopep8 (==1.4.4) ; extra == 'travis'",
+            "flake8 (==3.7.9) ; extra == 'travis'",
+            "pbr (==4.0.4) ; extra == 'travis'",
+            "pycodestyle (==2.5.0) ; extra == 'travis'",
+            "sphinx (==3.0.4) ; extra == 'travis'",
+            "sphinx-rtd-theme ; extra == 'travis'"
+          ],
+          "requires_python": ">=3.5.0"
+        },
+        "cupy_cuda110-8.0.0rc1-cp36-cp36m-win_amd64.whl": "8.0.0rc1@cupy_cuda110-8.0.0rc1-cp36-cp36m-manylinux1_x86_64.whl"
       }
     },
     "cp37": {
       "7.8.0": {
-        "cupy_cuda110-7.8.0-cp37-cp37m-win_amd64.whl": {
+        "cupy_cuda110-7.8.0-cp37-cp37m-manylinux1_x86_64.whl": {
           "provides_extras": [
             "appveyor",
             "docs",
@@ -6583,10 +6681,11 @@
             "sphinx-rtd-theme ; extra == 'travis'"
           ],
           "requires_python": ">=3.5.0"
-        }
+        },
+        "cupy_cuda110-7.8.0-cp37-cp37m-win_amd64.whl": "7.8.0@cupy_cuda110-7.8.0-cp37-cp37m-manylinux1_x86_64.whl"
       },
       "8.0.0rc1": {
-        "cupy_cuda110-8.0.0rc1-cp37-cp37m-win_amd64.whl": {
+        "cupy_cuda110-8.0.0rc1-cp37-cp37m-manylinux1_x86_64.whl": {
           "provides_extras": [
             "appveyor",
             "docs",
@@ -6627,12 +6726,13 @@
             "sphinx-rtd-theme ; extra == 'travis'"
           ],
           "requires_python": ">=3.5.0"
-        }
+        },
+        "cupy_cuda110-8.0.0rc1-cp37-cp37m-win_amd64.whl": "8.0.0rc1@cupy_cuda110-8.0.0rc1-cp37-cp37m-manylinux1_x86_64.whl"
       }
     },
     "cp38": {
       "7.8.0": {
-        "cupy_cuda110-7.8.0-cp38-cp38-win_amd64.whl": {
+        "cupy_cuda110-7.8.0-cp38-cp38-manylinux1_x86_64.whl": {
           "provides_extras": [
             "appveyor",
             "docs",
@@ -6676,10 +6776,11 @@
             "sphinx-rtd-theme ; extra == 'travis'"
           ],
           "requires_python": ">=3.5.0"
-        }
+        },
+        "cupy_cuda110-7.8.0-cp38-cp38-win_amd64.whl": "7.8.0@cupy_cuda110-7.8.0-cp38-cp38-manylinux1_x86_64.whl"
       },
       "8.0.0rc1": {
-        "cupy_cuda110-8.0.0rc1-cp38-cp38-win_amd64.whl": {
+        "cupy_cuda110-8.0.0rc1-cp38-cp38-manylinux1_x86_64.whl": {
           "provides_extras": [
             "appveyor",
             "docs",
@@ -6720,7 +6821,8 @@
             "sphinx-rtd-theme ; extra == 'travis'"
           ],
           "requires_python": ">=3.5.0"
-        }
+        },
+        "cupy_cuda110-8.0.0rc1-cp38-cp38-win_amd64.whl": "8.0.0rc1@cupy_cuda110-8.0.0rc1-cp38-cp38-manylinux1_x86_64.whl"
       }
     }
   },
@@ -13502,6 +13604,18 @@
       },
       "0.1.9": {
         "learn_flow-0.1.9-py3-none-any.whl": "0.0.6@learn_flow-0.0.6-py3-none-any.whl"
+      }
+    }
+  },
+  "lethical-lib": {
+    "py3": {
+      "0.0.1": {
+        "lethical_lib-0.0.1-py3-none-any.whl": {
+          "requires_python": ">=3.6,<4.0"
+        }
+      },
+      "0.0.2": {
+        "lethical_lib-0.0.2-py3-none-any.whl": "0.0.1@lethical_lib-0.0.1-py3-none-any.whl"
       }
     }
   },
