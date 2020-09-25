@@ -12201,6 +12201,19 @@
       }
     }
   },
+  "itolparser": {
+    "py3": {
+      "0.1": {
+        "itolparser-0.1-py3-none-any.whl": {
+          "requires_dist": [
+            "colorbrewer",
+            "pandas",
+            "numpy"
+          ]
+        }
+      }
+    }
+  },
   "jupyter-panel-proxy": {
     "py2.py3": {
       "0.1.0": {
@@ -27337,6 +27350,33 @@
       },
       "0.2.3": {
         "swh.indexer-0.2.3-py3-none-any.whl": "0.2.1@swh.indexer-0.2.1-py3-none-any.whl"
+      },
+      "0.2.4": {
+        "swh.indexer-0.2.4-py3-none-any.whl": {
+          "provides_extras": [
+            "testing"
+          ],
+          "requires_dist": [
+            "vcversioner",
+            "click",
+            "python-magic (>=0.4.13)",
+            "pyld",
+            "xmltodict",
+            "swh.core[db,http] (>=0.3)",
+            "swh.model (>=0.0.15)",
+            "swh.objstorage (>=0.0.43)",
+            "swh.scheduler (>=0.5.2)",
+            "swh.storage (>=0.12.0)",
+            "swh.journal (>=0.1.0)",
+            "confluent-kafka ; extra == 'testing'",
+            "pytest ; extra == 'testing'",
+            "pytest-mock ; extra == 'testing'",
+            "hypothesis (>=3.11.0) ; extra == 'testing'",
+            "swh.scheduler[testing] (>=0.5.0) ; extra == 'testing'",
+            "swh.storage[testing] (>=0.10.0) ; extra == 'testing'"
+          ],
+          "requires_python": ">=3.7"
+        }
       }
     }
   },
