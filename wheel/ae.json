@@ -4674,6 +4674,9 @@
       "1.18.5": {
         "botocore-1.18.5-py2.py3-none-any.whl": "1.18.0@botocore-1.18.0-py2.py3-none-any.whl"
       },
+      "1.18.6": {
+        "botocore-1.18.6-py2.py3-none-any.whl": "1.18.0@botocore-1.18.0-py2.py3-none-any.whl"
+      },
       "1.2.0": {
         "botocore-1.2.0-py2.py3-none-any.whl": "1.0.0@botocore-1.0.0-py2.py3-none-any.whl"
       },
@@ -21002,6 +21005,17 @@
         "onigurumacffi-0.0.18-pp36-pypy36_pp73-manylinux1_x86_64.whl": "0.0.16@onigurumacffi-0.0.16-pp36-pypy36_pp73-manylinux1_x86_64.whl",
         "onigurumacffi-0.0.18-pp36-pypy36_pp73-manylinux2010_x86_64.whl": "0.0.16@onigurumacffi-0.0.16-pp36-pypy36_pp73-manylinux1_x86_64.whl"
       }
+    },
+    "pp37": {
+      "0.0.18": {
+        "onigurumacffi-0.0.18-pp37-pypy37_pp73-manylinux1_x86_64.whl": {
+          "requires_dist": [
+            "cffi (>=1)"
+          ],
+          "requires_python": ">=3.6.1"
+        },
+        "onigurumacffi-0.0.18-pp37-pypy37_pp73-manylinux2010_x86_64.whl": "0.0.18@onigurumacffi-0.0.18-pp37-pypy37_pp73-manylinux1_x86_64.whl"
+      }
     }
   },
   "openapi-generator-cli": {
@@ -21291,6 +21305,23 @@
             "waitress",
             "pyyaml",
             "pyonmttok (==1.*) ; platform_system == \"Linux\""
+          ]
+        }
+      },
+      "2.0.0rc1": {
+        "OpenNMT_py-2.0.0rc1-py3-none-any.whl": {
+          "requires_dist": [
+            "six",
+            "tqdm",
+            "torch (>=1.6.0)",
+            "torchtext (==0.4.0)",
+            "future",
+            "configargparse",
+            "tensorboard (>=1.14)",
+            "flask",
+            "waitress",
+            "pyyaml",
+            "pyonmttok (>=1.19.*) ; platform_system == \"Linux\""
           ]
         }
       }
@@ -24848,6 +24879,28 @@
             "aiopg (>=0.14.0) ; extra == 'aiopg'",
             "pylint ; extra == 'develop'",
             "wheel ; extra == 'develop'",
+            "aiomysql ; extra == 'develop'",
+            "aiopg ; extra == 'develop'",
+            "psycopg2 ; extra == 'develop'"
+          ]
+        }
+      }
+    },
+    "py3": {
+      "0.7.1": {
+        "peewee_async-0.7.1-py3-none-any.whl": {
+          "provides_extras": [
+            "aiomysql",
+            "aiopg",
+            "develop"
+          ],
+          "requires_dist": [
+            "peewee (<4.0,>=3.5.0)",
+            "aiomysql (>=0.0.19) ; extra == 'aiomysql'",
+            "aiopg (>=0.14.0) ; extra == 'aiopg'",
+            "pylint ; extra == 'develop'",
+            "wheel ; extra == 'develop'",
+            "twine ; extra == 'develop'",
             "aiomysql ; extra == 'develop'",
             "aiopg ; extra == 'develop'",
             "psycopg2 ; extra == 'develop'"
@@ -34832,6 +34885,30 @@
       },
       "2.1.4": {
         "widget_periodictable-2.1.4-py2.py3-none-any.whl": "0.1.0.dev0@widget_periodictable-0.1.0.dev0-py2.py3-none-any.whl"
+      },
+      "2.1.5": {
+        "widget_periodictable-2.1.5-py2.py3-none-any.whl": {
+          "provides_extras": [
+            "docs",
+            "examples",
+            "test"
+          ],
+          "requires_dist": [
+            "ipywidgets (>=7.0.0)",
+            "sphinx (>=1.5) ; extra == 'docs'",
+            "recommonmark ; extra == 'docs'",
+            "sphinx-rtd-theme ; extra == 'docs'",
+            "nbsphinx (<0.4.0,>=0.2.13) ; extra == 'docs'",
+            "jupyter-sphinx ; extra == 'docs'",
+            "nbsphinx-link ; extra == 'docs'",
+            "pytest-check-links ; extra == 'docs'",
+            "pypandoc ; extra == 'docs'",
+            "pytest (>=3.6) ; extra == 'test'",
+            "pytest-cov ; extra == 'test'",
+            "nbval ; extra == 'test'",
+            "pre-commit ; extra == 'test'"
+          ]
+        }
       }
     }
   },
