@@ -62120,7 +62120,8 @@
     "1.8.0.dev20200922": "1.8.0.dev20200914",
     "1.8.0.dev20200923": "1.8.0.dev20200914",
     "1.8.0.dev20200924": "1.8.0.dev20200914",
-    "1.8.0.dev20200925": "1.8.0.dev20200914"
+    "1.8.0.dev20200925": "1.8.0.dev20200914",
+    "1.8.0.dev20200926": "1.8.0.dev20200914"
   },
   "pyredisrpc": {
     "0.1.0": {
@@ -69721,7 +69722,53 @@
     },
     "6.0.0rc1": "6.0.0",
     "6.0.1": "6.0.0",
-    "6.0.2": "6.0.0"
+    "6.0.2": "6.0.0",
+    "6.1.0": {
+      "27": {
+        "install_requires": [
+          "attrs>=17.4.0",
+          "iniconfig",
+          "packaging",
+          "pluggy<1.0,>=0.12",
+          "py>=1.8.2",
+          "toml"
+        ],
+        "setup_requires": [
+          "setuptools>=40.0",
+          "setuptools-scm"
+        ],
+        "extras_require": {
+          "testing": [
+            "argcomplete",
+            "hypothesis>=3.56",
+            "mock",
+            "nose",
+            "requests",
+            "xmlschema"
+          ],
+          "checkqa_mypy": [
+            "mypy==0.780"
+          ],
+          ":python_version < \"3.6\"": [
+            "pathlib2>=2.2.0"
+          ],
+          ":python_version < \"3.8\"": [
+            "importlib-metadata>=0.12"
+          ],
+          ":sys_platform == \"win32\"": [
+            "atomicwrites>=1.0",
+            "colorama"
+          ]
+        },
+        "python_requires": [
+          ">=3.5"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    }
   },
   "pytest-django-ifactory": {
     "0.1.0": {
