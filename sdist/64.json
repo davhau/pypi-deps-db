@@ -176,7 +176,8 @@
     "1.0.1": "1.0.0",
     "1.0.2": "1.0.0",
     "1.0.3": "1.0.0",
-    "1.0.5": "1.0.0"
+    "1.0.5": "1.0.0",
+    "1.0.6": "1.0.0"
   },
   "aisy": {
     "0.0.0": {
@@ -5808,6 +5809,7 @@
     "0.4.51": "0.4.29",
     "0.4.52": "0.4.29",
     "0.4.53": "0.4.29",
+    "0.4.54": "0.4.29",
     "0.4.6": "0.4.10",
     "0.4.7": "0.4.10",
     "0.4.8": "0.4.10",
@@ -14353,6 +14355,44 @@
       "36": "27",
       "37": "27",
       "38": "27"
+    },
+    "0.14.1": {
+      "27": {
+        "install_requires": [
+          "numpy>=1.16.4",
+          "pandas>=0.25.0",
+          "scipy>=1.2.1",
+          "scikit-learn>=0.23",
+          "scikit-optimize>=0.8",
+          "colorama",
+          "cloudpickle>=0.2.2",
+          "click>=7.0.0",
+          "psutil>=5.6.3",
+          "requirements-parser>=0.2.0",
+          "shap>=0.35.0",
+          "texttable>=1.6.2",
+          "plotly>=4.2.1",
+          "ipywidgets>=7.5",
+          "xgboost>=0.82",
+          "catboost>=0.20",
+          "lightgbm>=2.3.1"
+        ],
+        "tests_require": [
+          "pytest==4.4.1\n",
+          "pytest-xdist==1.26.1\n",
+          "pytest-cov==2.6.1\n",
+          "nbval==0.9.3\n",
+          "graphviz>=0.13\n",
+          "codecov==2.1.0\n",
+          "category_encoders>=2.0.0\n",
+          "featuretools\n",
+          "nlp_primitives>=1.0.0\n"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
     }
   },
   "ewa": {
@@ -17286,7 +17326,8 @@
     "0.2.5": "0.2.1",
     "0.2.6": "0.2.1",
     "0.2.7": "0.2.1",
-    "0.2.8": "0.2.1"
+    "0.2.8": "0.2.1",
+    "0.2.9": "0.2.1"
   },
   "gelf-formatter": {
     "0.1.0": {
@@ -21221,6 +21262,248 @@
       },
       "36": {
         "install_requires": [
+          "isort>=5",
+          "arrow>=0.15.0",
+          "Flask-Debugtoolbar>=0.10.1",
+          "invenio[auth,base]<3.4,>=3.3.0",
+          "invenio-i18n<1.3.0,>=1.2.0",
+          "invenio-indexer<1.2.0,>=1.1.0",
+          "invenio-jsonschemas<1.2.0,>=1.1.0",
+          "invenio-pidstore<1.3.0,>=1.2.0",
+          "invenio-records-rest<1.8.0,>=1.7.1",
+          "invenio-records<1.4.0,>=1.3.1",
+          "invenio-rest>=1.2.1",
+          "invenio-files-rest<1.3.0,>=1.2.0",
+          "invenio-circulation<1.1.0,>=1.0.0a27",
+          "invenio-stats<1.1.0,>=1.0.0a18",
+          "invenio-pages<1.1.0,>=1.0.0a5",
+          "invenio-pidrelations<1.1.0,>=1.0.0a6",
+          "invenio-opendefinition<1.1.0,>=1.0.0a9",
+          "sentry-sdk>=0.10.2",
+          "simplejson>=3"
+        ],
+        "setup_requires": [
+          "Babel>=2.4.0",
+          "pytest-runner>=3.0.0,<5"
+        ],
+        "extras_require": {
+          "all": [
+            "Sphinx>=1.5.1",
+            "lorem>=0.1.1",
+            "mock>=2.0.0",
+            "pytest-invenio<1.4.0,>=1.3.2",
+            "pytest-mock>=1.6.0",
+            "invenio-db[postgresql,versioning]<1.1.0,>=1.0.4",
+            "Sphinx>=1.5.1",
+            "lorem>=0.1.1",
+            "mock>=2.0.0",
+            "pytest-invenio<1.4.0,>=1.3.2",
+            "pytest-mock>=1.6.0",
+            "invenio-db[postgresql,versioning]<1.1.0,>=1.0.4"
+          ],
+          "docs": [
+            "Sphinx>=1.5.1"
+          ],
+          "lorem": [
+            "lorem>=0.1.1"
+          ],
+          "mysql": [
+            "invenio-db[mysql,versioning]<1.1.0,>=1.0.4"
+          ],
+          "tests": [
+            "mock>=2.0.0",
+            "pytest-invenio<1.4.0,>=1.3.2",
+            "pytest-mock>=1.6.0"
+          ],
+          "sqlite": [
+            "invenio-db[versioning]<1.1.0,>=1.0.4"
+          ],
+          "postgresql": [
+            "invenio-db[postgresql,versioning]<1.1.0,>=1.0.4"
+          ],
+          "vocabulary": [
+            "pycountry>=19.8.18"
+          ],
+          "elasticsearch6": [
+            "invenio-search[elasticsearch6]<1.4.0,>=1.3.1"
+          ],
+          "elasticsearch7": [
+            "invenio-search[elasticsearch7]<1.4.0,>=1.3.1"
+          ]
+        },
+        "tests_require": [
+          "mock>=2.0.0",
+          "pytest-invenio>=1.3.2,<1.4.0",
+          "pytest-mock>=1.6.0"
+        ],
+        "python_requires": [
+          ">=3"
+        ]
+      },
+      "37": "36",
+      "38": "36"
+    },
+    "1.0.0a13": {
+      "27": {
+        "install_requires": [
+          "celery!=4.3,<5,>=4.2.1",
+          "isort>=5",
+          "arrow>=0.15.0",
+          "Flask-Debugtoolbar>=0.10.1",
+          "invenio[auth,base]<3.4,>=3.3.0",
+          "invenio-i18n<1.3.0,>=1.2.0",
+          "invenio-indexer<1.2.0,>=1.1.0",
+          "invenio-jsonschemas<1.2.0,>=1.1.0",
+          "invenio-pidstore<1.3.0,>=1.2.0",
+          "invenio-records-rest<1.8.0,>=1.7.1",
+          "invenio-records<1.4.0,>=1.3.1",
+          "invenio-rest>=1.2.1",
+          "invenio-files-rest<1.3.0,>=1.2.0",
+          "invenio-circulation<1.1.0,>=1.0.0a27",
+          "invenio-stats<1.1.0,>=1.0.0a18",
+          "invenio-pages<1.1.0,>=1.0.0a5",
+          "invenio-pidrelations<1.1.0,>=1.0.0a6",
+          "invenio-opendefinition<1.1.0,>=1.0.0a9",
+          "sentry-sdk>=0.10.2",
+          "simplejson>=3"
+        ],
+        "setup_requires": [
+          "Babel>=2.4.0",
+          "pytest-runner>=3.0.0,<5"
+        ],
+        "extras_require": {
+          "all": [
+            "mock>=2.0.0",
+            "pytest-invenio<1.4.0,>=1.3.2",
+            "pytest-mock>=1.6.0",
+            "invenio-db[postgresql,versioning]<1.1.0,>=1.0.4",
+            "mock>=2.0.0",
+            "pytest-invenio<1.4.0,>=1.3.2",
+            "pytest-mock>=1.6.0",
+            "invenio-db[postgresql,versioning]<1.1.0,>=1.0.4",
+            "Sphinx>=1.5.1",
+            "lorem>=0.1.1"
+          ],
+          "docs": [
+            "Sphinx>=1.5.1"
+          ],
+          "lorem": [
+            "lorem>=0.1.1"
+          ],
+          "mysql": [
+            "invenio-db[mysql,versioning]<1.1.0,>=1.0.4"
+          ],
+          "tests": [
+            "mock>=2.0.0",
+            "pytest-invenio<1.4.0,>=1.3.2",
+            "pytest-mock>=1.6.0"
+          ],
+          "sqlite": [
+            "invenio-db[versioning]<1.1.0,>=1.0.4"
+          ],
+          "postgresql": [
+            "invenio-db[postgresql,versioning]<1.1.0,>=1.0.4"
+          ],
+          "vocabulary": [
+            "pycountry>=19.8.18"
+          ],
+          "elasticsearch6": [
+            "invenio-search[elasticsearch6]<1.4.0,>=1.3.1"
+          ],
+          "elasticsearch7": [
+            "invenio-search[elasticsearch7]<1.4.0,>=1.3.1"
+          ]
+        },
+        "tests_require": [
+          "mock>=2.0.0",
+          "pytest-invenio>=1.3.2,<1.4.0",
+          "pytest-mock>=1.6.0"
+        ],
+        "python_requires": [
+          ">=3"
+        ]
+      },
+      "35": {
+        "install_requires": [
+          "celery!=4.3,<5,>=4.2.1",
+          "isort>=5",
+          "arrow>=0.15.0",
+          "Flask-Debugtoolbar>=0.10.1",
+          "invenio[auth,base]<3.4,>=3.3.0",
+          "invenio-i18n<1.3.0,>=1.2.0",
+          "invenio-indexer<1.2.0,>=1.1.0",
+          "invenio-jsonschemas<1.2.0,>=1.1.0",
+          "invenio-pidstore<1.3.0,>=1.2.0",
+          "invenio-records-rest<1.8.0,>=1.7.1",
+          "invenio-records<1.4.0,>=1.3.1",
+          "invenio-rest>=1.2.1",
+          "invenio-files-rest<1.3.0,>=1.2.0",
+          "invenio-circulation<1.1.0,>=1.0.0a27",
+          "invenio-stats<1.1.0,>=1.0.0a18",
+          "invenio-pages<1.1.0,>=1.0.0a5",
+          "invenio-pidrelations<1.1.0,>=1.0.0a6",
+          "invenio-opendefinition<1.1.0,>=1.0.0a9",
+          "sentry-sdk>=0.10.2",
+          "simplejson>=3"
+        ],
+        "setup_requires": [
+          "Babel>=2.4.0",
+          "pytest-runner>=3.0.0,<5"
+        ],
+        "extras_require": {
+          "all": [
+            "mock>=2.0.0",
+            "pytest-invenio<1.4.0,>=1.3.2",
+            "pytest-mock>=1.6.0",
+            "mock>=2.0.0",
+            "pytest-invenio<1.4.0,>=1.3.2",
+            "pytest-mock>=1.6.0",
+            "Sphinx>=1.5.1",
+            "lorem>=0.1.1",
+            "invenio-db[postgresql,versioning]<1.1.0,>=1.0.4"
+          ],
+          "docs": [
+            "Sphinx>=1.5.1"
+          ],
+          "lorem": [
+            "lorem>=0.1.1"
+          ],
+          "mysql": [
+            "invenio-db[mysql,versioning]<1.1.0,>=1.0.4"
+          ],
+          "tests": [
+            "mock>=2.0.0",
+            "pytest-invenio<1.4.0,>=1.3.2",
+            "pytest-mock>=1.6.0"
+          ],
+          "sqlite": [
+            "invenio-db[versioning]<1.1.0,>=1.0.4"
+          ],
+          "postgresql": [
+            "invenio-db[postgresql,versioning]<1.1.0,>=1.0.4"
+          ],
+          "vocabulary": [
+            "pycountry>=19.8.18"
+          ],
+          "elasticsearch6": [
+            "invenio-search[elasticsearch6]<1.4.0,>=1.3.1"
+          ],
+          "elasticsearch7": [
+            "invenio-search[elasticsearch7]<1.4.0,>=1.3.1"
+          ]
+        },
+        "tests_require": [
+          "mock>=2.0.0",
+          "pytest-invenio>=1.3.2,<1.4.0",
+          "pytest-mock>=1.6.0"
+        ],
+        "python_requires": [
+          ">=3"
+        ]
+      },
+      "36": {
+        "install_requires": [
+          "celery!=4.3,<5,>=4.2.1",
           "isort>=5",
           "arrow>=0.15.0",
           "Flask-Debugtoolbar>=0.10.1",
