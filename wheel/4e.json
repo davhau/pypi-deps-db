@@ -5681,6 +5681,9 @@
           "requires_python": "~=3.6"
         }
       },
+      "0.0.101": {
+        "cs_models-0.0.101-py3-none-any.whl": "0.0.100@cs_models-0.0.100-py3-none-any.whl"
+      },
       "0.0.101.dev1": {
         "cs_models-0.0.101.dev1-py3-none-any.whl": "0.0.100@cs_models-0.0.100-py3-none-any.whl"
       },
@@ -6121,6 +6124,9 @@
       },
       "0.1.dev39": {
         "cs3apis-0.1.dev39-py3-none-any.whl": "0.1.dev25@cs3apis-0.1.dev25-py3-none-any.whl"
+      },
+      "0.1.dev41": {
+        "cs3apis-0.1.dev41-py3-none-any.whl": "0.1.dev25@cs3apis-0.1.dev25-py3-none-any.whl"
       }
     }
   },
@@ -6279,7 +6285,8 @@
         "cupoch-0.1.3.2-cp37-cp37m-manylinux1_x86_64.whl": "0.0.9.0@cupoch-0.0.9.0-cp37-cp37m-manylinux1_x86_64.whl"
       },
       "0.1.4.1": {
-        "cupoch-0.1.4.1-cp37-cp37m-manylinux1_x86_64.whl": "0.0.9.0@cupoch-0.0.9.0-cp37-cp37m-manylinux1_x86_64.whl"
+        "cupoch-0.1.4.1-cp37-cp37m-manylinux1_x86_64.whl": "0.0.9.0@cupoch-0.0.9.0-cp37-cp37m-manylinux1_x86_64.whl",
+        "cupoch-0.1.4.1-cp37-cp37m-win_amd64.whl": "0.0.9.0@cupoch-0.0.9.0-cp37-cp37m-manylinux1_x86_64.whl"
       }
     },
     "cp38": {
@@ -10266,6 +10273,49 @@
             "scipy (>=0.13.3)",
             "numpy (>=1.13.3)",
             "pandas (<2.0.0,>=0.24.1)",
+            "tqdm (>=4.32.0)",
+            "pyyaml (>=3.12)",
+            "cloudpickle (>=0.4.0)",
+            "distributed (>=2.12.0)",
+            "dask[dataframe] (>=2.12.0)",
+            "psutil (>=5.4.8)",
+            "click (>=7.0.0)",
+            "autonormalize (>=1.0.0) ; extra == 'autonormalize'",
+            "categorical-encoding (>=0.2.0) ; extra == 'categorical_encoding'",
+            "autonormalize (>=1.0.0) ; extra == 'complete'",
+            "categorical-encoding (>=0.2.0) ; extra == 'complete'",
+            "featuretools-sklearn-transformer (>=0.1.1) ; extra == 'complete'",
+            "featuretools-tsfresh-primitives (>=0.1.0) ; extra == 'complete'",
+            "featuretools-update-checker (>=1.0.0) ; extra == 'complete'",
+            "koalas (>=1.1.0) ; extra == 'complete'",
+            "nlp-primitives[complete] (>=1.0.0) ; extra == 'complete'",
+            "pyspark (>=3.0.0) ; extra == 'complete'",
+            "pyspark (>=3.0.0) ; extra == 'koalas'",
+            "koalas (>=1.1.0) ; extra == 'koalas'",
+            "nlp-primitives[complete] (>=1.0.0) ; extra == 'nlp_primitives'",
+            "featuretools-sklearn-transformer (>=0.1.1) ; extra == 'sklearn_transformer'",
+            "featuretools-tsfresh-primitives (>=0.1.0) ; extra == 'tsfresh'",
+            "featuretools-update-checker (>=1.0.0) ; extra == 'update_checker'"
+          ],
+          "requires_python": ">=3.6, <4"
+        }
+      },
+      "0.20.0": {
+        "featuretools-0.20.0-py3-none-any.whl": {
+          "provides_extras": [
+            "autonormalize",
+            "categorical_encoding",
+            "complete",
+            "koalas",
+            "nlp_primitives",
+            "sklearn_transformer",
+            "tsfresh",
+            "update_checker"
+          ],
+          "requires_dist": [
+            "scipy (>=0.13.3)",
+            "numpy (>=1.13.3)",
+            "pandas (!=1.1.0,!=1.1.1,<2.0.0,>=0.24.1)",
             "tqdm (>=4.32.0)",
             "pyyaml (>=3.12)",
             "cloudpickle (>=0.4.0)",
@@ -23216,6 +23266,81 @@
       },
       "20.6.3": {
         "sanic-20.6.3-py3-none-any.whl": "20.6.0@sanic-20.6.0-py3-none-any.whl"
+      },
+      "20.9.0": {
+        "sanic-20.9.0-py3-none-any.whl": {
+          "provides_extras": [
+            "all",
+            "dev",
+            "docs",
+            "test"
+          ],
+          "requires_dist": [
+            "httptools (>=0.0.10)",
+            "aiofiles (>=0.3.0)",
+            "websockets (<9.0,>=8.1)",
+            "multidict (<5.0,>=4.0)",
+            "httpx (==0.15.4)",
+            "uvloop (>=0.5.3) ; sys_platform != \"win32\" and implementation_name == \"cpython\"",
+            "ujson (>=1.35) ; sys_platform != \"win32\" and implementation_name == \"cpython\"",
+            "pytest (==5.2.1) ; extra == 'all'",
+            "multidict (<5.0,>=4.0) ; extra == 'all'",
+            "gunicorn ; extra == 'all'",
+            "pytest-cov ; extra == 'all'",
+            "httpcore (==0.3.0) ; extra == 'all'",
+            "beautifulsoup4 ; extra == 'all'",
+            "pytest-sanic ; extra == 'all'",
+            "pytest-sugar ; extra == 'all'",
+            "pytest-benchmark ; extra == 'all'",
+            "aiofiles ; extra == 'all'",
+            "tox ; extra == 'all'",
+            "black ; extra == 'all'",
+            "flake8 ; extra == 'all'",
+            "bandit ; extra == 'all'",
+            "towncrier ; extra == 'all'",
+            "sphinx (>=2.1.2) ; extra == 'all'",
+            "sphinx-rtd-theme ; extra == 'all'",
+            "recommonmark (>=0.5.0) ; extra == 'all'",
+            "docutils ; extra == 'all'",
+            "pygments ; extra == 'all'",
+            "uvloop (>=0.5.3) ; (sys_platform != \"win32\" and implementation_name == \"cpython\") and extra == 'all'",
+            "ujson (>=1.35) ; (sys_platform != \"win32\" and implementation_name == \"cpython\") and extra == 'all'",
+            "pytest (==5.2.1) ; extra == 'dev'",
+            "multidict (<5.0,>=4.0) ; extra == 'dev'",
+            "gunicorn ; extra == 'dev'",
+            "pytest-cov ; extra == 'dev'",
+            "httpcore (==0.3.0) ; extra == 'dev'",
+            "beautifulsoup4 ; extra == 'dev'",
+            "pytest-sanic ; extra == 'dev'",
+            "pytest-sugar ; extra == 'dev'",
+            "pytest-benchmark ; extra == 'dev'",
+            "aiofiles ; extra == 'dev'",
+            "tox ; extra == 'dev'",
+            "black ; extra == 'dev'",
+            "flake8 ; extra == 'dev'",
+            "bandit ; extra == 'dev'",
+            "towncrier ; extra == 'dev'",
+            "uvloop (>=0.5.3) ; (sys_platform != \"win32\" and implementation_name == \"cpython\") and extra == 'dev'",
+            "ujson (>=1.35) ; (sys_platform != \"win32\" and implementation_name == \"cpython\") and extra == 'dev'",
+            "sphinx (>=2.1.2) ; extra == 'docs'",
+            "sphinx-rtd-theme ; extra == 'docs'",
+            "recommonmark (>=0.5.0) ; extra == 'docs'",
+            "docutils ; extra == 'docs'",
+            "pygments ; extra == 'docs'",
+            "pytest (==5.2.1) ; extra == 'test'",
+            "multidict (<5.0,>=4.0) ; extra == 'test'",
+            "gunicorn ; extra == 'test'",
+            "pytest-cov ; extra == 'test'",
+            "httpcore (==0.3.0) ; extra == 'test'",
+            "beautifulsoup4 ; extra == 'test'",
+            "pytest-sanic ; extra == 'test'",
+            "pytest-sugar ; extra == 'test'",
+            "pytest-benchmark ; extra == 'test'",
+            "uvloop (>=0.5.3) ; (sys_platform != \"win32\" and implementation_name == \"cpython\") and extra == 'test'",
+            "ujson (>=1.35) ; (sys_platform != \"win32\" and implementation_name == \"cpython\") and extra == 'test'"
+          ],
+          "requires_python": ">=3.6"
+        }
       }
     }
   },
@@ -25964,6 +26089,9 @@
       },
       "0.6.2": {
         "taperable_helix-0.6.2-py2.py3-none-any.whl": "0.5.0@taperable_helix-0.5.0-py2.py3-none-any.whl"
+      },
+      "0.7.0": {
+        "taperable_helix-0.7.0-py2.py3-none-any.whl": "0.5.0@taperable_helix-0.5.0-py2.py3-none-any.whl"
       }
     }
   },
