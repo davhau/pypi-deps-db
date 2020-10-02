@@ -338,6 +338,32 @@
     "py3": {
       "1.0.0": {
         "aiobreaker-1.0.0-py3-none-any.whl": {}
+      },
+      "1.1.0": {
+        "aiobreaker-1.1.0-py3-none-any.whl": {
+          "provides_extras": [
+            "docs",
+            "redis",
+            "test"
+          ],
+          "requires_dist": [
+            "sphinx ; extra == 'docs'",
+            "sphinx-rtd-theme ; extra == 'docs'",
+            "sphinx-autobuild ; extra == 'docs'",
+            "sphinx-autodoc-typehints ; extra == 'docs'",
+            "redis ; extra == 'redis'",
+            "fakeredis ; extra == 'test'",
+            "pytest (>4) ; extra == 'test'",
+            "pytest-asyncio ; extra == 'test'",
+            "mypy ; extra == 'test'",
+            "pylint ; extra == 'test'",
+            "safety ; extra == 'test'",
+            "bandit ; extra == 'test'",
+            "codecov ; extra == 'test'",
+            "pytest-cov ; extra == 'test'"
+          ],
+          "requires_python": ">=3.5"
+        }
       }
     }
   },
