@@ -7780,19 +7780,22 @@
   },
   "carto": {
     "py3": {
-      "1.8.0": {
-        "carto-1.8.0-py3-none-any.whl": {
+      "1.11.2": {
+        "carto-1.11.2-py3-none-any.whl": {
           "requires_dist": [
             "requests (>=2.7.0)",
             "pyrestcli (==0.6.11)"
           ]
         }
       },
+      "1.8.0": {
+        "carto-1.8.0-py3-none-any.whl": "1.11.2@carto-1.11.2-py3-none-any.whl"
+      },
       "1.8.1": {
-        "carto-1.8.1-py3-none-any.whl": "1.8.0@carto-1.8.0-py3-none-any.whl"
+        "carto-1.8.1-py3-none-any.whl": "1.11.2@carto-1.11.2-py3-none-any.whl"
       },
       "1.9.1": {
-        "carto-1.9.1-py3-none-any.whl": "1.8.0@carto-1.8.0-py3-none-any.whl"
+        "carto-1.9.1-py3-none-any.whl": "1.11.2@carto-1.11.2-py3-none-any.whl"
       }
     }
   },
@@ -28968,6 +28971,23 @@
       },
       "3.0.0b8": {
         "umongo-3.0.0b8-py2.py3-none-any.whl": "3.0.0b5@umongo-3.0.0b5-py2.py3-none-any.whl"
+      },
+      "3.0.0b9": {
+        "umongo-3.0.0b9-py2.py3-none-any.whl": {
+          "provides_extras": [
+            "mongomock",
+            "motor",
+            "txmongo"
+          ],
+          "requires_dist": [
+            "marshmallow (>=3.5.0)",
+            "pymongo (>=3.7.0)",
+            "mongomock ; extra == 'mongomock'",
+            "motor (<3.0,>=1.1) ; extra == 'motor'",
+            "txmongo (>=19.2.0) ; extra == 'txmongo'"
+          ],
+          "requires_python": ">=3.7"
+        }
       }
     }
   },
