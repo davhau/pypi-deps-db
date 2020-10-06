@@ -278,6 +278,9 @@
         "ai_university-1.0.6-py3-none-any.whl": {
           "requires_python": ">=3.6"
         }
+      },
+      "1.0.7": {
+        "ai_university-1.0.7-py3-none-any.whl": "1.0.6@ai_university-1.0.6-py3-none-any.whl"
       }
     }
   },
@@ -2068,6 +2071,22 @@
       },
       "1.1.0": {
         "azure_appconfiguration-1.1.0-py2.py3-none-any.whl": "1.0.0@azure_appconfiguration-1.0.0-py2.py3-none-any.whl"
+      },
+      "1.1.1": {
+        "azure_appconfiguration-1.1.1-py2.py3-none-any.whl": {
+          "provides_extras": [
+            "async"
+          ],
+          "requires_dist": [
+            "msrest (>=0.6.10)",
+            "azure-core (<2.0.0,>=1.2.2)",
+            "azure-nspkg ; python_version<'3.0'",
+            "enum34 (>=1.0.4) ; python_version<'3.4'",
+            "typing ; python_version<'3.5'",
+            "aiohttp (>=3.0) ; (python_version>='3.5') and extra == 'async'",
+            "aiodns (>=2.0) ; (python_version>='3.5') and extra == 'async'"
+          ]
+        }
       }
     }
   },
@@ -5623,6 +5642,72 @@
       },
       "20.3.5": {
         "backend.ai_manager-20.3.5-py3-none-any.whl": "20.3.4@backend.ai_manager-20.3.4-py3-none-any.whl"
+      },
+      "20.9.0a1": {
+        "backend.ai_manager-20.9.0a1-py3-none-any.whl": {
+          "provides_extras": [
+            "build",
+            "dev",
+            "lint",
+            "monitor",
+            "test",
+            "typecheck"
+          ],
+          "requires_dist": [
+            "aiodataloader",
+            "aiofiles (~=0.4.0)",
+            "aiohttp (~=3.6.2)",
+            "aiohttp-cors (~=0.7)",
+            "aiohttp-sse (~=2.0)",
+            "aiojobs (~=0.2.2)",
+            "aiopg (~=1.0.0)",
+            "aioredis (~=1.3.1)",
+            "aioredlock (~=0.5.1)",
+            "aiotools (>=0.9.1)",
+            "alembic (~=1.4.2)",
+            "async-timeout (~=3.0)",
+            "asyncache (>=0.1.1)",
+            "attrs (>=20.2)",
+            "boltons (~=19.3.0)",
+            "callosum (~=0.9.6)",
+            "click (>=7.0)",
+            "cryptography (>=2.8)",
+            "graphene (~=2.1.0)",
+            "Jinja2 (~=2.10.1)",
+            "passlib[bcrypt] (>=1.7.1)",
+            "psycopg2-binary (>=2.8.4)",
+            "python-dateutil (>=2.8)",
+            "python-snappy (~=0.5.1)",
+            "PyYAML (~=5.2.0)",
+            "pyzmq (~=19.0.1)",
+            "SQLAlchemy (~=1.3.12)",
+            "uvloop (~=0.14.0)",
+            "setproctitle (~=1.1.10)",
+            "tabulate (~=0.8.6)",
+            "trafaret (~=2.0.1)",
+            "backend.ai-common",
+            "backend.ai-cli (~=0.3)",
+            "PyJWT (==1.7.1)",
+            "zipstream-new (~=1.1.7)",
+            "lark-parser (>=0.9.0)",
+            "dataclasses ; python_version < \"3.7\"",
+            "wheel (>=0.33.6) ; extra == 'build'",
+            "twine (>=1.14.0) ; extra == 'build'",
+            "towncrier (~=19.2.0) ; extra == 'build'",
+            "flake8 (>=3.8.1) ; extra == 'lint'",
+            "backend.ai-stats-monitor ; extra == 'monitor'",
+            "backend.ai-error-monitor ; extra == 'monitor'",
+            "aiodocker (~=0.18.0) ; extra == 'test'",
+            "pytest (~=5.4.2) ; extra == 'test'",
+            "pytest-asyncio (>=0.12.0) ; extra == 'test'",
+            "pytest-aiohttp ; extra == 'test'",
+            "pytest-cov ; extra == 'test'",
+            "pytest-mock (>=3.1.0) ; extra == 'test'",
+            "codecov ; extra == 'test'",
+            "mypy (>=0.780) ; extra == 'typecheck'"
+          ],
+          "requires_python": ">=3.8"
+        }
       }
     },
     "py36": {
@@ -31297,6 +31382,20 @@
       },
       "0.11.1": {
         "pymol_labimm-0.11.1-py3-none-any.whl": "0.10.0@pymol_labimm-0.10.0-py3-none-any.whl"
+      },
+      "0.11.2": {
+        "pymol_labimm-0.11.2-py3-none-any.whl": {
+          "requires_dist": [
+            "lxml",
+            "pandas",
+            "scipy",
+            "requests",
+            "cached-property",
+            "matplotlib",
+            "seaborn",
+            "jinja2"
+          ]
+        }
       },
       "0.2.0": {
         "pymol_labimm-0.2.0-py3-none-any.whl": "0.1.0@pymol_labimm-0.1.0-py3-none-any.whl"
