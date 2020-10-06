@@ -427,6 +427,25 @@
       "0.0.74": {
         "ailever-0.0.74-py3-none-any.whl": "0.0.1@ailever-0.0.1-py3-none-any.whl"
       },
+      "0.0.75": {
+        "ailever-0.0.75-py3-none-any.whl": "0.0.1@ailever-0.0.1-py3-none-any.whl"
+      },
+      "0.0.77": {
+        "ailever-0.0.77-py3-none-any.whl": {
+          "requires_dist": [
+            "PyQt5",
+            "h5py",
+            "matplotlib",
+            "numpy",
+            "pandas",
+            "requests",
+            "statsmodels",
+            "torch",
+            "transformers"
+          ],
+          "requires_python": ">=3"
+        }
+      },
       "0.0.8": {
         "ailever-0.0.8-py3-none-any.whl": "0.0.1@ailever-0.0.1-py3-none-any.whl"
       },
@@ -13410,6 +13429,18 @@
           ]
         }
       },
+      "1.37.1": {
+        "honeybee_core-1.37.1-py2.py3-none-any.whl": {
+          "provides_extras": [
+            "cli"
+          ],
+          "requires_dist": [
+            "ladybug-core (==0.31.2)",
+            "click (==7.1.2) ; extra == 'cli'",
+            "honeybee-schema (==1.39.0) ; (python_version >= \"3.6\") and extra == 'cli'"
+          ]
+        }
+      },
       "1.4.0": {
         "honeybee_core-1.4.0-py2.py3-none-any.whl": "1.1.4@honeybee_core-1.1.4-py2.py3-none-any.whl"
       },
@@ -15080,6 +15111,38 @@
           "requires_dist": [
             "invenio[auth,base,files,metadata] (>=3.4.0a8)",
             "invenio-rdm-records (>=0.20.1)",
+            "invenio-s3 (~=1.0.2) ; extra == 'all'",
+            "docutils (<0.16,>=0.13.1) ; extra == 'all'",
+            "Sphinx (>=3) ; extra == 'all'",
+            "pytest-invenio (>=1.4.0) ; extra == 'all'",
+            "docutils (<0.16,>=0.13.1) ; extra == 'docs'",
+            "Sphinx (>=3) ; extra == 'docs'",
+            "invenio-search[elasticsearch6] (<1.5.0,>=1.4.0) ; extra == 'elasticsearch6'",
+            "invenio-search[elasticsearch7] (<1.5.0,>=1.4.0) ; extra == 'elasticsearch7'",
+            "invenio-db[mysql,versioning] (<1.1.0,>=1.0.5) ; extra == 'mysql'",
+            "invenio-db[postgresql,versioning] (<1.1.0,>=1.0.5) ; extra == 'postgresql'",
+            "invenio-s3 (~=1.0.2) ; extra == 's3'",
+            "invenio-db[versioning] (<1.1.0,>=1.0.5) ; extra == 'sqlite'",
+            "pytest-invenio (>=1.4.0) ; extra == 'tests'"
+          ]
+        }
+      },
+      "0.14.2": {
+        "invenio_app_rdm-0.14.2-py2.py3-none-any.whl": {
+          "provides_extras": [
+            "all",
+            "docs",
+            "elasticsearch6",
+            "elasticsearch7",
+            "mysql",
+            "postgresql",
+            "s3",
+            "sqlite",
+            "tests"
+          ],
+          "requires_dist": [
+            "invenio[auth,base,files,metadata] (>=3.4.0a8)",
+            "invenio-rdm-records (>=0.20.2)",
             "invenio-s3 (~=1.0.2) ; extra == 'all'",
             "docutils (<0.16,>=0.13.1) ; extra == 'all'",
             "Sphinx (>=3) ; extra == 'all'",
