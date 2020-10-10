@@ -10617,6 +10617,9 @@
       },
       "1.0.5": {
         "nawah_cli-1.0.5-py3-none-any.whl": "1.0.1@nawah_cli-1.0.1-py3-none-any.whl"
+      },
+      "1.0.6": {
+        "nawah_cli-1.0.6-py3-none-any.whl": "1.0.1@nawah_cli-1.0.1-py3-none-any.whl"
       }
     }
   },
@@ -21740,6 +21743,42 @@
       },
       "0.15.3": {
         "swh.storage-0.15.3-py3-none-any.whl": "0.15.0@swh.storage-0.15.0-py3-none-any.whl"
+      },
+      "0.16.0": {
+        "swh.storage-0.16.0-py3-none-any.whl": {
+          "provides_extras": [
+            "journal",
+            "schemata",
+            "testing"
+          ],
+          "requires_dist": [
+            "click",
+            "flask",
+            "psycopg2",
+            "aiohttp",
+            "tenacity",
+            "cassandra-driver (!=3.21.0,>=3.19.0)",
+            "deprecated",
+            "typing-extensions",
+            "mypy-extensions",
+            "iso8601",
+            "swh.core[db,http] (>=0.3)",
+            "swh.model (>=0.6.6)",
+            "swh.objstorage (>=0.2.2)",
+            "swh.journal (>=0.4) ; extra == 'journal'",
+            "SQLAlchemy ; extra == 'schemata'",
+            "hypothesis (>=3.11.0) ; extra == 'testing'",
+            "pytest ; extra == 'testing'",
+            "pytest-mock ; extra == 'testing'",
+            "pytest-postgresql (>=2.1.0) ; extra == 'testing'",
+            "sqlalchemy-stubs ; extra == 'testing'",
+            "swh.model[testing] (>=0.0.50) ; extra == 'testing'",
+            "pytz ; extra == 'testing'",
+            "pytest-xdist ; extra == 'testing'",
+            "swh.journal (>=0.4) ; extra == 'testing'"
+          ],
+          "requires_python": ">=3.7"
+        }
       },
       "0.2.0": {
         "swh.storage-0.2.0-py3-none-any.whl": "0.1.0@swh.storage-0.1.0-py3-none-any.whl"
