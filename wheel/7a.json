@@ -7207,6 +7207,24 @@
       }
     }
   },
+  "dnac-pnp": {
+    "py2.py3": {
+      "1.0.2b1": {
+        "dnac_pnp-1.0.2b1-py2.py3-none-any.whl": {
+          "requires_dist": [
+            "click (>=7.0)",
+            "requests (>=2.22.0)",
+            "colorama (>=0.4.1)",
+            "pyyaml (>=5.1.1)",
+            "tabulate (>=0.8.3)",
+            "netmiko (>=2.4.1)",
+            "tqdm (>=4.36.1)"
+          ],
+          "requires_python": ">=3.6"
+        }
+      }
+    }
+  },
   "dockdj": {
     "py3": {
       "1.0.2": {
@@ -15595,6 +15613,88 @@
             "matrix-synapse-ldap3 (>=0.1) ; extra == 'all'",
             "authlib (>=0.14.0) ; extra == 'all'",
             "lxml (>=3.5.0) ; extra == 'all'",
+            "eliot (<1.8.0) ; (python_version < \"3.5.3\") and extra == 'all'",
+            "pyjwt (>=1.6.4) ; extra == 'jwt'",
+            "isort (==5.0.3) ; extra == 'lint'",
+            "black (==19.10b0) ; extra == 'lint'",
+            "flake8-comprehensions ; extra == 'lint'",
+            "flake8 ; extra == 'lint'",
+            "matrix-synapse-ldap3 (>=0.1) ; extra == 'matrix-synapse-ldap3'",
+            "authlib (>=0.14.0) ; extra == 'oidc'",
+            "jaeger-client (>=4.0.0) ; extra == 'opentracing'",
+            "opentracing (>=2.2.0) ; extra == 'opentracing'",
+            "psycopg2 (>=2.7) ; extra == 'postgres'",
+            "txredisapi (>=1.4.7) ; extra == 'redis'",
+            "hiredis ; extra == 'redis'",
+            "pysaml2 (>=4.5.0) ; extra == 'saml2'",
+            "sentry-sdk (>=0.7.2) ; extra == 'sentry'",
+            "systemd-python (>=231) ; extra == 'systemd'",
+            "mock (>=2.0) ; extra == 'test'",
+            "parameterized (>=0.7.0) ; extra == 'test'",
+            "lxml (>=3.5.0) ; extra == 'url_preview'"
+          ],
+          "requires_python": "~=3.5"
+        }
+      },
+      "1.21.1": {
+        "matrix_synapse-1.21.1-py3-none-any.whl": {
+          "provides_extras": [
+            "acme",
+            "all",
+            "jwt",
+            "lint",
+            "matrix-synapse-ldap3",
+            "oidc",
+            "opentracing",
+            "postgres",
+            "redis",
+            "saml2",
+            "sentry",
+            "systemd",
+            "test",
+            "url_preview"
+          ],
+          "requires_dist": [
+            "jsonschema (>=2.5.1)",
+            "frozendict (>=1)",
+            "unpaddedbase64 (>=1.1.0)",
+            "canonicaljson (>=1.4.0)",
+            "signedjson (>=1.1.0)",
+            "pynacl (>=1.2.1)",
+            "idna (>=2.5)",
+            "service-identity (>=18.1.0)",
+            "Twisted (>=18.9.0)",
+            "treq (>=15.1)",
+            "pyopenssl (>=16.0.0)",
+            "pyyaml (>=3.11)",
+            "pyasn1 (>=0.1.9)",
+            "pyasn1-modules (>=0.0.7)",
+            "bcrypt (>=3.1.0)",
+            "pillow (>=4.3.0)",
+            "sortedcontainers (>=1.4.4)",
+            "pymacaroons (>=0.13.0)",
+            "msgpack (>=0.5.2)",
+            "phonenumbers (>=8.2.0)",
+            "prometheus-client (<0.9.0,>=0.4.0)",
+            "attrs (>=19.1.0)",
+            "netaddr (>=0.7.18)",
+            "Jinja2 (>=2.9)",
+            "bleach (>=1.4.3)",
+            "typing-extensions (>=3.7.4)",
+            "txacme (>=0.9.2) ; extra == 'acme'",
+            "eliot (<1.8.0) ; (python_version < \"3.5.3\") and extra == 'acme'",
+            "txacme (>=0.9.2) ; extra == 'all'",
+            "opentracing (>=2.2.0) ; extra == 'all'",
+            "hiredis ; extra == 'all'",
+            "psycopg2 (>=2.7) ; extra == 'all'",
+            "lxml (>=3.5.0) ; extra == 'all'",
+            "pysaml2 (>=4.5.0) ; extra == 'all'",
+            "matrix-synapse-ldap3 (>=0.1) ; extra == 'all'",
+            "jaeger-client (>=4.0.0) ; extra == 'all'",
+            "authlib (>=0.14.0) ; extra == 'all'",
+            "sentry-sdk (>=0.7.2) ; extra == 'all'",
+            "txredisapi (>=1.4.7) ; extra == 'all'",
+            "pyjwt (>=1.6.4) ; extra == 'all'",
             "eliot (<1.8.0) ; (python_version < \"3.5.3\") and extra == 'all'",
             "pyjwt (>=1.6.4) ; extra == 'jwt'",
             "isort (==5.0.3) ; extra == 'lint'",
@@ -29832,8 +29932,40 @@
       "1.10.24": {
         "ximilar_client-1.10.24-py3-none-any.whl": "1.10.13@ximilar_client-1.10.13-py3-none-any.whl"
       },
+      "1.10.25": {
+        "ximilar_client-1.10.25-py3-none-any.whl": {
+          "requires_dist": [
+            "requests (==2.21.0)",
+            "opencv-contrib-python-headless (>=4.1.2.30)",
+            "pytest (>=3.0.3)",
+            "tqdm (==4.31.1)"
+          ]
+        }
+      },
+      "1.10.26": {
+        "ximilar_client-1.10.26-py3-none-any.whl": {
+          "requires_dist": [
+            "requests (==2.21.0)",
+            "opencv-contrib-python-headless (~=4.1.2.30)",
+            "pytest (>=3.0.3)",
+            "tqdm (==4.31.1)"
+          ]
+        }
+      },
+      "1.10.27": {
+        "ximilar_client-1.10.27-py3-none-any.whl": "1.10.25@ximilar_client-1.10.25-py3-none-any.whl"
+      },
+      "1.10.28": {
+        "ximilar_client-1.10.28-py3-none-any.whl": "1.10.25@ximilar_client-1.10.25-py3-none-any.whl"
+      },
+      "1.10.29": {
+        "ximilar_client-1.10.29-py3-none-any.whl": "1.10.25@ximilar_client-1.10.25-py3-none-any.whl"
+      },
       "1.10.3": {
         "ximilar_client-1.10.3-py3-none-any.whl": "1.10.11@ximilar_client-1.10.11-py3-none-any.whl"
+      },
+      "1.10.30": {
+        "ximilar_client-1.10.30-py3-none-any.whl": "1.10.25@ximilar_client-1.10.25-py3-none-any.whl"
       },
       "1.10.4": {
         "ximilar_client-1.10.4-py3-none-any.whl": "1.10.11@ximilar_client-1.10.11-py3-none-any.whl"
