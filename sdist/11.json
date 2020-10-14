@@ -2119,7 +2119,39 @@
       "37": "27",
       "38": "27"
     },
-    "2.0.4": "2.0.3.1"
+    "2.0.4": "2.0.3.1",
+    "2.1.0": {
+      "27": {
+        "install_requires": [
+          "ciso8601>=2.0.0",
+          "future",
+          "google-api-python-client<1.7,>=1.6.2",
+          "httplib2>=0.9.2",
+          "pycurl>=7.19.5.1",
+          "ruamel.yaml<=0.16.5,>=0.15.54",
+          "setuptools",
+          "ws4py>=0.4.2",
+          "rsa<4.1"
+        ],
+        "extras_require": {
+          ":python_version<\"3\"": [
+            "pytz"
+          ],
+          ":os.name==\"posix\" and python_version<\"3\"": [
+            "subprocess32>=3.5.1"
+          ]
+        },
+        "tests_require": [
+          "pbr<1.7.0",
+          "mock>=1.0,<4",
+          "PyYAML"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    }
   },
   "asposeslidescloud": {
     "1.0.0": {
@@ -11749,6 +11781,19 @@
     "0.1.2": "0.1",
     "0.1.3": "0.1",
     "1.0.dev0": "0.1"
+  },
+  "ghisd": {
+    "0.0.1": {
+      "27": {
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    }
   },
   "github-repo-opener": {
     "0.1.2": {
@@ -21630,6 +21675,7 @@
       "37": "27",
       "38": "27"
     },
+    "1.16.0": "1.15.2",
     "1.2.0": "1.1.1",
     "1.3.0": "1.1.1",
     "1.4.0": {
@@ -22619,7 +22665,43 @@
       "38": "27"
     },
     "0.2.0": "0.1.1",
-    "1.1.0": "0.1.2"
+    "1.1.0": "0.1.2",
+    "2.0.0": {
+      "27": {
+        "install_requires": [
+          "cython<0.30.0,>=0.29.21",
+          "h5py<3.0.0,>=2.10.0",
+          "mako<2.0.0,>=1.1.3",
+          "matplotlib<4.0.0,>=3.3.2",
+          "numba<0.52.0,>=0.51.2",
+          "numpy<2.0.0,>=1.19.2",
+          "pillow<8.0.0,>=7.2.0",
+          "pre-commit<3.0.0,>=2.5.1",
+          "readline<7.0.0,>=6.2.4",
+          "rich<3.0.0,>=2.2.2",
+          "scikit-image<0.18.0,>=0.17.2",
+          "scipy<2.0.0,>=1.5.2",
+          "seaborn<0.12.0,>=0.11.0",
+          "typer[all]<0.3.0,>=0.2.1",
+          "xarray<0.17.0,>=0.16.0"
+        ],
+        "extras_require": {
+          ":python_version < \"3.8\"": [
+            "importlib_metadata<2.0.0,>=1.6.0"
+          ]
+        },
+        "python_requires": [
+          ">=3.7,<4.0"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    },
+    "2.0.1": "2.0.0",
+    "2.0.3": "2.0.0",
+    "2.0.4": "2.0.0"
   },
   "pyportmgmt": {
     "0.0.1": {
@@ -23873,7 +23955,8 @@
     "0.2.5": "0.1.10",
     "0.2.6": "0.1.10",
     "0.2.7": "0.1.10",
-    "0.2.8": "0.1.10"
+    "0.2.8": "0.1.10",
+    "0.2.9": "0.1.10"
   },
   "remarkable": {
     "0.0.1": {
@@ -25966,6 +26049,31 @@
           "senaite.app.supermodel==2.0.0rc1",
           "senaite.impress==2.0.0rc1",
           "senaite.jsonapi==2.0.0rc1",
+          "setuptools"
+        ],
+        "extras_require": {
+          "test": [
+            "Products.PloneTestCase",
+            "Products.SecureMailHost",
+            "plone.app.testing",
+            "unittest2"
+          ]
+        }
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    },
+    "2.0.0rc2": {
+      "27": {
+        "install_requires": [
+          "senaite.core==2.0.0rc2",
+          "senaite.app.listing==2.0.0rc2",
+          "senaite.app.spotlight==2.0.0rc2",
+          "senaite.app.supermodel==2.0.0rc2",
+          "senaite.impress==2.0.0rc2",
+          "senaite.jsonapi==2.0.0rc2",
           "setuptools"
         ],
         "extras_require": {
@@ -28717,6 +28825,69 @@
           "rio-tiler>=2.0b9",
           "rio-tiler-crs<3.1,>=3.0b4",
           "cogeo-mosaic<3.1,>=3.0a10"
+        ],
+        "extras_require": {
+          "dev": [
+            "pytest",
+            "pytest-cov",
+            "pytest-asyncio",
+            "pre-commit",
+            "requests"
+          ],
+          "docs": [
+            "nbconvert",
+            "mkdocs",
+            "mkdocs-material",
+            "mkdocs-jupyter",
+            "pygments"
+          ],
+          "test": [
+            "pytest",
+            "pytest-cov",
+            "pytest-asyncio",
+            "requests"
+          ],
+          "deploy": [
+            "docker",
+            "python-dotenv",
+            "aws-cdk.core",
+            "aws-cdk.aws_lambda",
+            "aws-cdk.aws_apigatewayv2",
+            "aws-cdk.aws_ecs",
+            "aws-cdk.aws_ec2",
+            "aws-cdk.aws_autoscaling",
+            "aws-cdk.aws_ecs_patterns"
+          ],
+          "lambda": [
+            "mangum>=0.10.0"
+          ],
+          "server": [
+            "uvicorn",
+            "click==7.0"
+          ]
+        },
+        "python_requires": [
+          ">=3"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    },
+    "0.1.0a7": "0.1.0a6",
+    "0.1.0a8": {
+      "27": {
+        "install_requires": [
+          "brotli-asgi>=1.0.0",
+          "email-validator",
+          "fastapi~=0.61",
+          "jinja2",
+          "python-dotenv",
+          "rio-color",
+          "rio-cogeo~=2.0a5",
+          "rio-tiler>=2.0.0b17",
+          "cogeo-mosaic<3.1,>=3.0.0a13"
         ],
         "extras_require": {
           "dev": [
