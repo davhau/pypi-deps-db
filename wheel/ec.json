@@ -6550,35 +6550,6 @@
       }
     }
   },
-  "chex": {
-    "py3": {
-      "0.0.1": {
-        "chex-0.0.1-py3-none-any.whl": {
-          "requires_dist": [
-            "absl-py (>=0.9.0)",
-            "jax (>=0.1.55)",
-            "jaxlib (>=0.1.37)",
-            "numpy (>=1.18.0)",
-            "toolz (>=0.9.0)"
-          ],
-          "requires_python": ">=3.6"
-        }
-      },
-      "0.0.2": {
-        "chex-0.0.2-py3-none-any.whl": {
-          "requires_dist": [
-            "absl-py (>=0.9.0)",
-            "jax (>=0.1.55)",
-            "jaxlib (>=0.1.37)",
-            "numpy (>=1.18.0)",
-            "toolz (>=0.9.0)",
-            "dataclasses (==0.7) ; python_version < \"3.7\""
-          ],
-          "requires_python": ">=3.6"
-        }
-      }
-    }
-  },
   "ciruitpy": {
     "py3": {
       "0.0.1": {
@@ -9428,16 +9399,6 @@
       },
       "1.0.2": {
         "ds1052e-1.0.2-py3-none-any.whl": "1.0.0@ds1052e-1.0.0-py3-none-any.whl"
-      }
-    }
-  },
-  "duplication": {
-    "py3": {
-      "1.0.1": {
-        "duplication-1.0.1-py3-none-any.whl": {}
-      },
-      "1.0.2": {
-        "duplication-1.0.2-py3-none-any.whl": "1.0.1@duplication-1.0.1-py3-none-any.whl"
       }
     }
   },
@@ -17573,6 +17534,9 @@
       "1.15.17.0": {
         "mypy_boto3_pi-1.15.17.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_pi-1.13.24.3-py3-none-any.whl"
       },
+      "1.15.18.0": {
+        "mypy_boto3_pi-1.15.18.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_pi-1.13.24.3-py3-none-any.whl"
+      },
       "1.15.2.0": {
         "mypy_boto3_pi-1.15.2.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_pi-1.13.24.3-py3-none-any.whl"
       },
@@ -20174,6 +20138,17 @@
           "requires_dist": [
             "django (<3.2,>=2.2)",
             "openwisp-users (~=0.4.0)",
+            "openwisp-utils[rest] (~=0.6.0)",
+            "swapper (~=1.1)",
+            "xlrd (~=1.1)"
+          ]
+        }
+      },
+      "0.2": {
+        "openwisp_ipam-0.2-py2.py3-none-any.whl": {
+          "requires_dist": [
+            "django (<3.2,>=2.2)",
+            "openwisp-users (~=0.4.1)",
             "openwisp-utils[rest] (~=0.6.0)",
             "swapper (~=1.1)",
             "xlrd (~=1.1)"
@@ -24170,6 +24145,20 @@
       },
       "0.17": {
         "rcsb.utils.multiproc-0.17-py2.py3-none-any.whl": "0.16@rcsb.utils.multiproc-0.16-py2.py3-none-any.whl"
+      },
+      "0.18": {
+        "rcsb.utils.multiproc-0.18-py2.py3-none-any.whl": {
+          "provides_extras": [
+            "dev",
+            "test"
+          ],
+          "requires_dist": [
+            "future",
+            "multiprocess (>=0.70.10)",
+            "check-manifest ; extra == 'dev'",
+            "coverage ; extra == 'test'"
+          ]
+        }
       }
     }
   },
@@ -35416,6 +35405,78 @@
       },
       "0.0.1": {
         "simpy_events-0.0.1-py3-none-any.whl": "0.0.0@simpy_events-0.0.0-py3-none-any.whl"
+      }
+    }
+  },
+  "simulariumio": {
+    "py2.py3": {
+      "1.0.0": {
+        "simulariumio-1.0.0-py2.py3-none-any.whl": {
+          "provides_extras": [
+            "all",
+            "dev",
+            "physicell",
+            "setup",
+            "test"
+          ],
+          "requires_dist": [
+            "numpy (>=1.16)",
+            "numpy (>=1.16) ; extra == 'all'",
+            "pytest-runner (>=5.2) ; extra == 'all'",
+            "black (>=19.10b0) ; extra == 'all'",
+            "codecov (>=2.1.4) ; extra == 'all'",
+            "flake8 (>=3.8.3) ; extra == 'all'",
+            "flake8-debugger (>=3.2.1) ; extra == 'all'",
+            "pytest (>=5.4.3) ; extra == 'all'",
+            "pytest-cov (>=2.9.0) ; extra == 'all'",
+            "pytest-raises (>=0.11) ; extra == 'all'",
+            "pandas (>=1.1.2) ; extra == 'all'",
+            "scipy (>=1.5.2) ; extra == 'all'",
+            "bumpversion (>=0.6.0) ; extra == 'all'",
+            "coverage (>=5.1) ; extra == 'all'",
+            "ipython (>=7.15.0) ; extra == 'all'",
+            "m2r (>=0.2.1) ; extra == 'all'",
+            "Sphinx (<3,>=2.0.0b1) ; extra == 'all'",
+            "sphinx-rtd-theme (>=0.4.3) ; extra == 'all'",
+            "tox (>=3.15.2) ; extra == 'all'",
+            "tox-conda (>=0.2.1) ; extra == 'all'",
+            "twine (>=3.1.1) ; extra == 'all'",
+            "wheel (>=0.34.2) ; extra == 'all'",
+            "pytest-runner (>=5.2) ; extra == 'dev'",
+            "black (>=19.10b0) ; extra == 'dev'",
+            "codecov (>=2.1.4) ; extra == 'dev'",
+            "flake8 (>=3.8.3) ; extra == 'dev'",
+            "flake8-debugger (>=3.2.1) ; extra == 'dev'",
+            "pytest (>=5.4.3) ; extra == 'dev'",
+            "pytest-cov (>=2.9.0) ; extra == 'dev'",
+            "pytest-raises (>=0.11) ; extra == 'dev'",
+            "pandas (>=1.1.2) ; extra == 'dev'",
+            "scipy (>=1.5.2) ; extra == 'dev'",
+            "bumpversion (>=0.6.0) ; extra == 'dev'",
+            "coverage (>=5.1) ; extra == 'dev'",
+            "ipython (>=7.15.0) ; extra == 'dev'",
+            "m2r (>=0.2.1) ; extra == 'dev'",
+            "Sphinx (<3,>=2.0.0b1) ; extra == 'dev'",
+            "sphinx-rtd-theme (>=0.4.3) ; extra == 'dev'",
+            "tox (>=3.15.2) ; extra == 'dev'",
+            "tox-conda (>=0.2.1) ; extra == 'dev'",
+            "twine (>=3.1.1) ; extra == 'dev'",
+            "wheel (>=0.34.2) ; extra == 'dev'",
+            "pandas (>=1.1.2) ; extra == 'physicell'",
+            "scipy (>=1.5.2) ; extra == 'physicell'",
+            "pytest-runner (>=5.2) ; extra == 'setup'",
+            "black (>=19.10b0) ; extra == 'test'",
+            "codecov (>=2.1.4) ; extra == 'test'",
+            "flake8 (>=3.8.3) ; extra == 'test'",
+            "flake8-debugger (>=3.2.1) ; extra == 'test'",
+            "pytest (>=5.4.3) ; extra == 'test'",
+            "pytest-cov (>=2.9.0) ; extra == 'test'",
+            "pytest-raises (>=0.11) ; extra == 'test'",
+            "pandas (>=1.1.2) ; extra == 'test'",
+            "scipy (>=1.5.2) ; extra == 'test'"
+          ],
+          "requires_python": ">=3.7"
+        }
       }
     }
   },
