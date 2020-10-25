@@ -1691,6 +1691,40 @@
     },
     "3.7.0b0": "3.7.0",
     "3.7.0b1": "3.7.0",
+    "3.7.1": {
+      "36": {
+        "install_requires": [
+          "attrs>=17.3.0",
+          "chardet<4.0,>=2.0",
+          "multidict<7.0,>=4.5",
+          "async_timeout<4.0,>=3.0",
+          "yarl<2.0,>=1.0",
+          "typing_extensions>=3.6.5"
+        ],
+        "extras_require": {
+          "speedups": [
+            "aiodns",
+            "brotlipy",
+            "cchardet"
+          ],
+          ":python_version < \"3.7\"": [
+            "idna-ssl>=1.0"
+          ]
+        },
+        "tests_require": [
+          "pytest",
+          "gunicorn",
+          "pytest-timeout",
+          "async-generator",
+          "pytest-xdist"
+        ],
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "37": "36",
+      "38": "36"
+    },
     "4.0.0a0": "3.5.0",
     "4.0.0a1": {
       "36": {
