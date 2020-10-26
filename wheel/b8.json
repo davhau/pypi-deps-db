@@ -726,18 +726,6 @@
       }
     }
   },
-  "aimm": {
-    "py2.py3": {
-      "0.1.1": {
-        "aimm-0.1.1-py2.py3-none-any.whl": {
-          "requires_dist": [
-            "click (>=6.7)"
-          ],
-          "requires_python": ">=3.6.0"
-        }
-      }
-    }
-  },
   "aiogear": {
     "py2.py3": {
       "0.1.1": {
@@ -1273,6 +1261,16 @@
       }
     },
     "py3": {
+      "2020.10.29rc1": {
+        "apache_airflow_backport_providers_mongo-2020.10.29rc1-py3-none-any.whl": {
+          "requires_dist": [
+            "apache-airflow (~=1.10)",
+            "dnspython (<2.0.0,>=1.13.0)",
+            "pymongo (>=3.6.0)"
+          ],
+          "requires_python": "~=3.6"
+        }
+      },
       "2020.10.5": {
         "apache_airflow_backport_providers_mongo-2020.10.5-py3-none-any.whl": {
           "requires_dist": [
@@ -1322,6 +1320,24 @@
       }
     },
     "py3": {
+      "2020.10.29rc1": {
+        "apache_airflow_backport_providers_mysql-2020.10.29rc1-py3-none-any.whl": {
+          "provides_extras": [
+            "amazon",
+            "presto",
+            "vertica"
+          ],
+          "requires_dist": [
+            "apache-airflow (~=1.10)",
+            "mysql-connector-python (<=8.0.18,>=8.0.11)",
+            "mysqlclient (<1.4,>=1.3.6)",
+            "apache-airflow-backport-providers-amazon ; extra == 'amazon'",
+            "apache-airflow-backport-providers-presto ; extra == 'presto'",
+            "apache-airflow-backport-providers-vertica ; extra == 'vertica'"
+          ],
+          "requires_python": "~=3.6"
+        }
+      },
       "2020.10.5": {
         "apache_airflow_backport_providers_mysql-2020.10.5-py3-none-any.whl": {
           "provides_extras": [
