@@ -112230,6 +112230,7 @@
     "5.37.4": "5.37.0",
     "5.37.5": "5.37.0",
     "5.38.0": "5.37.0",
+    "5.38.1": "5.37.0",
     "5.4.0": {
       "35": {
         "install_requires": [
@@ -127046,7 +127047,88 @@
       "37": "27",
       "38": "27"
     },
-    "0.77": "0.76"
+    "0.77": "0.76",
+    "0.78": {
+      "27": {
+        "install_requires": [
+          "pytz",
+          "python-dateutil",
+          "mmcif>=0.54",
+          "ruamel.yaml",
+          "requests>=2.23.0",
+          "rcsb.utils.validation>=0.20",
+          "PyNaCl>=1.3.0",
+          "paramiko>=2.7",
+          "psutil>=5.7.2"
+        ],
+        "extras_require": {
+          "dev": [
+            "check-manifest"
+          ],
+          "test": [
+            "coverage"
+          ],
+          ":python_version < \"3.0\"": [
+            "backports.tempfile"
+          ],
+          ":sys_platform != \"darwin\"": [
+            "numpy"
+          ],
+          ":sys_platform == \"darwin\"": [
+            "numpy==1.18.0"
+          ]
+        },
+        "tests_require": [
+          "tox"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    },
+    "0.79": {
+      "27": {
+        "install_requires": [
+          "pytz",
+          "python-dateutil",
+          "mmcif>=0.54",
+          "ruamel.yaml",
+          "requests>=2.23.0",
+          "rcsb.utils.validation>=0.20",
+          "PyNaCl>=1.3.0",
+          "paramiko>=2.7",
+          "psutil>=5.7.2"
+        ],
+        "extras_require": {
+          "dev": [
+            "check-manifest"
+          ],
+          "test": [
+            "coverage"
+          ],
+          ":python_version < \"3.0\"": [
+            "backports.tempfile"
+          ],
+          ":sys_platform != \"darwin\"": [
+            "numpy"
+          ],
+          ":sys_platform == \"darwin\" and python_version < \"3.0\"": [
+            "numpy==1.16.6"
+          ],
+          ":sys_platform == \"darwin\" and python_version > \"3.0\"": [
+            "numpy==1.18.0"
+          ]
+        },
+        "tests_require": [
+          "tox"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    }
   },
   "rdfunniest": {
     "0.1": {
