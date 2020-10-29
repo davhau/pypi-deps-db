@@ -1330,6 +1330,23 @@
       }
     }
   },
+  "aston": {
+    "py3": {
+      "0.7.1": {
+        "Aston-0.7.1-py3-none-any.whl": {
+          "provides_extras": [
+            "plot"
+          ],
+          "requires_dist": [
+            "numpy (>=1.16.4)",
+            "scipy (>=1.2.0)",
+            "matplotlib ; extra == 'plot'",
+            "jupyter ; extra == 'plot'"
+          ]
+        }
+      }
+    }
+  },
   "atc-utils": {
     "py2": {
       "0.2": {
@@ -5135,6 +5152,9 @@
       },
       "2.1.1": {
         "codelab_adapter_client-2.1.1-py2.py3-none-any.whl": "2.0.0@codelab_adapter_client-2.0.0-py2.py3-none-any.whl"
+      },
+      "2.1.2": {
+        "codelab_adapter_client-2.1.2-py2.py3-none-any.whl": "2.0.0@codelab_adapter_client-2.0.0-py2.py3-none-any.whl"
       }
     }
   },
@@ -11959,6 +11979,21 @@
       }
     }
   },
+  "ltp-server": {
+    "py3": {
+      "0.1.1": {
+        "ltp_server-0.1.1-py3-none-any.whl": {
+          "requires_dist": [
+            "fastapi",
+            "uvicorn",
+            "ltp",
+            "pydantic",
+            "fire"
+          ]
+        }
+      }
+    }
+  },
   "mappa-api": {
     "py3": {
       "0.5.0": {
@@ -12981,6 +13016,28 @@
           ],
           "requires_dist": [
             "molecule (>=3.0.2)",
+            "docker (>=4.3.1)",
+            "selinux ; sys_platform == \"linux\"",
+            "selinux ; sys_platform == \"linux2\"",
+            "simplejson ; extra == 'docs'",
+            "Sphinx ; extra == 'docs'",
+            "sphinx-ansible-theme (>=0.2.2) ; extra == 'docs'",
+            "pre-commit (>=1.21.0) ; extra == 'lint'",
+            "molecule[test] ; extra == 'test'",
+            "pytest-helpers-namespace ; extra == 'test'"
+          ],
+          "requires_python": ">=3.6"
+        }
+      },
+      "0.3.3a1": {
+        "molecule_docker-0.3.3a1-py3-none-any.whl": {
+          "provides_extras": [
+            "docs",
+            "lint",
+            "test"
+          ],
+          "requires_dist": [
+            "molecule (>=3.2.0a0)",
             "docker (>=4.3.1)",
             "selinux ; sys_platform == \"linux\"",
             "selinux ; sys_platform == \"linux2\"",
