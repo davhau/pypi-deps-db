@@ -2882,6 +2882,17 @@
           "requires_python": ">=3.6"
         }
       },
+      "1.71.0": {
+        "aws_cdk.aws_servicecatalog-1.71.0-py3-none-any.whl": {
+          "requires_dist": [
+            "aws-cdk.core (==1.71.0)",
+            "constructs (<4.0.0,>=3.2.0)",
+            "jsii (<2.0.0,>=1.14.0)",
+            "publication (>=0.0.3)"
+          ],
+          "requires_python": ">=3.6"
+        }
+      },
       "1.8.0": {
         "aws_cdk.aws_servicecatalog-1.8.0-py3-none-any.whl": {
           "requires_dist": [
@@ -9972,6 +9983,25 @@
   },
   "eland": {
     "py3": {
+      "7.10.0b1": {
+        "eland-7.10.0b1-py3-none-any.whl": {
+          "provides_extras": [
+            "lightgbm",
+            "scikit-learn",
+            "xgboost"
+          ],
+          "requires_dist": [
+            "elasticsearch (>=7.7)",
+            "pandas (>=1)",
+            "matplotlib",
+            "numpy",
+            "lightgbm (<2.4,>=2) ; extra == 'lightgbm'",
+            "scikit-learn (<1,>=0.22.1) ; extra == 'scikit-learn'",
+            "xgboost (<2,>=0.90) ; extra == 'xgboost'"
+          ],
+          "requires_python": ">=3.6"
+        }
+      },
       "7.5.1a2": {
         "eland-7.5.1a2-py3-none-any.whl": {
           "requires_dist": [
@@ -10034,26 +10064,10 @@
         }
       },
       "7.9.0a1": {
-        "eland-7.9.0a1-py3-none-any.whl": {
-          "provides_extras": [
-            "lightgbm",
-            "scikit-learn",
-            "xgboost"
-          ],
-          "requires_dist": [
-            "elasticsearch (>=7.7)",
-            "pandas (>=1)",
-            "matplotlib",
-            "numpy",
-            "lightgbm (<2.4,>=2) ; extra == 'lightgbm'",
-            "scikit-learn (<1,>=0.22.1) ; extra == 'scikit-learn'",
-            "xgboost (<2,>=0.90) ; extra == 'xgboost'"
-          ],
-          "requires_python": ">=3.6"
-        }
+        "eland-7.9.0a1-py3-none-any.whl": "7.10.0b1@eland-7.10.0b1-py3-none-any.whl"
       },
       "7.9.1a1": {
-        "eland-7.9.1a1-py3-none-any.whl": "7.9.0a1@eland-7.9.0a1-py3-none-any.whl"
+        "eland-7.9.1a1-py3-none-any.whl": "7.10.0b1@eland-7.10.0b1-py3-none-any.whl"
       }
     }
   },
@@ -15467,6 +15481,21 @@
             "pytest-verbose-parametrize (<2,>=1.7.0) ; extra == 'test'",
             "pytest-xdist (<2,>=1.29.0) ; extra == 'test'",
             "pytest (<5,>=4.6.3) ; extra == 'test'"
+          ],
+          "requires_python": ">=3.6"
+        }
+      }
+    },
+    "py3": {
+      "0.2": {
+        "molecule_gce-0.2-py3-none-any.whl": {
+          "provides_extras": [
+            "test"
+          ],
+          "requires_dist": [
+            "molecule (>=3.2.0a0)",
+            "pyyaml (<6,>=5.1)",
+            "molecule[test] ; extra == 'test'"
           ],
           "requires_python": ">=3.6"
         }
