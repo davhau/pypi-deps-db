@@ -6406,7 +6406,64 @@
       "38": "35"
     },
     "3.0.4b1": "3.0.4",
-    "3.0.5": "3.0.4"
+    "3.0.5": "3.0.4",
+    "3.0.6": {
+      "35": {
+        "install_requires": [
+          "mypy_extensions",
+          "pyrsistent>=0.15.2",
+          "six",
+          "wrapt>=1.11.2",
+          "cmake"
+        ],
+        "setup_requires": [
+          "# Typing support\n",
+          "typing; python_version<\"3.5\"\n",
+          "typing-extensions; python_version<\"3.8\"\n",
+          "mypy_extensions\n",
+          "\n",
+          "# Prevent installation of Python < 3 package on Windows.\n",
+          "pip>=20.0; sys_platform==\"win32\" and python_version<=\"2.7\"\n",
+          "\n",
+          "# General dependencies\n",
+          "pyrsistent>=0.15.2\n",
+          "six\n",
+          "attrs>=19.1.0; python_version>\"3.5\"\n",
+          "attrs==19.1.0; python_version<=\"3.5\"\n",
+          "wrapt>=1.11.2\n",
+          "cmake"
+        ],
+        "extras_require": {
+          ":python_version < \"3.5\"": [
+            "typing"
+          ],
+          ":python_version < \"3.8\"": [
+            "typing-extensions"
+          ],
+          ":python_version > \"3.5\"": [
+            "attrs>=19.1.0"
+          ],
+          ":python_version <= \"3.5\"": [
+            "attrs==19.1.0"
+          ],
+          ":sys_platform == \"win32\" and python_version <= \"2.7\"": [
+            "pip>=20.0"
+          ]
+        },
+        "tests_require": [
+          "utilspie",
+          "nose",
+          "testresources>=0.2.7",
+          "basictracer==2.2.0"
+        ],
+        "python_requires": [
+          ">=3.5"
+        ]
+      },
+      "36": "35",
+      "37": "35",
+      "38": "35"
+    }
   },
   "covimerage": {
     "0.0.1": {
@@ -41637,7 +41694,8 @@
     "3.0.281": "3.0.252",
     "3.0.282": "3.0.252",
     "3.0.283": "3.0.252",
-    "3.0.284": "3.0.252"
+    "3.0.284": "3.0.252",
+    "3.0.285": "3.0.252"
   },
   "termite": {
     "0.0.1": {
