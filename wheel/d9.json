@@ -414,6 +414,21 @@
       "2020.10.5rc1": {
         "apache_airflow_backport_providers_snowflake-2020.10.5rc1-py3-none-any.whl": "2020.10.5@apache_airflow_backport_providers_snowflake-2020.10.5-py3-none-any.whl"
       },
+      "2020.11.23rc1": {
+        "apache_airflow_backport_providers_snowflake-2020.11.23rc1-py3-none-any.whl": {
+          "provides_extras": [
+            "slack"
+          ],
+          "requires_dist": [
+            "apache-airflow (~=1.10)",
+            "requests (<2.24.0)",
+            "snowflake-connector-python (>=1.5.2)",
+            "snowflake-sqlalchemy (>=1.1.0)",
+            "apache-airflow-backport-providers-slack ; extra == 'slack'"
+          ],
+          "requires_python": "~=3.6"
+        }
+      },
       "2020.5.20rc2": {
         "apache_airflow_backport_providers_snowflake-2020.5.20rc2-py3-none-any.whl": {
           "requires_dist": [
@@ -13462,6 +13477,9 @@
       "1.16.20.0": {
         "mypy_boto3_codeguru_reviewer-1.16.20.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_codeguru_reviewer-1.13.24.3-py3-none-any.whl"
       },
+      "1.16.21.0": {
+        "mypy_boto3_codeguru_reviewer-1.16.21.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_codeguru_reviewer-1.13.24.3-py3-none-any.whl"
+      },
       "1.16.3.0": {
         "mypy_boto3_codeguru_reviewer-1.16.3.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_codeguru_reviewer-1.13.24.3-py3-none-any.whl"
       },
@@ -21549,6 +21567,20 @@
       },
       "0.1.1": {
         "pywordseg-0.1.1-py3-none-any.whl": "0.0.1@pywordseg-0.0.1-py3-none-any.whl"
+      }
+    }
+  },
+  "qbiz-data-raven": {
+    "py3": {
+      "0.1rc1": {
+        "qbiz_data_raven-0.1rc1-py3-none-any.whl": {
+          "requires_dist": [
+            "sqlalchemy (>=1.3.19)",
+            "psycopg2-binary",
+            "pymysql"
+          ],
+          "requires_python": ">=3.6"
+        }
       }
     }
   },
