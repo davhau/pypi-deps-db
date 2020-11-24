@@ -7444,6 +7444,17 @@
       }
     }
   },
+  "dreampixailowworksb": {
+    "py3": {
+      "1.0.4": {
+        "dreampixAILowworksB-1.0.4-py3-none-any.whl": {
+          "requires_dist": [
+            "numpy (>=1.16.2)"
+          ]
+        }
+      }
+    }
+  },
   "dredge": {
     "py3": {
       "1.0.0": {
@@ -23133,6 +23144,41 @@
             "pytest ; extra == 'testing'",
             "pytest-mock ; extra == 'testing'",
             "pytest-postgresql (>=2.1.0) ; extra == 'testing'",
+            "sqlalchemy-stubs ; extra == 'testing'",
+            "swh.model[testing] (>=0.0.50) ; extra == 'testing'",
+            "pytz ; extra == 'testing'",
+            "pytest-xdist ; extra == 'testing'",
+            "swh.journal (>=0.5.1) ; extra == 'testing'"
+          ],
+          "requires_python": ">=3.7"
+        }
+      },
+      "0.18.0": {
+        "swh.storage-0.18.0-py3-none-any.whl": {
+          "provides_extras": [
+            "journal",
+            "schemata",
+            "testing"
+          ],
+          "requires_dist": [
+            "click",
+            "flask",
+            "psycopg2",
+            "aiohttp",
+            "tenacity",
+            "cassandra-driver (!=3.21.0,>=3.19.0)",
+            "deprecated",
+            "typing-extensions",
+            "mypy-extensions",
+            "iso8601",
+            "swh.core[db,http] (>=0.5)",
+            "swh.model (>=0.7.2)",
+            "swh.objstorage (>=0.2.2)",
+            "swh.journal (>=0.5.1) ; extra == 'journal'",
+            "SQLAlchemy ; extra == 'schemata'",
+            "hypothesis (>=3.11.0) ; extra == 'testing'",
+            "pytest ; extra == 'testing'",
+            "pytest-mock ; extra == 'testing'",
             "sqlalchemy-stubs ; extra == 'testing'",
             "swh.model[testing] (>=0.0.50) ; extra == 'testing'",
             "pytz ; extra == 'testing'",
