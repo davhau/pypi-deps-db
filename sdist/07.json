@@ -2150,6 +2150,7 @@
     "0.7.28": "0.6.76",
     "0.7.29": "0.6.76",
     "0.7.3": "0.6.76",
+    "0.7.30": "0.6.76",
     "0.7.4": "0.6.76",
     "0.7.5": "0.6.76",
     "0.7.6": "0.6.76",
@@ -35703,7 +35704,8 @@
     "2.2.8": "2.2.4",
     "2.2.9": "2.2.10",
     "2.3.1": "2.2.10",
-    "2.3.2": "2.2.10"
+    "2.3.2": "2.2.10",
+    "2.3.3": "2.2.10"
   },
   "simple-spider": {
     "1.0": {
@@ -37024,6 +37026,66 @@
           ],
           "all": [
             "requests",
+            "boto3",
+            "google-cloud-storage",
+            "azure-storage-blob",
+            "azure-common",
+            "azure-core",
+            "requests"
+          ],
+          "gcp": [
+            "google-cloud-storage"
+          ],
+          "http": [
+            "requests"
+          ],
+          "test": [
+            "mock",
+            "moto[server]",
+            "pathlib2",
+            "responses",
+            "boto3",
+            "paramiko",
+            "parameterizedtestcase",
+            "pytest",
+            "pytest-rerunfailures"
+          ],
+          "azure": [
+            "azure-storage-blob",
+            "azure-common",
+            "azure-core"
+          ],
+          "webhdfs": [
+            "requests"
+          ]
+        },
+        "tests_require": [
+          "mock",
+          "moto[server]",
+          "pathlib2",
+          "responses",
+          "boto3",
+          "paramiko",
+          "parameterizedtestcase",
+          "pytest",
+          "pytest-rerunfailures"
+        ],
+        "python_requires": [
+          ">=3.6.*"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    },
+    "4.0.1": {
+      "27": {
+        "extras_require": {
+          "s3": [
+            "boto3"
+          ],
+          "all": [
             "boto3",
             "google-cloud-storage",
             "azure-storage-blob",
