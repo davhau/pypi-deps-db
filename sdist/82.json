@@ -713,6 +713,42 @@
     "0.9.3": "0.9.0",
     "1.0.0": "0.32.0",
     "1.1.0": "0.32.0",
+    "1.10.0": {
+      "27": {
+        "install_requires": [
+          "cryptography>=1.2.3",
+          "josepy>=1.1.0",
+          "PyOpenSSL>=0.15.1",
+          "pyrfc3339",
+          "pytz",
+          "requests[security]>=2.6.0",
+          "requests-toolbelt>=0.3.0",
+          "setuptools",
+          "six>=1.9.0"
+        ],
+        "extras_require": {
+          "dev": [
+            "pytest",
+            "pytest-xdist",
+            "tox"
+          ],
+          "docs": [
+            "Sphinx>=1.0",
+            "sphinx_rtd_theme"
+          ],
+          ":python_version < \"3.3\"": [
+            "mock"
+          ]
+        },
+        "python_requires": [
+          ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, !=3.5.*"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    },
     "1.2.0": {
       "27": {
         "install_requires": [
@@ -870,42 +906,7 @@
       "37": "27",
       "38": "27"
     },
-    "1.9.0": {
-      "27": {
-        "install_requires": [
-          "cryptography>=1.2.3",
-          "josepy>=1.1.0",
-          "PyOpenSSL>=0.15.1",
-          "pyrfc3339",
-          "pytz",
-          "requests[security]>=2.6.0",
-          "requests-toolbelt>=0.3.0",
-          "setuptools",
-          "six>=1.9.0"
-        ],
-        "extras_require": {
-          "dev": [
-            "pytest",
-            "pytest-xdist",
-            "tox"
-          ],
-          "docs": [
-            "Sphinx>=1.0",
-            "sphinx_rtd_theme"
-          ],
-          ":python_version < \"3.3\"": [
-            "mock"
-          ]
-        },
-        "python_requires": [
-          ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, !=3.5.*"
-        ]
-      },
-      "35": "27",
-      "36": "27",
-      "37": "27",
-      "38": "27"
-    }
+    "1.9.0": "1.10.0"
   },
   "adafruit-circuitpython-onewire": {
     "1.1.0": {
@@ -4266,6 +4267,7 @@
       "37": "27",
       "38": "27"
     },
+    "0.16.1": "0.16.0",
     "0.3.4.1": {
       "27": {
         "install_requires": [
@@ -23615,7 +23617,8 @@
     "0.1.1": "0.0.5",
     "0.1.2": "0.0.5",
     "0.1.3": "0.0.5",
-    "0.1.4": "0.0.5"
+    "0.1.4": "0.0.5",
+    "0.2.0": "0.0.5"
   },
   "omni-api": {
     "0.1.0": {
@@ -23875,6 +23878,21 @@
       "37": "27",
       "38": "27"
     },
+    "0.5.10": {
+      "27": {
+        "install_requires": [
+          "xmltodict",
+          "aiohttp",
+          "apscheduler",
+          "jinja2",
+          "signxml-openadr==2.9.1"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    },
     "0.5.2": "0.5.1",
     "0.5.3": {
       "27": {
@@ -23892,23 +23910,10 @@
       "38": "27"
     },
     "0.5.4": "0.5.3",
-    "0.5.6": {
-      "27": {
-        "install_requires": [
-          "xmltodict",
-          "aiohttp",
-          "apscheduler",
-          "jinja2",
-          "signxml-openadr==2.9.1"
-        ]
-      },
-      "35": "27",
-      "36": "27",
-      "37": "27",
-      "38": "27"
-    },
-    "0.5.7": "0.5.6",
-    "0.5.8": "0.5.6"
+    "0.5.6": "0.5.10",
+    "0.5.7": "0.5.10",
+    "0.5.8": "0.5.10",
+    "0.5.9": "0.5.10"
   },
   "opensoundscape": {
     "0.1.0": {
@@ -31941,6 +31946,70 @@
     "0.1.7": "0.0.3a0",
     "0.1.8": "0.0.3a0",
     "0.1.9": "0.0.3a0"
+  },
+  "showermodel": {
+    "0.1.2": {
+      "27": {
+        "install_requires": [
+          "numpy~=1.19",
+          "pandas>=1.0.0",
+          "matplotlib~=3.3",
+          "scipy~=1.5",
+          "ipython~=7.12",
+          "setuptools_scm>=3.4"
+        ],
+        "extras_require": {
+          "docs": [
+            "sphinx_rtd_theme",
+            "sphinx_automodapi",
+            "sphinx",
+            "nbsphinx",
+            "numpydoc",
+            "jupyter",
+            "notebook",
+            "graphviz"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    },
+    "0.1.3": {
+      "27": {
+        "install_requires": [
+          "numpy",
+          "pandas",
+          "matplotlib",
+          "scipy",
+          "ipython",
+          "setuptools_scm>=3.4"
+        ],
+        "extras_require": {
+          "docs": [
+            "sphinx_rtd_theme",
+            "sphinx_automodapi",
+            "sphinx",
+            "nbsphinx",
+            "numpydoc",
+            "jupyter",
+            "notebook",
+            "graphviz"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    }
   },
   "shp-way": {
     "1.0": {
