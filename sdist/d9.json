@@ -2983,6 +2983,18 @@
     "2.12.0": "2.10.0",
     "2.12.1": "2.10.0",
     "2.13.0": "2.10.0",
+    "2.15.0": {
+      "27": {
+        "install_requires": [
+          "protobuf>=3.8.0",
+          "zeroconf"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    },
     "2.8.6": "2.10.0",
     "2.8.7": "2.10.0",
     "2.8.8": "2.10.0",
@@ -11079,7 +11091,8 @@
     "1.1.7": "0.9.5",
     "1.1.8": "0.9.5",
     "1.1.9": "0.9.5",
-    "1.2.0": "0.9.5"
+    "1.2.0": "0.9.5",
+    "1.2.1": "0.9.5"
   },
   "fdnutil": {
     "0.0.1": {
@@ -13114,7 +13127,8 @@
       "37": "27",
       "38": "27"
     },
-    "0.0.3": "0.0.1"
+    "0.0.3": "0.0.1",
+    "0.0.4": "0.0.1"
   },
   "ice.template": {
     "0.1.0": {
@@ -20825,6 +20839,7 @@
     "1.16.28.1": "1.11.10.0",
     "1.16.29.0": "1.11.10.0",
     "1.16.3.0": "1.11.10.0",
+    "1.16.30.0": "1.11.10.0",
     "1.16.4.0": "1.11.10.0",
     "1.16.5.0": "1.11.10.0",
     "1.16.5.1": "1.11.10.0",
@@ -21488,6 +21503,24 @@
     "0.1.22": "0.1.20",
     "0.1.26": "0.1.20",
     "0.1.3": "0.1.20"
+  },
+  "nonebot-plugin-test": {
+    "0.1.0": {
+      "27": {
+        "install_requires": [
+          "aiofiles<0.6.0,>=0.5.0",
+          "nonebot2<3.0.0,>=2.0.0-alpha.6",
+          "python-socketio<5.0.0,>=4.6.0"
+        ],
+        "python_requires": [
+          ">=3.7,<4.0"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    }
   },
   "normy": {
     "0.1": {
@@ -27009,7 +27042,8 @@
     "0.2.2": "0.0.7",
     "0.2.3": "0.0.7",
     "0.2.4": "0.0.7",
-    "0.2.5": "0.0.7"
+    "0.2.5": "0.0.7",
+    "0.2.6": "0.0.7"
   },
   "rada_package_moiseieiva": {
     "0.0.dev0": {
@@ -31952,6 +31986,71 @@
       "36": "27",
       "37": "27",
       "38": "27"
+    },
+    "2.0.0rc1": {
+      "27": {
+        "install_requires": [
+          "nibabel>=3.0.1",
+          "nipype<2.0,>=1.5.1",
+          "niworkflows~=1.3.0",
+          "numpy",
+          "pybids>=0.11.1",
+          "templateflow>=0.6"
+        ],
+        "setup_requires": [
+          "setuptools >= 42.0",
+          "setuptools_scm >= 3.4",
+          "toml"
+        ],
+        "extras_require": {
+          "all": [
+            "sphinx<3,>=2.1.2",
+            "pydot>=1.2.3",
+            "pydotplus",
+            "sphinx_rtd_theme",
+            "sphinxcontrib-apidoc~=0.3.0",
+            "sphinxcontrib-napoleon",
+            "sphinxcontrib-versioning",
+            "pytest",
+            "pytest-xdist>=2.0",
+            "pytest-cov==2.10.1",
+            "pytest-env",
+            "coverage"
+          ],
+          "doc": [
+            "sphinx<3,>=2.1.2",
+            "pydot>=1.2.3",
+            "pydotplus",
+            "sphinx_rtd_theme",
+            "sphinxcontrib-apidoc~=0.3.0",
+            "sphinxcontrib-napoleon",
+            "sphinxcontrib-versioning"
+          ],
+          "docs": [
+            "sphinx<3,>=2.1.2",
+            "pydot>=1.2.3",
+            "pydotplus",
+            "sphinx_rtd_theme",
+            "sphinxcontrib-apidoc~=0.3.0",
+            "sphinxcontrib-napoleon",
+            "sphinxcontrib-versioning"
+          ],
+          "tests": [
+            "pytest",
+            "pytest-xdist>=2.0",
+            "pytest-cov==2.10.1",
+            "pytest-env",
+            "coverage"
+          ]
+        },
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
     }
   },
   "sdnn": {
@@ -32997,6 +33096,55 @@
             "flake8==3.7.7",
             "pep8==1.7.1",
             "pyflakes==2.1.1",
+            "pytest-flake8==1.0.4",
+            "pytest-pep8==1.0.6",
+            "coverage==4.5.4",
+            "twine==3.2.0",
+            "wheel==0.35.1"
+          ]
+        },
+        "tests_require": [
+          "pytest==5.2.3",
+          "pytest-cov==2.6.0",
+          "pytest-pythonpath==0.7.3",
+          "flake8==3.7.8",
+          "pep8==1.7.1",
+          "pyflakes==2.0.0",
+          "pytest-flake8==1.0.2",
+          "pytest-pep8==1.0.6",
+          "coverage==5.3",
+          "codecov==2.0.15",
+          "black==19.10b0"
+        ],
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    },
+    "1.0.1": {
+      "27": {
+        "install_requires": [
+          "docopt==0.6.2",
+          "pycryptodome==3.9.9"
+        ],
+        "setup_requires": [
+          "setuptools"
+        ],
+        "extras_require": {
+          "docs": [
+            "mkdocs==1.1.2"
+          ],
+          "develop": [
+            "black==19.10b0",
+            "pytest==5.2.3",
+            "pytest-cov==2.7.1",
+            "pytest-pythonpath==0.7.3",
+            "flake8==3.7.7",
+            "pep8==1.7.1",
             "pytest-flake8==1.0.4",
             "pytest-pep8==1.0.6",
             "coverage==4.5.4",

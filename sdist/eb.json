@@ -8373,7 +8373,18 @@
       "37": "27",
       "38": "27"
     },
-    "1.0.2": "1.0.0"
+    "1.0.2": "1.0.0",
+    "1.0.3": {
+      "27": {
+        "python_requires": [
+          ">=3.3,<4.0"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    }
   },
   "command4bot": {
     "0.1.0": {
@@ -31214,6 +31225,7 @@
     "1.16.28.1": "1.11.10.0",
     "1.16.29.0": "1.11.10.0",
     "1.16.3.0": "1.11.10.0",
+    "1.16.30.0": "1.11.10.0",
     "1.16.4.0": "1.11.10.0",
     "1.16.5.0": "1.11.10.0",
     "1.16.5.1": "1.11.10.0",
@@ -41211,6 +41223,43 @@
           "swh.core",
           "swh.model>=0.7.0",
           "swh.web.client>=0.2.1"
+        ],
+        "setup_requires": [
+          "setuptools-scm"
+        ],
+        "extras_require": {
+          "testing": [
+            "pytest",
+            "requests",
+            "requests-mock"
+          ]
+        },
+        "tests_require": [
+          "pytest",
+          "requests  # workaround for https://forge.softwareheritage.org/T2634",
+          "requests-mock"
+        ],
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    },
+    "0.9.3": {
+      "27": {
+        "install_requires": [
+          "PyYAML",
+          "aiosqlite",
+          "psutil",
+          "pyfuse3",
+          "python-daemon",
+          "requests",
+          "swh.core>=0.10.0",
+          "swh.model>=0.7.0",
+          "swh.web.client>=0.2.3"
         ],
         "setup_requires": [
           "setuptools-scm"
