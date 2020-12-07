@@ -5269,7 +5269,45 @@
       "37": "27",
       "38": "27"
     },
-    "2.0.0": "1.5.0"
+    "2.0.0": "1.5.0",
+    "2.0.2": {
+      "27": {
+        "install_requires": [
+          "numpy",
+          "cython",
+          "h5py",
+          "scipy",
+          "six",
+          "hdf5plugin",
+          "pandas"
+        ],
+        "setup_requires": [
+          "pytest-runner"
+        ],
+        "extras_require": {
+          "full": [
+            "pyslalib"
+          ],
+          ":python_version > \"2.7\"": [
+            "matplotlib",
+            "astropy"
+          ],
+          ":python_version == \"2.7\"": [
+            "setuptools<40.0",
+            "matplotlib<3.0",
+            "astropy<3.0"
+          ]
+        },
+        "tests_require": [
+          "pytest",
+          "pySLALIB"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    }
   },
   "bling-integration": {
     "0.1.0": {
@@ -6914,7 +6952,8 @@
       "38": "35"
     },
     "1.7.17": "0.2.2",
-    "1.7.21": "0.2.2"
+    "1.7.21": "0.2.2",
+    "1.7.24": "0.2.2"
   },
   "cenvars-client": {
     "0.0.0.2": {
