@@ -511,6 +511,17 @@
       }
     }
   },
+  "aio-recaptcha": {
+    "py3": {
+      "0.1.0": {
+        "aio_recaptcha-0.1.0-py3-none-any.whl": {
+          "requires_dist": [
+            "aiohttp"
+          ]
+        }
+      }
+    }
+  },
   "aiofreepybox": {
     "py3": {
       "0.0.4": {
@@ -16193,6 +16204,15 @@
       },
       "0.1.1": {
         "mkdocs_click-0.1.1-py3-none-any.whl": "0.1.0@mkdocs_click-0.1.0-py3-none-any.whl"
+      },
+      "0.2.0": {
+        "mkdocs_click-0.2.0-py3-none-any.whl": {
+          "requires_dist": [
+            "click (==7.*)",
+            "markdown (==3.*)"
+          ],
+          "requires_python": ">=3.7"
+        }
       }
     }
   },
@@ -24212,6 +24232,17 @@
       },
       "0.9.1": {
         "rawpipe-0.9.1-py3-none-any.whl": "0.6.1@rawpipe-0.6.1-py3-none-any.whl"
+      },
+      "0.9.2": {
+        "rawpipe-0.9.2-py3-none-any.whl": {
+          "requires_dist": [
+            "numpy (>=1.17.0)",
+            "opencv-python (>=4.1.0)",
+            "colorio (>=0.6.3)",
+            "pylint",
+            "flake8"
+          ]
+        }
       }
     }
   },
@@ -25145,6 +25176,9 @@
       },
       "0.6.3": {
         "sciengdox-0.6.3-py3-none-any.whl": "0.6.2@sciengdox-0.6.2-py3-none-any.whl"
+      },
+      "0.7.0": {
+        "sciengdox-0.7.0-py3-none-any.whl": "0.6.2@sciengdox-0.6.2-py3-none-any.whl"
       }
     }
   },
@@ -29891,6 +29925,74 @@
           "requires_python": "~=3.6"
         }
       },
+      "0.40.10": {
+        "spell-0.40.10-py2.py3-none-any.whl": {
+          "provides_extras": [
+            "cluster-aws",
+            "cluster-azure",
+            "cluster-gcp",
+            "dev",
+            "serving",
+            "test"
+          ],
+          "requires_dist": [
+            "click (>=7.0)",
+            "future (>=0.14.0)",
+            "GitPython (>=3.0.0)",
+            "halo (==0.0.28)",
+            "pyaml",
+            "pycryptodomex (>=3.4.2)",
+            "python-dateutil (>=2.8.0)",
+            "requests (>=2.18)",
+            "requirements-parser",
+            "sentry-sdk (>=0.3.1)",
+            "tabulate (>=0.4.2)",
+            "ipaddress (>=1.0.16)",
+            "packaging (>=20.4)",
+            "starlette",
+            "jinja2",
+            "pywin32 (>=227) ; platform_system == \"Windows\"",
+            "boto3 (>=1.13.0) ; extra == 'cluster-aws'",
+            "kubernetes ; extra == 'cluster-aws'",
+            "azure-common (==1.1.25) ; extra == 'cluster-azure'",
+            "azure-core (==1.8.2) ; extra == 'cluster-azure'",
+            "azure-graphrbac (==0.61.1) ; extra == 'cluster-azure'",
+            "azure-identity (==1.4.1) ; extra == 'cluster-azure'",
+            "azure-mgmt-authorization (==0.61.0) ; extra == 'cluster-azure'",
+            "azure-mgmt-compute (==17.0.0) ; extra == 'cluster-azure'",
+            "azure-mgmt-core (==1.2.1) ; extra == 'cluster-azure'",
+            "azure-mgmt-network (==16.0.0) ; extra == 'cluster-azure'",
+            "azure-mgmt-resource (==15.0.0) ; extra == 'cluster-azure'",
+            "azure-mgmt-storage (==16.0.0) ; extra == 'cluster-azure'",
+            "azure-storage-blob (==12.5.0) ; extra == 'cluster-azure'",
+            "google-api-core (>=1.15.0) ; extra == 'cluster-gcp'",
+            "google-api-python-client ; extra == 'cluster-gcp'",
+            "google-cloud-storage (>=1.18.0) ; extra == 'cluster-gcp'",
+            "kubernetes ; extra == 'cluster-gcp'",
+            "credstash ; extra == 'dev'",
+            "docker-compose ; extra == 'dev'",
+            "flake8 ; extra == 'dev'",
+            "mkdocs ; extra == 'dev'",
+            "sh ; extra == 'dev'",
+            "sphinx ; extra == 'dev'",
+            "psycopg2 ; extra == 'dev'",
+            "hypercorn ; extra == 'serving'",
+            "aiohttp ; extra == 'serving'",
+            "cchardet ; extra == 'serving'",
+            "prometheus-client (==0.8.0) ; extra == 'serving'",
+            "gunicorn ; extra == 'serving'",
+            "uvicorn[standard] ; extra == 'serving'",
+            "setproctitle ; extra == 'serving'",
+            "credstash ; extra == 'test'",
+            "pycryptodomex ; extra == 'test'",
+            "pytest ; extra == 'test'",
+            "pytest-xdist ; extra == 'test'",
+            "pytest-asyncio ; extra == 'test'",
+            "sh ; extra == 'test'"
+          ],
+          "requires_python": "~=3.6"
+        }
+      },
       "0.40.2": {
         "spell-0.40.2-py2.py3-none-any.whl": "0.40.1@spell-0.40.1-py2.py3-none-any.whl"
       },
@@ -29975,75 +30077,10 @@
         "spell-0.40.7-py2.py3-none-any.whl": "0.40.6@spell-0.40.6-py2.py3-none-any.whl"
       },
       "0.40.8": {
-        "spell-0.40.8-py2.py3-none-any.whl": {
-          "provides_extras": [
-            "cluster-aws",
-            "cluster-azure",
-            "cluster-gcp",
-            "dev",
-            "serving",
-            "test"
-          ],
-          "requires_dist": [
-            "click (>=7.0)",
-            "future (>=0.14.0)",
-            "GitPython (>=3.0.0)",
-            "halo (==0.0.28)",
-            "pyaml",
-            "pycryptodomex (>=3.4.2)",
-            "python-dateutil (>=2.8.0)",
-            "requests (>=2.18)",
-            "requirements-parser",
-            "sentry-sdk (>=0.3.1)",
-            "tabulate (>=0.4.2)",
-            "ipaddress (>=1.0.16)",
-            "packaging (>=20.4)",
-            "starlette",
-            "jinja2",
-            "pywin32 (>=227) ; platform_system == \"Windows\"",
-            "boto3 (>=1.13.0) ; extra == 'cluster-aws'",
-            "kubernetes ; extra == 'cluster-aws'",
-            "azure-common (==1.1.25) ; extra == 'cluster-azure'",
-            "azure-core (==1.8.2) ; extra == 'cluster-azure'",
-            "azure-graphrbac (==0.61.1) ; extra == 'cluster-azure'",
-            "azure-identity (==1.4.1) ; extra == 'cluster-azure'",
-            "azure-mgmt-authorization (==0.61.0) ; extra == 'cluster-azure'",
-            "azure-mgmt-compute (==17.0.0) ; extra == 'cluster-azure'",
-            "azure-mgmt-core (==1.2.1) ; extra == 'cluster-azure'",
-            "azure-mgmt-network (==16.0.0) ; extra == 'cluster-azure'",
-            "azure-mgmt-resource (==15.0.0) ; extra == 'cluster-azure'",
-            "azure-mgmt-storage (==16.0.0) ; extra == 'cluster-azure'",
-            "azure-storage-blob (==12.5.0) ; extra == 'cluster-azure'",
-            "google-api-core (>=1.15.0) ; extra == 'cluster-gcp'",
-            "google-api-python-client ; extra == 'cluster-gcp'",
-            "google-cloud-storage (>=1.18.0) ; extra == 'cluster-gcp'",
-            "kubernetes ; extra == 'cluster-gcp'",
-            "credstash ; extra == 'dev'",
-            "docker-compose ; extra == 'dev'",
-            "flake8 ; extra == 'dev'",
-            "mkdocs ; extra == 'dev'",
-            "sh ; extra == 'dev'",
-            "sphinx ; extra == 'dev'",
-            "psycopg2 ; extra == 'dev'",
-            "hypercorn ; extra == 'serving'",
-            "aiohttp ; extra == 'serving'",
-            "cchardet ; extra == 'serving'",
-            "prometheus-client (==0.8.0) ; extra == 'serving'",
-            "gunicorn ; extra == 'serving'",
-            "uvicorn[standard] ; extra == 'serving'",
-            "setproctitle ; extra == 'serving'",
-            "credstash ; extra == 'test'",
-            "pycryptodomex ; extra == 'test'",
-            "pytest ; extra == 'test'",
-            "pytest-xdist ; extra == 'test'",
-            "pytest-asyncio ; extra == 'test'",
-            "sh ; extra == 'test'"
-          ],
-          "requires_python": "~=3.6"
-        }
+        "spell-0.40.8-py2.py3-none-any.whl": "0.40.10@spell-0.40.10-py2.py3-none-any.whl"
       },
       "0.40.9": {
-        "spell-0.40.9-py2.py3-none-any.whl": "0.40.8@spell-0.40.8-py2.py3-none-any.whl"
+        "spell-0.40.9-py2.py3-none-any.whl": "0.40.10@spell-0.40.10-py2.py3-none-any.whl"
       },
       "0.9.0": {
         "spell-0.9.0-py2.py3-none-any.whl": {
