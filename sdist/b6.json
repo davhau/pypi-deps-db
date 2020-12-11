@@ -39112,6 +39112,7 @@
     "1.16.31.1": "1.11.10.0",
     "1.16.32.0": "1.11.10.0",
     "1.16.33.0": "1.11.10.0",
+    "1.16.34.0": "1.11.10.0",
     "1.16.4.0": "1.11.10.0",
     "1.16.5.0": "1.11.10.0",
     "1.16.5.1": "1.11.10.0",
@@ -50276,6 +50277,65 @@
           "numpy",
           "scipy",
           "parasail",
+          "scikit-learn",
+          "python-levenshtein",
+          "python-igraph",
+          "networkx",
+          "squarify",
+          "airr",
+          "tqdm>=4.29.1",
+          "setuptools_scm",
+          "pytoml"
+        ],
+        "extras_require": {
+          "doc": [
+            "sphinx<3.1,>=3.0.1",
+            "sphinx_autodoc_typehints>=1.8.0",
+            "scanpydoc>=0.5",
+            "sphinx_rtd_theme<0.5,>=0.4",
+            "leidenalg",
+            "nbsphinx>=0.6.0",
+            "jupytext",
+            "sphinxcontrib-bibtex>=1.0.0",
+            "pycairo",
+            "jupyter_client",
+            "ipykernel"
+          ],
+          "test": [
+            "pytest",
+            "black"
+          ],
+          "rpack": [
+            "rectangle-packer"
+          ],
+          ":python_version < \"3.8\"": [
+            "importlib_metadata>=0.7"
+          ],
+          ":sys_platform == \"win32\"": [
+            "pycairo>=1.20"
+          ],
+          "doc:python_version < \"3.8\"": [
+            "typing_extensions"
+          ]
+        },
+        "python_requires": [
+          ">= 3.6"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    },
+    "0.6.0": {
+      "27": {
+        "install_requires": [
+          "anndata>=0.7.3",
+          "scanpy>=1.6.0",
+          "pandas>=0.21",
+          "numpy",
+          "scipy",
+          "parasail!=1.2.1",
           "scikit-learn",
           "python-levenshtein",
           "python-igraph",
