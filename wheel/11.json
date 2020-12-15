@@ -919,6 +919,33 @@
   },
   "apache-airflow-providers-amazon": {
     "py3": {
+      "1.0.0": {
+        "apache_airflow_providers_amazon-1.0.0-py3-none-any.whl": {
+          "provides_extras": [
+            "apache.hive",
+            "google",
+            "imap",
+            "mongo",
+            "mysql",
+            "postgres",
+            "ssh"
+          ],
+          "requires_dist": [
+            "apache-airflow (>=2.0.0a0)",
+            "boto3 (<1.16.0,>=1.15.0)",
+            "botocore (<1.19.0,>=1.18.0)",
+            "watchtower (~=0.7.3)",
+            "apache-airflow-providers-apache-hive ; extra == 'apache.hive'",
+            "apache-airflow-providers-google ; extra == 'google'",
+            "apache-airflow-providers-imap ; extra == 'imap'",
+            "apache-airflow-providers-mongo ; extra == 'mongo'",
+            "apache-airflow-providers-mysql ; extra == 'mysql'",
+            "apache-airflow-providers-postgres ; extra == 'postgres'",
+            "apache-airflow-providers-ssh ; extra == 'ssh'"
+          ],
+          "requires_python": "~=3.6"
+        }
+      },
       "1.0.0b1": {
         "apache_airflow_providers_amazon-1.0.0b1-py3-none-any.whl": {
           "provides_extras": [
@@ -949,38 +976,14 @@
         "apache_airflow_providers_amazon-1.0.0b2-py3-none-any.whl": "1.0.0b1@apache_airflow_providers_amazon-1.0.0b1-py3-none-any.whl"
       },
       "1.0.0rc1": {
-        "apache_airflow_providers_amazon-1.0.0rc1-py3-none-any.whl": {
-          "provides_extras": [
-            "apache.hive",
-            "google",
-            "imap",
-            "mongo",
-            "mysql",
-            "postgres",
-            "ssh"
-          ],
-          "requires_dist": [
-            "apache-airflow (>=2.0.0a0)",
-            "boto3 (<1.16.0,>=1.15.0)",
-            "botocore (<1.19.0,>=1.18.0)",
-            "watchtower (~=0.7.3)",
-            "apache-airflow-providers-apache-hive ; extra == 'apache.hive'",
-            "apache-airflow-providers-google ; extra == 'google'",
-            "apache-airflow-providers-imap ; extra == 'imap'",
-            "apache-airflow-providers-mongo ; extra == 'mongo'",
-            "apache-airflow-providers-mysql ; extra == 'mysql'",
-            "apache-airflow-providers-postgres ; extra == 'postgres'",
-            "apache-airflow-providers-ssh ; extra == 'ssh'"
-          ],
-          "requires_python": "~=3.6"
-        }
+        "apache_airflow_providers_amazon-1.0.0rc1-py3-none-any.whl": "1.0.0@apache_airflow_providers_amazon-1.0.0-py3-none-any.whl"
       }
     }
   },
   "apache-airflow-providers-samba": {
     "py3": {
-      "1.0.0b1": {
-        "apache_airflow_providers_samba-1.0.0b1-py3-none-any.whl": {
+      "1.0.0": {
+        "apache_airflow_providers_samba-1.0.0-py3-none-any.whl": {
           "requires_dist": [
             "apache-airflow (>=2.0.0a0)",
             "pysmbclient (>=0.1.3)"
@@ -988,11 +991,14 @@
           "requires_python": "~=3.6"
         }
       },
+      "1.0.0b1": {
+        "apache_airflow_providers_samba-1.0.0b1-py3-none-any.whl": "1.0.0@apache_airflow_providers_samba-1.0.0-py3-none-any.whl"
+      },
       "1.0.0b2": {
-        "apache_airflow_providers_samba-1.0.0b2-py3-none-any.whl": "1.0.0b1@apache_airflow_providers_samba-1.0.0b1-py3-none-any.whl"
+        "apache_airflow_providers_samba-1.0.0b2-py3-none-any.whl": "1.0.0@apache_airflow_providers_samba-1.0.0-py3-none-any.whl"
       },
       "1.0.0rc1": {
-        "apache_airflow_providers_samba-1.0.0rc1-py3-none-any.whl": "1.0.0b1@apache_airflow_providers_samba-1.0.0b1-py3-none-any.whl"
+        "apache_airflow_providers_samba-1.0.0rc1-py3-none-any.whl": "1.0.0@apache_airflow_providers_samba-1.0.0-py3-none-any.whl"
       }
     }
   },
@@ -8341,6 +8347,22 @@
       },
       "1.0.3": {
         "cyjax_cti-1.0.3-py3-none-any.whl": "1.0.1@cyjax_cti-1.0.1-py3-none-any.whl"
+      },
+      "1.0.4": {
+        "cyjax_cti-1.0.4-py3-none-any.whl": {
+          "provides_extras": [
+            "test"
+          ],
+          "requires_dist": [
+            "requests",
+            "responses",
+            "pytz",
+            "pytest ; extra == 'test'",
+            "pytest-mock ; extra == 'test'",
+            "twine ; extra == 'test'"
+          ],
+          "requires_python": ">=3.6"
+        }
       }
     }
   },
@@ -14772,6 +14794,14 @@
             "tensorboard (<=1.15.2,>=1.13.0)"
           ]
         }
+      },
+      "1.0.4": {
+        "instantdl-1.0.4-py3-none-any.whl": {
+          "requires_dist": [
+            "keras (>=2.2.4)",
+            "tensorboard (<=1.15.2,>=1.13.0)"
+          ]
+        }
       }
     }
   },
@@ -18001,6 +18031,9 @@
       "1.16.35.0": {
         "mypy_boto3_honeycode-1.16.35.0-py3-none-any.whl": "1.14.52.1@mypy_boto3_honeycode-1.14.52.1-py3-none-any.whl"
       },
+      "1.16.36.0": {
+        "mypy_boto3_honeycode-1.16.36.0-py3-none-any.whl": "1.14.52.1@mypy_boto3_honeycode-1.14.52.1-py3-none-any.whl"
+      },
       "1.16.4.0": {
         "mypy_boto3_honeycode-1.16.4.0-py3-none-any.whl": "1.14.52.1@mypy_boto3_honeycode-1.14.52.1-py3-none-any.whl"
       },
@@ -18580,6 +18613,9 @@
       },
       "1.16.35.0": {
         "mypy_boto3_iotevents_data-1.16.35.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_iotevents_data-1.13.24.3-py3-none-any.whl"
+      },
+      "1.16.36.0": {
+        "mypy_boto3_iotevents_data-1.16.36.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_iotevents_data-1.13.24.3-py3-none-any.whl"
       },
       "1.16.4.0": {
         "mypy_boto3_iotevents_data-1.16.4.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_iotevents_data-1.13.24.3-py3-none-any.whl"
