@@ -8768,6 +8768,9 @@
       "0.11": {
         "georss_client-0.11-py3-none-any.whl": "0.10@georss_client-0.10-py3-none-any.whl"
       },
+      "0.12": {
+        "georss_client-0.12-py3-none-any.whl": "0.10@georss_client-0.10-py3-none-any.whl"
+      },
       "0.2": {
         "georss_client-0.2-py3-none-any.whl": "0.1@georss_client-0.1-py3-none-any.whl"
       },
@@ -11829,6 +11832,31 @@
       },
       "21.7.0": {
         "keyring-21.7.0-py3-none-any.whl": "21.5.0@keyring-21.5.0-py3-none-any.whl"
+      },
+      "21.8.0": {
+        "keyring-21.8.0-py3-none-any.whl": {
+          "provides_extras": [
+            "docs",
+            "testing"
+          ],
+          "requires_dist": [
+            "importlib-metadata (>=1) ; python_version < \"3.8\"",
+            "SecretStorage (>=3.2) ; sys_platform == \"linux\"",
+            "jeepney (>=0.4.2) ; sys_platform == \"linux\"",
+            "pywin32-ctypes (!=0.1.0,!=0.1.1) ; sys_platform == \"win32\"",
+            "sphinx ; extra == 'docs'",
+            "jaraco.packaging (>=8.2) ; extra == 'docs'",
+            "rst.linker (>=1.9) ; extra == 'docs'",
+            "pytest (!=3.7.3,>=3.5) ; extra == 'testing'",
+            "pytest-checkdocs (>=1.2.3) ; extra == 'testing'",
+            "pytest-flake8 ; extra == 'testing'",
+            "pytest-cov ; extra == 'testing'",
+            "jaraco.test (>=3.2.0) ; extra == 'testing'",
+            "pytest-black (>=0.3.7) ; (platform_python_implementation != \"PyPy\") and extra == 'testing'",
+            "pytest-mypy ; (platform_python_implementation != \"PyPy\") and extra == 'testing'"
+          ],
+          "requires_python": ">=3.6"
+        }
       }
     }
   },
