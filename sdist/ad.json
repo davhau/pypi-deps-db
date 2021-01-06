@@ -45551,7 +45551,8 @@
     "0.3.5.dev201230": "0.3.5.dev201208",
     "0.3.5.dev201231": "0.3.5.dev201208",
     "0.3.5.dev210102": "0.3.5.dev201208",
-    "0.3.5.dev210104": "0.3.5.dev201208"
+    "0.3.5.dev210104": "0.3.5.dev201208",
+    "0.3.5.dev210105": "0.3.5.dev201208"
   },
   "marionette-client-mozilla-b2g32-v2-0": {
     "0.1": {
@@ -45788,7 +45789,21 @@
       "38": "27"
     },
     "3.0.1": "3.0",
-    "3.1.0": "3.0"
+    "3.1.0": "3.0",
+    "3.1.1": {
+      "27": {
+        "install_requires": [
+          "watchdog"
+        ],
+        "python_requires": [
+          ">=3.8"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    }
   },
   "medeina": {
     "1.1": {
@@ -51020,7 +51035,8 @@
     "0.8.7": "0.8.10",
     "0.8.8": "0.8.10",
     "0.8.9": "0.8.10",
-    "0.9.0": "0.8.16"
+    "0.9.0": "0.8.16",
+    "0.9.1": "0.8.16"
   },
   "portal-pushify": {
     "0.0.10": {
@@ -54154,6 +54170,33 @@
           "pyscaffold<5.0a0,>=4.0a3",
           "configupdater<2,>=1.1.2",
           "packaging>=20.4"
+        ],
+        "extras_require": {
+          "testing": [
+            "tox",
+            "pre-commit",
+            "setuptools_scm",
+            "virtualenv",
+            "configupdater",
+            "pytest",
+            "pytest-cov",
+            "pytest-xdist"
+          ],
+          ":python_version < \"3.8\"": [
+            "importlib-metadata"
+          ]
+        }
+      },
+      "36": "35",
+      "37": "35",
+      "38": "35"
+    },
+    "0.6a3": {
+      "35": {
+        "install_requires": [
+          "pyscaffold<5.0a0,>=4.0b2",
+          "configupdater<2,>=1.1.3",
+          "packaging>=20.7"
         ],
         "extras_require": {
           "testing": [
