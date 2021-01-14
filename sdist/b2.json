@@ -12172,7 +12172,8 @@
       "36": "27",
       "37": "27",
       "38": "27"
-    }
+    },
+    "1.1": "1.0"
   },
   "daemonctl": {
     "1.3.10": {
@@ -14016,7 +14017,10 @@
     "2.1.2": "2.1.0",
     "2.1.3": "2.1.0",
     "2.1.4": "2.1.0",
-    "2.1.5": "2.1.0"
+    "2.1.5": "2.1.0",
+    "2.1.6": "2.1.0",
+    "2.1.7": "2.1.0",
+    "2.1.8": "2.1.0"
   },
   "dedec": {
     "0.2.0": {
@@ -14343,6 +14347,27 @@
         ],
         "python_requires": [
           ">=3.6,<4.0"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    }
+  },
+  "digitalmarketplace-content-loader": {
+    "7.28.1": {
+      "27": {
+        "install_requires": [
+          "Flask<1.1.0,>=1.0.2",
+          "Jinja2<2.12,>=2.10",
+          "Markdown<4.0.0,>=2.6.7",
+          "PyYAML<6.0,>=5.1.2",
+          "inflection<1.0.0,>=0.3.1",
+          "digitalmarketplace-utils>=52.9.0"
+        ],
+        "python_requires": [
+          "~=3.6"
         ]
       },
       "35": "27",
@@ -33749,7 +33774,45 @@
       "37": "35",
       "38": "35"
     },
-    "4.1": "4.0"
+    "4.1": "4.0",
+    "4.2": {
+      "35": {
+        "install_requires": [
+          "setuptools",
+          "altgraph",
+          "pyinstaller-hooks-contrib>=2020.6"
+        ],
+        "setup_requires": [
+          "setuptools >= 39.2.0"
+        ],
+        "extras_require": {
+          "encryption": [
+            "tinyaes>=1.0.0"
+          ],
+          "hook_testing": [
+            "pytest>=2.7.3",
+            "execnet>=1.5.0",
+            "psutil"
+          ],
+          ":python_version < \"3.8\"": [
+            "importlib-metadata"
+          ],
+          ":sys_platform == \"win32\"": [
+            "pefile>=2017.8.1",
+            "pywin32-ctypes>=0.2.0"
+          ],
+          ":sys_platform == \"darwin\"": [
+            "macholib>=1.8"
+          ]
+        },
+        "python_requires": [
+          ">=3.5"
+        ]
+      },
+      "36": "35",
+      "37": "35",
+      "38": "35"
+    }
   },
   "pykkar": {
     "1.0": {
@@ -50481,6 +50544,7 @@
       "37": "27",
       "38": "27"
     },
+    "0.0.23": "0.0.19",
     "0.0.3": {
       "27": {
         "install_requires": [
