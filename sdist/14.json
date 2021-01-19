@@ -741,6 +741,18 @@
     },
     "0.2": "0.0.2",
     "0.3.1": "0.0.2",
+    "0.3.10": {
+      "36": {
+        "install_requires": [
+          "pyyaml==5.3.1"
+        ],
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "37": "36",
+      "38": "36"
+    },
     "0.3.2": "0.0.2",
     "0.3.3": "0.0.2",
     "0.3.5": {
@@ -753,20 +765,9 @@
       "38": "36"
     },
     "0.3.6": "0.3.5",
-    "0.3.7": {
-      "36": {
-        "install_requires": [
-          "pyyaml==5.3.1"
-        ],
-        "python_requires": [
-          ">=3.6"
-        ]
-      },
-      "37": "36",
-      "38": "36"
-    },
-    "0.3.8": "0.3.7",
-    "0.3.9": "0.3.7"
+    "0.3.7": "0.3.10",
+    "0.3.8": "0.3.10",
+    "0.3.9": "0.3.10"
   },
   "api": {
     "0.0.1.dev1": {
@@ -6881,6 +6882,33 @@
           ],
           "web": [
             "PySimpleGUIWeb<0.40.0,>=0.39.0"
+          ]
+        },
+        "python_requires": [
+          ">=3.7,<4.0"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    },
+    "2021": {
+      "27": {
+        "install_requires": [
+          "Pillow<10,>=8.1.0",
+          "PySimpleGUI<6,>=4.34.0",
+          "PyYAML<7,>=5.3.1",
+          "catpandoc<2022,>=2020.3.0",
+          "getostheme<2022,>=2020.4.0",
+          "pypandoc<3,>=1.5"
+        ],
+        "extras_require": {
+          "qt": [
+            "PySimpleGUIQt<2,>=0.35.0"
+          ],
+          "web": [
+            "PySimpleGUIWeb<2,>=0.39.0"
           ]
         },
         "python_requires": [
@@ -21208,6 +21236,10 @@
     "1.3.3.dev24": "1.3.3.dev10",
     "1.3.3.dev26": "1.3.3.dev10",
     "1.3.3.dev28": "1.3.3.dev10",
+    "1.3.3.dev30": "1.3.3.dev10",
+    "1.3.3.dev32": "1.3.3.dev10",
+    "1.3.3.dev34": "1.3.3.dev10",
+    "1.3.3.dev36": "1.3.3.dev10",
     "1.3.3.dev4": "1.3.3.dev10",
     "1.3.3.dev6": "1.3.3.dev10",
     "1.3.3.dev8": "1.3.3.dev10"
@@ -26968,7 +27000,97 @@
     "6.0.8": "6.0.5",
     "6.0.9": "6.0.10",
     "6.1.0": "6.0.22",
-    "6.1.1": "6.0.22"
+    "6.1.1": "6.0.22",
+    "6.1.2": {
+      "27": {
+        "install_requires": [
+          "uvicorn",
+          "websockets",
+          "jsonschema",
+          "python-dateutil",
+          "pycryptodome",
+          "jwcrypto",
+          "setuptools",
+          "orjson<4,>=3",
+          "zope.interface",
+          "pyjwt<2.0.0",
+          "asyncpg",
+          "cffi",
+          "PyYAML>=5.1",
+          "lru-dict",
+          "mypy_extensions",
+          "argon2-cffi",
+          "backoff",
+          "multidict",
+          "typing_extensions"
+        ],
+        "setup_requires": [
+          "pytest-runner"
+        ],
+        "extras_require": {
+          "docs": [
+            "async-asgi-testclient<2.0.0",
+            "sphinx",
+            "recommonmark",
+            "sphinxcontrib-httpdomain",
+            "sphinxcontrib-httpexample",
+            "sphinx-guillotina-theme",
+            "sphinx-autodoc-typehints"
+          ],
+          "test": [
+            "pytest<6.1.0,>=3.8.0",
+            "docker",
+            "backoff",
+            "psycopg2-binary",
+            "pytest-asyncio<=0.13.0",
+            "pytest-cov",
+            "coverage>=4.0.3",
+            "pytest-docker-fixtures",
+            "pytest-rerunfailures<=9.0",
+            "async-asgi-testclient<2.0.0",
+            "openapi-spec-validator",
+            "aiohttp<4.0.0,>=3.0.0",
+            "asyncmock",
+            "prometheus-client"
+          ],
+          "redis": [],
+          "mailer": [
+            "html2text>=2018.1.9",
+            "aiosmtplib>=1.0.6"
+          ],
+          "testdata": [],
+          "memcached": [
+            "emcache"
+          ],
+          "recaptcha": [
+            "aiohttp<4"
+          ],
+          "validation": [
+            "pytz==2020.1"
+          ],
+          "redis:python_version < \"3.8\"": [
+            "aioredis>=1.2.0"
+          ],
+          "redis:python_version >= \"3.8\"": [
+            "aioredis>=1.3.0"
+          ],
+          "testdata:python_version < \"3.8\"": [
+            "aiohttp<3.6.0,>=3.0.0"
+          ],
+          "testdata:python_version >= \"3.8\"": [
+            "aiohttp<4.0.0,>=3.6.0"
+          ]
+        },
+        "python_requires": [
+          ">=3.7.0"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    },
+    "6.1.3": "6.1.2"
   },
   "gwaportalpipeline": {
     "0.2.10": {
@@ -35058,7 +35180,8 @@
     "1.2.0": "0.1.0",
     "1.3.0": "0.1.0",
     "1.4.0": "0.1.0",
-    "1.5.0": "0.1.0"
+    "1.5.0": "0.1.0",
+    "1.6.0": "0.1.0"
   },
   "octue": {
     "0.1.3": {
@@ -45301,6 +45424,8 @@
     "0.10.12": "0.10.10",
     "0.10.13": "0.10.10",
     "0.10.14": "0.10.10",
+    "0.10.15": "0.10.10",
+    "0.10.16": "0.10.10",
     "0.10.2": "0.10.0",
     "0.10.3": "0.10.0",
     "0.10.4": "0.10.0",
