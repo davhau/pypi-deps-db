@@ -10473,22 +10473,25 @@
   },
   "comdirect-api-simple": {
     "py3": {
-      "0.0.6": {
-        "comdirect_api_simple-0.0.6-py3-none-any.whl": {
+      "0.0.10": {
+        "comdirect_api_simple-0.0.10-py3-none-any.whl": {
           "requires_dist": [
             "requests"
           ],
           "requires_python": ">=3.6"
         }
       },
+      "0.0.6": {
+        "comdirect_api_simple-0.0.6-py3-none-any.whl": "0.0.10@comdirect_api_simple-0.0.10-py3-none-any.whl"
+      },
       "0.0.7": {
-        "comdirect_api_simple-0.0.7-py3-none-any.whl": "0.0.6@comdirect_api_simple-0.0.6-py3-none-any.whl"
+        "comdirect_api_simple-0.0.7-py3-none-any.whl": "0.0.10@comdirect_api_simple-0.0.10-py3-none-any.whl"
       },
       "0.0.8": {
-        "comdirect_api_simple-0.0.8-py3-none-any.whl": "0.0.6@comdirect_api_simple-0.0.6-py3-none-any.whl"
+        "comdirect_api_simple-0.0.8-py3-none-any.whl": "0.0.10@comdirect_api_simple-0.0.10-py3-none-any.whl"
       },
       "0.0.9": {
-        "comdirect_api_simple-0.0.9-py3-none-any.whl": "0.0.6@comdirect_api_simple-0.0.6-py3-none-any.whl"
+        "comdirect_api_simple-0.0.9-py3-none-any.whl": "0.0.10@comdirect_api_simple-0.0.10-py3-none-any.whl"
       }
     }
   },
@@ -11143,6 +11146,9 @@
       },
       "15093": {
         "curiosity-15093-py3-none-any.whl": "14872@curiosity-14872-py3-none-any.whl"
+      },
+      "15269": {
+        "curiosity-15269-py3-none-any.whl": "14872@curiosity-14872-py3-none-any.whl"
       }
     }
   },
@@ -17101,6 +17107,17 @@
       }
     }
   },
+  "democritus-regexes": {
+    "py2.py3": {
+      "2021.1.21": {
+        "democritus_regexes-2021.1.21-py2.py3-none-any.whl": {
+          "requires_dist": [
+            "importlib-metadata ; python_version < \"3.8\""
+          ]
+        }
+      }
+    }
+  },
   "deraser": {
     "py3": {
       "0.0.1": {
@@ -19089,6 +19106,35 @@
           "requires_dist": [
             "cloudpickle (==0.5.3)",
             "determined-common (==0.13.13rc2)",
+            "dill (>=0.2.9)",
+            "h5py (<2.11.0,>=2.10.0)",
+            "matplotlib",
+            "packaging",
+            "numpy (>=1.16.2)",
+            "psutil",
+            "pyzmq (>=18.1.0)",
+            "yogadl (==0.1.3)",
+            "torch (==1.4.0) ; extra == 'pytorch-14-cpu'",
+            "torchvision (==0.5.0) ; extra == 'pytorch-14-cpu'",
+            "torch (==1.4.0+cu100) ; extra == 'pytorch-14-cuda100'",
+            "torchvision (==0.5.0+cu100) ; extra == 'pytorch-14-cuda100'",
+            "tensorflow (==1.14.0) ; extra == 'tf-114-cpu'",
+            "tensorflow-gpu (==1.14.0) ; extra == 'tf-114-cuda100'"
+          ],
+          "requires_python": ">=3.6"
+        }
+      },
+      "0.13.13rc3": {
+        "determined-0.13.13rc3-py3-none-any.whl": {
+          "provides_extras": [
+            "pytorch-14-cpu",
+            "pytorch-14-cuda100",
+            "tf-114-cpu",
+            "tf-114-cuda100"
+          ],
+          "requires_dist": [
+            "cloudpickle (==0.5.3)",
+            "determined-common (==0.13.13rc3)",
             "dill (>=0.2.9)",
             "h5py (<2.11.0,>=2.10.0)",
             "matplotlib",
@@ -27998,6 +28044,28 @@
       },
       "1.3.1.post1": {
         "lasso_python-1.3.1.post1-py3-none-any.whl": "1.1.2.post3@lasso_python-1.1.2.post3-py3-none-any.whl"
+      },
+      "1.5.0": {
+        "lasso_python-1.5.0-py3-none-any.whl": {
+          "requires_dist": [
+            "h5py (>=2.8)",
+            "scipy",
+            "sklearn",
+            "numpy",
+            "plotly",
+            "matplotlib",
+            "grpcio",
+            "protobuf",
+            "flask",
+            "attrs",
+            "psutil",
+            "rich",
+            "pandas"
+          ]
+        }
+      },
+      "1.5.0.post1": {
+        "lasso_python-1.5.0.post1-py3-none-any.whl": "1.5.0@lasso_python-1.5.0-py3-none-any.whl"
       }
     }
   },
@@ -30170,6 +30238,39 @@
       }
     }
   },
+  "mitol-django-oauth-toolkit-extensions": {
+    "py3": {
+      "0.1.0": {
+        "mitol_django_oauth_toolkit_extensions-0.1.0-py3-none-any.whl": {
+          "provides_extras": [
+            "celery",
+            "dev",
+            "test"
+          ],
+          "requires_dist": [
+            "Django (>=2.2.12,<3.2)",
+            "black (>=19.10b0,<20.0); extra == \"test\"",
+            "django-oauth-toolkit (>=1.2.0,<2.0.0)",
+            "django-stubs (==1.6.0); extra == \"test\"",
+            "factory_boy (>=3.0.0,<4.0.0); extra == \"test\"",
+            "ipython (>=7.13.0,<8.0.0); extra == \"dev\"",
+            "isort (>=4.3.21,<5.0.0); extra == \"test\"",
+            "mitol-django-common (>=0.4.0,<0.5.0)",
+            "mypy (>=0.782,<0.783); extra == \"test\"",
+            "psycopg2-binary (>=2.8.3,<3.0.0)",
+            "pylint (>=2.0,<3.0); extra == \"test\"",
+            "pylint-django (>=2.0.2,<3.0.0); extra == \"test\"",
+            "pytest (>=6.0.2,<7.0.0); extra == \"test\"",
+            "pytest-cov; extra == \"test\"",
+            "pytest-django (==3.10.0); extra == \"test\"",
+            "pytest-mock (==1.10.1); extra == \"test\"",
+            "requests (>=2.20.0,<3.0.0)"
+          ],
+          "requires_python": ">=3.6,<3.9"
+        }
+      }
+    }
+  },
   "mix-gamma-vi": {
     "py3": {
       "0.0.1": {
@@ -31297,6 +31398,9 @@
       "1.16.57.0": {
         "mypy_boto3_elastic_inference-1.16.57.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_elastic_inference-1.13.24.3-py3-none-any.whl"
       },
+      "1.16.58.0": {
+        "mypy_boto3_elastic_inference-1.16.58.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_elastic_inference-1.13.24.3-py3-none-any.whl"
+      },
       "1.16.6.0": {
         "mypy_boto3_elastic_inference-1.16.6.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_elastic_inference-1.13.24.3-py3-none-any.whl"
       },
@@ -31942,6 +32046,9 @@
       },
       "1.16.57.0": {
         "mypy_boto3_managedblockchain-1.16.57.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_managedblockchain-1.13.24.3-py3-none-any.whl"
+      },
+      "1.16.58.0": {
+        "mypy_boto3_managedblockchain-1.16.58.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_managedblockchain-1.13.24.3-py3-none-any.whl"
       },
       "1.16.6.0": {
         "mypy_boto3_managedblockchain-1.16.6.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_managedblockchain-1.13.24.3-py3-none-any.whl"
@@ -41858,6 +41965,9 @@
           ],
           "requires_python": ">=3.6"
         }
+      },
+      "3.9.1": {
+        "pulpcore-3.9.1-py3-none-any.whl": "3.9.0@pulpcore-3.9.0-py3-none-any.whl"
       }
     }
   },
