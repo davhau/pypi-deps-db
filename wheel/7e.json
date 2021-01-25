@@ -9516,6 +9516,20 @@
       }
     }
   },
+  "ecalc": {
+    "py3": {
+      "0.1": {
+        "ecalc-0.1-py3-none-any.whl": {
+          "requires_dist": [
+            "perlcompat"
+          ]
+        }
+      },
+      "0.2": {
+        "ecalc-0.2-py3-none-any.whl": "0.1@ecalc-0.1-py3-none-any.whl"
+      }
+    }
+  },
   "eegbase-nix-converter": {
     "py3": {
       "1.0.0": {
@@ -25657,6 +25671,34 @@
       },
       "50.0.3": {
         "OpenFisca_France-50.0.3-py3-none-any.whl": "50.0.0@OpenFisca_France-50.0.0-py3-none-any.whl"
+      },
+      "50.0.4": {
+        "OpenFisca_France-50.0.4-py3-none-any.whl": {
+          "provides_extras": [
+            "casd-dev",
+            "de_net_a_brut",
+            "dev",
+            "inversion_revenus",
+            "taxipp"
+          ],
+          "requires_dist": [
+            "OpenFisca-Core (<36.0,>=35.0.1)",
+            "autopep8 (>=1.3.2) ; extra == 'casd-dev'",
+            "pytest (<7.0.0,>=5.0.0) ; extra == 'casd-dev'",
+            "requests (>=2.8) ; extra == 'casd-dev'",
+            "scipy (>=0.17) ; extra == 'casd-dev'",
+            "scipy (>=0.17) ; extra == 'de_net_a_brut'",
+            "autopep8 (==1.5.4) ; extra == 'dev'",
+            "flake8 (<3.9.0,>=3.8.0) ; extra == 'dev'",
+            "flake8-print ; extra == 'dev'",
+            "pytest (<7.0.0,>=5.0.0) ; extra == 'dev'",
+            "scipy (>=0.17) ; extra == 'dev'",
+            "requests (>=2.8) ; extra == 'dev'",
+            "yamllint (<1.26,>=1.11.1) ; extra == 'dev'",
+            "scipy (>=0.17) ; extra == 'inversion_revenus'",
+            "pandas (>=0.13) ; extra == 'taxipp'"
+          ]
+        }
       }
     }
   },
