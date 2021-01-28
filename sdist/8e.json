@@ -27755,6 +27755,7 @@
     "1.7-1": "1.6",
     "1.7.10": "1.6",
     "1.7.11": "1.6",
+    "1.7.12": "1.6",
     "1.7.2": "1.6",
     "1.7.3": "1.6",
     "1.7.4": "1.6",
@@ -34742,7 +34743,8 @@
     "2020.7": "2020.6",
     "2020.8": "2020.6",
     "2020.9": "2020.10",
-    "2020.9.1": "2020.10"
+    "2020.9.1": "2020.10",
+    "2021.1": "2020.12"
   },
   "friar": {
     "0.0.10": {
@@ -37139,7 +37141,8 @@
     "20201210.0": "0.1",
     "20201212.0": "0.1",
     "20201229.0": "0.1",
-    "20201229.1": "0.1"
+    "20201229.1": "0.1",
+    "20210127.1": "0.1"
   },
   "http-serve": {
     "0.1": {
@@ -37227,6 +37230,31 @@
       "38": "27"
     },
     "0.3.1": "0.2.2"
+  },
+  "i4u": {
+    "0.0.2": {
+      "27": {
+        "install_requires": [
+          "requests>=2.25.1",
+          "zeep>=0.0.0"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    },
+    "0.0.3": {
+      "35": {
+        "install_requires": [
+          "requests>=2.25.1",
+          "zeep>=0.0.0"
+        ]
+      },
+      "36": "35",
+      "37": "35",
+      "38": "35"
+    }
   },
   "ieffel2": {
     "0.0.1": {
@@ -38331,7 +38359,8 @@
       "36": "27",
       "37": "27",
       "38": "27"
-    }
+    },
+    "1.9.9": "1.9.6"
   },
   "intset": {
     "1.0.0": {
@@ -40976,6 +41005,154 @@
         "install_requires": [
           "invenio_pidrelations<2.0.0,>=v1.0.0a7",
           "invenio-records-resources<0.10.0,>=0.9.6"
+        ],
+        "setup_requires": [
+          "Babel>=2.8"
+        ],
+        "extras_require": {
+          "all": [
+            "Sphinx<3,>=2.4",
+            "invenio-db[mysql,versioning]<2.0.0,>=1.0.5",
+            "invenio-db[postgresql,versioning]<2.0.0,>=1.0.5",
+            "invenio-db[versioning]<2.0.0,>=1.0.5",
+            "pytest-invenio>=1.4.1",
+            "invenio-app>=1.3.0",
+            "docker-services-cli>=0.3.0"
+          ],
+          "docs": [
+            "Sphinx<3,>=2.4"
+          ],
+          "mysql": [
+            "invenio-db[mysql,versioning]<2.0.0,>=1.0.5"
+          ],
+          "tests": [
+            "pytest-invenio>=1.4.1",
+            "invenio-app>=1.3.0",
+            "docker-services-cli>=0.3.0"
+          ],
+          "sqlite": [
+            "invenio-db[versioning]<2.0.0,>=1.0.5"
+          ],
+          "postgresql": [
+            "invenio-db[postgresql,versioning]<2.0.0,>=1.0.5"
+          ],
+          "elasticsearch6": [
+            "invenio-search[elasticsearch6]<2.0.0,>=1.4.0"
+          ],
+          "elasticsearch7": [
+            "invenio-search[elasticsearch7]<2.0.0,>=1.4.0"
+          ]
+        },
+        "tests_require": [
+          "pytest-invenio>=1.4.1",
+          "invenio-app>=1.3.0",
+          "docker-services-cli>=0.3.0"
+        ]
+      },
+      "37": "36",
+      "38": "36"
+    },
+    "0.8.0": {
+      "27": {
+        "install_requires": [
+          "invenio-pidrelations<2.0.0,>=0.1.0",
+          "invenio-records-resources>=0.10.1"
+        ],
+        "setup_requires": [
+          "Babel>=2.8"
+        ],
+        "extras_require": {
+          "all": [
+            "invenio-db[versioning]<2.0.0,>=1.0.5",
+            "invenio-db[postgresql,versioning]<2.0.0,>=1.0.5",
+            "Sphinx<3,>=2.4",
+            "pytest-invenio>=1.4.1",
+            "invenio-app>=1.3.0",
+            "docker-services-cli>=0.3.0",
+            "invenio-db[mysql,versioning]<2.0.0,>=1.0.5"
+          ],
+          "docs": [
+            "Sphinx<3,>=2.4"
+          ],
+          "mysql": [
+            "invenio-db[mysql,versioning]<2.0.0,>=1.0.5"
+          ],
+          "tests": [
+            "pytest-invenio>=1.4.1",
+            "invenio-app>=1.3.0",
+            "docker-services-cli>=0.3.0"
+          ],
+          "sqlite": [
+            "invenio-db[versioning]<2.0.0,>=1.0.5"
+          ],
+          "postgresql": [
+            "invenio-db[postgresql,versioning]<2.0.0,>=1.0.5"
+          ],
+          "elasticsearch6": [
+            "invenio-search[elasticsearch6]<2.0.0,>=1.4.0"
+          ],
+          "elasticsearch7": [
+            "invenio-search[elasticsearch7]<2.0.0,>=1.4.0"
+          ]
+        },
+        "tests_require": [
+          "pytest-invenio>=1.4.1",
+          "invenio-app>=1.3.0",
+          "docker-services-cli>=0.3.0"
+        ]
+      },
+      "35": {
+        "install_requires": [
+          "invenio-pidrelations<2.0.0,>=0.1.0",
+          "invenio-records-resources>=0.10.1"
+        ],
+        "setup_requires": [
+          "Babel>=2.8"
+        ],
+        "extras_require": {
+          "all": [
+            "pytest-invenio>=1.4.1",
+            "invenio-app>=1.3.0",
+            "docker-services-cli>=0.3.0",
+            "invenio-db[postgresql,versioning]<2.0.0,>=1.0.5",
+            "Sphinx<3,>=2.4",
+            "invenio-db[versioning]<2.0.0,>=1.0.5",
+            "invenio-db[mysql,versioning]<2.0.0,>=1.0.5"
+          ],
+          "docs": [
+            "Sphinx<3,>=2.4"
+          ],
+          "mysql": [
+            "invenio-db[mysql,versioning]<2.0.0,>=1.0.5"
+          ],
+          "tests": [
+            "pytest-invenio>=1.4.1",
+            "invenio-app>=1.3.0",
+            "docker-services-cli>=0.3.0"
+          ],
+          "sqlite": [
+            "invenio-db[versioning]<2.0.0,>=1.0.5"
+          ],
+          "postgresql": [
+            "invenio-db[postgresql,versioning]<2.0.0,>=1.0.5"
+          ],
+          "elasticsearch6": [
+            "invenio-search[elasticsearch6]<2.0.0,>=1.4.0"
+          ],
+          "elasticsearch7": [
+            "invenio-search[elasticsearch7]<2.0.0,>=1.4.0"
+          ]
+        },
+        "tests_require": [
+          "pytest-invenio>=1.4.1",
+          "invenio-app>=1.3.0",
+          "docker-services-cli>=0.3.0"
+        ]
+      },
+      "36": {
+        "install_requires": [
+          "invenio-pidrelations<2.0.0,>=0.1.0",
+          "invenio-records-resources>=0.10.1"
         ],
         "setup_requires": [
           "Babel>=2.8"
@@ -48962,6 +49139,7 @@
     "0.1.109": "0.1.101",
     "0.1.11": "0.1.10",
     "0.1.110": "0.1.101",
+    "0.1.111": "0.1.101",
     "0.1.12": "0.1.10",
     "0.1.15": "0.1.10",
     "0.1.16": "0.1.10",
@@ -51261,6 +51439,32 @@
         "install_requires": [
           "six<1.2,>=1.1"
         ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    },
+    "0.10.0": {
+      "27": {
+        "install_requires": [
+          "six>=1.7",
+          "coverage>=4.4.1"
+        ],
+        "extras_require": {
+          "dev": [
+            "Sphinx>=1.6.5",
+            "sphinx_rtd_theme",
+            "mock",
+            "coverage"
+          ],
+          "coverage_plugin": [
+            "coverage>=4.4.1"
+          ],
+          ":python_version < \"3.6\"": [
+            "mock==2.0.0"
+          ]
+        }
       },
       "35": "27",
       "36": "27",
