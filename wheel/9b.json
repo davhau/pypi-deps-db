@@ -2052,6 +2052,16 @@
       "1.0.0": {
         "azure_mgmt_batch-1.0.0-py2.py3-none-any.whl": "0.30.0rc4@azure_mgmt_batch-0.30.0rc4-py2.py3-none-any.whl"
       },
+      "10.0.0": {
+        "azure_mgmt_batch-10.0.0-py2.py3-none-any.whl": {
+          "requires_dist": [
+            "msrest (>=0.5.0)",
+            "msrestazure (<2.0.0,>=0.4.32)",
+            "azure-common (~=1.1)",
+            "azure-mgmt-nspkg ; python_version<'3.0'"
+          ]
+        }
+      },
       "14.0.0": {
         "azure_mgmt_batch-14.0.0-py2.py3-none-any.whl": {
           "requires_dist": [
@@ -2064,6 +2074,9 @@
       },
       "14.0.0b1": {
         "azure_mgmt_batch-14.0.0b1-py2.py3-none-any.whl": "14.0.0@azure_mgmt_batch-14.0.0-py2.py3-none-any.whl"
+      },
+      "15.0.0b1": {
+        "azure_mgmt_batch-15.0.0b1-py2.py3-none-any.whl": "14.0.0@azure_mgmt_batch-14.0.0-py2.py3-none-any.whl"
       },
       "2.0.0": {
         "azure_mgmt_batch-2.0.0-py2.py3-none-any.whl": "0.30.0rc4@azure_mgmt_batch-0.30.0rc4-py2.py3-none-any.whl"
@@ -2111,26 +2124,19 @@
         }
       },
       "6.0.0": {
-        "azure_mgmt_batch-6.0.0-py2.py3-none-any.whl": {
-          "requires_dist": [
-            "msrest (>=0.5.0)",
-            "msrestazure (<2.0.0,>=0.4.32)",
-            "azure-common (~=1.1)",
-            "azure-mgmt-nspkg ; python_version<'3.0'"
-          ]
-        }
+        "azure_mgmt_batch-6.0.0-py2.py3-none-any.whl": "10.0.0@azure_mgmt_batch-10.0.0-py2.py3-none-any.whl"
       },
       "7.0.0": {
-        "azure_mgmt_batch-7.0.0-py2.py3-none-any.whl": "6.0.0@azure_mgmt_batch-6.0.0-py2.py3-none-any.whl"
+        "azure_mgmt_batch-7.0.0-py2.py3-none-any.whl": "10.0.0@azure_mgmt_batch-10.0.0-py2.py3-none-any.whl"
       },
       "8.0.0": {
-        "azure_mgmt_batch-8.0.0-py2.py3-none-any.whl": "6.0.0@azure_mgmt_batch-6.0.0-py2.py3-none-any.whl"
+        "azure_mgmt_batch-8.0.0-py2.py3-none-any.whl": "10.0.0@azure_mgmt_batch-10.0.0-py2.py3-none-any.whl"
       },
       "8.0.1": {
-        "azure_mgmt_batch-8.0.1-py2.py3-none-any.whl": "6.0.0@azure_mgmt_batch-6.0.0-py2.py3-none-any.whl"
+        "azure_mgmt_batch-8.0.1-py2.py3-none-any.whl": "10.0.0@azure_mgmt_batch-10.0.0-py2.py3-none-any.whl"
       },
       "9.0.0": {
-        "azure_mgmt_batch-9.0.0-py2.py3-none-any.whl": "6.0.0@azure_mgmt_batch-6.0.0-py2.py3-none-any.whl"
+        "azure_mgmt_batch-9.0.0-py2.py3-none-any.whl": "10.0.0@azure_mgmt_batch-10.0.0-py2.py3-none-any.whl"
       }
     }
   },
@@ -10670,6 +10676,9 @@
       },
       "0.6.0.dev210128": {
         "genomeworks_cuda_10_0-0.6.0.dev210128-cp36-none-any.whl": "0.6.0.dev201105@genomeworks_cuda_10_0-0.6.0.dev201105-cp36-none-any.whl"
+      },
+      "0.6.0.dev210129": {
+        "genomeworks_cuda_10_0-0.6.0.dev210129-cp36-none-any.whl": "0.6.0.dev201105@genomeworks_cuda_10_0-0.6.0.dev201105-cp36-none-any.whl"
       }
     },
     "cp37": {
@@ -11293,6 +11302,9 @@
       },
       "0.6.0.dev210128": {
         "genomeworks_cuda_10_0-0.6.0.dev210128-cp37-none-any.whl": "0.6.0.dev201105@genomeworks_cuda_10_0-0.6.0.dev201105-cp37-none-any.whl"
+      },
+      "0.6.0.dev210129": {
+        "genomeworks_cuda_10_0-0.6.0.dev210129-cp37-none-any.whl": "0.6.0.dev201105@genomeworks_cuda_10_0-0.6.0.dev201105-cp37-none-any.whl"
       }
     },
     "cp38": {
@@ -27260,6 +27272,20 @@
       },
       "0.0.7": {
         "pykemen-0.0.7-py3-none-any.whl": "0.0.6@pykemen-0.0.6-py3-none-any.whl"
+      },
+      "0.2.22": {
+        "pykemen-0.2.22-py3-none-any.whl": {
+          "requires_dist": [
+            "httplib2",
+            "pandas",
+            "google-api-python-client",
+            "oauth2client",
+            "google-cloud",
+            "google-cloud-core",
+            "google-cloud-bigquery",
+            "future"
+          ]
+        }
       }
     }
   },
@@ -28747,15 +28773,6 @@
     "py3": {
       "0.1": {
         "pythoncjson-0.1-py3-none-any.whl": {}
-      }
-    }
-  },
-  "pytorch-nnmodels": {
-    "py3": {
-      "0.0.1": {
-        "pytorch_nnModels-0.0.1-py3-none-any.whl": {
-          "requires_python": ">=3.6"
-        }
       }
     }
   },
@@ -34617,6 +34634,9 @@
             "funcsigs ; python_version < \"3.3\""
           ]
         }
+      },
+      "5.1.2": {
+        "valid8-5.1.2-py2.py3-none-any.whl": "5.1.1@valid8-5.1.1-py2.py3-none-any.whl"
       }
     },
     "py3": {
