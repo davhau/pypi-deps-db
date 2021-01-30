@@ -383,7 +383,29 @@
     "0.0.7.dev5": "0.0.6",
     "0.0.7.dev6": "0.0.6",
     "0.0.7.dev7": "0.0.7",
-    "0.0.8": "0.0.7"
+    "0.0.8": "0.0.7",
+    "0.0.9": {
+      "35": {
+        "install_requires": [
+          "chalice<1.22.1,>=1.16.0",
+          "cuenca-validations<0.8,>=0.7",
+          "blinker<1.5,>=1.4",
+          "mongoengine<0.23.0,>=0.20.0",
+          "dnspython<2.2.0,>=2.0.0"
+        ],
+        "extras_require": {
+          ":python_version < \"3.7\"": [
+            "dataclasses>=0.6"
+          ]
+        },
+        "python_requires": [
+          ">=3.8"
+        ]
+      },
+      "36": "35",
+      "37": "35",
+      "38": "35"
+    }
   },
   "aio_manager": {
     "0.1": {
@@ -8864,7 +8886,8 @@
       "37": "27",
       "38": "27"
     },
-    "1.0.4": "1.0.3"
+    "1.0.4": "1.0.3",
+    "1.0.5": "1.0.3"
   },
   "crs": {
     "0.1.0": {
@@ -9062,6 +9085,50 @@
         "extras_require": {
           "server": [
             "dash<2.0,>=1.16",
+            "dash-daq",
+            "gunicorn",
+            "redis",
+            "Flask-Caching",
+            "gevent",
+            "dash-mp-components",
+            "scikit-learn",
+            "robocrys",
+            "scikit-image",
+            "habanero",
+            "hiphive",
+            "dscribe",
+            "dash-extensions",
+            "sentry-sdk"
+          ],
+          ":python_version >= \"3.7\" and python_version < \"3.8\"": [
+            "typing-extensions"
+          ]
+        },
+        "python_requires": [
+          ">=3.7,<4.0"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    },
+    "2021.1.9": {
+      "27": {
+        "install_requires": [
+          "crystaltoolkit-extension<0.4.0,>=0.3.0",
+          "plotly<5.0,>=4.10",
+          "pydantic",
+          "pymatgen<2021.0.0,>=2020.9.14",
+          "webcolors"
+        ],
+        "extras_require": {
+          "fermi": [
+            "ifermi",
+            "pyfftw"
+          ],
+          "server": [
+            "dash<2.0.0,>=1.19.0",
             "dash-daq",
             "gunicorn",
             "redis",
@@ -14979,7 +15046,8 @@
       "37": "27",
       "38": "27"
     },
-    "1.5.1": "1.5.0"
+    "1.5.1": "1.5.0",
+    "1.5.3": "1.5.0"
   },
   "graphene-django-cud": {
     "0.0.1": {
@@ -19341,6 +19409,25 @@
         ]
       },
       "38": "37"
+    }
+  },
+  "maads-tml": {
+    "1.1": {
+      "27": {
+        "install_requires": [
+          "aiohttp==3.6.2",
+          "requests==2.22.0",
+          "validators==0.14.2",
+          "wheel==0.33.6",
+          "numpy==1.18.1",
+          "pandas==0.25.3",
+          "numpy-indexed==0.3.5"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
     }
   },
   "magicov": {
@@ -23749,7 +23836,8 @@
     "1.3.0": "0.0.9",
     "1.3.1": "0.0.9",
     "1.3.2": "0.0.9",
-    "1.3.3": "0.0.9"
+    "1.3.3": "0.0.9",
+    "1.3.4": "0.0.9"
   },
   "nhi": {
     "0.0.1": {
@@ -27052,6 +27140,48 @@
           "pip>=19.3",
           "autocommand",
           "path>=15.1"
+        ],
+        "setup_requires": [
+          "setuptools_scm[toml] >= 3.4.1"
+        ],
+        "extras_require": {
+          "docs": [
+            "sphinx",
+            "jaraco.packaging>=8.2",
+            "rst.linker>=1.9"
+          ],
+          "testing": [
+            "pytest!=3.7.3,>=3.5",
+            "pytest-checkdocs>=1.2.3",
+            "pytest-flake8",
+            "pytest-cov",
+            "pytest-enabler",
+            "nbformat",
+            "pygments"
+          ],
+          ":python_version < \"3.8\"": [
+            "importlib_metadata"
+          ],
+          "testing:platform_python_implementation != \"PyPy\"": [
+            "pytest-black>=0.3.7",
+            "pytest-mypy"
+          ]
+        },
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "36": "35",
+      "37": "35",
+      "38": "35"
+    },
+    "8.4.1": {
+      "35": {
+        "install_requires": [
+          "pip>=19.3",
+          "autocommand",
+          "path>=15.1",
+          "packaging"
         ],
         "setup_requires": [
           "setuptools_scm[toml] >= 3.4.1"
@@ -34844,6 +34974,7 @@
     "1.0.212": "1.0.100",
     "1.0.213": "1.0.100",
     "1.0.214": "1.0.100",
+    "1.0.215": "1.0.100",
     "1.0.22": "0.0.100",
     "1.0.24": "0.0.100",
     "1.0.25": "0.0.100",
@@ -36039,6 +36170,36 @@
       "37": "27",
       "38": "27"
     }
+  },
+  "tycho-station": {
+    "0.1.0": {
+      "27": {
+        "install_requires": [
+          "python-dotenv<0.16.0,>=0.15.0",
+          "typer<0.4.0,>=0.3.2"
+        ],
+        "extras_require": {
+          "s3": [
+            "boto3<2.0.0,>=1.16.62"
+          ],
+          ":python_version == \"3.6\"": [
+            "dataclasses<0.9,>=0.8"
+          ]
+        },
+        "python_requires": [
+          ">=3.6,<4.0"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    },
+    "0.1.1": "0.1.0",
+    "0.2.0": "0.1.0",
+    "0.2.1": "0.1.0",
+    "0.2.2": "0.1.0",
+    "0.2.3": "0.1.0"
   },
   "tynt": {
     "0.0.dev10": {
