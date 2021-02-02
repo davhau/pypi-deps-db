@@ -4477,6 +4477,20 @@
       "36": "27",
       "37": "27",
       "38": "27"
+    },
+    "0.0.6": "0.0.5",
+    "0.0.7": {
+      "27": {
+        "install_requires": [
+          "fluent-logger==0.9.6",
+          "msgpack==0.6.2",
+          "PyYAML==5.4.1"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
     }
   },
   "cohorts": {
@@ -7068,6 +7082,24 @@
   "cryptogenomics": {
     "0.0.1": {
       "27": {},
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    }
+  },
+  "cryptoshredding": {
+    "0.0.1": {
+      "27": {
+        "install_requires": [
+          "aws-encryption-sdk>=2.0.0",
+          "boto3>=1.16.63",
+          "dynamodb-encryption-sdk>=1.2.0"
+        ],
+        "python_requires": [
+          ">= 3.6"
+        ]
+      },
       "35": "27",
       "36": "27",
       "37": "27",
@@ -10820,6 +10852,42 @@
           ],
           ":python_version >= \"3\"": [
             "opencv-python-headless>=4.2.0.32"
+          ]
+        }
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    },
+    "0.8.6": {
+      "27": {
+        "install_requires": [
+          "cython>=0.28.0",
+          "pandas",
+          "networkx>=2.1",
+          "scipy",
+          "scikit-image<0.17",
+          "scikit-learn"
+        ],
+        "setup_requires": [
+          "cython>=0.28",
+          "numpy>=1.16.6,<1.20.0"
+        ],
+        "extras_require": {
+          "tests": [
+            "pytest<6",
+            "pytest-pep8",
+            "pytest-cov",
+            "pytest-mock"
+          ],
+          ":python_version < \"3\"": [
+            "opencv-python-headless<=4.2.0.32",
+            "numpy<1.17.0"
+          ],
+          ":python_version >= \"3\"": [
+            "opencv-python-headless",
+            "numpy<1.20.0"
           ]
         }
       },
