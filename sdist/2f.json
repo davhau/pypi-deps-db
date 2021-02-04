@@ -4809,6 +4809,7 @@
     },
     "1.2.11": "1.2.10",
     "1.2.12": "1.2.10",
+    "1.2.13": "1.2.10",
     "1.2.2": "1.2.0",
     "1.2.3": "1.2.0",
     "1.2.4": {
@@ -9402,7 +9403,8 @@
     "1.23.0": "1.14.0",
     "1.23.1": "1.14.0",
     "1.23.2": "1.14.0",
-    "1.24.0": "1.14.0"
+    "1.24.0": "1.14.0",
+    "1.24.1": "1.14.0"
   },
   "cloudinitd": {
     "1.3": {
@@ -27855,7 +27857,22 @@
     },
     "0.0.6": "0.0.5",
     "0.0.7": "0.0.5",
-    "0.0.8": "0.0.5"
+    "0.0.8": "0.0.5",
+    "0.0.9": {
+      "27": {
+        "install_requires": [
+          "osmapi<2.0,>=1.0.2",
+          "termcolor<2.0,>=1.1.0",
+          "urllib3<2.0,>=1.13.1",
+          "osm_iterator<2.0,>=1.1.0",
+          "tqdm<5.0,>4.47.0"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    }
   },
   "osuosl_hieroglyph_theme": {
     "0.3": {
@@ -37750,7 +37767,45 @@
       "36": "27",
       "37": "27",
       "38": "27"
-    }
+    },
+    "0.2.0": {
+      "27": {
+        "install_requires": [
+          "billiard",
+          "click",
+          "patool",
+          "python-dateutil",
+          "python-hglib",
+          "retrying",
+          "sqlitedict",
+          "mercurial",
+          "swh.model>=0.4.0",
+          "swh.storage>=0.22.0",
+          "swh.scheduler>=0.0.39",
+          "swh.loader.core>=0.16.0"
+        ],
+        "setup_requires": [
+          "setuptools-scm"
+        ],
+        "extras_require": {
+          "testing": [
+            "pytest",
+            "pytest-mock",
+            "swh.core[http]>=0.0.61",
+            "swh.scheduler[testing]>=0.5.0",
+            "swh.storage[testing]"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    },
+    "0.2.1": "0.2.0"
   },
   "syfertext": {
     "0.0.1": {
@@ -39132,6 +39187,22 @@
           "boto3>=1.16",
           "python-jose[cryptography]>=3.2",
           "requests>=2.25"
+        ],
+        "python_requires": [
+          ">=3.8"
+        ]
+      },
+      "36": "35",
+      "37": "35",
+      "38": "35"
+    },
+    "0.1.0": {
+      "35": {
+        "install_requires": [
+          "aiohttp",
+          "boto3",
+          "python-jose[cryptography]",
+          "requests"
         ],
         "python_requires": [
           ">=3.8"
