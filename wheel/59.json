@@ -1163,6 +1163,16 @@
       },
       "1.0.0rc1": {
         "apache_airflow_providers_salesforce-1.0.0rc1-py3-none-any.whl": "1.0.0@apache_airflow_providers_salesforce-1.0.0-py3-none-any.whl"
+      },
+      "1.0.1rc1": {
+        "apache_airflow_providers_salesforce-1.0.1rc1-py3-none-any.whl": {
+          "requires_dist": [
+            "apache-airflow (>=2.0.0)",
+            "simple-salesforce (>=1.0.0)",
+            "tableauserverclient"
+          ],
+          "requires_python": "~=3.6"
+        }
       }
     }
   },
@@ -1189,6 +1199,19 @@
       },
       "1.0.0rc1": {
         "apache_airflow_providers_slack-1.0.0rc1-py3-none-any.whl": "1.0.0@apache_airflow_providers_slack-1.0.0-py3-none-any.whl"
+      },
+      "2.0.0rc1": {
+        "apache_airflow_providers_slack-2.0.0rc1-py3-none-any.whl": {
+          "provides_extras": [
+            "http"
+          ],
+          "requires_dist": [
+            "apache-airflow (>=2.0.0)",
+            "slack-sdk (<4.0.0,>=3.0.0)",
+            "apache-airflow-providers-http ; extra == 'http'"
+          ],
+          "requires_python": "~=3.6"
+        }
       }
     }
   },
@@ -3102,6 +3125,19 @@
     "py2.py3": {
       "0.3": {
         "binance-0.3-py2.py3-none-any.whl": {}
+      }
+    }
+  },
+  "binance-asyncio": {
+    "py3": {
+      "0.0.1b1": {
+        "binance_asyncio-0.0.1b1-py3-none-any.whl": {
+          "requires_dist": [
+            "websockets",
+            "aiohttp"
+          ],
+          "requires_python": ">=3.9"
+        }
       }
     }
   },
