@@ -561,14 +561,17 @@
       "1.0.0rc1": {
         "apache_airflow_providers_singularity-1.0.0rc1-py3-none-any.whl": "1.0.0@apache_airflow_providers_singularity-1.0.0-py3-none-any.whl"
       },
-      "1.0.1rc1": {
-        "apache_airflow_providers_singularity-1.0.1rc1-py3-none-any.whl": {
+      "1.0.1": {
+        "apache_airflow_providers_singularity-1.0.1-py3-none-any.whl": {
           "requires_dist": [
             "apache-airflow (>=2.0.0)",
             "spython (>=0.0.56)"
           ],
           "requires_python": "~=3.6"
         }
+      },
+      "1.0.1rc1": {
+        "apache_airflow_providers_singularity-1.0.1rc1-py3-none-any.whl": "1.0.1@apache_airflow_providers_singularity-1.0.1-py3-none-any.whl"
       }
     }
   },
@@ -10482,6 +10485,9 @@
       "1.12.0": {
         "dragonfly_energy-1.12.0-py2.py3-none-any.whl": "1.11.33@dragonfly_energy-1.11.33-py2.py3-none-any.whl"
       },
+      "1.12.1": {
+        "dragonfly_energy-1.12.1-py2.py3-none-any.whl": "1.11.33@dragonfly_energy-1.11.33-py2.py3-none-any.whl"
+      },
       "1.2.0": {
         "dragonfly_energy-1.2.0-py2.py3-none-any.whl": "1.0.0@dragonfly_energy-1.0.0-py2.py3-none-any.whl"
       },
@@ -14610,6 +14616,16 @@
           ],
           "requires_python": ">=2.7"
         }
+      }
+    }
+  },
+  "gcodeparser": {
+    "py3": {
+      "0.0.1": {
+        "gcodeparser-0.0.1-py3-none-any.whl": {}
+      },
+      "0.0.2b0": {
+        "gcodeparser-0.0.2b0-py3-none-any.whl": "0.0.1@gcodeparser-0.0.1-py3-none-any.whl"
       }
     }
   },
@@ -26141,6 +26157,18 @@
       }
     }
   },
+  "pyimgcook": {
+    "py3": {
+      "0.0.1a1": {
+        "pyimgcook-0.0.1a1-py3-none-any.whl": {
+          "requires_python": ">=3.6"
+        }
+      },
+      "0.0.1a2": {
+        "pyimgcook-0.0.1a2-py3-none-any.whl": "0.0.1a1@pyimgcook-0.0.1a1-py3-none-any.whl"
+      }
+    }
+  },
   "pyimgren": {
     "py3": {
       "0.1.0": {
@@ -29590,6 +29618,43 @@
           "requires_python": ">=3.6"
         }
       },
+      "1.2.4": {
+        "seldon_core-1.2.4-py3-none-any.whl": {
+          "provides_extras": [
+            "all",
+            "azure",
+            "gcs",
+            "tensorflow"
+          ],
+          "requires_dist": [
+            "Flask (<2.0.0)",
+            "jsonschema (<4.0.0)",
+            "Flask-cors (<4.0.0)",
+            "redis (<4.0.0)",
+            "requests (<3.0.0)",
+            "numpy (<2.0.0)",
+            "flatbuffers (<2.0.0)",
+            "protobuf (<4.0.0)",
+            "grpcio (<2.0.0)",
+            "Flask-OpenTracing (<1.2.0,>=1.1.0)",
+            "opentracing (<2.4.0,>=2.2.0)",
+            "jaeger-client (<4.4.0,>=4.1.0)",
+            "grpcio-opentracing (<1.2.0,>=1.1.4)",
+            "PyYAML (<5.4)",
+            "gunicorn (<20.1.0,>=19.9.0)",
+            "minio (<6.0.0,>=4.0.9)",
+            "setuptools (>=41.0.0)",
+            "prometheus-client (<0.9.0,>=0.7.1)",
+            "azure-storage-blob (<3.0.0,>=2.0.1) ; extra == 'all'",
+            "google-cloud-storage (>=1.16.0) ; extra == 'all'",
+            "tensorflow ; extra == 'all'",
+            "azure-storage-blob (<3.0.0,>=2.0.1) ; extra == 'azure'",
+            "google-cloud-storage (>=1.16.0) ; extra == 'gcs'",
+            "tensorflow ; extra == 'tensorflow'"
+          ],
+          "requires_python": ">=3.6"
+        }
+      },
       "1.3.0": {
         "seldon_core-1.3.0-py3-none-any.whl": {
           "provides_extras": [
@@ -30827,32 +30892,6 @@
       },
       "4.17.9": {
         "shyft-4.17.9-cp36-cp36m-manylinux1_x86_64.whl": "4.17.10@shyft-4.17.10-cp36-cp36m-manylinux1_x86_64.whl"
-      },
-      "4.9.84": {
-        "shyft-4.9.84-cp36-cp36m-manylinux1_x86_64.whl": {
-          "provides_extras": [
-            "repositories",
-            "dashboard",
-            "viz",
-            "notebooks",
-            "dashboard",
-            "notebooks",
-            "repositories",
-            "viz"
-          ],
-          "requires_dist": [
-            "numpy",
-            "bokeh; extra == 'dashboard'",
-            "pint; extra == 'dashboard'",
-            "pydot; extra == 'dashboard'",
-            "jupyter; extra == 'notebooks'",
-            "netcdf4; extra == 'repositories'",
-            "shapely; extra == 'repositories'",
-            "pyyaml; extra == 'repositories'",
-            "pyproj; extra == 'repositories'",
-            "matplotlib; extra == 'viz'"
-          ]
-        }
       }
     },
     "cp37": {
@@ -31231,7 +31270,8 @@
         "shyft-4.20.17-cp37-cp37m-win_amd64.whl": "4.17.10@shyft-4.17.10-cp37-cp37m-manylinux1_x86_64.whl"
       },
       "4.20.18": {
-        "shyft-4.20.18-cp37-cp37m-manylinux1_x86_64.whl": "4.17.10@shyft-4.17.10-cp37-cp37m-manylinux1_x86_64.whl"
+        "shyft-4.20.18-cp37-cp37m-manylinux1_x86_64.whl": "4.17.10@shyft-4.17.10-cp37-cp37m-manylinux1_x86_64.whl",
+        "shyft-4.20.18-cp37-cp37m-win_amd64.whl": "4.17.10@shyft-4.17.10-cp37-cp37m-manylinux1_x86_64.whl"
       },
       "4.20.4": {
         "shyft-4.20.4-cp37-cp37m-manylinux1_x86_64.whl": "4.17.10@shyft-4.17.10-cp37-cp37m-manylinux1_x86_64.whl"
@@ -31264,9 +31304,6 @@
             "matplotlib; extra == 'viz'"
           ]
         }
-      },
-      "4.9.84": {
-        "shyft-4.9.84-cp37-cp37m-manylinux1_x86_64.whl": "4.8.1923@shyft-4.8.1923-cp37-cp37m-manylinux1_x86_64.whl"
       }
     },
     "cp38": {
@@ -31296,11 +31333,33 @@
           ]
         }
       },
+      "4.20.18": {
+        "shyft-4.20.18-cp38-cp38-manylinux1_x86_64.whl": {
+          "provides_extras": [
+            "dashboard",
+            "energy_market_ui",
+            "notebooks",
+            "repositories",
+            "viz"
+          ],
+          "requires_dist": [
+            "numpy",
+            "bokeh ; extra == 'dashboard'",
+            "pint ; extra == 'dashboard'",
+            "pydot ; extra == 'dashboard'",
+            "pyside2 ; extra == 'energy_market_ui'",
+            "jupyter ; extra == 'notebooks'",
+            "netcdf4 ; extra == 'repositories'",
+            "shapely ; extra == 'repositories'",
+            "pyyaml ; extra == 'repositories'",
+            "pyproj ; extra == 'repositories'",
+            "matplotlib ; extra == 'viz'"
+          ]
+        },
+        "shyft-4.20.18-cp38-cp38-win_amd64.whl": "4.20.18@shyft-4.20.18-cp38-cp38-manylinux1_x86_64.whl"
+      },
       "4.8.1923": {
         "shyft-4.8.1923-cp38-cp38-manylinux1_x86_64.whl": "4.10.1@shyft-4.10.1-cp38-cp38-manylinux1_x86_64.whl"
-      },
-      "4.9.84": {
-        "shyft-4.9.84-cp38-cp38-manylinux1_x86_64.whl": "4.10.1@shyft-4.10.1-cp38-cp38-manylinux1_x86_64.whl"
       }
     }
   },
@@ -33812,6 +33871,31 @@
             "confluent-kafka (==0.11.6)",
             "redis (==2.10.6)"
           ]
+        }
+      }
+    }
+  },
+  "synapsegenie": {
+    "py3": {
+      "0.0.1": {
+        "synapsegenie-0.0.1-py3-none-any.whl": {
+          "requires_dist": [
+            "pandas (>=1.0)",
+            "synapseclient (>=2.2.2)"
+          ],
+          "requires_python": ">=3.6"
+        }
+      },
+      "9.0.0.dev1": {
+        "synapsegenie-9.0.0.dev1-py3-none-any.whl": {
+          "requires_dist": [
+            "pandas (>=0.23.0)",
+            "synapseclient (<2,>=1.9)",
+            "httplib2 (>=0.11.3)",
+            "pycrypto (>=2.6.1)",
+            "PyYAML (>=5.1)"
+          ],
+          "requires_python": ">=3.6"
         }
       }
     }
@@ -39017,15 +39101,6 @@
       },
       "1.0.1": {
         "wagtail_video-1.0.1-py2.py3-none-any.whl": "1.0.0@wagtail_video-1.0.0-py2.py3-none-any.whl"
-      }
-    }
-  },
-  "watch-greenland-full-movie-online-free-123movies-hd": {
-    "py2": {
-      "0.0.1": {
-        "WaTch_Greenland_FuLl_MoVie_online_fRee_123moVies_HD-0.0.1-py2-none-any.whl": {
-          "requires_python": ">=3.6"
-        }
       }
     }
   },
