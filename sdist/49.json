@@ -139,7 +139,8 @@
     "0.4.1": "0.3.3",
     "0.4.2": "0.3.3",
     "0.4.3": "0.3.3",
-    "0.4.4": "0.3.3"
+    "0.4.4": "0.3.3",
+    "0.4.5": "0.3.3"
   },
   "adafruit-ili9341": {
     "1.5.1": {
@@ -4948,6 +4949,23 @@
     "13.0.0": "11.0.0",
     "13.0.0rc1": "11.0.0",
     "14.0.0": "11.0.0",
+    "15.0.0": {
+      "36": {
+        "install_requires": [
+          "asn1crypto",
+          "cffi>=1.3.0"
+        ],
+        "setup_requires": [
+          "cffi>=1.3.0",
+          "requests"
+        ],
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "37": "36",
+      "38": "36"
+    },
     "4.4.0": {
       "27": {
         "install_requires": [
@@ -11142,6 +11160,15 @@
       "38": "27"
     }
   },
+  "fictive-marshmallow": {
+    "0.0.1": {
+      "27": {},
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    }
+  },
   "filegenerator": {
     "1.0.2": {
       "27": {
@@ -13913,6 +13940,108 @@
     "3.47.3": "3.47.0",
     "3.48.0": "3.47.0",
     "3.9.1": "0.8.0",
+    "4.0.0": {
+      "27": {
+        "install_requires": [
+          "petl>=1.6",
+          "pyyaml>=5.3",
+          "isodate>=0.6",
+          "chardet>=3.0",
+          "requests>=2.10",
+          "jsonschema>=2.5",
+          "simpleeval>=0.9",
+          "stringcase>=1.2",
+          "typer[all]>=0.3",
+          "validators>=0.18",
+          "python-slugify>=1.2",
+          "python-dateutil>=2.8"
+        ],
+        "extras_require": {
+          "s3": [
+            "boto3>=1.9"
+          ],
+          "dev": [
+            "mypy",
+            "moto",
+            "black",
+            "jinja2",
+            "pylama",
+            "pytest",
+            "ipython",
+            "pymysql",
+            "psycopg2",
+            "pytest-cov",
+            "pytest-vcr",
+            "pytest-only",
+            "oauth2client",
+            "requests-mock",
+            "python-dotenv",
+            "pydoc-markdown",
+            "docstring-parser"
+          ],
+          "ods": [
+            "ezodf>=0.3"
+          ],
+          "sql": [
+            "sqlalchemy>=1.3"
+          ],
+          "ckan": [
+            "ckanapi>=4.3"
+          ],
+          "html": [
+            "pyquery>=1.4"
+          ],
+          "json": [
+            "ijson>=3.0",
+            "jsonlines>=1.2"
+          ],
+          "spss": [
+            "savReaderWriter>=3.0"
+          ],
+          "excel": [
+            "openpyxl>=3.0",
+            "xlrd>=1.2",
+            "xlwt>=1.2"
+          ],
+          "pandas": [
+            "pandas>=1.0"
+          ],
+          "server": [
+            "gunicorn>=20.0",
+            "flask>=1.1"
+          ],
+          "gsheets": [
+            "pygsheets>=2.0"
+          ],
+          "bigquery": [
+            "google-api-python-client>=1.12.1"
+          ]
+        },
+        "tests_require": [
+          "mypy",
+          "moto",
+          "black",
+          "jinja2",
+          "pylama",
+          "pytest",
+          "ipython",
+          "pymysql",
+          "psycopg2",
+          "pytest-cov",
+          "pytest-vcr",
+          "pytest-only",
+          "oauth2client",
+          "requests-mock",
+          "python-dotenv",
+          "pydoc-markdown",
+          "docstring-parser"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    },
     "4.0.0a1": "3.47.0",
     "4.0.0a10": {
       "27": {
@@ -14020,108 +14149,7 @@
     "4.0.0a14": "4.0.0a10",
     "4.0.0a15": "4.0.0a10",
     "4.0.0a16": "4.0.0a10",
-    "4.0.0a17": {
-      "27": {
-        "install_requires": [
-          "petl>=1.6",
-          "pyyaml>=5.3",
-          "isodate>=0.6",
-          "chardet>=3.0",
-          "requests>=2.10",
-          "jsonschema>=2.5",
-          "simpleeval>=0.9",
-          "stringcase>=1.2",
-          "typer[all]>=0.3",
-          "validators>=0.18",
-          "python-slugify>=1.2",
-          "python-dateutil>=2.8"
-        ],
-        "extras_require": {
-          "s3": [
-            "boto3>=1.9"
-          ],
-          "dev": [
-            "mypy",
-            "moto",
-            "black",
-            "jinja2",
-            "pylama",
-            "pytest",
-            "ipython",
-            "pymysql",
-            "psycopg2",
-            "pytest-cov",
-            "pytest-vcr",
-            "pytest-only",
-            "oauth2client",
-            "requests-mock",
-            "python-dotenv",
-            "pydoc-markdown",
-            "docstring-parser"
-          ],
-          "ods": [
-            "ezodf>=0.3"
-          ],
-          "sql": [
-            "sqlalchemy>=1.3"
-          ],
-          "ckan": [
-            "ckanapi>=4.3"
-          ],
-          "html": [
-            "pyquery>=1.4"
-          ],
-          "json": [
-            "ijson>=3.0",
-            "jsonlines>=1.2"
-          ],
-          "spss": [
-            "savReaderWriter>=3.0"
-          ],
-          "excel": [
-            "openpyxl>=3.0",
-            "xlrd>=1.2",
-            "xlwt>=1.2"
-          ],
-          "pandas": [
-            "pandas>=1.0"
-          ],
-          "server": [
-            "gunicorn>=20.0",
-            "flask>=1.1"
-          ],
-          "gsheets": [
-            "pygsheets>=2.0"
-          ],
-          "bigquery": [
-            "google-api-python-client>=1.12.1"
-          ]
-        },
-        "tests_require": [
-          "mypy",
-          "moto",
-          "black",
-          "jinja2",
-          "pylama",
-          "pytest",
-          "ipython",
-          "pymysql",
-          "psycopg2",
-          "pytest-cov",
-          "pytest-vcr",
-          "pytest-only",
-          "oauth2client",
-          "requests-mock",
-          "python-dotenv",
-          "pydoc-markdown",
-          "docstring-parser"
-        ]
-      },
-      "35": "27",
-      "36": "27",
-      "37": "27",
-      "38": "27"
-    },
+    "4.0.0a17": "4.0.0",
     "4.0.0a2": "3.47.0",
     "4.0.0a3": "3.47.0",
     "4.0.0a4": "3.47.0",
@@ -14232,7 +14260,8 @@
       "38": "27"
     },
     "4.0.0a8": "4.0.0a10",
-    "4.0.0a9": "4.0.0a10"
+    "4.0.0a9": "4.0.0a10",
+    "4.0.1": "4.0.0"
   },
   "ftn": {
     "0.9.19": {
@@ -14682,7 +14711,8 @@
     "20.7.3": "20.7.1",
     "20.7.4": "20.7.1",
     "20.7.5": "20.7.1",
-    "20.9.0": "20.7.1"
+    "20.9.0": "20.7.1",
+    "21.2.0": "20.7.1"
   },
   "gilbert": {
     "0.0.1": {
@@ -19413,7 +19443,8 @@
     "0.1.2": "0.1.0",
     "0.1.3": "0.1.0",
     "0.1.4": "0.1.0",
-    "0.1.5": "0.1.0"
+    "0.1.5": "0.1.0",
+    "0.2.0": "0.1.0"
   },
   "mobileprint-test": {
     "0.0.1": {
@@ -34163,7 +34194,8 @@
     },
     "0.1.3": "0.1.2",
     "0.1.4": "0.1.2",
-    "0.1.5": "0.1.2"
+    "0.1.5": "0.1.2",
+    "0.1.7": "0.1.2"
   },
   "sphinxcontrib-matlabdomain": {
     "0.10.0": {
