@@ -3706,6 +3706,13 @@
       }
     }
   },
+  "bbchem": {
+    "py3": {
+      "0.0.1": {
+        "bbchem-0.0.1-py3-none-any.whl": {}
+      }
+    }
+  },
   "beetmoverscript": {
     "py3": {
       "7.1.0": {
@@ -4180,6 +4187,15 @@
       }
     }
   },
+  "billoprotobuf": {
+    "py3": {
+      "0.0.0": {
+        "billoprotobuf-0.0.0-py3-none-any.whl": {
+          "requires_python": ">=3.7,<4.0"
+        }
+      }
+    }
+  },
   "bintut": {
     "3.6": {
       "0.3.3": {
@@ -4635,6 +4651,9 @@
       },
       "1.13.5": {
         "bits_google-1.13.5-py3-none-any.whl": "1.13.1@bits_google-1.13.1-py3-none-any.whl"
+      },
+      "1.13.6": {
+        "bits_google-1.13.6-py3-none-any.whl": "1.13.1@bits_google-1.13.1-py3-none-any.whl"
       },
       "1.2": {
         "bits_google-1.2-py3-none-any.whl": "1.0@bits_google-1.0-py3-none-any.whl"
@@ -9116,6 +9135,14 @@
           "requires_dist": [
             "seamm (>=2020.12.4)",
             "seamm-util (>=2020.12.2)",
+            "pyyaml (>=5.3.1)"
+          ]
+        }
+      },
+      "2021.2.10": {
+        "custom_step-2021.2.10-py2.py3-none-any.whl": {
+          "requires_dist": [
+            "seamm (>=2020.12.4)",
             "pyyaml (>=5.3.1)"
           ]
         }
@@ -28993,6 +29020,23 @@
       },
       "1.2.0b1": {
         "pyuavcan-1.2.0b1-py3-none-any.whl": "1.1.2@pyuavcan-1.1.2-py3-none-any.whl"
+      },
+      "1.2.0b2": {
+        "pyuavcan-1.2.0b2-py3-none-any.whl": {
+          "provides_extras": [
+            "transport_can_pythoncan",
+            "transport_serial",
+            "transport_udp"
+          ],
+          "requires_dist": [
+            "nunavut (~=1.0)",
+            "numpy (<1.20,~=1.17)",
+            "python-can[serial] (~=3.3) ; extra == 'transport_can_pythoncan'",
+            "pyserial (~=3.4) ; extra == 'transport_serial'",
+            "cobs (~=1.1.4) ; extra == 'transport_serial'",
+            "libpcap (<2.0.0,>=1.10.0b15) ; extra == 'transport_udp'"
+          ]
+        }
       }
     }
   },
