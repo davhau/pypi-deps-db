@@ -8675,6 +8675,20 @@
       "2.1.0": {
         "cashews-2.1.0-py3-none-any.whl": "1.10.0@cashews-1.10.0-py3-none-any.whl"
       },
+      "2.10.0": {
+        "cashews-2.10.0-py3-none-any.whl": {
+          "provides_extras": [
+            "redis",
+            "tests"
+          ],
+          "requires_dist": [
+            "aioredis (>=1.0.0) ; extra == 'redis'",
+            "pytest ; extra == 'tests'",
+            "pytest-asyncio ; extra == 'tests'"
+          ],
+          "requires_python": ">=3.7"
+        }
+      },
       "2.2.0": {
         "cashews-2.2.0-py3-none-any.whl": "1.10.0@cashews-1.10.0-py3-none-any.whl"
       },
@@ -19913,6 +19927,16 @@
     }
   },
   "libvirt-vmcfg": {
+    "py2.py3": {
+      "0.0.3": {
+        "libvirt_vmcfg-0.0.3-py2.py3-none-any.whl": {
+          "requires_dist": [
+            "lxml"
+          ],
+          "requires_python": "<4,>=3.8"
+        }
+      }
+    },
     "py3": {
       "0.0.1": {
         "libvirt_vmcfg-0.0.1-py3-none-any.whl": {
@@ -19921,9 +19945,6 @@
           ],
           "requires_python": "<4,>=3.8"
         }
-      },
-      "0.0.2": {
-        "libvirt_vmcfg-0.0.2-py3-none-any.whl": "0.0.1@libvirt_vmcfg-0.0.1-py3-none-any.whl"
       }
     }
   },
