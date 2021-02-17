@@ -1774,6 +1774,24 @@
       }
     }
   },
+  "basextoy": {
+    "py3": {
+      "0.1": {
+        "baseXtoY-0.1-py3-none-any.whl": {
+          "requires_python": ">=3.0"
+        }
+      },
+      "0.2": {
+        "baseXtoY-0.2-py3-none-any.whl": "0.1@baseXtoY-0.1-py3-none-any.whl"
+      },
+      "0.3": {
+        "baseXtoY-0.3-py3-none-any.whl": "0.1@baseXtoY-0.1-py3-none-any.whl"
+      },
+      "0.4": {
+        "baseXtoY-0.4-py3-none-any.whl": "0.1@baseXtoY-0.1-py3-none-any.whl"
+      }
+    }
+  },
   "bashup": {
     "2.7": {
       "1.0.0": {
@@ -5345,6 +5363,16 @@
         "boto3-1.17.8-py2.py3-none-any.whl": {
           "requires_dist": [
             "botocore>=1.20.8,<1.21.0",
+            "jmespath>=0.7.1,<1.0.0",
+            "s3transfer>=0.3.0,<0.4.0"
+          ],
+          "requires_python": ">= 2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, !=3.5.*"
+        }
+      },
+      "1.17.9": {
+        "boto3-1.17.9-py2.py3-none-any.whl": {
+          "requires_dist": [
+            "botocore>=1.20.9,<1.21.0",
             "jmespath>=0.7.1,<1.0.0",
             "s3transfer>=0.3.0,<0.4.0"
           ],
@@ -9937,6 +9965,14 @@
           "requires_dist": [
             "pytest (==5.2.1)",
             "setuptools (==40.6.3)"
+          ],
+          "requires_python": ">3.0.0"
+        }
+      },
+      "0.0.12": {
+        "coge-0.0.12-py2.py3-none-any.whl": {
+          "requires_dist": [
+            "PyYAML (==5.3.1)"
           ],
           "requires_python": ">3.0.0"
         }
@@ -21462,6 +21498,9 @@
       },
       "1.17.8.0": {
         "mypy_boto3_application_insights-1.17.8.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_application_insights-1.13.24.3-py3-none-any.whl"
+      },
+      "1.17.9.0": {
+        "mypy_boto3_application_insights-1.17.9.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_application_insights-1.13.24.3-py3-none-any.whl"
       }
     }
   },
@@ -36106,6 +36145,38 @@
             "sphinx-autodoc-typehints (>=1.2.0) ; extra == 'doc'",
             "pytest ; extra == 'test'",
             "typing-extensions ; extra == 'test'"
+          ],
+          "requires_python": ">=3.5.3"
+        }
+      },
+      "2.11.0": {
+        "typeguard-2.11.0-py3-none-any.whl": {
+          "provides_extras": [
+            "doc",
+            "test"
+          ],
+          "requires_dist": [
+            "sphinx-rtd-theme ; extra == 'doc'",
+            "sphinx-autodoc-typehints (>=1.2.0) ; extra == 'doc'",
+            "pytest ; extra == 'test'",
+            "typing-extensions ; extra == 'test'",
+            "mypy ; extra == 'test'"
+          ],
+          "requires_python": ">=3.5.3"
+        }
+      },
+      "2.11.1": {
+        "typeguard-2.11.1-py3-none-any.whl": {
+          "provides_extras": [
+            "doc",
+            "test"
+          ],
+          "requires_dist": [
+            "sphinx-rtd-theme ; extra == 'doc'",
+            "sphinx-autodoc-typehints (>=1.2.0) ; extra == 'doc'",
+            "pytest ; extra == 'test'",
+            "typing-extensions ; extra == 'test'",
+            "mypy ; (platform_python_implementation != \"PyPy\") and extra == 'test'"
           ],
           "requires_python": ">=3.5.3"
         }
