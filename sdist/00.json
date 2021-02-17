@@ -14516,7 +14516,27 @@
       "37": "27",
       "38": "27"
     },
-    "0.6.1": "0.5.6"
+    "0.6.1": "0.5.6",
+    "0.7.0": "0.5.6",
+    "0.7.1": {
+      "27": {
+        "install_requires": [
+          "Click<8.0,>=7.0",
+          "pretty-errors<2.0.0,>=1.2.19",
+          "sphinxcontrib-mermaid==0.6.1",
+          "textX<3.0.0,>=2.1.0",
+          "z3-solver==4.8.8.0"
+        ],
+        "python_requires": [
+          ">=3.7,<4.0"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    },
+    "0.7.2": "0.7.1"
   },
   "ie_mbdbl2017_d_yahoo_ks_datareader": {
     "0.1": {
@@ -17665,6 +17685,39 @@
       "38": "35"
     },
     "1.13.0.dev1226": "1.13.0.dev1225",
+    "1.13.0.dev1227": {
+      "35": {
+        "install_requires": [
+          "indy-plenum==1.13.0.dev1034",
+          "timeout-decorator==0.4.0",
+          "distro==1.3.0"
+        ],
+        "setup_requires": [
+          "pytest-runner"
+        ],
+        "extras_require": {
+          "tests": [
+            "attrs==19.1.0",
+            "pytest==3.3.1",
+            "pytest-xdist==1.22.1",
+            "pytest-forked==0.2",
+            "python3-indy==1.15.0",
+            "pytest-asyncio==0.8.0"
+          ]
+        },
+        "tests_require": [
+          "attrs==19.1.0",
+          "pytest==3.3.1",
+          "pytest-xdist==1.22.1",
+          "pytest-forked==0.2",
+          "python3-indy==1.15.0",
+          "pytest-asyncio==0.8.0"
+        ]
+      },
+      "36": "35",
+      "37": "35",
+      "38": "35"
+    },
     "1.2.44": {
       "35": {
         "install_requires": [
@@ -21696,6 +21749,178 @@
           "invenio-jsonschemas>=1.1.0",
           "invenio-pidstore>=1.2.2",
           "invenio-records-permissions<0.11.0,>=0.10.0",
+          "invenio-records>=1.5.0a2",
+          "marshmallow-utils<0.4.0,>=0.3.4",
+          "xmltodict~=0.12.0",
+          "uritemplate>=3.0.1"
+        ],
+        "setup_requires": [
+          "Babel>=2.8"
+        ],
+        "extras_require": {
+          "all": [
+            "Sphinx<3,>=2.4",
+            "invenio-db[mysql,versioning]<2.0.0,>=1.0.5",
+            "invenio-db[postgresql,versioning]<2.0.0,>=1.0.5",
+            "invenio-db[versioning]<2.0.0,>=1.0.5",
+            "invenio-app>=1.3.0",
+            "pytest-invenio>=1.4.1"
+          ],
+          "docs": [
+            "Sphinx<3,>=2.4"
+          ],
+          "mysql": [
+            "invenio-db[mysql,versioning]<2.0.0,>=1.0.5"
+          ],
+          "tests": [
+            "invenio-app>=1.3.0",
+            "pytest-invenio>=1.4.1"
+          ],
+          "sqlite": [
+            "invenio-db[versioning]<2.0.0,>=1.0.5"
+          ],
+          "postgresql": [
+            "invenio-db[postgresql,versioning]<2.0.0,>=1.0.5"
+          ],
+          "elasticsearch6": [
+            "invenio-search[elasticsearch6]<2.0.0,>=1.4.1"
+          ],
+          "elasticsearch7": [
+            "invenio-search[elasticsearch7]<2.0.0,>=1.4.1"
+          ]
+        },
+        "tests_require": [
+          "invenio-app>=1.3.0",
+          "pytest-invenio>=1.4.1"
+        ]
+      },
+      "37": "36",
+      "38": "36"
+    },
+    "0.12.1": {
+      "27": {
+        "install_requires": [
+          "flask-resources<0.7.0,>=0.6.0",
+          "invenio-accounts>=1.4.3",
+          "invenio-base>=1.2.3",
+          "invenio-files-rest>=1.2.0",
+          "invenio-i18n>=1.2.0",
+          "invenio-indexer>=1.2.0",
+          "invenio-jsonschemas>=1.1.0",
+          "invenio-pidstore>=1.2.2",
+          "invenio-records-permissions<0.12.0,>=0.11.0",
+          "invenio-records>=1.5.0a2",
+          "marshmallow-utils<0.4.0,>=0.3.4",
+          "xmltodict~=0.12.0",
+          "uritemplate>=3.0.1"
+        ],
+        "setup_requires": [
+          "Babel>=2.8"
+        ],
+        "extras_require": {
+          "all": [
+            "invenio-db[versioning]<2.0.0,>=1.0.5",
+            "invenio-db[postgresql,versioning]<2.0.0,>=1.0.5",
+            "Sphinx<3,>=2.4",
+            "invenio-app>=1.3.0",
+            "pytest-invenio>=1.4.1",
+            "invenio-db[mysql,versioning]<2.0.0,>=1.0.5"
+          ],
+          "docs": [
+            "Sphinx<3,>=2.4"
+          ],
+          "mysql": [
+            "invenio-db[mysql,versioning]<2.0.0,>=1.0.5"
+          ],
+          "tests": [
+            "invenio-app>=1.3.0",
+            "pytest-invenio>=1.4.1"
+          ],
+          "sqlite": [
+            "invenio-db[versioning]<2.0.0,>=1.0.5"
+          ],
+          "postgresql": [
+            "invenio-db[postgresql,versioning]<2.0.0,>=1.0.5"
+          ],
+          "elasticsearch6": [
+            "invenio-search[elasticsearch6]<2.0.0,>=1.4.1"
+          ],
+          "elasticsearch7": [
+            "invenio-search[elasticsearch7]<2.0.0,>=1.4.1"
+          ]
+        },
+        "tests_require": [
+          "invenio-app>=1.3.0",
+          "pytest-invenio>=1.4.1"
+        ]
+      },
+      "35": {
+        "install_requires": [
+          "flask-resources<0.7.0,>=0.6.0",
+          "invenio-accounts>=1.4.3",
+          "invenio-base>=1.2.3",
+          "invenio-files-rest>=1.2.0",
+          "invenio-i18n>=1.2.0",
+          "invenio-indexer>=1.2.0",
+          "invenio-jsonschemas>=1.1.0",
+          "invenio-pidstore>=1.2.2",
+          "invenio-records-permissions<0.12.0,>=0.11.0",
+          "invenio-records>=1.5.0a2",
+          "marshmallow-utils<0.4.0,>=0.3.4",
+          "xmltodict~=0.12.0",
+          "uritemplate>=3.0.1"
+        ],
+        "setup_requires": [
+          "Babel>=2.8"
+        ],
+        "extras_require": {
+          "all": [
+            "invenio-app>=1.3.0",
+            "pytest-invenio>=1.4.1",
+            "invenio-db[postgresql,versioning]<2.0.0,>=1.0.5",
+            "Sphinx<3,>=2.4",
+            "invenio-db[versioning]<2.0.0,>=1.0.5",
+            "invenio-db[mysql,versioning]<2.0.0,>=1.0.5"
+          ],
+          "docs": [
+            "Sphinx<3,>=2.4"
+          ],
+          "mysql": [
+            "invenio-db[mysql,versioning]<2.0.0,>=1.0.5"
+          ],
+          "tests": [
+            "invenio-app>=1.3.0",
+            "pytest-invenio>=1.4.1"
+          ],
+          "sqlite": [
+            "invenio-db[versioning]<2.0.0,>=1.0.5"
+          ],
+          "postgresql": [
+            "invenio-db[postgresql,versioning]<2.0.0,>=1.0.5"
+          ],
+          "elasticsearch6": [
+            "invenio-search[elasticsearch6]<2.0.0,>=1.4.1"
+          ],
+          "elasticsearch7": [
+            "invenio-search[elasticsearch7]<2.0.0,>=1.4.1"
+          ]
+        },
+        "tests_require": [
+          "invenio-app>=1.3.0",
+          "pytest-invenio>=1.4.1"
+        ]
+      },
+      "36": {
+        "install_requires": [
+          "flask-resources<0.7.0,>=0.6.0",
+          "invenio-accounts>=1.4.3",
+          "invenio-base>=1.2.3",
+          "invenio-files-rest>=1.2.0",
+          "invenio-i18n>=1.2.0",
+          "invenio-indexer>=1.2.0",
+          "invenio-jsonschemas>=1.1.0",
+          "invenio-pidstore>=1.2.2",
+          "invenio-records-permissions<0.12.0,>=0.11.0",
           "invenio-records>=1.5.0a2",
           "marshmallow-utils<0.4.0,>=0.3.4",
           "xmltodict~=0.12.0",
@@ -31332,7 +31557,8 @@
     "1.17.5.0": "1.11.10.0",
     "1.17.6.0": "1.11.10.0",
     "1.17.7.0": "1.11.10.0",
-    "1.17.8.0": "1.11.10.0"
+    "1.17.8.0": "1.11.10.0",
+    "1.17.9.0": "1.11.10.0"
   },
   "mypy-boto3-globalaccelerator": {
     "0.1.10": {
@@ -31913,7 +32139,8 @@
     "1.17.5.0": "1.11.10.0",
     "1.17.6.0": "1.11.10.0",
     "1.17.7.0": "1.11.10.0",
-    "1.17.8.0": "1.11.10.0"
+    "1.17.8.0": "1.11.10.0",
+    "1.17.9.0": "1.11.10.0"
   },
   "mypy-boto3-servicediscovery": {
     "0.1.10": {
@@ -32495,7 +32722,8 @@
     "1.17.5.0": "1.11.10.0",
     "1.17.6.0": "1.11.10.0",
     "1.17.7.0": "1.11.10.0",
-    "1.17.8.0": "1.11.10.0"
+    "1.17.8.0": "1.11.10.0",
+    "1.17.9.0": "1.11.10.0"
   },
   "mysql2postgresql": {
     "0.0.2": {
@@ -36506,6 +36734,27 @@
           "test": [
             "moto~=1.0",
             "opentelemetry-test==0.17b0"
+          ]
+        },
+        "python_requires": [
+          ">=3.5"
+        ]
+      },
+      "36": "35",
+      "37": "35",
+      "38": "35"
+    },
+    "0.18b0": {
+      "35": {
+        "install_requires": [
+          "botocore~=1.0",
+          "opentelemetry-api==1.0.0rc1",
+          "opentelemetry-instrumentation==0.18b0"
+        ],
+        "extras_require": {
+          "test": [
+            "moto~=1.0",
+            "opentelemetry-test==0.18b0"
           ]
         },
         "python_requires": [
@@ -52800,7 +53049,8 @@
       "38": "27"
     },
     "2.1.0": "2.0.1",
-    "2.2.0": "2.0.1"
+    "2.2.0": "2.0.1",
+    "2.2.1": "2.0.1"
   },
   "webassets-react": {
     "1.0.1": {
