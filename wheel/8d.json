@@ -3543,6 +3543,31 @@
       "2.10.1": {
         "azureml_dataprep-2.10.1-py3-none-any.whl": "2.10.0@azureml_dataprep-2.10.0-py3-none-any.whl"
       },
+      "2.11.0": {
+        "azureml_dataprep-2.11.0-py3-none-any.whl": {
+          "provides_extras": [
+            "fuse",
+            "pandas",
+            "parquet",
+            "pyspark",
+            "scipy"
+          ],
+          "requires_dist": [
+            "dotnetcore2 (<3.0.0,>=2.1.14)",
+            "azureml-dataprep-native (<31.0.0,>=30.0.0)",
+            "azureml-dataprep-rslex (<1.10.0a,>=1.9.0dev0)",
+            "cloudpickle (<2.0.0,>=1.1.0)",
+            "azure-identity (<1.5.0,>=1.2.0)",
+            "fusepy (<4.0.0,>=3.0.1) ; extra == 'fuse'",
+            "numpy (<2.0.0,>=1.14.0) ; extra == 'pandas'",
+            "pandas (<2.0.0,>=0.23.4) ; extra == 'pandas'",
+            "pyarrow (<2.0.0,>=0.17.0) ; extra == 'pandas'",
+            "pyarrow (<2.0.0,>=0.17.0) ; extra == 'parquet'",
+            "pyspark (==2.3.0) ; extra == 'pyspark'",
+            "scipy (<2.0.0,>=1.1.0) ; extra == 'scipy'"
+          ]
+        }
+      },
       "2.2.0": {
         "azureml_dataprep-2.2.0-py3-none-any.whl": {
           "provides_extras": [
@@ -3833,6 +3858,9 @@
       },
       "2.7.3": {
         "azureml_dataprep-2.7.3-py3-none-any.whl": "2.7.0@azureml_dataprep-2.7.0-py3-none-any.whl"
+      },
+      "2.7.4": {
+        "azureml_dataprep-2.7.4-py3-none-any.whl": "2.7.0@azureml_dataprep-2.7.0-py3-none-any.whl"
       },
       "2.8.0": {
         "azureml_dataprep-2.8.0-py3-none-any.whl": {
@@ -18175,6 +18203,24 @@
       }
     }
   },
+  "dffml-model-autosklearn": {
+    "py3": {
+      "0.1.0": {
+        "dffml_model_autosklearn-0.1.0-py3-none-any.whl": {
+          "requires_dist": [
+            "dffml (==0.4.0) ; platform_system == \"Darwin\" and python_version == \"3.7\"",
+            "dffml (==0.4.0) ; platform_system == \"Darwin\" and python_version == \"3.8\"",
+            "auto-sklearn (==0.12.3) ; platform_system == \"Linux\" and python_version == \"3.7\"",
+            "dffml (==0.4.0) ; platform_system == \"Linux\" and python_version == \"3.7\"",
+            "auto-sklearn (==0.12.3) ; platform_system == \"Linux\" and python_version == \"3.8\"",
+            "dffml (==0.4.0) ; platform_system == \"Linux\" and python_version == \"3.8\"",
+            "dffml (==0.4.0) ; platform_system == \"Windows\" and python_version == \"3.7\"",
+            "dffml (==0.4.0) ; platform_system == \"Windows\" and python_version == \"3.8\""
+          ]
+        }
+      }
+    }
+  },
   "dirtreedigest": {
     "py3": {
       "0.5.3": {
@@ -21517,13 +21563,6 @@
       }
     }
   },
-  "hamidpdf": {
-    "py3": {
-      "1.0": {
-        "hamidpdf-1.0-py3-none-any.whl": {}
-      }
-    }
-  },
   "hepdata-converter-ws": {
     "py2": {
       "0.1.7": {
@@ -22806,6 +22845,9 @@
       },
       "0.0.3": {
         "jak_python_package-0.0.3-py3-none-any.whl": "0.0.1@jak_python_package-0.0.1-py3-none-any.whl"
+      },
+      "0.0.4": {
+        "jak_python_package-0.0.4-py3-none-any.whl": "0.0.1@jak_python_package-0.0.1-py3-none-any.whl"
       }
     }
   },
@@ -30630,24 +30672,6 @@
       },
       "13.0.2.0.1.dev1": {
         "odoo13_addon_account_asset_management-13.0.2.0.1.dev1-py3-none-any.whl": "13.0.2.0.0@odoo13_addon_account_asset_management-13.0.2.0.0-py3-none-any.whl"
-      }
-    }
-  },
-  "odoo13-addon-hr-holidays-validity-date": {
-    "py3": {
-      "13.0.1.0.1.dev2": {
-        "odoo13_addon_hr_holidays_validity_date-13.0.1.0.1.dev2-py3-none-any.whl": {
-          "requires_dist": [
-            "odoo (<13.1dev,>=13.0a)"
-          ],
-          "requires_python": ">=3.5"
-        }
-      },
-      "13.0.1.0.1.dev3": {
-        "odoo13_addon_hr_holidays_validity_date-13.0.1.0.1.dev3-py3-none-any.whl": "13.0.1.0.1.dev2@odoo13_addon_hr_holidays_validity_date-13.0.1.0.1.dev2-py3-none-any.whl"
-      },
-      "13.0.1.0.1.dev4": {
-        "odoo13_addon_hr_holidays_validity_date-13.0.1.0.1.dev4-py3-none-any.whl": "13.0.1.0.1.dev2@odoo13_addon_hr_holidays_validity_date-13.0.1.0.1.dev2-py3-none-any.whl"
       }
     }
   },
@@ -44804,6 +44828,18 @@
     "py3": {
       "0.0.1": {
         "scoss-0.0.1-py3-none-any.whl": {
+          "requires_python": ">=3.6"
+        }
+      }
+    }
+  },
+  "scrap-utils": {
+    "py3": {
+      "0.0.1": {
+        "scrap_utils-0.0.1-py3-none-any.whl": {
+          "requires_dist": [
+            "requests"
+          ],
           "requires_python": ">=3.6"
         }
       }
