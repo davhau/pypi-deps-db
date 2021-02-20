@@ -17818,6 +17818,25 @@
       },
       "1.1": {
         "microagent-1.1-py3-none-any.whl": "1.0@microagent-1.0-py3-none-any.whl"
+      },
+      "1.2": {
+        "microagent-1.2-py3-none-any.whl": {
+          "provides_extras": [
+            "aioredis",
+            "amqp",
+            "kafka",
+            "pulsar"
+          ],
+          "requires_dist": [
+            "ujson",
+            "requests",
+            "croniter",
+            "aioredis ; extra == 'aioredis'",
+            "aioamqp (==0.14) ; extra == 'amqp'",
+            "aiokafka (==0.7) ; extra == 'kafka'",
+            "pulsar ; extra == 'pulsar'"
+          ]
+        }
       }
     }
   },
@@ -24435,6 +24454,13 @@
         "pantsbuild.pants.contrib.confluence-1.30.2rc3-py36.py37.py38-none-any.whl": {
           "requires_dist": [
             "pantsbuild.pants (==1.30.2rc3)"
+          ]
+        }
+      },
+      "1.30.3rc0": {
+        "pantsbuild.pants.contrib.confluence-1.30.3rc0-py36.py37.py38-none-any.whl": {
+          "requires_dist": [
+            "pantsbuild.pants (==1.30.3rc0)"
           ]
         }
       }
