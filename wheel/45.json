@@ -325,6 +325,32 @@
           ],
           "requires_python": ">=3.8"
         }
+      },
+      "0.6.0": {
+        "agentMET4FOF-0.6.0-py3-none-any.whl": {
+          "provides_extras": [
+            "tutorials"
+          ],
+          "requires_dist": [
+            "numpy",
+            "scipy",
+            "matplotlib (<3.3.0)",
+            "pandas",
+            "osbrain",
+            "dash",
+            "dash-cytoscape",
+            "networkx",
+            "plotly",
+            "time-series-buffer",
+            "time-series-metadata",
+            "mpld3",
+            "mesa",
+            "pathos",
+            "notebook ; extra == 'tutorials'",
+            "PyDynamic ; extra == 'tutorials'"
+          ],
+          "requires_python": ">=3.8"
+        }
       }
     }
   },
@@ -8883,6 +8909,24 @@
       }
     }
   },
+  "dnf-converter": {
+    "py2.py3": {
+      "0.0.0": {
+        "dnf_converter-0.0.0-py2.py3-none-any.whl": {
+          "requires_python": ">=3.6"
+        }
+      },
+      "0.0.1": {
+        "dnf_converter-0.0.1-py2.py3-none-any.whl": "0.0.0@dnf_converter-0.0.0-py2.py3-none-any.whl"
+      },
+      "0.0.2": {
+        "dnf_converter-0.0.2-py2.py3-none-any.whl": "0.0.0@dnf_converter-0.0.0-py2.py3-none-any.whl"
+      },
+      "0.0.3": {
+        "dnf_converter-0.0.3-py2.py3-none-any.whl": "0.0.0@dnf_converter-0.0.0-py2.py3-none-any.whl"
+      }
+    }
+  },
   "dobby": {
     "py3": {
       "0.1": {
@@ -13142,6 +13186,9 @@
           ],
           "requires_python": ">=3.6"
         }
+      },
+      "3.5.0": {
+        "importlib_metadata-3.5.0-py3-none-any.whl": "3.4.0@importlib_metadata-3.4.0-py3-none-any.whl"
       }
     }
   },
@@ -13662,8 +13709,23 @@
   },
   "layerview": {
     "py3": {
-      "0.0.1": {
-        "Layerview-0.0.1-py3-none-any.whl": {}
+      "0.1.1": {
+        "layerview-0.1.1-py3-none-any.whl": {
+          "requires_dist": [
+            "Panda3D (>=1.10.7,<2.0.0)",
+            "Pillow (>=8.0.1,<9.0.0)",
+            "PyQt5 (>=5.15.2,<6.0.0)",
+            "QPanda3D (>=0.2.7,<0.3.0)",
+            "numpy (==1.19.3)"
+          ],
+          "requires_python": ">=3.8,<3.10"
+        }
+      },
+      "0.1.2": {
+        "layerview-0.1.2-py3-none-any.whl": "0.1.1@layerview-0.1.1-py3-none-any.whl"
+      },
+      "0.1.3": {
+        "layerview-0.1.3-py3-none-any.whl": "0.1.1@layerview-0.1.1-py3-none-any.whl"
       }
     }
   },
@@ -13992,6 +14054,21 @@
         "literary-1.4.0-py3-none-any.whl": {
           "requires_dist": [
             "Jinja2 (>=2.11.2,<3.0.0)",
+            "ipython (>=7.19.0,<8.0.0)",
+            "nbclient (>=0.5.1,<0.6.0)",
+            "nbconvert (>=6.0.7,<7.0.0)",
+            "nbformat[fast] (>=5.0.8,<6.0.0)",
+            "toml (>=0.10.2,<0.11.0)",
+            "traitlets (>=5.0.5,<6.0.0)"
+          ],
+          "requires_python": ">=3.8,<4.0"
+        }
+      },
+      "1.4.1": {
+        "literary-1.4.1-py3-none-any.whl": {
+          "requires_dist": [
+            "Jinja2 (>=2.11.2,<3.0.0)",
+            "astunparse (>=1.6.3,<2.0.0); python_version < \"3.9\"",
             "ipython (>=7.19.0,<8.0.0)",
             "nbclient (>=0.5.1,<0.6.0)",
             "nbconvert (>=6.0.7,<7.0.0)",
@@ -16938,6 +17015,9 @@
       },
       "1.17.13.0": {
         "mypy_boto3_kinesisanalytics-1.17.13.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_kinesisanalytics-1.13.24.3-py3-none-any.whl"
+      },
+      "1.17.14.0": {
+        "mypy_boto3_kinesisanalytics-1.17.14.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_kinesisanalytics-1.13.24.3-py3-none-any.whl"
       },
       "1.17.2.0": {
         "mypy_boto3_kinesisanalytics-1.17.2.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_kinesisanalytics-1.13.24.3-py3-none-any.whl"
@@ -21330,6 +21410,31 @@
             "requests (>=2.22.0)",
             "six (>=1.14.0)",
             "urllib3 (>=1.25.7)"
+          ]
+        }
+      }
+    }
+  },
+  "pandoc-latex-newpage": {
+    "py2.py3": {
+      "0.1.2": {
+        "pandoc_latex_newpage-0.1.2-py2.py3-none-any.whl": {
+          "provides_extras": [
+            "dev",
+            "test"
+          ],
+          "requires_dist": [
+            "panflute (>=2.0)",
+            "check-manifest ; extra == 'dev'",
+            "black ; extra == 'test'",
+            "tox ; extra == 'test'",
+            "pytest-runner ; extra == 'test'",
+            "coverage ; extra == 'test'",
+            "pylint ; extra == 'test'",
+            "Pygments ; extra == 'test'",
+            "radon ; extra == 'test'",
+            "mypy ; extra == 'test'",
+            "pytest-cov ; extra == 'test'"
           ]
         }
       }
@@ -27944,6 +28049,22 @@
         "pytype-2021.2.19-cp36-cp36m-macosx_10_14_x86_64.whl": "2021.1.28@pytype-2021.1.28-cp36-cp36m-macosx_10_14_x86_64.whl",
         "pytype-2021.2.19-cp36-cp36m-manylinux2014_x86_64.whl": "2021.1.28@pytype-2021.1.28-cp36-cp36m-macosx_10_14_x86_64.whl"
       },
+      "2021.2.23": {
+        "pytype-2021.2.23-cp36-cp36m-macosx_10_14_x86_64.whl": {
+          "requires_dist": [
+            "attrs",
+            "importlab (>=0.6.1)",
+            "ninja (>=1.10.0.post2)",
+            "pyyaml (>=3.11)",
+            "six",
+            "toml",
+            "typed-ast",
+            "dataclasses ; python_version < \"3.7\""
+          ],
+          "requires_python": "<3.10,>=3.6"
+        },
+        "pytype-2021.2.23-cp36-cp36m-manylinux2014_x86_64.whl": "2021.2.23@pytype-2021.2.23-cp36-cp36m-macosx_10_14_x86_64.whl"
+      },
       "2021.2.9": {
         "pytype-2021.2.9-cp36-cp36m-macosx_10_14_x86_64.whl": "2021.1.28@pytype-2021.1.28-cp36-cp36m-macosx_10_14_x86_64.whl",
         "pytype-2021.2.9-cp36-cp36m-manylinux2014_x86_64.whl": "2021.1.28@pytype-2021.1.28-cp36-cp36m-macosx_10_14_x86_64.whl"
@@ -28095,6 +28216,22 @@
         "pytype-2021.2.19-cp37-cp37m-macosx_10_14_x86_64.whl": "2021.1.28@pytype-2021.1.28-cp37-cp37m-macosx_10_14_x86_64.whl",
         "pytype-2021.2.19-cp37-cp37m-manylinux2014_x86_64.whl": "2021.1.28@pytype-2021.1.28-cp37-cp37m-macosx_10_14_x86_64.whl"
       },
+      "2021.2.23": {
+        "pytype-2021.2.23-cp37-cp37m-macosx_10_14_x86_64.whl": {
+          "requires_dist": [
+            "attrs",
+            "importlab (>=0.6.1)",
+            "ninja (>=1.10.0.post2)",
+            "pyyaml (>=3.11)",
+            "six",
+            "toml",
+            "typed-ast",
+            "dataclasses ; python_version < \"3.7\""
+          ],
+          "requires_python": "<3.10,>=3.6"
+        },
+        "pytype-2021.2.23-cp37-cp37m-manylinux2014_x86_64.whl": "2021.2.23@pytype-2021.2.23-cp37-cp37m-macosx_10_14_x86_64.whl"
+      },
       "2021.2.9": {
         "pytype-2021.2.9-cp37-cp37m-macosx_10_14_x86_64.whl": "2021.1.28@pytype-2021.1.28-cp37-cp37m-macosx_10_14_x86_64.whl",
         "pytype-2021.2.9-cp37-cp37m-manylinux2014_x86_64.whl": "2021.1.28@pytype-2021.1.28-cp37-cp37m-macosx_10_14_x86_64.whl"
@@ -28209,6 +28346,22 @@
       "2021.2.19": {
         "pytype-2021.2.19-cp38-cp38-macosx_10_14_x86_64.whl": "2021.1.28@pytype-2021.1.28-cp38-cp38-macosx_10_14_x86_64.whl",
         "pytype-2021.2.19-cp38-cp38-manylinux2014_x86_64.whl": "2021.1.28@pytype-2021.1.28-cp38-cp38-macosx_10_14_x86_64.whl"
+      },
+      "2021.2.23": {
+        "pytype-2021.2.23-cp38-cp38-macosx_10_14_x86_64.whl": {
+          "requires_dist": [
+            "attrs",
+            "importlab (>=0.6.1)",
+            "ninja (>=1.10.0.post2)",
+            "pyyaml (>=3.11)",
+            "six",
+            "toml",
+            "typed-ast",
+            "dataclasses ; python_version < \"3.7\""
+          ],
+          "requires_python": "<3.10,>=3.6"
+        },
+        "pytype-2021.2.23-cp38-cp38-manylinux2014_x86_64.whl": "2021.2.23@pytype-2021.2.23-cp38-cp38-macosx_10_14_x86_64.whl"
       },
       "2021.2.9": {
         "pytype-2021.2.9-cp38-cp38-macosx_10_14_x86_64.whl": "2021.1.28@pytype-2021.1.28-cp38-cp38-macosx_10_14_x86_64.whl",
