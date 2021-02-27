@@ -1033,6 +1033,55 @@
       "36": "27",
       "37": "27",
       "38": "27"
+    },
+    "2.2.0": {
+      "27": {
+        "install_requires": [
+          "idna>=2.8",
+          "sniffio>=1.1"
+        ],
+        "setup_requires": [
+          "setuptools_scm"
+        ],
+        "extras_require": {
+          "doc": [
+            "sphinx_rtd_theme",
+            "sphinx-autodoc-typehints>=1.2.0"
+          ],
+          "test": [
+            "coverage[toml]>=4.5",
+            "hypothesis>=4.0",
+            "pytest>=6.0",
+            "trustme"
+          ],
+          "trio": [
+            "trio>=0.16"
+          ],
+          "curio": [
+            "curio>=1.4"
+          ],
+          ":python_version < \"3.7\"": [
+            "async_generator",
+            "dataclasses"
+          ],
+          ":python_version < \"3.8\"": [
+            "typing_extensions"
+          ],
+          "test:python_version < \"3.7\" and platform_python_implementation == \"CPython\" and platform_system != \"Windows\"": [
+            "uvloop<0.15"
+          ],
+          "test:python_version >= \"3.7\" and platform_python_implementation == \"CPython\" and platform_system != \"Windows\"": [
+            "uvloop>=0.15"
+          ]
+        },
+        "python_requires": [
+          ">=3.6.2"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
     }
   },
   "aosong": {
@@ -16680,7 +16729,8 @@
     "20.7.0": "18.10.0",
     "20.8.0": "18.10.0",
     "20.9.0": "18.10.0",
-    "21.1.0": "20.10.0"
+    "21.1.0": "20.10.0",
+    "21.2.0": "20.10.0"
   },
   "htmlcompressor": {
     "1.0.0": {
@@ -19623,7 +19673,8 @@
     "1.0.0.3": "1.0.0.1",
     "1.0.0.4": "1.0.0.1",
     "1.0.0.5": "1.0.0.1",
-    "1.0.1": "1.0.0.1"
+    "1.0.1": "1.0.0.1",
+    "1.0.2": "1.0.0.1"
   },
   "mailspoof": {
     "0.1.0": {
@@ -23473,7 +23524,8 @@
       "37": "27",
       "38": "27"
     },
-    "1.0.4": "1.0.3"
+    "1.0.4": "1.0.3",
+    "1.1.0": "1.0.3"
   },
   "photocrypt": {
     "0.0.1": {
