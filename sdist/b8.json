@@ -3273,7 +3273,8 @@
       "37": "35",
       "38": "35"
     },
-    "2021.2.5rc1": "2021.2.5"
+    "2021.2.5rc1": "2021.2.5",
+    "2021.3.3rc1": "2021.2.5"
   },
   "apache-airflow-providers-microsoft-azure": {
     "1.0.0": {
@@ -3362,6 +3363,44 @@
           "azure-mgmt-containerinstance<2.0,>=1.5.0",
           "azure-mgmt-datalake-store>=0.5.0",
           "azure-mgmt-resource>=2.2.0",
+          "azure-storage-file>=2.1.0"
+        ],
+        "setup_requires": [
+          "setuptools",
+          "wheel"
+        ],
+        "extras_require": {
+          "google": [
+            "apache-airflow-providers-google"
+          ],
+          "oracle": [
+            "apache-airflow-providers-oracle"
+          ]
+        },
+        "python_requires": [
+          "~=3.6"
+        ]
+      },
+      "36": "35",
+      "37": "35",
+      "38": "35"
+    },
+    "1.2.0rc1": {
+      "35": {
+        "install_requires": [
+          "apache-airflow>=2.0.0",
+          "azure-batch>=8.0.0",
+          "azure-cosmos<4,>=3.0.1",
+          "azure-datalake-store>=0.0.45",
+          "azure-identity>=1.3.1",
+          "azure-keyvault>=4.1.0",
+          "azure-kusto-data<0.1,>=0.0.43",
+          "azure-mgmt-containerinstance<2.0,>=1.5.0",
+          "azure-mgmt-datafactory>=0.13.0",
+          "azure-mgmt-datalake-store>=0.5.0",
+          "azure-mgmt-resource>=2.2.0",
+          "azure-storage-blob>=12.7.0",
+          "azure-storage-common>=2.1.0",
           "azure-storage-file>=2.1.0"
         ],
         "setup_requires": [
@@ -22758,7 +22797,24 @@
     "1.4.1a0": "1.4.0a0",
     "1.4.2": "1.4.0a0",
     "1.4.2a0": "1.4.0a0",
-    "1.5.0a0": "1.4.0a0"
+    "1.5.0a0": "1.4.0a0",
+    "1.5.1": {
+      "27": {
+        "install_requires": [
+          "click",
+          "colorama",
+          "pygments",
+          "requests>=2.21.0",
+          "websocket-client>=0.55.0"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    },
+    "1.6": "1.5.1",
+    "1.6.1": "1.5.1"
   },
   "lazycontract": {
     "0.9": {
@@ -23314,6 +23370,7 @@
     "11.5.3": "11.5",
     "11.6": "11.5",
     "11.7": "11.5",
+    "11.8": "11.5",
     "9.1.5": {
       "27": {
         "install_requires": [
@@ -24456,7 +24513,41 @@
       "37": "35",
       "38": "35"
     },
-    "0.3.1": "0.3.0"
+    "0.3.1": "0.3.0",
+    "0.3.2": {
+      "35": {
+        "install_requires": [
+          "Flask>=1.1",
+          "Flask-UUID==0.2",
+          "flask_httpauth==4.2.0",
+          "nidhoggr_core>=0.11",
+          "pydantic>=1.7",
+          "flask-redis==0.4.0",
+          "Pillow==8.1.0",
+          "sps-parser>=0.3"
+        ],
+        "setup_requires": [
+          "wheel"
+        ],
+        "tests_require": [
+          "wheel==0.36.2",
+          "pylint==2.6.0",
+          "twine==3.3.0",
+          "flake8==3.8.4",
+          "Sphinx==3.4.3",
+          "pytest==6.2.2",
+          "pytest-cov==2.11.1",
+          "pytest-runner==5.2",
+          "coverage==5.4",
+          "pytest-flask==1.1.0",
+          "tox==3.21.4",
+          "watchdog==1.0.2"
+        ]
+      },
+      "36": "35",
+      "37": "35",
+      "38": "35"
+    }
   },
   "mecab-ko-dic": {
     "1.0.0": {
