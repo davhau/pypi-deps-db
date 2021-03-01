@@ -407,6 +407,12 @@
           ],
           "requires_python": ">=3.8,<4.0"
         }
+      },
+      "0.1.1": {
+        "all_of_it-0.1.1-py3-none-any.whl": "0.1.0@all_of_it-0.1.0-py3-none-any.whl"
+      },
+      "0.1.2": {
+        "all_of_it-0.1.2-py3-none-any.whl": "0.1.0@all_of_it-0.1.0-py3-none-any.whl"
       }
     }
   },
@@ -8786,6 +8792,16 @@
       },
       "0.0.2": {
         "exporter-0.0.2-py3-none-any.whl": "0.0.1@exporter-0.0.1-py3-none-any.whl"
+      },
+      "0.0.3": {
+        "exporter-0.0.3-py3-none-any.whl": {
+          "requires_dist": [
+            "nbformat",
+            "imgkit",
+            "Pygments"
+          ],
+          "requires_python": ">=3.6"
+        }
       }
     }
   },
@@ -24132,6 +24148,9 @@
     "py3": {
       "0.1.0": {
         "py_build-0.1.0-py3-none-any.whl": {}
+      },
+      "0.2.0": {
+        "py_build-0.2.0-py3-none-any.whl": "0.1.0@py_build-0.1.0-py3-none-any.whl"
       }
     }
   },
@@ -27199,6 +27218,33 @@
         "s3uploader-0.1-py3-none-any.whl": {
           "requires_dist": [
             "boto3"
+          ]
+        }
+      }
+    }
+  },
+  "salamanca": {
+    "py2.py3": {
+      "0.2.0": {
+        "salamanca-0.2.0-py2.py3-none-any.whl": {
+          "provides_extras": [
+            "doc",
+            "test"
+          ],
+          "requires_dist": [
+            "pandas",
+            "pyomo",
+            "numpy",
+            "scipy",
+            "requests",
+            "sphinx ; extra == 'doc'",
+            "cloud-sptheme ; extra == 'doc'",
+            "nbsphinx ; extra == 'doc'",
+            "numpydoc ; extra == 'doc'",
+            "sphinxcontrib-bibtex (<2.0) ; extra == 'doc'",
+            "sphinxcontrib-programoutput ; extra == 'doc'",
+            "pytest ; extra == 'test'",
+            "pytest-cov ; extra == 'test'"
           ]
         }
       }
