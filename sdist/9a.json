@@ -554,6 +554,37 @@
       },
       "37": "36",
       "38": "36"
+    },
+    "3.3": {
+      "36": {
+        "install_requires": [
+          "black>=20.8b1",
+          "flake8",
+          "isort",
+          "mypy>=0.770",
+          "ply",
+          "pytest>=5.4.3",
+          "pytest-cov>=2.7.1",
+          "quicktions>=1.3",
+          "roman",
+          "six",
+          "sphinx-autodoc-typehints",
+          "uqbar<0.5.0,>=0.4.4"
+        ],
+        "extras_require": {
+          "nauert": [
+            "abjad-ext-nauert==3.3"
+          ],
+          "ipython": [
+            "abjad-ext-ipython>=3.2"
+          ],
+          "rmakers": [
+            "abjad-ext-rmaker==3.3"
+          ]
+        }
+      },
+      "37": "36",
+      "38": "36"
     }
   },
   "acestream-search": {
@@ -45607,6 +45638,7 @@
     "0.0.2.1766": "0.0.2.1764",
     "0.0.2.1767": "0.0.2.1764",
     "0.0.2.1768": "0.0.2.1764",
+    "0.0.2.1769": "0.0.2.1760",
     "0.0.2.177": "0.0.2.100",
     "0.0.2.178": "0.0.2.100",
     "0.0.2.179": "0.0.2.100",
@@ -104151,6 +104183,15 @@
     "0.7.2": "0.5",
     "0.8.2": "0.5"
   },
+  "cupp": {
+    "0.0.1": {
+      "27": {},
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    }
+  },
   "custom-math-operations": {
     "0.0.1": {
       "27": {
@@ -112458,6 +112499,25 @@
       "36": "27",
       "37": "27",
       "38": "27"
+    },
+    "1.2.0": {
+      "27": {
+        "install_requires": [
+          "datastreamservicelib<2.0,>=1.10"
+        ],
+        "extras_require": {
+          ":python_version >= \"3.6\" and python_version < \"3.7\"": [
+            "dataclasses<0.8,>=0.7"
+          ]
+        },
+        "python_requires": [
+          ">=3.6,<4.0"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
     }
   },
   "goodman-pipeline": {
@@ -114001,6 +114061,40 @@
           ],
           ":python_version >= \"3.4\"": [
             "ipython>=5.1.0"
+          ]
+        },
+        "tests_require": [
+          "mock"
+        ],
+        "python_requires": [
+          ">=2.7"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    },
+    "0.13.5": {
+      "27": {
+        "install_requires": [
+          "setuptools"
+        ],
+        "extras_require": {
+          ":python_version > \"3.6\"": [
+            "ipython>=7.17.0"
+          ],
+          ":python_version == \"2.7\"": [
+            "ipython<6.0.0,>=5.1.0"
+          ],
+          ":python_version == \"3.4\"": [
+            "ipython<7.0.0,>=6.0.0"
+          ],
+          ":python_version == \"3.5\"": [
+            "ipython<7.10.0,>=7.0.0"
+          ],
+          ":python_version == \"3.6\"": [
+            "ipython<7.17.0,>=7.10.0"
           ]
         },
         "tests_require": [
@@ -120204,7 +120298,77 @@
     "0.12.3": "0.12.1",
     "0.12.4": "0.12.1",
     "0.12.5": "0.12.1",
-    "0.12.6": "0.12.1"
+    "0.12.6": "0.12.1",
+    "0.12.7": {
+      "36": {
+        "install_requires": [
+          "PartSegCore_compiled_backend>=0.12.0a0",
+          "PartSegData==0.9.4",
+          "PyOpenGL-accelerate>=3.1.5",
+          "QtPy>=1.7.0",
+          "SimpleITK>=1.1.0",
+          "appdirs>=1.4.3",
+          "czifile>=2019.5.22",
+          "defusedxml>=0.6.0",
+          "h5py>=2.7.1",
+          "imagecodecs>=2020.5.30",
+          "imageio>=2.5.0",
+          "napari>=0.3.6",
+          "numpy>=1.16.0",
+          "oiffile>=2019.1.1",
+          "openpyxl>=2.4.9",
+          "packaging>=17.1",
+          "pandas>=0.22.0",
+          "pydantic!=1.8",
+          "requests>=2.18.0",
+          "scipy>=0.19.1",
+          "sentry_sdk>=0.14.3",
+          "six>=1.11.0",
+          "sympy>=1.1.1",
+          "tifffile>=2019.7.26",
+          "xlrd>=1.1.0",
+          "xlsxwriter"
+        ],
+        "setup_requires": [
+          "setuptools_scm[toml]>=3.4"
+        ],
+        "extras_require": {
+          "pyqt": [
+            "PyQt5!=5.15.0,>=5.12.3"
+          ],
+          "test": [
+            "pytest>=3.0.0",
+            "pytest-cov",
+            "pytest-qt"
+          ],
+          "pyqt5": [
+            "PyQt5!=5.15.0,>=5.12.3"
+          ],
+          "pyside": [
+            "PySide2!=5.15.0,>=5.12.3"
+          ],
+          "pyside2": [
+            "PySide2!=5.15.0,>=5.12.3"
+          ],
+          ":python_version < \"3.7\"": [
+            "dataclasses>=0.7"
+          ],
+          ":python_version < \"3.8\"": [
+            "typing-extensions>=3.7.4"
+          ]
+        },
+        "tests_require": [
+          "pytest",
+          "pytest-cov",
+          "pytest-qt"
+        ],
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "37": "36",
+      "38": "36"
+    }
   },
   "pd3": {
     "0.0.1": {
@@ -120772,7 +120936,8 @@
     },
     "0.0.2": "0.0.1",
     "0.0.3": "0.0.1",
-    "0.0.5": "0.0.1"
+    "0.0.5": "0.0.1",
+    "0.0.6": "0.0.1"
   },
   "polymerparser": {
     "0.1": {
@@ -130833,7 +130998,8 @@
     "3.0.343": "3.0.252",
     "3.0.344": "3.0.252",
     "3.0.345": "3.0.252",
-    "3.0.346": "3.0.252"
+    "3.0.346": "3.0.252",
+    "3.0.347": "3.0.252"
   },
   "tendril-entity-base": {
     "0.2.0": {
@@ -133004,6 +133170,24 @@
     },
     "0.2": "0.1",
     "0.3": "0.1"
+  },
+  "w2j": {
+    "0.4": {
+      "35": {
+        "install_requires": [
+          "idna==2.10",
+          "chardet",
+          "httpx",
+          "inscriptis"
+        ],
+        "python_requires": [
+          ">=3.9, <4"
+        ]
+      },
+      "36": "35",
+      "37": "35",
+      "38": "35"
+    }
   },
   "wait-ios-serial": {
     "1.0": {
