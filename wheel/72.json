@@ -600,6 +600,42 @@
       },
       "4.0.2": {
         "ai_django_core-4.0.2-py3-none-any.whl": "4.0.0@ai_django_core-4.0.0-py3-none-any.whl"
+      },
+      "4.1.0": {
+        "ai_django_core-4.1.0-py3-none-any.whl": {
+          "provides_extras": [
+            "dev",
+            "docs",
+            "drf",
+            "graphql",
+            "view-layer"
+          ],
+          "requires_dist": [
+            "Django (>=2.0.13)",
+            "bleach (>=1.4.3)",
+            "python-dateutil (>=2.5.3)",
+            "html2text (>=2020.1.16)",
+            "freezegun ; extra == 'dev'",
+            "pytest-cov ; extra == 'dev'",
+            "pytest-django ; extra == 'dev'",
+            "pytest-mock ; extra == 'dev'",
+            "gevent ; extra == 'dev'",
+            "sphinx ; extra == 'dev'",
+            "recommonmark ; extra == 'dev'",
+            "sphinx-rtd-theme ; extra == 'dev'",
+            "m2r2 ; extra == 'dev'",
+            "recommonmark ; extra == 'docs'",
+            "sphinx-rtd-theme ; extra == 'docs'",
+            "m2r2 ; extra == 'docs'",
+            "djangorestframework (>=3.8.2) ; extra == 'drf'",
+            "graphene-django (>=2.2.0) ; extra == 'graphql'",
+            "django-graphql-jwt (>=0.2.1) ; extra == 'graphql'",
+            "django-crispy-forms (>=1.4.0) ; extra == 'view-layer'"
+          ]
+        }
+      },
+      "4.1.1": {
+        "ai_django_core-4.1.1-py3-none-any.whl": "4.1.0@ai_django_core-4.1.0-py3-none-any.whl"
       }
     }
   },
@@ -37620,6 +37656,20 @@
       }
     }
   },
+  "first-wheel": {
+    "py3": {
+      "0.1.0": {
+        "first_wheel-0.1.0-py3-none-any.whl": {
+          "requires_dist": [
+            "docopt (>=0.6.2)"
+          ]
+        }
+      },
+      "0.2.0": {
+        "first_wheel-0.2.0-py3-none-any.whl": "0.1.0@first_wheel-0.1.0-py3-none-any.whl"
+      }
+    }
+  },
   "flamechess": {
     "py3": {
       "0.1.4": {
@@ -40959,6 +41009,31 @@
           ],
           "requires_python": ">=3.6.*"
         }
+      },
+      "0.2.2": {
+        "hypergbm-0.2.2-py3-none-any.whl": {
+          "provides_extras": [
+            "all",
+            "tests"
+          ],
+          "requires_dist": [
+            "hypernets (==0.1.8)",
+            "tabular-toolbox (==0.1.4)",
+            "tables (>=3.6.1)",
+            "fsspec (>=0.8.0)",
+            "dask",
+            "dask-ml",
+            "dask-xgboost",
+            "lightgbm",
+            "xgboost",
+            "catboost (>=0.21)",
+            "featuretools",
+            "imblearn",
+            "pytest ; extra == 'all'",
+            "pytest ; extra == 'tests'"
+          ],
+          "requires_python": ">=3.6.*"
+        }
       }
     }
   },
@@ -41538,6 +41613,9 @@
       },
       "1.3.7": {
         "jimutmap-1.3.7-py3-none-any.whl": "1.2.4@jimutmap-1.2.4-py3-none-any.whl"
+      },
+      "1.3.8": {
+        "jimutmap-1.3.8-py3-none-any.whl": "1.2.4@jimutmap-1.2.4-py3-none-any.whl"
       }
     }
   },
@@ -45510,6 +45588,38 @@
             "odoo14-addon-partner-priority",
             "odoo14-addon-partner-ref-unique",
             "odoo14-addon-partner-second-lastname",
+            "odoo14-addon-partner-vat-unique"
+          ]
+        }
+      },
+      "14.0.20210303.3": {
+        "odoo14_addons_oca_partner_contact-14.0.20210303.3-py3-none-any.whl": {
+          "requires_dist": [
+            "odoo14-addon-base-country-state-translatable",
+            "odoo14-addon-base-location",
+            "odoo14-addon-base-location-geonames-import",
+            "odoo14-addon-partner-address-version",
+            "odoo14-addon-partner-company-group",
+            "odoo14-addon-partner-company-type",
+            "odoo14-addon-partner-contact-access-link",
+            "odoo14-addon-partner-contact-age-range",
+            "odoo14-addon-partner-contact-birthdate",
+            "odoo14-addon-partner-contact-department",
+            "odoo14-addon-partner-contact-gender",
+            "odoo14-addon-partner-contact-job-position",
+            "odoo14-addon-partner-contact-lang",
+            "odoo14-addon-partner-contact-nationality",
+            "odoo14-addon-partner-contact-personal-information-page",
+            "odoo14-addon-partner-employee-quantity",
+            "odoo14-addon-partner-fax",
+            "odoo14-addon-partner-firstname",
+            "odoo14-addon-partner-iterative-archive",
+            "odoo14-addon-partner-phone-extension",
+            "odoo14-addon-partner-phone-secondary",
+            "odoo14-addon-partner-priority",
+            "odoo14-addon-partner-ref-unique",
+            "odoo14-addon-partner-second-lastname",
+            "odoo14-addon-partner-tier-validation",
             "odoo14-addon-partner-vat-unique"
           ]
         }
@@ -55411,26 +55521,6 @@
       }
     }
   },
-  "slow-api": {
-    "py3": {
-      "0.0.2": {
-        "slow_api-0.0.2-py3-none-any.whl": {
-          "requires_dist": [
-            "Jinja2 (==2.10.3)",
-            "parse (==1.12.1)",
-            "requests (==2.22.0)",
-            "requests-wsgi-adapter (==0.4.1)",
-            "WebOb (==1.8.5)",
-            "whitenoise (==4.1.4)"
-          ],
-          "requires_python": ">=3.6.0"
-        }
-      },
-      "0.0.3": {
-        "slow_api-0.0.3-py3-none-any.whl": "0.0.2@slow_api-0.0.2-py3-none-any.whl"
-      }
-    }
-  },
   "slprint11-pkg": {
     "py3": {
       "1.1": {
@@ -57531,6 +57621,9 @@
       },
       "3.0.348": {
         "tencentcloud_sdk_python_cfs-3.0.348-py2.py3-none-any.whl": "3.0.251@tencentcloud_sdk_python_cfs-3.0.251-py2.py3-none-any.whl"
+      },
+      "3.0.349": {
+        "tencentcloud_sdk_python_cfs-3.0.349-py2.py3-none-any.whl": "3.0.251@tencentcloud_sdk_python_cfs-3.0.251-py2.py3-none-any.whl"
       }
     }
   },
