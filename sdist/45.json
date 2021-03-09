@@ -26814,6 +26814,7 @@
     "1.17.20.0": "1.11.10.0",
     "1.17.21.0": "1.11.10.0",
     "1.17.22.0": "1.11.10.0",
+    "1.17.23.0": "1.11.10.0",
     "1.17.3.0": "1.11.10.0",
     "1.17.4.0": "1.11.10.0",
     "1.17.5.0": "1.11.10.0",
@@ -38906,7 +38907,8 @@
       "37": "27",
       "38": "27"
     },
-    "0.2.2": "0.2.1"
+    "0.2.2": "0.2.1",
+    "0.2.3": "0.2.1"
   },
   "searchtester": {
     "0.5": {
@@ -41917,6 +41919,58 @@
           "dulwich",
           "swh.core>=0.3",
           "swh.model>=0.3.8"
+        ],
+        "setup_requires": [
+          "setuptools-scm"
+        ],
+        "extras_require": {
+          "testing": [
+            "pytest",
+            "aioresponses",
+            "pytest_asyncio",
+            "pytest_flask",
+            "swh.core[testing-core]",
+            "swh.model[testing]",
+            "swh.storage[testing]",
+            "swh.web[testing]",
+            "asynctest"
+          ]
+        },
+        "tests_require": [
+          "pytest",
+          "aioresponses",
+          "pytest_asyncio",
+          "pytest_flask",
+          "swh.core[testing-core]",
+          "swh.model[testing]",
+          "swh.storage[testing]",
+          "swh.web[testing]",
+          "asynctest"
+        ],
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    },
+    "0.4.0": {
+      "27": {
+        "install_requires": [
+          "requests",
+          "aiohttp!=3.7.4.post0",
+          "ndjson",
+          "plotly",
+          "pandas",
+          "numpy",
+          "dash",
+          "dash_bootstrap_components",
+          "flask",
+          "dulwich",
+          "swh.core>=0.3",
+          "swh.model>=1.0.0"
         ],
         "setup_requires": [
           "setuptools-scm"
