@@ -8543,10 +8543,7 @@
     "0.0.8": "0.0.5",
     "0.1.0": "0.0.5",
     "0.1.1": "0.0.5",
-    "0.1.2": "0.0.5",
-    "0.1.3": "0.0.5",
-    "0.1.4": "0.0.5",
-    "0.1.5": {
+    "0.1.10": {
       "35": {
         "install_requires": [
           "requests",
@@ -8560,9 +8557,13 @@
       "37": "35",
       "38": "35"
     },
-    "0.1.6": "0.1.5",
-    "0.1.8": "0.1.5",
-    "0.1.9": "0.1.5"
+    "0.1.2": "0.0.5",
+    "0.1.3": "0.0.5",
+    "0.1.4": "0.0.5",
+    "0.1.5": "0.1.10",
+    "0.1.6": "0.1.10",
+    "0.1.8": "0.1.10",
+    "0.1.9": "0.1.10"
   },
   "bandersnatch": {
     "1.0": {
@@ -31263,7 +31264,8 @@
       "36": "35",
       "37": "35",
       "38": "35"
-    }
+    },
+    "1.0.2": "1.0.1"
   },
   "icclab-rcb": {
     "1.0dev": {
@@ -39309,6 +39311,56 @@
       "38": "35"
     }
   },
+  "mindfoundry.client.analyze": {
+    "1.12.1": {
+      "35": {
+        "install_requires": [
+          "attrs",
+          "httpx",
+          "pandas",
+          "pyarrow",
+          "requests"
+        ],
+        "extras_require": {
+          "all": [
+            "coverage",
+            "pre-commit",
+            "pylint",
+            "freezegun",
+            "check-manifest",
+            "black",
+            "pytest-freezegun",
+            "pytest-httpx",
+            "requests_toolbelt",
+            "isort",
+            "mypy",
+            "pytest",
+            "pylint-pytest",
+            "tox"
+          ],
+          "dev": [
+            "black",
+            "check-manifest",
+            "coverage",
+            "freezegun",
+            "isort",
+            "mypy",
+            "pre-commit",
+            "pylint",
+            "pytest",
+            "pytest-freezegun",
+            "pytest-httpx",
+            "pylint-pytest",
+            "requests_toolbelt",
+            "tox"
+          ]
+        }
+      },
+      "36": "35",
+      "37": "35",
+      "38": "35"
+    }
+  },
   "mkdocs-boost": {
     "0.0.2": {
       "27": {},
@@ -41201,6 +41253,7 @@
     "1.17.21.0": "1.11.10.0",
     "1.17.22.0": "1.11.10.0",
     "1.17.23.0": "1.11.10.0",
+    "1.17.24.0": "1.11.10.0",
     "1.17.3.0": "1.11.10.0",
     "1.17.4.0": "1.11.10.0",
     "1.17.5.0": "1.11.10.0",
@@ -41778,6 +41831,7 @@
     "1.17.21.0": "1.11.10.0",
     "1.17.22.0": "1.11.10.0",
     "1.17.23.0": "1.11.10.0",
+    "1.17.24.0": "1.11.10.0",
     "1.17.3.0": "1.11.10.0",
     "1.17.4.0": "1.11.10.0",
     "1.17.5.0": "1.11.10.0",
@@ -47552,6 +47606,44 @@
     "0.18.5a0": "0.18.5",
     "0.18.5a1": "0.18.5",
     "0.18.6": "0.18.5",
+    "0.19.0": {
+      "36": {
+        "install_requires": [
+          "pyyaml~=5.1.2",
+          "nest_asyncio~=1.4.0",
+          "aio-pika~=6.6",
+          "kiwipy[rmq]~=0.7.4"
+        ],
+        "extras_require": {
+          "docs": [
+            "sphinx~=3.2.0",
+            "myst-nb~=0.11.0",
+            "sphinx-book-theme~=0.0.39",
+            "ipython~=7.0"
+          ],
+          "tests": [
+            "pytest~=5.4",
+            "shortuuid",
+            "pytest-asyncio",
+            "pytest-cov",
+            "pytest-notebook"
+          ],
+          "pre-commit": [
+            "mypy==0.790",
+            "pre-commit~=2.2",
+            "pylint==2.5.2"
+          ],
+          ":python_version < \"3.7\"": [
+            "aiocontextvars~=0.2.2"
+          ]
+        },
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "37": "36",
+      "38": "36"
+    },
     "0.4.3.1": {
       "27": {
         "install_requires": [
@@ -49714,7 +49806,44 @@
     "1.0.0": "0.17.0",
     "1.1.0": "0.17.0",
     "1.2.0": "0.17.0",
-    "1.3.0": "0.17.0"
+    "1.3.0": "0.17.0",
+    "1.4.0": {
+      "27": {
+        "install_requires": [
+          "affine",
+          "cartopy>=0.18",
+          "descartes",
+          "geopandas",
+          "jinja2",
+          "matplotlib",
+          "metpy",
+          "netCDF4",
+          "numpy",
+          "pandas",
+          "pillow",
+          "pydantic",
+          "pyproj",
+          "psycopg2",
+          "rasterio",
+          "requests",
+          "scipy",
+          "shapely",
+          "xarray"
+        ],
+        "setup_requires": [
+          "setuptools_scm"
+        ],
+        "extras_require": {
+          ":python_version < \"3.9\"": [
+            "backports.zoneinfo"
+          ]
+        }
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    }
   },
   "pyiomica": {
     "1.0.0": {
