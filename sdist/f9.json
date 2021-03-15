@@ -1647,6 +1647,67 @@
       "37": "27",
       "38": "27"
     },
+    "0.17.10": {
+      "35": {
+        "install_requires": [
+          "geoalchemy2",
+          "psycopg2",
+          "pg-grant",
+          "click",
+          "deepdiff",
+          "jsonschema",
+          "ndjson>=0.3.0",
+          "shapely",
+          "python-string-utils",
+          "python-dateutil",
+          "requests",
+          "jinja2",
+          "mappyfile",
+          "cachetools",
+          "jsonpath-rw",
+          "pg-grant",
+          "simple-singleton"
+        ],
+        "extras_require": {
+          "tests": [
+            "mypy",
+            "flake8",
+            "flake8-bandit",
+            "flake8-bugbear",
+            "flake8-builtins",
+            "flake8-comprehensions",
+            "flake8-docstrings",
+            "flake8-implicit-str-concat",
+            "flake8-print",
+            "flake8-rst",
+            "flake8-string-format",
+            "pytest",
+            "pytest-cov",
+            "pytest-django",
+            "pytest-sqlalchemy",
+            "requests-mock"
+          ],
+          "django": [
+            "django>=3.0.4",
+            "django-postgres-unlimited-varchar>=1.1.0",
+            "django-gisserver>=0.5",
+            "django-environ"
+          ]
+        },
+        "tests_require": [
+          "pytest",
+          "pytest-cov",
+          "pytest-sqlalchemy",
+          "requests-mock"
+        ],
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "36": "35",
+      "37": "35",
+      "38": "35"
+    },
     "0.17a1": {
       "27": {
         "install_requires": [
@@ -42359,7 +42420,10 @@
     "0.2.6": "0.2.4",
     "0.2.7": "0.2.4",
     "0.2.8": "0.2.4",
-    "0.2.9": "0.2.4"
+    "0.2.9": "0.2.4",
+    "1.0.2": "0.2.13",
+    "1.0.3": "0.2.13",
+    "1.0.4": "0.2.13"
   },
   "madseksempel": {
     "0.1.0": {
@@ -48614,6 +48678,46 @@
             "flake8==3.8.*",
             "parameterized==0.8.1",
             "pytest-cov"
+          ],
+          ":platform_system == \"Linux\" or platform_system == \"Darwin\"": [
+            "ctranslate2<2,>=1.18.1",
+            "pyonmttok<2,>=1.23.0"
+          ]
+        },
+        "tests_require": [
+          "black==20.8b1",
+          "flake8==3.8.*",
+          "parameterized==0.8.1",
+          "pytest-cov"
+        ],
+        "python_requires": [
+          ">=3.5"
+        ]
+      },
+      "36": "35",
+      "37": "35",
+      "38": "35"
+    },
+    "2.17.0": {
+      "35": {
+        "install_requires": [
+          "pyyaml<5.5,>=5.3",
+          "rouge<2,>=1.0",
+          "sacrebleu<1.6,>=1.5.0",
+          "tensorflow-addons<0.13,>=0.12"
+        ],
+        "extras_require": {
+          "tests": [
+            "black==20.8b1",
+            "flake8==3.8.*",
+            "parameterized==0.8.1",
+            "pytest-cov"
+          ],
+          "tensorflow": [
+            "tensorflow<2.5.0,>=2.3.0"
+          ],
+          "tensorflow-cpu": [
+            "tensorflow-cpu<2.5.0,>=2.3.0"
           ],
           ":platform_system == \"Linux\" or platform_system == \"Darwin\"": [
             "ctranslate2<2,>=1.18.1",
