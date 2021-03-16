@@ -5139,7 +5139,8 @@
     "2.9.2": "1.8.0",
     "2.9.3": "1.8.0",
     "2.9.4": "1.8.0",
-    "3.0.0": "1.8.0"
+    "3.0.0": "1.8.0",
+    "3.0.1": "1.8.0"
   },
   "buildout-platform-versions": {
     "1.2.0": {
@@ -20118,7 +20119,8 @@
     },
     "2.1.1": "2.1.0",
     "2.1.2": "2.1.0",
-    "2.1.3": "2.1.0"
+    "2.1.3": "2.1.0",
+    "2.1.4": "2.1.0"
   },
   "djangomessagesextends": {
     "0.1.1": {
@@ -22830,7 +22832,8 @@
     "0.8.1": "0.8.0",
     "0.8.2": "0.8.0",
     "0.8.5": "0.8.0",
-    "0.8.6": "0.8.0"
+    "0.8.6": "0.8.0",
+    "0.8.7": "0.8.0"
   },
   "electromagneticpython": {
     "1.0": {
@@ -26377,6 +26380,7 @@
     "0.18.0": "0.10.0",
     "0.18.1": "0.10.0",
     "0.18.2": "0.10.0",
+    "0.19.0": "0.10.0",
     "0.7.19": "0.10.0",
     "0.7.20": "0.10.0",
     "0.8.0": "0.10.0",
@@ -33731,6 +33735,7 @@
     "1.17.25.0": "1.11.10.0",
     "1.17.26.0": "1.11.10.0",
     "1.17.27.0": "1.11.10.0",
+    "1.17.28.0": "1.11.10.0",
     "1.17.3.0": "1.11.10.0",
     "1.17.4.0": "1.11.10.0",
     "1.17.5.0": "1.11.10.0",
@@ -34331,6 +34336,7 @@
     "1.17.25.0": "1.11.10.0",
     "1.17.26.0": "1.11.10.0",
     "1.17.27.0": "1.11.10.0",
+    "1.17.28.0": "1.11.10.0",
     "1.17.3.0": "1.11.10.0",
     "1.17.4.0": "1.11.10.0",
     "1.17.5.0": "1.11.10.0",
@@ -41205,6 +41211,66 @@
       "37": "27",
       "38": "27"
     },
+    "3.11.0": {
+      "27": {
+        "install_requires": [
+          "asyncio-throttle~=1.0",
+          "aiohttp~=3.7.4",
+          "aiodns~=2.0.0",
+          "aiofiles==0.6.0",
+          "backoff~=1.10.0",
+          "Django~=2.2.19",
+          "django-currentuser~=0.5.2",
+          "django-filter~=2.4.0",
+          "django-guardian~=2.3.0",
+          "django-guid<3.0",
+          "django-import-export~=2.5.0",
+          "django-lifecycle~=0.9.1",
+          "djangorestframework~=3.12.2",
+          "djangorestframework-queryfields~=1.0.0",
+          "drf-access-policy~=0.8.7",
+          "drf-nested-routers==0.93.3",
+          "drf-spectacular==0.13.2",
+          "dynaconf~=3.1.4",
+          "gunicorn<20.1,>=19.9",
+          "jinja2",
+          "pygtrie~=2.4.2",
+          "psycopg2<2.9,>=2.7",
+          "PyYAML<5.5.0,>=5.1.1",
+          "python-gnupg~=0.4.7",
+          "redis>=3.4.0",
+          "rq<1.8,>=1.7",
+          "setuptools>=39.2.0",
+          "whitenoise<5.3.0,>=5.0.0"
+        ],
+        "extras_require": {
+          "s3": [
+            "django-storages[boto3]"
+          ],
+          "test": [
+            "django",
+            "dynaconf",
+            "pulp-smash",
+            "pulpcore-client",
+            "pulp-file-client",
+            "pytest"
+          ],
+          "azure": [
+            "django-storages[azure]"
+          ],
+          "prometheus": [
+            "django-prometheus"
+          ]
+        },
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    },
     "3.2.0": {
       "27": {
         "install_requires": [
@@ -41653,6 +41719,64 @@
             "pulp-smash",
             "pulpcore-client",
             "pulp-file-client"
+          ],
+          "azure": [
+            "django-storages[azure]"
+          ],
+          "prometheus": [
+            "django-prometheus"
+          ]
+        },
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    },
+    "3.7.4": {
+      "27": {
+        "install_requires": [
+          "aiohttp",
+          "aiodns",
+          "aiofiles",
+          "backoff",
+          "Django~=2.2.16",
+          "django-currentuser~=0.5.1",
+          "django-filter~=2.3.0",
+          "django-guardian~=2.3.0",
+          "django-import-export~=2.3.0",
+          "django-lifecycle~=0.8.0",
+          "djangorestframework~=3.11.1",
+          "djangorestframework-queryfields~=1.0.0",
+          "drf-access-policy~=0.7.0",
+          "drf-nested-routers~=0.91.0",
+          "drf-spectacular==0.9.13",
+          "dynaconf<4.0,>=3.0",
+          "gunicorn<20.1,>=19.9",
+          "jinja2",
+          "pygtrie~=2.3.3",
+          "psycopg2<2.9,>=2.7",
+          "PyYAML<5.4.0,>=5.1.1",
+          "python-gnupg~=0.4.6",
+          "redis>=3.4.0",
+          "rq<1.6,>=1.1",
+          "setuptools>=39.2.0",
+          "whitenoise<5.3.0,>=5.0.0"
+        ],
+        "extras_require": {
+          "s3": [
+            "django-storages[boto3]"
+          ],
+          "test": [
+            "django",
+            "dynaconf",
+            "pulp-smash",
+            "pulpcore-client",
+            "pulp-file-client",
+            "pytest"
           ],
           "azure": [
             "django-storages[azure]"
@@ -56407,6 +56531,7 @@
     "6.51.1": "6.51.0",
     "6.52.0": "6.51.0",
     "6.53.0": "6.51.0",
+    "6.54.0": "6.51.0",
     "6.6.1": "6.10.0",
     "6.6.2": "6.10.0",
     "6.6.3": "6.10.0",
