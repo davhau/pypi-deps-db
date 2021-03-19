@@ -3835,6 +3835,9 @@
       },
       "0.1.7": {
         "beancount_balexpr-0.1.7-py3-none-any.whl": "0.1.4@beancount_balexpr-0.1.4-py3-none-any.whl"
+      },
+      "0.2.0": {
+        "beancount_balexpr-0.2.0-py3-none-any.whl": "0.1.4@beancount_balexpr-0.1.4-py3-none-any.whl"
       }
     }
   },
@@ -7902,6 +7905,9 @@
         "django_dynamic_sites-1.0.0-py2.py3-none-any.whl": {
           "requires_python": ">=3.6"
         }
+      },
+      "1.0.1": {
+        "django_dynamic_sites-1.0.1-py2.py3-none-any.whl": "1.0.0@django_dynamic_sites-1.0.0-py2.py3-none-any.whl"
       }
     }
   },
@@ -9901,6 +9907,25 @@
       },
       "1.3.10": {
         "fullGSapi-1.3.10-py3-none-any.whl": "1.1.2@fullGSapi-1.1.2-py3-none-any.whl"
+      },
+      "1.3.11": {
+        "fullGSapi-1.3.11-py3-none-any.whl": {
+          "provides_extras": [
+            "cli"
+          ],
+          "requires_dist": [
+            "cryptography",
+            "beautifulsoup4",
+            "py-mini-racer",
+            "requests",
+            "pyyaml",
+            "python-dateutil",
+            "click ; extra == 'cli'",
+            "tqdm ; extra == 'cli'",
+            "pytz ; extra == 'cli'"
+          ],
+          "requires_python": ">=3.6"
+        }
       },
       "1.3.2": {
         "fullGSapi-1.3.2-py3-none-any.whl": "1.1.2@fullGSapi-1.1.2-py3-none-any.whl"
@@ -21643,6 +21668,14 @@
       },
       "3.12.2": {
         "rss2email-3.12.2-py3-none-any.whl": "3.10@rss2email-3.10-py3-none-any.whl"
+      },
+      "3.12.3": {
+        "rss2email-3.12.3-py3-none-any.whl": {
+          "requires_dist": [
+            "feedparser (<6.0,>=5.0.1)",
+            "html2text (>=3.0.1)"
+          ]
+        }
       }
     }
   },
@@ -26450,6 +26483,41 @@
             "iso8601",
             "swh.core[db,http] (>=0.5)",
             "swh.model (>=1.0.0)",
+            "swh.objstorage (>=0.2.2)",
+            "swh.journal (>=0.6.2) ; extra == 'journal'",
+            "SQLAlchemy ; extra == 'schemata'",
+            "hypothesis (>=3.11.0) ; extra == 'testing'",
+            "pytest ; extra == 'testing'",
+            "pytest-mock ; extra == 'testing'",
+            "sqlalchemy-stubs ; extra == 'testing'",
+            "swh.model[testing] (>=0.0.50) ; extra == 'testing'",
+            "pytz ; extra == 'testing'",
+            "pytest-xdist ; extra == 'testing'",
+            "swh.journal (>=0.6.2) ; extra == 'testing'"
+          ],
+          "requires_python": ">=3.7"
+        }
+      },
+      "0.25.0": {
+        "swh.storage-0.25.0-py3-none-any.whl": {
+          "provides_extras": [
+            "journal",
+            "schemata",
+            "testing"
+          ],
+          "requires_dist": [
+            "click",
+            "flask",
+            "psycopg2",
+            "aiohttp",
+            "tenacity",
+            "cassandra-driver (!=3.21.0,>=3.19.0)",
+            "deprecated",
+            "typing-extensions",
+            "mypy-extensions",
+            "iso8601",
+            "swh.core[db,http] (>=0.5)",
+            "swh.model (>=2.1.0)",
             "swh.objstorage (>=0.2.2)",
             "swh.journal (>=0.6.2) ; extra == 'journal'",
             "SQLAlchemy ; extra == 'schemata'",
