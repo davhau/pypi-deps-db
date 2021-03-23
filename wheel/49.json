@@ -1773,8 +1773,8 @@
           ]
         }
       },
-      "1.0.0b1": {
-        "azure_mgmt_databricks-1.0.0b1-py2.py3-none-any.whl": {
+      "1.0.0": {
+        "azure_mgmt_databricks-1.0.0-py2.py3-none-any.whl": {
           "requires_dist": [
             "msrest (>=0.5.0)",
             "azure-common (~=1.1)",
@@ -1782,6 +1782,9 @@
             "azure-mgmt-nspkg ; python_version<'3.0'"
           ]
         }
+      },
+      "1.0.0b1": {
+        "azure_mgmt_databricks-1.0.0b1-py2.py3-none-any.whl": "1.0.0@azure_mgmt_databricks-1.0.0-py2.py3-none-any.whl"
       }
     }
   },
@@ -7198,6 +7201,14 @@
       "0.1.1": {
         "django_botmanager-0.1.1-py3-none-any.whl": "0.1.0@django_botmanager-0.1.0-py3-none-any.whl"
       },
+      "0.1.10": {
+        "django_botmanager-0.1.10-py3-none-any.whl": {
+          "requires_dist": [
+            "setproctitle (==1.1.10)",
+            "jsonfield (==1.0.3)"
+          ]
+        }
+      },
       "0.1.2": {
         "django_botmanager-0.1.2-py3-none-any.whl": "0.1.0@django_botmanager-0.1.0-py3-none-any.whl"
       },
@@ -7205,24 +7216,19 @@
         "django_botmanager-0.1.3-py3-none-any.whl": "0.1.0@django_botmanager-0.1.0-py3-none-any.whl"
       },
       "0.1.4": {
-        "django_botmanager-0.1.4-py3-none-any.whl": {
-          "requires_dist": [
-            "setproctitle (==1.1.10)",
-            "jsonfield (==1.0.3)"
-          ]
-        }
+        "django_botmanager-0.1.4-py3-none-any.whl": "0.1.10@django_botmanager-0.1.10-py3-none-any.whl"
       },
       "0.1.5": {
-        "django_botmanager-0.1.5-py3-none-any.whl": "0.1.4@django_botmanager-0.1.4-py3-none-any.whl"
+        "django_botmanager-0.1.5-py3-none-any.whl": "0.1.10@django_botmanager-0.1.10-py3-none-any.whl"
       },
       "0.1.6": {
-        "django_botmanager-0.1.6-py3-none-any.whl": "0.1.4@django_botmanager-0.1.4-py3-none-any.whl"
+        "django_botmanager-0.1.6-py3-none-any.whl": "0.1.10@django_botmanager-0.1.10-py3-none-any.whl"
       },
       "0.1.7": {
-        "django_botmanager-0.1.7-py3-none-any.whl": "0.1.4@django_botmanager-0.1.4-py3-none-any.whl"
+        "django_botmanager-0.1.7-py3-none-any.whl": "0.1.10@django_botmanager-0.1.10-py3-none-any.whl"
       },
       "0.1.8": {
-        "django_botmanager-0.1.8-py3-none-any.whl": "0.1.4@django_botmanager-0.1.4-py3-none-any.whl"
+        "django_botmanager-0.1.8-py3-none-any.whl": "0.1.10@django_botmanager-0.1.10-py3-none-any.whl"
       }
     }
   },
@@ -11556,6 +11562,78 @@
       },
       "4.1.0": {
         "frictionless-4.1.0-py2.py3-none-any.whl": "4.0.10@frictionless-4.0.10-py2.py3-none-any.whl"
+      },
+      "4.2.0": {
+        "frictionless-4.2.0-py2.py3-none-any.whl": {
+          "provides_extras": [
+            "bigquery",
+            "ckan",
+            "dev",
+            "excel",
+            "gsheets",
+            "html",
+            "json",
+            "ods",
+            "pandas",
+            "s3",
+            "server",
+            "spss",
+            "sql"
+          ],
+          "requires_dist": [
+            "petl (>=1.6)",
+            "pyyaml (>=5.3)",
+            "isodate (>=0.6)",
+            "rfc3986 (>=1.4)",
+            "chardet (>=3.0)",
+            "requests (>=2.10)",
+            "jsonschema (>=2.5)",
+            "simpleeval (>=0.9)",
+            "stringcase (>=1.2)",
+            "typer[all] (>=0.3)",
+            "validators (>=0.18)",
+            "python-slugify (>=1.2)",
+            "python-dateutil (>=2.8)",
+            "google-api-python-client (>=1.12.1) ; extra == 'bigquery'",
+            "ckanapi (>=4.3) ; extra == 'ckan'",
+            "mypy ; extra == 'dev'",
+            "moto ; extra == 'dev'",
+            "black ; extra == 'dev'",
+            "jinja2 ; extra == 'dev'",
+            "pylama ; extra == 'dev'",
+            "pytest ; extra == 'dev'",
+            "ipython ; extra == 'dev'",
+            "pymysql ; extra == 'dev'",
+            "goodread ; extra == 'dev'",
+            "psycopg2 ; extra == 'dev'",
+            "pytest-cov ; extra == 'dev'",
+            "pytest-vcr ; extra == 'dev'",
+            "pytest-only ; extra == 'dev'",
+            "oauth2client ; extra == 'dev'",
+            "requests-mock ; extra == 'dev'",
+            "python-dotenv ; extra == 'dev'",
+            "pydoc-markdown ; extra == 'dev'",
+            "docstring-parser ; extra == 'dev'",
+            "openpyxl (>=3.0) ; extra == 'excel'",
+            "xlrd (>=1.2) ; extra == 'excel'",
+            "xlwt (>=1.2) ; extra == 'excel'",
+            "pygsheets (>=2.0) ; extra == 'gsheets'",
+            "pyquery (>=1.4) ; extra == 'html'",
+            "ijson (>=3.0) ; extra == 'json'",
+            "jsonlines (>=1.2) ; extra == 'json'",
+            "ezodf (>=0.3) ; extra == 'ods'",
+            "lxml (>=4.0) ; extra == 'ods'",
+            "pandas (>=1.0) ; extra == 'pandas'",
+            "boto3 (>=1.9) ; extra == 's3'",
+            "gunicorn (>=20.0) ; extra == 'server'",
+            "flask (>=1.1) ; extra == 'server'",
+            "savReaderWriter (>=3.0) ; extra == 'spss'",
+            "sqlalchemy (>=1.3) ; extra == 'sql'"
+          ]
+        }
+      },
+      "4.2.1": {
+        "frictionless-4.2.1-py2.py3-none-any.whl": "4.2.0@frictionless-4.2.0-py2.py3-none-any.whl"
       }
     }
   },
@@ -21020,6 +21098,18 @@
       },
       "12.0.1.1.0.99.dev4": {
         "odoo12_addon_account_payment_return_import_iso20022-12.0.1.1.0.99.dev4-py3-none-any.whl": "12.0.1.0.0.99.dev1@odoo12_addon_account_payment_return_import_iso20022-12.0.1.0.0.99.dev1-py3-none-any.whl"
+      }
+    }
+  },
+  "odoo12-addon-base-sparse-field-list-support": {
+    "py3": {
+      "12.0.1.0.0.99.dev4": {
+        "odoo12_addon_base_sparse_field_list_support-12.0.1.0.0.99.dev4-py3-none-any.whl": {
+          "requires_dist": [
+            "odoo (<12.1dev,>=12.0a)"
+          ],
+          "requires_python": ">=3.5"
+        }
       }
     }
   },
@@ -36605,6 +36695,9 @@
       },
       "3.0.361": {
         "tencentcloud_sdk_python_gpm-3.0.361-py2.py3-none-any.whl": "3.0.281@tencentcloud_sdk_python_gpm-3.0.281-py2.py3-none-any.whl"
+      },
+      "3.0.362": {
+        "tencentcloud_sdk_python_gpm-3.0.362-py2.py3-none-any.whl": "3.0.281@tencentcloud_sdk_python_gpm-3.0.281-py2.py3-none-any.whl"
       }
     }
   },
