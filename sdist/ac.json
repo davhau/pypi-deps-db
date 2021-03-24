@@ -20160,7 +20160,8 @@
     "7.3.3.dev2": "3.5.1.dev17",
     "7.3.3.dev3": "3.5.1.dev17",
     "7.4.0": "3.5.1.dev17",
-    "7.5.0": "3.5.1.dev17"
+    "7.5.0": "3.5.1.dev17",
+    "7.5.1.dev1": "3.5.1.dev17"
   },
   "mdformat-tables": {
     "0.0.1": {
@@ -23798,6 +23799,7 @@
     "1.17.32.0": "1.16.23.1",
     "1.17.33.0": "1.16.23.1",
     "1.17.34.0": "1.16.23.1",
+    "1.17.35.0": "1.16.23.1",
     "1.17.4.0": "1.16.23.1",
     "1.17.5.0": "1.16.23.1",
     "1.17.6.0": "1.16.23.1",
@@ -36630,6 +36632,72 @@
             "swh.scheduler>=0.7.0",
             "swh.model>=0.3.8",
             "swh.auth[django]>=0.3.6"
+          ]
+        },
+        "tests_require": [
+          "pytest",
+          "pytest-django",
+          "pytest-mock",
+          "swh.scheduler[testing]",
+          "swh.loader.core[testing]",
+          "pytest-postgresql >= 2.1.0",
+          "requests_mock",
+          "django-stubs",
+          "djangorestframework-stubs >= 1.4",
+          "django-test-migrations"
+        ],
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    },
+    "0.13.2": {
+      "27": {
+        "install_requires": [
+          "click",
+          "xmltodict",
+          "iso8601",
+          "requests",
+          "swh.core[http]>=0.4",
+          "swh.model>=1.0.0"
+        ],
+        "setup_requires": [
+          "setuptools-scm"
+        ],
+        "extras_require": {
+          "server": [
+            "Django<3",
+            "djangorestframework",
+            "setuptools",
+            "swh.core[http]>=0.4",
+            "swh.loader.core>=0.0.71",
+            "swh.scheduler>=0.7.0",
+            "swh.model>=0.3.8",
+            "swh.auth[django]>=0.3.8"
+          ],
+          "testing": [
+            "pytest",
+            "pytest-django",
+            "pytest-mock",
+            "swh.scheduler[testing]",
+            "swh.loader.core[testing]",
+            "pytest-postgresql>=2.1.0",
+            "requests_mock",
+            "django-stubs",
+            "djangorestframework-stubs>=1.4",
+            "django-test-migrations",
+            "Django<3",
+            "djangorestframework",
+            "setuptools",
+            "swh.core[http]>=0.4",
+            "swh.loader.core>=0.0.71",
+            "swh.scheduler>=0.7.0",
+            "swh.model>=0.3.8",
+            "swh.auth[django]>=0.3.8"
           ]
         },
         "tests_require": [
