@@ -10007,6 +10007,9 @@
       },
       "3.4.0rc2": {
         "gaia_sdk-3.4.0rc2-py3-none-any.whl": "2.0.0rc10@gaia_sdk-2.0.0rc10-py3-none-any.whl"
+      },
+      "3.4.0rc3": {
+        "gaia_sdk-3.4.0rc3-py3-none-any.whl": "2.0.0rc10@gaia_sdk-2.0.0rc10-py3-none-any.whl"
       }
     }
   },
@@ -14231,6 +14234,9 @@
       },
       "7.5.0": {
         "mbed_tools-7.5.0-py3-none-any.whl": "3.5.1.dev17@mbed_tools-3.5.1.dev17-py3-none-any.whl"
+      },
+      "7.5.1.dev1": {
+        "mbed_tools-7.5.1.dev1-py3-none-any.whl": "3.5.1.dev17@mbed_tools-3.5.1.dev17-py3-none-any.whl"
       }
     }
   },
@@ -14312,6 +14318,20 @@
           ],
           "requires_dist": [
             "mdformat>=0.3.2,<0.6.0",
+            "pytest~=6.0 ; extra == \"test\"",
+            "coverage ; extra == \"test\"",
+            "pytest-cov ; extra == \"test\""
+          ],
+          "requires_python": ">=3.6"
+        }
+      },
+      "0.3.0": {
+        "mdformat_tables-0.3.0-py3-none-any.whl": {
+          "provides_extras": [
+            "test"
+          ],
+          "requires_dist": [
+            "mdformat>=0.6.0,<0.7.0",
             "pytest~=6.0 ; extra == \"test\"",
             "coverage ; extra == \"test\"",
             "pytest-cov ; extra == \"test\""
@@ -16392,6 +16412,12 @@
       },
       "1.17.34.0": {
         "mypy_boto3_network_firewall-1.17.34.0-py3-none-any.whl": "1.16.23.1@mypy_boto3_network_firewall-1.16.23.1-py3-none-any.whl"
+      },
+      "1.17.35.0": {
+        "mypy_boto3_network_firewall-1.17.35.0-py3-none-any.whl": "1.16.23.1@mypy_boto3_network_firewall-1.16.23.1-py3-none-any.whl"
+      },
+      "1.17.36.0": {
+        "mypy_boto3_network_firewall-1.17.36.0-py3-none-any.whl": "1.16.23.1@mypy_boto3_network_firewall-1.16.23.1-py3-none-any.whl"
       },
       "1.17.4.0": {
         "mypy_boto3_network_firewall-1.17.4.0-py3-none-any.whl": "1.16.23.1@mypy_boto3_network_firewall-1.16.23.1-py3-none-any.whl"
@@ -27881,6 +27907,52 @@
           "requires_python": ">=3.7"
         }
       },
+      "0.13.2": {
+        "swh.deposit-0.13.2-py3-none-any.whl": {
+          "provides_extras": [
+            "server",
+            "testing"
+          ],
+          "requires_dist": [
+            "click",
+            "xmltodict",
+            "iso8601",
+            "requests",
+            "swh.core[http] (>=0.4)",
+            "swh.model (>=1.0.0)",
+            "Django (<3) ; extra == 'server'",
+            "djangorestframework ; extra == 'server'",
+            "setuptools ; extra == 'server'",
+            "swh.core[http] (>=0.4) ; extra == 'server'",
+            "swh.loader.core (>=0.0.71) ; extra == 'server'",
+            "swh.scheduler (>=0.7.0) ; extra == 'server'",
+            "swh.model (>=0.3.8) ; extra == 'server'",
+            "swh.auth[django] (>=0.3.8) ; extra == 'server'",
+            "pytest ; extra == 'testing'",
+            "pytest-django ; extra == 'testing'",
+            "pytest-mock ; extra == 'testing'",
+            "swh.scheduler[testing] ; extra == 'testing'",
+            "swh.loader.core[testing] ; extra == 'testing'",
+            "pytest-postgresql (>=2.1.0) ; extra == 'testing'",
+            "requests-mock ; extra == 'testing'",
+            "django-stubs ; extra == 'testing'",
+            "djangorestframework-stubs (>=1.4) ; extra == 'testing'",
+            "django-test-migrations ; extra == 'testing'",
+            "Django (<3) ; extra == 'testing'",
+            "djangorestframework ; extra == 'testing'",
+            "setuptools ; extra == 'testing'",
+            "swh.core[http] (>=0.4) ; extra == 'testing'",
+            "swh.loader.core (>=0.0.71) ; extra == 'testing'",
+            "swh.scheduler (>=0.7.0) ; extra == 'testing'",
+            "swh.model (>=0.3.8) ; extra == 'testing'",
+            "swh.auth[django] (>=0.3.8) ; extra == 'testing'"
+          ],
+          "requires_python": ">=3.7"
+        }
+      },
+      "0.13.3": {
+        "swh.deposit-0.13.3-py3-none-any.whl": "0.13.2@swh.deposit-0.13.2-py3-none-any.whl"
+      },
       "0.2.0": {
         "swh.deposit-0.2.0-py3-none-any.whl": {
           "provides_extras": [
@@ -28143,35 +28215,6 @@
       },
       "3.4.3": {
         "symmetric-3.4.3-py3-none-any.whl": "0.0.4@Symmetric-0.0.4-py3-none-any.whl"
-      }
-    }
-  },
-  "synopsis-unix": {
-    "py3": {
-      "0.0.9": {
-        "synopsis_unix-0.0.9-py3-none-any.whl": {
-          "requires_dist": [
-            "certifi",
-            "h11",
-            "httpcore",
-            "httpx",
-            "idna",
-            "joblib",
-            "numpy",
-            "opencv-python",
-            "progress",
-            "rfc3986",
-            "scikit-learn",
-            "scipy",
-            "sniffio",
-            "threadpoolctl",
-            "youtube-dl",
-            "youtube-search-python"
-          ]
-        }
-      },
-      "0.1.0": {
-        "synopsis_unix-0.1.0-py3-none-any.whl": "0.0.9@synopsis_unix-0.0.9-py3-none-any.whl"
       }
     }
   },
@@ -28799,6 +28842,9 @@
       },
       "3.0.362": {
         "tencentcloud_sdk_python_gs-3.0.362-py2.py3-none-any.whl": "3.0.252@tencentcloud_sdk_python_gs-3.0.252-py2.py3-none-any.whl"
+      },
+      "3.0.363": {
+        "tencentcloud_sdk_python_gs-3.0.363-py2.py3-none-any.whl": "3.0.252@tencentcloud_sdk_python_gs-3.0.252-py2.py3-none-any.whl"
       }
     }
   },
@@ -29087,6 +29133,19 @@
       },
       "0.1.2": {
         "timeflux_example-0.1.2-py3-none-any.whl": "0.1.0@timeflux_example-0.1.0-py3-none-any.whl"
+      }
+    }
+  },
+  "timetagger-cli": {
+    "py3": {
+      "21.3.2": {
+        "timetagger_cli-21.3.2-py3-none-any.whl": {
+          "requires_dist": [
+            "requests",
+            "toml"
+          ],
+          "requires_python": ">=3.6"
+        }
       }
     }
   },
