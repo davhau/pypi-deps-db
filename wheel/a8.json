@@ -622,6 +622,15 @@
       }
     }
   },
+  "asyncio-queue-rotation": {
+    "py3": {
+      "0.1.0": {
+        "asyncio_queue_rotation-0.1.0-py3-none-any.whl": {
+          "requires_python": ">=3.9,<4.0"
+        }
+      }
+    }
+  },
   "atticmatic": {
     "2.7": {
       "0.1.5": {
@@ -5985,6 +5994,16 @@
         "boto3-1.17.44-py2.py3-none-any.whl": {
           "requires_dist": [
             "botocore (<1.21.0,>=1.20.44)",
+            "jmespath (<1.0.0,>=0.7.1)",
+            "s3transfer (<0.4.0,>=0.3.0)"
+          ],
+          "requires_python": ">= 2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, !=3.5.*"
+        }
+      },
+      "1.17.45": {
+        "boto3-1.17.45-py2.py3-none-any.whl": {
+          "requires_dist": [
+            "botocore (<1.21.0,>=1.20.45)",
             "jmespath (<1.0.0,>=0.7.1)",
             "s3transfer (<0.4.0,>=0.3.0)"
           ],
@@ -13164,6 +13183,9 @@
       "0.11.0": {
         "django_restql-0.11.0-py3-none-any.whl": "0.10.2@django_restql-0.10.2-py3-none-any.whl"
       },
+      "0.11.1": {
+        "django_restql-0.11.1-py3-none-any.whl": "0.10.2@django_restql-0.10.2-py3-none-any.whl"
+      },
       "0.2.0": {
         "django_restql-0.2.0-py3-none-any.whl": "0.1.0@django_restql-0.1.0-py3-none-any.whl"
       },
@@ -15385,48 +15407,66 @@
         "falcon-2.0.0rc4-cp35-cp35m-manylinux1_i686.whl": "2.0.0@falcon-2.0.0-cp35-cp35m-manylinux1_i686.whl",
         "falcon-2.0.0rc4-cp35-cp35m-manylinux1_x86_64.whl": "2.0.0@falcon-2.0.0-cp35-cp35m-manylinux1_i686.whl"
       },
-      "3.0.0a3": {
-        "falcon-3.0.0a3-cp35-cp35m-manylinux2014_aarch64.whl": {
+      "3.0.0": {
+        "falcon-3.0.0-cp35-cp35m-macosx_10_14_x86_64.whl": {
           "requires_python": ">=3.5"
         },
-        "falcon-3.0.0a3-cp35-cp35m-manylinux2014_s390x.whl": "3.0.0a3@falcon-3.0.0a3-cp35-cp35m-manylinux2014_aarch64.whl",
-        "falcon-3.0.0a3-cp35-cp35m-win_amd64.whl": "3.0.0a3@falcon-3.0.0a3-cp35-cp35m-manylinux2014_aarch64.whl"
+        "falcon-3.0.0-cp35-cp35m-manylinux1_x86_64.whl": "3.0.0@falcon-3.0.0-cp35-cp35m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0-cp35-cp35m-manylinux2010_x86_64.whl": "3.0.0@falcon-3.0.0-cp35-cp35m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0-cp35-cp35m-manylinux2014_aarch64.whl": "3.0.0@falcon-3.0.0-cp35-cp35m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0-cp35-cp35m-manylinux2014_s390x.whl": "3.0.0@falcon-3.0.0-cp35-cp35m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0-cp35-cp35m-manylinux2014_x86_64.whl": "3.0.0@falcon-3.0.0-cp35-cp35m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0-cp35-cp35m-win_amd64.whl": "3.0.0@falcon-3.0.0-cp35-cp35m-macosx_10_14_x86_64.whl"
+      },
+      "3.0.0a3": {
+        "falcon-3.0.0a3-cp35-cp35m-manylinux2014_aarch64.whl": "3.0.0@falcon-3.0.0-cp35-cp35m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0a3-cp35-cp35m-manylinux2014_s390x.whl": "3.0.0@falcon-3.0.0-cp35-cp35m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0a3-cp35-cp35m-win_amd64.whl": "3.0.0@falcon-3.0.0-cp35-cp35m-macosx_10_14_x86_64.whl"
       },
       "3.0.0b1": {
-        "falcon-3.0.0b1-cp35-cp35m-macosx_10_14_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp35-cp35m-manylinux2014_aarch64.whl",
-        "falcon-3.0.0b1-cp35-cp35m-manylinux1_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp35-cp35m-manylinux2014_aarch64.whl",
-        "falcon-3.0.0b1-cp35-cp35m-manylinux2010_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp35-cp35m-manylinux2014_aarch64.whl",
-        "falcon-3.0.0b1-cp35-cp35m-manylinux2014_aarch64.whl": "3.0.0a3@falcon-3.0.0a3-cp35-cp35m-manylinux2014_aarch64.whl",
-        "falcon-3.0.0b1-cp35-cp35m-manylinux2014_s390x.whl": "3.0.0a3@falcon-3.0.0a3-cp35-cp35m-manylinux2014_aarch64.whl",
-        "falcon-3.0.0b1-cp35-cp35m-manylinux2014_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp35-cp35m-manylinux2014_aarch64.whl",
-        "falcon-3.0.0b1-cp35-cp35m-win_amd64.whl": "3.0.0a3@falcon-3.0.0a3-cp35-cp35m-manylinux2014_aarch64.whl"
+        "falcon-3.0.0b1-cp35-cp35m-macosx_10_14_x86_64.whl": "3.0.0@falcon-3.0.0-cp35-cp35m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0b1-cp35-cp35m-manylinux1_x86_64.whl": "3.0.0@falcon-3.0.0-cp35-cp35m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0b1-cp35-cp35m-manylinux2010_x86_64.whl": "3.0.0@falcon-3.0.0-cp35-cp35m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0b1-cp35-cp35m-manylinux2014_aarch64.whl": "3.0.0@falcon-3.0.0-cp35-cp35m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0b1-cp35-cp35m-manylinux2014_s390x.whl": "3.0.0@falcon-3.0.0-cp35-cp35m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0b1-cp35-cp35m-manylinux2014_x86_64.whl": "3.0.0@falcon-3.0.0-cp35-cp35m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0b1-cp35-cp35m-win_amd64.whl": "3.0.0@falcon-3.0.0-cp35-cp35m-macosx_10_14_x86_64.whl"
       },
       "3.0.0b2": {
-        "falcon-3.0.0b2-cp35-cp35m-macosx_10_14_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp35-cp35m-manylinux2014_aarch64.whl",
-        "falcon-3.0.0b2-cp35-cp35m-manylinux1_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp35-cp35m-manylinux2014_aarch64.whl",
-        "falcon-3.0.0b2-cp35-cp35m-manylinux2010_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp35-cp35m-manylinux2014_aarch64.whl",
-        "falcon-3.0.0b2-cp35-cp35m-manylinux2014_aarch64.whl": "3.0.0a3@falcon-3.0.0a3-cp35-cp35m-manylinux2014_aarch64.whl",
-        "falcon-3.0.0b2-cp35-cp35m-manylinux2014_s390x.whl": "3.0.0a3@falcon-3.0.0a3-cp35-cp35m-manylinux2014_aarch64.whl",
-        "falcon-3.0.0b2-cp35-cp35m-manylinux2014_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp35-cp35m-manylinux2014_aarch64.whl",
-        "falcon-3.0.0b2-cp35-cp35m-win_amd64.whl": "3.0.0a3@falcon-3.0.0a3-cp35-cp35m-manylinux2014_aarch64.whl"
+        "falcon-3.0.0b2-cp35-cp35m-macosx_10_14_x86_64.whl": "3.0.0@falcon-3.0.0-cp35-cp35m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0b2-cp35-cp35m-manylinux1_x86_64.whl": "3.0.0@falcon-3.0.0-cp35-cp35m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0b2-cp35-cp35m-manylinux2010_x86_64.whl": "3.0.0@falcon-3.0.0-cp35-cp35m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0b2-cp35-cp35m-manylinux2014_aarch64.whl": "3.0.0@falcon-3.0.0-cp35-cp35m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0b2-cp35-cp35m-manylinux2014_s390x.whl": "3.0.0@falcon-3.0.0-cp35-cp35m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0b2-cp35-cp35m-manylinux2014_x86_64.whl": "3.0.0@falcon-3.0.0-cp35-cp35m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0b2-cp35-cp35m-win_amd64.whl": "3.0.0@falcon-3.0.0-cp35-cp35m-macosx_10_14_x86_64.whl"
       },
       "3.0.0rc1": {
-        "falcon-3.0.0rc1-cp35-cp35m-macosx_10_14_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp35-cp35m-manylinux2014_aarch64.whl",
-        "falcon-3.0.0rc1-cp35-cp35m-manylinux1_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp35-cp35m-manylinux2014_aarch64.whl",
-        "falcon-3.0.0rc1-cp35-cp35m-manylinux2010_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp35-cp35m-manylinux2014_aarch64.whl",
-        "falcon-3.0.0rc1-cp35-cp35m-manylinux2014_aarch64.whl": "3.0.0a3@falcon-3.0.0a3-cp35-cp35m-manylinux2014_aarch64.whl",
-        "falcon-3.0.0rc1-cp35-cp35m-manylinux2014_s390x.whl": "3.0.0a3@falcon-3.0.0a3-cp35-cp35m-manylinux2014_aarch64.whl",
-        "falcon-3.0.0rc1-cp35-cp35m-manylinux2014_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp35-cp35m-manylinux2014_aarch64.whl",
-        "falcon-3.0.0rc1-cp35-cp35m-win_amd64.whl": "3.0.0a3@falcon-3.0.0a3-cp35-cp35m-manylinux2014_aarch64.whl"
+        "falcon-3.0.0rc1-cp35-cp35m-macosx_10_14_x86_64.whl": "3.0.0@falcon-3.0.0-cp35-cp35m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc1-cp35-cp35m-manylinux1_x86_64.whl": "3.0.0@falcon-3.0.0-cp35-cp35m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc1-cp35-cp35m-manylinux2010_x86_64.whl": "3.0.0@falcon-3.0.0-cp35-cp35m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc1-cp35-cp35m-manylinux2014_aarch64.whl": "3.0.0@falcon-3.0.0-cp35-cp35m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc1-cp35-cp35m-manylinux2014_s390x.whl": "3.0.0@falcon-3.0.0-cp35-cp35m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc1-cp35-cp35m-manylinux2014_x86_64.whl": "3.0.0@falcon-3.0.0-cp35-cp35m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc1-cp35-cp35m-win_amd64.whl": "3.0.0@falcon-3.0.0-cp35-cp35m-macosx_10_14_x86_64.whl"
       },
       "3.0.0rc2": {
-        "falcon-3.0.0rc2-cp35-cp35m-macosx_10_14_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp35-cp35m-manylinux2014_aarch64.whl",
-        "falcon-3.0.0rc2-cp35-cp35m-manylinux1_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp35-cp35m-manylinux2014_aarch64.whl",
-        "falcon-3.0.0rc2-cp35-cp35m-manylinux2010_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp35-cp35m-manylinux2014_aarch64.whl",
-        "falcon-3.0.0rc2-cp35-cp35m-manylinux2014_aarch64.whl": "3.0.0a3@falcon-3.0.0a3-cp35-cp35m-manylinux2014_aarch64.whl",
-        "falcon-3.0.0rc2-cp35-cp35m-manylinux2014_s390x.whl": "3.0.0a3@falcon-3.0.0a3-cp35-cp35m-manylinux2014_aarch64.whl",
-        "falcon-3.0.0rc2-cp35-cp35m-manylinux2014_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp35-cp35m-manylinux2014_aarch64.whl",
-        "falcon-3.0.0rc2-cp35-cp35m-win_amd64.whl": "3.0.0a3@falcon-3.0.0a3-cp35-cp35m-manylinux2014_aarch64.whl"
+        "falcon-3.0.0rc2-cp35-cp35m-macosx_10_14_x86_64.whl": "3.0.0@falcon-3.0.0-cp35-cp35m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc2-cp35-cp35m-manylinux1_x86_64.whl": "3.0.0@falcon-3.0.0-cp35-cp35m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc2-cp35-cp35m-manylinux2010_x86_64.whl": "3.0.0@falcon-3.0.0-cp35-cp35m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc2-cp35-cp35m-manylinux2014_aarch64.whl": "3.0.0@falcon-3.0.0-cp35-cp35m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc2-cp35-cp35m-manylinux2014_s390x.whl": "3.0.0@falcon-3.0.0-cp35-cp35m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc2-cp35-cp35m-manylinux2014_x86_64.whl": "3.0.0@falcon-3.0.0-cp35-cp35m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc2-cp35-cp35m-win_amd64.whl": "3.0.0@falcon-3.0.0-cp35-cp35m-macosx_10_14_x86_64.whl"
+      },
+      "3.0.0rc3": {
+        "falcon-3.0.0rc3-cp35-cp35m-macosx_10_14_x86_64.whl": "3.0.0@falcon-3.0.0-cp35-cp35m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc3-cp35-cp35m-manylinux1_x86_64.whl": "3.0.0@falcon-3.0.0-cp35-cp35m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc3-cp35-cp35m-manylinux2010_x86_64.whl": "3.0.0@falcon-3.0.0-cp35-cp35m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc3-cp35-cp35m-manylinux2014_aarch64.whl": "3.0.0@falcon-3.0.0-cp35-cp35m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc3-cp35-cp35m-manylinux2014_s390x.whl": "3.0.0@falcon-3.0.0-cp35-cp35m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc3-cp35-cp35m-manylinux2014_x86_64.whl": "3.0.0@falcon-3.0.0-cp35-cp35m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc3-cp35-cp35m-win_amd64.whl": "3.0.0@falcon-3.0.0-cp35-cp35m-macosx_10_14_x86_64.whl"
       }
     },
     "cp36": {
@@ -15448,51 +15488,69 @@
         "falcon-2.0.0rc4-cp36-cp36m-manylinux1_i686.whl": "2.0.0@falcon-2.0.0-cp36-cp36m-manylinux1_i686.whl",
         "falcon-2.0.0rc4-cp36-cp36m-manylinux1_x86_64.whl": "2.0.0@falcon-2.0.0-cp36-cp36m-manylinux1_i686.whl"
       },
-      "3.0.0a3": {
-        "falcon-3.0.0a3-cp36-cp36m-macosx_10_14_x86_64.whl": {
+      "3.0.0": {
+        "falcon-3.0.0-cp36-cp36m-macosx_10_14_x86_64.whl": {
           "requires_python": ">=3.5"
         },
-        "falcon-3.0.0a3-cp36-cp36m-manylinux1_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp36-cp36m-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0a3-cp36-cp36m-manylinux2010_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp36-cp36m-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0a3-cp36-cp36m-manylinux2014_aarch64.whl": "3.0.0a3@falcon-3.0.0a3-cp36-cp36m-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0a3-cp36-cp36m-manylinux2014_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp36-cp36m-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0a3-cp36-cp36m-win_amd64.whl": "3.0.0a3@falcon-3.0.0a3-cp36-cp36m-macosx_10_14_x86_64.whl"
+        "falcon-3.0.0-cp36-cp36m-manylinux1_x86_64.whl": "3.0.0@falcon-3.0.0-cp36-cp36m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0-cp36-cp36m-manylinux2010_x86_64.whl": "3.0.0@falcon-3.0.0-cp36-cp36m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0-cp36-cp36m-manylinux2014_aarch64.whl": "3.0.0@falcon-3.0.0-cp36-cp36m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0-cp36-cp36m-manylinux2014_s390x.whl": "3.0.0@falcon-3.0.0-cp36-cp36m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0-cp36-cp36m-manylinux2014_x86_64.whl": "3.0.0@falcon-3.0.0-cp36-cp36m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0-cp36-cp36m-win_amd64.whl": "3.0.0@falcon-3.0.0-cp36-cp36m-macosx_10_14_x86_64.whl"
+      },
+      "3.0.0a3": {
+        "falcon-3.0.0a3-cp36-cp36m-macosx_10_14_x86_64.whl": "3.0.0@falcon-3.0.0-cp36-cp36m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0a3-cp36-cp36m-manylinux1_x86_64.whl": "3.0.0@falcon-3.0.0-cp36-cp36m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0a3-cp36-cp36m-manylinux2010_x86_64.whl": "3.0.0@falcon-3.0.0-cp36-cp36m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0a3-cp36-cp36m-manylinux2014_aarch64.whl": "3.0.0@falcon-3.0.0-cp36-cp36m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0a3-cp36-cp36m-manylinux2014_x86_64.whl": "3.0.0@falcon-3.0.0-cp36-cp36m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0a3-cp36-cp36m-win_amd64.whl": "3.0.0@falcon-3.0.0-cp36-cp36m-macosx_10_14_x86_64.whl"
       },
       "3.0.0b1": {
-        "falcon-3.0.0b1-cp36-cp36m-macosx_10_14_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp36-cp36m-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0b1-cp36-cp36m-manylinux1_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp36-cp36m-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0b1-cp36-cp36m-manylinux2010_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp36-cp36m-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0b1-cp36-cp36m-manylinux2014_aarch64.whl": "3.0.0a3@falcon-3.0.0a3-cp36-cp36m-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0b1-cp36-cp36m-manylinux2014_s390x.whl": "3.0.0a3@falcon-3.0.0a3-cp36-cp36m-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0b1-cp36-cp36m-manylinux2014_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp36-cp36m-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0b1-cp36-cp36m-win_amd64.whl": "3.0.0a3@falcon-3.0.0a3-cp36-cp36m-macosx_10_14_x86_64.whl"
+        "falcon-3.0.0b1-cp36-cp36m-macosx_10_14_x86_64.whl": "3.0.0@falcon-3.0.0-cp36-cp36m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0b1-cp36-cp36m-manylinux1_x86_64.whl": "3.0.0@falcon-3.0.0-cp36-cp36m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0b1-cp36-cp36m-manylinux2010_x86_64.whl": "3.0.0@falcon-3.0.0-cp36-cp36m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0b1-cp36-cp36m-manylinux2014_aarch64.whl": "3.0.0@falcon-3.0.0-cp36-cp36m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0b1-cp36-cp36m-manylinux2014_s390x.whl": "3.0.0@falcon-3.0.0-cp36-cp36m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0b1-cp36-cp36m-manylinux2014_x86_64.whl": "3.0.0@falcon-3.0.0-cp36-cp36m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0b1-cp36-cp36m-win_amd64.whl": "3.0.0@falcon-3.0.0-cp36-cp36m-macosx_10_14_x86_64.whl"
       },
       "3.0.0b2": {
-        "falcon-3.0.0b2-cp36-cp36m-macosx_10_14_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp36-cp36m-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0b2-cp36-cp36m-manylinux1_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp36-cp36m-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0b2-cp36-cp36m-manylinux2010_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp36-cp36m-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0b2-cp36-cp36m-manylinux2014_aarch64.whl": "3.0.0a3@falcon-3.0.0a3-cp36-cp36m-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0b2-cp36-cp36m-manylinux2014_s390x.whl": "3.0.0a3@falcon-3.0.0a3-cp36-cp36m-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0b2-cp36-cp36m-manylinux2014_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp36-cp36m-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0b2-cp36-cp36m-win_amd64.whl": "3.0.0a3@falcon-3.0.0a3-cp36-cp36m-macosx_10_14_x86_64.whl"
+        "falcon-3.0.0b2-cp36-cp36m-macosx_10_14_x86_64.whl": "3.0.0@falcon-3.0.0-cp36-cp36m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0b2-cp36-cp36m-manylinux1_x86_64.whl": "3.0.0@falcon-3.0.0-cp36-cp36m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0b2-cp36-cp36m-manylinux2010_x86_64.whl": "3.0.0@falcon-3.0.0-cp36-cp36m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0b2-cp36-cp36m-manylinux2014_aarch64.whl": "3.0.0@falcon-3.0.0-cp36-cp36m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0b2-cp36-cp36m-manylinux2014_s390x.whl": "3.0.0@falcon-3.0.0-cp36-cp36m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0b2-cp36-cp36m-manylinux2014_x86_64.whl": "3.0.0@falcon-3.0.0-cp36-cp36m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0b2-cp36-cp36m-win_amd64.whl": "3.0.0@falcon-3.0.0-cp36-cp36m-macosx_10_14_x86_64.whl"
       },
       "3.0.0rc1": {
-        "falcon-3.0.0rc1-cp36-cp36m-macosx_10_14_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp36-cp36m-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0rc1-cp36-cp36m-manylinux1_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp36-cp36m-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0rc1-cp36-cp36m-manylinux2010_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp36-cp36m-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0rc1-cp36-cp36m-manylinux2014_aarch64.whl": "3.0.0a3@falcon-3.0.0a3-cp36-cp36m-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0rc1-cp36-cp36m-manylinux2014_s390x.whl": "3.0.0a3@falcon-3.0.0a3-cp36-cp36m-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0rc1-cp36-cp36m-manylinux2014_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp36-cp36m-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0rc1-cp36-cp36m-win_amd64.whl": "3.0.0a3@falcon-3.0.0a3-cp36-cp36m-macosx_10_14_x86_64.whl"
+        "falcon-3.0.0rc1-cp36-cp36m-macosx_10_14_x86_64.whl": "3.0.0@falcon-3.0.0-cp36-cp36m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc1-cp36-cp36m-manylinux1_x86_64.whl": "3.0.0@falcon-3.0.0-cp36-cp36m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc1-cp36-cp36m-manylinux2010_x86_64.whl": "3.0.0@falcon-3.0.0-cp36-cp36m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc1-cp36-cp36m-manylinux2014_aarch64.whl": "3.0.0@falcon-3.0.0-cp36-cp36m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc1-cp36-cp36m-manylinux2014_s390x.whl": "3.0.0@falcon-3.0.0-cp36-cp36m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc1-cp36-cp36m-manylinux2014_x86_64.whl": "3.0.0@falcon-3.0.0-cp36-cp36m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc1-cp36-cp36m-win_amd64.whl": "3.0.0@falcon-3.0.0-cp36-cp36m-macosx_10_14_x86_64.whl"
       },
       "3.0.0rc2": {
-        "falcon-3.0.0rc2-cp36-cp36m-macosx_10_14_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp36-cp36m-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0rc2-cp36-cp36m-manylinux1_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp36-cp36m-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0rc2-cp36-cp36m-manylinux2010_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp36-cp36m-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0rc2-cp36-cp36m-manylinux2014_aarch64.whl": "3.0.0a3@falcon-3.0.0a3-cp36-cp36m-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0rc2-cp36-cp36m-manylinux2014_s390x.whl": "3.0.0a3@falcon-3.0.0a3-cp36-cp36m-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0rc2-cp36-cp36m-manylinux2014_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp36-cp36m-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0rc2-cp36-cp36m-win_amd64.whl": "3.0.0a3@falcon-3.0.0a3-cp36-cp36m-macosx_10_14_x86_64.whl"
+        "falcon-3.0.0rc2-cp36-cp36m-macosx_10_14_x86_64.whl": "3.0.0@falcon-3.0.0-cp36-cp36m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc2-cp36-cp36m-manylinux1_x86_64.whl": "3.0.0@falcon-3.0.0-cp36-cp36m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc2-cp36-cp36m-manylinux2010_x86_64.whl": "3.0.0@falcon-3.0.0-cp36-cp36m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc2-cp36-cp36m-manylinux2014_aarch64.whl": "3.0.0@falcon-3.0.0-cp36-cp36m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc2-cp36-cp36m-manylinux2014_s390x.whl": "3.0.0@falcon-3.0.0-cp36-cp36m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc2-cp36-cp36m-manylinux2014_x86_64.whl": "3.0.0@falcon-3.0.0-cp36-cp36m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc2-cp36-cp36m-win_amd64.whl": "3.0.0@falcon-3.0.0-cp36-cp36m-macosx_10_14_x86_64.whl"
+      },
+      "3.0.0rc3": {
+        "falcon-3.0.0rc3-cp36-cp36m-macosx_10_14_x86_64.whl": "3.0.0@falcon-3.0.0-cp36-cp36m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc3-cp36-cp36m-manylinux1_x86_64.whl": "3.0.0@falcon-3.0.0-cp36-cp36m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc3-cp36-cp36m-manylinux2010_x86_64.whl": "3.0.0@falcon-3.0.0-cp36-cp36m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc3-cp36-cp36m-manylinux2014_aarch64.whl": "3.0.0@falcon-3.0.0-cp36-cp36m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc3-cp36-cp36m-manylinux2014_s390x.whl": "3.0.0@falcon-3.0.0-cp36-cp36m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc3-cp36-cp36m-manylinux2014_x86_64.whl": "3.0.0@falcon-3.0.0-cp36-cp36m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc3-cp36-cp36m-win_amd64.whl": "3.0.0@falcon-3.0.0-cp36-cp36m-macosx_10_14_x86_64.whl"
       }
     },
     "cp37": {
@@ -15514,141 +15572,195 @@
         "falcon-2.0.0rc4-cp37-cp37m-manylinux1_i686.whl": "2.0.0@falcon-2.0.0-cp37-cp37m-manylinux1_i686.whl",
         "falcon-2.0.0rc4-cp37-cp37m-manylinux1_x86_64.whl": "2.0.0@falcon-2.0.0-cp37-cp37m-manylinux1_i686.whl"
       },
-      "3.0.0a3": {
-        "falcon-3.0.0a3-cp37-cp37m-macosx_10_14_x86_64.whl": {
+      "3.0.0": {
+        "falcon-3.0.0-cp37-cp37m-macosx_10_14_x86_64.whl": {
           "requires_python": ">=3.5"
         },
-        "falcon-3.0.0a3-cp37-cp37m-manylinux1_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp37-cp37m-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0a3-cp37-cp37m-manylinux2010_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp37-cp37m-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0a3-cp37-cp37m-manylinux2014_aarch64.whl": "3.0.0a3@falcon-3.0.0a3-cp37-cp37m-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0a3-cp37-cp37m-manylinux2014_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp37-cp37m-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0a3-cp37-cp37m-win_amd64.whl": "3.0.0a3@falcon-3.0.0a3-cp37-cp37m-macosx_10_14_x86_64.whl"
+        "falcon-3.0.0-cp37-cp37m-manylinux1_x86_64.whl": "3.0.0@falcon-3.0.0-cp37-cp37m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0-cp37-cp37m-manylinux2010_x86_64.whl": "3.0.0@falcon-3.0.0-cp37-cp37m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0-cp37-cp37m-manylinux2014_aarch64.whl": "3.0.0@falcon-3.0.0-cp37-cp37m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0-cp37-cp37m-manylinux2014_s390x.whl": "3.0.0@falcon-3.0.0-cp37-cp37m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0-cp37-cp37m-manylinux2014_x86_64.whl": "3.0.0@falcon-3.0.0-cp37-cp37m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0-cp37-cp37m-win_amd64.whl": "3.0.0@falcon-3.0.0-cp37-cp37m-macosx_10_14_x86_64.whl"
+      },
+      "3.0.0a3": {
+        "falcon-3.0.0a3-cp37-cp37m-macosx_10_14_x86_64.whl": "3.0.0@falcon-3.0.0-cp37-cp37m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0a3-cp37-cp37m-manylinux1_x86_64.whl": "3.0.0@falcon-3.0.0-cp37-cp37m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0a3-cp37-cp37m-manylinux2010_x86_64.whl": "3.0.0@falcon-3.0.0-cp37-cp37m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0a3-cp37-cp37m-manylinux2014_aarch64.whl": "3.0.0@falcon-3.0.0-cp37-cp37m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0a3-cp37-cp37m-manylinux2014_x86_64.whl": "3.0.0@falcon-3.0.0-cp37-cp37m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0a3-cp37-cp37m-win_amd64.whl": "3.0.0@falcon-3.0.0-cp37-cp37m-macosx_10_14_x86_64.whl"
       },
       "3.0.0b1": {
-        "falcon-3.0.0b1-cp37-cp37m-macosx_10_14_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp37-cp37m-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0b1-cp37-cp37m-manylinux1_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp37-cp37m-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0b1-cp37-cp37m-manylinux2010_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp37-cp37m-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0b1-cp37-cp37m-manylinux2014_aarch64.whl": "3.0.0a3@falcon-3.0.0a3-cp37-cp37m-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0b1-cp37-cp37m-manylinux2014_s390x.whl": "3.0.0a3@falcon-3.0.0a3-cp37-cp37m-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0b1-cp37-cp37m-manylinux2014_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp37-cp37m-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0b1-cp37-cp37m-win_amd64.whl": "3.0.0a3@falcon-3.0.0a3-cp37-cp37m-macosx_10_14_x86_64.whl"
+        "falcon-3.0.0b1-cp37-cp37m-macosx_10_14_x86_64.whl": "3.0.0@falcon-3.0.0-cp37-cp37m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0b1-cp37-cp37m-manylinux1_x86_64.whl": "3.0.0@falcon-3.0.0-cp37-cp37m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0b1-cp37-cp37m-manylinux2010_x86_64.whl": "3.0.0@falcon-3.0.0-cp37-cp37m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0b1-cp37-cp37m-manylinux2014_aarch64.whl": "3.0.0@falcon-3.0.0-cp37-cp37m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0b1-cp37-cp37m-manylinux2014_s390x.whl": "3.0.0@falcon-3.0.0-cp37-cp37m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0b1-cp37-cp37m-manylinux2014_x86_64.whl": "3.0.0@falcon-3.0.0-cp37-cp37m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0b1-cp37-cp37m-win_amd64.whl": "3.0.0@falcon-3.0.0-cp37-cp37m-macosx_10_14_x86_64.whl"
       },
       "3.0.0b2": {
-        "falcon-3.0.0b2-cp37-cp37m-macosx_10_14_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp37-cp37m-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0b2-cp37-cp37m-manylinux1_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp37-cp37m-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0b2-cp37-cp37m-manylinux2010_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp37-cp37m-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0b2-cp37-cp37m-manylinux2014_aarch64.whl": "3.0.0a3@falcon-3.0.0a3-cp37-cp37m-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0b2-cp37-cp37m-manylinux2014_s390x.whl": "3.0.0a3@falcon-3.0.0a3-cp37-cp37m-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0b2-cp37-cp37m-manylinux2014_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp37-cp37m-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0b2-cp37-cp37m-win_amd64.whl": "3.0.0a3@falcon-3.0.0a3-cp37-cp37m-macosx_10_14_x86_64.whl"
+        "falcon-3.0.0b2-cp37-cp37m-macosx_10_14_x86_64.whl": "3.0.0@falcon-3.0.0-cp37-cp37m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0b2-cp37-cp37m-manylinux1_x86_64.whl": "3.0.0@falcon-3.0.0-cp37-cp37m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0b2-cp37-cp37m-manylinux2010_x86_64.whl": "3.0.0@falcon-3.0.0-cp37-cp37m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0b2-cp37-cp37m-manylinux2014_aarch64.whl": "3.0.0@falcon-3.0.0-cp37-cp37m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0b2-cp37-cp37m-manylinux2014_s390x.whl": "3.0.0@falcon-3.0.0-cp37-cp37m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0b2-cp37-cp37m-manylinux2014_x86_64.whl": "3.0.0@falcon-3.0.0-cp37-cp37m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0b2-cp37-cp37m-win_amd64.whl": "3.0.0@falcon-3.0.0-cp37-cp37m-macosx_10_14_x86_64.whl"
       },
       "3.0.0rc1": {
-        "falcon-3.0.0rc1-cp37-cp37m-macosx_10_14_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp37-cp37m-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0rc1-cp37-cp37m-manylinux1_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp37-cp37m-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0rc1-cp37-cp37m-manylinux2010_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp37-cp37m-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0rc1-cp37-cp37m-manylinux2014_aarch64.whl": "3.0.0a3@falcon-3.0.0a3-cp37-cp37m-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0rc1-cp37-cp37m-manylinux2014_s390x.whl": "3.0.0a3@falcon-3.0.0a3-cp37-cp37m-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0rc1-cp37-cp37m-manylinux2014_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp37-cp37m-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0rc1-cp37-cp37m-win_amd64.whl": "3.0.0a3@falcon-3.0.0a3-cp37-cp37m-macosx_10_14_x86_64.whl"
+        "falcon-3.0.0rc1-cp37-cp37m-macosx_10_14_x86_64.whl": "3.0.0@falcon-3.0.0-cp37-cp37m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc1-cp37-cp37m-manylinux1_x86_64.whl": "3.0.0@falcon-3.0.0-cp37-cp37m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc1-cp37-cp37m-manylinux2010_x86_64.whl": "3.0.0@falcon-3.0.0-cp37-cp37m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc1-cp37-cp37m-manylinux2014_aarch64.whl": "3.0.0@falcon-3.0.0-cp37-cp37m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc1-cp37-cp37m-manylinux2014_s390x.whl": "3.0.0@falcon-3.0.0-cp37-cp37m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc1-cp37-cp37m-manylinux2014_x86_64.whl": "3.0.0@falcon-3.0.0-cp37-cp37m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc1-cp37-cp37m-win_amd64.whl": "3.0.0@falcon-3.0.0-cp37-cp37m-macosx_10_14_x86_64.whl"
       },
       "3.0.0rc2": {
-        "falcon-3.0.0rc2-cp37-cp37m-macosx_10_14_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp37-cp37m-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0rc2-cp37-cp37m-manylinux1_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp37-cp37m-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0rc2-cp37-cp37m-manylinux2010_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp37-cp37m-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0rc2-cp37-cp37m-manylinux2014_aarch64.whl": "3.0.0a3@falcon-3.0.0a3-cp37-cp37m-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0rc2-cp37-cp37m-manylinux2014_s390x.whl": "3.0.0a3@falcon-3.0.0a3-cp37-cp37m-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0rc2-cp37-cp37m-manylinux2014_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp37-cp37m-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0rc2-cp37-cp37m-win_amd64.whl": "3.0.0a3@falcon-3.0.0a3-cp37-cp37m-macosx_10_14_x86_64.whl"
+        "falcon-3.0.0rc2-cp37-cp37m-macosx_10_14_x86_64.whl": "3.0.0@falcon-3.0.0-cp37-cp37m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc2-cp37-cp37m-manylinux1_x86_64.whl": "3.0.0@falcon-3.0.0-cp37-cp37m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc2-cp37-cp37m-manylinux2010_x86_64.whl": "3.0.0@falcon-3.0.0-cp37-cp37m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc2-cp37-cp37m-manylinux2014_aarch64.whl": "3.0.0@falcon-3.0.0-cp37-cp37m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc2-cp37-cp37m-manylinux2014_s390x.whl": "3.0.0@falcon-3.0.0-cp37-cp37m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc2-cp37-cp37m-manylinux2014_x86_64.whl": "3.0.0@falcon-3.0.0-cp37-cp37m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc2-cp37-cp37m-win_amd64.whl": "3.0.0@falcon-3.0.0-cp37-cp37m-macosx_10_14_x86_64.whl"
+      },
+      "3.0.0rc3": {
+        "falcon-3.0.0rc3-cp37-cp37m-macosx_10_14_x86_64.whl": "3.0.0@falcon-3.0.0-cp37-cp37m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc3-cp37-cp37m-manylinux1_x86_64.whl": "3.0.0@falcon-3.0.0-cp37-cp37m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc3-cp37-cp37m-manylinux2010_x86_64.whl": "3.0.0@falcon-3.0.0-cp37-cp37m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc3-cp37-cp37m-manylinux2014_aarch64.whl": "3.0.0@falcon-3.0.0-cp37-cp37m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc3-cp37-cp37m-manylinux2014_s390x.whl": "3.0.0@falcon-3.0.0-cp37-cp37m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc3-cp37-cp37m-manylinux2014_x86_64.whl": "3.0.0@falcon-3.0.0-cp37-cp37m-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc3-cp37-cp37m-win_amd64.whl": "3.0.0@falcon-3.0.0-cp37-cp37m-macosx_10_14_x86_64.whl"
       }
     },
     "cp38": {
-      "3.0.0a3": {
-        "falcon-3.0.0a3-cp38-cp38-macosx_10_14_x86_64.whl": {
+      "3.0.0": {
+        "falcon-3.0.0-cp38-cp38-macosx_10_14_x86_64.whl": {
           "requires_python": ">=3.5"
         },
-        "falcon-3.0.0a3-cp38-cp38-manylinux1_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp38-cp38-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0a3-cp38-cp38-manylinux2010_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp38-cp38-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0a3-cp38-cp38-manylinux2014_aarch64.whl": "3.0.0a3@falcon-3.0.0a3-cp38-cp38-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0a3-cp38-cp38-manylinux2014_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp38-cp38-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0a3-cp38-cp38-win_amd64.whl": "3.0.0a3@falcon-3.0.0a3-cp38-cp38-macosx_10_14_x86_64.whl"
+        "falcon-3.0.0-cp38-cp38-manylinux1_x86_64.whl": "3.0.0@falcon-3.0.0-cp38-cp38-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0-cp38-cp38-manylinux2010_x86_64.whl": "3.0.0@falcon-3.0.0-cp38-cp38-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0-cp38-cp38-manylinux2014_aarch64.whl": "3.0.0@falcon-3.0.0-cp38-cp38-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0-cp38-cp38-manylinux2014_s390x.whl": "3.0.0@falcon-3.0.0-cp38-cp38-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0-cp38-cp38-manylinux2014_x86_64.whl": "3.0.0@falcon-3.0.0-cp38-cp38-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0-cp38-cp38-win_amd64.whl": "3.0.0@falcon-3.0.0-cp38-cp38-macosx_10_14_x86_64.whl"
+      },
+      "3.0.0a3": {
+        "falcon-3.0.0a3-cp38-cp38-macosx_10_14_x86_64.whl": "3.0.0@falcon-3.0.0-cp38-cp38-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0a3-cp38-cp38-manylinux1_x86_64.whl": "3.0.0@falcon-3.0.0-cp38-cp38-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0a3-cp38-cp38-manylinux2010_x86_64.whl": "3.0.0@falcon-3.0.0-cp38-cp38-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0a3-cp38-cp38-manylinux2014_aarch64.whl": "3.0.0@falcon-3.0.0-cp38-cp38-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0a3-cp38-cp38-manylinux2014_x86_64.whl": "3.0.0@falcon-3.0.0-cp38-cp38-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0a3-cp38-cp38-win_amd64.whl": "3.0.0@falcon-3.0.0-cp38-cp38-macosx_10_14_x86_64.whl"
       },
       "3.0.0b1": {
-        "falcon-3.0.0b1-cp38-cp38-macosx_10_14_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp38-cp38-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0b1-cp38-cp38-manylinux1_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp38-cp38-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0b1-cp38-cp38-manylinux2010_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp38-cp38-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0b1-cp38-cp38-manylinux2014_aarch64.whl": "3.0.0a3@falcon-3.0.0a3-cp38-cp38-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0b1-cp38-cp38-manylinux2014_s390x.whl": "3.0.0a3@falcon-3.0.0a3-cp38-cp38-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0b1-cp38-cp38-manylinux2014_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp38-cp38-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0b1-cp38-cp38-win_amd64.whl": "3.0.0a3@falcon-3.0.0a3-cp38-cp38-macosx_10_14_x86_64.whl"
+        "falcon-3.0.0b1-cp38-cp38-macosx_10_14_x86_64.whl": "3.0.0@falcon-3.0.0-cp38-cp38-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0b1-cp38-cp38-manylinux1_x86_64.whl": "3.0.0@falcon-3.0.0-cp38-cp38-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0b1-cp38-cp38-manylinux2010_x86_64.whl": "3.0.0@falcon-3.0.0-cp38-cp38-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0b1-cp38-cp38-manylinux2014_aarch64.whl": "3.0.0@falcon-3.0.0-cp38-cp38-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0b1-cp38-cp38-manylinux2014_s390x.whl": "3.0.0@falcon-3.0.0-cp38-cp38-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0b1-cp38-cp38-manylinux2014_x86_64.whl": "3.0.0@falcon-3.0.0-cp38-cp38-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0b1-cp38-cp38-win_amd64.whl": "3.0.0@falcon-3.0.0-cp38-cp38-macosx_10_14_x86_64.whl"
       },
       "3.0.0b2": {
-        "falcon-3.0.0b2-cp38-cp38-macosx_10_14_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp38-cp38-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0b2-cp38-cp38-manylinux1_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp38-cp38-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0b2-cp38-cp38-manylinux2010_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp38-cp38-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0b2-cp38-cp38-manylinux2014_aarch64.whl": "3.0.0a3@falcon-3.0.0a3-cp38-cp38-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0b2-cp38-cp38-manylinux2014_s390x.whl": "3.0.0a3@falcon-3.0.0a3-cp38-cp38-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0b2-cp38-cp38-manylinux2014_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp38-cp38-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0b2-cp38-cp38-win_amd64.whl": "3.0.0a3@falcon-3.0.0a3-cp38-cp38-macosx_10_14_x86_64.whl"
+        "falcon-3.0.0b2-cp38-cp38-macosx_10_14_x86_64.whl": "3.0.0@falcon-3.0.0-cp38-cp38-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0b2-cp38-cp38-manylinux1_x86_64.whl": "3.0.0@falcon-3.0.0-cp38-cp38-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0b2-cp38-cp38-manylinux2010_x86_64.whl": "3.0.0@falcon-3.0.0-cp38-cp38-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0b2-cp38-cp38-manylinux2014_aarch64.whl": "3.0.0@falcon-3.0.0-cp38-cp38-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0b2-cp38-cp38-manylinux2014_s390x.whl": "3.0.0@falcon-3.0.0-cp38-cp38-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0b2-cp38-cp38-manylinux2014_x86_64.whl": "3.0.0@falcon-3.0.0-cp38-cp38-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0b2-cp38-cp38-win_amd64.whl": "3.0.0@falcon-3.0.0-cp38-cp38-macosx_10_14_x86_64.whl"
       },
       "3.0.0rc1": {
-        "falcon-3.0.0rc1-cp38-cp38-macosx_10_14_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp38-cp38-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0rc1-cp38-cp38-manylinux1_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp38-cp38-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0rc1-cp38-cp38-manylinux2010_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp38-cp38-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0rc1-cp38-cp38-manylinux2014_aarch64.whl": "3.0.0a3@falcon-3.0.0a3-cp38-cp38-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0rc1-cp38-cp38-manylinux2014_s390x.whl": "3.0.0a3@falcon-3.0.0a3-cp38-cp38-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0rc1-cp38-cp38-manylinux2014_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp38-cp38-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0rc1-cp38-cp38-win_amd64.whl": "3.0.0a3@falcon-3.0.0a3-cp38-cp38-macosx_10_14_x86_64.whl"
+        "falcon-3.0.0rc1-cp38-cp38-macosx_10_14_x86_64.whl": "3.0.0@falcon-3.0.0-cp38-cp38-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc1-cp38-cp38-manylinux1_x86_64.whl": "3.0.0@falcon-3.0.0-cp38-cp38-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc1-cp38-cp38-manylinux2010_x86_64.whl": "3.0.0@falcon-3.0.0-cp38-cp38-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc1-cp38-cp38-manylinux2014_aarch64.whl": "3.0.0@falcon-3.0.0-cp38-cp38-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc1-cp38-cp38-manylinux2014_s390x.whl": "3.0.0@falcon-3.0.0-cp38-cp38-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc1-cp38-cp38-manylinux2014_x86_64.whl": "3.0.0@falcon-3.0.0-cp38-cp38-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc1-cp38-cp38-win_amd64.whl": "3.0.0@falcon-3.0.0-cp38-cp38-macosx_10_14_x86_64.whl"
       },
       "3.0.0rc2": {
-        "falcon-3.0.0rc2-cp38-cp38-macosx_10_14_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp38-cp38-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0rc2-cp38-cp38-manylinux1_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp38-cp38-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0rc2-cp38-cp38-manylinux2010_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp38-cp38-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0rc2-cp38-cp38-manylinux2014_aarch64.whl": "3.0.0a3@falcon-3.0.0a3-cp38-cp38-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0rc2-cp38-cp38-manylinux2014_s390x.whl": "3.0.0a3@falcon-3.0.0a3-cp38-cp38-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0rc2-cp38-cp38-manylinux2014_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp38-cp38-macosx_10_14_x86_64.whl",
-        "falcon-3.0.0rc2-cp38-cp38-win_amd64.whl": "3.0.0a3@falcon-3.0.0a3-cp38-cp38-macosx_10_14_x86_64.whl"
+        "falcon-3.0.0rc2-cp38-cp38-macosx_10_14_x86_64.whl": "3.0.0@falcon-3.0.0-cp38-cp38-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc2-cp38-cp38-manylinux1_x86_64.whl": "3.0.0@falcon-3.0.0-cp38-cp38-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc2-cp38-cp38-manylinux2010_x86_64.whl": "3.0.0@falcon-3.0.0-cp38-cp38-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc2-cp38-cp38-manylinux2014_aarch64.whl": "3.0.0@falcon-3.0.0-cp38-cp38-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc2-cp38-cp38-manylinux2014_s390x.whl": "3.0.0@falcon-3.0.0-cp38-cp38-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc2-cp38-cp38-manylinux2014_x86_64.whl": "3.0.0@falcon-3.0.0-cp38-cp38-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc2-cp38-cp38-win_amd64.whl": "3.0.0@falcon-3.0.0-cp38-cp38-macosx_10_14_x86_64.whl"
+      },
+      "3.0.0rc3": {
+        "falcon-3.0.0rc3-cp38-cp38-macosx_10_14_x86_64.whl": "3.0.0@falcon-3.0.0-cp38-cp38-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc3-cp38-cp38-manylinux1_x86_64.whl": "3.0.0@falcon-3.0.0-cp38-cp38-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc3-cp38-cp38-manylinux2010_x86_64.whl": "3.0.0@falcon-3.0.0-cp38-cp38-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc3-cp38-cp38-manylinux2014_aarch64.whl": "3.0.0@falcon-3.0.0-cp38-cp38-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc3-cp38-cp38-manylinux2014_s390x.whl": "3.0.0@falcon-3.0.0-cp38-cp38-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc3-cp38-cp38-manylinux2014_x86_64.whl": "3.0.0@falcon-3.0.0-cp38-cp38-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc3-cp38-cp38-win_amd64.whl": "3.0.0@falcon-3.0.0-cp38-cp38-macosx_10_14_x86_64.whl"
       }
     },
     "cp39": {
-      "3.0.0a3": {
-        "falcon-3.0.0a3-cp39-cp39-manylinux2014_x86_64.whl": {
+      "3.0.0": {
+        "falcon-3.0.0-cp39-cp39-macosx_10_14_x86_64.whl": {
           "requires_python": ">=3.5"
-        }
+        },
+        "falcon-3.0.0-cp39-cp39-manylinux1_x86_64.whl": "3.0.0@falcon-3.0.0-cp39-cp39-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0-cp39-cp39-manylinux2010_x86_64.whl": "3.0.0@falcon-3.0.0-cp39-cp39-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0-cp39-cp39-manylinux2014_aarch64.whl": "3.0.0@falcon-3.0.0-cp39-cp39-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0-cp39-cp39-manylinux2014_s390x.whl": "3.0.0@falcon-3.0.0-cp39-cp39-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0-cp39-cp39-manylinux2014_x86_64.whl": "3.0.0@falcon-3.0.0-cp39-cp39-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0-cp39-cp39-win_amd64.whl": "3.0.0@falcon-3.0.0-cp39-cp39-macosx_10_14_x86_64.whl"
+      },
+      "3.0.0a3": {
+        "falcon-3.0.0a3-cp39-cp39-manylinux2014_x86_64.whl": "3.0.0@falcon-3.0.0-cp39-cp39-macosx_10_14_x86_64.whl"
       },
       "3.0.0b1": {
-        "falcon-3.0.0b1-cp39-cp39-macosx_10_14_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp39-cp39-manylinux2014_x86_64.whl",
-        "falcon-3.0.0b1-cp39-cp39-manylinux1_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp39-cp39-manylinux2014_x86_64.whl",
-        "falcon-3.0.0b1-cp39-cp39-manylinux2010_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp39-cp39-manylinux2014_x86_64.whl",
-        "falcon-3.0.0b1-cp39-cp39-manylinux2014_aarch64.whl": "3.0.0a3@falcon-3.0.0a3-cp39-cp39-manylinux2014_x86_64.whl",
-        "falcon-3.0.0b1-cp39-cp39-manylinux2014_s390x.whl": "3.0.0a3@falcon-3.0.0a3-cp39-cp39-manylinux2014_x86_64.whl",
-        "falcon-3.0.0b1-cp39-cp39-manylinux2014_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp39-cp39-manylinux2014_x86_64.whl",
-        "falcon-3.0.0b1-cp39-cp39-win_amd64.whl": "3.0.0a3@falcon-3.0.0a3-cp39-cp39-manylinux2014_x86_64.whl"
+        "falcon-3.0.0b1-cp39-cp39-macosx_10_14_x86_64.whl": "3.0.0@falcon-3.0.0-cp39-cp39-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0b1-cp39-cp39-manylinux1_x86_64.whl": "3.0.0@falcon-3.0.0-cp39-cp39-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0b1-cp39-cp39-manylinux2010_x86_64.whl": "3.0.0@falcon-3.0.0-cp39-cp39-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0b1-cp39-cp39-manylinux2014_aarch64.whl": "3.0.0@falcon-3.0.0-cp39-cp39-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0b1-cp39-cp39-manylinux2014_s390x.whl": "3.0.0@falcon-3.0.0-cp39-cp39-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0b1-cp39-cp39-manylinux2014_x86_64.whl": "3.0.0@falcon-3.0.0-cp39-cp39-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0b1-cp39-cp39-win_amd64.whl": "3.0.0@falcon-3.0.0-cp39-cp39-macosx_10_14_x86_64.whl"
       },
       "3.0.0b2": {
-        "falcon-3.0.0b2-cp39-cp39-macosx_10_14_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp39-cp39-manylinux2014_x86_64.whl",
-        "falcon-3.0.0b2-cp39-cp39-manylinux1_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp39-cp39-manylinux2014_x86_64.whl",
-        "falcon-3.0.0b2-cp39-cp39-manylinux2010_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp39-cp39-manylinux2014_x86_64.whl",
-        "falcon-3.0.0b2-cp39-cp39-manylinux2014_aarch64.whl": "3.0.0a3@falcon-3.0.0a3-cp39-cp39-manylinux2014_x86_64.whl",
-        "falcon-3.0.0b2-cp39-cp39-manylinux2014_s390x.whl": "3.0.0a3@falcon-3.0.0a3-cp39-cp39-manylinux2014_x86_64.whl",
-        "falcon-3.0.0b2-cp39-cp39-manylinux2014_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp39-cp39-manylinux2014_x86_64.whl",
-        "falcon-3.0.0b2-cp39-cp39-win_amd64.whl": "3.0.0a3@falcon-3.0.0a3-cp39-cp39-manylinux2014_x86_64.whl"
+        "falcon-3.0.0b2-cp39-cp39-macosx_10_14_x86_64.whl": "3.0.0@falcon-3.0.0-cp39-cp39-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0b2-cp39-cp39-manylinux1_x86_64.whl": "3.0.0@falcon-3.0.0-cp39-cp39-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0b2-cp39-cp39-manylinux2010_x86_64.whl": "3.0.0@falcon-3.0.0-cp39-cp39-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0b2-cp39-cp39-manylinux2014_aarch64.whl": "3.0.0@falcon-3.0.0-cp39-cp39-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0b2-cp39-cp39-manylinux2014_s390x.whl": "3.0.0@falcon-3.0.0-cp39-cp39-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0b2-cp39-cp39-manylinux2014_x86_64.whl": "3.0.0@falcon-3.0.0-cp39-cp39-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0b2-cp39-cp39-win_amd64.whl": "3.0.0@falcon-3.0.0-cp39-cp39-macosx_10_14_x86_64.whl"
       },
       "3.0.0rc1": {
-        "falcon-3.0.0rc1-cp39-cp39-macosx_10_14_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp39-cp39-manylinux2014_x86_64.whl",
-        "falcon-3.0.0rc1-cp39-cp39-manylinux1_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp39-cp39-manylinux2014_x86_64.whl",
-        "falcon-3.0.0rc1-cp39-cp39-manylinux2010_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp39-cp39-manylinux2014_x86_64.whl",
-        "falcon-3.0.0rc1-cp39-cp39-manylinux2014_aarch64.whl": "3.0.0a3@falcon-3.0.0a3-cp39-cp39-manylinux2014_x86_64.whl",
-        "falcon-3.0.0rc1-cp39-cp39-manylinux2014_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp39-cp39-manylinux2014_x86_64.whl",
-        "falcon-3.0.0rc1-cp39-cp39-win_amd64.whl": "3.0.0a3@falcon-3.0.0a3-cp39-cp39-manylinux2014_x86_64.whl"
+        "falcon-3.0.0rc1-cp39-cp39-macosx_10_14_x86_64.whl": "3.0.0@falcon-3.0.0-cp39-cp39-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc1-cp39-cp39-manylinux1_x86_64.whl": "3.0.0@falcon-3.0.0-cp39-cp39-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc1-cp39-cp39-manylinux2010_x86_64.whl": "3.0.0@falcon-3.0.0-cp39-cp39-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc1-cp39-cp39-manylinux2014_aarch64.whl": "3.0.0@falcon-3.0.0-cp39-cp39-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc1-cp39-cp39-manylinux2014_x86_64.whl": "3.0.0@falcon-3.0.0-cp39-cp39-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc1-cp39-cp39-win_amd64.whl": "3.0.0@falcon-3.0.0-cp39-cp39-macosx_10_14_x86_64.whl"
       },
       "3.0.0rc2": {
-        "falcon-3.0.0rc2-cp39-cp39-macosx_10_14_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp39-cp39-manylinux2014_x86_64.whl",
-        "falcon-3.0.0rc2-cp39-cp39-manylinux1_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp39-cp39-manylinux2014_x86_64.whl",
-        "falcon-3.0.0rc2-cp39-cp39-manylinux2010_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp39-cp39-manylinux2014_x86_64.whl",
-        "falcon-3.0.0rc2-cp39-cp39-manylinux2014_aarch64.whl": "3.0.0a3@falcon-3.0.0a3-cp39-cp39-manylinux2014_x86_64.whl",
-        "falcon-3.0.0rc2-cp39-cp39-manylinux2014_s390x.whl": "3.0.0a3@falcon-3.0.0a3-cp39-cp39-manylinux2014_x86_64.whl",
-        "falcon-3.0.0rc2-cp39-cp39-manylinux2014_x86_64.whl": "3.0.0a3@falcon-3.0.0a3-cp39-cp39-manylinux2014_x86_64.whl",
-        "falcon-3.0.0rc2-cp39-cp39-win_amd64.whl": "3.0.0a3@falcon-3.0.0a3-cp39-cp39-manylinux2014_x86_64.whl"
+        "falcon-3.0.0rc2-cp39-cp39-macosx_10_14_x86_64.whl": "3.0.0@falcon-3.0.0-cp39-cp39-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc2-cp39-cp39-manylinux1_x86_64.whl": "3.0.0@falcon-3.0.0-cp39-cp39-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc2-cp39-cp39-manylinux2010_x86_64.whl": "3.0.0@falcon-3.0.0-cp39-cp39-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc2-cp39-cp39-manylinux2014_aarch64.whl": "3.0.0@falcon-3.0.0-cp39-cp39-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc2-cp39-cp39-manylinux2014_s390x.whl": "3.0.0@falcon-3.0.0-cp39-cp39-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc2-cp39-cp39-manylinux2014_x86_64.whl": "3.0.0@falcon-3.0.0-cp39-cp39-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc2-cp39-cp39-win_amd64.whl": "3.0.0@falcon-3.0.0-cp39-cp39-macosx_10_14_x86_64.whl"
+      },
+      "3.0.0rc3": {
+        "falcon-3.0.0rc3-cp39-cp39-macosx_10_14_x86_64.whl": "3.0.0@falcon-3.0.0-cp39-cp39-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc3-cp39-cp39-manylinux1_x86_64.whl": "3.0.0@falcon-3.0.0-cp39-cp39-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc3-cp39-cp39-manylinux2010_x86_64.whl": "3.0.0@falcon-3.0.0-cp39-cp39-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc3-cp39-cp39-manylinux2014_aarch64.whl": "3.0.0@falcon-3.0.0-cp39-cp39-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc3-cp39-cp39-manylinux2014_s390x.whl": "3.0.0@falcon-3.0.0-cp39-cp39-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc3-cp39-cp39-manylinux2014_x86_64.whl": "3.0.0@falcon-3.0.0-cp39-cp39-macosx_10_14_x86_64.whl",
+        "falcon-3.0.0rc3-cp39-cp39-win_amd64.whl": "3.0.0@falcon-3.0.0-cp39-cp39-macosx_10_14_x86_64.whl"
       }
     },
     "py2.py3": {
@@ -17150,6 +17262,9 @@
       },
       "0.5.0": {
         "gcp_docuploader-0.5.0-py3-none-any.whl": "0.4.0@gcp_docuploader-0.4.0-py3-none-any.whl"
+      },
+      "0.6.0": {
+        "gcp_docuploader-0.6.0-py3-none-any.whl": "0.4.0@gcp_docuploader-0.4.0-py3-none-any.whl"
       },
       "2019.3.5": {
         "gcp_docuploader-2019.3.5-py3-none-any.whl": {
@@ -22985,6 +23100,9 @@
       "1.17.44.0": {
         "mypy_boto3_application_insights-1.17.44.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_application_insights-1.13.24.3-py3-none-any.whl"
       },
+      "1.17.45.0": {
+        "mypy_boto3_application_insights-1.17.45.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_application_insights-1.13.24.3-py3-none-any.whl"
+      },
       "1.17.5.0": {
         "mypy_boto3_application_insights-1.17.5.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_application_insights-1.13.24.3-py3-none-any.whl"
       },
@@ -23963,6 +24081,9 @@
       },
       "0.5.5": {
         "neural_semigroups-0.5.5-py3-none-any.whl": "0.4.1@neural_semigroups-0.4.1-py3-none-any.whl"
+      },
+      "0.5.6": {
+        "neural_semigroups-0.5.6-py3-none-any.whl": "0.4.1@neural_semigroups-0.4.1-py3-none-any.whl"
       }
     }
   },
