@@ -15433,6 +15433,19 @@
   },
   "easytensor": {
     "py3": {
+      "0.0.10": {
+        "easytensor-0.0.10-py3-none-any.whl": {
+          "requires_dist": [
+            "requests",
+            "tensorflow",
+            "torch",
+            "transformers",
+            "tqdm",
+            "pyflakes"
+          ],
+          "requires_python": ">=3.6"
+        }
+      },
       "0.0.3": {
         "easytensor-0.0.3-py3-none-any.whl": {
           "requires_dist": [
@@ -15457,17 +15470,7 @@
         "easytensor-0.0.8-py3-none-any.whl": "0.0.3@easytensor-0.0.3-py3-none-any.whl"
       },
       "0.0.9": {
-        "easytensor-0.0.9-py3-none-any.whl": {
-          "requires_dist": [
-            "requests",
-            "tensorflow",
-            "torch",
-            "transformers",
-            "tqdm",
-            "pyflakes"
-          ],
-          "requires_python": ">=3.6"
-        }
+        "easytensor-0.0.9-py3-none-any.whl": "0.0.10@easytensor-0.0.10-py3-none-any.whl"
       }
     }
   },
@@ -21683,6 +21686,55 @@
       },
       "3.8.1": {
         "jsonargparse-3.8.1-py3-none-any.whl": "3.0.0@jsonargparse-3.0.0-py3-none-any.whl"
+      },
+      "3.9.0": {
+        "jsonargparse-3.9.0-py3-none-any.whl": {
+          "provides_extras": [
+            "all",
+            "argcomplete",
+            "dev",
+            "doc",
+            "jsonnet",
+            "jsonschema",
+            "reconplogger",
+            "signatures",
+            "test",
+            "test_no_urls",
+            "urls"
+          ],
+          "requires_dist": [
+            "PyYAML (>=3.13)",
+            "docstring-parser (>=0.7.3) ; extra == 'all'",
+            "jsonschema (>=3.2.0) ; extra == 'all'",
+            "jsonnet (>=0.13.0) ; extra == 'all'",
+            "validators (>=0.14.2) ; extra == 'all'",
+            "requests (>=2.18.4) ; extra == 'all'",
+            "argcomplete (>=1.12.1) ; extra == 'all'",
+            "reconplogger (>=4.4.0) ; extra == 'all'",
+            "argcomplete (>=1.12.1) ; extra == 'argcomplete'",
+            "coverage (>=4.5.1) ; extra == 'dev'",
+            "responses (>=0.12.0) ; extra == 'dev'",
+            "pylint (>=1.8.3) ; extra == 'dev'",
+            "pycodestyle (>=2.5.0) ; extra == 'dev'",
+            "mypy (>=0.701) ; extra == 'dev'",
+            "bump2version (>=0.5.11) ; extra == 'dev'",
+            "twine (>=3.1.1) ; extra == 'dev'",
+            "Sphinx (>=1.7.9) ; extra == 'doc'",
+            "sphinx-rtd-theme (>=0.4.3) ; extra == 'doc'",
+            "autodocsumm (>=0.1.10) ; extra == 'doc'",
+            "sphinx-autodoc-typehints (>=1.11.1) ; extra == 'doc'",
+            "jsonnet (>=0.13.0) ; extra == 'jsonnet'",
+            "jsonschema (>=3.2.0) ; extra == 'jsonschema'",
+            "reconplogger (>=4.4.0) ; extra == 'reconplogger'",
+            "docstring-parser (>=0.7.3) ; extra == 'signatures'",
+            "coverage (>=4.5.1) ; extra == 'test'",
+            "responses (>=0.12.0) ; extra == 'test'",
+            "coverage (>=4.5.1) ; extra == 'test_no_urls'",
+            "validators (>=0.14.2) ; extra == 'urls'",
+            "requests (>=2.18.4) ; extra == 'urls'"
+          ],
+          "requires_python": ">=3.5"
+        }
       }
     }
   },
@@ -25046,6 +25098,9 @@
       "1.17.48.0": {
         "mypy_boto3_codestar_connections-1.17.48.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_codestar_connections-1.13.24.3-py3-none-any.whl"
       },
+      "1.17.49.0": {
+        "mypy_boto3_codestar_connections-1.17.49.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_codestar_connections-1.13.24.3-py3-none-any.whl"
+      },
       "1.17.5.0": {
         "mypy_boto3_codestar_connections-1.17.5.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_codestar_connections-1.13.24.3-py3-none-any.whl"
       },
@@ -25807,6 +25862,9 @@
       },
       "1.17.48.0": {
         "mypy_boto3_connectparticipant-1.17.48.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_connectparticipant-1.13.24.3-py3-none-any.whl"
+      },
+      "1.17.49.0": {
+        "mypy_boto3_connectparticipant-1.17.49.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_connectparticipant-1.13.24.3-py3-none-any.whl"
       },
       "1.17.5.0": {
         "mypy_boto3_connectparticipant-1.17.5.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_connectparticipant-1.13.24.3-py3-none-any.whl"
@@ -42379,6 +42437,64 @@
             "kubernetes (>=10.0.1)",
             "marshmallow (<3.12.0)",
             "polyaxon-sdk (==1.8.0rc0)",
+            "python-dateutil (>=2.7.3)",
+            "pytz (>=2019.2)",
+            "PyYAML (>=5.1)",
+            "ujson (>=1.35)",
+            "requests (>=2.20.1)",
+            "requests-toolbelt (>=0.8.0)",
+            "sentry-sdk (>=0.12.3)",
+            "certifi (>=2019.9.11)",
+            "psutil",
+            "azure-storage-blob (>=12.3.1) ; extra == 'azure'",
+            "docker ; extra == 'docker'",
+            "google-cloud-storage ; extra == 'gcs'",
+            "gitpython ; extra == 'git'",
+            "numpy ; extra == 'numpy'",
+            "Pillow ; extra == 'polyboard'",
+            "matplotlib (<3.3.3) ; extra == 'polyboard'",
+            "moviepy ; extra == 'polyboard'",
+            "plotly ; extra == 'polyboard'",
+            "bokeh ; extra == 'polyboard'",
+            "pandas ; extra == 'polyboard'",
+            "altair ; extra == 'polyboard'",
+            "scikit-learn (==0.23.2) ; extra == 'polytune'",
+            "hyperopt (==0.2.4) ; extra == 'polytune'",
+            "boto3 ; extra == 's3'",
+            "botocore ; extra == 's3'",
+            "kubernetes-asyncio (==12.0.1) ; extra == 'streams'",
+            "starlette (==0.14.1) ; extra == 'streams'",
+            "aiofiles (==0.6.0) ; extra == 'streams'",
+            "uvicorn (==0.13.3) ; extra == 'streams'",
+            "uvloop (==0.14.0) ; extra == 'streams'",
+            "httptools (==0.1.1) ; extra == 'streams'",
+            "python-multipart (==0.0.5) ; extra == 'streams'",
+            "pandas ; extra == 'streams'"
+          ],
+          "requires_python": ">=3.5"
+        }
+      },
+      "1.8.1rc0": {
+        "polyaxon-1.8.1rc0-py3-none-any.whl": {
+          "provides_extras": [
+            "azure",
+            "docker",
+            "gcs",
+            "git",
+            "numpy",
+            "polyboard",
+            "polytune",
+            "s3",
+            "streams"
+          ],
+          "requires_dist": [
+            "click (<8.0)",
+            "click-completion (<0.6)",
+            "tabulate (<0.9.0)",
+            "Jinja2 (>=2.10.3)",
+            "kubernetes (>=10.0.1)",
+            "marshmallow (<3.12.0)",
+            "polyaxon-sdk (==1.8.1rc0)",
             "python-dateutil (>=2.7.3)",
             "pytz (>=2019.2)",
             "PyYAML (>=5.1)",
@@ -59422,6 +59538,22 @@
           "requires_python": ">=3.8,<4.0"
         }
       },
+      "0.1.10": {
+        "yaramanager-0.1.10-py3-none-any.whl": {
+          "requires_dist": [
+            "SQLAlchemy (>=1.4.2,<2.0.0)",
+            "alembic (>=1.5.8,<2.0.0)",
+            "click (>=7.1.2,<8.0.0)",
+            "plyara (>=2.1.1,<3.0.0)",
+            "requests (>=2.25.1,<3.0.0)",
+            "rich (>=10.0.0,<11.0.0)",
+            "toml (>=0.10.2,<0.11.0)",
+            "yara-python (>=4.0.5,<5.0.0)",
+            "yarabuilder (>=0.0.5,<0.0.6)"
+          ],
+          "requires_python": ">=3.8,<4.0"
+        }
+      },
       "0.1.2": {
         "yaramanager-0.1.2-py3-none-any.whl": "0.1.1@yaramanager-0.1.1-py3-none-any.whl"
       },
@@ -59444,29 +59576,16 @@
         "yaramanager-0.1.4-py3-none-any.whl": "0.1.3@yaramanager-0.1.3-py3-none-any.whl"
       },
       "0.1.5": {
-        "yaramanager-0.1.5-py3-none-any.whl": {
-          "requires_dist": [
-            "SQLAlchemy (>=1.4.2,<2.0.0)",
-            "alembic (>=1.5.8,<2.0.0)",
-            "click (>=7.1.2,<8.0.0)",
-            "plyara (>=2.1.1,<3.0.0)",
-            "requests (>=2.25.1,<3.0.0)",
-            "rich (>=10.0.0,<11.0.0)",
-            "toml (>=0.10.2,<0.11.0)",
-            "yara-python (>=4.0.5,<5.0.0)",
-            "yarabuilder (>=0.0.5,<0.0.6)"
-          ],
-          "requires_python": ">=3.8,<4.0"
-        }
+        "yaramanager-0.1.5-py3-none-any.whl": "0.1.10@yaramanager-0.1.10-py3-none-any.whl"
       },
       "0.1.6": {
-        "yaramanager-0.1.6-py3-none-any.whl": "0.1.5@yaramanager-0.1.5-py3-none-any.whl"
+        "yaramanager-0.1.6-py3-none-any.whl": "0.1.10@yaramanager-0.1.10-py3-none-any.whl"
       },
       "0.1.7": {
-        "yaramanager-0.1.7-py3-none-any.whl": "0.1.5@yaramanager-0.1.5-py3-none-any.whl"
+        "yaramanager-0.1.7-py3-none-any.whl": "0.1.10@yaramanager-0.1.10-py3-none-any.whl"
       },
       "0.1.8": {
-        "yaramanager-0.1.8-py3-none-any.whl": "0.1.5@yaramanager-0.1.5-py3-none-any.whl"
+        "yaramanager-0.1.8-py3-none-any.whl": "0.1.10@yaramanager-0.1.10-py3-none-any.whl"
       }
     }
   },
