@@ -9448,6 +9448,39 @@
           ],
           "requires_python": ">=3.6, <3.9"
         }
+      },
+      "0.1.1b20210410": {
+        "autogluon.tabular-0.1.1b20210410-py3-none-any.whl": {
+          "provides_extras": [
+            "all",
+            "catboost",
+            "fastai",
+            "lightgbm",
+            "xgboost"
+          ],
+          "requires_dist": [
+            "numpy (==1.19.5)",
+            "scipy (==1.5.4)",
+            "pandas (<2.0,>=1.0.0)",
+            "scikit-learn (<0.25,>=0.22.0)",
+            "psutil (<=5.7.0,>=5.0.0)",
+            "networkx (<3.0,>=2.3)",
+            "autogluon.core (==0.1.1b20210410)",
+            "autogluon.features (==0.1.1b20210410)",
+            "pytest",
+            "lightgbm (<4.0,>=3.0) ; extra == 'all'",
+            "fastai (<3.0,>=2.0) ; extra == 'all'",
+            "xgboost (<1.4,>=1.3.2) ; extra == 'all'",
+            "catboost (<0.25,>=0.23.0) ; extra == 'all'",
+            "torch (<2.0,>=1.0) ; extra == 'all'",
+            "catboost (<0.25,>=0.23.0) ; extra == 'catboost'",
+            "torch (<2.0,>=1.0) ; extra == 'fastai'",
+            "fastai (<3.0,>=2.0) ; extra == 'fastai'",
+            "lightgbm (<4.0,>=3.0) ; extra == 'lightgbm'",
+            "xgboost (<1.4,>=1.3.2) ; extra == 'xgboost'"
+          ],
+          "requires_python": ">=3.6, <3.9"
+        }
       }
     }
   },
@@ -21843,6 +21876,9 @@
       },
       "0.7a210409": {
         "dgl_cu92-0.7a210409-cp36-cp36m-manylinux1_x86_64.whl": "0.4.3@dgl_cu92-0.4.3-cp36-cp36m-manylinux1_x86_64.whl"
+      },
+      "0.7a210410": {
+        "dgl_cu92-0.7a210410-cp36-cp36m-manylinux1_x86_64.whl": "0.4.3@dgl_cu92-0.4.3-cp36-cp36m-manylinux1_x86_64.whl"
       }
     },
     "cp37": {
@@ -22193,6 +22229,9 @@
       },
       "0.7a210409": {
         "dgl_cu92-0.7a210409-cp37-cp37m-manylinux1_x86_64.whl": "0.4.3@dgl_cu92-0.4.3-cp37-cp37m-manylinux1_x86_64.whl"
+      },
+      "0.7a210410": {
+        "dgl_cu92-0.7a210410-cp37-cp37m-manylinux1_x86_64.whl": "0.4.3@dgl_cu92-0.4.3-cp37-cp37m-manylinux1_x86_64.whl"
       }
     },
     "cp38": {
@@ -22416,6 +22455,9 @@
       },
       "0.7a210409": {
         "dgl_cu92-0.7a210409-cp38-cp38-manylinux1_x86_64.whl": "0.4.3@dgl_cu92-0.4.3-cp38-cp38-manylinux1_x86_64.whl"
+      },
+      "0.7a210410": {
+        "dgl_cu92-0.7a210410-cp38-cp38-manylinux1_x86_64.whl": "0.4.3@dgl_cu92-0.4.3-cp38-cp38-manylinux1_x86_64.whl"
       }
     },
     "cp39": {
@@ -22611,6 +22653,9 @@
       },
       "0.7a210409": {
         "dgl_cu92-0.7a210409-cp39-cp39-manylinux1_x86_64.whl": "0.6.0@dgl_cu92-0.6.0-cp39-cp39-manylinux1_x86_64.whl"
+      },
+      "0.7a210410": {
+        "dgl_cu92-0.7a210410-cp39-cp39-manylinux1_x86_64.whl": "0.6.0@dgl_cu92-0.6.0-cp39-cp39-manylinux1_x86_64.whl"
       }
     }
   },
@@ -43604,15 +43649,22 @@
   },
   "ray-delvewheel": {
     "cp36": {
-      "1.1.0.0": {
-        "ray_delvewheel-1.1.0.0-cp36-cp36m-win_amd64.whl": {
+      "1.2.0.5": {
+        "ray_delvewheel-1.2.0.5-cp36-cp36m-manylinux1_x86_64.whl": {
           "provides_extras": [
             "all",
-            "debug",
+            "serve",
+            "rllib",
+            "tune",
+            "k8s",
+            "all",
+            "all",
             "k8s",
             "rllib",
+            "rllib",
             "serve",
-            "streaming",
+            "serve",
+            "tune",
             "tune"
           ],
           "requires_dist": [
@@ -43635,60 +43687,66 @@
             "redis (>=3.5.0)",
             "opencensus",
             "prometheus-client (>=0.7.1)",
-            "scipy ; extra == 'all'",
-            "flask ; extra == 'all'",
-            "pydantic (<1.7) ; extra == 'all'",
-            "opencv-python-headless (<=4.3.0.36) ; extra == 'all'",
-            "tensorboardX ; extra == 'all'",
-            "atari-py ; extra == 'all'",
-            "lz4 ; extra == 'all'",
-            "pyyaml ; extra == 'all'",
-            "requests ; extra == 'all'",
-            "pandas ; extra == 'all'",
-            "gym[atari] ; extra == 'all'",
-            "kubernetes ; extra == 'all'",
-            "tabulate ; extra == 'all'",
-            "dm-tree ; extra == 'all'",
-            "uvicorn ; extra == 'all'",
-            "dataclasses ; (python_version < \"3.7\") and extra == 'all'",
-            "kubernetes ; extra == 'k8s'",
-            "pandas ; extra == 'rllib'",
-            "tabulate ; extra == 'rllib'",
-            "tensorboardX ; extra == 'rllib'",
-            "atari-py ; extra == 'rllib'",
-            "dm-tree ; extra == 'rllib'",
-            "gym[atari] ; extra == 'rllib'",
-            "lz4 ; extra == 'rllib'",
-            "opencv-python-headless (<=4.3.0.36) ; extra == 'rllib'",
-            "pyyaml ; extra == 'rllib'",
-            "scipy ; extra == 'rllib'",
-            "dataclasses ; (python_version < \"3.7\") and extra == 'rllib'",
-            "uvicorn ; extra == 'serve'",
-            "flask ; extra == 'serve'",
-            "requests ; extra == 'serve'",
-            "pydantic (<1.7) ; extra == 'serve'",
-            "dataclasses ; (python_version < \"3.7\") and extra == 'serve'",
-            "pandas ; extra == 'tune'",
-            "tabulate ; extra == 'tune'",
-            "tensorboardX ; extra == 'tune'",
-            "dataclasses ; (python_version < \"3.7\") and extra == 'tune'"
+            "pydantic (<1.7); extra == 'all'",
+            "requests; extra == 'all'",
+            "dm-tree; extra == 'all'",
+            "kubernetes; extra == 'all'",
+            "tabulate; extra == 'all'",
+            "lz4; extra == 'all'",
+            "starlette; extra == 'all'",
+            "tensorboardX; extra == 'all'",
+            "atari-py; extra == 'all'",
+            "pandas; extra == 'all'",
+            "opencv-python-headless (<=4.3.0.36); extra == 'all'",
+            "pyyaml; extra == 'all'",
+            "scipy; extra == 'all'",
+            "flask; extra == 'all'",
+            "uvicorn; extra == 'all'",
+            "gym[atari]; extra == 'all'",
+            "dataclasses; (python_version < \"3.7\") and extra == 'all'",
+            "kubernetes; extra == 'k8s'",
+            "pandas; extra == 'rllib'",
+            "tabulate; extra == 'rllib'",
+            "tensorboardX; extra == 'rllib'",
+            "atari-py; extra == 'rllib'",
+            "dm-tree; extra == 'rllib'",
+            "gym[atari]; extra == 'rllib'",
+            "lz4; extra == 'rllib'",
+            "opencv-python-headless (<=4.3.0.36); extra == 'rllib'",
+            "pyyaml; extra == 'rllib'",
+            "scipy; extra == 'rllib'",
+            "dataclasses; (python_version < \"3.7\") and extra == 'rllib'",
+            "uvicorn; extra == 'serve'",
+            "flask; extra == 'serve'",
+            "requests; extra == 'serve'",
+            "pydantic (<1.7); extra == 'serve'",
+            "starlette; extra == 'serve'",
+            "dataclasses; (python_version < \"3.7\") and extra == 'serve'",
+            "pandas; extra == 'tune'",
+            "tabulate; extra == 'tune'",
+            "tensorboardX; extra == 'tune'",
+            "dataclasses; (python_version < \"3.7\") and extra == 'tune'"
           ]
         }
-      },
-      "1.1.0.1": {
-        "ray_delvewheel-1.1.0.1-cp36-cp36m-win_amd64.whl": "1.1.0.0@ray_delvewheel-1.1.0.0-cp36-cp36m-win_amd64.whl"
       }
     },
     "cp37": {
-      "1.1.0.0": {
-        "ray_delvewheel-1.1.0.0-cp37-cp37m-win_amd64.whl": {
+      "1.2.0.5": {
+        "ray_delvewheel-1.2.0.5-cp37-cp37m-manylinux1_x86_64.whl": {
           "provides_extras": [
+            "serve",
+            "tune",
             "all",
-            "debug",
+            "rllib",
+            "k8s",
+            "all",
+            "all",
             "k8s",
             "rllib",
+            "rllib",
             "serve",
-            "streaming",
+            "serve",
+            "tune",
             "tune"
           ],
           "requires_dist": [
@@ -43711,60 +43769,66 @@
             "redis (>=3.5.0)",
             "opencensus",
             "prometheus-client (>=0.7.1)",
-            "flask ; extra == 'all'",
-            "requests ; extra == 'all'",
-            "opencv-python-headless (<=4.3.0.36) ; extra == 'all'",
-            "scipy ; extra == 'all'",
-            "gym[atari] ; extra == 'all'",
-            "lz4 ; extra == 'all'",
-            "tensorboardX ; extra == 'all'",
-            "kubernetes ; extra == 'all'",
-            "pyyaml ; extra == 'all'",
-            "dm-tree ; extra == 'all'",
-            "pydantic (<1.7) ; extra == 'all'",
-            "pandas ; extra == 'all'",
-            "uvicorn ; extra == 'all'",
-            "tabulate ; extra == 'all'",
-            "atari-py ; extra == 'all'",
-            "dataclasses ; (python_version < \"3.7\") and extra == 'all'",
-            "kubernetes ; extra == 'k8s'",
-            "pandas ; extra == 'rllib'",
-            "tabulate ; extra == 'rllib'",
-            "tensorboardX ; extra == 'rllib'",
-            "atari-py ; extra == 'rllib'",
-            "dm-tree ; extra == 'rllib'",
-            "gym[atari] ; extra == 'rllib'",
-            "lz4 ; extra == 'rllib'",
-            "opencv-python-headless (<=4.3.0.36) ; extra == 'rllib'",
-            "pyyaml ; extra == 'rllib'",
-            "scipy ; extra == 'rllib'",
-            "dataclasses ; (python_version < \"3.7\") and extra == 'rllib'",
-            "uvicorn ; extra == 'serve'",
-            "flask ; extra == 'serve'",
-            "requests ; extra == 'serve'",
-            "pydantic (<1.7) ; extra == 'serve'",
-            "dataclasses ; (python_version < \"3.7\") and extra == 'serve'",
-            "pandas ; extra == 'tune'",
-            "tabulate ; extra == 'tune'",
-            "tensorboardX ; extra == 'tune'",
-            "dataclasses ; (python_version < \"3.7\") and extra == 'tune'"
+            "pydantic (<1.7); extra == 'all'",
+            "atari-py; extra == 'all'",
+            "pandas; extra == 'all'",
+            "pyyaml; extra == 'all'",
+            "uvicorn; extra == 'all'",
+            "opencv-python-headless (<=4.3.0.36); extra == 'all'",
+            "scipy; extra == 'all'",
+            "kubernetes; extra == 'all'",
+            "dm-tree; extra == 'all'",
+            "tensorboardX; extra == 'all'",
+            "starlette; extra == 'all'",
+            "gym[atari]; extra == 'all'",
+            "flask; extra == 'all'",
+            "requests; extra == 'all'",
+            "lz4; extra == 'all'",
+            "tabulate; extra == 'all'",
+            "dataclasses; (python_version < \"3.7\") and extra == 'all'",
+            "kubernetes; extra == 'k8s'",
+            "pandas; extra == 'rllib'",
+            "tabulate; extra == 'rllib'",
+            "tensorboardX; extra == 'rllib'",
+            "atari-py; extra == 'rllib'",
+            "dm-tree; extra == 'rllib'",
+            "gym[atari]; extra == 'rllib'",
+            "lz4; extra == 'rllib'",
+            "opencv-python-headless (<=4.3.0.36); extra == 'rllib'",
+            "pyyaml; extra == 'rllib'",
+            "scipy; extra == 'rllib'",
+            "dataclasses; (python_version < \"3.7\") and extra == 'rllib'",
+            "uvicorn; extra == 'serve'",
+            "flask; extra == 'serve'",
+            "requests; extra == 'serve'",
+            "pydantic (<1.7); extra == 'serve'",
+            "starlette; extra == 'serve'",
+            "dataclasses; (python_version < \"3.7\") and extra == 'serve'",
+            "pandas; extra == 'tune'",
+            "tabulate; extra == 'tune'",
+            "tensorboardX; extra == 'tune'",
+            "dataclasses; (python_version < \"3.7\") and extra == 'tune'"
           ]
         }
-      },
-      "1.1.0.1": {
-        "ray_delvewheel-1.1.0.1-cp37-cp37m-win_amd64.whl": "1.1.0.0@ray_delvewheel-1.1.0.0-cp37-cp37m-win_amd64.whl"
       }
     },
     "cp38": {
-      "1.1.0.0": {
-        "ray_delvewheel-1.1.0.0-cp38-cp38-win_amd64.whl": {
+      "1.2.0.5": {
+        "ray_delvewheel-1.2.0.5-cp38-cp38-manylinux1_x86_64.whl": {
           "provides_extras": [
-            "all",
-            "debug",
-            "k8s",
+            "tune",
             "rllib",
             "serve",
-            "streaming",
+            "all",
+            "k8s",
+            "all",
+            "all",
+            "k8s",
+            "rllib",
+            "rllib",
+            "serve",
+            "serve",
+            "tune",
             "tune"
           ],
           "requires_dist": [
@@ -43787,48 +43851,47 @@
             "redis (>=3.5.0)",
             "opencensus",
             "prometheus-client (>=0.7.1)",
-            "flask ; extra == 'all'",
-            "opencv-python-headless (<=4.3.0.36) ; extra == 'all'",
-            "scipy ; extra == 'all'",
-            "uvicorn ; extra == 'all'",
-            "tabulate ; extra == 'all'",
-            "tensorboardX ; extra == 'all'",
-            "requests ; extra == 'all'",
-            "atari-py ; extra == 'all'",
-            "pyyaml ; extra == 'all'",
-            "pandas ; extra == 'all'",
-            "dm-tree ; extra == 'all'",
-            "kubernetes ; extra == 'all'",
-            "lz4 ; extra == 'all'",
-            "pydantic (<1.7) ; extra == 'all'",
-            "gym[atari] ; extra == 'all'",
-            "dataclasses ; (python_version < \"3.7\") and extra == 'all'",
-            "kubernetes ; extra == 'k8s'",
-            "pandas ; extra == 'rllib'",
-            "tabulate ; extra == 'rllib'",
-            "tensorboardX ; extra == 'rllib'",
-            "atari-py ; extra == 'rllib'",
-            "dm-tree ; extra == 'rllib'",
-            "gym[atari] ; extra == 'rllib'",
-            "lz4 ; extra == 'rllib'",
-            "opencv-python-headless (<=4.3.0.36) ; extra == 'rllib'",
-            "pyyaml ; extra == 'rllib'",
-            "scipy ; extra == 'rllib'",
-            "dataclasses ; (python_version < \"3.7\") and extra == 'rllib'",
-            "uvicorn ; extra == 'serve'",
-            "flask ; extra == 'serve'",
-            "requests ; extra == 'serve'",
-            "pydantic (<1.7) ; extra == 'serve'",
-            "dataclasses ; (python_version < \"3.7\") and extra == 'serve'",
-            "pandas ; extra == 'tune'",
-            "tabulate ; extra == 'tune'",
-            "tensorboardX ; extra == 'tune'",
-            "dataclasses ; (python_version < \"3.7\") and extra == 'tune'"
+            "scipy; extra == 'all'",
+            "tensorboardX; extra == 'all'",
+            "flask; extra == 'all'",
+            "dm-tree; extra == 'all'",
+            "starlette; extra == 'all'",
+            "uvicorn; extra == 'all'",
+            "pandas; extra == 'all'",
+            "pydantic (<1.7); extra == 'all'",
+            "tabulate; extra == 'all'",
+            "pyyaml; extra == 'all'",
+            "requests; extra == 'all'",
+            "opencv-python-headless (<=4.3.0.36); extra == 'all'",
+            "lz4; extra == 'all'",
+            "gym[atari]; extra == 'all'",
+            "atari-py; extra == 'all'",
+            "kubernetes; extra == 'all'",
+            "dataclasses; (python_version < \"3.7\") and extra == 'all'",
+            "kubernetes; extra == 'k8s'",
+            "pandas; extra == 'rllib'",
+            "tabulate; extra == 'rllib'",
+            "tensorboardX; extra == 'rllib'",
+            "atari-py; extra == 'rllib'",
+            "dm-tree; extra == 'rllib'",
+            "gym[atari]; extra == 'rllib'",
+            "lz4; extra == 'rllib'",
+            "opencv-python-headless (<=4.3.0.36); extra == 'rllib'",
+            "pyyaml; extra == 'rllib'",
+            "scipy; extra == 'rllib'",
+            "dataclasses; (python_version < \"3.7\") and extra == 'rllib'",
+            "uvicorn; extra == 'serve'",
+            "flask; extra == 'serve'",
+            "requests; extra == 'serve'",
+            "pydantic (<1.7); extra == 'serve'",
+            "starlette; extra == 'serve'",
+            "dataclasses; (python_version < \"3.7\") and extra == 'serve'",
+            "pandas; extra == 'tune'",
+            "tabulate; extra == 'tune'",
+            "tensorboardX; extra == 'tune'",
+            "dataclasses; (python_version < \"3.7\") and extra == 'tune'"
           ]
         }
-      },
-      "1.1.0.1": {
-        "ray_delvewheel-1.1.0.1-cp38-cp38-win_amd64.whl": "1.1.0.0@ray_delvewheel-1.1.0.0-cp38-cp38-win_amd64.whl"
       }
     }
   },
