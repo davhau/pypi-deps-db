@@ -84,7 +84,7 @@
             echo $indexRev > PYPI_FETCHER_COMMIT
             echo $indexHash > PYPI_FETCHER_SHA256
 
-            git add ./sdist UNIX_TIMESTAMP PYPI_FETCHER_COMMIT PYPI_FETCHER_SHA256
+            git add ./sdist flake.lock UNIX_TIMESTAMP PYPI_FETCHER_COMMIT PYPI_FETCHER_SHA256
             git pull
             git commit -m "$(date) - sdist_update"
           '');

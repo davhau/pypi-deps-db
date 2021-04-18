@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        start_bucket: [0, 16, 32, 48, 64, 80, 96, 112, 128, 144, 160, 176, 192, 208, 224, 240]
+        # start_bucket: [0, 16, 32, 48, 64, 80, 96, 112, 128, 144, 160, 176, 192, 208, 224, 240]
     steps:
 
     - uses: actions/checkout@v2
@@ -34,8 +34,6 @@ jobs:
         git config --local user.name "github-actions[bot]"
         export WORKERS=20
         export JOBS=1
-        export START_BUCKET=${{ matrix.start_bucket }}
-        export AMOUNT_BUCKETS=16
         nix run -L .#pipeline-sdist
 
       shell: bash
