@@ -7,17 +7,7 @@ on:
 
 jobs:
 
-  pipVersion:
-    name: Test Pip version - ${{ matrix.os }}
-    runs-on: ${{ matrix.os }}
-    strategy:
-      max-parallel: 5
-      matrix:
-        os: [ubuntu-latest ]
-        python-version: [3.7]
-
-
-  nixVersion:
+  update-sdist-deps:
     name: Update sdist
     runs-on: ${{ matrix.os }}
     strategy:
