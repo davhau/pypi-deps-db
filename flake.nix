@@ -79,8 +79,8 @@
             JOBS=1 ${update-sdist.program}
 
             echo $(date +%s) > UNIX_TIMESTAMP
-            indexRev=$({pkgs.nixFlakes}/bin/nix flake metadata --json | ${pkgs.jq}/bin/jq -e --raw-output '.locks .nodes .pypiIndex .locked .rev')
-            indexHash=$({pkgs.nixFlakes}/bin/nix flake metadata --json | ${pkgs.jq}/bin/jq -e --raw-output '.locks .nodes .pypiIndex .locked .narHash')
+            indexRev=$(${pkgs.nixFlakes}/bin/nix flake metadata --json | ${pkgs.jq}/bin/jq -e --raw-output '.locks .nodes .pypiIndex .locked .rev')
+            indexHash=$(${pkgs.nixFlakes}/bin/nix flake metadata --json | ${pkgs.jq}/bin/jq -e --raw-output '.locks .nodes .pypiIndex .locked .narHash')
             echo $indexRev > PYPI_FETCHER_COMMIT
             echo $indexHash > PYPI_FETCHER_SHA256
 
