@@ -34,6 +34,8 @@ jobs:
         git config --local user.name "github-actions[bot]"
         export WORKERS=20
         export JOBS=1
+        export START_BUCKET=${{ matrix.start_bucket }}
+        export AMOUNT_BUCKETS=16
         nix run -L .#pipeline-sdist
 
       shell: bash
