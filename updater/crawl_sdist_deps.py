@@ -328,14 +328,14 @@ class Measure(ContextManager):
 
 def main():
     workers = int(os.environ.get('WORKERS', "1"))
-    num_jobs = int(os.environ.get('JOBS', "100"))
+    num_jobs = int(os.environ.get('JOBS', "1000"))
     dump_dir = os.environ.get('DUMP_DIR', "./sdist")
     py_vers_short = os.environ.get('PYTHON_VERSIONS', "27,36,37,38,39,310").strip().split(',')
     py_vers_nix = tuple(map(lambda v: f"python{v}", py_vers_short))
     pypi_fetcher_dir = os.environ.get('PYPI_FETCHER', '/tmp/pypi_fetcher')
     build_base(store=os.environ.get('STORE', None))
 
-    for bucket in LazyBucketDict.bucket_keys():
+    for bucket in list(LazyBucketDict.bucket_keys()):
         pkgs_dict = LazyBucketDict(dump_dir, restrict_to_bucket=bucket)
         pypi_index = LazyBucketDict(f"{pypi_fetcher_dir}/pypi", restrict_to_bucket=bucket)
         with Measure('Get processed pkgs'):
