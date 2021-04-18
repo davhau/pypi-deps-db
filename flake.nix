@@ -27,6 +27,8 @@
           pyEnv
           pkgs.git
         ];
+        # py27 and p36 crash when taken from current nixpkgs
+        # this overlay mixes python interpreters from old and new nixpkgs
         py36Overlay = pkgs.writeText "py36-overlay.nix" ''
           [(curr: prev: 
             let
@@ -77,8 +79,8 @@
             JOBS=1 ${update-sdist.program}
 
             echo $(date +%s) > UNIX_TIMESTAMP
-            indexRev=$(nix flake metadata --json | nix-shell -p jq --run "jq -e --raw-output '.locks .nodes .pypiIndex .locked .rev'")
-            indexHash=$(nix flake metadata --json | nix-shell -p jq --run "jq -e --raw-output '.locks .nodes .pypiIndex .locked .narHash'")
+            indexRev=$({pkgs.nixFlakes}/bin/nix flake metadata --json | ${pkgs.jq}/bin/jq -e --raw-output '.locks .nodes .pypiIndex .locked .rev')
+            indexHash=$({pkgs.nixFlakes}/bin/nix flake metadata --json | ${pkgs.jq}/bin/jq -e --raw-output '.locks .nodes .pypiIndex .locked .narHash')
             echo $indexRev > PYPI_FETCHER_COMMIT
             echo $indexHash > PYPI_FETCHER_SHA256
 

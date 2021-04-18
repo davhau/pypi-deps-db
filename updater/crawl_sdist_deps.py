@@ -90,8 +90,6 @@ def format_log(log: str):
 
 
 def extract_requirements(job: PackageJob, py_versions):
-    # py_versions = ('python27', 'python36', 'python37', 'python38', 'python39', 'python310')
-    py_versions = ('python27', 'python36', 'python37', 'python38')
     try:
         print(f"Bucket {job.bucket} - Job {job.idx} - {job.name}:{job.version}")
         store = os.environ.get('STORE', None)
@@ -330,12 +328,16 @@ def main():
     workers = int(os.environ.get('WORKERS', "1"))
     num_jobs = int(os.environ.get('JOBS', "1000"))
     dump_dir = os.environ.get('DUMP_DIR', "./sdist")
+    start_bucket = int(os.environ.get('START_BUCKET', "0"))
+    amount_buckets = int(os.environ.get('AMOUNT_BUCKETS', "256"))
     py_vers_short = os.environ.get('PYTHON_VERSIONS', "27,36,37,38,39,310").strip().split(',')
     py_vers_nix = tuple(map(lambda v: f"python{v}", py_vers_short))
     pypi_fetcher_dir = os.environ.get('PYPI_FETCHER', '/tmp/pypi_fetcher')
     build_base(store=os.environ.get('STORE', None))
 
-    for bucket in list(LazyBucketDict.bucket_keys()):
+    for idx, bucket in enumerate(LazyBucketDict.bucket_keys()):
+        if idx < start_bucket or idx >= start_bucket + amount_buckets:
+            continue
         pkgs_dict = LazyBucketDict(dump_dir, restrict_to_bucket=bucket)
         pypi_index = LazyBucketDict(f"{pypi_fetcher_dir}/pypi", restrict_to_bucket=bucket)
         with Measure('Get processed pkgs'):

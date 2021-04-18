@@ -3,16 +3,16 @@ name: "mach-nix CI"
 
 on:
   push:
-    branches: [ci]
+    branches: [ci, ci-update]
 
 jobs:
 
   update-sdist-deps:
     name: Update sdist
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-latest
     strategy:
       matrix:
-        os: [ubuntu-latest]
+        start_bucket: [0, 16, 32, 48, 64, 80, 96, 112, 128, 144, 160, 176, 192, 208, 224, 240]
     steps:
 
     - uses: actions/checkout@v2
@@ -30,12 +30,11 @@ jobs:
 
     - name: update
       run: |
-
         git config --local user.email "${{ github.actor }}@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
         export WORKERS=20
-        export JOBS=100
-        nix run .#pipeline-sdist
+        export JOBS=1
+        nix run -L .#pipeline-sdist
 
       shell: bash
 
