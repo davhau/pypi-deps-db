@@ -92,6 +92,7 @@
             pipeline-sdist.program = toString (pkgs.writeScript "pipeline-sdist" ''
               #!/usr/bin/env bash
               set -e
+              set -x
 
               nix flake lock --update-input pypiIndex
               ${update-sdist.program}
