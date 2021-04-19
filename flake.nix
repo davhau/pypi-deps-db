@@ -26,7 +26,9 @@
         deps = [
           pyEnv
           pkgs.git
+          pkgs.nixFlakes
         ];
+        pyVersions = [ "27" "36" "37" "38" "39" "310" ];
         # py27 and p36 crash when taken from current nixpkgs
         # this overlay mixes python interpreters from old and new nixpkgs
         py36Overlay = pkgs.writeText "py36-overlay.nix" ''
@@ -45,38 +47,53 @@
             }
           )]
         '';
+        # NIX_PATH has to be set, since the crawler is a python program calling
+        #   nix with a legacy nix expression.
+        # The overlay is passed via `nixpkgs-overlays`.
         exports = ''
           export PYTHONPATH="${./updater}"
+          export PYTHON_VERSIONS=${concatStringsSep "," pyVersions}
           export PYPI_FETCHER=${inp.pypiIndex}
           export EXTRACTOR_DIR=${inp.mach-nix}/lib/extractor
           export NIX_PATH=nixpkgs=${inp.nixpkgsPy36}:nixpkgs-overlays=${py36Overlay}
         '';
       in {
-
+        
+        # devShell to load all dependencies and environment variables
         devShell."${system}" = pkgs.mkShell {
           buildInputs = deps;
           shellHook = exports;
         };
 
+        # apps to update the database
+        # All apps assume that the current directory is a git checkout of this project
         apps."${system}" = rec {
+
+          # update sdist dataset by crawling packages found in inp.pypiIndex
           update-wheel.type = "app";
           update-wheel.program = toString (pkgs.writeScript "update-wheel" ''
             #!/usr/bin/env bash
             ${exports}
             ${pyEnv}/bin/python ${./updater}/crawl_wheel_deps.py
           '');
+
+          # update wheel dataset by crawling packages found in inp.pypiIndex
           update-sdist.type = "app";
           update-sdist.program = toString (pkgs.writeScript "update-sdist" ''
             #!/usr/bin/env bash
             ${exports}
             ${pyEnv}/bin/python ${./updater}/crawl_sdist_deps.py
           '');
+
+          # update pypiIndex flake input, update data, commit to git.
           pipeline-sdist.type = "app";
           pipeline-sdist.program = toString (pkgs.writeScript "pipeline-sdist" ''
             #!/usr/bin/env bash
             set -e
+
             nix flake lock --update-input pypiIndex
-            JOBS=1 ${update-sdist.program}
+            export JOBS=1
+            ${update-sdist.program}
 
             echo $(date +%s) > UNIX_TIMESTAMP
             indexRev=$(${pkgs.nixFlakes}/bin/nix flake metadata --json | ${pkgs.jq}/bin/jq -e --raw-output '.locks .nodes .pypiIndex .locked .rev')
@@ -90,6 +107,8 @@
           '');
         };
 
+        # This python interpreter can be used for debugging in IDEs
+        # It will set all env variables during startup
         packages."${system}".pythonWithVariables = pkgs.writeScriptBin "python3" ''
           #!/usr/bin/env bash
           ${exports}

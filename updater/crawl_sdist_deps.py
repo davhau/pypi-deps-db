@@ -89,8 +89,10 @@ def format_log(log: str):
     return ''.join(list(filtered)[:90])
 
 
-def extract_requirements(job: PackageJob, py_versions):
+def extract_requirements(job: PackageJob, py_versions, deadline):
     try:
+        if deadline and time() > deadline:
+            raise Exception("Deadline occurred. Skipping this job")
         print(f"Bucket {job.bucket} - Job {job.idx} - {job.name}:{job.version}")
         store = os.environ.get('STORE', None)
         with TemporaryDirectory() as tempdir:
@@ -244,16 +246,14 @@ flatten_keys = (
 
 def insert(py_ver, name, ver, release, target, error=False):
     if error:
-        data = "err"
-    else:
-        data = release
+        release = "err"
     ver = ver.strip()
     # create structure
     if name not in target:
         target[name] = {}
     if ver not in target[name]:
         target[name][ver] = {}
-    target[name][ver][py_ver] = data
+    target[name][ver][py_ver] = release
 
 
 def compress_dict(d, sort=True):
@@ -325,14 +325,20 @@ class Measure(ContextManager):
 
 
 def main():
+    # load environment variables
     workers = int(os.environ.get('WORKERS', "1"))
     num_jobs = int(os.environ.get('JOBS', "1000"))
     dump_dir = os.environ.get('DUMP_DIR', "./sdist")
+    max_minutes = int(os.environ.get('MAX_MINUTES', None))
     start_bucket = int(os.environ.get('START_BUCKET', "0"))
     amount_buckets = int(os.environ.get('AMOUNT_BUCKETS', "256"))
     py_vers_short = os.environ.get('PYTHON_VERSIONS', "27,36,37,38,39,310").strip().split(',')
-    py_vers_nix = tuple(map(lambda v: f"python{v}", py_vers_short))
     pypi_fetcher_dir = os.environ.get('PYPI_FETCHER', '/tmp/pypi_fetcher')
+
+    deadline = time() + max_minutes if max_minutes else None
+    py_vers_nix = tuple(map(lambda v: f"python{v}", py_vers_short))
+
+    # ensure that all the build time dependencies are cached before starting
     build_base(store=os.environ.get('STORE', None))
 
     for idx, bucket in enumerate(LazyBucketDict.bucket_keys()):
@@ -358,7 +364,7 @@ def main():
             if workers > 1:
                 pool_results = utils.parallel(
                     extract_requirements,
-                    (jobs, list(py_vers_nix) * len(jobs)),
+                    (jobs, (py_vers_nix, ) * len(jobs), (deadline,) * len(jobs)),
                     workers=workers,
                     use_processes=False)
             else:
@@ -387,6 +393,11 @@ def main():
         print("finished compressing data")
         with Measure("saving data"):
             pkgs_dict.save()
+
+        # stop execution if deadline occurred
+        if deadline and time() > deadline:
+            print(f"Deadline occurred. Stopping execution. Last Bucket was {bucket}")
+            break
 
 
 if __name__ == "__main__":
