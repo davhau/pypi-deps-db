@@ -3,7 +3,9 @@ name: "mach-nix CI"
 
 on:
   push:
-    branches: [ci-update]
+    # branches: [ci-update]
+  schedule:
+    - cron:  '12 0,6,12,18 * * *'
 
 jobs:
 
