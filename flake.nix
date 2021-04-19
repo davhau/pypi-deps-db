@@ -104,7 +104,7 @@
               echo $indexHash > PYPI_FETCHER_SHA256
 
               git add sdist sdist-errors flake.lock UNIX_TIMESTAMP PYPI_FETCHER_COMMIT PYPI_FETCHER_SHA256
-              git pull origin $(git branch)
+              git pull origin $(git rev-parse --abbrev-ref HEAD)
               git commit -m "$(date) - sdist_update"
             '');
           };
