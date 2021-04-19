@@ -1,5 +1,6 @@
 import json
 import os
+import re
 import subprocess as sp
 import traceback
 import itertools
@@ -78,6 +79,27 @@ def format_log(log: str):
     Postgres doesn't support indexing large text files.
     Therefore we limit line length and count
     """
+
+    # substitute store hashes to allow better compression
+    log = re.subn(r"(.*/nix/store/)[\d\w]+(-.*)", r"\1#hash#\2", log)[0]
+
+    # reduce multiple white spaces to a single space
+    log = re.subn(r"(\S*)( +)(\S*)", r"\1 \3", log)[0]
+
+    # remove python versions
+    log = re.sub("python[\d\.\-ab]+", "python#VER#", log)
+
+    # remove line numbers
+    log = re.sub("line (\d*)", "line #NUM#", log)
+
+    # equalize tmp directories
+    log = re.sub("tmp[\d\w_]*", "#TMP#", log)
+
+    # keep only error
+    match = re.match("(?s:.*)[\s\n]([\w\._]*Error:.*)", log)
+    if match:
+        log = match.groups()[0]
+
     lines = log.splitlines(keepends=True)
     lines = map(lambda line: f"{line[:400]}\n" if len(line) > 400 else line, lines)
     remove_lines_marker = (
@@ -151,27 +173,32 @@ def extract_requirements(job: PackageJob, py_versions, deadline):
         return e
 
 
-def get_jobs(pypi_index, bucket, processed, amount=1000):
+def get_jobs(pypi_index, error_dict, bucket, processed, py_vers, amount=0):
     jobs = []
     names = list(pypi_index.by_bucket(bucket).keys())
     total_nr = 0
     for pkg_name in names:
         for ver, release_types in pypi_index[pkg_name].items():
+            if amount != 0 and len(jobs) >= amount:
+                break
             if 'sdist' not in release_types:
                 continue
             if (pkg_name, ver) in processed:
                 continue
+            if pkg_name in error_dict\
+                    and ver in error_dict[pkg_name]\
+                    and all(pyver in error_dict[pkg_name][ver] for pyver in py_vers):
+                continue
             total_nr += 1
             release = release_types['sdist']
-            if len(jobs) < amount:
-                jobs.append(PackageJob(
-                    bucket,
-                    pkg_name,
-                    ver,
-                    f"https://files.pythonhosted.org/packages/source/{pkg_name[0]}/{pkg_name}/{release[1]}",
-                    release[0],
-                    0,
-                ))
+            jobs.append(PackageJob(
+                bucket,
+                pkg_name,
+                ver,
+                f"https://files.pythonhosted.org/packages/source/{pkg_name[0]}/{pkg_name}/{release[1]}",
+                release[0],
+                0,
+            ))
     shuffle(jobs)
     for i, job in enumerate(jobs):
         job.idx = i
@@ -244,9 +271,9 @@ flatten_keys = (
 )
 
 
-def insert(py_ver, name, ver, release, target, error=False):
+def insert(py_ver, name, ver, release, target, error=""):
     if error:
-        release = "err"
+        release = error
     ver = ver.strip()
     # create structure
     if name not in target:
@@ -256,18 +283,19 @@ def insert(py_ver, name, ver, release, target, error=False):
     target[name][ver][py_ver] = release
 
 
-def compress_dict(d, sort=True):
-    if sort:
-        items = sorted(d.items(), key=lambda x: x[0])
-    else:
-        items = d.items()
+def sort_key_pyver(pyver):
+    return len(pyver), pyver
+
+
+def compress_dict(d):
+    items = sorted(d.items(), key=lambda x: sort_key_pyver(x[0]))
     keep = {}
     for k, v in items:
         for keep_key, keep_val in keep.items():
             if v == keep_val:
                 d[k] = keep_key
                 break
-        if not isinstance(d[k], str):
+        if not isinstance(d[k], str) or d[k] not in keep:
             keep[k] = v
 
 
@@ -326,16 +354,16 @@ class Measure(ContextManager):
 
 def main():
     # load environment variables
-    workers = int(os.environ.get('WORKERS', "1"))
-    num_jobs = int(os.environ.get('JOBS', "1000"))
+    workers = int(os.environ.get('WORKERS', "20"))
+    num_jobs = int(os.environ.get('JOBS', "0"))
     dump_dir = os.environ.get('DUMP_DIR', "./sdist")
-    max_minutes = int(os.environ.get('MAX_MINUTES', None))
+    max_minutes = int(os.environ.get('MAX_MINUTES', "0"))
     start_bucket = int(os.environ.get('START_BUCKET', "0"))
     amount_buckets = int(os.environ.get('AMOUNT_BUCKETS', "256"))
     py_vers_short = os.environ.get('PYTHON_VERSIONS', "27,36,37,38,39,310").strip().split(',')
     pypi_fetcher_dir = os.environ.get('PYPI_FETCHER', '/tmp/pypi_fetcher')
 
-    deadline = time() + max_minutes if max_minutes else None
+    deadline = time() + max_minutes * 60 if max_minutes else None
     py_vers_nix = tuple(map(lambda v: f"python{v}", py_vers_short))
 
     # ensure that all the build time dependencies are cached before starting
@@ -346,6 +374,9 @@ def main():
             continue
         pkgs_dict = LazyBucketDict(dump_dir, restrict_to_bucket=bucket)
         pypi_index = LazyBucketDict(f"{pypi_fetcher_dir}/pypi", restrict_to_bucket=bucket)
+        # load error data
+        error_dict = LazyBucketDict(dump_dir + "-errors", restrict_to_bucket=bucket)
+        decompress(error_dict.by_bucket(bucket))
         with Measure('Get processed pkgs'):
             # processed = set((p.name, p.version) for p in P.select(P.name, P.version).distinct())
             processed = set(
@@ -357,7 +388,7 @@ def main():
         with Measure("purging packages"):
             purge(pypi_index, pkgs_dict, bucket, py_vers_short)
         with Measure("getting jobs"):
-            jobs = get_jobs(pypi_index, bucket, processed, amount=num_jobs)
+            jobs = get_jobs(pypi_index, error_dict, bucket, processed, py_vers_nix, amount=num_jobs)
             if not jobs:
                 continue
         with Measure('batch'):
@@ -368,7 +399,7 @@ def main():
                     workers=workers,
                     use_processes=False)
             else:
-                pool_results = [extract_requirements(args, py_vers_nix) for args in jobs]
+                pool_results = [extract_requirements(args, py_vers_nix, deadline) for args in jobs]
         results = []
 
         # filter out exceptions and print them
@@ -383,16 +414,21 @@ def main():
                     results.append(r)
 
         # insert new data
-        for pkg in sorted(results, key=lambda pkg: (pkg.name, pkg.version, pkg.py_ver)):
+        for pkg in sorted(results, key=lambda pkg: (pkg.name, pkg.version, sort_key_pyver(pkg.py_ver))):
             py_ver = ''.join(filter(lambda c: c.isdigit(), pkg.py_ver))
-            insert(py_ver, pkg.name, pkg.version, pkg_to_dict(pkg), pkgs_dict, error=bool(pkg.error))
+            if pkg.error:
+                insert(py_ver, pkg.name, pkg.version, pkg_to_dict(pkg), error_dict, error=pkg.error)
+            else:
+                insert(py_ver, pkg.name, pkg.version, pkg_to_dict(pkg), pkgs_dict, error="")
 
         # compress and save
         with Measure("compressing data"):
             compress(pkgs_dict.by_bucket(bucket))
+            compress(error_dict.by_bucket(bucket))
         print("finished compressing data")
         with Measure("saving data"):
             pkgs_dict.save()
+            error_dict.save()
 
         # stop execution if deadline occurred
         if deadline and time() > deadline:

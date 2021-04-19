@@ -33,7 +33,6 @@ jobs:
         git config --local user.email "${{ github.actor }}@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
         export WORKERS=20
-        export JOBS=1
         export MAX_MINUTES=$((60 * 5))
         nix run -L .#pipeline-sdist
 
