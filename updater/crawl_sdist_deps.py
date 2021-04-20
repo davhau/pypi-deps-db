@@ -1,13 +1,13 @@
 import json
+import multiprocessing
 import os
 import re
 import subprocess as sp
 import traceback
-import itertools
 from dataclasses import asdict, dataclass, field
 from random import shuffle
 from tempfile import TemporaryDirectory
-from time import sleep, time
+from time import time
 from typing import Union, List, ContextManager
 
 import utils
@@ -24,6 +24,7 @@ class PackageJob:
     idx: int
     timeout: int = field(default=60)
     py_versions: list = field(default_factory=list)
+    drv: str = None
 
 
 @dataclass
@@ -46,6 +47,36 @@ class PKG:
     extras_require: str
     tests_require: str
     python_requires: str
+
+
+def compute_drvs(jobs: List[PackageJob], store=None):
+    extractor_dir = os.environ.get("EXTRACTOR_DIR")
+    if not extractor_dir:
+        raise Exception("Set env variable 'EXTRACTOR_DIR'")
+    extractor_jobs = list(dict(
+        pkg=job.name,
+        version=job.version,
+        url=job.url,
+        sha256=job.sha256,
+        pyVersions=job.py_versions,
+    ) for job in jobs)
+    with TemporaryDirectory() as tempdir:
+        jobs_file = f"{tempdir}/jobs.json"
+        with open(jobs_file, 'w') as f:
+            json.dump(extractor_jobs, f)
+        os.environ['EXTRACTOR_JOBS_JSON_FILE'] = jobs_file
+        cmd = ["nix", "eval", "--impure", "-f", f"{extractor_dir}/make-drvs.nix",]
+        if store:
+            cmd += ["--store", f"{store}"]
+        print(' '.join(cmd).replace(' "', ' \'"').replace('" ', '"\' '))
+        try:
+            nix_eval_result = sp.run(cmd, capture_output=True, check=True)
+        except sp.CalledProcessError as e:
+            print(e.stderr)
+            raise
+        result = json.loads(json.loads(nix_eval_result.stdout))
+    for job in jobs:
+        job.drv = result[f"{job.name}#{job.version}"]
 
 
 def extractor_cmd(
@@ -79,7 +110,7 @@ def extractor_cmd(
     return cmd
 
 
-def format_log(log: str):
+def format_log(log: str, pkg_version):
     """
     Postgres doesn't support indexing large text files.
     Therefore we limit line length and count
@@ -99,6 +130,9 @@ def format_log(log: str):
 
     # equalize tmp directories
     log = re.sub("tmp[\d\w_]*", "#TMP#", log)
+
+    # remove package versions
+    log = re.sub(pkg_version, "#PKG_VER#", log)
 
     # keep only error
     match = re.match("(?s:.*)[\s\n]([\w\._]*Error:.*)", log)
@@ -123,14 +157,13 @@ def extract_requirements(job: PackageJob, deadline, store=None):
         print(f"Bucket {job.bucket} - Job {job.idx} - {job.name}:{job.version}")
         with TemporaryDirectory() as tempdir:
             out_dir = f"{tempdir}/json"
-            cmd = extractor_cmd(
-                job.name, job.version, out_dir, job.url, job.sha256, store=store, limit_py_vers=job.py_versions)
+            cmd = ["nix-build", job.drv, "-o", out_dir]
             # print(' '.join(cmd).replace(' "', ' \'"').replace('" ', '"\' '))
             try:
                 sp.run(cmd, capture_output=True, timeout=job.timeout, check=True)
             except (sp.CalledProcessError, sp.TimeoutExpired) as e:
                 print(f"problem with {job.name}:{job.version}\n{e.stderr.decode()}")
-                formatted = format_log(e.stderr.decode())
+                formatted = format_log(e.stderr.decode(), job.version)
                 return [JobResult(
                     name=job.name,
                     version=job.version,
@@ -152,7 +185,7 @@ def extract_requirements(job: PackageJob, deadline, store=None):
                     pass
                 if data is None:
                     with open(f"{path}/python{py_ver}.log") as f:
-                        error = format_log(f.read())
+                        error = format_log(f.read(), job.version)
                     print(error)
                     results.append(JobResult(
                         name=job.name,
@@ -184,8 +217,10 @@ def get_jobs(pypi_index, error_dict, pkgs_dict, bucket, py_vers, limit_num=0, li
         if limit_names and pkg_name not in limit_names:
             continue
         for ver, release_types in pypi_index[pkg_name].items():
+            total_nr += 1
             if limit_num != 0 and len(jobs) >= limit_num:
-                break
+                # don't break the loop here since we still need total_nr
+                continue
             if 'sdist' not in release_types:
                 continue
             # collect python versions for which no data exists yet
@@ -201,7 +236,6 @@ def get_jobs(pypi_index, error_dict, pkgs_dict, bucket, py_vers, limit_num=0, li
                         required_py_vers.append(pyver)
             if not required_py_vers:
                 continue
-            total_nr += 1
             release = release_types['sdist']
             jobs.append(PackageJob(
                 bucket,
@@ -339,12 +373,12 @@ def purge(pypi_index, pkgs_dict: LazyBucketDict, bucket, py_vers):
     # purge all versions which are not on pypi anymore
     for name, vers in pkgs_dict.by_bucket(bucket).copy().items():
         if name not in pypi_index:
-            print(f"deleting package {name} from DB since it has been removed from pypi")
+            print(f"deleting package {name} from DB because it has been removed from pypi")
             del pkgs_dict[name]
             continue
         for ver in tuple(vers.keys()):
             if ver not in pypi_index[name]:
-                print(f"deleting package {name} version {ver} from DB since it has been removed from pypi")
+                print(f"deleting package {name} version {ver} from DB because it has been removed from pypi")
                 del pkgs_dict[name][ver]
     # purge old python versions
     for name, vers in pkgs_dict.by_bucket(bucket).copy().items():
@@ -352,15 +386,15 @@ def purge(pypi_index, pkgs_dict: LazyBucketDict, bucket, py_vers):
             for pyver in tuple(pyvers.keys()):
                 if pyver not in py_vers:
                     print(f"deleting package {name} version {ver} for python {pyver}"
-                          f" from DB since it has been removed from pypi")
+                          f" from DB because we dropped support for this python version")
                     del pkgs_dict[name][ver][pyver]
             if len(pkgs_dict[name][ver]) == 0:
                 print(f"deleting package {name} version {ver} from DB"
-                      f" since it is not compatible with any of our supported python versions")
+                      f" because it is not compatible with any of our supported python versions")
                 del pkgs_dict[name][ver]
         if len(pkgs_dict[name]) == 0:
             print(f"deleting package {name} from DB"
-                  f" since it has no releases left which are compatible with any of our supported python versions")
+                  f" because it has no releases left which are compatible with any of our supported python versions")
             del pkgs_dict[name]
 
 
@@ -376,15 +410,15 @@ class Measure(ContextManager):
 
 
 def main():
-    # environment variables related to performance/parallelization
-    workers = int(os.environ.get('WORKERS', "20"))
+    # settings related to performance/parallelization
+    workers = int(os.environ.get('WORKERS', multiprocessing.cpu_count() * 2))
     num_jobs = int(os.environ.get('JOBS', "0"))
     amount_buckets = int(os.environ.get('AMOUNT_BUCKETS', "256"))
     max_minutes = int(os.environ.get('MAX_MINUTES', "0"))
     start_bucket = int(os.environ.get('START_BUCKET', "0"))
-    limit_names = set(os.environ.get('LIMIT_NAMES', "").split(','))
+    limit_names = set(filter(lambda n: bool(n), os.environ.get('LIMIT_NAMES', "").split(',')))
 
-    # environment variables for general settings
+    # general settings
     dump_dir = os.environ.get('DUMP_DIR', "./sdist")
     store = os.environ.get('STORE', None)
     py_vers_short = os.environ.get('PYTHON_VERSIONS', "27,36,37,38,39,310").strip().split(',')
@@ -415,6 +449,7 @@ def main():
                 pypi_index, error_dict, pkgs_dict, bucket, py_vers_short, limit_num=num_jobs, limit_names=limit_names)
             if not jobs:
                 continue
+            compute_drvs(jobs)
         with Measure('batch'):
             if workers > 1:
                 pool_results = utils.parallel(

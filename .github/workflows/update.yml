@@ -27,8 +27,11 @@ jobs:
         nix_path: nixpkgs=channel:nixos-unstable
         install_url: https://nixos-nix-install-tests.cachix.org/serve/i41jvy44n7vlgwlvyvii49zzjrl6x9z1/install
         install_options: '--tarball-url-prefix https://nixos-nix-install-tests.cachix.org/serve'
+        # GC 30GB when free space < 3GB
         extra_nix_config: |
           experimental-features = nix-command flakes
+          min-free = 3000000000
+          max-free = 30000000000
 
     - name: update
       run: |
@@ -36,8 +39,7 @@ jobs:
         git config --local user.email "${{ github.actor }}@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
         export WORKERS=20
-        # export MAX_MINUTES=$((60 * 5))
-        export MAX_MINUTES=1
+        export MAX_MINUTES=$((60 * 5))
         nix run -L .#pipeline-sdist
         git push
 

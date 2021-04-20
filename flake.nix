@@ -52,12 +52,18 @@
           # NIX_PATH has to be set, since the crawler is a python program calling
           #   nix with a legacy nix expression.
           # The overlay is passed via `nixpkgs-overlays`.
+          defaultVars = {
+            PYTHONPATH = "${./updater}";
+            PYTHON_VERSIONS = concatStringsSep "," self.lib.supportedPythonVersions;
+            PYPI_FETCHER = "${inp.pypiIndex}";
+            EXTRACTOR_DIR = "${inp.mach-nix}/lib/extractor";
+          };
+          fixedVars = {
+            NIX_PATH = "nixpkgs=${inp.nixpkgsPy36}:nixpkgs-overlays=${py36Overlay}";
+          };
           exports = ''
-            export PYTHONPATH="${./updater}"
-            export PYTHON_VERSIONS=${concatStringsSep "," self.lib.supportedPythonVersions}
-            export PYPI_FETCHER=${inp.pypiIndex}
-            export EXTRACTOR_DIR=${inp.mach-nix}/lib/extractor
-            export NIX_PATH=nixpkgs=${inp.nixpkgsPy36}:nixpkgs-overlays=${py36Overlay}
+            ${concatStringsSep "\n" (mapAttrsToList (n: v: "export ${n}=\"${v}\"") fixedVars)}
+            ${concatStringsSep "\n" (mapAttrsToList (n: v: "export ${n}=\"\${${n}:-${v}}\"") defaultVars)}
           '';
         in {
           
@@ -89,7 +95,7 @@
 
             # update pypiIndex flake input + update data + commit to git.
             pipeline-sdist.type = "app";
-            pipeline-sdist.program = toString (pkgs.writeScript "pipeline-sdist" ''
+            pipeline-sdist.program = toString (pk/home/grmpf/projects/github/pypi-deps-dbgs.writeScript "pipeline-sdist" ''
               #!/usr/bin/env bash
               set -e
               set -x
