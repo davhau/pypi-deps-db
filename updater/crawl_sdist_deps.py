@@ -217,11 +217,11 @@ def get_jobs(pypi_index, error_dict, pkgs_dict, bucket, py_vers, limit_num=0, li
         if limit_names and pkg_name not in limit_names:
             continue
         for ver, release_types in pypi_index[pkg_name].items():
+            if 'sdist' not in release_types:
+                continue
             total_nr += 1
             if limit_num != 0 and len(jobs) >= limit_num:
                 # don't break the loop here since we still need total_nr
-                continue
-            if 'sdist' not in release_types:
                 continue
             # collect python versions for which no data exists yet
             required_py_vers = []
