@@ -253,7 +253,7 @@ def get_jobs(pypi_index, error_dict, pkgs_dict, bucket, py_vers, limit_num=0, li
     shuffle(jobs)
     for i, job in enumerate(jobs):
         job.idx = i
-    print(f"Bucket {bucket}: Planning execution of {len(jobs)} jobs out of {total_nr} total jobs for this bucket")
+    print(f"Bucket {bucket}: Planning execution of {len(jobs)} jobs out of {total_nr} total sdist releases")
     return jobs
 
 
