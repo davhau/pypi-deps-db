@@ -1,0 +1,46 @@
+
+name: "mach-nix CI"
+
+on:
+  push:
+    branches: [ci-update]
+  # schedule:
+  #   - cron:  '12 0,6,12,18 * * *'
+
+jobs:
+
+  update-sdist-deps:
+    name: Update sdist
+    runs-on: ubuntu-latest
+    # strategy:
+    #   matrix:
+    #     start_bucket: [0, 16, 32, 48, 64, 80, 96, 112, 128, 144, 160, 176, 192, 208, 224, 240]
+    steps:
+
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 1
+
+    - name: Install/Setup - NIX
+      uses: cachix/install-nix-action@v13
+      with:
+        nix_path: nixpkgs=channel:nixos-unstable
+        install_url: https://nixos-nix-install-tests.cachix.org/serve/i41jvy44n7vlgwlvyvii49zzjrl6x9z1/install
+        install_options: '--tarball-url-prefix https://nixos-nix-install-tests.cachix.org/serve'
+        # GC 30GB when free space < 3GB
+        extra_nix_config: |
+          experimental-features = nix-command flakes
+          min-free = 3000000000
+          max-free = 30000000000
+
+    - name: update
+      run: |
+        set -x
+        git config --local user.email "${{ github.actor }}@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        export WORKERS=20
+        export MAX_MINUTES=$((60 * 5))
+        nix run -L .#pipeline-sdist
+        git push
+
+      shell: bash
