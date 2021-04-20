@@ -27403,6 +27403,7 @@
     "1.17.52.0": "1.11.10.0",
     "1.17.53.0": "1.11.10.0",
     "1.17.53.1": "1.11.10.0",
+    "1.17.54.0": "1.11.10.0",
     "1.17.6.0": "1.11.10.0",
     "1.17.7.0": "1.11.10.0",
     "1.17.8.0": "1.11.10.0",
@@ -32164,7 +32165,7 @@
     "2.9.0": "2.10.0",
     "2.9.0a1613488214": "2.10.0",
     "2.9.0a1613744703": "2.10.0",
-    "3.0.0a1618749789": {
+    "3.0.0": {
       "35": {
         "install_requires": [
           "parver>=0.2.1",
@@ -32175,7 +32176,8 @@
       "36": "35",
       "37": "35",
       "38": "35"
-    }
+    },
+    "3.0.0a1618749789": "3.0.0"
   },
   "purgeraw": {
     "1.0.2": {
@@ -42321,6 +42323,118 @@
       "37": "27",
       "38": "27"
     },
+    "1.25.3": {
+      "27": {
+        "install_requires": [
+          "SQLAlchemy==1.3.17",
+          "alembic==1.4.3",
+          "web.py==0.62",
+          "python-memcached==1.59",
+          "python-dateutil==2.8.1",
+          "stomp.py==6.1.1",
+          "statsd==3.3.0",
+          "geoip2==4.1.0",
+          "oauth2client==4.1.3",
+          "retrying==1.3.3",
+          "redis==3.5.3",
+          "numpy==1.19.4",
+          "paramiko==2.7.2",
+          "Flask==1.1.2",
+          "oic==1.2.1",
+          "prometheus_client==0.9.0",
+          "argcomplete<=1.12.2,>=1.9.0",
+          "requests<=2.25.0,>=2.20.0",
+          "urllib3<=1.26.4,>=1.24.2",
+          "boto<2.50.0,>=2.49.0",
+          "tabulate<0.9.0,>=0.8.0",
+          "progressbar2<=3.53.1,>=3.39.0",
+          "bz2file<0.99,>=0.98",
+          "python-magic<0.5.0,>=0.4.15",
+          "six>=1.12.0<1.16.0",
+          "boto3<1.17.0,>=1.9.130",
+          "pysftp<0.3,>=0.2.9",
+          "jsonschema>=3.2.0"
+        ],
+        "extras_require": {
+          "dev": [
+            "sphinxcontrib-httpdomain==1.7.0",
+            "docutils<=0.16,>=0.15",
+            "pyflakes==2.1.1",
+            "flake8==3.7.8",
+            "isort<5,>=4.2.5",
+            "virtualenv==20.2.1",
+            "xmltodict==0.12.0",
+            "pytz==2020.4",
+            "Babel==2.9.0",
+            "pycodestyle==2.5.0",
+            "s3cmd==2.0.2",
+            "PyYAML==5.1.1"
+          ],
+          "saml": [
+            "python3-saml>=1.6.0"
+          ],
+          "mysql": [
+            "PyMySQL"
+          ],
+          "globus": [
+            "PyYAML==5.1.1",
+            "globus-sdk==1.8.0"
+          ],
+          "oracle": [
+            "cx_oracle==8.0.1"
+          ],
+          "kerberos": [
+            "kerberos>=1.3.0",
+            "pykerberos>=1.2.1",
+            "requests-kerberos>=0.12.0"
+          ],
+          "postgresql": [
+            "psycopg2-binary==2.8.6"
+          ],
+          ":python_version < \"3.0\"": [
+            "setuptools<45.0.0,>=36.8.0",
+            "dogpile.cache<0.7.0,>=0.6.5",
+            "futures>=3.2.0"
+          ],
+          ":python_version >= \"3.0\"": [
+            "setuptools<=50.3.2,>=45.0.0",
+            "dogpile.cache<=1.1.1,>=0.6.5"
+          ],
+          "dev:python_version < \"3.3\"": [
+            "mock==3.0.5"
+          ],
+          "dev:python_version < \"3.5\"": [
+            "Sphinx==1.8.5",
+            "sphinx-rtd-theme==0.4.3",
+            "Pygments==2.5.2"
+          ],
+          "dev:python_version < \"3.6\"": [
+            "pytest==4.6.11",
+            "pylint==1.9.4"
+          ],
+          "dev:python_version <= \"3.0\"": [
+            "subprocess32==3.5.4"
+          ],
+          "dev:python_version >= \"3.5\"": [
+            "Sphinx==3.3.1",
+            "sphinx-rtd-theme==0.5.0",
+            "Pygments==2.7.2"
+          ],
+          "dev:python_version >= \"3.6\"": [
+            "pytest==6.1.2",
+            "pytest-xdist~=2.2.0",
+            "pylint==2.6.0"
+          ]
+        },
+        "python_requires": [
+          ">=3.6, !=3.9.*, <4"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    },
     "1.5.10": {
       "27": {
         "install_requires": [
@@ -52286,6 +52400,33 @@
           "dataclasses-json<1.0,>=0.2.14",
           "idna<3.0,>=2.8",
           "lxml<5.0,>=4.6.2",
+          "marshmallow<4.0,>=3.0.0rc6",
+          "marshmallow-enum<2.0,>=1.5.1",
+          "mypy-extensions<1.0,>=0.4.3",
+          "requests<3.0,>=2.22.0",
+          "selenium<4.0,>=3.141.0",
+          "selenium-wire<3.0,>=2.1.2",
+          "soupsieve<3.0,>=2.1",
+          "stringcase<2.0,>=1.2.0",
+          "typing<4.0,>=3.7.4",
+          "typing-extensions<4.0,>=3.7.4.3",
+          "typing-inspect<1.0,>=0.6.0",
+          "urllib3<2.0,>=1.25.3"
+        ]
+      },
+      "37": "36",
+      "38": "36"
+    },
+    "1.0.9.0": {
+      "36": {
+        "install_requires": [
+          "beautifulsoup4<5.0,>=4.8.0",
+          "certifi<2021,>=2020.12.5",
+          "chardet<4.0,>=3.0.4",
+          "dataclasses<1.0,>=0.6",
+          "dataclasses-json<1.0,>=0.2.14",
+          "idna<3.0,>=2.8",
+          "lxml<5.0,>=4.6.3",
           "marshmallow<4.0,>=3.0.0rc6",
           "marshmallow-enum<2.0,>=1.5.1",
           "mypy-extensions<1.0,>=0.4.3",
