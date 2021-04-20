@@ -95,7 +95,7 @@
 
             # update pypiIndex flake input + update data + commit to git.
             pipeline-sdist.type = "app";
-            pipeline-sdist.program = toString (pk/home/grmpf/projects/github/pypi-deps-dbgs.writeScript "pipeline-sdist" ''
+            pipeline-sdist.program = toString (pkgs.writeScript "pipeline-sdist" ''
               #!/usr/bin/env bash
               set -e
               set -x
