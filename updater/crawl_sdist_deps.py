@@ -68,7 +68,6 @@ def compute_drvs(jobs: List[PackageJob], store=None):
         cmd = ["nix", "eval", "--impure", "-f", f"{extractor_dir}/make-drvs.nix",]
         if store:
             cmd += ["--store", store]
-            
         print(' '.join(cmd).replace(' "', ' \'"').replace('" ', '"\' '))
         try:
             nix_eval_result = sp.run(cmd, capture_output=True, check=True)
@@ -452,7 +451,7 @@ def main():
                 pypi_index, error_dict, pkgs_dict, bucket, py_vers_short, limit_num=num_jobs, limit_names=limit_names)
             if not jobs:
                 continue
-            compute_drvs(jobs)
+            compute_drvs(jobs, store=store)
         with Measure('batch'):
             if workers > 1:
                 pool_results = utils.parallel(
