@@ -23,6 +23,7 @@ class PackageJob:
     sha256: Union[None, str]
     idx: int
     timeout: int = field(default=60)
+    py_versions: list = field(default_factory=list)
 
 
 @dataclass
@@ -47,7 +48,9 @@ class PKG:
     python_requires: str
 
 
-def extractor_cmd(pkg_name, pkg_ver, out='./result', url=None, sha256=None, substitutes=True, store=None) -> List[str]:
+def extractor_cmd(
+        pkg_name, pkg_ver, out='./result', url=None, sha256=None, substitutes=True, store=None, limit_py_vers=None)\
+        -> List[str]:
     extractor_dir = os.environ.get("EXTRACTOR_DIR")
     if not extractor_dir:
         raise Exception("Set env variable 'EXTRACTOR_DIR'")
@@ -56,6 +59,8 @@ def extractor_cmd(pkg_name, pkg_ver, out='./result', url=None, sha256=None, subs
         "--arg", "version", f'"{pkg_ver}"',
         "-o", out
     ]
+    if limit_py_vers:
+        base_args += ["--argstr", "limitPythonVersions", f'''[{" ".join(map(lambda p: f'"{p}"', limit_py_vers))}]''']
     if store:
         base_args += ["--store", f"{store}"]
     if url and sha256:
@@ -111,44 +116,42 @@ def format_log(log: str):
     return ''.join(list(filtered)[:90])
 
 
-def extract_requirements(job: PackageJob, py_versions, deadline):
+def extract_requirements(job: PackageJob, deadline, store=None):
     try:
         if deadline and time() > deadline:
             raise Exception("Deadline occurred. Skipping this job")
         print(f"Bucket {job.bucket} - Job {job.idx} - {job.name}:{job.version}")
-        store = os.environ.get('STORE', None)
         with TemporaryDirectory() as tempdir:
             out_dir = f"{tempdir}/json"
-            cmd = extractor_cmd(job.name, job.version, out_dir, job.url, job.sha256,
-                                store=store)
+            cmd = extractor_cmd(
+                job.name, job.version, out_dir, job.url, job.sha256, store=store, limit_py_vers=job.py_versions)
             # print(' '.join(cmd).replace(' "', ' \'"').replace('" ', '"\' '))
             try:
                 sp.run(cmd, capture_output=True, timeout=job.timeout, check=True)
             except (sp.CalledProcessError, sp.TimeoutExpired) as e:
-                print(f"problem with {job.name}:{job.version}")
-                print(e.stderr.decode())
+                print(f"problem with {job.name}:{job.version}\n{e.stderr.decode()}")
                 formatted = format_log(e.stderr.decode())
                 return [JobResult(
                     name=job.name,
                     version=job.version,
                     py_ver=f"{py_ver}",
                     error=formatted,
-                ) for py_ver in py_versions]
+                ) for py_ver in job.py_versions]
             results = []
-            for py_ver in py_versions:
+            for py_ver in job.py_versions:
                 data = None
                 try:
                     path = os.readlink(f"{out_dir}")
                     if store:
                         path = path.replace('/nix/store', f"{store}/nix/store")
-                    with open(f"{path}/{py_ver}.json") as f:
+                    with open(f"{path}/python{py_ver}.json") as f:
                         content = f.read().strip()
                         if content != '':
                             data = json.loads(content)
                 except FileNotFoundError:
                     pass
                 if data is None:
-                    with open(f"{path}/{py_ver}.log") as f:
+                    with open(f"{path}/python{py_ver}.log") as f:
                         error = format_log(f.read())
                     print(error)
                     results.append(JobResult(
@@ -173,21 +176,30 @@ def extract_requirements(job: PackageJob, py_versions, deadline):
         return e
 
 
-def get_jobs(pypi_index, error_dict, bucket, processed, py_vers, amount=0):
+def get_jobs(pypi_index, error_dict, pkgs_dict, bucket, py_vers, limit_num=0, limit_names=None):
     jobs = []
     names = list(pypi_index.by_bucket(bucket).keys())
     total_nr = 0
     for pkg_name in names:
+        if limit_names and pkg_name not in limit_names:
+            continue
         for ver, release_types in pypi_index[pkg_name].items():
-            if amount != 0 and len(jobs) >= amount:
+            if limit_num != 0 and len(jobs) >= limit_num:
                 break
             if 'sdist' not in release_types:
                 continue
-            if (pkg_name, ver) in processed:
-                continue
-            if pkg_name in error_dict\
-                    and ver in error_dict[pkg_name]\
-                    and all(pyver in error_dict[pkg_name][ver] for pyver in py_vers):
+            # collect python versions for which no data exists yet
+            required_py_vers = []
+            for pyver in py_vers:
+                try:
+                    pkgs_dict[pkg_name][ver][pyver]
+                except KeyError:
+                    try:
+                        error_dict[pkg_name][ver][pyver]
+                    except KeyError:
+                        # there is no data or error for that pkg release + pyver -> need to crawl
+                        required_py_vers.append(pyver)
+            if not required_py_vers:
                 continue
             total_nr += 1
             release = release_types['sdist']
@@ -198,7 +210,10 @@ def get_jobs(pypi_index, error_dict, bucket, processed, py_vers, amount=0):
                 f"https://files.pythonhosted.org/packages/source/{pkg_name[0]}/{pkg_name}/{release[1]}",
                 release[0],
                 0,
+                py_versions=required_py_vers,
             ))
+    # since some packages are significantly bigger than others, we shuffle all jobs
+    # to prevent spikes in CPU requirements
     shuffle(jobs)
     for i, job in enumerate(jobs):
         job.idx = i
@@ -324,20 +339,28 @@ def purge(pypi_index, pkgs_dict: LazyBucketDict, bucket, py_vers):
     # purge all versions which are not on pypi anymore
     for name, vers in pkgs_dict.by_bucket(bucket).copy().items():
         if name not in pypi_index:
+            print(f"deleting package {name} from DB since it has been removed from pypi")
             del pkgs_dict[name]
             continue
         for ver in tuple(vers.keys()):
             if ver not in pypi_index[name]:
+                print(f"deleting package {name} version {ver} from DB since it has been removed from pypi")
                 del pkgs_dict[name][ver]
     # purge old python versions
     for name, vers in pkgs_dict.by_bucket(bucket).copy().items():
         for ver, pyvers in vers.copy().items():
             for pyver in tuple(pyvers.keys()):
                 if pyver not in py_vers:
+                    print(f"deleting package {name} version {ver} for python {pyver}"
+                          f" from DB since it has been removed from pypi")
                     del pkgs_dict[name][ver][pyver]
             if len(pkgs_dict[name][ver]) == 0:
+                print(f"deleting package {name} version {ver} from DB"
+                      f" since it is not compatible with any of our supported python versions")
                 del pkgs_dict[name][ver]
         if len(pkgs_dict[name]) == 0:
+            print(f"deleting package {name} from DB"
+                  f" since it has no releases left which are compatible with any of our supported python versions")
             del pkgs_dict[name]
 
 
@@ -353,18 +376,21 @@ class Measure(ContextManager):
 
 
 def main():
-    # load environment variables
+    # environment variables related to performance/parallelization
     workers = int(os.environ.get('WORKERS', "20"))
     num_jobs = int(os.environ.get('JOBS', "0"))
-    dump_dir = os.environ.get('DUMP_DIR', "./sdist")
+    amount_buckets = int(os.environ.get('AMOUNT_BUCKETS', "256"))
     max_minutes = int(os.environ.get('MAX_MINUTES', "0"))
     start_bucket = int(os.environ.get('START_BUCKET', "0"))
-    amount_buckets = int(os.environ.get('AMOUNT_BUCKETS', "256"))
+    limit_names = set(os.environ.get('LIMIT_NAMES', "").split(','))
+
+    # environment variables for general settings
+    dump_dir = os.environ.get('DUMP_DIR', "./sdist")
+    store = os.environ.get('STORE', None)
     py_vers_short = os.environ.get('PYTHON_VERSIONS', "27,36,37,38,39,310").strip().split(',')
     pypi_fetcher_dir = os.environ.get('PYPI_FETCHER', '/tmp/pypi_fetcher')
 
     deadline = time() + max_minutes * 60 if max_minutes else None
-    py_vers_nix = tuple(map(lambda v: f"python{v}", py_vers_short))
 
     # ensure that all the build time dependencies are cached before starting
     build_base(store=os.environ.get('STORE', None))
@@ -378,38 +404,31 @@ def main():
         error_dict = LazyBucketDict(dump_dir + "-errors", restrict_to_bucket=bucket)
         decompress(error_dict.by_bucket(bucket))
         with Measure('Get processed pkgs'):
-            # processed = set((p.name, p.version) for p in P.select(P.name, P.version).distinct())
-            processed = set(
-                itertools.chain.from_iterable(map(lambda t: ((t[0], vk) for vk in t[1].keys()), pkgs_dict.items())))
-            print(f"DB contains {len(processed)} pkgs at this time for bucket {bucket}")
+            print(f"DB contains {len(list(pkgs_dict.keys()))} pkgs at this time for bucket {bucket}")
         with Measure("decompressing data"):
             decompress(pkgs_dict.by_bucket(bucket))
         # purge data for old python versions and packages which got deleted from pypi
         with Measure("purging packages"):
             purge(pypi_index, pkgs_dict, bucket, py_vers_short)
         with Measure("getting jobs"):
-            jobs = get_jobs(pypi_index, error_dict, bucket, processed, py_vers_nix, amount=num_jobs)
+            jobs = get_jobs(
+                pypi_index, error_dict, pkgs_dict, bucket, py_vers_short, limit_num=num_jobs, limit_names=limit_names)
             if not jobs:
                 continue
         with Measure('batch'):
             if workers > 1:
                 pool_results = utils.parallel(
                     extract_requirements,
-                    (jobs, (py_vers_nix, ) * len(jobs), (deadline,) * len(jobs)),
+                    (jobs, (deadline,) * len(jobs), (store,) * len(jobs)),
                     workers=workers,
                     use_processes=False)
             else:
-                pool_results = [extract_requirements(args, py_vers_nix, deadline) for args in jobs]
-        results = []
+                pool_results = [extract_requirements(args, deadline, store) for args in jobs]
 
-        # filter out exceptions and print them
+        # filter out exceptions
+        results = []
         for i, res in enumerate(pool_results):
-            if isinstance(res, Exception):
-                print(f"Problem with {jobs[i].name}:{jobs[i].version}")
-                if isinstance(res, sp.CalledProcessError):
-                    print(res.stderr)
-                traceback.print_exception(res, res, res.__traceback__)
-            else:
+            if not isinstance(res, Exception):
                 for r in res:
                     results.append(r)
 
@@ -417,9 +436,10 @@ def main():
         for pkg in sorted(results, key=lambda pkg: (pkg.name, pkg.version, sort_key_pyver(pkg.py_ver))):
             py_ver = ''.join(filter(lambda c: c.isdigit(), pkg.py_ver))
             if pkg.error:
-                insert(py_ver, pkg.name, pkg.version, pkg_to_dict(pkg), error_dict, error=pkg.error)
+                target = error_dict
             else:
-                insert(py_ver, pkg.name, pkg.version, pkg_to_dict(pkg), pkgs_dict, error="")
+                target = pkgs_dict
+            insert(py_ver, pkg.name, pkg.version, pkg_to_dict(pkg), target, error=pkg.error)
 
         # compress and save
         with Measure("compressing data"):
