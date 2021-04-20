@@ -49,7 +49,7 @@ class PKG:
     python_requires: str
 
 
-def compute_drvs(jobs: List[PackageJob]):
+def compute_drvs(jobs: List[PackageJob], store=None):
     extractor_dir = os.environ.get("EXTRACTOR_DIR")
     if not extractor_dir:
         raise Exception("Set env variable 'EXTRACTOR_DIR'")
@@ -66,6 +66,9 @@ def compute_drvs(jobs: List[PackageJob]):
             json.dump(extractor_jobs, f)
         os.environ['EXTRACTOR_JOBS_JSON_FILE'] = jobs_file
         cmd = ["nix", "eval", "--impure", "-f", f"{extractor_dir}/make-drvs.nix",]
+        if store:
+            cmd += ["--store", store]
+            
         print(' '.join(cmd).replace(' "', ' \'"').replace('" ', '"\' '))
         try:
             nix_eval_result = sp.run(cmd, capture_output=True, check=True)
