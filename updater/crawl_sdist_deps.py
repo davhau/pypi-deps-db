@@ -154,7 +154,7 @@ def extract_requirements(job: PackageJob, deadline, store=None):
     try:
         if deadline and time() > deadline:
             raise Exception("Deadline occurred. Skipping this job")
-        print(f"Bucket {job.bucket} - Job {job.idx} - {job.name}:{job.version}")
+        print(f"Bucket {job.bucket} - Job {job.idx} - {job.name}:{job.version}     (py: {job.py_versions})")
         with TemporaryDirectory() as tempdir:
             out_dir = f"{tempdir}/json"
             cmd = ["nix-build", job.drv, "-o", out_dir]
