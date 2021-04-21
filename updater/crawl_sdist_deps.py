@@ -257,7 +257,7 @@ def build_base(extractor_src, py_vers, store=None):
         "--arg", "sha256", f'"{sha256}"',
         "--arg", "pkg", f'"{name}"',
         "--arg", "version", f'"{version}"',
-        "--arg", "pyVersions", f'''[ {" ".join(map(lambda p: f'"{p}"', py_vers))} ]'''
+        "--arg", "pyVersions", f'''[ {" ".join(map(lambda p: f'"{p}"', py_vers))} ]''',
         "-o", out,
     ]
     if store:
