@@ -2,6 +2,7 @@ import json
 import multiprocessing
 import os
 import re
+import shutil
 import subprocess as sp
 import traceback
 from dataclasses import asdict, dataclass, field
@@ -417,11 +418,11 @@ def main():
     workers = int(os.environ.get('WORKERS', multiprocessing.cpu_count() * 2))
 
     # general settings
-    collect_garbage = bool(os.environ.get('COLLECT_GARBAGE', False))
     dump_dir = os.environ.get('DUMP_DIR', "./sdist")
     extractor_src = os.environ.get("EXTRACTOR_SRC")
     if not extractor_src:
         raise Exception("Set env variable 'EXTRACTOR_SRC to {mach-nix}/lib/extractor'")
+    min_free_gb = int(os.environ.get('MIN_FREE_GB', "0"))
     py_vers_short = os.environ.get('PYTHON_VERSIONS', "27,36,37,38,39,310").strip().split(',')
     pypi_fetcher_dir = os.environ.get('PYPI_FETCHER', '/tmp/pypi_fetcher')
     store = os.environ.get('STORE', None)
@@ -494,7 +495,7 @@ def main():
             pkgs_dict.save()
             error_dict.save()
 
-        if collect_garbage:
+        if (shutil.disk_usage(store or "/nix/store").free / 1000000000) < min_free_gb:
             with Measure("collecting nix store garbage"):
                 sp.run(
                     f"nix-collect-garbage {f'--store {store}' if store else ''}",
