@@ -167,6 +167,11 @@ def extract_requirements(job: PackageJob, deadline, total_num, store=None):
             except (sp.CalledProcessError, sp.TimeoutExpired) as e:
                 print(f"problem with {job.name}:{job.version}\n{e.stderr.decode()}")
                 formatted = format_log(e.stderr.decode(), job.version)
+                # in case GC didn't kick in early enough, we need to ignore the results
+                if any(s in formatted for s in (
+                        "o space left on device",
+                        "lack of free disk space")):
+                    return e
                 return [JobResult(
                     name=job.name,
                     version=job.version,
@@ -414,18 +419,19 @@ class Measure(ContextManager):
 
 def main():
     # settings related to performance/parallelization
-    workers = int(os.environ.get('WORKERS', multiprocessing.cpu_count() * 2))
-    num_jobs = int(os.environ.get('JOBS', "0"))
     amount_buckets = int(os.environ.get('AMOUNT_BUCKETS', "256"))
-    max_minutes = int(os.environ.get('MAX_MINUTES', "0"))
-    start_bucket = int(os.environ.get('START_BUCKET', "0"))
     limit_names = set(filter(lambda n: bool(n), os.environ.get('LIMIT_NAMES', "").split(',')))
+    max_minutes = int(os.environ.get('MAX_MINUTES', "0"))
+    num_jobs = int(os.environ.get('JOBS', "0"))
+    start_bucket = int(os.environ.get('START_BUCKET', "0"))
+    workers = int(os.environ.get('WORKERS', multiprocessing.cpu_count() * 2))
 
     # general settings
+    collect_garbage = bool(os.environ.get('COLLECT_GARBAGE', False))
     dump_dir = os.environ.get('DUMP_DIR', "./sdist")
-    store = os.environ.get('STORE', None)
     py_vers_short = os.environ.get('PYTHON_VERSIONS', "27,36,37,38,39,310").strip().split(',')
     pypi_fetcher_dir = os.environ.get('PYPI_FETCHER', '/tmp/pypi_fetcher')
+    store = os.environ.get('STORE', None)
 
     deadline = time() + max_minutes * 60 if max_minutes else None
 
@@ -492,6 +498,10 @@ def main():
         with Measure("saving data"):
             pkgs_dict.save()
             error_dict.save()
+
+        if collect_garbage:
+            with Measure("collecting nix store garbage"):
+                sp.run(f"nix-collect-garbage {f'--store {store}' if store else ''}", capture_output=True)
 
         # stop execution if deadline occurred
         if deadline and time() > deadline:
