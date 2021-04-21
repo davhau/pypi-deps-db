@@ -496,7 +496,11 @@ def main():
 
         if collect_garbage:
             with Measure("collecting nix store garbage"):
-                sp.run(f"nix-collect-garbage {f'--store {store}' if store else ''}", capture_output=True)
+                sp.run(
+                    f"nix-collect-garbage {f'--store {store}' if store else ''}",
+                    capture_output=True,
+                    shell=True
+                )
 
         # stop execution if deadline occurred
         if deadline and time() > deadline:
