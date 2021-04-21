@@ -257,8 +257,8 @@ def build_base(extractor_src, py_vers, store=None):
         "--arg", "sha256", f'"{sha256}"',
         "--arg", "pkg", f'"{name}"',
         "--arg", "version", f'"{version}"',
+        "--arg", "pyVersions", f'''[ {" ".join(map(lambda p: f'"{p}"', py_vers))} ]'''
         "-o", out,
-        "--arg", "pyVersions", f'''[{" ".join(map(lambda p: f'"{p}"', py_vers))}]'''
     ]
     if store:
         cmd += ["--store", f"{store}"]
@@ -428,9 +428,10 @@ def main():
 
     deadline = time() + max_minutes * 60 if max_minutes else None
 
-    # ensure that all the build time dependencies are cached before starting
-    # otherwise builds jobs time out
-    build_base(extractor_src, py_vers_short, store=store)
+    # ensure that all the build time dependencies are cached before starting,
+    # otherwise jobs might time out
+    with Measure("ensure build time deps"):
+        build_base(extractor_src, py_vers_short, store=store)
 
     for idx, bucket in enumerate(LazyBucketDict.bucket_keys()):
         if idx < start_bucket or idx >= start_bucket + amount_buckets:
