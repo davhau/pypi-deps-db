@@ -150,11 +150,12 @@ def format_log(log: str, pkg_version):
     return ''.join(list(filtered)[:90])
 
 
-def extract_requirements(job: PackageJob, deadline, store=None):
+def extract_requirements(job: PackageJob, deadline, total_num, store=None):
     try:
         if deadline and time() > deadline:
             raise Exception("Deadline occurred. Skipping this job")
-        print(f"Bucket {job.bucket} - Job {job.idx} - {job.name}:{job.version}     (py: {job.py_versions})")
+        print(f"Bucket {job.bucket} - Job {job.idx}/{total_num} - "
+              f"{job.name}:{job.version}     (py: {' '.join(job.py_versions)})")
         with TemporaryDirectory() as tempdir:
             out_dir = f"{tempdir}/json"
             cmd = ["nix-build", job.drv, "-o", out_dir]
@@ -253,7 +254,7 @@ def get_jobs(pypi_index, error_dict, pkgs_dict, bucket, py_vers, limit_num=0, li
     shuffle(jobs)
     for i, job in enumerate(jobs):
         job.idx = i
-    print(f"Bucket {bucket}: Planning execution of {len(jobs)} jobs out of {total_nr} total sdist releases")
+    print(f"Bucket {bucket}: Will crawl {len(jobs)} out of {total_nr} total sdist releases")
     return jobs
 
 
@@ -456,7 +457,12 @@ def main():
             if workers > 1:
                 pool_results = utils.parallel(
                     extract_requirements,
-                    (jobs, (deadline,) * len(jobs), (store,) * len(jobs)),
+                    (
+                        jobs,
+                        (deadline,) * len(jobs),
+                        (len(jobs),) * len(jobs),
+                        (store,) * len(jobs)
+                    ),
                     workers=workers,
                     use_processes=False)
             else:
