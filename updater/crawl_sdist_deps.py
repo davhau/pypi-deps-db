@@ -250,7 +250,6 @@ def build_base(extractor_src, py_vers, store=None):
     url = 'https://files.pythonhosted.org/packages/01/62/' \
           'ddcf76d1d19885e8579acb1b1df26a852b03472c0e46d2b959a714c90608/requests-2.22.0.tar.gz'
     sha256 = '11e007a8a2aa0323f5a921e9e6a2d7e4e67d9877e85773fba9ba6419025cbeb4'
-    out = '/tmp/dummy'
     cmd = [
         "nix-build", f"{extractor_src}/fast-extractor.nix",
         "--arg", "url", f'"{url}"',
@@ -258,11 +257,12 @@ def build_base(extractor_src, py_vers, store=None):
         "--arg", "pkg", f'"{name}"',
         "--arg", "version", f'"{version}"',
         "--arg", "pyVersions", f'''[ {" ".join(map(lambda p: f'"{p}"', py_vers))} ]''',
-        "-o", out,
+        "--no-out-link",
     ]
     if store:
         cmd += ["--store", f"{store}"]
     sp.check_call(cmd, timeout=1000)
+
 
 
 def pkg_to_dict(pkg):
@@ -428,11 +428,6 @@ def main():
 
     deadline = time() + max_minutes * 60 if max_minutes else None
 
-    # ensure that all the build time dependencies are cached before starting,
-    # otherwise jobs might time out
-    with Measure("ensure build time deps"):
-        build_base(extractor_src, py_vers_short, store=store)
-
     for idx, bucket in enumerate(LazyBucketDict.bucket_keys()):
         if idx < start_bucket or idx >= start_bucket + amount_buckets:
             continue
@@ -454,7 +449,12 @@ def main():
             if not jobs:
                 continue
             compute_drvs(jobs, extractor_src, store=store)
-        with Measure('batch'):
+
+        # ensure that all the build time dependencies are cached before starting,
+        # otherwise jobs might time out
+        with Measure("ensure build time deps"):
+            build_base(extractor_src, py_vers_short, store=store)
+        with Measure('executing jobs'):
             if workers > 1:
                 pool_results = utils.parallel(
                     extract_requirements,
