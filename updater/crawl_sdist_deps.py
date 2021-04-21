@@ -254,7 +254,7 @@ def get_jobs(pypi_index, error_dict, pkgs_dict, bucket, py_vers, limit_num=0, li
     shuffle(jobs)
     for i, job in enumerate(jobs):
         job.idx = i
-    print(f"Bucket {bucket}: Will crawl {len(jobs)} out of {total_nr} total sdist releases")
+    print(f"Bucket {bucket}: {len(jobs)} out of {total_nr} total sdist releases need to be updated")
     return jobs
 
 
