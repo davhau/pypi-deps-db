@@ -237,7 +237,7 @@ def get_jobs(pypi_index, error_dict, pkgs_dict, bucket, py_vers, limit_names=Non
     # When support for a new python version was added, the amount of jobs is massive.
     # We want to ensure that new packages are prioritized before old packages.
     # To identify new packages, we use the number of python versions that need to be updated for that package.
-    jobs.sort(key=lambda j: len(j.py_versions))
+    jobs.sort(key=lambda j: -len(j.py_versions))
 
     print(f"Bucket {bucket}: {len(jobs)} out of {total_nr} total sdist releases need to be updated")
     return jobs
