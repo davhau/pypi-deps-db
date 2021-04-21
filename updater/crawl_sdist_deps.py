@@ -194,8 +194,8 @@ def extract_requirements(job: PackageJob, deadline, total_num, store=None):
         return e
 
 
-def get_jobs(pypi_index, error_dict, pkgs_dict, bucket, py_vers, limit_num=0, limit_names=None):
-    jobs = []
+def get_jobs(pypi_index, error_dict, pkgs_dict, bucket, py_vers, limit_names=None):
+    jobs: List[PackageJob] = []
     names = list(pypi_index.by_bucket(bucket).keys())
     total_nr = 0
     for pkg_name in names:
@@ -205,9 +205,6 @@ def get_jobs(pypi_index, error_dict, pkgs_dict, bucket, py_vers, limit_num=0, li
             if 'sdist' not in release_types:
                 continue
             total_nr += 1
-            if limit_num != 0 and len(jobs) >= limit_num:
-                # don't break the loop here since we still need total_nr
-                continue
             # collect python versions for which no data exists yet
             required_py_vers = []
             for pyver in py_vers:
@@ -231,11 +228,17 @@ def get_jobs(pypi_index, error_dict, pkgs_dict, bucket, py_vers, limit_num=0, li
                 0,
                 py_versions=required_py_vers,
             ))
-    # since some packages are significantly bigger than others, we shuffle all jobs
-    # to prevent spikes in CPU requirements
+    # because some packages are significantly bigger than others, we shuffle all jobs
+    # to prevent fluctuations in CPU usage
     shuffle(jobs)
     for i, job in enumerate(jobs):
         job.idx = i
+
+    # When support for a new python version was added, the amount of jobs is massive.
+    # We want to ensure that new packages are prioritized before old packages.
+    # To identify new packages, we use the number of python versions that need to be updated for that package.
+    jobs.sort(key=lambda j: len(j.py_versions))
+
     print(f"Bucket {bucket}: {len(jobs)} out of {total_nr} total sdist releases need to be updated")
     return jobs
 
@@ -446,9 +449,12 @@ def main():
             purge(pypi_index, pkgs_dict, bucket, py_vers_short)
         with Measure("getting jobs"):
             jobs = get_jobs(
-                pypi_index, error_dict, pkgs_dict, bucket, py_vers_short, limit_num=num_jobs, limit_names=limit_names)
+                pypi_index, error_dict, pkgs_dict, bucket, py_vers_short, limit_names=limit_names)
             if not jobs:
                 continue
+            # limit number of jobs
+            if num_jobs:
+                jobs = jobs[:num_jobs]
             compute_drvs(jobs, extractor_src, store=store)
 
         # ensure that all the build time dependencies are cached before starting,
@@ -495,6 +501,7 @@ def main():
             pkgs_dict.save()
             error_dict.save()
 
+        # collect garbage if free space < MIN_FREE_GB
         if (shutil.disk_usage(store or "/nix/store").free / 1000000000) < min_free_gb:
             with Measure("collecting nix store garbage"):
                 sp.run(
