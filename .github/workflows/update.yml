@@ -33,13 +33,17 @@ jobs:
           min-free = 3000000000
           max-free = 30000000000
 
+    # we crawl 4 times per day and split the data in 2 chunks, so we update all data twice a day
     - name: update
       run: |
         set -x
         git config --local user.email "${{ github.actor }}@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
         export WORKERS=20
-        export MAX_MINUTES=$((60 * 5))
+        export MAX_MINUTES=330
+        export BUCKET_JOBS=300
+        export BUCKET_START=$(( ( $(date +"%H") / 6 % 2) * 128  ))
+        export AMOUNT_BUCKETS=128
         nix run -L .#pipeline-sdist
         git push
 
