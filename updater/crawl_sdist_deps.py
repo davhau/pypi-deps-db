@@ -49,10 +49,7 @@ class PKG:
     python_requires: str
 
 
-def compute_drvs(jobs: List[PackageJob], store=None):
-    extractor_dir = os.environ.get("EXTRACTOR_DIR")
-    if not extractor_dir:
-        raise Exception("Set env variable 'EXTRACTOR_DIR'")
+def compute_drvs(jobs: List[PackageJob], extractor_src, store=None):
     extractor_jobs = list(dict(
         pkg=job.name,
         version=job.version,
@@ -65,7 +62,7 @@ def compute_drvs(jobs: List[PackageJob], store=None):
         with open(jobs_file, 'w') as f:
             json.dump(extractor_jobs, f)
         os.environ['EXTRACTOR_JOBS_JSON_FILE'] = jobs_file
-        cmd = ["nix", "eval", "--impure", "-f", f"{extractor_dir}/make-drvs.nix",]
+        cmd = ["nix", "eval", "--impure", "-f", f"{extractor_src}/make-drvs.nix",]
         if store:
             cmd += ["--store", store]
         print(' '.join(cmd).replace(' "', ' \'"').replace('" ', '"\' '))
@@ -79,44 +76,13 @@ def compute_drvs(jobs: List[PackageJob], store=None):
         job.drv = result[f"{job.name}#{job.version}"]
 
 
-def extractor_cmd(
-        pkg_name, pkg_ver, out='./result', url=None, sha256=None, substitutes=True, store=None, limit_py_vers=None)\
-        -> List[str]:
-    extractor_dir = os.environ.get("EXTRACTOR_DIR")
-    if not extractor_dir:
-        raise Exception("Set env variable 'EXTRACTOR_DIR'")
-    base_args = [
-        "--arg", "pkg", f'"{pkg_name}"',
-        "--arg", "version", f'"{pkg_ver}"',
-        "-o", out
-    ]
-    if limit_py_vers:
-        base_args += ["--argstr", "limitPythonVersions", f'''[{" ".join(map(lambda p: f'"{p}"', limit_py_vers))}]''']
-    if store:
-        base_args += ["--store", f"{store}"]
-    if url and sha256:
-        cmd = [
-            "nix-build", f"{extractor_dir}/fast-extractor.nix",
-            "--arg", "url", f'"{url}"',
-            "--arg", "sha256", f'"{sha256}"'
-        ] + base_args
-    else:
-        cmd = [
-            "nix-build", f"{extractor_dir}/extractor.nix",
-        ] + base_args
-        print('using slow builder')
-    if not substitutes:
-        cmd += ["--option", "build-use-substitutes", "false"]
-    return cmd
-
-
-def format_log(log: str, pkg_version):
+def format_error(log: str, pkg_version):
     """
-    Postgres doesn't support indexing large text files.
-    Therefore we limit line length and count
+    Execute some replacement transformations on the log,
+    to make it more compressible
     """
 
-    # substitute store hashes to allow better compression
+    # remove store hashes
     log = re.subn(r"(.*/nix/store/)[\d\w]+(-.*)", r"\1#hash#\2", log)[0]
 
     # reduce multiple white spaces to a single space
@@ -134,13 +100,23 @@ def format_log(log: str, pkg_version):
     # remove package versions
     log = re.sub(pkg_version, "#PKG_VER#", log)
 
-    # keep only error
+    # detect some common errors and shorten them
+    common = (
+        'unpacker produced multiple directories',
+    )
+    for err in common:
+        if err in log:
+            log = err
+            break
+
+    # for Exceptions keep only short text
     match = re.match("(?s:.*)[\s\n]([\w\._]*Error:.*)", log)
     if match:
         log = match.groups()[0]
 
+    # remove common warnings and trim line number and length
     lines = log.splitlines(keepends=True)
-    lines = map(lambda line: f"{line[:400]}\n" if len(line) > 400 else line, lines)
+    lines = map(lambda line: line[:400], lines)
     remove_lines_marker = (
         '/homeless-shelter/.cache/pip/http',
         '/homeless-shelter/.cache/pip',
@@ -166,7 +142,7 @@ def extract_requirements(job: PackageJob, deadline, total_num, store=None):
                 sp.run(cmd, capture_output=True, timeout=job.timeout, check=True)
             except (sp.CalledProcessError, sp.TimeoutExpired) as e:
                 print(f"problem with {job.name}:{job.version}\n{e.stderr.decode()}")
-                formatted = format_log(e.stderr.decode(), job.version)
+                formatted = format_error(e.stderr.decode(), job.version)
                 # in case GC didn't kick in early enough, we need to ignore the results
                 if any(s in formatted for s in (
                         "o space left on device",
@@ -193,7 +169,7 @@ def extract_requirements(job: PackageJob, deadline, total_num, store=None):
                     pass
                 if data is None:
                     with open(f"{path}/python{py_ver}.log") as f:
-                        error = format_log(f.read(), job.version)
+                        error = format_error(f.read(), job.version)
                     print(error)
                     results.append(JobResult(
                         name=job.name,
@@ -268,10 +244,24 @@ def get_processed():
         return {tuple(t) for t in json.load(f)}
 
 
-def build_base(store=None):
-    # make sure base stuff gets back into cache after cleanup:
-    cmd = extractor_cmd("requests", "2.22.0", out='/tmp/dummy', url='https://files.pythonhosted.org/packages/01/62/ddcf76d1d19885e8579acb1b1df26a852b03472c0e46d2b959a714c90608/requests-2.22.0.tar.gz',
-                        sha256='11e007a8a2aa0323f5a921e9e6a2d7e4e67d9877e85773fba9ba6419025cbeb4', store=store)
+def build_base(extractor_src, py_vers, store=None):
+    name = 'requests'
+    version = '2.22.0'
+    url = 'https://files.pythonhosted.org/packages/01/62/' \
+          'ddcf76d1d19885e8579acb1b1df26a852b03472c0e46d2b959a714c90608/requests-2.22.0.tar.gz'
+    sha256 = '11e007a8a2aa0323f5a921e9e6a2d7e4e67d9877e85773fba9ba6419025cbeb4'
+    out = '/tmp/dummy'
+    cmd = [
+        "nix-build", f"{extractor_src}/fast-extractor.nix",
+        "--arg", "url", f'"{url}"',
+        "--arg", "sha256", f'"{sha256}"',
+        "--arg", "pkg", f'"{name}"',
+        "--arg", "version", f'"{version}"',
+        "-o", out,
+        "--arg", "pyVersions", f'''[{" ".join(map(lambda p: f'"{p}"', py_vers))}]'''
+    ]
+    if store:
+        cmd += ["--store", f"{store}"]
     sp.check_call(cmd, timeout=1000)
 
 
@@ -429,6 +419,9 @@ def main():
     # general settings
     collect_garbage = bool(os.environ.get('COLLECT_GARBAGE', False))
     dump_dir = os.environ.get('DUMP_DIR', "./sdist")
+    extractor_src = os.environ.get("EXTRACTOR_SRC")
+    if not extractor_src:
+        raise Exception("Set env variable 'EXTRACTOR_SRC to {mach-nix}/lib/extractor'")
     py_vers_short = os.environ.get('PYTHON_VERSIONS', "27,36,37,38,39,310").strip().split(',')
     pypi_fetcher_dir = os.environ.get('PYPI_FETCHER', '/tmp/pypi_fetcher')
     store = os.environ.get('STORE', None)
@@ -436,7 +429,8 @@ def main():
     deadline = time() + max_minutes * 60 if max_minutes else None
 
     # ensure that all the build time dependencies are cached before starting
-    build_base(store=os.environ.get('STORE', None))
+    # otherwise builds jobs time out
+    build_base(extractor_src, py_vers_short, store=store)
 
     for idx, bucket in enumerate(LazyBucketDict.bucket_keys()):
         if idx < start_bucket or idx >= start_bucket + amount_buckets:
@@ -458,7 +452,7 @@ def main():
                 pypi_index, error_dict, pkgs_dict, bucket, py_vers_short, limit_num=num_jobs, limit_names=limit_names)
             if not jobs:
                 continue
-            compute_drvs(jobs, store=store)
+            compute_drvs(jobs, extractor_src, store=store)
         with Measure('batch'):
             if workers > 1:
                 pool_results = utils.parallel(

@@ -56,11 +56,13 @@
             PYTHONPATH = "${./updater}";
             PYTHON_VERSIONS = concatStringsSep "," self.lib.supportedPythonVersions;
             PYPI_FETCHER = "${inp.pypiIndex}";
-            EXTRACTOR_DIR = "${inp.mach-nix}/lib/extractor";
+            EXTRACTOR_SRC = "${inp.mach-nix}/lib/extractor";
           };
           fixedVars = {
             NIX_PATH = "nixpkgs=${inp.nixpkgsPy36}:nixpkgs-overlays=${py36Overlay}";
           };
+          # defaultVars are only set if they are not already set
+          # fixedVars are always set
           exports = ''
             ${concatStringsSep "\n" (mapAttrsToList (n: v: "export ${n}=\"${v}\"") fixedVars)}
             ${concatStringsSep "\n" (mapAttrsToList (n: v: "export ${n}=\"\${${n}:-${v}}\"") defaultVars)}
