@@ -194,7 +194,7 @@ def extract_requirements(job: PackageJob, deadline, total_num, store=None):
         return e
 
 
-def get_jobs(pypi_index, error_dict, pkgs_dict, bucket, py_vers, limit_names=None):
+def get_jobs(pypi_index, error_dict, pkgs_dict, bucket, py_vers, limit_num=None, limit_names=None):
     jobs: List[PackageJob] = []
     names = list(pypi_index.by_bucket(bucket).keys())
     total_nr = 0
@@ -236,6 +236,10 @@ def get_jobs(pypi_index, error_dict, pkgs_dict, bucket, py_vers, limit_names=Non
     # We want to ensure that new packages are prioritized before old packages.
     # To identify new packages, we use the number of python versions that need to be updated for that package.
     jobs.sort(key=lambda j: -len(j.py_versions))
+
+    # limit number of jobs
+    if limit_num:
+        jobs = jobs[:limit_num]
 
     # assign numbers
     for i, job in enumerate(jobs):
@@ -418,8 +422,8 @@ def main():
     amount_buckets = int(os.environ.get('AMOUNT_BUCKETS', "256"))
     limit_names = set(filter(lambda n: bool(n), os.environ.get('LIMIT_NAMES', "").split(',')))
     max_minutes = int(os.environ.get('MAX_MINUTES', "0"))
-    num_jobs = int(os.environ.get('JOBS', "0"))
-    start_bucket = int(os.environ.get('START_BUCKET', "0"))
+    bucket_jobs = int(os.environ.get('BUCKET_JOBS', "0"))
+    start_bucket = int(os.environ.get('BUCKET_START', "0"))
     workers = int(os.environ.get('WORKERS', multiprocessing.cpu_count() * 2))
 
     # general settings
@@ -432,9 +436,19 @@ def main():
     pypi_fetcher_dir = os.environ.get('PYPI_FETCHER', '/tmp/pypi_fetcher')
     store = os.environ.get('STORE', None)
 
-    deadline = time() + max_minutes * 60 if max_minutes else None
+    deadline_total = time() + max_minutes * 60 if max_minutes else None
+
+    # cache build time deps, otherwise first job will be slow
+    with Measure("ensure build time deps"):
+        build_base(extractor_src, py_vers_short, store=store)
 
     for idx, bucket in enumerate(LazyBucketDict.bucket_keys()):
+        # calculate per bucket deadline if MAX_MINUTES is used
+        if deadline_total:
+            amount = min(amount_buckets, 256 - start_bucket)
+            deadline = time() + (deadline_total - time()) / amount
+        else:
+            deadline = None
         if idx < start_bucket or idx >= start_bucket + amount_buckets:
             continue
         pkgs_dict = LazyBucketDict(dump_dir, restrict_to_bucket=bucket)
@@ -451,12 +465,9 @@ def main():
             purge(pypi_index, pkgs_dict, bucket, py_vers_short)
         with Measure("getting jobs"):
             jobs = get_jobs(
-                pypi_index, error_dict, pkgs_dict, bucket, py_vers_short, limit_names=limit_names)
+                pypi_index, error_dict, pkgs_dict, bucket, py_vers_short, limit_num=bucket_jobs, limit_names=limit_names)
             if not jobs:
                 continue
-            # limit number of jobs
-            if num_jobs:
-                jobs = jobs[:num_jobs]
             compute_drvs(jobs, extractor_src, store=store)
 
         # ensure that all the build time dependencies are cached before starting,
@@ -513,7 +524,7 @@ def main():
                 )
 
         # stop execution if deadline occurred
-        if deadline and time() > deadline:
+        if deadline_total and time() > deadline_total:
             print(f"Deadline occurred. Stopping execution. Last Bucket was {bucket}")
             break
 
