@@ -8660,21 +8660,6 @@
       }
     }
   },
-  "democritus-pdfs": {
-    "py2.py3": {
-      "2021.1.21": {
-        "democritus_pdfs-2021.1.21-py2.py3-none-any.whl": {
-          "requires_dist": [
-            "democritus-file-system",
-            "democritus-networking",
-            "democritus-urls",
-            "PyPDF2",
-            "importlib-metadata ; python_version < \"3.8\""
-          ]
-        }
-      }
-    }
-  },
   "demyst-df": {
     "py2": {
       "0.7.10": {
@@ -9721,6 +9706,19 @@
         "demyst_df-0.8.4-py2-none-any.whl": {
           "requires_dist": [
             "demyst-common (>=0.8.4)",
+            "click",
+            "boto3",
+            "botocore",
+            "tabulate",
+            "halo",
+            "glom"
+          ]
+        }
+      },
+      "0.8.40": {
+        "demyst_df-0.8.40-py2-none-any.whl": {
+          "requires_dist": [
+            "demyst-common (>=0.8.40)",
             "click",
             "boto3",
             "botocore",
@@ -22639,21 +22637,20 @@
   },
   "oath-ldap-srv": {
     "3.8": {
-      "1.3.0": {
-        "oath_ldap_srv-1.3.0-py3-none-any.whl": {
+      "1.4.2": {
+        "oath_ldap_srv-1.4.2-py3-none-any.whl": {
           "provides_extras": [
-            "hotp_validator",
-            "oathenroll"
+            "bind_proxy",
+            "hotp_validator"
           ],
           "requires_dist": [
-            "ldap0 (>=1.0.0)",
+            "ldap0 (>=1.2.1)",
             "setuptools",
+            "slapdsock (>=1.1.0) ; extra == 'bind_proxy'",
             "jwcrypto ; extra == 'hotp_validator'",
             "passlib ; extra == 'hotp_validator'",
             "pynacl (>=1.2) ; extra == 'hotp_validator'",
-            "slapdsock ; extra == 'hotp_validator'",
-            "mailutil (>=0.4.0) ; extra == 'oathenroll'",
-            "web.py (>=0.40) ; extra == 'oathenroll'"
+            "slapdsock (>=1.1.0) ; extra == 'hotp_validator'"
           ],
           "requires_python": ">=3.6"
         }
