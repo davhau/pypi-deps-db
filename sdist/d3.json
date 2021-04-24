@@ -36535,6 +36535,7 @@
     "11.0.0": "10.0.0",
     "11.0.0.0rc1": "10.0.0",
     "11.0.0.0rc2": "10.0.0",
+    "12.0.0.0rc1": "10.0.0",
     "2.0.0": "1.1.0",
     "2.0.0.0rc4": "1.1.0",
     "2.0.1": "1.1.0",
@@ -42032,6 +42033,7 @@
     "1.17.54.0": "1.11.10.0",
     "1.17.55.0": "1.11.10.0",
     "1.17.56.0": "1.11.10.0",
+    "1.17.57.0": "1.11.10.0",
     "1.17.6.0": "1.11.10.0",
     "1.17.7.0": "1.11.10.0",
     "1.17.8.0": "1.11.10.0",
@@ -48878,7 +48880,39 @@
       "37": "35",
       "38": "35"
     },
-    "2.1.2": "2.1.0"
+    "2.1.2": "2.1.0",
+    "2.1.3": {
+      "35": {
+        "install_requires": [
+          "marshmallow",
+          "flask"
+        ],
+        "setup_requires": [
+          "pytest-runner>=2.7"
+        ],
+        "extras_require": {
+          "tests": [
+            "pytest-invenio[docs]==1.3.4",
+            "pytest>=4.6.3",
+            "oarepo-mapping-includes",
+            "oarepo-validate",
+            "oarepo[tests]"
+          ],
+          "validate": [
+            "oarepo-validate"
+          ]
+        },
+        "tests_require": [
+          "pytest-invenio[docs]==1.3.4",
+          "pytest>=4.6.3",
+          "oarepo-mapping-includes",
+          "oarepo-validate"
+        ]
+      },
+      "36": "35",
+      "37": "35",
+      "38": "35"
+    }
   },
   "objectmodel": {
     "0.1": {
@@ -54864,6 +54898,49 @@
             "pyserial>=3.0"
           ],
           ":platform_system == \"Windows\"": [
+            "windows-curses",
+            "pywin32"
+          ]
+        },
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    },
+    "4.0.0.dev2": {
+      "27": {
+        "install_requires": [
+          "wrapt~=1.10",
+          "mypy_extensions<0.5.0,>=0.4.0"
+        ],
+        "extras_require": {
+          "neovi": [
+            "filelock",
+            "python-ics>=2.12"
+          ],
+          "gs_usb": [
+            "gs_usb>=0.2.1"
+          ],
+          "nixnet": [
+            "nixnet>=0.3.1"
+          ],
+          "serial": [
+            "pyserial~=3.0"
+          ],
+          "cantact": [
+            "cantact>=0.0.7"
+          ],
+          "seeedstudio": [
+            "pyserial>=3.0"
+          ],
+          ":platform_system != \"Windows\"": [
+            "msgpack~=1.0.0"
+          ],
+          ":platform_system == \"Windows\" and platform_python_implementation == \"CPython\"": [
             "windows-curses",
             "pywin32"
           ]
