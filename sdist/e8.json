@@ -9245,6 +9245,28 @@
     "0.2.51": "0.2.10",
     "0.2.52": "0.2.10",
     "0.2.57": "0.2.10",
+    "0.2.58": {
+      "27": {
+        "install_requires": [
+          "cognite-geospatial-sdk",
+          "deprecation<3.0.0,>=2.1.0",
+          "grpcio-tools<2.0,>=1.31",
+          "grpcio<2.0,>=1.31",
+          "numpy<2.0,>=1.17",
+          "protobuf<4.0,>=3.12",
+          "python-dateutil<3.0,>=2.8",
+          "six<2.0,>=1.14",
+          "urllib3<2.0,>=1.24"
+        ],
+        "python_requires": [
+          ">=3.6.1,<4.0.0"
+        ]
+      },
+      "35": "27",
+      "36": "27",
+      "37": "27",
+      "38": "27"
+    },
     "0.2.6": "0.2.10",
     "0.2.7": "0.2.10",
     "0.2.8": "0.2.10",
@@ -17609,6 +17631,190 @@
           ],
           "all:platform_system != \"Windows\" and python_version != \"2.7\"": [
             "pyside2<=5.13.2"
+          ]
+        },
+        "python_requires": [
+          ">=2.7",
+          "!=3.4.*",
+          "!=3.5.*",
+          "!=3.3.*",
+          "!=3.0.*",
+          "!=3.1.*",
+          "!=3.2.*",
+          "<3.9"
+        ]
+      }
+    },
+    "3.0.2rc0": {
+      "27": {
+        "install_requires": [
+          "future",
+          "h5py<=2.10.0,>=2.3",
+          "matplotlib<=3.3.3,>=2",
+          "requests",
+          "scipy<=1.4.1,>=1.1",
+          "six",
+          "xdsmjs==1.0.0"
+        ],
+        "extras_require": {
+          "all": [
+            "openturns<=1.15,>=1.13",
+            "pandas<=1.1.4,>=0.16",
+            "scikit-learn<=0.23.2,>=0.18",
+            "sympy<=1.7,>=0.7",
+            "graphviz<=2.42.3"
+          ],
+          ":python_version < \"3\"": [
+            "pathlib",
+            "pyxdsm<2.1.3"
+          ],
+          ":python_version >= \"3\"": [
+            "fastjsonschema<=2.14.5",
+            "pyxdsm<=2.1.3"
+          ],
+          "all:python_version < \"3\"": [
+            "pydoe<=1.3.0,>=0.3.8"
+          ],
+          "all:python_version >= \"3\"": [
+            "pydoe2<=1.3.0,>=0.3.8",
+            "openpyxl<=3.0.5"
+          ],
+          ":platform_system != \"Windows\"": [
+            "numpy<=1.19.4,>=1.10"
+          ],
+          ":platform_system == \"Windows\"": [
+            "numpy<=1.19.3,>=1.10"
+          ],
+          "all:platform_system == \"Windows\"": [
+            "xlwings<=0.21.4"
+          ],
+          "all:platform_system != \"Windows\" and python_version >= \"3\"": [
+            "pyside2<=5.15.2"
+          ],
+          "all:(platform_system == \"Windows\" and python_version >= \"3.7\") or python_version >= \"3\"": [
+            "nlopt<=2.6.2,>=2.4.2"
+          ]
+        },
+        "python_requires": [
+          "!=3.0.*",
+          "!=3.3.*",
+          "<3.9",
+          "!=3.5.*",
+          "!=3.2.*",
+          ">=2.7",
+          "!=3.1.*",
+          "!=3.4.*"
+        ]
+      },
+      "35": {
+        "install_requires": [
+          "future",
+          "h5py<=2.10.0,>=2.3",
+          "matplotlib<=3.3.3,>=2",
+          "requests",
+          "scipy<=1.4.1,>=1.1",
+          "six",
+          "xdsmjs==1.0.0"
+        ],
+        "extras_require": {
+          "all": [
+            "openturns<=1.15,>=1.13",
+            "pandas<=1.1.4,>=0.16",
+            "scikit-learn<=0.23.2,>=0.18",
+            "sympy<=1.7,>=0.7",
+            "graphviz<=2.42.3"
+          ],
+          ":python_version < \"3\"": [
+            "pathlib",
+            "pyxdsm<2.1.3"
+          ],
+          ":python_version >= \"3\"": [
+            "fastjsonschema<=2.14.5",
+            "pyxdsm<=2.1.3"
+          ],
+          "all:python_version < \"3\"": [
+            "pydoe<=1.3.0,>=0.3.8"
+          ],
+          "all:python_version >= \"3\"": [
+            "pydoe2<=1.3.0,>=0.3.8",
+            "openpyxl<=3.0.5"
+          ],
+          ":platform_system != \"Windows\"": [
+            "numpy<=1.19.4,>=1.10"
+          ],
+          ":platform_system == \"Windows\"": [
+            "numpy<=1.19.3,>=1.10"
+          ],
+          "all:platform_system == \"Windows\"": [
+            "xlwings<=0.21.4"
+          ],
+          "all:platform_system != \"Windows\" and python_version >= \"3\"": [
+            "pyside2<=5.15.2"
+          ],
+          "all:(platform_system == \"Windows\" and python_version >= \"3.7\") or python_version >= \"3\"": [
+            "nlopt<=2.6.2,>=2.4.2"
+          ]
+        },
+        "python_requires": [
+          "!=3.3.*",
+          "!=3.0.*",
+          "!=3.2.*",
+          "!=3.1.*",
+          "<3.9",
+          "!=3.4.*",
+          "!=3.5.*",
+          ">=2.7"
+        ]
+      },
+      "36": "35",
+      "37": "35",
+      "38": {
+        "install_requires": [
+          "future",
+          "h5py<=2.10.0,>=2.3",
+          "matplotlib<=3.3.3,>=2",
+          "requests",
+          "scipy<=1.4.1,>=1.1",
+          "six",
+          "xdsmjs==1.0.0"
+        ],
+        "extras_require": {
+          "all": [
+            "openturns<=1.15,>=1.13",
+            "pandas<=1.1.4,>=0.16",
+            "scikit-learn<=0.23.2,>=0.18",
+            "sympy<=1.7,>=0.7",
+            "graphviz<=2.42.3"
+          ],
+          ":python_version < \"3\"": [
+            "pathlib",
+            "pyxdsm<2.1.3"
+          ],
+          ":python_version >= \"3\"": [
+            "fastjsonschema<=2.14.5",
+            "pyxdsm<=2.1.3"
+          ],
+          "all:python_version < \"3\"": [
+            "pydoe<=1.3.0,>=0.3.8"
+          ],
+          "all:python_version >= \"3\"": [
+            "pydoe2<=1.3.0,>=0.3.8",
+            "openpyxl<=3.0.5"
+          ],
+          ":platform_system != \"Windows\"": [
+            "numpy<=1.19.4,>=1.10"
+          ],
+          ":platform_system == \"Windows\"": [
+            "numpy<=1.19.3,>=1.10"
+          ],
+          "all:platform_system == \"Windows\"": [
+            "xlwings<=0.21.4"
+          ],
+          "all:platform_system != \"Windows\" and python_version >= \"3\"": [
+            "pyside2<=5.15.2"
+          ],
+          "all:(platform_system == \"Windows\" and python_version >= \"3.7\") or python_version >= \"3\"": [
+            "nlopt<=2.6.2,>=2.4.2"
           ]
         },
         "python_requires": [
@@ -26907,7 +27113,8 @@
     "0.4.3.3": "0.4.1",
     "0.4.3.4": "0.4.1",
     "0.4.3.5": "0.4.1",
-    "0.4.3.6": "0.4.1"
+    "0.4.3.6": "0.4.1",
+    "0.4.4.0": "0.4.1"
   },
   "livingdocs": {
     "0.1.0": {
@@ -44456,7 +44663,8 @@
     "3.0.377": "3.0.251",
     "3.0.378": "3.0.251",
     "3.0.379": "3.0.251",
-    "3.0.380": "3.0.251"
+    "3.0.380": "3.0.251",
+    "3.0.381": "3.0.251"
   },
   "tencentcloud-sdk-python-vpc": {
     "3.0.252": {
@@ -44593,7 +44801,8 @@
     "3.0.377": "3.0.252",
     "3.0.378": "3.0.252",
     "3.0.379": "3.0.252",
-    "3.0.380": "3.0.252"
+    "3.0.380": "3.0.252",
+    "3.0.381": "3.0.252"
   },
   "tensorflow-exercise-hx": {
     "1.0.1": {
