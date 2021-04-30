@@ -14,6 +14,7 @@
       systems = ["x86_64-linux"];
       self = {
         lib.supportedPythonVersions = [ "27" "36" "37" "38" "39" "310" ];
+        lib.formatVersion = toInt (readFile ./FORMAT_VERSION);
       } 
       // foldl' (a: b: recursiveUpdate a b) {} ( map ( system:
         let
@@ -116,7 +117,7 @@
 
               # commit to git
               echo $(date +%s) > UNIX_TIMESTAMP
-              indexHash=$(${pkgs.nixFlakes}/bin/nix flake metadata --json | ${pkgs.jq}/bin/jq -e --raw-output '.locks .nodes .pypiIndex .locked .narHash')
+              indexHash=$(${pkgs.nixthe updaterFlakes}/bin/nix flake metadata --json | ${pkgs.jq}/bin/jq -e --raw-output '.locks .nodes .pypiIndex .locked .narHash')
               echo $indexRev > PYPI_FETCHER_COMMIT
               echo $indexHash > PYPI_FETCHER_SHA256
 
