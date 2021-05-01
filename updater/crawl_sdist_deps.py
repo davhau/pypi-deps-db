@@ -442,6 +442,8 @@ def main():
     with Measure("ensure build time deps"):
         build_base(extractor_src, py_vers_short, store=store)
 
+    garbage_collected = False
+
     for idx, bucket in enumerate(LazyBucketDict.bucket_keys()):
         # calculate per bucket deadline if MAX_MINUTES is used
         if deadline_total:
@@ -472,8 +474,9 @@ def main():
 
         # ensure that all the build time dependencies are cached before starting,
         # otherwise jobs might time out
-        with Measure("ensure build time deps"):
-            build_base(extractor_src, py_vers_short, store=store)
+        if garbage_collected:
+            with Measure("ensure build time deps"):
+                build_base(extractor_src, py_vers_short, store=store)
         with Measure('executing jobs'):
             if workers > 1:
                 pool_results = utils.parallel(
@@ -515,13 +518,14 @@ def main():
             error_dict.save()
 
         # collect garbage if free space < MIN_FREE_GB
-        if (shutil.disk_usage(store or "/nix/store").free / 1000000000) < min_free_gb:
+        if (shutil.disk_usage(store or "/nix/store").free / (1000 ** 3) < min_free_gb:
             with Measure("collecting nix store garbage"):
                 sp.run(
                     f"nix-collect-garbage {f'--store {store}' if store else ''}",
                     capture_output=True,
                     shell=True
                 )
+                garbage_collected = True
 
         # stop execution if deadline occurred
         if deadline_total and time() > deadline_total:
