@@ -50,7 +50,7 @@ def construct_url(name, pyver, filename: str):
 
 
 def mine_wheel_metadata_full_download(job: Job) -> Union[Result, Exception]:
-    print(f"Bucket {job.bucket} - Job {job.nr} - {job.name}:{job.ver}")
+    print(f"Bucket {job.bucket} - Job {job.nr+1} - {job.name}:{job.ver}")
     for _ in range(5):
         try:
             with NamedTemporaryFile(suffix='.whl') as f:

@@ -131,7 +131,7 @@ def extract_requirements(job: PackageJob, deadline, total_num, store=None):
     try:
         if deadline and time() > deadline:
             raise Exception("Deadline occurred. Skipping this job")
-        print(f"Bucket {job.bucket} - Job {job.idx}/{total_num} - "
+        print(f"Bucket {job.bucket} - Job {job.idx+1}/{total_num} - "
               f"{job.name}:{job.version}     (py: {' '.join(job.py_versions)})")
         with TemporaryDirectory() as tempdir:
             out_dir = f"{tempdir}/json"
