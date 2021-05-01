@@ -112,12 +112,12 @@
               fi
 
               # crawl wheel and sdist packages
-              MAX_MINUTES=$MAX_MINUTES_WHEEL ${update-wheel.program}
-              MAX_MINUTES=$MAX_MINUTES_SDIST ${update-sdist.program}
+              MAX_MINUTES=''${MAX_MINUTES_WHEEL:-0} ${update-wheel.program}
+              MAX_MINUTES=''${MAX_MINUTES_SDIST:-0} ${update-sdist.program}
 
               # commit to git
               echo $(date +%s) > UNIX_TIMESTAMP
-              indexHash=$(${pkgs.nixthe updaterFlakes}/bin/nix flake metadata --json | ${pkgs.jq}/bin/jq -e --raw-output '.locks .nodes .pypiIndex .locked .narHash')
+              indexHash=$(${pkgs.nixFlakes}/bin/nix flake metadata --json | ${pkgs.jq}/bin/jq -e --raw-output '.locks .nodes .pypiIndex .locked .narHash')
               echo $indexRev > PYPI_FETCHER_COMMIT
               echo $indexHash > PYPI_FETCHER_SHA256
 
