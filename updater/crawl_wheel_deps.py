@@ -236,7 +236,7 @@ def iter_jobs(jobs_by_bucket: Dict[str, list], deadline):
 
 
 def main():
-    dump_dir = "./wheel"
+    dump_dir = os.environ.get('DUMP_DIR', "./wheel")
     max_minutes = int(os.environ.get('MAX_MINUTES', "0"))
     workers = int(os.environ.get('WORKERS', "1"))
     pypi_fetcher_dir = os.environ.get('PYPI_FETCHER')

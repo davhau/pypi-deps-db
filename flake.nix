@@ -112,8 +112,10 @@
               fi
 
               # crawl wheel and sdist packages
-              MAX_MINUTES=''${MAX_MINUTES_WHEEL:-0} ${update-wheel.program}
-              MAX_MINUTES=''${MAX_MINUTES_SDIST:-0} ${update-sdist.program}
+              # If CI system has a run time limit, make sure to set MAX_MINUTES_WHEEL and MAX_MINUTES_SDIST
+              # time ratio for wheel/sdist should be around 1/10
+              MAX_MINUTES=''${MAX_MINUTES_WHEEL:-0} ${pkgs.nixFlakes}/bin/nix run .#update-wheel
+              MAX_MINUTES=''${MAX_MINUTES_SDIST:-0} ${pkgs.nixFlakes}/bin/nix run .#update-sdist
 
               # commit to git
               echo $(date +%s) > UNIX_TIMESTAMP
