@@ -518,7 +518,7 @@ def main():
             error_dict.save()
 
         # collect garbage if free space < MIN_FREE_GB
-        if (shutil.disk_usage(store or "/nix/store").free / (1000 ** 3) < min_free_gb:
+        if shutil.disk_usage(store or "/nix/store").free / (1000 ** 3) < min_free_gb:
             with Measure("collecting nix store garbage"):
                 sp.run(
                     f"nix-collect-garbage {f'--store {store}' if store else ''}",
