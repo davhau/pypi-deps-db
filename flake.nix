@@ -109,6 +109,7 @@
               indexRev=$(${pkgs.nixFlakes}/bin/nix flake metadata --json | ${pkgs.jq}/bin/jq -e --raw-output '.locks .nodes .pypiIndex .locked .rev')
               if [ "$indexRevPrev" == "$indexRev" ]; then
                 echo "Index unchanged. Nothing to do. Exiting..."
+                exit 0
               fi
 
               # crawl wheel and sdist packages
