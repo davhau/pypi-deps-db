@@ -5,7 +5,7 @@ on:
   push:
     branches: [ "ci*" ]
   schedule:
-    - cron:  "12 0,6,12,18 * * *"
+    - cron:  "13 7,19 * * *"
   workflow_dispatch:
 
 jobs:
@@ -32,7 +32,7 @@ jobs:
           max-free = 30000000000
 
     # we crawl 4 times per day and split the data in 2 chunks, so we update all data twice a day
-    - name: update
+    - name: update sdist/wheel deps
       run: |
         set -x
         git config --local user.email "${{ github.actor }}@users.noreply.github.com"
