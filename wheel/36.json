@@ -2967,6 +2967,76 @@
           ],
           "requires_python": ">=3.6"
         }
+      },
+      "0.5.0": {
+        "brevitas-0.5.0-py3-none-any.whl": {
+          "provides_extras": [
+            "export",
+            "finn_integration_ge_pt150",
+            "finn_integration_lt_pt150",
+            "hadamard",
+            "ort_integration",
+            "stt",
+            "test",
+            "tts",
+            "vision",
+            "vitis_ai_integration"
+          ],
+          "requires_dist": [
+            "torch (>=1.1.0)",
+            "packaging",
+            "setuptools",
+            "future-annotations",
+            "dependencies (==2.0.1)",
+            "typing-extensions (>=3.7.4)",
+            "dataclasses ; python_version < \"3.7\"",
+            "onnx (==1.8.1) ; extra == 'export'",
+            "torch (>=1.5.0) ; extra == 'finn_integration_ge_pt150'",
+            "bitstring ; extra == 'finn_integration_ge_pt150'",
+            "finn-base ; extra == 'finn_integration_ge_pt150'",
+            "toposort ; extra == 'finn_integration_ge_pt150'",
+            "onnx (==1.7.0) ; extra == 'finn_integration_ge_pt150'",
+            "onnxruntime (==1.5.2) ; extra == 'finn_integration_ge_pt150'",
+            "torch (<1.5.0) ; extra == 'finn_integration_lt_pt150'",
+            "bitstring ; extra == 'finn_integration_lt_pt150'",
+            "finn-base ; extra == 'finn_integration_lt_pt150'",
+            "toposort ; extra == 'finn_integration_lt_pt150'",
+            "onnxruntime (==1.4.0) ; extra == 'finn_integration_lt_pt150'",
+            "onnx (==1.5.0) ; (python_version < \"3.8\" or sys_platform == \"linux\") and extra == 'finn_integration_lt_pt150'",
+            "onnx (==1.7.0) ; (python_version >= \"3.8\" and sys_platform != \"linux\") and extra == 'finn_integration_lt_pt150'",
+            "scipy ; extra == 'hadamard'",
+            "onnxruntime ; extra == 'ort_integration'",
+            "onnx (<=1.8.1) ; extra == 'ort_integration'",
+            "pillow (>=4.3.0) ; extra == 'stt'",
+            "ruamel.yaml ; extra == 'stt'",
+            "requests ; extra == 'stt'",
+            "librosa ; extra == 'stt'",
+            "inflect ; extra == 'stt'",
+            "unidecode ; extra == 'stt'",
+            "torch-stft ; extra == 'stt'",
+            "sox ; extra == 'stt'",
+            "tqdm ; extra == 'stt'",
+            "soundfile ; extra == 'stt'",
+            "numba (<=0.49.1) ; extra == 'stt'",
+            "pytest ; extra == 'test'",
+            "pytest-cases ; extra == 'test'",
+            "pytest-mock ; extra == 'test'",
+            "mock ; extra == 'test'",
+            "hypothesis ; extra == 'test'",
+            "scipy ; extra == 'test'",
+            "torchvision ; extra == 'test'",
+            "soundfile ; extra == 'tts'",
+            "librosa ; extra == 'tts'",
+            "numpy ; extra == 'tts'",
+            "scipy ; extra == 'tts'",
+            "tqdm ; extra == 'tts'",
+            "pillow ; extra == 'tts'",
+            "pyyaml ; extra == 'tts'",
+            "torchvision ; extra == 'vision'",
+            "onnx (<=1.8.1) ; extra == 'vitis_ai_integration'"
+          ],
+          "requires_python": ">=3.6"
+        }
       }
     }
   },
@@ -11793,6 +11863,23 @@
       }
     }
   },
+  "handadoc-client": {
+    "py2.py3": {
+      "0.0.1a0.dev6": {
+        "handadoc_client-0.0.1a0.dev6-py2.py3-none-any.whl": {
+          "requires_dist": [
+            "click",
+            "requests",
+            "jsonschema",
+            "myminions"
+          ]
+        }
+      },
+      "0.0.1a0.dev7": {
+        "handadoc_client-0.0.1a0.dev7-py2.py3-none-any.whl": "0.0.1a0.dev6@handadoc_client-0.0.1a0.dev6-py2.py3-none-any.whl"
+      }
+    }
+  },
   "hatcher": {
     "py2.py3": {
       "0.10.1": {
@@ -12147,6 +12234,9 @@
       },
       "3.0.1": {
         "holdingsparser-3.0.1-py3-none-any.whl": "0.1.0a20@holdingsparser-0.1.0a20-py3-none-any.whl"
+      },
+      "3.0.2": {
+        "holdingsparser-3.0.2-py3-none-any.whl": "0.1.0a20@holdingsparser-0.1.0a20-py3-none-any.whl"
       }
     }
   },
@@ -23960,6 +24050,45 @@
           ],
           "requires_python": ">=3.6"
         }
+      },
+      "0.1.7": {
+        "probnum-0.1.7-py2.py3-none-any.whl": {
+          "provides_extras": [
+            "full",
+            "jax",
+            "test",
+            "zoo"
+          ],
+          "requires_dist": [
+            "scipy (>=1.4)",
+            "dataclasses ; python_version < \"3.7\"",
+            "cached-property ; python_version < \"3.8\"",
+            "numpy (<=1.19.1) ; python_version <= \"3.6\"",
+            "numpy ; python_version > \"3.6\"",
+            "GPy ; extra == 'full'",
+            "matplotlib ; extra == 'full'",
+            "tqdm (>=4.0) ; extra == 'full'",
+            "requests (>=2.0) ; extra == 'full'",
+            "jax (<=0.2.13) ; (platform_system != \"Windows\") and extra == 'full'",
+            "jaxlib (<0.1.66) ; (platform_system != \"Windows\") and extra == 'full'",
+            "jax (<=0.2.13) ; (platform_system != \"Windows\") and extra == 'jax'",
+            "jaxlib (<0.1.66) ; (platform_system != \"Windows\") and extra == 'jax'",
+            "pytest (>=4.6) ; extra == 'test'",
+            "pytest-cov ; extra == 'test'",
+            "pytest-cases (>=3.2.1) ; extra == 'test'",
+            "GPy ; extra == 'test'",
+            "matplotlib ; extra == 'test'",
+            "tqdm (>=4.0) ; extra == 'test'",
+            "requests (>=2.0) ; extra == 'test'",
+            "jax (<=0.2.13) ; (platform_system != \"Windows\") and extra == 'test'",
+            "jaxlib (<0.1.66) ; (platform_system != \"Windows\") and extra == 'test'",
+            "tqdm (>=4.0) ; extra == 'zoo'",
+            "requests (>=2.0) ; extra == 'zoo'",
+            "jax (<=0.2.13) ; (platform_system != \"Windows\") and extra == 'zoo'",
+            "jaxlib (<0.1.66) ; (platform_system != \"Windows\") and extra == 'zoo'"
+          ],
+          "requires_python": ">=3.6"
+        }
       }
     }
   },
@@ -29242,6 +29371,9 @@
             "kaleido"
           ]
         }
+      },
+      "0.0.3": {
+        "Super_ML-0.0.3-py3-none-any.whl": "0.0.2@Super_ML-0.0.2-py3-none-any.whl"
       }
     }
   },
