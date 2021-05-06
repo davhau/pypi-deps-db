@@ -3877,17 +3877,6 @@
       }
     }
   },
-  "azcam-flaskserver": {
-    "py3": {
-      "21.1.1": {
-        "azcam_flaskserver-21.1.1-py3-none-any.whl": {
-          "requires_dist": [
-            "azcam"
-          ]
-        }
-      }
-    }
-  },
   "azure-cli-cloud": {
     "py2.py3": {
       "0.1.0b10": {
@@ -4258,28 +4247,31 @@
   },
   "bmcs-ibvpy": {
     "py2.py3": {
-      "0.0.3a0": {
-        "bmcs_ibvpy-0.0.3a0-py2.py3-none-any.whl": {
+      "0.0.10a0": {
+        "bmcs_ibvpy-0.0.10a0-py2.py3-none-any.whl": {
           "requires_python": ">=3.6.0"
         }
       },
+      "0.0.3a0": {
+        "bmcs_ibvpy-0.0.3a0-py2.py3-none-any.whl": "0.0.10a0@bmcs_ibvpy-0.0.10a0-py2.py3-none-any.whl"
+      },
       "0.0.4a0": {
-        "bmcs_ibvpy-0.0.4a0-py2.py3-none-any.whl": "0.0.3a0@bmcs_ibvpy-0.0.3a0-py2.py3-none-any.whl"
+        "bmcs_ibvpy-0.0.4a0-py2.py3-none-any.whl": "0.0.10a0@bmcs_ibvpy-0.0.10a0-py2.py3-none-any.whl"
       },
       "0.0.5a0": {
-        "bmcs_ibvpy-0.0.5a0-py2.py3-none-any.whl": "0.0.3a0@bmcs_ibvpy-0.0.3a0-py2.py3-none-any.whl"
+        "bmcs_ibvpy-0.0.5a0-py2.py3-none-any.whl": "0.0.10a0@bmcs_ibvpy-0.0.10a0-py2.py3-none-any.whl"
       },
       "0.0.6a0": {
-        "bmcs_ibvpy-0.0.6a0-py2.py3-none-any.whl": "0.0.3a0@bmcs_ibvpy-0.0.3a0-py2.py3-none-any.whl"
+        "bmcs_ibvpy-0.0.6a0-py2.py3-none-any.whl": "0.0.10a0@bmcs_ibvpy-0.0.10a0-py2.py3-none-any.whl"
       },
       "0.0.7a0": {
-        "bmcs_ibvpy-0.0.7a0-py2.py3-none-any.whl": "0.0.3a0@bmcs_ibvpy-0.0.3a0-py2.py3-none-any.whl"
+        "bmcs_ibvpy-0.0.7a0-py2.py3-none-any.whl": "0.0.10a0@bmcs_ibvpy-0.0.10a0-py2.py3-none-any.whl"
       },
       "0.0.8a0": {
-        "bmcs_ibvpy-0.0.8a0-py2.py3-none-any.whl": "0.0.3a0@bmcs_ibvpy-0.0.3a0-py2.py3-none-any.whl"
+        "bmcs_ibvpy-0.0.8a0-py2.py3-none-any.whl": "0.0.10a0@bmcs_ibvpy-0.0.10a0-py2.py3-none-any.whl"
       },
       "0.0.9a0": {
-        "bmcs_ibvpy-0.0.9a0-py2.py3-none-any.whl": "0.0.3a0@bmcs_ibvpy-0.0.3a0-py2.py3-none-any.whl"
+        "bmcs_ibvpy-0.0.9a0-py2.py3-none-any.whl": "0.0.10a0@bmcs_ibvpy-0.0.10a0-py2.py3-none-any.whl"
       }
     }
   },
@@ -10459,8 +10451,26 @@
       "1.3.4": {
         "django_mpesa-1.3.4-py3-none-any.whl": "0.1@django_mpesa-0.1-py3-none-any.whl"
       },
-      "2.0.0": {
-        "django_mpesa-2.0.0-py3-none-any.whl": "0.1@django_mpesa-0.1-py3-none-any.whl"
+      "2.0.1": {
+        "django_mpesa-2.0.1-py3-none-any.whl": {
+          "provides_extras": [
+            "dev",
+            "lint",
+            "test"
+          ],
+          "requires_dist": [
+            "Django (>=2.2)",
+            "djangorestframework (>=3.12.4)",
+            "requests (>=2.22.0)",
+            "bumpversion (<1,>=0.5.3) ; extra == 'dev'",
+            "wheel ; extra == 'dev'",
+            "twine ; extra == 'dev'",
+            "cryptography ; extra == 'dev'",
+            "pep8 ; extra == 'dev'",
+            "pep8 ; extra == 'lint'",
+            "cryptography ; extra == 'test'"
+          ]
+        }
       }
     }
   },
@@ -13307,6 +13317,35 @@
       },
       "0.5.14": {
         "ewah-0.5.14-py3-none-any.whl": "0.4.24@ewah-0.4.24-py3-none-any.whl"
+      },
+      "0.5.15": {
+        "ewah-0.5.15-py3-none-any.whl": {
+          "requires_dist": [
+            "azure-storage-blob (>=2.1.0)",
+            "cx-Oracle",
+            "facebook-business",
+            "google-ads",
+            "google-cloud-bigquery",
+            "googlemaps",
+            "gspread (>=3.6)",
+            "Jinja2",
+            "mailchimp3",
+            "oauth2client",
+            "psycopg2",
+            "pymongo",
+            "pymysql",
+            "pytz",
+            "pyyaml",
+            "recurly",
+            "simple-salesforce",
+            "snowflake-connector-python (>=2.3.8)",
+            "sshtunnel (>=0.2.2)",
+            "stripe",
+            "virtualenv",
+            "yahoofinancials"
+          ],
+          "requires_python": ">=3.6"
+        }
       },
       "0.5.2": {
         "ewah-0.5.2-py3-none-any.whl": "0.4.24@ewah-0.4.24-py3-none-any.whl"
