@@ -19521,25 +19521,25 @@
           "requires_python": ">=3.7"
         }
       },
-      "4.0.0.dev20210312143759": {
-        "momotor_bundles-4.0.0.dev20210312143759-py3-none-any.whl": {
+      "4.0.0.dev20210429145001": {
+        "momotor_bundles-4.0.0.dev20210429145001-py3-none-any.whl": {
           "provides_extras": [
             "docs",
             "lxml",
             "test"
           ],
           "requires_dist": [
-            "xsdata (==21.1.*)",
+            "xsdata (==21.4.*)",
             "typing-extensions ; python_version < \"3.8\"",
             "Sphinx ; extra == 'docs'",
             "sphinx-autodoc-typehints ; extra == 'docs'",
-            "lxml ; extra == 'lxml'",
+            "xsdata[lxml] (==21.4.*) ; extra == 'lxml'",
             "pytest ; extra == 'test'",
             "pytest-cov ; extra == 'test'",
             "pytest-doctestplus ; extra == 'test'",
             "pytest-pythonpath ; extra == 'test'",
             "xmljson ; extra == 'test'",
-            "lxml ; extra == 'test'"
+            "xsdata[lxml] (==21.4.*) ; extra == 'test'"
           ],
           "requires_python": ">=3.7"
         }
@@ -29105,6 +29105,17 @@
       },
       "1.2.6": {
         "pylexique-1.2.6-py2.py3-none-any.whl": "1.2.0@pylexique-1.2.0-py2.py3-none-any.whl"
+      },
+      "1.2.7": {
+        "pylexique-1.2.7-py2.py3-none-any.whl": {
+          "requires_dist": [
+            "joblib",
+            "colorama",
+            "tqdm",
+            "Click (>=7.1)",
+            "dataclasses (>=0.6) ; python_version < \"3.7\""
+          ]
+        }
       }
     }
   },

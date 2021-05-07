@@ -25718,7 +25718,9 @@
     "1.0.3": "0.5.0",
     "1.0.3.1": "0.5.0",
     "1.0.4": "0.5.0",
-    "1.0.5": "0.5.0"
+    "1.0.5": "0.5.0",
+    "1.0.6": "0.5.0",
+    "1.0.7": "0.5.0"
   },
   "django-test-utils3": {
     "0.11.10": "0.11.4",
@@ -39143,26 +39145,25 @@
     },
     "3.3.3": "3.3.2",
     "3.3.4": "3.3.2",
-    "4.0.0.dev20210312143759": {
+    "3.4.0": {
       "36": {
         "install_requires": [
-          "xsdata==21.1.*"
+          "xsdata==21.4.*"
         ],
         "extras_require": {
+          "test": [
+            "pytest",
+            "pytest-cov",
+            "pytest-pythonpath",
+            "xmljson",
+            "xsdata[lxml]==21.4.*"
+          ],
           "docs": [
             "Sphinx",
             "sphinx-autodoc-typehints"
           ],
           "lxml": [
-            "lxml"
-          ],
-          "test": [
-            "pytest",
-            "pytest-cov",
-            "pytest-doctestplus",
-            "pytest-pythonpath",
-            "xmljson",
-            "lxml"
+            "xsdata[lxml]==21.4.*"
           ],
           ":python_version < \"3.8\"": [
             "typing-extensions"
@@ -39177,7 +39178,7 @@
       "39": "36",
       "310": "36"
     },
-    "3.4.0": {
+    "4.0.0.dev20210429145001": {
       "36": {
         "install_requires": [
           "xsdata==21.4.*"
@@ -39186,6 +39187,7 @@
           "test": [
             "pytest",
             "pytest-cov",
+            "pytest-doctestplus",
             "pytest-pythonpath",
             "xmljson",
             "xsdata[lxml]==21.4.*"
@@ -52279,7 +52281,37 @@
     "1.2.3": "1.2.0",
     "1.2.4": "1.2.0",
     "1.2.5": "1.2.0",
-    "1.2.6": "1.2.0"
+    "1.2.6": "1.2.0",
+    "1.2.7": {
+      "27": {
+        "install_requires": [
+          "joblib",
+          "colorama",
+          "tqdm",
+          "Click>=7.1"
+        ],
+        "setup_requires": [
+          "pytest-runner"
+        ],
+        "extras_require": {
+          ":python_version < \"3.7\"": [
+            "dataclasses>=0.6"
+          ]
+        },
+        "tests_require": [
+          "pytest-runner",
+          "pytest",
+          "pytest-cov",
+          "dataclasses>=0.6; python_version < '3.7'",
+          "Click>=7.1"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "pylint-django": {
     "0.1": {
