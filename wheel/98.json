@@ -4576,6 +4576,16 @@
           ]
         }
       },
+      "0.2.0": {
+        "azure_mgmt_maps-0.2.0-py2.py3-none-any.whl": {
+          "requires_dist": [
+            "msrest (>=0.5.0)",
+            "msrestazure (<2.0.0,>=0.4.32)",
+            "azure-common (~=1.1)",
+            "azure-mgmt-nspkg ; python_version<'3.0'"
+          ]
+        }
+      },
       "1.0.0": {
         "azure_mgmt_maps-1.0.0-py2.py3-none-any.whl": {
           "requires_dist": [
@@ -4595,6 +4605,9 @@
             "azure-mgmt-nspkg ; python_version<'3.0'"
           ]
         }
+      },
+      "2.0.0": {
+        "azure_mgmt_maps-2.0.0-py2.py3-none-any.whl": "1.0.0@azure_mgmt_maps-1.0.0-py2.py3-none-any.whl"
       }
     }
   },
@@ -19743,6 +19756,39 @@
       "2.2.26b381.dev1": {
         "examtool-2.2.26b381.dev1-py3-none-any.whl": "2.2.24@examtool-2.2.24-py3-none-any.whl"
       },
+      "2.2.27b332.dev0": {
+        "examtool-2.2.27b332.dev0-py3-none-any.whl": {
+          "provides_extras": [
+            "admin",
+            "cli"
+          ],
+          "requires_dist": [
+            "cryptography",
+            "pytz ; extra == 'admin'",
+            "requests ; extra == 'admin'",
+            "pypandoc ; extra == 'admin'",
+            "google-cloud-firestore ; extra == 'admin'",
+            "google-auth ; extra == 'admin'",
+            "sendgrid ; extra == 'admin'",
+            "click ; extra == 'cli'",
+            "pikepdf ; extra == 'cli'",
+            "pytz ; extra == 'cli'",
+            "requests ; extra == 'cli'",
+            "fpdf ; extra == 'cli'",
+            "pypandoc ; extra == 'cli'",
+            "sendgrid ; extra == 'cli'",
+            "func-timeout ; extra == 'cli'",
+            "fullGSapi (>=1.3.11) ; extra == 'cli'",
+            "tqdm ; extra == 'cli'",
+            "numpy ; extra == 'cli'",
+            "opencv-python ; extra == 'cli'",
+            "pdfkit ; extra == 'cli'",
+            "PyPDF2 ; extra == 'cli'",
+            "pdfminer ; extra == 'cli'"
+          ],
+          "requires_python": ">=3.7"
+        }
+      },
       "2.2.3": {
         "examtool-2.2.3-py3-none-any.whl": "2.2.1@examtool-2.2.1-py3-none-any.whl"
       },
@@ -24363,30 +24409,6 @@
       }
     }
   },
-  "kolas-cache": {
-    "py3": {
-      "0.1.0": {
-        "kolas_cache-0.1.0-py3-none-any.whl": {
-          "requires_python": ">=3.6,<4.0"
-        }
-      },
-      "0.1.1": {
-        "kolas_cache-0.1.1-py3-none-any.whl": {
-          "provides_extras": [
-            "aiofiles",
-            "aiomcache",
-            "aioredis"
-          ],
-          "requires_dist": [
-            "aiofiles (>=0.4.0,<0.5.0); extra == \"aiofiles\"",
-            "aiomcache (>=0.6.0,<0.7.0); extra == \"aiomcache\"",
-            "aioredis (>=1.2,<2.0); extra == \"aioredis\""
-          ],
-          "requires_python": ">=3.6,<4.0"
-        }
-      }
-    }
-  },
   "languageflow": {
     "py2.py3": {
       "1.1.10": {
@@ -26605,8 +26627,20 @@
       "1.17.69.0": {
         "mypy_boto3_apigateway-1.17.69.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_apigateway-1.13.24.3-py3-none-any.whl"
       },
+      "1.17.69.0.post1": {
+        "mypy_boto3_apigateway-1.17.69.0.post1-py3-none-any.whl": "1.13.24.3@mypy_boto3_apigateway-1.13.24.3-py3-none-any.whl"
+      },
       "1.17.7.0": {
         "mypy_boto3_apigateway-1.17.7.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_apigateway-1.13.24.3-py3-none-any.whl"
+      },
+      "1.17.70": {
+        "mypy_boto3_apigateway-1.17.70-py3-none-any.whl": "1.13.24.3@mypy_boto3_apigateway-1.13.24.3-py3-none-any.whl"
+      },
+      "1.17.70.post1": {
+        "mypy_boto3_apigateway-1.17.70.post1-py3-none-any.whl": "1.13.24.3@mypy_boto3_apigateway-1.13.24.3-py3-none-any.whl"
+      },
+      "1.17.70.post2": {
+        "mypy_boto3_apigateway-1.17.70.post2-py3-none-any.whl": "1.13.24.3@mypy_boto3_apigateway-1.13.24.3-py3-none-any.whl"
       },
       "1.17.8.0": {
         "mypy_boto3_apigateway-1.17.8.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_apigateway-1.13.24.3-py3-none-any.whl"
@@ -27503,8 +27537,20 @@
       "1.17.69.0": {
         "mypy_boto3_pinpoint-1.17.69.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_pinpoint-1.13.24.3-py3-none-any.whl"
       },
+      "1.17.69.0.post1": {
+        "mypy_boto3_pinpoint-1.17.69.0.post1-py3-none-any.whl": "1.13.24.3@mypy_boto3_pinpoint-1.13.24.3-py3-none-any.whl"
+      },
       "1.17.7.0": {
         "mypy_boto3_pinpoint-1.17.7.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_pinpoint-1.13.24.3-py3-none-any.whl"
+      },
+      "1.17.70": {
+        "mypy_boto3_pinpoint-1.17.70-py3-none-any.whl": "1.13.24.3@mypy_boto3_pinpoint-1.13.24.3-py3-none-any.whl"
+      },
+      "1.17.70.post1": {
+        "mypy_boto3_pinpoint-1.17.70.post1-py3-none-any.whl": "1.13.24.3@mypy_boto3_pinpoint-1.13.24.3-py3-none-any.whl"
+      },
+      "1.17.70.post2": {
+        "mypy_boto3_pinpoint-1.17.70.post2-py3-none-any.whl": "1.13.24.3@mypy_boto3_pinpoint-1.13.24.3-py3-none-any.whl"
       },
       "1.17.8.0": {
         "mypy_boto3_pinpoint-1.17.8.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_pinpoint-1.13.24.3-py3-none-any.whl"
@@ -44038,6 +44084,9 @@
       },
       "3.0.390": {
         "tencentcloud_sdk_python_ms-3.0.390-py2.py3-none-any.whl": "3.0.252@tencentcloud_sdk_python_ms-3.0.252-py2.py3-none-any.whl"
+      },
+      "3.0.391": {
+        "tencentcloud_sdk_python_ms-3.0.391-py2.py3-none-any.whl": "3.0.252@tencentcloud_sdk_python_ms-3.0.252-py2.py3-none-any.whl"
       }
     }
   },
@@ -44459,6 +44508,9 @@
       },
       "3.0.390": {
         "tencentcloud_sdk_python_tbm-3.0.390-py2.py3-none-any.whl": "3.0.252@tencentcloud_sdk_python_tbm-3.0.252-py2.py3-none-any.whl"
+      },
+      "3.0.391": {
+        "tencentcloud_sdk_python_tbm-3.0.391-py2.py3-none-any.whl": "3.0.252@tencentcloud_sdk_python_tbm-3.0.252-py2.py3-none-any.whl"
       }
     }
   },
