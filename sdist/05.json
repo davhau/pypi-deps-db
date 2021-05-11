@@ -14965,7 +14965,34 @@
     },
     "0.0.13": "0.0.12",
     "0.0.14": "0.0.12",
-    "0.0.15": "0.0.12"
+    "0.0.15": "0.0.12",
+    "0.0.16": {
+      "36": {
+        "install_requires": [
+          "torch==1.7.1",
+          "numpy>=1.18.5",
+          "pandas>=1.1.5",
+          "torchvision==0.8.2",
+          "Pillow>=7.2.0",
+          "pycocotools>=2.0.2",
+          "GitPython>=3.1.11",
+          "keyrings.alt>=4.0.1",
+          "seaborn>=0.11.0",
+          "boto3>=1.16.41",
+          "requests>=2.24.0",
+          "progressbar2>=2.4.0",
+          "tabulate>=0.8.7"
+        ],
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "0.0.17": "0.0.16"
   },
   "doomgit": {
     "0.1.0": {
@@ -21193,7 +21220,8 @@
       "39": "36",
       "310": "36"
     },
-    "0.1.1": "0.1.0"
+    "0.1.1": "0.1.0",
+    "0.1.2": "0.1.0"
   },
   "jupyterhub-swarmspawner": {
     "1.1": {
@@ -22390,7 +22418,9 @@
     "1.5.1.dev3": "1.4.0",
     "1.5.1.dev5": "1.4.0",
     "1.5.1.dev7": "1.4.0",
-    "1.5.1.dev8": "1.4.0"
+    "1.5.1.dev8": "1.4.0",
+    "1.5.1.dev10": "1.4.0",
+    "1.5.1.dev11": "1.4.0"
   },
   "lastrun": {
     "0.1": {
@@ -25695,6 +25725,55 @@
       "37": {
         "install_requires": [
           "muffin>=0.67",
+          "muffin-rest>=2.6.3"
+        ],
+        "extras_require": {
+          "peewee": [
+            "muffin-peewee",
+            "marshmallow-peewee"
+          ],
+          "sqlalchemy": [
+            "muffin-databases>=0.2.4",
+            "marshmallow-sqlalchemy",
+            "sqlalchemy<1.4"
+          ],
+          "tests": [
+            "aiofile",
+            "aiosqlite",
+            "marshmallow-peewee",
+            "marshmallow-sqlalchemy",
+            "muffin-databases>=0.2.4",
+            "muffin-peewee",
+            "peewee",
+            "pytest",
+            "pytest-aio[curio,trio]",
+            "pytest-mypy",
+            "sqlalchemy<1.4"
+          ],
+          "build": [
+            "bump2version",
+            "wheel"
+          ],
+          "example": [
+            "uvicorn",
+            "mixer",
+            "peewee",
+            "muffin-peewee",
+            "muffin-databases"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "38": "37",
+      "39": "37",
+      "310": "37"
+    },
+    "0.22.5": {
+      "37": {
+        "install_requires": [
+          "muffin>=0.71",
           "muffin-rest>=2.6.3"
         ],
         "extras_require": {
