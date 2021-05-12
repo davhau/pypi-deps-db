@@ -15776,22 +15776,6 @@
       },
       "2021.2.0": {
         "genomeworks_cuda_10_1-2021.2.0-cp37-none-any.whl": "0.6.0.dev201105@genomeworks_cuda_10_1-0.6.0.dev201105-cp37-none-any.whl"
-      },
-      "2021.5.0": {
-        "genomeworks_cuda_10_1-2021.5.0-cp37-none-any.whl": {
-          "requires_dist": [
-            "Cython (~=0.29.14)",
-            "intervaltree (==3.1.0)",
-            "matplotlib (==3.3.2)",
-            "networkx (==2.4)",
-            "numpy (~=1.17.5)",
-            "pytest (==4.4.1)",
-            "setuptools (>=41.4.0)",
-            "sortedcollections (==1.1.2)",
-            "tqdm (==4.31.1)"
-          ],
-          "requires_python": ">=3.5"
-        }
       }
     },
     "py3": {
@@ -20918,6 +20902,16 @@
       },
       "0.0.6": {
         "intercode-0.0.6-py3-none-any.whl": "0.0.1@intercode-0.0.1-py3-none-any.whl"
+      },
+      "0.0.7": {
+        "intercode-0.0.7-py3-none-any.whl": {
+          "requires_dist": [
+            "anndata",
+            "torch",
+            "numpy",
+            "scikit-learn"
+          ]
+        }
       }
     }
   },
@@ -27016,6 +27010,9 @@
       "1.17.71": {
         "mypy_boto3_alexaforbusiness-1.17.71-py3-none-any.whl": "1.13.24.3@mypy_boto3_alexaforbusiness-1.13.24.3-py3-none-any.whl"
       },
+      "1.17.71.post1": {
+        "mypy_boto3_alexaforbusiness-1.17.71.post1-py3-none-any.whl": "1.13.24.3@mypy_boto3_alexaforbusiness-1.13.24.3-py3-none-any.whl"
+      },
       "1.17.8.0": {
         "mypy_boto3_alexaforbusiness-1.17.8.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_alexaforbusiness-1.13.24.3-py3-none-any.whl"
       },
@@ -27932,6 +27929,9 @@
       "1.17.71": {
         "mypy_boto3_config-1.17.71-py3-none-any.whl": "1.13.24.3@mypy_boto3_config-1.13.24.3-py3-none-any.whl"
       },
+      "1.17.71.post1": {
+        "mypy_boto3_config-1.17.71.post1-py3-none-any.whl": "1.13.24.3@mypy_boto3_config-1.13.24.3-py3-none-any.whl"
+      },
       "1.17.8.0": {
         "mypy_boto3_config-1.17.8.0-py3-none-any.whl": "1.13.24.3@mypy_boto3_config-1.13.24.3-py3-none-any.whl"
       },
@@ -28551,15 +28551,6 @@
             "nxpy-sequence",
             "nxpy-xml"
           ]
-        }
-      }
-    }
-  },
-  "obc-ai": {
-    "py2.py3": {
-      "0.0": {
-        "OBC_AI-0.0-py2.py3-none-any.whl": {
-          "requires_python": ">=3.6.13"
         }
       }
     }
@@ -40493,6 +40484,15 @@
       "0.8.5": {
         "statefun_tasks-0.8.5-py3-none-any.whl": "0.8.2@statefun_tasks-0.8.2-py3-none-any.whl"
       },
+      "0.8.6": {
+        "statefun_tasks-0.8.6-py3-none-any.whl": "0.8.2@statefun_tasks-0.8.2-py3-none-any.whl"
+      },
+      "0.8.7": {
+        "statefun_tasks-0.8.7-py3-none-any.whl": "0.8.2@statefun_tasks-0.8.2-py3-none-any.whl"
+      },
+      "0.8.8": {
+        "statefun_tasks-0.8.8-py3-none-any.whl": "0.8.2@statefun_tasks-0.8.2-py3-none-any.whl"
+      },
       "0.9.0": {
         "statefun_tasks-0.9.0-py3-none-any.whl": {
           "requires_dist": [
@@ -40510,6 +40510,12 @@
       },
       "0.9.3": {
         "statefun_tasks-0.9.3-py3-none-any.whl": "0.9.0@statefun_tasks-0.9.0-py3-none-any.whl"
+      },
+      "0.9.4": {
+        "statefun_tasks-0.9.4-py3-none-any.whl": "0.9.0@statefun_tasks-0.9.0-py3-none-any.whl"
+      },
+      "0.9.5": {
+        "statefun_tasks-0.9.5-py3-none-any.whl": "0.9.0@statefun_tasks-0.9.0-py3-none-any.whl"
       }
     }
   },
@@ -40906,6 +40912,35 @@
             "Cython ; extra == 'sdd'",
             "PySDD (>=0.2.9) ; extra == 'sdd'",
             "cysignals ; extra == 'sdd'",
+            "pytest ; extra == 'test'",
+            "tox ; extra == 'test'",
+            "pytest-cov ; extra == 'test'",
+            "mypy ; extra == 'test'"
+          ],
+          "requires_python": ">=3.6"
+        }
+      },
+      "0.7.0": {
+        "tarski-0.7.0-py3-none-any.whl": {
+          "provides_extras": [
+            "arithmetic",
+            "docs",
+            "rddl",
+            "test"
+          ],
+          "requires_dist": [
+            "multipledispatch",
+            "antlr4-python3-runtime (==4.7.2)",
+            "psutil ; platform_system == \"Linux\"",
+            "scipy ; extra == 'arithmetic'",
+            "numpy ; extra == 'arithmetic'",
+            "sphinx (>=2.1.2) ; extra == 'docs'",
+            "recommonmark ; extra == 'docs'",
+            "nbsphinx ; extra == 'docs'",
+            "sphinx-rtd-theme ; extra == 'docs'",
+            "ipykernel ; extra == 'docs'",
+            "ipython ; extra == 'docs'",
+            "pyrddl ; extra == 'rddl'",
             "pytest ; extra == 'test'",
             "tox ; extra == 'test'",
             "pytest-cov ; extra == 'test'",
