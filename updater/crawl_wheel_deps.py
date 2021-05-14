@@ -49,11 +49,11 @@ def construct_url(name, pyver, filename: str):
     return f"{base_url}{pyver}/{name[0]}/{name}/{filename}"
 
 
-def mine_wheel_metadata_full_download(job: Job) -> Union[Result, Exception]:
+def mine_wheel_metadata_full_download(job: Job, tmp_dir) -> Union[Result, Exception]:
     print(f"Bucket {job.bucket} (seq {job.bucket_seq}) - Job {job.nr+1} - {job.name}:{job.ver}")
     for _ in range(5):
         try:
-            with NamedTemporaryFile(suffix='.whl') as f:
+            with NamedTemporaryFile(suffix='.whl', dir=tmp_dir) as f:
                 resp = requests.get(job.url, headers=headers)
                 if resp.status_code == 404:
                     return requests.HTTPError()
@@ -156,9 +156,9 @@ def compress(dump_dict):
                         all_fnames[f"{pkg_ver}@{fn}"] = data
 
 
-def exec_or_return_exc(func, job):
+def exec_or_return_exc(func, job, *args):
     try:
-        return func(job)
+        return func(job, *args)
     except Exception as e:
         traceback.print_exc()
         return e
@@ -240,6 +240,7 @@ def main():
     max_minutes = int(os.environ.get('MAX_MINUTES', "0"))
     workers = int(os.environ.get('WORKERS', "1"))
     pypi_fetcher_dir = os.environ.get('PYPI_FETCHER')
+    tmp_dir = os.environ.get('TMP_DIR', default=None)
 
     print(f'Index directory: {pypi_fetcher_dir}')
     assert isdir(pypi_fetcher_dir)
@@ -263,13 +264,13 @@ def main():
     func = mine_wheel_metadata_full_download
     if workers > 1:
         def f(job):
-            return exec_or_return_exc(func, job)
+            return exec_or_return_exc(func, job, tmp_dir)
         results = parallel(
             f,
             (iter_jobs(jobs_by_bucket, deadline),),
             workers=workers)
     else:
-        results = [exec_or_return_exc(func, job) for job in iter_jobs(jobs_by_bucket, deadline)]
+        results = [exec_or_return_exc(func, job, tmp_dir) for job in iter_jobs(jobs_by_bucket, deadline)]
     
     # split results back into bucket groups
     idx = 0
