@@ -13935,6 +13935,38 @@
       "1.17.3": {
         "django_ca-1.17.3-py2.py3-none-any.whl": "1.17.1@django_ca-1.17.1-py2.py3-none-any.whl"
       }
+    },
+    "py3": {
+      "1.18.0": {
+        "django_ca-1.18.0-py3-none-any.whl": {
+          "provides_extras": [
+            "acme",
+            "celery",
+            "mysql",
+            "postgres",
+            "redis"
+          ],
+          "requires_dist": [
+            "Django (>=2.2)",
+            "asn1crypto (>=1.0.1)",
+            "cryptography (>=3.0)",
+            "django-object-actions (>=1.1)",
+            "idna (>=2.10)",
+            "packaging",
+            "typing-extensions ; python_version < \"3.8\"",
+            "acme (>=1.12) ; extra == 'acme'",
+            "josepy (>=1.5.0) ; extra == 'acme'",
+            "requests ; extra == 'acme'",
+            "celery (>=5.0) ; extra == 'celery'",
+            "mysqlclient (>=1.4) ; extra == 'mysql'",
+            "psycopg2 (>2.8) ; extra == 'postgres'",
+            "hiredis (>=1.1) ; extra == 'redis'",
+            "redis (>=3.5) ; extra == 'redis'",
+            "django-redis-cache (>=2.1) ; extra == 'redis'"
+          ],
+          "requires_python": ">=3.6"
+        }
+      }
     }
   },
   "django-cryptolock": {
@@ -29721,6 +29753,19 @@
       },
       "12.0.1.2.0": {
         "odoo12_addon_website_event_filter_selector-12.0.1.2.0-py3-none-any.whl": "12.0.1.0.0.99.dev2@odoo12_addon_website_event_filter_selector-12.0.1.0.0.99.dev2-py3-none-any.whl"
+      }
+    }
+  },
+  "odoo13-addon-agreement-legal": {
+    "py3": {
+      "13.0.1.0.1.dev2": {
+        "odoo13_addon_agreement_legal-13.0.1.0.1.dev2-py3-none-any.whl": {
+          "requires_dist": [
+            "odoo13-addon-agreement",
+            "odoo (<13.1dev,>=13.0a)"
+          ],
+          "requires_python": ">=3.5"
+        }
       }
     }
   },

@@ -30776,7 +30776,40 @@
     "0.3.6": "0.3.0",
     "0.3.7": "0.3.0",
     "0.3.8": "0.3.0",
-    "0.3.9": "0.3.0"
+    "0.3.9": "0.3.0",
+    "0.3.10": {
+      "36": {
+        "install_requires": [
+          "werkzeug<=1.0.1"
+        ],
+        "extras_require": {
+          "full": [
+            "numpy",
+            "zarr"
+          ],
+          "jupyter": [
+            "numpy",
+            "ipykernel"
+          ],
+          "socketio": [
+            "numpy",
+            "python-socketio[client]>=5.0.4",
+            "python-engineio>=4.0.0"
+          ],
+          ":python_version < \"3.7\"": [
+            "aiocontextvars",
+            "contextvars"
+          ]
+        },
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "infrae.plone.relations.schema": {
     "1.0": {
