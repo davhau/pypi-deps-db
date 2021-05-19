@@ -6179,7 +6179,8 @@
     },
     "3.5": "3.4",
     "3.6": "3.4",
-    "3.7": "3.4"
+    "3.7": "3.4",
+    "3.8": "3.4"
   },
   "berry-module": {
     "1.0.0": {
@@ -25990,11 +25991,63 @@
       "39": "37",
       "310": "37"
     },
-    "0.22.5": {
+    "0.22.5": "1.1.1",
+    "1.1.1": {
       "37": {
         "install_requires": [
           "muffin>=0.71",
           "muffin-rest>=2.6.3"
+        ],
+        "extras_require": {
+          "peewee": [
+            "muffin-peewee",
+            "marshmallow-peewee"
+          ],
+          "sqlalchemy": [
+            "muffin-databases>=0.2.4",
+            "marshmallow-sqlalchemy",
+            "sqlalchemy<1.4"
+          ],
+          "tests": [
+            "aiofile",
+            "aiosqlite",
+            "marshmallow-peewee",
+            "marshmallow-sqlalchemy",
+            "muffin-databases>=0.2.4",
+            "muffin-peewee",
+            "peewee",
+            "pytest",
+            "pytest-aio[curio,trio]",
+            "pytest-mypy",
+            "sqlalchemy<1.4"
+          ],
+          "build": [
+            "bump2version",
+            "wheel"
+          ],
+          "example": [
+            "uvicorn",
+            "mixer",
+            "peewee",
+            "muffin-peewee",
+            "muffin-databases"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "38": "37",
+      "39": "37",
+      "310": "37"
+    },
+    "1.1.2": "1.1.1",
+    "1.2.0": "1.1.1",
+    "1.3.0": {
+      "37": {
+        "install_requires": [
+          "muffin>=0.71",
+          "muffin-rest>=2.7.1"
         ],
         "extras_require": {
           "peewee": [
@@ -31630,7 +31683,9 @@
       "310": "27"
     },
     "2.4": "2.3",
-    "2.5": "2.3"
+    "2.5": "2.3",
+    "2.6": "2.3",
+    "2.7": "2.3"
   },
   "pygments-style-goggles": {
     "0.1": {
@@ -34534,7 +34589,33 @@
       "38": "27",
       "39": "27",
       "310": "27"
-    }
+    },
+    "4.0.1": {
+      "27": {
+        "install_requires": [
+          "future",
+          "requests",
+          "py-loader",
+          "tqdm",
+          "colorama",
+          "pysnmp"
+        ],
+        "extras_require": {
+          "tests": [
+            "pytest",
+            "pytest-forked",
+            "pytest-xdist",
+            "flake8"
+          ]
+        }
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "4.0.3": "4.0.1"
   },
   "rrc-sentry-dingding-robot": {
     "1.2.2": {
