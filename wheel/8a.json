@@ -26642,6 +26642,9 @@
       },
       "0.6.2": {
         "pyqec-0.6.2-cp39-cp39-manylinux2010_x86_64.whl": "0.5.1@pyqec-0.5.1-cp39-cp39-manylinux2010_x86_64.whl"
+      },
+      "0.6.3": {
+        "pyqec-0.6.3-cp39-cp39-manylinux2010_x86_64.whl": "0.5.1@pyqec-0.5.1-cp39-cp39-manylinux2010_x86_64.whl"
       }
     }
   },
@@ -53481,8 +53484,8 @@
       "1.5.0": {
         "slo_generator-1.5.0-py2.py3-none-any.whl": "1.3.1@slo_generator-1.3.1-py2.py3-none-any.whl"
       },
-      "2.0.0a0": {
-        "slo_generator-2.0.0a0-py2.py3-none-any.whl": {
+      "2.0.0.dev0": {
+        "slo_generator-2.0.0.dev0-py2.py3-none-any.whl": {
           "provides_extras": [
             "api",
             "bigquery",
@@ -53497,13 +53500,14 @@
             "pyyaml",
             "ruamel.yaml",
             "python-dateutil",
+            "click",
             "Flask ; extra == 'api'",
             "gunicorn ; extra == 'api'",
+            "cloudevents ; extra == 'api'",
+            "functions-framework ; extra == 'api'",
             "google-api-python-client (<2.0.0) ; extra == 'bigquery'",
-            "oauth2client ; extra == 'bigquery'",
             "google-cloud-bigquery (<3.0.0) ; extra == 'bigquery'",
             "google-api-python-client (<2.0.0) ; extra == 'cloud_monitoring'",
-            "oauth2client ; extra == 'cloud_monitoring'",
             "google-cloud-monitoring (<2.0.0) ; extra == 'cloud_monitoring'",
             "datadog ; extra == 'datadog'",
             "retrying (==1.3.3) ; extra == 'datadog'",
@@ -53517,7 +53521,98 @@
             "prometheus-client ; extra == 'prometheus'",
             "prometheus-http-client ; extra == 'prometheus'",
             "google-api-python-client (<2.0.0) ; extra == 'pubsub'",
-            "oauth2client ; extra == 'pubsub'",
+            "google-cloud-pubsub (==1.7.0) ; extra == 'pubsub'"
+          ],
+          "requires_python": ">=3.4"
+        }
+      },
+      "2.0.0.dev1": {
+        "slo_generator-2.0.0.dev1-py2.py3-none-any.whl": {
+          "provides_extras": [
+            "api",
+            "bigquery",
+            "cloud_monitoring",
+            "datadog",
+            "dev",
+            "elasticsearch",
+            "prometheus",
+            "pubsub"
+          ],
+          "requires_dist": [
+            "pyyaml",
+            "ruamel.yaml",
+            "python-dateutil",
+            "click (<8.0)",
+            "Flask ; extra == 'api'",
+            "gunicorn ; extra == 'api'",
+            "cloudevents ; extra == 'api'",
+            "functions-framework ; extra == 'api'",
+            "google-api-python-client (<2.0.0) ; extra == 'bigquery'",
+            "google-cloud-bigquery (<3.0.0) ; extra == 'bigquery'",
+            "google-api-python-client (<2.0.0) ; extra == 'cloud_monitoring'",
+            "google-cloud-monitoring (<2.0.0) ; extra == 'cloud_monitoring'",
+            "datadog ; extra == 'datadog'",
+            "retrying (==1.3.3) ; extra == 'datadog'",
+            "wheel ; extra == 'dev'",
+            "flake8 ; extra == 'dev'",
+            "mock ; extra == 'dev'",
+            "coverage ; extra == 'dev'",
+            "nose ; extra == 'dev'",
+            "pylint ; extra == 'dev'",
+            "elasticsearch ; extra == 'elasticsearch'",
+            "prometheus-client ; extra == 'prometheus'",
+            "prometheus-http-client ; extra == 'prometheus'",
+            "google-api-python-client (<2.0.0) ; extra == 'pubsub'",
+            "google-cloud-pubsub (==1.7.0) ; extra == 'pubsub'"
+          ],
+          "requires_python": ">=3.4"
+        }
+      },
+      "2.0.0.dev2": {
+        "slo_generator-2.0.0.dev2-py2.py3-none-any.whl": {
+          "provides_extras": [
+            "api",
+            "bigquery",
+            "cloud_monitoring",
+            "cloud_service_monitoring",
+            "cloud_storage",
+            "datadog",
+            "dev",
+            "dynatrace",
+            "elasticsearch",
+            "prometheus",
+            "pubsub"
+          ],
+          "requires_dist": [
+            "pyyaml",
+            "ruamel.yaml",
+            "python-dateutil",
+            "click (<8.0)",
+            "Flask ; extra == 'api'",
+            "gunicorn ; extra == 'api'",
+            "cloudevents ; extra == 'api'",
+            "functions-framework ; extra == 'api'",
+            "google-api-python-client (<2.0.0) ; extra == 'bigquery'",
+            "google-cloud-bigquery (<3.0.0) ; extra == 'bigquery'",
+            "google-api-python-client (<2.0.0) ; extra == 'cloud_monitoring'",
+            "google-cloud-monitoring (<2.0.0) ; extra == 'cloud_monitoring'",
+            "google-api-python-client (<2.0.0) ; extra == 'cloud_service_monitoring'",
+            "google-cloud-monitoring (<2.0.0) ; extra == 'cloud_service_monitoring'",
+            "google-api-python-client (<2.0.0) ; extra == 'cloud_storage'",
+            "google-cloud-storage ; extra == 'cloud_storage'",
+            "datadog ; extra == 'datadog'",
+            "retrying (==1.3.3) ; extra == 'datadog'",
+            "wheel ; extra == 'dev'",
+            "flake8 ; extra == 'dev'",
+            "mock ; extra == 'dev'",
+            "coverage ; extra == 'dev'",
+            "nose ; extra == 'dev'",
+            "pylint ; extra == 'dev'",
+            "requests ; extra == 'dynatrace'",
+            "elasticsearch ; extra == 'elasticsearch'",
+            "prometheus-client ; extra == 'prometheus'",
+            "prometheus-http-client ; extra == 'prometheus'",
+            "google-api-python-client (<2.0.0) ; extra == 'pubsub'",
             "google-cloud-pubsub (==1.7.0) ; extra == 'pubsub'"
           ],
           "requires_python": ">=3.4"
