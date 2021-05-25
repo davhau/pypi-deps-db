@@ -13824,7 +13824,8 @@
     "7.5.1": "7.3.3",
     "7.5.2a1": "7.3.3",
     "7.5.2": "7.3.3",
-    "7.5.3": "7.3.3"
+    "7.5.3": "7.3.3",
+    "7.5.4": "7.3.3"
   },
   "dbapi-compliance": {
     "1.15.0": {
@@ -22553,7 +22554,8 @@
       "310": "36"
     },
     "0.0.2.5": "0.0.2.4",
-    "0.0.2.6": "0.0.2.4"
+    "0.0.2.6": "0.0.2.4",
+    "0.0.2.7": "0.0.2.4"
   },
   "hklpy": {
     "0.3.14": {
@@ -35036,6 +35038,37 @@
           "test": [
             "pytest",
             "coverage[toml]"
+          ],
+          ":python_version<'3.7'": [
+            "importlib_resources"
+          ]
+        },
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "0.2": {
+      "27": {
+        "install_requires": [
+          "typer[all]~=0.3.2"
+        ],
+        "extras_require": {
+          "test": [
+            "pytest",
+            "coverage[toml]"
+          ],
+          "doc": [
+            "sphinx",
+            "furo",
+            "myst-parser",
+            "typer-cli",
+            "towncrier"
           ],
           ":python_version<'3.7'": [
             "importlib_resources"
