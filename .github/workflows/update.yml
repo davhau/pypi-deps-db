@@ -37,11 +37,20 @@ jobs:
         set -x
         git config --local user.email "${{ github.actor }}@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
+
+        # create temporary directory for downloads
         export TMP_DIR=./tmplocal
+        mkdir $TMP_DIR
+
+        # despite the temporary dir residing on disk,
+        # the number of workers somehow still significantly affects RAM usage.
+        # TODO: fix it
         export WORKERS=5
+
+        # make sure that githubs time limit of 6h is not exceeded
         export MAX_MINUTES_WHEEL=30
         export MAX_MINUTES_SDIST=300
-        mkdir $TMP_DIR
+
         nix run -L .#job-sdist-wheel
         git push
 
