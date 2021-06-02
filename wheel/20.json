@@ -894,6 +894,9 @@
       "0.1.48": {
         "airiam-0.1.48-py3-none-any.whl": "0.1.41@airiam-0.1.41-py3-none-any.whl"
       },
+      "0.1.49": {
+        "airiam-0.1.49-py3-none-any.whl": "0.1.41@airiam-0.1.41-py3-none-any.whl"
+      },
       "0.1.5": {
         "airiam-0.1.5-py3-none-any.whl": "0.1.2@airiam-0.1.2-py3-none-any.whl"
       },
@@ -19375,6 +19378,9 @@
       },
       "0.2.1": {
         "labcams-0.2.1-py3-none-any.whl": "0.2@labcams-0.2-py3-none-any.whl"
+      },
+      "0.3.0": {
+        "labcams-0.3.0-py3-none-any.whl": "0.2@labcams-0.2-py3-none-any.whl"
       }
     }
   },
@@ -25818,6 +25824,9 @@
       },
       "0.1.6": {
         "opal_common-0.1.6-py3-none-any.whl": "0.1.2@opal_common-0.1.2-py3-none-any.whl"
+      },
+      "0.1.7": {
+        "opal_common-0.1.7-py3-none-any.whl": "0.1.2@opal_common-0.1.2-py3-none-any.whl"
       }
     }
   },
@@ -31846,6 +31855,36 @@
       "1.5.1": {
         "pytest_mock_resources-1.5.1-py2.py3-none-any.whl": "1.5.0@pytest_mock_resources-1.5.0-py2.py3-none-any.whl"
       }
+    },
+    "py3": {
+      "2.0.0": {
+        "pytest_mock_resources-2.0.0-py3-none-any.whl": {
+          "provides_extras": [
+            "mongo",
+            "mysql",
+            "postgres",
+            "postgres-binary",
+            "redis",
+            "redshift"
+          ],
+          "requires_dist": [
+            "boto3; extra == \"redshift\"",
+            "docker (>=2.5.1)",
+            "functools32; python_version >= \"2.7\" and python_version < \"2.8\"",
+            "moto; extra == \"redshift\"",
+            "psycopg2-binary; extra == \"postgres-binary\"",
+            "psycopg2; extra == \"postgres\"",
+            "pymongo; extra == \"mongo\"",
+            "pymysql (>=1.0); extra == \"mysql\"",
+            "pytest (>=1.0)",
+            "redis; extra == \"redis\"",
+            "responses",
+            "sqlalchemy",
+            "sqlparse; extra == \"redshift\""
+          ],
+          "requires_python": ">=3.6,<4"
+        }
+      }
     }
   },
   "pytest-pinned": {
@@ -32995,6 +33034,40 @@
       "1.9.6": {
         "rapidtide-1.9.6-py2.py3-none-any.whl": "1.9.4@rapidtide-1.9.4-py2.py3-none-any.whl"
       },
+      "2.0": {
+        "rapidtide-2.0-py2.py3-none-any.whl": {
+          "provides_extras": [
+            "doc",
+            "tests"
+          ],
+          "requires_dist": [
+            "numpy (>=1.16)",
+            "scipy",
+            "pandas",
+            "scikit-image",
+            "scikit-learn",
+            "nibabel",
+            "nilearn",
+            "matplotlib",
+            "pyfftw",
+            "pyqtgraph (>=0.11.0)",
+            "statsmodels",
+            "numba",
+            "sphinx (>=1.5.3) ; extra == 'doc'",
+            "sphinx-rtd-theme ; extra == 'doc'",
+            "sphinx-argparse ; extra == 'doc'",
+            "sphinx-gallery ; extra == 'doc'",
+            "m2r ; extra == 'doc'",
+            "recommonmark ; extra == 'doc'",
+            "codecov ; extra == 'tests'",
+            "coverage ; extra == 'tests'",
+            "coveralls ; extra == 'tests'",
+            "flake8-black ; extra == 'tests'",
+            "pytest ; extra == 'tests'",
+            "pytest-cov ; extra == 'tests'"
+          ]
+        }
+      },
       "2.0a18": {
         "rapidtide-2.0a18-py2.py3-none-any.whl": {
           "provides_extras": [
@@ -33034,65 +33107,34 @@
         "rapidtide-2.0a19-py2.py3-none-any.whl": "2.0a18@rapidtide-2.0a18-py2.py3-none-any.whl"
       },
       "2.0a20": {
-        "rapidtide-2.0a20-py2.py3-none-any.whl": {
-          "provides_extras": [
-            "doc",
-            "tests"
-          ],
-          "requires_dist": [
-            "numpy (>=1.16)",
-            "scipy",
-            "pandas",
-            "scikit-image",
-            "scikit-learn",
-            "nibabel",
-            "nilearn",
-            "matplotlib",
-            "pyfftw",
-            "pyqtgraph (>=0.11.0)",
-            "statsmodels",
-            "numba",
-            "sphinx (>=1.5.3) ; extra == 'doc'",
-            "sphinx-rtd-theme ; extra == 'doc'",
-            "sphinx-argparse ; extra == 'doc'",
-            "sphinx-gallery ; extra == 'doc'",
-            "m2r ; extra == 'doc'",
-            "recommonmark ; extra == 'doc'",
-            "codecov ; extra == 'tests'",
-            "coverage ; extra == 'tests'",
-            "coveralls ; extra == 'tests'",
-            "flake8-black ; extra == 'tests'",
-            "pytest ; extra == 'tests'",
-            "pytest-cov ; extra == 'tests'"
-          ]
-        }
+        "rapidtide-2.0a20-py2.py3-none-any.whl": "2.0@rapidtide-2.0-py2.py3-none-any.whl"
       },
       "2.0a21": {
-        "rapidtide-2.0a21-py2.py3-none-any.whl": "2.0a20@rapidtide-2.0a20-py2.py3-none-any.whl"
+        "rapidtide-2.0a21-py2.py3-none-any.whl": "2.0@rapidtide-2.0-py2.py3-none-any.whl"
       },
       "2.0a22": {
-        "rapidtide-2.0a22-py2.py3-none-any.whl": "2.0a20@rapidtide-2.0a20-py2.py3-none-any.whl"
+        "rapidtide-2.0a22-py2.py3-none-any.whl": "2.0@rapidtide-2.0-py2.py3-none-any.whl"
       },
       "2.0a23": {
-        "rapidtide-2.0a23-py2.py3-none-any.whl": "2.0a20@rapidtide-2.0a20-py2.py3-none-any.whl"
+        "rapidtide-2.0a23-py2.py3-none-any.whl": "2.0@rapidtide-2.0-py2.py3-none-any.whl"
       },
       "2.0a24": {
-        "rapidtide-2.0a24-py2.py3-none-any.whl": "2.0a20@rapidtide-2.0a20-py2.py3-none-any.whl"
+        "rapidtide-2.0a24-py2.py3-none-any.whl": "2.0@rapidtide-2.0-py2.py3-none-any.whl"
       },
       "2.0a25": {
-        "rapidtide-2.0a25-py2.py3-none-any.whl": "2.0a20@rapidtide-2.0a20-py2.py3-none-any.whl"
+        "rapidtide-2.0a25-py2.py3-none-any.whl": "2.0@rapidtide-2.0-py2.py3-none-any.whl"
       },
       "2.0a26": {
-        "rapidtide-2.0a26-py2.py3-none-any.whl": "2.0a20@rapidtide-2.0a20-py2.py3-none-any.whl"
+        "rapidtide-2.0a26-py2.py3-none-any.whl": "2.0@rapidtide-2.0-py2.py3-none-any.whl"
       },
       "2.0a27": {
-        "rapidtide-2.0a27-py2.py3-none-any.whl": "2.0a20@rapidtide-2.0a20-py2.py3-none-any.whl"
+        "rapidtide-2.0a27-py2.py3-none-any.whl": "2.0@rapidtide-2.0-py2.py3-none-any.whl"
       },
       "2.0a28": {
-        "rapidtide-2.0a28-py2.py3-none-any.whl": "2.0a20@rapidtide-2.0a20-py2.py3-none-any.whl"
+        "rapidtide-2.0a28-py2.py3-none-any.whl": "2.0@rapidtide-2.0-py2.py3-none-any.whl"
       },
       "2.0a29": {
-        "rapidtide-2.0a29-py2.py3-none-any.whl": "2.0a20@rapidtide-2.0a20-py2.py3-none-any.whl"
+        "rapidtide-2.0a29-py2.py3-none-any.whl": "2.0@rapidtide-2.0-py2.py3-none-any.whl"
       }
     }
   },
@@ -39409,6 +39451,9 @@
       },
       "0.2.6": {
         "tomli-0.2.6-py3-none-any.whl": "0.2.0@tomli-0.2.0-py3-none-any.whl"
+      },
+      "0.2.7": {
+        "tomli-0.2.7-py3-none-any.whl": "0.2.0@tomli-0.2.0-py3-none-any.whl"
       }
     }
   },
