@@ -13046,7 +13046,8 @@
       "38": "36",
       "39": "36",
       "310": "36"
-    }
+    },
+    "0.19.0": "0.18.0"
   },
   "darkmatter": {
     "0.1.0": {
@@ -33818,7 +33819,8 @@
     "0.31": "0.29",
     "0.32": "0.29",
     "0.32.1": "0.29",
-    "0.32.2": "0.29"
+    "0.32.2": "0.29",
+    "0.32.3": "0.29"
   },
   "lasio": {
     "0.24.1": {
@@ -45388,7 +45390,194 @@
       "39": "36",
       "310": "36"
     },
-    "2.8.0.dev0": "2.7.0"
+    "2.8.0.dev0": "2.7.0",
+    "2.8.0": {
+      "36": {
+        "install_requires": [
+          "alembic",
+          "cliff",
+          "cmaes>=0.8.2",
+          "colorlog",
+          "numpy",
+          "packaging>=20.0",
+          "scipy!=1.4.0",
+          "sqlalchemy>=1.1.0",
+          "tqdm"
+        ],
+        "extras_require": {
+          "checking": [
+            "black",
+            "hacking",
+            "isort",
+            "mypy==0.790",
+            "blackdoc"
+          ],
+          "codecov": [
+            "codecov",
+            "pytest-cov"
+          ],
+          "doctest": [
+            "cma",
+            "matplotlib>=3.0.0",
+            "pandas",
+            "plotly>=4.0.0",
+            "scikit-learn>=0.24.2",
+            "scikit-optimize",
+            "mlflow"
+          ],
+          "document": [
+            "sphinx<4.0.0",
+            "sphinx_rtd_theme",
+            "sphinx-copybutton",
+            "sphinx-gallery",
+            "sphinx-plotly-directive",
+            "pillow",
+            "matplotlib",
+            "scikit-learn",
+            "plotly>=4.0.0",
+            "pandas",
+            "lightgbm",
+            "torch==1.8.0",
+            "torchvision==0.9.0",
+            "torchaudio==0.8.0",
+            "thop"
+          ],
+          "experimental": [
+            "redis"
+          ],
+          "testing": [
+            "bokeh<2.0.0",
+            "chainer>=5.0.0",
+            "cma",
+            "fakeredis",
+            "lightgbm",
+            "matplotlib>=3.0.0",
+            "mlflow",
+            "mpi4py",
+            "mxnet",
+            "pandas",
+            "plotly>=4.0.0",
+            "pytest",
+            "scikit-learn>=0.24.2",
+            "scikit-optimize",
+            "xgboost",
+            "keras",
+            "tensorflow-datasets",
+            "pytorch-ignite",
+            "pytorch-lightning>=1.0.2",
+            "skorch",
+            "catalyst>=21.3",
+            "torchaudio==0.8.0",
+            "allennlp>=2.2.0",
+            "fastai"
+          ],
+          "testing:python_version < \"3.9\"": [
+            "tensorflow<2.5.0"
+          ],
+          "testing:sys_platform == \"darwin\"": [
+            "torch==1.8.0",
+            "torchvision==0.9.0"
+          ],
+          "testing:sys_platform != \"darwin\"": [
+            "torch==1.8.0+cpu",
+            "torchvision==0.9.0+cpu"
+          ],
+          "testing:python_version > \"3.6\"": [
+            "botorch>=0.4.0"
+          ],
+          "tests": [
+            "fakeredis",
+            "pytest"
+          ],
+          "optional": [
+            "bokeh<2.0.0",
+            "matplotlib>=3.0.0",
+            "pandas",
+            "plotly>=4.0.0",
+            "redis",
+            "scikit-learn>=0.24.2"
+          ],
+          "integration": [
+            "chainer>=5.0.0",
+            "cma",
+            "lightgbm",
+            "mlflow",
+            "mpi4py",
+            "mxnet",
+            "pandas",
+            "scikit-learn>=0.24.2",
+            "scikit-optimize",
+            "xgboost",
+            "pytorch-ignite",
+            "pytorch-lightning>=1.0.2",
+            "skorch",
+            "catalyst>=21.3",
+            "torchaudio==0.8.0",
+            "allennlp>=2.2.0",
+            "fastai"
+          ],
+          "integration:python_version < \"3.9\"": [
+            "keras",
+            "tensorflow<2.5.0",
+            "tensorflow-datasets"
+          ],
+          "integration:sys_platform == \"darwin\"": [
+            "torch==1.8.0",
+            "torchvision==0.9.0"
+          ],
+          "integration:sys_platform != \"darwin\"": [
+            "torch==1.8.0+cpu",
+            "torchvision==0.9.0+cpu"
+          ],
+          "integration:python_version > \"3.6\"": [
+            "botorch>=0.4.0"
+          ],
+          "benchmark": [
+            "asv",
+            "virtualenv"
+          ]
+        },
+        "tests_require": [
+          "bokeh<2.0.0",
+          "chainer>=5.0.0",
+          "cma",
+          "fakeredis",
+          "lightgbm",
+          "matplotlib>=3.0.0",
+          "mlflow",
+          "mpi4py",
+          "mxnet",
+          "pandas",
+          "plotly>=4.0.0",
+          "pytest",
+          "scikit-learn>=0.24.2",
+          "scikit-optimize",
+          "xgboost",
+          "keras",
+          "tensorflow<2.5.0 ; python_version<'3.9'",
+          "tensorflow-datasets",
+          "pytorch-ignite",
+          "pytorch-lightning>=1.0.2",
+          "skorch",
+          "catalyst>=21.3",
+          "torch==1.8.0 ; sys_platform=='darwin'",
+          "torch==1.8.0+cpu ; sys_platform!='darwin'",
+          "torchvision==0.9.0 ; sys_platform=='darwin'",
+          "torchvision==0.9.0+cpu ; sys_platform!='darwin'",
+          "torchaudio==0.8.0",
+          "allennlp>=2.2.0",
+          "botorch>=0.4.0 ; python_version>'3.6'",
+          "fastai"
+        ],
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "org-python": {
     "0.1.0": {

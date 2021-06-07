@@ -2777,7 +2777,9 @@
     },
     "1.0.2": "1.0.0",
     "1.0.3": "1.0.0",
-    "1.0.4": "1.0.0"
+    "1.0.4": "1.0.0",
+    "1.0.5": "1.0.0",
+    "1.0.7": "1.0.0"
   },
   "bds": {
     "0.666": {
@@ -4080,6 +4082,56 @@
           "tqdm>=4.49.0",
           "fastapi>=0.63.0",
           "uvicorn>=0.13.0"
+        ],
+        "setup_requires": [
+          "setuptools_scm"
+        ],
+        "extras_require": {
+          "dev": [
+            "pytest>=6.2.0",
+            "pytest-cov>=2.10.0",
+            "pytest-pylint>=0.14.0",
+            "pytest-notebook~=0.6.0",
+            "wandb>=0.10.12",
+            "xlrd~=1.2.0",
+            "pdoc3~=0.8.1",
+            "pre-commit~=2.9.0",
+            "GitPython"
+          ]
+        },
+        "python_requires": [
+          ">=3.6.1"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "3.0.0": {
+      "36": {
+        "install_requires": [
+          "allennlp~=2.4.0",
+          "beautifulsoup4~=4.9.0",
+          "captum~=0.2.0",
+          "click~=7.1.0",
+          "datasets~=1.2.1",
+          "flatdict~=4.0.0",
+          "gevent~=20.9.0",
+          "ipywidgets~=7.5.1",
+          "lxml~=4.6.2",
+          "mlflow~=1.13.1",
+          "numpy",
+          "pandas",
+          "pytorch-lightning~=1.3.0",
+          "ray[tune]~=1.3.0",
+          "spacy~=3.0.0",
+          "torch",
+          "transformers",
+          "tqdm>=4.49.0",
+          "fastapi~=0.63.0",
+          "uvicorn>=0.13.0",
+          "pyyaml"
         ],
         "setup_requires": [
           "setuptools_scm"
@@ -5896,6 +5948,24 @@
           "attrdict>=2.0.0",
           "flake8>=3.3.0",
           "chance-mock-logger>=0.0.2"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
+  },
+  "chaostoolkit-reliably": {
+    "0.1.0": {
+      "27": {
+        "setup_requires": [
+          "setuptools_scm>=1.15.0",
+          "setuptools_scm_git_archive>=1.0"
+        ],
+        "python_requires": [
+          ">=3.5"
         ]
       },
       "36": "27",
@@ -31760,7 +31830,38 @@
       "39": "27",
       "310": "27"
     },
-    "0.6.0": "0.5.0"
+    "0.6.0": "0.5.0",
+    "0.7.0": {
+      "36": {
+        "install_requires": [
+          "pandas>=0.22",
+          "xarray",
+          "pyqtgraph>=0.10.0",
+          "matplotlib",
+          "numpy",
+          "lmfit",
+          "h5py>=2.10.0",
+          "qtpy>=1.9.0",
+          "typing-extensions>=3.7.4.3",
+          "packaging>=20.0"
+        ],
+        "extras_require": {
+          "pyqt5": [
+            "PyQt5"
+          ],
+          "pyside2": [
+            "PySide2"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "pocketwalk": {
     "0.1.0": {
@@ -46840,7 +46941,8 @@
     "0.0.6b20210603": "0.0.6b20210315",
     "0.0.6b20210604": "0.0.6b20210315",
     "0.0.6b20210605": "0.0.6b20210315",
-    "0.0.6b20210606": "0.0.6b20210315"
+    "0.0.6b20210606": "0.0.6b20210315",
+    "0.0.6b20210607": "0.0.6b20210315"
   },
   "restcountries": {
     "1.0.0": {
@@ -47309,7 +47411,8 @@
     "2.2.8": "2.0.0",
     "2.2.10": "2.0.0",
     "2.2.9": "2.0.0",
-    "2.2.11": "2.0.0"
+    "2.2.11": "2.0.0",
+    "2.2.12": "2.0.0"
   },
   "ruamel.std.argparse": {
     "0.3.2": {
@@ -55837,6 +55940,52 @@
           "statsmodels>=0.12.1",
           "webviz-config>=0.3.1",
           "webviz-subsurface-components>=0.4.2",
+          "xtgeo>=2.14"
+        ],
+        "setup_requires": [
+          "setuptools_scm~=3.2"
+        ],
+        "extras_require": {
+          "tests": [
+            "bandit",
+            "black>=21.4b0",
+            "dash[testing]",
+            "mypy",
+            "pylint",
+            "pytest-xdist",
+            "selenium>=3.141"
+          ],
+          ":sys_platform == \"linux\"": [
+            "ecl2df>=0.13.0",
+            "opm>=2020.10.1"
+          ]
+        },
+        "python_requires": [
+          "~=3.6"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "0.2.3": {
+      "27": {
+        "install_requires": [
+          "dash>=1.11",
+          "dash_bootstrap_components>=0.10.3",
+          "dash-daq>=0.5.0",
+          "defusedxml>=0.6.0",
+          "fmu-ensemble>=1.2.3",
+          "pandas>=1.1.5",
+          "pillow>=6.1",
+          "pyarrow>=3.0.0",
+          "pyscal>=0.7.5",
+          "scipy>=1.2",
+          "statsmodels>=0.12.1",
+          "webviz-config>=0.3.1",
+          "webviz-subsurface-components>=0.4.3",
           "xtgeo>=2.14"
         ],
         "setup_requires": [
