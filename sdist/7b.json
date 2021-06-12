@@ -115239,7 +115239,58 @@
       "39": "27",
       "310": "27"
     },
-    "4.0.1": "4.0.0"
+    "4.0.1": "4.0.0",
+    "4.0.3": {
+      "27": {
+        "install_requires": [
+          "dask[dataframe]!=2021.5.1,!=2021.6.0",
+          "decorator",
+          "msgpack>=0.5.2",
+          "numpy!=1.15.0,!=1.16.0",
+          "pandas!=1.0.0,>=0.23.0",
+          "pyarrow!=1.0.0,<4,>=0.17.1",
+          "simplejson",
+          "simplekv",
+          "storefact",
+          "toolz",
+          "urlquote>=1.1.3",
+          "zstandard",
+          "attrs",
+          "click",
+          "prompt-toolkit",
+          "pyyaml"
+        ],
+        "extras_require": {
+          ":python_version < \"3.8\"": [
+            "typing_extensions"
+          ]
+        },
+        "tests_require": [
+          "distributed!=2021.5.1,!=2021.6.0 # gh475 - 2021.5.1 and 2021.6.0 broke ci, omit those versions",
+          "pytz",
+          "cloudpickle",
+          "freezegun",
+          "hypothesis",
+          "pytest>=4.5.0",
+          "pytest-cov",
+          "pytest-mock",
+          "setuptools-scm",
+          "pre-commit",
+          "flake8-mutable",
+          "ipython",
+          "asv"
+        ],
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "5.0.0rc1": "4.0.3"
   },
   "kcalculator": {
     "0.0.10": "0.0.6",
@@ -119852,11 +119903,11 @@
     "0.0.5": "0.0.1"
   },
   "nonebot-adapter-gocq": {
-    "2.0.0a13": {
+    "0.1.2": {
       "27": {
         "install_requires": [
           "httpx<0.18.0,>=0.17.0",
-          "nonebot2<3.0.0,>=2.0.0-alpha.13"
+          "nonebot2==2.0.0-alpha.13"
         ],
         "python_requires": [
           ">=3.7.3,<4.0.0"
