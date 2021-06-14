@@ -4230,6 +4230,31 @@
       }
     }
   },
+  "bicleaner-ai": {
+    "py3": {
+      "1.0": {
+        "bicleaner_ai-1.0-py3-none-any.whl": {
+          "requires_dist": [
+            "scikit-learn (>=0.22.1)",
+            "PyYAML (>=5.1.2)",
+            "numpy (>=1.18.1)",
+            "pytest (>=5.1.2)",
+            "toolwrapper (>=0.4.1)",
+            "joblib (==0.14.1)",
+            "sacremoses (==0.0.43)",
+            "bicleaner-hardrules (==1.1)",
+            "sentencepiece (==0.1.94)",
+            "tensorflow (>=2.3.2)",
+            "glove-python-binary (==0.2.0)",
+            "fuzzywuzzy (==0.18.0)",
+            "python-Levenshtein (>=0.12.1)",
+            "transformers (==4.4.2)",
+            "psutil (>=5.8.0)"
+          ]
+        }
+      }
+    }
+  },
   "big-small-rss-notifier-pkg": {
     "py3": {
       "0.0.1b3": {
@@ -16354,8 +16379,8 @@
   },
   "flask-regiment": {
     "py3": {
-      "1.0.5": {
-        "flask_regiment-1.0.5-py3-none-any.whl": {
+      "1.0.10": {
+        "flask_regiment-1.0.10-py3-none-any.whl": {
           "requires_dist": [
             "flask",
             "requests",
@@ -16364,17 +16389,20 @@
           "requires_python": ">=3.7"
         }
       },
+      "1.0.5": {
+        "flask_regiment-1.0.5-py3-none-any.whl": "1.0.10@flask_regiment-1.0.10-py3-none-any.whl"
+      },
       "1.0.6": {
-        "flask_regiment-1.0.6-py3-none-any.whl": "1.0.5@flask_regiment-1.0.5-py3-none-any.whl"
+        "flask_regiment-1.0.6-py3-none-any.whl": "1.0.10@flask_regiment-1.0.10-py3-none-any.whl"
       },
       "1.0.7": {
-        "flask_regiment-1.0.7-py3-none-any.whl": "1.0.5@flask_regiment-1.0.5-py3-none-any.whl"
+        "flask_regiment-1.0.7-py3-none-any.whl": "1.0.10@flask_regiment-1.0.10-py3-none-any.whl"
       },
       "1.0.8": {
-        "flask_regiment-1.0.8-py3-none-any.whl": "1.0.5@flask_regiment-1.0.5-py3-none-any.whl"
+        "flask_regiment-1.0.8-py3-none-any.whl": "1.0.10@flask_regiment-1.0.10-py3-none-any.whl"
       },
       "1.0.9": {
-        "flask_regiment-1.0.9-py3-none-any.whl": "1.0.5@flask_regiment-1.0.5-py3-none-any.whl"
+        "flask_regiment-1.0.9-py3-none-any.whl": "1.0.10@flask_regiment-1.0.10-py3-none-any.whl"
       }
     }
   },
@@ -21304,6 +21332,40 @@
       },
       "0.1.5.dev5885": {
         "maze_rl-0.1.5.dev5885-py3-none-any.whl": "0.1.5@maze_rl-0.1.5-py3-none-any.whl"
+      },
+      "0.1.6": {
+        "maze_rl-0.1.6-py3-none-any.whl": {
+          "provides_extras": [
+            "testing"
+          ],
+          "requires_dist": [
+            "tensorboard",
+            "pyyaml",
+            "requests",
+            "pillow",
+            "hydra-core (>='1.1')",
+            "hydra-nevergrad-sweeper (>='1.1.5')",
+            "pandas",
+            "networkx",
+            "matplotlib",
+            "seaborn",
+            "tqdm",
+            "imageio",
+            "redis",
+            "cloudpickle",
+            "pytest (>=6.0.0)",
+            "pytest-timeout",
+            "pytest-redis",
+            "gym[box2d] ; python_version < \"3.8\"",
+            "gym ; python_version >= \"3.8\"",
+            "pytest (>=6.0.0) ; extra == 'testing'",
+            "pytest-redis ; extra == 'testing'"
+          ],
+          "requires_python": ">=3.6"
+        }
+      },
+      "0.1.6.dev6382": {
+        "maze_rl-0.1.6.dev6382-py3-none-any.whl": "0.1.6@maze_rl-0.1.6-py3-none-any.whl"
       }
     }
   },
@@ -24960,6 +25022,43 @@
       }
     }
   },
+  "notionpy": {
+    "py3": {
+      "0.1.0": {
+        "notionpy-0.1.0-py3-none-any.whl": {
+          "provides_extras": [
+            "dev",
+            "doc",
+            "test"
+          ],
+          "requires_dist": [
+            "black (>=21.5b2,<22.0); extra == \"test\"",
+            "bump2version (>=1.0.1,<2.0.0); extra == \"dev\"",
+            "click (==8.0.1)",
+            "flake8 (>=3.9.2,<4.0.0); extra == \"test\"",
+            "flake8-docstrings (>=1.6.0,<2.0.0); extra == \"test\"",
+            "isort (>=5.8.0,<6.0.0); extra == \"test\"",
+            "mkdocs (>=1.1.2,<2.0.0); extra == \"doc\"",
+            "mkdocs-autorefs (>=0.2.1,<0.3.0); extra == \"doc\"",
+            "mkdocs-include-markdown-plugin (>=1.0.0,<2.0.0); extra == \"doc\"",
+            "mkdocs-material (>=6.1.7,<7.0.0); extra == \"doc\"",
+            "mkdocs-material-extensions (>=1.0.1,<2.0.0)",
+            "mkdocstrings (>=0.15.2,<0.16.0); extra == \"doc\"",
+            "mypy (>=0.900,<0.901); extra == \"test\"",
+            "pip (>=20.3.1,<21.0.0); extra == \"dev\"",
+            "pre-commit (>=2.12.0,<3.0.0); extra == \"dev\"",
+            "pytest (==6.1.2); extra == \"test\"",
+            "pytest-cov (==2.10.1); extra == \"test\"",
+            "toml (>=0.10.2,<0.11.0); extra == \"dev\"",
+            "tox (>=3.20.1,<4.0.0); extra == \"dev\"",
+            "twine (>=3.3.0,<4.0.0); extra == \"dev\"",
+            "virtualenv (>=20.2.2,<21.0.0); extra == \"dev\""
+          ],
+          "requires_python": ">=3.6.2,<4.0"
+        }
+      }
+    }
+  },
   "npkpy": {
     "py3": {
       "2020.6.13.16.27": {
@@ -27714,6 +27813,31 @@
       }
     }
   },
+  "ondewo-vtsi-client": {
+    "py2.py3": {
+      "2.1.0": {
+        "ondewo_vtsi_client-2.1.0-py2.py3-none-any.whl": {
+          "requires_dist": [
+            "dataclasses-json (==0.5.2)",
+            "google-api-core (==1.13.0)",
+            "googleapis-common-protos (==1.5.10)",
+            "grpcio-reflection (==1.31.0)",
+            "grpcio-tools (==1.31.0)",
+            "grpcio (==1.31.0)",
+            "mypy-protobuf (==1.20)",
+            "polling (==0.3.1)",
+            "protobuf (==3.13.0)",
+            "pytest (==6.0.1)",
+            "regex (==2020.7.14)"
+          ],
+          "requires_python": ">=2.6,!=3.0.*"
+        }
+      },
+      "2.1.1": {
+        "ondewo_vtsi_client-2.1.1-py2.py3-none-any.whl": "2.1.0@ondewo_vtsi_client-2.1.0-py2.py3-none-any.whl"
+      }
+    }
+  },
   "op-cli": {
     "py3": {
       "0.0.1": {
@@ -30025,8 +30149,8 @@
   },
   "plain-transformers": {
     "py3": {
-      "0.0.1.5rc1": {
-        "plain_transformers-0.0.1.5rc1-py3-none-any.whl": {
+      "0.0.1.5": {
+        "plain_transformers-0.0.1.5-py3-none-any.whl": {
           "requires_dist": [
             "torch (>=1.6.0)",
             "youtokentome (>=1.0.6)",
@@ -30035,11 +30159,14 @@
           "requires_python": ">=3.6"
         }
       },
+      "0.0.1.5rc1": {
+        "plain_transformers-0.0.1.5rc1-py3-none-any.whl": "0.0.1.5@plain_transformers-0.0.1.5-py3-none-any.whl"
+      },
       "0.0.1.5rc2": {
-        "plain_transformers-0.0.1.5rc2-py3-none-any.whl": "0.0.1.5rc1@plain_transformers-0.0.1.5rc1-py3-none-any.whl"
+        "plain_transformers-0.0.1.5rc2-py3-none-any.whl": "0.0.1.5@plain_transformers-0.0.1.5-py3-none-any.whl"
       },
       "0.0.1.5rc3": {
-        "plain_transformers-0.0.1.5rc3-py3-none-any.whl": "0.0.1.5rc1@plain_transformers-0.0.1.5rc1-py3-none-any.whl"
+        "plain_transformers-0.0.1.5rc3-py3-none-any.whl": "0.0.1.5@plain_transformers-0.0.1.5-py3-none-any.whl"
       }
     }
   },
