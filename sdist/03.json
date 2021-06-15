@@ -9403,6 +9403,62 @@
       "38": "36",
       "39": "36",
       "310": "36"
+    },
+    "3.1.3": {
+      "36": {
+        "install_requires": [
+          "mypy_extensions",
+          "pyrsistent>=0.15.2",
+          "six==1.15.0",
+          "wrapt>=1.11.2",
+          "durationpy==0.5",
+          "cmake"
+        ],
+        "setup_requires": [
+          "# Typing support\n",
+          "typing-extensions==3.7.4.3; python_version<\"3.8\"\n",
+          "mypy_extensions\n",
+          "\n",
+          "# Prevent installation of Python < 3 package on Windows.\n",
+          "pip>=20.0; sys_platform==\"win32\" and python_version<=\"2.7\"\n",
+          "\n",
+          "# General dependencies\n",
+          "pyrsistent>=0.15.2\n",
+          "six==1.15.0\n",
+          "attrs>=19.1.0; python_version>\"3.5\"\n",
+          "attrs==19.1.0; python_version<=\"3.5\"\n",
+          "wrapt>=1.11.2\n",
+          "durationpy==0.5\n",
+          "cmake"
+        ],
+        "extras_require": {
+          ":python_version < \"3.8\"": [
+            "typing-extensions==3.7.4.3"
+          ],
+          ":sys_platform == \"win32\" and python_version <= \"2.7\"": [
+            "pip>=20.0"
+          ],
+          ":python_version > \"3.5\"": [
+            "attrs>=19.1.0"
+          ],
+          ":python_version <= \"3.5\"": [
+            "attrs==19.1.0"
+          ]
+        },
+        "tests_require": [
+          "utilspie",
+          "nose",
+          "testresources>=0.2.7",
+          "basictracer==2.2.0"
+        ],
+        "python_requires": [
+          ">=3.5"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
     }
   },
   "coverage-threshold": {
@@ -11582,7 +11638,8 @@
     "2.7.1": "1.0.0",
     "2.8.0": "1.0.0",
     "2.8.1": "1.0.0",
-    "2.9.0": "1.0.0"
+    "2.9.0": "1.0.0",
+    "2.15.0": "2.12.1"
   },
   "desktopography": {
     "1.0": {
@@ -41098,7 +41155,8 @@
     "1.17.91": "1.17.70",
     "1.17.92": "1.17.70",
     "1.17.92.post1": "1.17.70",
-    "1.17.93": "1.17.70"
+    "1.17.93": "1.17.70",
+    "1.17.94": "1.17.70"
   },
   "mysqltools-python": {
     "2.18.09.01": {
@@ -54679,7 +54737,8 @@
     "3.0.417": "3.0.252",
     "3.0.418": "3.0.252",
     "3.0.419": "3.0.252",
-    "3.0.420": "3.0.252"
+    "3.0.420": "3.0.252",
+    "3.0.421": "3.0.252"
   },
   "termite": {
     "0.0.1": {
@@ -59029,6 +59088,29 @@
       "38": "27",
       "39": "27",
       "310": "27"
+    }
+  },
+  "zennit": {
+    "0.2.1": {
+      "36": {
+        "install_requires": [
+          "click",
+          "numpy",
+          "Pillow",
+          "torch>=1.7.0",
+          "torchvision"
+        ],
+        "setup_requires": [
+          "setuptools_scm"
+        ],
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
     }
   },
   "zhj-top": {
