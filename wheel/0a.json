@@ -1067,6 +1067,15 @@
       },
       "1.2.0rc1": {
         "apache_airflow_providers_microsoft_winrm-1.2.0rc1-py3-none-any.whl": "1.0.1@apache_airflow_providers_microsoft_winrm-1.0.1-py3-none-any.whl"
+      },
+      "2.0.0rc1": {
+        "apache_airflow_providers_microsoft_winrm-2.0.0rc1-py3-none-any.whl": {
+          "requires_dist": [
+            "apache-airflow (>=2.1.0)",
+            "pywinrm (~=0.4)"
+          ],
+          "requires_python": "~=3.6"
+        }
       }
     }
   },
@@ -1148,6 +1157,26 @@
       },
       "1.1.0rc1": {
         "apache_airflow_providers_mysql-1.1.0rc1-py3-none-any.whl": "1.1.0@apache_airflow_providers_mysql-1.1.0-py3-none-any.whl"
+      },
+      "2.0.0rc1": {
+        "apache_airflow_providers_mysql-2.0.0rc1-py3-none-any.whl": {
+          "provides_extras": [
+            "amazon",
+            "presto",
+            "trino",
+            "vertica"
+          ],
+          "requires_dist": [
+            "apache-airflow (>=2.1.0)",
+            "mysql-connector-python (<=8.0.22,>=8.0.11)",
+            "mysqlclient (<3,>=1.3.6)",
+            "apache-airflow-providers-amazon ; extra == 'amazon'",
+            "apache-airflow-providers-presto ; extra == 'presto'",
+            "apache-airflow-providers-trino ; extra == 'trino'",
+            "apache-airflow-providers-vertica ; extra == 'vertica'"
+          ],
+          "requires_python": "~=3.6"
+        }
       }
     }
   },
@@ -26646,6 +26675,15 @@
       },
       "1.0.0": {
         "plasmalights-1.0.0-py3-none-any.whl": "0.0.1@plasmalights-0.0.1-py3-none-any.whl"
+      },
+      "2.0.0": {
+        "plasmalights-2.0.0-py3-none-any.whl": {
+          "requires_dist": [
+            "pyserial",
+            "pyyaml"
+          ],
+          "requires_python": ">= 3.7"
+        }
       }
     }
   },
@@ -27792,6 +27830,25 @@
       },
       "0.0.7": {
         "pyfactcast-0.0.7-py3-none-any.whl": "0.0.3@pyfactcast-0.0.3-py3-none-any.whl"
+      },
+      "0.0.8": {
+        "pyfactcast-0.0.8-py3-none-any.whl": {
+          "provides_extras": [
+            "docs"
+          ],
+          "requires_dist": [
+            "grpcio (>=1.37.1,<2.0.0)",
+            "grpcio-tools (>=1.37.1,<2.0.0)",
+            "pydantic (>=1.8.2,<2.0.0)",
+            "rich (>=10.2.0,<11.0.0)",
+            "sphinx (<4); extra == \"docs\"",
+            "sphinx-autodoc-typehints (>=1.12.0,<2.0.0); extra == \"docs\"",
+            "sphinx-click (>=2.7.1,<3.0.0); extra == \"docs\"",
+            "sphinx-rtd-theme (>=0.5.2,<0.6.0); extra == \"docs\"",
+            "typer (>=0.3.2,<0.4.0)"
+          ],
+          "requires_python": ">=3.7,<4.0"
+        }
       }
     }
   },

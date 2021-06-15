@@ -15748,7 +15748,8 @@
       "38": "27",
       "39": "27",
       "310": "27"
-    }
+    },
+    "1.1.2": "1.1.1"
   },
   "dbinspector": {
     "0.1.0": {
@@ -21550,7 +21551,8 @@
     "6.0.2": "6.0.1",
     "6.0.3": "6.0.1",
     "6.0.4": "6.0.1",
-    "6.0.5": "6.0.1"
+    "6.0.5": "6.0.1",
+    "6.0.6": "6.0.1"
   },
   "feedparser-homeassistant": {
     "5.2.2.dev1": {
@@ -55377,7 +55379,8 @@
       "39": "36",
       "310": "36"
     },
-    "0.0.5": "0.0.4"
+    "0.0.5": "0.0.4",
+    "0.0.6": "0.0.4"
   },
   "pmcc": {
     "2015.02.21.1": {
@@ -69040,6 +69043,62 @@
             "black",
             "isort",
             "mypy",
+            "pylint>=2.5",
+            "tox>=3.4"
+          ],
+          ":python_version < \"3.7\"": [
+            "dataclasses>=0.6"
+          ]
+        },
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "0.3.0": {
+      "36": {
+        "install_requires": [
+          "numpy",
+          "pyserial>=3"
+        ],
+        "extras_require": {
+          "docs": [
+            "sphinx>3.1",
+            "sphinx-autodoc-typehints",
+            "sphinx-rtd-theme"
+          ],
+          "tests": [
+            "asynctest",
+            "coverage>=5",
+            "freezegun",
+            "pytest>=6",
+            "pytest-asyncio",
+            "pytest-benchmark"
+          ],
+          "tools": [
+            "black",
+            "isort",
+            "mypy>=0.9",
+            "pylint>=2.5",
+            "tox>=3.4"
+          ],
+          "dev": [
+            "sphinx>3.1",
+            "sphinx-autodoc-typehints",
+            "sphinx-rtd-theme",
+            "asynctest",
+            "coverage>=5",
+            "freezegun",
+            "pytest>=6",
+            "pytest-asyncio",
+            "pytest-benchmark",
+            "black",
+            "isort",
+            "mypy>=0.9",
             "pylint>=2.5",
             "tox>=3.4"
           ],

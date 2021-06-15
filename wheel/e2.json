@@ -1113,6 +1113,9 @@
       },
       "1.1.0": {
         "alteia-1.1.0-py3-none-any.whl": "1.0.0@alteia-1.0.0-py3-none-any.whl"
+      },
+      "1.2.0": {
+        "alteia-1.2.0-py3-none-any.whl": "1.0.0@alteia-1.0.0-py3-none-any.whl"
       }
     }
   },
@@ -1991,6 +1994,23 @@
       },
       "1.3.0rc1": {
         "apache_airflow_providers_snowflake-1.3.0rc1-py3-none-any.whl": "1.1.1@apache_airflow_providers_snowflake-1.1.1-py3-none-any.whl"
+      },
+      "2.0.0rc1": {
+        "apache_airflow_providers_snowflake-2.0.0rc1-py3-none-any.whl": {
+          "provides_extras": [
+            "slack"
+          ],
+          "requires_dist": [
+            "apache-airflow (>=2.1.0)",
+            "snowflake-connector-python (>=2.4.1)",
+            "snowflake-sqlalchemy (>=1.1.0)",
+            "apache-airflow-providers-slack ; extra == 'slack'"
+          ],
+          "requires_python": "~=3.6"
+        }
+      },
+      "2.0.0rc2": {
+        "apache_airflow_providers_snowflake-2.0.0rc2-py3-none-any.whl": "2.0.0rc1@apache_airflow_providers_snowflake-2.0.0rc1-py3-none-any.whl"
       }
     }
   },
@@ -6029,6 +6049,9 @@
       },
       "4.1.0": {
         "braintree-4.1.0-py2.py3-none-any.whl": "3.39.0@braintree-3.39.0-py2.py3-none-any.whl"
+      },
+      "4.10.0": {
+        "braintree-4.10.0-py2.py3-none-any.whl": "3.39.0@braintree-3.39.0-py2.py3-none-any.whl"
       },
       "4.2.0": {
         "braintree-4.2.0-py2.py3-none-any.whl": "3.39.0@braintree-3.39.0-py2.py3-none-any.whl"
@@ -10095,6 +10118,22 @@
             "requests-kerberos ; extra == 'kerberos'",
             "hdfs ; extra == 'kerberos'",
             "dbnd-test-scenarios (==0.42.2) ; extra == 'tests'"
+          ]
+        }
+      },
+      "0.42.3": {
+        "dbnd_hdfs-0.42.3-py2.py3-none-any.whl": {
+          "provides_extras": [
+            "kerberos",
+            "tests"
+          ],
+          "requires_dist": [
+            "dbnd (==0.42.3)",
+            "pyox",
+            "hdfs",
+            "requests-kerberos ; extra == 'kerberos'",
+            "hdfs ; extra == 'kerberos'",
+            "dbnd-test-scenarios (==0.42.3) ; extra == 'tests'"
           ]
         }
       }
@@ -15509,6 +15548,9 @@
       },
       "12.0.0": {
         "group_based_policy_automation-12.0.0-py3-none-any.whl": "10.0.0@group_based_policy_automation-10.0.0-py3-none-any.whl"
+      },
+      "13.0.0": {
+        "group_based_policy_automation-13.0.0-py3-none-any.whl": "10.0.0@group_based_policy_automation-10.0.0-py3-none-any.whl"
       },
       "9.0.0": {
         "group_based_policy_automation-9.0.0-py3-none-any.whl": {
@@ -28088,6 +28130,9 @@
             "Products.ATContentTypes ; extra == 'test'"
           ]
         }
+      },
+      "2.1.2": {
+        "plone.app.imaging-2.1.2-py2.py3-none-any.whl": "2.1.1@plone.app.imaging-2.1.1-py2.py3-none-any.whl"
       }
     }
   },
@@ -28246,6 +28291,13 @@
       },
       "0.2.dev0": {
         "pomp-0.2.dev0-py2.py3-none-any.whl": "0.2@pomp-0.2-py2.py3-none-any.whl"
+      }
+    }
+  },
+  "pong123-helloworld-library": {
+    "py3": {
+      "2.0": {
+        "pong123_helloworld_library-2.0-py3-none-any.whl": {}
       }
     }
   },
@@ -32679,6 +32731,9 @@
       },
       "1.8.1": {
         "pymadx-1.8.1-py3-none-any.whl": "1.8.0@pymadx-1.8.0-py3-none-any.whl"
+      },
+      "1.8.2": {
+        "pymadx-1.8.2-py3-none-any.whl": "1.8.0@pymadx-1.8.0-py3-none-any.whl"
       }
     }
   },
@@ -37964,6 +38019,9 @@
       },
       "0.7.3": {
         "sntools-0.7.3-py3-none-any.whl": "0.7.0@sntools-0.7.0-py3-none-any.whl"
+      },
+      "0.7.4": {
+        "sntools-0.7.4-py3-none-any.whl": "0.7.0@sntools-0.7.0-py3-none-any.whl"
       }
     }
   },
@@ -38748,6 +38806,27 @@
             "solnlib (>=4.1.0,<5.0.0)",
             "sphinx-rtd-theme (>=0.5.2,<0.6.0)",
             "splunktalib (>=2.0.0,<3.0.0)",
+            "splunktaucclib (>=5.0.2,<6.0.0)",
+            "wheel"
+          ],
+          "requires_python": ">=3.7,<4.0"
+        }
+      },
+      "5.3.1": {
+        "splunk_add_on_ucc_framework-5.3.1-py3-none-any.whl": {
+          "requires_dist": [
+            "Sphinx (>=4.0.2,<5.0.0)",
+            "defusedxml (>=0.7.1,<0.8.0)",
+            "dunamai",
+            "future (>=0,<1)",
+            "jinja2 (>=2,<3)",
+            "jsonschema (>=3.2.0,<4.0.0)",
+            "lxml (>=4.3,<5.0)",
+            "mako (>=1,<2)",
+            "munch (>=2,<3)",
+            "reuse",
+            "solnlib (>=4.1.0,<5.0.0)",
+            "sphinx-rtd-theme (>=0.5.2,<0.6.0)",
             "splunktaucclib (>=5.0.2,<6.0.0)",
             "wheel"
           ],
