@@ -3425,7 +3425,42 @@
     },
     "0.8.0": "0.7.1",
     "0.9.0": "0.7.1",
-    "0.9.1": "0.7.1"
+    "0.9.1": "0.7.1",
+    "0.12.0": {
+      "27": {
+        "extras_require": {
+          "pythonnet": [
+            "pythonnet>=2.5.1"
+          ],
+          ":platform_system == \"Windows\" and python_version < \"3.9.0\"": [
+            "pythonnet"
+          ],
+          ":platform_system == \"Darwin\"": [
+            "pyobjc-core",
+            "pyobjc-framework-CoreBluetooth",
+            "pyobjc-framework-libdispatch"
+          ],
+          "winrt": [
+            "winrt>=1.0.20330.1"
+          ],
+          ":platform_system == \"Windows\" and python_version >= \"3.9.0\"": [
+            "winrt>=1.0.20330.1"
+          ],
+          ":platform_system == \"Linux\"": [
+            "dbus-next"
+          ]
+        },
+        "tests_require": [
+          "pytest",
+          "pytest-cov"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "bnn": {
     "0.1.0": {
@@ -9988,6 +10023,20 @@
     },
     "1.0.1": "1.0.0",
     "1.0.3": "1.0.0"
+  },
+  "django-walax": {
+    "0.1.1": {
+      "36": {
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "0.1.2": "0.1.1"
   },
   "django-yandex-money": {
     "1.0": {
