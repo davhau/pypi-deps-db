@@ -1787,16 +1787,19 @@
       "1.0.1rc1": {
         "apache_airflow_providers_apache_sqoop-1.0.1rc1-py3-none-any.whl": "1.0.1@apache_airflow_providers_apache_sqoop-1.0.1-py3-none-any.whl"
       },
-      "2.0.0rc1": {
-        "apache_airflow_providers_apache_sqoop-2.0.0rc1-py3-none-any.whl": {
+      "2.0.0": {
+        "apache_airflow_providers_apache_sqoop-2.0.0-py3-none-any.whl": {
           "requires_dist": [
             "apache-airflow (>=2.1.0)"
           ],
           "requires_python": "~=3.6"
         }
       },
+      "2.0.0rc1": {
+        "apache_airflow_providers_apache_sqoop-2.0.0rc1-py3-none-any.whl": "2.0.0@apache_airflow_providers_apache_sqoop-2.0.0-py3-none-any.whl"
+      },
       "2.0.0rc2": {
-        "apache_airflow_providers_apache_sqoop-2.0.0rc2-py3-none-any.whl": "2.0.0rc1@apache_airflow_providers_apache_sqoop-2.0.0rc1-py3-none-any.whl"
+        "apache_airflow_providers_apache_sqoop-2.0.0rc2-py3-none-any.whl": "2.0.0@apache_airflow_providers_apache_sqoop-2.0.0-py3-none-any.whl"
       }
     }
   },
@@ -1838,8 +1841,8 @@
       "1.0.2rc1": {
         "apache_airflow_providers_jira-1.0.2rc1-py3-none-any.whl": "1.0.1@apache_airflow_providers_jira-1.0.1-py3-none-any.whl"
       },
-      "2.0.0rc1": {
-        "apache_airflow_providers_jira-2.0.0rc1-py3-none-any.whl": {
+      "2.0.0": {
+        "apache_airflow_providers_jira-2.0.0-py3-none-any.whl": {
           "requires_dist": [
             "apache-airflow (>=2.1.0)",
             "JIRA (>1.0.7)"
@@ -1847,8 +1850,11 @@
           "requires_python": "~=3.6"
         }
       },
+      "2.0.0rc1": {
+        "apache_airflow_providers_jira-2.0.0rc1-py3-none-any.whl": "2.0.0@apache_airflow_providers_jira-2.0.0-py3-none-any.whl"
+      },
       "2.0.0rc2": {
-        "apache_airflow_providers_jira-2.0.0rc2-py3-none-any.whl": "2.0.0rc1@apache_airflow_providers_jira-2.0.0rc1-py3-none-any.whl"
+        "apache_airflow_providers_jira-2.0.0rc2-py3-none-any.whl": "2.0.0@apache_airflow_providers_jira-2.0.0-py3-none-any.whl"
       }
     }
   },
@@ -16557,6 +16563,25 @@
             "requests",
             "decorator",
             "fsspec (==2021.06.0)",
+            "aiohttp",
+            "crcmod ; extra == 'crc'",
+            "fusepy ; extra == 'gcsfuse'"
+          ],
+          "requires_python": ">=3.6"
+        }
+      },
+      "2021.6.1": {
+        "gcsfs-2021.6.1-py2.py3-none-any.whl": {
+          "provides_extras": [
+            "crc",
+            "gcsfuse"
+          ],
+          "requires_dist": [
+            "google-auth (>=1.2)",
+            "google-auth-oauthlib",
+            "requests",
+            "decorator",
+            "fsspec (==2021.06.1)",
             "aiohttp",
             "crcmod ; extra == 'crc'",
             "fusepy ; extra == 'gcsfuse'"
