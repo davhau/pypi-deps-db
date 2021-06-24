@@ -729,7 +729,22 @@
       "39": "27",
       "310": "27"
     },
-    "2.0b1": "2.0b0"
+    "2.0b1": "2.0b0",
+    "2.0rc1": {
+      "27": {
+        "install_requires": [
+          "aleksis-core<3.0,>=2.0rc"
+        ],
+        "python_requires": [
+          ">=3.9,<4.0"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "aleksis-app-untis": {
     "2.0a2": {
@@ -7349,7 +7364,10 @@
     "0.0.3": "0.0.1",
     "0.0.4": "0.0.1",
     "0.0.5": "0.0.1",
-    "0.0.6": "0.0.1"
+    "0.0.6": "0.0.1",
+    "0.0.10": "0.0.1",
+    "0.0.7": "0.0.1",
+    "0.0.8": "0.0.1"
   },
   "base-client-api": {
     "1.0.0": {
@@ -12771,7 +12789,9 @@
     "3.2.71": "3.2.35",
     "3.2.73": "3.2.35",
     "3.2.74": "3.2.35",
-    "3.2.75": "3.2.35"
+    "3.2.75": "3.2.35",
+    "3.2.76": "3.2.35",
+    "3.2.77": "3.2.35"
   },
   "distributions-h": {
     "0.1": {
@@ -67397,6 +67417,269 @@
       "38": "36",
       "39": "36",
       "310": "36"
+    },
+    "4.8.0": {
+      "36": {
+        "install_requires": [
+          "filelock",
+          "huggingface-hub==0.0.12",
+          "numpy>=1.17",
+          "packaging",
+          "pyyaml",
+          "regex!=2019.12.17",
+          "requests",
+          "sacremoses",
+          "tokenizers<0.11,>=0.10.1",
+          "tqdm>=4.27"
+        ],
+        "extras_require": {
+          "ja": [
+            "fugashi>=1.0",
+            "ipadic<2.0,>=1.0.0",
+            "unidic_lite>=1.0.7",
+            "unidic>=1.0.2"
+          ],
+          "sklearn": [
+            "scikit-learn"
+          ],
+          "tf": [
+            "tensorflow>=2.3",
+            "onnxconverter-common",
+            "keras2onnx"
+          ],
+          "tf-cpu": [
+            "tensorflow-cpu>=2.3",
+            "onnxconverter-common",
+            "keras2onnx"
+          ],
+          "torch": [
+            "torch>=1.0"
+          ],
+          "retrieval": [
+            "faiss-cpu",
+            "datasets"
+          ],
+          "flax": [
+            "jax>=0.2.8",
+            "jaxlib>=0.1.65",
+            "flax>=0.3.4",
+            "optax>=0.0.8"
+          ],
+          "tokenizers": [
+            "tokenizers<0.11,>=0.10.1"
+          ],
+          "onnxruntime": [
+            "onnxruntime>=1.4.0",
+            "onnxruntime-tools>=1.4.2"
+          ],
+          "onnx": [
+            "onnxconverter-common",
+            "keras2onnx",
+            "onnxruntime>=1.4.0",
+            "onnxruntime-tools>=1.4.2"
+          ],
+          "modelcreation": [
+            "cookiecutter==1.7.2"
+          ],
+          "sagemaker": [
+            "sagemaker>=2.31.0"
+          ],
+          "deepspeed": [
+            "deepspeed>=0.4.0"
+          ],
+          "fairscale": [
+            "fairscale>0.3"
+          ],
+          "optuna": [
+            "optuna"
+          ],
+          "ray": [
+            "ray"
+          ],
+          "integrations": [
+            "optuna",
+            "ray"
+          ],
+          "serving": [
+            "pydantic",
+            "uvicorn",
+            "fastapi",
+            "starlette"
+          ],
+          "speech": [
+            "soundfile",
+            "torchaudio"
+          ],
+          "vision": [
+            "Pillow"
+          ],
+          "timm": [
+            "timm"
+          ],
+          "codecarbon": [
+            "codecarbon==1.2.0"
+          ],
+          "sentencepiece": [
+            "sentencepiece==0.1.91",
+            "protobuf"
+          ],
+          "testing": [
+            "pytest",
+            "pytest-xdist",
+            "timeout-decorator",
+            "parameterized",
+            "psutil",
+            "datasets",
+            "pytest-sugar",
+            "black==21.4b0",
+            "sacrebleu>=1.4.12",
+            "rouge-score",
+            "nltk",
+            "faiss-cpu",
+            "datasets",
+            "cookiecutter==1.7.2"
+          ],
+          "quality": [
+            "black==21.4b0",
+            "isort>=5.5.4",
+            "flake8>=3.8.3"
+          ],
+          "all": [
+            "tensorflow>=2.3",
+            "onnxconverter-common",
+            "keras2onnx",
+            "torch>=1.0",
+            "jax>=0.2.8",
+            "jaxlib>=0.1.65",
+            "flax>=0.3.4",
+            "optax>=0.0.8",
+            "sentencepiece==0.1.91",
+            "protobuf",
+            "tokenizers<0.11,>=0.10.1",
+            "soundfile",
+            "torchaudio",
+            "Pillow",
+            "optuna",
+            "ray",
+            "timm",
+            "codecarbon==1.2.0"
+          ],
+          "docs_specific": [
+            "docutils==0.16.0",
+            "recommonmark",
+            "sphinx==3.2.1",
+            "sphinx-markdown-tables",
+            "sphinx-rtd-theme==0.4.3",
+            "sphinx-copybutton",
+            "sphinxext-opengraph==0.4.1"
+          ],
+          "docs": [
+            "tensorflow>=2.3",
+            "onnxconverter-common",
+            "keras2onnx",
+            "torch>=1.0",
+            "jax>=0.2.8",
+            "jaxlib>=0.1.65",
+            "flax>=0.3.4",
+            "optax>=0.0.8",
+            "sentencepiece==0.1.91",
+            "protobuf",
+            "tokenizers<0.11,>=0.10.1",
+            "soundfile",
+            "torchaudio",
+            "Pillow",
+            "optuna",
+            "ray",
+            "timm",
+            "codecarbon==1.2.0",
+            "docutils==0.16.0",
+            "recommonmark",
+            "sphinx==3.2.1",
+            "sphinx-markdown-tables",
+            "sphinx-rtd-theme==0.4.3",
+            "sphinx-copybutton",
+            "sphinxext-opengraph==0.4.1"
+          ],
+          "dev": [
+            "tensorflow>=2.3",
+            "onnxconverter-common",
+            "keras2onnx",
+            "torch>=1.0",
+            "jax>=0.2.8",
+            "jaxlib>=0.1.65",
+            "flax>=0.3.4",
+            "optax>=0.0.8",
+            "sentencepiece==0.1.91",
+            "protobuf",
+            "tokenizers<0.11,>=0.10.1",
+            "soundfile",
+            "torchaudio",
+            "Pillow",
+            "optuna",
+            "ray",
+            "timm",
+            "codecarbon==1.2.0",
+            "pytest",
+            "pytest-xdist",
+            "timeout-decorator",
+            "parameterized",
+            "psutil",
+            "datasets",
+            "pytest-sugar",
+            "black==21.4b0",
+            "sacrebleu>=1.4.12",
+            "rouge-score",
+            "nltk",
+            "faiss-cpu",
+            "datasets",
+            "cookiecutter==1.7.2",
+            "black==21.4b0",
+            "isort>=5.5.4",
+            "flake8>=3.8.3",
+            "fugashi>=1.0",
+            "ipadic<2.0,>=1.0.0",
+            "unidic_lite>=1.0.7",
+            "unidic>=1.0.2",
+            "docutils==0.16.0",
+            "recommonmark",
+            "sphinx==3.2.1",
+            "sphinx-markdown-tables",
+            "sphinx-rtd-theme==0.4.3",
+            "sphinx-copybutton",
+            "sphinxext-opengraph==0.4.1",
+            "scikit-learn",
+            "cookiecutter==1.7.2"
+          ],
+          "torchhub": [
+            "filelock",
+            "huggingface-hub==0.0.12",
+            "importlib_metadata",
+            "numpy>=1.17",
+            "packaging",
+            "protobuf",
+            "regex!=2019.12.17",
+            "requests",
+            "sacremoses",
+            "sentencepiece==0.1.91",
+            "torch>=1.0",
+            "tokenizers<0.11,>=0.10.1",
+            "tqdm>=4.27"
+          ],
+          ":python_version < \"3.7\"": [
+            "dataclasses"
+          ],
+          ":python_version < \"3.8\"": [
+            "importlib_metadata"
+          ]
+        },
+        "python_requires": [
+          ">=3.6.0"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
     }
   },
   "translate-html": {
@@ -68595,7 +68878,8 @@
       "310": "27"
     },
     "0.1.5": "0.1.4",
-    "0.1.6": "0.1.4"
+    "0.1.6": "0.1.4",
+    "0.1.7": "0.1.4"
   },
   "uci-net": {
     "1.1": {
