@@ -9350,7 +9350,40 @@
     "2.5.0": "2.4.0",
     "2.5.1": "2.4.0",
     "2.5.2": "2.4.0",
-    "2.5.3": "2.4.0"
+    "2.5.3": "2.4.0",
+    "3.0.0": {
+      "27": {
+        "install_requires": [
+          "django>=1.11",
+          "appdirs>=1.4.3",
+          "six>=1.14.0",
+          "toml>=0.10.2"
+        ],
+        "extras_require": {
+          "test": [
+            "tox>=3.15.2",
+            "mysqlclient>=1.4.6",
+            "psycopg2-binary<2.9,>=2.8.5",
+            "django_add_default_value>=0.4.0",
+            "coverage>=5.5"
+          ],
+          ":python_version < \"3.4\"": [
+            "enum34>=1.1.6"
+          ],
+          "test:python_version <= \"2.7\"": [
+            "backports.tempfile>=1.0"
+          ],
+          "test:python_version < \"3.3\"": [
+            "mock>=3.0.5"
+          ]
+        }
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "django-model-blocks": {
     "0.8.1": {
