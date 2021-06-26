@@ -11791,7 +11791,12 @@
       "39": "27",
       "310": "27"
     },
-    "0.15": "0.1"
+    "0.15": "0.1",
+    "0.16": "0.1",
+    "0.17": "0.1",
+    "0.2": "0.1",
+    "0.20": "0.1",
+    "0.21": "0.1"
   },
   "code-secret-darkshloser": {
     "0.0.1": {
@@ -44624,6 +44629,57 @@
       "38": "27",
       "39": "27",
       "310": "27"
+    },
+    "0.7.314": {
+      "27": {
+        "install_requires": [
+          "dragonfly-energy==1.12.117",
+          "dragonfly-uwg==0.5.53",
+          "lbt-honeybee==0.4.177"
+        ],
+        "setup_requires": [
+          "setuptools_scm"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "0.7.315": {
+      "27": {
+        "install_requires": [
+          "dragonfly-energy==1.12.117",
+          "dragonfly-uwg==0.5.53",
+          "lbt-honeybee==0.4.179"
+        ],
+        "setup_requires": [
+          "setuptools_scm"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "0.7.316": {
+      "27": {
+        "install_requires": [
+          "dragonfly-energy==1.12.118",
+          "dragonfly-uwg==0.5.53",
+          "lbt-honeybee==0.4.179"
+        ],
+        "setup_requires": [
+          "setuptools_scm"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
     }
   },
   "lcubo-helpers": {
@@ -44973,22 +45029,7 @@
     "2.3": "2.0"
   },
   "logtodriver": {
-    "0.0.0": {
-      "27": {
-        "install_requires": [
-          "elasticsearch==7.13.2",
-          "robotframework==4.0.3"
-        ]
-      },
-      "36": "27",
-      "37": "27",
-      "38": "27",
-      "39": "27",
-      "310": "27"
-    },
-    "0.0.1": "0.0.0",
-    "0.0.2": "0.0.0",
-    "0.0.3": {
+    "0.0.6": {
       "27": {
         "install_requires": [
           "elasticsearch==7.13.2",
@@ -45001,9 +45042,7 @@
       "38": "27",
       "39": "27",
       "310": "27"
-    },
-    "0.0.4": "0.0.3",
-    "0.0.5": "0.0.3"
+    }
   },
   "lost-years": {
     "0.2.0": {
@@ -47739,7 +47778,8 @@
     "1.17.97": "1.17.70",
     "1.17.98": "1.17.70",
     "1.17.99": "1.17.70",
-    "1.17.100": "1.17.70"
+    "1.17.100": "1.17.70",
+    "1.17.101": "1.17.70"
   },
   "mypy-boto3-medialive": {
     "0.1.10": "0.1.9",
@@ -48444,7 +48484,8 @@
     "1.17.97": "1.17.70",
     "1.17.98": "1.17.70",
     "1.17.99": "1.17.70",
-    "1.17.100": "1.17.70"
+    "1.17.100": "1.17.70",
+    "1.17.101": "1.17.70"
   },
   "mypy-boto3-robomaker": {
     "0.1.10": "0.1.9",
@@ -49149,7 +49190,8 @@
     "1.17.97": "1.17.70",
     "1.17.98": "1.17.70",
     "1.17.99": "1.17.70",
-    "1.17.100": "1.17.70"
+    "1.17.100": "1.17.70",
+    "1.17.101": "1.17.70"
   },
   "mytestpypi": {
     "1.0.0": {
@@ -82287,6 +82329,71 @@
           "all": [
             "boto3<1.17,>=1.4.4",
             "botocore<1.20,>=1.5.0",
+            "google-api-core<1.24.0,>=1.16.0",
+            "protobuf<3.15,>=3.6.0",
+            "google-api-python-client",
+            "psycopg2cffi-compat",
+            "six",
+            "tablib",
+            "xlsxwriter",
+            "tabulate",
+            "oauth2client",
+            "pytest",
+            "pyyaml",
+            "pytest",
+            "thriftpy",
+            "unittest2"
+          ],
+          "lint": [
+            "pep8",
+            "pyflakes"
+          ],
+          "dbt": [
+            "dbt",
+            "psycopg2==2.7.1"
+          ]
+        },
+        "tests_require": [
+          "pytest",
+          "thriftpy",
+          "unittest2"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "2.4.3": {
+      "27": {
+        "install_requires": [
+          "boto3",
+          "google-api-core<1.24.0,>=1.16.0",
+          "protobuf<3.15,>=3.6.0",
+          "google-api-python-client",
+          "psycopg2cffi-compat",
+          "six",
+          "tablib",
+          "xlsxwriter",
+          "tabulate",
+          "oauth2client",
+          "pytest",
+          "pyyaml"
+        ],
+        "extras_require": {
+          "test": [
+            "pytest",
+            "thriftpy",
+            "unittest2"
+          ],
+          "docs": [
+            "pytest",
+            "thriftpy",
+            "unittest2"
+          ],
+          "all": [
+            "boto3",
             "google-api-core<1.24.0,>=1.16.0",
             "protobuf<3.15,>=3.6.0",
             "google-api-python-client",
