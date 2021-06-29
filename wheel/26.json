@@ -7967,6 +7967,9 @@
         "commandpack-0.0.3-py3-none-any.whl": {
           "requires_python": ">=3.6"
         }
+      },
+      "0.0.4": {
+        "commandpack-0.0.4-py3-none-any.whl": "0.0.3@commandpack-0.0.3-py3-none-any.whl"
       }
     }
   },
@@ -15083,6 +15086,26 @@
       }
     }
   },
+  "gen-unix-domain-socket": {
+    "py2": {
+      "1.0.2": {
+        "gen_unix_domain_socket-1.0.2-py2-none-any.whl": {
+          "requires_dist": [
+            "ats-utilities"
+          ]
+        }
+      }
+    },
+    "py3": {
+      "1.0.2": {
+        "gen_unix_domain_socket-1.0.2-py3-none-any.whl": {
+          "requires_dist": [
+            "ats-utilities"
+          ]
+        }
+      }
+    }
+  },
   "geofileops": {
     "py3": {
       "0.0.1": {
@@ -20702,6 +20725,9 @@
       },
       "3.1.0a9": {
         "jupyterlab-3.1.0a9-py3-none-any.whl": "3.0.15@jupyterlab-3.0.15-py3-none-any.whl"
+      },
+      "3.1.0b0": {
+        "jupyterlab-3.1.0b0-py3-none-any.whl": "3.0.15@jupyterlab-3.0.15-py3-none-any.whl"
       }
     }
   },
@@ -36414,6 +36440,48 @@
           ],
           "requires_python": ">=3.7"
         }
+      },
+      "0.6.1": {
+        "swh.vault-0.6.1-py3-none-any.whl": {
+          "provides_extras": [
+            "graph",
+            "testing"
+          ],
+          "requires_dist": [
+            "click",
+            "flask",
+            "psycopg2",
+            "python-dateutil",
+            "fastimport",
+            "typing-extensions",
+            "swh.core[db,http] (>=0.14.0)",
+            "swh.model (>=0.3)",
+            "swh.objstorage (>=0.0.17)",
+            "swh.scheduler (>=0.7.0)",
+            "swh.storage (>=0.29.0)",
+            "swh.graph (>=v0.3.2) ; extra == 'graph'",
+            "pytest ; extra == 'testing'",
+            "dulwich (>=0.18.7) ; extra == 'testing'",
+            "swh.loader.core ; extra == 'testing'",
+            "swh.loader.git (>=0.8) ; extra == 'testing'",
+            "swh.storage[testing] ; extra == 'testing'",
+            "pytest-mock ; extra == 'testing'",
+            "types-click ; extra == 'testing'",
+            "types-python-dateutil ; extra == 'testing'",
+            "types-pyyaml ; extra == 'testing'",
+            "types-requests ; extra == 'testing'"
+          ],
+          "requires_python": ">=3.7"
+        }
+      },
+      "0.6.2": {
+        "swh.vault-0.6.2-py3-none-any.whl": "0.6.1@swh.vault-0.6.1-py3-none-any.whl"
+      },
+      "0.6.3": {
+        "swh.vault-0.6.3-py3-none-any.whl": "0.6.1@swh.vault-0.6.1-py3-none-any.whl"
+      },
+      "0.6.4": {
+        "swh.vault-0.6.4-py3-none-any.whl": "0.6.1@swh.vault-0.6.1-py3-none-any.whl"
       }
     }
   },
@@ -36526,6 +36594,31 @@
             "beautifultable (==1.0.0)",
             "openapi-schema-pydantic (==1.1.0)",
             "docker (==4.3.1)"
+          ]
+        }
+      },
+      "0.1.20b1": {
+        "taktile_cli-0.1.20b1-py2.py3-none-any.whl": {
+          "requires_dist": [
+            "Click (==7.1.2)",
+            "click-completion (==0.5.2)",
+            "requests (==2.23.0)",
+            "pydantic (==1.5.1)",
+            "colorama (==0.4.3)",
+            "PyYAML (==5.4.1)",
+            "python-dateutil (==2.8.1)",
+            "click-help-colors (==0.8)",
+            "click-didyoumean (==0.0.3)",
+            "halo (==0.0.29)",
+            "numpy (>=1.16)",
+            "pandas (>=1.0.5)",
+            "pyarrow (>=3.0)",
+            "beautifultable (==1.0.0)",
+            "openapi-schema-pydantic (==1.1.0)",
+            "docker (==4.3.1)",
+            "tenacity (==6.3.1)",
+            "cached-property (==1.5.2)",
+            "fastapi (==0.54.*)"
           ]
         }
       },
@@ -36904,53 +36997,76 @@
         "taktile_cli-0.5.21-py2.py3-none-any.whl": "0.5.13@taktile_cli-0.5.13-py2.py3-none-any.whl"
       },
       "0.5.22": {
-        "taktile_cli-0.5.22-py2.py3-none-any.whl": {
-          "requires_dist": [
-            "Click (==7.1.2)",
-            "click-completion (==0.5.2)",
-            "requests (==2.23.0)",
-            "pydantic (==1.5.1)",
-            "colorama (==0.4.3)",
-            "PyYAML (==5.4.1)",
-            "python-dateutil (==2.8.1)",
-            "click-help-colors (==0.8)",
-            "click-didyoumean (==0.0.3)",
-            "halo (==0.0.29)",
-            "numpy (>=1.16)",
-            "pandas (>=1.0.5)",
-            "pyarrow (>=3.0)",
-            "beautifultable (==1.0.0)",
-            "openapi-schema-pydantic (==1.1.0)",
-            "docker (==4.3.1)",
-            "tenacity (==6.3.1)",
-            "cached-property (==1.5.2)",
-            "fastapi (==0.54.*)"
-          ]
-        }
+        "taktile_cli-0.5.22-py2.py3-none-any.whl": "0.1.20b1@taktile_cli-0.1.20b1-py2.py3-none-any.whl"
       },
       "0.5.23": {
-        "taktile_cli-0.5.23-py2.py3-none-any.whl": "0.5.22@taktile_cli-0.5.22-py2.py3-none-any.whl"
+        "taktile_cli-0.5.23-py2.py3-none-any.whl": "0.1.20b1@taktile_cli-0.1.20b1-py2.py3-none-any.whl"
       },
       "0.5.24": {
-        "taktile_cli-0.5.24-py2.py3-none-any.whl": "0.5.22@taktile_cli-0.5.22-py2.py3-none-any.whl"
+        "taktile_cli-0.5.24-py2.py3-none-any.whl": "0.1.20b1@taktile_cli-0.1.20b1-py2.py3-none-any.whl"
       },
       "0.5.25": {
-        "taktile_cli-0.5.25-py2.py3-none-any.whl": "0.5.22@taktile_cli-0.5.22-py2.py3-none-any.whl"
+        "taktile_cli-0.5.25-py2.py3-none-any.whl": "0.1.20b1@taktile_cli-0.1.20b1-py2.py3-none-any.whl"
       },
       "0.5.26": {
-        "taktile_cli-0.5.26-py2.py3-none-any.whl": "0.5.22@taktile_cli-0.5.22-py2.py3-none-any.whl"
+        "taktile_cli-0.5.26-py2.py3-none-any.whl": "0.1.20b1@taktile_cli-0.1.20b1-py2.py3-none-any.whl"
+      },
+      "0.5.27b11": {
+        "taktile_cli-0.5.27b11-py2.py3-none-any.whl": "0.1.20b1@taktile_cli-0.1.20b1-py2.py3-none-any.whl"
+      },
+      "0.5.27b12": {
+        "taktile_cli-0.5.27b12-py2.py3-none-any.whl": "0.1.20b1@taktile_cli-0.1.20b1-py2.py3-none-any.whl"
+      },
+      "0.5.27b13": {
+        "taktile_cli-0.5.27b13-py2.py3-none-any.whl": "0.1.20b1@taktile_cli-0.1.20b1-py2.py3-none-any.whl"
+      },
+      "0.5.27b14": {
+        "taktile_cli-0.5.27b14-py2.py3-none-any.whl": "0.1.20b1@taktile_cli-0.1.20b1-py2.py3-none-any.whl"
+      },
+      "0.5.27b15": {
+        "taktile_cli-0.5.27b15-py2.py3-none-any.whl": "0.1.20b1@taktile_cli-0.1.20b1-py2.py3-none-any.whl"
+      },
+      "0.5.27b16": {
+        "taktile_cli-0.5.27b16-py2.py3-none-any.whl": "0.1.20b1@taktile_cli-0.1.20b1-py2.py3-none-any.whl"
+      },
+      "0.5.27b17": {
+        "taktile_cli-0.5.27b17-py2.py3-none-any.whl": "0.1.20b1@taktile_cli-0.1.20b1-py2.py3-none-any.whl"
+      },
+      "0.5.27b18": {
+        "taktile_cli-0.5.27b18-py2.py3-none-any.whl": "0.1.20b1@taktile_cli-0.1.20b1-py2.py3-none-any.whl"
+      },
+      "0.5.27b19": {
+        "taktile_cli-0.5.27b19-py2.py3-none-any.whl": "0.1.20b1@taktile_cli-0.1.20b1-py2.py3-none-any.whl"
       },
       "0.5.27b2": {
-        "taktile_cli-0.5.27b2-py2.py3-none-any.whl": "0.5.22@taktile_cli-0.5.22-py2.py3-none-any.whl"
+        "taktile_cli-0.5.27b2-py2.py3-none-any.whl": "0.1.20b1@taktile_cli-0.1.20b1-py2.py3-none-any.whl"
+      },
+      "0.5.27b20": {
+        "taktile_cli-0.5.27b20-py2.py3-none-any.whl": "0.1.20b1@taktile_cli-0.1.20b1-py2.py3-none-any.whl"
+      },
+      "0.5.27b21": {
+        "taktile_cli-0.5.27b21-py2.py3-none-any.whl": "0.1.20b1@taktile_cli-0.1.20b1-py2.py3-none-any.whl"
       },
       "0.5.27b3": {
-        "taktile_cli-0.5.27b3-py2.py3-none-any.whl": "0.5.22@taktile_cli-0.5.22-py2.py3-none-any.whl"
+        "taktile_cli-0.5.27b3-py2.py3-none-any.whl": "0.1.20b1@taktile_cli-0.1.20b1-py2.py3-none-any.whl"
       },
       "0.5.27b4": {
-        "taktile_cli-0.5.27b4-py2.py3-none-any.whl": "0.5.22@taktile_cli-0.5.22-py2.py3-none-any.whl"
+        "taktile_cli-0.5.27b4-py2.py3-none-any.whl": "0.1.20b1@taktile_cli-0.1.20b1-py2.py3-none-any.whl"
       },
       "0.5.27b5": {
-        "taktile_cli-0.5.27b5-py2.py3-none-any.whl": "0.5.22@taktile_cli-0.5.22-py2.py3-none-any.whl"
+        "taktile_cli-0.5.27b5-py2.py3-none-any.whl": "0.1.20b1@taktile_cli-0.1.20b1-py2.py3-none-any.whl"
+      },
+      "0.5.27b6": {
+        "taktile_cli-0.5.27b6-py2.py3-none-any.whl": "0.1.20b1@taktile_cli-0.1.20b1-py2.py3-none-any.whl"
+      },
+      "0.5.27b7": {
+        "taktile_cli-0.5.27b7-py2.py3-none-any.whl": "0.1.20b1@taktile_cli-0.1.20b1-py2.py3-none-any.whl"
+      },
+      "0.5.27b8": {
+        "taktile_cli-0.5.27b8-py2.py3-none-any.whl": "0.1.20b1@taktile_cli-0.1.20b1-py2.py3-none-any.whl"
+      },
+      "0.5.27b9": {
+        "taktile_cli-0.5.27b9-py2.py3-none-any.whl": "0.1.20b1@taktile_cli-0.1.20b1-py2.py3-none-any.whl"
       },
       "0.5.3": {
         "taktile_cli-0.5.3-py2.py3-none-any.whl": "0.5.1@taktile_cli-0.5.1-py2.py3-none-any.whl"
@@ -36972,6 +37088,38 @@
       },
       "0.5.9": {
         "taktile_cli-0.5.9-py2.py3-none-any.whl": "0.5.1@taktile_cli-0.5.1-py2.py3-none-any.whl"
+      },
+      "0.6.0": {
+        "taktile_cli-0.6.0-py2.py3-none-any.whl": {
+          "requires_dist": [
+            "Click (==7.1.2)",
+            "click-completion (==0.5.2)",
+            "requests (==2.23.0)",
+            "pydantic (==1.8.2)",
+            "colorama (==0.4.3)",
+            "PyYAML (==5.4.1)",
+            "python-dateutil (==2.8.1)",
+            "click-help-colors (==0.8)",
+            "click-didyoumean (==0.0.3)",
+            "halo (==0.0.29)",
+            "numpy (>=1.16)",
+            "pandas (>=1.0.5)",
+            "pyarrow (>=3.0)",
+            "beautifultable (==1.0.0)",
+            "openapi-schema-pydantic (==1.1.0)",
+            "docker (==4.3.1)",
+            "tenacity (==6.3.1)",
+            "cached-property (==1.5.2)",
+            "fastapi (==0.54.*)",
+            "taktile-types (==0.2.0)"
+          ]
+        }
+      },
+      "0.6.1": {
+        "taktile_cli-0.6.1-py2.py3-none-any.whl": "0.6.0@taktile_cli-0.6.0-py2.py3-none-any.whl"
+      },
+      "0.6.2": {
+        "taktile_cli-0.6.2-py2.py3-none-any.whl": "0.6.0@taktile_cli-0.6.0-py2.py3-none-any.whl"
       }
     }
   },
