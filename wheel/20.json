@@ -31402,6 +31402,18 @@
           "requires_python": "~=3.6"
         }
       },
+      "2.9.0": {
+        "pylint-2.9.0-py3-none-any.whl": {
+          "requires_dist": [
+            "astroid (<2.7,>=2.6.1)",
+            "isort (<6,>=4.2.5)",
+            "mccabe (<0.7,>=0.6)",
+            "toml (>=0.7.1)",
+            "colorama ; sys_platform == \"win32\""
+          ],
+          "requires_python": "~=3.6"
+        }
+      },
       "2.9.0.dev1": {
         "pylint-2.9.0.dev1-py3-none-any.whl": {
           "requires_dist": [
@@ -31422,6 +31434,9 @@
       },
       "3.0.0a3": {
         "pylint-3.0.0a3-py3-none-any.whl": "2.8.0@pylint-2.8.0-py3-none-any.whl"
+      },
+      "3.0.0a4": {
+        "pylint-3.0.0a4-py3-none-any.whl": "2.9.0@pylint-2.9.0-py3-none-any.whl"
       }
     }
   },
@@ -33037,6 +33052,35 @@
             "boto3; extra == \"redshift\"",
             "docker (>=2.5.1)",
             "functools32; python_version >= \"2.7\" and python_version < \"2.8\"",
+            "moto; extra == \"redshift\"",
+            "psycopg2-binary; extra == \"postgres-binary\"",
+            "psycopg2; extra == \"postgres\"",
+            "pymongo; extra == \"mongo\"",
+            "pymysql (>=1.0); extra == \"mysql\"",
+            "pytest (>=1.0)",
+            "redis; extra == \"redis\"",
+            "responses",
+            "sqlalchemy",
+            "sqlparse; extra == \"redshift\""
+          ],
+          "requires_python": ">=3.6,<4"
+        }
+      },
+      "2.1.0": {
+        "pytest_mock_resources-2.1.0-py3-none-any.whl": {
+          "provides_extras": [
+            "mongo",
+            "mysql",
+            "postgres",
+            "postgres-async",
+            "postgres-binary",
+            "redis",
+            "redshift"
+          ],
+          "requires_dist": [
+            "asyncpg; extra == \"postgres-async\"",
+            "boto3; extra == \"redshift\"",
+            "docker (>=2.5.1)",
             "moto; extra == \"redshift\"",
             "psycopg2-binary; extra == \"postgres-binary\"",
             "psycopg2; extra == \"postgres\"",
