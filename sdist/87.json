@@ -47131,14 +47131,14 @@
     }
   },
   "metacells": {
-    "0.2.0": {
+    "0.3.0": {
       "36": {
         "install_requires": [
-          "anndata",
+          "scanpy",
           "importlib-metadata",
-          "leidenalg",
           "numpy",
           "pandas",
+          "scipy",
           "python-igraph",
           "threadpoolctl"
         ],
@@ -47146,32 +47146,40 @@
           "setuptools_scm"
         ],
         "extras_require": {
-          "develop": [
-            "anndata",
+          "test": [
+            "scanpy",
             "importlib-metadata",
-            "leidenalg",
             "numpy",
             "pandas",
+            "scipy",
+            "python-igraph",
+            "threadpoolctl",
+            "pytest",
+            "pyyaml"
+          ],
+          "develop": [
+            "scanpy",
+            "importlib-metadata",
+            "numpy",
+            "pandas",
+            "scipy",
             "python-igraph",
             "threadpoolctl",
             "pytest",
             "pyyaml",
-            "scanpy",
-            "tox",
             "autopep8",
             "isort",
             "mypy",
             "pylint",
             "pylint_strict_informational",
             "sphinx",
-            "sphinx_rtd_theme"
+            "sphinx_rtd_theme",
+            "typing_extensions"
           ]
         },
         "tests_require": [
           "pytest",
-          "pyyaml",
-          "scanpy",
-          "tox"
+          "pyyaml"
         ],
         "python_requires": [
           ">=3.7"
