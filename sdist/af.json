@@ -18425,7 +18425,76 @@
     "2.6.1": "2.6.0",
     "2.7.0": "2.6.0",
     "2.7.1": "2.6.0",
-    "2.7.2": "2.6.0"
+    "2.7.2": "2.6.0",
+    "2.8.0": {
+      "27": {
+        "install_requires": [
+          "django",
+          "future>=0.17.1",
+          "conditional>=1.3",
+          "six"
+        ],
+        "extras_require": {
+          "development": [
+            "pip-tools",
+            "check-manifest",
+            "django",
+            "future>=0.17.1",
+            "conditional>=1.3",
+            "six",
+            "tox",
+            "tox-gh-actions",
+            "pluggy>=0.7",
+            "mock",
+            "unittest-xml-reporting",
+            "codacy-coverage",
+            "flake8",
+            "yamllint",
+            "isort"
+          ],
+          "test:python_version >= '3.6'": [
+            "django-migration-fixer"
+          ],
+          "deploy": [
+            "bump2version",
+            "readme_renderer[md]",
+            "changes",
+            "git-changelog",
+            "twine"
+          ],
+          "lint": [
+            "flake8",
+            "yamllint",
+            "isort"
+          ],
+          "development:python_version >= \"3.6\"": [
+            "black"
+          ],
+          "test": [
+            "tox",
+            "tox-gh-actions",
+            "pluggy>=0.7",
+            "mock",
+            "unittest-xml-reporting",
+            "codacy-coverage"
+          ],
+          "lint:python_version >= \"3.6\"": [
+            "black"
+          ]
+        },
+        "tests_require": [
+          "coverage"
+        ],
+        "python_requires": [
+          ">=3.5"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "django-contrib-validator": {
     "1.0.3": {
