@@ -26481,7 +26481,8 @@
     "2.20.0": "2.0.2",
     "2.21.0": "2.0.2",
     "2.21.1": "2.0.2",
-    "2.22.0": "2.0.2"
+    "2.22.0": "2.0.2",
+    "2.23.0": "2.0.2"
   },
   "opensanctions": {
     "3.0.0": {
@@ -30026,7 +30027,9 @@
     "4.11.0": "4.0.0",
     "4.12.0a1625625486": "4.0.0",
     "4.12.0a1625696694": "4.0.0",
-    "4.12.0a1625826438": "4.0.0"
+    "4.12.0a1625826438": "4.0.0",
+    "4.12.0": "4.0.0",
+    "4.12.0a1626086455": "4.0.0"
   },
   "pulumi-aws-website": {
     "0.1.0": {
@@ -31931,6 +31934,55 @@
       "36": {
         "install_requires": [
           "pymilvus==2.0.0rc1"
+        ],
+        "setup_requires": [
+          "setuptools_scm"
+        ],
+        "extras_require": {
+          "test": [
+            "sklearn==0.0",
+            "pytest==5.3.4",
+            "pytest-cov==2.8.1",
+            "pytest-timeout==1.3.4"
+          ],
+          "dev": [
+            "sklearn==0.0",
+            "pylint==2.4.4"
+          ],
+          "doc": [
+            "mistune==0.8.4",
+            "m2r==0.2.1",
+            "Sphinx==2.3.1",
+            "sphinx-copybutton==0.3.1",
+            "sphinx-rtd-theme==0.4.3",
+            "sphinxcontrib-applehelp==1.0.1",
+            "sphinxcontrib-devhelp==1.0.1",
+            "sphinxcontrib-htmlhelp==1.0.2",
+            "sphinxcontrib-jsmath==1.0.1",
+            "sphinxcontrib-qthelp==1.0.2",
+            "sphinxcontrib-serializinghtml==1.1.3",
+            "sphinxcontrib-prettyspecialmethods"
+          ],
+          ":python_version < \"3.7\"": [
+            "pandas==1.1.5"
+          ],
+          ":python_version > \"3.6\"": [
+            "pandas==1.2.4"
+          ]
+        },
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "2.0.0rc2": {
+      "36": {
+        "install_requires": [
+          "pymilvus==2.0.0rc2"
         ],
         "setup_requires": [
           "setuptools_scm"
