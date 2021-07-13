@@ -1833,9 +1833,27 @@
     "0.0.3": "0.0.1"
   },
   "ape-solidity": {
-    "0.0.0": {
+    "0.1.0a1": {
       "27": {
+        "install_requires": [
+          "py-solc-x<1.2.0,>=1.1.0",
+          "eth-ape>=0.1.0a12"
+        ],
+        "setup_requires": [
+          "setuptools_scm"
+        ],
         "extras_require": {
+          "doc": [
+            "Sphinx<4,>=3.4.3",
+            "sphinx_rtd_theme<1,>=0.1.9",
+            "towncrier<20,>=19.2.0"
+          ],
+          "lint": [
+            "black<21.0,>=20.8b1",
+            "mypy<1.0,>=0.800",
+            "flake8<4.0,>=3.8.3",
+            "isort<6.0,>=5.7.0"
+          ],
           "dev": [
             "pytest<7.0,>=6.0",
             "pytest-xdist",
@@ -1857,28 +1875,17 @@
             "IPython",
             "ipdb"
           ],
-          "doc": [
-            "Sphinx<4,>=3.4.3",
-            "sphinx_rtd_theme<1,>=0.1.9",
-            "towncrier<20,>=19.2.0"
-          ],
-          "lint": [
-            "black<21.0,>=20.8b1",
-            "mypy<1.0,>=0.800",
-            "flake8<4.0,>=3.8.3",
-            "isort<6.0,>=5.7.0"
+          "release": [
+            "setuptools",
+            "setuptools-scm",
+            "wheel",
+            "twine"
           ],
           "test": [
             "pytest<7.0,>=6.0",
             "pytest-xdist",
             "pytest-cov",
             "hypothesis<7.0,>=6.2.0"
-          ],
-          "release": [
-            "setuptools",
-            "setuptools-scm",
-            "wheel",
-            "twine"
           ],
           ":python_version < \"3.8\"": [
             "importlib-metadata"
@@ -39817,7 +39824,8 @@
     "1.8.0": "1.4.0",
     "1.9.0": "1.4.0",
     "1.9.1": "1.4.0",
-    "1.9.2": "1.4.0"
+    "1.9.2": "1.4.0",
+    "1.9.3": "1.4.0"
   },
   "pyctags": {
     "0.5.0": {

@@ -31662,7 +31662,8 @@
     "1.5.0": "1.0.2",
     "1.5.1": "1.0.2",
     "1.5.2": "1.0.2",
-    "1.5.3": "1.0.2"
+    "1.5.3": "1.0.2",
+    "1.6.0": "1.0.2"
   },
   "pyannotations": {
     "0.0.1": {
@@ -34590,6 +34591,17 @@
     "0.2.2": "0.1.0",
     "0.2.3": "0.1.0",
     "0.2.4": "0.1.0"
+  },
+  "qasl": {
+    "2.0": {
+      "27": {},
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "2.1": "2.0"
   },
   "qbs": {
     "1.0.0": {
@@ -38356,7 +38368,12 @@
       "39": "27",
       "310": "27"
     },
-    "0.0.6": "0.0.5"
+    "0.0.6": "0.0.5",
+    "0.0.10": "0.0.5",
+    "0.0.11": "0.0.5",
+    "0.0.7": "0.0.5",
+    "0.0.8": "0.0.5",
+    "0.0.9": "0.0.5"
   },
   "snptoolkit": {
     "2.0.1": {
@@ -59561,7 +59578,177 @@
     "20.4.4": "20.3.0",
     "20.4.5": "20.3.0",
     "20.4.6": "20.3.0",
-    "20.4.7": "20.3.0"
+    "20.4.7": "20.3.0",
+    "20.5.0": {
+      "27": {
+        "install_requires": [
+          "backports.entry_points_selectable>=1.0.4",
+          "distlib<1,>=0.3.1",
+          "filelock<4,>=3.0.0",
+          "platformdirs<3,>=2",
+          "six<2,>=1.9.0"
+        ],
+        "setup_requires": [
+          "setuptools_scm >= 2"
+        ],
+        "extras_require": {
+          "docs": [
+            "proselint>=0.10.2",
+            "sphinx>=3",
+            "sphinx-argparse>=0.2.5",
+            "sphinx-rtd-theme>=0.4.3",
+            "towncrier>=19.9.0rc1"
+          ],
+          "testing:python_version > \"3.4\" and python_version != \"3.9\"": [
+            "xonsh>=0.9.16"
+          ],
+          "testing": [
+            "coverage>=4",
+            "coverage_enable_subprocess>=1",
+            "flaky>=3",
+            "pytest>=4",
+            "pytest-env>=0.6.2",
+            "pytest-freezegun>=0.4.1",
+            "pytest-mock>=2",
+            "pytest-randomly>=1",
+            "pytest-timeout>=1"
+          ],
+          ":python_version < \"3.7\"": [
+            "importlib-resources>=1.0"
+          ],
+          ":python_version < \"3.4\" and sys_platform != \"win32\"": [
+            "pathlib2<3,>=2.3.3"
+          ],
+          "testing:python_version > \"3.4\"": [
+            "packaging>=20.0"
+          ],
+          ":python_version < \"3.8\"": [
+            "importlib-metadata>=0.12"
+          ]
+        },
+        "python_requires": [
+          "!=3.2.*",
+          "!=3.3.*",
+          ">=2.7",
+          "!=3.0.*",
+          "!=3.1.*",
+          "!=3.4.*"
+        ]
+      },
+      "36": {
+        "install_requires": [
+          "backports.entry_points_selectable>=1.0.4",
+          "distlib<1,>=0.3.1",
+          "filelock<4,>=3.0.0",
+          "platformdirs<3,>=2",
+          "six<2,>=1.9.0"
+        ],
+        "setup_requires": [
+          "setuptools_scm >= 2"
+        ],
+        "extras_require": {
+          "docs": [
+            "proselint>=0.10.2",
+            "sphinx>=3",
+            "sphinx-argparse>=0.2.5",
+            "sphinx-rtd-theme>=0.4.3",
+            "towncrier>=19.9.0rc1"
+          ],
+          "testing": [
+            "coverage>=4",
+            "coverage_enable_subprocess>=1",
+            "flaky>=3",
+            "pytest>=4",
+            "pytest-env>=0.6.2",
+            "pytest-freezegun>=0.4.1",
+            "pytest-mock>=2",
+            "pytest-randomly>=1",
+            "pytest-timeout>=1"
+          ],
+          "testing:python_version > \"3.4\"": [
+            "packaging>=20.0"
+          ],
+          "testing:python_version > \"3.4\" and python_version != \"3.9\"": [
+            "xonsh>=0.9.16"
+          ],
+          ":python_version < \"3.8\"": [
+            "importlib-metadata>=0.12"
+          ],
+          ":python_version < \"3.7\"": [
+            "importlib-resources>=1.0"
+          ],
+          ":python_version < \"3.4\" and sys_platform != \"win32\"": [
+            "pathlib2<3,>=2.3.3"
+          ]
+        },
+        "python_requires": [
+          ">=2.7",
+          "!=3.3.*",
+          "!=3.4.*",
+          "!=3.0.*",
+          "!=3.2.*",
+          "!=3.1.*"
+        ]
+      },
+      "37": "36",
+      "38": {
+        "install_requires": [
+          "backports.entry_points_selectable>=1.0.4",
+          "distlib<1,>=0.3.1",
+          "filelock<4,>=3.0.0",
+          "platformdirs<3,>=2",
+          "six<2,>=1.9.0"
+        ],
+        "setup_requires": [
+          "setuptools_scm >= 2"
+        ],
+        "extras_require": {
+          "docs": [
+            "proselint>=0.10.2",
+            "sphinx>=3",
+            "sphinx-argparse>=0.2.5",
+            "sphinx-rtd-theme>=0.4.3",
+            "towncrier>=19.9.0rc1"
+          ],
+          "testing": [
+            "coverage>=4",
+            "coverage_enable_subprocess>=1",
+            "flaky>=3",
+            "pytest>=4",
+            "pytest-env>=0.6.2",
+            "pytest-freezegun>=0.4.1",
+            "pytest-mock>=2",
+            "pytest-randomly>=1",
+            "pytest-timeout>=1"
+          ],
+          "testing:python_version > \"3.4\"": [
+            "packaging>=20.0"
+          ],
+          "testing:python_version > \"3.4\" and python_version != \"3.9\"": [
+            "xonsh>=0.9.16"
+          ],
+          ":python_version < \"3.8\"": [
+            "importlib-metadata>=0.12"
+          ],
+          ":python_version < \"3.7\"": [
+            "importlib-resources>=1.0"
+          ],
+          ":python_version < \"3.4\" and sys_platform != \"win32\"": [
+            "pathlib2<3,>=2.3.3"
+          ]
+        },
+        "python_requires": [
+          "!=3.2.*",
+          "!=3.3.*",
+          ">=2.7",
+          "!=3.0.*",
+          "!=3.4.*",
+          "!=3.1.*"
+        ]
+      },
+      "39": "38",
+      "310": "38"
+    }
   },
   "vivodict": {
     "0.1.0": {
