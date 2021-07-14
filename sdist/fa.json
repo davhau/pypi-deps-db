@@ -2135,7 +2135,57 @@
     "4.0.0.55": "4.0.0.53",
     "4.0.0.dev253": "4.0.0.53",
     "4.0.1.dev108": "4.0.0.53",
-    "4.0.0.56": "4.0.0.53"
+    "4.0.0.56": "4.0.0.53",
+    "4.0.0.57": {
+      "36": {
+        "install_requires": [
+          "arrow",
+          "urllib3",
+          "python-baseconv",
+          "boto3",
+          "pysftp",
+          "netifaces",
+          "pyroute2.core",
+          "redis",
+          "requests",
+          "elasticsearch!=7.0.3,<8.0.0,>=7.0.0",
+          "python-datemath",
+          "packaging",
+          "tabulate",
+          "PyYAML",
+          "easydict",
+          "passlib",
+          "cart",
+          "ssdeep",
+          "python-magic",
+          "pytz",
+          "apscheduler",
+          "websocket_client<1.0.0",
+          "elastic-apm[flask]==6.2.3",
+          "cython",
+          "docker",
+          "kubernetes",
+          "notifications-python-client",
+          "azure-storage-blob!=12.4.0",
+          "msoffcrypto-tool",
+          "chardet"
+        ],
+        "extras_require": {
+          "test": [
+            "pytest",
+            "pytest-cov",
+            "retrying",
+            "pytest-mock"
+          ]
+        }
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "4.0.0.dev254": "4.0.0.57",
+    "4.0.1.dev109": "4.0.0.57"
   },
   "astrowidgets": {
     "0.1.0": {
@@ -14561,6 +14611,43 @@
           "matplotlib<4.0.0,>=3.4.2",
           "numpy<2.0.0,>=1.21.0",
           "pandas-genomics<0.9.0,>=0.8.0",
+          "pandas>1.1",
+          "rpy2<4.0.0,>=3.4.5",
+          "scipy>1.5",
+          "seaborn>0.9",
+          "statsmodels>0.10",
+          "tzlocal<3.0,>=2.1"
+        ],
+        "extras_require": {
+          "docs": [
+            "sphinx<4.0.0,>=3.2.1",
+            "numpydoc<2.0.0,>=1.1.0",
+            "sphinx_rtd_theme<0.6.0,>=0.5.0",
+            "sphinx-copybutton<0.4.0,>=0.3.0",
+            "ipython<8.0.0,>=7.18.1",
+            "sphinx-click<3.0,>=2.6"
+          ],
+          ":python_version < \"3.8\"": [
+            "importlib-metadata<3.0,>=2.0"
+          ]
+        },
+        "python_requires": [
+          ">=3.7.1,<3.10"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "2.0.2": {
+      "27": {
+        "install_requires": [
+          "click>7",
+          "matplotlib<4.0.0,>=3.4.2",
+          "numpy<2.0.0,>=1.21.0",
+          "pandas-genomics<0.10,>=0.9",
           "pandas>1.1",
           "rpy2<4.0.0,>=3.4.5",
           "scipy>1.5",
