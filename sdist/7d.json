@@ -3508,7 +3508,22 @@
     "1.110.1": "1.108.0",
     "1.111.0": "1.108.0",
     "1.112.0": "1.108.0",
-    "1.113.0": "1.108.0"
+    "1.113.0": "1.108.0",
+    "1.114.0": {
+      "36": {
+        "install_requires": [
+          "jsii<2.0.0,>=1.31.0",
+          "publication>=0.0.3"
+        ],
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "aws-marketplace-ubuntu-scraper": {
     "0.0.2": {
@@ -17102,7 +17117,9 @@
     "1.1.3": "1.0.0",
     "1.1.4": "1.0.0",
     "1.1.5": "1.0.0",
-    "1.1.6": "1.0.0"
+    "1.1.6": "1.0.0",
+    "1.1.7": "1.0.0",
+    "1.1.8": "1.0.0"
   },
   "lcinvestor": {
     "2.0": {
@@ -27468,7 +27485,155 @@
     "2.1.0.dev2": "2.0.9",
     "2.1.0.dev3": "2.0.9",
     "2.1.0.dev4": "2.0.9",
-    "2.1.0.dev5": "2.0.9"
+    "2.1.0.dev5": "2.0.9",
+    "2.1.0.dev6": {
+      "27": {
+        "install_requires": [
+          "boto3>=1.9.201",
+          "botocore>=1.12.201",
+          "cryptography>=3.3.1",
+          "requests>=2.5",
+          "xmltodict",
+          "six>1.9",
+          "werkzeug",
+          "pytz",
+          "python-dateutil<3.0.0,>=2.1",
+          "responses>=0.9.0",
+          "MarkupSafe!=2.0.0a1",
+          "Jinja2>=2.10.1",
+          "more-itertools",
+          "setuptools"
+        ],
+        "extras_require": {
+          "all": [
+            "PyYAML>=5.1",
+            "ecdsa<0.15",
+            "docker>=2.5.1",
+            "jsondiff>=1.1.2",
+            "aws-xray-sdk!=0.96,>=0.93",
+            "idna<3,>=2.5",
+            "cfn-lint>=0.4.0"
+          ],
+          "ses": [
+            "docker>=2.5.1"
+          ],
+          ":python_version<'3.3'": [
+            "backports.tempfile"
+          ],
+          "dynamodb2": [
+            "docker>=2.5.1"
+          ],
+          "ec2": [
+            "docker>=2.5.1"
+          ],
+          "ec2:python_version < \"3\"": [
+            "sshpubkeys==3.1.0"
+          ],
+          "cognitoidp:python_version < \"3\"": [
+            "python-jose[cryptography]<3.3.0,>=3.1.0"
+          ],
+          "awslambda": [
+            "docker>=2.5.1"
+          ],
+          "apigateway:python_version < \"3\"": [
+            "python-jose[cryptography]<3.3.0,>=3.1.0"
+          ],
+          "dynamodbstreams": [
+            "docker>=2.5.1"
+          ],
+          "s3": [
+            "PyYAML>=5.1"
+          ],
+          "xray": [
+            "aws-xray-sdk!=0.96,>=0.93"
+          ],
+          "all:python_version < \"3\"": [
+            "python-jose[cryptography]<3.3.0,>=3.1.0",
+            "decorator<=4.4.2",
+            "sshpubkeys==3.1.0"
+          ],
+          "server:python_version < \"3\"": [
+            "python-jose[cryptography]<3.3.0,>=3.1.0",
+            "decorator<=4.4.2",
+            "sshpubkeys==3.1.0"
+          ],
+          "apigateway": [
+            "ecdsa<0.15"
+          ],
+          "iotdata": [
+            "jsondiff>=1.1.2"
+          ],
+          "sqs": [
+            "docker>=2.5.1"
+          ],
+          "ssm:python_version < \"3\"": [
+            "decorator<=4.4.2"
+          ],
+          "cognitoidp:python_version > \"3\"": [
+            "python-jose[cryptography]<4.0.0,>=3.1.0"
+          ],
+          "ssm": [
+            "docker>=2.5.1",
+            "PyYAML>=5.1"
+          ],
+          "cognitoidp": [
+            "ecdsa<0.15"
+          ],
+          "cloudformation": [
+            "docker>=2.5.1",
+            "PyYAML>=5.1",
+            "cfn-lint>=0.4.0"
+          ],
+          ":python_version < \"3\"": [
+            "configparser<5.0",
+            "Jinja2<3.0.0",
+            "mock<=3.0.5",
+            "more-itertools==5.0.0",
+            "rsa<=4.0",
+            "setuptools==44.0.0"
+          ],
+          "ec2:python_version > \"3\"": [
+            "sshpubkeys>=3.1.0"
+          ],
+          "all:python_version > \"3\"": [
+            "python-jose[cryptography]<4.0.0,>=3.1.0",
+            "sshpubkeys>=3.1.0"
+          ],
+          "batch": [
+            "docker>=2.5.1"
+          ],
+          "server:python_version > \"3\"": [
+            "python-jose[cryptography]<4.0.0,>=3.1.0",
+            "sshpubkeys>=3.1.0"
+          ],
+          "cloudformation:python_version < \"3\"": [
+            "decorator<=4.4.2"
+          ],
+          "apigateway:python_version > \"3\"": [
+            "python-jose[cryptography]<4.0.0,>=3.1.0"
+          ],
+          "server": [
+            "PyYAML>=5.1",
+            "ecdsa<0.15",
+            "docker>=2.5.1",
+            "jsondiff>=1.1.2",
+            "aws-xray-sdk!=0.96,>=0.93",
+            "idna<3,>=2.5",
+            "cfn-lint>=0.4.0",
+            "flask",
+            "flask-cors"
+          ],
+          "sns": [
+            "docker>=2.5.1"
+          ]
+        }
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "motolibrary": {
     "0.0.1": "1.0",
@@ -29039,7 +29204,10 @@
       "38": "27",
       "39": "27",
       "310": "27"
-    }
+    },
+    "1.1.7": "1.1.6",
+    "1.1.8": "1.1.6",
+    "1.1.9": "1.1.6"
   },
   "nerdfonts": {
     "1.0.1": {
@@ -49137,7 +49305,8 @@
       "39": "27",
       "310": "27"
     },
-    "6.9.0": "6.8.2"
+    "6.9.0": "6.8.2",
+    "6.18.0": "6.13.1"
   },
   "testwizard.test": {
     "3.2.0": {

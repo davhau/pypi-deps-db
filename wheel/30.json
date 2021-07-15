@@ -408,6 +408,26 @@
       "0.25.1": {
         "aioauth_client-0.25.1-py3-none-any.whl": "0.25.0@aioauth_client-0.25.0-py3-none-any.whl"
       },
+      "0.25.10": {
+        "aioauth_client-0.25.10-py3-none-any.whl": {
+          "provides_extras": [
+            "build",
+            "example",
+            "tests"
+          ],
+          "requires_dist": [
+            "httpx (>=0.17)",
+            "bump2version ; extra == 'build'",
+            "asgi-tools ; extra == 'example'",
+            "asgi-sessions ; extra == 'example'",
+            "uvicorn ; extra == 'example'",
+            "pytest ; extra == 'tests'",
+            "pytest-aio[trio] ; extra == 'tests'",
+            "pytest-mypy ; extra == 'tests'"
+          ],
+          "requires_python": ">=3.7"
+        }
+      },
       "0.25.2": {
         "aioauth_client-0.25.2-py3-none-any.whl": "0.25.0@aioauth_client-0.25.0-py3-none-any.whl"
       },
@@ -435,27 +455,13 @@
         "aioauth_client-0.25.6-py3-none-any.whl": "0.25.5@aioauth_client-0.25.5-py3-none-any.whl"
       },
       "0.25.7": {
-        "aioauth_client-0.25.7-py3-none-any.whl": {
-          "provides_extras": [
-            "build",
-            "example",
-            "tests"
-          ],
-          "requires_dist": [
-            "httpx (>=0.17)",
-            "bump2version ; extra == 'build'",
-            "asgi-tools ; extra == 'example'",
-            "asgi-sessions ; extra == 'example'",
-            "uvicorn ; extra == 'example'",
-            "pytest ; extra == 'tests'",
-            "pytest-aio[trio] ; extra == 'tests'",
-            "pytest-mypy ; extra == 'tests'"
-          ],
-          "requires_python": ">=3.7"
-        }
+        "aioauth_client-0.25.7-py3-none-any.whl": "0.25.10@aioauth_client-0.25.10-py3-none-any.whl"
       },
       "0.25.8": {
-        "aioauth_client-0.25.8-py3-none-any.whl": "0.25.7@aioauth_client-0.25.7-py3-none-any.whl"
+        "aioauth_client-0.25.8-py3-none-any.whl": "0.25.10@aioauth_client-0.25.10-py3-none-any.whl"
+      },
+      "0.25.9": {
+        "aioauth_client-0.25.9-py3-none-any.whl": "0.25.10@aioauth_client-0.25.10-py3-none-any.whl"
       }
     }
   },
@@ -1713,6 +1719,17 @@
             "aws-cdk.core (==1.113.0)",
             "constructs (<4.0.0,>=3.3.69)",
             "jsii (<2.0.0,>=1.30.0)",
+            "publication (>=0.0.3)"
+          ],
+          "requires_python": ">=3.6"
+        }
+      },
+      "1.114.0": {
+        "aws_cdk.aws_dms-1.114.0-py3-none-any.whl": {
+          "requires_dist": [
+            "aws-cdk.core (==1.114.0)",
+            "constructs (<4.0.0,>=3.3.69)",
+            "jsii (<2.0.0,>=1.31.0)",
             "publication (>=0.0.3)"
           ],
           "requires_python": ">=3.6"
@@ -3957,6 +3974,20 @@
           ],
           "requires_dist": [
             "azure-kusto-data (==2.2.0)",
+            "azure-storage-blob (<13,>=12)",
+            "azure-storage-queue (<13,>=12)",
+            "pandas ; extra == 'pandas'"
+          ]
+        }
+      },
+      "2.2.1": {
+        "azure_kusto_ingest-2.2.1-py2.py3-none-any.whl": {
+          "provides_extras": [
+            "aio",
+            "pandas"
+          ],
+          "requires_dist": [
+            "azure-kusto-data (==2.2.1)",
             "azure-storage-blob (<13,>=12)",
             "azure-storage-queue (<13,>=12)",
             "pandas ; extra == 'pandas'"
@@ -11102,6 +11133,9 @@
       },
       "1.1.3": {
         "epde-1.1.3-py3-none-any.whl": "1.1.2@epde-1.1.2-py3-none-any.whl"
+      },
+      "1.1.4": {
+        "epde-1.1.4-py3-none-any.whl": "1.1.2@epde-1.1.2-py3-none-any.whl"
       }
     }
   },
@@ -34314,6 +34348,15 @@
     "cp38": {
       "0.2.2": {
         "pylibgeohash-0.2.2-cp38-cp38-manylinux1_x86_64.whl": {}
+      }
+    }
+  },
+  "pylint-django-translations": {
+    "py3": {
+      "0.0.2": {
+        "pylint_django_translations-0.0.2-py3-none-any.whl": {
+          "requires_python": "~=3.5"
+        }
       }
     }
   },
