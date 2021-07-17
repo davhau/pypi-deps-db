@@ -8930,6 +8930,9 @@
       "0.12.1": {
         "emout-0.12.1-py3-none-any.whl": "0.10.0@emout-0.10.0-py3-none-any.whl"
       },
+      "0.12.3": {
+        "emout-0.12.3-py3-none-any.whl": "0.10.0@emout-0.10.0-py3-none-any.whl"
+      },
       "0.5.0": {
         "emout-0.5.0-py3-none-any.whl": {
           "requires_dist": [
@@ -18692,6 +18695,9 @@
       },
       "5.0.1": {
         "netron-5.0.1-py2.py3-none-any.whl": "4.9.9@netron-4.9.9-py2.py3-none-any.whl"
+      },
+      "5.0.2": {
+        "netron-5.0.2-py2.py3-none-any.whl": "4.9.9@netron-4.9.9-py2.py3-none-any.whl"
       }
     }
   },
@@ -18755,6 +18761,12 @@
       },
       "0.2.3": {
         "nip_config-0.2.3-py3-none-any.whl": "0.1.4@nip_config-0.1.4-py3-none-any.whl"
+      },
+      "0.2.4": {
+        "nip_config-0.2.4-py3-none-any.whl": "0.1.4@nip_config-0.1.4-py3-none-any.whl"
+      },
+      "0.2.5": {
+        "nip_config-0.2.5-py3-none-any.whl": "0.1.4@nip_config-0.1.4-py3-none-any.whl"
       }
     }
   },
@@ -31464,6 +31476,26 @@
           ],
           "requires_dist": [
             "pyrsistent",
+            "addict ; extra == 'mesos_executor'",
+            "pymesos (>=0.2.14) ; extra == 'mesos_executor'",
+            "requests ; extra == 'mesos_executor'",
+            "yelp-meteorite ; extra == 'metrics'",
+            "boto3 ; extra == 'persistence'"
+          ]
+        }
+      },
+      "0.1.13": {
+        "task_processing-0.1.13-py2.py3-none-any.whl": {
+          "provides_extras": [
+            "k8s",
+            "mesos_executor",
+            "metrics",
+            "persistence"
+          ],
+          "requires_dist": [
+            "pyrsistent",
+            "typing-extensions",
+            "kubernetes ; extra == 'k8s'",
             "addict ; extra == 'mesos_executor'",
             "pymesos (>=0.2.14) ; extra == 'mesos_executor'",
             "requests ; extra == 'mesos_executor'",
