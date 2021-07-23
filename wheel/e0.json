@@ -1352,6 +1352,9 @@
       },
       "0.6.8": {
         "audinterface-0.6.8-py3-none-any.whl": "0.6.6@audinterface-0.6.6-py3-none-any.whl"
+      },
+      "0.7.0": {
+        "audinterface-0.7.0-py3-none-any.whl": "0.6.6@audinterface-0.6.6-py3-none-any.whl"
       }
     }
   },
@@ -3524,6 +3527,9 @@
       },
       "1.0.2": {
         "cfdp-1.0.2-py3-none-any.whl": "1.0.0@cfdp-1.0.0-py3-none-any.whl"
+      },
+      "1.0.3": {
+        "cfdp-1.0.3-py3-none-any.whl": "1.0.0@cfdp-1.0.0-py3-none-any.whl"
       }
     }
   },
@@ -18822,6 +18828,27 @@
           "requires_dist": [
             "bokeh",
             "dagster (==0.12.2rc0)",
+            "dask[dataframe] (>=1.2.2)",
+            "distributed (>=1.28.1)",
+            "chardet (<4.0)",
+            "dask-kubernetes ; extra == 'kube'",
+            "dask-jobqueue ; extra == 'pbs'",
+            "pyarrow ; (python_version < \"3.9\") and extra == 'test'",
+            "dask-yarn ; extra == 'yarn'"
+          ]
+        }
+      },
+      "0.12.3": {
+        "dagster_dask-0.12.3-py3-none-any.whl": {
+          "provides_extras": [
+            "kube",
+            "pbs",
+            "test",
+            "yarn"
+          ],
+          "requires_dist": [
+            "bokeh",
+            "dagster (==0.12.3)",
             "dask[dataframe] (>=1.2.2)",
             "distributed (>=1.28.1)",
             "chardet (<4.0)",
