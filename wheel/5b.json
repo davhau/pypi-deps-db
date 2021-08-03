@@ -1552,6 +1552,9 @@
       "4.0.0.52": {
         "assemblyline_service_server-4.0.0.52-py3-none-any.whl": "4.0.0.1@assemblyline_service_server-4.0.0.1-py3-none-any.whl"
       },
+      "4.0.0.53": {
+        "assemblyline_service_server-4.0.0.53-py3-none-any.whl": "4.0.0.1@assemblyline_service_server-4.0.0.1-py3-none-any.whl"
+      },
       "4.0.0.6": {
         "assemblyline_service_server-4.0.0.6-py3-none-any.whl": "4.0.0.1@assemblyline_service_server-4.0.0.1-py3-none-any.whl"
       },
@@ -2306,6 +2309,9 @@
       },
       "4.0.1.dev97": {
         "assemblyline_service_server-4.0.1.dev97-py3-none-any.whl": "4.0.0.1@assemblyline_service_server-4.0.0.1-py3-none-any.whl"
+      },
+      "4.0.1.dev98": {
+        "assemblyline_service_server-4.0.1.dev98-py3-none-any.whl": "4.0.0.1@assemblyline_service_server-4.0.0.1-py3-none-any.whl"
       }
     }
   },
@@ -7009,6 +7015,9 @@
       },
       "2.0.1": {
         "deebotozmo-2.0.1-py3-none-any.whl": "2.0.0@deebotozmo-2.0.0-py3-none-any.whl"
+      },
+      "2.0.2": {
+        "deebotozmo-2.0.2-py3-none-any.whl": "2.0.0@deebotozmo-2.0.0-py3-none-any.whl"
       },
       "2.0.2b1": {
         "deebotozmo-2.0.2b1-py3-none-any.whl": "2.0.0@deebotozmo-2.0.0-py3-none-any.whl"
@@ -11818,9 +11827,18 @@
   },
   "geoutils": {
     "py3": {
-      "0.0.1": {
-        "geoutils-0.0.1-py3-none-any.whl": {
-          "requires_python": ">=3.6"
+      "0.0.3": {
+        "geoutils-0.0.3-1-py3-none-any.whl": {
+          "provides_extras": [
+            "rioxarray"
+          ],
+          "requires_dist": [
+            "rasterio",
+            "geopandas",
+            "pyproj",
+            "scipy",
+            "rioxarray ; extra == 'rioxarray'"
+          ]
         }
       }
     }
@@ -14544,6 +14562,18 @@
             "appdirs",
             "koji",
             "six"
+          ]
+        }
+      }
+    }
+  },
+  "kompira-sendevt": {
+    "py3": {
+      "1.6.2.post6": {
+        "Kompira_sendevt-1.6.2.post6-py3-none-any.whl": {
+          "requires_dist": [
+            "amqp (~=2.5.2)",
+            "decorator (~=4.4.2)"
           ]
         }
       }
