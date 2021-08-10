@@ -546,7 +546,51 @@
       "310": "27"
     },
     "0.5.2": "0.5.1",
-    "0.5.3": "0.5.1"
+    "0.5.3": "0.5.1",
+    "0.6.0": {
+      "27": {
+        "install_requires": [
+          "apache-airflow<3.0.0,>=1.10.12",
+          "dbt-core<0.21,>=0.19"
+        ],
+        "extras_require": {
+          "all": [
+            "dbt-postgres<0.21,>=0.19",
+            "dbt-redshift<0.21,>=0.19",
+            "dbt-snowflake<0.21,>=0.19",
+            "dbt-bigquery<0.21,>=0.19"
+          ],
+          "postgres": [
+            "dbt-postgres<0.21,>=0.19"
+          ],
+          "redshift": [
+            "dbt-redshift<0.21,>=0.19"
+          ],
+          "bigquery": [
+            "dbt-bigquery<0.21,>=0.19"
+          ],
+          "amazon": [
+            "apache-airflow-providers-amazon<3.0.0,>=2.1.0"
+          ],
+          "snowflake": [
+            "dbt-snowflake<0.21,>=0.19"
+          ]
+        },
+        "python_requires": [
+          ">=3.7,<4.0"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "0.7.0b0": "0.6.0",
+    "0.7.0b1": "0.6.0",
+    "0.7.0b2": "0.6.0",
+    "0.7.0b3": "0.6.0",
+    "0.7.0b4": "0.6.0"
   },
   "airshare": {
     "0.1.5": {
@@ -21564,7 +21608,8 @@
       "310": "27"
     },
     "1.4.0": "1.3.1",
-    "2.0.0": "1.3.1"
+    "2.0.0": "1.3.1",
+    "2.1.1": "1.3.1"
   },
   "gamification-engine": {
     "0.1": {
@@ -34012,6 +34057,45 @@
           "Flask-BasicAuth>=0.2.0",
           "Flask-Cors>=3.0.10",
           "roundrobin>=0.0.2"
+        ],
+        "extras_require": {
+          ":sys_platform == 'win32'": [
+            "pywin32"
+          ]
+        },
+        "tests_require": [
+          "cryptography",
+          "mock",
+          "pyquery"
+        ],
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "2.1.1.dev53": {
+      "27": {
+        "install_requires": [
+          "gevent>=20.9.0",
+          "flask>=2.0.0",
+          "Werkzeug>=2.0.0",
+          "requests>=2.9.1",
+          "msgpack>=0.6.2",
+          "pyzmq>=22.2.1",
+          "geventhttpclient>=1.4.4",
+          "ConfigArgParse>=1.0",
+          "psutil>=5.6.7",
+          "Flask-BasicAuth>=0.2.0",
+          "Flask-Cors>=3.0.10",
+          "roundrobin>=0.0.2"
+        ],
+        "setup_requires": [
+          "setuptools_scm"
         ],
         "extras_require": {
           ":sys_platform == 'win32'": [
@@ -56057,7 +56141,8 @@
     "2.2.0": "2.1.6",
     "2.2.1": "2.1.6",
     "2.2.3": "2.1.6",
-    "2.2.4": "2.1.6"
+    "2.2.4": "2.1.6",
+    "2.2.5": "2.1.6"
   },
   "swapdf": {
     "0.9.1": {
