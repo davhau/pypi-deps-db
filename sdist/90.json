@@ -28771,7 +28771,46 @@
       "39": "27",
       "310": "27"
     },
-    "9.3.1": "9.3"
+    "9.3.1": "9.3",
+    "23.1.0": {
+      "36": {
+        "install_requires": [
+          "importlib_metadata>=3.6"
+        ],
+        "extras_require": {
+          "testing": [
+            "pytest>=4.6",
+            "pytest-checkdocs>=2.4",
+            "pytest-flake8",
+            "pytest-cov",
+            "pytest-enabler>=1.0.1"
+          ],
+          "testing:platform_python_implementation != \"PyPy\"": [
+            "pytest-black>=0.3.7",
+            "pytest-mypy"
+          ],
+          "docs": [
+            "sphinx",
+            "jaraco.packaging>=8.2",
+            "rst.linker>=1.9"
+          ],
+          ":sys_platform == \"win32\"": [
+            "pywin32-ctypes!=0.1.0,!=0.1.1"
+          ],
+          ":sys_platform == \"linux\"": [
+            "SecretStorage>=3.2",
+            "jeepney>=0.4.2"
+          ]
+        },
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "kfinny.starlette": {
     "1": {
@@ -86622,7 +86661,8 @@
     "0.21.0": "0.12.3",
     "0.22.0": "0.12.3",
     "0.23.0": "0.12.3",
-    "0.24.0": "0.12.3"
+    "0.24.0": "0.12.3",
+    "0.25.0": "0.12.3"
   },
   "swh.loader.svn": {
     "0.0.42": {
