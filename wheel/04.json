@@ -650,6 +650,18 @@
       }
     }
   },
+  "airflow-provider-vineyard": {
+    "py3": {
+      "0.2.7": {
+        "airflow_provider_vineyard-0.2.7-py3-none-any.whl": {
+          "requires_dist": [
+            "apache-airflow",
+            "vineyard"
+          ]
+        }
+      }
+    }
+  },
   "algo-trade": {
     "py3": {
       "0.0.3": {
@@ -15117,6 +15129,9 @@
       "0.11.28": {
         "django_bridger-0.11.28-py3-none-any.whl": "0.11.27@django_bridger-0.11.27-py3-none-any.whl"
       },
+      "0.11.29": {
+        "django_bridger-0.11.29-py3-none-any.whl": "0.11.27@django_bridger-0.11.27-py3-none-any.whl"
+      },
       "0.11.3": {
         "django_bridger-0.11.3-py3-none-any.whl": "0.11.2@django_bridger-0.11.2-py3-none-any.whl"
       },
@@ -28927,6 +28942,29 @@
           ],
           "requires_python": ">=3.9,<4.0"
         }
+      },
+      "0.5.0": {
+        "linkedin_matrix-0.5.0-py3-none-any.whl": {
+          "provides_extras": [
+            "e2be",
+            "images",
+            "metrics"
+          ],
+          "requires_dist": [
+            "Pillow (>=8.3.1,<9.0.0); extra == \"images\"",
+            "asyncpg (>=0.23.0)",
+            "commonmark (>=0.9.1,<0.10.0)",
+            "linkedin-messaging (>=0.4.3,<0.5.0)",
+            "mautrix (>=0.10.3,<0.11.0)",
+            "prometheus-client (>=0.11.0,<0.12.0); extra == \"metrics\"",
+            "pycryptodome (>=3.10.1,<4.0.0); extra == \"e2be\"",
+            "python-magic (>=0.4.24,<0.5.0)",
+            "python-olm; extra == \"e2be\"",
+            "ruamel.yaml (>=0.17.0,<0.18.0)",
+            "unpaddedbase64 (>=2.1.0,<3.0.0); extra == \"e2be\""
+          ],
+          "requires_python": ">=3.9,<4.0"
+        }
       }
     }
   },
@@ -34217,6 +34255,43 @@
             "twython ; extra == 'all'",
             "requests ; extra == 'all'",
             "python-crfsuite ; extra == 'all'",
+            "requests ; extra == 'corenlp'",
+            "gensim (<4.0.0) ; extra == 'machine_learning'",
+            "numpy ; extra == 'machine_learning'",
+            "python-crfsuite ; extra == 'machine_learning'",
+            "scikit-learn ; extra == 'machine_learning'",
+            "scipy ; extra == 'machine_learning'",
+            "matplotlib ; extra == 'plot'",
+            "pyparsing ; extra == 'tgrep'",
+            "twython ; extra == 'twitter'"
+          ],
+          "requires_python": ">=3.6"
+        }
+      },
+      "0.0.6": {
+        "nltk_ma-0.0.6-py3-none-any.whl": {
+          "provides_extras": [
+            "all",
+            "corenlp",
+            "machine_learning",
+            "plot",
+            "tgrep",
+            "twitter"
+          ],
+          "requires_dist": [
+            "click",
+            "joblib",
+            "regex",
+            "tqdm",
+            "numpy ; extra == 'all'",
+            "gensim (<4.0.0) ; extra == 'all'",
+            "matplotlib ; extra == 'all'",
+            "scikit-learn ; extra == 'all'",
+            "python-crfsuite ; extra == 'all'",
+            "requests ; extra == 'all'",
+            "scipy ; extra == 'all'",
+            "pyparsing ; extra == 'all'",
+            "twython ; extra == 'all'",
             "requests ; extra == 'corenlp'",
             "gensim (<4.0.0) ; extra == 'machine_learning'",
             "numpy ; extra == 'machine_learning'",
@@ -47679,6 +47754,50 @@
           "requires_python": ">=3.7"
         }
       },
+      "1.0.0": {
+        "shillelagh-1.0.0-py2.py3-none-any.whl": {
+          "provides_extras": [
+            "console",
+            "docs",
+            "gsheetsapi",
+            "socrata",
+            "testing",
+            "weatherapi"
+          ],
+          "requires_dist": [
+            "apsw (<4,>=3.9.2)",
+            "python-dateutil (<3,>=2.8.1)",
+            "typing-extensions (<4,>=3.7.4.3)",
+            "sqlalchemy (<2,>=1.3)",
+            "importlib-metadata ; python_version < \"3.8\"",
+            "PyYAML (<6,>=5.4) ; extra == 'console'",
+            "prompt-toolkit (<4,>=3) ; extra == 'console'",
+            "pygments (<3,>=2.8) ; extra == 'console'",
+            "tabulate (==0.8.9) ; extra == 'console'",
+            "sphinx (<5,>=4.0.1) ; extra == 'docs'",
+            "requests (<3,>=2.23.0) ; extra == 'gsheetsapi'",
+            "google-auth (<2,>=1.23.0) ; extra == 'gsheetsapi'",
+            "requests-cache (==0.7.1) ; extra == 'socrata'",
+            "pytest (<7,>=6.2.2) ; extra == 'testing'",
+            "pytest-cov (<3,>=2.11.1) ; extra == 'testing'",
+            "pytest-mock (<4,>=3.5.1) ; extra == 'testing'",
+            "pyfakefs (<5,>=4.3.3) ; extra == 'testing'",
+            "requests-mock (<2,>=1.8.0) ; extra == 'testing'",
+            "pre-commit (<3,>=2.13.0) ; extra == 'testing'",
+            "requests (<3,>=2.25.1) ; extra == 'testing'",
+            "requests-cache (==0.7.1) ; extra == 'testing'",
+            "freezegun (<2,>=1.1.0) ; extra == 'testing'",
+            "google-auth (<2,>=1.23.0) ; extra == 'testing'",
+            "PyYAML (<6,>=5.4) ; extra == 'testing'",
+            "prompt-toolkit (<4,>=3) ; extra == 'testing'",
+            "pygments (<3,>=2.8) ; extra == 'testing'",
+            "tabulate (==0.8.9) ; extra == 'testing'",
+            "pytest-integration (==0.2.2) ; extra == 'testing'",
+            "requests-cache (==0.7.1) ; extra == 'weatherapi'"
+          ],
+          "requires_python": ">=3.7"
+        }
+      },
       "1.0.0rc1": {
         "shillelagh-1.0.0rc1-py2.py3-none-any.whl": {
           "provides_extras": [
@@ -47816,48 +47935,7 @@
         "shillelagh-1.0.0rc4-py2.py3-none-any.whl": "1.0.0rc3@shillelagh-1.0.0rc3-py2.py3-none-any.whl"
       },
       "1.0.0rc5": {
-        "shillelagh-1.0.0rc5-py2.py3-none-any.whl": {
-          "provides_extras": [
-            "console",
-            "docs",
-            "gsheetsapi",
-            "socrata",
-            "testing",
-            "weatherapi"
-          ],
-          "requires_dist": [
-            "apsw (<4,>=3.9.2)",
-            "python-dateutil (<3,>=2.8.1)",
-            "typing-extensions (<4,>=3.7.4.3)",
-            "sqlalchemy (<2,>=1.3)",
-            "importlib-metadata ; python_version < \"3.8\"",
-            "PyYAML (<6,>=5.4) ; extra == 'console'",
-            "prompt-toolkit (<4,>=3) ; extra == 'console'",
-            "pygments (<3,>=2.8) ; extra == 'console'",
-            "tabulate (==0.8.9) ; extra == 'console'",
-            "sphinx (<5,>=4.0.1) ; extra == 'docs'",
-            "requests (<3,>=2.23.0) ; extra == 'gsheetsapi'",
-            "google-auth (<2,>=1.23.0) ; extra == 'gsheetsapi'",
-            "requests-cache (==0.7.1) ; extra == 'socrata'",
-            "pytest (<7,>=6.2.2) ; extra == 'testing'",
-            "pytest-cov (<3,>=2.11.1) ; extra == 'testing'",
-            "pytest-mock (<4,>=3.5.1) ; extra == 'testing'",
-            "pyfakefs (<5,>=4.3.3) ; extra == 'testing'",
-            "requests-mock (<2,>=1.8.0) ; extra == 'testing'",
-            "pre-commit (<3,>=2.13.0) ; extra == 'testing'",
-            "requests (<3,>=2.25.1) ; extra == 'testing'",
-            "requests-cache (==0.7.1) ; extra == 'testing'",
-            "freezegun (<2,>=1.1.0) ; extra == 'testing'",
-            "google-auth (<2,>=1.23.0) ; extra == 'testing'",
-            "PyYAML (<6,>=5.4) ; extra == 'testing'",
-            "prompt-toolkit (<4,>=3) ; extra == 'testing'",
-            "pygments (<3,>=2.8) ; extra == 'testing'",
-            "tabulate (==0.8.9) ; extra == 'testing'",
-            "pytest-integration (==0.2.2) ; extra == 'testing'",
-            "requests-cache (==0.7.1) ; extra == 'weatherapi'"
-          ],
-          "requires_python": ">=3.7"
-        }
+        "shillelagh-1.0.0rc5-py2.py3-none-any.whl": "1.0.0@shillelagh-1.0.0-py2.py3-none-any.whl"
       }
     }
   },
@@ -49495,6 +49573,9 @@
           ],
           "requires_python": ">=3.6"
         }
+      },
+      "3.4.0": {
+        "stevedore-3.4.0-py3-none-any.whl": "3.3.0@stevedore-3.3.0-py3-none-any.whl"
       }
     }
   },
@@ -53717,6 +53798,25 @@
       },
       "0.3.0": {
         "torchrua-0.3.0-py3-none-any.whl": "0.1.0@torchrua-0.1.0-py3-none-any.whl"
+      },
+      "0.3.1": {
+        "torchrua-0.3.1-py3-none-any.whl": {
+          "provides_extras": [
+            "benchmark",
+            "dev"
+          ],
+          "requires_dist": [
+            "numpy",
+            "einops",
+            "aku ; extra == 'benchmark'",
+            "tqdm ; extra == 'benchmark'",
+            "torch-scatter ; extra == 'benchmark'",
+            "pytest ; extra == 'dev'",
+            "hypothesis ; extra == 'dev'",
+            "torch-scatter ; extra == 'dev'"
+          ],
+          "requires_python": ">=3.7"
+        }
       }
     }
   },
@@ -56972,6 +57072,9 @@
       },
       "2021.1.26": {
         "weaveio-2021.1.26-py2.py3-none-any.whl": "2021.1.20@weaveio-2021.1.20-py2.py3-none-any.whl"
+      },
+      "2021.1.27": {
+        "weaveio-2021.1.27-py2.py3-none-any.whl": "2021.1.21@weaveio-2021.1.21-py2.py3-none-any.whl"
       },
       "2021.1.4": {
         "weaveio-2021.1.4-py2.py3-none-any.whl": "2020.0.4@weaveio-2020.0.4-py2.py3-none-any.whl"
