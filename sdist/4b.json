@@ -11675,6 +11675,32 @@
     "1.9.9": "1.0.0",
     "2.0.0": "1.0.0"
   },
+  "cryptnoxpy": {
+    "1.0.0": {
+      "27": {
+        "install_requires": [
+          "aiohttp",
+          "cryptography",
+          "pbr",
+          "pyscard"
+        ],
+        "setup_requires": [
+          "pbr"
+        ],
+        "python_requires": [
+          ">=3.6,<3.10"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "1.0.0.0b2": "1.0.0",
+    "1.0.0.0b3": "1.0.0",
+    "1.0.1": "1.0.0"
+  },
   "cryptoenv": {
     "0.1.4": {
       "27": {},
@@ -11822,7 +11848,8 @@
     "2.18.1": "1.0.0",
     "2.18.2": "1.0.0",
     "2.18.3": "1.0.0",
-    "2.18.4": "1.0.0"
+    "2.18.4": "1.0.0",
+    "2.18.5": "1.0.0"
   },
   "cubicweb-pwd-policy": {
     "1.0.0": {
@@ -29834,6 +29861,32 @@
         "install_requires": [
           "molgenis-py-client>=2.3.1",
           "requests>=2.21.0"
+        ],
+        "extras_require": {
+          "testing": [
+            "setuptools",
+            "pytest",
+            "pytest-cov"
+          ],
+          ":python_version < \"3.8\"": [
+            "importlib-metadata"
+          ]
+        },
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "1.0.2": {
+      "36": {
+        "install_requires": [
+          "molgenis-py-client>=2.3.1",
+          "requests>=2.21.0",
+          "dataclasses"
         ],
         "extras_require": {
           "testing": [

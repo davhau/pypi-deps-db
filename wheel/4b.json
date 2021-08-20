@@ -8289,6 +8289,18 @@
       }
     }
   },
+  "cryptnoxpy": {
+    "py3": {
+      "1.0.0.0b2": {
+        "cryptnoxpy-1.0.0.0b2-py3-none-any.whl": {
+          "requires_python": ">=3.6,<3.10"
+        }
+      },
+      "1.0.0.0b3": {
+        "cryptnoxpy-1.0.0.0b3-py3-none-any.whl": "1.0.0.0b2@cryptnoxpy-1.0.0.0b2-py3-none-any.whl"
+      }
+    }
+  },
   "cterasdk": {
     "py3": {
       "1.0.0": {
@@ -8440,6 +8452,9 @@
       },
       "2.18.4": {
         "cterasdk-2.18.4-py3-none-any.whl": "2.15.0@cterasdk-2.15.0-py3-none-any.whl"
+      },
+      "2.18.5": {
+        "cterasdk-2.18.5-py3-none-any.whl": "2.15.0@cterasdk-2.15.0-py3-none-any.whl"
       },
       "2.2.0": {
         "cterasdk-2.2.0-py3-none-any.whl": "1.0.0@cterasdk-1.0.0-py3-none-any.whl"
@@ -23551,6 +23566,23 @@
           "requires_dist": [
             "molgenis-py-client (>=2.3.1)",
             "requests (>=2.21.0)",
+            "importlib-metadata ; python_version < \"3.8\"",
+            "setuptools ; extra == 'testing'",
+            "pytest ; extra == 'testing'",
+            "pytest-cov ; extra == 'testing'"
+          ],
+          "requires_python": ">=3.6"
+        }
+      },
+      "1.0.2": {
+        "molgenis_py_bbmri_eric-1.0.2-py2.py3-none-any.whl": {
+          "provides_extras": [
+            "testing"
+          ],
+          "requires_dist": [
+            "molgenis-py-client (>=2.3.1)",
+            "requests (>=2.21.0)",
+            "dataclasses",
             "importlib-metadata ; python_version < \"3.8\"",
             "setuptools ; extra == 'testing'",
             "pytest ; extra == 'testing'",
