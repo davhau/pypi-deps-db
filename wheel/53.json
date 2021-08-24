@@ -751,6 +751,34 @@
       }
     }
   },
+  "aio.tasks": {
+    "py3": {
+      "0.0.2": {
+        "aio.tasks-0.0.2-py3-none-any.whl": {
+          "provides_extras": [
+            "lint",
+            "publish",
+            "test",
+            "types"
+          ],
+          "requires_dist": [
+            "aio.functional",
+            "flake8 ; extra == 'lint'",
+            "wheel ; extra == 'publish'",
+            "pytest ; extra == 'test'",
+            "pytest-asyncio ; extra == 'test'",
+            "pytest-coverage ; extra == 'test'",
+            "pytest-patches ; extra == 'test'",
+            "mypy ; extra == 'types'"
+          ],
+          "requires_python": ">=3.5"
+        }
+      },
+      "0.0.3": {
+        "aio.tasks-0.0.3-py3-none-any.whl": "0.0.2@aio.tasks-0.0.2-py3-none-any.whl"
+      }
+    }
+  },
   "aiohealthcheck": {
     "py2.py3": {
       "2017.12.1": {
@@ -6420,6 +6448,21 @@
       },
       "2.2.3": {
         "collective.cover-2.2.3-py2-none-any.whl": "2.1b2@collective.cover-2.1b2-py2-none-any.whl"
+      }
+    }
+  },
+  "collective.droproles": {
+    "py2.py3": {
+      "1.0.0": {
+        "collective.droproles-1.0.0-py2.py3-none-any.whl": {
+          "provides_extras": [
+            "test"
+          ],
+          "requires_dist": [
+            "setuptools",
+            "plone.app.testing ; extra == 'test'"
+          ]
+        }
       }
     }
   },
