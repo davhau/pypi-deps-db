@@ -3638,7 +3638,8 @@
     "0.0.115": "0.0.111",
     "0.0.116": "0.0.111",
     "0.0.117": "0.0.111",
-    "0.0.118": "0.0.111"
+    "0.0.118": "0.0.111",
+    "0.0.119": "0.0.111"
   },
   "cdp-backend": {
     "3.0.0.dev1": {
@@ -26243,7 +26244,8 @@
     "1.18.24": "1.18.0",
     "1.18.25": "1.18.0",
     "1.18.26": "1.18.0",
-    "1.18.27": "1.18.0"
+    "1.18.27": "1.18.0",
+    "1.18.28": "1.18.0"
   },
   "mysql-corsair": {
     "0.0.0.0": "0.0.32",
@@ -35178,6 +35180,39 @@
       "38": "37",
       "39": "37",
       "310": "37"
+    },
+    "0.0.7": {
+      "37": {
+        "install_requires": [
+          "aio-databases>=0.0.10",
+          "pypika"
+        ],
+        "extras_require": {
+          "postgresql": [
+            "asyncpg"
+          ],
+          "mysql": [
+            "aiomysql"
+          ],
+          "sqlite": [
+            "aiosqlite"
+          ],
+          "tests": [
+            "pytest",
+            "pytest-aio",
+            "pytest-mypy",
+            "aiosqlite",
+            "asyncpg",
+            "aiomysql"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "38": "37",
+      "39": "37",
+      "310": "37"
     }
   },
   "pyplotjuggler": {
@@ -41935,7 +41970,63 @@
       "310": "36"
     },
     "0.1.1": "0.1.0",
-    "0.1.2": "0.1.0"
+    "0.1.2": "0.1.0",
+    "0.1.3": {
+      "36": {
+        "install_requires": [
+          "pyyaml",
+          "docutils>=0.15",
+          "sphinx<4,>=2",
+          "click",
+          "pydata-sphinx-theme~=0.6.0",
+          "beautifulsoup4<5,>=4.6.1"
+        ],
+        "extras_require": {
+          "code_style": [
+            "pre-commit~=2.7.0"
+          ],
+          "sphinx": [
+            "ablog~=0.10.13",
+            "ipywidgets",
+            "folium",
+            "numpy",
+            "matplotlib",
+            "myst-nb~=0.11.1",
+            "nbclient",
+            "pandas",
+            "plotly",
+            "sphinx-design",
+            "sphinx-copybutton",
+            "sphinx-togglebutton>=0.2.1",
+            "sphinx-thebe",
+            "sphinxcontrib-bibtex~=2.2",
+            "sphinxext-opengraph"
+          ],
+          "testing": [
+            "myst_nb~=0.11.1",
+            "sphinx_thebe",
+            "coverage",
+            "pytest~=6.0.1",
+            "pytest-cov",
+            "pytest-regressions~=2.0.1"
+          ],
+          "live-dev": [
+            "sphinx-autobuild",
+            "web-compile~=0.2.1"
+          ],
+          ":python_version < \"3.7\"": [
+            "importlib-resources<3.5,>=3.0"
+          ]
+        },
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "sphinx-julia": {
     "0.1": {
