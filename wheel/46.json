@@ -14057,6 +14057,35 @@
       }
     }
   },
+  "envoy.gpg.sign": {
+    "py3": {
+      "0.0.1": {
+        "envoy.gpg.sign-0.0.1-py3-none-any.whl": {
+          "provides_extras": [
+            "lint",
+            "publish",
+            "test",
+            "types"
+          ],
+          "requires_dist": [
+            "envoy.base.utils",
+            "envoy.base.runner",
+            "envoy.gpg.identity",
+            "flake8 ; extra == 'lint'",
+            "wheel ; extra == 'publish'",
+            "pytest ; extra == 'test'",
+            "pytest-coverage ; extra == 'test'",
+            "pytest-patches ; extra == 'test'",
+            "mypy ; extra == 'types'"
+          ],
+          "requires_python": ">=3.5"
+        }
+      },
+      "0.0.2": {
+        "envoy.gpg.sign-0.0.2-py3-none-any.whl": "0.0.1@envoy.gpg.sign-0.0.1-py3-none-any.whl"
+      }
+    }
+  },
   "epiw": {
     "py3": {
       "0.0.10": {
@@ -43434,6 +43463,26 @@
             "pytest-cov ; extra == \"test\""
           ],
           "requires_python": ">=3.6,<4"
+        }
+      }
+    }
+  },
+  "tft-api": {
+    "py3": {
+      "0.0.1": {
+        "tft_api-0.0.1-py3-none-any.whl": {
+          "requires_dist": [
+            "fastapi (>=0.63.0,<0.64.0)",
+            "fastapi-versioning (>=0.8.0,<0.9.0)",
+            "gunicorn (>=20.0.4,<21.0.0)",
+            "mypy (>=0.790,<0.791)",
+            "mypy-extensions (>=0.4.3,<0.5.0)",
+            "requests (>=2.25.1,<3.0.0)",
+            "sqlalchemy (>=1.3.2,<2.0.0)",
+            "sqlalchemy-stubs (>=0.3,<0.4)",
+            "uvicorn (>=0.13.4,<0.14.0)"
+          ],
+          "requires_python": ">=3.8,<4.0"
         }
       }
     }
