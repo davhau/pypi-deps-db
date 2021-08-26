@@ -280,7 +280,8 @@
     "1.116.0": "1.111.0",
     "1.117.0": "1.111.0",
     "1.118.0": "1.111.0",
-    "1.119.0": "1.111.0"
+    "1.119.0": "1.111.0",
+    "1.120.0": "1.111.0"
   },
   "aws-manager": {
     "0.2a0": {
@@ -771,7 +772,9 @@
       "39": "these 2 derivations will be built:\n /nix/store/#hash#-cnocr-#PKG_VER#.tar.gz.drv\n /nix/store/#hash#-cnocr-#PKG_VER#-requirements.drv\nbuilding '/nix/store/#hash#-cnocr-#PKG_VER#.tar.gz.drv'...\n\ntrying https://files.pythonhosted.org/packages/source/c/cnocr/cnocr-#PKG_VER#.tar.gz\n % Total % Received % Xferd Average Speed Time Time Time Current\n Dload Upload Total Spent Left Speed\n 0 0 0 0 0 0 0 0 --:--:-- --:--:-- --:--:-- 0\n100 16715 100 16715 0 0 21265 0 --:--:-- --:--:-- --:--:-- 0\nwaiting for UID to build '/nix/store/#hash#-cnocr-#PKG_VER#-requirements.drv'...\n",
       "310": "39"
     },
-    "1.2.3": "1.0.0"
+    "1.2.3": "1.0.0",
+    "1.2.3.1": "1.0.0",
+    "2.0.0": "1.0.0"
   },
   "colabo.flow.audit": {
     "0.1.2": {
@@ -1282,7 +1285,16 @@
       "310": "39"
     },
     "10.0.0b1": "9.0.0",
-    "9.3.0": "9.0.0"
+    "9.3.0": "9.0.0",
+    "10.0.0b2": "9.4.0",
+    "9.4.0": {
+      "27": "SyntaxError: invalid syntax",
+      "36": "Options: {'package_name': 'cupy', 'long_description': None, 'wheel_libs': [], 'wheel_includes': [], 'wheel_metadata': None, 'no_rpath': False, 'profile': False, 'linetrace': False, 'annotate': False, 'no_cuda': False, 'use_hip': False}\n\n-------- Configuring Module: cuda --------\n/build/#TMP#/a.cpp:1:10: fatal error: cublas_v2.h: No such file or directory\n 1 | #include <cublas_v2.h>\n | ^~~~~~~~~~~~~\ncompilation terminated.\ncommand 'gcc' failed with exit status 1\n/build/#TMP#/a.cpp:2:18: fatal error: cuda_runtime_api.h: No such file or directory\n 2 | #include <cuda_runtime_api.h>\n | ^~~~~~~~~~~~~~~~~~~~\ncompilation terminated.\n**************************************************\n*** WARNING: Cannot check compute capability\ncommand 'gcc' failed with exit status 1\n**************************************************\n\n************************************************************\n* CuPy Configuration Summary *\n************************************************************\n\nBuild Environment:\n Include directories: ['/build/cupy-#PKG_VER#/install/../cupy/_core/include/cupy/cub', '/build/cupy-#PKG_VER#/install/../cupy/_core/include']\n Library directories: []\n nvcc command : (not found)\n hipcc command : (not found)\n\nEnvironment Variables:\n CFLAGS : (none)\n LDFLAGS : (none)\n LIBRARY_PATH : (none)\n CUDA_PATH : (none)\n NVTOOLSEXT_PATH : (none)\n NVCC : (none)\n HIPCC : (none)\n ROCM_HOME : (none)\n\nModules:\n cuda : No\n -> Include files not found: ['cublas_v2.h', 'cuda.h', 'cuda_profiler_api.h', 'cuda_runtime.h', 'cufft.h', 'curand.h', 'cusparse.h', 'nvrtc.h']\n -> Check your CFLAGS environment variable.\n\nERROR: CUDA could not be found on your system.\nPlease refer to the Installation Guide for details:\nhttps://docs.cupy.dev/en/stable/install.html\n\n************************************************************\n\nTraceback (most recent call last):\n File \"<string>\", line #NUM#, in <module>\n File \"setup.py\", line #NUM#, in <module>\n ext_modules = cupy_setup_build.get_ext_modules()\n File \"/build/cupy-#PKG_VER#/cupy_setup_build.py\", line #NUM#, in get_ext_modules\n extensions = make_extensions(arg_options, compiler, use_cython)\n File \"/build/cupy-#PKG_VER#/cupy_setup_build.py\", line #NUM#, in make_extensions\n raise Exception('Your CUDA environment is invalid. '\nException: Your CUDA environment is invalid. Please check above error log.\n",
+      "37": "36",
+      "38": "Options: {'package_name': 'cupy', 'long_description': None, 'wheel_libs': [], 'wheel_includes': [], 'wheel_metadata': None, 'no_rpath': False, 'profile': False, 'linetrace': False, 'annotate': False, 'no_cuda': False, 'use_hip': False}\n\n-------- Configuring Module: cuda --------\n/build/#TMP#/a.cpp:1:10: fatal error: cublas_v2.h: No such file or directory\n 1 | #include <cublas_v2.h>\n | ^~~~~~~~~~~~~\ncompilation terminated.\ncommand 'gcc' failed with exit status 1\n/build/#TMP#/a.cpp:2:18: fatal error: cuda_runtime_api.h: No such file or directory\n 2 | #include <cuda_runtime_api.h>\n | ^~~~~~~~~~~~~~~~~~~~\ncompilation terminated.\nTraceback (most recent call last):\n File \"<string>\", line #NUM#, in <module>\n File \"setup.py\", line #NUM#, in <module>\n ext_modules = cupy_setup_build.get_ext_modules()\n File \"/build/cupy-#PKG_VER#/cupy_setup_build.py\", line #NUM#, in get_ext_modules\n extensions = make_extensions(arg_options, compiler, use_cython)\n File \"/build/cupy-#PKG_VER#/cupy_setup_build.py\", line #NUM#, in make_extensions\n raise Exception('Your CUDA environment is invalid. '\nException: Your CUDA environment is invalid. Please check above error log.\n**************************************************\n*** WARNING: Cannot check compute capability\ncommand 'gcc' failed with exit status 1\n**************************************************\n\n************************************************************\n* CuPy Configuration Summary *\n************************************************************\n\nBuild Environment:\n Include directories: ['/build/cupy-#PKG_VER#/install/../cupy/_core/include/cupy/cub', '/build/cupy-#PKG_VER#/install/../cupy/_core/include']\n Library directories: []\n nvcc command : (not found)\n hipcc command : (not found)\n\nEnvironment Variables:\n CFLAGS : (none)\n LDFLAGS : (none)\n LIBRARY_PATH : (none)\n CUDA_PATH : (none)\n NVTOOLSEXT_PATH : (none)\n NVCC : (none)\n HIPCC : (none)\n ROCM_HOME : (none)\n\nModules:\n cuda : No\n -> Include files not found: ['cublas_v2.h', 'cuda.h', 'cuda_profiler_api.h', 'cuda_runtime.h', 'cufft.h', 'curand.h', 'cusparse.h', 'nvrtc.h']\n -> Check your CFLAGS environment variable.\n\nERROR: CUDA could not be found on your system.\nPlease refer to the Installation Guide for details:\nhttps://docs.cupy.dev/en/stable/install.html\n\n************************************************************\n\n",
+      "39": "Options: {'package_name': 'cupy', 'long_description': None, 'wheel_libs': [], 'wheel_includes': [], 'wheel_metadata': None, 'no_rpath': False, 'profile': False, 'linetrace': False, 'annotate': False, 'no_cuda': False, 'use_hip': False}\n\n-------- Configuring Module: cuda --------\n/build/#TMP#/a.cpp:1:10: fatal error: cublas_v2.h: No such file or directory\n 1 | #include <cublas_v2.h>\n | ^~~~~~~~~~~~~\ncompilation terminated.\ncommand '/nix/store/#hash#-gcc-wrapper-9.2.0/bin/gcc' failed with exit code 1\n/build/#TMP#/a.cpp:2:18: fatal error: cuda_runtime_api.h: No such file or directory\n 2 | #include <cuda_runtime_api.h>\n | ^~~~~~~~~~~~~~~~~~~~\ncompilation terminated.\nTraceback (most recent call last):\n File \"<string>\", line #NUM#, in <module>\n File \"setup.py\", line #NUM#, in <module>\n ext_modules = cupy_setup_build.get_ext_modules()\n File \"/build/cupy-#PKG_VER#/cupy_setup_build.py\", line #NUM#, in get_ext_modules\n extensions = make_extensions(arg_options, compiler, use_cython)\n File \"/build/cupy-#PKG_VER#/cupy_setup_build.py\", line #NUM#, in make_extensions\n raise Exception('Your CUDA environment is invalid. '\nException: Your CUDA environment is invalid. Please check above error log.\n**************************************************\n*** WARNING: Cannot check compute capability\ncommand '/nix/store/#hash#-gcc-wrapper-9.2.0/bin/gcc' failed with exit code 1\n**************************************************\n\n************************************************************\n* CuPy Configuration Summary *\n************************************************************\n\nBuild Environment:\n Include directories: ['/build/cupy-#PKG_VER#/install/../cupy/_core/include/cupy/cub', '/build/cupy-#PKG_VER#/install/../cupy/_core/include']\n Library directories: []\n nvcc command : (not found)\n hipcc command : (not found)\n\nEnvironment Variables:\n CFLAGS : (none)\n LDFLAGS : (none)\n LIBRARY_PATH : (none)\n CUDA_PATH : (none)\n NVTOOLSEXT_PATH : (none)\n NVCC : (none)\n HIPCC : (none)\n ROCM_HOME : (none)\n\nModules:\n cuda : No\n -> Include files not found: ['cublas_v2.h', 'cuda.h', 'cuda_profiler_api.h', 'cuda_runtime.h', 'cufft.h', 'curand.h', 'cusparse.h', 'nvrtc.h']\n -> Check your CFLAGS environment variable.\n\nERROR: CUDA could not be found on your system.\nPlease refer to the Installation Guide for details:\nhttps://docs.cupy.dev/en/stable/install.html\n\n************************************************************\n\n",
+      "310": "39"
+    }
   },
   "cv-metrics": {
     "0.0.1": {
@@ -3864,7 +3876,8 @@
     "0.2.0a0": {
       "27": "distutils.errors.DistutilsOptionError: find_namespace: directive is unsupported on Python < 3.3",
       "36": "ModuleNotFoundError: No module named 'botocore'"
-    }
+    },
+    "0.2.0a1": "0.2.0a0"
   },
   "oflibpytorch": {
     "0.1.0": {
@@ -3934,7 +3947,8 @@
     "1.6.11": "1.4.1",
     "1.6.12": "1.4.1",
     "1.6.13": "1.4.1",
-    "1.6.14": "1.4.1"
+    "1.6.14": "1.4.1",
+    "1.6.16": "1.4.1"
   },
   "onedrivesdk": {
     "2.0": {

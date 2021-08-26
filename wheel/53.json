@@ -240,10 +240,16 @@
   },
   "addonenishka": {
     "py3": {
-      "0.0.4": {
-        "addonenishka-0.0.4-py3-none-any.whl": {
+      "0.0.1": {
+        "addonenishka-0.0.1-py3-none-any.whl": {
           "requires_python": ">=3.6"
         }
+      },
+      "0.0.4": {
+        "addonenishka-0.0.4-py3-none-any.whl": "0.0.1@addonenishka-0.0.1-py3-none-any.whl"
+      },
+      "0.0.5": {
+        "addonenishka-0.0.5-py3-none-any.whl": "0.0.1@addonenishka-0.0.1-py3-none-any.whl"
       }
     }
   },
@@ -24140,6 +24146,24 @@
             "odoo14-addon-storage-thumbnail"
           ]
         }
+      },
+      "14.0.20210825.0": {
+        "odoo14_addons_oca_storage-14.0.20210825.0-py3-none-any.whl": {
+          "requires_dist": [
+            "odoo14-addon-storage-backend",
+            "odoo14-addon-storage-backend-s3",
+            "odoo14-addon-storage-backend-sftp",
+            "odoo14-addon-storage-file",
+            "odoo14-addon-storage-image",
+            "odoo14-addon-storage-image-import",
+            "odoo14-addon-storage-image-product",
+            "odoo14-addon-storage-image-product-brand",
+            "odoo14-addon-storage-image-product-import",
+            "odoo14-addon-storage-media",
+            "odoo14-addon-storage-media-product",
+            "odoo14-addon-storage-thumbnail"
+          ]
+        }
       }
     }
   },
@@ -28613,6 +28637,9 @@
       },
       "2.1.1": {
         "pyFirmata2-2.1.1-py3-none-any.whl": "2.1.0@pyFirmata2-2.1.0-py3-none-any.whl"
+      },
+      "2.2.0": {
+        "pyFirmata2-2.2.0-py3-none-any.whl": "2.1.0@pyFirmata2-2.1.0-py3-none-any.whl"
       }
     }
   },
@@ -34720,6 +34747,20 @@
           ],
           "requires_dist": [
             "pydantic",
+            "aiocontextvars ; python_version < \"3.7\"",
+            "aioredis ; extra == 'aioredis'",
+            "redis ; extra == 'redis-py'"
+          ],
+          "requires_python": ">=3.6"
+        }
+      },
+      "1.0.0": {
+        "redis_simple_orm-1.0.0-py3-none-any.whl": {
+          "provides_extras": [
+            "aioredis",
+            "redis-py"
+          ],
+          "requires_dist": [
             "aiocontextvars ; python_version < \"3.7\"",
             "aioredis ; extra == 'aioredis'",
             "redis ; extra == 'redis-py'"
