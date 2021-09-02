@@ -2069,6 +2069,17 @@
           ],
           "requires_python": ">=3.6"
         }
+      },
+      "0.0.2": {
+        "alibabacloud_paiplugin20210325-0.0.2-py3-none-any.whl": {
+          "requires_dist": [
+            "alibabacloud-tea-util (<1.0.0,>=0.3.5)",
+            "alibabacloud-tea-openapi (<1.0.0,>=0.2.4)",
+            "alibabacloud-openapi-util (<1.0.0,>=0.1.4)",
+            "alibabacloud-endpoint-util (<1.0.0,>=0.0.3)"
+          ],
+          "requires_python": ">=3.6"
+        }
       }
     }
   },
@@ -21704,6 +21715,33 @@
       }
     }
   },
+  "maykin-django-two-factor-auth": {
+    "py2.py3": {
+      "2.0.3": {
+        "maykin_django_two_factor_auth-2.0.3-py2.py3-none-any.whl": {
+          "provides_extras": [
+            "call",
+            "phonenumbers",
+            "phonenumberslite",
+            "sms",
+            "yubikey"
+          ],
+          "requires_dist": [
+            "Django (<4.0.0,>=2.2.0)",
+            "django-otp (>=1.0.0.<2.0.0)",
+            "qrcode (<6.99,>=4.0.0)",
+            "django-phonenumber-field (<6.0.0,>=5.0.0)",
+            "django-formtools",
+            "twilio (>=6.0) ; extra == 'call'",
+            "phonenumbers (<8.99,>=7.0.9) ; extra == 'phonenumbers'",
+            "phonenumberslite (<8.99,>=7.0.9) ; extra == 'phonenumberslite'",
+            "twilio (>=6.0) ; extra == 'sms'",
+            "django-otp-yubikey ; extra == 'yubikey'"
+          ]
+        }
+      }
+    }
+  },
   "mc-enchanter": {
     "py3": {
       "0.0.5": {
@@ -22370,6 +22408,23 @@
           ],
           "requires_dist": [
             "molecule (>=3.2.0)",
+            "selinux ; sys_platform == \"linux\"",
+            "selinux ; sys_platform == \"linux2\"",
+            "simplejson ; extra == 'docs'",
+            "Sphinx ; extra == 'docs'",
+            "sphinx-ansible-theme (>=0.2.2) ; extra == 'docs'"
+          ],
+          "requires_python": ">=3.6"
+        }
+      },
+      "1.0.1": {
+        "molecule_podman-1.0.1-py3-none-any.whl": {
+          "provides_extras": [
+            "docs"
+          ],
+          "requires_dist": [
+            "ansible-compat (>=0.5.0)",
+            "molecule (>=3.4.0)",
             "selinux ; sys_platform == \"linux\"",
             "selinux ; sys_platform == \"linux2\"",
             "simplejson ; extra == 'docs'",
@@ -32846,6 +32901,45 @@
         "PyKrige-1.6.0rc1-cp36-cp36m-manylinux2010_x86_64.whl": "1.6.0@PyKrige-1.6.0-cp36-cp36m-macosx_10_9_x86_64.whl",
         "PyKrige-1.6.0rc1-cp36-cp36m-win32.whl": "1.6.0@PyKrige-1.6.0-cp36-cp36m-macosx_10_9_x86_64.whl",
         "PyKrige-1.6.0rc1-cp36-cp36m-win_amd64.whl": "1.6.0@PyKrige-1.6.0-cp36-cp36m-macosx_10_9_x86_64.whl"
+      },
+      "1.6.1": {
+        "PyKrige-1.6.1-cp36-cp36m-macosx_10_9_x86_64.whl": {
+          "provides_extras": [
+            "doc",
+            "plot",
+            "sklearn",
+            "test"
+          ],
+          "requires_dist": [
+            "numpy (<2,>=1.14.5)",
+            "scipy (<2,>=1.1.0)",
+            "gstools (<2,>=1.1.1) ; extra == 'doc'",
+            "pillow ; extra == 'doc'",
+            "scikit-learn (>=0.19) ; extra == 'doc'",
+            "m2r2 (<1,>=0.2.8) ; extra == 'doc'",
+            "matplotlib (<4,>=3) ; extra == 'doc'",
+            "meshzoo (<1,>=0.7) ; extra == 'doc'",
+            "numpydoc (<2,>=1.1) ; extra == 'doc'",
+            "pykrige (<2,>=1.5) ; extra == 'doc'",
+            "pyvista (<1,>=0.31) ; extra == 'doc'",
+            "sphinx (<4,>=3) ; extra == 'doc'",
+            "sphinx-gallery (<1,>=0.8) ; extra == 'doc'",
+            "sphinx-rtd-theme (<1,>=0.5) ; extra == 'doc'",
+            "sphinxcontrib-napoleon ; extra == 'doc'",
+            "matplotlib (<4,>=3) ; extra == 'plot'",
+            "scikit-learn (>=0.19) ; extra == 'sklearn'",
+            "coverage[toml] (<6,>=5.2.1) ; extra == 'test'",
+            "pytest (<7,>=6.0) ; extra == 'test'",
+            "pytest-cov (<3,>=2.11.0) ; extra == 'test'",
+            "gstools (<2,>=1.1.1) ; extra == 'test'",
+            "scikit-learn (>=0.19) ; extra == 'test'"
+          ],
+          "requires_python": ">=3.6"
+        },
+        "PyKrige-1.6.1-cp36-cp36m-manylinux_2_5_i686.manylinux1_i686.manylinux_2_12_i686.manylinux2010_i686.whl": "1.6.1@PyKrige-1.6.1-cp36-cp36m-macosx_10_9_x86_64.whl",
+        "PyKrige-1.6.1-cp36-cp36m-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_12_x86_64.manylinux2010_x86_64.whl": "1.6.1@PyKrige-1.6.1-cp36-cp36m-macosx_10_9_x86_64.whl",
+        "PyKrige-1.6.1-cp36-cp36m-win32.whl": "1.6.1@PyKrige-1.6.1-cp36-cp36m-macosx_10_9_x86_64.whl",
+        "PyKrige-1.6.1-cp36-cp36m-win_amd64.whl": "1.6.1@PyKrige-1.6.1-cp36-cp36m-macosx_10_9_x86_64.whl"
       }
     },
     "cp37": {
@@ -32997,6 +33091,45 @@
         "PyKrige-1.6.0rc1-cp37-cp37m-manylinux2010_x86_64.whl": "1.6.0@PyKrige-1.6.0-cp37-cp37m-macosx_10_9_x86_64.whl",
         "PyKrige-1.6.0rc1-cp37-cp37m-win32.whl": "1.6.0@PyKrige-1.6.0-cp37-cp37m-macosx_10_9_x86_64.whl",
         "PyKrige-1.6.0rc1-cp37-cp37m-win_amd64.whl": "1.6.0@PyKrige-1.6.0-cp37-cp37m-macosx_10_9_x86_64.whl"
+      },
+      "1.6.1": {
+        "PyKrige-1.6.1-cp37-cp37m-macosx_10_9_x86_64.whl": {
+          "provides_extras": [
+            "doc",
+            "plot",
+            "sklearn",
+            "test"
+          ],
+          "requires_dist": [
+            "numpy (<2,>=1.14.5)",
+            "scipy (<2,>=1.1.0)",
+            "gstools (<2,>=1.1.1) ; extra == 'doc'",
+            "pillow ; extra == 'doc'",
+            "scikit-learn (>=0.19) ; extra == 'doc'",
+            "m2r2 (<1,>=0.2.8) ; extra == 'doc'",
+            "matplotlib (<4,>=3) ; extra == 'doc'",
+            "meshzoo (<1,>=0.7) ; extra == 'doc'",
+            "numpydoc (<2,>=1.1) ; extra == 'doc'",
+            "pykrige (<2,>=1.5) ; extra == 'doc'",
+            "pyvista (<1,>=0.31) ; extra == 'doc'",
+            "sphinx (<4,>=3) ; extra == 'doc'",
+            "sphinx-gallery (<1,>=0.8) ; extra == 'doc'",
+            "sphinx-rtd-theme (<1,>=0.5) ; extra == 'doc'",
+            "sphinxcontrib-napoleon ; extra == 'doc'",
+            "matplotlib (<4,>=3) ; extra == 'plot'",
+            "scikit-learn (>=0.19) ; extra == 'sklearn'",
+            "coverage[toml] (<6,>=5.2.1) ; extra == 'test'",
+            "pytest (<7,>=6.0) ; extra == 'test'",
+            "pytest-cov (<3,>=2.11.0) ; extra == 'test'",
+            "gstools (<2,>=1.1.1) ; extra == 'test'",
+            "scikit-learn (>=0.19) ; extra == 'test'"
+          ],
+          "requires_python": ">=3.6"
+        },
+        "PyKrige-1.6.1-cp37-cp37m-manylinux_2_5_i686.manylinux1_i686.manylinux_2_12_i686.manylinux2010_i686.whl": "1.6.1@PyKrige-1.6.1-cp37-cp37m-macosx_10_9_x86_64.whl",
+        "PyKrige-1.6.1-cp37-cp37m-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_12_x86_64.manylinux2010_x86_64.whl": "1.6.1@PyKrige-1.6.1-cp37-cp37m-macosx_10_9_x86_64.whl",
+        "PyKrige-1.6.1-cp37-cp37m-win32.whl": "1.6.1@PyKrige-1.6.1-cp37-cp37m-macosx_10_9_x86_64.whl",
+        "PyKrige-1.6.1-cp37-cp37m-win_amd64.whl": "1.6.1@PyKrige-1.6.1-cp37-cp37m-macosx_10_9_x86_64.whl"
       }
     },
     "cp38": {
@@ -33148,6 +33281,45 @@
         "PyKrige-1.6.0rc1-cp38-cp38-manylinux2010_x86_64.whl": "1.6.0@PyKrige-1.6.0-cp38-cp38-macosx_10_9_x86_64.whl",
         "PyKrige-1.6.0rc1-cp38-cp38-win32.whl": "1.6.0@PyKrige-1.6.0-cp38-cp38-macosx_10_9_x86_64.whl",
         "PyKrige-1.6.0rc1-cp38-cp38-win_amd64.whl": "1.6.0@PyKrige-1.6.0-cp38-cp38-macosx_10_9_x86_64.whl"
+      },
+      "1.6.1": {
+        "PyKrige-1.6.1-cp38-cp38-macosx_10_9_x86_64.whl": {
+          "provides_extras": [
+            "doc",
+            "plot",
+            "sklearn",
+            "test"
+          ],
+          "requires_dist": [
+            "numpy (<2,>=1.14.5)",
+            "scipy (<2,>=1.1.0)",
+            "gstools (<2,>=1.1.1) ; extra == 'doc'",
+            "pillow ; extra == 'doc'",
+            "scikit-learn (>=0.19) ; extra == 'doc'",
+            "m2r2 (<1,>=0.2.8) ; extra == 'doc'",
+            "matplotlib (<4,>=3) ; extra == 'doc'",
+            "meshzoo (<1,>=0.7) ; extra == 'doc'",
+            "numpydoc (<2,>=1.1) ; extra == 'doc'",
+            "pykrige (<2,>=1.5) ; extra == 'doc'",
+            "pyvista (<1,>=0.31) ; extra == 'doc'",
+            "sphinx (<4,>=3) ; extra == 'doc'",
+            "sphinx-gallery (<1,>=0.8) ; extra == 'doc'",
+            "sphinx-rtd-theme (<1,>=0.5) ; extra == 'doc'",
+            "sphinxcontrib-napoleon ; extra == 'doc'",
+            "matplotlib (<4,>=3) ; extra == 'plot'",
+            "scikit-learn (>=0.19) ; extra == 'sklearn'",
+            "coverage[toml] (<6,>=5.2.1) ; extra == 'test'",
+            "pytest (<7,>=6.0) ; extra == 'test'",
+            "pytest-cov (<3,>=2.11.0) ; extra == 'test'",
+            "gstools (<2,>=1.1.1) ; extra == 'test'",
+            "scikit-learn (>=0.19) ; extra == 'test'"
+          ],
+          "requires_python": ">=3.6"
+        },
+        "PyKrige-1.6.1-cp38-cp38-manylinux_2_5_i686.manylinux1_i686.manylinux_2_12_i686.manylinux2010_i686.whl": "1.6.1@PyKrige-1.6.1-cp38-cp38-macosx_10_9_x86_64.whl",
+        "PyKrige-1.6.1-cp38-cp38-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_12_x86_64.manylinux2010_x86_64.whl": "1.6.1@PyKrige-1.6.1-cp38-cp38-macosx_10_9_x86_64.whl",
+        "PyKrige-1.6.1-cp38-cp38-win32.whl": "1.6.1@PyKrige-1.6.1-cp38-cp38-macosx_10_9_x86_64.whl",
+        "PyKrige-1.6.1-cp38-cp38-win_amd64.whl": "1.6.1@PyKrige-1.6.1-cp38-cp38-macosx_10_9_x86_64.whl"
       }
     },
     "cp39": {
@@ -33211,6 +33383,45 @@
         "PyKrige-1.6.0rc1-cp39-cp39-manylinux2010_x86_64.whl": "1.6.0@PyKrige-1.6.0-cp39-cp39-macosx_10_9_x86_64.whl",
         "PyKrige-1.6.0rc1-cp39-cp39-win32.whl": "1.6.0@PyKrige-1.6.0-cp39-cp39-macosx_10_9_x86_64.whl",
         "PyKrige-1.6.0rc1-cp39-cp39-win_amd64.whl": "1.6.0@PyKrige-1.6.0-cp39-cp39-macosx_10_9_x86_64.whl"
+      },
+      "1.6.1": {
+        "PyKrige-1.6.1-cp39-cp39-macosx_10_9_x86_64.whl": {
+          "provides_extras": [
+            "doc",
+            "plot",
+            "sklearn",
+            "test"
+          ],
+          "requires_dist": [
+            "numpy (<2,>=1.14.5)",
+            "scipy (<2,>=1.1.0)",
+            "gstools (<2,>=1.1.1) ; extra == 'doc'",
+            "pillow ; extra == 'doc'",
+            "scikit-learn (>=0.19) ; extra == 'doc'",
+            "m2r2 (<1,>=0.2.8) ; extra == 'doc'",
+            "matplotlib (<4,>=3) ; extra == 'doc'",
+            "meshzoo (<1,>=0.7) ; extra == 'doc'",
+            "numpydoc (<2,>=1.1) ; extra == 'doc'",
+            "pykrige (<2,>=1.5) ; extra == 'doc'",
+            "pyvista (<1,>=0.31) ; extra == 'doc'",
+            "sphinx (<4,>=3) ; extra == 'doc'",
+            "sphinx-gallery (<1,>=0.8) ; extra == 'doc'",
+            "sphinx-rtd-theme (<1,>=0.5) ; extra == 'doc'",
+            "sphinxcontrib-napoleon ; extra == 'doc'",
+            "matplotlib (<4,>=3) ; extra == 'plot'",
+            "scikit-learn (>=0.19) ; extra == 'sklearn'",
+            "coverage[toml] (<6,>=5.2.1) ; extra == 'test'",
+            "pytest (<7,>=6.0) ; extra == 'test'",
+            "pytest-cov (<3,>=2.11.0) ; extra == 'test'",
+            "gstools (<2,>=1.1.1) ; extra == 'test'",
+            "scikit-learn (>=0.19) ; extra == 'test'"
+          ],
+          "requires_python": ">=3.6"
+        },
+        "PyKrige-1.6.1-cp39-cp39-manylinux_2_5_i686.manylinux1_i686.manylinux_2_12_i686.manylinux2010_i686.whl": "1.6.1@PyKrige-1.6.1-cp39-cp39-macosx_10_9_x86_64.whl",
+        "PyKrige-1.6.1-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_12_x86_64.manylinux2010_x86_64.whl": "1.6.1@PyKrige-1.6.1-cp39-cp39-macosx_10_9_x86_64.whl",
+        "PyKrige-1.6.1-cp39-cp39-win32.whl": "1.6.1@PyKrige-1.6.1-cp39-cp39-macosx_10_9_x86_64.whl",
+        "PyKrige-1.6.1-cp39-cp39-win_amd64.whl": "1.6.1@PyKrige-1.6.1-cp39-cp39-macosx_10_9_x86_64.whl"
       }
     }
   },
@@ -38669,6 +38880,17 @@
           "requires_dist": [
             "Pillow (>=8.3.1,<9.0.0)",
             "aiohttp (>=3.7.4,<4.0.0)",
+            "typer (>=0.3.2,<0.4.0)"
+          ],
+          "requires_python": ">=3.8,<4.0"
+        }
+      },
+      "0.1.4": {
+        "tawnyapi-0.1.4-py3-none-any.whl": {
+          "requires_dist": [
+            "aiohttp (>=3.7.4,<4.0.0)",
+            "imutils (>=0.5.4,<0.6.0)",
+            "opencv-python (>=4.5.3,<5.0.0)",
             "typer (>=0.3.2,<0.4.0)"
           ],
           "requires_python": ">=3.8,<4.0"
