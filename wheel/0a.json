@@ -1154,6 +1154,9 @@
       "2.0.0rc2": {
         "apache_airflow_providers_microsoft_winrm-2.0.0rc2-py3-none-any.whl": "2.0.0@apache_airflow_providers_microsoft_winrm-2.0.0-py3-none-any.whl"
       },
+      "2.0.1": {
+        "apache_airflow_providers_microsoft_winrm-2.0.1-py3-none-any.whl": "2.0.0@apache_airflow_providers_microsoft_winrm-2.0.0-py3-none-any.whl"
+      },
       "2.0.1rc1": {
         "apache_airflow_providers_microsoft_winrm-2.0.1rc1-py3-none-any.whl": {
           "requires_dist": [
@@ -1304,6 +1307,26 @@
           "requires_dist": [
             "apache-airflow (>=2.1.0rc2)",
             "mysql-connector-python (<=8.0.22,>=8.0.11)",
+            "mysqlclient (<3,>=1.3.6)",
+            "apache-airflow-providers-amazon ; extra == 'amazon'",
+            "apache-airflow-providers-presto ; extra == 'presto'",
+            "apache-airflow-providers-trino ; extra == 'trino'",
+            "apache-airflow-providers-vertica ; extra == 'vertica'"
+          ],
+          "requires_python": "~=3.6"
+        }
+      },
+      "2.1.1": {
+        "apache_airflow_providers_mysql-2.1.1-py3-none-any.whl": {
+          "provides_extras": [
+            "amazon",
+            "presto",
+            "trino",
+            "vertica"
+          ],
+          "requires_dist": [
+            "apache-airflow (>=2.1.0)",
+            "mysql-connector-python (<9,>=8.0.11)",
             "mysqlclient (<3,>=1.3.6)",
             "apache-airflow-providers-amazon ; extra == 'amazon'",
             "apache-airflow-providers-presto ; extra == 'presto'",
@@ -18504,6 +18527,9 @@
       },
       "0.1.post9": {
         "jupyterlab_language_pack_vi_VN-0.1.post9-py2.py3-none-any.whl": "0.0.2.dev0@jupyterlab_language_pack_vi_VN-0.0.2.dev0-py2.py3-none-any.whl"
+      },
+      "3.1.post0": {
+        "jupyterlab_language_pack_vi_VN-3.1.post0-py2.py3-none-any.whl": "0.0.2.dev0@jupyterlab_language_pack_vi_VN-0.0.2.dev0-py2.py3-none-any.whl"
       }
     }
   },
@@ -32085,6 +32111,21 @@
         "pyfaust-3.5.2-cp37-cp37m-win_amd64.whl": "3.0.19@pyfaust-3.0.19-cp37-cp37m-macosx_10_9_x86_64.whl"
       }
     },
+    "cp38": {
+      "3.5.3": {
+        "pyfaust-3.5.3-cp38-cp38-macosx_10_9_x86_64.whl": {
+          "requires_dist": [
+            "pygsp",
+            "scipy",
+            "numpy (>=1.20)",
+            "matplotlib (>=2.0.0)",
+            "pathlib"
+          ]
+        },
+        "pyfaust-3.5.3-cp38-cp38-manylinux1_x86_64.whl": "3.5.3@pyfaust-3.5.3-cp38-cp38-macosx_10_9_x86_64.whl",
+        "pyfaust-3.5.3-cp38-cp38-win_amd64.whl": "3.5.3@pyfaust-3.5.3-cp38-cp38-macosx_10_9_x86_64.whl"
+      }
+    },
     "cp39": {
       "3.0.11": {
         "pyfaust-3.0.11-cp39-cp39-macosx_10_9_x86_64.whl": {
@@ -32268,6 +32309,11 @@
         "pyfaust-3.5.2-cp39-cp39-macosx_10_9_x86_64.whl": "3.0.19@pyfaust-3.0.19-cp39-cp39-macosx_10_9_x86_64.whl",
         "pyfaust-3.5.2-cp39-cp39-manylinux1_x86_64.whl": "3.0.19@pyfaust-3.0.19-cp39-cp39-macosx_10_9_x86_64.whl",
         "pyfaust-3.5.2-cp39-cp39-win_amd64.whl": "3.0.19@pyfaust-3.0.19-cp39-cp39-macosx_10_9_x86_64.whl"
+      },
+      "3.5.3": {
+        "pyfaust-3.5.3-cp39-cp39-macosx_10_9_x86_64.whl": "3.0.19@pyfaust-3.0.19-cp39-cp39-macosx_10_9_x86_64.whl",
+        "pyfaust-3.5.3-cp39-cp39-manylinux1_x86_64.whl": "3.0.19@pyfaust-3.0.19-cp39-cp39-macosx_10_9_x86_64.whl",
+        "pyfaust-3.5.3-cp39-cp39-win_amd64.whl": "3.0.19@pyfaust-3.0.19-cp39-cp39-macosx_10_9_x86_64.whl"
       }
     }
   },
@@ -34677,6 +34723,19 @@
             "arrow (>=1.1.1,<2.0.0)",
             "httpx (>=0.19.0,<0.20.0)",
             "importlib-metadata (>=4.5.0,<5.0.0)",
+            "pydantic[email] (>=1.8.2,<2.0.0)",
+            "starlette[full] (>=0.16.0,<0.17.0)"
+          ],
+          "requires_python": ">=3.6.2,<4.0.0"
+        }
+      },
+      "0.1.4a0": {
+        "rsserpent-0.1.4a0-py3-none-any.whl": {
+          "requires_dist": [
+            "arrow (>=1.1.1,<2.0.0)",
+            "httpx (>=0.19.0,<0.20.0)",
+            "importlib-metadata (>=4.5.0,<5.0.0)",
+            "lxml[cssselect] (>=4.6.3,<5.0.0)",
             "pydantic[email] (>=1.8.2,<2.0.0)",
             "starlette[full] (>=0.16.0,<0.17.0)"
           ],
@@ -44754,6 +44813,19 @@
       },
       "0.1.1": {
         "zfstui-0.1.1-py3-none-any.whl": "0.1.0@zfstui-0.1.0-py3-none-any.whl"
+      }
+    }
+  },
+  "zids": {
+    "py3": {
+      "0.0.1": {
+        "zids-0.0.1-py3-none-any.whl": {
+          "requires_dist": [
+            "jinja2 (>=3)",
+            "markdown (>=3)",
+            "markdown-full-yaml-metadata (>=2)"
+          ]
+        }
       }
     }
   },
