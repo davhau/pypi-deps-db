@@ -1160,6 +1160,42 @@
       }
     }
   },
+  "algobra": {
+    "py3": {
+      "0.0.1": {
+        "algobra-0.0.1-py3-none-any.whl": {
+          "provides_extras": [
+            "dev"
+          ],
+          "requires_dist": [
+            "pytest (>=3.7) ; extra == 'dev'",
+            "twine ; extra == 'dev'"
+          ]
+        }
+      },
+      "0.0.2": {
+        "algobra-0.0.2-py3-none-any.whl": {
+          "provides_extras": [
+            "gpu",
+            "testing"
+          ],
+          "requires_dist": [
+            "numpy",
+            "requests",
+            "pyopencl ; extra == 'gpu'",
+            "six ; extra == 'gpu'",
+            "pytest ; extra == 'testing'",
+            "torch ; extra == 'testing'",
+            "tqdm ; extra == 'testing'"
+          ],
+          "requires_python": ">=3.7"
+        }
+      },
+      "0.0.3": {
+        "algobra-0.0.3-py3-none-any.whl": "0.0.2@algobra-0.0.2-py3-none-any.whl"
+      }
+    }
+  },
   "alias-windows": {
     "py2.py3": {
       "1.1.0": {
@@ -5660,6 +5696,33 @@
             "azureml-dataset-runtime[fuse,pandas] (~=1.33.0)",
             "azureml-telemetry (~=1.33.0)",
             "azureml-pipeline-core (~=1.33.0)",
+            "msrest (>=0.5.1)",
+            "numpy",
+            "pandas",
+            "scipy (>=1.0.0)",
+            "scikit-learn",
+            "lightgbm",
+            "jsonpickle",
+            "pyspark",
+            "matplotlib (<=3.2.1,>=3.0.2)",
+            "pyOpenSSL (==16.0.0); extra == 'databricks'",
+            "cryptography (==1.5); extra == 'databricks'",
+            "ipython (==2.2.0); extra == 'databricks'",
+            "numpy (<=1.16.2,>=1.11.0); extra == 'databricks'",
+            "pandas (<=0.23.4,>=0.21.0); extra == 'databricks'",
+            "scipy (<=1.1.0,>=1.0.0); extra == 'databricks'",
+            "tornado (==5.1.1); extra == 'databricks'"
+          ],
+          "requires_python": ">=3.6,<4"
+        }
+      },
+      "1.34.0": {
+        "azureml_datadrift-1.34.0-py3-none-any.whl": {
+          "requires_dist": [
+            "azureml-core (~=1.34.0)",
+            "azureml-dataset-runtime[pandas,fuse] (~=1.34.0)",
+            "azureml-telemetry (~=1.34.0)",
+            "azureml-pipeline-core (~=1.34.0)",
             "msrest (>=0.5.1)",
             "numpy",
             "pandas",
@@ -17439,6 +17502,9 @@
       "0.0.45": {
         "konlp-0.0.45-py3-none-any.whl": "0.0.28@konlp-0.0.28-py3-none-any.whl"
       },
+      "0.0.46": {
+        "konlp-0.0.46-py3-none-any.whl": "0.0.28@konlp-0.0.28-py3-none-any.whl"
+      },
       "0.0.7": {
         "konlp-0.0.7-py3-none-any.whl": {
           "requires_python": ">=3"
@@ -21153,6 +21219,9 @@
       },
       "0.4.13": {
         "nehushtan-0.4.13-py3-none-any.whl": "0.2.11@nehushtan-0.2.11-py3-none-any.whl"
+      },
+      "0.4.14": {
+        "nehushtan-0.4.14-py3-none-any.whl": "0.2.11@nehushtan-0.2.11-py3-none-any.whl"
       },
       "0.4.2": {
         "nehushtan-0.4.2-py3-none-any.whl": "0.2.11@nehushtan-0.2.11-py3-none-any.whl"
@@ -25350,6 +25419,56 @@
       },
       "0.0.5": {
         "nti.webhooks-0.0.5-py2.py3-none-any.whl": "0.0.3@nti.webhooks-0.0.3-py2.py3-none-any.whl"
+      },
+      "0.0.6": {
+        "nti.webhooks-0.0.6-py2.py3-none-any.whl": {
+          "provides_extras": [
+            "docs",
+            "test"
+          ],
+          "requires_dist": [
+            "zope.authentication",
+            "zope.annotation",
+            "zope.interface (>=5.4.0)",
+            "zope.container",
+            "zope.security",
+            "zope.principalregistry",
+            "zope.componentvocabulary",
+            "zope.vocabularyregistry",
+            "zope.securitypolicy",
+            "zope.generations",
+            "zope.site",
+            "nti.site (>=2.2.0)",
+            "nti.zodb (>=1.3.0)",
+            "nti.externalization (>=2.3.0)",
+            "nti.schema (>=1.16.0)",
+            "setuptools",
+            "transaction (>=3.0.1)",
+            "futures ; python_version == \"2.7\"",
+            "Sphinx ; extra == 'docs'",
+            "sphinx-rtd-theme (==0.5.2) ; extra == 'docs'",
+            "docutils (<0.17) ; extra == 'docs'",
+            "repoze.sphinx.autointerface ; extra == 'docs'",
+            "coverage ; extra == 'docs'",
+            "nti.testing (>=3.0.0) ; extra == 'docs'",
+            "fudge ; extra == 'docs'",
+            "zope.testrunner ; extra == 'docs'",
+            "zope.lifecycleevent ; extra == 'docs'",
+            "zope.securitypolicy ; extra == 'docs'",
+            "responses ; extra == 'docs'",
+            "zope.pluggableauth ; extra == 'docs'",
+            "zope.app.appsetup ; extra == 'docs'",
+            "coverage ; extra == 'test'",
+            "nti.testing (>=3.0.0) ; extra == 'test'",
+            "fudge ; extra == 'test'",
+            "zope.testrunner ; extra == 'test'",
+            "zope.lifecycleevent ; extra == 'test'",
+            "zope.securitypolicy ; extra == 'test'",
+            "responses ; extra == 'test'",
+            "zope.pluggableauth ; extra == 'test'",
+            "zope.app.appsetup ; extra == 'test'"
+          ]
+        }
       }
     }
   },
@@ -28266,6 +28385,13 @@
     "py3": {
       "0.1.0": {
         "prickle-0.1.0-py3-none-any.whl": {}
+      }
+    }
+  },
+  "printlibtest": {
+    "py3": {
+      "0.1": {
+        "printlibtest-0.1-py3-none-any.whl": {}
       }
     }
   },
@@ -39267,6 +39393,9 @@
       },
       "0.0.321": {
         "swh.web-0.0.321-py3-none-any.whl": "0.0.320@swh.web-0.0.320-py3-none-any.whl"
+      },
+      "0.0.322": {
+        "swh.web-0.0.322-py3-none-any.whl": "0.0.320@swh.web-0.0.320-py3-none-any.whl"
       }
     }
   },
