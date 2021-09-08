@@ -8107,6 +8107,25 @@
           ]
         }
       },
+      "0.20.2": {
+        "dbt_spark-0.20.2-py3-none-any.whl": {
+          "provides_extras": [
+            "odbc",
+            "pyhive",
+            "all"
+          ],
+          "requires_dist": [
+            "dbt-core (==0.20.2)",
+            "sqlparams (>=3.0.0)",
+            "pyodbc (>=4.0.30) ; extra == 'odbc'",
+            "PyHive[hive] (<0.7.0,>=0.6.0) ; extra == 'pyhive'",
+            "thrift (<0.12.0,>=0.11.0) ; extra == 'pyhive'",
+            "pyodbc (>=4.0.30) ; extra == 'all'",
+            "PyHive[hive] (<0.7.0,>=0.6.0) ; extra == 'all'",
+            "thrift (<0.12.0,>=0.11.0) ; extra == 'all'"
+          ]
+        }
+      },
       "0.20.2rc1": {
         "dbt_spark-0.20.2rc1-py3-none-any.whl": {
           "provides_extras": [
@@ -14874,6 +14893,9 @@
       },
       "0.22.0b6": {
         "flytekitplugins_great_expectations-0.22.0b6-py3-none-any.whl": "0.22.0@flytekitplugins_great_expectations-0.22.0-py3-none-any.whl"
+      },
+      "0.22.1": {
+        "flytekitplugins_great_expectations-0.22.1-py3-none-any.whl": "0.22.0@flytekitplugins_great_expectations-0.22.0-py3-none-any.whl"
       }
     }
   },
@@ -29068,6 +29090,9 @@
       "1.18.36": {
         "mypy_boto3_mediaconnect-1.18.36-py3-none-any.whl": "1.13.24.3@mypy_boto3_mediaconnect-1.13.24.3-py3-none-any.whl"
       },
+      "1.18.37": {
+        "mypy_boto3_mediaconnect-1.18.37-py3-none-any.whl": "1.13.24.3@mypy_boto3_mediaconnect-1.13.24.3-py3-none-any.whl"
+      },
       "1.18.4": {
         "mypy_boto3_mediaconnect-1.18.4-py3-none-any.whl": "1.13.24.3@mypy_boto3_mediaconnect-1.13.24.3-py3-none-any.whl"
       },
@@ -30189,6 +30214,9 @@
       },
       "1.18.36": {
         "mypy_boto3_sso-1.18.36-py3-none-any.whl": "1.13.24.3@mypy_boto3_sso-1.13.24.3-py3-none-any.whl"
+      },
+      "1.18.37": {
+        "mypy_boto3_sso-1.18.37-py3-none-any.whl": "1.13.24.3@mypy_boto3_sso-1.13.24.3-py3-none-any.whl"
       },
       "1.18.4": {
         "mypy_boto3_sso-1.18.4-py3-none-any.whl": "1.13.24.3@mypy_boto3_sso-1.13.24.3-py3-none-any.whl"
@@ -47520,6 +47548,41 @@
       },
       "0.1.21": {
         "uvicore-0.1.21-py3-none-any.whl": "0.1.19@uvicore-0.1.19-py3-none-any.whl"
+      },
+      "0.1.22": {
+        "uvicore-0.1.22-py3-none-any.whl": {
+          "provides_extras": [
+            "database",
+            "redis",
+            "web"
+          ],
+          "requires_dist": [
+            "Jinja2 (>=2.11.0,<2.12.0); extra == \"web\"",
+            "PyJWT (>=2.0.0,<2.1.0); extra == \"web\"",
+            "aiofiles (>=0.6.0,<0.7.0); extra == \"web\"",
+            "aiohttp (>=3.7.0,<3.8.0)",
+            "aioredis (>=1.3.0,<1.4.0); extra == \"redis\"",
+            "alembic (>=1.5.0,<1.6.0); extra == \"database\"",
+            "anyio (>=3.2.0,<3.3.0)",
+            "argon2-cffi (>=20.1.0,<20.2.0)",
+            "colored (>=1.4.0,<1.5.0)",
+            "cryptography (>=3.4.0,<3.5.0)",
+            "databases[mysql,postgresql,sqlite] (>=0.4.0,<0.5.0); extra == \"database\"",
+            "environs (>=9.3.0,<9.4.0)",
+            "fastapi (>=0.63.0,<0.64.0); extra == \"web\"",
+            "gunicorn (>=20.0.0,<20.1.0); extra == \"web\"",
+            "httptools (>=0.1.0,<0.2.0); extra == \"web\"",
+            "itsdangerous (>=1.1.0,<1.2.0); extra == \"web\"",
+            "merge-args (>=0.1.0,<0.2.0)",
+            "prettyprinter (>=0.18.0,<0.19.0)",
+            "python-multipart (>=0.0.0,<0.1.0); extra == \"web\"",
+            "requests (>=2.25.0,<2.26.0); extra == \"web\"",
+            "sqlalchemy (>=1.3.0,<1.4.0); extra == \"database\"",
+            "uvicorn (>=0.13.0,<0.14.0); extra == \"web\"",
+            "uvloop (>=0.14.0,<0.15.0); extra == \"web\""
+          ],
+          "requires_python": ">=3.7,<4.0"
+        }
       },
       "0.1.3": {
         "uvicore-0.1.3-py3-none-any.whl": "0.1.2@uvicore-0.1.2-py3-none-any.whl"
