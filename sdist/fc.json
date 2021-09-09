@@ -1724,6 +1724,38 @@
       "38": "27",
       "39": "27",
       "310": "27"
+    },
+    "3.10.0": {
+      "27": {
+        "extras_require": {
+          "test": [
+            "pytest",
+            "flake8",
+            "flake8-bugbear",
+            "coverage",
+            "pytest-cov"
+          ],
+          "doc": [
+            "sphinx",
+            "sphinxcontrib-trio"
+          ],
+          "test:implementation_name=='cpython'": [
+            "black",
+            "mypy"
+          ],
+          ":python_version<'3.8'": [
+            "typing_extensions"
+          ]
+        },
+        "python_requires": [
+          "~=3.6"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
     }
   },
   "athletelistyy": {
@@ -11875,36 +11907,37 @@
     "0.9": "0.2"
   },
   "cryptnoxcard": {
-    "1.0.0": {
-      "27": {
+    "1.0.2": {
+      "36": {
         "install_requires": [
-          "aiohttp",
           "argparse",
           "appdirs",
           "base58",
           "ecdsa",
           "colander",
           "cryptnoxpy",
-          "cryptography",
           "lazy-import",
           "pytz",
-          "pyscard",
           "requests",
           "tabulate",
           "stdiomask",
           "web3"
         ],
+        "extras_require": {
+          ":platform_system == \"Windows\"": [
+            "winrt"
+          ]
+        },
         "python_requires": [
-          ">=3.6,<3.10"
+          ">=3.6",
+          "<3.10"
         ]
       },
-      "36": "27",
-      "37": "27",
-      "38": "27",
-      "39": "27",
-      "310": "27"
-    },
-    "1.0.1": "1.0.0"
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "cryptotranslator": {
     "0.1.1": {
@@ -30138,6 +30171,34 @@
       "310": "27"
     }
   },
+  "netmiko-bsh": {
+    "3.4.0": {
+      "27": {
+        "install_requires": [
+          "setuptools>=38.4.0",
+          "paramiko>=2.6.0",
+          "scp>=0.13.2",
+          "tenacity",
+          "ntc-templates-bsh",
+          "pyserial"
+        ],
+        "extras_require": {
+          "test": [
+            "pyyaml>=5.1.2",
+            "pytest>=5.1.2"
+          ],
+          ":python_version < \"3.7\"": [
+            "importlib_resources"
+          ]
+        }
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
+  },
   "neural": {
     "0.1.0": {
       "27": {},
@@ -43828,7 +43889,8 @@
       "310": "27"
     },
     "0.1.3": "0.1.2",
-    "0.1.4": "0.1.2"
+    "0.1.4": "0.1.2",
+    "0.1.5": "0.1.2"
   },
   "statum": {
     "0.1.1": {
