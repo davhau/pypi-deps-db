@@ -16205,6 +16205,60 @@
       "38": "36",
       "39": "36",
       "310": "36"
+    },
+    "0.12.10": {
+      "36": {
+        "install_requires": [
+          "dagster==0.12.10",
+          "snowflake-connector-python>=2.1.0"
+        ],
+        "extras_require": {
+          "snowflake.sqlalchemy": [
+            "sqlalchemy",
+            "snowflake-sqlalchemy"
+          ]
+        }
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "0.12.10rc0": {
+      "36": {
+        "install_requires": [
+          "dagster==0.12.10rc0",
+          "snowflake-connector-python>=2.1.0"
+        ],
+        "extras_require": {
+          "snowflake.sqlalchemy": [
+            "sqlalchemy",
+            "snowflake-sqlalchemy"
+          ]
+        }
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "0.12.10rc1": {
+      "36": {
+        "install_requires": [
+          "dagster==0.12.10rc1",
+          "snowflake-connector-python>=2.1.0"
+        ],
+        "extras_require": {
+          "snowflake.sqlalchemy": [
+            "sqlalchemy",
+            "snowflake-sqlalchemy"
+          ]
+        }
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
     }
   },
   "daijunester": {
@@ -18023,7 +18077,55 @@
       "310": "36"
     },
     "0.16.1": "0.14.0",
-    "0.17.0": "0.14.0"
+    "0.17.0": "0.14.0",
+    "0.18.0": {
+      "36": {
+        "install_requires": [
+          "django-configurations[database,email]"
+        ],
+        "extras_require": {
+          "dev": [
+            "django>=3",
+            "django-allauth",
+            "django-cors-headers",
+            "django-extensions",
+            "django-filter",
+            "django-girder-style",
+            "django-girder-utils>=0.9.0",
+            "django-oauth-toolkit>=1.4.0",
+            "drf-yasg",
+            "psycopg2",
+            "rich",
+            "whitenoise[brotli]",
+            "django-debug-toolbar",
+            "django-minio-storage"
+          ],
+          "prod": [
+            "django>=3",
+            "django-allauth",
+            "django-cors-headers",
+            "django-extensions",
+            "django-filter",
+            "django-girder-style",
+            "django-girder-utils>=0.9.0",
+            "django-oauth-toolkit>=1.4.0",
+            "drf-yasg",
+            "psycopg2",
+            "rich",
+            "whitenoise[brotli]",
+            "django-storages[boto3]",
+            "sentry-sdk"
+          ]
+        },
+        "python_requires": [
+          ">=3.8"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "django-dbstorage": {
     "1.0": {
@@ -27425,7 +27527,9 @@
     "0.8.1": "0.0.1",
     "0.8.2": "0.0.1",
     "0.8.3": "0.0.1",
-    "0.8.4": "0.0.1"
+    "0.8.4": "0.0.1",
+    "0.8.5": "0.0.1",
+    "0.8.6": "0.0.1"
   },
   "ipytv": {
     "0.0.1": {
@@ -30523,6 +30627,95 @@
             "yapf>=0.29.0",
             "atari-py==0.2.6",
             "scikit-learn>=0.23"
+          ],
+          ":python_version <= \"3.6\"": [
+            "dataclasses"
+          ]
+        },
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "0.4.0": {
+      "36": {
+        "install_requires": [
+          "torch>=1.6",
+          "torchmetrics>=0.4.1",
+          "pytorch-lightning>=1.3.0",
+          "packaging"
+        ],
+        "setup_requires": [
+          "wheel"
+        ],
+        "extras_require": {
+          "loggers": [
+            "matplotlib",
+            "wandb",
+            "scipy"
+          ],
+          "models": [
+            "torchvision>=0.7",
+            "scikit-learn>=0.23",
+            "Pillow",
+            "opencv-python-headless",
+            "gym>=0.17.2",
+            "atari_py==0.2.*",
+            "box2d-py==2.3.*"
+          ],
+          "test": [
+            "codecov>=2.1",
+            "pytest>=6.0",
+            "pytest-cov>2.10",
+            "flake8",
+            "check-manifest",
+            "twine>=3.2",
+            "isort>=5.6.4",
+            "pre-commit>=1.0",
+            "mypy>=0.790",
+            "atari-py==0.2.6",
+            "scikit-learn>=0.23",
+            "sparseml"
+          ],
+          "extra": [
+            "torchvision>=0.7",
+            "scikit-learn>=0.23",
+            "Pillow",
+            "opencv-python-headless",
+            "gym>=0.17.2",
+            "atari_py==0.2.*",
+            "box2d-py==2.3.*",
+            "matplotlib",
+            "wandb",
+            "scipy"
+          ],
+          "dev": [
+            "torchvision>=0.7",
+            "scikit-learn>=0.23",
+            "Pillow",
+            "opencv-python-headless",
+            "gym>=0.17.2",
+            "atari_py==0.2.*",
+            "box2d-py==2.3.*",
+            "matplotlib",
+            "wandb",
+            "scipy",
+            "codecov>=2.1",
+            "pytest>=6.0",
+            "pytest-cov>2.10",
+            "flake8",
+            "check-manifest",
+            "twine>=3.2",
+            "isort>=5.6.4",
+            "pre-commit>=1.0",
+            "mypy>=0.790",
+            "atari-py==0.2.6",
+            "scikit-learn>=0.23",
+            "sparseml"
           ],
           ":python_version <= \"3.6\"": [
             "dataclasses"
@@ -34033,7 +34226,8 @@
     "1.18.35": "1.18.0",
     "1.18.36": "1.18.0",
     "1.18.37": "1.18.0",
-    "1.18.38": "1.18.0"
+    "1.18.38": "1.18.0",
+    "1.18.39": "1.18.0"
   },
   "mypy-boto3-rds-data": {
     "0.1.10": "0.1.9",
@@ -34791,7 +34985,8 @@
     "1.18.35": "1.18.0",
     "1.18.36": "1.18.0",
     "1.18.37": "1.18.0",
-    "1.18.38": "1.18.0"
+    "1.18.38": "1.18.0",
+    "1.18.39": "1.18.0"
   },
   "mytorchsummary": {
     "1.1": {
@@ -42798,7 +42993,8 @@
     "0.11.0.dev1630811655": "0.2.0",
     "0.11.0.dev1630898061": "0.2.0",
     "0.11.0.dev1630984454": "0.2.0",
-    "0.11.0.dev1631070830": "0.2.0"
+    "0.11.0.dev1631070830": "0.2.0",
+    "0.11.0.dev1631243639": "0.2.0"
   },
   "purpleair": {
     "1.0": {
@@ -59950,7 +60146,8 @@
     "3.0.478": "3.0.251",
     "3.0.479": "3.0.251",
     "3.0.480": "3.0.251",
-    "3.0.481": "3.0.251"
+    "3.0.481": "3.0.251",
+    "3.0.482": "3.0.251"
   },
   "test-01": {
     "0.2": {
