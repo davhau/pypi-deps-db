@@ -13332,7 +13332,9 @@
       "38": "27",
       "39": "27",
       "310": "27"
-    }
+    },
+    "1.0.8": "1.0.7",
+    "1.0.9": "1.0.7"
   },
   "eventmq": {
     "0.2.7.1": "0.3rc3",
@@ -31294,7 +31296,8 @@
     "1.18.36": "1.18.0",
     "1.18.37": "1.18.0",
     "1.18.38": "1.18.0",
-    "1.18.39": "1.18.0"
+    "1.18.39": "1.18.0",
+    "1.18.40": "1.18.0"
   },
   "mypy-boto3-savingsplans": {
     "0.1.10": "0.1.9",
@@ -32055,7 +32058,8 @@
     "1.18.36": "1.18.0",
     "1.18.37": "1.18.0",
     "1.18.38": "1.18.0",
-    "1.18.39": "1.18.0"
+    "1.18.39": "1.18.0",
+    "1.18.40": "1.18.0"
   },
   "mysimplegui": {
     "1.1.0": {
@@ -34871,6 +34875,94 @@
         "install_requires": [
           "peewee>3",
           "aio-databases>=0.5.3"
+        ],
+        "extras_require": {
+          "aiosqlite": [
+            "aio-databases[aiosqlite]"
+          ],
+          "aiomysql": [
+            "aio-databases[aiomysql]"
+          ],
+          "aiopg": [
+            "aio-databases[aiopg]"
+          ],
+          "asyncpg": [
+            "aio-databases[asyncpg]"
+          ],
+          "triopg": [
+            "aio-databases[triopg]"
+          ],
+          "trio_mysql": [
+            "aio-databases[trio_mysql]"
+          ],
+          "tests": [
+            "aio-databases[aiomysql,aiopg,aiosqlite,asyncpg,trio_mysql,triopg]",
+            "pytest",
+            "pytest-aio[trio]>=1.2.2",
+            "pytest-mypy",
+            "trio_asyncio"
+          ],
+          ":python_version < \"3.8\"": [
+            "cached_property"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "38": "37",
+      "39": "37",
+      "310": "37"
+    },
+    "0.2.0": {
+      "37": {
+        "install_requires": [
+          "peewee>3",
+          "aio-databases>=0.7.0"
+        ],
+        "extras_require": {
+          "aiosqlite": [
+            "aio-databases[aiosqlite]"
+          ],
+          "aiomysql": [
+            "aio-databases[aiomysql]"
+          ],
+          "aiopg": [
+            "aio-databases[aiopg]"
+          ],
+          "asyncpg": [
+            "aio-databases[asyncpg]"
+          ],
+          "triopg": [
+            "aio-databases[triopg]"
+          ],
+          "trio_mysql": [
+            "aio-databases[trio_mysql]"
+          ],
+          "tests": [
+            "aio-databases[aiomysql,aiopg,aiosqlite,asyncpg,trio_mysql,triopg]",
+            "pytest",
+            "pytest-aio[trio]>=1.2.2",
+            "pytest-mypy",
+            "trio_asyncio"
+          ],
+          ":python_version < \"3.8\"": [
+            "cached_property"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "38": "37",
+      "39": "37",
+      "310": "37"
+    },
+    "0.2.1": {
+      "37": {
+        "install_requires": [
+          "peewee>3",
+          "aio-databases>=0.7.2"
         ],
         "extras_require": {
           "aiosqlite": [
@@ -39560,6 +39652,17 @@
       "310": "27"
     },
     "0.1.1": "0.1.0"
+  },
+  "r00file": {
+    "0.1": {
+      "27": {},
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "0.2": "0.1"
   },
   "radarly-py": {
     "1.0.10": "1.0.9",
