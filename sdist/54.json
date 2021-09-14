@@ -13765,6 +13765,24 @@
     "1.2.5": "1.0",
     "1.2.6": "1.0"
   },
+  "delft-physics-lab": {
+    "0.1": {
+      "27": {
+        "install_requires": [
+          "numpy>=1.21",
+          "scipy>=1.7.1",
+          "matplotlib>=3.4.3"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "0.2": "0.1",
+    "0.3": "0.1"
+  },
   "demands": {
     "1.0.5": {
       "27": {
@@ -27569,30 +27587,41 @@
     }
   },
   "helix": {
-    "0.1.0": {
-      "27": {
+    "1.1.1": {
+      "36": {
         "install_requires": [
-          "attrs",
-          "requests",
-          "pyyaml",
-          "six",
-          "udatetime"
+          "filemagic"
         ],
-        "setup_requires": [
-          "pytest-runner",
-          "setuptools_scm",
-          "wheel"
-        ],
-        "tests_require": [
-          "pytest",
-          "pytest-cov",
-          "tox",
-          "vcrpy"
+        "extras_require": {
+          "development": [
+            "black",
+            "flake8",
+            "pip-tools",
+            "pre-commit",
+            "sphinx",
+            "sphinx_rtd_theme"
+          ],
+          "testing": [
+            "xmlrunner",
+            "flake8-formatter-junit-xml"
+          ],
+          "windows": [],
+          "windows:platform_system != \"Windows\"": [
+            "uninstallable"
+          ],
+          "linux": [],
+          "linux:platform_system != \"Linux\"": [
+            "uninstallable"
+          ]
+        },
+        "python_requires": [
+          ">=3.5"
         ]
       },
-      "36": "27",
-      "37": "27",
-      "38": "27"
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
     }
   },
   "hello-world-lizixi": {

@@ -4326,7 +4326,9 @@
     "1.0b0": "1.0.0",
     "1.0b1": "1.0.0",
     "1.1.0": "1.0.0",
-    "1.2.0": "1.0.0"
+    "1.2.0": "1.0.0",
+    "2.0.1": "1.0.0",
+    "2.0.2": "1.0.0"
   },
   "azfunctionsmonitor": {
     "0.1.10": "0.1.4",
@@ -15467,7 +15469,26 @@
       "38": "27",
       "39": "27",
       "310": "27"
-    }
+    },
+    "0.2.2": {
+      "27": {
+        "install_requires": [
+          "pandas==1.3.2",
+          "psycopg2-binary==2.9.1",
+          "testing.postgresql==1.3.0",
+          "numpy==1.19.2"
+        ],
+        "python_requires": [
+          ">=3.8"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "0.2.3": "0.2.2"
   },
   "easy-scrape": {
     "0.0.2": {
@@ -19869,6 +19890,44 @@
           ],
           "brotli:platform_python_implementation != \"CPython\"": [
             "brotlicffi"
+          ],
+          ":python_version < \"3.7\"": [
+            "async_generator"
+          ]
+        },
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "1.0.0b0": {
+      "36": {
+        "install_requires": [
+          "certifi",
+          "charset_normalizer",
+          "sniffio",
+          "rfc3986[idna2008]<2,>=1.3",
+          "httpcore<0.14.0,>=0.13.3"
+        ],
+        "extras_require": {
+          "http2": [
+            "h2<5,>=3"
+          ],
+          "brotli": [],
+          "brotli:platform_python_implementation == \"CPython\"": [
+            "brotli"
+          ],
+          "brotli:platform_python_implementation != \"CPython\"": [
+            "brotlicffi"
+          ],
+          "cli": [
+            "click==8.*",
+            "rich==10.*",
+            "pygments==2.*"
           ],
           ":python_version < \"3.7\"": [
             "async_generator"
@@ -30719,6 +30778,22 @@
     "0.4.3b0": "0.4.3",
     "0.4.4": "0.4.3",
     "0.5.1": "0.4.3"
+  },
+  "piecewise-regression": {
+    "0.2": {
+      "36": {
+        "install_requires": [
+          "numpy",
+          "matplotlib",
+          "scipy",
+          "statsmodels"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "pigstep": {
     "0.0.0": {

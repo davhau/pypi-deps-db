@@ -11198,7 +11198,8 @@
     "1.2.96": "1.2.0",
     "1.2.97": "1.2.0",
     "1.2.98": "1.2.0",
-    "1.2.99": "1.2.0"
+    "1.2.99": "1.2.0",
+    "1.2.100": "1.2.0"
   },
   "docker": {
     "2.0.0": {
@@ -35037,7 +35038,53 @@
       "39": "37",
       "310": "37"
     },
-    "0.2.2": "0.2.1"
+    "0.2.2": "0.2.1",
+    "0.3.0": "0.2.1",
+    "0.3.1": {
+      "37": {
+        "install_requires": [
+          "peewee>3",
+          "aio-databases>=0.8.0"
+        ],
+        "extras_require": {
+          "aiosqlite": [
+            "aio-databases[aiosqlite]"
+          ],
+          "aiomysql": [
+            "aio-databases[aiomysql]"
+          ],
+          "aiopg": [
+            "aio-databases[aiopg]"
+          ],
+          "asyncpg": [
+            "aio-databases[asyncpg]"
+          ],
+          "triopg": [
+            "aio-databases[triopg]"
+          ],
+          "trio_mysql": [
+            "aio-databases[trio_mysql]"
+          ],
+          "tests": [
+            "aio-databases[aiomysql,aiopg,aiosqlite,asyncpg,trio_mysql,triopg]",
+            "pytest",
+            "pytest-aio[trio]>=1.2.2",
+            "pytest-mypy",
+            "trio_asyncio"
+          ],
+          ":python_version < \"3.8\"": [
+            "cached_property"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "38": "37",
+      "39": "37",
+      "310": "37"
+    },
+    "0.4.0": "0.3.1"
   },
   "pelican-jupyter": {
     "0.10.0": {
@@ -53727,7 +53774,8 @@
       "39": "27",
       "310": "27"
     },
-    "1.3.21": "1.3.20"
+    "1.3.21": "1.3.20",
+    "1.3.22": "1.3.20"
   },
   "waylay-beta": {
     "0.1.0": {

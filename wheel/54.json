@@ -11017,6 +11017,25 @@
       }
     }
   },
+  "delft-physics-lab": {
+    "py3": {
+      "0.1": {
+        "delft_physics_lab-0.1-py3-none-any.whl": {
+          "requires_dist": [
+            "numpy (>=1.21)",
+            "scipy (>=1.7.1)",
+            "matplotlib (>=3.4.3)"
+          ]
+        }
+      },
+      "0.2": {
+        "delft_physics_lab-0.2-py3-none-any.whl": "0.1@delft_physics_lab-0.1-py3-none-any.whl"
+      },
+      "0.3": {
+        "delft_physics_lab-0.3-py3-none-any.whl": "0.1@delft_physics_lab-0.1-py3-none-any.whl"
+      }
+    }
+  },
   "destlogger": {
     "py3": {
       "1.0": {
@@ -17462,6 +17481,20 @@
       },
       "0.32.0a3": {
         "drake-0.32.0a3-cp36-cp36m-manylinux_2_27_x86_64.whl": "0.32.0a1@drake-0.32.0a1-cp36-cp36m-manylinux_2_27_x86_64.whl"
+      },
+      "0.32.0a5": {
+        "drake-0.32.0a5-cp36-cp36m-manylinux_2_27_x86_64.whl": {
+          "requires_dist": [
+            "PyYAML",
+            "matplotlib",
+            "meshcat",
+            "numpy",
+            "pydot",
+            "pygame",
+            "scipy"
+          ],
+          "requires_python": ">=3.6"
+        }
       }
     },
     "cp37": {
@@ -17478,6 +17511,9 @@
           ],
           "requires_python": ">=3.6"
         }
+      },
+      "0.32.0a5": {
+        "drake-0.32.0a5-cp37-cp37m-manylinux_2_27_x86_64.whl": "0.32.0a4@drake-0.32.0a4-cp37-cp37m-manylinux_2_27_x86_64.whl"
       }
     }
   },
@@ -21093,16 +21129,29 @@
     }
   },
   "helix": {
-    "py2.py3": {
-      "0.1.0": {
-        "helix-0.1.0-py2.py3-none-any.whl": {
+    "py3": {
+      "1.1.1": {
+        "helix-1.1.1.r1-py3-none-any.whl": {
+          "provides_extras": [
+            "development",
+            "linux",
+            "testing",
+            "windows"
+          ],
           "requires_dist": [
-            "attrs",
-            "pyyaml",
-            "requests",
-            "six",
-            "udatetime"
-          ]
+            "filemagic",
+            "black ; extra == 'development'",
+            "flake8 ; extra == 'development'",
+            "pip-tools ; extra == 'development'",
+            "pre-commit ; extra == 'development'",
+            "sphinx ; extra == 'development'",
+            "sphinx-rtd-theme ; extra == 'development'",
+            "uninstallable ; (platform_system != \"Linux\") and extra == 'linux'",
+            "xmlrunner ; extra == 'testing'",
+            "flake8-formatter-junit-xml ; extra == 'testing'",
+            "uninstallable ; (platform_system != \"Windows\") and extra == 'windows'"
+          ],
+          "requires_python": ">=3.5"
         }
       }
     }
