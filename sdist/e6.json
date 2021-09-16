@@ -52104,7 +52104,8 @@
     "1.40.1": "0.0.1",
     "1.40.2": "0.0.1",
     "1.41.0": "0.0.1",
-    "1.42.0": "0.0.1"
+    "1.42.0": "0.0.1",
+    "1.42.1": "0.0.1"
   },
   "vtr-utils": {
     "0.0.2": {
@@ -52950,6 +52951,39 @@
           "pyluach"
         ],
         "extras_require": {
+          ":platform_system == \"Windows\"": [
+            "tzdata"
+          ],
+          ":python_version < \"3.9\"": [
+            "backports.zoneinfo"
+          ],
+          ":python_version < \"3.8\"": [
+            "importlib-metadata"
+          ]
+        },
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "16.0.0rc1": {
+      "27": {
+        "install_requires": [
+          "python-dateutil",
+          "lunardate",
+          "convertdate",
+          "pyluach"
+        ],
+        "extras_require": {
+          "astronomy": [
+            "skyfield",
+            "skyfield-data"
+          ],
           ":platform_system == \"Windows\"": [
             "tzdata"
           ],
