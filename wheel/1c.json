@@ -8885,6 +8885,38 @@
       },
       "1.3.6.dev1": {
         "bigflow-1.3.6.dev1-py3-none-any.whl": "1.3.0@bigflow-1.3.0-py3-none-any.whl"
+      },
+      "1.3.6.dev2": {
+        "bigflow-1.3.6.dev2-py3-none-any.whl": {
+          "provides_extras": [
+            "bigquery",
+            "dataflow",
+            "dataproc",
+            "log"
+          ],
+          "requires_dist": [
+            "google-cloud-storage (<2,>=1.30)",
+            "google-auth (<2,>=1.20)",
+            "unittest-xml-reporting (<4,>=3.0.2)",
+            "jinja2 (<3,>=2.11.3)",
+            "pip-tools (<7,>=5.3)",
+            "deprecated (<2,>=1.2.10)",
+            "toml (>=0.10)",
+            "tblib (<2,>=1.7)",
+            "lazy-object-proxy (<2,>=1)",
+            "wheel (>=0.35)",
+            "setuptools (>=45)",
+            "typing-extensions (~=3.7) ; python_version <= \"3.7\"",
+            "backports.cached-property ; python_version <= \"3.8\"",
+            "google-cloud-bigquery (<2,>=1.6) ; extra == 'bigquery'",
+            "pandas (<2,>=0.25) ; extra == 'bigquery'",
+            "six (<2,>=1.14) ; extra == 'bigquery'",
+            "apache-beam[gcp] (<2.29,>=2.24) ; extra == 'dataflow'",
+            "google-cloud-dataproc (<3,>=2) ; extra == 'dataproc'",
+            "pyspark (<4,>=3.0) ; extra == 'dataproc'",
+            "google-cloud-logging (<2,>=1.15) ; extra == 'log'"
+          ]
+        }
       }
     }
   },

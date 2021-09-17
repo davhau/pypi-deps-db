@@ -11119,7 +11119,8 @@
       "38": "36",
       "39": "36",
       "310": "36"
-    }
+    },
+    "0.7.12": "0.7.11"
   },
   "cupyopt": {
     "0.14.11.1": {
@@ -16164,7 +16165,8 @@
     "0.7.4": "0.6",
     "0.7.5": "0.6",
     "0.7.6": "0.6",
-    "0.7.7": "0.6"
+    "0.7.7": "0.6",
+    "0.7.8": "0.6"
   },
   "ezopcuaserver": {
     "0.1": {
@@ -20531,7 +20533,10 @@
       "39": "36",
       "310": "36"
     },
-    "0.0.18": "0.0.10"
+    "0.0.18": "0.0.10",
+    "0.0.20": "0.0.10",
+    "0.0.21": "0.0.10",
+    "0.0.22": "0.0.10"
   },
   "hierdiff": {
     "0.1": {
@@ -44279,6 +44284,41 @@
           "swh.core>=0.0.7",
           "swh.loader.core>=0.18.0",
           "swh.model>=0.4.0",
+          "swh.scheduler>=0.0.39",
+          "swh.storage>=0.22.0"
+        ],
+        "setup_requires": [
+          "setuptools-scm"
+        ],
+        "extras_require": {
+          "testing": [
+            "pytest",
+            "pytest-mock",
+            "swh.scheduler[testing]>=0.5.0",
+            "swh.storage[testing]",
+            "types-click",
+            "types-python-dateutil"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "1.0.0": {
+      "27": {
+        "install_requires": [
+          "dulwich>=0.18.7",
+          "retrying",
+          "click",
+          "swh.core>=0.0.7",
+          "swh.loader.core>=0.18.0",
+          "swh.model>=2.9.0",
           "swh.scheduler>=0.0.39",
           "swh.storage>=0.22.0"
         ],

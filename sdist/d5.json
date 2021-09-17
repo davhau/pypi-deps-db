@@ -35277,7 +35277,52 @@
     "0.4.0": "0.3.1",
     "0.5.0": "0.3.1",
     "0.6.0": "0.3.1",
-    "0.6.1": "0.3.1"
+    "0.6.1": "0.3.1",
+    "0.6.2": "0.3.1",
+    "0.7.0": {
+      "37": {
+        "install_requires": [
+          "peewee>3",
+          "aio-databases>=0.9.1"
+        ],
+        "extras_require": {
+          "aiosqlite": [
+            "aio-databases[aiosqlite]"
+          ],
+          "aiomysql": [
+            "aio-databases[aiomysql]"
+          ],
+          "aiopg": [
+            "aio-databases[aiopg]"
+          ],
+          "asyncpg": [
+            "aio-databases[asyncpg]"
+          ],
+          "triopg": [
+            "aio-databases[triopg]"
+          ],
+          "trio_mysql": [
+            "aio-databases[trio_mysql]"
+          ],
+          "tests": [
+            "aio-databases[aiomysql,aiopg,aiosqlite,asyncpg,trio_mysql,triopg]",
+            "pytest",
+            "pytest-aio[trio]>=1.2.2",
+            "pytest-mypy",
+            "trio_asyncio"
+          ],
+          ":python_version < \"3.8\"": [
+            "cached_property"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "38": "37",
+      "39": "37",
+      "310": "37"
+    }
   },
   "pelican-jupyter": {
     "0.10.0": {
@@ -45584,7 +45629,8 @@
       "39": "27",
       "310": "27"
     },
-    "0.24.1rc20": {
+    "0.24.1rc20": "0.25.0",
+    "0.25.0": {
       "27": {
         "install_requires": [
           "astroplan==0.7",
