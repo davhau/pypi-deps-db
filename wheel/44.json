@@ -23162,12 +23162,16 @@
   "phargram": {
     "py3": {
       "1.2": {
-        "PharGram-1.2-py3-none-any.whl": {
-          "requires_python": ">=3.6"
-        }
-      },
-      "1.6": {
-        "PharGram-1.6-py3-none-any.whl": {
+        "phargram-1.2-py3-none-any.whl": {
+          "provides_extras": [
+            "dev",
+            "test"
+          ],
+          "requires_dist": [
+            "peppercorn",
+            "check-manifest ; extra == 'dev'",
+            "coverage ; extra == 'test'"
+          ],
           "requires_python": ">=3.6, <4"
         }
       }

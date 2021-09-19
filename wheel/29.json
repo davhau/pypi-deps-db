@@ -135,6 +135,9 @@
       },
       "1.1.0": {
         "aa_forum-1.1.0-py3-none-any.whl": "1.0.3@aa_forum-1.0.3-py3-none-any.whl"
+      },
+      "1.1.1": {
+        "aa_forum-1.1.1-py3-none-any.whl": "1.0.3@aa_forum-1.0.3-py3-none-any.whl"
       }
     }
   },
@@ -3162,6 +3165,27 @@
       },
       "0.1.18": {
         "biosimulators_amici-0.1.18-py2.py3-none-any.whl": "0.1.17@biosimulators_amici-0.1.17-py2.py3-none-any.whl"
+      },
+      "0.1.19": {
+        "biosimulators_amici-0.1.19-py2.py3-none-any.whl": {
+          "provides_extras": [
+            "all",
+            "docs",
+            "tests"
+          ],
+          "requires_dist": [
+            "amici (>=0.11.17)",
+            "biosimulators-utils[logging] (>=0.1.122)",
+            "kisao",
+            "lxml",
+            "numpy",
+            "sympy (>=1.7)",
+            "biosimulators-utils[containers] ; extra == 'all'",
+            "python-dateutil ; extra == 'all'",
+            "biosimulators-utils[containers] ; extra == 'tests'",
+            "python-dateutil ; extra == 'tests'"
+          ]
+        }
       },
       "0.1.2": {
         "biosimulators_amici-0.1.2-py2.py3-none-any.whl": {
@@ -41297,6 +41321,42 @@
             "wheel ; extra == 'dev'"
           ],
           "requires_python": ">=3.4"
+        }
+      }
+    }
+  },
+  "wilddog": {
+    "py3": {
+      "0.1.0rc3": {
+        "wilddog-0.1.0rc3-py3-none-any.whl": {
+          "provides_extras": [
+            "changelog",
+            "dev",
+            "docs",
+            "lint"
+          ],
+          "requires_dist": [
+            "alembic",
+            "attrs",
+            "click",
+            "flask",
+            "PyYaml",
+            "psycopg2",
+            "sqlalchemy[mypy]",
+            "tomli",
+            "waitress",
+            "towncrier ; extra == 'changelog'",
+            "coverage[toml] ; extra == 'dev'",
+            "pytest ; extra == 'dev'",
+            "pytest-cov ; extra == 'dev'",
+            "pytest-flask ; extra == 'dev'",
+            "sphinx ; extra == 'docs'",
+            "sphinx-rtd-theme ; extra == 'docs'",
+            "sphinxcontrib-napoleon ; extra == 'docs'",
+            "mypy ; extra == 'lint'",
+            "pre-commit ; extra == 'lint'"
+          ],
+          "requires_python": ">=3.9"
         }
       }
     }

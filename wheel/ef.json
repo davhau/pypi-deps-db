@@ -1241,6 +1241,27 @@
           "requires_python": ">=3.6"
         }
       },
+      "0.10.0": {
+        "APIFlask-0.10.0-py3-none-any.whl": {
+          "provides_extras": [
+            "async",
+            "dotenv",
+            "yaml"
+          ],
+          "requires_dist": [
+            "flask (>=1.1.0)",
+            "flask-marshmallow (>=0.12.0)",
+            "webargs (>=6)",
+            "flask-httpauth (>=4)",
+            "apispec (>=4.2.0)",
+            "typing-extensions ; python_version < \"3.8\"",
+            "asgiref (>=3.2) ; extra == 'async'",
+            "python-dotenv ; extra == 'dotenv'",
+            "pyyaml ; extra == 'yaml'"
+          ],
+          "requires_python": ">=3.7"
+        }
+      },
       "0.2.0": {
         "APIFlask-0.2.0-py3-none-any.whl": {
           "provides_extras": [
@@ -1343,28 +1364,10 @@
         }
       },
       "0.8.0": {
-        "APIFlask-0.8.0-py3-none-any.whl": {
-          "provides_extras": [
-            "async",
-            "dotenv",
-            "yaml"
-          ],
-          "requires_dist": [
-            "flask (>=1.1.0)",
-            "flask-marshmallow (>=0.12.0)",
-            "webargs (>=6)",
-            "flask-httpauth (>=4)",
-            "apispec (>=4.2.0)",
-            "typing-extensions ; python_version < \"3.8\"",
-            "asgiref (>=3.2) ; extra == 'async'",
-            "python-dotenv ; extra == 'dotenv'",
-            "pyyaml ; extra == 'yaml'"
-          ],
-          "requires_python": ">=3.7"
-        }
+        "APIFlask-0.8.0-py3-none-any.whl": "0.10.0@APIFlask-0.10.0-py3-none-any.whl"
       },
       "0.9.0": {
-        "APIFlask-0.9.0-py3-none-any.whl": "0.8.0@APIFlask-0.8.0-py3-none-any.whl"
+        "APIFlask-0.9.0-py3-none-any.whl": "0.10.0@APIFlask-0.10.0-py3-none-any.whl"
       }
     }
   },
@@ -18545,6 +18548,46 @@
             "crcmod",
             "pyserial",
             "qtpy"
+          ]
+        }
+      }
+    }
+  },
+  "initcommerce-utils": {
+    "py3": {
+      "0.2.0": {
+        "initcommerce_utils-0.2.0-py3-none-any.whl": {
+          "requires_dist": [
+            "coloredlogs (~=15.0)",
+            "fastapi (~=0.68)",
+            "graphene (<4)",
+            "pydantic[dotenv] (~=1.8)",
+            "starlette-graphene3 (~=0.5)",
+            "uvicorn (~=0.15)"
+          ]
+        }
+      },
+      "0.2.1": {
+        "initcommerce_utils-0.2.1-py3-none-any.whl": {
+          "requires_dist": [
+            "coloredlogs (~=15.0)",
+            "fastapi (~=0.68)",
+            "graphene (==3.0b7)",
+            "pydantic[dotenv] (~=1.8)",
+            "starlette-graphene3 (~=0.5)",
+            "uvicorn (~=0.15)"
+          ]
+        }
+      },
+      "0.2.2": {
+        "initcommerce_utils-0.2.2-py3-none-any.whl": {
+          "requires_dist": [
+            "coloredlogs (~=15.0)",
+            "fastapi (~=0.68)",
+            "graphene (==3.0b7)",
+            "pydantic[dotenv] (~=1.8)",
+            "starlette-graphene3 (~=0.5)",
+            "uvicorn[standard] (~=0.15)"
           ]
         }
       }
