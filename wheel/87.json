@@ -561,6 +561,9 @@
       "0.11.1": {
         "anyconfig-0.11.1-py2.py3-none-any.whl": "0.10.0@anyconfig-0.10.0-py2.py3-none-any.whl"
       },
+      "0.12.0": {
+        "anyconfig-0.12.0-py2.py3-none-any.whl": "0.10.0@anyconfig-0.10.0-py2.py3-none-any.whl"
+      },
       "0.9.11": {
         "anyconfig-0.9.11-py2.py3-none-any.whl": "0.10.0@anyconfig-0.10.0-py2.py3-none-any.whl"
       }
@@ -12748,6 +12751,21 @@
           ],
           "requires_python": ">=3.5"
         }
+      },
+      "0.5.40": {
+        "cy_procedure-0.5.40-py2.py3-none-any.whl": "0.5.35@cy_procedure-0.5.35-py2.py3-none-any.whl"
+      },
+      "0.5.41": {
+        "cy_procedure-0.5.41-py2.py3-none-any.whl": "0.5.35@cy_procedure-0.5.35-py2.py3-none-any.whl"
+      },
+      "0.5.42": {
+        "cy_procedure-0.5.42-py2.py3-none-any.whl": "0.5.35@cy_procedure-0.5.35-py2.py3-none-any.whl"
+      },
+      "0.5.43": {
+        "cy_procedure-0.5.43-py2.py3-none-any.whl": "0.5.35@cy_procedure-0.5.35-py2.py3-none-any.whl"
+      },
+      "0.5.44": {
+        "cy_procedure-0.5.44-py2.py3-none-any.whl": "0.5.35@cy_procedure-0.5.35-py2.py3-none-any.whl"
       },
       "0.5.5": {
         "cy_procedure-0.5.5-py2.py3-none-any.whl": {
@@ -33419,25 +33437,26 @@
   },
   "linktools": {
     "py3": {
-      "0.0.5": {
-        "linktools-0.0.5-py3-none-any.whl": {
+      "0.0.7": {
+        "linktools-0.0.7-py3-none-any.whl": {
+          "provides_extras": [
+            "frida",
+            "magic"
+          ],
           "requires_dist": [
             "colorama",
-            "requests",
             "tqdm",
-            "watchdog",
             "urwid",
-            "lief (>=0.10.1)",
-            "calmjs.parse",
-            "python-magic-bin ; platform_system == \"Darwin\"",
-            "python-magic ; platform_system == \"Linux\"",
-            "python-magic-bin ; platform_system == \"Windows\""
+            "watchdog",
+            "frida ; extra == 'frida'",
+            "calmjs.parse ; extra == 'frida'",
+            "lief (>0.10.1) ; extra == 'magic'",
+            "python-magic-bin ; (platform_system == \"Darwin\") and extra == 'magic'",
+            "python-magic ; (platform_system == \"Linux\") and extra == 'magic'",
+            "python-magic-bin ; (platform_system == \"Windows\") and extra == 'magic'"
           ],
           "requires_python": ">=3.5"
         }
-      },
-      "0.0.6": {
-        "linktools-0.0.6-py3-none-any.whl": "0.0.5@linktools-0.0.5-py3-none-any.whl"
       }
     }
   },
@@ -47989,6 +48008,27 @@
       }
     }
   },
+  "pymdt": {
+    "py3": {
+      "0.0.1": {
+        "pymdt-0.0.1-py3-none-any.whl": {
+          "provides_extras": [
+            "testing"
+          ],
+          "requires_dist": [
+            "requests (>=2)",
+            "SPARQLWrapper (>=1)",
+            "pytest (>=6.0) ; extra == 'testing'",
+            "pytest-cov (>=2.0) ; extra == 'testing'",
+            "mypy (>=0.910) ; extra == 'testing'",
+            "flake8 (>=3.9) ; extra == 'testing'",
+            "tox (>=3.24) ; extra == 'testing'"
+          ],
+          "requires_python": ">=3.6"
+        }
+      }
+    }
+  },
   "pymoq": {
     "py3": {
       "0.1.0": {
@@ -60472,6 +60512,24 @@
       },
       "2018.4.1": {
         "worker-2018.4.1-py3-none-any.whl": "2018.1.1@worker-2018.1.1-py3-none-any.whl"
+      }
+    }
+  },
+  "workouto9r": {
+    "py3": {
+      "2.0.0": {
+        "workoutO9R-2.0.0-py3-none-any.whl": {
+          "provides_extras": [
+            "dev",
+            "test"
+          ],
+          "requires_dist": [
+            "peppercorn",
+            "check-manifest ; extra == 'dev'",
+            "coverage ; extra == 'test'"
+          ],
+          "requires_python": ">=3.6, <4"
+        }
       }
     }
   },
