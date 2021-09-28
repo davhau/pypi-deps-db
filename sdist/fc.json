@@ -34181,7 +34181,49 @@
       "39": "36",
       "310": "36"
     },
-    "0.1.0": "0.0.4"
+    "0.1.0": "0.0.4",
+    "0.2.0": {
+      "36": {
+        "install_requires": [
+          "httpx>=0.19.0",
+          "jinja2>=2.11.2",
+          "pydantic>=1.8.0",
+          "click>=7.1.2",
+          "python-dotenv>=0.12.0"
+        ],
+        "extras_require": {
+          "dev": [
+            "tox==3.24.0",
+            "wheel==0.37.0",
+            "pre-commit==2.8.2"
+          ],
+          "docs": [
+            "mkdocs==1.2.2",
+            "mkdocs-material==7.3.0"
+          ],
+          "all": [
+            "tox==3.24.0",
+            "wheel==0.37.0",
+            "pre-commit==2.8.2",
+            "mkdocs==1.2.2",
+            "mkdocs-material==7.3.0"
+          ],
+          ":python_version < \"3.7\"": [
+            "contextvars"
+          ],
+          ":python_version < \"3.8\"": [
+            "typing-extensions>=3.7"
+          ]
+        },
+        "python_requires": [
+          ">=3"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "privibot": {
     "0.1.0": {
@@ -49450,7 +49492,225 @@
     "1.7.6": "1.5.0",
     "1.7.7": "1.5.0",
     "1.8.0": "1.5.0",
-    "1.8.1": "1.5.0"
+    "1.8.1": "1.5.0",
+    "1.8.2": "1.5.0",
+    "1.8.3": {
+      "36": {
+        "install_requires": [
+          "requests",
+          "numpy",
+          "document-utils",
+          "PyYAML"
+        ],
+        "extras_require": {
+          "core": [
+            "requests",
+            "numpy",
+            "document-utils",
+            "PyYAML"
+          ],
+          "test": [
+            "sphinx-rtd-theme>=0.5.0",
+            "pytest"
+          ],
+          "encoders-image": [
+            "imageio",
+            "scikit-image"
+          ],
+          "encoders-image-tfhub": [
+            "tensorflow~=2.4.3",
+            "imageio",
+            "tensorflow-hub~=0.12.0",
+            "scikit-image"
+          ],
+          "clip": [
+            "imageio",
+            "torch==1.7.1",
+            "Pillow",
+            "clip-by-openai",
+            "scikit-image",
+            "opencv-python"
+          ],
+          "encoders-audio-tfhub": [
+            "tensorflow~=2.4.3",
+            "librosa",
+            "tensorflow-hub~=0.12.0",
+            "soundfile"
+          ],
+          "audio-encoder": [
+            "librosa"
+          ],
+          "encoders-text-tfhub": [
+            "bert-for-tf2==0.14.9",
+            "tf-models-official==2.4.0",
+            "tensorflow-text~=2.4.3",
+            "tensorflow~=2.4.3",
+            "tensorflow-hub~=0.12.0"
+          ],
+          "encoders-text-tf-transformers": [
+            "tensorflow~=2.4.3",
+            "transformers"
+          ],
+          "encoders-text-tfhub-windows": [
+            "tensorflow~=2.4.3",
+            "tf-models-official==2.4.0",
+            "tensorflow-hub~=0.12.0",
+            "bert-for-tf2==0.14.9"
+          ],
+          "encoders-image-tf-face-detection": [
+            "mtcnn",
+            "appdirs",
+            "Pillow",
+            "tensorflow~=2.4.3",
+            "opencv-python"
+          ],
+          "encoders-text-sentence-transformers": [
+            "torch>=1.6.0",
+            "sentence-transformers"
+          ],
+          "encoders-audio-pytorch": [
+            "torch>=1.6.0",
+            "fairseq"
+          ],
+          "encoders-text-torch-transformers": [
+            "torch>=1.6.0",
+            "transformers"
+          ],
+          "encoders-image-fastai": [
+            "torch>=1.6.0",
+            "fastai==2.1.8"
+          ],
+          "encoders-code-transformers": [
+            "torch>=1.6.0",
+            "transformers"
+          ],
+          "encoders-video": [
+            "opencv-python",
+            "moviepy"
+          ],
+          "encoders-image-cv2": [
+            "opencv-python"
+          ],
+          "numpy": [
+            "numpy"
+          ],
+          "requests": [
+            "requests"
+          ],
+          "PyYAML": [
+            "PyYAML"
+          ],
+          "pytest": [
+            "pytest"
+          ],
+          "document-utils": [
+            "document-utils"
+          ],
+          "sphinx-rtd-theme>=0.5.0": [
+            "sphinx-rtd-theme>=0.5.0"
+          ],
+          "imageio": [
+            "imageio"
+          ],
+          "scikit-image": [
+            "scikit-image"
+          ],
+          "soundfile": [
+            "soundfile"
+          ],
+          "librosa": [
+            "librosa"
+          ],
+          "tensorflow~=2.4.3": [
+            "tensorflow~=2.4.3"
+          ],
+          "tensorflow-hub~=0.12.0": [
+            "tensorflow-hub~=0.12.0"
+          ],
+          "tensorflow-text~=2.4.3": [
+            "tensorflow-text~=2.4.3"
+          ],
+          "tf-models-official==2.4.0": [
+            "tf-models-official==2.4.0"
+          ],
+          "bert-for-tf2==0.14.9": [
+            "bert-for-tf2==0.14.9"
+          ],
+          "sentence-transformers": [
+            "sentence-transformers"
+          ],
+          "torch>=1.6.0": [
+            "torch>=1.6.0"
+          ],
+          "fairseq": [
+            "fairseq"
+          ],
+          "transformers": [
+            "transformers"
+          ],
+          "moviepy": [
+            "moviepy"
+          ],
+          "opencv-python": [
+            "opencv-python"
+          ],
+          "appdirs": [
+            "appdirs"
+          ],
+          "fastai==2.1.8": [
+            "fastai==2.1.8"
+          ],
+          "mtcnn": [
+            "mtcnn"
+          ],
+          "Pillow": [
+            "Pillow"
+          ],
+          "clip-by-openai": [
+            "clip-by-openai"
+          ],
+          "torch==1.7.1": [
+            "torch==1.7.1"
+          ],
+          "all": [
+            "requests",
+            "mtcnn",
+            "imageio",
+            "torch==1.7.1",
+            "fairseq",
+            "opencv-python",
+            "PyYAML",
+            "soundfile",
+            "fastai==2.1.8",
+            "transformers",
+            "pytest",
+            "tensorflow~=2.4.3",
+            "tensorflow-hub~=0.12.0",
+            "sphinx-rtd-theme>=0.5.0",
+            "bert-for-tf2==0.14.9",
+            "tf-models-official==2.4.0",
+            "sentence-transformers",
+            "document-utils",
+            "numpy",
+            "appdirs",
+            "torch>=1.6.0",
+            "librosa",
+            "tensorflow-text~=2.4.3",
+            "Pillow",
+            "clip-by-openai",
+            "moviepy",
+            "scikit-image"
+          ]
+        },
+        "python_requires": [
+          ">=3"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "veikkaaja": {
     "0.1.0": {
