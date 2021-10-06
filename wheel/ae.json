@@ -35733,6 +35733,9 @@
       "14.0.1.0.1.dev4": {
         "odoo14_addon_product_attribute_set-14.0.1.0.1.dev4-py3-none-any.whl": "14.0.1.0.1@odoo14_addon_product_attribute_set-14.0.1.0.1-py3-none-any.whl"
       },
+      "14.0.1.0.2": {
+        "odoo14_addon_product_attribute_set-14.0.1.0.2-py3-none-any.whl": "14.0.1.0.1@odoo14_addon_product_attribute_set-14.0.1.0.1-py3-none-any.whl"
+      },
       "14.0.1.0.2.dev1": {
         "odoo14_addon_product_attribute_set-14.0.1.0.2.dev1-py3-none-any.whl": "14.0.1.0.1@odoo14_addon_product_attribute_set-14.0.1.0.1-py3-none-any.whl"
       },
@@ -44777,6 +44780,27 @@
           "requires_dist": [
             "molecule[test] (>=3.1.0)",
             "pytest-html",
+            "ansi2html ; extra == 'ansi'",
+            "molecule-docker ; extra == 'docker'",
+            "paramiko (>=2.5.0) ; extra == 'docker'",
+            "molecule-podman ; extra == 'podman'",
+            "molecule-vagrant ; extra == 'vagrant'"
+          ],
+          "requires_python": ">=3.6"
+        }
+      },
+      "1.5.0": {
+        "pytest_molecule-1.5.0-py3-none-any.whl": {
+          "provides_extras": [
+            "ansi",
+            "docker",
+            "podman",
+            "vagrant"
+          ],
+          "requires_dist": [
+            "molecule (>=3.1.0)",
+            "pytest-html",
+            "molecule (>=3.5.2) ; python_version >= \"3.10\"",
             "ansi2html ; extra == 'ansi'",
             "molecule-docker ; extra == 'docker'",
             "paramiko (>=2.5.0) ; extra == 'docker'",
