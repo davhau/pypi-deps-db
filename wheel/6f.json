@@ -1392,6 +1392,9 @@
         "ams_scope-1.0.0-py3-none-any.whl": {
           "requires_python": ">=3.6"
         }
+      },
+      "1.0.1": {
+        "ams_scope-1.0.1-py3-none-any.whl": "1.0.0@ams_scope-1.0.0-py3-none-any.whl"
       }
     }
   },
@@ -7105,6 +7108,42 @@
       "0.0.151": {
         "cloudrail_knowledge-0.0.151-py3-none-any.whl": "0.0.132@cloudrail_knowledge-0.0.132-py3-none-any.whl"
       },
+      "0.0.152": {
+        "cloudrail_knowledge-0.0.152-py3-none-any.whl": "0.0.132@cloudrail_knowledge-0.0.132-py3-none-any.whl"
+      },
+      "0.0.152b1": {
+        "cloudrail_knowledge-0.0.152b1-py3-none-any.whl": "0.0.132@cloudrail_knowledge-0.0.132-py3-none-any.whl"
+      },
+      "0.0.152b2": {
+        "cloudrail_knowledge-0.0.152b2-py3-none-any.whl": "0.0.132@cloudrail_knowledge-0.0.132-py3-none-any.whl"
+      },
+      "0.0.153": {
+        "cloudrail_knowledge-0.0.153-py3-none-any.whl": "0.0.132@cloudrail_knowledge-0.0.132-py3-none-any.whl"
+      },
+      "0.0.153b1": {
+        "cloudrail_knowledge-0.0.153b1-py3-none-any.whl": "0.0.132@cloudrail_knowledge-0.0.132-py3-none-any.whl"
+      },
+      "0.0.153b2": {
+        "cloudrail_knowledge-0.0.153b2-py3-none-any.whl": "0.0.132@cloudrail_knowledge-0.0.132-py3-none-any.whl"
+      },
+      "0.0.153b3": {
+        "cloudrail_knowledge-0.0.153b3-py3-none-any.whl": "0.0.132@cloudrail_knowledge-0.0.132-py3-none-any.whl"
+      },
+      "0.0.154": {
+        "cloudrail_knowledge-0.0.154-py3-none-any.whl": "0.0.132@cloudrail_knowledge-0.0.132-py3-none-any.whl"
+      },
+      "0.0.154b1": {
+        "cloudrail_knowledge-0.0.154b1-py3-none-any.whl": "0.0.132@cloudrail_knowledge-0.0.132-py3-none-any.whl"
+      },
+      "0.0.155b1": {
+        "cloudrail_knowledge-0.0.155b1-py3-none-any.whl": "0.0.132@cloudrail_knowledge-0.0.132-py3-none-any.whl"
+      },
+      "0.0.155b2": {
+        "cloudrail_knowledge-0.0.155b2-py3-none-any.whl": "0.0.132@cloudrail_knowledge-0.0.132-py3-none-any.whl"
+      },
+      "0.0.155b3": {
+        "cloudrail_knowledge-0.0.155b3-py3-none-any.whl": "0.0.132@cloudrail_knowledge-0.0.132-py3-none-any.whl"
+      },
       "0.0.16": {
         "cloudrail_knowledge-0.0.16-py3-none-any.whl": "0.0.10@cloudrail_knowledge-0.0.10-py3-none-any.whl"
       },
@@ -10941,6 +10980,26 @@
       },
       "1.0.9": {
         "deploy_task_definitions-1.0.9-py3-none-any.whl": "0.0.8@deploy_task_definitions-0.0.8-py3-none-any.whl"
+      },
+      "1.1.0": {
+        "deploy_task_definitions-1.1.0-py3-none-any.whl": {
+          "requires_dist": [
+            "requests (==2.20.0)",
+            "python-dotenv (==0.10.3)",
+            "boto3 (==1.10.7)",
+            "botocore (==1.13.9)"
+          ]
+        }
+      },
+      "1.1.1": {
+        "deploy_task_definitions-1.1.1-py3-none-any.whl": {
+          "requires_dist": [
+            "requests (==2.26.0)",
+            "python-dotenv (==0.19.1)",
+            "boto3 (==1.18.59)",
+            "botocore (==1.21.59)"
+          ]
+        }
       }
     }
   },
@@ -22731,6 +22790,59 @@
             "sphinxcontrib.apidoc ; extra == 'test'",
             "pytest-cov ; extra == 'test'",
             "codecov ; extra == 'test'",
+            "pyspark ; extra == 'test'",
+            "func-timeout ; extra == 'test'"
+          ],
+          "requires_python": ">=3.6"
+        }
+      },
+      "0.5.6": {
+        "lale-0.5.6-py3-none-any.whl": {
+          "provides_extras": [
+            "dev",
+            "fairness",
+            "full",
+            "test"
+          ],
+          "requires_dist": [
+            "numpy",
+            "black (==19.10b0)",
+            "graphviz",
+            "hyperopt",
+            "jsonschema",
+            "jsonsubschema",
+            "scikit-learn (<1.0)",
+            "scipy",
+            "pandas",
+            "decorator",
+            "astunparse",
+            "pre-commit ; extra == 'dev'",
+            "liac-arff (>=2.4.0) ; extra == 'fairness'",
+            "aif360 (<0.4.0) ; extra == 'fairness'",
+            "BlackBoxAuditing ; extra == 'fairness'",
+            "xgboost (<=1.3.3) ; extra == 'full'",
+            "lightgbm ; extra == 'full'",
+            "snapml (>=1.7.0rc3) ; extra == 'full'",
+            "liac-arff (>=2.4.0) ; extra == 'full'",
+            "tensorflow (==2.4.0) ; extra == 'full'",
+            "smac (<=0.10.0) ; extra == 'full'",
+            "numba (==0.49.0) ; extra == 'full'",
+            "aif360 (>=0.4.0) ; extra == 'full'",
+            "torch (>=1.0) ; extra == 'full'",
+            "BlackBoxAuditing ; extra == 'full'",
+            "imbalanced-learn ; extra == 'full'",
+            "cvxpy (>=1.0) ; extra == 'full'",
+            "fairlearn ; extra == 'full'",
+            "h5py ; extra == 'full'",
+            "autoai-libs (>=1.12.6) ; extra == 'test'",
+            "joblib ; extra == 'test'",
+            "jupyter ; extra == 'test'",
+            "numpydoc ; extra == 'test'",
+            "sphinx (==2.4.4) ; extra == 'test'",
+            "m2r ; extra == 'test'",
+            "sphinx-rtd-theme ; extra == 'test'",
+            "sphinxcontrib.apidoc ; extra == 'test'",
+            "pytest ; extra == 'test'",
             "pyspark ; extra == 'test'",
             "func-timeout ; extra == 'test'"
           ],
@@ -39828,6 +39940,9 @@
       },
       "0.1.9": {
         "r2api-0.1.9-py3-none-any.whl": "0.1.10@r2api-0.1.10-py3-none-any.whl"
+      },
+      "0.2.0": {
+        "r2api-0.2.0-py3-none-any.whl": "0.1.10@r2api-0.1.10-py3-none-any.whl"
       }
     }
   },
@@ -48684,6 +48799,9 @@
       },
       "1.1.1": {
         "types_termcolor-1.1.1-py3-none-any.whl": "1.1.0@types_termcolor-1.1.0-py3-none-any.whl"
+      },
+      "1.1.2": {
+        "types_termcolor-1.1.2-py3-none-any.whl": "1.1.0@types_termcolor-1.1.0-py3-none-any.whl"
       }
     }
   },
