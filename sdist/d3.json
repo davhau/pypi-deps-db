@@ -28622,7 +28622,8 @@
     "1.5.0a12": "1.5.0a8",
     "1.5.0b1": "1.5.0a8",
     "1.5.0b2": "1.5.0a8",
-    "1.5.0b3": {
+    "1.5.0b3": "1.6.0",
+    "1.6.0": {
       "36": {
         "install_requires": [
           "arrow>=0.16.0",
@@ -31776,7 +31777,8 @@
     "0.1.29": "0.1.24",
     "0.1.30": "0.1.24",
     "0.1.31": "0.1.24",
-    "0.1.32": "0.1.24"
+    "0.1.32": "0.1.24",
+    "0.1.33": "0.1.24"
   },
   "kolla": {
     "1.1.0": {
@@ -33952,7 +33954,33 @@
       "39": "37",
       "310": "37"
     },
-    "3.1.3": "3.1.2"
+    "3.1.3": "3.1.2",
+    "3.2.0": {
+      "37": {
+        "install_requires": [
+          "peewee>3",
+          "marshmallow>3"
+        ],
+        "extras_require": {
+          "tests": [
+            "pytest",
+            "pytest-cov",
+            "pytest-mypy",
+            "pytest-sugar"
+          ],
+          "build": [
+            "bump2version",
+            "wheel"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "38": "37",
+      "39": "37",
+      "310": "37"
+    }
   },
   "mat-discover": {
     "1.1.0": {
@@ -33979,6 +34007,40 @@
           "test": [
             "pytest",
             "ElM2D==0.4.0",
+            "pytest-cov"
+          ]
+        }
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "1.2.0": {
+      "27": {
+        "install_requires": [
+          "tqdm",
+          "seaborn",
+          "pymatgen",
+          "scipy",
+          "hdbscan",
+          "numba>=0.53.1",
+          "plotly",
+          "kaleido",
+          "pandas",
+          "matplotlib>=3.4.3",
+          "joblib",
+          "pqdm",
+          "ElMD==0.4.8",
+          "psutil",
+          "scikit_learn",
+          "umap-learn"
+        ],
+        "extras_require": {
+          "test": [
+            "pytest",
+            "ElM2D==0.4.1",
             "pytest-cov"
           ]
         }

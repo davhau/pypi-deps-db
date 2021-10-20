@@ -492,6 +492,26 @@
       },
       "1.5.1": {
         "aio_apiclient-1.5.1-py3-none-any.whl": "0.1.0@aio_apiclient-0.1.0-py3-none-any.whl"
+      },
+      "1.6.0": {
+        "aio_apiclient-1.6.0-py3-none-any.whl": {
+          "provides_extras": [
+            "aiohttp",
+            "httpx",
+            "tests"
+          ],
+          "requires_dist": [
+            "aiohttp ; extra == 'aiohttp'",
+            "httpx (>=0.20.0) ; extra == 'httpx'",
+            "aiohttp ; extra == 'tests'",
+            "httpx ; extra == 'tests'",
+            "pytest ; extra == 'tests'",
+            "pytest-aio[curio,trio] (>=1.4.0) ; extra == 'tests'",
+            "pytest-mypy ; extra == 'tests'",
+            "mock ; (python_version < \"3.8\") and extra == 'tests'"
+          ],
+          "requires_python": ">=3.7"
+        }
       }
     }
   },
@@ -6357,17 +6377,19 @@
   },
   "bigdl-orca": {
     "py3": {
-      "0.14.0.dev0": {
-        "bigdl_orca-0.14.0b20210925-py3-none-manylinux1_x86_64.whl": {
+      "0.14.0b20211020": {
+        "bigdl_orca-0.14.0b20211020-py3-none-manylinux1_x86_64.whl": {
           "provides_extras": [
             "automl",
             "ray"
           ],
           "requires_dist": [
-            "pyspark (==2.4.6)",
             "conda-pack (==0.3.1)",
             "packaging",
             "filelock",
+            "bigdl-tf (==0.14.0b20211020)",
+            "bigdl-math (==0.14.0b20211020)",
+            "bigdl-dllib (==0.14.0b20211020)",
             "tensorflow (<2.0.0,>=1.15.0) ; extra == 'automl'",
             "h5py (==2.10.0) ; extra == 'automl'",
             "ray[tune] (==1.2.0) ; extra == 'automl'",
@@ -6397,16 +6419,8 @@
   },
   "bigdl-tf": {
     "py3": {
-      "0.14.0.1b20211019": {
-        "bigdl_tf-0.14.0.1b20211019-py3-none-manylinux2010_x86_64.whl": {}
-      },
-      "0.14.0.3b20211020": {
-        "bigdl_tf-0.14.0.3b20211020-py3-none-macosx_10_11_x86_64.whl": "0.14.0.1b20211019@bigdl_tf-0.14.0.1b20211019-py3-none-manylinux2010_x86_64.whl",
-        "bigdl_tf-0.14.0.3b20211020-py3-none-manylinux2010_x86_64.whl": "0.14.0.1b20211019@bigdl_tf-0.14.0.1b20211019-py3-none-manylinux2010_x86_64.whl"
-      },
-      "0.14.0.4b20211020": {
-        "bigdl_tf-0.14.0.4b20211020-py3-none-macosx_10_11_x86_64.whl": "0.14.0.1b20211019@bigdl_tf-0.14.0.1b20211019-py3-none-manylinux2010_x86_64.whl",
-        "bigdl_tf-0.14.0.4b20211020-py3-none-manylinux2010_x86_64.whl": "0.14.0.1b20211019@bigdl_tf-0.14.0.1b20211019-py3-none-manylinux2010_x86_64.whl"
+      "0.14.0b20211020": {
+        "bigdl_tf-0.14.0b20211020-py3-none-manylinux2010_x86_64.whl": {}
       }
     }
   },
@@ -50025,6 +50039,28 @@
       },
       "2.3.0": {
         "python_muranoclient-2.3.0-py3-none-any.whl": "2.1.1@python_muranoclient-2.1.1-py3-none-any.whl"
+      },
+      "2.4.0": {
+        "python_muranoclient-2.4.0-py3-none-any.whl": {
+          "requires_dist": [
+            "PrettyTable (>=0.7.2)",
+            "PyYAML (>=3.13)",
+            "iso8601 (>=0.1.11)",
+            "murano-pkg-check (>=0.3.0)",
+            "osc-lib (>=1.8.0)",
+            "oslo.i18n (>=3.15.3)",
+            "oslo.log (>=3.36.0)",
+            "oslo.serialization (!=2.19.1,>=2.18.0)",
+            "oslo.utils (>=3.33.0)",
+            "pbr (!=2.1.0,>=2.0.0)",
+            "pyOpenSSL (>=17.1.0)",
+            "python-glanceclient (>=2.8.0)",
+            "python-keystoneclient (>=3.8.0)",
+            "requests (>=2.14.2)",
+            "yaql (>=1.1.3)"
+          ],
+          "requires_python": ">=3.6"
+        }
       }
     }
   },
