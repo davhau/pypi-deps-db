@@ -28523,7 +28523,58 @@
       "310": "37"
     },
     "3.4.4": "3.4.3",
-    "3.5.0": "3.4.3"
+    "3.5.0": "3.4.3",
+    "3.5.1": {
+      "37": {
+        "install_requires": [
+          "apispec>=4",
+          "marshmallow>=3.14",
+          "muffin>=0.78"
+        ],
+        "extras_require": {
+          "tests": [
+            "aiosqlite",
+            "apispec>=4",
+            "marshmallow-peewee>=3.2.0",
+            "marshmallow-sqlalchemy",
+            "muffin-databases>=0.3.2",
+            "muffin-mongo>=0.3.1",
+            "muffin-peewee-aio",
+            "pytest",
+            "pytest-aio[curio,trio]",
+            "pytest-mypy",
+            "pyyaml"
+          ],
+          "yaml": [
+            "pyyaml"
+          ],
+          "build": [
+            "bump2version",
+            "wheel"
+          ],
+          "example": [
+            "uvicorn",
+            "muffin-peewee-aio",
+            "marshmallow-peewee"
+          ],
+          "peewee": [
+            "muffin-peewee-aio>=0.2.2",
+            "marshmallow-peewee>=3.2.0"
+          ],
+          "sqlalchemy": [
+            "muffin-databases>=0.3.2",
+            "marshmallow-sqlalchemy",
+            "sqlalchemy"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "38": "37",
+      "39": "37",
+      "310": "37"
+    }
   },
   "muhomor": {
     "1.0.0": {
@@ -38532,6 +38583,21 @@
         "install_requires": [
           "pytket~=0.15.0",
           "qiskit~=0.30.0"
+        ],
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "0.19.0": {
+      "36": {
+        "install_requires": [
+          "pytket~=0.16.0",
+          "qiskit~=0.31.0"
         ],
         "python_requires": [
           ">=3.7"
