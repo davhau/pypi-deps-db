@@ -3017,7 +3017,44 @@
     },
     "39.0.3": "39.0.2",
     "39.0.4": "39.0.2",
-    "39.0.5": "39.0.2"
+    "39.0.5": "39.0.2",
+    "40.0.0": {
+      "38": {
+        "install_requires": [
+          "docker~=5.0",
+          "GitPython~=3.1",
+          "google-cloud",
+          "kubernetes~=18.20",
+          "requests~=2.26"
+        ],
+        "extras_require": {
+          "dev": [
+            "setuptools",
+            "twine",
+            "wheel",
+            "xmlrunner"
+          ],
+          "test": [],
+          ":sys_platform == \"win32\"": [
+            "pypiwin32==223",
+            "pywin32>=227",
+            "pywin32-stubs",
+            "WMI~=1.5"
+          ],
+          ":platform_machine not in \"arm arm64 armv6l armv7l armv8b armv8l\"": [
+            "psutil~=5.8"
+          ],
+          ":platform_machine not in \"aarch64 aarch64_be arm arm64 armv6l armv7l armv8b armv8l\"": [
+            "PyQt5~=5.15"
+          ]
+        },
+        "python_requires": [
+          "~=3.9"
+        ]
+      },
+      "39": "38",
+      "310": "38"
+    }
   },
   "bdspacevis": {
     "0.1.8": {
@@ -10565,7 +10602,10 @@
       "38": "36",
       "39": "36",
       "310": "36"
-    }
+    },
+    "0.3.1": "0.3.0",
+    "0.3.2": "0.3.0",
+    "0.3.3": "0.3.0"
   },
   "consuela": {
     "0.1.0": {
@@ -21976,6 +22016,25 @@
           "QtPy<2.0.0,>=1.11.2",
           "aiohttp_cors<0.8.0,>=0.7.0",
           "koil<0.2.0,>=0.1.34",
+          "pydantic<2.0.0,>=1.8.2"
+        ],
+        "python_requires": [
+          ">=3.8,<4.0"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "0.1.10": {
+      "27": {
+        "install_requires": [
+          "PyYAML<6.0.0,>=5.4.1",
+          "QtPy<2.0.0,>=1.11.2",
+          "aiohttp_cors<0.8.0,>=0.7.0",
+          "koil<0.2.0,>=0.1.36",
           "pydantic<2.0.0,>=1.8.2"
         ],
         "python_requires": [
