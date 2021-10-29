@@ -18132,6 +18132,99 @@
       "38": "36",
       "39": "36",
       "310": "36"
+    },
+    "0.13.2": {
+      "36": {
+        "install_requires": [
+          "dagster==0.13.2",
+          "docker",
+          "python-dateutil>=2.8.0",
+          "lazy_object_proxy",
+          "pendulum==1.4.4"
+        ],
+        "extras_require": {
+          "kubernetes": [
+            "kubernetes>=3.0.0",
+            "cryptography>=2.0.0"
+          ],
+          "test": [
+            "apache-airflow==1.10.10",
+            "sqlalchemy<1.4.0,>=1.0",
+            "marshmallow-sqlalchemy<0.26.0",
+            "boto3==1.9.*",
+            "kubernetes==10.0.1"
+          ],
+          ":python_version >= \"3.8\"": [
+            "typing_extensions"
+          ]
+        }
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "0.13.2rc0": {
+      "36": {
+        "install_requires": [
+          "dagster==0.13.2rc0",
+          "docker",
+          "python-dateutil>=2.8.0",
+          "lazy_object_proxy",
+          "pendulum==1.4.4"
+        ],
+        "extras_require": {
+          "kubernetes": [
+            "kubernetes>=3.0.0",
+            "cryptography>=2.0.0"
+          ],
+          "test": [
+            "apache-airflow==1.10.10",
+            "sqlalchemy<1.4.0,>=1.0",
+            "marshmallow-sqlalchemy<0.26.0",
+            "boto3==1.9.*",
+            "kubernetes==10.0.1"
+          ],
+          ":python_version >= \"3.8\"": [
+            "typing_extensions"
+          ]
+        }
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "0.13.2rc2": {
+      "36": {
+        "install_requires": [
+          "dagster==0.13.2rc2",
+          "docker",
+          "python-dateutil>=2.8.0",
+          "lazy_object_proxy",
+          "pendulum==1.4.4"
+        ],
+        "extras_require": {
+          "kubernetes": [
+            "kubernetes>=3.0.0",
+            "cryptography>=2.0.0"
+          ],
+          "test": [
+            "apache-airflow==1.10.10",
+            "sqlalchemy<1.4.0,>=1.0",
+            "marshmallow-sqlalchemy<0.26.0",
+            "boto3==1.9.*",
+            "kubernetes==10.0.1"
+          ],
+          ":python_version >= \"3.8\"": [
+            "typing_extensions"
+          ]
+        }
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
     }
   },
   "dagster-azure": {
@@ -18954,6 +19047,45 @@
           "azure-storage-blob~=12.3.0",
           "azure-storage-file-datalake~=12.0.1",
           "dagster==0.13.1rc0"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "0.13.2": {
+      "36": {
+        "install_requires": [
+          "azure-storage-blob~=12.3.0",
+          "azure-storage-file-datalake~=12.0.1",
+          "dagster==0.13.2"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "0.13.2rc0": {
+      "36": {
+        "install_requires": [
+          "azure-storage-blob~=12.3.0",
+          "azure-storage-file-datalake~=12.0.1",
+          "dagster==0.13.2rc0"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "0.13.2rc2": {
+      "36": {
+        "install_requires": [
+          "azure-storage-blob~=12.3.0",
+          "azure-storage-file-datalake~=12.0.1",
+          "dagster==0.13.2rc2"
         ]
       },
       "37": "36",
@@ -52420,7 +52552,8 @@
     "1.19.2": "1.19.1",
     "1.19.3": "1.19.1",
     "1.19.4": "1.19.1",
-    "1.19.5": "1.19.1"
+    "1.19.5": "1.19.1",
+    "1.19.6": "1.19.1"
   },
   "mypy-boto3-importexport": {
     "0.1.10": "0.1.9",
@@ -53230,7 +53363,8 @@
     "1.19.2": "1.19.1",
     "1.19.3": "1.19.1",
     "1.19.4": "1.19.1",
-    "1.19.5": "1.19.1"
+    "1.19.5": "1.19.1",
+    "1.19.6": "1.19.1"
   },
   "mypy-boto3-organizations": {
     "0.1.10": "0.1.9",
@@ -54040,7 +54174,8 @@
     "1.19.2": "1.19.1",
     "1.19.3": "1.19.1",
     "1.19.4": "1.19.1",
-    "1.19.5": "1.19.1"
+    "1.19.5": "1.19.1",
+    "1.19.6": "1.19.1"
   },
   "naamtoey-helloworld-library": {
     "2.0": {
@@ -57563,6 +57698,83 @@
           "# Web\n",
           "## http server\n",
           "flask==1.1.2\n",
+          "## flask user authentication management\n",
+          "flask-login==0.5.0\n",
+          "## user form validators\n",
+          "WTForms==2.3.3\n",
+          "Flask-WTF==0.14.3\n",
+          "## websockets\n",
+          "### used by the webhook service and flask-socketio for the web interface\n",
+          "gevent==21.1.2\n",
+          "### used by flask-socketio with gevent (listed here because multiple libs are usable, force this one)\n",
+          "gevent-websocket==0.10.1\n",
+          "flask-socketio==5.0.1\n",
+          "\n",
+          "# Analysis tools\n",
+          "newspaper3k==0.2.8\n",
+          "vaderSentiment==3.3.2\n"
+        ],
+        "tests_require": [
+          "pytest"
+        ],
+        "python_requires": [
+          ">=3.8"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "1.2.27": {
+      "36": {
+        "install_requires": [
+          "Async-Channel<2.1,>=2.0.12",
+          "OctoBot-Commons<1.7,>=1.6.13",
+          "OctoBot-Trading<1.15,>=1.14.0",
+          "asyncpraw==7.3.1",
+          "python-telegram-bot==13.7.0",
+          "telethon==1.23.0",
+          "Python-Twitter==3.5",
+          "simplifiedpytrends>=1.1.2",
+          "pyngrok==5.0.5",
+          "flask==1.1.2",
+          "flask-compress==1.10.1",
+          "flask-caching==1.10.1",
+          "flask-login==0.5.0",
+          "WTForms==2.3.3",
+          "Flask-WTF==0.14.3",
+          "gevent==21.1.2",
+          "gevent-websocket==0.10.1",
+          "flask-socketio==5.0.1",
+          "newspaper3k==0.2.8",
+          "vaderSentiment==3.3.2"
+        ],
+        "setup_requires": [
+          "# Drakkar-Software requirements\n",
+          "Async-Channel>=2.0.12, <2.1\n",
+          "OctoBot-Commons>=1.6.13, <1.7\n",
+          "OctoBot-Trading>=1.14.0, <1.15\n",
+          "\n",
+          "# Services\n",
+          "# Reddit\n",
+          "asyncpraw==7.3.1\n",
+          "# Telegram\n",
+          "python-telegram-bot==13.7.0\n",
+          "telethon==1.23.0\n",
+          "# Twitter\n",
+          "Python-Twitter==3.5\n",
+          "# Google\n",
+          "simplifiedpytrends>=1.1.2\n",
+          "# Ngrok\n",
+          "pyngrok==5.0.5\n",
+          "# Web\n",
+          "## http server\n",
+          "flask==1.1.2\n",
+          "## flask minification\n",
+          "flask-compress==1.10.1\n",
+          "## flask cache\n",
+          "flask-caching==1.10.1\n",
           "## flask user authentication management\n",
           "flask-login==0.5.0\n",
           "## user form validators\n",
@@ -64655,6 +64867,139 @@
           ],
           "fides": [
             "fides>=0.3.0"
+          ],
+          "mpi": [
+            "mpi4py>=3.0.3"
+          ],
+          "pymc3": [
+            "arviz<0.9.0,>=0.8.1",
+            "theano>=1.0.4",
+            "packaging>=20.0",
+            "pymc3<3.9.2,>=3.8"
+          ],
+          "aesara": [
+            "aesara>=2.0.5"
+          ],
+          "emcee": [
+            "emcee>=3.0.2"
+          ],
+          "mltools": [
+            "umap-learn>=0.5.1",
+            "scikit-learn>=0.24.1"
+          ],
+          "doc": [
+            "sphinx<4.0.0,>=3.1.0",
+            "nbsphinx>=0.7.0",
+            "nbconvert>=5.6.1",
+            "sphinx-rtd-theme>=0.4.3",
+            "sphinx_autodoc_typehints>=1.11.1",
+            "recommonmark>=0.6.0",
+            "ipython>=7.18.1"
+          ],
+          "example": [
+            "notebook>=6.1.4"
+          ],
+          "test": [
+            "pytest>=5.4.3",
+            "pytest-cov>=2.10.0",
+            "gitpython>=3.1.7",
+            "pytest-rerunfailures>=9.1.1",
+            "autograd>=1.3"
+          ],
+          "test_petab": [
+            "petabtests>=0.0.0a6"
+          ]
+        },
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "38": "37",
+      "39": "37",
+      "310": "37"
+    },
+    "0.2.8": {
+      "37": {
+        "install_requires": [
+          "numpy>=1.19.1",
+          "scipy>=1.5.2",
+          "pandas>=1.2.0",
+          "cloudpickle>=1.5.0",
+          "matplotlib>=3.3.0",
+          "seaborn>=0.10.0",
+          "h5py>=3.1.0",
+          "tqdm>=4.46.0"
+        ],
+        "extras_require": {
+          "all": [
+            "amici>=0.11.16",
+            "petab>=0.1.14",
+            "ipopt",
+            "dlib>=19.19.0",
+            "nlopt>=2.6.2",
+            "pyswarm>=0.6",
+            "cma>=3.0.3",
+            "pyswarms>=1.3.0",
+            "fides>=0.6.1",
+            "mpi4py>=3.0.3",
+            "arviz<0.9.0,>=0.8.1",
+            "theano>=1.0.4",
+            "packaging>=20.0",
+            "pymc3<3.9.2,>=3.8",
+            "aesara>=2.0.5",
+            "emcee>=3.0.2",
+            "umap-learn>=0.5.1",
+            "scikit-learn>=0.24.1",
+            "sphinx<4.0.0,>=3.1.0",
+            "nbsphinx>=0.7.0",
+            "nbconvert>=5.6.1",
+            "sphinx-rtd-theme>=0.4.3",
+            "sphinx_autodoc_typehints>=1.11.1",
+            "recommonmark>=0.6.0",
+            "ipython>=7.18.1",
+            "notebook>=6.1.4",
+            "pytest>=5.4.3",
+            "pytest-cov>=2.10.0",
+            "gitpython>=3.1.7",
+            "pytest-rerunfailures>=9.1.1",
+            "autograd>=1.3",
+            "petabtests>=0.0.0a6"
+          ],
+          "all_optimizers": [
+            "ipopt",
+            "dlib>=19.19.0",
+            "nlopt>=2.6.2",
+            "pyswarm>=0.6",
+            "cma>=3.0.3",
+            "pyswarms>=1.3.0",
+            "fides>=0.6.1"
+          ],
+          "amici": [
+            "amici>=0.11.16"
+          ],
+          "petab": [
+            "petab>=0.1.14"
+          ],
+          "ipopt": [
+            "ipopt"
+          ],
+          "dlib": [
+            "dlib>=19.19.0"
+          ],
+          "nlopt": [
+            "nlopt>=2.6.2"
+          ],
+          "pyswarm": [
+            "pyswarm>=0.6"
+          ],
+          "cmaes": [
+            "cma>=3.0.3"
+          ],
+          "pyswarms": [
+            "pyswarms>=1.3.0"
+          ],
+          "fides": [
+            "fides>=0.6.1"
           ],
           "mpi": [
             "mpi4py>=3.0.3"
@@ -73169,7 +73514,8 @@
     "3.0.511": "3.0.251",
     "3.0.512": "3.0.251",
     "3.0.513": "3.0.251",
-    "3.0.514": "3.0.251"
+    "3.0.514": "3.0.251",
+    "3.0.515": "3.0.251"
   },
   "tencentcloud-sdk-python-dts": {
     "3.0.251": {
@@ -73441,7 +73787,8 @@
     "3.0.511": "3.0.251",
     "3.0.512": "3.0.251",
     "3.0.513": "3.0.251",
-    "3.0.514": "3.0.251"
+    "3.0.514": "3.0.251",
+    "3.0.515": "3.0.251"
   },
   "terminalbuttons": {
     "1.0.0": {
