@@ -18343,10 +18343,17 @@
       "2021.1.0": {
         "GameAPI-2021.1.0-py3-none-any.whl": "0.6@GameAPI-0.6-py3-none-any.whl"
       },
-      "2021.2.0.dev1": {
-        "GameAPI-2021.2.0.dev1-py3-none-any.whl": {
+      "2021.2.0": {
+        "GameAPI-2021.2.0-py3-none-any.whl": {
+          "provides_extras": [
+            "dev"
+          ],
           "requires_dist": [
-            "urllib3"
+            "orjson",
+            "urllib3",
+            "isort ; extra == 'dev'",
+            "pyquotes ; extra == 'dev'",
+            "wheel ; extra == 'dev'"
           ],
           "requires_python": ">=3.9"
         }
