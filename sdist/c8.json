@@ -2374,7 +2374,9 @@
       "310": "27"
     },
     "1.0.1": "1.0",
-    "1.0.2": "1.0"
+    "1.0.2": "1.0",
+    "1.0.4": "1.0",
+    "1.0.5": "1.0"
   },
   "aliasfile": {
     "0.1.1": {
@@ -17016,7 +17018,8 @@
     },
     "1.0.1": "1.0.0",
     "1.0.2": "1.0.0",
-    "1.0.3": "1.0.0"
+    "1.0.3": "1.0.0",
+    "1.1.1": "1.0.0"
   },
   "coder": {
     "1.0.6": {
@@ -66730,6 +66733,26 @@
       "38": "36",
       "39": "36",
       "310": "36"
+    },
+    "6.2.0": {
+      "36": {
+        "install_requires": [
+          "trytond_account<6.3,>=6.2",
+          "trytond_account_invoice<6.3,>=6.2",
+          "trytond_company<6.3,>=6.2",
+          "trytond<6.3,>=6.2"
+        ],
+        "tests_require": [
+          "proteus >= 6.2, < 6.3"
+        ],
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
     }
   },
   "tspy": {
@@ -70573,6 +70596,35 @@
           "Pillow",
           "requests",
           "xlrd"
+        ],
+        "extras_require": {
+          ":sys_platform == \"linux\"": [
+            "python-magic>=0.4.24"
+          ],
+          ":platform_system == \"Windows\" or sys_platform == \"darwin\"": [
+            "python-magic-bin"
+          ]
+        },
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "0.4.0": {
+      "36": {
+        "install_requires": [
+          "azure-storage-blob>=12.8.1",
+          "pathlib>=1.0",
+          "numpy>=1.17.0",
+          "pandas>=1.0.0",
+          "Pillow>=7.0.0",
+          "requests>=2.22.0",
+          "tqdm>=4.29.0",
+          "urllib3>=1.25.2"
         ],
         "extras_require": {
           ":sys_platform == \"linux\"": [
