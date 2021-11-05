@@ -1587,7 +1587,10 @@
     "1.0.73": "1.0.2",
     "1.0.74": "1.0.2",
     "1.0.77": "1.0.2",
-    "1.0.78": "1.0.2"
+    "1.0.78": "1.0.2",
+    "1.0.79": "1.0.2",
+    "1.0.80": "1.0.2",
+    "1.0.81": "1.0.2"
   },
   "asyncgpio": {
     "0.4.0": {
@@ -17594,7 +17597,25 @@
     "0.2.6": "0.2.0",
     "0.2.7": "0.2.0",
     "0.2.8": "0.2.0",
-    "0.2.9": "0.2.0"
+    "0.2.9": "0.2.0",
+    "0.2.10": {
+      "36": {
+        "install_requires": [
+          "objectpath",
+          "yahoo_fantasy_api",
+          "yahoo_oauth",
+          "numpy",
+          "pandas"
+        ],
+        "python_requires": [
+          ">=3.7.1,<3.11"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "defectdojo-api": {
     "0.0.6": {
@@ -23434,7 +23455,9 @@
       "310": "27"
     },
     "0.2": "0.1",
-    "0.3.1": "0.1"
+    "0.3.1": "0.1",
+    "0.3.5": "0.1",
+    "0.3.6": "0.1"
   },
   "extensiveautomation-plugin-cli": {
     "1.0.0": {
@@ -29998,7 +30021,8 @@
     "0.0.61": "0.0.50",
     "0.0.62": "0.0.50",
     "0.0.63": "0.0.50",
-    "0.0.64": "0.0.50"
+    "0.0.64": "0.0.50",
+    "0.0.65": "0.0.50"
   },
   "light-character": {
     "0.1.0": {
@@ -31528,6 +31552,437 @@
       "38": "36",
       "39": "36",
       "310": "36"
+    },
+    "0.5.2": {
+      "36": {
+        "install_requires": [
+          "packaging",
+          "numpy",
+          "torch>=1.7.1",
+          "torchmetrics!=0.5.1,>=0.4.0",
+          "pytorch-lightning>=1.4.0",
+          "pyDeprecate",
+          "pandas<1.3.0",
+          "jsonargparse[signatures]>=3.17.0",
+          "click>=7.1.2"
+        ],
+        "extras_require": {
+          "audio": [
+            "librosa>=0.8.1",
+            "transformers>=4.5",
+            "datasets>=1.8",
+            "torchaudio"
+          ],
+          "graph": [
+            "torch-geometric",
+            "torch-sparse",
+            "torch-scatter"
+          ],
+          "image": [
+            "pystiche==1.*",
+            "segmentation-models-pytorch",
+            "timm>=0.4.5",
+            "kornia<0.5.4,>=0.5.1",
+            "Pillow>=7.2",
+            "lightning-bolts>=0.3.3",
+            "torchvision"
+          ],
+          "pointcloud": [
+            "open3d==0.13",
+            "tensorboard",
+            "torchvision",
+            "torch==1.7.1"
+          ],
+          "tabular": [
+            "scikit-learn",
+            "pytorch-tabnet==3.1",
+            "pytorch-forecasting"
+          ],
+          "text": [
+            "sentencepiece>=0.1.95",
+            "filelock",
+            "rouge-score>=0.0.4",
+            "transformers>=4.5",
+            "datasets<1.13,>=1.8"
+          ],
+          "video": [
+            "pytorchvideo==0.1.2",
+            "Pillow>=7.2",
+            "kornia<0.5.4,>=0.5.1",
+            "torchvision"
+          ],
+          "docs": [
+            "sphinxcontrib-mockautodoc",
+            "sphinx<4.1,>=4.0",
+            "sphinx-paramlinks>=0.5.1",
+            "sphinx-autodoc-typehints>=1.0",
+            "pandoc>=1.0",
+            "sphinxcontrib-fulltoc>=1.0",
+            "sphinx-togglebutton>=0.2",
+            "recommonmark",
+            "jinja2",
+            "m2r",
+            "sphinx-copybutton>=0.3",
+            "docutils<0.18,>=0.16",
+            "nbsphinx>=0.8"
+          ],
+          "notebooks": [
+            "jupyter",
+            "nbconvert",
+            "jupyter_client"
+          ],
+          "serve": [
+            "pillow",
+            "cytoolz",
+            "uvicorn[standard]<0.14.0,>=0.12.0",
+            "pydantic<2.0.0,>1.8.1",
+            "starlette==0.14.2",
+            "aiofiles",
+            "jinja2",
+            "pyyaml",
+            "tqdm",
+            "fastapi<0.66.0,>=0.65.2",
+            "numpy",
+            "graphviz",
+            "torchvision"
+          ],
+          "serve:python_version < \"3.8\"": [
+            "importlib-metadata<3,>=0.12"
+          ],
+          "test": [
+            "coverage",
+            "flake8",
+            "pre-commit",
+            "pytest>=5.0",
+            "codecov>=2.1",
+            "check-manifest",
+            "pytest-flake8",
+            "isort",
+            "torch_optimizer",
+            "pytest_mock",
+            "scikit-learn",
+            "twine==3.2"
+          ],
+          "image_extras": [
+            "pystiche==1.*",
+            "icedata",
+            "segmentation-models-pytorch",
+            "baal",
+            "timm>=0.4.5",
+            "vissl>=0.1.5",
+            "kornia<0.5.4,>=0.5.1",
+            "albumentations",
+            "fastface",
+            "fairscale",
+            "Pillow>=7.2",
+            "lightning-bolts>=0.3.3",
+            "learn2learn",
+            "effdet",
+            "structlog==21.1.0",
+            "classy_vision",
+            "matplotlib",
+            "icevision>=0.8",
+            "torchvision",
+            "fiftyone"
+          ],
+          "video_extras": [
+            "kornia<0.5.4,>=0.5.1",
+            "pytorchvideo==0.1.2",
+            "Pillow>=7.2",
+            "torchvision",
+            "fiftyone"
+          ],
+          "vision": [
+            "pystiche==1.*",
+            "segmentation-models-pytorch",
+            "timm>=0.4.5",
+            "kornia<0.5.4,>=0.5.1",
+            "pytorchvideo==0.1.2",
+            "Pillow>=7.2",
+            "lightning-bolts>=0.3.3",
+            "torchvision"
+          ],
+          "all": [
+            "pystiche==1.*",
+            "segmentation-models-pytorch",
+            "pytorch-tabnet==3.1",
+            "timm>=0.4.5",
+            "pytorch-forecasting",
+            "kornia<0.5.4,>=0.5.1",
+            "sentencepiece>=0.1.95",
+            "pytorchvideo==0.1.2",
+            "Pillow>=7.2",
+            "lightning-bolts>=0.3.3",
+            "rouge-score>=0.0.4",
+            "filelock",
+            "scikit-learn",
+            "transformers>=4.5",
+            "torchvision",
+            "datasets<1.13,>=1.8"
+          ],
+          "dev": [
+            "flake8",
+            "pytorch-forecasting",
+            "sphinx-togglebutton>=0.2",
+            "pandoc>=1.0",
+            "sphinxcontrib-fulltoc>=1.0",
+            "kornia<0.5.4,>=0.5.1",
+            "jinja2",
+            "Pillow>=7.2",
+            "torchvision",
+            "pre-commit",
+            "pytorch-tabnet==3.1",
+            "timm>=0.4.5",
+            "pytest>=5.0",
+            "codecov>=2.1",
+            "sphinx-autodoc-typehints>=1.0",
+            "pytest-flake8",
+            "rouge-score>=0.0.4",
+            "m2r",
+            "sphinx-copybutton>=0.3",
+            "transformers>=4.5",
+            "twine==3.2",
+            "sphinx<4.1,>=4.0",
+            "check-manifest",
+            "sentencepiece>=0.1.95",
+            "torch_optimizer",
+            "filelock",
+            "lightning-bolts>=0.3.3",
+            "scikit-learn",
+            "docutils<0.18,>=0.16",
+            "sphinx-paramlinks>=0.5.1",
+            "datasets<1.13,>=1.8",
+            "pystiche==1.*",
+            "coverage",
+            "segmentation-models-pytorch",
+            "sphinxcontrib-mockautodoc",
+            "isort",
+            "pytest_mock",
+            "pytorchvideo==0.1.2",
+            "recommonmark",
+            "nbsphinx>=0.8"
+          ]
+        },
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "37": {
+        "install_requires": [
+          "packaging",
+          "numpy",
+          "torch>=1.7.1",
+          "torchmetrics!=0.5.1,>=0.4.0",
+          "pytorch-lightning>=1.4.0",
+          "pyDeprecate",
+          "pandas<1.3.0",
+          "jsonargparse[signatures]>=3.17.0",
+          "click>=7.1.2"
+        ],
+        "extras_require": {
+          "audio": [
+            "librosa>=0.8.1",
+            "transformers>=4.5",
+            "datasets>=1.8",
+            "torchaudio"
+          ],
+          "graph": [
+            "torch-geometric",
+            "torch-sparse",
+            "torch-scatter"
+          ],
+          "image": [
+            "pystiche==1.*",
+            "segmentation-models-pytorch",
+            "timm>=0.4.5",
+            "kornia<0.5.4,>=0.5.1",
+            "Pillow>=7.2",
+            "lightning-bolts>=0.3.3",
+            "torchvision"
+          ],
+          "pointcloud": [
+            "open3d==0.13",
+            "tensorboard",
+            "torchvision",
+            "torch==1.7.1"
+          ],
+          "tabular": [
+            "scikit-learn",
+            "pytorch-tabnet==3.1",
+            "pytorch-forecasting"
+          ],
+          "text": [
+            "sentencepiece>=0.1.95",
+            "filelock",
+            "rouge-score>=0.0.4",
+            "transformers>=4.5",
+            "datasets<1.13,>=1.8"
+          ],
+          "video": [
+            "pytorchvideo==0.1.2",
+            "Pillow>=7.2",
+            "kornia<0.5.4,>=0.5.1",
+            "torchvision"
+          ],
+          "docs": [
+            "sphinxcontrib-mockautodoc",
+            "sphinx<4.1,>=4.0",
+            "sphinx-paramlinks>=0.5.1",
+            "sphinx-autodoc-typehints>=1.0",
+            "pandoc>=1.0",
+            "sphinxcontrib-fulltoc>=1.0",
+            "sphinx-togglebutton>=0.2",
+            "recommonmark",
+            "jinja2",
+            "m2r",
+            "sphinx-copybutton>=0.3",
+            "docutils<0.18,>=0.16",
+            "nbsphinx>=0.8"
+          ],
+          "notebooks": [
+            "jupyter",
+            "nbconvert",
+            "jupyter_client"
+          ],
+          "serve": [
+            "pillow",
+            "cytoolz",
+            "uvicorn[standard]<0.14.0,>=0.12.0",
+            "pydantic<2.0.0,>1.8.1",
+            "starlette==0.14.2",
+            "aiofiles",
+            "jinja2",
+            "pyyaml",
+            "tqdm",
+            "fastapi<0.66.0,>=0.65.2",
+            "numpy",
+            "graphviz",
+            "torchvision"
+          ],
+          "serve:python_version < \"3.8\"": [
+            "importlib-metadata<3,>=0.12"
+          ],
+          "test": [
+            "coverage",
+            "flake8",
+            "pre-commit",
+            "pytest>=5.0",
+            "codecov>=2.1",
+            "check-manifest",
+            "pytest-flake8",
+            "isort",
+            "torch_optimizer",
+            "pytest_mock",
+            "scikit-learn",
+            "twine==3.2"
+          ],
+          "image_extras": [
+            "baal",
+            "kornia<0.5.4,>=0.5.1",
+            "fairscale",
+            "Pillow>=7.2",
+            "torchvision",
+            "icedata",
+            "timm>=0.4.5",
+            "fastface",
+            "classy_vision",
+            "matplotlib",
+            "fiftyone",
+            "lightning-bolts>=0.3.3",
+            "icevision>=0.8",
+            "pystiche==1.*",
+            "segmentation-models-pytorch",
+            "vissl>=0.1.5",
+            "albumentations",
+            "learn2learn",
+            "effdet",
+            "structlog==21.1.0"
+          ],
+          "video_extras": [
+            "kornia<0.5.4,>=0.5.1",
+            "pytorchvideo==0.1.2",
+            "Pillow>=7.2",
+            "torchvision",
+            "fiftyone"
+          ],
+          "vision": [
+            "pystiche==1.*",
+            "segmentation-models-pytorch",
+            "timm>=0.4.5",
+            "kornia<0.5.4,>=0.5.1",
+            "pytorchvideo==0.1.2",
+            "Pillow>=7.2",
+            "lightning-bolts>=0.3.3",
+            "torchvision"
+          ],
+          "all": [
+            "pystiche==1.*",
+            "segmentation-models-pytorch",
+            "pytorch-tabnet==3.1",
+            "timm>=0.4.5",
+            "pytorch-forecasting",
+            "kornia<0.5.4,>=0.5.1",
+            "sentencepiece>=0.1.95",
+            "pytorchvideo==0.1.2",
+            "Pillow>=7.2",
+            "lightning-bolts>=0.3.3",
+            "rouge-score>=0.0.4",
+            "filelock",
+            "scikit-learn",
+            "transformers>=4.5",
+            "torchvision",
+            "datasets<1.13,>=1.8"
+          ],
+          "dev": [
+            "flake8",
+            "pytorch-forecasting",
+            "sphinx-togglebutton>=0.2",
+            "pandoc>=1.0",
+            "sphinxcontrib-fulltoc>=1.0",
+            "kornia<0.5.4,>=0.5.1",
+            "jinja2",
+            "Pillow>=7.2",
+            "torchvision",
+            "pre-commit",
+            "pytorch-tabnet==3.1",
+            "timm>=0.4.5",
+            "pytest>=5.0",
+            "codecov>=2.1",
+            "sphinx-autodoc-typehints>=1.0",
+            "pytest-flake8",
+            "rouge-score>=0.0.4",
+            "m2r",
+            "sphinx-copybutton>=0.3",
+            "transformers>=4.5",
+            "twine==3.2",
+            "sphinx<4.1,>=4.0",
+            "check-manifest",
+            "sentencepiece>=0.1.95",
+            "torch_optimizer",
+            "filelock",
+            "lightning-bolts>=0.3.3",
+            "scikit-learn",
+            "docutils<0.18,>=0.16",
+            "sphinx-paramlinks>=0.5.1",
+            "datasets<1.13,>=1.8",
+            "pystiche==1.*",
+            "coverage",
+            "segmentation-models-pytorch",
+            "sphinxcontrib-mockautodoc",
+            "isort",
+            "pytest_mock",
+            "pytorchvideo==0.1.2",
+            "recommonmark",
+            "nbsphinx>=0.8"
+          ]
+        },
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "38": "37",
+      "39": "37",
+      "310": "37"
     }
   },
   "link-preview": {
