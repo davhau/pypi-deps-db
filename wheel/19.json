@@ -42400,6 +42400,18 @@
       },
       "1.0.5": {
         "paypayopa-1.0.5-py3-none-any.whl": "1.0.2@paypayopa-1.0.2-py3-none-any.whl"
+      },
+      "1.0.6": {
+        "paypayopa-1.0.6-py3-none-any.whl": {
+          "provides_extras": [
+            "test"
+          ],
+          "requires_dist": [
+            "requests",
+            "pyjwt",
+            "responses ; extra == 'test'"
+          ]
+        }
       }
     }
   },
@@ -42540,6 +42552,29 @@
       },
       "1.4": {
         "pgbm-1.4-py3-none-any.whl": "0.9@pgbm-0.9-py3-none-any.whl"
+      },
+      "1.5": {
+        "pgbm-1.5-py3-none-any.whl": {
+          "provides_extras": [
+            "all",
+            "numba",
+            "torch-cpu",
+            "torch-gpu"
+          ],
+          "requires_dist": [
+            "scikit-learn (>=0.22.0)",
+            "matplotlib (>=2.2.3)",
+            "torch (==1.10.0+cu102) ; extra == 'all'",
+            "ninja (>=1.10.2.2) ; extra == 'all'",
+            "numba (>=0.53.1) ; extra == 'all'",
+            "numba (>=0.53.1) ; extra == 'numba'",
+            "torch (>=1.8.0) ; extra == 'torch-cpu'",
+            "ninja (>=1.10.2.2) ; extra == 'torch-cpu'",
+            "torch (==1.10.0+cu102) ; extra == 'torch-gpu'",
+            "ninja (>=1.10.2.2) ; extra == 'torch-gpu'"
+          ],
+          "requires_python": ">=3.7"
+        }
       }
     }
   },
