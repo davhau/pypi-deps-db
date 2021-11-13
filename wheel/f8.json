@@ -8874,6 +8874,9 @@
       "0.0.280": {
         "cdk_apisix-0.0.280-py3-none-any.whl": "0.0.277@cdk_apisix-0.0.277-py3-none-any.whl"
       },
+      "0.0.281": {
+        "cdk_apisix-0.0.281-py3-none-any.whl": "0.0.277@cdk_apisix-0.0.277-py3-none-any.whl"
+      },
       "0.0.29": {
         "cdk_apisix-0.0.29-py3-none-any.whl": "0.0.24@cdk_apisix-0.0.24-py3-none-any.whl"
       },
@@ -9279,6 +9282,19 @@
   },
   "cdk-simple-serverless": {
     "py3": {
+      "0.0.10": {
+        "cdk_simple_serverless-0.0.10-py3-none-any.whl": {
+          "requires_dist": [
+            "aws-cdk.aws-apigateway (<2.0.0,>=1.95.2)",
+            "aws-cdk.aws-lambda (<2.0.0,>=1.95.2)",
+            "aws-cdk.core (<2.0.0,>=1.95.2)",
+            "constructs (<4.0.0,>=3.2.27)",
+            "jsii (<2.0.0,>=1.43.0)",
+            "publication (>=0.0.3)"
+          ],
+          "requires_python": ">=3.6"
+        }
+      },
       "0.0.2": {
         "cdk_simple_serverless-0.0.2-py3-none-any.whl": {
           "requires_dist": [
@@ -9299,29 +9315,19 @@
         "cdk_simple_serverless-0.0.4-py3-none-any.whl": "0.0.2@cdk_simple_serverless-0.0.2-py3-none-any.whl"
       },
       "0.0.5": {
-        "cdk_simple_serverless-0.0.5-py3-none-any.whl": {
-          "requires_dist": [
-            "aws-cdk.aws-apigateway (<2.0.0,>=1.95.2)",
-            "aws-cdk.aws-lambda (<2.0.0,>=1.95.2)",
-            "aws-cdk.core (<2.0.0,>=1.95.2)",
-            "constructs (<4.0.0,>=3.2.27)",
-            "jsii (<2.0.0,>=1.43.0)",
-            "publication (>=0.0.3)"
-          ],
-          "requires_python": ">=3.6"
-        }
+        "cdk_simple_serverless-0.0.5-py3-none-any.whl": "0.0.10@cdk_simple_serverless-0.0.10-py3-none-any.whl"
       },
       "0.0.6": {
-        "cdk_simple_serverless-0.0.6-py3-none-any.whl": "0.0.5@cdk_simple_serverless-0.0.5-py3-none-any.whl"
+        "cdk_simple_serverless-0.0.6-py3-none-any.whl": "0.0.10@cdk_simple_serverless-0.0.10-py3-none-any.whl"
       },
       "0.0.7": {
-        "cdk_simple_serverless-0.0.7-py3-none-any.whl": "0.0.5@cdk_simple_serverless-0.0.5-py3-none-any.whl"
+        "cdk_simple_serverless-0.0.7-py3-none-any.whl": "0.0.10@cdk_simple_serverless-0.0.10-py3-none-any.whl"
       },
       "0.0.8": {
-        "cdk_simple_serverless-0.0.8-py3-none-any.whl": "0.0.5@cdk_simple_serverless-0.0.5-py3-none-any.whl"
+        "cdk_simple_serverless-0.0.8-py3-none-any.whl": "0.0.10@cdk_simple_serverless-0.0.10-py3-none-any.whl"
       },
       "0.0.9": {
-        "cdk_simple_serverless-0.0.9-py3-none-any.whl": "0.0.5@cdk_simple_serverless-0.0.5-py3-none-any.whl"
+        "cdk_simple_serverless-0.0.9-py3-none-any.whl": "0.0.10@cdk_simple_serverless-0.0.10-py3-none-any.whl"
       }
     }
   },
@@ -9726,6 +9732,17 @@
         "cdk8s_plus_22-1.0.0b38-py3-none-any.whl": {
           "requires_dist": [
             "cdk8s (<2.0.0,>=1.1.30)",
+            "constructs (<4.0.0,>=3.3.161)",
+            "jsii (<2.0.0,>=1.43.0)",
+            "publication (>=0.0.3)"
+          ],
+          "requires_python": ">=3.6"
+        }
+      },
+      "1.0.0b39": {
+        "cdk8s_plus_22-1.0.0b39-py3-none-any.whl": {
+          "requires_dist": [
+            "cdk8s (<2.0.0,>=1.1.31)",
             "constructs (<4.0.0,>=3.3.161)",
             "jsii (<2.0.0,>=1.43.0)",
             "publication (>=0.0.3)"
@@ -26122,6 +26139,141 @@
             "cirq-pasqal (==0.14.0.dev20211112014647)",
             "cirq-rigetti (==0.14.0.dev20211112014647)",
             "cirq-web (==0.14.0.dev20211112014647)",
+            "mypy (~=0.782.0) ; extra == 'dev_env'",
+            "pytest ; extra == 'dev_env'",
+            "pytest-asyncio ; extra == 'dev_env'",
+            "pytest-cov ; extra == 'dev_env'",
+            "pytest-xdist (~=2.2.0) ; extra == 'dev_env'",
+            "filelock (~=3.0.12) ; extra == 'dev_env'",
+            "freezegun (~=0.3.15) ; extra == 'dev_env'",
+            "virtualenv ; extra == 'dev_env'",
+            "virtualenv-clone ; extra == 'dev_env'",
+            "flynt (~=0.60) ; extra == 'dev_env'",
+            "black (==20.8b1) ; extra == 'dev_env'",
+            "pylint (~=2.6.0) ; extra == 'dev_env'",
+            "grpcio-tools (~=1.34.1) ; extra == 'dev_env'",
+            "mypy-protobuf (==1.10) ; extra == 'dev_env'",
+            "notebook (>=6.4.1) ; extra == 'dev_env'",
+            "ipykernel (==5.3.4) ; extra == 'dev_env'",
+            "papermill (~=2.3.2) ; extra == 'dev_env'",
+            "seaborn (~=0.11.1) ; extra == 'dev_env'",
+            "setuptools ; extra == 'dev_env'",
+            "wheel ; extra == 'dev_env'",
+            "twine ; extra == 'dev_env'",
+            "asv ; extra == 'dev_env'",
+            "qiskit-aer (~=0.9.1) ; extra == 'dev_env'",
+            "rstcheck (~=3.3.1) ; extra == 'dev_env'",
+            "ipython ; (python_version < \"3.7\") and extra == 'dev_env'",
+            "importlib-metadata ; (python_version < \"3.8\") and extra == 'dev_env'",
+            "codeowners ; (python_version >= \"3.7\") and extra == 'dev_env'",
+            "ipython (==7.22) ; (python_version >= \"3.7\") and extra == 'dev_env'"
+          ],
+          "requires_python": ">=3.6.0"
+        }
+      },
+      "0.14.0.dev20211112192744": {
+        "cirq-0.14.0.dev20211112192744-py3-none-any.whl": {
+          "provides_extras": [
+            "dev_env"
+          ],
+          "requires_dist": [
+            "cirq-aqt (==0.14.0.dev20211112192744)",
+            "cirq-core (==0.14.0.dev20211112192744)",
+            "cirq-google (==0.14.0.dev20211112192744)",
+            "cirq-ionq (==0.14.0.dev20211112192744)",
+            "cirq-pasqal (==0.14.0.dev20211112192744)",
+            "cirq-rigetti (==0.14.0.dev20211112192744)",
+            "cirq-web (==0.14.0.dev20211112192744)",
+            "mypy (~=0.782.0) ; extra == 'dev_env'",
+            "pytest ; extra == 'dev_env'",
+            "pytest-asyncio ; extra == 'dev_env'",
+            "pytest-cov ; extra == 'dev_env'",
+            "pytest-xdist (~=2.2.0) ; extra == 'dev_env'",
+            "filelock (~=3.0.12) ; extra == 'dev_env'",
+            "freezegun (~=0.3.15) ; extra == 'dev_env'",
+            "virtualenv ; extra == 'dev_env'",
+            "virtualenv-clone ; extra == 'dev_env'",
+            "flynt (~=0.60) ; extra == 'dev_env'",
+            "black (==20.8b1) ; extra == 'dev_env'",
+            "pylint (~=2.6.0) ; extra == 'dev_env'",
+            "grpcio-tools (~=1.34.1) ; extra == 'dev_env'",
+            "mypy-protobuf (==1.10) ; extra == 'dev_env'",
+            "notebook (>=6.4.1) ; extra == 'dev_env'",
+            "ipykernel (==5.3.4) ; extra == 'dev_env'",
+            "papermill (~=2.3.2) ; extra == 'dev_env'",
+            "seaborn (~=0.11.1) ; extra == 'dev_env'",
+            "setuptools ; extra == 'dev_env'",
+            "wheel ; extra == 'dev_env'",
+            "twine ; extra == 'dev_env'",
+            "asv ; extra == 'dev_env'",
+            "qiskit-aer (~=0.9.1) ; extra == 'dev_env'",
+            "rstcheck (~=3.3.1) ; extra == 'dev_env'",
+            "ipython ; (python_version < \"3.7\") and extra == 'dev_env'",
+            "importlib-metadata ; (python_version < \"3.8\") and extra == 'dev_env'",
+            "codeowners ; (python_version >= \"3.7\") and extra == 'dev_env'",
+            "ipython (==7.22) ; (python_version >= \"3.7\") and extra == 'dev_env'"
+          ],
+          "requires_python": ">=3.6.0"
+        }
+      },
+      "0.14.0.dev20211112214155": {
+        "cirq-0.14.0.dev20211112214155-py3-none-any.whl": {
+          "provides_extras": [
+            "dev_env"
+          ],
+          "requires_dist": [
+            "cirq-aqt (==0.14.0.dev20211112214155)",
+            "cirq-core (==0.14.0.dev20211112214155)",
+            "cirq-google (==0.14.0.dev20211112214155)",
+            "cirq-ionq (==0.14.0.dev20211112214155)",
+            "cirq-pasqal (==0.14.0.dev20211112214155)",
+            "cirq-rigetti (==0.14.0.dev20211112214155)",
+            "cirq-web (==0.14.0.dev20211112214155)",
+            "mypy (~=0.782.0) ; extra == 'dev_env'",
+            "pytest ; extra == 'dev_env'",
+            "pytest-asyncio ; extra == 'dev_env'",
+            "pytest-cov ; extra == 'dev_env'",
+            "pytest-xdist (~=2.2.0) ; extra == 'dev_env'",
+            "filelock (~=3.0.12) ; extra == 'dev_env'",
+            "freezegun (~=0.3.15) ; extra == 'dev_env'",
+            "virtualenv ; extra == 'dev_env'",
+            "virtualenv-clone ; extra == 'dev_env'",
+            "flynt (~=0.60) ; extra == 'dev_env'",
+            "black (==20.8b1) ; extra == 'dev_env'",
+            "pylint (~=2.6.0) ; extra == 'dev_env'",
+            "grpcio-tools (~=1.34.1) ; extra == 'dev_env'",
+            "mypy-protobuf (==1.10) ; extra == 'dev_env'",
+            "notebook (>=6.4.1) ; extra == 'dev_env'",
+            "ipykernel (==5.3.4) ; extra == 'dev_env'",
+            "papermill (~=2.3.2) ; extra == 'dev_env'",
+            "seaborn (~=0.11.1) ; extra == 'dev_env'",
+            "setuptools ; extra == 'dev_env'",
+            "wheel ; extra == 'dev_env'",
+            "twine ; extra == 'dev_env'",
+            "asv ; extra == 'dev_env'",
+            "qiskit-aer (~=0.9.1) ; extra == 'dev_env'",
+            "rstcheck (~=3.3.1) ; extra == 'dev_env'",
+            "ipython ; (python_version < \"3.7\") and extra == 'dev_env'",
+            "importlib-metadata ; (python_version < \"3.8\") and extra == 'dev_env'",
+            "codeowners ; (python_version >= \"3.7\") and extra == 'dev_env'",
+            "ipython (==7.22) ; (python_version >= \"3.7\") and extra == 'dev_env'"
+          ],
+          "requires_python": ">=3.6.0"
+        }
+      },
+      "0.14.0.dev20211113013018": {
+        "cirq-0.14.0.dev20211113013018-py3-none-any.whl": {
+          "provides_extras": [
+            "dev_env"
+          ],
+          "requires_dist": [
+            "cirq-aqt (==0.14.0.dev20211113013018)",
+            "cirq-core (==0.14.0.dev20211113013018)",
+            "cirq-google (==0.14.0.dev20211113013018)",
+            "cirq-ionq (==0.14.0.dev20211113013018)",
+            "cirq-pasqal (==0.14.0.dev20211113013018)",
+            "cirq-rigetti (==0.14.0.dev20211113013018)",
+            "cirq-web (==0.14.0.dev20211113013018)",
             "mypy (~=0.782.0) ; extra == 'dev_env'",
             "pytest ; extra == 'dev_env'",
             "pytest-asyncio ; extra == 'dev_env'",
@@ -48264,6 +48416,9 @@
       },
       "13.0.1.0.1.dev3": {
         "odoo13_addon_partner_contact_sale_info_propagation-13.0.1.0.1.dev3-py3-none-any.whl": "13.0.1.0.1.dev2@odoo13_addon_partner_contact_sale_info_propagation-13.0.1.0.1.dev2-py3-none-any.whl"
+      },
+      "13.0.1.0.1.dev4": {
+        "odoo13_addon_partner_contact_sale_info_propagation-13.0.1.0.1.dev4-py3-none-any.whl": "13.0.1.0.1.dev2@odoo13_addon_partner_contact_sale_info_propagation-13.0.1.0.1.dev2-py3-none-any.whl"
       }
     }
   },
@@ -65033,7 +65188,8 @@
         "tfq_nightly-0.6.0.dev20211111-cp37-cp37m-macosx_10_11_x86_64.whl": "0.6.0.dev20211102@tfq_nightly-0.6.0.dev20211102-cp37-cp37m-macosx_10_11_x86_64.whl"
       },
       "0.6.0.dev20211112": {
-        "tfq_nightly-0.6.0.dev20211112-cp37-cp37m-macosx_10_11_x86_64.whl": "0.6.0.dev20211102@tfq_nightly-0.6.0.dev20211102-cp37-cp37m-macosx_10_11_x86_64.whl"
+        "tfq_nightly-0.6.0.dev20211112-cp37-cp37m-macosx_10_11_x86_64.whl": "0.6.0.dev20211102@tfq_nightly-0.6.0.dev20211102-cp37-cp37m-macosx_10_11_x86_64.whl",
+        "tfq_nightly-0.6.0.dev20211112-cp37-cp37m-manylinux_2_12_x86_64.manylinux2010_x86_64.whl": "0.6.0.dev20211102@tfq_nightly-0.6.0.dev20211102-cp37-cp37m-macosx_10_11_x86_64.whl"
       }
     },
     "cp38": {
@@ -66099,7 +66255,8 @@
         "tfq_nightly-0.6.0.dev20211111-cp39-cp39-macosx_11_0_x86_64.whl": "0.6.0.dev20211102@tfq_nightly-0.6.0.dev20211102-cp39-cp39-macosx_11_0_x86_64.whl"
       },
       "0.6.0.dev20211112": {
-        "tfq_nightly-0.6.0.dev20211112-cp39-cp39-macosx_11_0_x86_64.whl": "0.6.0.dev20211102@tfq_nightly-0.6.0.dev20211102-cp39-cp39-macosx_11_0_x86_64.whl"
+        "tfq_nightly-0.6.0.dev20211112-cp39-cp39-macosx_11_0_x86_64.whl": "0.6.0.dev20211102@tfq_nightly-0.6.0.dev20211102-cp39-cp39-macosx_11_0_x86_64.whl",
+        "tfq_nightly-0.6.0.dev20211112-cp39-cp39-manylinux_2_12_x86_64.manylinux2010_x86_64.whl": "0.6.0.dev20211102@tfq_nightly-0.6.0.dev20211102-cp39-cp39-macosx_11_0_x86_64.whl"
       }
     }
   },
@@ -69583,6 +69740,18 @@
       },
       "0.2.21.dev33": {
         "ypricemagic-0.2.21.dev33-py3-none-any.whl": "0.0.1.dev1@ypricemagic-0.0.1.dev1-py3-none-any.whl"
+      },
+      "0.2.21.dev34": {
+        "ypricemagic-0.2.21.dev34-py3-none-any.whl": "0.0.1.dev1@ypricemagic-0.0.1.dev1-py3-none-any.whl"
+      },
+      "0.2.21.dev35": {
+        "ypricemagic-0.2.21.dev35-py3-none-any.whl": "0.0.1.dev1@ypricemagic-0.0.1.dev1-py3-none-any.whl"
+      },
+      "0.2.21.dev36": {
+        "ypricemagic-0.2.21.dev36-py3-none-any.whl": "0.0.1.dev1@ypricemagic-0.0.1.dev1-py3-none-any.whl"
+      },
+      "0.2.21.dev37": {
+        "ypricemagic-0.2.21.dev37-py3-none-any.whl": "0.0.1.dev1@ypricemagic-0.0.1.dev1-py3-none-any.whl"
       },
       "0.2.21.dev6": {
         "ypricemagic-0.2.21.dev6-py3-none-any.whl": "0.0.1.dev1@ypricemagic-0.0.1.dev1-py3-none-any.whl"
