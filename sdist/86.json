@@ -88206,7 +88206,24 @@
     "0.12.4": "0.12.0",
     "0.12.5": "0.12.0",
     "0.13.0": "0.12.0",
-    "0.13.1": "0.12.0"
+    "0.13.1": "0.12.0",
+    "0.14.0": {
+      "27": {
+        "extras_require": {
+          ":python_version >= \"3.7\" and python_version < \"3.8\"": [
+            "typing-extensions<4.0.0,>=3.10.0"
+          ]
+        },
+        "python_requires": [
+          ">=3.7,<4.0"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "grandcentral-py": {
     "0.0.1": {
@@ -100836,6 +100853,74 @@
             "black",
             "hypothesis>=5.41.1",
             "pyyaml>=5.1",
+            "frictionless"
+          ],
+          ":python_version < \"3.8\"": [
+            "typing_extensions>=3.7.4.3"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "0.8.0": {
+      "36": {
+        "install_requires": [
+          "packaging>=20.0",
+          "numpy>=1.9.0",
+          "pandas>=1.0",
+          "pandas-stubs",
+          "typing_inspect>=0.6.0",
+          "wrapt",
+          "pyarrow"
+        ],
+        "extras_require": {
+          "strategies": [
+            "hypothesis>=5.41.1"
+          ],
+          "hypotheses": [
+            "scipy"
+          ],
+          "io": [
+            "pyyaml>=5.1",
+            "black",
+            "frictionless"
+          ],
+          "koalas": [
+            "koalas",
+            "pyspark"
+          ],
+          "modin": [
+            "modin",
+            "ray<=1.7.0",
+            "dask"
+          ],
+          "modin-ray": [
+            "modin",
+            "ray<=1.7.0"
+          ],
+          "modin-dask": [
+            "modin",
+            "dask"
+          ],
+          "dask": [
+            "dask"
+          ],
+          "all": [
+            "scipy",
+            "dask",
+            "pyspark",
+            "black",
+            "modin",
+            "hypothesis>=5.41.1",
+            "koalas",
+            "pyyaml>=5.1",
+            "ray<=1.7.0",
             "frictionless"
           ],
           ":python_version < \"3.8\"": [
