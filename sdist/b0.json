@@ -556,7 +556,20 @@
     "2.1.0": "2.0.1",
     "3.0.0": "2.0.1",
     "3.0.1": "2.0.1",
-    "3.0.2": "2.0.1"
+    "3.0.2": "2.0.1",
+    "3.1.0": {
+      "27": {
+        "python_requires": [
+          ">=3.6,<4.0"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "3.1.1": "3.1.0"
   },
   "aiochorm": {
     "0.1.10": {
@@ -11248,7 +11261,12 @@
     "0.0.151": "0.0.0",
     "0.0.152": "0.0.0",
     "0.0.153": "0.0.0",
-    "0.0.154": "0.0.0"
+    "0.0.154": "0.0.0",
+    "0.0.155": "0.0.0",
+    "0.0.156": "0.0.0",
+    "0.0.157": "0.0.0",
+    "0.0.158": "0.0.0",
+    "0.0.159": "0.0.0"
   },
   "ceacoest": {
     "0.1.dev3": {
@@ -13345,7 +13363,8 @@
     "1.0.2": "1.0.0",
     "1.0.2b0": "1.0.0",
     "1.0.3": "1.0.0",
-    "1.0.3b0": "1.0.0"
+    "1.0.3b0": "1.0.0",
+    "1.1.0": "1.0.0"
   },
   "content-links": {
     "0.1": {
@@ -29023,7 +29042,8 @@
       "310": "27"
     },
     "2.1.0": "2.0.1",
-    "2.2.0": "2.0.1"
+    "2.2.0": "2.0.1",
+    "3.0.0": "2.0.1"
   },
   "invenio-rdm-records": {
     "0.10.0": {
@@ -39961,7 +39981,129 @@
       "39": "36",
       "310": "36"
     },
-    "0.33.2": "0.33.1"
+    "0.33.2": "0.33.1",
+    "0.33.3": {
+      "27": {
+        "install_requires": [
+          "arrow>=0.17.0",
+          "citeproc-py-styles>=0.1.2",
+          "citeproc-py>=0.6.0",
+          "datacite>=1.1.1",
+          "dcxml>=0.1.2",
+          "Faker>=2.0.3",
+          "ftfy<5.0.0,>=4.4.3",
+          "invenio-drafts-resources<0.15.0,>=0.14.5",
+          "invenio-oaiserver>=1.3.0",
+          "invenio-vocabularies<0.10.0,>=0.9.3",
+          "pytz>=2020.4",
+          "pyyaml>=5.4.0"
+        ],
+        "setup_requires": [
+          "Babel>=2.8",
+          "pytest-runner>=3.0.0,<5"
+        ],
+        "extras_require": {
+          "sqlite": [
+            "invenio-db[versioning]<2.0.0,>=1.0.9"
+          ],
+          "postgresql": [
+            "invenio-db[postgresql,versioning]<2.0.0,>=1.0.9"
+          ],
+          "docs": [
+            "Sphinx>=4.2.0"
+          ],
+          "all": [
+            "Sphinx>=4.2.0",
+            "invenio-app<2.0.0,>=1.3.1",
+            "pytest-invenio<2.0.0,>=1.4.2",
+            "pytest-mock>=1.6.0"
+          ],
+          "elasticsearch7": [
+            "invenio-search[elasticsearch7]<2.0.0,>=1.4.0"
+          ],
+          "elasticsearch6": [
+            "invenio-search[elasticsearch6]<2.0.0,>=1.4.0"
+          ],
+          "tests": [
+            "invenio-app<2.0.0,>=1.3.1",
+            "pytest-invenio<2.0.0,>=1.4.2",
+            "pytest-mock>=1.6.0"
+          ],
+          "mysql": [
+            "invenio-db[mysql,versioning]<2.0.0,>=1.0.9"
+          ]
+        },
+        "tests_require": [
+          "invenio-app>=1.3.1,<2.0.0",
+          "pytest-invenio>=1.4.2,<2.0.0",
+          "pytest-mock>=1.6.0"
+        ]
+      },
+      "36": {
+        "install_requires": [
+          "arrow>=0.17.0",
+          "citeproc-py-styles>=0.1.2",
+          "citeproc-py>=0.6.0",
+          "datacite>=1.1.1",
+          "dcxml>=0.1.2",
+          "Faker>=2.0.3",
+          "ftfy<5.0.0,>=4.4.3",
+          "invenio-drafts-resources<0.15.0,>=0.14.5",
+          "invenio-oaiserver>=1.3.0",
+          "invenio-vocabularies<0.10.0,>=0.9.3",
+          "pytz>=2020.4",
+          "pyyaml>=5.4.0"
+        ],
+        "setup_requires": [
+          "Babel>=2.8",
+          "pytest-runner>=3.0.0,<5"
+        ],
+        "extras_require": {
+          "docs": [
+            "Sphinx>=4.2.0"
+          ],
+          "elasticsearch6": [
+            "invenio-search[elasticsearch6]<2.0.0,>=1.4.0"
+          ],
+          "elasticsearch7": [
+            "invenio-search[elasticsearch7]<2.0.0,>=1.4.0"
+          ],
+          "mysql": [
+            "invenio-db[mysql,versioning]<2.0.0,>=1.0.9"
+          ],
+          "postgresql": [
+            "invenio-db[postgresql,versioning]<2.0.0,>=1.0.9"
+          ],
+          "sqlite": [
+            "invenio-db[versioning]<2.0.0,>=1.0.9"
+          ],
+          "tests": [
+            "invenio-app<2.0.0,>=1.3.1",
+            "pytest-invenio<2.0.0,>=1.4.2",
+            "pytest-mock>=1.6.0"
+          ],
+          "all": [
+            "Sphinx>=4.2.0",
+            "invenio-app<2.0.0,>=1.3.1",
+            "pytest-invenio<2.0.0,>=1.4.2",
+            "pytest-mock>=1.6.0",
+            "Sphinx>=4.2.0",
+            "invenio-app<2.0.0,>=1.3.1",
+            "pytest-invenio<2.0.0,>=1.4.2",
+            "pytest-mock>=1.6.0"
+          ]
+        },
+        "tests_require": [
+          "invenio-app>=1.3.1,<2.0.0",
+          "pytest-invenio>=1.4.2,<2.0.0",
+          "pytest-mock>=1.6.0"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "ipt": {
     "0.1": {
@@ -43281,9 +43423,7 @@
     "0.0.6": "0.0.5",
     "0.0.7": "0.0.5",
     "0.0.8": "0.0.5",
-    "0.0.9": "0.0.5",
-    "0.1.0": "0.0.5",
-    "0.1.1": "0.0.5"
+    "0.0.9": "0.0.5"
   },
   "mangasorigines": {
     "0.0.0": {
@@ -52340,7 +52480,10 @@
     "3.3.5": "3.1.0",
     "3.4.0": "3.1.0",
     "3.4.1": "3.1.0",
-    "3.4.4": "3.1.0"
+    "3.4.4": "3.1.0",
+    "3.4.10": "3.1.0",
+    "3.4.8": "3.1.0",
+    "3.4.9": "3.1.0"
   },
   "polygeohash": {
     "0.1": {
@@ -63440,7 +63583,8 @@
     "3.0.524": "3.0.288",
     "3.0.525": "3.0.288",
     "3.0.526": "3.0.288",
-    "3.0.527": "3.0.288"
+    "3.0.527": "3.0.288",
+    "3.0.528": "3.0.288"
   },
   "tensorplot": {
     "0.0.1": {
