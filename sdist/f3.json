@@ -5659,7 +5659,8 @@
       "38": "36",
       "39": "36",
       "310": "36"
-    }
+    },
+    "0.1.154": "0.1.153"
   },
   "cdumay-opentracing": {
     "0.0.1": {
@@ -12433,7 +12434,12 @@
     "0.3.2.dev24": "0.2.2",
     "0.3.2.dev26": "0.2.2",
     "0.3.2.dev29": "0.2.2",
-    "0.3.2.dev31": "0.2.2"
+    "0.3.2.dev31": "0.2.2",
+    "0.3.2.dev50": "0.2.2",
+    "0.3.2.dev60": "0.2.2",
+    "0.3.2.dev62": "0.2.2",
+    "0.3.2.dev68": "0.2.2",
+    "0.3.2.dev70": "0.2.2"
   },
   "dummypy": {
     "0.1": {
@@ -52052,7 +52058,60 @@
       "39": "36",
       "310": "36"
     },
-    "0.15.9": "0.15.8"
+    "0.15.9": "0.15.8",
+    "2.0a5": {
+      "36": {
+        "install_requires": [
+          "aiofiles==0.7.0",
+          "aiosqlite<0.18,>=0.17.0",
+          "anyio<4.0,>=3.0",
+          "asyncpg<0.26,>=0.23",
+          "coolname<2.0,>=1.0.0",
+          "click<9.0,>=7.0",
+          "cloudpickle<3.0,>=1.0",
+          "croniter<2.0,>=1.0",
+          "distributed>=2021.8.0",
+          "fastapi<0.70.1,>=0.66",
+          "fsspec>=2021.7.0",
+          "httpx<0.22,>=0.18",
+          "pendulum<3.0,>=2.0",
+          "pydantic<2.0,>=1.8",
+          "pyyaml<=6.0,>=5.0",
+          "pytz>=2021.1",
+          "rich<11.0,>=10.0",
+          "sqlalchemy[asyncio]<2.0,>=1.4.20",
+          "typer<1.0,>=0.4.0",
+          "typing_extensions<5.0,>=3.10.0.1",
+          "uvicorn<0.16.0,>=0.14.0"
+        ],
+        "extras_require": {
+          "dev": [
+            "black",
+            "ipython",
+            "mkdocs",
+            "mkdocs-material",
+            "mkdocstrings",
+            "mypy",
+            "pytest",
+            "pytest-asyncio",
+            "pytkdocs",
+            "flake8",
+            "pytest-env",
+            "requests"
+          ],
+          "dev:python_version < \"3.8\"": [
+            "mock"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "prenoms": {
     "0.1.8": {
@@ -53767,7 +53826,9 @@
     "1.1.93": "0.0.1",
     "1.1.94": "0.0.1",
     "1.1.95": "0.0.1",
-    "1.1.96": "0.0.1"
+    "1.1.96": "0.0.1",
+    "1.1.97": "0.0.1",
+    "1.1.98": "0.0.1"
   },
   "pyelectro": {
     "0.1.10": "0.1.9",
@@ -55412,6 +55473,134 @@
           ],
           "full:python_version >= \"3.5\"": [
             "pytrip98"
+          ],
+          ":python_version == \"3.9\"": [
+            "numpy>=1.20"
+          ],
+          ":python_version == \"3.8\"": [
+            "numpy>=1.18"
+          ],
+          ":python_version == \"3.7\"": [
+            "numpy>=1.15"
+          ],
+          ":python_version == \"3.6\"": [
+            "numpy<1.20,>=1.12"
+          ],
+          ":python_version == \"3.5\"": [
+            "numpy<1.19,>=1.11"
+          ],
+          ":python_version == \"3.4\" or python_version == \"2.7\"": [
+            "numpy<1.16,>=1.11",
+            "enum34"
+          ]
+        },
+        "python_requires": [
+          ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "1.10.0": {
+      "27": {
+        "extras_require": {
+          "full": [
+            "xlwt",
+            "matplotlib",
+            "scipy",
+            "h5py",
+            "hipsterplot",
+            "bashplotlib"
+          ],
+          ":python_version == \"3.9\"": [
+            "numpy>=1.20"
+          ],
+          ":python_version == \"3.8\"": [
+            "numpy>=1.18"
+          ],
+          "full:python_version == \"3.10\"": [
+            "pytrip98>=3.6.1"
+          ],
+          ":python_version == \"3.4\" or python_version == \"2.7\"": [
+            "numpy<1.16,>=1.11",
+            "enum34"
+          ],
+          "pytrip:python_version == \"3.10\"": [
+            "pytrip98>=3.6.1"
+          ],
+          "image": [
+            "matplotlib"
+          ],
+          ":python_version == \"3.7\"": [
+            "numpy>=1.15"
+          ],
+          "excel": [
+            "xlwt"
+          ],
+          ":python_version == \"3.10\"": [
+            "numpy>=1.21"
+          ],
+          "hdf": [
+            "h5py"
+          ],
+          ":python_version == \"3.5\"": [
+            "numpy<1.19,>=1.11"
+          ],
+          "pytrip:python_version >= \"3.5\" and python_version < \"3.10\"": [
+            "pytrip98"
+          ],
+          "full:python_version >= \"3.5\" and python_version < \"3.10\"": [
+            "pytrip98"
+          ],
+          ":python_version == \"3.6\"": [
+            "numpy<1.20,>=1.12"
+          ],
+          "pytrip": [
+            "scipy"
+          ]
+        },
+        "python_requires": [
+          ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+        ]
+      },
+      "36": {
+        "extras_require": {
+          "image": [
+            "matplotlib"
+          ],
+          "excel": [
+            "xlwt"
+          ],
+          "hdf": [
+            "h5py"
+          ],
+          "pytrip": [
+            "scipy"
+          ],
+          "pytrip:python_version == \"3.10\"": [
+            "pytrip98>=3.6.1"
+          ],
+          "pytrip:python_version >= \"3.5\" and python_version < \"3.10\"": [
+            "pytrip98"
+          ],
+          "full": [
+            "scipy",
+            "h5py",
+            "xlwt",
+            "matplotlib",
+            "hipsterplot",
+            "bashplotlib"
+          ],
+          "full:python_version >= \"3.5\" and python_version < \"3.10\"": [
+            "pytrip98"
+          ],
+          "full:python_version == \"3.10\"": [
+            "pytrip98>=3.6.1"
+          ],
+          ":python_version == \"3.10\"": [
+            "numpy>=1.21"
           ],
           ":python_version == \"3.9\"": [
             "numpy>=1.20"
@@ -60512,7 +60701,8 @@
     "3.1.1": "2.7.7",
     "3.2.0": "2.7.7",
     "3.3.0": "2.7.7",
-    "3.3.1": "2.7.7"
+    "3.3.1": "2.7.7",
+    "3.3.2": "2.7.7"
   },
   "ravisimplemodule": {
     "0.0.1": {
@@ -68284,7 +68474,8 @@
     "3.0.527": "3.0.386",
     "3.0.528": "3.0.386",
     "3.0.529": "3.0.386",
-    "3.0.530": "3.0.386"
+    "3.0.530": "3.0.386",
+    "3.0.531": "3.0.386"
   },
   "tendencia": {
     "0.1.1": {
