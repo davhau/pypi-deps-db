@@ -9257,8 +9257,8 @@
           ]
         }
       },
-      "1.4.0.dev1": {
-        "bigflow-1.4.0.dev1-py3-none-any.whl": {
+      "1.4.0": {
+        "bigflow-1.4.0-py3-none-any.whl": {
           "provides_extras": [
             "bigquery",
             "dataflow",
@@ -9268,6 +9268,77 @@
           "requires_dist": [
             "google-cloud-storage (<2,>=1.30)",
             "google-auth (<3,>=1.20)",
+            "unittest-xml-reporting (<4,>=3.0.2)",
+            "jinja2 (<3,>=2.10)",
+            "pip-tools (<7,>=5.3)",
+            "deprecated (<2,>=1.2.10)",
+            "toml (>=0.10)",
+            "tblib (<2,>=1.7)",
+            "lazy-object-proxy (<2,>=1)",
+            "wheel (>=0.35)",
+            "setuptools (>=45)",
+            "typing-extensions (~=3.7) ; python_version <= \"3.7\"",
+            "backports.cached-property ; python_version <= \"3.8\"",
+            "google-cloud-bigquery (<2,>=1.6) ; extra == 'bigquery'",
+            "pandas (<2,>=0.25) ; extra == 'bigquery'",
+            "six (<2,>=1.14) ; extra == 'bigquery'",
+            "apache-beam[gcp] (<2.34,>=2.24) ; extra == 'dataflow'",
+            "google-cloud-dataproc (<4,>=3) ; extra == 'dataproc'",
+            "pyspark (<4,>=3.0) ; extra == 'dataproc'",
+            "proto-plus (!=1.19.7) ; extra == 'dataproc'",
+            "google-cloud-logging (<2,>=1.15) ; extra == 'log'"
+          ]
+        }
+      },
+      "1.4.0.dev1": {
+        "bigflow-1.4.0.dev1-py3-none-any.whl": "1.4.0@bigflow-1.4.0-py3-none-any.whl"
+      },
+      "1.4.1.dev0": {
+        "bigflow-1.4.1.dev0-py3-none-any.whl": {
+          "provides_extras": [
+            "bigquery",
+            "dataflow",
+            "dataproc",
+            "log"
+          ],
+          "requires_dist": [
+            "google-cloud-storage (<2,>=1.30)",
+            "google-auth (<3,>=1.20)",
+            "google-api-python-client (==2.31.0)",
+            "unittest-xml-reporting (<4,>=3.0.2)",
+            "jinja2 (<3,>=2.10)",
+            "pip-tools (<7,>=5.3)",
+            "deprecated (<2,>=1.2.10)",
+            "toml (>=0.10)",
+            "tblib (<2,>=1.7)",
+            "lazy-object-proxy (<2,>=1)",
+            "wheel (>=0.35)",
+            "setuptools (>=45)",
+            "typing-extensions (~=3.7) ; python_version <= \"3.7\"",
+            "backports.cached-property ; python_version <= \"3.8\"",
+            "google-cloud-bigquery (<2,>=1.6) ; extra == 'bigquery'",
+            "pandas (<2,>=0.25) ; extra == 'bigquery'",
+            "six (<2,>=1.14) ; extra == 'bigquery'",
+            "apache-beam[gcp] (<2.34,>=2.24) ; extra == 'dataflow'",
+            "google-cloud-dataproc (<4,>=3) ; extra == 'dataproc'",
+            "pyspark (<4,>=3.0) ; extra == 'dataproc'",
+            "proto-plus (!=1.19.7) ; extra == 'dataproc'",
+            "google-cloud-logging (<2,>=1.15) ; extra == 'log'"
+          ]
+        }
+      },
+      "1.4.1.dev2": {
+        "bigflow-1.4.1.dev2-py3-none-any.whl": {
+          "provides_extras": [
+            "bigquery",
+            "dataflow",
+            "dataproc",
+            "log"
+          ],
+          "requires_dist": [
+            "google-cloud-storage (<2,>=1.30)",
+            "google-auth (<3,>=1.20)",
+            "google-api-python-client (==1.12.8)",
             "unittest-xml-reporting (<4,>=3.0.2)",
             "jinja2 (<3,>=2.10)",
             "pip-tools (<7,>=5.3)",
@@ -37493,6 +37564,12 @@
           ],
           "requires_python": ">=3.0"
         }
+      },
+      "1.0.3": {
+        "optimalgrouping-1.0.3-py3-none-any.whl": "1.0.2@optimalgrouping-1.0.2-py3-none-any.whl"
+      },
+      "1.0.4": {
+        "optimalgrouping-1.0.4-py3-none-any.whl": "1.0.2@optimalgrouping-1.0.2-py3-none-any.whl"
       }
     }
   },
@@ -40310,6 +40387,20 @@
       },
       "0.4.6": {
         "pycarus-0.4.6-py3-none-any.whl": "0.4.1@pycarus-0.4.1-py3-none-any.whl"
+      },
+      "0.4.7": {
+        "pycarus-0.4.7-py3-none-any.whl": {
+          "requires_dist": [
+            "einops (>=0.3.2,<0.4.0)",
+            "h5py (>=3.1.0,<4.0.0)",
+            "ninja (>=1.10.0,<2.0.0)",
+            "open3d (>=0.13.0,<0.14.0)",
+            "pykdtree (>=1.3.4,<2.0.0)",
+            "scikit-image (>=0.18.3,<0.19.0)",
+            "types-setuptools (>=57.0.0,<58.0.0)"
+          ],
+          "requires_python": ">=3.8,<3.9.0"
+        }
       }
     }
   },
@@ -42665,6 +42756,32 @@
             "respx (>=0.11) ; extra == 'tests'"
           ],
           "requires_python": ">=3.6"
+        }
+      },
+      "1.0.0": {
+        "pypistats-1.0.0-py3-none-any.whl": {
+          "provides_extras": [
+            "numpy",
+            "pandas",
+            "tests"
+          ],
+          "requires_dist": [
+            "httpx (>=0.19)",
+            "platformdirs",
+            "prettytable (>=2.4.0)",
+            "pytablewriter[html] (>=0.63)",
+            "python-dateutil",
+            "python-slugify",
+            "termcolor",
+            "importlib-metadata ; python_version < \"3.8\"",
+            "numpy ; extra == 'numpy'",
+            "pandas ; extra == 'pandas'",
+            "freezegun ; extra == 'tests'",
+            "pytest ; extra == 'tests'",
+            "pytest-cov ; extra == 'tests'",
+            "respx (>=0.11) ; extra == 'tests'"
+          ],
+          "requires_python": ">=3.7"
         }
       }
     }
