@@ -281,7 +281,8 @@
     "1.0.3": "1.0.0",
     "1.0.5": "1.0.0",
     "1.0.6": "1.0.0",
-    "1.0.7": "1.0.0"
+    "1.0.7": "1.0.0",
+    "1.0.8": "1.0.0"
   },
   "ailearn": {
     "0.1.3": {
@@ -12943,6 +12944,30 @@
       "38": "36",
       "39": "36",
       "310": "36"
+    },
+    "0.13.10": {
+      "36": {
+        "install_requires": [
+          "dagster==0.13.10",
+          "mysql-connector-python"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "0.13.10rc3": {
+      "36": {
+        "install_requires": [
+          "dagster==0.13.10rc3",
+          "mysql-connector-python"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
     }
   },
   "dagster-prometheus": {
@@ -13959,6 +13984,30 @@
       "36": {
         "install_requires": [
           "dagster==0.13.9rc0",
+          "prometheus_client"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "0.13.10": {
+      "36": {
+        "install_requires": [
+          "dagster==0.13.10",
+          "prometheus_client"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "0.13.10rc3": {
+      "36": {
+        "install_requires": [
+          "dagster==0.13.10rc3",
           "prometheus_client"
         ]
       },
@@ -24532,6 +24581,15 @@
       "310": "27"
     }
   },
+  "hongpdf": {
+    "1.0": {
+      "36": {},
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
+  },
   "htmlwrite": {
     "0.1.0": {
       "27": {
@@ -25272,6 +25330,45 @@
             "pytest",
             "pytest-cov",
             "validate_pyproject<2,>=0.0.1"
+          ],
+          ":python_version < \"3.8\"": [
+            "importlib-metadata",
+            "typing-extensions"
+          ],
+          ":python_version < \"3.7\"": [
+            "dataclasses"
+          ]
+        }
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "0.2": {
+      "36": {
+        "install_requires": [
+          "packaging>=20.7"
+        ],
+        "extras_require": {
+          "full": [
+            "configupdater<4,>=3.0.1",
+            "atoml<2,>=1.1.0"
+          ],
+          "lite": [
+            "tomli-w<2,>=0.4.0"
+          ],
+          "all": [
+            "configupdater<4,>=3.0.1",
+            "atoml<2,>=1.1.0",
+            "tomli-w<2,>=0.4.0"
+          ],
+          "testing": [
+            "setuptools",
+            "tomli",
+            "pytest",
+            "pytest-cov",
+            "validate-pyproject<2,>=0.1"
           ],
           ":python_version < \"3.8\"": [
             "importlib-metadata",
@@ -27293,7 +27390,8 @@
     "0.0.1.dev3": "0.0.1.dev2",
     "0.0.1.dev4": "0.0.1.dev2",
     "0.0.1.dev5": "0.0.1.dev2",
-    "0.0.1.dev6": {
+    "0.0.1.dev6": "0.1.0",
+    "0.1.0": {
       "36": {
         "python_requires": [
           ">=3.7"
@@ -51776,7 +51874,77 @@
       "39": "36",
       "310": "36"
     },
-    "1.14.1": "1.14.0"
+    "1.14.1": "1.14.0",
+    "1.14.2": "1.14.0",
+    "1.14.3": {
+      "36": {
+        "install_requires": [
+          "azureml-core~=1.36.0"
+        ],
+        "extras_require": {
+          "pipeline": [
+            "azureml-pipeline-core~=1.36.0",
+            "azure-ml-component~=0.9.3",
+            "azure-cli-core~=2.29.0",
+            "cryptography~=3.3.2",
+            "ruamel.yaml~=0.16",
+            "gitpython~=3.1",
+            "hydra-core~=1.0.3",
+            "flatten-dict~=0.4",
+            "jsonpath_ng~=1.5",
+            "coolname~=1.1",
+            "omegaconf~=2.1",
+            "opencensus-ext-azure==1.0.7",
+            "pytest~=6.2"
+          ],
+          "build": [
+            "argparse-dataclass~=0.1",
+            "omegaconf~=2.0",
+            "rsa~=4.7",
+            "ruamel.yaml~=0.16",
+            "semver~=2.13",
+            "gitpython~=3.1",
+            "jsonpath-ng~=1.5",
+            "packaging~=20.0",
+            "opencensus-ext-azure==1.0.7"
+          ],
+          "dev": [
+            "argparse-dataclass~=0.1",
+            "gitpython~=3.1",
+            "omegaconf~=2.0",
+            "rsa~=4.7",
+            "ruamel.yaml~=0.16",
+            "semver~=2.13",
+            "black==21.4b0",
+            "flake8==3.9.1",
+            "typeguard==2.11.1",
+            "typing-extensions~=3.10",
+            "markdown-include==0.6.0",
+            "mkdocstrings==0.15.0",
+            "mkdocs-material==7.1.3",
+            "livereload==2.6.3",
+            "pytest~=6.2",
+            "pytest-cov~=2.11",
+            "pytest-order==0.10.0",
+            "twine~=3.3",
+            "wheel~=0.36",
+            "pyspark==3.0.1",
+            "vaex==4.3.0",
+            "toolz==0.11.1",
+            "numpy==1.19.3",
+            "pandas==1.1.5",
+            "scikit-learn==0.24.2"
+          ]
+        },
+        "python_requires": [
+          "~=3.6"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "shroud": {
     "0.1.0": {
@@ -58376,7 +58544,8 @@
     "0.3.0.25.dev1514105777": "0.3.0.15.dev1227715840",
     "0.3.0.25.dev1518767040": "0.3.0.15.dev1227715840",
     "0.3.0.25.dev1523788846": "0.3.0.15.dev1227715840",
-    "0.3.0.25.dev1528676494": "0.3.0.15.dev1227715840"
+    "0.3.0.25.dev1528676494": "0.3.0.15.dev1227715840",
+    "0.3.0.25.dev1533425083": "0.3.0.15.dev1227715840"
   },
   "user-voting-rocks": {
     "0.1.0": {
