@@ -20039,7 +20039,8 @@
       "38": "27",
       "39": "27",
       "310": "27"
-    }
+    },
+    "0.0.2": "0.0.1"
   },
   "exfoliate": {
     "0.0.4": {
@@ -36419,6 +36420,60 @@
           "invenio[auth,base,files,metadata]~=3.5.0a3",
           "invenio-logging[sentry-sdk]<1.4.0,>=1.3.0",
           "invenio-rdm-records<0.34.0,>=0.33.5"
+        ],
+        "setup_requires": [
+          "Babel>=2.8,<3"
+        ],
+        "extras_require": {
+          "elasticsearch6": [
+            "invenio-search[elasticsearch6]<1.5.0,>=1.4.2"
+          ],
+          "elasticsearch7": [
+            "invenio-search[elasticsearch7]<1.5.0,>=1.4.2"
+          ],
+          "mysql": [
+            "invenio-db[mysql,versioning]<1.1.0,>=1.0.9"
+          ],
+          "postgresql": [
+            "invenio-db[postgresql,versioning]<1.1.0,>=1.0.9"
+          ],
+          "sqlite": [
+            "invenio-db[versioning]<1.1.0,>=1.0.9"
+          ],
+          "s3": [
+            "invenio-s3~=1.0.5"
+          ],
+          "docs": [
+            "Sphinx==4.2.0"
+          ],
+          "tests": [
+            "pytest-invenio~=1.4.2"
+          ],
+          "all": [
+            "invenio-s3~=1.0.5",
+            "Sphinx==4.2.0",
+            "pytest-invenio~=1.4.2",
+            "invenio-s3~=1.0.5",
+            "Sphinx==4.2.0",
+            "pytest-invenio~=1.4.2"
+          ]
+        },
+        "tests_require": [
+          "pytest-invenio~=1.4.2"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "7.0.0.dev3": {
+      "36": {
+        "install_requires": [
+          "CairoSVG<3.0.0,>=2.5.2",
+          "invenio[auth,base,files,metadata]~=3.5.0a3",
+          "invenio-logging[sentry-sdk]<1.4.0,>=1.3.0",
+          "invenio-rdm-records<0.34.0,>=0.33.6"
         ],
         "setup_requires": [
           "Babel>=2.8,<3"
@@ -77481,6 +77536,27 @@
           "PyYAML==5.4.1",
           "prompt-toolkit",
           "sshuttle"
+        ],
+        "python_requires": [
+          ">=3.6.0"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "0.2.1a0": {
+      "36": {
+        "install_requires": [
+          "requests==2.25.0",
+          "requests-oauthlib==1.3.0",
+          "PyYAML==5.4.1",
+          "prompt-toolkit",
+          "sshuttle"
+        ],
+        "tests_require": [
+          "pytest"
         ],
         "python_requires": [
           ">=3.6.0"
