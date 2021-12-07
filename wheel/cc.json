@@ -28247,6 +28247,23 @@
       "0.0.11": {
         "patchwork_contrib-0.0.11-py3-none-any.whl": "0.0.10@patchwork_contrib-0.0.10-py3-none-any.whl"
       },
+      "0.0.12": {
+        "patchwork_contrib-0.0.12-py3-none-any.whl": {
+          "provides_extras": [
+            "fastapi",
+            "sessions",
+            "tortoise"
+          ],
+          "requires_dist": [
+            "patchwork-core (>=0.0.18)",
+            "fastapi (>=0.70) ; extra == 'fastapi'",
+            "pydantic ; extra == 'fastapi'",
+            "python-jose[cryptography] ; extra == 'fastapi'",
+            "starsessions ; extra == 'sessions'",
+            "tortoise-orm ; extra == 'tortoise'"
+          ]
+        }
+      },
       "0.0.3": {
         "patchwork_contrib-0.0.3-py3-none-any.whl": {
           "provides_extras": [
@@ -28382,6 +28399,25 @@
       },
       "0.0.17": {
         "patchwork_node-0.0.17-py3-none-any.whl": "0.0.15@patchwork_node-0.0.15-py3-none-any.whl"
+      },
+      "0.0.18": {
+        "patchwork_node-0.0.18-py3-none-any.whl": {
+          "requires_dist": [
+            "aiohttp (>=3.7.4.post0)",
+            "async-lru (>=1.0.2)",
+            "psutil (>=5.8.0)",
+            "pydantic (>=1.8.2)",
+            "humanize (>=3.11.0)",
+            "importlib-metadata (>=4.8.1)",
+            "patchwork-core (>=0.0.18)"
+          ]
+        }
+      },
+      "0.0.20": {
+        "patchwork_node-0.0.20-py3-none-any.whl": "0.0.18@patchwork_node-0.0.18-py3-none-any.whl"
+      },
+      "0.0.21": {
+        "patchwork_node-0.0.21-py3-none-any.whl": "0.0.18@patchwork_node-0.0.18-py3-none-any.whl"
       },
       "0.0.3": {
         "patchwork_node-0.0.3-py3-none-any.whl": {
@@ -32864,6 +32900,40 @@
       }
     }
   },
+  "pythclient": {
+    "py3": {
+      "0.0.2": {
+        "pythclient-0.0.2-py3-none-any.whl": {
+          "provides_extras": [
+            "testing"
+          ],
+          "requires_dist": [
+            "aiodns",
+            "aiohttp (>=3.7.4)",
+            "backoff",
+            "base58",
+            "dnspython",
+            "flake8",
+            "loguru",
+            "aiodns ; extra == 'testing'",
+            "aiohttp (>=3.7.4) ; extra == 'testing'",
+            "backoff ; extra == 'testing'",
+            "base58 ; extra == 'testing'",
+            "dnspython ; extra == 'testing'",
+            "flake8 ; extra == 'testing'",
+            "loguru ; extra == 'testing'",
+            "mock ; extra == 'testing'",
+            "pytest ; extra == 'testing'",
+            "pytest-cov ; extra == 'testing'",
+            "pytest-socket ; extra == 'testing'",
+            "pytest-mock ; extra == 'testing'",
+            "pytest-asyncio ; extra == 'testing'"
+          ],
+          "requires_python": ">=3.7.0"
+        }
+      }
+    }
+  },
   "python-calculus": {
     "py2.py3": {
       "0.1.0": {
@@ -35873,6 +35943,9 @@
           "requires_python": ">=3.6"
         }
       },
+      "0.0.12": {
+        "sharpshooter-0.0.12-py3-none-any.whl": "0.0.11@sharpshooter-0.0.11-py3-none-any.whl"
+      },
       "0.0.2": {
         "sharpshooter-0.0.2-py3-none-any.whl": "0.0.1@sharpshooter-0.0.1-py3-none-any.whl"
       },
@@ -35896,6 +35969,9 @@
       },
       "0.0.9": {
         "sharpshooter-0.0.9-py3-none-any.whl": "0.0.1@sharpshooter-0.0.1-py3-none-any.whl"
+      },
+      "0.1.0": {
+        "sharpshooter-0.1.0-py3-none-any.whl": "0.0.11@sharpshooter-0.0.11-py3-none-any.whl"
       }
     }
   },
@@ -36086,6 +36162,27 @@
             "tox (==3.24.4) ; extra == 'dev'",
             "tox-gh-actions (==2.8.1) ; extra == 'dev'",
             "twine (==3.4.2) ; extra == 'dev'",
+            "wheel (==0.37.0) ; extra == 'dev'"
+          ],
+          "requires_python": ">=3.7"
+        }
+      },
+      "1.0.8": {
+        "siggen-1.0.8-py3-none-any.whl": {
+          "provides_extras": [
+            "cli",
+            "dev"
+          ],
+          "requires_dist": [
+            "glom",
+            "requests (<3) ; extra == 'cli'",
+            "check-manifest (==0.47) ; extra == 'dev'",
+            "flake8 (==4.0.1) ; extra == 'dev'",
+            "pytest (==6.2.5) ; extra == 'dev'",
+            "setuptools (==59.5.0) ; extra == 'dev'",
+            "tox (==3.24.4) ; extra == 'dev'",
+            "tox-gh-actions (==2.8.1) ; extra == 'dev'",
+            "twine (==3.7.0) ; extra == 'dev'",
             "wheel (==0.37.0) ; extra == 'dev'"
           ],
           "requires_python": ">=3.7"
@@ -40351,6 +40448,9 @@
       },
       "3.0.540": {
         "tencentcloud_sdk_python_tia-3.0.540-py2.py3-none-any.whl": "3.0.252@tencentcloud_sdk_python_tia-3.0.252-py2.py3-none-any.whl"
+      },
+      "3.0.541": {
+        "tencentcloud_sdk_python_tia-3.0.541-py2.py3-none-any.whl": "3.0.252@tencentcloud_sdk_python_tia-3.0.252-py2.py3-none-any.whl"
       }
     }
   },
