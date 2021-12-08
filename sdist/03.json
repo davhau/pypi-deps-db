@@ -10156,6 +10156,23 @@
       "38": "36",
       "39": "36",
       "310": "36"
+    },
+    "1.0.0b54": {
+      "36": {
+        "install_requires": [
+          "cdk8s<2.0.0,>=1.2.5",
+          "constructs<4.0.0,>=3.3.162",
+          "jsii<2.0.0,>=1.47.0",
+          "publication>=0.0.3"
+        ],
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
     }
   },
   "censys": {
@@ -12638,7 +12655,63 @@
     "3.2.0": "3.1.3",
     "3.2.1": "3.1.3",
     "3.2.2": "3.1.3",
-    "3.2.3": "3.1.3"
+    "3.2.3": "3.1.3",
+    "3.2.4": {
+      "36": {
+        "install_requires": [
+          "mypy_extensions>=0.4.3,~=0.4",
+          "pyrsistent>=0.15.2,~=0.15",
+          "six~=1.15",
+          "wrapt>=1.11.2,~=1.11",
+          "durationpy~=0.5",
+          "cmake"
+        ],
+        "setup_requires": [
+          "# Typing support\n",
+          "typing-extensions==3.7.4.3; python_version<\"3.8\"\n",
+          "mypy_extensions~=0.4,>=0.4.3\n",
+          "\n",
+          "# Prevent installation of Python < 3 package on Windows.\n",
+          "pip>=20.0; sys_platform==\"win32\" and python_version<=\"2.7\"\n",
+          "\n",
+          "# General dependencies\n",
+          "pyrsistent~=0.15,>=0.15.2\n",
+          "six~=1.15\n",
+          "attrs~=19.1; python_version>\"3.5\"\n",
+          "attrs==19.1.0; python_version<=\"3.5\"\n",
+          "wrapt~=1.11,>=1.11.2\n",
+          "durationpy~=0.5\n",
+          "cmake"
+        ],
+        "extras_require": {
+          ":python_version < \"3.8\"": [
+            "typing-extensions==3.7.4.3"
+          ],
+          ":sys_platform == \"win32\" and python_version <= \"2.7\"": [
+            "pip>=20.0"
+          ],
+          ":python_version > \"3.5\"": [
+            "attrs~=19.1"
+          ],
+          ":python_version <= \"3.5\"": [
+            "attrs==19.1.0"
+          ]
+        },
+        "tests_require": [
+          "utilspie",
+          "nose",
+          "testresources>=0.2.7",
+          "basictracer==2.2.0"
+        ],
+        "python_requires": [
+          ">=3.5"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "coverage-threshold": {
     "0.3.0": {
@@ -39037,7 +39110,33 @@
       "310": "27"
     },
     "1.2.1": "1.2.0",
-    "1.2.2": "1.2.0"
+    "1.2.2": "1.2.0",
+    "1.2.3": {
+      "27": {
+        "install_requires": [
+          "click<9.0.0,>=8.0.3",
+          "construct-typing<0.5.0,>=0.4.2",
+          "construct<3.0,>=2.10",
+          "marshmallow-dataclass[enum,union]<9.0.0,>=8.4.1",
+          "marshmallow<4.0.0,>=3.6.0",
+          "more-itertools<9.0.0,>=8.4.0",
+          "multidict<6.0.0,>=5.1.0",
+          "parsimonious<0.9.0,>=0.8.1",
+          "path<16.0.0,>=15.1.2",
+          "python-constraint<2.0.0,>=1.4.0",
+          "simplejson<4.0.0,>=3.17.0",
+          "sortedcontainers<3.0.0,>=2.3.0"
+        ],
+        "python_requires": [
+          ">=3.8,<4.0"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "jupiter-http": {
     "1.0": {
@@ -48202,7 +48301,9 @@
       "39": "36",
       "310": "36"
     },
-    "0.0.9": "0.0.8"
+    "0.0.9": "0.0.8",
+    "0.0.10": "0.0.8",
+    "0.0.11": "0.0.8"
   },
   "niflow-manager": {
     "0.0.1": {
@@ -56946,6 +57047,21 @@
       "38": "27",
       "39": "27",
       "310": "27"
+    },
+    "2.2.8": {
+      "27": {
+        "install_requires": [
+          "seleniumbase>=2.2.8"
+        ],
+        "python_requires": [
+          ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
     }
   },
   "pytest-solr": {
@@ -58475,7 +58591,8 @@
     "0.18.6": "0.16.0",
     "0.18.7": "0.16.0",
     "0.19.0": "0.16.0",
-    "0.19.1": "0.16.0"
+    "0.19.1": "0.16.0",
+    "0.19.2": "0.16.0"
   },
   "remotecv-redis": {
     "0.1": {
@@ -63069,6 +63186,31 @@
     },
     "2.0.1": "2.0.0"
   },
+  "synthol": {
+    "0.1.0": {
+      "27": {
+        "install_requires": [
+          "typing_inspect",
+          "dataclasses"
+        ],
+        "python_requires": [
+          ">=3"
+        ]
+      },
+      "36": "27",
+      "37": {
+        "install_requires": [
+          "typing_inspect"
+        ],
+        "python_requires": [
+          ">=3"
+        ]
+      },
+      "38": "37",
+      "39": "37",
+      "310": "37"
+    }
+  },
   "tabulatepdf": {
     "0.1": {
       "27": {
@@ -64137,7 +64279,8 @@
     "3.0.538": "3.0.252",
     "3.0.539": "3.0.252",
     "3.0.540": "3.0.252",
-    "3.0.541": "3.0.252"
+    "3.0.541": "3.0.252",
+    "3.0.542": "3.0.252"
   },
   "termite": {
     "0.0.1": {
