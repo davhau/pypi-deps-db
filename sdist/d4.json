@@ -129162,36 +129162,51 @@
     "0.1.9": "0.1.5"
   },
   "testcompose": {
-    "0.1.0": {
+    "0.0.1": {
       "27": {
         "install_requires": [
-          "Markdown<4.0.0,>=3.3.6",
-          "MarkupSafe<3.0.0,>=2.0.1",
-          "PyYAML<6.0.0,>=5.4.1",
-          "black<22.0,>=21.10b0",
-          "coverage<7.0.0,>=6.0.2",
-          "docker<6.0.0,>=5.0.3",
-          "kafka-python<3.0.0,>=2.0.2",
-          "mkdocs-autorefs<0.4.0,>=0.3.0",
-          "mkdocs-git-revision-date-plugin<0.4.0,>=0.3.1",
-          "mkdocs-material-extensions<2.0.0,>=1.0.3",
-          "mkdocs-material<9.0.0,>=8.0.4",
-          "mkdocs<2.0.0,>=1.2.3",
-          "mkdocstrings<0.17.0,>=0.16.2",
-          "mypy<0.911,>=0.910",
-          "pre-commit<3.0.0,>=2.15.0",
-          "pydantic<2.0.0,>=1.8.2",
-          "pyproject-toml<0.0.12,>=0.0.11",
-          "pytest-cov<4.0.0,>=3.0.0",
-          "pytest-mock<4.0.0,>=3.6.1",
-          "pytest<7.0.0,>=6.2.5",
-          "requests<3.0.0,>=2.26.0",
-          "tox<4.0.0,>=3.24.4",
-          "types-PyYAML<6.0.0,>=5.4.10",
-          "types-requests<3.0.0,>=2.25.9"
+          "docker>=5.0.3",
+          "pydantic>=1.8.2",
+          "pyyaml>=5.4.1"
         ],
+        "setup_requires": [
+          "wheel"
+        ],
+        "extras_require": {
+          "test": [
+            "requests>=2.26.0",
+            "kafka-python>=2.0.2",
+            "pytest-cov>=3.0.0",
+            "pytest-mock>=3.6.1",
+            "pytest>=6.2.5",
+            "setuptools"
+          ],
+          "doc": [
+            "sphinx>=4.3.1",
+            "sphinx-rtd-theme>=1.0.0"
+          ],
+          "dev": [
+            "mypy-extensions>=0.4.3",
+            "mypy>=0.910",
+            "typed-ast>=1.4.3",
+            "types-pyyaml>=5.4.12",
+            "types-requests>=2.26.1",
+            "typing-extensions>=4.0.0",
+            "black>=21.11b1",
+            "pyproject-toml>=0.0.11",
+            "pre-commit>=2.15.0",
+            "mkdocs-git-revision-date-plugin>=0.3.1",
+            "mkdocs-material>=8.0.4",
+            "mkdocs-material-extensions>=1.0.3",
+            "mkdocstrings>=0.16.2",
+            "mkdocs-autorefs>=0.3.0",
+            "mkdocs>=1.2.3",
+            "markdown>=3.3.6",
+            "markupsafe>=2.0.1"
+          ]
+        },
         "python_requires": [
-          ">=3.7,<4.0"
+          "~=3.7"
         ]
       },
       "36": "27",
