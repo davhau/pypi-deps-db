@@ -16695,11 +16695,95 @@
     }
   },
   "jenkins-setuptools-versioning": {
-    "1.0": {
+    "1.7": {
       "27": {
         "install_requires": [
           "six>=1.13.0"
         ],
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "1.8": "1.7",
+    "1.9": {
+      "27": {
+        "install_requires": [
+          "six>=1.13.0",
+          "wheel",
+          "setuptools"
+        ],
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "2.1": "1.9",
+    "2.2": {
+      "27": {
+        "install_requires": [
+          "six>=1.13.0"
+        ],
+        "extras_require": {
+          ":python_version < \"3\"": [
+            "setuptools<45.0",
+            "typing"
+          ],
+          ":python_version == \"3.4\"": [
+            "setuptools<=39.2",
+            "typing<3.7,>=3.6"
+          ],
+          ":python_version >= \"3.5\"": [
+            "setuptools"
+          ],
+          ":python_version == \"3.3\"": [
+            "setuptools<=39.2",
+            "typing<3.7,>=3.6"
+          ]
+        },
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "2.3": {
+      "27": {
+        "install_requires": [
+          "six>=1.13.0",
+          "wheel"
+        ],
+        "extras_require": {
+          ":python_version < \"3\"": [
+            "setuptools<45.0",
+            "typing"
+          ],
+          ":python_version == \"3.4\"": [
+            "setuptools<=39.2",
+            "typing<3.7,>=3.6"
+          ],
+          ":python_version >= \"3.5\"": [
+            "setuptools"
+          ],
+          ":python_version == \"3.3\"": [
+            "setuptools<=39.2",
+            "typing<3.7,>=3.6"
+          ]
+        },
         "python_requires": [
           ">=3.6"
         ]
@@ -35977,7 +36061,7 @@
       "39": "27",
       "310": "27"
     },
-    "0.4.0": {
+    "0.4.1": {
       "27": {
         "install_requires": [
           "numpy>=1.20.1",
