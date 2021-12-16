@@ -3765,7 +3765,8 @@
     "0.2.3": "0.1.0",
     "0.2.4": "0.1.0",
     "0.2.5": "0.1.0",
-    "0.2.6": "0.1.0"
+    "0.2.6": "0.1.0",
+    "0.2.7": "0.1.0"
   },
   "ansi-color": {
     "1.0.0": {
@@ -47061,7 +47062,8 @@
     "0.0.7": "0.0.2",
     "0.0.8": "0.0.2",
     "0.0.9": "0.0.2",
-    "0.1.0": "0.0.2"
+    "0.1.0": "0.0.2",
+    "0.1.1": "0.0.2"
   },
   "metrics-tools": {
     "0.0.1": {
@@ -58723,7 +58725,67 @@
       "39": "36",
       "310": "36"
     },
-    "1.1.2": "1.1.1"
+    "1.1.2": "1.1.1",
+    "1.3.0": {
+      "36": {
+        "install_requires": [
+          "sagemaker-inference>=1.5.5",
+          "huggingface_hub>=0.0.8",
+          "retrying",
+          "numpy"
+        ],
+        "extras_require": {
+          "transformers": [
+            "transformers[sentencepiece,sklearn]>=4.5.1"
+          ],
+          "torch": [
+            "torch>=1.8.0"
+          ],
+          "tensorflow": [
+            "tensorflow>=2.4.0"
+          ],
+          "mms": [
+            "multi-model-server>=1.1.4",
+            "retrying"
+          ],
+          "test": [
+            "pytest",
+            "pytest-xdist",
+            "parameterized",
+            "psutil",
+            "datasets",
+            "pytest-sugar",
+            "black==21.4b0",
+            "sagemaker",
+            "boto3",
+            "mock==2.0.0"
+          ],
+          "benchmark": [
+            "boto3",
+            "locust"
+          ],
+          "quality": [
+            "black==21.4b0",
+            "isort>=5.5.4",
+            "flake8>=3.8.3"
+          ],
+          "dev": [
+            "transformers[sentencepiece,sklearn]>=4.5.1",
+            "multi-model-server>=1.1.4",
+            "retrying",
+            "torch>=1.8.0",
+            "tensorflow>=2.4.0"
+          ]
+        },
+        "python_requires": [
+          ">=3.6.0"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "saitama": {
     "0.1.0": {
