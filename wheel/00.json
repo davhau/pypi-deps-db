@@ -6852,6 +6852,62 @@
       },
       "1.6.5": {
         "datarobot_drum-1.6.5-py3-none-any.whl": "1.6.4@datarobot_drum-1.6.4-py3-none-any.whl"
+      },
+      "1.6.6": {
+        "datarobot_drum-1.6.6-py3-none-any.whl": {
+          "provides_extras": [
+            "r",
+            "keras",
+            "pypmml",
+            "scikit-learn",
+            "torch",
+            "trainingmodels",
+            "uwsgi",
+            "xgboost"
+          ],
+          "requires_dist": [
+            "argcomplete (==1.11.1)",
+            "datarobot (>=2.27.0)",
+            "trafaret (!=1.1.0,<2.0,>=0.7)",
+            "docker (>=4.2.2<5.0.0)",
+            "flask",
+            "jinja2",
+            "memory-profiler (<1.0.0)",
+            "mlpiper (~=2.4.0)",
+            "numpy",
+            "pandas (<1.3.1,>=1.0.5)",
+            "progress",
+            "requests",
+            "scipy (<2,>=1.1)",
+            "strictyaml (==1.4.2)",
+            "texttable",
+            "py4j (~=0.10.9.0)",
+            "pyarrow (==2.0.0)",
+            "Pillow (==8.3.2)",
+            "julia (==0.5.6)",
+            "termcolor",
+            "packaging",
+            "rpy2 ; (python_version >= \"3.6\") and extra == 'r'",
+            "scipy ; extra == 'keras'",
+            "numpy ; extra == 'keras'",
+            "h5py ; extra == 'keras'",
+            "tensorflow (>=2.2.1) ; extra == 'keras'",
+            "pypmml ; extra == 'pypmml'",
+            "scikit-learn ; extra == 'scikit-learn'",
+            "scipy ; extra == 'scikit-learn'",
+            "numpy ; extra == 'scikit-learn'",
+            "torch ; extra == 'torch'",
+            "numpy ; extra == 'torch'",
+            "scikit-learn ; extra == 'torch'",
+            "scipy ; extra == 'torch'",
+            "datarobot (>=2.26.0) ; extra == 'trainingmodels'",
+            "uwsgi ; extra == 'uwsgi'",
+            "scipy ; extra == 'xgboost'",
+            "numpy ; extra == 'xgboost'",
+            "xgboost ; extra == 'xgboost'"
+          ],
+          "requires_python": ">=3.4,<3.9"
+        }
       }
     }
   },
@@ -16340,6 +16396,51 @@
       },
       "0.18.1": {
         "invenio_records_resources-0.18.1-py2.py3-none-any.whl": "0.17.3@invenio_records_resources-0.17.3-py2.py3-none-any.whl"
+      },
+      "0.18.2": {
+        "invenio_records_resources-0.18.2-py2.py3-none-any.whl": {
+          "provides_extras": [
+            "all",
+            "docs",
+            "elasticsearch6",
+            "elasticsearch7",
+            "mysql",
+            "postgresql",
+            "sqlite",
+            "tests"
+          ],
+          "requires_dist": [
+            "flask-resources (<0.9.0,>=0.8.1)",
+            "invenio-accounts (>=1.4.8)",
+            "invenio-base (>=1.2.5)",
+            "invenio-files-rest (>=1.3.0)",
+            "invenio-i18n (>=1.3.1)",
+            "invenio-indexer (>=1.2.1)",
+            "invenio-jsonschemas (>=1.1.3)",
+            "invenio-pidstore (>=1.2.2)",
+            "invenio-records-permissions (<0.14.0,>=0.13.0)",
+            "invenio-records (>=1.6.0)",
+            "luqum (>=0.11.0)",
+            "marshmallow-utils (<0.6.0,>=0.5.3)",
+            "uritemplate (>=3.0.1)",
+            "wand (<0.7.0,>=0.6.6)",
+            "xmltodict (~=0.12.0)",
+            "Sphinx (==4.2.0) ; extra == 'all'",
+            "invenio-db[mysql,versioning] (<2.0.0,>=1.0.9) ; extra == 'all'",
+            "invenio-db[postgresql,versioning] (<2.0.0,>=1.0.9) ; extra == 'all'",
+            "invenio-db[versioning] (<2.0.0,>=1.0.9) ; extra == 'all'",
+            "invenio-app (>=1.3.1) ; extra == 'all'",
+            "pytest-invenio (>=1.4.2) ; extra == 'all'",
+            "Sphinx (==4.2.0) ; extra == 'docs'",
+            "invenio-search[elasticsearch6] (<2.0.0,>=1.4.2) ; extra == 'elasticsearch6'",
+            "invenio-search[elasticsearch7] (<2.0.0,>=1.4.2) ; extra == 'elasticsearch7'",
+            "invenio-db[mysql,versioning] (<2.0.0,>=1.0.9) ; extra == 'mysql'",
+            "invenio-db[postgresql,versioning] (<2.0.0,>=1.0.9) ; extra == 'postgresql'",
+            "invenio-db[versioning] (<2.0.0,>=1.0.9) ; extra == 'sqlite'",
+            "invenio-app (>=1.3.1) ; extra == 'tests'",
+            "pytest-invenio (>=1.4.2) ; extra == 'tests'"
+          ]
+        }
       },
       "0.2.0": {
         "invenio_records_resources-0.2.0-py2.py3-none-any.whl": {
@@ -28177,6 +28278,21 @@
             "odoo14-addon-account-invoice-overdue-warn",
             "odoo14-addon-account-invoice-overdue-warn-sale",
             "odoo14-addon-account-payment-return-financial-risk",
+            "odoo14-addon-sale-financial-risk",
+            "odoo14-addon-stock-financial-risk"
+          ]
+        }
+      },
+      "14.0.20211216.0": {
+        "odoo14_addons_oca_credit_control-14.0.20211216.0-py3-none-any.whl": {
+          "requires_dist": [
+            "odoo14-addon-account-credit-control",
+            "odoo14-addon-account-financial-risk",
+            "odoo14-addon-account-invoice-overdue-reminder",
+            "odoo14-addon-account-invoice-overdue-warn",
+            "odoo14-addon-account-invoice-overdue-warn-sale",
+            "odoo14-addon-account-payment-return-financial-risk",
+            "odoo14-addon-partner-risk-insurance",
             "odoo14-addon-sale-financial-risk",
             "odoo14-addon-stock-financial-risk"
           ]
@@ -49440,6 +49556,12 @@
       },
       "2021.12.2": {
         "sphinx_pythia_theme-2021.12.2-py3-none-any.whl": "2021.12.0@sphinx_pythia_theme-2021.12.0-py3-none-any.whl"
+      },
+      "2021.12.4": {
+        "sphinx_pythia_theme-2021.12.4-py3-none-any.whl": "2021.12.0@sphinx_pythia_theme-2021.12.0-py3-none-any.whl"
+      },
+      "2021.12.5": {
+        "sphinx_pythia_theme-2021.12.5-py3-none-any.whl": "2021.12.0@sphinx_pythia_theme-2021.12.0-py3-none-any.whl"
       }
     }
   },
@@ -51356,6 +51478,9 @@
       },
       "3.0.548": {
         "tencentcloud_sdk_python_autoscaling-3.0.548-py2.py3-none-any.whl": "3.0.251@tencentcloud_sdk_python_autoscaling-3.0.251-py2.py3-none-any.whl"
+      },
+      "3.0.549": {
+        "tencentcloud_sdk_python_autoscaling-3.0.549-py2.py3-none-any.whl": "3.0.251@tencentcloud_sdk_python_autoscaling-3.0.251-py2.py3-none-any.whl"
       }
     }
   },
@@ -51462,6 +51587,18 @@
             "publication (>=0.0.3)"
           ],
           "requires_python": ">=3.6"
+        }
+      }
+    }
+  },
+  "test-my2": {
+    "py3": {
+      "1.0.0": {
+        "test_my2-1.0.0-py3-none-any.whl": {
+          "requires_dist": [
+            "pillow"
+          ],
+          "requires_python": ">=3"
         }
       }
     }
@@ -51814,6 +51951,9 @@
       },
       "0.5.0": {
         "torch_model_archiver-0.5.0-py2.py3-none-any.whl": "0.1.1@torch_model_archiver-0.1.1-py2.py3-none-any.whl"
+      },
+      "0.5.1": {
+        "torch_model_archiver-0.5.1-1-py2.py3-none-any.whl": "0.1.1@torch_model_archiver-0.1.1-py2.py3-none-any.whl"
       }
     },
     "py3": {
@@ -53147,15 +53287,6 @@
             "crcmod (==1.7)",
             "pyserial (==3.4)"
           ]
-        }
-      }
-    }
-  },
-  "waifuai": {
-    "py3": {
-      "0.0.2": {
-        "waifuai-0.0.2-py3-none-any.whl": {
-          "requires_python": ">=3.6"
         }
       }
     }
