@@ -35190,7 +35190,8 @@
     },
     "0.3.1rc1": "0.3.0",
     "0.3.1rc2": "0.3.0",
-    "0.4.0rc1": "0.3.0"
+    "0.4.0rc1": "0.3.0",
+    "0.4.0": "0.3.0"
   },
   "modelldcatnotordf": {
     "0.0.1": {
@@ -41902,6 +41903,22 @@
       "27": {
         "install_requires": [
           "numpy<2.0.0,>=1.0.0",
+          "pytest<7.0.0,>=6.2.5",
+          "softposit<0.4.0.0,>=0.3.4.4"
+        ],
+        "python_requires": [
+          ">=3.6,<4.0"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "0.1.3": {
+      "27": {
+        "install_requires": [
           "pytest<7.0.0,>=6.2.5",
           "softposit<0.4.0.0,>=0.3.4.4"
         ],
@@ -51712,7 +51729,55 @@
       "310": "36"
     },
     "1.697": "1.696",
-    "1.698": "1.696"
+    "1.698": "1.696",
+    "1.699": {
+      "36": {
+        "install_requires": [
+          "future",
+          "six",
+          "python-dateutil",
+          "pytz",
+          "jsonschema>=2.6.0",
+          "jsondiff>=1.2.0",
+          "strict-rfc3339",
+          "mysqlclient>=1.3.12",
+          "pymongo==3.12.0",
+          "mmcif>=0.75",
+          "rcsb.utils.config>=0.36",
+          "rcsb.utils.io>=1.31",
+          "rcsb.utils.multiproc>=0.18",
+          "rcsb.utils.chemref>=0.79",
+          "rcsb.utils.dictionary>=0.75",
+          "rcsb.utils.repository>=0.28",
+          "crate",
+          "psycopg2-binary"
+        ],
+        "extras_require": {
+          "dev": [
+            "check-manifest"
+          ],
+          "test": [
+            "coverage"
+          ],
+          ":python_version < \"3.0\"": [
+            "scandir",
+            "configparser"
+          ],
+          ":sys_platform == \"linux\"": [
+            "SQLAlchemy"
+          ]
+        },
+        "tests_require": [
+          "tox",
+          "jsonschema",
+          "strict-rfc3339"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "rdiffweb": {
     "0.10.0": {
@@ -61937,7 +62002,35 @@
       "39": "36",
       "310": "36"
     },
-    "0.0.2": "0.0.1"
+    "0.0.2": "0.0.1",
+    "0.0.3": {
+      "36": {
+        "install_requires": [
+          "beautifulsoup4",
+          "tinydb",
+          "pandas",
+          "tqdm",
+          "stanza",
+          "sklearn",
+          "eli5",
+          "matplotlib",
+          "graphviz",
+          "openpyxl",
+          "penman",
+          "networkx",
+          "rank_bm25",
+          "streamlit>=1.3.0",
+          "streamlit-aggrid",
+          "scikit-criteria>=0.5",
+          "tuw-nlp",
+          "amrlib"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "xyz-helloworld-script-git": {
     "1.0": {
@@ -63022,6 +63115,38 @@
             "zope.pagetemplate",
             "zope.testing",
             "zope.testrunner"
+          ]
+        },
+        "python_requires": [
+          ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "3.3.1": {
+      "27": {
+        "install_requires": [
+          "setuptools",
+          "six",
+          "zope.interface",
+          "zope.component",
+          "zope.i18n>=3.5",
+          "zope.traversing",
+          "zope.contentprovider",
+          "Chameleon>=2.4"
+        ],
+        "extras_require": {
+          "test": [
+            "zope.pagetemplate",
+            "zope.testing",
+            "zope.testrunner"
+          ],
+          "docs": [
+            "Sphinx"
           ]
         },
         "python_requires": [
