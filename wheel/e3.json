@@ -24795,6 +24795,27 @@
           "requires_python": ">=3.8,<4.0"
         }
       },
+      "0.6.0": {
+        "momba-0.6.0-py3-none-any.whl": {
+          "provides_extras": [
+            "all",
+            "cli",
+            "docker",
+            "engine",
+            "gym"
+          ],
+          "requires_dist": [
+            "click (>=7.0,<8.0); extra == \"cli\" or extra == \"all\"",
+            "docker (>=5.0.2,<6.0.0); extra == \"docker\" or extra == \"all\"",
+            "gym (>=0.21.0,<0.22.0); extra == \"gym\" or extra == \"all\"",
+            "immutables (>=0.16,<0.17)",
+            "momba_engine (==0.6.0); extra == \"engine\" or extra == \"all\"",
+            "mxu (>=0.0.6,<0.0.7)",
+            "torch (>=1.9.1,<2.0.0); extra == \"gym\" or extra == \"all\""
+          ],
+          "requires_python": ">=3.8,<4.0"
+        }
+      },
       "1.0.0.dev3": {
         "momba-1.0.0.dev3-py3-none-any.whl": {
           "provides_extras": [
@@ -27733,6 +27754,9 @@
       },
       "1.3.6.dev2": {
         "neoload-1.3.6.dev2-py3-none-any.whl": "1.3.1@neoload-1.3.1-py3-none-any.whl"
+      },
+      "1.3.7.dev1": {
+        "neoload-1.3.7.dev1-py3-none-any.whl": "1.3.1@neoload-1.3.1-py3-none-any.whl"
       }
     }
   },
@@ -35305,6 +35329,29 @@
         },
         "polars-0.12.1-cp36-abi3-manylinux_2_12_x86_64.manylinux2010_x86_64.whl": "0.11.0@polars-0.11.0-cp36-abi3-manylinux_2_12_x86_64.manylinux2010_x86_64.whl",
         "polars-0.12.1-cp36-abi3-win_amd64.whl": "0.11.1@polars-0.11.1-cp36-abi3-macosx_10_9_x86_64.macosx_11_0_arm64.macosx_10_9_universal2.whl"
+      },
+      "0.12.2": {
+        "polars-0.12.2-cp36-abi3-macosx_10_7_x86_64.whl": "0.11.1@polars-0.11.1-cp36-abi3-win_amd64.whl",
+        "polars-0.12.2-cp36-abi3-macosx_10_9_x86_64.macosx_11_0_arm64.macosx_10_9_universal2.whl": "0.12.1@polars-0.12.1-cp36-abi3-macosx_10_9_x86_64.macosx_11_0_arm64.macosx_10_9_universal2.whl",
+        "polars-0.12.2-cp36-abi3-manylinux_2_12_x86_64.manylinux2010_x86_64.whl": {
+          "provides_extras": [
+            "pyarrow",
+            "pandas",
+            "fsspec",
+            "connectorx"
+          ],
+          "requires_dist": [
+            "numpy >= 1.16.0",
+            "typing_extensions; python_version < '3.8'",
+            "pyarrow>=4.0.*; extra == 'pyarrow'",
+            "pyarrow>=4.0.*; extra == 'pandas'",
+            "pandas; extra == 'pandas'",
+            "fsspec; extra == 'fsspec'",
+            "connectorx; extra == 'connectorx'"
+          ],
+          "requires_python": ">=3.6"
+        },
+        "polars-0.12.2-cp36-abi3-win_amd64.whl": "0.12.1@polars-0.12.1-cp36-abi3-macosx_10_9_x86_64.macosx_11_0_arm64.macosx_10_9_universal2.whl"
       },
       "0.7.0": {
         "polars-0.7.0-cp36-abi3-macosx_10_7_x86_64.whl": "0.0.1@polars-0.0.1-cp36-abi3-manylinux2010_x86_64.whl",
@@ -50353,8 +50400,50 @@
       "1.0.7rc18": {
         "smart_app_framework-1.0.7rc18-py3-none-any.whl": "1.0.7rc10@smart_app_framework-1.0.7rc10-py3-none-any.whl"
       },
+      "1.0.7rc19": {
+        "smart_app_framework-1.0.7rc19-py3-none-any.whl": {
+          "requires_dist": [
+            "aiohttp (==3.7.4)",
+            "aioredis (==2.0.0)",
+            "boto (==2.49.0)",
+            "confluent-kafka (==1.7.0)",
+            "croniter",
+            "dawg (==0.8.0)",
+            "dill (==0.3.3)",
+            "ics (==0.6)",
+            "Jinja2 (==2.10.1)",
+            "keras (==2.6.0)",
+            "lazy",
+            "nltk (==3.5)",
+            "numpy",
+            "objgraph (==3.4.1)",
+            "prometheus-client (==0.7.1)",
+            "psutil (==5.8.0)",
+            "pyignite (==0.5.2)",
+            "pymorphy2 (==0.8)",
+            "pymorphy2-dicts (==2.4.393442.3710985)",
+            "python-dateutil (==2.7.3)",
+            "python-json-logger (==0.1.11)",
+            "PyYAML (==5.3)",
+            "redis",
+            "requests (==2.22.0)",
+            "rusenttokenize (==0.0.5)",
+            "scikit-learn (==0.24.1)",
+            "setuptools",
+            "tabulate",
+            "tatsu (==4.4.0)",
+            "tensorflow (==2.6.0)",
+            "timeout-decorator (==0.4.1)",
+            "tqdm",
+            "Twisted"
+          ]
+        }
+      },
       "1.0.7rc2": {
         "smart_app_framework-1.0.7rc2-py3-none-any.whl": "1.0.7rc1@smart_app_framework-1.0.7rc1-py3-none-any.whl"
+      },
+      "1.0.7rc20": {
+        "smart_app_framework-1.0.7rc20-py3-none-any.whl": "1.0.7rc19@smart_app_framework-1.0.7rc19-py3-none-any.whl"
       },
       "1.0.7rc3": {
         "smart_app_framework-1.0.7rc3-py3-none-any.whl": "1.0.7rc1@smart_app_framework-1.0.7rc1-py3-none-any.whl"
