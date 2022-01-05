@@ -3028,6 +3028,28 @@
       "38": "36",
       "39": "36",
       "310": "36"
+    },
+    "1.138.0": {
+      "36": {
+        "install_requires": [
+          "aws-cdk.aws-iam==1.138.0",
+          "aws-cdk.aws-kinesisfirehose==1.138.0",
+          "aws-cdk.aws-kms==1.138.0",
+          "aws-cdk.aws-logs==1.138.0",
+          "aws-cdk.aws-s3==1.138.0",
+          "aws-cdk.core==1.138.0",
+          "constructs<4.0.0,>=3.3.69",
+          "jsii<2.0.0,>=1.50.0",
+          "publication>=0.0.3"
+        ],
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
     }
   },
   "aws-client": {
@@ -7550,7 +7572,10 @@
     "2.4.25": "2.4.18",
     "2.4.26": "2.4.18",
     "2.4.27": "2.4.18",
-    "2.4.28": "2.4.18"
+    "2.4.28": "2.4.18",
+    "1.4.20": "1.4.18",
+    "1.4.21": "1.4.18",
+    "2.4.29": "2.4.18"
   },
   "ceilometer-janitor": {
     "0.1": {
@@ -24799,7 +24824,9 @@
       "39": "27",
       "310": "27"
     },
-    "0.10.0": "0.9.1"
+    "0.10.0": "0.9.1",
+    "0.11.0": "0.9.1",
+    "0.11.1": "0.9.1"
   },
   "inigo.templer": {
     "1.0": {
@@ -30412,7 +30439,76 @@
       "39": "27",
       "310": "27"
     },
-    "0.8.15": "0.8.14"
+    "0.8.15": "0.8.14",
+    "0.8.16": {
+      "27": {
+        "install_requires": [
+          "aws-assume-role-lib<2.0.0,>=1.3.0",
+          "boto3<1.18.0,>=1.17.53",
+          "botocore<1.21.0,>=1.20.53",
+          "canonicaljson<2.0.0,>=1.4.0",
+          "fastjsonschema<2.16.0,>=2.15.1",
+          "metaphor-models<0.7.0,>=0.6.7",
+          "pyserde[yaml]<0.5.0,>=0.4.0",
+          "python-dateutil<2.9.0,>=2.8.1",
+          "requests<3.0.0,>=2.25.1",
+          "smart-open<6.0.0,>=5.0.0"
+        ],
+        "extras_require": {
+          "all": [
+            "asyncpg<0.23.0,>=0.22.0",
+            "google-api-python-client<2.30.0,>=2.29.0",
+            "google-auth-oauthlib<0.5.0,>=0.4.4",
+            "google-cloud-bigquery<3.0.0,>=2.21.0",
+            "lkml<2.0.0,>=1.1.0",
+            "looker-sdk<22.0.0,>=21.4.1",
+            "slack-sdk<4.0.0,>=3.5.1",
+            "snowflake-connector-python<2.8.0,>=2.7.0",
+            "sql-metadata==2.2.2",
+            "tableauserverclient<0.18.0,>=0.17.0"
+          ],
+          "postgresql": [
+            "asyncpg<0.23.0,>=0.22.0"
+          ],
+          "looker": [
+            "lkml<2.0.0,>=1.1.0",
+            "looker-sdk<22.0.0,>=21.4.1",
+            "sql-metadata==2.2.2"
+          ],
+          "redshift": [
+            "asyncpg<0.23.0,>=0.22.0"
+          ],
+          "dbt": [
+            "pydantic<2.0.0,>=1.8.2"
+          ],
+          "tableau": [
+            "tableauserverclient<0.18.0,>=0.17.0"
+          ],
+          "bigquery": [
+            "google-cloud-bigquery<3.0.0,>=2.21.0"
+          ],
+          "slack_directory": [
+            "slack-sdk<4.0.0,>=3.5.1"
+          ],
+          "google_directory": [
+            "google-api-python-client<2.30.0,>=2.29.0",
+            "google-auth-oauthlib<0.5.0,>=0.4.4"
+          ],
+          "snowflake": [
+            "snowflake-connector-python<2.8.0,>=2.7.0",
+            "sql-metadata==2.2.2"
+          ]
+        },
+        "python_requires": [
+          ">=3.7,<3.11"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "meteopy": {
     "1.0": {
@@ -34633,6 +34729,29 @@
     "0.5": "0.2",
     "0.6": "0.2",
     "0.6.1": "0.2"
+  },
+  "octodns-constellix": {
+    "0.0.1": {
+      "27": {
+        "install_requires": [
+          "octodns>=0.9.14",
+          "requests>=2.27.0"
+        ],
+        "tests_require": [
+          "nose",
+          "nose-no-network",
+          "rquests_mock"
+        ],
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "odoo12-addon-thingsintouch-ras2": {
     "12.0.1.0.5": {
@@ -47738,6 +47857,50 @@
             "yapf",
             "flake8",
             "apache-airflow[docker]>=2",
+            "argo-workflows-dsl",
+            "moto==1.3.14",
+            "wheel",
+            "scikit-learn",
+            "sphinx",
+            "sphinx-autobuild",
+            "sphinx-inline-tabs",
+            "furo",
+            "twine",
+            "ipython",
+            "boto3"
+          ]
+        }
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "0.6": {
+      "27": {
+        "install_requires": [
+          "click",
+          "tqdm",
+          "pydantic",
+          "Jinja2",
+          "pyyaml",
+          "ploomber>=0.12.1",
+          "build"
+        ],
+        "extras_require": {
+          "aws": [
+            "boto3"
+          ],
+          "dev": [
+            "pkgmt",
+            "invoke",
+            "pytest",
+            "Faker",
+            "yapf",
+            "flake8",
+            "apache-airflow",
+            "apache-airflow-providers-cncf-kubernetes",
             "argo-workflows-dsl",
             "moto==1.3.14",
             "wheel",
