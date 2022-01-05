@@ -2256,7 +2256,8 @@
     "1.4.0": "1.1.0",
     "1.5.0": "1.1.0",
     "1.6.0": "1.1.0",
-    "1.7.0": "1.1.0"
+    "1.7.0": "1.1.0",
+    "1.7.1": "1.1.0"
   },
   "archey4": {
     "4.10.0": {
@@ -107886,16 +107887,15 @@
     "0.0.4": "0.0.1"
   },
   "databaseci": {
-    "0.1": {
+    "3.0": {
       "27": {
         "install_requires": [
+          "click",
           "migra",
-          "psycopg2-binary",
-          "results",
-          "six"
+          "requests"
         ],
         "python_requires": [
-          ">=3.7"
+          ">=3.8,<4"
         ]
       },
       "36": "27",
@@ -107903,26 +107903,7 @@
       "38": "27",
       "39": "27",
       "310": "27"
-    },
-    "0.2.0": {
-      "27": {
-        "install_requires": [
-          "psycopg2-binary",
-          "requests",
-          "results"
-        ],
-        "python_requires": [
-          ">=3.7"
-        ]
-      },
-      "36": "27",
-      "37": "27",
-      "38": "27",
-      "39": "27",
-      "310": "27"
-    },
-    "0.2.1": "0.2.0",
-    "0.2.3": "0.2.0"
+    }
   },
   "databricks-test-helper": {
     "1.0.0": {
@@ -131586,7 +131567,8 @@
     "0.1.3": "0.1.0",
     "0.1.4": "0.1.0",
     "0.1.5": "0.1.0",
-    "0.1.5.1": "0.1.0"
+    "0.1.5.1": "0.1.0",
+    "0.1.5.2": "0.1.0"
   },
   "multicode": {
     "0.1.0": {
@@ -148251,6 +148233,28 @@
         "install_requires": [
           "plone.app.dexterity",
           "senaite.core>=2.0.0rc1",
+          "setuptools"
+        ],
+        "extras_require": {
+          "test": [
+            "Products.PloneTestCase",
+            "plone.app.testing",
+            "robotsuite",
+            "unittest2"
+          ]
+        }
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "1.1.0": {
+      "27": {
+        "install_requires": [
+          "plone.app.dexterity",
+          "senaite.lims>=2.0.0",
           "setuptools"
         ],
         "extras_require": {
