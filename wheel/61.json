@@ -43771,6 +43771,30 @@
       },
       "0.7.3": {
         "scanpydoc-0.7.3-py3-none-any.whl": "0.7.1@scanpydoc-0.7.1-py3-none-any.whl"
+      },
+      "0.7.4": {
+        "scanpydoc-0.7.4-py3-none-any.whl": {
+          "provides_extras": [
+            "dev",
+            "doc",
+            "test",
+            "theme",
+            "typehints"
+          ],
+          "requires_dist": [
+            "sphinx>=3.0",
+            "get_version",
+            "pre-commit ; extra == \"dev\"",
+            "scanpydoc[typehints] ; extra == \"doc\"",
+            "sphinx-rtd-theme ; extra == \"doc\"",
+            "pytest ; extra == \"test\"",
+            "pytest-cov ; extra == \"test\"",
+            "typing_extensions>=3.10 ; extra == \"test\" and ( python_version<\"3.8\")",
+            "sphinx-rtd-theme ; extra == \"theme\"",
+            "sphinx-autodoc-typehints>=1.14 ; extra == \"typehints\""
+          ],
+          "requires_python": ">=3.7"
+        }
       }
     }
   },
