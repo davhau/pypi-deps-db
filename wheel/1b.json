@@ -1968,6 +1968,14 @@
       "21.9.0.4385": {
         "appdynamics-21.9.0.4385-py2.py3-none-any.whl": "21.8.0.4284@appdynamics-21.8.0.4284-py2.py3-none-any.whl"
       },
+      "22.1.0.4756": {
+        "appdynamics-22.1.0.4756-py2.py3-none-any.whl": {
+          "requires_dist": [
+            "appdynamics-bindeps-linux-x64 (==22.1.0); (sys_platform == \"linux\" or sys_platform == \"linux2\" or sys_platform == \"linux3\" or sys_platform == \"linux4\") and (platform_machine == \"x86_64\" or platform_machine == \"AMD64\")",
+            "appdynamics-proxysupport-linux-x64 (==11.43.1); (sys_platform == \"linux\" or sys_platform == \"linux2\" or sys_platform == \"linux3\" or sys_platform == \"linux4\") and (platform_machine == \"x86_64\" or platform_machine == \"AMD64\")"
+          ]
+        }
+      },
       "4.2.10.0": {
         "appdynamics-4.2.10.0-py2.py3-none-any.whl": {
           "requires_dist": [
@@ -4519,6 +4527,17 @@
         "aws_cdk.aws_budgets-1.138.0-py3-none-any.whl": {
           "requires_dist": [
             "aws-cdk.core (==1.138.0)",
+            "constructs (<4.0.0,>=3.3.69)",
+            "jsii (<2.0.0,>=1.50.0)",
+            "publication (>=0.0.3)"
+          ],
+          "requires_python": ">=3.6"
+        }
+      },
+      "1.138.1": {
+        "aws_cdk.aws_budgets-1.138.1-py3-none-any.whl": {
+          "requires_dist": [
+            "aws-cdk.core (==1.138.1)",
             "constructs (<4.0.0,>=3.3.69)",
             "jsii (<2.0.0,>=1.50.0)",
             "publication (>=0.0.3)"
@@ -9873,6 +9892,9 @@
       },
       "5.1.0": {
         "decorator-5.1.0-py3-none-any.whl": "5.0.3@decorator-5.0.3-py3-none-any.whl"
+      },
+      "5.1.1": {
+        "decorator-5.1.1-py3-none-any.whl": "5.0.3@decorator-5.0.3-py3-none-any.whl"
       }
     }
   },
@@ -9903,6 +9925,12 @@
             "tqdm"
           ]
         }
+      },
+      "3.9.2": {
+        "demeuk-3.9.2-py3-none-any.whl": "3.9.1@demeuk-3.9.1-py3-none-any.whl"
+      },
+      "3.9.4": {
+        "demeuk-3.9.4-py3-none-any.whl": "3.9.1@demeuk-3.9.1-py3-none-any.whl"
       }
     }
   },
@@ -12264,6 +12292,9 @@
       },
       "0.3.0.dev20220105": {
         "dm_launchpad_nightly-0.3.0.dev20220105-cp37-cp37m-manylinux2010_x86_64.whl": "0.3.0.dev20211103@dm_launchpad_nightly-0.3.0.dev20211103-cp37-cp37m-manylinux2010_x86_64.whl"
+      },
+      "0.3.0.dev20220107": {
+        "dm_launchpad_nightly-0.3.0.dev20220107-cp37-cp37m-manylinux2010_x86_64.whl": "0.3.0.dev20211103@dm_launchpad_nightly-0.3.0.dev20211103-cp37-cp37m-manylinux2010_x86_64.whl"
       }
     },
     "cp38": {
@@ -12916,6 +12947,9 @@
       },
       "0.3.0.dev20220105": {
         "dm_launchpad_nightly-0.3.0.dev20220105-cp38-cp38-manylinux2010_x86_64.whl": "0.3.0.dev20211103@dm_launchpad_nightly-0.3.0.dev20211103-cp38-cp38-manylinux2010_x86_64.whl"
+      },
+      "0.3.0.dev20220107": {
+        "dm_launchpad_nightly-0.3.0.dev20220107-cp38-cp38-manylinux2010_x86_64.whl": "0.3.0.dev20211103@dm_launchpad_nightly-0.3.0.dev20211103-cp38-cp38-manylinux2010_x86_64.whl"
       }
     },
     "cp39": {
@@ -13427,6 +13461,9 @@
       },
       "0.3.0.dev20220105": {
         "dm_launchpad_nightly-0.3.0.dev20220105-cp39-cp39-manylinux2010_x86_64.whl": "0.3.0.dev20211103@dm_launchpad_nightly-0.3.0.dev20211103-cp39-cp39-manylinux2010_x86_64.whl"
+      },
+      "0.3.0.dev20220107": {
+        "dm_launchpad_nightly-0.3.0.dev20220107-cp39-cp39-manylinux2010_x86_64.whl": "0.3.0.dev20211103@dm_launchpad_nightly-0.3.0.dev20211103-cp39-cp39-manylinux2010_x86_64.whl"
       }
     }
   },
@@ -16979,6 +17016,32 @@
           ],
           "requires_python": ">=3.6"
         }
+      },
+      "0.1.0": {
+        "flask_container_scaffold-0.1.0-py3-none-any.whl": {
+          "provides_extras": [
+            "devbase",
+            "dist",
+            "docs",
+            "test"
+          ],
+          "requires_dist": [
+            "flask",
+            "toolchest",
+            "tox ; extra == 'devbase'",
+            "build ; extra == 'dist'",
+            "setuptools-scm ; extra == 'dist'",
+            "twine ; extra == 'dist'",
+            "sphinx (==4.3.1) ; extra == 'docs'",
+            "sphinx-autobuild (==2021.3.14) ; extra == 'docs'",
+            "sphinx-rtd-theme (==0.5.2) ; extra == 'docs'",
+            "myst-parser (==0.15.2) ; extra == 'docs'",
+            "flake8 ; extra == 'test'",
+            "pytest ; extra == 'test'",
+            "pytest-cov ; extra == 'test'"
+          ],
+          "requires_python": ">=3.6"
+        }
       }
     }
   },
@@ -18892,6 +18955,18 @@
       },
       "1.16.0.post0.dev47": {
         "flowmachine-1.16.0.post0.dev47-py3-none-any.whl": "1.15.0.post0.dev109@flowmachine-1.15.0.post0.dev109-py3-none-any.whl"
+      },
+      "1.16.0.post0.dev49": {
+        "flowmachine-1.16.0.post0.dev49-py3-none-any.whl": "1.15.0.post0.dev109@flowmachine-1.15.0.post0.dev109-py3-none-any.whl"
+      },
+      "1.16.0.post0.dev52": {
+        "flowmachine-1.16.0.post0.dev52-py3-none-any.whl": "1.15.0.post0.dev109@flowmachine-1.15.0.post0.dev109-py3-none-any.whl"
+      },
+      "1.16.0.post0.dev55": {
+        "flowmachine-1.16.0.post0.dev55-py3-none-any.whl": "1.15.0.post0.dev109@flowmachine-1.15.0.post0.dev109-py3-none-any.whl"
+      },
+      "1.16.0.post0.dev58": {
+        "flowmachine-1.16.0.post0.dev58-py3-none-any.whl": "1.15.0.post0.dev109@flowmachine-1.15.0.post0.dev109-py3-none-any.whl"
       },
       "1.16.0.post0.dev8": {
         "flowmachine-1.16.0.post0.dev8-py3-none-any.whl": "1.15.0.post0.dev109@flowmachine-1.15.0.post0.dev109-py3-none-any.whl"
@@ -32651,6 +32726,9 @@
           ],
           "requires_python": ">=3.7"
         }
+      },
+      "0.1.0rc2": {
+        "momotor_engine_options-0.1.0rc2-py3-none-any.whl": "0.1.0rc1@momotor_engine_options-0.1.0rc1-py3-none-any.whl"
       }
     }
   },
@@ -42109,6 +42187,23 @@
             "deprecation"
           ],
           "requires_python": ">=3.6,<3.9"
+        }
+      },
+      "1.5.2": {
+        "pyalink_flink_1.9-1.5.2-py3-none-any.whl": {
+          "requires_dist": [
+            "apache-flink (<1.10,>=1.9.0)",
+            "pandas (<1.2.0,>=1.0)",
+            "numpy (<1.20)",
+            "jupyter",
+            "py4j (==0.10.8.1)",
+            "cloudpickle (==1.2.2)",
+            "Rx",
+            "tqdm",
+            "requests",
+            "deprecation"
+          ],
+          "requires_python": ">=3.6"
         }
       }
     }
@@ -65434,6 +65529,9 @@
       },
       "57.4.5": {
         "types_setuptools-57.4.5-py3-none-any.whl": "57.0.0@types_setuptools-57.0.0-py3-none-any.whl"
+      },
+      "57.4.6": {
+        "types_setuptools-57.4.6-py3-none-any.whl": "57.0.0@types_setuptools-57.0.0-py3-none-any.whl"
       }
     }
   },
