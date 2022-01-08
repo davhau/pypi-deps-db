@@ -8153,6 +8153,49 @@
       "38": "27",
       "39": "27",
       "310": "27"
+    },
+    "1.0.1": {
+      "27": {
+        "install_requires": [
+          "Pillow<10.0.0,>=9.0.0",
+          "beautifulsoup4<5.0.0,>=4.10.0",
+          "black<22.0,>=21.12b0",
+          "boto3<2.0.0,>=1.20.30",
+          "google-api-core<3.0.0,>=2.3.2",
+          "google-auth<3.0.0,>=2.3.3",
+          "google-cloud-vision<3.0.0,>=2.6.3",
+          "google-cloud<0.35.0,>=0.34.0",
+          "googleapis-common-protos<2.0.0,>=1.54.0",
+          "grpcio<2.0.0,>=1.43.0",
+          "ipykernel<7.0.0,>=6.6.1",
+          "ipython<8.0.0,>=7.31.0",
+          "kymatio<0.3.0,>=0.2.1",
+          "matplotlib<4.0.0,>=3.5.1",
+          "memory-profiler<0.61.0,>=0.60.0",
+          "nltk<4.0.0,>=3.6.7",
+          "notebook<7.0.0,>=6.4.6",
+          "numba<0.55.0,>=0.54.1",
+          "pandas<2.0.0,>=1.3.5",
+          "pytest-cov<4.0.0,>=3.0.0",
+          "pytest-depends<2.0.0,>=1.0.1",
+          "pytest<7.0.0,>=6.2.5",
+          "qloader<9.0.0,>=8.1.4",
+          "requests<3.0.0,>=2.27.1",
+          "scikit-image<0.20.0,>=0.19.1",
+          "scikit-learn<2.0.0,>=1.0.2",
+          "seaborn<0.12.0,>=0.11.2",
+          "textblob<0.18.0,>=0.17.1",
+          "toml<0.11.0,>=0.10.2"
+        ],
+        "python_requires": [
+          ">=3.8,<3.10"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
     }
   },
   "configlib": {
@@ -44113,6 +44156,95 @@
             "junitxml",
             "tenacity",
             "paramiko",
+            "pytest-timeout",
+            "prometheus-client==0.11.0",
+            "txtorcon>=0.17.0"
+          ],
+          "test:python_version > \"3.0\"": [
+            "txi2p-tahoe>=0.3.5"
+          ],
+          "test:python_version < \"3.0\"": [
+            "txi2p"
+          ]
+        },
+        "python_requires": [
+          ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, !=3.5.*"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "1.17.1": {
+      "27": {
+        "install_requires": [
+          "setuptools>=28.8.0",
+          "zfec>=1.1.0",
+          "zope.interface>=3.6.0",
+          "cryptography>=2.6",
+          "Twisted[conch,tls]>=19.10.0",
+          "PyYAML>=3.11",
+          "six>=1.10.0",
+          "magic-wormhole>=0.10.2",
+          "attrs>=18.2.0",
+          "autobahn>=19.5.2",
+          "future>=0.18.2",
+          "netifaces",
+          "pyutil>=3.3.0",
+          "distro>=1.4.0",
+          "collections-extended",
+          "klein",
+          "treq",
+          "cbor2"
+        ],
+        "setup_requires": [
+          "setuptools >= 28.8.0"
+        ],
+        "extras_require": {
+          ":python_version > \"3.0\"": [
+            "foolscap>=21.7.0",
+            "eliot>=1.13.0",
+            "pyrsistent"
+          ],
+          ":python_version < \"3.0\"": [
+            "foolscap==0.13.1",
+            "eliot~=1.7",
+            "pyrsistent<0.17.0",
+            "configparser"
+          ],
+          "tor": [
+            "txtorcon>=0.17.0"
+          ],
+          "i2p:python_version > \"3.0\"": [
+            "txi2p-tahoe>=0.3.5"
+          ],
+          "i2p": [],
+          ":sys_platform==\"win32\"": [
+            "pywin32!=226"
+          ],
+          "i2p:python_version < \"3.0\"": [
+            "txi2p"
+          ],
+          "test": [
+            "flake8",
+            "pyflakes==2.2.0",
+            "coverage~=5.0",
+            "mock",
+            "tox",
+            "pytest",
+            "pytest-twisted",
+            "decorator<5",
+            "hypothesis>=3.6.1",
+            "towncrier",
+            "testtools",
+            "fixtures",
+            "beautifulsoup4",
+            "html5lib",
+            "junitxml",
+            "tenacity",
+            "paramiko<2.9",
             "pytest-timeout",
             "prometheus-client==0.11.0",
             "txtorcon>=0.17.0"
