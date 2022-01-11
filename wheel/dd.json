@@ -13730,6 +13730,18 @@
       }
     }
   },
+  "concurrent-sync": {
+    "py3": {
+      "1.0.0": {
+        "concurrent_sync-1.0.0-py3-none-any.whl": {
+          "requires_dist": [
+            "psutil"
+          ],
+          "requires_python": ">=3.8"
+        }
+      }
+    }
+  },
   "config-dir": {
     "py3": {
       "0.0.1": {
@@ -33490,13 +33502,6 @@
       }
     }
   },
-  "openai-deploy": {
-    "py3": {
-      "0.0.1": {
-        "openai_deploy-0.0.1-py3-none-any.whl": {}
-      }
-    }
-  },
   "openeats-recipe-scraper": {
     "py2": {
       "1.0.1": {
@@ -45204,6 +45209,9 @@
       },
       "0.4": {
         "ShynaTermux-0.4-py3-none-any.whl": "0.2@ShynaTermux-0.2-py3-none-any.whl"
+      },
+      "0.5": {
+        "ShynaTermux-0.5-py3-none-any.whl": "0.2@ShynaTermux-0.2-py3-none-any.whl"
       }
     }
   },
@@ -48224,6 +48232,9 @@
       },
       "3.0.561": {
         "tencentcloud_sdk_python_emr-3.0.561-py2.py3-none-any.whl": "3.0.251@tencentcloud_sdk_python_emr-3.0.251-py2.py3-none-any.whl"
+      },
+      "3.0.562": {
+        "tencentcloud_sdk_python_emr-3.0.562-py2.py3-none-any.whl": "3.0.251@tencentcloud_sdk_python_emr-3.0.251-py2.py3-none-any.whl"
       }
     }
   },
@@ -48676,6 +48687,9 @@
           ],
           "requires_python": ">=3.6"
         }
+      },
+      "0.0.2": {
+        "tidal_parser-0.0.2-py3-none-any.whl": "0.0.1@tidal_parser-0.0.1-py3-none-any.whl"
       }
     }
   },
@@ -48983,6 +48997,28 @@
             "pytest ; extra == 'test'",
             "black (==21.5b2) ; extra == 'test'"
           ]
+        }
+      },
+      "0.6.0": {
+        "toggl_to_sqlite-0.6.0-py3-none-any.whl": {
+          "provides_extras": [
+            "test"
+          ],
+          "requires_dist": [
+            "sqlite-utils (>=2.4.4)",
+            "click",
+            "requests",
+            "requests-mock",
+            "toml",
+            "pytest ; extra == 'test'",
+            "black ; extra == 'test'",
+            "isort ; extra == 'test'",
+            "coverage ; extra == 'test'",
+            "mypy ; extra == 'test'",
+            "cogapp ; extra == 'test'",
+            "pre-commit ; extra == 'test'"
+          ],
+          "requires_python": ">=3.6"
         }
       }
     }
@@ -50071,6 +50107,130 @@
             "wdlparse (==0.1.0) ; extra == 'wdl'"
           ],
           "requires_python": ">=3.6"
+        }
+      },
+      "5.6.0": {
+        "toil-5.6.0-py3-none-any.whl": {
+          "requires_dist": [
+            "dill (<0.4,>=0.3.2)",
+            "requests (<3,>=2)",
+            "docker (<6,>=3.7.2)",
+            "python-dateutil",
+            "psutil (<6,>=3.0.1)",
+            "py-tes (<1,>=0.4.2)",
+            "addict (<2.5,>=2.2.1)",
+            "pytz (>=2012)",
+            "enlighten (<2,>=1.5.2)",
+            "typing-extensions; python_version < \"3.8\"",
+            "boto (<3,>=2.48.0); extra == 'all'",
+            "boto3 (<2,>=1.17); extra == 'all'",
+            "boto3-stubs[s3] (<2,>=1.17); extra == 'all'",
+            "futures (<4,>=3.1.1); extra == 'all'",
+            "cwltool (==3.1.20211107152837); extra == 'all'",
+            "galaxy-tool-util; extra == 'all'",
+            "ruamel.yaml (==0.17.16); extra == 'all'",
+            "ruamel.yaml.clib (>=0.2.6); extra == 'all'",
+            "pynacl (<2,>=1.4.0); extra == 'all'",
+            "apache-libcloud (<3,>=2.2.1); extra == 'all'",
+            "google-cloud-storage (==1.6.0); extra == 'all'",
+            "kubernetes (<22,>=12.0.1); extra == 'all'",
+            "idna (>=2); extra == 'all'",
+            "pymesos (<0.4,>=0.3.15); extra == 'all'",
+            "wdlparse (==0.1.0); extra == 'all'",
+            "connexion[swagger-ui] (<3,>=2.5.1); extra == 'all'",
+            "flask-cors (==3.0.10); extra == 'all'",
+            "gunicorn (==20.1.0); extra == 'all'",
+            "celery (<6,>=5.1.0); extra == 'all'",
+            "boto (<3,>=2.48.0); extra == 'aws'",
+            "boto3 (<2,>=1.17); extra == 'aws'",
+            "boto3-stubs[s3] (<2,>=1.17); extra == 'aws'",
+            "futures (<4,>=3.1.1); extra == 'aws'",
+            "cwltool (==3.1.20211107152837); extra == 'cwl'",
+            "galaxy-tool-util; extra == 'cwl'",
+            "ruamel.yaml (==0.17.16); extra == 'cwl'",
+            "ruamel.yaml.clib (>=0.2.6); extra == 'cwl'",
+            "pynacl (<2,>=1.4.0); extra == 'encryption'",
+            "apache-libcloud (<3,>=2.2.1); extra == 'google'",
+            "google-cloud-storage (==1.6.0); extra == 'google'",
+            "htcondor (<9,>=8.6.0); sys_platform!=\"darwin\" and extra == 'htcondor'",
+            "kubernetes (<22,>=12.0.1); extra == 'kubernetes'",
+            "idna (>=2); extra == 'kubernetes'",
+            "pymesos (<0.4,>=0.3.15); extra == 'mesos'",
+            "connexion[swagger-ui] (<3,>=2.5.1); extra == 'server'",
+            "flask-cors (==3.0.10); extra == 'server'",
+            "gunicorn (==20.1.0); extra == 'server'",
+            "celery (<6,>=5.1.0); extra == 'server'",
+            "wdlparse (==0.1.0); extra == 'wdl'"
+          ],
+          "requires_python": ">=3.7"
+        }
+      },
+      "5.6.0a1": {
+        "toil-5.6.0a1-py3-none-any.whl": {
+          "provides_extras": [
+            "all",
+            "aws",
+            "cwl",
+            "encryption",
+            "google",
+            "htcondor",
+            "kubernetes",
+            "mesos",
+            "server",
+            "wdl"
+          ],
+          "requires_dist": [
+            "dill (<0.4,>=0.3.2)",
+            "requests (<3,>=2)",
+            "docker (<6,>=3.7.2)",
+            "python-dateutil",
+            "psutil (<6,>=3.0.1)",
+            "py-tes (<1,>=0.4.2)",
+            "addict (<2.5,>=2.2.1)",
+            "pytz (>=2012)",
+            "enlighten (<2,>=1.5.2)",
+            "typing-extensions ; python_version < \"3.8\"",
+            "boto (<3,>=2.48.0) ; extra == 'all'",
+            "boto3 (<2,>=1.17) ; extra == 'all'",
+            "boto3-stubs[s3] (<2,>=1.17) ; extra == 'all'",
+            "futures (<4,>=3.1.1) ; extra == 'all'",
+            "cwltool (==3.1.20211107152837) ; extra == 'all'",
+            "galaxy-tool-util ; extra == 'all'",
+            "ruamel.yaml (==0.17.16) ; extra == 'all'",
+            "ruamel.yaml.clib (>=0.2.6) ; extra == 'all'",
+            "pynacl (<2,>=1.4.0) ; extra == 'all'",
+            "apache-libcloud (<3,>=2.2.1) ; extra == 'all'",
+            "google-cloud-storage (==1.6.0) ; extra == 'all'",
+            "kubernetes (<22,>=12.0.1) ; extra == 'all'",
+            "idna (>=2) ; extra == 'all'",
+            "pymesos (<0.4,>=0.3.15) ; extra == 'all'",
+            "wdlparse (==0.1.0) ; extra == 'all'",
+            "connexion[swagger-ui] (<3,>=2.5.1) ; extra == 'all'",
+            "flask-cors (==3.0.10) ; extra == 'all'",
+            "gunicorn (==20.1.0) ; extra == 'all'",
+            "celery (<6,>=5.1.0) ; extra == 'all'",
+            "boto (<3,>=2.48.0) ; extra == 'aws'",
+            "boto3 (<2,>=1.17) ; extra == 'aws'",
+            "boto3-stubs[s3] (<2,>=1.17) ; extra == 'aws'",
+            "futures (<4,>=3.1.1) ; extra == 'aws'",
+            "cwltool (==3.1.20211107152837) ; extra == 'cwl'",
+            "galaxy-tool-util ; extra == 'cwl'",
+            "ruamel.yaml (==0.17.16) ; extra == 'cwl'",
+            "ruamel.yaml.clib (>=0.2.6) ; extra == 'cwl'",
+            "pynacl (<2,>=1.4.0) ; extra == 'encryption'",
+            "apache-libcloud (<3,>=2.2.1) ; extra == 'google'",
+            "google-cloud-storage (==1.6.0) ; extra == 'google'",
+            "htcondor (<9,>=8.6.0) ; (sys_platform!=\"darwin\") and extra == 'htcondor'",
+            "kubernetes (<22,>=12.0.1) ; extra == 'kubernetes'",
+            "idna (>=2) ; extra == 'kubernetes'",
+            "pymesos (<0.4,>=0.3.15) ; extra == 'mesos'",
+            "connexion[swagger-ui] (<3,>=2.5.1) ; extra == 'server'",
+            "flask-cors (==3.0.10) ; extra == 'server'",
+            "gunicorn (==20.1.0) ; extra == 'server'",
+            "celery (<6,>=5.1.0) ; extra == 'server'",
+            "wdlparse (==0.1.0) ; extra == 'wdl'"
+          ],
+          "requires_python": ">=3.7"
         }
       }
     }

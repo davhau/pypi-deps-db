@@ -1502,6 +1502,18 @@
   },
   "arknights": {
     "py3": {
+      "0.1.10": {
+        "arknights-0.1.10-py3-none-any.whl": {
+          "requires_dist": [
+            "httpx (>=0.21.3,<0.22.0)",
+            "pydantic (>=1.9.0,<2.0.0)"
+          ],
+          "requires_python": ">=3.6,<4.0"
+        }
+      },
+      "0.1.11": {
+        "arknights-0.1.11-py3-none-any.whl": "0.1.10@arknights-0.1.10-py3-none-any.whl"
+      },
       "0.1.2": {
         "arknights-0.1.2-py3-none-any.whl": {
           "requires_dist": [
@@ -1530,13 +1542,7 @@
         "arknights-0.1.8-py3-none-any.whl": "0.1.2@arknights-0.1.2-py3-none-any.whl"
       },
       "0.1.9": {
-        "arknights-0.1.9-py3-none-any.whl": {
-          "requires_dist": [
-            "httpx (>=0.21.3,<0.22.0)",
-            "pydantic (>=1.9.0,<2.0.0)"
-          ],
-          "requires_python": ">=3.6,<4.0"
-        }
+        "arknights-0.1.9-py3-none-any.whl": "0.1.10@arknights-0.1.10-py3-none-any.whl"
       }
     }
   },
@@ -3480,6 +3486,25 @@
             "wheel ; extra == 'dev'",
             "autopep8 ; extra == 'dev'",
             "pylint ; extra == 'dev'",
+            "prometheus-client ; extra == 'prometheus'"
+          ]
+        }
+      },
+      "1.11.0": {
+        "aws_quota_checker-1.11.0-py3-none-any.whl": {
+          "provides_extras": [
+            "dev",
+            "prometheus"
+          ],
+          "requires_dist": [
+            "boto3",
+            "click",
+            "tabulate",
+            "cachetools",
+            "pylint ; extra == 'dev'",
+            "autopep8 ; extra == 'dev'",
+            "keepachangelog ; extra == 'dev'",
+            "wheel ; extra == 'dev'",
             "prometheus-client ; extra == 'prometheus'"
           ]
         }
@@ -9582,6 +9607,30 @@
       },
       "1.3.0": {
         "dataclass2PySide6-1.3.0-py3-none-any.whl": "1.2.1@dataclass2PySide6-1.2.1-py3-none-any.whl"
+      },
+      "1.3.1": {
+        "dataclass2PySide6-1.3.1-py3-none-any.whl": {
+          "provides_extras": [
+            "full",
+            "test",
+            "test-ci"
+          ],
+          "requires_dist": [
+            "PySide6 (!=6.2.2,!=6.2.2.1)",
+            "pytest-qt ; extra == 'full'",
+            "flake8 ; extra == 'full'",
+            "pytest-xvfb ; extra == 'full'",
+            "pytest ; extra == 'full'",
+            "flake8 ; extra == 'test'",
+            "pytest ; extra == 'test'",
+            "pytest-qt ; extra == 'test'",
+            "flake8 ; extra == 'test-ci'",
+            "pytest ; extra == 'test-ci'",
+            "pytest-qt ; extra == 'test-ci'",
+            "pytest-xvfb ; extra == 'test-ci'"
+          ],
+          "requires_python": ">=3.9"
+        }
       }
     }
   },
@@ -47676,6 +47725,59 @@
             "sphinx-rtd-theme ; extra == 'doc'"
           ]
         }
+      },
+      "1.21": {
+        "pynets-1.21-py2.py3-none-any.whl": {
+          "provides_extras": [
+            "datalad",
+            "doc"
+          ],
+          "requires_dist": [
+            "matplotlib (<=3.3.0,>=3.0.0)",
+            "dill (>=0.3.2)",
+            "statsmodels (>=0.11.1)",
+            "Sphinx (>=1.4.8)",
+            "sphinx-rtd-theme (>=0.4.3)",
+            "sphinx-argparse (>=0.2.5)",
+            "docutils (>=0.14.0)",
+            "numpydoc (>=1.1.0)",
+            "requests (>=2.21)",
+            "joblib (>=0.17.0)",
+            "pandas (>=0.24.2)",
+            "psutil (>=5.6.1)",
+            "scipy (>=1.4.1)",
+            "setuptools (>=47.3.0)",
+            "nibabel (>=3.1.1)",
+            "indexed-gzip (>=1.4.0)",
+            "seaborn (>=0.10.0)",
+            "networkx (==2.4)",
+            "nipype (>=1.5.1)",
+            "scikit-learn (>=0.23.0)",
+            "dipy (>=1.1.0)",
+            "boto3 (>=1.9.111)",
+            "pybids (>=0.6.4)",
+            "colorama (>=0.3.9)",
+            "python-louvain (>=0.13)",
+            "graspologic (>=0.2.0)",
+            "sqlalchemy (~=1.3.1)",
+            "h5py (>=2.10.0)",
+            "scikit-image (>=0.14.2)",
+            "six (>=1.12.0)",
+            "pyyaml (>=6.0)",
+            "urllib3 (>=1.25.4)",
+            "mplcyberpunk (>=0.1.11)",
+            "numba (>=0.51.2)",
+            "datalad ; extra == 'datalad'",
+            "nbsphinx ; extra == 'doc'",
+            "packaging ; extra == 'doc'",
+            "pydot (>=1.2.3) ; extra == 'doc'",
+            "pydotplus ; extra == 'doc'",
+            "sphinx (>=1.5.3) ; extra == 'doc'",
+            "numpydoc (>=0.8.0) ; extra == 'doc'",
+            "sphinx-argparse ; extra == 'doc'",
+            "sphinx-rtd-theme ; extra == 'doc'"
+          ]
+        }
       }
     }
   },
@@ -49237,6 +49339,9 @@
           "requires_python": ">=3.8"
         }
       },
+      "0.0.10": {
+        "PyPlumIO-0.0.10-py3-none-any.whl": "0.0.1@PyPlumIO-0.0.1-py3-none-any.whl"
+      },
       "0.0.2": {
         "PyPlumIO-0.0.2-py3-none-any.whl": "0.0.1@PyPlumIO-0.0.1-py3-none-any.whl"
       },
@@ -49257,6 +49362,9 @@
       },
       "0.0.8": {
         "PyPlumIO-0.0.8-py3-none-any.whl": "0.0.1@PyPlumIO-0.0.1-py3-none-any.whl"
+      },
+      "0.0.9": {
+        "PyPlumIO-0.0.9-py3-none-any.whl": "0.0.1@PyPlumIO-0.0.1-py3-none-any.whl"
       }
     }
   },
@@ -54223,6 +54331,29 @@
         "srctools-2.2.3-cp310-cp310-manylinux_2_12_x86_64.manylinux2010_x86_64.whl": "2.0.0@srctools-2.0.0-cp310-cp310-macosx_10_9_x86_64.whl",
         "srctools-2.2.3-cp310-cp310-win32.whl": "2.0.0@srctools-2.0.0-cp310-cp310-macosx_10_9_x86_64.whl",
         "srctools-2.2.3-cp310-cp310-win_amd64.whl": "2.0.0@srctools-2.0.0-cp310-cp310-macosx_10_9_x86_64.whl"
+      },
+      "2.2.4": {
+        "srctools-2.2.4-cp310-cp310-macosx_10_9_x86_64.whl": {
+          "provides_extras": [
+            "test",
+            "wx"
+          ],
+          "requires_dist": [
+            "attrs",
+            "versioningit",
+            "cython (>=0.29.25)",
+            "importlib-resources ; python_version < \"3.7\"",
+            "contextvars ; python_version < \"3.7\"",
+            "pytest ; extra == 'test'",
+            "pytest-datadir ; extra == 'test'",
+            "pytest-regressions ; extra == 'test'",
+            "wxPython ; extra == 'wx'"
+          ],
+          "requires_python": ">=3.6"
+        },
+        "srctools-2.2.4-cp310-cp310-manylinux_2_12_x86_64.manylinux2010_x86_64.whl": "2.2.4@srctools-2.2.4-cp310-cp310-macosx_10_9_x86_64.whl",
+        "srctools-2.2.4-cp310-cp310-win32.whl": "2.2.4@srctools-2.2.4-cp310-cp310-macosx_10_9_x86_64.whl",
+        "srctools-2.2.4-cp310-cp310-win_amd64.whl": "2.2.4@srctools-2.2.4-cp310-cp310-macosx_10_9_x86_64.whl"
       }
     },
     "cp38": {
@@ -54278,6 +54409,29 @@
         "srctools-2.2.3-cp38-cp38-manylinux_2_12_x86_64.manylinux2010_x86_64.whl": "2.0.0@srctools-2.0.0-cp38-cp38-macosx_10_9_x86_64.whl",
         "srctools-2.2.3-cp38-cp38-win32.whl": "2.0.0@srctools-2.0.0-cp38-cp38-macosx_10_9_x86_64.whl",
         "srctools-2.2.3-cp38-cp38-win_amd64.whl": "2.0.0@srctools-2.0.0-cp38-cp38-macosx_10_9_x86_64.whl"
+      },
+      "2.2.4": {
+        "srctools-2.2.4-cp38-cp38-macosx_10_9_x86_64.whl": {
+          "provides_extras": [
+            "test",
+            "wx"
+          ],
+          "requires_dist": [
+            "attrs",
+            "versioningit",
+            "cython (>=0.29.25)",
+            "importlib-resources ; python_version < \"3.7\"",
+            "contextvars ; python_version < \"3.7\"",
+            "pytest ; extra == 'test'",
+            "pytest-datadir ; extra == 'test'",
+            "pytest-regressions ; extra == 'test'",
+            "wxPython ; extra == 'wx'"
+          ],
+          "requires_python": ">=3.6"
+        },
+        "srctools-2.2.4-cp38-cp38-manylinux_2_12_x86_64.manylinux2010_x86_64.whl": "2.2.4@srctools-2.2.4-cp38-cp38-macosx_10_9_x86_64.whl",
+        "srctools-2.2.4-cp38-cp38-win32.whl": "2.2.4@srctools-2.2.4-cp38-cp38-macosx_10_9_x86_64.whl",
+        "srctools-2.2.4-cp38-cp38-win_amd64.whl": "2.2.4@srctools-2.2.4-cp38-cp38-macosx_10_9_x86_64.whl"
       }
     },
     "cp39": {
@@ -54333,6 +54487,29 @@
         "srctools-2.2.3-cp39-cp39-manylinux_2_12_x86_64.manylinux2010_x86_64.whl": "2.0.0@srctools-2.0.0-cp39-cp39-macosx_10_9_x86_64.whl",
         "srctools-2.2.3-cp39-cp39-win32.whl": "2.0.0@srctools-2.0.0-cp39-cp39-macosx_10_9_x86_64.whl",
         "srctools-2.2.3-cp39-cp39-win_amd64.whl": "2.0.0@srctools-2.0.0-cp39-cp39-macosx_10_9_x86_64.whl"
+      },
+      "2.2.4": {
+        "srctools-2.2.4-cp39-cp39-macosx_10_9_x86_64.whl": {
+          "provides_extras": [
+            "test",
+            "wx"
+          ],
+          "requires_dist": [
+            "attrs",
+            "versioningit",
+            "cython (>=0.29.25)",
+            "importlib-resources ; python_version < \"3.7\"",
+            "contextvars ; python_version < \"3.7\"",
+            "pytest ; extra == 'test'",
+            "pytest-datadir ; extra == 'test'",
+            "pytest-regressions ; extra == 'test'",
+            "wxPython ; extra == 'wx'"
+          ],
+          "requires_python": ">=3.6"
+        },
+        "srctools-2.2.4-cp39-cp39-manylinux_2_12_x86_64.manylinux2010_x86_64.whl": "2.2.4@srctools-2.2.4-cp39-cp39-macosx_10_9_x86_64.whl",
+        "srctools-2.2.4-cp39-cp39-win32.whl": "2.2.4@srctools-2.2.4-cp39-cp39-macosx_10_9_x86_64.whl",
+        "srctools-2.2.4-cp39-cp39-win_amd64.whl": "2.2.4@srctools-2.2.4-cp39-cp39-macosx_10_9_x86_64.whl"
       }
     },
     "pp37": {
@@ -54382,6 +54559,28 @@
         "srctools-2.2.3-pp37-pypy37_pp73-macosx_10_9_x86_64.whl": "2.0.0@srctools-2.0.0-pp37-pypy37_pp73-macosx_10_9_x86_64.whl",
         "srctools-2.2.3-pp37-pypy37_pp73-manylinux_2_12_x86_64.manylinux2010_x86_64.whl": "2.0.0@srctools-2.0.0-pp37-pypy37_pp73-macosx_10_9_x86_64.whl",
         "srctools-2.2.3-pp37-pypy37_pp73-win_amd64.whl": "2.0.0@srctools-2.0.0-pp37-pypy37_pp73-macosx_10_9_x86_64.whl"
+      },
+      "2.2.4": {
+        "srctools-2.2.4-pp37-pypy37_pp73-macosx_10_9_x86_64.whl": {
+          "provides_extras": [
+            "test",
+            "wx"
+          ],
+          "requires_dist": [
+            "attrs",
+            "versioningit",
+            "cython (>=0.29.25)",
+            "importlib-resources ; python_version < \"3.7\"",
+            "contextvars ; python_version < \"3.7\"",
+            "pytest ; extra == 'test'",
+            "pytest-datadir ; extra == 'test'",
+            "pytest-regressions ; extra == 'test'",
+            "wxPython ; extra == 'wx'"
+          ],
+          "requires_python": ">=3.6"
+        },
+        "srctools-2.2.4-pp37-pypy37_pp73-manylinux_2_12_x86_64.manylinux2010_x86_64.whl": "2.2.4@srctools-2.2.4-pp37-pypy37_pp73-macosx_10_9_x86_64.whl",
+        "srctools-2.2.4-pp37-pypy37_pp73-win_amd64.whl": "2.2.4@srctools-2.2.4-pp37-pypy37_pp73-macosx_10_9_x86_64.whl"
       }
     }
   },
@@ -54821,6 +55020,9 @@
       },
       "1.0.8.11": {
         "syncsketch-1.0.8.11-py2-none-any.whl": "1.0.8.1@syncsketch-1.0.8.1-py2-none-any.whl"
+      },
+      "1.0.8.12": {
+        "syncsketch-1.0.8.12-py2-none-any.whl": "1.0.8.1@syncsketch-1.0.8.1-py2-none-any.whl"
       },
       "1.0.8.3": {
         "syncsketch-1.0.8.3-py2-none-any.whl": "1.0.8.1@syncsketch-1.0.8.1-py2-none-any.whl"
