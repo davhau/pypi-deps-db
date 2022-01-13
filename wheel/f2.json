@@ -330,6 +330,15 @@
       "2.1.0": {
         "aa_fleetpings-2.1.0-py3-none-any.whl": "2.0.0@aa_fleetpings-2.0.0-py3-none-any.whl"
       },
+      "2.10.0": {
+        "aa_fleetpings-2.10.0-py3-none-any.whl": {
+          "requires_dist": [
+            "allianceauth (>=2.9.4)",
+            "allianceauth-app-utils (>=1.8.2)"
+          ],
+          "requires_python": "~=3.7"
+        }
+      },
       "2.2.0": {
         "aa_fleetpings-2.2.0-py3-none-any.whl": "2.0.0@aa_fleetpings-2.0.0-py3-none-any.whl"
       },
@@ -405,16 +414,10 @@
         }
       },
       "2.8.0": {
-        "aa_fleetpings-2.8.0-py3-none-any.whl": {
-          "requires_dist": [
-            "allianceauth (>=2.9.4)",
-            "allianceauth-app-utils (>=1.8.2)"
-          ],
-          "requires_python": "~=3.7"
-        }
+        "aa_fleetpings-2.8.0-py3-none-any.whl": "2.10.0@aa_fleetpings-2.10.0-py3-none-any.whl"
       },
       "2.9.0": {
-        "aa_fleetpings-2.9.0-py3-none-any.whl": "2.8.0@aa_fleetpings-2.8.0-py3-none-any.whl"
+        "aa_fleetpings-2.9.0-py3-none-any.whl": "2.10.0@aa_fleetpings-2.10.0-py3-none-any.whl"
       }
     }
   },
@@ -1567,6 +1570,9 @@
       },
       "2.0.1": {
         "annoworkcli-2.0.1-py3-none-any.whl": "2.0.0@annoworkcli-2.0.0-py3-none-any.whl"
+      },
+      "2.0.2": {
+        "annoworkcli-2.0.2-py3-none-any.whl": "2.0.0@annoworkcli-2.0.0-py3-none-any.whl"
       }
     }
   },
@@ -16016,6 +16022,9 @@
           ],
           "requires_python": ">=3.6"
         }
+      },
+      "0.2.4": {
+        "dbhydra-0.2.4-py3-none-any.whl": "0.2.3@dbhydra-0.2.3-py3-none-any.whl"
       }
     }
   },
@@ -21714,6 +21723,23 @@
           ]
         }
       }
+    },
+    "py3": {
+      "0.2.0": {
+        "dopameme-0.2.0-py3-none-any.whl": {
+          "provides_extras": [
+            "dev"
+          ],
+          "requires_dist": [
+            "requests",
+            "log-color",
+            "lxml",
+            "black ; extra == 'dev'",
+            "setuptools-scm ; extra == 'dev'"
+          ],
+          "requires_python": ">=3.6"
+        }
+      }
     }
   },
   "dp-json-util": {
@@ -26602,6 +26628,106 @@
             "graphviz ; extra == 'visualization'"
           ],
           "requires_python": ">=3.7"
+        }
+      },
+      "2.1.0": {
+        "ibis_framework-2.1.0-py3-none-any.whl": {
+          "provides_extras": [
+            "all",
+            "clickhouse",
+            "csv",
+            "dask",
+            "datafusion",
+            "geospatial",
+            "hdf5",
+            "impala",
+            "mysql",
+            "pandas",
+            "parquet",
+            "postgres",
+            "pyspark",
+            "sqlite",
+            "visualization"
+          ],
+          "requires_dist": [
+            "atpublic (>=2.3,<3)",
+            "cached_property (>=1,<2)",
+            "clickhouse-driver (>=0.1,<0.3); extra == \"all\" or extra == \"clickhouse\"",
+            "clickhouse-sqlalchemy (>=0.1.4,<0.2); extra == \"all\" or extra == \"clickhouse\"",
+            "dask[array,dataframe] (>=2021.10.0,<2022.0.0); extra == \"all\" or extra == \"dask\"",
+            "datafusion (>=0.4,<0.5); extra == \"all\" or extra == \"datafusion\"",
+            "geoalchemy2 (>=0.6,<0.11); extra == \"all\" or extra == \"geospatial\"",
+            "geopandas (>=0.6,<0.11); extra == \"all\" or extra == \"geospatial\"",
+            "graphviz (>=0.16,<0.20); extra == \"all\" or extra == \"visualization\"",
+            "hdfs[kerberos] (>=2,<3); extra == \"all\" or extra == \"impala\"",
+            "importlib-metadata (>=4,<5); python_version < \"3.8\"",
+            "impyla[kerberos] (>=0.17,<0.19); extra == \"all\" or extra == \"impala\"",
+            "multipledispatch (>=0.6,<0.7)",
+            "numpy (>=1,<2)",
+            "pandas (>=1.2.5,<2)",
+            "parsy (>=1.3.0,<2)",
+            "psycopg2 (>=2.7,<3); extra == \"all\" or extra == \"postgres\"",
+            "pyarrow (>=1,<7); extra == \"all\" or extra == \"dask\" or extra == \"parquet\" or extra == \"pyspark\"",
+            "pymysql (>=1,<2); extra == \"all\" or extra == \"mysql\"",
+            "pyspark (>=2.4.3,<4); extra == \"all\" or extra == \"pyspark\"",
+            "regex (>=2021.7.6,<2022.0.0)",
+            "requests (>=2,<3); extra == \"all\" or extra == \"impala\"",
+            "shapely (>=1.6,<2); extra == \"all\" or extra == \"geospatial\"",
+            "sqlalchemy (>=1.3,<1.4); extra == \"all\" or extra == \"clickhouse\" or extra == \"impala\" or extra == \"mysql\" or extra == \"postgres\" or extra == \"sqlite\"",
+            "tables (>=3,<4); extra == \"all\" or extra == \"hdf5\"",
+            "toolz (>=0.11,<0.12)"
+          ],
+          "requires_python": ">=3.7.1,<3.11"
+        }
+      },
+      "2.1.1": {
+        "ibis_framework-2.1.1-py3-none-any.whl": {
+          "provides_extras": [
+            "all",
+            "clickhouse",
+            "csv",
+            "dask",
+            "datafusion",
+            "geospatial",
+            "hdf5",
+            "impala",
+            "mysql",
+            "pandas",
+            "parquet",
+            "postgres",
+            "pyspark",
+            "sqlite",
+            "visualization"
+          ],
+          "requires_dist": [
+            "atpublic (>=2.3,<3)",
+            "cached_property (>=1,<2)",
+            "clickhouse-driver (>=0.1,<0.3); extra == \"all\" or extra == \"clickhouse\"",
+            "clickhouse-sqlalchemy (>=0.1.4,<0.2); extra == \"all\" or extra == \"clickhouse\"",
+            "dask[dataframe,array] (>=2021.10.0,<2022.0.0); extra == \"all\" or extra == \"dask\"",
+            "datafusion (>=0.4,<0.5); extra == \"all\" or extra == \"datafusion\"",
+            "geoalchemy2 (>=0.6,<0.11); extra == \"all\" or extra == \"geospatial\"",
+            "geopandas (>=0.6,<0.11); extra == \"all\" or extra == \"geospatial\"",
+            "graphviz (>=0.16,<0.20); extra == \"all\" or extra == \"visualization\"",
+            "hdfs[kerberos] (>=2,<3); extra == \"all\" or extra == \"impala\"",
+            "importlib-metadata (>=4,<5); python_version < \"3.8\"",
+            "impyla[kerberos] (>=0.17,<0.19); extra == \"all\" or extra == \"impala\"",
+            "multipledispatch (>=0.6,<0.7)",
+            "numpy (>=1,<2)",
+            "pandas (>=1.2.5,<2)",
+            "parsy (>=1.3.0,<2)",
+            "psycopg2 (>=2.7,<3); extra == \"all\" or extra == \"postgres\"",
+            "pyarrow (>=1,<7); extra == \"all\" or extra == \"dask\" or extra == \"parquet\" or extra == \"pyspark\"",
+            "pymysql (>=1,<2); extra == \"all\" or extra == \"mysql\"",
+            "pyspark (>=2.4.3,<4); extra == \"all\" or extra == \"pyspark\"",
+            "regex (>=2021.7.6,<2022.0.0)",
+            "requests (>=2,<3); extra == \"all\" or extra == \"impala\"",
+            "shapely (>=1.6,<2); extra == \"all\" or extra == \"geospatial\"",
+            "sqlalchemy (>=1.3,<1.4); extra == \"all\" or extra == \"clickhouse\" or extra == \"impala\" or extra == \"mysql\" or extra == \"postgres\" or extra == \"sqlite\"",
+            "tables (>=3,<4); extra == \"all\" or extra == \"hdf5\"",
+            "toolz (>=0.11,<0.12)"
+          ],
+          "requires_python": ">=3.7.1,<3.11"
         }
       }
     }
@@ -37110,6 +37236,9 @@
       },
       "0.1.0a4.dev1641958025": {
         "pulp_npm_client-0.1.0a4.dev1641958025-py3-none-any.whl": "0.1.0a1@pulp_npm_client-0.1.0a1-py3-none-any.whl"
+      },
+      "0.1.0a4.dev1642044295": {
+        "pulp_npm_client-0.1.0a4.dev1642044295-py3-none-any.whl": "0.1.0a1@pulp_npm_client-0.1.0a1-py3-none-any.whl"
       }
     }
   },
@@ -44157,6 +44286,18 @@
       }
     },
     "py3": {
+      "2.10.0": {
+        "scuba-2.10.0-py3-none-any.whl": {
+          "provides_extras": [
+            "argcomplete"
+          ],
+          "requires_dist": [
+            "PyYAML",
+            "argcomplete (>=1.10.1) ; extra == 'argcomplete'"
+          ],
+          "requires_python": ">=3.5"
+        }
+      },
       "2.5.0": {
         "scuba-2.5.0-py3-none-any.whl": {
           "requires_dist": [
@@ -44172,22 +44313,13 @@
         "scuba-2.6.1-py3-none-any.whl": "2.5.0@scuba-2.5.0-py3-none-any.whl"
       },
       "2.7.0": {
-        "scuba-2.7.0-py3-none-any.whl": {
-          "provides_extras": [
-            "argcomplete"
-          ],
-          "requires_dist": [
-            "PyYAML",
-            "argcomplete (>=1.10.1) ; extra == 'argcomplete'"
-          ],
-          "requires_python": ">=3.5"
-        }
+        "scuba-2.7.0-py3-none-any.whl": "2.10.0@scuba-2.10.0-py3-none-any.whl"
       },
       "2.8.0": {
-        "scuba-2.8.0-py3-none-any.whl": "2.7.0@scuba-2.7.0-py3-none-any.whl"
+        "scuba-2.8.0-py3-none-any.whl": "2.10.0@scuba-2.10.0-py3-none-any.whl"
       },
       "2.9.0": {
-        "scuba-2.9.0-py3-none-any.whl": "2.7.0@scuba-2.7.0-py3-none-any.whl"
+        "scuba-2.9.0-py3-none-any.whl": "2.10.0@scuba-2.10.0-py3-none-any.whl"
       }
     }
   },
@@ -50852,6 +50984,9 @@
       },
       "3.0.563": {
         "tencentcloud_sdk_python_ecm-3.0.563-py2.py3-none-any.whl": "3.0.251@tencentcloud_sdk_python_ecm-3.0.251-py2.py3-none-any.whl"
+      },
+      "3.0.564": {
+        "tencentcloud_sdk_python_ecm-3.0.564-py2.py3-none-any.whl": "3.0.251@tencentcloud_sdk_python_ecm-3.0.251-py2.py3-none-any.whl"
       }
     }
   },
