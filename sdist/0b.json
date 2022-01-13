@@ -10094,7 +10094,8 @@
     },
     "2.0.3": "2.0.2",
     "2.0.4": "2.0.2",
-    "2.0.5": "2.0.2"
+    "2.0.5": "2.0.2",
+    "2.0.6": "2.0.2"
   },
   "celltk": {
     "0.2": {
@@ -12480,7 +12481,90 @@
       "39": "36",
       "310": "36"
     },
-    "0.3.1": "0.3.0"
+    "0.3.1": "0.3.0",
+    "0.3.2": {
+      "36": {
+        "install_requires": [
+          "appdirs>=1.4.3",
+          "decorator",
+          "numpy!=1.15.3,>=1.14.0",
+          "numba>=0.53.1"
+        ],
+        "extras_require": {
+          "cuda": [
+            "cupy>=9.0.0",
+            "jinja2>=2.10"
+          ],
+          "dask": [
+            "dask[array]>=2.2.0"
+          ],
+          "jax": [
+            "jax>=0.2.11",
+            "jaxlib>=0.1.65"
+          ],
+          "scipy": [
+            "scipy>=1.4.0"
+          ],
+          "astropy": [
+            "astropy>=4.0"
+          ],
+          "python-casacore": [
+            "python-casacore>=3.4.0"
+          ],
+          "ducc0": [
+            "ducc0>=0.9.0"
+          ],
+          "testing": [
+            "pytest",
+            "flaky",
+            "pytest-flake8>=1.0.6"
+          ],
+          "complete": [
+            "astropy>=4.0",
+            "dask[array]>=2.2.0",
+            "ducc0>=0.9.0",
+            "flaky",
+            "jax>=0.2.11",
+            "jaxlib>=0.1.65",
+            "pytest",
+            "pytest-flake8>=1.0.6",
+            "python-casacore>=3.4.0",
+            "scipy>=1.4.0"
+          ],
+          "complete-cuda": [
+            "astropy>=4.0",
+            "cupy>=9.0.0",
+            "dask[array]>=2.2.0",
+            "ducc0>=0.9.0",
+            "flaky",
+            "jax>=0.2.11",
+            "jaxlib>=0.1.65",
+            "jinja2>=2.10",
+            "pytest",
+            "pytest-flake8>=1.0.6",
+            "python-casacore>=3.4.0",
+            "scipy>=1.4.0"
+          ]
+        },
+        "tests_require": [
+          "pytest",
+          "flaky",
+          "pytest-flake8 >= 1.0.6",
+          "astropy >= 4.0",
+          "python-casacore >= 3.4.0",
+          "dask[array] >= 2.2.0",
+          "scipy >= 1.4.0",
+          "ducc0 >= 0.9.0"
+        ],
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "colabrun": {
     "0.1": {
@@ -35144,6 +35228,101 @@
       "38": "36",
       "39": "36",
       "310": "36"
+    },
+    "4.1.1": {
+      "36": {
+        "install_requires": [
+          "PyYAML>=3.13"
+        ],
+        "extras_require": {
+          "all": [
+            "docstring-parser>=0.7.3",
+            "jsonschema>=3.2.0",
+            "jsonnet>=0.13.0",
+            "validators>=0.14.2",
+            "requests>=2.18.4",
+            "fsspec>=0.8.4",
+            "argcomplete>=2.0.0",
+            "ruyaml>=0.20.0",
+            "omegaconf>=2.1.1",
+            "reconplogger>=4.4.0"
+          ],
+          "all:python_version == \"3.6\"": [
+            "dataclasses>=0.8"
+          ],
+          "all:python_version < \"3.8\"": [
+            "typing-extensions>=3.10.0.0"
+          ],
+          "signatures": [
+            "docstring-parser>=0.7.3"
+          ],
+          "dataclasses": [],
+          "dataclasses:python_version == \"3.6\"": [
+            "dataclasses>=0.8"
+          ],
+          "jsonschema": [
+            "jsonschema>=3.2.0"
+          ],
+          "jsonnet": [
+            "jsonnet>=0.13.0"
+          ],
+          "urls": [
+            "validators>=0.14.2",
+            "requests>=2.18.4"
+          ],
+          "fsspec": [
+            "fsspec>=0.8.4"
+          ],
+          "argcomplete": [
+            "argcomplete>=2.0.0"
+          ],
+          "ruyaml": [
+            "ruyaml>=0.20.0"
+          ],
+          "omegaconf": [
+            "omegaconf>=2.1.1"
+          ],
+          "typing_extensions": [],
+          "typing_extensions:python_version < \"3.8\"": [
+            "typing-extensions>=3.10.0.0"
+          ],
+          "reconplogger": [
+            "reconplogger>=4.4.0"
+          ],
+          "test": [
+            "coverage>=4.5.1",
+            "responses>=0.12.0"
+          ],
+          "test_no_urls": [
+            "coverage>=4.5.1"
+          ],
+          "dev": [
+            "coverage>=4.5.1",
+            "responses>=0.12.0",
+            "pylint>=1.8.3",
+            "pycodestyle>=2.5.0",
+            "mypy>=0.701",
+            "bump2version>=0.5.11",
+            "twine>=3.1.1"
+          ],
+          "doc": [
+            "Sphinx>=1.7.9",
+            "sphinx-rtd-theme>=0.4.3",
+            "autodocsumm>=0.1.10",
+            "sphinx-autodoc-typehints>=1.11.1"
+          ],
+          ":python_version == \"3.6\"": [
+            "contextvars>=2.4"
+          ]
+        },
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
     }
   },
   "jsonclasses-orm": {
@@ -35787,6 +35966,22 @@
         "install_requires": [
           "numpy>=1.16.0",
           "scipy"
+        ],
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "0.2.4": {
+      "36": {
+        "install_requires": [
+          "numpy>=1.16.0",
+          "scipy",
+          "matplotlib"
         ],
         "python_requires": [
           ">=3.6"
