@@ -292,7 +292,8 @@
     "2.3.4.dev20220110": "2.3.4.dev20220104",
     "2.3.4.dev20220111": "2.3.4.dev20220104",
     "2.3.4.dev20220112": "2.3.4.dev20220104",
-    "2.3.4.dev20220113": "2.3.4.dev20220104"
+    "2.3.4.dev20220113": "2.3.4.dev20220104",
+    "2.3.4.dev20220114": "2.3.4.dev20220104"
   },
   "agalma": {
     "0.4.0": {
@@ -13986,6 +13987,38 @@
       "36": {
         "install_requires": [
           "dagster==0.13.13rc0"
+        ],
+        "extras_require": {
+          "test": [
+            "psutil"
+          ]
+        }
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "0.13.14": {
+      "36": {
+        "install_requires": [
+          "dagster==0.13.14"
+        ],
+        "extras_require": {
+          "test": [
+            "psutil"
+          ]
+        }
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "0.13.14rc0": {
+      "36": {
+        "install_requires": [
+          "dagster==0.13.14rc0"
         ],
         "extras_require": {
           "test": [
@@ -35973,7 +36006,8 @@
     "1.19.11": "1.19.1",
     "1.19.12": "1.19.1",
     "1.20.0": "1.19.1",
-    "1.20.1": "1.19.1"
+    "1.20.1": "1.19.1",
+    "1.20.35.post1": "1.19.1"
   },
   "mypy-boto3-ec2": {
     "0.1.10": "0.1.9",
@@ -36806,7 +36840,8 @@
     "1.20.30": "1.19.1",
     "1.20.32": "1.19.1",
     "1.20.33": "1.19.1",
-    "1.20.34": "1.19.1"
+    "1.20.34": "1.19.1",
+    "1.20.35.post1": "1.19.1"
   },
   "mysql-fdw-ddl": {
     "0.0.0": {
@@ -65469,6 +65504,113 @@
       "38": "37",
       "39": "37",
       "310": "37"
+    },
+    "1.0.0": {
+      "36": {
+        "install_requires": [
+          "numpy>=1.19",
+          "pandas<2,>1.0.3",
+          "scipy<2,>=1.0.0",
+          "tqdm<5,>=4.31.1",
+          "matplotlib<4,>=2.2.2",
+          "scikit-learn<1,>=0.22.1",
+          "numba<1,>=0.38.1",
+          "lightfm<2,>=1.15",
+          "lightgbm>=2.2.1",
+          "memory_profiler<1,>=0.54.0",
+          "nltk<4,>=3.4",
+          "pydocumentdb>=2.3.3<3",
+          "seaborn<1,>=0.8.1",
+          "transformers<5,>=2.5.0",
+          "bottleneck<2,>=1.2.1",
+          "category_encoders<2,>=1.3.0",
+          "jinja2<4,>=2",
+          "pyyaml<6,>=5.4.1",
+          "requests<3,>=2.0.0",
+          "cornac<2,>=1.1.2",
+          "retrying>=1.3.3",
+          "pandera[strategies]>=0.6.5"
+        ],
+        "setup_requires": [
+          "numpy>=1.15"
+        ],
+        "extras_require": {
+          "examples": [
+            "azure.mgmt.cosmosdb<1,>=0.8.0",
+            "hyperopt<1,>=0.1.2",
+            "ipykernel<7,>=4.6.1",
+            "jupyter<2,>=1",
+            "locust<2,>=1",
+            "papermill<3,>=2.1.2",
+            "scrapbook<1.0.0,>=0.5.0"
+          ],
+          "gpu": [
+            "nvidia-ml-py3>=7.352.0",
+            "tf-slim>=1.1.0",
+            "torch>=1.8",
+            "fastai<2,>=1.0.46"
+          ],
+          "gpu:python_version == \"3.6\"": [
+            "tensorflow~=2.6.1"
+          ],
+          "gpu:python_version >= \"3.7\"": [
+            "tensorflow~=2.7.0"
+          ],
+          "spark": [
+            "databricks_cli<1,>=0.8.6",
+            "pyarrow<7.0.0,>=0.12.1",
+            "pyspark<3.2.0,>=2.4.5"
+          ],
+          "dev": [
+            "black<21,>=18.6b4",
+            "pytest>=3.6.4",
+            "pytest-cov>=2.12.1",
+            "pytest-mock>=3.6.1",
+            "pytest-rerunfailures>=10.2"
+          ],
+          "all": [
+            "scrapbook<1.0.0,>=0.5.0",
+            "pytest>=3.6.4",
+            "azure.mgmt.cosmosdb<1,>=0.8.0",
+            "papermill<3,>=2.1.2",
+            "pyarrow<7.0.0,>=0.12.1",
+            "pytest-cov>=2.12.1",
+            "jupyter<2,>=1",
+            "locust<2,>=1",
+            "ipykernel<7,>=4.6.1",
+            "pyspark<3.2.0,>=2.4.5",
+            "fastai<2,>=1.0.46",
+            "pytest-rerunfailures>=10.2",
+            "pytest-mock>=3.6.1",
+            "nvidia-ml-py3>=7.352.0",
+            "black<21,>=18.6b4",
+            "databricks_cli<1,>=0.8.6",
+            "hyperopt<1,>=0.1.2",
+            "tf-slim>=1.1.0",
+            "torch>=1.8"
+          ],
+          "all:python_version >= \"3.7\"": [
+            "tensorflow~=2.7.0"
+          ],
+          "all:python_version == \"3.6\"": [
+            "tensorflow~=2.6.1"
+          ],
+          "experimental": [
+            "xlearn==0.40a1",
+            "vowpalwabbit<9,>=8.9.0"
+          ],
+          "nni": [
+            "nni==1.5"
+          ]
+        },
+        "python_requires": [
+          ">=3.6, <3.9"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
     }
   },
   "recorder-base-test": {
@@ -74307,7 +74449,8 @@
     "3.0.561": "3.0.416",
     "3.0.562": "3.0.416",
     "3.0.563": "3.0.416",
-    "3.0.564": "3.0.416"
+    "3.0.564": "3.0.416",
+    "3.0.565": "3.0.416"
   },
   "tensordiff": {
     "10.1": {
