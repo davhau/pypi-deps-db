@@ -1928,7 +1928,24 @@
     },
     "1.0.3": "1.0.2",
     "2.0.2": "1.0.2",
-    "2.0.3": "1.0.2"
+    "2.0.3": "1.0.2",
+    "2.1.0": {
+      "36": {
+        "install_requires": [
+          "alibabacloud_tea_util<1.0.0,>=0.3.5",
+          "alibabacloud_tea_openapi<1.0.0,>=0.3.1",
+          "alibabacloud_openapi_util<1.0.0,>=0.1.6",
+          "alibabacloud_endpoint_util<1.0.0,>=0.0.3"
+        ],
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "alignak-app": {
     "0.3.0": {
@@ -29500,7 +29517,41 @@
       "39": "37",
       "310": "37"
     },
-    "0.0.8.dev1": "0.0.8.dev0"
+    "0.0.8.dev1": "0.0.8.dev0",
+    "0.0.8": {
+      "37": {
+        "install_requires": [
+          "torch>=1.4",
+          "torchvision",
+          "ray[default,tune]<1.9,>=1.6",
+          "timm",
+          "accelerate>=0.5.0",
+          "smart_open<=5.2.1,>=5.1",
+          "rich",
+          "loguru>=0.5",
+          "torchmetrics>=0.5.0"
+        ],
+        "extras_require": {
+          "dev": [
+            "lightning-flash[image,text]==0.5.1",
+            "codecarbon>=1.2.0",
+            "comet_ml",
+            "wandb"
+          ],
+          "test": [
+            "pytest",
+            "coverage",
+            "pytest-sugar"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "38": "37",
+      "39": "37",
+      "310": "37"
+    }
   },
   "grafana-pandas-datasource": {
     "0.1.0": {

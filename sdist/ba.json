@@ -29531,7 +29531,8 @@
       "38": "27",
       "39": "27",
       "310": "27"
-    }
+    },
+    "0.0.17": "0.0.15"
   },
   "dbnd-airflow": {
     "0.24.11": {
@@ -70507,7 +70508,9 @@
     "1.9.1.dev26": "1.9.0",
     "1.9.1.dev29": "1.9.0",
     "1.9.1.dev31": "1.9.0",
-    "1.9.1.dev46": "1.9.0"
+    "1.9.1.dev46": "1.9.0",
+    "1.9.1.dev48": "1.9.0",
+    "1.9.1.dev49": "1.9.0"
   },
   "launchbox": {
     "0.1.1": {
@@ -102988,6 +102991,37 @@
           ],
           "standard:python_version >= \"3.7\"": [
             "websockets>=10.0"
+          ],
+          "standard:sys_platform != \"win32\" and (sys_platform != \"cygwin\" and platform_python_implementation != \"PyPy\")": [
+            "uvloop!=0.15.0,!=0.15.1,>=0.14.0"
+          ],
+          "standard:sys_platform == \"win32\"": [
+            "colorama>=0.4"
+          ],
+          ":python_version < \"3.8\"": [
+            "typing-extensions"
+          ]
+        }
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "0.17.0": {
+      "36": {
+        "install_requires": [
+          "asgiref>=3.4.0",
+          "click>=7.0",
+          "h11>=0.8"
+        ],
+        "extras_require": {
+          "standard": [
+            "websockets>=10.0",
+            "httptools<0.4.0,>=0.2.0",
+            "watchgod>=0.6",
+            "python-dotenv>=0.13",
+            "PyYAML>=5.1"
           ],
           "standard:sys_platform != \"win32\" and (sys_platform != \"cygwin\" and platform_python_implementation != \"PyPy\")": [
             "uvloop!=0.15.0,!=0.15.1,>=0.14.0"
