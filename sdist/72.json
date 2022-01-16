@@ -97603,7 +97603,89 @@
       "39": "27",
       "310": "27"
     },
-    "1.1.0": "1.0.2"
+    "1.1.0": "1.0.2",
+    "1.2.0": {
+      "27": {
+        "install_requires": [
+          "requests<3.0.0,>=2.27.1",
+          "requests-toolbelt<0.10.0,>=0.9.1"
+        ],
+        "extras_require": {
+          "test": [
+            "coverage[toml]<6.0,>=5.5",
+            "docker<6.0.0,>=5.0.2",
+            "freezegun",
+            "pytest",
+            "pytest-cov",
+            "responses"
+          ],
+          "typecheck": [
+            "mypy",
+            "types-freezegun",
+            "types-requests"
+          ],
+          "lint": [
+            "black",
+            "check-manifest",
+            "flake8",
+            "flake8-annotations-complexity",
+            "flake8-black",
+            "flake8-breakpoint",
+            "flake8-bugbear",
+            "flake8-builtins",
+            "flake8-comprehensions",
+            "flake8-eradicate",
+            "flake8-expression-complexity",
+            "flake8-isort",
+            "flake8-pytest-style",
+            "flake8-requirements",
+            "isort",
+            "pep8-naming"
+          ],
+          "build": [
+            "build",
+            "twine"
+          ],
+          "dev": [
+            "wheel",
+            "invoke",
+            "black",
+            "check-manifest",
+            "flake8",
+            "flake8-annotations-complexity",
+            "flake8-black",
+            "flake8-breakpoint",
+            "flake8-bugbear",
+            "flake8-builtins",
+            "flake8-comprehensions",
+            "flake8-eradicate",
+            "flake8-expression-complexity",
+            "flake8-isort",
+            "flake8-pytest-style",
+            "flake8-requirements",
+            "isort",
+            "pep8-naming",
+            "mypy",
+            "types-freezegun",
+            "types-requests",
+            "coverage[toml]<6.0,>=5.5",
+            "docker<6.0.0,>=5.0.2",
+            "freezegun",
+            "pytest",
+            "pytest-cov",
+            "responses"
+          ]
+        },
+        "python_requires": [
+          ">=3.8"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "drf-imgproxy": {
     "1.0.0": {
@@ -114868,7 +114950,15 @@
       "38": "27",
       "39": "27",
       "310": "27"
-    }
+    },
+    "0.3": {
+      "36": {},
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "1.1": "0.3"
   },
   "mlops-tensorflow": {
     "0.1.0": {
@@ -116317,6 +116407,46 @@
     "1.0.1": "1.0.0",
     "1.0.2": "1.0.0",
     "1.0.3": "1.0.0"
+  },
+  "nsgptorch": {
+    "0.1.0": {
+      "27": {
+        "install_requires": [
+          "numpy",
+          "torch",
+          "setuptools_scm[toml]",
+          "setuptools_scm_git_archive"
+        ],
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "0.1.2": {
+      "27": {
+        "install_requires": [
+          "numpy",
+          "torch",
+          "gpytorch",
+          "regdata",
+          "setuptools_scm[toml]",
+          "setuptools_scm_git_archive"
+        ],
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "number-recognizer": {
     "0.1.0": {
@@ -122501,6 +122631,52 @@
           ],
           "dem": [
             "richdem>=0.3.4"
+          ],
+          ":python_version < \"3.8\"": [
+            "importlib-metadata"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "0.12.2": {
+      "27": {
+        "install_requires": [
+          "async-retriever>=0.3.1",
+          "click",
+          "cytoolz",
+          "numpy>=1.17",
+          "pydantic",
+          "pygeoogc>=0.12.1",
+          "pygeoutils>=0.12.1",
+          "rasterio>=1.2",
+          "rioxarray>=0.8",
+          "scipy",
+          "shapely>=1.6",
+          "xarray>=0.18"
+        ],
+        "extras_require": {
+          "test": [
+            "coverage[toml]",
+            "pytest-cov",
+            "pytest-xdist[psutil]"
+          ],
+          "dem": [
+            "richdem>=0.3.4"
+          ],
+          "typeguard": [
+            "coverage[toml]",
+            "pygments",
+            "pytest-cov",
+            "pytest-xdist[psutil]",
+            "typeguard"
           ],
           ":python_version < \"3.8\"": [
             "importlib-metadata"
