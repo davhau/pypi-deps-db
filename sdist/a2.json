@@ -13445,7 +13445,8 @@
     "0.3.16": "0.3.2",
     "0.3.17": "0.3.2",
     "0.3.18": "0.3.2",
-    "0.3.19": "0.3.2"
+    "0.3.19": "0.3.2",
+    "0.3.20": "0.3.2"
   },
   "dirgen": {
     "0.2": {
@@ -34497,6 +34498,21 @@
     },
     "0.0.8": "0.0.7",
     "0.0.9": "0.0.7"
+  },
+  "lostify": {
+    "1.0.0": {
+      "27": {
+        "install_requires": [
+          "aiohttp<3.9.0,>=3.6.0"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "1.0.1": "1.0.0"
   },
   "ls-json": {
     "1.0": {
@@ -56677,6 +56693,626 @@
             "sphinx-autoapi>=1.8",
             "myst-nb",
             "qtpy",
+            "packaging",
+            "diskcache",
+            "typer",
+            "click"
+          ],
+          "docs:python_version == \"3.7\"": [
+            "numpy>=1.16.0"
+          ],
+          "docs:python_version == \"3.8\"": [
+            "numpy>=1.17.5",
+            "scipy>=1.3.3"
+          ],
+          "docs:python_version >= \"3.9\"": [
+            "numpy>=1.19.4",
+            "scipy>=1.5.4"
+          ],
+          "docs:python_version < \"3.8\"": [
+            "scipy>=1.3"
+          ],
+          "io": [
+            "pyevtk",
+            "xmljson",
+            "meshio>=4.4",
+            "lxml",
+            "gmsh"
+          ],
+          ":python_version == \"3.7\"": [
+            "numpy>=1.16.0"
+          ],
+          ":python_version == \"3.8\"": [
+            "numpy>=1.17.5",
+            "scipy>=1.3.3"
+          ],
+          ":python_version >= \"3.9\"": [
+            "numpy>=1.19.4",
+            "scipy>=1.5.4"
+          ],
+          ":python_version < \"3.8\"": [
+            "scipy>=1.3"
+          ]
+        },
+        "tests_require": [
+          "pytest>=6.0",
+          "pytest-cov",
+          "pytest-xdist",
+          "check-manifest",
+          "nbconvert",
+          "pytest-parallel",
+          "readme_renderer[md]",
+          "rstcheck",
+          "codecov",
+          "twine",
+          "pytest-memprof",
+          "flake8-rst-docstrings",
+          "flake8-docstrings",
+          "pytest-datadir",
+          "pybind11",
+          "docutils",
+          "pypi-oldest-requirements>=2021.2",
+          "hypothesis[numpy,pytest]>=6.10",
+          "PyQt5!=5.15.2,>5.7,!=5.15.2.*,!=5.15.4,!=5.15.3",
+          "check_reqs",
+          "scikit-fem"
+        ],
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "310": "39"
+    },
+    "2021.2.1": {
+      "36": {
+        "install_requires": [
+          "qtpy!=2.0.0",
+          "packaging",
+          "diskcache",
+          "typer",
+          "click"
+        ],
+        "extras_require": {
+          "full": [
+            "sympy",
+            "packaging",
+            "pythreejs",
+            "dune-gdt>=2021.1.3",
+            "xmljson",
+            "jupyter_client>=7.0.6",
+            "sphinx-material",
+            "ipyparallel>=6.2.5",
+            "PySide2!=5.11.*,!=5.12.*,!=5.13.0,!=5.15.2,!=5.15.2.*",
+            "pygments",
+            "python-slugify",
+            "click",
+            "qtpy!=2.0.0",
+            "jupyter_contrib_nbextensions",
+            "sphinxcontrib-bibtex",
+            "torch",
+            "gmsh",
+            "sphinx-autoapi>=1.8",
+            "matplotlib",
+            "pyevtk",
+            "pytest>=6.0",
+            "ipython>=5.0",
+            "bash_kernel",
+            "dune-xt>=2021.1.3",
+            "lxml",
+            "pillow",
+            "typer",
+            "ipywidgets",
+            "sphinx-qt-documentation",
+            "myst-nb",
+            "sphinx>=3.4",
+            "pyopengl",
+            "diskcache",
+            "meshio>=4.4"
+          ],
+          "full:python_version < \"3.8\"": [
+            "scipy>=1.3"
+          ],
+          "ci": [
+            "pytest>=6.0",
+            "pytest-cov",
+            "pytest-xdist",
+            "check-manifest",
+            "nbconvert",
+            "pytest-parallel",
+            "readme_renderer[md]",
+            "rstcheck",
+            "codecov",
+            "twine",
+            "pytest-memprof",
+            "flake8-rst-docstrings",
+            "flake8-docstrings",
+            "pytest-datadir",
+            "pybind11",
+            "docutils",
+            "pypi-oldest-requirements>=2021.2",
+            "hypothesis[numpy,pytest]>=6.10",
+            "PyQt5!=5.15.2,!=5.15.2.*,!=5.15.3,!=5.15.4,>5.7",
+            "check_reqs",
+            "scikit-fem"
+          ],
+          "docs": [
+            "sphinx>=3.4",
+            "matplotlib",
+            "PySide2!=5.11.*,!=5.12.*,!=5.13.0,!=5.15.2,!=5.15.2.*",
+            "ipyparallel>=6.2.5",
+            "python-slugify",
+            "ipywidgets",
+            "sphinx-qt-documentation",
+            "bash_kernel",
+            "sphinx-material",
+            "sphinxcontrib-bibtex",
+            "sphinx-autoapi>=1.8",
+            "myst-nb",
+            "qtpy!=2.0.0",
+            "packaging",
+            "diskcache",
+            "typer",
+            "click"
+          ],
+          "docs:python_version == \"3.7\"": [
+            "numpy>=1.16.0"
+          ],
+          "docs:python_version == \"3.8\"": [
+            "numpy>=1.17.5",
+            "scipy>=1.3.3"
+          ],
+          "docs:python_version >= \"3.9\"": [
+            "numpy>=1.19.4",
+            "scipy>=1.5.4"
+          ],
+          "docs:python_version < \"3.8\"": [
+            "scipy>=1.3"
+          ],
+          "io": [
+            "pyevtk",
+            "xmljson",
+            "meshio>=4.4",
+            "lxml",
+            "gmsh"
+          ],
+          ":python_version == \"3.7\"": [
+            "numpy>=1.16.0"
+          ],
+          ":python_version == \"3.8\"": [
+            "numpy>=1.17.5",
+            "scipy>=1.3.3"
+          ],
+          ":python_version >= \"3.9\"": [
+            "numpy>=1.19.4",
+            "scipy>=1.5.4"
+          ],
+          ":python_version < \"3.8\"": [
+            "scipy>=1.3"
+          ]
+        },
+        "tests_require": [
+          "pytest>=6.0",
+          "pytest-cov",
+          "pytest-xdist",
+          "check-manifest",
+          "nbconvert",
+          "pytest-parallel",
+          "readme_renderer[md]",
+          "rstcheck",
+          "codecov",
+          "twine",
+          "pytest-memprof",
+          "flake8-rst-docstrings",
+          "flake8-docstrings",
+          "pytest-datadir",
+          "pybind11",
+          "docutils",
+          "pypi-oldest-requirements>=2021.2",
+          "hypothesis[numpy,pytest]>=6.10",
+          "PyQt5!=5.15.2,>5.7,!=5.15.2.*,!=5.15.4,!=5.15.3",
+          "check_reqs",
+          "scikit-fem"
+        ],
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "37": {
+        "install_requires": [
+          "qtpy!=2.0.0",
+          "packaging",
+          "diskcache",
+          "typer",
+          "click"
+        ],
+        "extras_require": {
+          "full": [
+            "sympy",
+            "packaging",
+            "pythreejs",
+            "dune-gdt>=2021.1.3",
+            "xmljson",
+            "jupyter_client>=7.0.6",
+            "sphinx-material",
+            "ipyparallel>=6.2.5",
+            "PySide2!=5.11.*,!=5.12.*,!=5.13.0,!=5.15.2,!=5.15.2.*",
+            "pygments",
+            "python-slugify",
+            "click",
+            "qtpy!=2.0.0",
+            "jupyter_contrib_nbextensions",
+            "sphinxcontrib-bibtex",
+            "torch",
+            "gmsh",
+            "sphinx-autoapi>=1.8",
+            "matplotlib",
+            "pyevtk",
+            "pytest>=6.0",
+            "ipython>=5.0",
+            "bash_kernel",
+            "dune-xt>=2021.1.3",
+            "lxml",
+            "pillow",
+            "typer",
+            "ipywidgets",
+            "sphinx-qt-documentation",
+            "myst-nb",
+            "sphinx>=3.4",
+            "pyopengl",
+            "diskcache",
+            "meshio>=4.4"
+          ],
+          "full:python_version == \"3.7\"": [
+            "numpy>=1.16.0"
+          ],
+          "full:python_version < \"3.8\"": [
+            "scipy>=1.3"
+          ],
+          "ci": [
+            "pytest>=6.0",
+            "pytest-cov",
+            "pytest-xdist",
+            "check-manifest",
+            "nbconvert",
+            "pytest-parallel",
+            "readme_renderer[md]",
+            "rstcheck",
+            "codecov",
+            "twine",
+            "pytest-memprof",
+            "flake8-rst-docstrings",
+            "flake8-docstrings",
+            "pytest-datadir",
+            "pybind11",
+            "docutils",
+            "pypi-oldest-requirements>=2021.2",
+            "hypothesis[numpy,pytest]>=6.10",
+            "PyQt5!=5.15.2,!=5.15.2.*,!=5.15.3,!=5.15.4,>5.7",
+            "check_reqs",
+            "scikit-fem"
+          ],
+          "docs": [
+            "sphinx>=3.4",
+            "matplotlib",
+            "PySide2!=5.11.*,!=5.12.*,!=5.13.0,!=5.15.2,!=5.15.2.*",
+            "ipyparallel>=6.2.5",
+            "python-slugify",
+            "ipywidgets",
+            "sphinx-qt-documentation",
+            "bash_kernel",
+            "sphinx-material",
+            "sphinxcontrib-bibtex",
+            "sphinx-autoapi>=1.8",
+            "myst-nb",
+            "qtpy!=2.0.0",
+            "packaging",
+            "diskcache",
+            "typer",
+            "click"
+          ],
+          "docs:python_version == \"3.7\"": [
+            "numpy>=1.16.0"
+          ],
+          "docs:python_version == \"3.8\"": [
+            "numpy>=1.17.5",
+            "scipy>=1.3.3"
+          ],
+          "docs:python_version >= \"3.9\"": [
+            "numpy>=1.19.4",
+            "scipy>=1.5.4"
+          ],
+          "docs:python_version < \"3.8\"": [
+            "scipy>=1.3"
+          ],
+          "io": [
+            "pyevtk",
+            "xmljson",
+            "meshio>=4.4",
+            "lxml",
+            "gmsh"
+          ],
+          ":python_version == \"3.7\"": [
+            "numpy>=1.16.0"
+          ],
+          ":python_version == \"3.8\"": [
+            "numpy>=1.17.5",
+            "scipy>=1.3.3"
+          ],
+          ":python_version >= \"3.9\"": [
+            "numpy>=1.19.4",
+            "scipy>=1.5.4"
+          ],
+          ":python_version < \"3.8\"": [
+            "scipy>=1.3"
+          ]
+        },
+        "tests_require": [
+          "pytest>=6.0",
+          "pytest-cov",
+          "pytest-xdist",
+          "check-manifest",
+          "nbconvert",
+          "pytest-parallel",
+          "readme_renderer[md]",
+          "rstcheck",
+          "codecov",
+          "twine",
+          "pytest-memprof",
+          "flake8-rst-docstrings",
+          "flake8-docstrings",
+          "pytest-datadir",
+          "pybind11",
+          "docutils",
+          "pypi-oldest-requirements>=2021.2",
+          "hypothesis[numpy,pytest]>=6.10",
+          "PyQt5!=5.15.2,>5.7,!=5.15.2.*,!=5.15.4,!=5.15.3",
+          "check_reqs",
+          "scikit-fem"
+        ],
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "38": {
+        "install_requires": [
+          "qtpy!=2.0.0",
+          "packaging",
+          "diskcache",
+          "typer",
+          "click"
+        ],
+        "extras_require": {
+          "full": [
+            "sympy",
+            "packaging",
+            "pythreejs",
+            "dune-gdt>=2021.1.3",
+            "xmljson",
+            "jupyter_client>=7.0.6",
+            "sphinx-material",
+            "ipyparallel>=6.2.5",
+            "PySide2!=5.11.*,!=5.12.*,!=5.13.0,!=5.15.2,!=5.15.2.*",
+            "pygments",
+            "python-slugify",
+            "click",
+            "qtpy!=2.0.0",
+            "jupyter_contrib_nbextensions",
+            "sphinxcontrib-bibtex",
+            "torch",
+            "gmsh",
+            "sphinx-autoapi>=1.8",
+            "matplotlib",
+            "pyevtk",
+            "pytest>=6.0",
+            "ipython>=5.0",
+            "bash_kernel",
+            "dune-xt>=2021.1.3",
+            "lxml",
+            "pillow",
+            "typer",
+            "ipywidgets",
+            "sphinx-qt-documentation",
+            "myst-nb",
+            "sphinx>=3.4",
+            "pyopengl",
+            "diskcache",
+            "meshio>=4.4"
+          ],
+          "full:python_version == \"3.8\"": [
+            "numpy>=1.17.5",
+            "scipy>=1.3.3"
+          ],
+          "ci": [
+            "pytest>=6.0",
+            "pytest-cov",
+            "pytest-xdist",
+            "check-manifest",
+            "nbconvert",
+            "pytest-parallel",
+            "readme_renderer[md]",
+            "rstcheck",
+            "codecov",
+            "twine",
+            "pytest-memprof",
+            "flake8-rst-docstrings",
+            "flake8-docstrings",
+            "pytest-datadir",
+            "pybind11",
+            "docutils",
+            "pypi-oldest-requirements>=2021.2",
+            "hypothesis[numpy,pytest]>=6.10",
+            "PyQt5!=5.15.2,!=5.15.2.*,!=5.15.3,!=5.15.4,>5.7",
+            "check_reqs",
+            "scikit-fem"
+          ],
+          "docs": [
+            "sphinx>=3.4",
+            "matplotlib",
+            "PySide2!=5.11.*,!=5.12.*,!=5.13.0,!=5.15.2,!=5.15.2.*",
+            "ipyparallel>=6.2.5",
+            "python-slugify",
+            "ipywidgets",
+            "sphinx-qt-documentation",
+            "bash_kernel",
+            "sphinx-material",
+            "sphinxcontrib-bibtex",
+            "sphinx-autoapi>=1.8",
+            "myst-nb",
+            "qtpy!=2.0.0",
+            "packaging",
+            "diskcache",
+            "typer",
+            "click"
+          ],
+          "docs:python_version == \"3.7\"": [
+            "numpy>=1.16.0"
+          ],
+          "docs:python_version == \"3.8\"": [
+            "numpy>=1.17.5",
+            "scipy>=1.3.3"
+          ],
+          "docs:python_version >= \"3.9\"": [
+            "numpy>=1.19.4",
+            "scipy>=1.5.4"
+          ],
+          "docs:python_version < \"3.8\"": [
+            "scipy>=1.3"
+          ],
+          "io": [
+            "pyevtk",
+            "xmljson",
+            "meshio>=4.4",
+            "lxml",
+            "gmsh"
+          ],
+          ":python_version == \"3.7\"": [
+            "numpy>=1.16.0"
+          ],
+          ":python_version == \"3.8\"": [
+            "numpy>=1.17.5",
+            "scipy>=1.3.3"
+          ],
+          ":python_version >= \"3.9\"": [
+            "numpy>=1.19.4",
+            "scipy>=1.5.4"
+          ],
+          ":python_version < \"3.8\"": [
+            "scipy>=1.3"
+          ]
+        },
+        "tests_require": [
+          "pytest>=6.0",
+          "pytest-cov",
+          "pytest-xdist",
+          "check-manifest",
+          "nbconvert",
+          "pytest-parallel",
+          "readme_renderer[md]",
+          "rstcheck",
+          "codecov",
+          "twine",
+          "pytest-memprof",
+          "flake8-rst-docstrings",
+          "flake8-docstrings",
+          "pytest-datadir",
+          "pybind11",
+          "docutils",
+          "pypi-oldest-requirements>=2021.2",
+          "hypothesis[numpy,pytest]>=6.10",
+          "PyQt5!=5.15.2,>5.7,!=5.15.2.*,!=5.15.4,!=5.15.3",
+          "check_reqs",
+          "scikit-fem"
+        ],
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "39": {
+        "install_requires": [
+          "qtpy!=2.0.0",
+          "packaging",
+          "diskcache",
+          "typer",
+          "click"
+        ],
+        "extras_require": {
+          "full": [
+            "sympy",
+            "packaging",
+            "pythreejs",
+            "dune-gdt>=2021.1.3",
+            "xmljson",
+            "jupyter_client>=7.0.6",
+            "sphinx-material",
+            "ipyparallel>=6.2.5",
+            "PySide2!=5.11.*,!=5.12.*,!=5.13.0,!=5.15.2,!=5.15.2.*",
+            "pygments",
+            "python-slugify",
+            "click",
+            "qtpy!=2.0.0",
+            "jupyter_contrib_nbextensions",
+            "sphinxcontrib-bibtex",
+            "torch",
+            "gmsh",
+            "sphinx-autoapi>=1.8",
+            "matplotlib",
+            "pyevtk",
+            "pytest>=6.0",
+            "ipython>=5.0",
+            "bash_kernel",
+            "dune-xt>=2021.1.3",
+            "lxml",
+            "pillow",
+            "typer",
+            "ipywidgets",
+            "sphinx-qt-documentation",
+            "myst-nb",
+            "sphinx>=3.4",
+            "pyopengl",
+            "diskcache",
+            "meshio>=4.4"
+          ],
+          "full:python_version >= \"3.9\"": [
+            "numpy>=1.19.4",
+            "scipy>=1.5.4"
+          ],
+          "ci": [
+            "pytest>=6.0",
+            "pytest-cov",
+            "pytest-xdist",
+            "check-manifest",
+            "nbconvert",
+            "pytest-parallel",
+            "readme_renderer[md]",
+            "rstcheck",
+            "codecov",
+            "twine",
+            "pytest-memprof",
+            "flake8-rst-docstrings",
+            "flake8-docstrings",
+            "pytest-datadir",
+            "pybind11",
+            "docutils",
+            "pypi-oldest-requirements>=2021.2",
+            "hypothesis[numpy,pytest]>=6.10",
+            "PyQt5!=5.15.2,!=5.15.2.*,!=5.15.3,!=5.15.4,>5.7",
+            "check_reqs",
+            "scikit-fem"
+          ],
+          "docs": [
+            "sphinx>=3.4",
+            "matplotlib",
+            "PySide2!=5.11.*,!=5.12.*,!=5.13.0,!=5.15.2,!=5.15.2.*",
+            "ipyparallel>=6.2.5",
+            "python-slugify",
+            "ipywidgets",
+            "sphinx-qt-documentation",
+            "bash_kernel",
+            "sphinx-material",
+            "sphinxcontrib-bibtex",
+            "sphinx-autoapi>=1.8",
+            "myst-nb",
+            "qtpy!=2.0.0",
             "packaging",
             "diskcache",
             "typer",
