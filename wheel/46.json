@@ -8844,6 +8844,42 @@
       }
     }
   },
+  "brevettiai": {
+    "py3": {
+      "0.1.0": {
+        "brevettiai-0.1.0-py3-none-any.whl": {
+          "provides_extras": [
+            "cv2",
+            "cv2-headless",
+            "tf",
+            "tfa"
+          ],
+          "requires_dist": [
+            "altair (==4.1.0)",
+            "backoff (>=1.10)",
+            "configparser (>=5.0)",
+            "cryptography (>=36.0.1,<37.0.0)",
+            "minio (>=7.0,<7.1)",
+            "mmh3 (>=3.0)",
+            "numpy (>=1.18.1)",
+            "opencv-python (>=4.1); extra == \"cv2\"",
+            "opencv-python-headless (>=4.1); extra == \"cv2-headless\"",
+            "pandas (>=1.1,<1.2)",
+            "plotly (>=4.14.3)",
+            "pydantic (>=1.8.2)",
+            "requests (>=2.23)",
+            "scikit-learn (>=0.23.1)",
+            "shapely (>=1.7.0)",
+            "tensorflow (==2.6.2); extra == \"tf\"",
+            "tensorflow_addons (>=0.15.0); extra == \"tfa\"",
+            "tf2onnx (>=1.9.0)",
+            "tqdm (>=4.62)"
+          ],
+          "requires_python": ">=3.7,<4.0"
+        }
+      }
+    }
+  },
   "bst-gpapidl": {
     "py3": {
       "1.0.2": {
@@ -10492,12 +10528,13 @@
     },
     "cp310": {
       "1.6.0": {
-        "cmf-1.6.0-cp310-cp310-win_amd64.whl": {
+        "cmf-1.6.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": {
           "requires_dist": [
             "numpy (>=1.11.1)"
           ],
           "requires_python": ">=2.7"
-        }
+        },
+        "cmf-1.6.0-cp310-cp310-win_amd64.whl": "1.6.0@cmf-1.6.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
       }
     },
     "cp35": {
@@ -10612,6 +10649,14 @@
       "1.5.0": {
         "cmf-1.5.0-cp36-cp36m-win32.whl": "1.0.3@cmf-1.0.3-cp36-cp36m-win32.whl",
         "cmf-1.5.0-cp36-cp36m-win_amd64.whl": "1.0.3@cmf-1.0.3-cp36-cp36m-win32.whl"
+      },
+      "1.6.0": {
+        "cmf-1.6.0-cp36-cp36m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": {
+          "requires_dist": [
+            "numpy (>=1.11.1)"
+          ],
+          "requires_python": ">=2.7"
+        }
       }
     },
     "cp37": {
@@ -10638,6 +10683,7 @@
         }
       },
       "1.6.0": {
+        "cmf-1.6.0-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "1.5.1@cmf-1.5.1-cp37-cp37m-win_amd64.whl",
         "cmf-1.6.0-cp37-cp37m-win_amd64.whl": "1.5.1@cmf-1.5.1-cp37-cp37m-win_amd64.whl"
       },
       "2.0.0b4": {
@@ -10651,22 +10697,24 @@
     },
     "cp38": {
       "1.6.0": {
-        "cmf-1.6.0-cp38-cp38-win_amd64.whl": {
+        "cmf-1.6.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": {
           "requires_dist": [
             "numpy (>=1.11.1)"
           ],
           "requires_python": ">=2.7"
-        }
+        },
+        "cmf-1.6.0-cp38-cp38-win_amd64.whl": "1.6.0@cmf-1.6.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
       }
     },
     "cp39": {
       "1.6.0": {
-        "cmf-1.6.0-cp39-cp39-win_amd64.whl": {
+        "cmf-1.6.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": {
           "requires_dist": [
             "numpy (>=1.11.1)"
           ],
           "requires_python": ">=2.7"
-        }
+        },
+        "cmf-1.6.0-cp39-cp39-win_amd64.whl": "1.6.0@cmf-1.6.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
       },
       "2.0.0b5": {
         "cmf-2.0.0b5-cp39-cp39-win_amd64.whl": {
@@ -16203,6 +16251,56 @@
             "pylibmc (<2.0,>=1.5) ; extra == 'dev'",
             "pika (<2.0,>=1.0) ; extra == 'dev'",
             "gevent (>=1.1) ; extra == 'dev'",
+            "alabaster ; extra == 'dev'",
+            "sphinx (<1.8) ; extra == 'dev'",
+            "sphinxcontrib-napoleon ; extra == 'dev'",
+            "flake8 ; extra == 'dev'",
+            "flake8-bugbear ; extra == 'dev'",
+            "flake8-quotes ; extra == 'dev'",
+            "isort ; extra == 'dev'",
+            "bumpversion ; extra == 'dev'",
+            "hiredis ; extra == 'dev'",
+            "twine ; extra == 'dev'",
+            "wheel ; extra == 'dev'",
+            "pytest ; extra == 'dev'",
+            "pytest-benchmark[histogram] ; extra == 'dev'",
+            "pytest-cov ; extra == 'dev'",
+            "tox ; extra == 'dev'",
+            "gevent (>=1.1) ; extra == 'gevent'",
+            "pylibmc (<2.0,>=1.5) ; extra == 'memcached'",
+            "pika (<2.0,>=1.0) ; extra == 'rabbitmq'",
+            "redis (<5.0,>=2.0) ; extra == 'redis'",
+            "watchdog ; extra == 'watch'",
+            "watchdog-gevent ; extra == 'watch'"
+          ],
+          "requires_python": ">=3.6"
+        }
+      },
+      "1.12.3": {
+        "dramatiq-1.12.3-py3-none-any.whl": {
+          "provides_extras": [
+            "all",
+            "dev",
+            "gevent",
+            "memcached",
+            "rabbitmq",
+            "redis",
+            "watch"
+          ],
+          "requires_dist": [
+            "prometheus-client (>=0.2)",
+            "gevent (>=1.1) ; extra == 'all'",
+            "redis (<5.0,>=2.0) ; extra == 'all'",
+            "watchdog ; extra == 'all'",
+            "pika (<2.0,>=1.0) ; extra == 'all'",
+            "watchdog-gevent ; extra == 'all'",
+            "pylibmc (<2.0,>=1.5) ; extra == 'all'",
+            "gevent (>=1.1) ; extra == 'dev'",
+            "redis (<5.0,>=2.0) ; extra == 'dev'",
+            "watchdog ; extra == 'dev'",
+            "pika (<2.0,>=1.0) ; extra == 'dev'",
+            "watchdog-gevent ; extra == 'dev'",
+            "pylibmc (<2.0,>=1.5) ; extra == 'dev'",
             "alabaster ; extra == 'dev'",
             "sphinx (<1.8) ; extra == 'dev'",
             "sphinxcontrib-napoleon ; extra == 'dev'",
@@ -25710,6 +25808,19 @@
   },
   "large-image-source-ometiff": {
     "py3": {
+      "1.10.0": {
+        "large_image_source_ometiff-1.10.0-py3-none-any.whl": {
+          "provides_extras": [
+            "girder"
+          ],
+          "requires_dist": [
+            "large-image",
+            "large-image-source-tiff (>=1.0.0)",
+            "girder-large-image ; extra == 'girder'"
+          ],
+          "requires_python": ">=3.6"
+        }
+      },
       "1.3.3.dev100": {
         "large_image_source_ometiff-1.3.3.dev100-py3-none-any.whl": {
           "provides_extras": [
@@ -26468,62 +26579,52 @@
         "large_image_source_ometiff-1.9.0-py3-none-any.whl": "1.3.3.dev100@large_image_source_ometiff-1.3.3.dev100-py3-none-any.whl"
       },
       "1.9.1.dev19": {
-        "large_image_source_ometiff-1.9.1.dev19-py3-none-any.whl": {
-          "provides_extras": [
-            "girder"
-          ],
-          "requires_dist": [
-            "large-image",
-            "large-image-source-tiff (>=1.0.0)",
-            "girder-large-image ; extra == 'girder'"
-          ],
-          "requires_python": ">=3.6"
-        }
+        "large_image_source_ometiff-1.9.1.dev19-py3-none-any.whl": "1.10.0@large_image_source_ometiff-1.10.0-py3-none-any.whl"
       },
       "1.9.1.dev2": {
-        "large_image_source_ometiff-1.9.1.dev2-py3-none-any.whl": "1.9.1.dev19@large_image_source_ometiff-1.9.1.dev19-py3-none-any.whl"
+        "large_image_source_ometiff-1.9.1.dev2-py3-none-any.whl": "1.10.0@large_image_source_ometiff-1.10.0-py3-none-any.whl"
       },
       "1.9.1.dev20": {
-        "large_image_source_ometiff-1.9.1.dev20-py3-none-any.whl": "1.9.1.dev19@large_image_source_ometiff-1.9.1.dev19-py3-none-any.whl"
+        "large_image_source_ometiff-1.9.1.dev20-py3-none-any.whl": "1.10.0@large_image_source_ometiff-1.10.0-py3-none-any.whl"
       },
       "1.9.1.dev22": {
-        "large_image_source_ometiff-1.9.1.dev22-py3-none-any.whl": "1.9.1.dev19@large_image_source_ometiff-1.9.1.dev19-py3-none-any.whl"
+        "large_image_source_ometiff-1.9.1.dev22-py3-none-any.whl": "1.10.0@large_image_source_ometiff-1.10.0-py3-none-any.whl"
       },
       "1.9.1.dev25": {
-        "large_image_source_ometiff-1.9.1.dev25-py3-none-any.whl": "1.9.1.dev19@large_image_source_ometiff-1.9.1.dev19-py3-none-any.whl"
+        "large_image_source_ometiff-1.9.1.dev25-py3-none-any.whl": "1.10.0@large_image_source_ometiff-1.10.0-py3-none-any.whl"
       },
       "1.9.1.dev26": {
-        "large_image_source_ometiff-1.9.1.dev26-py3-none-any.whl": "1.9.1.dev19@large_image_source_ometiff-1.9.1.dev19-py3-none-any.whl"
+        "large_image_source_ometiff-1.9.1.dev26-py3-none-any.whl": "1.10.0@large_image_source_ometiff-1.10.0-py3-none-any.whl"
       },
       "1.9.1.dev29": {
-        "large_image_source_ometiff-1.9.1.dev29-py3-none-any.whl": "1.9.1.dev19@large_image_source_ometiff-1.9.1.dev19-py3-none-any.whl"
+        "large_image_source_ometiff-1.9.1.dev29-py3-none-any.whl": "1.10.0@large_image_source_ometiff-1.10.0-py3-none-any.whl"
       },
       "1.9.1.dev31": {
-        "large_image_source_ometiff-1.9.1.dev31-py3-none-any.whl": "1.9.1.dev19@large_image_source_ometiff-1.9.1.dev19-py3-none-any.whl"
+        "large_image_source_ometiff-1.9.1.dev31-py3-none-any.whl": "1.10.0@large_image_source_ometiff-1.10.0-py3-none-any.whl"
       },
       "1.9.1.dev4": {
-        "large_image_source_ometiff-1.9.1.dev4-py3-none-any.whl": "1.9.1.dev19@large_image_source_ometiff-1.9.1.dev19-py3-none-any.whl"
+        "large_image_source_ometiff-1.9.1.dev4-py3-none-any.whl": "1.10.0@large_image_source_ometiff-1.10.0-py3-none-any.whl"
       },
       "1.9.1.dev46": {
-        "large_image_source_ometiff-1.9.1.dev46-py3-none-any.whl": "1.9.1.dev19@large_image_source_ometiff-1.9.1.dev19-py3-none-any.whl"
+        "large_image_source_ometiff-1.9.1.dev46-py3-none-any.whl": "1.10.0@large_image_source_ometiff-1.10.0-py3-none-any.whl"
       },
       "1.9.1.dev48": {
-        "large_image_source_ometiff-1.9.1.dev48-py3-none-any.whl": "1.9.1.dev19@large_image_source_ometiff-1.9.1.dev19-py3-none-any.whl"
+        "large_image_source_ometiff-1.9.1.dev48-py3-none-any.whl": "1.10.0@large_image_source_ometiff-1.10.0-py3-none-any.whl"
       },
       "1.9.1.dev49": {
-        "large_image_source_ometiff-1.9.1.dev49-py3-none-any.whl": "1.9.1.dev19@large_image_source_ometiff-1.9.1.dev19-py3-none-any.whl"
+        "large_image_source_ometiff-1.9.1.dev49-py3-none-any.whl": "1.10.0@large_image_source_ometiff-1.10.0-py3-none-any.whl"
       },
       "1.9.1.dev51": {
-        "large_image_source_ometiff-1.9.1.dev51-py3-none-any.whl": "1.9.1.dev19@large_image_source_ometiff-1.9.1.dev19-py3-none-any.whl"
+        "large_image_source_ometiff-1.9.1.dev51-py3-none-any.whl": "1.10.0@large_image_source_ometiff-1.10.0-py3-none-any.whl"
       },
       "1.9.1.dev53": {
-        "large_image_source_ometiff-1.9.1.dev53-py3-none-any.whl": "1.9.1.dev19@large_image_source_ometiff-1.9.1.dev19-py3-none-any.whl"
+        "large_image_source_ometiff-1.9.1.dev53-py3-none-any.whl": "1.10.0@large_image_source_ometiff-1.10.0-py3-none-any.whl"
       },
       "1.9.1.dev6": {
-        "large_image_source_ometiff-1.9.1.dev6-py3-none-any.whl": "1.9.1.dev19@large_image_source_ometiff-1.9.1.dev19-py3-none-any.whl"
+        "large_image_source_ometiff-1.9.1.dev6-py3-none-any.whl": "1.10.0@large_image_source_ometiff-1.10.0-py3-none-any.whl"
       },
       "1.9.1.dev8": {
-        "large_image_source_ometiff-1.9.1.dev8-py3-none-any.whl": "1.9.1.dev19@large_image_source_ometiff-1.9.1.dev19-py3-none-any.whl"
+        "large_image_source_ometiff-1.9.1.dev8-py3-none-any.whl": "1.10.0@large_image_source_ometiff-1.10.0-py3-none-any.whl"
       }
     }
   },
@@ -27364,6 +27465,29 @@
       },
       "0.0.5": {
         "mangadex_downloader-0.0.5-py3-none-any.whl": "0.0.1@mangadex_downloader-0.0.1-py3-none-any.whl"
+      },
+      "0.1.0": {
+        "mangadex_downloader-0.1.0-py3-none-any.whl": {
+          "requires_dist": [
+            "bs4",
+            "requests[socks]",
+            "tqdm",
+            "aiohttp"
+          ],
+          "requires_python": ">=3.5"
+        }
+      },
+      "0.1.1": {
+        "mangadex_downloader-0.1.1-py3-none-any.whl": {
+          "requires_dist": [
+            "bs4",
+            "requests[socks]",
+            "tqdm",
+            "aiohttp",
+            "pathvalidate"
+          ],
+          "requires_python": ">=3.5"
+        }
       }
     }
   },
@@ -33710,6 +33834,9 @@
             "pytest ; extra == 'test'"
           ]
         }
+      },
+      "0.1.8": {
+        "ocdsextensionregistry-0.1.8-py3-none-any.whl": "0.1.7@ocdsextensionregistry-0.1.7-py3-none-any.whl"
       }
     }
   },
