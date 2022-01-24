@@ -25604,6 +25604,36 @@
       "3.3.0a1": {
         "jupyterlab-3.3.0a1-py3-none-any.whl": "3.1.1@jupyterlab-3.1.1-py3-none-any.whl"
       },
+      "3.3.0a2": {
+        "jupyterlab-3.3.0a2-py3-none-any.whl": {
+          "provides_extras": [
+            "test",
+            "ui-tests"
+          ],
+          "requires_dist": [
+            "ipython",
+            "packaging",
+            "tornado (>=6.1.0)",
+            "jupyter-core",
+            "jupyterlab-server (~=2.10)",
+            "jupyter-server (~=1.4)",
+            "nbclassic (~=0.2)",
+            "jinja2 (>=2.1)",
+            "coverage ; extra == 'test'",
+            "pytest (>=6.0) ; extra == 'test'",
+            "pytest-cov ; extra == 'test'",
+            "pytest-console-scripts ; extra == 'test'",
+            "pytest-check-links (>=0.5) ; extra == 'test'",
+            "jupyterlab-server[test] (~=2.2) ; extra == 'test'",
+            "requests ; extra == 'test'",
+            "requests-cache ; extra == 'test'",
+            "virtualenv ; extra == 'test'",
+            "check-manifest ; extra == 'test'",
+            "build ; extra == 'ui-tests'"
+          ],
+          "requires_python": ">=3.7"
+        }
+      },
       "4.0.0a0": {
         "jupyterlab-4.0.0a0-py3-none-any.whl": "3.1.0@jupyterlab-3.1.0-py3-none-any.whl"
       },
@@ -25665,34 +25695,7 @@
         }
       },
       "4.0.0a19": {
-        "jupyterlab-4.0.0a19-py3-none-any.whl": {
-          "provides_extras": [
-            "test",
-            "ui-tests"
-          ],
-          "requires_dist": [
-            "ipython",
-            "packaging",
-            "tornado (>=6.1.0)",
-            "jupyter-core",
-            "jupyterlab-server (~=2.10)",
-            "jupyter-server (~=1.4)",
-            "nbclassic (~=0.2)",
-            "jinja2 (>=2.1)",
-            "coverage ; extra == 'test'",
-            "pytest (>=6.0) ; extra == 'test'",
-            "pytest-cov ; extra == 'test'",
-            "pytest-console-scripts ; extra == 'test'",
-            "pytest-check-links (>=0.5) ; extra == 'test'",
-            "jupyterlab-server[test] (~=2.2) ; extra == 'test'",
-            "requests ; extra == 'test'",
-            "requests-cache ; extra == 'test'",
-            "virtualenv ; extra == 'test'",
-            "check-manifest ; extra == 'test'",
-            "build ; extra == 'ui-tests'"
-          ],
-          "requires_python": ">=3.7"
-        }
+        "jupyterlab-4.0.0a19-py3-none-any.whl": "3.3.0a2@jupyterlab-3.3.0a2-py3-none-any.whl"
       },
       "4.0.0a3": {
         "jupyterlab-4.0.0a3-py3-none-any.whl": "3.1.1@jupyterlab-3.1.1-py3-none-any.whl"
@@ -46001,6 +46004,36 @@
       },
       "0.8.8b2": {
         "taktile_cli-0.8.8b2-py2.py3-none-any.whl": "0.8.8@taktile_cli-0.8.8-py2.py3-none-any.whl"
+      },
+      "1.0.0b0": {
+        "taktile_cli-1.0.0b0-py2.py3-none-any.whl": {
+          "requires_dist": [
+            "Click (~=7.1.2)",
+            "click-completion (~=0.5.2)",
+            "requests (~=2.23)",
+            "pydantic (~=1.8.2)",
+            "colorama (~=0.4.3)",
+            "PyYAML (~=5.4.1)",
+            "python-dateutil (~=2.8.1)",
+            "click-help-colors (==0.8)",
+            "click-didyoumean (==0.0.3)",
+            "halo (==0.0.29)",
+            "numpy (~=1.21)",
+            "pandas (~=1.2)",
+            "pyarrow (>=3.0)",
+            "beautifultable (~=1.0.0)",
+            "openapi-schema-pydantic (==1.1.0)",
+            "docker (==4.3.1)",
+            "tenacity (<9.0.0,>=8.0.1)",
+            "cached-property (==1.5.2)",
+            "fastapi (~=0.65.2)",
+            "taktile-types (<1.0.0,>=0.14.0)",
+            "packaging (==21.3)",
+            "taktile-client (==0.0.1b6)",
+            "filelock (==3.4.2)"
+          ],
+          "requires_python": ">=3.7, <3.10"
+        }
       }
     }
   },
@@ -49086,6 +49119,37 @@
             "zope.component[zcml]; extra == 'zcml'",
             "zope.configuration; extra == 'zcml'",
             "zope.security[zcml]; extra == 'zcml'"
+          ]
+        }
+      },
+      "4.2.0": {
+        "zope.copypastemove-4.2.0-py2.py3-none-any.whl": {
+          "provides_extras": [
+            "test",
+            "zcml"
+          ],
+          "requires_dist": [
+            "setuptools",
+            "zope.annotation",
+            "zope.component",
+            "zope.container",
+            "zope.copy",
+            "zope.event",
+            "zope.exceptions",
+            "zope.interface",
+            "zope.lifecycleevent",
+            "zope.location",
+            "zope.component[zcml] ; extra == 'test'",
+            "zope.configuration ; extra == 'test'",
+            "zope.security[zcml] ; extra == 'test'",
+            "zope.dublincore (>=3.8) ; extra == 'test'",
+            "zope.principalannotation ; extra == 'test'",
+            "zope.testing ; extra == 'test'",
+            "zope.testrunner ; extra == 'test'",
+            "zope.traversing ; extra == 'test'",
+            "zope.component[zcml] ; extra == 'zcml'",
+            "zope.configuration ; extra == 'zcml'",
+            "zope.security[zcml] ; extra == 'zcml'"
           ]
         }
       }
