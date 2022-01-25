@@ -8052,7 +8052,32 @@
     "36.7.0": "36.4.0",
     "37.0.0": "36.4.0",
     "37.0.1": "36.4.0",
-    "37.0.2": "36.4.0"
+    "37.0.2": "36.4.0",
+    "37.0.3": {
+      "27": {
+        "install_requires": [
+          "bitstruct>=6.0.0",
+          "python-can>=2.2.0",
+          "textparser>=0.21.1",
+          "diskcache",
+          "argparse_addons",
+          "typing_extensions>=3.10.0.0"
+        ],
+        "extras_require": {
+          "plot": [
+            "matplotlib"
+          ]
+        },
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "capdredhompy": {
     "4.2.13": {
@@ -23544,7 +23569,22 @@
       "39": "36",
       "310": "36"
     },
-    "1.2.0": "1.1.1"
+    "1.2.0": "1.1.1",
+    "1.2.1": {
+      "36": {
+        "install_requires": [
+          "addict==2.4.0",
+          "protobuf==3.19.3"
+        ],
+        "setup_requires": [
+          "cython<0.30"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "hobonickels": {
     "0.1": {
@@ -51554,7 +51594,36 @@
     "1.15.0": "1.14.0",
     "1.15.1": "1.14.0",
     "1.15.2": "1.14.0",
-    "1.15.3": "1.14.0"
+    "1.15.3": "1.14.0",
+    "1.16.0": {
+      "37": {
+        "install_requires": [
+          "Sphinx>=4"
+        ],
+        "extras_require": {
+          "testing": [
+            "covdefaults>=2",
+            "coverage>=6",
+            "diff-cover>=6.4",
+            "nptyping>=1",
+            "pytest>=6",
+            "pytest-cov>=3",
+            "sphobjinv>=2",
+            "typing-extensions>=3.5"
+          ],
+          "type_comments": [],
+          "type_comments:python_version < \"3.8\"": [
+            "typed-ast>=1.4.0"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "38": "37",
+      "39": "37",
+      "310": "37"
+    }
   },
   "sphinx-erdiagram": {
     "0.0.1.dev20160520": {
@@ -55980,6 +56049,42 @@
           "fastapi<0.68,>=0.65",
           "geojson-pydantic",
           "jinja2<3.0.0,>=2.11.2",
+          "numpy",
+          "pydantic",
+          "rasterio",
+          "rio-tiler<3.1,>=3.0",
+          "simplejson"
+        ],
+        "extras_require": {
+          "test": [
+            "pytest",
+            "pytest-cov",
+            "pytest-asyncio",
+            "requests"
+          ],
+          ":python_version < \"3.9\"": [
+            "importlib_resources>=1.1.0"
+          ],
+          ":python_version < \"3.8\"": [
+            "typing_extensions"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "0.4.1": "0.4.0",
+    "0.4.2": {
+      "36": {
+        "install_requires": [
+          "fastapi!=0.68.0,!=0.68.1,!=0.68.2,!=0.69.0,!=0.70.0,!=0.70.1,!=0.71.0,!=0.72.0,>=0.65",
+          "geojson-pydantic",
+          "jinja2<4.0.0,>=2.11.2",
           "numpy",
           "pydantic",
           "rasterio",
