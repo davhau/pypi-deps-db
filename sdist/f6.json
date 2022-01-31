@@ -1962,7 +1962,29 @@
     "1.0.7": "1.0.1",
     "1.0.8": "1.0.1",
     "1.1.0": "1.0.1",
-    "1.1.1": "1.0.1"
+    "1.1.1": "1.0.1",
+    "1.2.0": {
+      "27": {
+        "install_requires": [
+          "openpyxl>=3.0.6",
+          "psutil>=5.8.0",
+          "pandas>=1.2.1",
+          "demultiplexer>=1.1.0",
+          "joblib>=1.0.0",
+          "biopython>=1.78",
+          "cutadapt>=3.5",
+          "tqdm>=4.56.0"
+        ],
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "arches-hip": {
     "1.0": {
@@ -27567,6 +27589,58 @@
       "38": "27",
       "39": "27",
       "310": "27"
+    },
+    "0.3.0": {
+      "27": {
+        "install_requires": [
+          "GitPython<4.0.0,>=3.1.20",
+          "PyPika<0.49.0,>=0.48.8",
+          "PyYAML<6.0.0,>=5.4.1",
+          "click<9.0,>=8.0",
+          "colorama<0.5.0,>=0.4.4",
+          "importlib-metadata<5.0.0,>=4.8.2",
+          "lkml<2.0.0,>=1.1.0",
+          "networkx<3.0.0,>=2.6.3",
+          "requests<3.0.0,>=2.26.0",
+          "sqlparse<0.5.0,>=0.4.1"
+        ],
+        "extras_require": {
+          "all": [
+            "pandas<2.0.0,>=1.2.2",
+            "snowflake-connector-python<2.6.0,>=2.5.1",
+            "pyarrow==3.0.0",
+            "google-cloud-bigquery<3.0.0,>=2.24.1",
+            "dbt-core<2.0.0,>=1.0.0",
+            "dbt-extractor<0.5.0,>=0.4.0",
+            "dbt-snowflake<2.0.0,>=1.0.0",
+            "dbt-bigquery<2.0.0,>=1.0.0"
+          ],
+          "dbt": [
+            "dbt-core<2.0.0,>=1.0.0",
+            "dbt-extractor<0.5.0,>=0.4.0"
+          ],
+          "bigquery": [
+            "pandas<2.0.0,>=1.2.2",
+            "pyarrow==3.0.0",
+            "google-cloud-bigquery<3.0.0,>=2.24.1",
+            "dbt-bigquery<2.0.0,>=1.0.0"
+          ],
+          "snowflake": [
+            "pandas<2.0.0,>=1.2.2",
+            "snowflake-connector-python<2.6.0,>=2.5.1",
+            "pyarrow==3.0.0",
+            "dbt-snowflake<2.0.0,>=1.0.0"
+          ]
+        },
+        "python_requires": [
+          ">=3.7.1,<3.10"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
     }
   },
   "mezzanine-organization": {
@@ -31941,6 +32015,33 @@
             "pytest",
             "wrapt<2.0.0,>=1.0.0",
             "opentelemetry-test-utils==0.28b0",
+            "pika>=0.12.0"
+          ],
+          "instruments": [
+            "pika>=0.12.0"
+          ]
+        },
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "0.28b1": {
+      "36": {
+        "install_requires": [
+          "opentelemetry-api~=1.5",
+          "wrapt<2.0.0,>=1.0.0",
+          "packaging>=20.0"
+        ],
+        "extras_require": {
+          "test": [
+            "pytest",
+            "wrapt<2.0.0,>=1.0.0",
+            "opentelemetry-test-utils==0.28b1",
             "pika>=0.12.0"
           ],
           "instruments": [
