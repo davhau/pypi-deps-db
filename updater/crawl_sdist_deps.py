@@ -468,8 +468,6 @@ def main():
         with Measure("getting jobs"):
             jobs = get_jobs(
                 pypi_index, error_dict, pkgs_dict, bucket, py_vers_short, limit_num=bucket_jobs, limit_names=limit_names)
-            if not jobs:
-                continue
             compute_drvs(jobs, extractor_src, store=store)
 
         # ensure that all the build time dependencies are cached before starting,

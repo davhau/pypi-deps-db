@@ -1,8 +1,9 @@
 {
   inputs = {
     mach-nix.url = "mach-nix";
-    nixpkgs.url = "nixpkgs/nixos-unstable";
-    nixpkgsPy36.url = "nixpkgs/b4db68ff563895eea6aab4ff24fa04ef403dfe14";
+    mach-nix.inputs.nixpkgs.follows = "nixpkgs";
+    mach-nix.inputs.pypi-deps-db.follows = "";
+    nixpkgs.url = "nixpkgs/nixos-21.11";
     pypiIndex.url = "github:davhau/nix-pypi-fetcher";
     pypiIndex.flake = false;
   };
@@ -13,7 +14,7 @@
     let
       systems = ["x86_64-linux"];
       self = {
-        lib.supportedPythonVersions = [ "27" "36" "37" "38" "39" "310" ];
+        lib.supportedPythonVersions = [ "37" "38" "39" ];
         lib.formatVersion = toInt (readFile ./FORMAT_VERSION);
       } 
       // foldl' (a: b: recursiveUpdate a b) {} ( map ( system:
@@ -32,20 +33,13 @@
             pkgs.git
             pkgs.nixFlakes
           ];
-          # py27 and p36 crash when taken from current nixpkgs
-          # this overlay mixes python interpreters from old and new nixpkgs
-          py36Overlay = pkgs.writeText "py36-overlay.nix" ''
+          pyOverlay = pkgs.writeText "py36-overlay.nix" ''
             [(curr: prev: 
-              let
-                pkgsNew = import ${inp.nixpkgs} {};
-              in rec {
+              rec {
                 useInterpreters = [
-                  prev.python27
-                  prev.python36
-                  pkgsNew.python37
-                  pkgsNew.python38
-                  pkgsNew.python39
-                  pkgsNew.python310
+                  prev.python37
+                  prev.python38
+                  prev.python39
                 ];
               }
             )]
@@ -60,7 +54,7 @@
             EXTRACTOR_SRC = "${inp.mach-nix}/lib/extractor";
           };
           fixedVars = {
-            NIX_PATH = "nixpkgs=${inp.nixpkgsPy36}:nixpkgs-overlays=${py36Overlay}";
+            NIX_PATH = "nixpkgs=${inp.nixpkgs}:nixpkgs-overlays=${pyOverlay}";
           };
           # defaultVars are only set if they are not already set
           # fixedVars are always set
@@ -84,6 +78,8 @@
             update-wheel.type = "app";
             update-wheel.program = toString (pkgs.writeScript "update-wheel" ''
               #!/usr/bin/env bash
+              set -e
+              set -x
               ${exports}
               ${pyEnv}/bin/python ${./updater}/crawl_wheel_deps.py
             '');
@@ -92,6 +88,8 @@
             update-sdist.type = "app";
             update-sdist.program = toString (pkgs.writeScript "update-sdist" ''
               #!/usr/bin/env bash
+              set -e
+              set -x
               ${exports}
               ${pyEnv}/bin/python ${./updater}/crawl_sdist_deps.py
             '');
@@ -105,18 +103,8 @@
 
               # update the index to get the newest packages
               indexRevPrev=$(${pkgs.nixFlakes}/bin/nix flake metadata --json | ${pkgs.jq}/bin/jq -e --raw-output '.locks .nodes .pypiIndex .locked .rev')
-              nix flake lock --update-input pypiIndex
+              #nix flake lock --update-input pypiIndex
               indexRev=$(${pkgs.nixFlakes}/bin/nix flake metadata --json | ${pkgs.jq}/bin/jq -e --raw-output '.locks .nodes .pypiIndex .locked .rev')
-              if [ "$indexRevPrev" == "$indexRev" ]; then
-                echo "Index unchanged. Nothing to do. Exiting..."
-                exit 0
-              fi
-
-              # crawl wheel and sdist packages
-              # If CI system has a run time limit, make sure to set MAX_MINUTES_WHEEL and MAX_MINUTES_SDIST
-              # time ratio for wheel/sdist should be around 1/10
-              MAX_MINUTES=''${MAX_MINUTES_WHEEL:-0} ${pkgs.nixFlakes}/bin/nix run .#update-wheel
-              MAX_MINUTES=''${MAX_MINUTES_SDIST:-0} ${pkgs.nixFlakes}/bin/nix run .#update-sdist
 
               # commit to git
               echo $(date +%s) > UNIX_TIMESTAMP
@@ -124,7 +112,14 @@
               echo $indexRev > PYPI_FETCHER_COMMIT
               echo $indexHash > PYPI_FETCHER_SHA256
 
+              # crawl wheel and sdist packages
+              # If CI system has a run time limit, make sure to set MAX_MINUTES_WHEEL and MAX_MINUTES_SDIST
+              # time ratio for wheel/sdist should be around 1/10
+              MAX_MINUTES=''${MAX_MINUTES_WHEEL:-0} ${update-wheel.program}
+              MAX_MINUTES=''${MAX_MINUTES_SDIST:-0} ${update-sdist.program}
+
               git add sdist sdist-errors wheel flake.lock UNIX_TIMESTAMP PYPI_FETCHER_COMMIT PYPI_FETCHER_SHA256
+              git status
               git pull origin $(git rev-parse --abbrev-ref HEAD)
               git commit -m "$(date) - update sdist + wheel"
             '');
