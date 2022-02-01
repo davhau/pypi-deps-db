@@ -3,13 +3,14 @@ import multiprocessing
 import os
 import re
 import shutil
+import shlex
 import subprocess as sp
 import traceback
 from dataclasses import asdict, dataclass, field
 from random import shuffle
 from tempfile import TemporaryDirectory
 from time import time
-from typing import Union, List, ContextManager
+from typing import ContextManager, List, Union
 
 import utils
 from bucket_dict import LazyBucketDict
@@ -63,16 +64,15 @@ def compute_drvs(jobs: List[PackageJob], extractor_src, store=None):
         with open(jobs_file, 'w') as f:
             json.dump(extractor_jobs, f)
         os.environ['EXTRACTOR_JOBS_JSON_FILE'] = jobs_file
-        cmd = ["nix", "eval", "--impure", "-f", f"{extractor_src}/make-drvs.nix",]
+        cmd = ["nix", "eval", "-L", "--impure", "--json", "--expr", f"import {extractor_src}/make-drvs.nix {{ pypiData = ./.; }}"]
         if store:
             cmd += ["--store", store]
         print(' '.join(cmd).replace(' "', ' \'"').replace('" ', '"\' '))
         try:
-            nix_eval_result = sp.run(cmd, capture_output=True, check=True)
+            nix_eval_result = sp.run(cmd, check=True, stdout=sp.PIPE)
         except sp.CalledProcessError as e:
-            print(e.stderr)
             raise
-        result = json.loads(json.loads(nix_eval_result.stdout))
+        result = json.loads(nix_eval_result.stdout)
     for job in jobs:
         job.drv = result[f"{job.name}#{job.version}"]
 
@@ -127,7 +127,7 @@ def format_error(log: str, pkg_version):
     return ''.join(list(filtered)[:90])
 
 
-def extract_requirements(job: PackageJob, deadline, total_num, store=None):
+def extract_requirements(job: PackageJob, deadline, total_num, store, extractor_src):
     try:
         if deadline and time() > deadline:
             raise Exception("Deadline occurred. Skipping this job")
@@ -135,10 +135,20 @@ def extract_requirements(job: PackageJob, deadline, total_num, store=None):
               f"{job.name}:{job.version}     (py: {' '.join(job.py_versions)})")
         with TemporaryDirectory() as tempdir:
             out_dir = f"{tempdir}/json"
-            cmd = ["nix-build", job.drv, "-o", out_dir]
+            cmd = ["nix", "build", "-L",
+                   "-f", f"{extractor_src}/fast-extractor.nix",
+                   "--arg", "pypiData", "./.",
+                   "--argstr", "argsJSON", json.dumps(dict(
+                       pkg=job.name,
+                       version=job.version,
+                       url=job.url,
+                       sha256=job.sha256,
+                       pyVersions=job.py_versions,
+                   )),
+                   "-o", out_dir]
             if store:
                 cmd += ["--store", store]
-            # print(' '.join(cmd).replace(' "', ' \'"').replace('" ', '"\' '))
+            print(" ".join(map(shlex.quote, cmd)))
             try:
                 sp.run(cmd, capture_output=True, timeout=job.timeout, check=True)
             except (sp.CalledProcessError, sp.TimeoutExpired) as e:
@@ -156,12 +166,15 @@ def extract_requirements(job: PackageJob, deadline, total_num, store=None):
                     error=formatted,
                 ) for py_ver in job.py_versions]
             results = []
+            path = os.readlink(f"{out_dir}")
+            if store:
+                path = path.replace('/nix/store', f"{store}/nix/store")
+            with open(f"{path}/build-system.json") as f:
+                content = f.read().strip()
+                build_system = json.loads(content)
             for py_ver in job.py_versions:
                 data = None
                 try:
-                    path = os.readlink(f"{out_dir}")
-                    if store:
-                        path = path.replace('/nix/store', f"{store}/nix/store")
                     with open(f"{path}/python{py_ver}.json") as f:
                         content = f.read().strip()
                         if content != '':
@@ -186,7 +199,9 @@ def extract_requirements(job: PackageJob, deadline, total_num, store=None):
                         name=job.name,
                         version=job.version,
                         py_ver=py_ver,
-                        **data
+                        install_requires=data["requires_dist"],
+                        setup_requires=build_system["requires"] + data["build-requires"],
+                        python_requires=data["requires_python"],
                     ))
             return results
     except Exception as e:
@@ -439,8 +454,8 @@ def main():
     deadline_total = time() + max_minutes * 60 if max_minutes else None
 
     # cache build time deps, otherwise first job will be slow
-    with Measure("ensure build time deps"):
-        build_base(extractor_src, py_vers_short, store=store)
+    #with Measure("ensure build time deps"):
+    #    build_base(extractor_src, py_vers_short, store=store)
 
     garbage_collected = False
 
@@ -468,13 +483,11 @@ def main():
         with Measure("getting jobs"):
             jobs = get_jobs(
                 pypi_index, error_dict, pkgs_dict, bucket, py_vers_short, limit_num=bucket_jobs, limit_names=limit_names)
-            compute_drvs(jobs, extractor_src, store=store)
+            if not jobs:
+                continue
 
         # ensure that all the build time dependencies are cached before starting,
         # otherwise jobs might time out
-        if garbage_collected:
-            with Measure("ensure build time deps"):
-                build_base(extractor_src, py_vers_short, store=store)
         with Measure('executing jobs'):
             if workers > 1:
                 pool_results = utils.parallel(
@@ -483,12 +496,13 @@ def main():
                         jobs,
                         (deadline,) * len(jobs),
                         (len(jobs),) * len(jobs),
-                        (store,) * len(jobs)
+                        (store,) * len(jobs),
+                        (extractor_src,) * len(jobs),
                     ),
                     workers=workers,
                     use_processes=False)
             else:
-                pool_results = [extract_requirements(args, deadline, store) for args in jobs]
+                pool_results = [extract_requirements(args, deadline, store, extractor_src) for args in jobs]
 
         # filter out exceptions
         results = []

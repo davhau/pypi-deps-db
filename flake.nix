@@ -1,6 +1,6 @@
 {
   inputs = {
-    mach-nix.url = "mach-nix";
+    mach-nix.url = "github:tp-la/mach-nix/pep517-metadata-for-db";
     mach-nix.inputs.nixpkgs.follows = "nixpkgs";
     mach-nix.inputs.pypi-deps-db.follows = "";
     nixpkgs.url = "nixpkgs/nixos-21.11";
@@ -91,6 +91,8 @@
               set -e
               set -x
               ${exports}
+              export LIMIT_NAMES=twisted
+              export BUCKET_START=27 AMOUNT_BUCKETS=1
               ${pyEnv}/bin/python ${./updater}/crawl_sdist_deps.py
             '');
 
@@ -115,11 +117,10 @@
               # crawl wheel and sdist packages
               # If CI system has a run time limit, make sure to set MAX_MINUTES_WHEEL and MAX_MINUTES_SDIST
               # time ratio for wheel/sdist should be around 1/10
-              MAX_MINUTES=''${MAX_MINUTES_WHEEL:-0} ${update-wheel.program}
+              #MAX_MINUTES=''${MAX_MINUTES_WHEEL:-0} ${update-wheel.program}
               MAX_MINUTES=''${MAX_MINUTES_SDIST:-0} ${update-sdist.program}
 
               git add sdist sdist-errors wheel flake.lock UNIX_TIMESTAMP PYPI_FETCHER_COMMIT PYPI_FETCHER_SHA256
-              git status
               git pull origin $(git rev-parse --abbrev-ref HEAD)
               git commit -m "$(date) - update sdist + wheel"
             '');
