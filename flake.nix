@@ -93,7 +93,7 @@
               ${exports}
               export LIMIT_NAMES=twisted
               export BUCKET_START=27 AMOUNT_BUCKETS=1
-              export WORKERS=2
+              export WORKERS=1
               ${pyEnv}/bin/python ${./updater}/crawl_sdist_deps.py
             '');
 
