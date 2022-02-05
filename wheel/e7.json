@@ -5791,6 +5791,23 @@
   },
   "bodo": {
     "cp38": {
+      "2019.39": {
+        "bodo-2019.39-cp38-cp38-macosx_10_15_x86_64.whl": {
+          "provides_extras": [
+            "hdf5",
+            "parquet"
+          ],
+          "requires_dist": [
+            "numba (==0.55.0)",
+            "pyarrow (==5.0.0)",
+            "pandas (==1.3.*)",
+            "numpy (<1.21,>=1.18)",
+            "mpi4py-mpich (==3.1.2)",
+            "h5py ; extra == 'hdf5'",
+            "pyarrow ; extra == 'parquet'"
+          ]
+        }
+      },
       "2021.10.1": {
         "bodo-2021.10.1-cp38-cp38-manylinux2014_x86_64.manylinux_2_17_x86_64.whl": {
           "provides_extras": [
@@ -5809,7 +5826,13 @@
         }
       },
       "2022.1": {
-        "bodo-2022.1-cp38-cp38-manylinux2014_x86_64.manylinux_2_17_x86_64.whl": {
+        "bodo-2022.1-cp38-cp38-manylinux2014_x86_64.manylinux_2_17_x86_64.whl": "2019.39@bodo-2019.39-cp38-cp38-macosx_10_15_x86_64.whl",
+        "bodo-2022.1-cp38-cp38-win_amd64.whl": "2019.39@bodo-2019.39-cp38-cp38-macosx_10_15_x86_64.whl"
+      }
+    },
+    "cp39": {
+      "2019.39": {
+        "bodo-2019.39-cp39-cp39-macosx_10_15_x86_64.whl": {
           "provides_extras": [
             "hdf5",
             "parquet"
@@ -5823,11 +5846,8 @@
             "h5py ; extra == 'hdf5'",
             "pyarrow ; extra == 'parquet'"
           ]
-        },
-        "bodo-2022.1-cp38-cp38-win_amd64.whl": "2022.1@bodo-2022.1-cp38-cp38-manylinux2014_x86_64.manylinux_2_17_x86_64.whl"
-      }
-    },
-    "cp39": {
+        }
+      },
       "2021.10.1": {
         "bodo-2021.10.1-cp39-cp39-manylinux2014_x86_64.manylinux_2_17_x86_64.whl": {
           "provides_extras": [
@@ -5846,22 +5866,8 @@
         }
       },
       "2022.1": {
-        "bodo-2022.1-cp39-cp39-manylinux2014_x86_64.manylinux_2_17_x86_64.whl": {
-          "provides_extras": [
-            "hdf5",
-            "parquet"
-          ],
-          "requires_dist": [
-            "numba (==0.55.0)",
-            "pyarrow (==5.0.0)",
-            "pandas (==1.3.*)",
-            "numpy (<1.21,>=1.18)",
-            "mpi4py-mpich (==3.1.2)",
-            "h5py ; extra == 'hdf5'",
-            "pyarrow ; extra == 'parquet'"
-          ]
-        },
-        "bodo-2022.1-cp39-cp39-win_amd64.whl": "2022.1@bodo-2022.1-cp39-cp39-manylinux2014_x86_64.manylinux_2_17_x86_64.whl"
+        "bodo-2022.1-cp39-cp39-manylinux2014_x86_64.manylinux_2_17_x86_64.whl": "2019.39@bodo-2019.39-cp39-cp39-macosx_10_15_x86_64.whl",
+        "bodo-2022.1-cp39-cp39-win_amd64.whl": "2019.39@bodo-2019.39-cp39-cp39-macosx_10_15_x86_64.whl"
       }
     }
   },
@@ -12546,6 +12552,30 @@
       },
       "2.1.2": {
         "fortls-2.1.2-py3-none-any.whl": "1.12.0@fortls-1.12.0-py3-none-any.whl"
+      },
+      "2.2.0": {
+        "fortls-2.2.0-py3-none-any.whl": {
+          "provides_extras": [
+            "dev",
+            "docs"
+          ],
+          "requires_dist": [
+            "importlib-metadata ; python_version < \"3.8\"",
+            "pytest (>=5.4.3) ; extra == 'dev'",
+            "pytest-cov (>=2.12.1) ; extra == 'dev'",
+            "black ; extra == 'dev'",
+            "isort ; extra == 'dev'",
+            "sphinx (~=4.0.0) ; extra == 'docs'",
+            "sphinx-rtd-theme ; extra == 'docs'",
+            "sphinx-argparse ; extra == 'docs'",
+            "sphinx-autodoc-typehints ; extra == 'docs'",
+            "myst-parser ; extra == 'docs'"
+          ],
+          "requires_python": ">=3.7"
+        }
+      },
+      "2.2.1": {
+        "fortls-2.2.1-py3-none-any.whl": "2.2.0@fortls-2.2.0-py3-none-any.whl"
       }
     }
   },
@@ -21671,6 +21701,15 @@
       },
       "0.0.13": {
         "mccloud-0.0.13-py2.py3-none-any.whl": "0.0.10@mccloud-0.0.10-py2.py3-none-any.whl"
+      },
+      "0.0.14": {
+        "mccloud-0.0.14-py2.py3-none-any.whl": {
+          "requires_dist": [
+            "Click",
+            "pandas"
+          ],
+          "requires_python": ">=3"
+        }
       },
       "0.0.4": {
         "mccloud-0.0.4-py2.py3-none-any.whl": "0.0.10@mccloud-0.0.10-py2.py3-none-any.whl"
@@ -34640,6 +34679,9 @@
       "0.0.11": {
         "pepperize.cdk_security_group-0.0.11-py3-none-any.whl": "0.0.10@pepperize.cdk_security_group-0.0.10-py3-none-any.whl"
       },
+      "0.0.12": {
+        "pepperize.cdk_security_group-0.0.12-py3-none-any.whl": "0.0.10@pepperize.cdk_security_group-0.0.10-py3-none-any.whl"
+      },
       "0.0.2": {
         "pepperize.cdk_security_group-0.0.2-py3-none-any.whl": "0.0.0@pepperize.cdk_security_group-0.0.0-py3-none-any.whl"
       },
@@ -46158,6 +46200,35 @@
             "petl (>=1.7.4)",
             "python-dateutil (>=2.8.1)",
             "tastyworks-api (>=4.1.0.3)"
+          ]
+        }
+      },
+      "1.0.0": {
+        "tastyworks_cli-1.0.0-py3-none-any.whl": {
+          "requires_dist": [
+            "asyncclick (>=8.0.3.2)",
+            "matplotlib (>=3.5.1)",
+            "pandas (>=1.4.0)",
+            "petl (>=1.7.7)",
+            "python-dateutil (>=2.8.2)",
+            "rich (>=11.1.0)",
+            "QuantLib (>=1.25)",
+            "tastyworks-api (>=4.2.2)"
+          ]
+        }
+      },
+      "1.0.3": {
+        "tastyworks_cli-1.0.3-py3-none-any.whl": {
+          "requires_dist": [
+            "anyio (>=3.5.0)",
+            "asyncclick (>=8.0.3.2)",
+            "matplotlib (>=3.5.1)",
+            "pandas (>=1.4.0)",
+            "petl (>=1.7.7)",
+            "python-dateutil (>=2.8.2)",
+            "rich (>=11.1.0)",
+            "QuantLib (>=1.25)",
+            "tastyworks-api (>=4.2.2)"
           ]
         }
       }
