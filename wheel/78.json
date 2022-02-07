@@ -8866,6 +8866,36 @@
       "1.13.3": {
         "COMPAS-1.13.3-py2.py3-none-any.whl": "1.12.0@COMPAS-1.12.0-py2.py3-none-any.whl"
       },
+      "1.14.0": {
+        "COMPAS-1.14.0-py2.py3-none-any.whl": {
+          "provides_extras": [
+            "planarity"
+          ],
+          "requires_dist": [
+            "cython",
+            "jsonschema",
+            "networkx",
+            "numba",
+            "numpy (>=1.15.4)",
+            "pillow",
+            "pycollada",
+            "schema",
+            "scipy (>=1.1)",
+            "sympy",
+            "typing-extensions",
+            "watchdog",
+            "imageio (<=2.6) ; python_version < \"3.5\"",
+            "matplotlib (<3.0,>=2.2) ; python_version >= \"2.7\" and python_version < \"3.0\"",
+            "imageio (>=2.7) ; python_version >= \"3.5\"",
+            "matplotlib (<3.1,>=2.2) ; python_version >= \"3.5\" and python_version <= \"3.7\" and sys_platform == \"win32\"",
+            "matplotlib (>=2.2) ; python_version >= \"3.5\" and sys_platform != \"win32\"",
+            "matplotlib (>=3.1) ; python_version >= \"3.8\" and sys_platform == \"win32\"",
+            "planarity ; sys_platform != \"win32\"",
+            "planarity ; extra == 'planarity'"
+          ],
+          "requires_python": ">=2.7"
+        }
+      },
       "1.2.0": {
         "COMPAS-1.2.0-py2.py3-none-any.whl": "1.0.0@COMPAS-1.0.0-py2.py3-none-any.whl"
       },
@@ -17441,6 +17471,15 @@
           "requires_dist": [
             "flake8 (>=3)",
             "jira (>=2.0.0,<3.0.0)"
+          ],
+          "requires_python": ">=3.6,<4.0"
+        }
+      },
+      "0.6.1": {
+        "flake8_jira_todo_checker-0.6.1-py3-none-any.whl": {
+          "requires_dist": [
+            "flake8 (>=3,<5)",
+            "jira (>=3.1.1,<4.0.0)"
           ],
           "requires_python": ">=3.6,<4.0"
         }
@@ -49105,6 +49144,22 @@
       },
       "0.0.14": {
         "seaborn_extensions-0.0.14-py2.py3-none-any.whl": "0.0.12@seaborn_extensions-0.0.12-py2.py3-none-any.whl"
+      }
+    }
+  },
+  "seagulls-cli": {
+    "py3": {
+      "0.1.0rc1": {
+        "seagulls_cli-0.1.0rc1-py3-none-any.whl": {
+          "provides_extras": [
+            "dev"
+          ],
+          "requires_dist": [
+            "seagulls-devtools; extra == \"dev\"",
+            "seagulls-engine"
+          ],
+          "requires_python": ">=3.8,<4.0"
+        }
       }
     }
   },
