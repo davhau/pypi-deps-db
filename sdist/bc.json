@@ -14034,6 +14034,50 @@
       "38": "36",
       "39": "36",
       "310": "36"
+    },
+    "1.4.0": {
+      "36": {
+        "install_requires": [
+          "black>=21.5b1",
+          "toml"
+        ],
+        "extras_require": {
+          "isort": [
+            "isort>=5.0.1"
+          ],
+          "test": [
+            "black>=21.7b1",
+            "flake8<4",
+            "mypy>=0.910",
+            "pylint",
+            "pytest>=6.1.0",
+            "pytest-darker",
+            "pytest-flake8>=1.0.6",
+            "pytest-isort>=1.1.0",
+            "pytest-kwparametrize>=0.0.3",
+            "pytest-mypy",
+            "pygments",
+            "regex>=2021.4.4",
+            "types-toml>=0.1.3"
+          ],
+          "test:python_version < \"3.7\"": [
+            "types-dataclasses"
+          ],
+          ":python_version < \"3.8\"": [
+            "typing-extensions"
+          ],
+          ":python_version < \"3.7\"": [
+            "dataclasses"
+          ]
+        },
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
     }
   },
   "dash-collapsible-tree": {
@@ -21416,6 +21460,132 @@
             "tensorflow>=2.3.0",
             "pandas>=1.0.0",
             "lit-nlp>=0.4.0"
+          ],
+          "cloud_profiler": [
+            "tensorboard-plugin-profile>=2.4.0",
+            "werkzeug>=2.0.0",
+            "tensorflow>=2.4.0"
+          ]
+        },
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "1.10.0": {
+      "27": {
+        "install_requires": [
+          "google-api-core[grpc]<3.0.0dev,>=1.26.0",
+          "proto-plus>=1.10.1",
+          "packaging>=14.3",
+          "google-cloud-storage<2.0.0dev,>=1.32.0",
+          "google-cloud-bigquery<3.0.0dev,>=1.15.0"
+        ],
+        "extras_require": {
+          "full": [
+            "lit-nlp>=0.4.0",
+            "pandas>=1.0.0",
+            "pyarrow>=6.0.1",
+            "tensorflow<=2.5.0,>=2.3.0",
+            "tensorflow>=2.3.0",
+            "explainable-ai-sdk>=1.0.0",
+            "google-cloud-bigquery-storage",
+            "tensorflow<=2.7.0,>=2.3.0"
+          ],
+          "cloud_profiler": [
+            "tensorboard-plugin-profile>=2.4.0",
+            "werkzeug>=2.0.0",
+            "tensorflow>=2.4.0"
+          ],
+          "lit": [
+            "tensorflow>=2.3.0",
+            "pandas>=1.0.0",
+            "lit-nlp>=0.4.0",
+            "explainable-ai-sdk>=1.0.0"
+          ],
+          "xai": [
+            "tensorflow<=2.5.0,>=2.3.0"
+          ],
+          "testing": [
+            "lit-nlp>=0.4.0",
+            "pandas>=1.0.0",
+            "pyarrow>=6.0.1",
+            "tensorflow<=2.5.0,>=2.3.0",
+            "tensorflow>=2.3.0",
+            "explainable-ai-sdk>=1.0.0",
+            "google-cloud-bigquery-storage",
+            "tensorflow<=2.7.0,>=2.3.0",
+            "tensorboard-plugin-profile>=2.4.0",
+            "werkzeug>=2.0.0",
+            "tensorflow>=2.4.0",
+            "grpcio-testing",
+            "pytest-xdist",
+            "ipython"
+          ],
+          "tensorboard": [
+            "tensorflow<=2.7.0,>=2.3.0"
+          ],
+          "metadata": [
+            "pandas>=1.0.0"
+          ]
+        },
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "36": {
+        "install_requires": [
+          "google-api-core[grpc]<3.0.0dev,>=1.26.0",
+          "proto-plus>=1.10.1",
+          "packaging>=14.3",
+          "google-cloud-storage<2.0.0dev,>=1.32.0",
+          "google-cloud-bigquery<3.0.0dev,>=1.15.0"
+        ],
+        "extras_require": {
+          "full": [
+            "google-cloud-bigquery-storage",
+            "tensorflow<=2.5.0,>=2.3.0",
+            "pyarrow>=6.0.1",
+            "pandas>=1.0.0",
+            "tensorflow<=2.7.0,>=2.3.0",
+            "explainable-ai-sdk>=1.0.0",
+            "tensorflow>=2.3.0",
+            "lit-nlp>=0.4.0"
+          ],
+          "metadata": [
+            "pandas>=1.0.0"
+          ],
+          "tensorboard": [
+            "tensorflow<=2.7.0,>=2.3.0"
+          ],
+          "testing": [
+            "google-cloud-bigquery-storage",
+            "tensorflow<=2.5.0,>=2.3.0",
+            "pyarrow>=6.0.1",
+            "pandas>=1.0.0",
+            "tensorflow<=2.7.0,>=2.3.0",
+            "explainable-ai-sdk>=1.0.0",
+            "tensorflow>=2.3.0",
+            "lit-nlp>=0.4.0",
+            "tensorboard-plugin-profile>=2.4.0",
+            "werkzeug>=2.0.0",
+            "tensorflow>=2.4.0",
+            "grpcio-testing",
+            "pytest-xdist",
+            "ipython"
+          ],
+          "xai": [
+            "tensorflow<=2.5.0,>=2.3.0"
+          ],
+          "lit": [
+            "tensorflow>=2.3.0",
+            "pandas>=1.0.0",
+            "lit-nlp>=0.4.0",
+            "explainable-ai-sdk>=1.0.0"
           ],
           "cloud_profiler": [
             "tensorboard-plugin-profile>=2.4.0",
@@ -65755,7 +65925,8 @@
     "1.5.0": "1.4.5",
     "1.5.0rc1": "1.4.5",
     "1.5.1": "1.4.5",
-    "1.5.1rc1": "1.4.5"
+    "1.5.1rc1": "1.4.5",
+    "1.5.2rc1": "1.4.5"
   },
   "teyit": {
     "0.1.0": {

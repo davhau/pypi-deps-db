@@ -5527,6 +5527,25 @@
       "310": "27"
     }
   },
+  "btc2fiat": {
+    "0.1.0": {
+      "27": {
+        "install_requires": [
+          "click",
+          "requests"
+        ],
+        "python_requires": [
+          ">=3.6.0"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "0.1.1": "0.1.0"
+  },
   "buiz": {
     "0.1": {
       "27": {},
@@ -6227,7 +6246,15 @@
       "310": "36"
     },
     "1.0.2": "1.0.1",
-    "1.0.3": "1.0.1"
+    "1.0.3": "1.0.1",
+    "1.0.4": {
+      "36": {},
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "1.0.5": "1.0.4"
   },
   "cloneme": {
     "0.1": {
@@ -13900,7 +13927,9 @@
     "1.1.0": "1.0.0",
     "1.1.1": "1.0.0",
     "1.2.0": "1.0.0",
-    "1.3.0": "1.0.0"
+    "1.3.0": "1.0.0",
+    "2.0.0rc0": "1.0.0",
+    "2.0.0rc1": "1.0.0"
   },
   "dane-jwe-jws": {
     "0.1": {
@@ -24890,6 +24919,36 @@
       "38": "36",
       "39": "36",
       "310": "36"
+    }
+  },
+  "everpay": {
+    "0.1.0": {
+      "27": {
+        "install_requires": [
+          "requests",
+          "web3.py",
+          "python-jose"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "0.1.1": {
+      "27": {
+        "install_requires": [
+          "requests",
+          "web3",
+          "python-jose"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
     }
   },
   "evmosgrpc": {
@@ -73859,7 +73918,229 @@
     "1.10.1.dev38": "1.10.1.dev21",
     "1.10.1.dev39": "1.10.1.dev21",
     "1.10.1.dev41": "1.10.1.dev21",
-    "1.10.1.dev43": "1.10.1.dev21"
+    "1.10.1.dev43": "1.10.1.dev21",
+    "1.10.1.dev45": {
+      "27": {
+        "install_requires": [
+          "cachetools>=3.0.0",
+          "palettable",
+          "Pillow!=8.3.0,!=8.3.1",
+          "psutil>=4.2.0",
+          "numpy>=1.10.4"
+        ],
+        "setup_requires": [
+          "setuptools-scm"
+        ],
+        "extras_require": {
+          "all": [
+            "large-image-source-tiff",
+            "pyvips",
+            "large-image-source-openslide",
+            "large-image-source-gdal",
+            "large-image-source-mapnik",
+            "large-image-source-bioformats",
+            "matplotlib",
+            "large-image-source-multi",
+            "large-image-source-nd2",
+            "large-image-source-dummy",
+            "large-image-source-ometiff",
+            "large-image-source-openjpeg",
+            "large-image-source-pil",
+            "large-image-converter",
+            "large-image-source-test",
+            "large-image-source-deepzoom"
+          ],
+          "all:platform_system != \"Windows\"": [
+            "pylibmc>=1.5.1"
+          ],
+          "pil": [
+            "large-image-source-pil"
+          ],
+          "tiff": [
+            "large-image-source-tiff"
+          ],
+          "sources": [
+            "large-image-source-tiff",
+            "large-image-source-openslide",
+            "large-image-source-gdal",
+            "large-image-source-mapnik",
+            "large-image-source-bioformats",
+            "large-image-source-test",
+            "large-image-source-nd2",
+            "large-image-source-dummy",
+            "large-image-source-ometiff",
+            "large-image-source-openjpeg",
+            "large-image-source-pil",
+            "large-image-source-multi",
+            "large-image-source-deepzoom"
+          ],
+          "mapnik": [
+            "large-image-source-mapnik"
+          ],
+          "memcached:platform_system != \"Windows\"": [
+            "pylibmc>=1.5.1"
+          ],
+          "ometiff": [
+            "large-image-source-ometiff"
+          ],
+          "colormaps": [
+            "matplotlib"
+          ],
+          "openslide": [
+            "large-image-source-openslide"
+          ],
+          "test": [
+            "large-image-source-test"
+          ],
+          "nd2": [
+            "large-image-source-nd2"
+          ],
+          "memcached": [],
+          "bioformats": [
+            "large-image-source-bioformats"
+          ],
+          "deepzoom": [
+            "large-image-source-deepzoom"
+          ],
+          "openjpeg": [
+            "large-image-source-openjpeg"
+          ],
+          ":python_version < \"3.8\"": [
+            "importlib-metadata"
+          ],
+          "gdal": [
+            "large-image-source-gdal"
+          ],
+          "dummy": [
+            "large-image-source-dummy"
+          ],
+          "multi": [
+            "large-image-source-multi"
+          ],
+          "tiledoutput": [
+            "pyvips"
+          ],
+          "converter": [
+            "large-image-converter"
+          ]
+        },
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "36": {
+        "install_requires": [
+          "cachetools>=3.0.0",
+          "palettable",
+          "Pillow!=8.3.0,!=8.3.1",
+          "psutil>=4.2.0",
+          "numpy>=1.10.4"
+        ],
+        "setup_requires": [
+          "setuptools-scm"
+        ],
+        "extras_require": {
+          "memcached": [],
+          "memcached:platform_system != \"Windows\"": [
+            "pylibmc>=1.5.1"
+          ],
+          "converter": [
+            "large-image-converter"
+          ],
+          "colormaps": [
+            "matplotlib"
+          ],
+          "tiledoutput": [
+            "pyvips"
+          ],
+          "bioformats": [
+            "large-image-source-bioformats"
+          ],
+          "deepzoom": [
+            "large-image-source-deepzoom"
+          ],
+          "dummy": [
+            "large-image-source-dummy"
+          ],
+          "gdal": [
+            "large-image-source-gdal"
+          ],
+          "mapnik": [
+            "large-image-source-mapnik"
+          ],
+          "multi": [
+            "large-image-source-multi"
+          ],
+          "nd2": [
+            "large-image-source-nd2"
+          ],
+          "ometiff": [
+            "large-image-source-ometiff"
+          ],
+          "openjpeg": [
+            "large-image-source-openjpeg"
+          ],
+          "openslide": [
+            "large-image-source-openslide"
+          ],
+          "pil": [
+            "large-image-source-pil"
+          ],
+          "test": [
+            "large-image-source-test"
+          ],
+          "tiff": [
+            "large-image-source-tiff"
+          ],
+          "sources": [
+            "large-image-source-mapnik",
+            "large-image-source-ometiff",
+            "large-image-source-bioformats",
+            "large-image-source-dummy",
+            "large-image-source-multi",
+            "large-image-source-openjpeg",
+            "large-image-source-tiff",
+            "large-image-source-test",
+            "large-image-source-gdal",
+            "large-image-source-nd2",
+            "large-image-source-deepzoom",
+            "large-image-source-pil",
+            "large-image-source-openslide"
+          ],
+          "all": [
+            "pyvips",
+            "large-image-source-pil",
+            "large-image-source-mapnik",
+            "large-image-source-ometiff",
+            "large-image-source-bioformats",
+            "large-image-source-dummy",
+            "large-image-source-multi",
+            "large-image-source-openjpeg",
+            "large-image-source-tiff",
+            "large-image-source-test",
+            "large-image-source-gdal",
+            "large-image-converter",
+            "large-image-source-nd2",
+            "large-image-source-deepzoom",
+            "matplotlib",
+            "large-image-source-openslide"
+          ],
+          "all:platform_system != \"Windows\"": [
+            "pylibmc>=1.5.1"
+          ],
+          ":python_version < \"3.8\"": [
+            "importlib-metadata"
+          ]
+        },
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "lark-grammars": {
     "0.1.0": {
@@ -90220,6 +90501,29 @@
     "0.1.8": "0.1.2",
     "0.2.0": "0.1.2",
     "0.2.1": "0.1.2"
+  },
+  "pymycustomlinearmodel": {
+    "0.1": {
+      "27": {
+        "install_requires": [
+          "flask",
+          "Flask-Cors",
+          "matplotlib",
+          "numpy",
+          "pandas",
+          "pandas-profiling",
+          "scikit-learn",
+          "seaborn",
+          "scipy",
+          "statsmodels"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "pyndler": {
     "0.1.0": {

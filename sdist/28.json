@@ -28911,7 +28911,8 @@
     "1.10.1.dev38": "1.10.0",
     "1.10.1.dev39": "1.10.0",
     "1.10.1.dev41": "1.10.0",
-    "1.10.1.dev43": "1.10.0"
+    "1.10.1.dev43": "1.10.0",
+    "1.10.1.dev45": "1.10.0"
   },
   "lateksii-invoicegen": {
     "1.0": {
@@ -30235,7 +30236,8 @@
     "0.4.33": "0.0.2",
     "0.4.34": "0.0.2",
     "0.4.35": "0.0.2",
-    "0.4.36": "0.0.2"
+    "0.4.36": "0.0.2",
+    "0.4.37": "0.0.2"
   },
   "makolang": {
     "0.1.dev-r684": {
@@ -46411,7 +46413,37 @@
     "0.1.22": "0.1.9",
     "0.1.23": "0.1.9",
     "0.1.24": "0.1.9",
-    "0.1.25": "0.1.9"
+    "0.1.25": "0.1.9",
+    "0.1.26": {
+      "36": {
+        "install_requires": [
+          "pybind11",
+          "numpy>=1.17",
+          "scipy",
+          "pandas>=0.25",
+          "hnswlib",
+          "igraph",
+          "leidenalg>=0.7.0",
+          "sklearn",
+          "termcolor",
+          "pygam",
+          "matplotlib",
+          "scanpy",
+          "umap-learn",
+          "phate"
+        ],
+        "setup_requires": [
+          "numpy>=1.17",
+          "pybind11"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "0.1.27": "0.1.26",
+    "0.1.28": "0.1.26"
   },
   "pyvinecopulib": {
     "0.2.0": {
@@ -68388,6 +68420,58 @@
           "numpy<1.22,>=1.19",
           "scipy<1.8.0,>=1.5",
           "pandas>=1.0"
+        ],
+        "extras_require": {
+          "developer": [
+            "black==21.5b1",
+            "pre-commit>=2.12"
+          ],
+          "documentation": [
+            "sphinx~=4.0",
+            "sphinx-rtd-theme>=0.4.2",
+            "numpydoc>=1.1",
+            "pillow>=8.2"
+          ],
+          "release": [
+            "twine>=3.4",
+            "wheel>=0.36"
+          ],
+          "test": [
+            "pytest>=6.2",
+            "pytest-cov>=2.12",
+            "coverage>=6.0"
+          ],
+          "tutorial": [
+            "jupyter>=1.0",
+            "matplotlib>=3.3"
+          ],
+          "all": [
+            "jupyter>=1.0",
+            "matplotlib>=3.3",
+            "pytest>=6.2",
+            "sphinx-rtd-theme>=0.4.2",
+            "pillow>=8.2",
+            "black==21.5b1",
+            "twine>=3.4",
+            "wheel>=0.36",
+            "sphinx~=4.0",
+            "numpydoc>=1.1",
+            "coverage>=6.0",
+            "pre-commit>=2.12",
+            "pytest-cov>=2.12"
+          ]
+        }
+      },
+      "38": "37",
+      "39": "37",
+      "310": "37"
+    },
+    "0.2": {
+      "37": {
+        "install_requires": [
+          "numpy<1.22,>=1.19",
+          "scipy<1.8.0,>=1.5",
+          "pandas<=1.3.5,>=1.0"
         ],
         "extras_require": {
           "developer": [
