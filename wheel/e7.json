@@ -2935,6 +2935,23 @@
           "requires_python": ">=3.6"
         }
       },
+      "1.144.0": {
+        "aws_cdk.aws_batch-1.144.0-py3-none-any.whl": {
+          "requires_dist": [
+            "aws-cdk.aws-ec2 (==1.144.0)",
+            "aws-cdk.aws-ecr (==1.144.0)",
+            "aws-cdk.aws-ecs (==1.144.0)",
+            "aws-cdk.aws-iam (==1.144.0)",
+            "aws-cdk.aws-secretsmanager (==1.144.0)",
+            "aws-cdk.aws-ssm (==1.144.0)",
+            "aws-cdk.core (==1.144.0)",
+            "constructs (<4.0.0,>=3.3.69)",
+            "jsii (<2.0.0,>=1.52.1)",
+            "publication (>=0.0.3)"
+          ],
+          "requires_python": ">=3.6"
+        }
+      },
       "1.15.0": {
         "aws_cdk.aws_batch-1.15.0-py3-none-any.whl": {
           "requires_dist": [
@@ -5791,23 +5808,6 @@
   },
   "bodo": {
     "cp38": {
-      "2019.38": {
-        "bodo-2019.38-cp38-cp38-macosx_10_15_x86_64.whl": {
-          "provides_extras": [
-            "hdf5",
-            "parquet"
-          ],
-          "requires_dist": [
-            "numba (==0.55.0)",
-            "pyarrow (==5.0.0)",
-            "pandas (==1.3.*)",
-            "numpy (<1.21,>=1.18)",
-            "mpi4py-mpich (==3.1.2)",
-            "h5py ; extra == 'hdf5'",
-            "pyarrow ; extra == 'parquet'"
-          ]
-        }
-      },
       "2021.10.1": {
         "bodo-2021.10.1-cp38-cp38-manylinux2014_x86_64.manylinux_2_17_x86_64.whl": {
           "provides_extras": [
@@ -5826,13 +5826,23 @@
         }
       },
       "2022.1": {
-        "bodo-2022.1-cp38-cp38-manylinux2014_x86_64.manylinux_2_17_x86_64.whl": "2019.38@bodo-2019.38-cp38-cp38-macosx_10_15_x86_64.whl",
-        "bodo-2022.1-cp38-cp38-win_amd64.whl": "2019.38@bodo-2019.38-cp38-cp38-macosx_10_15_x86_64.whl"
-      }
-    },
-    "cp39": {
-      "2019.38": {
-        "bodo-2019.38-cp39-cp39-macosx_10_15_x86_64.whl": {
+        "bodo-2022.1-cp38-cp38-macosx_10_15_x86_64.whl": {
+          "provides_extras": [
+            "hdf5",
+            "parquet"
+          ],
+          "requires_dist": [
+            "numba (==0.55.0)",
+            "pyarrow (==5.0.0)",
+            "pandas (==1.3.*)",
+            "numpy (<1.21,>=1.18)",
+            "fsspec (>=2021.09)",
+            "mpi4py-mpich (==3.1.2)",
+            "h5py ; extra == 'hdf5'",
+            "pyarrow ; extra == 'parquet'"
+          ]
+        },
+        "bodo-2022.1-cp38-cp38-manylinux2014_x86_64.manylinux_2_17_x86_64.whl": {
           "provides_extras": [
             "hdf5",
             "parquet"
@@ -5846,8 +5856,11 @@
             "h5py ; extra == 'hdf5'",
             "pyarrow ; extra == 'parquet'"
           ]
-        }
-      },
+        },
+        "bodo-2022.1-cp38-cp38-win_amd64.whl": "2022.1@bodo-2022.1-cp38-cp38-manylinux2014_x86_64.manylinux_2_17_x86_64.whl"
+      }
+    },
+    "cp39": {
       "2021.10.1": {
         "bodo-2021.10.1-cp39-cp39-manylinux2014_x86_64.manylinux_2_17_x86_64.whl": {
           "provides_extras": [
@@ -5866,8 +5879,38 @@
         }
       },
       "2022.1": {
-        "bodo-2022.1-cp39-cp39-manylinux2014_x86_64.manylinux_2_17_x86_64.whl": "2019.38@bodo-2019.38-cp39-cp39-macosx_10_15_x86_64.whl",
-        "bodo-2022.1-cp39-cp39-win_amd64.whl": "2019.38@bodo-2019.38-cp39-cp39-macosx_10_15_x86_64.whl"
+        "bodo-2022.1-cp39-cp39-macosx_10_15_x86_64.whl": {
+          "provides_extras": [
+            "hdf5",
+            "parquet"
+          ],
+          "requires_dist": [
+            "numba (==0.55.0)",
+            "pyarrow (==5.0.0)",
+            "pandas (==1.3.*)",
+            "numpy (<1.21,>=1.18)",
+            "fsspec (>=2021.09)",
+            "mpi4py-mpich (==3.1.2)",
+            "h5py ; extra == 'hdf5'",
+            "pyarrow ; extra == 'parquet'"
+          ]
+        },
+        "bodo-2022.1-cp39-cp39-manylinux2014_x86_64.manylinux_2_17_x86_64.whl": {
+          "provides_extras": [
+            "hdf5",
+            "parquet"
+          ],
+          "requires_dist": [
+            "numba (==0.55.0)",
+            "pyarrow (==5.0.0)",
+            "pandas (==1.3.*)",
+            "numpy (<1.21,>=1.18)",
+            "mpi4py-mpich (==3.1.2)",
+            "h5py ; extra == 'hdf5'",
+            "pyarrow ; extra == 'parquet'"
+          ]
+        },
+        "bodo-2022.1-cp39-cp39-win_amd64.whl": "2022.1@bodo-2022.1-cp39-cp39-manylinux2014_x86_64.manylinux_2_17_x86_64.whl"
       }
     }
   },
@@ -9001,6 +9044,9 @@
       },
       "0.1.5": {
         "dj_starter-0.1.5-py3-none-any.whl": "0.1.1@dj_starter-0.1.1-py3-none-any.whl"
+      },
+      "0.1.6": {
+        "dj_starter-0.1.6-py3-none-any.whl": "0.1.1@dj_starter-0.1.1-py3-none-any.whl"
       }
     }
   },
@@ -10056,6 +10102,31 @@
       },
       "0.1.14": {
         "docker_registry_client_async-0.1.14-py3-none-any.whl": "0.1.13@docker_registry_client_async-0.1.13-py3-none-any.whl"
+      },
+      "0.1.15": {
+        "docker_registry_client_async-0.1.15-py3-none-any.whl": {
+          "provides_extras": [
+            "dev",
+            "test"
+          ],
+          "requires_dist": [
+            "aiodns",
+            "aiofiles",
+            "aiohttp",
+            "canonicaljson",
+            "www-authenticate",
+            "black ; extra == 'dev'",
+            "pylint ; extra == 'dev'",
+            "pytest ; extra == 'dev'",
+            "pytest-asyncio ; extra == 'dev'",
+            "pytest-docker-registry-fixtures (>=0.3.2) ; extra == 'dev'",
+            "pytest-docker-squid-fixtures (>=0.1.2) ; extra == 'dev'",
+            "twine ; extra == 'dev'",
+            "wheel ; extra == 'dev'",
+            "pytest-xdist ; extra == 'test'"
+          ],
+          "requires_python": ">=3.8"
+        }
       },
       "0.1.2": {
         "docker_registry_client_async-0.1.2-py3-none-any.whl": "0.1.0@docker_registry_client_async-0.1.0-py3-none-any.whl"
