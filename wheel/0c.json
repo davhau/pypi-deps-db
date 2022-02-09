@@ -17207,6 +17207,18 @@
           ]
         }
       },
+      "0.62.12": {
+        "dbnd_spark-0.62.12-py2.py3-none-any.whl": {
+          "provides_extras": [
+            "tests"
+          ],
+          "requires_dist": [
+            "dbnd (==0.62.12)",
+            "pyspark (==2.4.4) ; extra == 'tests'",
+            "pytest-spark (==0.6.0) ; extra == 'tests'"
+          ]
+        }
+      },
       "0.62.2": {
         "dbnd_spark-0.62.2-py2.py3-none-any.whl": {
           "provides_extras": [
@@ -23670,6 +23682,18 @@
       }
     }
   },
+  "heaserver-buckets": {
+    "py3": {
+      "1.0.0a1": {
+        "heaserver_buckets-1.0.0a1-py3-none-any.whl": {
+          "requires_dist": [
+            "heaserver (<1.0.0a49,>=1.0.0a48)"
+          ],
+          "requires_python": ">=3.8"
+        }
+      }
+    }
+  },
   "hfble": {
     "py3": {
       "1.0b1": {
@@ -24251,6 +24275,31 @@
       },
       "0.7.1": {
         "invenio_config_tugraz-0.7.1-py2.py3-none-any.whl": "0.7.0@invenio_config_tugraz-0.7.0-py2.py3-none-any.whl"
+      },
+      "0.8.0": {
+        "invenio_config_tugraz-0.8.0-py2.py3-none-any.whl": {
+          "provides_extras": [
+            "all",
+            "docs",
+            "elasticsearch7",
+            "mysql",
+            "postgresql",
+            "sqlite",
+            "tests"
+          ],
+          "requires_dist": [
+            "invenio-rdm-records (<0.35.0,>=0.34.4)",
+            "invenio-cache (>=1.1.0)",
+            "Sphinx (==4.2.0) ; extra == 'all'",
+            "pytest-invenio (>=1.4.1) ; extra == 'all'",
+            "Sphinx (==4.2.0) ; extra == 'docs'",
+            "invenio-search[elasticsearch7] (<1.5.0,>=1.4.1) ; extra == 'elasticsearch7'",
+            "invenio-db[mysql,versioning] (<1.1.0,>=1.0.9) ; extra == 'mysql'",
+            "invenio-db[postgresql,versioning] (<1.1.0,>=1.0.9) ; extra == 'postgresql'",
+            "invenio-db[versioning] (<1.1.0,>=1.0.9) ; extra == 'sqlite'",
+            "pytest-invenio (>=1.4.1) ; extra == 'tests'"
+          ]
+        }
       }
     }
   },
