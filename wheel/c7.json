@@ -3263,6 +3263,25 @@
       "2.1.4": {
         "azure_iot_device-2.1.4-py2.py3-none-any.whl": "2.1.3@azure_iot_device-2.1.3-py2.py3-none-any.whl"
       },
+      "2.10.0": {
+        "azure_iot_device-2.10.0-py2.py3-none-any.whl": {
+          "requires_dist": [
+            "urllib3 (<1.27,>=1.26.5)",
+            "deprecation (<3.0.0,>=2.1.0)",
+            "six (<2.0.0,>=1.12.0)",
+            "requests (<3.0.0,>=2.20.0)",
+            "requests-unixsocket (<1.0.0,>=0.1.5)",
+            "PySocks",
+            "paho-mqtt (<1.6.0,>=1.4.0) ; python_version == \"2.7\"",
+            "futures ; python_version == \"2.7\"",
+            "win-inet-pton ; python_version == \"2.7\"",
+            "paho-mqtt (<2.0.0,>=1.4.0) ; python_version > \"2.7\"",
+            "janus ; python_version >= \"3.5\"",
+            "azure-iot-nspkg (>=1.0.1) ; python_version<'3.0'"
+          ],
+          "requires_python": ">=2.7.9, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, !=3.5.0, !=3.5.1, !=3.5.2, <4"
+        }
+      },
       "2.2.0": {
         "azure_iot_device-2.2.0-py2.py3-none-any.whl": "2.1.3@azure_iot_device-2.1.3-py2.py3-none-any.whl"
       },
@@ -3359,23 +3378,7 @@
         "azure_iot_device-2.8.0-py2.py3-none-any.whl": "2.7.0@azure_iot_device-2.7.0-py2.py3-none-any.whl"
       },
       "2.9.0": {
-        "azure_iot_device-2.9.0-py2.py3-none-any.whl": {
-          "requires_dist": [
-            "urllib3 (<1.27,>=1.26.5)",
-            "deprecation (<3.0.0,>=2.1.0)",
-            "six (<2.0.0,>=1.12.0)",
-            "requests (<3.0.0,>=2.20.0)",
-            "requests-unixsocket (<1.0.0,>=0.1.5)",
-            "PySocks",
-            "paho-mqtt (<1.6.0,>=1.4.0) ; python_version == \"2.7\"",
-            "futures ; python_version == \"2.7\"",
-            "win-inet-pton ; python_version == \"2.7\"",
-            "paho-mqtt (<2.0.0,>=1.4.0) ; python_version > \"2.7\"",
-            "janus ; python_version >= \"3.5\"",
-            "azure-iot-nspkg (>=1.0.1) ; python_version<'3.0'"
-          ],
-          "requires_python": ">=2.7.9, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, !=3.5.0, !=3.5.1, !=3.5.2, <4"
-        }
+        "azure_iot_device-2.9.0-py2.py3-none-any.whl": "2.10.0@azure_iot_device-2.10.0-py2.py3-none-any.whl"
       }
     },
     "py3": {
@@ -15331,6 +15334,9 @@
       },
       "3.0.76": {
         "huaweicloudsdkdgc-3.0.76-py2.py3-none-any.whl": "3.0.49@huaweicloudsdkdgc-3.0.49-py2.py3-none-any.whl"
+      },
+      "3.0.77": {
+        "huaweicloudsdkdgc-3.0.77-py2.py3-none-any.whl": "3.0.49@huaweicloudsdkdgc-3.0.49-py2.py3-none-any.whl"
       }
     },
     "py3": {
@@ -24631,6 +24637,9 @@
       },
       "2.4.2rc20220210010444": {
         "mosaik.API_SemVer-2.4.2rc20220210010444-py2.py3-none-any.whl": "2.4.2rc20200423014548@mosaik.API_SemVer-2.4.2rc20200423014548-py2.py3-none-any.whl"
+      },
+      "2.4.2rc20220211010503": {
+        "mosaik.API_SemVer-2.4.2rc20220211010503-py2.py3-none-any.whl": "2.4.2rc20200423014548@mosaik.API_SemVer-2.4.2rc20200423014548-py2.py3-none-any.whl"
       }
     }
   },
@@ -31925,6 +31934,65 @@
           "requires_python": ">=3.7,<3.10"
         }
       },
+      "0.16.1": {
+        "poliastro-0.16.1-py3-none-any.whl": {
+          "provides_extras": [
+            "cesium",
+            "dev",
+            "jupyter"
+          ],
+          "requires_dist": [
+            "astropy >=3.2,<5",
+            "astroquery >=0.3.9",
+            "cached_property ; python_version<'3.8'",
+            "jplephem",
+            "matplotlib >=2.0,!=3.0.1",
+            "numba >=0.46 ; python_version<'3.9'",
+            "numba >=0.53.0 ; python_version>='3.9'",
+            "numpy",
+            "pandas",
+            "plotly >=4.0,<6",
+            "pyerfa",
+            "scipy >=1.4.0",
+            "czml3 ~=0.5.3 ; extra == \"cesium\"",
+            "black==21.12b0 ; extra == \"dev\"",
+            "coverage ; extra == \"dev\"",
+            "hypothesis ; extra == \"dev\"",
+            "import-linter ; extra == \"dev\"",
+            "ipython>=5.0 ; extra == \"dev\"",
+            "ipywidgets>=7.6 ; extra == \"dev\"",
+            "isort ; extra == \"dev\"",
+            "jupyter-client ; extra == \"dev\"",
+            "jupytext ; extra == \"dev\"",
+            "httpx ; extra == \"dev\"",
+            "mypy>=0.740 ; extra == \"dev\"",
+            "myst-parser>=0.13.1 ; extra == \"dev\"",
+            "nbsphinx>=0.8.6 ; extra == \"dev\"",
+            "nbconvert>=5.5 ; extra == \"dev\"",
+            "pycodestyle ; extra == \"dev\"",
+            "pytest>=3.2 ; extra == \"dev\"",
+            "pytest-cov<2.6.0 ; extra == \"dev\"",
+            "pytest-doctestplus>=0.8 ; extra == \"dev\"",
+            "pytest-mpl ; extra == \"dev\"",
+            "pytest-mypy ; extra == \"dev\"",
+            "pytest-remotedata ; extra == \"dev\"",
+            "sgp4 ; extra == \"dev\"",
+            "sphinx!=3.5,!=4.0 ; extra == \"dev\"",
+            "sphinx-autoapi ; extra == \"dev\"",
+            "sphinx-gallery<=0.7.0 ; extra == \"dev\"",
+            "sphinx_rtd_theme~=1.0.0rc1 ; extra == \"dev\"",
+            "sphinx-hoverxref==0.7b1 ; extra == \"dev\"",
+            "sphinx-notfound-page ; extra == \"dev\"",
+            "sphinx-copybutton>0.2.9 ; extra == \"dev\"",
+            "notebook ; extra == \"jupyter\"",
+            "ipywidgets>=7.6 ; extra == \"jupyter\""
+          ],
+          "requires_python": ">=3.8,<3.11"
+        }
+      },
+      "0.16.2": {
+        "poliastro-0.16.2-py3-none-any.whl": "0.16.1@poliastro-0.16.1-py3-none-any.whl"
+      },
       "0.16b1": {
         "poliastro-0.16b1-py3-none-any.whl": "0.16.0@poliastro-0.16.0-py3-none-any.whl"
       },
@@ -32735,6 +32803,12 @@
       },
       "1.1.5": {
         "potluck_eval-1.1.5-py3-none-any.whl": "0.10.1@potluck_eval-0.10.1-py3-none-any.whl"
+      },
+      "1.1.6": {
+        "potluck_eval-1.1.6-py3-none-any.whl": "0.10.1@potluck_eval-0.10.1-py3-none-any.whl"
+      },
+      "1.1.7": {
+        "potluck_eval-1.1.7-py3-none-any.whl": "0.10.1@potluck_eval-0.10.1-py3-none-any.whl"
       }
     }
   },
@@ -32940,6 +33014,15 @@
       },
       "0.0.2": {
         "primaryschool-0.0.2-py3-none-any.whl": "0.0.1@primaryschool-0.0.1-py3-none-any.whl"
+      },
+      "0.0.3": {
+        "primaryschool-0.0.3-py3-none-any.whl": "0.0.1@primaryschool-0.0.1-py3-none-any.whl"
+      },
+      "0.0.4": {
+        "primaryschool-0.0.4-py3-none-any.whl": "0.0.1@primaryschool-0.0.1-py3-none-any.whl"
+      },
+      "0.0.5": {
+        "primaryschool-0.0.5-py3-none-any.whl": "0.0.1@primaryschool-0.0.1-py3-none-any.whl"
       }
     }
   },
