@@ -1,6 +1,8 @@
 {
   inputs = {
-    mach-nix.url = "mach-nix";
+    mach-nix.url = "github:PrivateStorageio/mach-nix/pep517-metadata";
+    mach-nix.inputs.nixpkgs.follows = "nixpkgs";
+    mach-nix.inputs.pypi-deps-db.follows = "";
     nixpkgs.url = "nixpkgs/nixos-unstable";
     pypiIndex.url = "github:davhau/nix-pypi-fetcher";
     pypiIndex.flake = false;
