@@ -2,7 +2,6 @@
   inputs = {
     mach-nix.url = "mach-nix";
     nixpkgs.url = "nixpkgs/nixos-unstable";
-    nixpkgsPy36.url = "nixpkgs/b4db68ff563895eea6aab4ff24fa04ef403dfe14";
     pypiIndex.url = "github:davhau/nix-pypi-fetcher";
     pypiIndex.flake = false;
   };
@@ -13,7 +12,7 @@
     let
       systems = ["x86_64-linux"];
       self = {
-        lib.supportedPythonVersions = [ "27" "36" "37" "38" "39" "310" ];
+        lib.supportedPythonVersions = [ "37" "38" "39" ];
         lib.formatVersion = toInt (readFile ./FORMAT_VERSION);
       } 
       // foldl' (a: b: recursiveUpdate a b) {} ( map ( system:
@@ -32,20 +31,13 @@
             pkgs.git
             pkgs.nixFlakes
           ];
-          # py27 and p36 crash when taken from current nixpkgs
-          # this overlay mixes python interpreters from old and new nixpkgs
-          py36Overlay = pkgs.writeText "py36-overlay.nix" ''
+          pyOverlay = pkgs.writeText "py36-overlay.nix" ''
             [(curr: prev: 
-              let
-                pkgsNew = import ${inp.nixpkgs} {};
-              in rec {
+              rec {
                 useInterpreters = [
-                  prev.python27
-                  prev.python36
-                  pkgsNew.python37
-                  pkgsNew.python38
-                  pkgsNew.python39
-                  pkgsNew.python310
+                  prev.python37
+                  prev.python38
+                  prev.python39
                 ];
               }
             )]
@@ -60,7 +52,7 @@
             EXTRACTOR_SRC = "${inp.mach-nix}/lib/extractor";
           };
           fixedVars = {
-            NIX_PATH = "nixpkgs=${inp.nixpkgsPy36}:nixpkgs-overlays=${py36Overlay}";
+            NIX_PATH = "nixpkgs=${inp.nixpkgs}:nixpkgs-overlays=${pyOverlay}";
           };
           # defaultVars are only set if they are not already set
           # fixedVars are always set
