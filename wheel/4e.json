@@ -15764,6 +15764,31 @@
           "requires_python": ">=3.8"
         }
       },
+      "0.2.18": {
+        "django_rgd_imagery-0.2.18-py3-none-any.whl": {
+          "provides_extras": [
+            "worker"
+          ],
+          "requires_dist": [
+            "bidict",
+            "cmocean",
+            "django-rgd (==0.2.18)",
+            "large-image[memcached] (>=1.9.0)",
+            "large-image-source-gdal (>=1.9.0)",
+            "large-image-source-pil (>=1.9.0)",
+            "large-image-source-tiff (>=1.9.0)",
+            "matplotlib",
+            "numpy",
+            "pystac (>=1.1.0)",
+            "pyvips",
+            "shapely",
+            "tifftools (>=1.2.0)",
+            "large-image-converter ; extra == 'worker'",
+            "rasterio ; extra == 'worker'"
+          ],
+          "requires_python": ">=3.8"
+        }
+      },
       "0.2.2": {
         "django_rgd_imagery-0.2.2-py3-none-any.whl": "0.2.0@django_rgd_imagery-0.2.0-py3-none-any.whl"
       },
@@ -20747,6 +20772,48 @@
             "click (>=7.0.0)",
             "woodwork (>=0.8.1)",
             "holidays (>=0.12)",
+            "autonormalize (>=1.0.2) ; extra == 'autonormalize'",
+            "alteryx-open-src-update-checker (>=2.0.0) ; extra == 'complete'",
+            "autonormalize (>=1.0.2) ; extra == 'complete'",
+            "featuretools-tsfresh-primitives (>=1.0.0) ; extra == 'complete'",
+            "koalas (<=1.8.2,>=1.8.1) ; extra == 'complete'",
+            "nlp-primitives[complete] (>=2.0.0) ; extra == 'complete'",
+            "pandas (<1.4.0,>=1.3.0) ; extra == 'complete'",
+            "pyspark (<3.2.0,>=3.0.0) ; extra == 'complete'",
+            "woodwork (<0.12.0,>=0.8.1) ; extra == 'complete'",
+            "pyspark (<3.2.0,>=3.0.0) ; extra == 'koalas'",
+            "koalas (<=1.8.2,>=1.8.1) ; extra == 'koalas'",
+            "pandas (<1.4.0,>=1.3.0) ; extra == 'koalas'",
+            "woodwork (<0.12.0,>=0.8.1) ; extra == 'koalas'",
+            "nlp-primitives[complete] (>=2.0.0) ; extra == 'nlp_primitives'",
+            "featuretools-tsfresh-primitives (>=1.0.0) ; extra == 'tsfresh'",
+            "alteryx-open-src-update-checker (>=2.0.0) ; extra == 'update_checker'"
+          ],
+          "requires_python": ">=3.7, <4"
+        }
+      },
+      "1.6.0": {
+        "featuretools-1.6.0-py3-none-any.whl": {
+          "provides_extras": [
+            "autonormalize",
+            "complete",
+            "koalas",
+            "nlp_primitives",
+            "tsfresh",
+            "update_checker"
+          ],
+          "requires_dist": [
+            "scipy (>=1.3.3)",
+            "numpy (>=1.21.0)",
+            "pandas (>=1.3.0)",
+            "tqdm (>=4.32.0)",
+            "cloudpickle (>=1.5.0)",
+            "distributed (>=2021.10.0)",
+            "dask[dataframe] (>=2021.10.0)",
+            "psutil (>=5.6.6)",
+            "click (>=7.0.0)",
+            "woodwork (>=0.8.1)",
+            "holidays (>=0.13)",
             "autonormalize (>=1.0.2) ; extra == 'autonormalize'",
             "alteryx-open-src-update-checker (>=2.0.0) ; extra == 'complete'",
             "autonormalize (>=1.0.2) ; extra == 'complete'",
@@ -27589,6 +27656,21 @@
       },
       "0.5.1.dev202202171645116360": {
         "jetpack_io-0.5.1.dev202202171645116360-py3-none-any.whl": "0.5.1.dev202201311643668160@jetpack_io-0.5.1.dev202201311643668160-py3-none-any.whl"
+      },
+      "0.5.1.dev202202171645127402": {
+        "jetpack_io-0.5.1.dev202202171645127402-py3-none-any.whl": "0.5.1.dev202201311643668160@jetpack_io-0.5.1.dev202201311643668160-py3-none-any.whl"
+      },
+      "0.5.1.dev202202171645128827": {
+        "jetpack_io-0.5.1.dev202202171645128827-py3-none-any.whl": "0.5.1.dev202201311643668160@jetpack_io-0.5.1.dev202201311643668160-py3-none-any.whl"
+      },
+      "0.5.1.dev202202171645129247": {
+        "jetpack_io-0.5.1.dev202202171645129247-py3-none-any.whl": "0.5.1.dev202201311643668160@jetpack_io-0.5.1.dev202201311643668160-py3-none-any.whl"
+      },
+      "0.5.1.dev202202171645137520": {
+        "jetpack_io-0.5.1.dev202202171645137520-py3-none-any.whl": "0.5.1.dev202201311643668160@jetpack_io-0.5.1.dev202201311643668160-py3-none-any.whl"
+      },
+      "0.5.1.dev202202171645146870": {
+        "jetpack_io-0.5.1.dev202202171645146870-py3-none-any.whl": "0.5.1.dev202201311643668160@jetpack_io-0.5.1.dev202201311643668160-py3-none-any.whl"
       }
     }
   },
@@ -37979,6 +38061,41 @@
             "odoo14-addon-base-tier-validation-forward",
             "odoo14-addon-base-tier-validation-report",
             "odoo14-addon-base-tier-validation-server-action",
+            "odoo14-addon-chained-swapper",
+            "odoo14-addon-date-range",
+            "odoo14-addon-date-range-account",
+            "odoo14-addon-default-multi-user",
+            "odoo14-addon-document-quick-access",
+            "odoo14-addon-document-quick-access-folder-auto-classification",
+            "odoo14-addon-filter-multi-user",
+            "odoo14-addon-mass-editing",
+            "odoo14-addon-mass-operation-abstract",
+            "odoo14-addon-multi-step-wizard",
+            "odoo14-addon-sequence-check-digit",
+            "odoo14-addon-sequence-range-end",
+            "odoo14-addon-sequence-reset-period"
+          ]
+        }
+      },
+      "14.0.20220217.0": {
+        "odoo14_addons_oca_server_ux-14.0.20220217.0-py3-none-any.whl": {
+          "requires_dist": [
+            "odoo14-addon-barcode-action",
+            "odoo14-addon-base-cancel-confirm",
+            "odoo14-addon-base-export-manager",
+            "odoo14-addon-base-import-security-group",
+            "odoo14-addon-base-menu-visibility-restriction",
+            "odoo14-addon-base-optional-quick-create",
+            "odoo14-addon-base-revision",
+            "odoo14-addon-base-search-custom-field-filter",
+            "odoo14-addon-base-substate",
+            "odoo14-addon-base-technical-features",
+            "odoo14-addon-base-tier-validation",
+            "odoo14-addon-base-tier-validation-formula",
+            "odoo14-addon-base-tier-validation-forward",
+            "odoo14-addon-base-tier-validation-report",
+            "odoo14-addon-base-tier-validation-server-action",
+            "odoo14-addon-base-user-locale",
             "odoo14-addon-chained-swapper",
             "odoo14-addon-date-range",
             "odoo14-addon-date-range-account",
@@ -54167,6 +54284,9 @@
       },
       "3.0.581": {
         "tencentcloud_sdk_python_memcached-3.0.581-py2.py3-none-any.whl": "3.0.252@tencentcloud_sdk_python_memcached-3.0.252-py2.py3-none-any.whl"
+      },
+      "3.0.582": {
+        "tencentcloud_sdk_python_memcached-3.0.582-py2.py3-none-any.whl": "3.0.252@tencentcloud_sdk_python_memcached-3.0.252-py2.py3-none-any.whl"
       }
     }
   },
