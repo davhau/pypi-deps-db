@@ -7676,7 +7676,67 @@
     },
     "2.3.1": "2.3.0",
     "2.3.2": "2.3.0",
-    "2.3.3": "2.3.0"
+    "2.3.3": "2.3.0",
+    "2.4.0": {
+      "27": {
+        "install_requires": [
+          "attrs>=16.3.0",
+          "pyperclip>=1.6",
+          "wcwidth>=0.1.7"
+        ],
+        "setup_requires": [
+          "setuptools >= 34.4",
+          "setuptools_scm >= 3.0"
+        ],
+        "extras_require": {
+          "test:sys_platform == \"darwin\"": [
+            "gnureadline"
+          ],
+          "dev": [
+            "codecov",
+            "doc8",
+            "flake8",
+            "invoke",
+            "mypy==0.902",
+            "nox",
+            "pytest>=4.6",
+            "pytest-cov",
+            "pytest-mock",
+            "sphinx",
+            "sphinx-rtd-theme",
+            "sphinx-autobuild",
+            "twine>=1.11"
+          ],
+          ":sys_platform=='win32'": [
+            "pyreadline3"
+          ],
+          "test": [
+            "codecov",
+            "coverage",
+            "pytest>=4.6",
+            "pytest-cov",
+            "pytest-mock"
+          ],
+          "validate": [
+            "flake8",
+            "mypy==0.902",
+            "types-pkg-resources"
+          ],
+          ":python_version < \"3.8\"": [
+            "importlib_metadata>=1.6.0",
+            "typing_extensions"
+          ]
+        },
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "cmimapper": {
     "1.0": {
@@ -20607,6 +20667,39 @@
         ],
         "python_requires": [
           ">=3.9,<3.10"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "0.2.0": {
+      "27": {
+        "install_requires": [
+          "networkx<3,>=2",
+          "numba<1,>=0",
+          "numpy<2,>=1",
+          "optext-python==0.1.1",
+          "scipy<2,>=1"
+        ],
+        "extras_require": {
+          "docs": [
+            "furo",
+            "myst-parser",
+            "pdoc3",
+            "pydata-sphinx-theme",
+            "python-docs-theme",
+            "sphinx",
+            "sphinx-book-theme",
+            "sphinx-theme-pd",
+            "sphinx_rtd_theme<=2.0.0",
+            "sphinxcontrib-mermaid"
+          ]
+        },
+        "python_requires": [
+          ">=3.8,<3.10"
         ]
       },
       "36": "27",
@@ -70404,7 +70497,8 @@
     "3.0.582": "3.0.252",
     "3.0.583": "3.0.252",
     "3.0.584": "3.0.252",
-    "3.0.585": "3.0.252"
+    "3.0.585": "3.0.252",
+    "3.0.586": "3.0.252"
   },
   "terfapdf": {
     "1.0": {
@@ -74450,7 +74544,8 @@
       "38": "27",
       "39": "27",
       "310": "27"
-    }
+    },
+    "2.0.5": "2.0.4"
   },
   "vhlsrs": {
     "0.0.10": "0.0.6",
@@ -75123,7 +75218,8 @@
       "39": "27",
       "310": "27"
     },
-    "0.0.2": "0.0.1"
+    "0.0.2": "0.0.1",
+    "0.0.3": "0.0.1"
   },
   "wallex-cacher": {
     "0.0.1": {
