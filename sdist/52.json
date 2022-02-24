@@ -58817,6 +58817,31 @@
       "38": "27",
       "39": "27",
       "310": "27"
+    },
+    "0.2.0": {
+      "27": {
+        "install_requires": [
+          "numpy>=1.17",
+          "pooch>=1.0",
+          "setuptools>=40.4",
+          "xarray>=0.15",
+          "py-cordex>=0.3.0"
+        ],
+        "extras_require": {
+          "io": [
+            "netCDF4",
+            "h5netcdf"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
     }
   },
   "pyseismosoil": {
@@ -68292,6 +68317,62 @@
           ],
           "testing": [
             "pytest",
+            "pytest-mock",
+            "celery>=4.3",
+            "hypothesis>=3.11.0",
+            "swh.lister",
+            "swh.storage[testing]",
+            "types-click",
+            "types-flask",
+            "types-pyyaml",
+            "types-requests",
+            "types-Deprecated",
+            "swh.journal",
+            "plotille",
+            "simpy<4,>=3"
+          ],
+          "simulator": [
+            "plotille",
+            "simpy<4,>=3"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "1.0.0": {
+      "27": {
+        "install_requires": [
+          "attrs",
+          "attrs-strict",
+          "celery!=5.0.3,>=4.3",
+          "click",
+          "flask",
+          "humanize",
+          "pika>=1.1.0",
+          "psycopg2",
+          "pyyaml",
+          "requests",
+          "setuptools",
+          "typing-extensions",
+          "swh.core[db,http]>=2",
+          "swh.storage>=0.11.1"
+        ],
+        "setup_requires": [
+          "setuptools-scm"
+        ],
+        "extras_require": {
+          "journal": [
+            "swh.journal"
+          ],
+          "testing": [
+            "pytest<7.0.0",
             "pytest-mock",
             "celery>=4.3",
             "hypothesis>=3.11.0",

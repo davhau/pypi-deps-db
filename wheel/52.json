@@ -49910,6 +49910,17 @@
         },
         "pyobjc_framework_CoreData-8.2-cp36-abi3-macosx_10_9_x86_64.whl": "8.2@pyobjc_framework_CoreData-8.2-cp36-abi3-macosx_10_9_universal2.whl",
         "pyobjc_framework_CoreData-8.2-cp36-abi3-macosx_11_0_universal2.whl": "8.2@pyobjc_framework_CoreData-8.2-cp36-abi3-macosx_10_9_universal2.whl"
+      },
+      "8.3": {
+        "pyobjc_framework_CoreData-8.3-cp36-abi3-macosx_10_9_universal2.whl": {
+          "requires_dist": [
+            "pyobjc-core (>=8.3)",
+            "pyobjc-framework-Cocoa (>=8.3)"
+          ],
+          "requires_python": ">=3.6"
+        },
+        "pyobjc_framework_CoreData-8.3-cp36-abi3-macosx_10_9_x86_64.whl": "8.3@pyobjc_framework_CoreData-8.3-cp36-abi3-macosx_10_9_universal2.whl",
+        "pyobjc_framework_CoreData-8.3-cp36-abi3-macosx_11_0_universal2.whl": "8.3@pyobjc_framework_CoreData-8.3-cp36-abi3-macosx_10_9_universal2.whl"
       }
     },
     "cp37": {
@@ -50482,6 +50493,25 @@
             "numpy"
           ],
           "requires_python": ">=3.5"
+        }
+      }
+    },
+    "py3": {
+      "0.2.0": {
+        "pyremo-0.2.0-py3-none-any.whl": {
+          "provides_extras": [
+            "io"
+          ],
+          "requires_dist": [
+            "numpy (>=1.17)",
+            "pooch (>=1.0)",
+            "setuptools (>=40.4)",
+            "xarray (>=0.15)",
+            "py-cordex (>=0.3.0)",
+            "netCDF4 ; extra == 'io'",
+            "h5netcdf ; extra == 'io'"
+          ],
+          "requires_python": ">=3.7"
         }
       }
     }
@@ -57717,6 +57747,49 @@
       },
       "0.9.2": {
         "swh.scheduler-0.9.2-py3-none-any.whl": "0.10.0@swh.scheduler-0.10.0-py3-none-any.whl"
+      },
+      "1.0.0": {
+        "swh.scheduler-1.0.0-py3-none-any.whl": {
+          "provides_extras": [
+            "journal",
+            "simulator",
+            "testing"
+          ],
+          "requires_dist": [
+            "attrs",
+            "attrs-strict",
+            "celery (!=5.0.3,>=4.3)",
+            "click",
+            "flask",
+            "humanize",
+            "pika (>=1.1.0)",
+            "psycopg2",
+            "pyyaml",
+            "requests",
+            "setuptools",
+            "typing-extensions",
+            "swh.core[db,http] (>=2)",
+            "swh.storage (>=0.11.1)",
+            "swh.journal ; extra == 'journal'",
+            "plotille ; extra == 'simulator'",
+            "simpy (<4,>=3) ; extra == 'simulator'",
+            "pytest (<7.0.0) ; extra == 'testing'",
+            "pytest-mock ; extra == 'testing'",
+            "celery (>=4.3) ; extra == 'testing'",
+            "hypothesis (>=3.11.0) ; extra == 'testing'",
+            "swh.lister ; extra == 'testing'",
+            "swh.storage[testing] ; extra == 'testing'",
+            "types-click ; extra == 'testing'",
+            "types-flask ; extra == 'testing'",
+            "types-pyyaml ; extra == 'testing'",
+            "types-requests ; extra == 'testing'",
+            "types-Deprecated ; extra == 'testing'",
+            "swh.journal ; extra == 'testing'",
+            "plotille ; extra == 'testing'",
+            "simpy (<4,>=3) ; extra == 'testing'"
+          ],
+          "requires_python": ">=3.7"
+        }
       }
     }
   },
