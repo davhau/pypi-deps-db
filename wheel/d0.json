@@ -7305,6 +7305,22 @@
     }
   },
   "bitcoinlib": {
+    "py2": {
+      "0.6.4": {
+        "bitcoinlib-0.6.4-py2-none-any.whl": {
+          "requires_dist": [
+            "SQLAlchemy (>=1.4.28)",
+            "pyaes (==1.6.1)",
+            "requests (>=2.25.0)",
+            "scrypt (>=0.8.19)",
+            "fastecdsa (>=2.2.3); platform_system != \"Windows\"",
+            "ecdsa (>=0.17); platform_system == \"Windows\"",
+            "numpy (==1.19.5); python_version < \"3.8\"",
+            "numpy (>=1.21.0); python_version >= \"3.8\""
+          ]
+        }
+      }
+    },
     "py3": {
       "0.4.13": {
         "bitcoinlib-0.4.13-py3-none-any.whl": {
@@ -7437,6 +7453,20 @@
             "ecdsa (==0.16) ; platform_system == \"Windows\"",
             "numpy (==1.19.5) ; python_version < \"3.8\"",
             "numpy (==1.21.4) ; python_version >= \"3.8\""
+          ]
+        }
+      },
+      "0.6.4": {
+        "bitcoinlib-0.6.4-py3-none-any.whl": {
+          "requires_dist": [
+            "requests (>=2.25.0)",
+            "pyaes (==1.6.1)",
+            "scrypt (>=0.8.19)",
+            "SQLAlchemy (>=1.4.28)",
+            "fastecdsa (>=2.2.3) ; platform_system != \"Windows\"",
+            "ecdsa (>=0.17) ; platform_system == \"Windows\"",
+            "numpy (==1.19.5) ; python_version < \"3.8\"",
+            "numpy (>=1.21.0) ; python_version >= \"3.8\""
           ]
         }
       }
@@ -28644,6 +28674,32 @@
             "flake8 (==4.0.1) ; extra == 'testing'",
             "tox (==3.24.4) ; extra == 'testing'",
             "pre-commit (==2.16.0) ; extra == 'testing'",
+            "pytest (==6.2.5) ; extra == 'testing'",
+            "pytest-cov (==3.0.0) ; extra == 'testing'",
+            "mypy (==0.910) ; extra == 'testing'"
+          ],
+          "requires_python": ">=3.8"
+        }
+      },
+      "0.16.0": {
+        "pincer-0.16.0-py3-none-any.whl": {
+          "provides_extras": [
+            "img",
+            "speed",
+            "testing"
+          ],
+          "requires_dist": [
+            "aiohttp (~=3.8)",
+            "Pillow (==8.4.0) ; extra == 'img'",
+            "types-Pillow (==9.0.6) ; extra == 'img'",
+            "orjson (>=3.5.4) ; extra == 'speed'",
+            "Brotli (>=1.0.9) ; extra == 'speed'",
+            "aiodns (>=1.1) ; extra == 'speed'",
+            "cchardet (>=2.1.7) ; extra == 'speed'",
+            "coverage (==6.3.2) ; extra == 'testing'",
+            "flake8 (==4.0.1) ; extra == 'testing'",
+            "tox (==3.24.4) ; extra == 'testing'",
+            "pre-commit (==2.17.0) ; extra == 'testing'",
             "pytest (==6.2.5) ; extra == 'testing'",
             "pytest-cov (==3.0.0) ; extra == 'testing'",
             "mypy (==0.910) ; extra == 'testing'"
