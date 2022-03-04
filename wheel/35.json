@@ -37588,6 +37588,38 @@
       }
     }
   },
+  "openvino-optimum": {
+    "py3": {
+      "0.0.1": {
+        "openvino_optimum-0.0.1-py3-none-any.whl": {
+          "requires_dist": [
+            "transformers",
+            "torch (<1.10)",
+            "openvino-dev[onnx]",
+            "nncf"
+          ]
+        }
+      },
+      "0.0.2": {
+        "openvino_optimum-0.0.2-py3-none-any.whl": {
+          "provides_extras": [
+            "all",
+            "nncf"
+          ],
+          "requires_dist": [
+            "transformers",
+            "openvino",
+            "openvino-dev[onnx] ; extra == 'all'",
+            "nncf ; extra == 'all'",
+            "transformers (<4.16.0) ; extra == 'all'",
+            "openvino-dev[onnx] ; extra == 'nncf'",
+            "nncf ; extra == 'nncf'",
+            "transformers (<4.16.0) ; extra == 'nncf'"
+          ]
+        }
+      }
+    }
+  },
   "operatedb": {
     "py3": {
       "0.0.1": {
