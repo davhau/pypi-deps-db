@@ -7425,7 +7425,27 @@
     "0.1.2": "0.1.0",
     "0.1.3": "0.1.0",
     "0.1.5": "0.1.0",
-    "0.1.6": "0.1.0"
+    "0.1.6": "0.1.0",
+    "0.1.8": {
+      "36": {
+        "install_requires": [
+          "toml"
+        ],
+        "extras_require": {
+          "dev": [
+            "pytest"
+          ],
+          "publish": [
+            "build",
+            "twine"
+          ]
+        }
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "bigauss": {
     "0.1": {
@@ -43852,6 +43872,80 @@
           ],
           ":python_version < \"3.8\"": [
             "typing_extensions>=3.7"
+          ]
+        },
+        "python_requires": [
+          "<3.10",
+          ">=3.7"
+        ]
+      },
+      "39": "38",
+      "310": "38"
+    },
+    "0.1.3": {
+      "27": {
+        "install_requires": [
+          "chex>=0.1",
+          "jaxopt",
+          "optax",
+          "pyhf>=0.6.3"
+        ],
+        "extras_require": {
+          "test": [
+            "iminuit",
+            "pytest>=6",
+            "pytest-cov>=3"
+          ],
+          "docs": [
+            "Sphinx~=3.0",
+            "myst-parser>=0.13",
+            "sphinx-book-theme>=0.1.0",
+            "sphinx-copybutton"
+          ],
+          ":python_version < \"3.8\"": [
+            "typing-extensions>=3.7"
+          ],
+          "dev": [
+            "iminuit",
+            "pre-commit",
+            "pytest>=6",
+            "pytest-cov>=3"
+          ]
+        },
+        "python_requires": [
+          ">=3.7",
+          "<3.10"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": {
+        "install_requires": [
+          "chex>=0.1",
+          "jaxopt",
+          "optax",
+          "pyhf>=0.6.3"
+        ],
+        "extras_require": {
+          "dev": [
+            "iminuit",
+            "pre-commit",
+            "pytest>=6",
+            "pytest-cov>=3"
+          ],
+          "docs": [
+            "Sphinx~=3.0",
+            "myst-parser>=0.13",
+            "sphinx-book-theme>=0.1.0",
+            "sphinx-copybutton"
+          ],
+          "test": [
+            "iminuit",
+            "pytest>=6",
+            "pytest-cov>=3"
+          ],
+          ":python_version < \"3.8\"": [
+            "typing-extensions>=3.7"
           ]
         },
         "python_requires": [
