@@ -32049,6 +32049,60 @@
       },
       "7.0.0.0rc1": {
         "monasca_api-7.0.0.0rc1-py3-none-any.whl": "6.0.0@monasca_api-6.0.0-py3-none-any.whl"
+      },
+      "8.0.0.0rc1": {
+        "monasca_api-8.0.0.0rc1-py3-none-any.whl": {
+          "provides_extras": [
+            "cassandra",
+            "influxdb",
+            "test"
+          ],
+          "requires_dist": [
+            "Paste (>=2.0.2)",
+            "PasteDeploy (>=1.5.0)",
+            "SQLAlchemy (>=1.3.0)",
+            "eventlet (!=0.18.3,!=0.20.1,!=0.21.0,!=0.23.0,!=0.25.0,>=0.18.2)",
+            "falcon (>=2.0.0)",
+            "keystonemiddleware (>=4.17.0)",
+            "monasca-common (>=2.16.0)",
+            "oslo.config (>=6.8.0)",
+            "oslo.context (>=2.22.0)",
+            "oslo.db (>=6.0.0)",
+            "oslo.log (>=3.36.0)",
+            "oslo.middleware (>=3.31.0)",
+            "oslo.policy (>=3.6.0)",
+            "oslo.serialization (!=2.19.1,>=2.18.0)",
+            "oslo.upgradecheck (>=1.3.0)",
+            "oslo.utils (>=4.5.0)",
+            "pbr (!=2.1.0,>=2.0.0)",
+            "pyparsing (>=3.0.6)",
+            "python-keystoneclient (>=3.8.0)",
+            "simplejson (>=3.8.1)",
+            "six (>=1.12.0)",
+            "voluptuous (>=0.11.1)",
+            "cassandra-driver (!=3.6.0,>=3.3.0) ; extra == 'cassandra'",
+            "influxdb (>=2.9.2) ; extra == 'influxdb'",
+            "Babel (!=2.4.0,>=2.3.4) ; extra == 'test'",
+            "bandit (>=1.1.0) ; extra == 'test'",
+            "bashate (>=0.5.1) ; extra == 'test'",
+            "cassandra-driver (!=3.6.0,>=3.3.0) ; extra == 'test'",
+            "coverage (!=4.4,>=4.0) ; extra == 'test'",
+            "doc8 (>=0.6.0) ; extra == 'test'",
+            "fixtures (>=3.0.0) ; extra == 'test'",
+            "hacking (<3.1.0,>=3.0.1) ; extra == 'test'",
+            "httplib2 (>=0.9.1) ; extra == 'test'",
+            "influxdb (>=2.9.2) ; extra == 'test'",
+            "oslotest (>=3.2.0) ; extra == 'test'",
+            "python-subunit (>=1.0.0) ; extra == 'test'",
+            "requests-mock (>=1.2.0) ; extra == 'test'",
+            "stestr (>=1.0.0) ; extra == 'test'",
+            "tempest (>=17.1.0) ; extra == 'test'",
+            "testrepository (>=0.0.18) ; extra == 'test'",
+            "testscenarios (>=0.4) ; extra == 'test'",
+            "testtools (>=2.2.0) ; extra == 'test'"
+          ],
+          "requires_python": ">=3.6"
+        }
       }
     }
   },
@@ -35668,6 +35722,21 @@
       }
     }
   },
+  "nnformsp": {
+    "py3": {
+      "1.2": {
+        "NNforMSP-1.2-py3-none-any.whl": {
+          "requires_dist": [
+            "numpy",
+            "matplotlib",
+            "sklearn",
+            "tensorflow",
+            "keras"
+          ]
+        }
+      }
+    }
+  },
   "nonlincausality": {
     "py3": {
       "0.0.1": {
@@ -37847,6 +37916,47 @@
             "sqlparse (>=0.3.1)",
             "openlineage-integration-common (==0.6.1)",
             "openlineage-python (==0.6.1)",
+            "apache-airflow[gcp_api,google,postgres] (==1.10.15) ; extra == 'airflow-1'",
+            "airflow-provider-great-expectations (==0.0.8) ; extra == 'airflow-1'",
+            "apache-airflow (==2.1.3) ; extra == 'airflow-2'",
+            "apache-airflow-providers-postgres (==2.0.0) ; extra == 'airflow-2'",
+            "apache-airflow-providers-snowflake (==2.1.0) ; extra == 'airflow-2'",
+            "apache-airflow-providers-google (==5.0.0) ; extra == 'airflow-2'",
+            "airflow-provider-great-expectations (==0.0.8) ; extra == 'airflow-2'",
+            "pytest ; extra == 'dev'",
+            "pytest-cov ; extra == 'dev'",
+            "mock ; extra == 'dev'",
+            "flake8 ; extra == 'dev'",
+            "SQLAlchemy ; extra == 'dev'",
+            "Flask-SQLAlchemy ; extra == 'dev'",
+            "pandas-gbq (==0.14.1) ; extra == 'dev'",
+            "snowflake-connector-python ; extra == 'dev'",
+            "pytest ; extra == 'tests'",
+            "pytest-cov ; extra == 'tests'",
+            "mock ; extra == 'tests'",
+            "flake8 ; extra == 'tests'",
+            "SQLAlchemy ; extra == 'tests'",
+            "Flask-SQLAlchemy ; extra == 'tests'",
+            "pandas-gbq (==0.14.1) ; extra == 'tests'",
+            "snowflake-connector-python ; extra == 'tests'"
+          ],
+          "requires_python": ">=3.6"
+        }
+      },
+      "0.7.0": {
+        "openlineage_airflow-0.7.0-py3-none-any.whl": {
+          "provides_extras": [
+            "airflow-1",
+            "airflow-2",
+            "dev",
+            "tests"
+          ],
+          "requires_dist": [
+            "attrs (>=19.3)",
+            "requests (>=2.20.0)",
+            "sqlparse (>=0.3.1)",
+            "openlineage-integration-common (==0.7.0)",
+            "openlineage-python (==0.7.0)",
             "apache-airflow[gcp_api,google,postgres] (==1.10.15) ; extra == 'airflow-1'",
             "airflow-provider-great-expectations (==0.0.8) ; extra == 'airflow-1'",
             "apache-airflow (==2.1.3) ; extra == 'airflow-2'",
@@ -43356,6 +43466,9 @@
       },
       "1.4.7": {
         "pytest_zebrunner-1.4.7-py3-none-any.whl": "1.4.5@pytest_zebrunner-1.4.5-py3-none-any.whl"
+      },
+      "1.4.8": {
+        "pytest_zebrunner-1.4.8-py3-none-any.whl": "1.4.5@pytest_zebrunner-1.4.5-py3-none-any.whl"
       }
     }
   },
@@ -47888,6 +48001,13 @@
       },
       "2.0b19": {
         "rxncon-2.0b19-py3-none-any.whl": "2.0b18@rxncon-2.0b18-py3-none-any.whl"
+      }
+    }
+  },
+  "ryanjohnsonsfirstpyapp": {
+    "py3": {
+      "0.0.2": {
+        "ryanjohnsonsfirstpyapp-0.0.2-py3-none-any.whl": {}
       }
     }
   },
@@ -53079,6 +53199,9 @@
       },
       "3.0.597": {
         "tencentcloud_sdk_python_cis-3.0.597-py2.py3-none-any.whl": "3.0.251@tencentcloud_sdk_python_cis-3.0.251-py2.py3-none-any.whl"
+      },
+      "3.0.598": {
+        "tencentcloud_sdk_python_cis-3.0.598-py2.py3-none-any.whl": "3.0.251@tencentcloud_sdk_python_cis-3.0.251-py2.py3-none-any.whl"
       }
     }
   },
@@ -54124,6 +54247,9 @@
       },
       "3.0.597": {
         "tencentcloud_sdk_python_cmq-3.0.597-py2.py3-none-any.whl": "3.0.251@tencentcloud_sdk_python_cmq-3.0.251-py2.py3-none-any.whl"
+      },
+      "3.0.598": {
+        "tencentcloud_sdk_python_cmq-3.0.598-py2.py3-none-any.whl": "3.0.251@tencentcloud_sdk_python_cmq-3.0.251-py2.py3-none-any.whl"
       }
     }
   },
@@ -55166,6 +55292,9 @@
       },
       "3.0.597": {
         "tencentcloud_sdk_python_tke-3.0.597-py2.py3-none-any.whl": "3.0.252@tencentcloud_sdk_python_tke-3.0.252-py2.py3-none-any.whl"
+      },
+      "3.0.598": {
+        "tencentcloud_sdk_python_tke-3.0.598-py2.py3-none-any.whl": "3.0.252@tencentcloud_sdk_python_tke-3.0.252-py2.py3-none-any.whl"
       }
     }
   },
