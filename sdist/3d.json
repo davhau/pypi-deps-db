@@ -987,7 +987,8 @@
     "0.13.0a1": "0.12.0",
     "0.13.0a2": "0.12.0",
     "0.13.0": "0.12.0",
-    "0.13.1": "0.12.0"
+    "0.13.1": "0.12.0",
+    "0.13.2": "0.12.0"
   },
   "airshare": {
     "0.1.5": {
@@ -59702,7 +59703,80 @@
     },
     "2.7": "2.6",
     "2.8": "2.6",
-    "2.9": "2.6"
+    "2.9": "2.6",
+    "2.10": {
+      "37": {
+        "install_requires": [
+          "typing-extensions",
+          "feedparser>=6",
+          "requests>=2.18",
+          "iso8601",
+          "beautifulsoup4>=4.5"
+        ],
+        "extras_require": {
+          "search": [],
+          "cli": [
+            "click>=7",
+            "PyYAML"
+          ],
+          "app": [
+            "flask>=0.10",
+            "humanize",
+            "readtime",
+            "PyYAML"
+          ],
+          "unstable-plugins": [
+            "requests",
+            "mutagen",
+            "requests",
+            "beautifulsoup4",
+            "blinker>=1.4",
+            "beautifulsoup4"
+          ],
+          "tests": [
+            "pytest>=4",
+            "pytest-randomly",
+            "pytest-subtests",
+            "flaky",
+            "coverage",
+            "pytest-cov",
+            "requests-mock",
+            "requests-wsgi-adapter",
+            "html5lib",
+            "werkzeug",
+            "types-requests"
+          ],
+          "tests:implementation_name != \"pypy\" and (os_name != \"nt\" or python_version != \"3.10\")": [
+            "mechanicalsoup",
+            "lxml"
+          ],
+          "tests:implementation_name != \"pypy\"": [
+            "mypy"
+          ],
+          "docs": [
+            "sphinx",
+            "sphinx-rtd-theme~=1.0",
+            "click>=7",
+            "sphinx-click",
+            "sphinx-issues",
+            "sphinx-hoverxref",
+            "sphinxcontrib-log-cabinet"
+          ],
+          "dev": [
+            "tox",
+            "pre-commit",
+            "build",
+            "twine"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "38": "37",
+      "39": "37",
+      "310": "37"
+    }
   },
   "readme2tex": {
     "0.0.1a0": {
