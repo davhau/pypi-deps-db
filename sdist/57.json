@@ -157,7 +157,8 @@
     },
     "1.2.0": "1.1.6",
     "1.2.1": "1.1.6",
-    "1.2.2": "1.1.6"
+    "1.2.2": "1.1.6",
+    "1.3.0": "1.1.6"
   },
   "address-extractor": {
     "0.1.0.post1": {
@@ -29409,6 +29410,19 @@
     "0.0.6": "0.0.2",
     "0.0.7": "0.0.2"
   },
+  "fastcookie": {
+    "0.0.1": {
+      "36": {
+        "install_requires": [
+          "requests==2.27.1"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
+  },
   "fasttest": {
     "0.0.3": {
       "27": {
@@ -44601,7 +44615,8 @@
     "0.960": "0.953",
     "0.961": "0.953",
     "0.962": "0.953",
-    "0.963": "0.953"
+    "0.963": "0.953",
+    "0.964": "0.953"
   },
   "permutation": {
     "0.1.0": {
@@ -51081,6 +51096,92 @@
           "rich[jupyter]",
           "jupytext",
           "qcodes>=0.28.0 # document Parameter attributes",
+          "",
+          "# scheduler-only",
+          "",
+          "cachecontrol # see issue quantify-scheduler#129",
+          "lockfile # see issue quantify-scheduler#129",
+          "pytest-mpl",
+          "",
+          "# Prospector",
+          "prospector",
+          "prospector[with_mypy]"
+        ],
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "0.6.0": {
+      "27": {
+        "install_requires": [
+          "numpy",
+          "scipy",
+          "columnar",
+          "matplotlib",
+          "plotly",
+          "fastjsonschema",
+          "dataclasses-json",
+          "zhinst-qcodes==0.1.4",
+          "zhinst-toolkit==0.1.5",
+          "orjson",
+          "pathvalidate",
+          "pydantic",
+          "typing_extensions",
+          "quantify_core>=0.5.0",
+          "qcodes<0.32.0,>=0.28.0",
+          "qblox-instruments==0.5.4",
+          "rich[jupyter]",
+          "funcparserlib==1.0.0a0",
+          "lmfit<=1.0.2"
+        ],
+        "setup_requires": [
+          "# Quantify setup requirements",
+          "",
+          "pytest-runner"
+        ],
+        "tests_require": [
+          "# quantify",
+          "",
+          "pip",
+          "bump2version==0.5.11",
+          "wheel==0.33.6",
+          "watchdog==0.9.0",
+          "coverage",
+          "sphinx>=2,<4 # jupyter_sphinx requires sphinx>=2, <4 avoids a sphinx warning from jupyter_sphinx",
+          "sphinx-rtd-theme==0.5.0rc2",
+          "sphinxcontrib-bibtex",
+          "jupyter_sphinx>=0.3.2",
+          "sphinx-jsonschema>=1.15",
+          "sphinx-autobuild",
+          "sphinx-togglebutton",
+          "sphinx-autodoc-typehints>=1.12.0",
+          "twine==1.14.0",
+          "pytest",
+          "pytest-runner",
+          "pytest-cov",
+          "pytest-mpl",
+          "pytest-mock",
+          "pytest-xdist # run parallel tests",
+          "pygments==2.6.1",
+          "",
+          "black",
+          "mypy",
+          "types-docutils",
+          "pylint",
+          "pre-commit",
+          "pre-commit-hooks # common hooks for git repos",
+          "isort>=5.10.0 # sort python imports",
+          "",
+          "scanpydoc >=0.7.1, <=0.7.3 # ensures latest typing_extensions is used in sphinx (https://github.com/theislab/scanpydoc/issues/31)",
+          "docutils<0.17 # pinned due to issue #175 (quantify-core)",
+          "rich[jupyter]",
+          "jupytext",
           "",
           "# scheduler-only",
           "",
