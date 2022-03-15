@@ -3570,6 +3570,18 @@
       },
       "3.5.3": {
         "bclib-3.5.3-py3-none-any.whl": "2.2.2@bclib-2.2.2-py3-none-any.whl"
+      },
+      "3.6.0": {
+        "bclib-3.6.0-py3-none-any.whl": "2.2.2@bclib-2.2.2-py3-none-any.whl"
+      },
+      "3.6.1": {
+        "bclib-3.6.1-py3-none-any.whl": "2.2.2@bclib-2.2.2-py3-none-any.whl"
+      },
+      "3.6.2": {
+        "bclib-3.6.2-py3-none-any.whl": "2.2.2@bclib-2.2.2-py3-none-any.whl"
+      },
+      "3.6.3": {
+        "bclib-3.6.3-py3-none-any.whl": "2.2.2@bclib-2.2.2-py3-none-any.whl"
       }
     }
   },
@@ -12609,6 +12621,27 @@
       },
       "0.8.22": {
         "deep_utils-0.8.22-py3-none-any.whl": "0.8.16@deep_utils-0.8.16-py3-none-any.whl"
+      },
+      "0.8.23": {
+        "deep_utils-0.8.23-py3-none-any.whl": {
+          "provides_extras": [
+            "cv",
+            "tf",
+            "torch"
+          ],
+          "requires_dist": [
+            "numpy (>=1.21.0)",
+            "requests (>=2.27.1)",
+            "tqdm (>=4.62.3)",
+            "opencv-python (>=4.5.5.58) ; extra == 'cv'",
+            "tensorflow (>=2.6.0) ; extra == 'tf'",
+            "opencv-python (>=4.5.5.58) ; extra == 'tf'",
+            "torch (>=1.8.0) ; extra == 'torch'",
+            "torchvision (>=0.10.0) ; extra == 'torch'",
+            "opencv-python (>=4.5.5.58) ; extra == 'torch'"
+          ],
+          "requires_python": ">=3.6"
+        }
       },
       "0.8.3": {
         "deep_utils-0.8.3-py3-none-any.whl": "0.2.1@deep_utils-0.2.1-py3-none-any.whl"
@@ -22764,6 +22797,42 @@
       }
     }
   },
+  "kats": {
+    "py3": {
+      "0.2.0": {
+        "kats-0.2.0-py3-none-any.whl": {
+          "requires_dist": [
+            "attrs (>=21.2.0)",
+            "deprecated (>=1.2.12)",
+            "matplotlib (>=2.0.0)",
+            "numpy (<1.22,>=1.21)",
+            "pandas (<=1.3.5,>=1.0.4)",
+            "python-dateutil (>=2.8.0)",
+            "pystan (==2.19.1.1)",
+            "fbprophet (==0.7.1)",
+            "scikit-learn (>=0.24.2)",
+            "scipy (<1.8.0)",
+            "seaborn (>=0.11.1)",
+            "setuptools-git (>=1.2)",
+            "statsmodels (==0.12.2)",
+            "LunarCalendar (>=0.0.9)",
+            "ax-platform (==0.2.4)",
+            "gpytorch",
+            "holidays (>=0.10.2)",
+            "numba (>=0.52.0)",
+            "parameterized (>=0.8.1)",
+            "plotly (>=2.2.1)",
+            "pymannkendall (>=1.4.1)",
+            "pytest-mpl (>=0.12)",
+            "torch",
+            "tqdm (>=4.36.1)",
+            "importlib-metadata ; python_version < \"3.8\"",
+            "typing-extensions ; python_version < \"3.8\""
+          ]
+        }
+      }
+    }
+  },
   "kedro-grpc-server": {
     "py3": {
       "0.1.0": {
@@ -24192,6 +24261,82 @@
             "xarray-leaflet ; extra == 'raster'",
             "psycopg2 ; extra == 'sql'",
             "sqlalchemy ; extra == 'sql'",
+            "geopandas ; extra == 'vector'",
+            "osmnx ; extra == 'vector'"
+          ],
+          "requires_python": ">=3.7"
+        }
+      },
+      "0.8.4": {
+        "leafmap-0.8.4-py2.py3-none-any.whl": {
+          "provides_extras": [
+            "all",
+            "backends",
+            "lidar",
+            "raster",
+            "sql",
+            "streamlit",
+            "vector"
+          ],
+          "requires_dist": [
+            "bqplot",
+            "colour",
+            "folium (>=0.11.0)",
+            "gdown",
+            "geojson",
+            "googledrivedownloader",
+            "here-map-widget-for-jupyter (>=1.1.1)",
+            "ipyevents (<=0.9.0)",
+            "ipyfilechooser (>=0.6.0)",
+            "ipyleaflet",
+            "ipysheet",
+            "jupyterlab (>=3.0.0)",
+            "matplotlib",
+            "mss",
+            "numpy",
+            "owslib",
+            "palettable",
+            "pandas",
+            "plotly",
+            "pycrs",
+            "pyshp (>=2.1.3)",
+            "pystac-client",
+            "python-box (~=5.4)",
+            "whitebox",
+            "whiteboxgui (>=0.6.0)",
+            "xyzservices",
+            "black ; extra == 'all'",
+            "black[jupyter] ; extra == 'all'",
+            "codespell ; extra == 'all'",
+            "datapane ; extra == 'all'",
+            "geopandas ; extra == 'all'",
+            "keplergl ; extra == 'all'",
+            "ipygany ; extra == 'all'",
+            "ipyvtklink ; extra == 'all'",
+            "laspy ; extra == 'all'",
+            "localtileserver ; extra == 'all'",
+            "osmnx ; extra == 'all'",
+            "panel ; extra == 'all'",
+            "psycopg2 ; extra == 'all'",
+            "pydeck ; extra == 'all'",
+            "pyntcloud[las] ; extra == 'all'",
+            "pyvista ; extra == 'all'",
+            "rio-cogeo ; extra == 'all'",
+            "sqlalchemy ; extra == 'all'",
+            "streamlit-folium ; extra == 'all'",
+            "xarray-leaflet ; extra == 'all'",
+            "keplergl ; extra == 'backends'",
+            "pydeck ; extra == 'backends'",
+            "ipyvtklink ; extra == 'lidar'",
+            "laspy ; extra == 'lidar'",
+            "pyntcloud[las] ; extra == 'lidar'",
+            "pyvista ; extra == 'lidar'",
+            "localtileserver ; extra == 'raster'",
+            "rio-cogeo ; extra == 'raster'",
+            "xarray-leaflet ; extra == 'raster'",
+            "psycopg2 ; extra == 'sql'",
+            "sqlalchemy ; extra == 'sql'",
+            "streamlit-folium ; extra == 'streamlit'",
             "geopandas ; extra == 'vector'",
             "osmnx ; extra == 'vector'"
           ],
@@ -30357,6 +30502,28 @@
       },
       "1.0.4": {
         "mc_automation_tools-1.0.4-py3-none-any.whl": "0.0.23@mc_automation_tools-0.0.23-py3-none-any.whl"
+      },
+      "1.0.40": {
+        "mc_automation_tools-1.0.40-py3-none-any.whl": {
+          "requires_dist": [
+            "requests (~=2.25.0)",
+            "boto3 (~=1.16.43)",
+            "gpval",
+            "wheel",
+            "setuptools (~=50.3.2)",
+            "botocore (~=1.19.43)",
+            "PyJWT",
+            "paramiko",
+            "shapely",
+            "pandas",
+            "ogr",
+            "python-graphql-client",
+            "graphqlclient",
+            "xmltodict",
+            "psycopg2-binary (==2.8.6)"
+          ],
+          "requires_python": ">=3.6"
+        }
       },
       "1.0.5": {
         "mc_automation_tools-1.0.5-py3-none-any.whl": "0.0.23@mc_automation_tools-0.0.23-py3-none-any.whl"
@@ -41235,6 +41402,9 @@
           ],
           "requires_python": ">=3.10"
         }
+      },
+      "0.1.0": {
+        "py_tmio-0.1.0-py3-none-any.whl": "0.0.1@py_tmio-0.0.1-py3-none-any.whl"
       }
     }
   },
@@ -67151,6 +67321,12 @@
         "speechy-1.0.6-cp36-cp36m-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl": "1.0.6@speechy-1.0.6-cp36-cp36m-macosx_10_14_x86_64.whl",
         "speechy-1.0.6-cp36-cp36m-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_12_x86_64.manylinux2010_x86_64.whl": "1.0.6@speechy-1.0.6-cp36-cp36m-macosx_10_14_x86_64.whl",
         "speechy-1.0.6-cp36-cp36m-win_amd64.whl": "1.0.6@speechy-1.0.6-cp36-cp36m-macosx_10_14_x86_64.whl"
+      },
+      "1.0.7": {
+        "speechy-1.0.7-cp36-cp36m-macosx_10_14_x86_64.whl": "1.0.6@speechy-1.0.6-cp36-cp36m-macosx_10_14_x86_64.whl",
+        "speechy-1.0.7-cp36-cp36m-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl": "1.0.6@speechy-1.0.6-cp36-cp36m-macosx_10_14_x86_64.whl",
+        "speechy-1.0.7-cp36-cp36m-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_12_x86_64.manylinux2010_x86_64.whl": "1.0.6@speechy-1.0.6-cp36-cp36m-macosx_10_14_x86_64.whl",
+        "speechy-1.0.7-cp36-cp36m-win_amd64.whl": "1.0.6@speechy-1.0.6-cp36-cp36m-macosx_10_14_x86_64.whl"
       }
     },
     "cp37": {
@@ -67164,6 +67340,12 @@
         "speechy-1.0.6-cp37-cp37m-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl": "1.0.6@speechy-1.0.6-cp37-cp37m-macosx_10_14_x86_64.whl",
         "speechy-1.0.6-cp37-cp37m-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_12_x86_64.manylinux2010_x86_64.whl": "1.0.6@speechy-1.0.6-cp37-cp37m-macosx_10_14_x86_64.whl",
         "speechy-1.0.6-cp37-cp37m-win_amd64.whl": "1.0.6@speechy-1.0.6-cp37-cp37m-macosx_10_14_x86_64.whl"
+      },
+      "1.0.7": {
+        "speechy-1.0.7-cp37-cp37m-macosx_10_14_x86_64.whl": "1.0.6@speechy-1.0.6-cp37-cp37m-macosx_10_14_x86_64.whl",
+        "speechy-1.0.7-cp37-cp37m-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl": "1.0.6@speechy-1.0.6-cp37-cp37m-macosx_10_14_x86_64.whl",
+        "speechy-1.0.7-cp37-cp37m-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_12_x86_64.manylinux2010_x86_64.whl": "1.0.6@speechy-1.0.6-cp37-cp37m-macosx_10_14_x86_64.whl",
+        "speechy-1.0.7-cp37-cp37m-win_amd64.whl": "1.0.6@speechy-1.0.6-cp37-cp37m-macosx_10_14_x86_64.whl"
       }
     },
     "cp38": {
@@ -67175,6 +67357,21 @@
           ]
         },
         "speechy-1.0.6-cp38-cp38-win_amd64.whl": "1.0.6@speechy-1.0.6-cp38-cp38-macosx_10_14_x86_64.whl"
+      },
+      "1.0.7": {
+        "speechy-1.0.7-cp38-cp38-macosx_10_14_x86_64.whl": "1.0.6@speechy-1.0.6-cp38-cp38-macosx_10_14_x86_64.whl",
+        "speechy-1.0.7-cp38-cp38-win_amd64.whl": "1.0.6@speechy-1.0.6-cp38-cp38-macosx_10_14_x86_64.whl"
+      }
+    },
+    "cp39": {
+      "1.0.7": {
+        "speechy-1.0.7-cp39-cp39-macosx_10_15_x86_64.whl": {
+          "requires_dist": [
+            "pyaudio",
+            "numpy"
+          ]
+        },
+        "speechy-1.0.7-cp39-cp39-win_amd64.whl": "1.0.7@speechy-1.0.7-cp39-cp39-macosx_10_15_x86_64.whl"
       }
     }
   },
@@ -67274,6 +67471,9 @@
       },
       "3.3.6": {
         "Spooq-3.3.6-py3-none-any.whl": "3.3.1@Spooq-3.3.1-py3-none-any.whl"
+      },
+      "3.3.7": {
+        "Spooq-3.3.7-py3-none-any.whl": "3.3.1@Spooq-3.3.1-py3-none-any.whl"
       }
     }
   },
@@ -74263,6 +74463,9 @@
       },
       "2.9.25": {
         "zcc_helper-2.9.25-py3-none-any.whl": "1.3@zcc_helper-1.3-py3-none-any.whl"
+      },
+      "2.9.26": {
+        "zcc_helper-2.9.26-py3-none-any.whl": "1.3@zcc_helper-1.3-py3-none-any.whl"
       },
       "2.9.3": {
         "zcc_helper-2.9.3-py3-none-any.whl": "1.3@zcc_helper-1.3-py3-none-any.whl"
