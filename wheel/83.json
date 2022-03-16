@@ -30880,6 +30880,9 @@
       },
       "0.7.1a1": {
         "mandown-0.7.1a1-py3-none-any.whl": "0.7.0@mandown-0.7.0-py3-none-any.whl"
+      },
+      "0.8.0": {
+        "mandown-0.8.0-py3-none-any.whl": "0.7.0@mandown-0.7.0-py3-none-any.whl"
       }
     }
   },
@@ -33526,6 +33529,9 @@
       },
       "4.0.7": {
         "obasparql-4.0.7-py3-none-any.whl": "4.0.3@obasparql-4.0.3-py3-none-any.whl"
+      },
+      "4.0.8": {
+        "obasparql-4.0.8-py3-none-any.whl": "4.0.3@obasparql-4.0.3-py3-none-any.whl"
       }
     }
   },
@@ -37779,6 +37785,29 @@
           ],
           "requires_dist": [
             "oci (==2.60.0)",
+            "arrow (>=1.0.0)",
+            "certifi",
+            "click (==7.1.2)",
+            "cryptography (<=3.4.7,>=3.2.1)",
+            "jmespath (==0.10.0)",
+            "python-dateutil (<3.0.0,>=2.5.3)",
+            "pytz (>=2016.10)",
+            "six (>=1.15.0)",
+            "terminaltables (==3.1.0)",
+            "pyOpenSSL (==19.1.0)",
+            "PyYAML (<6,>=5.4)",
+            "cx-Oracle (==8.3) ; extra == 'db'"
+          ],
+          "requires_python": ">=3.6"
+        }
+      },
+      "3.6.1": {
+        "oci_cli-3.6.1-py3-none-any.whl": {
+          "provides_extras": [
+            "db"
+          ],
+          "requires_dist": [
+            "oci (==2.60.1)",
             "arrow (>=1.0.0)",
             "certifi",
             "click (==7.1.2)",
@@ -45261,6 +45290,25 @@
           "requires_python": "!=3.10.*,>=3.8"
         }
       },
+      "0.2.10": {
+        "pymedio-0.2.10-py3-none-any.whl": {
+          "provides_extras": [
+            "all",
+            "cryptography",
+            "dicom"
+          ],
+          "requires_dist": [
+            "numpy (>=1.22)",
+            "SimpleITK (>=2.1.0) ; extra == 'all'",
+            "cryptography (>=36.0) ; extra == 'all'",
+            "nibabel (>=3) ; extra == 'all'",
+            "pydicom (>=2) ; extra == 'all'",
+            "cryptography (>=36.0) ; extra == 'cryptography'",
+            "pydicom (>=2) ; extra == 'dicom'"
+          ],
+          "requires_python": "!=3.10.*,!=3.11.*,>=3.9"
+        }
+      },
       "0.2.2": {
         "pymedio-0.2.2-py3-none-any.whl": "0.2.1@pymedio-0.2.1-py3-none-any.whl"
       },
@@ -45296,26 +45344,10 @@
         "pymedio-0.2.7-py3-none-any.whl": "0.2.6@pymedio-0.2.6-py3-none-any.whl"
       },
       "0.2.8": {
-        "pymedio-0.2.8-py3-none-any.whl": {
-          "provides_extras": [
-            "all",
-            "cryptography",
-            "dicom"
-          ],
-          "requires_dist": [
-            "numpy (>=1.22)",
-            "SimpleITK (>=2.1.0) ; extra == 'all'",
-            "cryptography (>=36.0) ; extra == 'all'",
-            "nibabel (>=3) ; extra == 'all'",
-            "pydicom (>=2) ; extra == 'all'",
-            "cryptography (>=36.0) ; extra == 'cryptography'",
-            "pydicom (>=2) ; extra == 'dicom'"
-          ],
-          "requires_python": "!=3.10.*,!=3.11.*,>=3.9"
-        }
+        "pymedio-0.2.8-py3-none-any.whl": "0.2.10@pymedio-0.2.10-py3-none-any.whl"
       },
       "0.2.9": {
-        "pymedio-0.2.9-py3-none-any.whl": "0.2.8@pymedio-0.2.8-py3-none-any.whl"
+        "pymedio-0.2.9-py3-none-any.whl": "0.2.10@pymedio-0.2.10-py3-none-any.whl"
       }
     }
   },
@@ -58286,30 +58318,6 @@
   },
   "ufjc": {
     "py3": {
-      "0.3.0": {
-        "ufjc-0.3.0-py3-none-any.whl": {
-          "provides_extras": [
-            "docs",
-            "plotting",
-            "testing"
-          ],
-          "requires_dist": [
-            "numpy",
-            "scipy",
-            "anybadge ; extra == 'docs'",
-            "matplotlib ; extra == 'docs'",
-            "sphinx ; extra == 'docs'",
-            "sphinx-rtd-theme ; extra == 'docs'",
-            "sphinxcontrib-bibtex ; extra == 'docs'",
-            "matplotlib ; extra == 'plotting'",
-            "colorama ; extra == 'testing'",
-            "matplotlib ; extra == 'testing'",
-            "pycodestyle ; extra == 'testing'",
-            "pytest ; extra == 'testing'",
-            "pytest-cov ; extra == 'testing'"
-          ]
-        }
-      },
       "1.0.0": {
         "ufjc-1.0.0-py3-none-any.whl": {
           "provides_extras": [
@@ -58335,6 +58343,45 @@
             "pytest-cov ; extra == 'testing'"
           ]
         }
+      },
+      "1.1.0": {
+        "ufjc-1.1.0-py3-none-any.whl": {
+          "provides_extras": [
+            "all",
+            "docs",
+            "plotting",
+            "testing"
+          ],
+          "requires_dist": [
+            "numpy",
+            "scipy",
+            "anybadge ; extra == 'all'",
+            "colorama ; extra == 'all'",
+            "matplotlib ; extra == 'all'",
+            "pycodestyle ; extra == 'all'",
+            "pytest ; extra == 'all'",
+            "pytest-cov ; extra == 'all'",
+            "sphinx ; extra == 'all'",
+            "sphinx-rtd-theme ; extra == 'all'",
+            "sphinxcontrib-bibtex ; extra == 'all'",
+            "anybadge ; extra == 'docs'",
+            "colorama ; extra == 'docs'",
+            "matplotlib ; extra == 'docs'",
+            "pycodestyle ; extra == 'docs'",
+            "sphinx ; extra == 'docs'",
+            "sphinx-rtd-theme ; extra == 'docs'",
+            "sphinxcontrib-bibtex ; extra == 'docs'",
+            "matplotlib ; extra == 'plotting'",
+            "colorama ; extra == 'testing'",
+            "matplotlib ; extra == 'testing'",
+            "pycodestyle ; extra == 'testing'",
+            "pytest ; extra == 'testing'",
+            "pytest-cov ; extra == 'testing'"
+          ]
+        }
+      },
+      "1.1.1": {
+        "ufjc-1.1.1-py3-none-any.whl": "1.1.0@ufjc-1.1.0-py3-none-any.whl"
       }
     }
   },
@@ -59131,6 +59178,14 @@
       },
       "3.0.0": {
         "veryfi-3.0.0-py3-none-any.whl": "1.1.1@veryfi-1.1.1-py3-none-any.whl"
+      },
+      "3.1.0": {
+        "veryfi-3.1.0-py3-none-any.whl": {
+          "requires_dist": [
+            "requests (>=2.22.0)",
+            "pydantic (==1.9.0)"
+          ]
+        }
       }
     }
   },

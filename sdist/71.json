@@ -6371,7 +6371,8 @@
     },
     "0.1.1": "0.1.0",
     "0.2.0": "0.1.0",
-    "0.3.0": "0.1.0"
+    "0.3.0": "0.1.0",
+    "0.4.0": "0.1.0"
   },
   "bula": {
     "0.2.51": {
@@ -8310,7 +8311,8 @@
     "0.6.46": "0.6.45",
     "0.6.47": "0.6.45",
     "0.6.48": "0.6.45",
-    "0.6.49": "0.6.45"
+    "0.6.49": "0.6.45",
+    "0.6.50": "0.6.45"
   },
   "certbot-cpanel": {
     "1.0.0": {
@@ -16228,6 +16230,197 @@
             "sphinx-inline-tabs",
             "myst-parser",
             "Markdown!=3.3.5"
+          ],
+          ":python_version < \"3.7\"": [
+            "dataclasses"
+          ],
+          ":python_version < \"3.8\"": [
+            "importlib_metadata"
+          ]
+        }
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "2.0.0": {
+      "36": {
+        "install_requires": [
+          "numpy>=1.17",
+          "pyarrow>=5.0.0",
+          "dill",
+          "pandas",
+          "requests>=2.19.0",
+          "tqdm>=4.62.1",
+          "xxhash",
+          "multiprocess",
+          "fsspec[http]>=2021.05.0",
+          "aiohttp",
+          "huggingface_hub<1.0.0,>=0.1.0",
+          "packaging",
+          "responses<0.19"
+        ],
+        "extras_require": {
+          "audio": [
+            "librosa"
+          ],
+          "vision": [
+            "Pillow>=6.2.1"
+          ],
+          "apache-beam": [
+            "apache-beam>=2.26.0"
+          ],
+          "tensorflow": [
+            "tensorflow!=2.6.0,!=2.6.1,>=2.2.0"
+          ],
+          "tensorflow_gpu": [
+            "tensorflow-gpu!=2.6.0,!=2.6.1,>=2.2.0"
+          ],
+          "torch": [
+            "torch"
+          ],
+          "s3": [
+            "fsspec",
+            "boto3",
+            "botocore",
+            "s3fs"
+          ],
+          "streaming": [],
+          "dev": [
+            "absl-py",
+            "pytest",
+            "pytest-datadir",
+            "pytest-xdist",
+            "apache-beam>=2.26.0",
+            "elasticsearch<8.0.0",
+            "aiobotocore",
+            "boto3",
+            "botocore",
+            "faiss-cpu>=1.6.4",
+            "fsspec[s3]",
+            "moto[s3,server]==2.0.4",
+            "rarfile>=4.0",
+            "s3fs==2021.08.1",
+            "tensorflow!=2.6.0,!=2.6.1,>=2.3",
+            "torch",
+            "torchaudio",
+            "soundfile",
+            "transformers",
+            "bs4",
+            "conllu",
+            "h5py",
+            "langdetect",
+            "lxml",
+            "mwparserfromhell",
+            "nltk",
+            "openpyxl",
+            "py7zr",
+            "tldextract",
+            "zstandard",
+            "bert_score>=0.3.6",
+            "rouge_score",
+            "sacrebleu",
+            "scipy",
+            "seqeval",
+            "scikit-learn",
+            "jiwer",
+            "sentencepiece",
+            "torchmetrics==0.6.0",
+            "mauve-text",
+            "toml>=0.10.1",
+            "requests_file>=1.5.1",
+            "tldextract>=3.1.0",
+            "texttable>=1.6.3",
+            "Werkzeug>=1.0.1",
+            "six~=1.15.0",
+            "Pillow>=6.2.1",
+            "librosa",
+            "wget>=3.2",
+            "pytorch-nlp==0.5.0",
+            "pytorch_lightning",
+            "fastBPE==0.1.0",
+            "fairseq",
+            "black~=22.0",
+            "flake8>=3.8.3",
+            "isort>=5.0.0",
+            "pyyaml>=5.3.1"
+          ],
+          "dev:python_version < \"3.7\"": [
+            "importlib_resources"
+          ],
+          "tests": [
+            "absl-py",
+            "pytest",
+            "pytest-datadir",
+            "pytest-xdist",
+            "apache-beam>=2.26.0",
+            "elasticsearch<8.0.0",
+            "aiobotocore",
+            "boto3",
+            "botocore",
+            "faiss-cpu>=1.6.4",
+            "fsspec[s3]",
+            "moto[s3,server]==2.0.4",
+            "rarfile>=4.0",
+            "s3fs==2021.08.1",
+            "tensorflow!=2.6.0,!=2.6.1,>=2.3",
+            "torch",
+            "torchaudio",
+            "soundfile",
+            "transformers",
+            "bs4",
+            "conllu",
+            "h5py",
+            "langdetect",
+            "lxml",
+            "mwparserfromhell",
+            "nltk",
+            "openpyxl",
+            "py7zr",
+            "tldextract",
+            "zstandard",
+            "bert_score>=0.3.6",
+            "rouge_score",
+            "sacrebleu",
+            "scipy",
+            "seqeval",
+            "scikit-learn",
+            "jiwer",
+            "sentencepiece",
+            "torchmetrics==0.6.0",
+            "mauve-text",
+            "toml>=0.10.1",
+            "requests_file>=1.5.1",
+            "tldextract>=3.1.0",
+            "texttable>=1.6.3",
+            "Werkzeug>=1.0.1",
+            "six~=1.15.0",
+            "Pillow>=6.2.1",
+            "librosa",
+            "wget>=3.2",
+            "pytorch-nlp==0.5.0",
+            "pytorch_lightning",
+            "fastBPE==0.1.0",
+            "fairseq"
+          ],
+          "tests:python_version < \"3.7\"": [
+            "importlib_resources"
+          ],
+          "quality": [
+            "black~=22.0",
+            "flake8>=3.8.3",
+            "isort>=5.0.0",
+            "pyyaml>=5.3.1"
+          ],
+          "benchmarks": [
+            "numpy==1.18.5",
+            "tensorflow==2.3.0",
+            "torch==1.6.0",
+            "transformers==3.0.2"
+          ],
+          "docs": [
+            "s3fs"
           ],
           ":python_version < \"3.7\"": [
             "dataclasses"
@@ -64543,7 +64736,8 @@
     "3.0.596": "3.0.271",
     "3.0.597": "3.0.271",
     "3.0.598": "3.0.271",
-    "3.0.599": "3.0.271"
+    "3.0.599": "3.0.271",
+    "3.0.600": "3.0.271"
   },
   "tendril-dox-wallet": {
     "0.1.1": {

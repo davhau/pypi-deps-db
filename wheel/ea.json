@@ -2049,6 +2049,22 @@
           "requires_python": ">=3.6.0"
         }
       },
+      "3.0.0": {
+        "analytix-3.0.0-py3-none-any.whl": {
+          "provides_extras": [
+            "df",
+            "types"
+          ],
+          "requires_dist": [
+            "aiofiles (<0.9,>=0.3)",
+            "httpx (<0.23,>=0.11)",
+            "pandas ; (python_version < \"3.11\" and platform_python_implementation == \"CPython\") and extra == 'df'",
+            "types-aiofiles ; extra == 'types'",
+            "types-setuptools ; extra == 'types'"
+          ],
+          "requires_python": ">=3.7.0,<3.12"
+        }
+      },
       "3.0.0rc1": {
         "analytix-3.0.0rc1-py3-none-any.whl": {
           "provides_extras": [
@@ -2069,20 +2085,7 @@
         "analytix-3.0.0rc2-py3-none-any.whl": "3.0.0rc1@analytix-3.0.0rc1-py3-none-any.whl"
       },
       "3.0.0rc3": {
-        "analytix-3.0.0rc3-py3-none-any.whl": {
-          "provides_extras": [
-            "df",
-            "types"
-          ],
-          "requires_dist": [
-            "aiofiles (<0.9,>=0.3)",
-            "httpx (<0.23,>=0.11)",
-            "pandas ; (python_version < \"3.11\" and platform_python_implementation == \"CPython\") and extra == 'df'",
-            "types-aiofiles ; extra == 'types'",
-            "types-setuptools ; extra == 'types'"
-          ],
-          "requires_python": ">=3.7.0,<3.12"
-        }
+        "analytix-3.0.0rc3-py3-none-any.whl": "3.0.0@analytix-3.0.0-py3-none-any.whl"
       }
     }
   },
@@ -16437,6 +16440,13 @@
       }
     }
   },
+  "gamlogger": {
+    "py3": {
+      "0.9.0": {
+        "gamlogger-0.9.0-py3-none-any.whl": {}
+      }
+    }
+  },
   "gateway2-lisa": {
     "py3": {
       "0.1.0": {
@@ -18958,6 +18968,28 @@
             "Sphinx (>=1.8.4) ; extra == 'dev'",
             "sphinx-markdown-builder (>=0.5.2) ; extra == 'dev'"
           ]
+        }
+      },
+      "0.3.1": {
+        "ipydagred3-0.3.1-py2.py3-none-any.whl": {
+          "provides_extras": [
+            "dev"
+          ],
+          "requires_dist": [
+            "ipywidgets (>=7.5.1)",
+            "ipywidgets (>=7.5.1) ; extra == 'dev'",
+            "black (>=20.8b1) ; extra == 'dev'",
+            "bump2version (>=1.0.0) ; extra == 'dev'",
+            "flake8 (>=3.7.8) ; extra == 'dev'",
+            "flake8-black (>=0.2.1) ; extra == 'dev'",
+            "jupyter-packaging ; extra == 'dev'",
+            "mock ; extra == 'dev'",
+            "pytest (>=4.3.0) ; extra == 'dev'",
+            "pytest-cov (>=2.6.1) ; extra == 'dev'",
+            "Sphinx (>=1.8.4) ; extra == 'dev'",
+            "sphinx-markdown-builder (>=0.5.2) ; extra == 'dev'"
+          ],
+          "requires_python": ">=3.7"
         }
       }
     }
@@ -36626,6 +36658,12 @@
           ],
           "requires_python": ">=3.8"
         }
+      },
+      "0.0.2": {
+        "pyPLNmodels-0.0.2-py3-none-any.whl": "0.0.1@pyPLNmodels-0.0.1-py3-none-any.whl"
+      },
+      "0.0.3": {
+        "pyPLNmodels-0.0.3-py3-none-any.whl": "0.0.1@pyPLNmodels-0.0.1-py3-none-any.whl"
       }
     }
   },
@@ -39358,6 +39396,49 @@
       },
       "0.7.13": {
         "redisbench_admin-0.7.13-py3-none-any.whl": "0.7.1@redisbench_admin-0.7.1-py3-none-any.whl"
+      },
+      "0.7.15": {
+        "redisbench_admin-0.7.15-py3-none-any.whl": {
+          "requires_dist": [
+            "Flask (>=2.0.1,<3.0.0)",
+            "Flask-HTTPAuth (>=4.4.0,<5.0.0)",
+            "GitPython (>=3.1.12,<4.0.0)",
+            "Jinja2 (>=3.0.3,<4.0.0)",
+            "PyYAML (>=5.4,<6.0)",
+            "ansicolors (>=1.1.8,<2.0.0)",
+            "boto3 (>=1.13.24,<2.0.0)",
+            "daemonize (>=2.5.0,<3.0.0)",
+            "docker (>=5.0.2,<6.0.0)",
+            "flask-restx (>=0.5.1,<0.6.0)",
+            "h5py (>=2.10.0,<3.0.0)",
+            "humanize (>=2.4.0,<3.0.0)",
+            "jsonpath_ng (>=1.5.2,<2.0.0)",
+            "matplotlib (>=3.1.2,<4.0.0)",
+            "numpy (>=1.17.4,<2.0.0)",
+            "pandas (>=1.0,<2.0)",
+            "paramiko (>=2.7.2,<3.0.0)",
+            "psutil (>=5.6.6,<6.0.0)",
+            "pyWorkFlow (>=0.0.2,<0.0.3)",
+            "py_cpuinfo (>=5.0.0,<6.0.0)",
+            "pysftp (>=0.2.9,<0.3.0)",
+            "pytablewriter[html] (>=0.64.1,<0.65.0)",
+            "python_terraform (>=0.10.1,<0.11.0)",
+            "redis (==4.2.0rc3)",
+            "requests (>=2.23.0,<3.0.0)",
+            "scikit-learn (>=0.22.2,<0.23.0)",
+            "scipy (>=1.3.3,<2.0.0)",
+            "sshtunnel (>=0.4.0,<0.5.0)",
+            "toml (>=0.10.1,<0.11.0)",
+            "tox-docker (>=3.1.0,<4.0.0)",
+            "tqdm (>=4.46.1,<5.0.0)",
+            "watchdog (>=2.1.6,<3.0.0)",
+            "wget (>=3.2,<4.0)"
+          ],
+          "requires_python": ">=3.6.1,<4.0.0"
+        }
+      },
+      "0.7.16": {
+        "redisbench_admin-0.7.16-py3-none-any.whl": "0.7.15@redisbench_admin-0.7.15-py3-none-any.whl"
       },
       "0.7.2": {
         "redisbench_admin-0.7.2-py3-none-any.whl": "0.7.1@redisbench_admin-0.7.1-py3-none-any.whl"
