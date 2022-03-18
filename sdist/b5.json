@@ -2013,7 +2013,11 @@
     "1.2.93": "1.2.5",
     "1.2.94": "1.2.5",
     "1.2.95": "1.2.5",
-    "1.2.96": "1.2.5"
+    "1.2.96": "1.2.5",
+    "1.2.97": "1.2.5",
+    "1.2.98": "1.2.5",
+    "1.2.99": "1.2.5",
+    "1.3.0": "1.2.5"
   },
   "asyncgpio": {
     "0.4.0": {
@@ -7414,7 +7418,8 @@
     },
     "0.1.2": "0.1.1",
     "0.1.3": "0.1.1",
-    "0.2.0": "0.1.1"
+    "0.2.0": "0.1.1",
+    "0.2.1": "0.1.1"
   },
   "aws-ec2-cli": {
     "0.0.1": {
@@ -11425,7 +11430,22 @@
     "0.1.2": "0.1",
     "0.1.3": "0.1",
     "0.2.0": "0.1",
-    "1.0.1": "0.1"
+    "1.0.1": "0.1",
+    "1.1.0": {
+      "27": {
+        "install_requires": [
+          "six>=1.16.0"
+        ],
+        "python_requires": [
+          ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "byteark": {
     "0.0.1": {
@@ -20641,7 +20661,8 @@
       "38": "27",
       "39": "27",
       "310": "27"
-    }
+    },
+    "0.2.4": "0.2.3"
   },
   "django-basetestcase": {
     "0.0.1": "1.1",
@@ -23706,7 +23727,8 @@
     "0.15.0rc2": "0.13.0",
     "0.15.0rc3": "0.13.0",
     "0.16.0": "0.13.0",
-    "0.16.1": "0.13.0"
+    "0.16.1": "0.13.0",
+    "0.16.2": "0.13.0"
   },
   "dpaste-console": {
     "1.0.0": {
@@ -40484,7 +40506,56 @@
       "310": "36"
     },
     "0.13.1": "0.13.0",
-    "0.13.2": "0.13.0"
+    "0.13.2": "0.13.0",
+    "0.13.3": {
+      "36": {
+        "install_requires": [
+          "pandas==1.4.1",
+          "packaging",
+          "numpy>=1.18.5",
+          "fsspec"
+        ],
+        "extras_require": {
+          "dask": [
+            "dask<2022.2.0,>=2.22.0",
+            "distributed<2022.2.0,>=2.22.0"
+          ],
+          "ray": [
+            "ray[default]>=1.4.0",
+            "pyarrow>=4.0.1"
+          ],
+          "remote": [
+            "rpyc==4.1.5",
+            "cloudpickle",
+            "boto3"
+          ],
+          "spreadsheet": [
+            "modin-spreadsheet>=0.1.0"
+          ],
+          "sql": [
+            "dfsql>=0.4.2",
+            "pyparsing<=2.4.7"
+          ],
+          "all": [
+            "dask<2022.2.0,>=2.22.0",
+            "distributed<2022.2.0,>=2.22.0",
+            "ray[default]>=1.4.0",
+            "pyarrow>=4.0.1",
+            "rpyc==4.1.5",
+            "cloudpickle",
+            "boto3",
+            "modin-spreadsheet>=0.1.0"
+          ]
+        },
+        "python_requires": [
+          ">=3.8"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "mollie-api-extract": {
     "0.0.1": {
@@ -43207,6 +43278,27 @@
           "setuptools",
           "node>=0.9.28",
           "plumber"
+        ],
+        "extras_require": {
+          "test": [
+            "zope.testrunner"
+          ]
+        },
+        "tests_require": [
+          "zope.testrunner"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "1.0": {
+      "27": {
+        "install_requires": [
+          "node>=1.0",
+          "setuptools"
         ],
         "extras_require": {
           "test": [
@@ -57644,7 +57736,144 @@
       "310": "36"
     },
     "0.12.6": "0.12.5",
-    "0.12.7": "0.12.5"
+    "0.12.7": "0.12.5",
+    "0.13.2": {
+      "27": {
+        "install_requires": [
+          "adjusttext",
+          "bioservices>=1.7.8",
+          "brokenaxes",
+          "bx-python",
+          "click",
+          "colorlog>=3.1.0",
+          "colormap",
+          "cookiecutter",
+          "cython",
+          "docutils",
+          "easydev>=0.11.1",
+          "gseapy",
+          "itolapi",
+          "lxml",
+          "matplotlib",
+          "matplotlib-venn",
+          "mock",
+          "multiqc",
+          "packaging",
+          "pandas>=0.22",
+          "plotly",
+          "psutil",
+          "pykwalify>=1.8",
+          "vcfpy",
+          "pysam>=0.16",
+          "ruamel.yaml>=0.16.0",
+          "scikit-learn",
+          "scipy",
+          "seaborn",
+          "statsmodels",
+          "xlrd",
+          "xml2dict",
+          "UpSetPlot",
+          "itolapi"
+        ],
+        "extras_require": {
+          "doc": [
+            "sphinx>=3",
+            "sphinx_rtd_theme",
+            "sequana_sphinxext"
+          ],
+          "testing": [
+            "pytest",
+            "pytest-cov",
+            "pytest-xdist",
+            "pytest-mock",
+            "pytest-timeout",
+            "pytest-runner",
+            "coveralls"
+          ],
+          "pipelines": [
+            "sequana_quality_control",
+            "sequana_fastqc",
+            "sequana_rnaseq",
+            "sequana_variant_calling",
+            "sequana_fastqc",
+            "sequana_demultiplex",
+            "sequana_coverage",
+            "sequana_denovo",
+            "sequana_mapper"
+          ]
+        }
+      },
+      "36": {
+        "install_requires": [
+          "adjusttext",
+          "bioservices>=1.7.8",
+          "brokenaxes",
+          "bx-python",
+          "click",
+          "colorlog>=3.1.0",
+          "colormap",
+          "cookiecutter",
+          "cython",
+          "docutils",
+          "easydev>=0.11.1",
+          "gseapy",
+          "itolapi",
+          "lxml",
+          "matplotlib",
+          "matplotlib-venn",
+          "mock",
+          "multiqc",
+          "packaging",
+          "pandas>=0.22",
+          "plotly",
+          "psutil",
+          "pykwalify>=1.8",
+          "vcfpy",
+          "pysam>=0.16",
+          "ruamel.yaml>=0.16.0",
+          "snakemake",
+          "scikit-learn",
+          "scipy",
+          "seaborn",
+          "statsmodels",
+          "xlrd",
+          "xml2dict",
+          "UpSetPlot",
+          "itolapi"
+        ],
+        "extras_require": {
+          "testing": [
+            "pytest",
+            "pytest-cov",
+            "pytest-xdist",
+            "pytest-mock",
+            "pytest-timeout",
+            "pytest-runner",
+            "coveralls"
+          ],
+          "pipelines": [
+            "sequana_quality_control",
+            "sequana_fastqc",
+            "sequana_rnaseq",
+            "sequana_variant_calling",
+            "sequana_fastqc",
+            "sequana_demultiplex",
+            "sequana_coverage",
+            "sequana_denovo",
+            "sequana_mapper"
+          ],
+          "doc": [
+            "sphinx>=3",
+            "sphinx_rtd_theme",
+            "sequana_sphinxext"
+          ]
+        }
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "seroba": {
     "0.1.4": {
@@ -63585,7 +63814,8 @@
       "38": "27",
       "39": "27",
       "310": "27"
-    }
+    },
+    "2.0.5": "2.0.4"
   },
   "tescal": {
     "0.2.2": {
