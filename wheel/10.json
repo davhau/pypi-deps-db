@@ -21797,6 +21797,20 @@
       "2.0.0": {
         "holdup-2.0.0-py2.py3-none-any.whl": "1.8.0@holdup-1.8.0-py2.py3-none-any.whl"
       }
+    },
+    "py3": {
+      "3.0.0": {
+        "holdup-3.0.0-py3-none-any.whl": {
+          "provides_extras": [
+            "pg"
+          ],
+          "requires_dist": [
+            "psycopg2 ; (platform_python_implementation==\"CPython\") and extra == 'pg'",
+            "psycopg2cffi ; (platform_python_implementation==\"PyPy\") and extra == 'pg'"
+          ],
+          "requires_python": ">=3.6"
+        }
+      }
     }
   },
   "hologger": {
