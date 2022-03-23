@@ -10314,6 +10314,9 @@
           "requires_python": ">=3.6"
         }
       },
+      "0.0.13": {
+        "decOM-0.0.13-py3-none-any.whl": "0.0.12@decOM-0.0.12-py3-none-any.whl"
+      },
       "0.0.2": {
         "decOM-0.0.2-py3-none-any.whl": {
           "requires_python": ">=3.6"
@@ -13450,6 +13453,9 @@
           ],
           "requires_python": ">=3.8"
         }
+      },
+      "0.1.1": {
+        "edx_arch_experiments-0.1.1-py2.py3-none-any.whl": "0.1.0@edx_arch_experiments-0.1.0-py2.py3-none-any.whl"
       }
     }
   },
@@ -15998,6 +16004,119 @@
             "onnxruntime-tools ; extra == 'onnx'",
             "onnxruntime-gpu ; extra == 'onnx-gpu'",
             "onnxruntime-tools ; extra == 'onnx-gpu'",
+            "beautifulsoup4 ; extra == 'preprocessing'",
+            "markdown ; extra == 'preprocessing'",
+            "ray (<2,>=1.9.1) ; extra == 'ray'",
+            "aiorwlock (<2,>=1.3.0) ; extra == 'ray'",
+            "sqlalchemy (<2,>=1.4.2) ; extra == 'sql'",
+            "sqlalchemy-utils ; extra == 'sql'",
+            "psycopg2-binary ; (sys_platform != \"win32\" and sys_platform != \"cygwin\") and extra == 'sql'",
+            "farm-haystack[crawler,dev,docstores,ocr,preprocessing,ray] ; extra == 'test'",
+            "weaviate-client (==2.5.0) ; extra == 'weaviate'"
+          ],
+          "requires_python": "<4,>=3.7"
+        }
+      },
+      "1.3.0": {
+        "farm_haystack-1.3.0-py3-none-any.whl": {
+          "provides_extras": [
+            "all",
+            "all_gpu",
+            "beir",
+            "colab",
+            "crawler",
+            "dev",
+            "docstores",
+            "docstores_gpu",
+            "faiss",
+            "faiss_gpu",
+            "graphdb",
+            "milvus",
+            "milvus1",
+            "ocr",
+            "only_faiss",
+            "only_faiss_gpu",
+            "only_milvus",
+            "only_milvus1",
+            "only_pinecone",
+            "onnx",
+            "onnx_gpu",
+            "pinecone",
+            "preprocessing",
+            "ray",
+            "sql",
+            "test",
+            "weaviate"
+          ],
+          "requires_dist": [
+            "torch (<1.11,>1.9)",
+            "requests",
+            "pydantic",
+            "transformers (==4.13.0)",
+            "nltk",
+            "pandas",
+            "dill",
+            "tqdm",
+            "networkx",
+            "mmh3",
+            "quantulum3",
+            "posthog",
+            "azure-ai-formrecognizer (==3.2.0b2)",
+            "azure-core (<1.23)",
+            "more-itertools",
+            "python-docx",
+            "langdetect",
+            "tika",
+            "sentence-transformers (>=0.4.0)",
+            "scipy (>=1.3.2)",
+            "scikit-learn (>=1.0.0)",
+            "seqeval",
+            "mlflow (<=1.13.1)",
+            "elasticsearch (<=7.10,>=7.7)",
+            "elastic-apm",
+            "rapidfuzz",
+            "jsonschema",
+            "importlib-metadata ; python_version < \"3.8\"",
+            "farm-haystack[beir,crawler,dev,docstores,ocr,onnx,preprocessing,ray] ; extra == 'all'",
+            "farm-haystack[beir,crawler,dev,docstores-gpu,ocr,onnx-gpu,preprocessing,ray] ; extra == 'all_gpu'",
+            "beir ; extra == 'beir'",
+            "grpcio (==1.43.0) ; extra == 'colab'",
+            "selenium ; extra == 'crawler'",
+            "webdriver-manager ; extra == 'crawler'",
+            "mypy ; extra == 'dev'",
+            "pytest ; extra == 'dev'",
+            "responses ; extra == 'dev'",
+            "tox ; extra == 'dev'",
+            "coverage ; extra == 'dev'",
+            "python-multipart ; extra == 'dev'",
+            "psutil ; extra == 'dev'",
+            "pylint ; extra == 'dev'",
+            "black[jupyter] ; extra == 'dev'",
+            "pydoc-markdown (==4.5.1) ; extra == 'dev'",
+            "mkdocs ; extra == 'dev'",
+            "jupytercontrib ; extra == 'dev'",
+            "watchdog ; extra == 'dev'",
+            "typing-extensions ; (python_version < \"3.8\") and extra == 'dev'",
+            "farm-haystack[faiss,graphdb,milvus,pinecone,weaviate] ; extra == 'docstores'",
+            "farm-haystack[faiss-gpu,graphdb,milvus,pinecone,weaviate] ; extra == 'docstores_gpu'",
+            "farm-haystack[only-faiss,sql] ; extra == 'faiss'",
+            "farm-haystack[only-faiss-gpu,sql] ; extra == 'faiss_gpu'",
+            "SPARQLWrapper ; extra == 'graphdb'",
+            "farm-haystack[only-milvus,sql] ; extra == 'milvus'",
+            "farm-haystack[only-milvus1,sql] ; extra == 'milvus1'",
+            "pytesseract (==0.3.7) ; extra == 'ocr'",
+            "pillow ; extra == 'ocr'",
+            "pdf2image (==1.14.0) ; extra == 'ocr'",
+            "faiss-cpu (<2,>=1.6.3) ; extra == 'only_faiss'",
+            "faiss-gpu (<2,>=1.6.3) ; extra == 'only_faiss_gpu'",
+            "pymilvus (<3,>=2.0.0) ; extra == 'only_milvus'",
+            "pymilvus (<2.0.0) ; extra == 'only_milvus1'",
+            "pinecone-client ; extra == 'only_pinecone'",
+            "onnxruntime ; extra == 'onnx'",
+            "onnxruntime-tools ; extra == 'onnx'",
+            "onnxruntime-gpu ; extra == 'onnx_gpu'",
+            "onnxruntime-tools ; extra == 'onnx_gpu'",
+            "farm-haystack[only-pinecone,sql] ; extra == 'pinecone'",
             "beautifulsoup4 ; extra == 'preprocessing'",
             "markdown ; extra == 'preprocessing'",
             "ray (<2,>=1.9.1) ; extra == 'ray'",
@@ -32129,6 +32248,24 @@
       },
       "1.0.2": {
         "odyssey-1.0.2-py3-none-any.whl": "1.0.1@odyssey-1.0.1-py3-none-any.whl"
+      }
+    }
+  },
+  "ojtool": {
+    "py3": {
+      "0.0.1": {
+        "ojtool-0.0.1-py3-none-any.whl": {
+          "requires_python": ">=3.6"
+        }
+      },
+      "0.0.2": {
+        "ojtool-0.0.2-py3-none-any.whl": "0.0.1@ojtool-0.0.1-py3-none-any.whl"
+      },
+      "0.0.3": {
+        "ojtool-0.0.3-py3-none-any.whl": "0.0.1@ojtool-0.0.1-py3-none-any.whl"
+      },
+      "0.0.5": {
+        "ojtool-0.0.5-py3-none-any.whl": "0.0.1@ojtool-0.0.1-py3-none-any.whl"
       }
     }
   },
