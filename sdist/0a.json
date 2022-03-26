@@ -2290,6 +2290,25 @@
       "38": "36",
       "39": "36",
       "310": "36"
+    },
+    "2.0.5": {
+      "36": {
+        "install_requires": [
+          "apache-airflow>=2.1.0",
+          "pywinrm>=0.4"
+        ],
+        "setup_requires": [
+          "setuptools",
+          "wheel"
+        ],
+        "python_requires": [
+          "~=3.7"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
     }
   },
   "apache-airflow-providers-mysql": {
@@ -2751,6 +2770,42 @@
       "36": {
         "install_requires": [
           "apache-airflow>=2.1.0rc1"
+        ],
+        "setup_requires": [
+          "setuptools",
+          "wheel"
+        ],
+        "extras_require": {
+          "amazon": [
+            "apache-airflow-providers-amazon"
+          ],
+          "presto": [
+            "apache-airflow-providers-presto"
+          ],
+          "trino": [
+            "apache-airflow-providers-trino"
+          ],
+          "vertica": [
+            "apache-airflow-providers-vertica"
+          ],
+          ":platform_machine != \"aarch64\"": [
+            "mysql-connector-python>=8.0.11",
+            "mysqlclient>=1.3.6"
+          ]
+        },
+        "python_requires": [
+          "~=3.7"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "2.2.3": {
+      "36": {
+        "install_requires": [
+          "apache-airflow>=2.1.0"
         ],
         "setup_requires": [
           "setuptools",
@@ -18093,7 +18148,8 @@
     "0.1.3": "0.1.0",
     "0.1.4": "0.1.0",
     "0.1.4.1": "0.1.0",
-    "0.1.5": "0.1.0"
+    "0.1.5": "0.1.0",
+    "0.1.5.1": "0.1.0"
   },
   "flamingo": {
     "0.0": {
@@ -77356,7 +77412,32 @@
       "39": "38",
       "310": "38"
     },
-    "0.3.1": "0.3.0"
+    "0.3.1": "0.3.0",
+    "0.3.2": {
+      "38": {
+        "install_requires": [
+          "bokeh>=2.4",
+          "Cerberus>=1.3",
+          "ipython>=8.1",
+          "matplotlib>=3.5.1",
+          "numpy<=1.21.4",
+          "openpyxl>=3.0",
+          "pandas>=1.4.1",
+          "requests",
+          "scikit-learn>=1.0.2",
+          "scipy>=1.8",
+          "seaborn>=0.11",
+          "statsmodels>=0.13",
+          "xlrd>=2.0"
+        ],
+        "python_requires": [
+          ">=3.8"
+        ]
+      },
+      "39": "38",
+      "310": "38"
+    },
+    "0.3.3": "0.3.2"
   },
   "tightocr": {
     "0.4.0": {
