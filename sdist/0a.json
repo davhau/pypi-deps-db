@@ -57939,7 +57939,37 @@
       "39": "36",
       "310": "36"
     },
-    "2.3.0": "2.2.0"
+    "2.3.0": "2.2.0",
+    "2.4.0": {
+      "36": {
+        "install_requires": [
+          "numpy>=1.17.5",
+          "pandas>=1.3.0",
+          "featuretools>=1.5.0",
+          "nltk>=3.4.5",
+          "scikit-learn>=0.20.0"
+        ],
+        "extras_require": {
+          "complete": [
+            "tensorflow_hub>=0.4.0"
+          ],
+          "complete:sys_platform != \"darwin\" or platform_machine != \"arm64\"": [
+            "tensorflow>=1.14.0"
+          ],
+          "complete:sys_platform == \"darwin\" and platform_machine == \"arm64\"": [
+            "tensorflow-metal>=0.4.0",
+            "tensorflow-macos>=2.8.0"
+          ]
+        },
+        "python_requires": [
+          ">=3.7, <4"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "node-events": {
     "0.5.0": {
@@ -70728,6 +70758,24 @@
     "1.0.1": "0.0.1",
     "1.0.2": "0.0.2"
   },
+  "smart-hg-26": {
+    "1.0": {
+      "27": {
+        "install_requires": [
+          "numpy==1.19.4",
+          "scipy==1.5.4",
+          "opencv-python==4.4.0.46",
+          "matplotlib==3.3.3",
+          "scikit-image==0.18.0"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
+  },
   "smartermeasure": {
     "0.1-pre": {
       "27": {
@@ -71279,6 +71327,18 @@
         "install_requires": [
           "soda-sql-core==2.1.8",
           "soda-sql-postgresql==2.1.8",
+          "boto3<2.0,>=1.15.18"
+        ]
+      },
+      "38": "37",
+      "39": "37",
+      "310": "37"
+    },
+    "2.1.9": {
+      "37": {
+        "install_requires": [
+          "soda-sql-core==2.1.9",
+          "soda-sql-postgresql==2.1.9",
           "boto3<2.0,>=1.15.18"
         ]
       },
