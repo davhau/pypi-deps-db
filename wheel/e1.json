@@ -1029,6 +1029,9 @@
       },
       "0.1.4": {
         "aiscpy-0.1.4-py3-none-any.whl": "0.1@aiscpy-0.1-py3-none-any.whl"
+      },
+      "0.1.5": {
+        "aiscpy-0.1.5-py3-none-any.whl": "0.1@aiscpy-0.1-py3-none-any.whl"
       }
     }
   },
@@ -10072,6 +10075,9 @@
       "2.2.0.post31": {
         "assisted_service_client-2.2.0.post31-py3-none-any.whl": "1.0.16.1.post85@assisted_service_client-1.0.16.1.post85-py3-none-any.whl"
       },
+      "2.2.0.post32": {
+        "assisted_service_client-2.2.0.post32-py3-none-any.whl": "1.0.16.1.post85@assisted_service_client-1.0.16.1.post85-py3-none-any.whl"
+      },
       "2.2.0.post4": {
         "assisted_service_client-2.2.0.post4-py3-none-any.whl": "1.0.16.1.post85@assisted_service_client-1.0.16.1.post85-py3-none-any.whl"
       },
@@ -10212,23 +10218,6 @@
   },
   "atus": {
     "py3": {
-      "0.2.4.1": {
-        "atus-0.2.4.1-py3-none-any.whl": {
-          "requires_python": ">=3.7"
-        }
-      },
-      "0.2.4.2": {
-        "atus-0.2.4.2-py3-none-any.whl": "0.2.4.1@atus-0.2.4.1-py3-none-any.whl"
-      },
-      "0.2.4.3": {
-        "atus-0.2.4.3-py3-none-any.whl": "0.2.4.1@atus-0.2.4.1-py3-none-any.whl"
-      },
-      "0.2.4.4": {
-        "atus-0.2.4.4-py3-none-any.whl": "0.2.4.1@atus-0.2.4.1-py3-none-any.whl"
-      },
-      "0.2.4.5": {
-        "atus-0.2.4.5-py3-none-any.whl": "0.2.4.1@atus-0.2.4.1-py3-none-any.whl"
-      },
       "0.2.4.6": {
         "atus-0.2.4.6-py3-none-any.whl": {
           "requires_dist": [
@@ -10246,8 +10235,23 @@
           "requires_python": ">=3.7"
         }
       },
-      "1.0.5.0": {
-        "atus-1.0.5.0-py3-none-any.whl": "0.2.4.6@atus-0.2.4.6-py3-none-any.whl"
+      "1.0.5.6": {
+        "atus-1.0.5.6-py3-none-any.whl": {
+          "requires_dist": [
+            "setuptools (>=42)",
+            "wheel",
+            "matplotlib (==3.4.2)",
+            "pandas",
+            "numpy",
+            "scipy",
+            "lmfit",
+            "matplotlib-backend-qtquick",
+            "pyqt5",
+            "requests",
+            "pytexit"
+          ],
+          "requires_python": ">=3.7, <3.10"
+        }
       }
     }
   },
@@ -62459,6 +62463,30 @@
             "dj-database-url; extra == 'dev'",
             "twine; extra == 'dev'"
           ]
+        }
+      }
+    }
+  },
+  "watchmen-inquiry-kernel": {
+    "py3": {
+      "16.0.0": {
+        "watchmen_inquiry_kernel-16.0.0-py3-none-any.whl": {
+          "provides_extras": [
+            "mongodb",
+            "mssql",
+            "mysql",
+            "oracle",
+            "trino"
+          ],
+          "requires_dist": [
+            "watchmen-data-kernel (>=16.0.0,<17.0.0)",
+            "watchmen-inquiry-trino (>=16.0.0,<17.0.0); extra == \"trino\"",
+            "watchmen-storage-mongodb (>=16.0.0,<17.0.0); extra == \"mongodb\"",
+            "watchmen-storage-mssql (>=16.0.0,<17.0.0); extra == \"mssql\"",
+            "watchmen-storage-mysql (>=16.0.0,<17.0.0); extra == \"mysql\"",
+            "watchmen-storage-oracle (>=16.0.0,<17.0.0); extra == \"oracle\""
+          ],
+          "requires_python": ">=3.9,<4.0"
         }
       }
     }
