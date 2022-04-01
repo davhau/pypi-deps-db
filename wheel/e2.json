@@ -7917,6 +7917,9 @@
       "4.14.0": {
         "braintree-4.14.0-py2.py3-none-any.whl": "3.39.0@braintree-3.39.0-py2.py3-none-any.whl"
       },
+      "4.15.2": {
+        "braintree-4.15.2-py2.py3-none-any.whl": "3.39.0@braintree-3.39.0-py2.py3-none-any.whl"
+      },
       "4.2.0": {
         "braintree-4.2.0-py2.py3-none-any.whl": "3.39.0@braintree-3.39.0-py2.py3-none-any.whl"
       },
@@ -15569,6 +15572,22 @@
             "dbnd-test-scenarios (==0.68.1) ; extra == 'tests'"
           ]
         }
+      },
+      "0.69.1": {
+        "dbnd_hdfs-0.69.1-py2.py3-none-any.whl": {
+          "provides_extras": [
+            "kerberos",
+            "tests"
+          ],
+          "requires_dist": [
+            "dbnd (==0.69.1)",
+            "pyox",
+            "hdfs",
+            "requests-kerberos ; extra == 'kerberos'",
+            "hdfs ; extra == 'kerberos'",
+            "dbnd-test-scenarios (==0.69.1) ; extra == 'tests'"
+          ]
+        }
       }
     }
   },
@@ -21043,6 +21062,61 @@
           "requires_python": ">=3.10"
         }
       },
+      "0.10.0": {
+        "fief_server-0.10.0-py3-none-any.whl": {
+          "provides_extras": [
+            "dev"
+          ],
+          "requires_dist": [
+            "aiomysql ==0.0.22",
+            "aiosqlite ==0.17.0",
+            "alembic ==1.7.7",
+            "argon2_cffi ==21.3.0",
+            "asyncpg ==0.25.0",
+            "Babel ==2.9.1",
+            "dramatiq[redis] ==1.12.3",
+            "fastapi ==0.75.0",
+            "fastapi-users[sqlalchemy2] ==9.3.0",
+            "fief-client ==0.5.0",
+            "furl ==2.1.3",
+            "greenlet==1.1.2",
+            "gunicorn ==20.1.0",
+            "Jinja2 ==3.0.3",
+            "jwcrypto ==1.0",
+            "postmarker ==1.0",
+            "psycopg2 ==2.9.3",
+            "pydantic[dotenv] ==1.9.0",
+            "python-slugify ==6.1.1",
+            "sentry-sdk ==1.5.8",
+            "sqlalchemy[mypy] ==1.4.32",
+            "typer ==0.4.1",
+            "uvicorn[standard]==0.17.6",
+            "asgi-lifespan ; extra == \"dev\"",
+            "black ; extra == \"dev\"",
+            "bumpversion ; extra == \"dev\"",
+            "coverage[toml] ; extra == \"dev\"",
+            "flit ; extra == \"dev\"",
+            "gevent ; extra == \"dev\"",
+            "httpx ; extra == \"dev\"",
+            "isort ; extra == \"dev\"",
+            "mypy ; extra == \"dev\"",
+            "pytest ; extra == \"dev\"",
+            "pytest-cov ; extra == \"dev\"",
+            "pytest-asyncio ; extra == \"dev\"",
+            "pytest-mock ; extra == \"dev\"",
+            "sqlalchemy-utils ; extra == \"dev\"",
+            "tryceratops ; extra == \"dev\"",
+            "types-python-slugify ; extra == \"dev\""
+          ],
+          "requires_python": ">=3.10"
+        }
+      },
+      "0.10.1": {
+        "fief_server-0.10.1-py3-none-any.whl": "0.10.0@fief_server-0.10.0-py3-none-any.whl"
+      },
+      "0.10.2": {
+        "fief_server-0.10.2-py3-none-any.whl": "0.10.0@fief_server-0.10.0-py3-none-any.whl"
+      },
       "0.2.0": {
         "fief_server-0.2.0-py3-none-any.whl": "0.1.7@fief_server-0.1.7-py3-none-any.whl"
       },
@@ -21275,56 +21349,10 @@
         "fief_server-0.8.1-py3-none-any.whl": "0.8.0@fief_server-0.8.0-py3-none-any.whl"
       },
       "0.8.2": {
-        "fief_server-0.8.2-py3-none-any.whl": {
-          "provides_extras": [
-            "dev"
-          ],
-          "requires_dist": [
-            "aiomysql ==0.0.22",
-            "aiosqlite ==0.17.0",
-            "alembic ==1.7.7",
-            "argon2_cffi ==21.3.0",
-            "asyncpg ==0.25.0",
-            "Babel ==2.9.1",
-            "dramatiq[redis] ==1.12.3",
-            "fastapi ==0.75.0",
-            "fastapi-users[sqlalchemy2] ==9.3.0",
-            "fief-client ==0.5.0",
-            "furl ==2.1.3",
-            "greenlet==1.1.2",
-            "gunicorn ==20.1.0",
-            "Jinja2 ==3.0.3",
-            "jwcrypto ==1.0",
-            "postmarker ==1.0",
-            "psycopg2 ==2.9.3",
-            "pydantic[dotenv] ==1.9.0",
-            "python-slugify ==6.1.1",
-            "sentry-sdk ==1.5.8",
-            "sqlalchemy[mypy] ==1.4.32",
-            "typer ==0.4.1",
-            "uvicorn[standard]==0.17.6",
-            "asgi-lifespan ; extra == \"dev\"",
-            "black ; extra == \"dev\"",
-            "bumpversion ; extra == \"dev\"",
-            "coverage[toml] ; extra == \"dev\"",
-            "flit ; extra == \"dev\"",
-            "gevent ; extra == \"dev\"",
-            "httpx ; extra == \"dev\"",
-            "isort ; extra == \"dev\"",
-            "mypy ; extra == \"dev\"",
-            "pytest ; extra == \"dev\"",
-            "pytest-cov ; extra == \"dev\"",
-            "pytest-asyncio ; extra == \"dev\"",
-            "pytest-mock ; extra == \"dev\"",
-            "sqlalchemy-utils ; extra == \"dev\"",
-            "tryceratops ; extra == \"dev\"",
-            "types-python-slugify ; extra == \"dev\""
-          ],
-          "requires_python": ">=3.10"
-        }
+        "fief_server-0.8.2-py3-none-any.whl": "0.10.0@fief_server-0.10.0-py3-none-any.whl"
       },
       "0.9.0": {
-        "fief_server-0.9.0-py3-none-any.whl": "0.8.2@fief_server-0.8.2-py3-none-any.whl"
+        "fief_server-0.9.0-py3-none-any.whl": "0.10.0@fief_server-0.10.0-py3-none-any.whl"
       }
     }
   },
@@ -22908,6 +22936,16 @@
         "glfw-2.5.1-py2.py27.py3.py30.py31.py32.py33.py34.py35.py36.py37.py38-none-manylinux2014_x86_64.whl": "2.4.0@glfw-2.4.0-py2.py27.py3.py30.py31.py32.py33.py34.py35.py36.py37.py38-none-macosx_10_6_intel.whl",
         "glfw-2.5.1-py2.py27.py3.py30.py31.py32.py33.py34.py35.py36.py37.py38-none-win32.whl": "2.4.0@glfw-2.4.0-py2.py27.py3.py30.py31.py32.py33.py34.py35.py36.py37.py38-none-macosx_10_6_intel.whl",
         "glfw-2.5.1-py2.py27.py3.py30.py31.py32.py33.py34.py35.py36.py37.py38-none-win_amd64.whl": "2.4.0@glfw-2.4.0-py2.py27.py3.py30.py31.py32.py33.py34.py35.py36.py37.py38-none-macosx_10_6_intel.whl"
+      },
+      "2.5.2": {
+        "glfw-2.5.2-py2.py27.py3.py30.py31.py32.py33.py34.py35.py36.py37.py38-none-macosx_10_6_intel.whl": "2.4.0@glfw-2.4.0-py2.py27.py3.py30.py31.py32.py33.py34.py35.py36.py37.py38-none-macosx_10_6_intel.whl",
+        "glfw-2.5.2-py2.py27.py3.py30.py31.py32.py33.py34.py35.py36.py37.py38-none-macosx_11_0_arm64.whl": "2.4.0@glfw-2.4.0-py2.py27.py3.py30.py31.py32.py33.py34.py35.py36.py37.py38-none-macosx_10_6_intel.whl",
+        "glfw-2.5.2-py2.py27.py3.py30.py31.py32.py33.py34.py35.py36.py37.py38-none-manylinux2010_i686.whl": "2.4.0@glfw-2.4.0-py2.py27.py3.py30.py31.py32.py33.py34.py35.py36.py37.py38-none-macosx_10_6_intel.whl",
+        "glfw-2.5.2-py2.py27.py3.py30.py31.py32.py33.py34.py35.py36.py37.py38-none-manylinux2010_x86_64.whl": "2.4.0@glfw-2.4.0-py2.py27.py3.py30.py31.py32.py33.py34.py35.py36.py37.py38-none-macosx_10_6_intel.whl",
+        "glfw-2.5.2-py2.py27.py3.py30.py31.py32.py33.py34.py35.py36.py37.py38-none-manylinux2014_aarch64.whl": "2.4.0@glfw-2.4.0-py2.py27.py3.py30.py31.py32.py33.py34.py35.py36.py37.py38-none-macosx_10_6_intel.whl",
+        "glfw-2.5.2-py2.py27.py3.py30.py31.py32.py33.py34.py35.py36.py37.py38-none-manylinux2014_x86_64.whl": "2.4.0@glfw-2.4.0-py2.py27.py3.py30.py31.py32.py33.py34.py35.py36.py37.py38-none-macosx_10_6_intel.whl",
+        "glfw-2.5.2-py2.py27.py3.py30.py31.py32.py33.py34.py35.py36.py37.py38-none-win32.whl": "2.4.0@glfw-2.4.0-py2.py27.py3.py30.py31.py32.py33.py34.py35.py36.py37.py38-none-macosx_10_6_intel.whl",
+        "glfw-2.5.2-py2.py27.py3.py30.py31.py32.py33.py34.py35.py36.py37.py38-none-win_amd64.whl": "2.4.0@glfw-2.4.0-py2.py27.py3.py30.py31.py32.py33.py34.py35.py36.py37.py38-none-macosx_10_6_intel.whl"
       }
     },
     "py2.py3": {
@@ -29130,6 +29168,15 @@
       "5.0.84b0": {
         "kodexa-5.0.84b0-py3-none-any.whl": "5.0.81b0@kodexa-5.0.81b0-py3-none-any.whl"
       },
+      "5.0.85b0": {
+        "kodexa-5.0.85b0-py3-none-any.whl": "5.0.81b0@kodexa-5.0.81b0-py3-none-any.whl"
+      },
+      "5.0.86b0": {
+        "kodexa-5.0.86b0-py3-none-any.whl": "5.0.81b0@kodexa-5.0.81b0-py3-none-any.whl"
+      },
+      "5.0.87b0": {
+        "kodexa-5.0.87b0-py3-none-any.whl": "5.0.81b0@kodexa-5.0.81b0-py3-none-any.whl"
+      },
       "5.0.8b0": {
         "kodexa-5.0.8b0-py3-none-any.whl": "5.0.10b0@kodexa-5.0.10b0-py3-none-any.whl"
       },
@@ -33673,6 +33720,9 @@
       },
       "1.21.30": {
         "mypy_boto3_cognito_identity-1.21.30-py3-none-any.whl": "1.19.12.post1@mypy_boto3_cognito_identity-1.19.12.post1-py3-none-any.whl"
+      },
+      "1.21.31": {
+        "mypy_boto3_cognito_identity-1.21.31-py3-none-any.whl": "1.19.12.post1@mypy_boto3_cognito_identity-1.19.12.post1-py3-none-any.whl"
       }
     }
   },
@@ -35033,6 +35083,9 @@
       },
       "1.21.30": {
         "mypy_boto3_kafka-1.21.30-py3-none-any.whl": "1.19.12.post1@mypy_boto3_kafka-1.19.12.post1-py3-none-any.whl"
+      },
+      "1.21.31": {
+        "mypy_boto3_kafka-1.21.31-py3-none-any.whl": "1.19.12.post1@mypy_boto3_kafka-1.19.12.post1-py3-none-any.whl"
       }
     }
   },
@@ -35225,6 +35278,9 @@
       },
       "1.21.30": {
         "mypy_boto3_opensearch-1.21.30-py3-none-any.whl": "1.19.12.post1@mypy_boto3_opensearch-1.19.12.post1-py3-none-any.whl"
+      },
+      "1.21.31": {
+        "mypy_boto3_opensearch-1.21.31-py3-none-any.whl": "1.19.12.post1@mypy_boto3_opensearch-1.19.12.post1-py3-none-any.whl"
       }
     }
   },
@@ -60945,6 +61001,9 @@
       },
       "2.10.1": {
         "twarc-2.10.1-py3-none-any.whl": "2.10.0@twarc-2.10.0-py3-none-any.whl"
+      },
+      "2.10.2": {
+        "twarc-2.10.2-py3-none-any.whl": "2.10.0@twarc-2.10.0-py3-none-any.whl"
       },
       "2.6.0": {
         "twarc-2.6.0-py3-none-any.whl": "2.10.0@twarc-2.10.0-py3-none-any.whl"
