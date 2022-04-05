@@ -409,7 +409,8 @@
     "2.5.3.dev20220401": "2.4.0.dev20220302",
     "2.5.3.dev20220402": "2.4.0.dev20220302",
     "2.5.3.dev20220403": "2.4.0.dev20220302",
-    "2.5.3.dev20220404": "2.4.0.dev20220302"
+    "2.5.3.dev20220404": "2.4.0.dev20220302",
+    "2.5.3.dev20220405": "2.4.0.dev20220302"
   },
   "agalma": {
     "0.4.0": {
@@ -76630,6 +76631,30 @@
           "stardist>=0.8.0",
           "napari>=0.4.13",
           "magicgui>=0.3.0"
+        ],
+        "extras_require": {
+          ":platform_system != \"Darwin\" or platform_machine != \"arm64\"": [
+            "tensorflow"
+          ],
+          ":platform_system == \"Darwin\" and platform_machine == \"arm64\"": [
+            "tensorflow-macos"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "2022.4.4": {
+      "36": {
+        "install_requires": [
+          "stardist>=0.8.0",
+          "napari>=0.4.13",
+          "magicgui>=0.4.0"
         ],
         "extras_require": {
           ":platform_system != \"Darwin\" or platform_machine != \"arm64\"": [
