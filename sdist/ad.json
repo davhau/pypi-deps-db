@@ -10613,6 +10613,33 @@
       "310": "27"
     }
   },
+  "birdfeeder-coinalpha": {
+    "1.0.3": {
+      "27": {
+        "install_requires": [
+          "aiohttp<4.0,>=3.2",
+          "aiorun<2021,>=2020",
+          "boto3<2,>=1",
+          "cachetools<5,>=4",
+          "environs<10,>=9",
+          "kafka-python<3,>=2",
+          "pandas<2.0,>=1.1",
+          "pydantic<2.0.0,>=1.9.0",
+          "python-json-logger<3,>=2",
+          "ruamel.yaml<0.17,>=0.16",
+          "typer>=0.3"
+        ],
+        "python_requires": [
+          ">=3.8,<4.0"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
+  },
   "birds-eye-lib": {
     "0.1.0": {
       "27": {},
@@ -54351,7 +54378,8 @@
     "0.3.8.dev220402": "0.3.8.dev220302",
     "0.3.8.dev220403": "0.3.8.dev220302",
     "0.3.8.dev220404": "0.3.8.dev220302",
-    "0.3.8.dev220405": "0.3.8.dev220302"
+    "0.3.8.dev220405": "0.3.8.dev220302",
+    "0.3.8.dev220406": "0.3.8.dev220302"
   },
   "marionette-client-mozilla-b2g32-v2-0": {
     "0.1": {
@@ -61281,6 +61309,16 @@
     "1.5.39": "1.5.33",
     "1.5.40": "1.5.33",
     "1.5.41": "1.5.33"
+  },
+  "peapy": {
+    "0.0.2": {
+      "27": {},
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "persistentlist": {
     "0.2": {
@@ -68569,7 +68607,8 @@
       "38": "27",
       "39": "27",
       "310": "27"
-    }
+    },
+    "3.0.1": "3.0.0"
   },
   "pysourcebin": {
     "0.0.2": {
@@ -84176,6 +84215,384 @@
             "sentencepiece!=0.1.92,>=0.1.91",
             "torch>=1.0",
             "tokenizers!=0.11.3,>=0.11.1",
+            "tqdm>=4.27"
+          ],
+          ":python_version < \"3.7\"": [
+            "dataclasses"
+          ],
+          ":python_version < \"3.8\"": [
+            "importlib_metadata"
+          ]
+        },
+        "python_requires": [
+          ">=3.6.0"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "4.18.0": {
+      "36": {
+        "install_requires": [
+          "filelock",
+          "huggingface-hub<1.0,>=0.1.0",
+          "numpy>=1.17",
+          "packaging>=20.0",
+          "pyyaml>=5.1",
+          "regex!=2019.12.17",
+          "requests",
+          "sacremoses",
+          "tokenizers!=0.11.3,<0.13,>=0.11.1",
+          "tqdm>=4.27"
+        ],
+        "extras_require": {
+          "ja": [
+            "fugashi>=1.0",
+            "ipadic<2.0,>=1.0.0",
+            "unidic_lite>=1.0.7",
+            "unidic>=1.0.2"
+          ],
+          "sklearn": [
+            "scikit-learn"
+          ],
+          "tf": [
+            "tensorflow>=2.3",
+            "onnxconverter-common",
+            "tf2onnx"
+          ],
+          "tf-cpu": [
+            "tensorflow-cpu>=2.3",
+            "onnxconverter-common",
+            "tf2onnx"
+          ],
+          "torch": [
+            "torch>=1.0"
+          ],
+          "retrieval": [
+            "faiss-cpu",
+            "datasets"
+          ],
+          "flax": [
+            "jax!=0.3.2,>=0.2.8",
+            "jaxlib>=0.1.65",
+            "flax>=0.3.5",
+            "optax>=0.0.8"
+          ],
+          "tokenizers": [
+            "tokenizers!=0.11.3,<0.13,>=0.11.1"
+          ],
+          "ftfy": [
+            "ftfy"
+          ],
+          "onnxruntime": [
+            "onnxruntime>=1.4.0",
+            "onnxruntime-tools>=1.4.2"
+          ],
+          "onnx": [
+            "onnxconverter-common",
+            "tf2onnx",
+            "onnxruntime>=1.4.0",
+            "onnxruntime-tools>=1.4.2"
+          ],
+          "modelcreation": [
+            "cookiecutter==1.7.3"
+          ],
+          "sagemaker": [
+            "sagemaker>=2.31.0"
+          ],
+          "deepspeed": [
+            "deepspeed>=0.6.0"
+          ],
+          "fairscale": [
+            "fairscale>0.3"
+          ],
+          "optuna": [
+            "optuna"
+          ],
+          "ray": [
+            "ray[tune]"
+          ],
+          "sigopt": [
+            "sigopt"
+          ],
+          "integrations": [
+            "optuna",
+            "ray[tune]",
+            "sigopt"
+          ],
+          "serving": [
+            "pydantic",
+            "uvicorn",
+            "fastapi",
+            "starlette"
+          ],
+          "audio": [
+            "librosa",
+            "pyctcdecode>=0.3.0",
+            "phonemizer"
+          ],
+          "speech": [
+            "torchaudio",
+            "librosa",
+            "pyctcdecode>=0.3.0",
+            "phonemizer"
+          ],
+          "torch-speech": [
+            "torchaudio",
+            "librosa",
+            "pyctcdecode>=0.3.0",
+            "phonemizer"
+          ],
+          "tf-speech": [
+            "librosa",
+            "pyctcdecode>=0.3.0",
+            "phonemizer"
+          ],
+          "flax-speech": [
+            "librosa",
+            "pyctcdecode>=0.3.0",
+            "phonemizer"
+          ],
+          "vision": [
+            "Pillow"
+          ],
+          "timm": [
+            "timm"
+          ],
+          "codecarbon": [
+            "codecarbon==1.2.0"
+          ],
+          "sentencepiece": [
+            "sentencepiece!=0.1.92,>=0.1.91",
+            "protobuf"
+          ],
+          "testing": [
+            "pytest",
+            "pytest-xdist",
+            "timeout-decorator",
+            "parameterized",
+            "psutil",
+            "datasets",
+            "pytest-timeout",
+            "black~=22.0",
+            "sacrebleu<2.0.0,>=1.4.12",
+            "rouge-score",
+            "nltk",
+            "GitPython<3.1.19",
+            "hf-doc-builder>=0.2.0",
+            "faiss-cpu",
+            "datasets",
+            "cookiecutter==1.7.3"
+          ],
+          "quality": [
+            "black~=22.0",
+            "isort>=5.5.4",
+            "flake8>=3.8.3",
+            "GitPython<3.1.19",
+            "hf-doc-builder>=0.2.0"
+          ],
+          "all": [
+            "tensorflow>=2.3",
+            "onnxconverter-common",
+            "tf2onnx",
+            "torch>=1.0",
+            "jax!=0.3.2,>=0.2.8",
+            "jaxlib>=0.1.65",
+            "flax>=0.3.5",
+            "optax>=0.0.8",
+            "sentencepiece!=0.1.92,>=0.1.91",
+            "protobuf",
+            "tokenizers!=0.11.3,<0.13,>=0.11.1",
+            "torchaudio",
+            "librosa",
+            "pyctcdecode>=0.3.0",
+            "phonemizer",
+            "Pillow",
+            "optuna",
+            "ray[tune]",
+            "sigopt",
+            "timm",
+            "codecarbon==1.2.0"
+          ],
+          "docs_specific": [
+            "hf-doc-builder"
+          ],
+          "docs": [
+            "tensorflow>=2.3",
+            "onnxconverter-common",
+            "tf2onnx",
+            "torch>=1.0",
+            "jax!=0.3.2,>=0.2.8",
+            "jaxlib>=0.1.65",
+            "flax>=0.3.5",
+            "optax>=0.0.8",
+            "sentencepiece!=0.1.92,>=0.1.91",
+            "protobuf",
+            "tokenizers!=0.11.3,<0.13,>=0.11.1",
+            "torchaudio",
+            "librosa",
+            "pyctcdecode>=0.3.0",
+            "phonemizer",
+            "Pillow",
+            "optuna",
+            "ray[tune]",
+            "sigopt",
+            "timm",
+            "codecarbon==1.2.0",
+            "hf-doc-builder"
+          ],
+          "dev-torch": [
+            "pytest",
+            "pytest-xdist",
+            "timeout-decorator",
+            "parameterized",
+            "psutil",
+            "datasets",
+            "pytest-timeout",
+            "black~=22.0",
+            "sacrebleu<2.0.0,>=1.4.12",
+            "rouge-score",
+            "nltk",
+            "GitPython<3.1.19",
+            "hf-doc-builder>=0.2.0",
+            "faiss-cpu",
+            "datasets",
+            "cookiecutter==1.7.3",
+            "torch>=1.0",
+            "sentencepiece!=0.1.92,>=0.1.91",
+            "protobuf",
+            "tokenizers!=0.11.3,<0.13,>=0.11.1",
+            "torchaudio",
+            "librosa",
+            "pyctcdecode>=0.3.0",
+            "phonemizer",
+            "Pillow",
+            "optuna",
+            "ray[tune]",
+            "sigopt",
+            "timm",
+            "codecarbon==1.2.0",
+            "black~=22.0",
+            "isort>=5.5.4",
+            "flake8>=3.8.3",
+            "GitPython<3.1.19",
+            "hf-doc-builder>=0.2.0",
+            "fugashi>=1.0",
+            "ipadic<2.0,>=1.0.0",
+            "unidic_lite>=1.0.7",
+            "unidic>=1.0.2",
+            "hf-doc-builder",
+            "scikit-learn",
+            "cookiecutter==1.7.3",
+            "onnxruntime>=1.4.0",
+            "onnxruntime-tools>=1.4.2"
+          ],
+          "dev-tensorflow": [
+            "pytest",
+            "pytest-xdist",
+            "timeout-decorator",
+            "parameterized",
+            "psutil",
+            "datasets",
+            "pytest-timeout",
+            "black~=22.0",
+            "sacrebleu<2.0.0,>=1.4.12",
+            "rouge-score",
+            "nltk",
+            "GitPython<3.1.19",
+            "hf-doc-builder>=0.2.0",
+            "faiss-cpu",
+            "datasets",
+            "cookiecutter==1.7.3",
+            "tensorflow>=2.3",
+            "onnxconverter-common",
+            "tf2onnx",
+            "sentencepiece!=0.1.92,>=0.1.91",
+            "protobuf",
+            "tokenizers!=0.11.3,<0.13,>=0.11.1",
+            "Pillow",
+            "black~=22.0",
+            "isort>=5.5.4",
+            "flake8>=3.8.3",
+            "GitPython<3.1.19",
+            "hf-doc-builder>=0.2.0",
+            "hf-doc-builder",
+            "scikit-learn",
+            "cookiecutter==1.7.3",
+            "onnxconverter-common",
+            "tf2onnx",
+            "onnxruntime>=1.4.0",
+            "onnxruntime-tools>=1.4.2",
+            "librosa",
+            "pyctcdecode>=0.3.0",
+            "phonemizer"
+          ],
+          "dev": [
+            "tensorflow>=2.3",
+            "onnxconverter-common",
+            "tf2onnx",
+            "torch>=1.0",
+            "jax!=0.3.2,>=0.2.8",
+            "jaxlib>=0.1.65",
+            "flax>=0.3.5",
+            "optax>=0.0.8",
+            "sentencepiece!=0.1.92,>=0.1.91",
+            "protobuf",
+            "tokenizers!=0.11.3,<0.13,>=0.11.1",
+            "torchaudio",
+            "librosa",
+            "pyctcdecode>=0.3.0",
+            "phonemizer",
+            "Pillow",
+            "optuna",
+            "ray[tune]",
+            "sigopt",
+            "timm",
+            "codecarbon==1.2.0",
+            "pytest",
+            "pytest-xdist",
+            "timeout-decorator",
+            "parameterized",
+            "psutil",
+            "datasets",
+            "pytest-timeout",
+            "black~=22.0",
+            "sacrebleu<2.0.0,>=1.4.12",
+            "rouge-score",
+            "nltk",
+            "GitPython<3.1.19",
+            "hf-doc-builder>=0.2.0",
+            "faiss-cpu",
+            "datasets",
+            "cookiecutter==1.7.3",
+            "black~=22.0",
+            "isort>=5.5.4",
+            "flake8>=3.8.3",
+            "GitPython<3.1.19",
+            "hf-doc-builder>=0.2.0",
+            "fugashi>=1.0",
+            "ipadic<2.0,>=1.0.0",
+            "unidic_lite>=1.0.7",
+            "unidic>=1.0.2",
+            "hf-doc-builder",
+            "scikit-learn",
+            "cookiecutter==1.7.3"
+          ],
+          "torchhub": [
+            "filelock",
+            "huggingface-hub<1.0,>=0.1.0",
+            "importlib_metadata",
+            "numpy>=1.17",
+            "packaging>=20.0",
+            "protobuf",
+            "regex!=2019.12.17",
+            "requests",
+            "sacremoses",
+            "sentencepiece!=0.1.92,>=0.1.91",
+            "torch>=1.0",
+            "tokenizers!=0.11.3,<0.13,>=0.11.1",
             "tqdm>=4.27"
           ],
           ":python_version < \"3.7\"": [
