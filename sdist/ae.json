@@ -811,7 +811,21 @@
     "1.0.8": "0.5.0",
     "1.0.9": "0.5.0",
     "1.0.10": "0.5.0",
-    "1.0.11": "0.5.0"
+    "1.0.11": "0.5.0",
+    "2.0.0": {
+      "36": {
+        "install_requires": [
+          "aiohttp"
+        ],
+        "python_requires": [
+          ">=3.9"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "aiosql-mysql": {
     "0.0.1a1": {
@@ -8741,7 +8755,8 @@
     "1.24.36": "1.24.33",
     "1.24.37": "1.24.33",
     "1.24.38": "1.24.33",
-    "1.24.39": "1.24.33"
+    "1.24.39": "1.24.33",
+    "1.24.40": "1.24.33"
   },
   "bottleapp": {
     "0.0.1": {
@@ -9917,7 +9932,8 @@
     "1.0.41": "1.0.40",
     "1.0.42": "1.0.40",
     "1.0.43": "1.0.40",
-    "1.0.44": "1.0.40"
+    "1.0.44": "1.0.40",
+    "1.0.45": "1.0.40"
   },
   "certbot-cwebroot": {
     "0.1.0": {
@@ -22307,6 +22323,35 @@
       "38": "27",
       "39": "27",
       "310": "27"
+    },
+    "2.2.0": {
+      "27": {
+        "install_requires": [
+          "Flask"
+        ],
+        "extras_require": {
+          "test": [
+            "pytest-cov==2.8.1",
+            "tox==3.14.1",
+            "mock==3.0.5",
+            "psycopg2"
+          ],
+          "openid": [
+            "requests-oauthlib==1.2.0",
+            "pyjwkest==1.4.0",
+            "pyjwkest==1.4.0",
+            "python-keycloak==0.15.0"
+          ],
+          "apiauth": [
+            "Flask-SQLAlchemy"
+          ]
+        }
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
     }
   },
   "flask-simpleldap": {
@@ -22734,7 +22779,8 @@
     "0.32.0b7": "0.1.0",
     "0.32.1": "0.1.0",
     "0.32.2": "0.1.0",
-    "0.32.3": "0.1.0"
+    "0.32.3": "0.1.0",
+    "0.32.4b0": "0.1.0"
   },
   "fn-mdowds": {
     "0.5.2": "0.6",
@@ -39966,6 +40012,68 @@
           "invenio-previewer<1.4.0,>=1.3.2",
           "invenio-records-files<1.3.0,>=1.2.1",
           "invenio-rdm-records<0.36.0,>=0.35.3",
+          "CairoSVG<3.0.0,>=2.5.2"
+        ],
+        "extras_require": {
+          "s3": [
+            "invenio-s3~=1.0.5"
+          ],
+          "tests": [
+            "pytest-invenio~=1.4.7",
+            "Sphinx>=4.2.0"
+          ],
+          "elasticsearch6": [
+            "invenio-search[elasticsearch6]<1.5.0,>=1.4.2"
+          ],
+          "elasticsearch7": [
+            "invenio-search[elasticsearch7]<1.5.0,>=1.4.2"
+          ]
+        },
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "9.0.0.dev8": {
+      "27": {
+        "install_requires": [
+          "invenio-app<1.4.0,>=1.3.4",
+          "invenio-base<1.3.0,>=1.2.9",
+          "invenio-cache<1.2.0,>=1.1.0",
+          "invenio-celery<1.3.0,>=1.2.4",
+          "invenio-config<1.1.0,>=1.0.3",
+          "invenio-i18n<1.4.0,>=1.3.1",
+          "invenio-db[mysql,postgresql,versioning]<1.1.0,>=1.0.11",
+          "invenio-admin<1.4.0,>=1.3.2",
+          "invenio-assets<1.3.0,>=1.2.7",
+          "invenio-formatter<1.2.0,>=1.1.3",
+          "invenio-logging[sentry-sdk]<1.4.0,>=1.3.0",
+          "invenio-mail<1.1.0,>=1.0.2",
+          "invenio-rest<1.3.0,>=1.2.8",
+          "invenio-theme<1.4.0,>=1.3.17",
+          "invenio-access<1.5.0,>=1.4.2",
+          "invenio-accounts<2.1.0,>=2.0.0.dev7",
+          "invenio-oauth2server<1.4.0,>=1.3.5",
+          "invenio-oauthclient<2.1.0,>=2.0.0.dev0",
+          "invenio-userprofiles<1.3.0,>=1.2.4",
+          "invenio-indexer<1.3.0,>=1.2.1",
+          "invenio-jsonschemas<1.2.0,>=1.1.4",
+          "invenio-oaiserver<1.5.0,>=1.4.0",
+          "invenio-pidstore<1.3.0,>=1.2.3",
+          "invenio-records-rest<1.10.0,>=1.9.0",
+          "invenio-records-ui<1.3.0,>=1.2.0",
+          "invenio-records<1.8.0,>=1.7.0",
+          "invenio-search-ui<2.2.0,>=2.1.0",
+          "invenio-files-rest<1.4.0,>=1.3.2",
+          "invenio-iiif<1.3.0,>=1.2.0",
+          "invenio-previewer<1.4.0,>=1.3.2",
+          "invenio-records-files<1.3.0,>=1.2.1",
+          "invenio-rdm-records<0.36.0,>=0.35.5",
           "CairoSVG<3.0.0,>=2.5.2"
         ],
         "extras_require": {
@@ -78171,7 +78279,8 @@
     "3.0.614": "3.0.252",
     "3.0.615": "3.0.252",
     "3.0.616": "3.0.252",
-    "3.0.617": "3.0.252"
+    "3.0.617": "3.0.252",
+    "3.0.618": "3.0.252"
   },
   "tencentcloud-sdk-python-ocr": {
     "3.0.252": {
@@ -78546,7 +78655,8 @@
     "3.0.614": "3.0.252",
     "3.0.615": "3.0.252",
     "3.0.616": "3.0.252",
-    "3.0.617": "3.0.252"
+    "3.0.617": "3.0.252",
+    "3.0.618": "3.0.252"
   },
   "tensorflow-determinism": {
     "0.1.0": {

@@ -5737,6 +5737,14 @@
       },
       "1.0.9": {
         "aioshelly-1.0.9-py3-none-any.whl": "0.5.0@aioshelly-0.5.0-py3-none-any.whl"
+      },
+      "2.0.0": {
+        "aioshelly-2.0.0-py3-none-any.whl": {
+          "requires_dist": [
+            "aiohttp"
+          ],
+          "requires_python": ">=3.9"
+        }
       }
     }
   },
@@ -13691,6 +13699,9 @@
       "1.24.4": {
         "botocore-1.24.4-py3-none-any.whl": "1.21.64@botocore-1.21.64-py3-none-any.whl"
       },
+      "1.24.40": {
+        "botocore-1.24.40-py3-none-any.whl": "1.24.33@botocore-1.24.33-py3-none-any.whl"
+      },
       "1.24.5": {
         "botocore-1.24.5-py3-none-any.whl": "1.21.64@botocore-1.21.64-py3-none-any.whl"
       },
@@ -14750,6 +14761,9 @@
       },
       "1.0.44": {
         "cdk_organizations_list_accounts-1.0.44-py3-none-any.whl": "1.0.40@cdk_organizations_list_accounts-1.0.40-py3-none-any.whl"
+      },
+      "1.0.45": {
+        "cdk_organizations_list_accounts-1.0.45-py3-none-any.whl": "1.0.40@cdk_organizations_list_accounts-1.0.40-py3-none-any.whl"
       },
       "1.0.5": {
         "cdk_organizations_list_accounts-1.0.5-py3-none-any.whl": "1.0.10@cdk_organizations_list_accounts-1.0.10-py3-none-any.whl"
@@ -24650,6 +24664,30 @@
       }
     }
   },
+  "flask-rhoauth": {
+    "py3": {
+      "2.2.0": {
+        "Flask_RhoAuth-2.2.0-py3-none-any.whl": {
+          "provides_extras": [
+            "apiauth",
+            "openid",
+            "test"
+          ],
+          "requires_dist": [
+            "Flask",
+            "Flask-SQLAlchemy ; extra == 'apiauth'",
+            "requests-oauthlib (==1.2.0) ; extra == 'openid'",
+            "pyjwkest (==1.4.0) ; extra == 'openid'",
+            "python-keycloak (==0.15.0) ; extra == 'openid'",
+            "pytest-cov (==2.8.1) ; extra == 'test'",
+            "tox (==3.14.1) ; extra == 'test'",
+            "mock (==3.0.5) ; extra == 'test'",
+            "psycopg2 ; extra == 'test'"
+          ]
+        }
+      }
+    }
+  },
   "flask-simpleldap": {
     "py3": {
       "1.3.0": {
@@ -25207,6 +25245,9 @@
       },
       "0.32.3": {
         "flytekitplugins_spark-0.32.3-py3-none-any.whl": "0.1.0@flytekitplugins_spark-0.1.0-py3-none-any.whl"
+      },
+      "0.32.4b0": {
+        "flytekitplugins_spark-0.32.4b0-py3-none-any.whl": "0.1.0@flytekitplugins_spark-0.1.0-py3-none-any.whl"
       }
     }
   },
@@ -35110,6 +35151,57 @@
             "invenio-previewer (<1.4.0,>=1.3.2)",
             "invenio-records-files (<1.3.0,>=1.2.1)",
             "invenio-rdm-records (<0.36.0,>=0.35.3)",
+            "CairoSVG (<3.0.0,>=2.5.2)",
+            "invenio-search[elasticsearch6] (<1.5.0,>=1.4.2) ; extra == 'elasticsearch6'",
+            "invenio-search[elasticsearch7] (<1.5.0,>=1.4.2) ; extra == 'elasticsearch7'",
+            "invenio-s3 (~=1.0.5) ; extra == 's3'",
+            "pytest-invenio (~=1.4.7) ; extra == 'tests'",
+            "Sphinx (>=4.2.0) ; extra == 'tests'"
+          ],
+          "requires_python": ">=3.6"
+        }
+      },
+      "9.0.0.dev8": {
+        "invenio_app_rdm-9.0.0.dev8-py2.py3-none-any.whl": {
+          "provides_extras": [
+            "elasticsearch6",
+            "elasticsearch7",
+            "s3",
+            "tests"
+          ],
+          "requires_dist": [
+            "invenio-app (<1.4.0,>=1.3.4)",
+            "invenio-base (<1.3.0,>=1.2.9)",
+            "invenio-cache (<1.2.0,>=1.1.0)",
+            "invenio-celery (<1.3.0,>=1.2.4)",
+            "invenio-config (<1.1.0,>=1.0.3)",
+            "invenio-i18n (<1.4.0,>=1.3.1)",
+            "invenio-db[mysql,postgresql,versioning] (<1.1.0,>=1.0.11)",
+            "invenio-admin (<1.4.0,>=1.3.2)",
+            "invenio-assets (<1.3.0,>=1.2.7)",
+            "invenio-formatter (<1.2.0,>=1.1.3)",
+            "invenio-logging[sentry-sdk] (<1.4.0,>=1.3.0)",
+            "invenio-mail (<1.1.0,>=1.0.2)",
+            "invenio-rest (<1.3.0,>=1.2.8)",
+            "invenio-theme (<1.4.0,>=1.3.17)",
+            "invenio-access (<1.5.0,>=1.4.2)",
+            "invenio-accounts (<2.1.0,>=2.0.0.dev7)",
+            "invenio-oauth2server (<1.4.0,>=1.3.5)",
+            "invenio-oauthclient (<2.1.0,>=2.0.0.dev0)",
+            "invenio-userprofiles (<1.3.0,>=1.2.4)",
+            "invenio-indexer (<1.3.0,>=1.2.1)",
+            "invenio-jsonschemas (<1.2.0,>=1.1.4)",
+            "invenio-oaiserver (<1.5.0,>=1.4.0)",
+            "invenio-pidstore (<1.3.0,>=1.2.3)",
+            "invenio-records-rest (<1.10.0,>=1.9.0)",
+            "invenio-records-ui (<1.3.0,>=1.2.0)",
+            "invenio-records (<1.8.0,>=1.7.0)",
+            "invenio-search-ui (<2.2.0,>=2.1.0)",
+            "invenio-files-rest (<1.4.0,>=1.3.2)",
+            "invenio-iiif (<1.3.0,>=1.2.0)",
+            "invenio-previewer (<1.4.0,>=1.3.2)",
+            "invenio-records-files (<1.3.0,>=1.2.1)",
+            "invenio-rdm-records (<0.36.0,>=0.35.5)",
             "CairoSVG (<3.0.0,>=2.5.2)",
             "invenio-search[elasticsearch6] (<1.5.0,>=1.4.2) ; extra == 'elasticsearch6'",
             "invenio-search[elasticsearch7] (<1.5.0,>=1.4.2) ; extra == 'elasticsearch7'",
@@ -63234,6 +63326,9 @@
       },
       "3.0.617": {
         "tencentcloud_sdk_python_cim-3.0.617-py2.py3-none-any.whl": "3.0.251@tencentcloud_sdk_python_cim-3.0.251-py2.py3-none-any.whl"
+      },
+      "3.0.618": {
+        "tencentcloud_sdk_python_cim-3.0.618-py2.py3-none-any.whl": "3.0.251@tencentcloud_sdk_python_cim-3.0.251-py2.py3-none-any.whl"
       }
     }
   },
@@ -64336,6 +64431,9 @@
       },
       "3.0.617": {
         "tencentcloud_sdk_python_ocr-3.0.617-py2.py3-none-any.whl": "3.0.252@tencentcloud_sdk_python_ocr-3.0.252-py2.py3-none-any.whl"
+      },
+      "3.0.618": {
+        "tencentcloud_sdk_python_ocr-3.0.618-py2.py3-none-any.whl": "3.0.252@tencentcloud_sdk_python_ocr-3.0.252-py2.py3-none-any.whl"
       }
     }
   },
