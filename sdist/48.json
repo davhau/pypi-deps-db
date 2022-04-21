@@ -2362,6 +2362,75 @@
       "38": "27",
       "39": "27",
       "310": "27"
+    },
+    "0.1.2": {
+      "27": {
+        "install_requires": [
+          "eth-ape<0.3.0,>=0.2.1",
+          "tokenlists>=0.1.1"
+        ],
+        "setup_requires": [
+          "setuptools_scm"
+        ],
+        "extras_require": {
+          "doc": [
+            "Sphinx<4,>=3.4.3",
+            "sphinx_rtd_theme<1,>=0.1.9",
+            "towncrier<20,>=19.2.0"
+          ],
+          "lint": [
+            "black<23.0,>=22.3.0",
+            "mypy<1.0,>=0.910",
+            "flake8<4.0,>=3.9.2",
+            "isort<6.0,>=5.9.3"
+          ],
+          "dev": [
+            "pytest<7.0,>=6.0",
+            "pytest-xdist",
+            "pytest-cov",
+            "hypothesis<7.0,>=6.2.0",
+            "black<23.0,>=22.3.0",
+            "mypy<1.0,>=0.910",
+            "flake8<4.0,>=3.9.2",
+            "isort<6.0,>=5.9.3",
+            "Sphinx<4,>=3.4.3",
+            "sphinx_rtd_theme<1,>=0.1.9",
+            "towncrier<20,>=19.2.0",
+            "setuptools",
+            "setuptools-scm",
+            "wheel",
+            "twine",
+            "commitizen<2.20,>=2.19",
+            "pre-commit",
+            "pytest-watch",
+            "IPython",
+            "ipdb"
+          ],
+          "release": [
+            "setuptools",
+            "setuptools-scm",
+            "wheel",
+            "twine"
+          ],
+          "test": [
+            "pytest<7.0,>=6.0",
+            "pytest-xdist",
+            "pytest-cov",
+            "hypothesis<7.0,>=6.2.0"
+          ],
+          ":python_version < \"3.8\"": [
+            "importlib-metadata"
+          ]
+        },
+        "python_requires": [
+          ">=3.7.2, <4"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
     }
   },
   "api-consumers": {
@@ -7536,6 +7605,19 @@
       "310": "27"
     },
     "1.1": "1.0"
+  },
+  "billing-api": {
+    "0.0.1": {
+      "36": {
+        "install_requires": [
+          "requests>=2.26.0"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "binarycookie": {
     "0.0.1": {
@@ -22949,6 +23031,23 @@
     "1.1.3": "1.0",
     "1.1.4": "1.0"
   },
+  "difftopk": {
+    "0.0.0": {
+      "36": {
+        "install_requires": [
+          "numpy",
+          "torch>=1.9.0"
+        ],
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
+  },
   "dimension": {
     "0.0.0": {
       "36": {
@@ -31735,6 +31834,34 @@
     },
     "1.0.1": "1.0.0"
   },
+  "inspirai-fps": {
+    "0.0.1": {
+      "36": {
+        "install_requires": [
+          "Pillow",
+          "numpy",
+          "grpcio",
+          "rich",
+          "protobuf",
+          "trimesh"
+        ],
+        "extras_require": {
+          "baseline": [
+            "gym",
+            "ray[rllib]",
+            "torch"
+          ]
+        },
+        "python_requires": [
+          ">=3.8, <4"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
+  },
   "integerinwordslister": {
     "1.1.1": {
       "36": {
@@ -35504,7 +35631,8 @@
       "38": "27",
       "39": "27",
       "310": "27"
-    }
+    },
+    "0.7.0.dev2": "0.7.0.dev1"
   },
   "miquido-latest-version-check": {
     "1.0.4": {
@@ -37073,6 +37201,47 @@
           "requests_futures<1.1,>=1.0.0",
           "pandas<=1.5,>=1.1.5",
           "numpy<1.23,>=1.22.2",
+          "tqdm<4.70,>=4.41",
+          "packaging<22,>=21.3",
+          "dictdiffer<0.10,>=0.8.1",
+          "stringcase<1.3,>=1.2",
+          "Jinja2<4.0,>=3.0",
+          "lxml>=4.7.1",
+          "jupyter_contrib_nbextensions<0.6,>=0.5.1",
+          "ipywidgets<8,>=7.5.1"
+        ],
+        "extras_require": {
+          "dev": [
+            "flake8",
+            "mypy",
+            "yapf",
+            "nose",
+            "coverage",
+            "pytest",
+            "pytest-cov",
+            "isort",
+            "pre-commit"
+          ]
+        },
+        "python_requires": [
+          ">=3.9"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "11.3.5.102": {
+      "36": {
+        "install_requires": [
+          "notebook>=6.4.5",
+          "ipython<9,>=8.1.1",
+          "requests<2.28,>=2.27",
+          "urllib3>=1.26.0",
+          "requests_futures<1.1,>=1.0.0",
+          "pandas<=1.5,>=1.1.5",
+          "numpy<1.23,>=1.22.3",
           "tqdm<4.70,>=4.41",
           "packaging<22,>=21.3",
           "dictdiffer<0.10,>=0.8.1",
@@ -39569,7 +39738,8 @@
       "38": "36",
       "39": "36",
       "310": "36"
-    }
+    },
+    "1.2.2": "1.2"
   },
   "nefertari-guards": {
     "0.1.0": {
@@ -56911,10 +57081,10 @@
     "0.1.2": "0.1"
   },
   "sqlalchemy-pg-fts": {
-    "0.1.0": {
+    "0.1.1": {
       "27": {
         "install_requires": [
-          "sqlalchemy<2.0,>=1.3"
+          "sqlalchemy<2.0.0,>=1.3.24"
         ],
         "python_requires": [
           ">=3.6.15,<4.0.0"
