@@ -2839,6 +2839,22 @@
           ],
           "requires_python": ">=3.6"
         }
+      },
+      "0.1.1": {
+        "beatmap-0.1.1-py3-none-any.whl": {
+          "requires_dist": [
+            "matplotlib",
+            "numpy",
+            "pandas",
+            "prettytable",
+            "scipy",
+            "seaborn"
+          ],
+          "requires_python": ">=3.8"
+        }
+      },
+      "0.1.2": {
+        "beatmap-0.1.2-py3-none-any.whl": "0.1.1@beatmap-0.1.1-py3-none-any.whl"
       }
     }
   },
@@ -22610,6 +22626,26 @@
           "requires_dist": [
             "bokeh",
             "dagster (==0.14.1)",
+            "dask[dataframe] (>=1.2.2)",
+            "distributed (>=1.28.1)",
+            "dask-kubernetes ; extra == 'kube'",
+            "dask-jobqueue ; extra == 'pbs'",
+            "pyarrow ; extra == 'test'",
+            "dask-yarn ; extra == 'yarn'"
+          ]
+        }
+      },
+      "0.14.10": {
+        "dagster_dask-0.14.10-py3-none-any.whl": {
+          "provides_extras": [
+            "kube",
+            "pbs",
+            "test",
+            "yarn"
+          ],
+          "requires_dist": [
+            "bokeh",
+            "dagster (==0.14.10)",
             "dask[dataframe] (>=1.2.2)",
             "distributed (>=1.28.1)",
             "dask-kubernetes ; extra == 'kube'",
