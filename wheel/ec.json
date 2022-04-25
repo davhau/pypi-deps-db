@@ -10135,6 +10135,20 @@
           ]
         }
       },
+      "1.41.0": {
+        "azureml_opendatasets-1.41.0-py3-none-any.whl": {
+          "requires_dist": [
+            "azureml-telemetry (~=1.41.0)",
+            "azureml-core (~=1.41.0)",
+            "azureml-dataset-runtime[fuse,pandas] (~=1.41.0)",
+            "numpy (<=2.0.0,>=1.16.0)",
+            "pandas (<=2.0.0,>=0.21.0)",
+            "scipy (<=2.0.0,>=1.0.0)",
+            "pyarrow (>=0.16.0)",
+            "pyspark"
+          ]
+        }
+      },
       "1.5.0": {
         "azureml_opendatasets-1.5.0-py3-none-any.whl": {
           "requires_dist": [
@@ -22367,8 +22381,8 @@
       "1.3.1": {
         "corva_sdk-1.3.1-py3-none-any.whl": "1.0.2@corva_sdk-1.0.2-py3-none-any.whl"
       },
-      "1.4.0rc1": {
-        "corva_sdk-1.4.0rc1-py3-none-any.whl": {
+      "1.4.0": {
+        "corva_sdk-1.4.0-py3-none-any.whl": {
           "requires_dist": [
             "fakeredis[lua] (<2.0.0,>=1.4.5)",
             "pydantic (<2.0.0,>=1.8.2)",
@@ -22377,6 +22391,9 @@
           ],
           "requires_python": ">=3.8, <4.0"
         }
+      },
+      "1.4.0rc1": {
+        "corva_sdk-1.4.0rc1-py3-none-any.whl": "1.4.0@corva_sdk-1.4.0-py3-none-any.whl"
       }
     }
   },
@@ -30485,11 +30502,8 @@
           "requires_python": ">=3.8,<3.9"
         }
       },
-      "3.1.2": {
-        "hiclass-3.1.2-py3-none-any.whl": "3.1.1@hiclass-3.1.1-py3-none-any.whl"
-      },
-      "3.1.5": {
-        "hiclass-3.1.5-py3-none-any.whl": {
+      "3.1.10": {
+        "hiclass-3.1.10-py3-none-any.whl": {
           "requires_dist": [
             "networkx",
             "numpy",
@@ -30499,17 +30513,23 @@
           "requires_python": ">=3.7,<3.9"
         }
       },
+      "3.1.2": {
+        "hiclass-3.1.2-py3-none-any.whl": "3.1.1@hiclass-3.1.1-py3-none-any.whl"
+      },
+      "3.1.5": {
+        "hiclass-3.1.5-py3-none-any.whl": "3.1.10@hiclass-3.1.10-py3-none-any.whl"
+      },
       "3.1.6": {
-        "hiclass-3.1.6-py3-none-any.whl": "3.1.5@hiclass-3.1.5-py3-none-any.whl"
+        "hiclass-3.1.6-py3-none-any.whl": "3.1.10@hiclass-3.1.10-py3-none-any.whl"
       },
       "3.1.7": {
-        "hiclass-3.1.7-py3-none-any.whl": "3.1.5@hiclass-3.1.5-py3-none-any.whl"
+        "hiclass-3.1.7-py3-none-any.whl": "3.1.10@hiclass-3.1.10-py3-none-any.whl"
       },
       "3.1.8": {
-        "hiclass-3.1.8-py3-none-any.whl": "3.1.5@hiclass-3.1.5-py3-none-any.whl"
+        "hiclass-3.1.8-py3-none-any.whl": "3.1.10@hiclass-3.1.10-py3-none-any.whl"
       },
       "3.1.9": {
-        "hiclass-3.1.9-py3-none-any.whl": "3.1.5@hiclass-3.1.5-py3-none-any.whl"
+        "hiclass-3.1.9-py3-none-any.whl": "3.1.10@hiclass-3.1.10-py3-none-any.whl"
       }
     }
   },
@@ -35928,6 +35948,25 @@
           ],
           "requires_python": ">=3.6"
         }
+      },
+      "0.0.3.2": {
+        "lyceanem-0.0.3.2-py3-none-any.whl": {
+          "requires_dist": [
+            "numpy",
+            "open3d",
+            "matplotlib",
+            "numba",
+            "solidpython",
+            "scipy"
+          ],
+          "requires_python": ">=3.6"
+        }
+      },
+      "0.0.3.21": {
+        "lyceanem-0.0.3.21-py3-none-any.whl": "0.0.3.2@lyceanem-0.0.3.2-py3-none-any.whl"
+      },
+      "0.0.3.22": {
+        "lyceanem-0.0.3.22-py3-none-any.whl": "0.0.3.2@lyceanem-0.0.3.2-py3-none-any.whl"
       },
       "0.post0.dev1": {
         "LyceanEM-0.post0.dev1-py3-none-any.whl": "0.0.3@LyceanEM-0.0.3-py3-none-any.whl",
@@ -83494,6 +83533,44 @@
             "watchmen-storage-mssql (==16.0.34); extra == \"mssql\"",
             "watchmen-storage-mysql (==16.0.34); extra == \"mysql\"",
             "watchmen-storage-oracle (==16.0.34); extra == \"oracle\""
+          ],
+          "requires_python": ">=3.9,<4.0"
+        }
+      },
+      "16.0.35": {
+        "watchmen_data_surface-16.0.35-py3-none-any.whl": {
+          "provides_extras": [
+            "mongodb",
+            "mssql",
+            "mysql",
+            "oracle"
+          ],
+          "requires_dist": [
+            "watchmen-data-kernel (==16.0.35)",
+            "watchmen-rest (==16.0.35)",
+            "watchmen-storage-mongodb (==16.0.35); extra == \"mongodb\"",
+            "watchmen-storage-mssql (==16.0.35); extra == \"mssql\"",
+            "watchmen-storage-mysql (==16.0.35); extra == \"mysql\"",
+            "watchmen-storage-oracle (==16.0.35); extra == \"oracle\""
+          ],
+          "requires_python": ">=3.9,<4.0"
+        }
+      },
+      "16.0.36": {
+        "watchmen_data_surface-16.0.36-py3-none-any.whl": {
+          "provides_extras": [
+            "mongodb",
+            "mssql",
+            "mysql",
+            "oracle"
+          ],
+          "requires_dist": [
+            "watchmen-data-kernel (==16.0.36)",
+            "watchmen-rest (==16.0.36)",
+            "watchmen-storage-mongodb (==16.0.36); extra == \"mongodb\"",
+            "watchmen-storage-mssql (==16.0.36); extra == \"mssql\"",
+            "watchmen-storage-mysql (==16.0.36); extra == \"mysql\"",
+            "watchmen-storage-oracle (==16.0.36); extra == \"oracle\""
           ],
           "requires_python": ">=3.9,<4.0"
         }
