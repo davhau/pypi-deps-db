@@ -46891,8 +46891,13 @@
       "39": "27",
       "310": "27"
     },
-    "1.21.23.post1": "1.21.27",
-    "1.21.27": {
+    "1.21.23.post1": "1.22.0",
+    "1.21.27": "1.22.0",
+    "1.19.12.post1": "1.22.0",
+    "1.21.30": "1.22.0",
+    "1.21.31": "1.22.0",
+    "1.21.34": "1.22.0",
+    "1.22.0": {
       "27": {
         "install_requires": [
           "typing-extensions>=4.1.0"
@@ -46907,10 +46912,7 @@
       "39": "27",
       "310": "27"
     },
-    "1.19.12.post1": "1.21.27",
-    "1.21.30": "1.21.27",
-    "1.21.31": "1.21.27",
-    "1.21.34": "1.21.27"
+    "1.22.0.post1": "1.22.0"
   },
   "mypyhash": {
     "0.10": {
@@ -72803,6 +72805,35 @@
       "27": {
         "install_requires": [
           "pycyphal[transport-can-pythoncan,transport-serial,transport-udp]~=1.6",
+          "ruamel.yaml<0.18",
+          "requests~=2.27",
+          "simplejson~=3.17",
+          "coloredlogs~=15.0",
+          "click~=8.1",
+          "psutil~=5.9",
+          "scipy~=1.8"
+        ],
+        "extras_require": {
+          "joystick": [
+            "pysdl2<2.0",
+            "mido~=1.2",
+            "python-rtmidi~=1.4"
+          ],
+          "joystick:sys_platform == \"win32\" or sys_platform == \"darwin\"": [
+            "pysdl2-dll~=2.0"
+          ]
+        }
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "0.10.0": {
+      "27": {
+        "install_requires": [
+          "pycyphal[transport-can-pythoncan,transport-serial,transport-udp]~=1.8",
           "ruamel.yaml<0.18",
           "requests~=2.27",
           "simplejson~=3.17",
