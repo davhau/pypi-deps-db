@@ -96708,7 +96708,60 @@
     "3.7.0": "3.2.0",
     "3.7.1": "3.2.0",
     "3.8.0": "3.2.0",
-    "3.9.0": "3.2.0"
+    "3.9.0": "3.2.0",
+    "3.9.1": {
+      "36": {
+        "install_requires": [
+          "pyyaml>=3.12"
+        ],
+        "extras_require": {
+          "doc_utils": [
+            "rest_framework_dyn_serializer>=1.3.*",
+            "docutils",
+            "djangorestframework==3.12.*"
+          ],
+          "logging": [
+            "safe-logger>=1.2.1",
+            "python-json-logger==0.1.7"
+          ],
+          "aio_utils": [
+            "aiopg",
+            "psycopg2-binary"
+          ],
+          "monitoring": [
+            "starlette"
+          ],
+          "s3_backup": [
+            "boto3",
+            "fan_tools[logging]"
+          ],
+          "gcloud_backup": [
+            "google-cloud-storage",
+            "fan_tools[logging]"
+          ],
+          "gitlab_monitoring": [
+            "python-gitlab==1.0.2"
+          ],
+          "image_utils": [
+            "Pillow"
+          ],
+          "otel": [
+            "opentelemetry-instrumentation-django",
+            "opentelemetry-instrumentation-psycopg2"
+          ],
+          "jaeger": [
+            "opentelemetry-exporter-jaeger-thrift"
+          ]
+        },
+        "tests_require": [
+          "pytest==3.1.3"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "fashionable": {
     "0.10.0": {
@@ -113465,7 +113518,8 @@
       "310": "36"
     },
     "0.10.1": "0.10.0",
-    "0.11.0b0": "0.10.0"
+    "0.11.0b0": "0.10.0",
+    "0.11.0b1": "0.10.0"
   },
   "pandoc-imagine": {
     "0.1.1": {
