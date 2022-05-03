@@ -11581,6 +11581,32 @@
       },
       "5.1.1": {
         "bandersnatch-5.1.1-py3-none-any.whl": "5.1.0@bandersnatch-5.1.0-py3-none-any.whl"
+      },
+      "5.2.0": {
+        "bandersnatch-5.2.0-py3-none-any.whl": {
+          "provides_extras": [
+            "s3",
+            "safety_db",
+            "swift",
+            "uvloop"
+          ],
+          "requires_dist": [
+            "aiohttp",
+            "aiohttp-socks",
+            "aiohttp-xmlrpc",
+            "filelock",
+            "humanfriendly",
+            "packaging",
+            "setuptools",
+            "s3path (>=0.3.3) ; extra == 's3'",
+            "bandersnatch-safety-db ; extra == 'safety_db'",
+            "keystoneauth1 ; extra == 'swift'",
+            "openstackclient ; extra == 'swift'",
+            "python-swiftclient ; extra == 'swift'",
+            "uvloop ; extra == 'uvloop'"
+          ],
+          "requires_python": ">=3.8"
+        }
       }
     }
   },
@@ -15337,6 +15363,9 @@
       },
       "2.0.41": {
         "cdk_gitlab-2.0.41-py3-none-any.whl": "2.0.29@cdk_gitlab-2.0.29-py3-none-any.whl"
+      },
+      "2.0.42": {
+        "cdk_gitlab-2.0.42-py3-none-any.whl": "2.0.29@cdk_gitlab-2.0.29-py3-none-any.whl"
       },
       "2.0.5": {
         "cdk_gitlab-2.0.5-py3-none-any.whl": "0.1.258@cdk_gitlab-0.1.258-py3-none-any.whl"
@@ -35343,6 +35372,21 @@
           "requires_python": ">=3.6"
         }
       },
+      "1.14.3.dev12": {
+        "large_image_source_nd2-1.14.3.dev12-py3-none-any.whl": {
+          "provides_extras": [
+            "girder"
+          ],
+          "requires_dist": [
+            "large-image (>=1.14.3.dev12)",
+            "dask[array]",
+            "importlib-metadata ; python_version < \"3.8\"",
+            "nd2[legacy] ; python_version >= \"3.7\"",
+            "girder-large-image (>=1.14.3.dev12) ; extra == 'girder'"
+          ],
+          "requires_python": ">=3.6"
+        }
+      },
       "1.14.3.dev4": {
         "large_image_source_nd2-1.14.3.dev4-py3-none-any.whl": {
           "provides_extras": [
@@ -43277,6 +43321,12 @@
       },
       "1.22.0.post1": {
         "mypy_boto3_outposts-1.22.0.post1-py3-none-any.whl": "1.19.12.post1@mypy_boto3_outposts-1.19.12.post1-py3-none-any.whl"
+      },
+      "1.22.5": {
+        "mypy_boto3_outposts-1.22.5-py3-none-any.whl": "1.19.12.post1@mypy_boto3_outposts-1.19.12.post1-py3-none-any.whl"
+      },
+      "1.22.5.post1": {
+        "mypy_boto3_outposts-1.22.5.post1-py3-none-any.whl": "1.19.12.post1@mypy_boto3_outposts-1.19.12.post1-py3-none-any.whl"
       }
     }
   },
@@ -60879,6 +60929,65 @@
       },
       "1.0.12": {
         "shillelagh-1.0.12-py2.py3-none-any.whl": "1.0.10@shillelagh-1.0.10-py2.py3-none-any.whl"
+      },
+      "1.0.13": {
+        "shillelagh-1.0.13-py2.py3-none-any.whl": {
+          "provides_extras": [
+            "console",
+            "datasetteapi",
+            "docs",
+            "githubapi",
+            "gsheetsapi",
+            "pandasmemory",
+            "socrataapi",
+            "systemapi",
+            "testing",
+            "weatherapi"
+          ],
+          "requires_dist": [
+            "apsw (>=3.9.2)",
+            "python-dateutil (>=2.8.1)",
+            "requests (>=2.25.1)",
+            "sqlalchemy (>=1.3)",
+            "typing-extensions (>=3.7.4.3)",
+            "importlib-metadata ; python_version < \"3.8\"",
+            "PyYAML (>=5.4) ; extra == 'console'",
+            "prompt-toolkit (>=3) ; extra == 'console'",
+            "pygments (>=2.8) ; extra == 'console'",
+            "tabulate (==0.8.9) ; extra == 'console'",
+            "requests-cache (==0.7.1) ; extra == 'datasetteapi'",
+            "sphinx (>=4.0.1) ; extra == 'docs'",
+            "jsonpath-python (>=1.0.5) ; extra == 'githubapi'",
+            "google-auth (>=1.23.0) ; extra == 'gsheetsapi'",
+            "requests (>=2.23.0) ; extra == 'gsheetsapi'",
+            "pandas (>=1.2.2) ; extra == 'pandasmemory'",
+            "requests-cache (==0.7.1) ; extra == 'socrataapi'",
+            "psutil (>=5.8.0) ; extra == 'systemapi'",
+            "PyYAML (>=5.4) ; extra == 'testing'",
+            "codespell (>=2.1.0) ; extra == 'testing'",
+            "freezegun (>=1.1.0) ; extra == 'testing'",
+            "google-auth (>=1.23.0) ; extra == 'testing'",
+            "jsonpath-python (>=1.0.5) ; extra == 'testing'",
+            "pandas (>=1.2.2) ; extra == 'testing'",
+            "pip-tools (>=6.4.0) ; extra == 'testing'",
+            "pre-commit (>=2.13.0) ; extra == 'testing'",
+            "prompt-toolkit (>=3) ; extra == 'testing'",
+            "psutil (>=5.8.0) ; extra == 'testing'",
+            "pyfakefs (>=4.3.3) ; extra == 'testing'",
+            "pygments (>=2.8) ; extra == 'testing'",
+            "pylint (>=2.11.1) ; extra == 'testing'",
+            "pytest-cov (>=2.11.1) ; extra == 'testing'",
+            "pytest-integration (==0.2.2) ; extra == 'testing'",
+            "pytest-mock (>=3.5.1) ; extra == 'testing'",
+            "pytest (>=6.2.2) ; extra == 'testing'",
+            "requests-cache (==0.7.1) ; extra == 'testing'",
+            "requests-mock (>=1.8.0) ; extra == 'testing'",
+            "requests (>=2.25.1) ; extra == 'testing'",
+            "tabulate (==0.8.9) ; extra == 'testing'",
+            "requests-cache (==0.7.1) ; extra == 'weatherapi'"
+          ],
+          "requires_python": ">=3.8"
+        }
       },
       "1.0.2": {
         "shillelagh-1.0.2-py2.py3-none-any.whl": "1.0.1@shillelagh-1.0.1-py2.py3-none-any.whl"
