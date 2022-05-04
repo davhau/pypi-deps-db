@@ -13030,8 +13030,8 @@
   },
   "dramkit": {
     "py3": {
-      "0.0.9": {
-        "dramkit-0.0.9-py3-none-any.whl": {}
+      "0.1.0": {
+        "dramkit-0.1.0-py3-none-any.whl": {}
       }
     }
   },
@@ -36210,21 +36210,24 @@
   },
   "octoploy": {
     "py3": {
-      "1.0.6": {
-        "octoploy-1.0.6-py3-none-any.whl": {
+      "1.0.10": {
+        "octoploy-1.0.10-py3-none-any.whl": {
           "requires_dist": [
             "pyyaml"
           ]
         }
       },
+      "1.0.6": {
+        "octoploy-1.0.6-py3-none-any.whl": "1.0.10@octoploy-1.0.10-py3-none-any.whl"
+      },
       "1.0.7": {
-        "octoploy-1.0.7-py3-none-any.whl": "1.0.6@octoploy-1.0.6-py3-none-any.whl"
+        "octoploy-1.0.7-py3-none-any.whl": "1.0.10@octoploy-1.0.10-py3-none-any.whl"
       },
       "1.0.8": {
-        "octoploy-1.0.8-py3-none-any.whl": "1.0.6@octoploy-1.0.6-py3-none-any.whl"
+        "octoploy-1.0.8-py3-none-any.whl": "1.0.10@octoploy-1.0.10-py3-none-any.whl"
       },
       "1.0.9": {
-        "octoploy-1.0.9-py3-none-any.whl": "1.0.6@octoploy-1.0.6-py3-none-any.whl"
+        "octoploy-1.0.9-py3-none-any.whl": "1.0.10@octoploy-1.0.10-py3-none-any.whl"
       }
     }
   },
@@ -47837,6 +47840,38 @@
       },
       "1.0.1": {
         "saltext.prometheus-1.0.1-py2.py3-none-any.whl": "1.0.0@saltext.prometheus-1.0.0-py2.py3-none-any.whl"
+      },
+      "1.1.1": {
+        "saltext.prometheus-1.1.1-py2.py3-none-any.whl": {
+          "provides_extras": [
+            "dev",
+            "docs",
+            "docsauto",
+            "release",
+            "tests"
+          ],
+          "requires_dist": [
+            "salt (>=3004)",
+            "jinja2 (<=3.0.1)",
+            "nox (==2021.6.12) ; extra == 'dev'",
+            "pre-commit (==2.13.0) ; extra == 'dev'",
+            "pylint ; extra == 'dev'",
+            "SaltPyLint ; extra == 'dev'",
+            "sphinx ; extra == 'docs'",
+            "furo ; extra == 'docs'",
+            "sphinx-copybutton ; extra == 'docs'",
+            "sphinx-prompt ; extra == 'docs'",
+            "sphinxcontrib-spelling ; extra == 'docs'",
+            "importlib-metadata ; (python_version < \"3.8\") and extra == 'docs'",
+            "sphinx-autobuild ; extra == 'docsauto'",
+            "twine ; extra == 'release'",
+            "wheel ; extra == 'release'",
+            "mock (==3.0.5) ; extra == 'tests'",
+            "pytest (==6.2.4) ; extra == 'tests'",
+            "pytest-salt-factories (==0.906.0) ; extra == 'tests'"
+          ],
+          "requires_python": ">=3.6"
+        }
       }
     }
   },
