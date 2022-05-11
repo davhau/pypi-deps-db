@@ -38814,6 +38814,61 @@
       "38": "27",
       "39": "27",
       "310": "27"
+    },
+    "2.2.0": {
+      "27": {
+        "setup_requires": [
+          "setuptools_scm[toml] >= 3.4.1"
+        ],
+        "extras_require": {
+          "testing.libs": [
+            "simplejson",
+            "ujson"
+          ],
+          "testing": [
+            "pytest!=3.7.3,>=3.5",
+            "pytest-checkdocs>=1.2.3",
+            "pytest-black-multipy",
+            "pytest-cov",
+            "ecdsa",
+            "feedparser",
+            "numpy",
+            "pandas",
+            "pymongo",
+            "scikit-learn",
+            "sqlalchemy"
+          ],
+          "docs": [
+            "sphinx",
+            "jaraco.packaging>=3.2",
+            "rst.linker>=1.9"
+          ],
+          "testing.libs:python_version == \"2.7\"": [
+            "yajl"
+          ],
+          "testing:python_version == \"2.7\"": [
+            "enum34",
+            "jsonlib"
+          ],
+          "testing:python_version <= \"3.6\"": [
+            "pytest-flake8<1.1.0"
+          ],
+          "testing:python_version >= \"3.7\"": [
+            "pytest-flake8>=1.1.1"
+          ],
+          ":python_version < \"3.8\"": [
+            "importlib_metadata"
+          ]
+        },
+        "python_requires": [
+          ">=2.7"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
     }
   },
   "jsre": {
