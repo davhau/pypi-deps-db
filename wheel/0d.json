@@ -23303,6 +23303,18 @@
           ],
           "requires_python": ">=3.8, <3.11"
         }
+      },
+      "2.3.0": {
+        "gregory-2.3.0-py3-none-any.whl": {
+          "requires_dist": [
+            "outatime (<3.0.0,>=2.1.0)",
+            "python-dateutil",
+            "statsmodels",
+            "numpy",
+            "scipy"
+          ],
+          "requires_python": ">=3.8, <3.11"
+        }
       }
     }
   },
@@ -26695,6 +26707,9 @@
           ],
           "requires_python": ">=3.8"
         }
+      },
+      "0.2.13a6": {
+        "larry-0.2.13a6-py3-none-any.whl": "0.2.13a5@larry-0.2.13a5-py3-none-any.whl"
       },
       "0.2.2": {
         "larry-0.2.2-py3-none-any.whl": "0.1.23@larry-0.1.23-py3-none-any.whl"
@@ -45857,6 +45872,22 @@
       },
       "1.4.1": {
         "pytaxonomies-1.4.1-py3-none-any.whl": "1.4@pytaxonomies-1.4-py3-none-any.whl"
+      },
+      "1.5.0": {
+        "pytaxonomies-1.5.0-py3-none-any.whl": {
+          "provides_extras": [
+            "remote",
+            "webui"
+          ],
+          "requires_dist": [
+            "Flask (>=2.0,<3.0); extra == \"webui\"",
+            "Flask-Bootstrap (>=3.3.7.1,<4.0.0.0); extra == \"webui\"",
+            "Flask-WTF (>=0.15.1,<0.16.0); extra == \"webui\"",
+            "flask-nav (>=0.6,<0.7); extra == \"webui\"",
+            "requests (>=2.26.0,<3.0.0); extra == \"remote\""
+          ],
+          "requires_python": ">=3.8,<4.0"
+        }
       }
     }
   },
@@ -50573,6 +50604,40 @@
         "sharding_redis_client-0.0.1-py2.py3-none-any.whl": {
           "requires_dist": [
             "redis (>=2.10.6)"
+          ]
+        }
+      }
+    }
+  },
+  "sharing-configs": {
+    "py3": {
+      "0.1.0": {
+        "sharing_configs-0.1.0-py3-none-any.whl": {
+          "provides_extras": [
+            "coverage",
+            "docs",
+            "pep8",
+            "release",
+            "tests"
+          ],
+          "requires_dist": [
+            "django (>=2.2)",
+            "django-solo",
+            "requests",
+            "pytest-cov ; extra == 'coverage'",
+            "sphinx ; extra == 'docs'",
+            "sphinx-rtd-theme ; extra == 'docs'",
+            "flake8 ; extra == 'pep8'",
+            "bumpversion ; extra == 'release'",
+            "twine ; extra == 'release'",
+            "pytest ; extra == 'tests'",
+            "pytest-django ; extra == 'tests'",
+            "requests-mock ; extra == 'tests'",
+            "Faker ; extra == 'tests'",
+            "factory-boy ; extra == 'tests'",
+            "tox ; extra == 'tests'",
+            "black ; extra == 'tests'",
+            "isort ; extra == 'tests'"
           ]
         }
       }

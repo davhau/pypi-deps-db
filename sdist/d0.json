@@ -1602,7 +1602,63 @@
       "38": "27",
       "39": "27",
       "310": "27"
-    }
+    },
+    "3.6.0": {
+      "27": {
+        "install_requires": [
+          "idna>=2.8",
+          "sniffio>=1.1"
+        ],
+        "setup_requires": [
+          "setuptools_scm"
+        ],
+        "extras_require": {
+          "trio": [
+            "trio>=0.16"
+          ],
+          "test:python_version < \"3.7\" and (platform_python_implementation == \"CPython\" and platform_system != \"Windows\")": [
+            "uvloop<0.15"
+          ],
+          "doc": [
+            "packaging",
+            "sphinx_rtd_theme",
+            "sphinx-autodoc-typehints>=1.2.0"
+          ],
+          ":python_version < \"3.7\"": [
+            "contextvars",
+            "dataclasses"
+          ],
+          "test:python_version < \"3.7\"": [
+            "contextlib2"
+          ],
+          "test:python_version < \"3.8\"": [
+            "mock>=4"
+          ],
+          "test": [
+            "coverage[toml]>=4.5",
+            "hypothesis>=4.0",
+            "pytest>=7.0",
+            "pytest-mock>=3.6.1",
+            "trustme"
+          ],
+          "test:python_version >= \"3.7\" and (platform_python_implementation == \"CPython\" and platform_system != \"Windows\")": [
+            "uvloop>=0.15"
+          ],
+          ":python_version < \"3.8\"": [
+            "typing_extensions"
+          ]
+        },
+        "python_requires": [
+          ">=3.6.2"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "3.6.1": "3.6.0"
   },
   "aosong": {
     "0.0.1": {
