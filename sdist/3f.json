@@ -5853,7 +5853,8 @@
     "0.1.17": "0.1",
     "0.1.18": "0.1",
     "0.1.19": "0.1",
-    "0.1.21": "0.1"
+    "0.1.21": "0.1",
+    "0.1.22": "0.1"
   },
   "birdhousebuilder.recipe.nginx": {
     "0.1.2": {
@@ -52721,6 +52722,40 @@
       "38": "27",
       "39": "27",
       "310": "27"
+    },
+    "1.3.0": {
+      "27": {
+        "install_requires": [
+          "six>=1.10",
+          "pycryptodomex>=3.7.0",
+          "requests>=2.9.1",
+          "vdf>=3.3",
+          "cachetools>=3.0.0"
+        ],
+        "extras_require": {
+          "client:python_version >= \"3\"": [
+            "protobuf~=3.0"
+          ],
+          ":python_version < \"3.4\"": [
+            "enum34==1.1.2"
+          ],
+          ":python_version == \"2.7\" and sys_platform == \"win32\"": [
+            "win-inet-pton"
+          ],
+          "client:python_version < \"3\"": [
+            "protobuf<3.18.0"
+          ],
+          "client": [
+            "gevent>=1.3.0",
+            "gevent-eventemitter~=2.1"
+          ]
+        }
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
     }
   },
   "stellvia": {
@@ -60691,6 +60726,27 @@
       "39": "27",
       "310": "27"
     }
+  },
+  "zonefile-migrate": {
+    "0.1.2": {
+      "36": {
+        "install_requires": [
+          "easyzone3",
+          "ruamel.yaml",
+          "click"
+        ],
+        "tests_require": [
+          "easyzone3",
+          "ruamel.yaml",
+          "click"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "0.2.1": "0.1.2"
   },
   "zope.component": {
     "3.10.0": {
