@@ -6030,6 +6030,9 @@
       },
       "1.0.9b1": {
         "bitdotio-1.0.9b1-py3-none-any.whl": "1.0.10b1@bitdotio-1.0.10b1-py3-none-any.whl"
+      },
+      "1.1.0b1": {
+        "bitdotio-1.1.0b1-py3-none-any.whl": "1.0.10b1@bitdotio-1.0.10b1-py3-none-any.whl"
       }
     }
   },
@@ -10445,6 +10448,16 @@
           "requires_dist": [
             "dagster (==0.14.16rc2)",
             "dagster-spark (==0.14.16rc2)",
+            "pyspark (>=2.0.2) ; python_version < \"3.8\"",
+            "pyspark (>=3.0.0) ; python_version >= \"3.8\""
+          ]
+        }
+      },
+      "0.14.16rc3": {
+        "dagster_pyspark-0.14.16rc3-py3-none-any.whl": {
+          "requires_dist": [
+            "dagster (==0.14.16rc3)",
+            "dagster-spark (==0.14.16rc3)",
             "pyspark (>=2.0.2) ; python_version < \"3.8\"",
             "pyspark (>=3.0.0) ; python_version >= \"3.8\""
           ]
@@ -21299,6 +21312,9 @@
       },
       "1.1.5.dev2": {
         "hydra_joblib_launcher-1.1.5.dev2-py3-none-any.whl": "1.1.5@hydra_joblib_launcher-1.1.5-py3-none-any.whl"
+      },
+      "1.2.0": {
+        "hydra_joblib_launcher-1.2.0-py3-none-any.whl": "1.1.5@hydra_joblib_launcher-1.1.5-py3-none-any.whl"
       }
     }
   },
@@ -49814,6 +49830,36 @@
       },
       "0.0.3": {
         "pyswag-0.0.3-py3-none-any.whl": "0.0.2@pyswag-0.0.2-py3-none-any.whl"
+      }
+    }
+  },
+  "pytest-memray": {
+    "py3": {
+      "1.1.0": {
+        "pytest_memray-1.1.0-py3-none-any.whl": {
+          "provides_extras": [
+            "docs",
+            "lint",
+            "test"
+          ],
+          "requires_dist": [
+            "memray>=1.1",
+            "pytest>=7",
+            "furo; extra == 'docs'",
+            "sphinx; extra == 'docs'",
+            "sphinx-argparse; extra == 'docs'",
+            "sphinx-inline-tabs; extra == 'docs'",
+            "towncrier; extra == 'docs'",
+            "black; extra == 'lint'",
+            "flake8; extra == 'lint'",
+            "isort; extra == 'lint'",
+            "mypy; extra == 'lint'",
+            "covdefaults>=2.2; extra == 'test'",
+            "coverage>=6.3; extra == 'test'",
+            "pytest>=7; extra == 'test'"
+          ],
+          "requires_python": ">=3.8"
+        }
       }
     }
   },
