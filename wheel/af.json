@@ -1936,6 +1936,23 @@
       }
     }
   },
+  "apply-pr": {
+    "py2": {
+      "2.12.1": {
+        "apply_pr-2.12.1-py2-none-any.whl": {
+          "requires_dist": [
+            "fabric (<2.0)",
+            "osconf",
+            "python-slugify (<6)",
+            "requests",
+            "click",
+            "tqdm",
+            "packaging"
+          ]
+        }
+      }
+    }
+  },
   "appsync-gremlin": {
     "py3": {
       "0.0.1": {
@@ -16358,6 +16375,26 @@
           "requires_dist": [
             "boto3",
             "dagster (==0.14.15)",
+            "packaging",
+            "requests",
+            "dagster-pyspark ; extra == 'pyspark'",
+            "psycopg2-binary ; extra == 'redshift'",
+            "moto (>=2.2.8) ; extra == 'test'",
+            "requests-mock ; extra == 'test'",
+            "xmltodict (==0.12.0) ; extra == 'test'"
+          ]
+        }
+      },
+      "0.14.16": {
+        "dagster_aws-0.14.16-py3-none-any.whl": {
+          "provides_extras": [
+            "pyspark",
+            "redshift",
+            "test"
+          ],
+          "requires_dist": [
+            "boto3",
+            "dagster (==0.14.16)",
             "packaging",
             "requests",
             "dagster-pyspark ; extra == 'pyspark'",
@@ -38341,6 +38378,9 @@
       },
       "5.0.4": {
         "nervatura-5.0.4-py3-none-any.whl": "5.0.0b3@nervatura-5.0.0b3-py3-none-any.whl"
+      },
+      "5.0.5": {
+        "nervatura-5.0.5-py3-none-any.whl": "5.0.0b3@nervatura-5.0.0b3-py3-none-any.whl"
       }
     }
   },
@@ -41777,6 +41817,50 @@
           ],
           "requires_python": ">=3.7"
         }
+      },
+      "0.8.2": {
+        "openlineage_airflow-0.8.2-py3-none-any.whl": {
+          "provides_extras": [
+            "airflow-1",
+            "airflow-2",
+            "dev",
+            "sql",
+            "tests"
+          ],
+          "requires_dist": [
+            "attrs (>=19.3)",
+            "requests (>=2.20.0)",
+            "sqlparse (>=0.3.1)",
+            "openlineage-integration-common (==0.8.2)",
+            "openlineage-python (==0.8.2)",
+            "apache-airflow[gcp_api,google,mysql,postgres] (==1.10.15) ; extra == 'airflow-1'",
+            "airflow-provider-great-expectations (==0.0.8) ; extra == 'airflow-1'",
+            "apache-airflow (==2.1.4) ; extra == 'airflow-2'",
+            "apache-airflow-providers-postgres (>=2.0.0) ; extra == 'airflow-2'",
+            "apache-airflow-providers-mysql (>=2.0.0) ; extra == 'airflow-2'",
+            "apache-airflow-providers-snowflake (>=2.1.0) ; extra == 'airflow-2'",
+            "apache-airflow-providers-google (>=5.0.0) ; extra == 'airflow-2'",
+            "airflow-provider-great-expectations (>=0.0.8) ; extra == 'airflow-2'",
+            "pytest ; extra == 'dev'",
+            "pytest-cov ; extra == 'dev'",
+            "mock ; extra == 'dev'",
+            "flake8 ; extra == 'dev'",
+            "SQLAlchemy ; extra == 'dev'",
+            "Flask-SQLAlchemy ; extra == 'dev'",
+            "pandas-gbq (==0.14.1) ; extra == 'dev'",
+            "snowflake-connector-python ; extra == 'dev'",
+            "openlineage-integration-common[sql] (==0.8.2) ; extra == 'sql'",
+            "pytest ; extra == 'tests'",
+            "pytest-cov ; extra == 'tests'",
+            "mock ; extra == 'tests'",
+            "flake8 ; extra == 'tests'",
+            "SQLAlchemy ; extra == 'tests'",
+            "Flask-SQLAlchemy ; extra == 'tests'",
+            "pandas-gbq (==0.14.1) ; extra == 'tests'",
+            "snowflake-connector-python ; extra == 'tests'"
+          ],
+          "requires_python": ">=3.7"
+        }
       }
     }
   },
@@ -44025,6 +44109,22 @@
           "requires_dist": [
             "pollination-dsl (>=0.13.1)",
             "honeybee-energy (>=1.89.7)"
+          ]
+        }
+      },
+      "0.5.0": {
+        "pollination_honeybee_energy-0.5.0-py2.py3-none-any.whl": {
+          "requires_dist": [
+            "pollination-dsl (>=0.13.1)",
+            "honeybee-energy (>=1.91.14)"
+          ]
+        }
+      },
+      "0.5.1": {
+        "pollination_honeybee_energy-0.5.1-py2.py3-none-any.whl": {
+          "requires_dist": [
+            "pollination-dsl (>=0.13.1)",
+            "honeybee-energy (>=1.91.15)"
           ]
         }
       }
@@ -57675,6 +57775,9 @@
       },
       "3.0.637": {
         "tencentcloud_sdk_python_cis-3.0.637-py2.py3-none-any.whl": "3.0.251@tencentcloud_sdk_python_cis-3.0.251-py2.py3-none-any.whl"
+      },
+      "3.0.638": {
+        "tencentcloud_sdk_python_cis-3.0.638-py2.py3-none-any.whl": "3.0.251@tencentcloud_sdk_python_cis-3.0.251-py2.py3-none-any.whl"
       }
     }
   },
@@ -58834,6 +58937,9 @@
       },
       "3.0.637": {
         "tencentcloud_sdk_python_cmq-3.0.637-py2.py3-none-any.whl": "3.0.251@tencentcloud_sdk_python_cmq-3.0.251-py2.py3-none-any.whl"
+      },
+      "3.0.638": {
+        "tencentcloud_sdk_python_cmq-3.0.638-py2.py3-none-any.whl": "3.0.251@tencentcloud_sdk_python_cmq-3.0.251-py2.py3-none-any.whl"
       }
     }
   },
@@ -59990,6 +60096,9 @@
       },
       "3.0.637": {
         "tencentcloud_sdk_python_tke-3.0.637-py2.py3-none-any.whl": "3.0.252@tencentcloud_sdk_python_tke-3.0.252-py2.py3-none-any.whl"
+      },
+      "3.0.638": {
+        "tencentcloud_sdk_python_tke-3.0.638-py2.py3-none-any.whl": "3.0.252@tencentcloud_sdk_python_tke-3.0.252-py2.py3-none-any.whl"
       }
     }
   },
