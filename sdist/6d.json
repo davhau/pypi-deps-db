@@ -26582,56 +26582,34 @@
     }
   },
   "httpnat": {
-    "0.1.30b2": {
+    "0.2.7": {
       "36": {
         "install_requires": [
           "attrs>=17.3.0",
           "chardet<4.0,>=2.0",
-          "multidict<5.0,>=4.0",
-          "async_timeout<3.0,>=1.2",
-          "yarl<2.0,>=1.0",
-          "idna-ssl>=1.0"
-        ],
-        "tests_require": [
-          "attrs>=17.3.0",
-          "chardet>=2.0,<4.0",
-          "multidict>=4.0,<5.0",
-          "async_timeout>=1.2,<3.0",
-          "yarl>=1.0,<2.0",
-          "idna-ssl>=1.0",
-          "pytest",
-          "gunicorn",
-          "pytest-timeout"
-        ],
-        "python_requires": [
-          ">=3.5.3"
-        ]
-      },
-      "37": {
-        "install_requires": [
-          "attrs>=17.3.0",
-          "chardet<4.0,>=2.0",
-          "multidict<5.0,>=4.0",
-          "async_timeout<3.0,>=1.2",
+          "multidict<7.0,>=4.5",
+          "async_timeout<4.0,>=3.0",
           "yarl<2.0,>=1.0"
         ],
-        "tests_require": [
-          "attrs>=17.3.0",
-          "chardet>=2.0,<4.0",
-          "multidict>=4.0,<5.0",
-          "async_timeout>=1.2,<3.0",
-          "yarl>=1.0,<2.0",
-          "pytest",
-          "gunicorn",
-          "pytest-timeout"
-        ],
+        "extras_require": {
+          "speedups": [
+            "aiodns",
+            "brotlipy",
+            "cchardet"
+          ],
+          ":python_version < \"3.7\"": [
+            "idna-ssl>=1.0",
+            "typing_extensions>=3.6.5"
+          ]
+        },
         "python_requires": [
-          ">=3.5.3"
+          ">=3.6"
         ]
       },
-      "38": "37",
-      "39": "37",
-      "310": "37"
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
     }
   },
   "hundlab-afat": {
@@ -38053,7 +38031,8 @@
       "39": "27",
       "310": "27"
     },
-    "2.0.0b2": "2.0.0b1"
+    "2.0.0b2": "2.0.0b1",
+    "2.0.0b3": "2.0.0b1"
   },
   "nornir-routeros": {
     "0.0.1": {
@@ -48851,6 +48830,31 @@
           "testing": [
             "pytest>=6.0",
             "pytest-cov>=2.0"
+          ]
+        },
+        "python_requires": [
+          ">=3.10"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "0.0.0a4": "1.0.0",
+    "1.0.0": {
+      "27": {
+        "install_requires": [
+          "tomli~=2.0.1",
+          "libcst~=0.4.1",
+          "Deprecated~=1.2.13"
+        ],
+        "extras_require": {
+          "general_checks": [
+            "pylint~=2.13.5",
+            "flake8~=4.0.1",
+            "flake8-json~=21.7.0"
           ]
         },
         "python_requires": [
