@@ -2224,6 +2224,9 @@
       },
       "1.3.2": {
         "ansible_doctor-1.3.2-py3-none-any.whl": "1.3.1@ansible_doctor-1.3.1-py3-none-any.whl"
+      },
+      "1.3.3": {
+        "ansible_doctor-1.3.3-py3-none-any.whl": "1.3.1@ansible_doctor-1.3.1-py3-none-any.whl"
       }
     }
   },
@@ -2260,13 +2263,16 @@
       }
     },
     "py3": {
-      "0.0.9": {
-        "ansible_filters_ldif-0.0.9-py3-none-any.whl": {
+      "0.0.10": {
+        "ansible_filters_ldif-0.0.10-py3-none-any.whl": {
           "requires_dist": [
             "ansible (>=2.5.0)",
             "python-ldap"
           ]
         }
+      },
+      "0.0.9": {
+        "ansible_filters_ldif-0.0.9-py3-none-any.whl": "0.0.10@ansible_filters_ldif-0.0.10-py3-none-any.whl"
       }
     }
   },
@@ -12171,6 +12177,14 @@
       },
       "2.6": {
         "django_sequences-2.6-py3-none-any.whl": "2.5@django_sequences-2.5-py3-none-any.whl"
+      },
+      "2.7": {
+        "django_sequences-2.7-py3-none-any.whl": {
+          "requires_dist": [
+            "django (>=3.2)"
+          ],
+          "requires_python": ">=3.6.2"
+        }
       }
     }
   },
@@ -12750,6 +12764,40 @@
             "myst-nb"
           ],
           "requires_python": ">=3.7"
+        }
+      }
+    }
+  },
+  "dvpn": {
+    "py2.py3": {
+      "0.1.2": {
+        "dvpn-0.1.2-py2.py3-none-any.whl": {
+          "provides_extras": [
+            "dev"
+          ],
+          "requires_dist": [
+            "click (==8.1.3)",
+            "pexpect (==4.0.0) ; sys_platform != \"win32\"",
+            "wexpect (==4.0.0) ; sys_platform == \"win32\"",
+            "black (==22.*) ; extra == 'dev'"
+          ],
+          "requires_python": ">=3.6,<4"
+        }
+      }
+    },
+    "py3": {
+      "0.1.2": {
+        "dvpn-0.1.2-py3-none-any.whl": {
+          "provides_extras": [
+            "dev"
+          ],
+          "requires_dist": [
+            "click (==8.1.3)",
+            "pexpect (==4.0.0) ; sys_platform != \"win32\"",
+            "wexpect (==4.0.0) ; sys_platform == \"win32\"",
+            "black (==22.*) ; extra == 'dev'"
+          ],
+          "requires_python": ">=3.6,<4"
         }
       }
     }
