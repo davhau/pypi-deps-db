@@ -16227,7 +16227,35 @@
     },
     "1.0.1b1": "1.0.0",
     "1.0.1rc1": "1.0.0",
-    "1.0.1": "1.0.0"
+    "1.0.1": "1.0.0",
+    "1.0.2": {
+      "27": {
+        "install_requires": [
+          "cx_Oracle==8.3.0"
+        ],
+        "extras_require": {
+          ":python_version < \"3.7\"": [
+            "dbt-core==0.21.1",
+            "dataclasses"
+          ],
+          ":python_version >= \"3.7\"": [
+            "dbt-core==1.0.7"
+          ]
+        },
+        "tests_require": [
+          "pytest-dbt-adapter==0.4.0; python_version < '3.7'",
+          "pytest-dbt-adapter==0.6.0; python_version >= '3.7'"
+        ],
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "dbt-sugar": {
     "0.0.0": {
@@ -35302,7 +35330,8 @@
     "4.0.18": "4.0.6",
     "4.0.20": "4.0.6",
     "4.0.21": "4.0.6",
-    "4.0.24": "4.0.6"
+    "4.0.24": "4.0.6",
+    "4.0.25": "4.0.6"
   },
   "inspiral-range": {
     "0.3.0": {
@@ -75403,7 +75432,47 @@
       "310": "36"
     },
     "1.0.6": "1.0.5",
-    "1.0.7": "1.0.5"
+    "1.0.7": "1.0.5",
+    "1.1.0": {
+      "36": {
+        "install_requires": [
+          "click",
+          "Sphinx",
+          "coverage",
+          "awscli",
+          "flake8",
+          "python-dotenv>=0.5.1",
+          "pathlib2",
+          "langid",
+          "nltk",
+          "gensim",
+          "pandas",
+          "pyspark",
+          "kafka-python",
+          "streamlit",
+          "scikit-learn",
+          "seaborn",
+          "tensorflow",
+          "tweepy==3.9.0",
+          "pydantic",
+          "strictyaml",
+          "joblib",
+          "transformers",
+          "sentencepiece"
+        ],
+        "tests_require": [
+          "pytest>=3"
+        ],
+        "python_requires": [
+          ">=3.6.0"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "1.1.1": "1.1.0"
   },
   "twfusioncharts": {
     "0.3dev": {
