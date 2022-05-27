@@ -17947,7 +17947,8 @@
       "39": "27",
       "310": "27"
     },
-    "6.0": "5.1"
+    "6.0": "5.1",
+    "6.1": "5.1"
   },
   "django-discussion": {
     "0.3": {
@@ -30930,7 +30931,9 @@
     "1.14.4.dev22": "1.14.0",
     "1.14.4.dev24": "1.14.0",
     "1.14.4.dev26": "1.14.0",
-    "1.14.4.dev28": "1.14.0"
+    "1.14.4.dev28": "1.14.0",
+    "1.14.4": "1.14.0",
+    "1.14.4.dev30": "1.14.0"
   },
   "git-dependency-installer": {
     "1.0.0": {
@@ -58268,6 +58271,49 @@
           "tests": [
             "autoapi",
             "black>=20.8b0",
+            "flake8",
+            "hypothesis",
+            "isort",
+            "mypy",
+            "pre-commit",
+            "pytest",
+            "pytest-cov",
+            "pytest-mock",
+            "rstcheck",
+            "sphinx",
+            "sphinx-argparse",
+            "sphinx-autodoc-typehints",
+            "sphinx_rtd_theme"
+          ],
+          ":python_version < \"3.8\"": [
+            "typing-extensions>=3.7"
+          ]
+        }
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "0.9.2": {
+      "36": {
+        "install_requires": [
+          "matplotlib",
+          "numpy",
+          "openpyxl",
+          "pandas",
+          "scipy",
+          "xlrd"
+        ],
+        "setup_requires": [
+          "pytest-runner",
+          "setuptools >=28",
+          "setuptools_scm"
+        ],
+        "extras_require": {
+          "tests": [
+            "autoapi",
+            "black",
             "flake8",
             "hypothesis",
             "isort",
