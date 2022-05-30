@@ -3891,7 +3891,8 @@
       "38": "27",
       "39": "27",
       "310": "27"
-    }
+    },
+    "0.2.2": "0.2.1"
   },
   "biox": {
     "0.0.0": {
@@ -11925,7 +11926,42 @@
       "39": "27",
       "310": "27"
     },
-    "0.1.14.dev20220528141048": "0.1.14"
+    "0.1.14.dev20220528141048": "0.1.14",
+    "0.1.15": {
+      "27": {
+        "install_requires": [
+          "boto3==1.23.9",
+          "botocore==1.26.9"
+        ],
+        "python_requires": [
+          ">=3.8.12,<4.0.0"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "0.1.15.dev20220530123509": "0.1.15",
+    "0.1.16": "0.1.15",
+    "0.1.16.dev20220530124147": {
+      "27": {
+        "install_requires": [
+          "boto3<2.0.0,>=1.23.10",
+          "botocore<2.0.0,>=1.26.10"
+        ],
+        "python_requires": [
+          ">=3.8.12,<4.0.0"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "0.1.16.dev20220530124254": "0.1.15"
   },
   "cachelper": {
     "0.1.0": {
@@ -18731,7 +18767,8 @@
     "8.0.0a21": "8.0.0a20",
     "8.0.0a22": "8.0.0a20",
     "7.2.45": "7.2.20",
-    "7.3.22": "7.3.21"
+    "7.3.22": "7.3.21",
+    "8.0.0a23": "8.0.0a20"
   },
   "directaccess": {
     "0.4.1": {
@@ -70558,6 +70595,48 @@
             "confluent-kafka",
             "hypothesis>=3.11.0",
             "pytest<7.0.0",
+            "pytest-mock",
+            "swh.scheduler[testing]>=0.5.0",
+            "swh.storage[testing]>=0.10.0",
+            "types-click",
+            "types-pyyaml"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "1.1.0": {
+      "27": {
+        "install_requires": [
+          "python-magic>=0.4.13",
+          "click",
+          "frozendict<2.1.2",
+          "pyld",
+          "sentry-sdk",
+          "typing-extensions",
+          "xmltodict",
+          "swh.core[db,http]>=0.14.0",
+          "swh.model>=0.0.15",
+          "swh.objstorage>=0.2.2",
+          "swh.scheduler>=0.5.2",
+          "swh.storage>=0.22.0",
+          "swh.journal>=0.1.0"
+        ],
+        "setup_requires": [
+          "setuptools-scm"
+        ],
+        "extras_require": {
+          "testing": [
+            "confluent-kafka",
+            "hypothesis>=3.11.0",
+            "pytest",
             "pytest-mock",
             "swh.scheduler[testing]>=0.5.0",
             "swh.storage[testing]>=0.10.0",
