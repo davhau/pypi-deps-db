@@ -4003,7 +4003,64 @@
       "39": "27",
       "310": "27"
     },
-    "1.7.1": "1.7.0"
+    "1.7.1": "1.7.0",
+    "1.8.0a0": {
+      "27": {
+        "install_requires": [
+          "typing-extensions>=3.10.0.0",
+          "ordered-set<5.0.0,>=4.1.0",
+          "fastapi<0.71.0,>=0.70.0",
+          "email_validator<2.0.0,>=1.1.3",
+          "click<8.1.0",
+          "typer<0.5.0,>=0.4.1",
+          "aiohttp<4.0.0,>=3.8.1",
+          "requests<3.0.0,>=2.24.0",
+          "aiofiles<0.9.0,>=0.8.0",
+          "tenacity<9.0.0,>=8.0.1",
+          "colorama<0.5.0,>=0.4.4",
+          "humanize<4.0.0,>=3.13.1",
+          "tqdm<5.0.0,>=4.62.3",
+          "attrs<22.0.0,>=21.2.0",
+          "lxml<5.0.0,>=4.6.4",
+          "toml<0.11.0,>=0.10.2",
+          "m3u8<2.0.0,>=1.0.0",
+          "jsonpath==0.82",
+          "psutil<6.0.0,>=5.8.0",
+          "reactivex<5.0.0,>=4.0.0",
+          "bitarray<3.0.0,>=2.2.5",
+          "brotli<2.0.0,>=1.0.9",
+          "uvicorn[standard]<0.16.0,>=0.15.0"
+        ],
+        "extras_require": {
+          "speedups": [
+            "aiohttp[speedups]<4.0.0,>=3.8.1"
+          ],
+          "dev": [
+            "flake8>=4.0.1",
+            "mypy==0.910",
+            "isort>=5.10.1",
+            "black>=22.3.0",
+            "autoflake>=1.4",
+            "setuptools>=59.4.0",
+            "wheel>=0.37",
+            "build>=0.7.0",
+            "twine>=3.7.1",
+            "types-requests>=2.26.1",
+            "types-aiofiles>=0.1.7",
+            "types-toml>=0.10.1",
+            "types-setuptools>=57.4.4"
+          ]
+        },
+        "python_requires": [
+          ">=3.8"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "blue-chip": {
     "0.0.1": {
@@ -19093,24 +19150,116 @@
     }
   },
   "evaluate": {
-    "0.0.0": {
-      "27": {
+    "0.1.0": {
+      "36": {
         "install_requires": [
-          "scikit-learn",
+          "datasets",
+          "numpy>=1.17",
+          "dill",
           "pandas",
-          "xgboost",
-          "lightgbm"
+          "requests>=2.19.0",
+          "tqdm>=4.62.1",
+          "xxhash",
+          "multiprocess",
+          "fsspec[http]>=2021.05.0",
+          "huggingface-hub>=0.7.0",
+          "packaging",
+          "responses<0.19"
+        ],
+        "extras_require": {
+          "tensorflow": [
+            "tensorflow!=2.6.0,!=2.6.1,>=2.2.0"
+          ],
+          "tensorflow_gpu": [
+            "tensorflow-gpu!=2.6.0,!=2.6.1,>=2.2.0"
+          ],
+          "torch": [
+            "torch"
+          ],
+          "dev": [
+            "absl-py",
+            "pytest",
+            "pytest-datadir",
+            "pytest-xdist",
+            "tensorflow!=2.6.0,!=2.6.1,>=2.3",
+            "torch",
+            "bert_score>=0.3.6",
+            "rouge_score",
+            "sacrebleu",
+            "sacremoses",
+            "scipy",
+            "seqeval",
+            "scikit-learn",
+            "jiwer",
+            "sentencepiece",
+            "transformers",
+            "mauve-text",
+            "trectools",
+            "toml>=0.10.1",
+            "requests_file>=1.5.1",
+            "tldextract>=3.1.0",
+            "texttable>=1.6.3",
+            "Werkzeug>=1.0.1",
+            "six~=1.15.0",
+            "black~=22.0",
+            "flake8>=3.8.3",
+            "isort>=5.0.0",
+            "pyyaml>=5.3.1"
+          ],
+          "tests": [
+            "absl-py",
+            "pytest",
+            "pytest-datadir",
+            "pytest-xdist",
+            "tensorflow!=2.6.0,!=2.6.1,>=2.3",
+            "torch",
+            "bert_score>=0.3.6",
+            "rouge_score",
+            "sacrebleu",
+            "sacremoses",
+            "scipy",
+            "seqeval",
+            "scikit-learn",
+            "jiwer",
+            "sentencepiece",
+            "transformers",
+            "mauve-text",
+            "trectools",
+            "toml>=0.10.1",
+            "requests_file>=1.5.1",
+            "tldextract>=3.1.0",
+            "texttable>=1.6.3",
+            "Werkzeug>=1.0.1",
+            "six~=1.15.0"
+          ],
+          "quality": [
+            "black~=22.0",
+            "flake8>=3.8.3",
+            "isort>=5.0.0",
+            "pyyaml>=5.3.1"
+          ],
+          "docs": [
+            "s3fs"
+          ],
+          "template": [
+            "cookiecutter"
+          ],
+          "evaluator": [
+            "transformersscipy>=1.7.1"
+          ],
+          ":python_version < \"3.8\"": [
+            "importlib_metadata"
+          ]
+        },
+        "python_requires": [
+          ">=3.7.0"
         ]
       },
-      "36": "27",
-      "37": "27",
-      "38": "27",
-      "39": "27",
-      "310": "27"
-    },
-    "0.0.1": "0.0.0",
-    "0.0.2": "0.0.0",
-    "0.0.3": "0.0.0"
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "evfuncs": {
     "0.1.1": {

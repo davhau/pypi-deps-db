@@ -5930,6 +5930,19 @@
       "38": "27",
       "39": "27",
       "310": "27"
+    },
+    "2.19.7": {
+      "27": {
+        "install_requires": [
+          "protobuf<4.0.0,>=3.8.0",
+          "zeroconf<=0.32.0"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
     }
   },
   "blueox": {
@@ -51292,7 +51305,51 @@
       "310": "36"
     },
     "0.26.0": "0.25.4",
-    "0.26.1": "0.25.4"
+    "0.26.1": "0.25.4",
+    "0.27.0": {
+      "36": {
+        "install_requires": [
+          "Click",
+          "GeoAlchemy2!=0.11.*,>=0.9",
+          "SQLAlchemy>=1.2",
+          "alembic>=0.9"
+        ],
+        "extras_require": {
+          "test": [
+            "pytest",
+            "pytest-asyncio",
+            "factory_boy"
+          ],
+          "test:python_version < \"3.8\"": [
+            "mock"
+          ],
+          "postgis": [
+            "psycopg2"
+          ],
+          "simulation_templates": [
+            "threedi-api-client[aio]>=4"
+          ],
+          ":python_version < \"3.7\"": [
+            "dataclasses"
+          ]
+        },
+        "tests_require": [
+          "pytest",
+          "pytest-asyncio",
+          "factory_boy",
+          "mock ; python_version<'3.8'"
+        ],
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "0.27.1": "0.27.0",
+    "0.27.1b1": "0.27.0"
   },
   "thumbor-web": {
     "0.1.0": {

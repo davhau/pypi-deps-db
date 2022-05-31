@@ -55996,7 +55996,9 @@
     "1.7.0": "1.1.0",
     "1.7.1": "1.1.0",
     "1.7.2": "1.1.0",
-    "1.8.0": "1.1.0"
+    "1.8.0": "1.1.0",
+    "1.8.1": "1.1.0",
+    "1.8.2": "1.1.0"
   },
   "pyang-cisco-plugin": {
     "0.3": {
@@ -78049,7 +78051,34 @@
     "3.12.2": "3.11",
     "3.12.3": "3.11",
     "3.12.4": "3.11",
-    "3.12.5": "3.11"
+    "3.12.5": "3.11",
+    "3.12.6": {
+      "36": {
+        "install_requires": [
+          "PySocks==1.7.1",
+          "beautifulsoup4==4.11.1",
+          "charset-normalizer==2.0.12",
+          "cssutils==2.4.0",
+          "html5lib==1.1",
+          "lxml==4.8.0",
+          "networkx==2.8.2",
+          "pefile==2022.5.30",
+          "pylibemu==0.7",
+          "pymongo==4.1.1",
+          "python-magic==0.4.26",
+          "rarfile==4.0",
+          "requests==2.27.1",
+          "requests-futures==1.0.0",
+          "ssdeep==3.4",
+          "yara-python==4.2.0",
+          "zope.interface==5.4.0"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "tid-gradient-boosting-model": {
     "0.1.10": "0.1.6",
@@ -78857,6 +78886,21 @@
       "27": {
         "install_requires": [
           "toga==0.3.0.dev33"
+        ],
+        "python_requires": [
+          ">=3.5"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "0.3.0.dev34": {
+      "27": {
+        "install_requires": [
+          "toga==0.3.0.dev34"
         ],
         "python_requires": [
           ">=3.5"
@@ -107768,7 +107812,167 @@
       "310": "36"
     },
     "5.0.0b127": "5.0.0b126",
-    "5.0.0b128": "5.0.0b126"
+    "5.0.0b128": "5.0.0b126",
+    "5.0.0b129": {
+      "36": {
+        "install_requires": [
+          "django~=3.2.12",
+          "configparser~=5.2.0",
+          "configparserc~=1.3.1",
+          "django-cors-headers~=3.10.1",
+          "Markdown==3.3.6",
+          "django-environ~=0.8.1",
+          "djangorestframework~=3.13.1",
+          "drf-yasg==1.20.0",
+          "MarkupSafe==2.0.1",
+          "django-filter==21.1",
+          "django-crispy-forms~=1.13.0",
+          "uWSGI==2.0.20",
+          "cent~=4.1.0",
+          "PyJWT~=2.4.0",
+          "jsmin~=3.0.1",
+          "django-htmlmin~=0.11.0",
+          "pyotp~=2.6.0",
+          "django-storages[libcloud]==1.12.3",
+          "sphinx~=3.4.3",
+          "sphinx-autobuild~=2021.3.14",
+          "sphinxcontrib-httpdomain~=1.7.0",
+          "sphinxcontrib-websupport~=1.2.4",
+          "sphinxcontrib-mermaid~=0.7.0",
+          "sphinx-autodoc-typehints~=1.12.0",
+          "sphinx-rtd-theme~=0.5.2",
+          "sphinx-js~=3.0.1"
+        ],
+        "extras_require": {
+          "test": [
+            "coverage~=6.2.0",
+            "fakeldap==0.6.1",
+            "tblib~=1.7.0",
+            "beautifulsoup4==4.10.0",
+            "dj-inmemorystorage~=2.1.0"
+          ],
+          "rpc": [
+            "django-celery-beat~=2.2.1",
+            "django-timezone-field~=4.1.1"
+          ],
+          "rpc:python_version <= \"3.6\"": [
+            "celery[redis]~=5.1.2"
+          ],
+          "rpc:python_version > \"3.6\"": [
+            "celery[redis]==5.2.3"
+          ],
+          "ldap": [
+            "python-ldap==3.4.0"
+          ],
+          "doc": [
+            "django-docs==0.3.1",
+            "sphinx~=3.4.3",
+            "sphinx-autobuild~=2021.3.14",
+            "sphinxcontrib-httpdomain~=1.7.0",
+            "sphinxcontrib-websupport~=1.2.4",
+            "sphinxcontrib-mermaid~=0.7.0",
+            "sphinx-autodoc-typehints~=1.12.0",
+            "sphinx-rtd-theme~=0.5.2",
+            "sphinx-js~=3.0.1"
+          ],
+          "prod": [
+            "django-redis==5.2.0",
+            "redis-py-cluster==2.1.3"
+          ],
+          "stubs": [
+            "django-stubs~=1.8.0",
+            "djangorestframework-stubs~=1.4.0",
+            "celery-stubs~=0.1.2",
+            "drf-yasg-stubs~=0.1.3",
+            "django-filter-stubs~=0.1.1"
+          ],
+          "pil": [],
+          "pil:python_version < \"3.7\"": [
+            "Pillow~=8.4.0"
+          ],
+          "pil:python_version > \"3.6\"": [
+            "Pillow~=9.0.0"
+          ],
+          "boto3": [
+            "django-storages[boto3,libcloud]==1.12.3"
+          ],
+          "sqs": [
+            "django-celery-beat~=2.2.1",
+            "django-timezone-field~=4.1.1"
+          ],
+          "sqs:python_version <= \"3.6\"": [
+            "celery[redis,sqs]~=5.1.2"
+          ],
+          "sqs:python_version > \"3.6\"": [
+            "celery[redis,sqs]==5.2.3"
+          ],
+          "librabbitmq": [
+            "django-celery-beat~=2.2.1",
+            "django-timezone-field~=4.1.1"
+          ],
+          "librabbitmq:python_version <= \"3.6\"": [
+            "celery[librabbitmq,redis]~=5.1.2"
+          ],
+          "librabbitmq:python_version > \"3.6\"": [
+            "celery[librabbitmq,redis]==5.2.3"
+          ],
+          "all": [
+            "coverage~=6.2.0",
+            "fakeldap==0.6.1",
+            "tblib~=1.7.0",
+            "beautifulsoup4==4.10.0",
+            "dj-inmemorystorage~=2.1.0",
+            "django-celery-beat~=2.2.1",
+            "django-timezone-field~=4.1.1",
+            "python-ldap==3.4.0",
+            "django-docs==0.3.1",
+            "sphinx~=3.4.3",
+            "sphinx-autobuild~=2021.3.14",
+            "sphinxcontrib-httpdomain~=1.7.0",
+            "sphinxcontrib-websupport~=1.2.4",
+            "sphinxcontrib-mermaid~=0.7.0",
+            "sphinx-autodoc-typehints~=1.12.0",
+            "sphinx-rtd-theme~=0.5.2",
+            "sphinx-js~=3.0.1",
+            "django-redis==5.2.0",
+            "redis-py-cluster==2.1.3",
+            "django-stubs~=1.8.0",
+            "djangorestframework-stubs~=1.4.0",
+            "celery-stubs~=0.1.2",
+            "drf-yasg-stubs~=0.1.3",
+            "django-filter-stubs~=0.1.1",
+            "django-storages[boto3,libcloud]==1.12.3"
+          ],
+          "all:python_version <= \"3.6\"": [
+            "celery[redis]~=5.1.2"
+          ],
+          "all:python_version > \"3.6\"": [
+            "celery[redis]==5.2.3",
+            "Pillow~=9.0.0"
+          ],
+          "all:python_version < \"3.7\"": [
+            "Pillow~=8.4.0"
+          ],
+          ":python_version < \"3.7\"": [
+            "drf_orjson_renderer~=1.3.0"
+          ],
+          ":python_version > \"3.6\"": [
+            "drf_orjson_renderer~=1.6.0",
+            "ormsgpack~=1.2.2"
+          ],
+          ":python_version == \"3.6\"": [
+            "ormsgpack~=1.1.0"
+          ]
+        },
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "wagtail-contact-reply": {
     "0.1.0": {
