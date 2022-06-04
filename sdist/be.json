@@ -79892,6 +79892,35 @@
       "38": "36",
       "39": "36",
       "310": "36"
+    },
+    "2022.6.4": {
+      "36": {
+        "install_requires": [
+          "stardist>=0.8.3",
+          "napari>=0.4.13",
+          "magicgui>=0.4.0"
+        ],
+        "extras_require": {
+          "test": [
+            "pytest",
+            "pytest-qt",
+            "napari[pyqt]>=0.4.13"
+          ],
+          ":platform_system != \"Darwin\" or platform_machine != \"arm64\"": [
+            "tensorflow"
+          ],
+          ":platform_system == \"Darwin\" and platform_machine == \"arm64\"": [
+            "tensorflow-macos"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
     }
   },
   "states3": {

@@ -8797,6 +8797,54 @@
       },
       "39": "38",
       "310": "38"
+    },
+    "6.11.0": {
+      "37": {
+        "install_requires": [
+          "packaging>=21.0",
+          "setuptools<=60.10.0,>=59.0.1"
+        ],
+        "extras_require": {
+          "dev": [
+            "bump2version>=1.0.1",
+            "pre-commit>=2.17.0",
+            "pylint>=2.13.0"
+          ],
+          "dev:sys_platform == \"linux\"": [
+            "cibuildwheel==2.6.0"
+          ],
+          "doc": [
+            "sphinx==4.5.0",
+            "sphinx-rtd-theme==1.0.0"
+          ],
+          "test": [
+            "nose==1.3.7",
+            "pygments==2.11.2",
+            "pytest>=7.0.1",
+            "pytest-cov==3.0.0",
+            "pytest-mock>=3.6.1",
+            "pytest-timeout>=1.4.2"
+          ],
+          ":sys_platform == \"win32\" and python_version < \"3.10\"": [
+            "cx-logging>=3.0"
+          ],
+          ":python_version < \"3.10\"": [
+            "importlib-metadata>=4.8.3"
+          ],
+          ":sys_platform == \"win32\"": [
+            "lief>=0.11.5"
+          ],
+          ":sys_platform == \"linux\"": [
+            "patchelf>=0.12"
+          ]
+        },
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "38": "37",
+      "39": "37",
+      "310": "37"
     }
   },
   "cxr-service-client": {
@@ -84026,6 +84074,24 @@
         ],
         "python_requires": [
           ">=3.8"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "1.1.0": {
+      "27": {
+        "install_requires": [
+          "asyncio-mqtt~=0.12.1",
+          "paho-mqtt~=1.6.1",
+          "pymodbus~=2.5.3",
+          "PyYAML~=6.0"
+        ],
+        "python_requires": [
+          ">=3.7"
         ]
       },
       "36": "27",
