@@ -487,7 +487,8 @@
       "39": "27",
       "310": "27"
     },
-    "1.0.4": "1.0.3"
+    "1.0.4": "1.0.3",
+    "1.0.5": "1.0.3"
   },
   "aestate-json": {
     "1.0.0": {
@@ -2504,6 +2505,25 @@
       "38": "36",
       "39": "36",
       "310": "36"
+    },
+    "3.0.0rc1": {
+      "36": {
+        "install_requires": [
+          "apache-airflow>=2.2.0.rc1",
+          "pywinrm>=0.4"
+        ],
+        "setup_requires": [
+          "setuptools",
+          "wheel"
+        ],
+        "python_requires": [
+          "~=3.7"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
     }
   },
   "apache-airflow-providers-mysql": {
@@ -3001,6 +3021,42 @@
       "36": {
         "install_requires": [
           "apache-airflow>=2.1.0"
+        ],
+        "setup_requires": [
+          "setuptools",
+          "wheel"
+        ],
+        "extras_require": {
+          "amazon": [
+            "apache-airflow-providers-amazon"
+          ],
+          "presto": [
+            "apache-airflow-providers-presto"
+          ],
+          "trino": [
+            "apache-airflow-providers-trino"
+          ],
+          "vertica": [
+            "apache-airflow-providers-vertica"
+          ],
+          ":platform_machine != \"aarch64\"": [
+            "mysql-connector-python>=8.0.11",
+            "mysqlclient>=1.3.6"
+          ]
+        },
+        "python_requires": [
+          "~=3.7"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "3.0.0rc1": {
+      "36": {
+        "install_requires": [
+          "apache-airflow>=2.2.0.rc1"
         ],
         "setup_requires": [
           "setuptools",
@@ -12442,6 +12498,20 @@
       "39": "27",
       "310": "27"
     }
+  },
+  "detool": {
+    "1.0.1": {
+      "36": {
+        "install_requires": [
+          "loguru>=0.6.0"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "1.0.2": "1.0.1"
   },
   "devlib": {
     "0.0.1": {
@@ -84018,7 +84088,8 @@
       "39": "27",
       "310": "27"
     },
-    "2.0.1": "2.0.0"
+    "2.0.1": "2.0.0",
+    "2.0.2": "2.0.0"
   },
   "wix-ci-e2e": {
     "0.0.1": {

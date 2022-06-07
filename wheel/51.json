@@ -2492,6 +2492,16 @@
       },
       "1.1.3rc1": {
         "apache_airflow_providers_influxdb-1.1.3rc1-py3-none-any.whl": "1.1.3@apache_airflow_providers_influxdb-1.1.3-py3-none-any.whl"
+      },
+      "2.0.0rc1": {
+        "apache_airflow_providers_influxdb-2.0.0rc1-py3-none-any.whl": {
+          "requires_dist": [
+            "apache-airflow (>=2.2.0.rc1)",
+            "influxdb-client (>=1.19.0)",
+            "pandas (>=0.17.1)"
+          ],
+          "requires_python": "~=3.7"
+        }
       }
     }
   },
@@ -9109,6 +9119,14 @@
         "clvm_tools_rs-0.1.10-cp37-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl": "0.1.0@clvm_tools_rs-0.1.0-cp37-abi3-macosx_10_7_x86_64.whl",
         "clvm_tools_rs-0.1.10-cp37-abi3-musllinux_1_1_x86_64.whl": "0.1.0@clvm_tools_rs-0.1.0-cp37-abi3-macosx_10_7_x86_64.whl",
         "clvm_tools_rs-0.1.10-cp37-abi3-win_amd64.whl": "0.1.0@clvm_tools_rs-0.1.0-cp37-abi3-macosx_10_7_x86_64.whl"
+      },
+      "0.1.11": {
+        "clvm_tools_rs-0.1.11-cp37-abi3-macosx_10_7_x86_64.whl": "0.1.0@clvm_tools_rs-0.1.0-cp37-abi3-macosx_10_7_x86_64.whl",
+        "clvm_tools_rs-0.1.11-cp37-abi3-macosx_11_0_arm64.whl": "0.1.0@clvm_tools_rs-0.1.0-cp37-abi3-macosx_10_7_x86_64.whl",
+        "clvm_tools_rs-0.1.11-cp37-abi3-manylinux_2_12_x86_64.manylinux2010_x86_64.whl": "0.1.0@clvm_tools_rs-0.1.0-cp37-abi3-macosx_10_7_x86_64.whl",
+        "clvm_tools_rs-0.1.11-cp37-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl": "0.1.0@clvm_tools_rs-0.1.0-cp37-abi3-macosx_10_7_x86_64.whl",
+        "clvm_tools_rs-0.1.11-cp37-abi3-musllinux_1_1_x86_64.whl": "0.1.0@clvm_tools_rs-0.1.0-cp37-abi3-macosx_10_7_x86_64.whl",
+        "clvm_tools_rs-0.1.11-cp37-abi3-win_amd64.whl": "0.1.0@clvm_tools_rs-0.1.0-cp37-abi3-macosx_10_7_x86_64.whl"
       },
       "0.1.2": {
         "clvm_tools_rs-0.1.2-cp37-abi3-macosx_10_7_x86_64.whl": "0.1.0@clvm_tools_rs-0.1.0-cp37-abi3-macosx_10_7_x86_64.whl",
@@ -17130,6 +17148,9 @@
           ],
           "requires_python": ">=3.8,<4"
         }
+      },
+      "0.1.1": {
+        "eco2ai-0.1.1-py3-none-any.whl": "0.1.0@eco2ai-0.1.0-py3-none-any.whl"
       }
     }
   },
@@ -39594,6 +39615,28 @@
           ],
           "requires_python": ">=3.7.0"
         }
+      },
+      "22.6.0": {
+        "neuro_sdk-22.6.0-py3-none-any.whl": {
+          "requires_dist": [
+            "aiohttp (>=3.8.1)",
+            "yarl (>=1.7.0)",
+            "pyyaml (>=5.0)",
+            "python-jose (>=3.3.0)",
+            "python-dateutil (>=2.7.0)",
+            "aiobotocore (<3.0,>=2.3.0)",
+            "aiodocker (>=0.21.0)",
+            "typing-extensions (>=3.7.4)",
+            "certifi",
+            "toml (>=0.10.0)",
+            "azure-storage-blob (!=12.9.0,>=12.8.1)",
+            "google-auth (>=2.0.2)",
+            "packaging (>=20.4)",
+            "neuro-admin-client (==22.5.1)",
+            "importlib-metadata (>=4.7.1) ; python_version < \"3.10\""
+          ],
+          "requires_python": ">=3.7.0"
+        }
       }
     }
   },
@@ -48058,6 +48101,23 @@
       },
       "4.2.2": {
         "pygraphblas-4.2.2-cp38-cp38-manylinux2010_x86_64.whl": "4.0.3@pygraphblas-4.0.3-cp38-cp38-manylinux2010_x86_64.whl"
+      }
+    }
+  },
+  "pyhelayerslite": {
+    "cp37": {
+      "1.4.0.1": {
+        "pyhelayerslite-1.4.0.1-cp37-cp37m-win_amd64.whl": {
+          "provides_extras": [
+            "ext"
+          ],
+          "requires_dist": [
+            "numpy (>=1.14.5)",
+            "scikit-learn (>=0.20.0) ; extra == 'ext'",
+            "sklearn-json (>=0.1.0) ; extra == 'ext'",
+            "tensorflow (>=2.0.0) ; extra == 'ext'"
+          ]
+        }
       }
     }
   },
@@ -60001,6 +60061,53 @@
             "testcloud (>=0.7.0) ; extra == 'provision'",
             "jinja2 ; extra == 'report-html'",
             "junit-xml ; extra == 'report-junit'",
+            "pre-commit ; extra == 'tests'",
+            "pytest ; extra == 'tests'",
+            "python-coveralls ; extra == 'tests'",
+            "requre ; extra == 'tests'"
+          ]
+        }
+      },
+      "1.14.0": {
+        "tmt-1.14.0-py3-none-any.whl": {
+          "provides_extras": [
+            "all",
+            "convert",
+            "docs",
+            "provision",
+            "report-html",
+            "report-junit",
+            "tests"
+          ],
+          "requires_dist": [
+            "click",
+            "fmf (>=1.0.0)",
+            "requests",
+            "ruamel.yaml",
+            "html2text ; extra == 'all'",
+            "jinja2 ; extra == 'all'",
+            "junit-xml ; extra == 'all'",
+            "markdown ; extra == 'all'",
+            "mypy ; extra == 'all'",
+            "nitrate ; extra == 'all'",
+            "pre-commit ; extra == 'all'",
+            "pytest ; extra == 'all'",
+            "python-bugzilla ; extra == 'all'",
+            "python-coveralls ; extra == 'all'",
+            "requre ; extra == 'all'",
+            "sphinx (>=3) ; extra == 'all'",
+            "sphinx-rtd-theme ; extra == 'all'",
+            "testcloud (>=0.7.0) ; extra == 'all'",
+            "html2text ; extra == 'convert'",
+            "markdown ; extra == 'convert'",
+            "nitrate ; extra == 'convert'",
+            "python-bugzilla ; extra == 'convert'",
+            "sphinx (>=3) ; extra == 'docs'",
+            "sphinx-rtd-theme ; extra == 'docs'",
+            "testcloud (>=0.7.0) ; extra == 'provision'",
+            "jinja2 ; extra == 'report-html'",
+            "junit-xml ; extra == 'report-junit'",
+            "mypy ; extra == 'tests'",
             "pre-commit ; extra == 'tests'",
             "pytest ; extra == 'tests'",
             "python-coveralls ; extra == 'tests'",

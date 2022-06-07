@@ -10890,7 +10890,8 @@
       "310": "36"
     },
     "2.30.0": "2.29.0",
-    "2.31.0": "2.29.0"
+    "2.31.0": "2.29.0",
+    "2.30.1": "2.29.0"
   },
   "analyticstestnn1": {
     "1.0.0": {
@@ -12066,7 +12067,35 @@
       "39": "36",
       "310": "36"
     },
-    "2.2.1": "2.1.2"
+    "2.2.1": "2.1.2",
+    "3.0.0rc1": {
+      "36": {
+        "install_requires": [
+          "apache-airflow>=2.2.0.rc1",
+          "pandas>=0.17.1",
+          "presto-python-client<0.8,>=0.7.0"
+        ],
+        "setup_requires": [
+          "setuptools",
+          "wheel"
+        ],
+        "extras_require": {
+          "google": [
+            "apache-airflow-providers-google"
+          ],
+          "slack": [
+            "apache-airflow-providers-slack"
+          ]
+        },
+        "python_requires": [
+          "~=3.7"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "apache-airflow-providers-redis": {
     "1.0.0": {
@@ -12218,6 +12247,25 @@
       "36": {
         "install_requires": [
           "apache-airflow>=2.1.0",
+          "redis~=3.2"
+        ],
+        "setup_requires": [
+          "setuptools",
+          "wheel"
+        ],
+        "python_requires": [
+          "~=3.7"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "3.0.0rc1": {
+      "36": {
+        "install_requires": [
+          "apache-airflow>=2.2.0.rc1",
           "redis~=3.2"
         ],
         "setup_requires": [
@@ -30692,7 +30740,24 @@
       "39": "27",
       "310": "27"
     },
-    "0.2.5": "0.2.4"
+    "0.2.5": "0.2.4",
+    "0.2.6": {
+      "27": {
+        "install_requires": [
+          "flake8>=3.0.0",
+          "restructuredtext_lint",
+          "pygments"
+        ],
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "flake8-useless-assert": {
     "0.1.1": {
@@ -32937,6 +33002,24 @@
           "proto-plus>=1.15.0",
           "packaging>=14.3",
           "grpc-google-iam-v1<0.13dev,>=0.12.3"
+        ],
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "1.0.2": {
+      "27": {
+        "install_requires": [
+          "google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.0,<3.0.0dev,>=1.31.5",
+          "proto-plus<2.0.0dev,>=1.15.0",
+          "protobuf<4.0.0dev,>=3.19.0",
+          "grpc-google-iam-v1<1.0.0dev,>=0.12.4"
         ],
         "python_requires": [
           ">=3.6"
@@ -40532,6 +40615,56 @@
           "jsonschema",
           "tenacity",
           "wget"
+        ],
+        "extras_require": {
+          ":platform_system == \"Darwin\"": [
+            "pycrypto==2.6.1"
+          ],
+          ":platform_system == \"Linux\"": [
+            "pycrypto==2.6.1"
+          ],
+          ":platform_system == \"Windows\"": [
+            "pycryptodome==3.12.0"
+          ]
+        }
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "0.2.55": {
+      "27": {
+        "install_requires": [
+          "jsonpath==0.82",
+          "xmltodict==0.13.0",
+          "flashtext",
+          "fabric==2.6.0",
+          "pytest==6.2.5",
+          "pywebio==1.4.0",
+          "requests==2.26.0",
+          "loguru==0.5.3",
+          "jinja2==3.0.2",
+          "openpyxl==3.0.9",
+          "xmindparser==1.0.9",
+          "jmespath==0.10.0",
+          "pymysql==1.0.2",
+          "swaggerjmx==1.0.9",
+          "faker==8.12.1",
+          "websockets==10.1",
+          "pywebio==1.4.0",
+          "kafka-python==2.0.2",
+          "flask==2.0.2",
+          "Werkzeug==2.0.2",
+          "paho-mqtt==1.5.1",
+          "msgpack==1.0.3",
+          "redis==4.1.3",
+          "python-dotenv==0.19.2",
+          "jsonschema",
+          "tenacity",
+          "wget",
+          "pyttsx3"
         ],
         "extras_require": {
           ":platform_system == \"Darwin\"": [
@@ -56621,6 +56754,24 @@
     "0.1.8": "0.1.0",
     "0.1.9": "0.1.0",
     "0.2.0": "0.1.0"
+  },
+  "robotframework-libtoc": {
+    "1.0.1": {
+      "27": {
+        "install_requires": [
+          "robotframework>=4"
+        ],
+        "python_requires": [
+          ">=3.8"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "1.1.0": "1.0.1"
   },
   "robotframework-xsd": {
     "0.1.1": {
