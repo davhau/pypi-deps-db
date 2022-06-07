@@ -6346,6 +6346,36 @@
       "38": "36",
       "39": "36",
       "310": "36"
+    },
+    "0.24.213922b1": {
+      "36": {
+        "install_requires": [
+          "azure-core>=1.19.1",
+          "azure-identity>=1.6.0",
+          "azure-storage-blob>=12.8.1",
+          "msrest>=0.6.21",
+          "numpy>=1.21.0",
+          "deprecated>=1.2.12",
+          "aiohttp>=3.7.0",
+          "aiofile>=3.7.2",
+          "protobuf<4.0,>=3.14.0"
+        ],
+        "extras_require": {
+          "qiskit": [
+            "qiskit-ionq>=0.1.4",
+            "qiskit-terra>=0.19.1",
+            "qiskit-qir>=0.1.0b10"
+          ],
+          "cirq": [
+            "cirq-core==0.14.1",
+            "cirq-ionq==0.14.1"
+          ]
+        }
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
     }
   },
   "azureml.datacollector": {
@@ -47690,7 +47720,36 @@
     "1.0.88": "1.0.60",
     "1.0.89": "1.0.60",
     "1.0.90": "1.0.60",
-    "1.0.91": "1.0.60"
+    "1.0.91": "1.0.60",
+    "1.0.92": {
+      "36": {
+        "install_requires": [
+          "click~=8.0.4",
+          "requests~=2.27.1",
+          "json5~=0.9.8",
+          "docker~=5.0.3",
+          "rich~=9.10.0",
+          "dependency-injector~=4.39.1",
+          "pydantic~=1.9.1",
+          "python-dateutil~=2.8.2",
+          "lxml~=4.9.0",
+          "maskpass==0.3.6",
+          "joblib~=1.1.0",
+          "python-certifi-win32~=1.6",
+          "pyshortcuts~=1.8.2",
+          "wrapt~=1.14.1",
+          "setuptools",
+          "quantconnect-stubs"
+        ],
+        "python_requires": [
+          ">= 3.6"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "learnusumjap": {
     "0.1.11": {
@@ -60997,6 +61056,16 @@
       "310": "27"
     }
   },
+  "mfa-db-service": {
+    "0.0.1": {
+      "27": {},
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
+  },
   "micropython-filedb": {
     "0.1": {
       "27": {},
@@ -68699,6 +68768,86 @@
           "# Drakkar-Software requirements\n",
           "Async-Channel>=2.0.13, <2.1\n",
           "OctoBot-Commons>=1.7, <1.8\n",
+          "OctoBot-Trading>=2.2.0, <2.3\n",
+          "\n",
+          "# Services\n",
+          "# Reddit\n",
+          "asyncpraw==7.3.1\n",
+          "# Telegram\n",
+          "python-telegram-bot==13.7.0\n",
+          "telethon==1.24.0\n",
+          "# Twitter\n",
+          "Python-Twitter==3.5\n",
+          "# Google\n",
+          "simplifiedpytrends>=1.1.2\n",
+          "# Ngrok\n",
+          "pyngrok==5.0.5\n",
+          "# Web\n",
+          "## http server\n",
+          "flask==2.1.2\n",
+          "# Flask templates\n",
+          "jinja2>=3.1.2\n",
+          "## flask minification\n",
+          "flask-compress==1.12\n",
+          "## flask cache\n",
+          "flask-caching==1.10.1\n",
+          "## flask user authentication management\n",
+          "flask-login==0.6.1\n",
+          "## user form validators\n",
+          "WTForms==3.0.1\n",
+          "Flask-WTF==1.0.1\n",
+          "## websockets\n",
+          "### used by the webhook service and flask-socketio for the web interface\n",
+          "gevent==21.12.0\n",
+          "### used by flask-socketio with gevent (listed here because multiple libs are usable, force this one)\n",
+          "gevent-websocket==0.10.1\n",
+          "flask-socketio==5.1.2\n",
+          "\n",
+          "# Analysis tools\n",
+          "newspaper3k==0.2.8\n",
+          "vaderSentiment==3.3.2\n"
+        ],
+        "tests_require": [
+          "pytest"
+        ],
+        "python_requires": [
+          ">=3.8"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "1.3.1": {
+      "36": {
+        "install_requires": [
+          "Async-Channel<2.1,>=2.0.13",
+          "OctoBot-Commons<1.7.10,>=1.7",
+          "OctoBot-Trading<2.3,>=2.2.0",
+          "asyncpraw==7.3.1",
+          "python-telegram-bot==13.7.0",
+          "telethon==1.24.0",
+          "Python-Twitter==3.5",
+          "simplifiedpytrends>=1.1.2",
+          "pyngrok==5.0.5",
+          "flask==2.1.2",
+          "jinja2>=3.1.2",
+          "flask-compress==1.12",
+          "flask-caching==1.10.1",
+          "flask-login==0.6.1",
+          "WTForms==3.0.1",
+          "Flask-WTF==1.0.1",
+          "gevent==21.12.0",
+          "gevent-websocket==0.10.1",
+          "flask-socketio==5.1.2",
+          "newspaper3k==0.2.8",
+          "vaderSentiment==3.3.2"
+        ],
+        "setup_requires": [
+          "# Drakkar-Software requirements\n",
+          "Async-Channel>=2.0.13, <2.1\n",
+          "OctoBot-Commons>=1.7, <1.7.10\n",
           "OctoBot-Trading>=2.2.0, <2.3\n",
           "\n",
           "# Services\n",
@@ -81294,6 +81443,33 @@
     },
     "1.3.0": "1.2.0"
   },
+  "rtedbserver": {
+    "0.0.1": {
+      "27": {
+        "install_requires": [
+          "beetools",
+          "configparserext",
+          "releaselogit",
+          "semverit",
+          "termcolor",
+          "toml"
+        ],
+        "setup_requires": [
+          "beetools",
+          "configparserext",
+          "releaselogit",
+          "semverit",
+          "termcolor",
+          "toml"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
+  },
   "rtorsh": {
     "0.0.1": {
       "27": {},
@@ -87588,7 +87764,8 @@
     "3.0.645": "3.0.251",
     "3.0.646": "3.0.251",
     "3.0.647": "3.0.251",
-    "3.0.648": "3.0.251"
+    "3.0.648": "3.0.251",
+    "3.0.649": "3.0.251"
   },
   "tencentcloud-sdk-python-dts": {
     "3.0.251": {
@@ -87991,7 +88168,8 @@
     "3.0.645": "3.0.251",
     "3.0.646": "3.0.251",
     "3.0.647": "3.0.251",
-    "3.0.648": "3.0.251"
+    "3.0.648": "3.0.251",
+    "3.0.649": "3.0.251"
   },
   "terminalbuttons": {
     "1.0.0": {
