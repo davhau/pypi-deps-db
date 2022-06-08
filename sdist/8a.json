@@ -26232,7 +26232,8 @@
     "2.9.4": "1.0.0",
     "2.9.5": "1.0.0",
     "2.9.6": "1.0.0",
-    "2.9.7": "1.0.0"
+    "2.9.7": "1.0.0",
+    "2.9.8": "1.0.0"
   },
   "helloworld-tal1948": {
     "0.0.1": {
@@ -34009,6 +34010,21 @@
       "38": "37",
       "39": "37",
       "310": "37"
+    },
+    "10.0.0.post0": "10.0.1",
+    "10.0.1": {
+      "38": {
+        "setup_requires": [
+          "setuptools >= 21.0.0,!=24.0.0,!=34.0.0,!=34.0.1,!=34.0.2,!=34.0.3,!=34.1.0,!=34.1.1,!=34.2.0,!=34.3.0,!=34.3.1,!=34.3.2,!=36.2.0",
+          "wheel",
+          "setuptools_scm[toml]>=3.4"
+        ],
+        "python_requires": [
+          ">=3.8.0"
+        ]
+      },
+      "39": "38",
+      "310": "38"
     }
   },
   "loveliness": {
@@ -56724,6 +56740,96 @@
             "typer[all]==0.4.0",
             "uvicorn==0.15.0",
             "wandb==0.12.7"
+          ],
+          "train": [
+            "alembic==1.4.1",
+            "mlflow==1.23.1",
+            "numpy==1.21",
+            "torch==1.9.0",
+            "pytorch-lightning==1.6.0",
+            "wandb==0.12.7"
+          ]
+        },
+        "python_requires": [
+          ">=3.8"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "1.0.1": {
+      "36": {
+        "install_requires": [
+          "black==22.3.0",
+          "docker==5.0.3",
+          "psutil==5.8.0",
+          "python-dotenv==0.19.2",
+          "requests==2.25.1",
+          "rich==10.15.1",
+          "toml==0.10.2",
+          "click==8.0.4",
+          "typer[all]==0.4.0"
+        ],
+        "extras_require": {
+          "api": [
+            "celery[redis]==5.2.2",
+            "pydantic==1.8.2",
+            "fastapi==0.68.1",
+            "uvicorn==0.15.0"
+          ],
+          "dashboard": [
+            "streamlit==1.7.0",
+            "numpy==1.21"
+          ],
+          "standalone": [
+            "torch==1.9.0",
+            "celery[redis]==5.2.2",
+            "pydantic==1.8.2",
+            "streamlit==1.7.0",
+            "numpy==1.21",
+            "fastapi==0.68.1",
+            "uvicorn==0.15.0"
+          ],
+          "worker": [
+            "celery[redis]==5.2.2",
+            "torch==1.9.0"
+          ],
+          "demo": [
+            "celery[redis]==5.2.2",
+            "fastapi==0.68.1",
+            "numpy==1.21",
+            "pydantic==1.8.2",
+            "streamlit==1.7.0",
+            "torch==1.9.0",
+            "uvicorn==0.15.0"
+          ],
+          "dev": [
+            "alembic==1.4.1",
+            "celery[redis]==5.2.2",
+            "docker==5.0.3",
+            "fastapi==0.68.1",
+            "mlflow==1.23.1",
+            "numpy==1.21",
+            "psutil==5.8.0",
+            "pydantic==1.8.2",
+            "python-dotenv==0.19.2",
+            "requests==2.25.1",
+            "rich==10.15.1",
+            "streamlit==1.7.0",
+            "toml==0.10.2",
+            "torch==1.9.0",
+            "pytorch-lightning==1.6.0",
+            "typer[all]==0.4.0",
+            "uvicorn==0.15.0",
+            "wandb==0.12.7"
+          ],
+          "docs": [
+            "mkdocs==1.3.0",
+            "mkdocs-material==8.3.3",
+            "mkdocstrings[python]==0.18.1",
+            "mkdocs-macros-plugin==0.7.0"
           ],
           "train": [
             "alembic==1.4.1",
