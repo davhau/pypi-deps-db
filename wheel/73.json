@@ -26188,8 +26188,8 @@
   },
   "letterparser": {
     "py3": {
-      "0.2.1": {
-        "letterparser-0.2.1-py3-none-any.whl": {
+      "0.10.0": {
+        "letterparser-0.10.0-py3-none-any.whl": {
           "requires_dist": [
             "elifearticle",
             "elifetools",
@@ -26200,29 +26200,32 @@
           ]
         }
       },
+      "0.2.1": {
+        "letterparser-0.2.1-py3-none-any.whl": "0.10.0@letterparser-0.10.0-py3-none-any.whl"
+      },
       "0.2.2": {
-        "letterparser-0.2.2-py3-none-any.whl": "0.2.1@letterparser-0.2.1-py3-none-any.whl"
+        "letterparser-0.2.2-py3-none-any.whl": "0.10.0@letterparser-0.10.0-py3-none-any.whl"
       },
       "0.3.0": {
-        "letterparser-0.3.0-py3-none-any.whl": "0.2.1@letterparser-0.2.1-py3-none-any.whl"
+        "letterparser-0.3.0-py3-none-any.whl": "0.10.0@letterparser-0.10.0-py3-none-any.whl"
       },
       "0.4.0": {
-        "letterparser-0.4.0-py3-none-any.whl": "0.2.1@letterparser-0.2.1-py3-none-any.whl"
+        "letterparser-0.4.0-py3-none-any.whl": "0.10.0@letterparser-0.10.0-py3-none-any.whl"
       },
       "0.5.0": {
-        "letterparser-0.5.0-py3-none-any.whl": "0.2.1@letterparser-0.2.1-py3-none-any.whl"
+        "letterparser-0.5.0-py3-none-any.whl": "0.10.0@letterparser-0.10.0-py3-none-any.whl"
       },
       "0.6.0": {
-        "letterparser-0.6.0-py3-none-any.whl": "0.2.1@letterparser-0.2.1-py3-none-any.whl"
+        "letterparser-0.6.0-py3-none-any.whl": "0.10.0@letterparser-0.10.0-py3-none-any.whl"
       },
       "0.7.0": {
-        "letterparser-0.7.0-py3-none-any.whl": "0.2.1@letterparser-0.2.1-py3-none-any.whl"
+        "letterparser-0.7.0-py3-none-any.whl": "0.10.0@letterparser-0.10.0-py3-none-any.whl"
       },
       "0.8.0": {
-        "letterparser-0.8.0-py3-none-any.whl": "0.2.1@letterparser-0.2.1-py3-none-any.whl"
+        "letterparser-0.8.0-py3-none-any.whl": "0.10.0@letterparser-0.10.0-py3-none-any.whl"
       },
       "0.9.0": {
-        "letterparser-0.9.0-py3-none-any.whl": "0.2.1@letterparser-0.2.1-py3-none-any.whl"
+        "letterparser-0.9.0-py3-none-any.whl": "0.10.0@letterparser-0.10.0-py3-none-any.whl"
       }
     }
   },
@@ -38254,6 +38257,22 @@
         "odoo13_addons_oca_account_reconcile-13.0.20211127.0-py3-none-any.whl": {
           "requires_dist": [
             "odoo13-addon-account-mass-reconcile",
+            "odoo13-addon-account-move-reconcile-helper",
+            "odoo13-addon-account-partner-reconcile",
+            "odoo13-addon-account-reconcile-model-strict-match-amount",
+            "odoo13-addon-account-reconcile-payment-order",
+            "odoo13-addon-account-reconcile-restrict-partner-mismatch",
+            "odoo13-addon-account-reconciliation-widget-due-date",
+            "odoo13-addon-account-skip-bank-reconciliation",
+            "odoo13-addon-bank-statement-journal-items"
+          ]
+        }
+      },
+      "13.0.20220608.0": {
+        "odoo13_addons_oca_account_reconcile-13.0.20220608.0-py3-none-any.whl": {
+          "requires_dist": [
+            "odoo13-addon-account-mass-reconcile",
+            "odoo13-addon-account-mass-reconcile-by-purchase-line",
             "odoo13-addon-account-move-reconcile-helper",
             "odoo13-addon-account-partner-reconcile",
             "odoo13-addon-account-reconcile-model-strict-match-amount",
@@ -51656,6 +51675,39 @@
       "0.14.2": {
         "rubrix-0.14.2-py3-none-any.whl": "0.14.0@rubrix-0.14.0-py3-none-any.whl"
       },
+      "0.15.0": {
+        "rubrix-0.15.0-py3-none-any.whl": {
+          "provides_extras": [
+            "server"
+          ],
+          "requires_dist": [
+            "httpx (~=0.15.0)",
+            "packaging (>=20.0)",
+            "pandas (<2.0.0,>=1.0.0)",
+            "pydantic (>=1.7.1)",
+            "wrapt (~=1.13.0)",
+            "numpy",
+            "tqdm (>=4.27.0)",
+            "fastapi (~=0.75.0) ; extra == 'server'",
+            "opensearch-py (~=1.0.0) ; extra == 'server'",
+            "uvicorn[standard] (<0.18.0,>=0.15.0) ; extra == 'server'",
+            "smart-open ; extra == 'server'",
+            "brotli-asgi (~=1.1.0) ; extra == 'server'",
+            "Deprecated (~=1.2.0) ; extra == 'server'",
+            "luqum (~=0.11.0) ; extra == 'server'",
+            "scikit-learn (>=0.24.2) ; extra == 'server'",
+            "stopwordsiso (~=0.6.1) ; extra == 'server'",
+            "aiofiles (~=0.6.0) ; extra == 'server'",
+            "PyYAML (~=5.4.1) ; extra == 'server'",
+            "python-multipart (~=0.0.5) ; extra == 'server'",
+            "python-jose[cryptography] (~=3.2.0) ; extra == 'server'",
+            "passlib[bcrypt] (~=1.7.4) ; extra == 'server'",
+            "hurry.filesize ; extra == 'server'",
+            "psutil (~=5.8.0) ; extra == 'server'"
+          ],
+          "requires_python": ">=3.7"
+        }
+      },
       "0.2.0": {
         "rubrix-0.2.0-py3-none-any.whl": "0.1.0@rubrix-0.1.0-py3-none-any.whl"
       },
@@ -57606,6 +57658,9 @@
       },
       "3.0.650": {
         "tencentcloud_sdk_python_bmvpc-3.0.650-py2.py3-none-any.whl": "3.0.251@tencentcloud_sdk_python_bmvpc-3.0.251-py2.py3-none-any.whl"
+      },
+      "3.0.651": {
+        "tencentcloud_sdk_python_bmvpc-3.0.651-py2.py3-none-any.whl": "3.0.251@tencentcloud_sdk_python_bmvpc-3.0.251-py2.py3-none-any.whl"
       }
     }
   },
@@ -61055,6 +61110,9 @@
       },
       "2.3.2": {
         "types_aiobotocore_lookoutequipment-2.3.2-py3-none-any.whl": "2.2.0.post1@types_aiobotocore_lookoutequipment-2.2.0.post1-py3-none-any.whl"
+      },
+      "2.3.3": {
+        "types_aiobotocore_lookoutequipment-2.3.3-py3-none-any.whl": "2.2.0.post1@types_aiobotocore_lookoutequipment-2.2.0.post1-py3-none-any.whl"
       }
     }
   },
@@ -61104,6 +61162,9 @@
       },
       "2.3.2": {
         "types_aiobotocore_mediastore-2.3.2-py3-none-any.whl": "2.2.0.post1@types_aiobotocore_mediastore-2.2.0.post1-py3-none-any.whl"
+      },
+      "2.3.3": {
+        "types_aiobotocore_mediastore-2.3.3-py3-none-any.whl": "2.2.0.post1@types_aiobotocore_mediastore-2.2.0.post1-py3-none-any.whl"
       }
     }
   },
