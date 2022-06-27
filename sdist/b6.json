@@ -1098,6 +1098,49 @@
       "310": "27"
     }
   },
+  "airflow-provider-fxiaoke": {
+    "0.0.2": {
+      "27": {
+        "install_requires": [
+          "apache-airflow>=2.1",
+          "apache-airflow-providers-google>=8.0.0"
+        ],
+        "setup_requires": [
+          "setuptools",
+          "wheel"
+        ],
+        "python_requires": [
+          "~=3.8"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "0.0.3": {
+      "27": {
+        "install_requires": [
+          "apache-airflow>=2.1",
+          "fxiaoke-python>=0.0.1",
+          "apache-airflow-providers-google>=6.0.0"
+        ],
+        "setup_requires": [
+          "setuptools",
+          "wheel"
+        ],
+        "python_requires": [
+          "~=3.8"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
+  },
   "airflow-test-decorator": {
     "1.0": {
       "27": {
@@ -9120,7 +9163,8 @@
     "1.3.2": "0.0.1",
     "1.3.3": "0.0.1",
     "1.3.4": "0.0.1",
-    "1.3.5": "0.0.1"
+    "1.3.5": "0.0.1",
+    "1.3.6": "0.0.1"
   },
   "daniels": {
     "0.1": {
@@ -25543,6 +25587,65 @@
           ],
           "misp": [
             "pymisp>=2.4.126"
+          ]
+        },
+        "tests_require": [
+          "coverage",
+          "pytest",
+          "pytest-cov"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "3.0.0": {
+      "27": {
+        "install_requires": [
+          "babel<3.0.0,>=2.9.1",
+          "pyyaml<7.0.0,>=5.0.0",
+          "types-PyYAML",
+          "sqlalchemy2-stubs",
+          "banal<1.1.0,>=1.0.1",
+          "click<9.0.0,>=8.0",
+          "stringcase<2.0.0,>=1.2.0",
+          "requests<3.0.0,>=2.21.0",
+          "fuzzywuzzy[speedup]<1.0.0,>=0.18.0",
+          "python-levenshtein<1.0.0,>=0.12.0",
+          "normality<3.0.0,>=2.1.1",
+          "sqlalchemy<2.0.0,>=1.2.0",
+          "countrynames<2.0.0,>=1.13.0",
+          "languagecodes<2.0.0,>=1.1.0",
+          "prefixdate<1.0.0,>=0.4.0",
+          "fingerprints<2.0.0,>=1.0.1",
+          "phonenumbers<9.0.0,>=8.12.22",
+          "python-stdnum<2.0.0,>=1.16",
+          "pantomime<1.0.0,>=0.5.1",
+          "pytz>=2021.1",
+          "rdflib<6.2.0,>=6.1.0",
+          "networkx<2.9,>=2.5",
+          "openpyxl<4.0.0,>=3.0.5",
+          "orjson<4.0,>=3.7"
+        ],
+        "extras_require": {
+          "dev": [
+            "pip>=10.0.0",
+            "bump2version",
+            "wheel>=0.29.0",
+            "twine",
+            "mypy",
+            "pytest",
+            "pytest-cov",
+            "types-PyYAML",
+            "types-requests",
+            "types-setuptools",
+            "flake8>=2.6.0",
+            "transifex-client",
+            "responses>=0.9.0",
+            "coverage>=4.1",
+            "recommonmark>=0.4.0"
           ]
         },
         "tests_require": [
@@ -73621,7 +73724,8 @@
       "39": "36",
       "310": "36"
     },
-    "2.1.1": "2.1.0"
+    "2.1.1": "2.1.0",
+    "2.1.2": "2.1.0"
   },
   "schul-cloud-resources-api-v1": {
     "1.0.0.100": "1.0.0.65",
@@ -75466,7 +75570,10 @@
     "1.0.27.1": "1.0.10",
     "1.0.27.2": "1.0.10",
     "1.0.27.3": "1.0.10",
-    "1.0.27.4": "1.0.10"
+    "1.0.27.4": "1.0.10",
+    "1.0.27.5": "1.0.10",
+    "1.0.27.6": "1.0.10",
+    "1.0.27.7": "1.0.10"
   },
   "sfm": {
     "0.0.1": {
@@ -82990,6 +83097,164 @@
             "resource",
             "tifffile",
             "opencv-python"
+          ]
+        },
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "0.10.0": {
+      "27": {
+        "install_requires": [
+          "numpy",
+          "setuptools",
+          "psutil",
+          "silx>=1.0",
+          "tomoscan>=0.7",
+          "nxtomomill>=0.8.0a6",
+          "processview>=0.3",
+          "ewokscore>=0.1.0rc0"
+        ],
+        "extras_require": {
+          "full": [
+            "Sphinx>=4.0.0",
+            "nbsphinx",
+            "pandoc",
+            "jupyterlab",
+            "nabu>=2021.2.0a1",
+            "orange-canvas-core",
+            "orange-widget-base",
+            "ewoksorange>=0.0.3a4",
+            "dask_jobqueue",
+            "rsyncmanager",
+            "graypy",
+            "fabio",
+            "h5py>=3",
+            "lxml",
+            "werkzeug",
+            "json-rpc",
+            "scipy",
+            "Pillow",
+            "glymur",
+            "pytest",
+            "resource",
+            "tifffile",
+            "opencv-python",
+            "hdf5plugin",
+            "pycuda",
+            "scikit-cuda",
+            "distributed==2021.10.0"
+          ],
+          "doc": [
+            "Sphinx>=4.0.0",
+            "nbsphinx",
+            "pandoc",
+            "jupyterlab"
+          ],
+          "setup_requires": [
+            "setuptools",
+            "numpy>=1.12"
+          ],
+          "dev": [
+            "Sphinx>=4.0.0",
+            "nbsphinx",
+            "pandoc",
+            "jupyterlab",
+            "nabu>=2021.2.0a1",
+            "orange-canvas-core",
+            "orange-widget-base",
+            "ewoksorange>=0.0.3a4",
+            "dask_jobqueue",
+            "rsyncmanager",
+            "graypy",
+            "fabio",
+            "h5py>=3",
+            "lxml",
+            "werkzeug",
+            "json-rpc",
+            "scipy",
+            "Pillow",
+            "glymur",
+            "pytest",
+            "resource",
+            "tifffile",
+            "opencv-python",
+            "hdf5plugin",
+            "pycuda",
+            "scikit-cuda",
+            "distributed==2021.10.0",
+            "black",
+            "flake8",
+            "timeout-decorator",
+            "pyopencl"
+          ],
+          "_dev_spec": [
+            "black",
+            "flake8",
+            "timeout-decorator",
+            "pyopencl"
+          ],
+          "dev_no_cuda": [
+            "Sphinx>=4.0.0",
+            "nbsphinx",
+            "pandoc",
+            "jupyterlab",
+            "nabu>=2021.2.0a1",
+            "orange-canvas-core",
+            "orange-widget-base",
+            "ewoksorange>=0.0.3a4",
+            "dask_jobqueue",
+            "rsyncmanager",
+            "graypy",
+            "fabio",
+            "h5py>=3",
+            "lxml",
+            "werkzeug",
+            "json-rpc",
+            "scipy",
+            "Pillow",
+            "glymur",
+            "pytest",
+            "resource",
+            "tifffile",
+            "opencv-python",
+            "hdf5plugin",
+            "black",
+            "flake8",
+            "timeout-decorator",
+            "pyopencl"
+          ],
+          "full_no_cuda": [
+            "Sphinx>=4.0.0",
+            "nbsphinx",
+            "pandoc",
+            "jupyterlab",
+            "nabu>=2021.2.0a1",
+            "orange-canvas-core",
+            "orange-widget-base",
+            "ewoksorange>=0.0.3a4",
+            "dask_jobqueue",
+            "rsyncmanager",
+            "graypy",
+            "fabio",
+            "h5py>=3",
+            "lxml",
+            "werkzeug",
+            "json-rpc",
+            "scipy",
+            "Pillow",
+            "glymur",
+            "pytest",
+            "resource",
+            "tifffile",
+            "opencv-python",
+            "hdf5plugin"
           ]
         },
         "python_requires": [
