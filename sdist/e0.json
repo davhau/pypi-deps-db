@@ -4861,7 +4861,8 @@
     "2.0.2": "1.0.1",
     "2.0.3": "1.0.1",
     "2.0.4": "1.0.1",
-    "2.0.5": "1.0.1"
+    "2.0.5": "1.0.1",
+    "2.1.5": "1.0.1"
   },
   "bookend": {
     "0.0.6": {
@@ -18787,6 +18788,34 @@
         "install_requires": [
           "bokeh",
           "dagster==0.15.2",
+          "dask[dataframe]>=1.2.2",
+          "distributed>=1.28.1"
+        ],
+        "extras_require": {
+          "yarn": [
+            "dask-yarn"
+          ],
+          "pbs": [
+            "dask-jobqueue"
+          ],
+          "kube": [
+            "dask-kubernetes"
+          ],
+          "test": [
+            "pyarrow"
+          ]
+        }
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "0.15.3": {
+      "36": {
+        "install_requires": [
+          "bokeh",
+          "dagster==0.15.3",
           "dask[dataframe]>=1.2.2",
           "distributed>=1.28.1"
         ],
