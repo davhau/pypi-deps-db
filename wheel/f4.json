@@ -1370,8 +1370,8 @@
       "0.3.16.2": {
         "antares-0.3.16.2-py3-none-manylinux1_x86_64.whl": "0.3.10.0@antares-0.3.10.0-py3-none-manylinux1_x86_64.whl"
       },
-      "0.3.16.3": {
-        "antares-0.3.16.3-py3-none-manylinux1_x86_64.whl": "0.3.10.0@antares-0.3.10.0-py3-none-manylinux1_x86_64.whl"
+      "0.3.16.4": {
+        "antares-0.3.16.4-py3-none-manylinux1_x86_64.whl": "0.3.10.0@antares-0.3.10.0-py3-none-manylinux1_x86_64.whl"
       },
       "0.3.6": {
         "antares-0.3.6-py3-none-manylinux1_x86_64.whl": "0.3.10.0@antares-0.3.10.0-py3-none-manylinux1_x86_64.whl"
@@ -17872,6 +17872,131 @@
             "sqlalchemy-utils ; extra == 'sql'",
             "psycopg2-binary ; (platform_system != \"Windows\") and extra == 'sql'",
             "farm-haystack[crawler,dev,docstores,ocr,preprocessing,ray] ; extra == 'test'",
+            "weaviate-client (==3.3.3) ; extra == 'weaviate'"
+          ],
+          "requires_python": "<4,>=3.7"
+        }
+      },
+      "1.6.0": {
+        "farm_haystack-1.6.0-py3-none-any.whl": {
+          "provides_extras": [
+            "all",
+            "all-gpu",
+            "audio",
+            "beir",
+            "colab",
+            "crawler",
+            "dev",
+            "docstores",
+            "docstores-gpu",
+            "faiss",
+            "faiss-gpu",
+            "graphdb",
+            "inmemorygraph",
+            "milvus",
+            "milvus1",
+            "ocr",
+            "only-faiss",
+            "only-faiss-gpu",
+            "only-milvus",
+            "only-milvus1",
+            "only-pinecone",
+            "onnx",
+            "onnx-gpu",
+            "pinecone",
+            "preprocessing",
+            "ray",
+            "sql",
+            "test",
+            "weaviate"
+          ],
+          "requires_dist": [
+            "torch (<1.13,>1.9)",
+            "requests",
+            "pydantic",
+            "transformers (==4.20.1)",
+            "nltk",
+            "pandas",
+            "dill",
+            "tqdm",
+            "networkx",
+            "mmh3",
+            "quantulum3",
+            "posthog",
+            "azure-ai-formrecognizer (==3.2.0b2)",
+            "azure-core (<1.23)",
+            "huggingface-hub (<0.8.0,>=0.5.0)",
+            "more-itertools",
+            "python-docx",
+            "langdetect",
+            "tika",
+            "sentence-transformers (>=2.2.0)",
+            "scipy (>=1.3.2)",
+            "scikit-learn (>=1.0.0)",
+            "seqeval",
+            "mlflow",
+            "elasticsearch (<7.11,>=7.7)",
+            "elastic-apm",
+            "rapidfuzz (<3,>=2.0.15)",
+            "jsonschema",
+            "importlib-metadata ; python_version < \"3.8\"",
+            "farm-haystack[audio,beir,crawler,dev,docstores,ocr,onnx,preprocessing,ray] ; extra == 'all'",
+            "farm-haystack[audio,beir,crawler,dev,docstores-gpu,ocr,onnx-gpu,preprocessing,ray] ; extra == 'all-gpu'",
+            "espnet ; extra == 'audio'",
+            "espnet-model-zoo ; extra == 'audio'",
+            "pydub ; extra == 'audio'",
+            "beir ; (platform_system != \"Windows\") and extra == 'beir'",
+            "grpcio (==1.43.0) ; extra == 'colab'",
+            "selenium (!=4.1.4) ; extra == 'crawler'",
+            "webdriver-manager ; extra == 'crawler'",
+            "mypy ; extra == 'dev'",
+            "pytest ; extra == 'dev'",
+            "pytest-custom-exit-code ; extra == 'dev'",
+            "responses ; extra == 'dev'",
+            "tox ; extra == 'dev'",
+            "coverage ; extra == 'dev'",
+            "python-multipart ; extra == 'dev'",
+            "psutil ; extra == 'dev'",
+            "pylint ; extra == 'dev'",
+            "black[jupyter] ; extra == 'dev'",
+            "pydoc-markdown (==4.5.1) ; extra == 'dev'",
+            "mkdocs ; extra == 'dev'",
+            "jupytercontrib ; extra == 'dev'",
+            "watchdog ; extra == 'dev'",
+            "requests-cache ; extra == 'dev'",
+            "typing-extensions ; (python_version < \"3.8\") and extra == 'dev'",
+            "farm-haystack[faiss,graphdb,inmemorygraph,milvus,pinecone,weaviate] ; extra == 'docstores'",
+            "farm-haystack[faiss-gpu,graphdb,inmemorygraph,milvus,pinecone,weaviate] ; extra == 'docstores-gpu'",
+            "farm-haystack[only-faiss,sql] ; extra == 'faiss'",
+            "farm-haystack[only-faiss-gpu,sql] ; extra == 'faiss-gpu'",
+            "SPARQLWrapper ; extra == 'graphdb'",
+            "SPARQLWrapper ; extra == 'inmemorygraph'",
+            "farm-haystack[only-milvus,sql] ; extra == 'milvus'",
+            "farm-haystack[only-milvus1,sql] ; extra == 'milvus1'",
+            "pytesseract (==0.3.7) ; extra == 'ocr'",
+            "pillow ; extra == 'ocr'",
+            "pdf2image (==1.14.0) ; extra == 'ocr'",
+            "faiss-cpu (<2,>=1.6.3) ; extra == 'only-faiss'",
+            "faiss-gpu (<2,>=1.6.3) ; extra == 'only-faiss-gpu'",
+            "pymilvus (<3,>=2.0.0) ; extra == 'only-milvus'",
+            "pymilvus (<2.0.0) ; extra == 'only-milvus1'",
+            "pinecone-client ; extra == 'only-pinecone'",
+            "onnxruntime ; extra == 'onnx'",
+            "onnxruntime-tools ; extra == 'onnx'",
+            "onnxruntime-gpu ; extra == 'onnx-gpu'",
+            "onnxruntime-tools ; extra == 'onnx-gpu'",
+            "farm-haystack[only-pinecone,sql] ; extra == 'pinecone'",
+            "beautifulsoup4 ; extra == 'preprocessing'",
+            "markdown ; extra == 'preprocessing'",
+            "python-magic ; (platform_system != \"Windows\") and extra == 'preprocessing'",
+            "python-magic-bin ; (platform_system == \"Windows\") and extra == 'preprocessing'",
+            "aiorwlock (<2,>=1.3.0) ; extra == 'ray'",
+            "ray (<2,>=1.9.1) ; (platform_system != \"Windows\") and extra == 'ray'",
+            "ray (!=1.12.0,<2,>=1.9.1) ; (platform_system == \"Windows\") and extra == 'ray'",
+            "sqlalchemy (<2,>=1.4.2) ; extra == 'sql'",
+            "sqlalchemy-utils ; extra == 'sql'",
+            "psycopg2-binary ; (platform_system != \"Windows\") and extra == 'sql'",
+            "farm-haystack[audio,crawler,dev,docstores,ocr,preprocessing,ray] ; extra == 'test'",
             "weaviate-client (==3.3.3) ; extra == 'weaviate'"
           ],
           "requires_python": "<4,>=3.7"
@@ -35778,6 +35903,12 @@
       },
       "0.0.7": {
         "ojtool-0.0.7-py3-none-any.whl": "0.0.1@ojtool-0.0.1-py3-none-any.whl"
+      },
+      "0.0.8": {
+        "ojtool-0.0.8-py3-none-any.whl": "0.0.1@ojtool-0.0.1-py3-none-any.whl"
+      },
+      "0.0.9": {
+        "ojtool-0.0.9-py3-none-any.whl": "0.0.1@ojtool-0.0.1-py3-none-any.whl"
       }
     }
   },
@@ -48577,6 +48708,49 @@
             "flask-cors ; extra == 'dev'",
             "django-cors-headers ; extra == 'dev'",
             "pdoc3 ; extra == 'dev'"
+          ],
+          "requires_python": ">=3.7"
+        }
+      },
+      "0.10.0": {
+        "supertokens_python-0.10.0-py3-none-any.whl": {
+          "provides_extras": [
+            "django",
+            "django2x",
+            "fastapi",
+            "flask"
+          ],
+          "requires_dist": [
+            "PyJWT (<2.4.0,>=2.0.0)",
+            "httpx (<0.23.0,>=0.15.0)",
+            "pycryptodome (==3.10.*)",
+            "jsonschema (==3.2.0)",
+            "tldextract (==3.1.0)",
+            "asgiref (==3.4.1)",
+            "typing-extensions (==4.1.1)",
+            "Deprecated (==1.2.13)",
+            "cryptography (==35.0)",
+            "phonenumbers (==8.12.48)",
+            "Werkzeug (<2.1.0,>=2.0)",
+            "twilio (==7.9.1)",
+            "aiosmtplib (==1.1.6)",
+            "django-cors-headers (==3.11.0) ; extra == 'django'",
+            "django (>=3) ; extra == 'django'",
+            "django-stubs (==1.9.0) ; extra == 'django'",
+            "uvicorn (==0.18.2) ; extra == 'django'",
+            "python-dotenv (==0.19.2) ; extra == 'django'",
+            "django-cors-headers (==3.11.0) ; extra == 'django2x'",
+            "django (<3,>=2) ; extra == 'django2x'",
+            "django-stubs (==1.9.0) ; extra == 'django2x'",
+            "gunicorn (==20.1.0) ; extra == 'django2x'",
+            "python-dotenv (==0.19.2) ; extra == 'django2x'",
+            "respx (==0.16.3) ; extra == 'fastapi'",
+            "Fastapi ; extra == 'fastapi'",
+            "uvicorn (==0.18.2) ; extra == 'fastapi'",
+            "python-dotenv (==0.19.2) ; extra == 'fastapi'",
+            "flask-cors ; extra == 'flask'",
+            "Flask ; extra == 'flask'",
+            "python-dotenv (==0.19.2) ; extra == 'flask'"
           ],
           "requires_python": ">=3.7"
         }

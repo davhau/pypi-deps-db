@@ -623,7 +623,8 @@
     "0.9.15": "0.8.1",
     "0.9.16": "0.8.1",
     "0.9.17": "0.8.1",
-    "0.19.18": "0.8.1"
+    "0.19.18": "0.8.1",
+    "0.19.19": "0.8.1"
   },
   "adeweb-docker-scripts": {
     "0.1.3": {
@@ -9082,7 +9083,9 @@
       "310": "27"
     },
     "2.3.0b1": "2.2.0",
-    "2.3.0b2": "2.2.0"
+    "2.3.0b2": "2.2.0",
+    "2.3.0b3": "2.2.0",
+    "2.3.0b4": "2.2.0"
   },
   "collatex": {
     "2.0.0": "2.2",
@@ -26701,6 +26704,23 @@
         ],
         "python_requires": [
           ">=3.6"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "1.2.0": {
+      "27": {
+        "install_requires": [
+          "google-api-core[grpc]<3.0.0dev,>=2.8.0",
+          "proto-plus<2.0.0dev,>=1.15.0",
+          "protobuf<4.0.0dev,>=3.19.0"
+        ],
+        "python_requires": [
+          ">=3.7"
         ]
       },
       "36": "27",
@@ -57990,6 +58010,52 @@
             "ipykernel<7,>=6.9.2",
             "ipython<8,>=7.31.1",
             "jupyter-client<8,>=7.3.1",
+            "pyzmq>=22.1.0"
+          ]
+        }
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "2.3.2": {
+      "27": {
+        "install_requires": [
+          "cloudpickle"
+        ],
+        "extras_require": {
+          "test": [
+            "codecov",
+            "cython",
+            "dask[distributed]",
+            "flaky",
+            "matplotlib",
+            "mock",
+            "numpy",
+            "pandas",
+            "pytest",
+            "pytest-cov",
+            "scipy",
+            "xarray",
+            "pillow"
+          ],
+          ":python_version < \"3\"": [
+            "decorator<5",
+            "backports.functools-lru-cache",
+            "ipykernel<5",
+            "ipython<6",
+            "jupyter-client<6,>=5.3.4",
+            "pyzmq<20,>=17"
+          ],
+          ":platform_system != \"Windows\"": [
+            "wurlitzer>=1.0.3"
+          ],
+          ":python_version >= \"3\"": [
+            "ipykernel<7,>=6.9.2",
+            "ipython<8,>=7.31.1",
+            "jupyter-client<8,>=7.3.4",
             "pyzmq>=22.1.0"
           ]
         }
