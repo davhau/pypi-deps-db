@@ -10023,6 +10023,38 @@
           ],
           "requires_python": ">=3.7, <3.10"
         }
+      },
+      "0.5.1b20220708": {
+        "autogluon.core-0.5.1b20220708-py3-none-any.whl": {
+          "provides_extras": [
+            "all",
+            "ray",
+            "ray_tune",
+            "tests"
+          ],
+          "requires_dist": [
+            "numpy (<1.23,>=1.21)",
+            "scipy (<1.8.0,>=1.5.4)",
+            "scikit-learn (<1.1,>=1.0.0)",
+            "pandas (!=1.4.0,<1.5,>=1.2.5)",
+            "tqdm (>=4.38.0)",
+            "requests",
+            "matplotlib",
+            "dask (<=2021.11.2,>=2021.09.1)",
+            "distributed (<=2021.11.2,>=2021.09.1)",
+            "boto3",
+            "autogluon.common (==0.5.1b20220708)",
+            "hyperopt (<0.2.8,>=0.2.7) ; extra == 'all'",
+            "ray (<1.14,>=1.13) ; extra == 'all'",
+            "ray[tune] (<1.14,>=1.13) ; extra == 'all'",
+            "ray (<1.14,>=1.13) ; extra == 'ray'",
+            "ray[tune] (<1.14,>=1.13) ; extra == 'ray_tune'",
+            "hyperopt (<0.2.8,>=0.2.7) ; extra == 'ray_tune'",
+            "pytest ; extra == 'tests'",
+            "ray-lightning (<0.3.0,>=0.2.0) ; extra == 'tests'"
+          ],
+          "requires_python": ">=3.7, <3.10"
+        }
       }
     }
   },
@@ -30488,8 +30520,8 @@
   },
   "czitools": {
     "py3": {
-      "0.0.2": {
-        "czitools-0.0.2-py3-none-any.whl": {
+      "0.0.11": {
+        "czitools-0.0.11-py3-none-any.whl": {
           "requires_dist": [
             "xmltodict",
             "pydash",
@@ -30503,26 +30535,52 @@
           "requires_python": ">=3.8"
         }
       },
+      "0.0.12": {
+        "czitools-0.0.12-py3-none-any.whl": "0.0.11@czitools-0.0.11-py3-none-any.whl"
+      },
+      "0.0.13": {
+        "czitools-0.0.13-py3-none-any.whl": {
+          "requires_dist": [
+            "xmltodict",
+            "pydash",
+            "aicsimageio[all]",
+            "aicspylibczi",
+            "tqdm",
+            "pylibczirw",
+            "cztile",
+            "numpy",
+            "pandas",
+            "seaborn",
+            "plotly",
+            "matplotlib",
+            "scikit-image"
+          ],
+          "requires_python": ">=3.8"
+        }
+      },
+      "0.0.2": {
+        "czitools-0.0.2-py3-none-any.whl": "0.0.11@czitools-0.0.11-py3-none-any.whl"
+      },
       "0.0.3": {
-        "czitools-0.0.3-py3-none-any.whl": "0.0.2@czitools-0.0.2-py3-none-any.whl"
+        "czitools-0.0.3-py3-none-any.whl": "0.0.11@czitools-0.0.11-py3-none-any.whl"
       },
       "0.0.4": {
-        "czitools-0.0.4-py3-none-any.whl": "0.0.2@czitools-0.0.2-py3-none-any.whl"
+        "czitools-0.0.4-py3-none-any.whl": "0.0.11@czitools-0.0.11-py3-none-any.whl"
       },
       "0.0.5": {
-        "czitools-0.0.5-py3-none-any.whl": "0.0.2@czitools-0.0.2-py3-none-any.whl"
+        "czitools-0.0.5-py3-none-any.whl": "0.0.11@czitools-0.0.11-py3-none-any.whl"
       },
       "0.0.6": {
-        "czitools-0.0.6-py3-none-any.whl": "0.0.2@czitools-0.0.2-py3-none-any.whl"
+        "czitools-0.0.6-py3-none-any.whl": "0.0.11@czitools-0.0.11-py3-none-any.whl"
       },
       "0.0.7": {
-        "czitools-0.0.7-py3-none-any.whl": "0.0.2@czitools-0.0.2-py3-none-any.whl"
+        "czitools-0.0.7-py3-none-any.whl": "0.0.11@czitools-0.0.11-py3-none-any.whl"
       },
       "0.0.8": {
-        "czitools-0.0.8-py3-none-any.whl": "0.0.2@czitools-0.0.2-py3-none-any.whl"
+        "czitools-0.0.8-py3-none-any.whl": "0.0.11@czitools-0.0.11-py3-none-any.whl"
       },
       "0.0.9": {
-        "czitools-0.0.9-py3-none-any.whl": "0.0.2@czitools-0.0.2-py3-none-any.whl"
+        "czitools-0.0.9-py3-none-any.whl": "0.0.11@czitools-0.0.11-py3-none-any.whl"
       }
     }
   },
@@ -65944,6 +66002,24 @@
       },
       "0.0.2": {
         "speechloop-0.0.2-py3-none-any.whl": "0.0.1@speechloop-0.0.1-1-py3-none-any.whl"
+      },
+      "0.0.3": {
+        "speechloop-0.0.3-py3-none-any.whl": {
+          "requires_dist": [
+            "amazon-transcribe (==0.6.0)",
+            "commoncorrections (==1.0.12)",
+            "docker (==5.0.3)",
+            "google-cloud-speech (==2.14.1)",
+            "pandas (==1.4.3)",
+            "questionary (==1.10.0)",
+            "simplepythonwer (==1.0.3)",
+            "sounddevice (==0.4.4)",
+            "soundfile (==0.10.3.post1)",
+            "tqdm (==4.64.0)",
+            "websockets (==10.3)"
+          ],
+          "requires_python": ">=3.6"
+        }
       }
     }
   },
@@ -74572,6 +74648,18 @@
     "py3": {
       "1.0": {
         "venilpdf-1.0-py3-none-any.whl": {}
+      }
+    }
+  },
+  "vertflow": {
+    "py3": {
+      "0.0.3": {
+        "VertFlow-0.0.3-py3-none-any.whl": {
+          "requires_dist": [
+            "google-api-python-client (==2.51.0)"
+          ],
+          "requires_python": ">=3.7"
+        }
       }
     }
   },
