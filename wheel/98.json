@@ -2342,6 +2342,19 @@
       "0.0.36": {
         "asrp-0.0.36-py3-none-any.whl": "0.0.12@asrp-0.0.12-py3-none-any.whl"
       },
+      "0.0.37": {
+        "asrp-0.0.37-py3-none-any.whl": {
+          "requires_dist": [
+            "Unidecode",
+            "jiwer",
+            "transformers",
+            "editdistance",
+            "librosa",
+            "webrtcvad",
+            "pyctcdecode"
+          ]
+        }
+      },
       "0.0.4": {
         "asrp-0.0.4-py3-none-any.whl": {
           "requires_dist": [
@@ -14281,23 +14294,17 @@
       "0.2.3": {
         "cosmo-0.2.3-py3-none-any.whl": "0.2.1@cosmo-0.2.1-py3-none-any.whl"
       },
-      "0.2.4": {
-        "cosmo-0.2.4-py3-none-any.whl": "0.2.1@cosmo-0.2.1-py3-none-any.whl"
+      "0.3.0": {
+        "cosmo-0.3.0-py3-none-any.whl": "0.2.1@cosmo-0.2.1-py3-none-any.whl"
       },
-      "0.2.5": {
-        "cosmo-0.2.5-py3-none-any.whl": "0.2.1@cosmo-0.2.1-py3-none-any.whl"
+      "0.3.1": {
+        "cosmo-0.3.1-py3-none-any.whl": "0.2.1@cosmo-0.2.1-py3-none-any.whl"
       },
-      "0.2.6": {
-        "cosmo-0.2.6-py3-none-any.whl": "0.2.1@cosmo-0.2.1-py3-none-any.whl"
+      "0.3.2": {
+        "cosmo-0.3.2-py3-none-any.whl": "0.2.1@cosmo-0.2.1-py3-none-any.whl"
       },
-      "0.2.7": {
-        "cosmo-0.2.7-py3-none-any.whl": "0.2.1@cosmo-0.2.1-py3-none-any.whl"
-      },
-      "0.2.8": {
-        "cosmo-0.2.8-py3-none-any.whl": "0.2.1@cosmo-0.2.1-py3-none-any.whl"
-      },
-      "0.2.9": {
-        "cosmo-0.2.9-py3-none-any.whl": "0.2.1@cosmo-0.2.1-py3-none-any.whl"
+      "0.3.3": {
+        "cosmo-0.3.3-py3-none-any.whl": "0.2.1@cosmo-0.2.1-py3-none-any.whl"
       }
     }
   },
@@ -26564,6 +26571,22 @@
             "pandas (>=1.4.3,<2.0.0)",
             "pathvalidate (>=2.5.0,<3.0.0)",
             "physiocurve (>=2022.6.26,<2023.0.0)",
+            "pyEDFlib (>=0.1.29,<0.2.0)",
+            "pyarrow (>=8.0.0,<9.0.0)",
+            "pyqtgraph (>=0.12.4,<0.13.0)",
+            "scipy (>=1.8.1,<2.0.0)"
+          ],
+          "requires_python": ">=3.8,<3.11"
+        }
+      },
+      "2022.7.10": {
+        "graphysio-2022.7.10-py3-none-any.whl": {
+          "requires_dist": [
+            "Pint (>=0.19.2,<0.20.0)",
+            "numexpr (>=2.8.0,<3.0.0)",
+            "pandas (>=1.4.3,<2.0.0)",
+            "pathvalidate (>=2.5.0,<3.0.0)",
+            "physiocurve (>=2022.6.26,<=2022.8)",
             "pyEDFlib (>=0.1.29,<0.2.0)",
             "pyarrow (>=8.0.0,<9.0.0)",
             "pyqtgraph (>=0.12.4,<0.13.0)",
@@ -41385,6 +41408,9 @@
         "paddle2onnx-0.9.8-cp36-cp36m-macosx_10_14_x86_64.whl": "0.9.7@paddle2onnx-0.9.7-cp36-cp36m-macosx_10_14_x86_64.whl",
         "paddle2onnx-0.9.8-cp36-cp36m-manylinux_2_12_x86_64.manylinux2010_x86_64.whl": "0.9.7@paddle2onnx-0.9.7-cp36-cp36m-macosx_10_14_x86_64.whl",
         "paddle2onnx-0.9.8-cp36-cp36m-win_amd64.whl": "0.9.7@paddle2onnx-0.9.7-cp36-cp36m-macosx_10_14_x86_64.whl"
+      },
+      "1.0.0rc0": {
+        "paddle2onnx-1.0.0rc0-cp36-cp36m-manylinux_2_12_x86_64.manylinux2010_x86_64.whl": "0.9.7@paddle2onnx-0.9.7-cp36-cp36m-macosx_10_14_x86_64.whl"
       }
     },
     "cp37": {
@@ -46534,6 +46560,28 @@
             "matplotlib",
             "statsmodels",
             "pmdarima"
+          ],
+          "requires_python": ">=3.6"
+        }
+      }
+    }
+  },
+  "pyansys-docker": {
+    "py3": {
+      "5.0.4": {
+        "pyansys_docker-5.0.4-py3-none-any.whl": {
+          "provides_extras": [
+            "ssh",
+            "tls"
+          ],
+          "requires_dist": [
+            "websocket-client (>=0.32.0)",
+            "requests (!=2.18.0,>=2.14.2)",
+            "pywin32 (>=227) ; sys_platform == \"win32\"",
+            "paramiko (>=2.4.3) ; extra == 'ssh'",
+            "pyOpenSSL (>=17.5.0) ; extra == 'tls'",
+            "cryptography (>=3.4.7) ; extra == 'tls'",
+            "idna (>=2.0.0) ; extra == 'tls'"
           ],
           "requires_python": ">=3.6"
         }
@@ -59135,6 +59183,9 @@
       },
       "3.0.673": {
         "tencentcloud_sdk_python_ms-3.0.673-py2.py3-none-any.whl": "3.0.252@tencentcloud_sdk_python_ms-3.0.252-py2.py3-none-any.whl"
+      },
+      "3.0.674": {
+        "tencentcloud_sdk_python_ms-3.0.674-py2.py3-none-any.whl": "3.0.252@tencentcloud_sdk_python_ms-3.0.252-py2.py3-none-any.whl"
       }
     }
   },
@@ -60396,6 +60447,9 @@
       },
       "3.0.673": {
         "tencentcloud_sdk_python_tbm-3.0.673-py2.py3-none-any.whl": "3.0.252@tencentcloud_sdk_python_tbm-3.0.252-py2.py3-none-any.whl"
+      },
+      "3.0.674": {
+        "tencentcloud_sdk_python_tbm-3.0.674-py2.py3-none-any.whl": "3.0.252@tencentcloud_sdk_python_tbm-3.0.252-py2.py3-none-any.whl"
       }
     }
   },
