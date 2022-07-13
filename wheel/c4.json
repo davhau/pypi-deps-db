@@ -1862,6 +1862,9 @@
       "1.0.19": {
         "aliyun_python_sdk_das-1.0.19-py2.py3-none-any.whl": "1.0.10@aliyun_python_sdk_das-1.0.10-py2.py3-none-any.whl"
       },
+      "1.0.20": {
+        "aliyun_python_sdk_das-1.0.20-py2.py3-none-any.whl": "1.0.10@aliyun_python_sdk_das-1.0.10-py2.py3-none-any.whl"
+      },
       "1.0.3": {
         "aliyun_python_sdk_das-1.0.3-py2.py3-none-any.whl": "1.0.10@aliyun_python_sdk_das-1.0.10-py2.py3-none-any.whl"
       },
@@ -26307,19 +26310,26 @@
   },
   "mlcvzoo-yolox": {
     "py3": {
-      "4.0.1": {
-        "mlcvzoo_yolox-4.0.1-py3-none-any.whl": {
+      "4.0.2": {
+        "mlcvzoo_yolox-4.0.2-py3-none-any.whl": {
+          "provides_extras": [
+            "tensorrt"
+          ],
           "requires_dist": [
             "backports.strenum (>=1.1,<2.0); python_version < \"3.10\"",
-            "config-builder (>=5.0,<6.0)",
             "mlcvzoo_base (>=3.0,<4.0)",
+            "numpy (>=1.19.2,!=1.19.5)",
+            "nvidia-tensorrt (==8.2.3.0); extra == \"tensorrt\"",
             "opencv-contrib-python (>=4.5,<5.0,!=4.5.5.64)",
             "opencv-python (>=4.5,<5.0,!=4.5.5.64)",
             "protobuf (<=3.20)",
             "related-mltoolbox (>=1.0,<2.0)",
-            "yolox (==0.3.0)"
+            "torch (>=1.9,<2.0)",
+            "torchvision (>=0.10,<0.11)",
+            "yaml-config-builder (>=6.0,<7.0)",
+            "yolox (>=0.3,<0.4)"
           ],
-          "requires_python": ">=3.8,<3.9"
+          "requires_python": ">=3.8,<4.0"
         }
       }
     }
