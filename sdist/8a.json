@@ -32209,7 +32209,62 @@
       "39": "36",
       "310": "36"
     },
-    "2.6.3": "2.6.2"
+    "2.6.3": "2.6.2",
+    "2.7.0": {
+      "36": {
+        "install_requires": [
+          "deprecated>=1.2",
+          "setuptools",
+          "packaging<22,>=21",
+          "typing_extensions"
+        ],
+        "extras_require": {
+          "redis": [
+            "redis<5.0.0,>3"
+          ],
+          "rediscluster": [
+            "redis>=4.2.0"
+          ],
+          "memcached": [
+            "pymemcache<4.0.0,>3"
+          ],
+          "mongodb": [
+            "pymongo<5,>3"
+          ],
+          "async-redis": [],
+          "async-redis:python_version > \"3.7\"": [
+            "coredis<5,>=3.4.0"
+          ],
+          "async-memcached": [],
+          "async-memcached:python_version < \"3.11\"": [
+            "emcache>=0.6.1"
+          ],
+          "async-mongodb": [
+            "motor<4,>=2.5"
+          ],
+          "all": [
+            "redis<5.0.0,>3",
+            "redis>=4.2.0",
+            "pymemcache<4.0.0,>3",
+            "pymongo<5,>3",
+            "motor<4,>=2.5"
+          ],
+          "all:python_version > \"3.7\"": [
+            "coredis<5,>=3.4.0"
+          ],
+          "all:python_version < \"3.11\"": [
+            "emcache>=0.6.1"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "linda2pdf": {
     "0.0.0": {

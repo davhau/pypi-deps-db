@@ -27062,6 +27062,41 @@
       },
       "2.6.3": {
         "limits-2.6.3-py3-none-any.whl": "2.6.2@limits-2.6.2-py3-none-any.whl"
+      },
+      "2.7.0": {
+        "limits-2.7.0-py3-none-any.whl": {
+          "provides_extras": [
+            "all",
+            "async-memcached",
+            "async-mongodb",
+            "async-redis",
+            "memcached",
+            "mongodb",
+            "redis",
+            "rediscluster"
+          ],
+          "requires_dist": [
+            "deprecated (>=1.2)",
+            "setuptools",
+            "packaging (<22,>=21)",
+            "typing-extensions",
+            "redis (<5.0.0,>3) ; extra == 'all'",
+            "redis (>=4.2.0) ; extra == 'all'",
+            "pymemcache (<4.0.0,>3) ; extra == 'all'",
+            "pymongo (<5,>3) ; extra == 'all'",
+            "motor (<4,>=2.5) ; extra == 'all'",
+            "emcache (>=0.6.1) ; (python_version < \"3.11\") and extra == 'all'",
+            "coredis (<5,>=3.4.0) ; (python_version > \"3.7\") and extra == 'all'",
+            "emcache (>=0.6.1) ; (python_version < \"3.11\") and extra == 'async-memcached'",
+            "motor (<4,>=2.5) ; extra == 'async-mongodb'",
+            "coredis (<5,>=3.4.0) ; (python_version > \"3.7\") and extra == 'async-redis'",
+            "pymemcache (<4.0.0,>3) ; extra == 'memcached'",
+            "pymongo (<5,>3) ; extra == 'mongodb'",
+            "redis (<5.0.0,>3) ; extra == 'redis'",
+            "redis (>=4.2.0) ; extra == 'rediscluster'"
+          ],
+          "requires_python": ">=3.7"
+        }
       }
     }
   },
@@ -31943,6 +31978,50 @@
             "networkx",
             "numpy",
             "pandas",
+            "pyBigWig",
+            "python-louvain",
+            "scipy",
+            "pyGenomeTrack ; extra == 'genomebrowser'"
+          ]
+        }
+      },
+      "0.1.6": {
+        "nasap-0.1.6-py3-none-any.whl": {
+          "provides_extras": [
+            "genomebrowser"
+          ],
+          "requires_dist": [
+            "deeptools",
+            "fire",
+            "hvplot",
+            "loguru",
+            "matplotlib",
+            "networkx",
+            "numpy",
+            "pandas",
+            "psutil",
+            "pyBigWig (==0.3.17)",
+            "python-louvain",
+            "scipy",
+            "pyGenomeTrack ; extra == 'genomebrowser'"
+          ]
+        }
+      },
+      "0.1.7": {
+        "nasap-0.1.7-py3-none-any.whl": {
+          "provides_extras": [
+            "genomebrowser"
+          ],
+          "requires_dist": [
+            "deeptools",
+            "fire",
+            "hvplot",
+            "loguru",
+            "matplotlib",
+            "networkx",
+            "numpy",
+            "pandas",
+            "psutil",
             "pyBigWig",
             "python-louvain",
             "scipy",
