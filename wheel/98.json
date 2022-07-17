@@ -50682,9 +50682,12 @@
   },
   "regener": {
     "py3": {
-      "22.7.17": {
-        "regener-22.7.17-py3-none-any.whl": {
-          "requires_python": ">=3.7,<4.0"
+      "22.7.18": {
+        "regener-22.7.18-py3-none-any.whl": {
+          "requires_dist": [
+            "fpdf2 (>=2.5.0,<3.0.0)"
+          ],
+          "requires_python": ">=3.7.0,<4.0.0"
         }
       }
     }
@@ -52344,6 +52347,31 @@
     }
   },
   "sbom": {
+    "py2.py3": {
+      "2022.7.17": {
+        "sbom-2022.7.17-py2.py3-none-any.whl": {
+          "provides_extras": [
+            "dev"
+          ],
+          "requires_dist": [
+            "attrs (==21.4.0)",
+            "cyclonedx-bom (==3.5.0)",
+            "jsonschema (>=4.7.2)",
+            "spdx-tools (==0.6.1)",
+            "typer (>=0.6.1)",
+            "xmlschema (>=1.11.3)",
+            "black ; extra == 'dev'",
+            "coverage ; extra == 'dev'",
+            "flake8 ; extra == 'dev'",
+            "mypy ; extra == 'dev'",
+            "pytest ; extra == 'dev'",
+            "pytest-cov ; extra == 'dev'",
+            "pytest-flake8 ; extra == 'dev'"
+          ],
+          "requires_python": ">=3.8"
+        }
+      }
+    },
     "py3": {
       "0.0.3": {
         "sbom-0.0.3-py3-none-any.whl": {
