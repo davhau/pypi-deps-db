@@ -16054,7 +16054,10 @@
       "39": "27",
       "310": "27"
     },
-    "1.2.1": "1.2.0"
+    "1.2.1": "1.2.0",
+    "1.3.0": "1.2.0",
+    "1.4.0": "1.2.0",
+    "1.4.1": "1.2.0"
   },
   "boardgameai": {
     "0.1.0": {
@@ -16132,7 +16135,26 @@
     },
     "2.0.1": "2.0.0",
     "2.0.2": "2.0.0",
-    "2.0.3": "2.0.0"
+    "2.0.3": "2.0.0",
+    "2.0.4": {
+      "36": {
+        "extras_require": {
+          ":python_version >= \"3.0\"": [
+            "requests>=2.20"
+          ],
+          ":python_version < \"3.0\"": [
+            "requests[security]>=2.20"
+          ]
+        },
+        "python_requires": [
+          ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "botbuilder-sangam-dialogs-prompt": {
     "0.4.0": {
@@ -22952,6 +22974,53 @@
           "urllib3>=1.15",
           "certifi",
           "python-dateutil"
+        ],
+        "setup_requires": [
+          "setuptools>=30.3.0",
+          "setuptools_scm"
+        ],
+        "extras_require": {
+          "async": [
+            "aiosonic"
+          ],
+          "tests": [
+            "aiosonic",
+            "glom",
+            "jinja2",
+            "pytest",
+            "pytest-bdd>=5.0.0",
+            "pytest-asyncio",
+            "pytest-randomly",
+            "pytest-recording",
+            "python-dateutil",
+            "mypy",
+            "types-python-dateutil",
+            "zstandard"
+          ],
+          "zstandard": [
+            "zstandard"
+          ],
+          "apm": [
+            "ddtrace>=1.0.0rc1"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "2.1.0": {
+      "27": {
+        "install_requires": [
+          "urllib3>=1.15",
+          "certifi",
+          "python-dateutil",
+          "typing-extensions"
         ],
         "setup_requires": [
           "setuptools>=30.3.0",
@@ -30274,7 +30343,8 @@
     "2.5.1": "2.5.0",
     "2.5.2": "2.5.0",
     "2.5.3": "2.5.0",
-    "2.5.4": "2.5.0"
+    "2.5.4": "2.5.0",
+    "2.5.5": "2.5.0"
   },
   "geolime": {
     "0.1.0": {
@@ -53664,6 +53734,43 @@
     "0.1.0b3": "0.1.0",
     "0.1.0b4": "0.1.0"
   },
+  "qutech-util": {
+    "2022.7": {
+      "37": {
+        "install_requires": [
+          "numpy",
+          "hdf5storage",
+          "pandas",
+          "more-itertools",
+          "matplotlib"
+        ],
+        "extras_require": {
+          "fancy_progressbar": [
+            "tqdm",
+            "ipynbname"
+          ],
+          "qcodes": [
+            "qcodes"
+          ],
+          "gl": [
+            "ezdxf"
+          ],
+          "all": [
+            "tqdm",
+            "ipynbname",
+            "qcodes",
+            "ezdxf"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "38": "37",
+      "39": "37",
+      "310": "37"
+    }
+  },
   "quwiki": {
     "0.0.1": {
       "27": {
@@ -67563,7 +67670,8 @@
     "2.8.1": "2.0.0",
     "2.8.2": "2.0.0",
     "2.8.4": "2.0.0",
-    "2.9.0": "2.0.0"
+    "2.9.0": "2.0.0",
+    "2.10.0": "2.0.0"
   },
   "shorthand": {
     "0.0.0": {
@@ -79743,6 +79851,45 @@
           ],
           "mssql": [
             "watchmen-storage-mssql==16.2.1"
+          ]
+        },
+        "python_requires": [
+          ">=3.9,<4.0"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "16.2.2": {
+      "27": {
+        "install_requires": [
+          "watchmen-data-kernel==16.2.2",
+          "watchmen-rest==16.2.2"
+        ],
+        "extras_require": {
+          "postgresql": [
+            "watchmen-storage-postgresql==16.2.2"
+          ],
+          "s3": [
+            "watchmen-storage-s3==16.2.2"
+          ],
+          "mongodb": [
+            "watchmen-storage-mongodb==16.2.2"
+          ],
+          "oss": [
+            "watchmen-storage-oss==16.2.2"
+          ],
+          "mysql": [
+            "watchmen-storage-mysql==16.2.2"
+          ],
+          "oracle": [
+            "watchmen-storage-oracle==16.2.2"
+          ],
+          "mssql": [
+            "watchmen-storage-mssql==16.2.2"
           ]
         },
         "python_requires": [

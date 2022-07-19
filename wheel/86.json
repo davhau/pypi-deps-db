@@ -2139,6 +2139,29 @@
       },
       "2.0.5": {
         "aporia-2.0.5-py3-none-any.whl": "1.0.75@aporia-1.0.75-py3-none-any.whl"
+      },
+      "2.1.0": {
+        "aporia-2.1.0-py3-none-any.whl": {
+          "provides_extras": [
+            "all",
+            "pandas",
+            "pyspark",
+            "training"
+          ],
+          "requires_dist": [
+            "aiohttp (>=3.8.0,<4.0.0)",
+            "certifi (>=2022.6.15,<2023.0.0)",
+            "importlib-metadata (>=1.5.0,<2.0.0); python_version < \"3.8\"",
+            "numpy (>=1.15,<1.22); python_version >= \"3.7\" and python_version < \"3.8\"",
+            "numpy (>=1.17.4,<2.0.0); python_version >= \"3.8\" and python_version < \"4.0\"",
+            "orjson (>=3.6.4,<4.0.0)",
+            "pandas (>=1.0,<1.4); (python_version >= \"3.7\" and python_version < \"3.8\") and (extra == \"training\" or extra == \"pandas\" or extra == \"all\")",
+            "pandas (>=1.0,<2.0); python_version >= \"3.8\" and python_version < \"4.0\"",
+            "pyspark (>=3.0,<4.0); extra == \"pyspark\" or extra == \"all\"",
+            "tenacity (>=7.0,<9.0)"
+          ],
+          "requires_python": ">=3.7,<4.0"
+        }
       }
     }
   },
@@ -7684,6 +7707,18 @@
           ]
         },
         "bigdl_friesian-2.1.0b20220718-py3-none-manylinux1_x86_64.whl": "2.1.0b20220718@bigdl_friesian-2.1.0b20220718-py3-none-macosx_10_11_x86_64.whl"
+      },
+      "2.1.0b20220719": {
+        "bigdl_friesian-2.1.0b20220719-py3-none-macosx_10_11_x86_64.whl": {
+          "provides_extras": [
+            "train"
+          ],
+          "requires_dist": [
+            "bigdl-orca (==2.1.0b20220719)",
+            "bigdl-orca[ray] ; extra == 'train'"
+          ]
+        },
+        "bigdl_friesian-2.1.0b20220719-py3-none-manylinux1_x86_64.whl": "2.1.0b20220719@bigdl_friesian-2.1.0b20220719-py3-none-macosx_10_11_x86_64.whl"
       }
     }
   },
@@ -9267,6 +9302,28 @@
             "pytest (==7.1.1) ; extra == 'dev'",
             "pytest-cov (==3.0.0) ; extra == 'dev'",
             "pylint (==2.13.4) ; extra == 'dev'",
+            "black (==22.3.0) ; extra == 'dev'",
+            "flake8 (==4.0.1) ; extra == 'dev'",
+            "freezegun (==1.2.1) ; extra == 'dev'"
+          ]
+        }
+      },
+      "0.3.3": {
+        "cicada-0.3.3-py3-none-any.whl": {
+          "provides_extras": [
+            "dev"
+          ],
+          "requires_dist": [
+            "psycopg2-binary (==2.9.3)",
+            "pyyaml (==6.0)",
+            "croniter (==1.3.5)",
+            "tabulate (==0.8.9)",
+            "slack-sdk (==3.17.2)",
+            "backoff (==2.1.2)",
+            "psutil (==5.9.0)",
+            "pytest (==7.1.2) ; extra == 'dev'",
+            "pytest-cov (==3.0.0) ; extra == 'dev'",
+            "pylint (==2.14.4) ; extra == 'dev'",
             "black (==22.3.0) ; extra == 'dev'",
             "flake8 (==4.0.1) ; extra == 'dev'",
             "freezegun (==1.2.1) ; extra == 'dev'"
@@ -18171,6 +18228,24 @@
           "requires_dist": [
             "requests (~=2.18)",
             "cirq-core (==0.16.0.dev20220719011217)"
+          ],
+          "requires_python": ">=3.7.0"
+        }
+      },
+      "0.16.0.dev20220719152643": {
+        "cirq_pasqal-0.16.0.dev20220719152643-py3-none-any.whl": {
+          "requires_dist": [
+            "requests (~=2.18)",
+            "cirq-core (==0.16.0.dev20220719152643)"
+          ],
+          "requires_python": ">=3.7.0"
+        }
+      },
+      "0.16.0.dev20220719154816": {
+        "cirq_pasqal-0.16.0.dev20220719154816-py3-none-any.whl": {
+          "requires_dist": [
+            "requests (~=2.18)",
+            "cirq-core (==0.16.0.dev20220719154816)"
           ],
           "requires_python": ">=3.7.0"
         }
@@ -29775,6 +29850,9 @@
       "1.1790.0": {
         "gardener_oci-1.1790.0-py3-none-any.whl": "1.1362.0@gardener_oci-1.1362.0-py3-none-any.whl"
       },
+      "1.1791.0": {
+        "gardener_oci-1.1791.0-py3-none-any.whl": "1.1362.0@gardener_oci-1.1362.0-py3-none-any.whl"
+      },
       "1.907.0": {
         "gardener_oci-1.907.0-py3-none-any.whl": {
           "requires_dist": [
@@ -30594,6 +30672,9 @@
           ],
           "requires_python": ">=3.7"
         }
+      },
+      "1.3.0": {
+        "google_cloud_vm_migration-1.3.0-py2.py3-none-any.whl": "1.2.0@google_cloud_vm_migration-1.2.0-py2.py3-none-any.whl"
       }
     }
   },
@@ -38755,6 +38836,38 @@
             "test"
           ],
           "requires_dist": [
+            "numpy",
+            "scipy",
+            "matplotlib",
+            "geomdl",
+            "joblib",
+            "librosa",
+            "pyroomacoustics",
+            "soundfile",
+            "toml",
+            "tqdm",
+            "pydantic",
+            "typing_inspect",
+            "flit ; extra == \"build\"",
+            "python-semantic-release ; extra == \"build\"",
+            "sphinx-rtd-theme ; extra == \"docs\"",
+            "myst-nb ; extra == \"docs\"",
+            "autodoc_pydantic ; extra == \"docs\"",
+            "pytest ; extra == \"test\"",
+            "pytest-cov ; extra == \"test\""
+          ],
+          "requires_python": ">=3.10"
+        }
+      },
+      "0.3.0": {
+        "mixsim-0.3.0-py3-none-any.whl": {
+          "provides_extras": [
+            "build",
+            "docs",
+            "test"
+          ],
+          "requires_dist": [
+            "webrtcvad",
             "numpy",
             "scipy",
             "matplotlib",
