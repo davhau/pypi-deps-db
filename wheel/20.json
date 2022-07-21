@@ -21880,6 +21880,9 @@
       },
       "0.0.6a1": {
         "ezkfg-0.0.6a1-py3-none-any.whl": "0.0.1@ezkfg-0.0.1-py3-none-any.whl"
+      },
+      "0.0.6a2": {
+        "ezkfg-0.0.6a2-py3-none-any.whl": "0.0.1@ezkfg-0.0.1-py3-none-any.whl"
       }
     }
   },
@@ -43984,8 +43987,8 @@
   },
   "playlight": {
     "py3": {
-      "0.5": {
-        "playlight-0.5-py3-none-any.whl": {
+      "0.6": {
+        "playlight-0.6-py3-none-any.whl": {
           "requires_dist": [
             "playwright"
           ],
@@ -51721,6 +51724,38 @@
       },
       "2.4.2": {
         "pytest_mock_resources-2.4.2-py3-none-any.whl": "2.2.5@pytest_mock_resources-2.2.5-py3-none-any.whl"
+      },
+      "2.4.3": {
+        "pytest_mock_resources-2.4.3-py3-none-any.whl": {
+          "provides_extras": [
+            "docker",
+            "mongo",
+            "mysql",
+            "postgres",
+            "postgres-async",
+            "postgres-binary",
+            "redis",
+            "redshift"
+          ],
+          "requires_dist": [
+            "asyncpg; extra == \"postgres-async\"",
+            "boto3; extra == \"redshift\"",
+            "filelock; extra == \"docker\" or extra == \"postgres\" or extra == \"postgres-binary\" or extra == \"postgres-async\" or extra == \"redshift\" or extra == \"mongo\" or extra == \"redis\" or extra == \"mysql\"",
+            "moto; extra == \"redshift\"",
+            "psycopg2-binary; extra == \"postgres-binary\"",
+            "psycopg2; extra == \"postgres\"",
+            "pymongo; extra == \"mongo\"",
+            "pymysql (>=1.0); extra == \"mysql\"",
+            "pytest (>=1.0)",
+            "python-on-whales (<0.22.0); (python_version < \"3.7\") and (extra == \"docker\" or extra == \"postgres\" or extra == \"postgres-binary\" or extra == \"postgres-async\" or extra == \"redshift\" or extra == \"mongo\" or extra == \"redis\" or extra == \"mysql\")",
+            "python-on-whales (>=0.22.0); python_version >= \"3.7\"",
+            "redis; extra == \"redis\"",
+            "responses",
+            "sqlalchemy (>1.0,!=1.4.0,!=1.4.1,!=1.4.2,!=1.4.3,!=1.4.4,!=1.4.5,!=1.4.6,!=1.4.7,!=1.4.8,!=1.4.9,!=1.4.10,!=1.4.11,!=1.4.12,!=1.4.13,!=1.4.14,!=1.4.15,!=1.4.16,!=1.4.17,!=1.4.18,!=1.4.19,!=1.4.20,!=1.4.21,!=1.4.22,!=1.4.23)",
+            "sqlparse; extra == \"redshift\""
+          ],
+          "requires_python": ">=3.6,<4"
+        }
       }
     }
   },

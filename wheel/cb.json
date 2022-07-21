@@ -2418,16 +2418,23 @@
   },
   "astromer": {
     "py3": {
-      "0.0.1": {
-        "ASTROMER-0.0.1-py3-none-any.whl": {
+      "0.1.0": {
+        "ASTROMER-0.1.0-py3-none-any.whl": {
+          "provides_extras": [
+            "dev"
+          ],
           "requires_dist": [
             "tensorflow (>=2.6)",
             "numpy",
             "pandas",
             "tqdm",
             "seaborn",
-            "scipy"
-          ]
+            "scipy",
+            "pip-tools ; extra == 'dev'",
+            "pytest ; extra == 'dev'",
+            "bumpver ; extra == 'dev'"
+          ],
+          "requires_python": ">=3.8"
         }
       }
     }
@@ -6951,6 +6958,9 @@
       },
       "0.4.1": {
         "aws_prototyping_sdk.nx_monorepo-0.4.1-py3-none-any.whl": "0.3.14@aws_prototyping_sdk.nx_monorepo-0.3.14-py3-none-any.whl"
+      },
+      "0.4.2": {
+        "aws_prototyping_sdk.nx_monorepo-0.4.2-py3-none-any.whl": "0.3.14@aws_prototyping_sdk.nx_monorepo-0.3.14-py3-none-any.whl"
       }
     }
   },
@@ -23307,6 +23317,15 @@
         "fenlmagic-0.0.15-py3-none-any.whl": {
           "requires_dist": [
             "kaskada (==0.0.18)",
+            "kaskada-grpc"
+          ],
+          "requires_python": ">=3.6"
+        }
+      },
+      "0.0.16": {
+        "fenlmagic-0.0.16-py3-none-any.whl": {
+          "requires_dist": [
+            "kaskada (==0.0.19)",
             "kaskada-grpc"
           ],
           "requires_python": ">=3.6"
@@ -40144,6 +40163,30 @@
           ],
           "requires_python": "<4.0.0,>=3.7.0"
         }
+      },
+      "1.0.5": {
+        "pkg_about-1.0.5-py3-none-any.whl": {
+          "provides_extras": [
+            "doc",
+            "test"
+          ],
+          "requires_dist": [
+            "setuptools (>=58.1.0)",
+            "packaging (>=21.3.0)",
+            "importlib-resources (>=5.7.1)",
+            "importlib-metadata (>=4.11.4)",
+            "tomli (>=2.0.1)",
+            "docutils (<0.19,>=0.14) ; extra == 'doc'",
+            "Sphinx (>=4.5.0) ; extra == 'doc'",
+            "sphinx-tabs (>=3.4.1) ; extra == 'doc'",
+            "sphinx-copybutton (>=0.5.0) ; extra == 'doc'",
+            "sphinxcontrib-spelling (>=7.6.0) ; extra == 'doc'",
+            "restructuredtext-lint (>=1.4.0) ; extra == 'doc'",
+            "nbsphinx (>=0.8.9) ; extra == 'doc'",
+            "deepdiff (>=5.8.1) ; extra == 'test'"
+          ],
+          "requires_python": "<4.0.0,>=3.7.0"
+        }
       }
     }
   },
@@ -42822,6 +42865,32 @@
         }
       }
     },
+    "cp310": {
+      "0.2.4": {
+        "pyfrpc-0.2.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl": {
+          "provides_extras": [
+            "nc"
+          ],
+          "requires_dist": [
+            "requests",
+            "ipython ; extra == 'nc'"
+          ]
+        }
+      }
+    },
+    "cp311": {
+      "0.2.4": {
+        "pyfrpc-0.2.4-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl": {
+          "provides_extras": [
+            "nc"
+          ],
+          "requires_dist": [
+            "requests",
+            "ipython ; extra == 'nc'"
+          ]
+        }
+      }
+    },
     "cp35": {
       "0.2.1": {
         "pyfrpc-0.2.1-cp35-cp35m-manylinux1_x86_64.whl": {
@@ -42880,6 +42949,17 @@
             "ipython ; extra == 'nc'"
           ]
         }
+      },
+      "0.2.4": {
+        "pyfrpc-0.2.4-cp36-cp36m-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl": {
+          "provides_extras": [
+            "nc"
+          ],
+          "requires_dist": [
+            "requests",
+            "ipython ; extra == 'nc'"
+          ]
+        }
       }
     },
     "cp37": {
@@ -42910,6 +42990,17 @@
             "ipython ; extra == 'nc'"
           ]
         }
+      },
+      "0.2.4": {
+        "pyfrpc-0.2.4-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl": {
+          "provides_extras": [
+            "nc"
+          ],
+          "requires_dist": [
+            "requests",
+            "ipython ; extra == 'nc'"
+          ]
+        }
       }
     },
     "cp38": {
@@ -42924,6 +43015,17 @@
             "ipython ; extra == 'nc'"
           ]
         }
+      },
+      "0.2.4": {
+        "pyfrpc-0.2.4-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl": {
+          "provides_extras": [
+            "nc"
+          ],
+          "requires_dist": [
+            "requests",
+            "ipython ; extra == 'nc'"
+          ]
+        }
       }
     },
     "cp39": {
@@ -42935,6 +43037,17 @@
           "requires_dist": [
             "requests",
             "six",
+            "ipython ; extra == 'nc'"
+          ]
+        }
+      },
+      "0.2.4": {
+        "pyfrpc-0.2.4-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl": {
+          "provides_extras": [
+            "nc"
+          ],
+          "requires_dist": [
+            "requests",
             "ipython ; extra == 'nc'"
           ]
         }
@@ -46927,6 +47040,15 @@
       },
       "0.7.2rc83": {
         "qontract_reconcile-0.7.2rc83-py3-none-any.whl": "0.6.6rc136@qontract_reconcile-0.6.6rc136-py3-none-any.whl"
+      },
+      "0.7.2rc84": {
+        "qontract_reconcile-0.7.2rc84-py3-none-any.whl": "0.6.6rc136@qontract_reconcile-0.6.6rc136-py3-none-any.whl"
+      },
+      "0.7.2rc85": {
+        "qontract_reconcile-0.7.2rc85-py3-none-any.whl": "0.6.6rc136@qontract_reconcile-0.6.6rc136-py3-none-any.whl"
+      },
+      "0.7.2rc86": {
+        "qontract_reconcile-0.7.2rc86-py3-none-any.whl": "0.6.6rc136@qontract_reconcile-0.6.6rc136-py3-none-any.whl"
       },
       "0.7.2rc9": {
         "qontract_reconcile-0.7.2rc9-py3-none-any.whl": "0.6.6rc136@qontract_reconcile-0.6.6rc136-py3-none-any.whl"
@@ -63809,6 +63931,9 @@
       },
       "0.0.18": {
         "variant-0.0.18-py3-none-any.whl": "0.0.17@variant-0.0.17-py3-none-any.whl"
+      },
+      "0.0.19": {
+        "variant-0.0.19-py3-none-any.whl": "0.0.17@variant-0.0.17-py3-none-any.whl"
       },
       "0.0.2": {
         "variant-0.0.2-py3-none-any.whl": "0.0.10@variant-0.0.10-py3-none-any.whl"
