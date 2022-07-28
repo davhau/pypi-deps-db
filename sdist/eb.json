@@ -6737,6 +6737,32 @@
     "1.0.0b1": "1.0.0",
     "1.1.0": "1.0.0"
   },
+  "backend.ai-accelerator-cuda-open": {
+    "22.6.0b3": {
+      "27": {
+        "install_requires": [
+          "aiodocker~=0.21.0",
+          "aiohttp~=3.8.1",
+          "attrs>=20.3",
+          "backend.ai-agent==22.06.0b3",
+          "backend.ai-cli==22.06.0b3",
+          "backend.ai-common==22.06.0b3",
+          "backend.ai-kernel-binary==22.06.0b3",
+          "backend.ai-kernel-helper==22.06.0b3",
+          "backend.ai-kernel==22.06.0b3",
+          "backend.ai-plugin==22.06.0b3"
+        ],
+        "python_requires": [
+          "==3.10.5"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
+  },
   "backshell": {
     "0.1.1": {
       "27": {
@@ -44424,6 +44450,27 @@
       "38": "27",
       "39": "27",
       "310": "27"
+    },
+    "1.5.0": {
+      "27": {
+        "install_requires": [
+          "cirq-core>=0.15.0",
+          "cirq-google>=0.15.0",
+          "deprecation",
+          "h5py>=2.8",
+          "networkx",
+          "numpy>=1.11.0",
+          "pubchempy",
+          "requests>=2.18",
+          "scipy>=1.1.0",
+          "sympy"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
     }
   },
   "openstack-simple-usage-client-api": {
@@ -55598,7 +55645,9 @@
       "39": "36",
       "310": "36"
     },
-    "1.0.6": "1.0.5"
+    "1.0.6": "1.0.5",
+    "1.0.7": "1.0.5",
+    "1.0.8": "1.0.5"
   },
   "smartdrive": {
     "1.0": {
@@ -69772,6 +69821,230 @@
         ]
       },
       "310": "39"
+    },
+    "0.5.6": {
+      "27": {
+        "install_requires": [
+          "colorama!=0.4.2,>=0.3.4",
+          "six"
+        ],
+        "setup_requires": [
+          "setuptools>=40.8.0",
+          "wheel"
+        ],
+        "extras_require": {
+          ":python_version == \"2.7\"": [
+            "backports.functools_lru_cache",
+            "backports.shutil_get_terminal_size",
+            "backports.weakref"
+          ],
+          "tests": [
+            "hypothesis",
+            "hypothesis-fspaths",
+            "pytest==4.6.10",
+            "pytest-rerunfailures<9.0",
+            "pytest-xdist",
+            "pytest-timeout",
+            "readme-renderer[md]",
+            "twine"
+          ],
+          "typing:python_version <= \"3.4\"": [
+            "typing"
+          ],
+          "dev:python_version >= \"3.5\"": [
+            "flake8-bugbear"
+          ],
+          ":python_version < \"3.6\"": [
+            "pathlib2"
+          ],
+          "typing:python_version >= \"3.4\"": [
+            "mypy",
+            "mypy-extensions",
+            "mypytools",
+            "typed-ast"
+          ],
+          "dev": [
+            "pre-commit",
+            "coverage",
+            "isort",
+            "flake8",
+            "rope",
+            "invoke",
+            "parver",
+            "sphinx",
+            "sphinx-rtd-theme"
+          ],
+          "spinner": [
+            "yaspin"
+          ],
+          "tests:python_version < \"3.3\"": [
+            "mock"
+          ],
+          "typing": [],
+          "requests": [
+            "requests"
+          ],
+          "dev:python_version >= \"3.6\"": [
+            "black"
+          ]
+        },
+        "python_requires": [
+          "!=3.3",
+          ">=2.7",
+          "!=3.2",
+          "!=3.0",
+          "!=3.1"
+        ]
+      },
+      "36": {
+        "install_requires": [
+          "colorama!=0.4.2,>=0.3.4",
+          "six"
+        ],
+        "setup_requires": [
+          "setuptools>=40.8.0",
+          "wheel"
+        ],
+        "extras_require": {
+          "spinner": [
+            "yaspin"
+          ],
+          "requests": [
+            "requests"
+          ],
+          "dev": [
+            "pre-commit",
+            "coverage",
+            "isort",
+            "flake8",
+            "rope",
+            "invoke",
+            "parver",
+            "sphinx",
+            "sphinx-rtd-theme"
+          ],
+          "dev:python_version >= \"3.5\"": [
+            "flake8-bugbear"
+          ],
+          "dev:python_version >= \"3.6\"": [
+            "black"
+          ],
+          "tests": [
+            "hypothesis",
+            "hypothesis-fspaths",
+            "pytest==4.6.10",
+            "pytest-rerunfailures<9.0",
+            "pytest-xdist",
+            "pytest-timeout",
+            "readme-renderer[md]",
+            "twine"
+          ],
+          "tests:python_version < \"3.3\"": [
+            "mock"
+          ],
+          "typing": [],
+          "typing:python_version >= \"3.4\"": [
+            "mypy",
+            "mypy-extensions",
+            "mypytools",
+            "typed-ast"
+          ],
+          "typing:python_version <= \"3.4\"": [
+            "typing"
+          ],
+          ":python_version == \"2.7\"": [
+            "backports.functools_lru_cache",
+            "backports.shutil_get_terminal_size",
+            "backports.weakref"
+          ],
+          ":python_version < \"3.6\"": [
+            "pathlib2"
+          ]
+        },
+        "python_requires": [
+          "!=3.3",
+          "!=3.2",
+          ">=2.7",
+          "!=3.0",
+          "!=3.1"
+        ]
+      },
+      "37": "36",
+      "38": {
+        "install_requires": [
+          "colorama!=0.4.2,>=0.3.4",
+          "six"
+        ],
+        "setup_requires": [
+          "setuptools>=40.8.0",
+          "wheel"
+        ],
+        "extras_require": {
+          "spinner": [
+            "yaspin"
+          ],
+          "requests": [
+            "requests"
+          ],
+          "dev": [
+            "pre-commit",
+            "coverage",
+            "isort",
+            "flake8",
+            "rope",
+            "invoke",
+            "parver",
+            "sphinx",
+            "sphinx-rtd-theme"
+          ],
+          "dev:python_version >= \"3.5\"": [
+            "flake8-bugbear"
+          ],
+          "dev:python_version >= \"3.6\"": [
+            "black"
+          ],
+          "tests": [
+            "hypothesis",
+            "hypothesis-fspaths",
+            "pytest==4.6.10",
+            "pytest-rerunfailures<9.0",
+            "pytest-xdist",
+            "pytest-timeout",
+            "readme-renderer[md]",
+            "twine"
+          ],
+          "tests:python_version < \"3.3\"": [
+            "mock"
+          ],
+          "typing": [],
+          "typing:python_version >= \"3.4\"": [
+            "mypy",
+            "mypy-extensions",
+            "mypytools",
+            "typed-ast"
+          ],
+          "typing:python_version <= \"3.4\"": [
+            "typing"
+          ],
+          ":python_version == \"2.7\"": [
+            "backports.functools_lru_cache",
+            "backports.shutil_get_terminal_size",
+            "backports.weakref"
+          ],
+          ":python_version < \"3.6\"": [
+            "pathlib2"
+          ]
+        },
+        "python_requires": [
+          "!=3.2",
+          "!=3.0",
+          ">=2.7",
+          "!=3.3",
+          "!=3.1"
+        ]
+      },
+      "39": "38",
+      "310": "38"
     }
   },
   "visual-attention-tf": {
@@ -70329,7 +70602,23 @@
     "0.1.12": "0.1.0",
     "0.1.13": "0.1.0",
     "0.1.14": "0.1.0",
-    "0.1.15": "0.1.0"
+    "0.1.15": "0.1.0",
+    "0.1.16": {
+      "27": {
+        "install_requires": [
+          "wagtail-instance-selector<3.0.0,>=2.1.2",
+          "wagtail<4.0.0,>=3.0.1"
+        ],
+        "python_requires": [
+          ">=3.8,<4.0"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "waldcli": {
     "0.2.0": {
