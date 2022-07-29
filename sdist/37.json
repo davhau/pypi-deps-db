@@ -13709,7 +13709,8 @@
     },
     "1.27.37": "1.27.36",
     "1.27.38": "1.27.36",
-    "1.27.39": "1.27.36"
+    "1.27.39": "1.27.36",
+    "1.27.40": "1.27.36"
   },
   "bowa": {
     "0.1.0": {
@@ -23370,7 +23371,8 @@
     "0.0.2": "0.0.1",
     "0.0.3": "0.0.1",
     "0.0.14": "0.0.1",
-    "0.0.15": "0.0.1"
+    "0.0.15": "0.0.1",
+    "0.1.1": "0.0.1"
   },
   "django-async-email": {
     "0.1.1": {
@@ -32333,7 +32335,32 @@
       "310": "27"
     },
     "4.4.1": "4.4.0",
-    "4.4.2": "4.4.0"
+    "4.4.2": "4.4.0",
+    "4.4.3": {
+      "27": {
+        "install_requires": [
+          "Werkzeug>=0.14",
+          "Flask<3.0,>=2.0",
+          "PyJWT<3.0,>=2.0"
+        ],
+        "extras_require": {
+          ":python_version < \"3.8\"": [
+            "typing_extensions>=3.7.4"
+          ],
+          "asymmetric_crypto": [
+            "cryptography>=3.3.1"
+          ]
+        },
+        "python_requires": [
+          ">=3.7,<4"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "flask-monitoring": {
     "1.1.2": {
@@ -32915,6 +32942,19 @@
       "39": "27",
       "310": "27"
     }
+  },
+  "fockspy": {
+    "0.1.2": {
+      "27": {},
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "0.1.4": "0.1.2",
+    "0.1.5": "0.1.2",
+    "0.1.6": "0.1.2"
   },
   "forexhistdata": {
     "0.0.2": {
@@ -34809,7 +34849,8 @@
     "3.1.14.dev6": "3.0.1",
     "3.1.14": "3.0.1",
     "3.1.14.dev17": "3.0.1",
-    "3.1.15.dev2": "3.0.1"
+    "3.1.15.dev2": "3.0.1",
+    "3.1.15.dev4": "3.0.1"
   },
   "girder-geo-heatmap": {
     "0.0.0": {
@@ -43035,6 +43076,27 @@
       "27": {
         "install_requires": [
           "honeybee-core==1.51.26",
+          "honeybee-standards==2.0.5"
+        ],
+        "setup_requires": [
+          "setuptools_scm"
+        ],
+        "extras_require": {
+          "standards": [
+            "honeybee-energy-standards==2.2.1"
+          ]
+        }
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "1.91.42": {
+      "27": {
+        "install_requires": [
+          "honeybee-core==1.51.27",
           "honeybee-standards==2.0.5"
         ],
         "setup_requires": [
@@ -58191,7 +58253,8 @@
     "3.18.0.dev1657602637": "3.6.0",
     "3.18.0.dev1657686969": "3.6.0",
     "3.18.0.dev1658811811": "3.6.0",
-    "3.18.0.dev1658898247": "3.6.0"
+    "3.18.0.dev1658898247": "3.6.0",
+    "3.18.0.dev1658984214": "3.6.0"
   },
   "pulpo-forms": {
     "1.1": {
@@ -68193,6 +68256,120 @@
           ],
           "gnmi": [
             "pygnmi==0.6.9"
+          ],
+          "restconf": [
+            "requests==2.27.1"
+          ]
+        },
+        "python_requires": [
+          ">=3.7,<4.0"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "0.13.1": {
+      "27": {
+        "install_requires": [
+          "nornir==3.3.0",
+          "nornir_salt<0.14.0,>=0.13.0",
+          "psutil<=5.9,>=5.8",
+          "pydantic==1.9.1"
+        ],
+        "extras_require": {
+          "netconf": [
+            "ncclient==0.6.13",
+            "scrapli-netconf==2022.1.30"
+          ],
+          "netmiko": [
+            "netmiko==4.1.1",
+            "nornir-netmiko==0.2.0"
+          ],
+          "prodmin": [
+            "ncclient==0.6.13",
+            "netmiko==4.1.1",
+            "nornir-netmiko==0.2.0",
+            "paramiko==2.11.0",
+            "requests==2.27.1",
+            "tabulate==0.8.9",
+            "ttp<0.10.0,>=0.9.0",
+            "ttp-templates<0.4.0,>=0.3.0",
+            "xmltodict==0.13.0",
+            "textfsm==1.1.2",
+            "jinja2==3.0.3",
+            "rich==11.2.0"
+          ],
+          "napalm": [
+            "napalm==4.0.0",
+            "nornir-napalm==0.3.0"
+          ],
+          "prodmax:sys_platform != \"win32\"": [
+            "genie[full]==22.1",
+            "pyats[full]==22.1"
+          ],
+          "docs": [
+            "readthedocs-sphinx-search==0.1.1",
+            "Sphinx==4.3.0",
+            "sphinx_rtd_theme==1.0.0",
+            "sphinxcontrib-applehelp==1.0.1",
+            "sphinxcontrib-devhelp==1.0.1",
+            "sphinxcontrib-htmlhelp==2.0.0",
+            "sphinxcontrib-jsmath==1.0.1",
+            "sphinxcontrib-napoleon==0.7",
+            "sphinxcontrib-qthelp==1.0.2",
+            "sphinxcontrib-serializinghtml==1.1.5",
+            "sphinxcontrib-spelling==7.2.1"
+          ],
+          "pyats:sys_platform != \"win32\"": [
+            "genie[full]==22.1",
+            "pyats[full]==22.1"
+          ],
+          "prodmax": [
+            "cerberus==1.3.4",
+            "jmespath==1.0.0",
+            "napalm==4.0.0",
+            "ncclient==0.6.13",
+            "netmiko==4.1.1",
+            "nornir-napalm==0.3.0",
+            "nornir-netmiko==0.2.0",
+            "nornir-scrapli==2022.1.30",
+            "ntc-templates<4.0.0,>=3.0.0",
+            "paramiko==2.11.0",
+            "pygnmi==0.8.4",
+            "pyyaml==6.0",
+            "requests==2.27.1",
+            "scrapli==2022.1.30",
+            "scrapli-community==2022.1.30",
+            "scrapli-netconf==2022.1.30",
+            "tabulate==0.8.9",
+            "ttp<0.10.0,>=0.9.0",
+            "ttp-templates<0.4.0,>=0.3.0",
+            "xmltodict==0.13.0",
+            "textfsm==1.1.2",
+            "jinja2==3.0.3",
+            "rich==11.2.0",
+            "N2G<0.4.0,>=0.3.0"
+          ],
+          "scrapli": [
+            "scrapli==2022.1.30",
+            "scrapli-community==2022.1.30"
+          ],
+          "dataprocessor": [
+            "cerberus==1.3.4",
+            "jmespath==1.0.0",
+            "ntc-templates<4.0.0,>=3.0.0",
+            "pyyaml==6.0",
+            "tabulate==0.8.9",
+            "ttp<0.10.0,>=0.9.0",
+            "ttp-templates<0.4.0,>=0.3.0",
+            "xmltodict==0.13.0",
+            "lxml==4.8.0"
+          ],
+          "gnmi": [
+            "pygnmi==0.8.4"
           ],
           "restconf": [
             "requests==2.27.1"
@@ -78420,7 +78597,9 @@
       "38": "27",
       "39": "27",
       "310": "27"
-    }
+    },
+    "3.0.687": "3.0.686",
+    "3.0.688": "3.0.686"
   },
   "tennisim": {
     "0.1.0": {
@@ -78870,7 +79049,9 @@
       "310": "36"
     },
     "1.1.0.dev2704627819": "1.0.1",
-    "1.1.0.dev2748817871": "1.1.0.dev2305374574"
+    "1.1.0.dev2748817871": "1.1.0.dev2305374574",
+    "1.1.0.dev2755944308": "1.1.0.dev2305374574",
+    "1.1.0.dev2755972374": "1.1.0.dev2305374574"
   },
   "theogravity-pulumi-fusionauth": {
     "0.9.3": {
@@ -78889,7 +79070,8 @@
     "0.9.3a1658542706": "0.9.3",
     "0.9.4": "0.9.3",
     "0.9.5": "0.9.3",
-    "0.9.6": "0.9.3"
+    "0.9.6": "0.9.3",
+    "0.9.7": "0.9.3"
   },
   "thinkify": {
     "0.1.5": {
@@ -112884,7 +113066,8 @@
     },
     "5.0.0b148": "5.0.0b147",
     "5.0.0b149": "5.0.0b147",
-    "5.0.0b150": "5.0.0b147"
+    "5.0.0b150": "5.0.0b147",
+    "5.0.0b151": "5.0.0b147"
   },
   "wagtail-contact-reply": {
     "0.1.0": {
@@ -113477,6 +113660,36 @@
       "27": {
         "install_requires": [
           "watchmen-model==16.3.0"
+        ],
+        "python_requires": [
+          ">=3.9,<4.0"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "16.3.1": {
+      "27": {
+        "install_requires": [
+          "watchmen-model==16.3.1"
+        ],
+        "python_requires": [
+          ">=3.9,<4.0"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "16.3.2": {
+      "27": {
+        "install_requires": [
+          "watchmen-model==16.3.2"
         ],
         "python_requires": [
           ">=3.9,<4.0"
