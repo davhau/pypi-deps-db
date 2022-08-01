@@ -24231,6 +24231,43 @@
           "requires_python": ">=3.7"
         }
       },
+      "0.16.4": {
+        "hopeit.engine-0.16.4-py3-none-any.whl": {
+          "provides_extras": [
+            "apps-client",
+            "apps-visualizer",
+            "cli",
+            "config-manager",
+            "fs-storage",
+            "log-streamer",
+            "redis-storage",
+            "redis-streams",
+            "web"
+          ],
+          "requires_dist": [
+            "lz4 (<4,>=3.1.10)",
+            "stringcase (<2,>=1.2.0)",
+            "PyJWT[crypto] (<3,>=2.4.0)",
+            "deepdiff (>=5.8.1)",
+            "typing-inspect (>=0.7.1)",
+            "multidict (>=6.0.2)",
+            "dataclasses-jsonschema[fast-validation] (<3,>=2.15.0)",
+            "fastjsonschema (>=2.15.3)",
+            "hopeit.apps-client (==0.16.4) ; extra == 'apps-client'",
+            "hopeit.apps-visualizer (==0.16.4) ; extra == 'apps-visualizer'",
+            "click (>=8.1.3) ; extra == 'cli'",
+            "hopeit.config-manager (==0.16.4) ; extra == 'config-manager'",
+            "hopeit.fs-storage (==0.16.4) ; extra == 'fs-storage'",
+            "hopeit.log-streamer (==0.16.4) ; extra == 'log-streamer'",
+            "hopeit.redis-storage (==0.16.4) ; extra == 'redis-storage'",
+            "hopeit.redis-streams (==0.16.4) ; extra == 'redis-streams'",
+            "aiohttp (<4,>=3.8.1) ; extra == 'web'",
+            "aiohttp-cors (>=0.7.0) ; extra == 'web'",
+            "aiohttp-swagger3 (<0.8,>=0.7.0) ; extra == 'web'"
+          ],
+          "requires_python": ">=3.7"
+        }
+      },
       "0.2.0": {
         "hopeit.engine-0.2.0-py3-none-any.whl": {
           "provides_extras": [
@@ -25574,6 +25611,23 @@
             "flake8 (>=3.8.3) ; extra == 'quality'"
           ]
         }
+      },
+      "2.2.2": {
+        "huggingface_sb3-2.2.2-py3-none-any.whl": {
+          "provides_extras": [
+            "quality"
+          ],
+          "requires_dist": [
+            "huggingface-hub (==0.8.1)",
+            "pyyaml (==6.0)",
+            "wasabi",
+            "numpy",
+            "cloudpickle",
+            "black (~=22.0) ; extra == 'quality'",
+            "isort (>=5.5.4) ; extra == 'quality'",
+            "flake8 (>=3.8.3) ; extra == 'quality'"
+          ]
+        }
       }
     }
   },
@@ -25864,21 +25918,6 @@
   },
   "intelliw": {
     "py3": {
-      "1.1.22": {
-        "intelliw-1.1.22-py3-none-any.whl": {
-          "requires_dist": [
-            "tornado (==6.1)",
-            "PyYAML (==5.3.1)",
-            "croniter (==0.3.36)",
-            "requests (>=2.26.0)",
-            "numpy (>=1.19.0)",
-            "pandas (>=1.1.5)",
-            "PyJWT (==1.7.1)",
-            "pycryptodome (>=3.5.0)"
-          ],
-          "requires_python": ">=3.6"
-        }
-      },
       "1.1.23": {
         "intelliw-1.1.23-py3-none-any.whl": {
           "requires_dist": [
@@ -25913,33 +25952,8 @@
       "1.2.3": {
         "intelliw-1.2.3-py3-none-any.whl": "1.2.2@intelliw-1.2.2-py3-none-any.whl"
       },
-      "1.2.5rc1": {
-        "intelliw-1.2.5rc1-py3-none-any.whl": {
-          "requires_dist": [
-            "flask (==2.0.3)",
-            "PyYAML (==5.4.1)",
-            "requests (>=2.26.0)",
-            "numpy (>=1.19.0)",
-            "pandas (>=1.1.5)",
-            "PyJWT (==1.7.1)",
-            "scikit-learn (>=0.24)",
-            "pycryptodome (>=3.14.1)",
-            "eurekapy"
-          ],
-          "requires_python": ">=3.6"
-        }
-      },
-      "1.2.5rc2": {
-        "intelliw-1.2.5rc2-py3-none-any.whl": "1.2.5rc1@intelliw-1.2.5rc1-py3-none-any.whl"
-      },
-      "1.2.5rc3": {
-        "intelliw-1.2.5rc3-py3-none-any.whl": "1.2.5rc1@intelliw-1.2.5rc1-py3-none-any.whl"
-      },
-      "1.2.5rc4": {
-        "intelliw-1.2.5rc4-py3-none-any.whl": "1.2.5rc1@intelliw-1.2.5rc1-py3-none-any.whl"
-      },
-      "1.2.5rc5": {
-        "intelliw-1.2.5rc5-py3-none-any.whl": {
+      "1.2.5": {
+        "intelliw-1.2.5-py3-none-any.whl": {
           "requires_dist": [
             "flask (==2.0.3)",
             "PyYAML (==5.4.1)",
@@ -25954,9 +25968,6 @@
           ],
           "requires_python": ">=3.6"
         }
-      },
-      "1.2.5rc6": {
-        "intelliw-1.2.5rc6-py3-none-any.whl": "1.2.5rc5@intelliw-1.2.5rc5-py3-none-any.whl"
       }
     }
   },
@@ -33062,6 +33073,9 @@
       },
       "0.1.0rc20220731000430": {
         "mosaik.Schedule_Flocker-0.1.0rc20220731000430-py3-none-any.whl": "0.1.0rc20210331153744@mosaik.Schedule_Flocker-0.1.0rc20210331153744-py3-none-any.whl"
+      },
+      "0.1.0rc20220801000420": {
+        "mosaik.Schedule_Flocker-0.1.0rc20220801000420-py3-none-any.whl": "0.1.0rc20210331153744@mosaik.Schedule_Flocker-0.1.0rc20210331153744-py3-none-any.whl"
       }
     }
   },
