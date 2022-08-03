@@ -6811,6 +6811,21 @@
           "requires_python": ">=3.6,<4"
         }
       },
+      "1.44.0": {
+        "azureml_accel_models-1.44.0-py3-none-any.whl": {
+          "provides_extras": [
+            "cpu",
+            "gpu"
+          ],
+          "requires_dist": [
+            "grpcio (>=1.0)",
+            "azureml-core (~=1.44.0)",
+            "tensorflow (<3.0.0,>=1.14.0) ; extra == 'cpu'",
+            "tensorflow-gpu (<3.0.0,>=1.14.0) ; extra == 'gpu'"
+          ],
+          "requires_python": ">=3.6,<4"
+        }
+      },
       "1.5.0": {
         "azureml_accel_models-1.5.0-py3-none-any.whl": {
           "requires_dist": [
@@ -7124,6 +7139,18 @@
         "azureml_synapse-1.43.0-py3-none-any.whl": {
           "requires_dist": [
             "azureml-core (~=1.43.0)",
+            "sparkmagic (<=0.16.0,>=0.15.0)",
+            "hdijupyterutils (<=0.16.0,>=0.15.0)",
+            "azure.mgmt.synapse (>=2.0.0)",
+            "azure.identity (>=1.4.1)"
+          ],
+          "requires_python": ">=3.6,<4"
+        }
+      },
+      "1.44.0": {
+        "azureml_synapse-1.44.0-py3-none-any.whl": {
+          "requires_dist": [
+            "azureml-core (~=1.44.0)",
             "sparkmagic (<=0.16.0,>=0.15.0)",
             "hdijupyterutils (<=0.16.0,>=0.15.0)",
             "azure.mgmt.synapse (>=2.0.0)",
@@ -8775,6 +8802,9 @@
       },
       "0.0.7": {
         "blocklist_aggregator-0.0.7-py3-none-any.whl": "0.0.1@blocklist_aggregator-0.0.1-py3-none-any.whl"
+      },
+      "0.0.8": {
+        "blocklist_aggregator-0.0.8-py3-none-any.whl": "0.0.1@blocklist_aggregator-0.0.1-py3-none-any.whl"
       },
       "0.6.0": {
         "blocklist_aggregator-0.6.0-py3-none-any.whl": "0.0.1@blocklist_aggregator-0.0.1-py3-none-any.whl"
@@ -21480,6 +21510,23 @@
       },
       "0.2.9": {
         "kinms_fitter-0.2.9-py3-none-any.whl": "0.2.6@kinms_fitter-0.2.6-py3-none-any.whl"
+      },
+      "0.3.0": {
+        "kinms_fitter-0.3.0-py3-none-any.whl": {
+          "requires_dist": [
+            "numpy",
+            "gastimator",
+            "astropy",
+            "matplotlib",
+            "spectral-cube",
+            "scipy (>=1.3.3)",
+            "jampy",
+            "kinms (>=3.0.0)"
+          ]
+        }
+      },
+      "0.3.1": {
+        "kinms_fitter-0.3.1-py3-none-any.whl": "0.3.0@kinms_fitter-0.3.0-py3-none-any.whl"
       }
     }
   },
@@ -46917,6 +46964,11 @@
         "tableauhyperapi-0.0.15145-py3-none-manylinux2014_x86_64.whl": "0.0.11556@tableauhyperapi-0.0.11556-py3-none-macosx_10_11_x86_64.whl",
         "tableauhyperapi-0.0.15145-py3-none-win_amd64.whl": "0.0.11556@tableauhyperapi-0.0.11556-py3-none-macosx_10_11_x86_64.whl"
       },
+      "0.0.15305": {
+        "tableauhyperapi-0.0.15305-py3-none-macosx_10_11_x86_64.whl": "0.0.11556@tableauhyperapi-0.0.11556-py3-none-macosx_10_11_x86_64.whl",
+        "tableauhyperapi-0.0.15305-py3-none-manylinux2014_x86_64.whl": "0.0.11556@tableauhyperapi-0.0.11556-py3-none-macosx_10_11_x86_64.whl",
+        "tableauhyperapi-0.0.15305-py3-none-win_amd64.whl": "0.0.11556@tableauhyperapi-0.0.11556-py3-none-macosx_10_11_x86_64.whl"
+      },
       "0.0.9746": {
         "tableauhyperapi-0.0.9746-py3-none-macosx_10_11_x86_64.whl": "0.0.10002@tableauhyperapi-0.0.10002-py3-none-macosx_10_11_x86_64.whl",
         "tableauhyperapi-0.0.9746-py3-none-manylinux2014_x86_64.whl": "0.0.10002@tableauhyperapi-0.0.10002-py3-none-macosx_10_11_x86_64.whl",
@@ -47192,6 +47244,9 @@
       },
       "3.0.706": {
         "tencentcloud_sdk_python_dasb-3.0.706-py2.py3-none-any.whl": "3.0.642@tencentcloud_sdk_python_dasb-3.0.642-py2.py3-none-any.whl"
+      },
+      "3.0.707": {
+        "tencentcloud_sdk_python_dasb-3.0.707-py2.py3-none-any.whl": "3.0.642@tencentcloud_sdk_python_dasb-3.0.642-py2.py3-none-any.whl"
       }
     }
   },
@@ -48764,6 +48819,9 @@
       },
       "2.11.0.dev2022080208": {
         "tf_estimator_nightly-2.11.0.dev2022080208-py2.py3-none-any.whl": "2.10.0.dev2022040108@tf_estimator_nightly-2.10.0.dev2022040108-py2.py3-none-any.whl"
+      },
+      "2.11.0.dev2022080308": {
+        "tf_estimator_nightly-2.11.0.dev2022080308-py2.py3-none-any.whl": "2.10.0.dev2022040108@tf_estimator_nightly-2.10.0.dev2022040108-py2.py3-none-any.whl"
       },
       "2.3.0.dev2020031201": {
         "tf_estimator_nightly-2.3.0.dev2020031201-py2.py3-none-any.whl": "1.13.0.dev2019011813@tf_estimator_nightly-1.13.0.dev2019011813-py2.py3-none-any.whl"
