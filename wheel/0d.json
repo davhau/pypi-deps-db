@@ -19600,6 +19600,15 @@
       }
     }
   },
+  "esp-lab": {
+    "py3": {
+      "1.1": {
+        "esp_lab-1.1-py3-none-any.whl": {
+          "requires_python": ">=3.8"
+        }
+      }
+    }
+  },
   "ethereumd-proxy": {
     "3.5": {
       "0.2.0": {
@@ -21872,6 +21881,21 @@
           ],
           "requires_python": ">=3.8,<4.0"
         }
+      },
+      "1.1.0": {
+        "fastapi_responseschema-1.1.0-py3-none-any.whl": {
+          "provides_extras": [
+            "pagination"
+          ],
+          "requires_dist": [
+            "fastapi (>=0,<1)",
+            "fastapi-pagination (>=0,<1); extra == \"pagination\""
+          ],
+          "requires_python": ">=3.8,<4.0"
+        }
+      },
+      "1.2.0": {
+        "fastapi_responseschema-1.2.0-py3-none-any.whl": "1.1.0@fastapi_responseschema-1.1.0-py3-none-any.whl"
       }
     }
   },
@@ -27738,14 +27762,8 @@
           "requires_python": ">=3.7"
         }
       },
-      "0.0.3": {
-        "hydrazaphelper-0.0.3-py3-none-any.whl": "0.0.1@hydrazaphelper-0.0.1-py3-none-any.whl"
-      },
-      "0.0.4": {
-        "hydrazaphelper-0.0.4-py3-none-any.whl": "0.0.1@hydrazaphelper-0.0.1-py3-none-any.whl"
-      },
-      "0.0.5": {
-        "hydrazaphelper-0.0.5-py3-none-any.whl": {
+      "0.0.10": {
+        "hydrazaphelper-0.0.10-py3-none-any.whl": {
           "requires_dist": [
             "requests (>=2.26.0)",
             "requests",
@@ -27754,8 +27772,35 @@
           "requires_python": ">=3.0"
         }
       },
+      "0.0.11": {
+        "hydrazaphelper-0.0.11-py3-none-any.whl": "0.0.10@hydrazaphelper-0.0.10-py3-none-any.whl"
+      },
+      "0.0.12": {
+        "hydrazaphelper-0.0.12-py3-none-any.whl": "0.0.10@hydrazaphelper-0.0.10-py3-none-any.whl"
+      },
+      "0.0.3": {
+        "hydrazaphelper-0.0.3-py3-none-any.whl": "0.0.1@hydrazaphelper-0.0.1-py3-none-any.whl"
+      },
+      "0.0.4": {
+        "hydrazaphelper-0.0.4-py3-none-any.whl": "0.0.1@hydrazaphelper-0.0.1-py3-none-any.whl"
+      },
+      "0.0.5": {
+        "hydrazaphelper-0.0.5-py3-none-any.whl": "0.0.10@hydrazaphelper-0.0.10-py3-none-any.whl"
+      },
       "0.0.6": {
-        "hydrazaphelper-0.0.6-py3-none-any.whl": "0.0.5@hydrazaphelper-0.0.5-py3-none-any.whl"
+        "hydrazaphelper-0.0.6-py3-none-any.whl": "0.0.10@hydrazaphelper-0.0.10-py3-none-any.whl"
+      },
+      "0.0.7": {
+        "hydrazaphelper-0.0.7-py3-none-any.whl": "0.0.10@hydrazaphelper-0.0.10-py3-none-any.whl"
+      },
+      "0.0.8": {
+        "hydrazaphelper-0.0.8-py3-none-any.whl": "0.0.10@hydrazaphelper-0.0.10-py3-none-any.whl"
+      },
+      "0.0.9": {
+        "hydrazaphelper-0.0.9-py3-none-any.whl": "0.0.10@hydrazaphelper-0.0.10-py3-none-any.whl"
+      },
+      "1.0.0": {
+        "hydrazaphelper-1.0.0-py3-none-any.whl": "0.0.10@hydrazaphelper-0.0.10-py3-none-any.whl"
       }
     }
   },
@@ -33845,6 +33890,42 @@
             "pyarrow (>=7.0.0,<7.1.0)",
             "retry (>=0.9.2,<0.10.0)",
             "s3fs (>=2022.7.1,<2023.0.0)",
+            "sqlalchemy (>=1.4.31,<1.5.0)",
+            "sqlparse (>=0.4.2,<0.5.0)",
+            "trino (>=0.313.0,<0.314.0); extra == \"trino\""
+          ],
+          "requires_python": ">=3.7.1,<4"
+        }
+      },
+      "0.1.46": {
+        "mitzu-0.1.46-py3-none-any.whl": "0.1.45@mitzu-0.1.45-py3-none-any.whl"
+      },
+      "0.1.47": {
+        "mitzu-0.1.47-py3-none-any.whl": "0.1.45@mitzu-0.1.45-py3-none-any.whl"
+      },
+      "0.1.48": {
+        "mitzu-0.1.48-py3-none-any.whl": {
+          "provides_extras": [
+            "databricks",
+            "mysql",
+            "postgres",
+            "trino",
+            "webapp"
+          ],
+          "requires_dist": [
+            "aws-wsgi (>=0.2.7,<0.3.0); extra == \"webapp\"",
+            "dash (>=2.5.0,<3.0.0)",
+            "dash-bootstrap-components (>=1.2.0,<2.0.0)",
+            "databricks-sql-connector (>=2.0.2,<3.0.0); extra == \"databricks\"",
+            "fastparquet (>=0.8.0,<0.9.0)",
+            "mysql-connector-python (>=8.0.28,<8.1.0); extra == \"mysql\"",
+            "orjson (>=3.7.11,<4.0.0); extra == \"webapp\"",
+            "pandas (>=1.3.5,<1.4.0)",
+            "plotly (>=5.5.0,<5.6.0)",
+            "psycopg2 (>=2.9.3,<2.10.0); extra == \"postgres\"",
+            "pyarrow (>=7.0.0,<7.1.0)",
+            "retry (>=0.9.2,<0.10.0)",
+            "s3fs (>=2022.7.1,<2023.0.0); extra == \"webapp\"",
             "sqlalchemy (>=1.4.31,<1.5.0)",
             "sqlparse (>=0.4.2,<0.5.0)",
             "trino (>=0.313.0,<0.314.0); extra == \"trino\""
@@ -46722,8 +46803,8 @@
   },
   "pepkordna": {
     "py3": {
-      "0.77": {
-        "pepkordna-0.77-py3-none-any.whl": {
+      "0.87": {
+        "pepkordna-0.87-py3-none-any.whl": {
           "requires_python": ">=3.7"
         }
       }
@@ -60493,6 +60574,9 @@
           ],
           "requires_python": ">=3.7"
         }
+      },
+      "2.3.4.post3": {
+        "types_aiobotocore_meteringmarketplace-2.3.4.post3-py3-none-any.whl": "2.3.4.post2@types_aiobotocore_meteringmarketplace-2.3.4.post2-py3-none-any.whl"
       }
     }
   },

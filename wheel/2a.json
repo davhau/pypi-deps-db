@@ -3636,6 +3636,9 @@
       "4.2.0.12": {
         "assemblyline_v4_service-4.2.0.12-py3-none-any.whl": "4.1.0.1@assemblyline_v4_service-4.1.0.1-py3-none-any.whl"
       },
+      "4.2.0.120": {
+        "assemblyline_v4_service-4.2.0.120-py3-none-any.whl": "4.2.0.100@assemblyline_v4_service-4.2.0.100-py3-none-any.whl"
+      },
       "4.2.0.13": {
         "assemblyline_v4_service-4.2.0.13-py3-none-any.whl": "4.1.0.1@assemblyline_v4_service-4.1.0.1-py3-none-any.whl"
       },
@@ -4494,8 +4497,17 @@
       "4.2.1.dev197": {
         "assemblyline_v4_service-4.2.1.dev197-py3-none-any.whl": "4.2.1.dev144@assemblyline_v4_service-4.2.1.dev144-py3-none-any.whl"
       },
+      "4.2.1.dev198": {
+        "assemblyline_v4_service-4.2.1.dev198-py3-none-any.whl": "4.2.1.dev144@assemblyline_v4_service-4.2.1.dev144-py3-none-any.whl"
+      },
       "4.2.1.dev2": {
         "assemblyline_v4_service-4.2.1.dev2-py3-none-any.whl": "4.2.0.100@assemblyline_v4_service-4.2.0.100-py3-none-any.whl"
+      },
+      "4.2.1.dev206": {
+        "assemblyline_v4_service-4.2.1.dev206-py3-none-any.whl": "4.2.1.dev144@assemblyline_v4_service-4.2.1.dev144-py3-none-any.whl"
+      },
+      "4.2.1.dev207": {
+        "assemblyline_v4_service-4.2.1.dev207-py3-none-any.whl": "4.2.1.dev144@assemblyline_v4_service-4.2.1.dev144-py3-none-any.whl"
       },
       "4.2.1.dev24": {
         "assemblyline_v4_service-4.2.1.dev24-py3-none-any.whl": "4.2.0.100@assemblyline_v4_service-4.2.0.100-py3-none-any.whl"
@@ -51447,6 +51459,50 @@
           ],
           "requires_python": ">=3.6"
         }
+      },
+      "0.8.1": {
+        "scrapfly_sdk-0.8.1-py3-none-any.whl": {
+          "provides_extras": [
+            "all",
+            "concurrency",
+            "develop",
+            "parser",
+            "scrapy",
+            "speedups"
+          ],
+          "requires_dist": [
+            "decorator (>=4.2.0)",
+            "requests (>=2.25.0)",
+            "python-dateutil (<3.0.0,>=2.1)",
+            "loguru (>=0.5)",
+            "urllib3 (>=1.26.0)",
+            "backoff (>=1.10.0)",
+            "lxml ; extra == 'all'",
+            "msgpack ; extra == 'all'",
+            "extruct ; extra == 'all'",
+            "cchardet ; extra == 'all'",
+            "beautifulsoup4 ; extra == 'all'",
+            "scrapy (>=2.4.0) ; extra == 'all'",
+            "soupsieve ; extra == 'all'",
+            "brotlipy ; extra == 'all'",
+            "bumpversion ; extra == 'develop'",
+            "isort ; extra == 'develop'",
+            "readme-renderer ; extra == 'develop'",
+            "twine ; extra == 'develop'",
+            "setuptools ; extra == 'develop'",
+            "wheel ; extra == 'develop'",
+            "pdoc3 ; extra == 'develop'",
+            "lxml ; extra == 'parser'",
+            "beautifulsoup4 ; extra == 'parser'",
+            "soupsieve ; extra == 'parser'",
+            "extruct ; extra == 'parser'",
+            "scrapy (>=2.4.0) ; extra == 'scrapy'",
+            "brotlipy ; extra == 'speedups'",
+            "cchardet ; extra == 'speedups'",
+            "msgpack ; extra == 'speedups'"
+          ],
+          "requires_python": ">=3.6"
+        }
       }
     }
   },
@@ -53260,6 +53316,57 @@
             "coverage; extra == 'test'",
             "mock; extra == 'test'"
           ]
+        }
+      }
+    }
+  },
+  "soft-search": {
+    "py3": {
+      "0.1.1": {
+        "soft_search-0.1.1-py3-none-any.whl": {
+          "provides_extras": [
+            "dev",
+            "docs",
+            "lint",
+            "nsf",
+            "test",
+            "transformer"
+          ],
+          "requires_dist": [
+            "pandas (~=1.4)",
+            "pyarrow (~=9.0)",
+            "ipython (>=8.4.0) ; extra == 'dev'",
+            "matplotlib (>=3.5.2) ; extra == 'dev'",
+            "m2r2 (>=0.2.7) ; extra == 'docs'",
+            "Sphinx (>=4.0.0) ; extra == 'docs'",
+            "furo (>=2022.4.7) ; extra == 'docs'",
+            "numpydoc ; extra == 'docs'",
+            "sphinx-click ; extra == 'docs'",
+            "sphinx-copybutton ; extra == 'docs'",
+            "sphinx-remove-toctrees ; extra == 'docs'",
+            "sphinx-autosummary-accessors ; extra == 'docs'",
+            "sphinx-tabs ; extra == 'docs'",
+            "sphinx-design ; extra == 'docs'",
+            "black (>=22.3.0) ; extra == 'lint'",
+            "flake8 (>=3.8.3) ; extra == 'lint'",
+            "flake8-debugger (>=3.2.1) ; extra == 'lint'",
+            "flake8-pyprojecttoml ; extra == 'lint'",
+            "flake8-typing-imports (>=1.9.0) ; extra == 'lint'",
+            "isort (>=5.7.0) ; extra == 'lint'",
+            "mypy (>=0.790) ; extra == 'lint'",
+            "pre-commit (>=2.20.0) ; extra == 'lint'",
+            "types-requests (~=2.28) ; extra == 'lint'",
+            "requests (~=2.28) ; extra == 'nsf'",
+            "coverage (>=5.1) ; extra == 'test'",
+            "pytest (>=5.4.3) ; extra == 'test'",
+            "pytest-cov (>=2.9.0) ; extra == 'test'",
+            "pytest-raises (>=0.11) ; extra == 'test'",
+            "datasets (~=2.4) ; extra == 'transformer'",
+            "scikit-learn (~=1.1) ; extra == 'transformer'",
+            "torch (~=1.12) ; extra == 'transformer'",
+            "transformers (~=4.21) ; extra == 'transformer'"
+          ],
+          "requires_python": ">=3.8"
         }
       }
     }
