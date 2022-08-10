@@ -3483,7 +3483,49 @@
       "38": "36",
       "39": "36",
       "310": "36"
-    }
+    },
+    "3.2.0rc1": {
+      "36": {
+        "install_requires": [
+          "apache-airflow-providers-common-sql",
+          "apache-airflow>=2.2.0.*"
+        ],
+        "setup_requires": [
+          "setuptools",
+          "wheel"
+        ],
+        "extras_require": {
+          "amazon": [
+            "apache-airflow-providers-amazon"
+          ],
+          "common.sql": [
+            "apache-airflow-providers-common-sql"
+          ],
+          "presto": [
+            "apache-airflow-providers-presto"
+          ],
+          "trino": [
+            "apache-airflow-providers-trino"
+          ],
+          "vertica": [
+            "apache-airflow-providers-vertica"
+          ],
+          ":platform_machine != \"aarch64\"": [
+            "mysql-connector-python>=8.0.11",
+            "mysqlclient>=1.3.6"
+          ]
+        },
+        "python_requires": [
+          "~=3.7"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "3.2.0rc2": "3.2.0rc1",
+    "3.2.0rc3": "3.2.0rc1"
   },
   "apimodel": {
     "0.1": {
@@ -68548,7 +68590,8 @@
     "0.8.3": "0.8.1",
     "0.8.4": "0.8.1",
     "0.8.5": "0.8.1",
-    "0.8.6": "0.8.1"
+    "0.8.6": "0.8.1",
+    "0.8.7": "0.8.1"
   },
   "pygsp": {
     "0.2.0": {
