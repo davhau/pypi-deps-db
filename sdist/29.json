@@ -1884,7 +1884,8 @@
       "39": "27",
       "310": "27"
     },
-    "2.0.1": "2.0.0"
+    "2.0.1": "2.0.0",
+    "2.0.2": "2.0.0"
   },
   "apache-airflow-backport-providers-sqlite": {
     "2020.10.29": {
@@ -15302,6 +15303,32 @@
         "extras_require": {
           "airflow": [
             "dbnd-airflow[airflow]==0.85.6"
+          ],
+          ":python_version < \"3.8\"": [
+            "scipy==1.1.0"
+          ],
+          ":python_version >= \"3.8\"": [
+            "scipy==1.8.0"
+          ]
+        }
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "0.85.8": {
+      "27": {
+        "install_requires": [
+          "dbnd-airflow==0.85.8",
+          "scikit-learn==0.23.2",
+          "matplotlib==3.3.0",
+          "pandas<2.0.0,>=0.17.1"
+        ],
+        "extras_require": {
+          "airflow": [
+            "dbnd-airflow[airflow]==0.85.8"
           ],
           ":python_version < \"3.8\"": [
             "scipy==1.1.0"
@@ -34943,6 +34970,27 @@
       "310": "27"
     }
   },
+  "magic-api-proxy": {
+    "0.0.0": {
+      "36": {
+        "install_requires": [
+          "google-auth",
+          "flask",
+          "cryptography",
+          "attrs",
+          "requests"
+        ],
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "0.1.1": "0.0.0"
+  },
   "maginner": {
     "0.1": {
       "27": {},
@@ -36302,7 +36350,10 @@
     "0.1.14": "0.1.0",
     "0.1.7": "0.1.0",
     "0.1.8": "0.1.0",
-    "0.1.9": "0.1.0"
+    "0.1.9": "0.1.0",
+    "0.1.15": "0.1.0",
+    "0.1.16": "0.1.0",
+    "0.1.17": "0.1.0"
   },
   "minsert": {
     "0.0.1": {
@@ -43266,7 +43317,28 @@
     "0.2.4": "0.1.1",
     "0.2.5": "0.1.1",
     "0.2.8": "0.1.1",
-    "0.2.9": "0.1.1"
+    "0.2.9": "0.1.1",
+    "0.3.1": {
+      "27": {
+        "install_requires": [
+          "PyYAML<6.0.0,>=5.4.1",
+          "click<9.0.0,>=8.0.1",
+          "colorama<0.5.0,>=0.4.4",
+          "humanize<5.0.0,>=4.0.0",
+          "jsonpath-ng<2.0.0,>=1.5.3",
+          "pdpyras<5.0.0,>=4.3.0",
+          "rich<11.0.0,>=10.10.0"
+        ],
+        "python_requires": [
+          ">=3.9,<4.0"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "pds-doi-service": {
     "1.1.1": {
@@ -61556,6 +61628,49 @@
             "coverage",
             "nbconvert",
             "nbformat",
+            "pytest",
+            "pytest-cov",
+            "pytest-doctestplus",
+            "pytest-sugar",
+            "pytest-xdist"
+          ]
+        }
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "1.16.1": {
+      "27": {
+        "install_requires": [
+          "deprecation",
+          "matplotlib",
+          "numpy",
+          "packaging",
+          "scipy",
+          "xarray>=0.17.0",
+          "cartopy",
+          "dask",
+          "gdal>=3",
+          "geopandas",
+          "h5netcdf",
+          "h5py",
+          "netCDF4",
+          "requests",
+          "xmltodict"
+        ],
+        "setup_requires": [
+          "setuptools_scm"
+        ],
+        "extras_require": {
+          "dev": [
+            "codecov",
+            "coverage",
+            "nbconvert",
+            "nbformat",
+            "pre-commit",
             "pytest",
             "pytest-cov",
             "pytest-doctestplus",
