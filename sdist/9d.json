@@ -11897,7 +11897,8 @@
       "39": "36",
       "310": "36"
     },
-    "2.15.43": "2.15.42"
+    "2.15.43": "2.15.42",
+    "2.15.44": "2.15.42"
   },
   "ceilometer-janitor": {
     "0.1": {
@@ -24203,7 +24204,71 @@
       "39": "36",
       "310": "36"
     },
-    "0.4.6": "0.4.5"
+    "0.4.6": "0.4.5",
+    "0.4.7": {
+      "36": {
+        "install_requires": [
+          "click<9,>=7.0",
+          "pyfiglet",
+          "dbt-core<2.0.0,>=0.20",
+          "requests<3.0.0",
+          "beautifulsoup4",
+          "posthog",
+          "boto3",
+          "google-cloud-storage",
+          "ruamel.yaml",
+          "alive-progress<=2.3.1",
+          "slack-sdk<4.0",
+          "pydantic<2.0",
+          "networkx<3,>=2.3"
+        ],
+        "extras_require": {
+          "snowflake": [
+            "dbt-snowflake<2.0.0,>=0.20"
+          ],
+          "bigquery": [
+            "dbt-bigquery<2.0.0,>=0.20"
+          ],
+          "redshift": [
+            "dbt-redshift<2.0.0,>=0.20"
+          ],
+          "postgres": [
+            "dbt-postgres<2.0.0,>=0.20"
+          ],
+          "databricks": [
+            "dbt-databricks<2.0.0,>=0.20"
+          ],
+          "lineage": [
+            "snowflake-connector-python[secure-local-storage]<2.8.0,>=2.4.1",
+            "click<9,>=8",
+            "requests<3.0.0,>=2.7",
+            "networkx<3,>=2.3",
+            "sqllineage==1.2.4",
+            "pyvis<1,>=0.1",
+            "sqlparse<0.5,>=0.3.1",
+            "sqlfluff<0.9.0",
+            "google-cloud-bigquery<3,>=1.25.0",
+            "google-api-core<3,>=1.16.0",
+            "python-dateutil<3.0.0,>=2.7.2",
+            "dbt-bigquery<2.0.0,>=0.20",
+            "protobuf<4,>=3.13.0",
+            "typing-extensions<3.11,>=3.7.4",
+            "flask<1.1.1",
+            "Jinja2<3,>=2.10.1",
+            "tomli<2.0.0,>=0.2.6",
+            "urllib3<1.26,>=1.20",
+            "MarkupSafe==2.0.1"
+          ]
+        },
+        "python_requires": [
+          ">=3.6.2"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "elkdist": {
     "1.0": {
@@ -68605,6 +68670,32 @@
         ],
         "python_requires": [
           ">=3.8,<4.0"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
+  },
+  "volosti-server-common": {
+    "0.1.dev0": {
+      "27": {
+        "install_requires": [
+          "alembic<2.0.0,>=1.8.1",
+          "sqlalchemy<2.0.0,>=1.4.40"
+        ],
+        "extras_require": {
+          "all": [
+            "jinja2<4.0.0,>=3.1.2"
+          ],
+          "wui": [
+            "jinja2<4.0.0,>=3.1.2"
+          ]
+        },
+        "python_requires": [
+          ">=3.9,<4.0"
         ]
       },
       "36": "27",
