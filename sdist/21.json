@@ -7513,7 +7513,8 @@
       "310": "36"
     },
     "2.3.27": "2.3.26",
-    "2.3.28": "2.3.26"
+    "2.3.28": "2.3.26",
+    "2.3.29": "2.3.26"
   },
   "cdk-stack-parameters-shared-via-ssm": {
     "0.1.3": {
@@ -20725,6 +20726,50 @@
           "test": [
             "flake8==3.8.0",
             "numpy",
+            "pytest",
+            "pytest-mock",
+            "coverage",
+            "responses"
+          ],
+          "docs": [
+            "sphinx<5",
+            "furo==2021.09.08"
+          ],
+          ":python_version < \"3.8\"": [
+            "typing_extensions>=4.0"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "1.0.0a0": {
+      "36": {
+        "install_requires": [
+          "requests>=2.20.0",
+          "globus-sdk<4,>=3.6.0",
+          "websockets==10.3",
+          "dill==0.3.5.1",
+          "packaging>=21.1",
+          "funcx-common==0.0.15",
+          "tblib==1.7.0"
+        ],
+        "extras_require": {
+          "dev": [
+            "flake8==3.8.0",
+            "pytest",
+            "pytest-mock",
+            "coverage",
+            "responses",
+            "pre-commit"
+          ],
+          "test": [
+            "flake8==3.8.0",
             "pytest",
             "pytest-mock",
             "coverage",
@@ -60547,7 +60592,8 @@
       "38": "36",
       "39": "36",
       "310": "36"
-    }
+    },
+    "0.2": "0.1"
   },
   "solarnet-lib": {
     "0.1.0": {
@@ -73293,6 +73339,27 @@
         },
         "python_requires": [
           ">=3.7.0,<4.0.0"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "2.0.0a1": {
+      "27": {
+        "install_requires": [
+          "itsdangerous<3.0.0,>=2.0.1",
+          "starlette<1,>=0"
+        ],
+        "extras_require": {
+          "redis": [
+            "aioredis<3.0.0,>=2.0.0"
+          ]
+        },
+        "python_requires": [
+          ">=3.8.0,<4.0.0"
         ]
       },
       "36": "27",
