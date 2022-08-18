@@ -2421,6 +2421,48 @@
       },
       "3.5.0": {
         "analytix-3.5.0-py3-none-any.whl": "3.4.0@analytix-3.4.0-py3-none-any.whl"
+      },
+      "3.5.1": {
+        "analytix-3.5.1-py3-none-any.whl": {
+          "provides_extras": [
+            "arrow",
+            "dev",
+            "df",
+            "excel",
+            "modin",
+            "pandas",
+            "types"
+          ],
+          "requires_dist": [
+            "aiofiles (<0.9,>=0.3)",
+            "httpx (<0.23,>=0.11)",
+            "pyarrow ; (python_version < \"3.11\" and platform_python_implementation == \"CPython\") and extra == 'arrow'",
+            "nox (==2022.8.7) ; extra == 'dev'",
+            "furo ; extra == 'dev'",
+            "sphinx (<6,>=5) ; extra == 'dev'",
+            "black[jupyter] (~=22.6.0) ; extra == 'dev'",
+            "flake8 (~=5.0.4) ; extra == 'dev'",
+            "isort (~=5.10.0) ; extra == 'dev'",
+            "mypy (==0.971) ; extra == 'dev'",
+            "len8 (~=0.7.2) ; extra == 'dev'",
+            "codespell (~=2.2.0) ; extra == 'dev'",
+            "coverage (~=6.4.1) ; extra == 'dev'",
+            "mock (~=4.0.3) ; extra == 'dev'",
+            "pytest (~=7.1.0) ; extra == 'dev'",
+            "pytest-asyncio (~=0.19.0) ; extra == 'dev'",
+            "requests (<3,>=2.27) ; extra == 'dev'",
+            "safety (~=2.1.1) ; extra == 'dev'",
+            "bandit (~=1.7.2) ; extra == 'dev'",
+            "deputil (~=0.2.0) ; extra == 'dev'",
+            "pandas ; (python_version < \"3.11\" and platform_python_implementation == \"CPython\") and extra == 'df'",
+            "openpyxl (>=3) ; extra == 'excel'",
+            "modin[all] ; (python_version < \"3.10\" and platform_python_implementation == \"CPython\") and extra == 'modin'",
+            "pandas ; (python_version < \"3.11\" and platform_python_implementation == \"CPython\") and extra == 'pandas'",
+            "types-aiofiles ; extra == 'types'",
+            "types-setuptools ; extra == 'types'"
+          ],
+          "requires_python": ">=3.7.0,<3.12"
+        }
       }
     }
   },
@@ -16706,6 +16748,15 @@
             "dbnd (==0.85.9)",
             "dbnd-airflow (==0.85.9)",
             "dbnd-airflow-monitor (==0.85.9)"
+          ]
+        }
+      },
+      "0.86.3": {
+        "dbnd_airflow_auto_tracking-0.86.3-py2.py3-none-any.whl": {
+          "requires_dist": [
+            "dbnd (==0.86.3)",
+            "dbnd-airflow (==0.86.3)",
+            "dbnd-airflow-monitor (==0.86.3)"
           ]
         }
       }
