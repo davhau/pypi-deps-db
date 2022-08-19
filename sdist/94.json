@@ -867,7 +867,14 @@
     "0.15.7b30360": "0.0.1",
     "0.15.8b13271": "0.0.1",
     "0.15.7": "0.0.1",
-    "0.15.7rc0": "0.0.1"
+    "0.15.7rc0": "0.0.1",
+    "0.15.10b17107": "0.0.1",
+    "0.15.11b1098": "0.0.1",
+    "0.15.11b27917": "0.0.1",
+    "0.15.12b30718": "0.0.1",
+    "0.15.13b4726": "0.0.1",
+    "0.15.8b32629": "0.0.1",
+    "0.15.9b8181": "0.0.1"
   },
   "amari.py": {
     "1.1.5": "1.2",
@@ -25226,7 +25233,45 @@
       "310": "27"
     },
     "0.60": "0.59",
-    "0.61": "0.59"
+    "0.61": "0.59",
+    "0.62": {
+      "27": {
+        "install_requires": [
+          "collective.fingerpointing",
+          "collective.monkeypatcher",
+          "future>=0.18.2",
+          "natsort<7",
+          "plone.api>1.9.1",
+          "plone.app.intid",
+          "plone.app.relationfield",
+          "plone.dexterity",
+          "setuptools",
+          "Plone",
+          "z3c.unconfigure"
+        ],
+        "extras_require": {
+          "test": [
+            "collective.behavior.talcondition",
+            "collective.MockMailHost",
+            "ipdb",
+            "plone.app.dexterity",
+            "plone.app.testing"
+          ],
+          "pdf": [
+            "PyPDF2",
+            "reportlab"
+          ],
+          "lxml": [
+            "cssselect"
+          ]
+        }
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "impohhciscofmcapi": {
     "0.0.1": {
@@ -28484,6 +28529,39 @@
       "37": {
         "install_requires": [
           "invenio-records-resources<0.20.0,>=0.19.13",
+          "lxml>=4.5.0",
+          "PyYAML>=5.4.1"
+        ],
+        "extras_require": {
+          "tests": [
+            "pytest-black<0.3.10,>=0.3.0",
+            "invenio-app>=1.3.3",
+            "invenio-db[mysql,postgresql,versioning]<2.0.0,>=1.0.14",
+            "pytest-invenio>=1.4.11",
+            "Sphinx>=4.5"
+          ],
+          "elasticsearch6": [
+            "invenio-search[elasticsearch6]<2.0,>=1.4.2"
+          ],
+          "elasticsearch7": [
+            "invenio-search[elasticsearch7]<2.0,>=1.4.2"
+          ],
+          "mysql": [],
+          "postgresql": [],
+          "sqlite": []
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "38": "37",
+      "39": "37",
+      "310": "37"
+    },
+    "0.12.0": {
+      "37": {
+        "install_requires": [
+          "invenio-records-resources<0.21.0,>=0.20.0",
           "lxml>=4.5.0",
           "PyYAML>=5.4.1"
         ],
@@ -43321,7 +43399,9 @@
       "39": "27",
       "310": "27"
     },
-    "1.0.5.dev20220818135017": "1.0.5.dev20220817114314"
+    "1.0.5.dev20220818135017": "1.0.5.dev20220817114314",
+    "1.0.5.dev20220819064904": "1.0.5.dev20220817114314",
+    "1.0.5.dev20220819133913": "1.0.5.dev20220817114314"
   },
   "lodash": {
     "0.0.1": {
@@ -45763,7 +45843,31 @@
       "38": "36",
       "39": "36",
       "310": "36"
-    }
+    },
+    "1.3a18": {
+      "36": {
+        "install_requires": [
+          "pyside6",
+          "PyGithub",
+          "esptool==3.3.1",
+          "meshtastic>=1.3alpha.24",
+          "qt-material",
+          "psutil",
+          "adafruit-nrfutil",
+          "pyserial",
+          "geocoder"
+        ],
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "1.3a19": "1.3a18",
+    "1.3a20": "1.3a18"
   },
   "metis-utils": {
     "0.0.1": {
@@ -60544,7 +60648,49 @@
       "310": "27"
     },
     "0.18.0": "0.17.0",
-    "0.18.1": "0.17.0"
+    "0.18.1": "0.17.0",
+    "0.18.2": {
+      "27": {
+        "install_requires": [
+          "Jinja2<3.1",
+          "addict<3.0,>=2.2",
+          "appdirs<2.0,>=1.4",
+          "boto3<2.0.0,>=1.12.31",
+          "bson-extra<0.0.5,>=0.0.4",
+          "click<9.0,>=8.0",
+          "colorama<0.5.0,>=0.4.3",
+          "cryptography<36.0.0,>=35.0.0",
+          "deprecation<3.0,>=2.0",
+          "dill>=0.3.3",
+          "gitpython<4.0,>=3.1",
+          "jsonschema<4.0,>=3.0",
+          "pyyaml<6.0,>=5.3",
+          "requests<3.0,>=2.21",
+          "tabulate<0.9.0,>=0.8.10",
+          "treelib<2.0,>=1.6",
+          "troposphere<4.0.0,>=3.1.1"
+        ],
+        "extras_require": {
+          "pip-licenses": [
+            "pip-licenses<4.0.0,>=3.5.3"
+          ],
+          "flaky": [
+            "flaky<4.0,>=3.5"
+          ],
+          "sphinx": [
+            "sphinx<3.0,>=2.0"
+          ]
+        },
+        "python_requires": [
+          ">=3.7,<4.0"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "pyradiomics-fix": {
     "3.0.1.dev0": {
