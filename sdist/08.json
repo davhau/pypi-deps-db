@@ -7621,7 +7621,8 @@
       "38": "36",
       "39": "36",
       "310": "36"
-    }
+    },
+    "2.0.28": "2.0.27"
   },
   "cdktf-cdktf-provider-docker": {
     "0.0.10": "0.0.9",
@@ -9319,7 +9320,8 @@
       "38": "36",
       "39": "36",
       "310": "36"
-    }
+    },
+    "2.0.30": "2.0.29"
   },
   "cdt-test": {
     "0.1": {
@@ -67365,7 +67367,44 @@
       "39": "36",
       "310": "36"
     },
-    "0.8.1": "0.8.0"
+    "0.8.1": "0.8.0",
+    "0.8.2": {
+      "36": {
+        "install_requires": [
+          "zigpy>=0.50.0",
+          "async_timeout",
+          "voluptuous",
+          "coloredlogs",
+          "jsonschema"
+        ],
+        "extras_require": {
+          "testing": [
+            "pytest>=7.1.2",
+            "pytest-asyncio>=0.19.0",
+            "pytest-timeout>=2.1.0",
+            "pytest-mock>=3.8.2",
+            "pytest-cov>=3.0.0",
+            "coveralls"
+          ],
+          "testing:python_version < \"3.8.0\"": [
+            "asynctest"
+          ],
+          ":platform_system != \"Windows\"": [
+            "pyserial-asyncio"
+          ],
+          ":platform_system == \"Windows\"": [
+            "pyserial-asyncio!=0.5"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "zinnia-url-shortener-bitly": {
     "1.0": {

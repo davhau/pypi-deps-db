@@ -16465,6 +16465,19 @@
             "glom"
           ]
         }
+      },
+      "0.8.44": {
+        "demyst_df-0.8.44-py3-none-any.whl": {
+          "requires_dist": [
+            "demyst-common (>=0.8.44)",
+            "click",
+            "boto3",
+            "botocore",
+            "tabulate",
+            "halo",
+            "glom"
+          ]
+        }
       }
     }
   },
@@ -34794,6 +34807,12 @@
       "0.26.1": {
         "mp_api-0.26.1-py3-none-any.whl": "0.25.1@mp_api-0.25.1-py3-none-any.whl"
       },
+      "0.26.2": {
+        "mp_api-0.26.2-py3-none-any.whl": "0.25.1@mp_api-0.25.1-py3-none-any.whl"
+      },
+      "0.26.3": {
+        "mp_api-0.26.3-py3-none-any.whl": "0.25.1@mp_api-0.25.1-py3-none-any.whl"
+      },
       "0.3.0": {
         "mp_api-0.3.0-py3-none-any.whl": "0.2.1@mp_api-0.2.1-py3-none-any.whl"
       },
@@ -38869,6 +38888,9 @@
       },
       "0.0.1a2": {
         "neon_skill_caffeinewiz-0.0.1a2-py3-none-any.whl": "0.0.1a0@neon_skill_caffeinewiz-0.0.1a0-py3-none-any.whl"
+      },
+      "0.2.0": {
+        "neon_skill_caffeinewiz-0.2.0-py3-none-any.whl": "0.0.1a0@neon_skill_caffeinewiz-0.0.1a0-py3-none-any.whl"
       }
     }
   },
@@ -46371,11 +46393,12 @@
     }
   },
   "psiaudio": {
-    "py2.py3": {
-      "2021.12.14": {
-        "psiaudio-2021.12.14-py2.py3-none-any.whl": {
+    "py3": {
+      "0.2.0": {
+        "psiaudio-0.2.0-py3-none-any.whl": {
           "provides_extras": [
             "docs",
+            "examples",
             "test"
           ],
           "requires_dist": [
@@ -46384,11 +46407,16 @@
             "pandas",
             "matplotlib",
             "sphinx ; extra == 'docs'",
+            "sphinx-gallery ; extra == 'docs'",
             "sphinx-rtd-theme ; extra == 'docs'",
             "pygments-enaml ; extra == 'docs'",
+            "sounddevice ; extra == 'docs'",
+            "sounddevice ; extra == 'examples'",
             "pytest ; extra == 'test'",
-            "pytest-benchmark ; extra == 'test'"
-          ]
+            "pytest-benchmark ; extra == 'test'",
+            "pytest-xdist ; extra == 'test'"
+          ],
+          "requires_python": ">=3.7"
         }
       }
     }
