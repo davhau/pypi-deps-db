@@ -1392,6 +1392,9 @@
           ]
         }
       },
+      "1.1.12": {
+        "aiida_kkr-1.1.12-py3-none-any.whl": "1.1.11.post1@aiida_kkr-1.1.11.post1-py3-none-any.whl"
+      },
       "1.1.6.dev0": {
         "aiida_kkr-1.1.6.dev0-py3-none-any.whl": {
           "provides_extras": [
@@ -15151,6 +15154,17 @@
           ]
         },
         "bigdl_friesian_spark2-2.1.0b20220820-py3-none-manylinux1_x86_64.whl": "2.1.0b20220820@bigdl_friesian_spark2-2.1.0b20220820-py3-none-macosx_10_11_x86_64.whl"
+      },
+      "2.1.0b20220822": {
+        "bigdl_friesian_spark2-2.1.0b20220822-py3-none-manylinux1_x86_64.whl": {
+          "provides_extras": [
+            "train"
+          ],
+          "requires_dist": [
+            "bigdl-orca-spark2 (==2.1.0b20220822)",
+            "bigdl-orca-spark2[ray] ; extra == 'train'"
+          ]
+        }
       }
     }
   },
@@ -35307,6 +35321,15 @@
       },
       "2.1": {
         "githubdata-2.1-py2.py3-none-any.whl": "2@githubdata-2-py2.py3-none-any.whl"
+      },
+      "2.2": {
+        "githubdata-2.2-py2.py3-none-any.whl": "2@githubdata-2-py2.py3-none-any.whl"
+      },
+      "2.3": {
+        "githubdata-2.3-py2.py3-none-any.whl": "2@githubdata-2-py2.py3-none-any.whl"
+      },
+      "2.4": {
+        "githubdata-2.4-py2.py3-none-any.whl": "2@githubdata-2-py2.py3-none-any.whl"
       }
     }
   },
@@ -36442,6 +36465,9 @@
       "1.1.10": {
         "hrthy.core-1.1.10-py3-none-any.whl": "1.0.55@hrthy.core-1.0.55-py3-none-any.whl"
       },
+      "1.1.11": {
+        "hrthy.core-1.1.11-py3-none-any.whl": "1.0.55@hrthy.core-1.0.55-py3-none-any.whl"
+      },
       "1.1.2": {
         "hrthy.core-1.1.2-py3-none-any.whl": "1.0.55@hrthy.core-1.0.55-py3-none-any.whl"
       },
@@ -36515,6 +36541,14 @@
         "huaweicloudsdkswr-3.0.104-py2.py3-none-any.whl": {
           "requires_dist": [
             "huaweicloudsdkcore (>=3.0.104)"
+          ],
+          "requires_python": ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*"
+        }
+      },
+      "3.0.105": {
+        "huaweicloudsdkswr-3.0.105-py2.py3-none-any.whl": {
+          "requires_dist": [
+            "huaweicloudsdkcore (>=3.0.105)"
           ],
           "requires_python": ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*"
         }
@@ -40108,6 +40142,19 @@
             "graphviz (>=0.14)",
             "kubernetes (>=11.0.0)",
             "pyyaml (>=5.3.1)"
+          ],
+          "requires_python": ">=3.6"
+        }
+      }
+    }
+  },
+  "kymoknot-py": {
+    "cp38": {
+      "0.9": {
+        "kymoknot_py-0.9-cp38-cp38-macosx_10_9_x86_64.whl": {
+          "requires_dist": [
+            "cffi (>=1.0.0)",
+            "numpy (>=1.18.5)"
           ],
           "requires_python": ">=3.6"
         }
@@ -46489,6 +46536,9 @@
       "0.1.55": {
         "muvinai-0.1.55-py3-none-any.whl": "0.1.53@muvinai-0.1.53-py3-none-any.whl"
       },
+      "0.1.56": {
+        "muvinai-0.1.56-py3-none-any.whl": "0.1.53@muvinai-0.1.53-py3-none-any.whl"
+      },
       "0.1.6": {
         "muvinai-0.1.6-py3-none-any.whl": "0.0.90@muvinai-0.0.90-py3-none-any.whl"
       },
@@ -46839,6 +46889,54 @@
       }
     },
     "py3": {
+      "0.8.0": {
+        "nbgrader-0.8.0-py3-none-any.whl": {
+          "provides_extras": [
+            "dev",
+            "docs",
+            "tests"
+          ],
+          "requires_dist": [
+            "sqlalchemy (<2,>=1.4)",
+            "python-dateutil (>=2.8)",
+            "notebook (<7,>=6.4)",
+            "nbconvert (>=6)",
+            "requests (>=2.26)",
+            "jsonschema (>=3)",
+            "alembic (>=1.7)",
+            "rapidfuzz (>=1.8)",
+            "Jinja2 (>=3)",
+            "MarkupSafe (<2.2.0)",
+            "jupyter-client (<8)",
+            "jupyter-server (>=1.12)",
+            "ipywidgets (>=7.6)",
+            "nbclient (>=0.6.1)",
+            "traitlets (<5.2.0)",
+            "jupyterlab (<4)",
+            "jupyterlab-server",
+            "nbclassic (<0.4.0)",
+            "tbump ; extra == 'dev'",
+            "toml ; extra == 'dev'",
+            "sphinx ; extra == 'docs'",
+            "sphinx-rtd-theme ; extra == 'docs'",
+            "sphinx-autodoc-typehints ; extra == 'docs'",
+            "myst-parser ; extra == 'docs'",
+            "pytest (==7.1.2) ; extra == 'tests'",
+            "pytest-cov ; extra == 'tests'",
+            "pytest-rerunfailures ; extra == 'tests'",
+            "pytest-xdist (==2.5.0) ; extra == 'tests'",
+            "pytest-tornasync ; extra == 'tests'",
+            "jupyter-packaging ; extra == 'tests'",
+            "coverage ; extra == 'tests'",
+            "selenium (<4.3,>2.4) ; extra == 'tests'",
+            "codecov ; extra == 'tests'",
+            "nbval ; extra == 'tests'",
+            "requests-mock ; extra == 'tests'",
+            "wheel ; extra == 'tests'"
+          ],
+          "requires_python": ">=3.7"
+        }
+      },
       "0.8.0a0": {
         "nbgrader-0.8.0a0-py3-none-any.whl": {
           "provides_extras": [
@@ -46890,52 +46988,7 @@
         "nbgrader-0.8.0a1-py3-none-any.whl": "0.8.0a0@nbgrader-0.8.0a0-py3-none-any.whl"
       },
       "0.8.0a2": {
-        "nbgrader-0.8.0a2-py3-none-any.whl": {
-          "provides_extras": [
-            "dev",
-            "docs",
-            "tests"
-          ],
-          "requires_dist": [
-            "sqlalchemy (<2,>=1.4)",
-            "python-dateutil (>=2.8)",
-            "notebook (<7,>=6.4)",
-            "nbconvert (>=6)",
-            "requests (>=2.26)",
-            "jsonschema (>=3)",
-            "alembic (>=1.7)",
-            "rapidfuzz (>=1.8)",
-            "Jinja2 (>=3)",
-            "MarkupSafe (<2.2.0)",
-            "jupyter-client (<8)",
-            "jupyter-server (>=1.12)",
-            "ipywidgets (>=7.6)",
-            "nbclient (>=0.6.1)",
-            "traitlets (<5.2.0)",
-            "jupyterlab (<4)",
-            "jupyterlab-server",
-            "nbclassic (<0.4.0)",
-            "tbump ; extra == 'dev'",
-            "toml ; extra == 'dev'",
-            "sphinx ; extra == 'docs'",
-            "sphinx-rtd-theme ; extra == 'docs'",
-            "sphinx-autodoc-typehints ; extra == 'docs'",
-            "myst-parser ; extra == 'docs'",
-            "pytest (==7.1.2) ; extra == 'tests'",
-            "pytest-cov ; extra == 'tests'",
-            "pytest-rerunfailures ; extra == 'tests'",
-            "pytest-xdist (==2.5.0) ; extra == 'tests'",
-            "pytest-tornasync ; extra == 'tests'",
-            "jupyter-packaging ; extra == 'tests'",
-            "coverage ; extra == 'tests'",
-            "selenium (<4.3,>2.4) ; extra == 'tests'",
-            "codecov ; extra == 'tests'",
-            "nbval ; extra == 'tests'",
-            "requests-mock ; extra == 'tests'",
-            "wheel ; extra == 'tests'"
-          ],
-          "requires_python": ">=3.7"
-        }
+        "nbgrader-0.8.0a2-py3-none-any.whl": "0.8.0@nbgrader-0.8.0-py3-none-any.whl"
       }
     }
   },
@@ -50322,6 +50375,9 @@
       },
       "1.0.6": {
         "osdatahub-1.0.6-py3-none-any.whl": "1.0.1@osdatahub-1.0.1-py3-none-any.whl"
+      },
+      "1.1.0": {
+        "osdatahub-1.1.0-py3-none-any.whl": "1.0.1@osdatahub-1.0.1-py3-none-any.whl"
       }
     }
   },
