@@ -2313,6 +2313,393 @@
         ]
       },
       "310": "39"
+    },
+    "0.0.6": {
+      "36": {
+        "install_requires": [
+          "tabulate",
+          "acryl-datahub>=0.8.34",
+          "docker",
+          "mypy_extensions>=0.4.3",
+          "stackprinter",
+          "click-default-group",
+          "pydantic>=1.5.1",
+          "progressbar2",
+          "entrypoints",
+          "click>=6.0.0",
+          "avro>=1.10.2",
+          "avro-gen3==0.7.4",
+          "PyYAML",
+          "python-dateutil>=2.8.0",
+          "expandvars>=0.6.5",
+          "typing-inspect",
+          "confluent_kafka>=1.5.0",
+          "toml>=0.10.0",
+          "fastavro>=1.2.0",
+          "dictdiffer"
+        ],
+        "extras_require": {
+          "base": [
+            "avro-gen3==0.7.4",
+            "tabulate",
+            "python-dateutil>=2.8.0",
+            "docker",
+            "fastavro>=1.2.0",
+            "expandvars>=0.6.5",
+            "stackprinter",
+            "progressbar2",
+            "confluent_kafka>=1.5.0",
+            "click-default-group",
+            "toml>=0.10.0",
+            "entrypoints",
+            "click>=6.0.0",
+            "avro>=1.10.2",
+            "PyYAML"
+          ],
+          "base:platform_system != \"Darwin\" and (platform_machine == \"aarch64\" or platform_machine == \"arm64\")": [
+            "confluent_kafka<1.9.0"
+          ],
+          "kafka": [
+            "tabulate",
+            "docker",
+            "stackprinter",
+            "click-default-group",
+            "progressbar2",
+            "entrypoints",
+            "click>=6.0.0",
+            "avro>=1.10.2",
+            "PyYAML",
+            "avro-gen3==0.7.4",
+            "python-dateutil>=2.8.0",
+            "expandvars>=0.6.5",
+            "confluent_kafka>=1.5.0",
+            "toml>=0.10.0",
+            "fastavro>=1.2.0"
+          ],
+          "kafka:platform_system != \"Darwin\" and (platform_machine == \"aarch64\" or platform_machine == \"arm64\")": [
+            "confluent_kafka<1.9.0"
+          ],
+          "executor": [
+            "tabulate",
+            "docker",
+            "stackprinter",
+            "click-default-group",
+            "progressbar2",
+            "entrypoints",
+            "click>=6.0.0",
+            "avro>=1.10.2",
+            "PyYAML",
+            "avro-gen3==0.7.4",
+            "acryl-executor>=0.0.3.1",
+            "python-dateutil>=2.8.0",
+            "expandvars>=0.6.5",
+            "confluent_kafka>=1.5.0",
+            "toml>=0.10.0",
+            "fastavro>=1.2.0"
+          ],
+          "executor:platform_system != \"Darwin\" and (platform_machine == \"aarch64\" or platform_machine == \"arm64\")": [
+            "confluent_kafka<1.9.0"
+          ],
+          "all": [
+            "tabulate",
+            "docker",
+            "stackprinter",
+            "click-default-group",
+            "progressbar2",
+            "entrypoints",
+            "click>=6.0.0",
+            "avro>=1.10.2",
+            "PyYAML",
+            "avro-gen3==0.7.4",
+            "acryl-executor>=0.0.3.1",
+            "python-dateutil>=2.8.0",
+            "expandvars>=0.6.5",
+            "confluent_kafka>=1.5.0",
+            "toml>=0.10.0",
+            "fastavro>=1.2.0"
+          ],
+          "all:platform_system != \"Darwin\" and (platform_machine == \"aarch64\" or platform_machine == \"arm64\")": [
+            "confluent_kafka<1.9.0"
+          ],
+          "dev": [
+            "types-six",
+            "tabulate",
+            "pytest-docker>=0.10.3",
+            "build",
+            "acryl-datahub>=0.8.34",
+            "sqlalchemy-stubs",
+            "mypy_extensions>=0.4.3",
+            "click-default-group",
+            "flake8-tidy-imports>=4.3.0",
+            "deepdiff",
+            "pydantic>=1.5.1",
+            "types-python-dateutil",
+            "requests-mock",
+            "progressbar2",
+            "click>=6.0.0",
+            "avro>=1.10.2",
+            "PyYAML",
+            "isort>=5.7.0",
+            "types-toml",
+            "types-freezegun",
+            "confluent_kafka>=1.5.0",
+            "typing-inspect",
+            "mypy<0.920,>=0.901",
+            "black>=22.1.0",
+            "types-tabulate",
+            "dictdiffer",
+            "types-cachetools",
+            "freezegun",
+            "docker",
+            "types-requests",
+            "types-PyYAML",
+            "stackprinter",
+            "types-pkg_resources",
+            "types-dataclasses",
+            "entrypoints",
+            "twine",
+            "tox",
+            "avro-gen3==0.7.4",
+            "coverage>=5.1",
+            "acryl-executor>=0.0.3.1",
+            "flake8>=3.8.3",
+            "python-dateutil>=2.8.0",
+            "types-PyMySQL",
+            "boto3-stubs[glue,s3,sagemaker]",
+            "pytest>=6.2.2",
+            "expandvars>=0.6.5",
+            "toml>=0.10.0",
+            "pytest-cov>=2.8.1",
+            "types-pytz",
+            "types-click==0.1.12",
+            "jsonpickle",
+            "fastavro>=1.2.0"
+          ],
+          "dev:python_version < \"3.7\"": [
+            "dataclasses>=0.6"
+          ],
+          "dev:python_version < \"3.8\"": [
+            "typing_extensions>=3.7.4"
+          ],
+          "dev:platform_system != \"Darwin\" and (platform_machine == \"aarch64\" or platform_machine == \"arm64\")": [
+            "confluent_kafka<1.9.0"
+          ],
+          "integration-tests": [
+            "acryl-executor>=0.0.3.1",
+            "confluent_kafka>=1.5.0",
+            "fastavro>=1.2.0"
+          ],
+          "integration-tests:platform_system != \"Darwin\" and (platform_machine == \"aarch64\" or platform_machine == \"arm64\")": [
+            "confluent_kafka<1.9.0"
+          ],
+          ":python_version < \"3.7\"": [
+            "dataclasses>=0.6"
+          ],
+          ":platform_system != \"Darwin\" and (platform_machine == \"aarch64\" or platform_machine == \"arm64\")": [
+            "confluent_kafka<1.9.0"
+          ],
+          ":python_version < \"3.8\"": [
+            "typing_extensions>=3.7.4"
+          ]
+        },
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": {
+        "install_requires": [
+          "tabulate",
+          "acryl-datahub>=0.8.34",
+          "docker",
+          "mypy_extensions>=0.4.3",
+          "stackprinter",
+          "click-default-group",
+          "pydantic>=1.5.1",
+          "progressbar2",
+          "entrypoints",
+          "click>=6.0.0",
+          "avro>=1.10.2",
+          "avro-gen3==0.7.4",
+          "PyYAML",
+          "python-dateutil>=2.8.0",
+          "expandvars>=0.6.5",
+          "typing-inspect",
+          "confluent_kafka>=1.5.0",
+          "toml>=0.10.0",
+          "fastavro>=1.2.0",
+          "dictdiffer"
+        ],
+        "extras_require": {
+          "base": [
+            "avro-gen3==0.7.4",
+            "tabulate",
+            "python-dateutil>=2.8.0",
+            "docker",
+            "fastavro>=1.2.0",
+            "expandvars>=0.6.5",
+            "stackprinter",
+            "progressbar2",
+            "confluent_kafka>=1.5.0",
+            "click-default-group",
+            "toml>=0.10.0",
+            "entrypoints",
+            "click>=6.0.0",
+            "avro>=1.10.2",
+            "PyYAML"
+          ],
+          "base:platform_system != \"Darwin\" and (platform_machine == \"aarch64\" or platform_machine == \"arm64\")": [
+            "confluent_kafka<1.9.0"
+          ],
+          "kafka": [
+            "tabulate",
+            "docker",
+            "stackprinter",
+            "click-default-group",
+            "progressbar2",
+            "entrypoints",
+            "click>=6.0.0",
+            "avro>=1.10.2",
+            "PyYAML",
+            "avro-gen3==0.7.4",
+            "python-dateutil>=2.8.0",
+            "expandvars>=0.6.5",
+            "confluent_kafka>=1.5.0",
+            "toml>=0.10.0",
+            "fastavro>=1.2.0"
+          ],
+          "kafka:platform_system != \"Darwin\" and (platform_machine == \"aarch64\" or platform_machine == \"arm64\")": [
+            "confluent_kafka<1.9.0"
+          ],
+          "executor": [
+            "tabulate",
+            "docker",
+            "stackprinter",
+            "click-default-group",
+            "progressbar2",
+            "entrypoints",
+            "click>=6.0.0",
+            "avro>=1.10.2",
+            "PyYAML",
+            "avro-gen3==0.7.4",
+            "acryl-executor>=0.0.3.1",
+            "python-dateutil>=2.8.0",
+            "expandvars>=0.6.5",
+            "confluent_kafka>=1.5.0",
+            "toml>=0.10.0",
+            "fastavro>=1.2.0"
+          ],
+          "executor:platform_system != \"Darwin\" and (platform_machine == \"aarch64\" or platform_machine == \"arm64\")": [
+            "confluent_kafka<1.9.0"
+          ],
+          "all": [
+            "tabulate",
+            "docker",
+            "stackprinter",
+            "click-default-group",
+            "progressbar2",
+            "entrypoints",
+            "click>=6.0.0",
+            "avro>=1.10.2",
+            "PyYAML",
+            "avro-gen3==0.7.4",
+            "acryl-executor>=0.0.3.1",
+            "python-dateutil>=2.8.0",
+            "expandvars>=0.6.5",
+            "confluent_kafka>=1.5.0",
+            "toml>=0.10.0",
+            "fastavro>=1.2.0"
+          ],
+          "all:platform_system != \"Darwin\" and (platform_machine == \"aarch64\" or platform_machine == \"arm64\")": [
+            "confluent_kafka<1.9.0"
+          ],
+          "dev": [
+            "types-six",
+            "tabulate",
+            "pytest-docker>=0.10.3",
+            "build",
+            "acryl-datahub>=0.8.34",
+            "sqlalchemy-stubs",
+            "mypy_extensions>=0.4.3",
+            "click-default-group",
+            "flake8-tidy-imports>=4.3.0",
+            "deepdiff",
+            "pydantic>=1.5.1",
+            "types-python-dateutil",
+            "requests-mock",
+            "progressbar2",
+            "click>=6.0.0",
+            "avro>=1.10.2",
+            "PyYAML",
+            "isort>=5.7.0",
+            "types-toml",
+            "types-freezegun",
+            "confluent_kafka>=1.5.0",
+            "typing-inspect",
+            "mypy<0.920,>=0.901",
+            "black>=22.1.0",
+            "types-tabulate",
+            "dictdiffer",
+            "types-cachetools",
+            "freezegun",
+            "docker",
+            "types-requests",
+            "types-PyYAML",
+            "stackprinter",
+            "types-pkg_resources",
+            "types-dataclasses",
+            "entrypoints",
+            "tox",
+            "twine",
+            "avro-gen3==0.7.4",
+            "coverage>=5.1",
+            "acryl-executor>=0.0.3.1",
+            "flake8>=3.8.3",
+            "python-dateutil>=2.8.0",
+            "types-PyMySQL",
+            "boto3-stubs[glue,s3,sagemaker]",
+            "pytest>=6.2.2",
+            "expandvars>=0.6.5",
+            "toml>=0.10.0",
+            "pytest-cov>=2.8.1",
+            "types-pytz",
+            "types-click==0.1.12",
+            "jsonpickle",
+            "fastavro>=1.2.0"
+          ],
+          "dev:python_version < \"3.7\"": [
+            "dataclasses>=0.6"
+          ],
+          "dev:python_version < \"3.8\"": [
+            "typing_extensions>=3.7.4"
+          ],
+          "dev:platform_system != \"Darwin\" and (platform_machine == \"aarch64\" or platform_machine == \"arm64\")": [
+            "confluent_kafka<1.9.0"
+          ],
+          "integration-tests": [
+            "acryl-executor>=0.0.3.1",
+            "confluent_kafka>=1.5.0",
+            "fastavro>=1.2.0"
+          ],
+          "integration-tests:platform_system != \"Darwin\" and (platform_machine == \"aarch64\" or platform_machine == \"arm64\")": [
+            "confluent_kafka<1.9.0"
+          ],
+          ":python_version < \"3.7\"": [
+            "dataclasses>=0.6"
+          ],
+          ":platform_system != \"Darwin\" and (platform_machine == \"aarch64\" or platform_machine == \"arm64\")": [
+            "confluent_kafka<1.9.0"
+          ],
+          ":python_version < \"3.8\"": [
+            "typing_extensions>=3.7.4"
+          ]
+        },
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "310": "39"
     }
   },
   "adafruit-circuitpython-vc0706": {
@@ -52057,6 +52444,21 @@
       "310": "27"
     }
   },
+  "githubsdk": {
+    "0.1": {
+      "27": {
+        "install_requires": [
+          "requests",
+          "uritemplate"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
+  },
   "gitlab-webhook-telegram": {
     "1.0": {
       "27": {
@@ -59574,7 +59976,8 @@
     "2.90": "1.3",
     "2.91": "1.3",
     "2.92": "1.3",
-    "2.93": "1.3"
+    "2.93": "1.3",
+    "2.94": "1.3"
   },
   "macro-kit": {
     "0.1.0": {
@@ -68709,7 +69112,31 @@
     "0.18.0": "0.16.6",
     "0.18.1": "0.16.6",
     "0.18.2": "0.16.6",
-    "0.18.3": "0.16.6"
+    "0.18.3": "0.16.6",
+    "0.19.0": {
+      "36": {
+        "install_requires": [
+          "numpy",
+          "dask[array]>=2022.2.0",
+          "pyzmq",
+          "docstring-inheritance",
+          "ndtiff>=1.3.3"
+        ],
+        "extras_require": {
+          "test": [
+            "pytest",
+            "black"
+          ]
+        },
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "pydamp": {
     "0.0.1": {
