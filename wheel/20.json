@@ -23257,6 +23257,9 @@
       },
       "2.7.0": {
         "feature_store_bundle-2.7.0-py3-none-any.whl": "2.5.0@feature_store_bundle-2.5.0-py3-none-any.whl"
+      },
+      "2.7.1": {
+        "feature_store_bundle-2.7.1-py3-none-any.whl": "2.5.0@feature_store_bundle-2.5.0-py3-none-any.whl"
       }
     }
   },
@@ -53584,6 +53587,37 @@
       },
       "2.4.4": {
         "pytest_mock_resources-2.4.4-py3-none-any.whl": "2.4.3@pytest_mock_resources-2.4.3-py3-none-any.whl"
+      },
+      "2.5.0": {
+        "pytest_mock_resources-2.5.0-py3-none-any.whl": {
+          "provides_extras": [
+            "docker",
+            "mongo",
+            "mysql",
+            "postgres",
+            "postgres-async",
+            "postgres-binary",
+            "redis",
+            "redshift"
+          ],
+          "requires_dist": [
+            "asyncpg; extra == \"postgres-async\"",
+            "boto3; extra == \"redshift\"",
+            "filelock; extra == \"docker\" or extra == \"postgres\" or extra == \"postgres-binary\" or extra == \"postgres-async\" or extra == \"redshift\" or extra == \"mongo\" or extra == \"redis\" or extra == \"mysql\"",
+            "moto; extra == \"redshift\"",
+            "psycopg2-binary; extra == \"postgres-binary\"",
+            "psycopg2; extra == \"postgres\"",
+            "pymongo; extra == \"mongo\"",
+            "pymysql (>=1.0); extra == \"mysql\"",
+            "pytest (>=1.0)",
+            "python-on-whales (>=0.22.0); extra == \"docker\" or extra == \"postgres\" or extra == \"postgres-binary\" or extra == \"postgres-async\" or extra == \"redshift\" or extra == \"mongo\" or extra == \"redis\" or extra == \"mysql\"",
+            "redis; extra == \"redis\"",
+            "responses",
+            "sqlalchemy (>1.0,!=1.4.0,!=1.4.1,!=1.4.2,!=1.4.3,!=1.4.4,!=1.4.5,!=1.4.6,!=1.4.7,!=1.4.8,!=1.4.9,!=1.4.10,!=1.4.11,!=1.4.12,!=1.4.13,!=1.4.14,!=1.4.15,!=1.4.16,!=1.4.17,!=1.4.18,!=1.4.19,!=1.4.20,!=1.4.21,!=1.4.22,!=1.4.23)",
+            "sqlparse; extra == \"redshift\""
+          ],
+          "requires_python": ">=3.7,<4"
+        }
       }
     }
   },
