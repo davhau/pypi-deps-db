@@ -20813,6 +20813,73 @@
       "38": "36",
       "39": "36",
       "310": "36"
+    },
+    "1.9.0rc12": {
+      "36": {
+        "install_requires": [
+          "numpy>=1.13.1",
+          "setuptools"
+        ],
+        "extras_require": {
+          "cuda": [
+            "awkward-cuda-kernels==1.9.0rc12"
+          ],
+          "test": [
+            "pytest>=6",
+            "pytest-cov"
+          ],
+          "dev": [
+            "autograd",
+            "flake8",
+            "pandas>=0.24.0",
+            "PyYAML"
+          ],
+          "dev:python_version > \"3.6\" and sys_platform != \"win32\"": [
+            "fsspec"
+          ],
+          "dev:sys_platform != \"win32\" and python_version > \"3.6\" and python_version < \"3.11\"": [
+            "jax>=0.2.7",
+            "jaxlib!=0.1.68,>=0.1.57"
+          ],
+          "dev:python_version < \"3.11\"": [
+            "numba>=0.50.0",
+            "numexpr"
+          ],
+          "dev:python_version > \"3.6\" and sys_platform != \"win32\" and python_version < \"3.11\"": [
+            "pyarrow>=7.0.0"
+          ],
+          "all": [
+            "awkward-cuda-kernels==1.9.0rc12",
+            "pytest>=6",
+            "pytest-cov",
+            "autograd",
+            "flake8",
+            "pandas>=0.24.0",
+            "PyYAML"
+          ],
+          "all:python_version > \"3.6\" and sys_platform != \"win32\"": [
+            "fsspec"
+          ],
+          "all:sys_platform != \"win32\" and python_version > \"3.6\" and python_version < \"3.11\"": [
+            "jax>=0.2.7",
+            "jaxlib!=0.1.68,>=0.1.57"
+          ],
+          "all:python_version < \"3.11\"": [
+            "numba>=0.50.0",
+            "numexpr"
+          ],
+          "all:python_version > \"3.6\" and sys_platform != \"win32\" and python_version < \"3.11\"": [
+            "pyarrow>=7.0.0"
+          ]
+        },
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
     }
   },
   "aws-cdk.aws-autoscaling-common": {
@@ -30923,7 +30990,8 @@
     "2.0.29": "2.0.27",
     "2.0.30": "2.0.27",
     "2.0.31": "2.0.27",
-    "2.0.32": "2.0.27"
+    "2.0.32": "2.0.27",
+    "2.0.33": "2.0.27"
   },
   "celery-sql-beat-reloader": {
     "0.0.2": {
@@ -81143,6 +81211,35 @@
       "38": "27",
       "39": "27",
       "310": "27"
+    },
+    "0.2.8": {
+      "27": {
+        "install_requires": [
+          "aiofiles",
+          "click",
+          "crontab",
+          "fastapi[all]",
+          "loguru",
+          "redis<5.0.0,>=4.2.0rc1",
+          "tortoise-orm"
+        ],
+        "extras_require": {
+          "postgres": [
+            "asyncpg"
+          ],
+          "mysql": [
+            "asyncmy"
+          ]
+        },
+        "python_requires": [
+          ">=3.7,<4.0"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
     }
   },
   "redicrypt": {
@@ -82070,6 +82167,21 @@
         },
         "python_requires": [
           ">=3.6"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
+  },
+  "runfalcon-build-tools": {
+    "1.0.2": {
+      "27": {
+        "install_requires": [
+          "datetime",
+          "python-abc"
         ]
       },
       "36": "27",
@@ -90854,7 +90966,9 @@
     },
     "0.17.0": "0.16.0",
     "0.18.0": "0.16.0",
-    "0.19.0": "0.16.0"
+    "0.19.0": "0.16.0",
+    "0.20.0": "0.16.0",
+    "0.21.0": "0.16.0"
   },
   "typeddfs": {
     "0.1.0": {
