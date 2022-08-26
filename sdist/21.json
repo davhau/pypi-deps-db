@@ -2275,7 +2275,8 @@
       "38": "27",
       "39": "27",
       "310": "27"
-    }
+    },
+    "1.2.0": "1.1.0"
   },
   "apoclypsebm": {
     "1.1.3": {
@@ -9235,7 +9236,10 @@
     },
     "0.1.2": "0.1.1",
     "0.1.3": "0.1.1",
-    "0.1.4": "0.1.1"
+    "0.1.4": "0.1.1",
+    "0.1.5": "0.1.1",
+    "0.1.6": "0.1.1",
+    "0.1.7": "0.1.1"
   },
   "chesspdftofen": {
     "0.5.0": {
@@ -40698,7 +40702,56 @@
       "39": "36",
       "310": "36"
     },
-    "1.1.1": "1.1.0"
+    "1.1.1": "1.1.0",
+    "1.1.2": {
+      "36": {
+        "install_requires": [
+          "astropy>=5.0",
+          "numpy",
+          "scikit-image",
+          "scipy",
+          "sunpy[map]!=3.1.0,>=3"
+        ],
+        "extras_require": {
+          "docs": [
+            "graphviz",
+            "importlib_metadata",
+            "pillow",
+            "reproject",
+            "sphinx>2",
+            "sphinx-automodapi>=0.10",
+            "sphinx-gallery",
+            "sphinx_rtd_theme",
+            "streamtracer",
+            "sunpy[map,net]",
+            "sympy"
+          ],
+          "test": [
+            "numpy",
+            "parfive<2",
+            "pytest",
+            "pytest-cov",
+            "reproject",
+            "streamtracer",
+            "sympy"
+          ],
+          "performance": [
+            "numba",
+            "streamtracer"
+          ],
+          "analytic": [
+            "sympy"
+          ]
+        },
+        "python_requires": [
+          ">=3.8"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "pfstate": {
     "1.0.0.0": "1.2.0",
@@ -76616,6 +76669,53 @@
         },
         "python_requires": [
           ">=3.7, <3.11"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "0.8.2": {
+      "27": {
+        "install_requires": [
+          "scipy",
+          "pillow",
+          "deprecated",
+          "imageio",
+          "packaging"
+        ],
+        "extras_require": {
+          "docs": [
+            "sphinx",
+            "sphinx-autobuild",
+            "sphinx-rtd-theme",
+            "myst-parser",
+            "nbsphinx",
+            "pandoc"
+          ],
+          "develop": [
+            "flake8",
+            "flake8-docstrings",
+            "isort",
+            "yapf",
+            "pytest",
+            "pytest-pycodestyle",
+            "pytest-cov",
+            "pytest-env",
+            "pytest-xdist"
+          ],
+          "examples": [
+            "jupyterlab",
+            "matplotlib"
+          ],
+          ":python_version < \"3.8\"": [
+            "importlib-metadata"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
         ]
       },
       "36": "27",
