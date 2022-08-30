@@ -21944,6 +21944,23 @@
       },
       "1.0": {
         "gridlock-1.0-py3-none-any.whl": "0.3@gridlock-0.3-py3-none-any.whl"
+      },
+      "1.1": {
+        "gridlock-1.1-py3-none-any.whl": {
+          "provides_extras": [
+            "visualization",
+            "visualization-isosurface"
+          ],
+          "requires_dist": [
+            "float-raster",
+            "numpy~=1.21",
+            "matplotlib; extra == 'visualization'",
+            "matplotlib; extra == 'visualization-isosurface'",
+            "mpl-toolkits; extra == 'visualization-isosurface'",
+            "skimage>=0.13; extra == 'visualization-isosurface'"
+          ],
+          "requires_python": ">=3.8"
+        }
       }
     }
   },
@@ -34159,90 +34176,111 @@
     }
   },
   "nml": {
-    "cp36": {
-      "0.5.0": {
-        "nml-0.5.0-cp36-cp36m-manylinux2014_x86_64.whl": {
-          "requires_dist": [
-            "Pillow (>=3.4)",
-            "ply"
-          ],
-          "requires_python": ">=3.5"
-        }
-      },
-      "0.5.1": {
-        "nml-0.5.1-cp36-cp36m-manylinux2014_x86_64.whl": "0.5.0@nml-0.5.0-cp36-cp36m-manylinux2014_x86_64.whl"
-      },
-      "0.5.2": {
-        "nml-0.5.2-cp36-cp36m-manylinux2014_x86_64.whl": "0.5.0@nml-0.5.0-cp36-cp36m-manylinux2014_x86_64.whl"
-      },
-      "0.5.3": {
-        "nml-0.5.3-cp36-cp36m-manylinux2014_x86_64.whl": "0.5.0@nml-0.5.0-cp36-cp36m-manylinux2014_x86_64.whl"
-      },
-      "0.6.0": {
-        "nml-0.6.0-cp36-cp36m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.5.0@nml-0.5.0-cp36-cp36m-manylinux2014_x86_64.whl"
-      },
-      "0.6.1": {
-        "nml-0.6.1-cp36-cp36m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.5.0@nml-0.5.0-cp36-cp36m-manylinux2014_x86_64.whl"
-      }
-    },
-    "cp37": {
-      "0.5.0": {
-        "nml-0.5.0-cp37-cp37m-manylinux2014_x86_64.whl": {
-          "requires_dist": [
-            "Pillow (>=3.4)",
-            "ply"
-          ],
-          "requires_python": ">=3.5"
-        }
-      },
-      "0.5.1": {
-        "nml-0.5.1-cp37-cp37m-manylinux2014_x86_64.whl": "0.5.0@nml-0.5.0-cp37-cp37m-manylinux2014_x86_64.whl"
-      },
-      "0.5.2": {
-        "nml-0.5.2-cp37-cp37m-manylinux2014_x86_64.whl": "0.5.0@nml-0.5.0-cp37-cp37m-manylinux2014_x86_64.whl"
-      },
-      "0.5.3": {
-        "nml-0.5.3-cp37-cp37m-manylinux2014_x86_64.whl": "0.5.0@nml-0.5.0-cp37-cp37m-manylinux2014_x86_64.whl"
-      },
-      "0.6.0": {
-        "nml-0.6.0-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.5.0@nml-0.5.0-cp37-cp37m-manylinux2014_x86_64.whl"
-      },
-      "0.6.1": {
-        "nml-0.6.1-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.5.0@nml-0.5.0-cp37-cp37m-manylinux2014_x86_64.whl"
-      }
-    },
-    "cp38": {
-      "0.5.0": {
-        "nml-0.5.0-cp38-cp38-macosx_10_13_x86_64.whl": {
+    "cp310": {
+      "0.7.0": {
+        "nml-0.7.0-cp310-cp310-macosx_10_15_x86_64.whl": {
           "requires_dist": [
             "Pillow (>=3.4)",
             "ply"
           ],
           "requires_python": ">=3.5"
         },
-        "nml-0.5.0-cp38-cp38-manylinux2014_x86_64.whl": "0.5.0@nml-0.5.0-cp38-cp38-macosx_10_13_x86_64.whl",
-        "nml-0.5.0-cp38-cp38-win_amd64.whl": "0.5.0@nml-0.5.0-cp38-cp38-macosx_10_13_x86_64.whl"
+        "nml-0.7.0-cp310-cp310-win_amd64.whl": "0.7.0@nml-0.7.0-cp310-cp310-macosx_10_15_x86_64.whl"
+      }
+    },
+    "cp36": {
+      "0.0.0": {
+        "nml-0.0.0-cp36-cp36m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": {
+          "requires_dist": [
+            "Pillow (>=3.4)",
+            "ply"
+          ],
+          "requires_python": ">=3.5"
+        }
+      },
+      "0.5.0": {
+        "nml-0.5.0-cp36-cp36m-manylinux2014_x86_64.whl": "0.0.0@nml-0.0.0-cp36-cp36m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
       },
       "0.5.1": {
-        "nml-0.5.1-cp38-cp38-macosx_10_14_x86_64.whl": "0.5.0@nml-0.5.0-cp38-cp38-macosx_10_13_x86_64.whl",
-        "nml-0.5.1-cp38-cp38-manylinux2014_x86_64.whl": "0.5.0@nml-0.5.0-cp38-cp38-macosx_10_13_x86_64.whl",
-        "nml-0.5.1-cp38-cp38-win_amd64.whl": "0.5.0@nml-0.5.0-cp38-cp38-macosx_10_13_x86_64.whl"
+        "nml-0.5.1-cp36-cp36m-manylinux2014_x86_64.whl": "0.0.0@nml-0.0.0-cp36-cp36m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
       },
       "0.5.2": {
-        "nml-0.5.2-cp38-cp38-macosx_10_14_x86_64.whl": "0.5.0@nml-0.5.0-cp38-cp38-macosx_10_13_x86_64.whl",
-        "nml-0.5.2-cp38-cp38-manylinux2014_x86_64.whl": "0.5.0@nml-0.5.0-cp38-cp38-macosx_10_13_x86_64.whl",
-        "nml-0.5.2-cp38-cp38-win_amd64.whl": "0.5.0@nml-0.5.0-cp38-cp38-macosx_10_13_x86_64.whl"
+        "nml-0.5.2-cp36-cp36m-manylinux2014_x86_64.whl": "0.0.0@nml-0.0.0-cp36-cp36m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
       },
       "0.5.3": {
-        "nml-0.5.3-cp38-cp38-macosx_10_14_x86_64.whl": "0.5.0@nml-0.5.0-cp38-cp38-macosx_10_13_x86_64.whl",
-        "nml-0.5.3-cp38-cp38-manylinux2014_x86_64.whl": "0.5.0@nml-0.5.0-cp38-cp38-macosx_10_13_x86_64.whl",
-        "nml-0.5.3-cp38-cp38-win_amd64.whl": "0.5.0@nml-0.5.0-cp38-cp38-macosx_10_13_x86_64.whl"
+        "nml-0.5.3-cp36-cp36m-manylinux2014_x86_64.whl": "0.0.0@nml-0.0.0-cp36-cp36m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
       },
       "0.6.0": {
-        "nml-0.6.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.5.0@nml-0.5.0-cp38-cp38-macosx_10_13_x86_64.whl"
+        "nml-0.6.0-cp36-cp36m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.0.0@nml-0.0.0-cp36-cp36m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
       },
       "0.6.1": {
-        "nml-0.6.1-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.5.0@nml-0.5.0-cp38-cp38-macosx_10_13_x86_64.whl"
+        "nml-0.6.1-cp36-cp36m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.0.0@nml-0.0.0-cp36-cp36m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+      }
+    },
+    "cp37": {
+      "0.0.0": {
+        "nml-0.0.0-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": {
+          "requires_dist": [
+            "Pillow (>=3.4)",
+            "ply"
+          ],
+          "requires_python": ">=3.5"
+        }
+      },
+      "0.5.0": {
+        "nml-0.5.0-cp37-cp37m-manylinux2014_x86_64.whl": "0.0.0@nml-0.0.0-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+      },
+      "0.5.1": {
+        "nml-0.5.1-cp37-cp37m-manylinux2014_x86_64.whl": "0.0.0@nml-0.0.0-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+      },
+      "0.5.2": {
+        "nml-0.5.2-cp37-cp37m-manylinux2014_x86_64.whl": "0.0.0@nml-0.0.0-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+      },
+      "0.5.3": {
+        "nml-0.5.3-cp37-cp37m-manylinux2014_x86_64.whl": "0.0.0@nml-0.0.0-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+      },
+      "0.6.0": {
+        "nml-0.6.0-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.0.0@nml-0.0.0-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+      },
+      "0.6.1": {
+        "nml-0.6.1-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.0.0@nml-0.0.0-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+      }
+    },
+    "cp38": {
+      "0.0.0": {
+        "nml-0.0.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": {
+          "requires_dist": [
+            "Pillow (>=3.4)",
+            "ply"
+          ],
+          "requires_python": ">=3.5"
+        }
+      },
+      "0.5.0": {
+        "nml-0.5.0-cp38-cp38-macosx_10_13_x86_64.whl": "0.0.0@nml-0.0.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "nml-0.5.0-cp38-cp38-manylinux2014_x86_64.whl": "0.0.0@nml-0.0.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "nml-0.5.0-cp38-cp38-win_amd64.whl": "0.0.0@nml-0.0.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+      },
+      "0.5.1": {
+        "nml-0.5.1-cp38-cp38-macosx_10_14_x86_64.whl": "0.0.0@nml-0.0.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "nml-0.5.1-cp38-cp38-manylinux2014_x86_64.whl": "0.0.0@nml-0.0.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "nml-0.5.1-cp38-cp38-win_amd64.whl": "0.0.0@nml-0.0.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+      },
+      "0.5.2": {
+        "nml-0.5.2-cp38-cp38-macosx_10_14_x86_64.whl": "0.0.0@nml-0.0.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "nml-0.5.2-cp38-cp38-manylinux2014_x86_64.whl": "0.0.0@nml-0.0.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "nml-0.5.2-cp38-cp38-win_amd64.whl": "0.0.0@nml-0.0.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+      },
+      "0.5.3": {
+        "nml-0.5.3-cp38-cp38-macosx_10_14_x86_64.whl": "0.0.0@nml-0.0.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "nml-0.5.3-cp38-cp38-manylinux2014_x86_64.whl": "0.0.0@nml-0.0.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "nml-0.5.3-cp38-cp38-win_amd64.whl": "0.0.0@nml-0.0.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+      },
+      "0.6.0": {
+        "nml-0.6.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.0.0@nml-0.0.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+      },
+      "0.6.1": {
+        "nml-0.6.1-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.0.0@nml-0.0.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
       }
     },
     "cp39": {

@@ -25395,6 +25395,14 @@
       },
       "1.2.2": {
         "garlicconfig-1.2.2-cp36-cp36m-win_amd64.whl": "1.1.0@garlicconfig-1.1.0-cp36-cp36m-manylinux1_x86_64.whl"
+      },
+      "1.2.3": {
+        "garlicconfig-1.2.3-cp36-cp36m-manylinux_2_24_x86_64.whl": "1.1.0@garlicconfig-1.1.0-cp36-cp36m-manylinux1_x86_64.whl",
+        "garlicconfig-1.2.3-cp36-cp36m-win_amd64.whl": "1.1.0@garlicconfig-1.1.0-cp36-cp36m-manylinux1_x86_64.whl"
+      },
+      "1.2.4": {
+        "garlicconfig-1.2.4-cp36-cp36m-manylinux_2_24_x86_64.whl": "1.1.0@garlicconfig-1.1.0-cp36-cp36m-manylinux1_x86_64.whl",
+        "garlicconfig-1.2.4-cp36-cp36m-win_amd64.whl": "1.1.0@garlicconfig-1.1.0-cp36-cp36m-manylinux1_x86_64.whl"
       }
     },
     "cp37": {
@@ -25474,6 +25482,12 @@
       },
       "1.2.2": {
         "garlicconfig-1.2.2-cp37-cp37m-win_amd64.whl": "1.1.0@garlicconfig-1.1.0-cp37-cp37m-macosx_10_13_x86_64.whl"
+      },
+      "1.2.3": {
+        "garlicconfig-1.2.3-cp37-cp37m-win_amd64.whl": "1.1.0@garlicconfig-1.1.0-cp37-cp37m-macosx_10_13_x86_64.whl"
+      },
+      "1.2.4": {
+        "garlicconfig-1.2.4-cp37-cp37m-win_amd64.whl": "1.1.0@garlicconfig-1.1.0-cp37-cp37m-macosx_10_13_x86_64.whl"
       }
     },
     "cp38": {
@@ -25504,6 +25518,13 @@
       "1.2.2": {
         "garlicconfig-1.2.2-cp39-cp39-macosx_12_0_x86_64.whl": "1.1.14@garlicconfig-1.1.14-cp39-cp39-manylinux1_x86_64.whl",
         "garlicconfig-1.2.2-cp39-cp39-manylinux_2_31_x86_64.whl": "1.1.14@garlicconfig-1.1.14-cp39-cp39-manylinux1_x86_64.whl"
+      },
+      "1.2.3": {
+        "garlicconfig-1.2.3-cp39-cp39-macosx_12_0_x86_64.whl": "1.1.14@garlicconfig-1.1.14-cp39-cp39-manylinux1_x86_64.whl",
+        "garlicconfig-1.2.3-cp39-cp39-manylinux_2_31_x86_64.whl": "1.1.14@garlicconfig-1.1.14-cp39-cp39-manylinux1_x86_64.whl"
+      },
+      "1.2.4": {
+        "garlicconfig-1.2.4-cp39-cp39-macosx_12_0_x86_64.whl": "1.1.14@garlicconfig-1.1.14-cp39-cp39-manylinux1_x86_64.whl"
       }
     },
     "py3": {
@@ -61488,6 +61509,65 @@
       },
       "3.0rc1": {
         "reader-3.0rc1-py3-none-any.whl": "3.0@reader-3.0-py3-none-any.whl"
+      },
+      "3.1": {
+        "reader-3.1-py3-none-any.whl": {
+          "provides_extras": [
+            "app",
+            "cli",
+            "dev",
+            "docs",
+            "readtime",
+            "search",
+            "tests",
+            "unstable-plugins"
+          ],
+          "requires_dist": [
+            "typing-extensions (>=4)",
+            "feedparser (>=6)",
+            "requests (>=2.18)",
+            "iso8601 (>=1)",
+            "beautifulsoup4 (>=4.5)",
+            "flask (>=0.10) ; extra == 'app'",
+            "humanize ; extra == 'app'",
+            "PyYAML ; extra == 'app'",
+            "click (>=7) ; extra == 'cli'",
+            "PyYAML ; extra == 'cli'",
+            "reader[app,cli,docs,tests,unstable-plugins] ; extra == 'dev'",
+            "tox ; extra == 'dev'",
+            "pre-commit ; extra == 'dev'",
+            "build ; extra == 'dev'",
+            "twine ; extra == 'dev'",
+            "sphinx ; extra == 'docs'",
+            "sphinx-rtd-theme (~=1.0) ; extra == 'docs'",
+            "click (>=7) ; extra == 'docs'",
+            "sphinx-click ; extra == 'docs'",
+            "sphinx-issues ; extra == 'docs'",
+            "sphinx-hoverxref ; extra == 'docs'",
+            "sphinxcontrib-log-cabinet ; extra == 'docs'",
+            "pytest (>=4) ; extra == 'tests'",
+            "pytest-randomly ; extra == 'tests'",
+            "pytest-subtests ; extra == 'tests'",
+            "flaky ; extra == 'tests'",
+            "coverage ; extra == 'tests'",
+            "pytest-cov ; extra == 'tests'",
+            "requests-mock ; extra == 'tests'",
+            "requests-wsgi-adapter ; extra == 'tests'",
+            "html5lib ; extra == 'tests'",
+            "werkzeug ; extra == 'tests'",
+            "types-requests ; extra == 'tests'",
+            "mypy ; (implementation_name != \"pypy\") and extra == 'tests'",
+            "mechanicalsoup ; (implementation_name != \"pypy\" or os_name != \"nt\") and extra == 'tests'",
+            "lxml ; (implementation_name != \"pypy\" or os_name != \"nt\") and extra == 'tests'",
+            "requests ; extra == 'unstable-plugins'",
+            "mutagen ; extra == 'unstable-plugins'",
+            "beautifulsoup4 ; extra == 'unstable-plugins'",
+            "blinker (>=1.4) ; extra == 'unstable-plugins'",
+            "tweepy ; extra == 'unstable-plugins'",
+            "Jinja2 (>=3) ; extra == 'unstable-plugins'"
+          ],
+          "requires_python": ">=3.8"
+        }
       }
     }
   },
@@ -63757,6 +63837,9 @@
       },
       "2.2.8": {
         "samino-2.2.8-py3-none-any.whl": "2.2.4@samino-2.2.4-py3-none-any.whl"
+      },
+      "2.2.9": {
+        "samino-2.2.9-py3-none-any.whl": "2.2.4@samino-2.2.4-py3-none-any.whl"
       }
     }
   },
@@ -67564,6 +67647,9 @@
           ],
           "requires_python": ">=3.7"
         }
+      },
+      "2.10.0rc3": {
+        "tensorflow_intel-2.10.0rc3-cp310-cp310-win_amd64.whl": "2.10.0rc2@tensorflow_intel-2.10.0rc2-cp310-cp310-win_amd64.whl"
       }
     },
     "cp37": {
@@ -67682,6 +67768,9 @@
           ],
           "requires_python": ">=3.7"
         }
+      },
+      "2.10.0rc3": {
+        "tensorflow_intel-2.10.0rc3-cp37-cp37m-win_amd64.whl": "2.10.0rc2@tensorflow_intel-2.10.0rc2-cp37-cp37m-win_amd64.whl"
       }
     },
     "cp38": {
@@ -67800,6 +67889,9 @@
           ],
           "requires_python": ">=3.7"
         }
+      },
+      "2.10.0rc3": {
+        "tensorflow_intel-2.10.0rc3-cp38-cp38-win_amd64.whl": "2.10.0rc2@tensorflow_intel-2.10.0rc2-cp38-cp38-win_amd64.whl"
       }
     },
     "cp39": {
@@ -67918,6 +68010,9 @@
           ],
           "requires_python": ">=3.7"
         }
+      },
+      "2.10.0rc3": {
+        "tensorflow_intel-2.10.0rc3-cp39-cp39-win_amd64.whl": "2.10.0rc2@tensorflow_intel-2.10.0rc2-cp39-cp39-win_amd64.whl"
       }
     },
     "py3": {
