@@ -21038,6 +21038,24 @@
       "5.0.11": {
         "django_flags-5.0.11-py2.py3-none-any.whl": "5.0.10@django_flags-5.0.10-py2.py3-none-any.whl"
       },
+      "5.0.12": {
+        "django_flags-5.0.12-py2.py3-none-any.whl": {
+          "provides_extras": [
+            "docs",
+            "testing"
+          ],
+          "requires_dist": [
+            "Django (>=1.11)",
+            "mkdocs (>=0.17) ; extra == 'docs'",
+            "mkdocs-rtd-dropdown (>=0.0.11) ; extra == 'docs'",
+            "pymdown-extensions (>=4.11) ; extra == 'docs'",
+            "coverage (>=3.7.0) ; extra == 'testing'",
+            "django-debug-toolbar (<4,>=3.2) ; extra == 'testing'",
+            "jinja2 ; extra == 'testing'"
+          ],
+          "requires_python": ">=3.6"
+        }
+      },
       "5.0.2": {
         "django_flags-5.0.2-py2.py3-none-any.whl": "5.0.1@django_flags-5.0.1-py2.py3-none-any.whl"
       },
@@ -54500,6 +54518,35 @@
       },
       "0.7.0": {
         "pydantic_lambda_handler-0.7.0-py2.py3-none-any.whl": "0.6.3@pydantic_lambda_handler-0.6.3-py2.py3-none-any.whl"
+      },
+      "0.7.1": {
+        "pydantic_lambda_handler-0.7.1-py2.py3-none-any.whl": {
+          "provides_extras": [
+            "dev",
+            "tests"
+          ],
+          "requires_dist": [
+            "orjson>=3.7.5",
+            "pydantic>=1.9.1",
+            "pydantic-core",
+            "coverage>=5.0.3 ; extra == \"dev\"",
+            "pytest ; extra == \"dev\"",
+            "pytest-benchmark[histogram]>=3.2.1 ; extra == \"dev\"",
+            "aws-cdk-lib ; extra == \"dev\"",
+            "requests ; extra == \"dev\"",
+            "invoke ; extra == \"dev\"",
+            "awslambdaric ; extra == \"dev\"",
+            "boto3>=1.20.32 ; extra == \"dev\"",
+            "botocore>=1.23.32 ; extra == \"dev\"",
+            "openapi-schema-pydantic ; extra == \"dev\"",
+            "pytest ; extra == \"tests\"",
+            "requests ; extra == \"tests\"",
+            "awslambdaric ; extra == \"tests\"",
+            "boto3>=1.20.32 ; extra == \"tests\"",
+            "botocore>=1.23.32 ; extra == \"tests\"",
+            "openapi-schema-pydantic ; extra == \"tests\""
+          ]
+        }
       }
     }
   },
