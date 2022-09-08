@@ -3210,6 +3210,46 @@
       "5.0.0rc3": {
         "apache_airflow_providers_amazon-5.0.0rc3-py3-none-any.whl": "5.0.0rc1@apache_airflow_providers_amazon-5.0.0rc1-py3-none-any.whl"
       },
+      "5.1.0": {
+        "apache_airflow_providers_amazon-5.1.0-py3-none-any.whl": {
+          "provides_extras": [
+            "apache.hive",
+            "cncf.kubernetes",
+            "common.sql",
+            "exasol",
+            "ftp",
+            "google",
+            "imap",
+            "mongo",
+            "salesforce",
+            "ssh"
+          ],
+          "requires_dist": [
+            "apache-airflow-providers-common-sql (>=1.2.0)",
+            "apache-airflow (>=2.2.0)",
+            "boto3 (>=1.15.0)",
+            "jsonpath-ng (>=1.5.3)",
+            "mypy-boto3-appflow (>=1.21.0)",
+            "mypy-boto3-rds (>=1.21.0)",
+            "mypy-boto3-redshift-data (>=1.21.0)",
+            "pandas (>=0.17.1)",
+            "redshift-connector (>=2.0.888)",
+            "sqlalchemy-redshift (>=0.8.6)",
+            "watchtower (~=2.0.1)",
+            "apache-airflow-providers-apache-hive ; extra == 'apache.hive'",
+            "apache-airflow-providers-cncf-kubernetes ; extra == 'cncf.kubernetes'",
+            "apache-airflow-providers-common-sql ; extra == 'common.sql'",
+            "apache-airflow-providers-exasol ; extra == 'exasol'",
+            "apache-airflow-providers-ftp ; extra == 'ftp'",
+            "apache-airflow-providers-google ; extra == 'google'",
+            "apache-airflow-providers-imap ; extra == 'imap'",
+            "apache-airflow-providers-mongo ; extra == 'mongo'",
+            "apache-airflow-providers-salesforce ; extra == 'salesforce'",
+            "apache-airflow-providers-ssh ; extra == 'ssh'"
+          ],
+          "requires_python": "~=3.7"
+        }
+      },
       "5.1.0rc1": {
         "apache_airflow_providers_amazon-5.1.0rc1-py3-none-any.whl": {
           "provides_extras": [
@@ -15628,6 +15668,28 @@
       "2022.5rc1": {
         "cfclient-2022.5rc1-py3-none-any.whl": "2022.5@cfclient-2022.5-py3-none-any.whl"
       },
+      "2022.9": {
+        "cfclient-2022.9-py3-none-any.whl": {
+          "provides_extras": [
+            "dev"
+          ],
+          "requires_dist": [
+            "cflib (>=0.1.20.1)",
+            "appdirs (~=1.4.0)",
+            "pyzmq (~=22.3)",
+            "pyqtgraph (~=0.11)",
+            "PyYAML (~=5.3)",
+            "qasync (~=0.23.0)",
+            "qtm (~=2.1.1)",
+            "numpy (<1.25,>=1.20)",
+            "vispy (~=0.9.0)",
+            "pyserial (~=3.5)",
+            "pyqt5 (~=5.15.0)",
+            "PyQt5-sip (>=12.9.0)",
+            "pre-commit ; extra == 'dev'"
+          ]
+        }
+      },
       "2022.9rc1": {
         "cfclient-2022.9rc1-py3-none-any.whl": {
           "provides_extras": [
@@ -15651,26 +15713,13 @@
         }
       },
       "2022.9rc2": {
-        "cfclient-2022.9rc2-py3-none-any.whl": {
-          "provides_extras": [
-            "dev"
-          ],
-          "requires_dist": [
-            "cflib (>=0.1.20.1)",
-            "appdirs (~=1.4.0)",
-            "pyzmq (~=22.3)",
-            "pyqtgraph (~=0.11)",
-            "PyYAML (~=5.3)",
-            "qasync (~=0.23.0)",
-            "qtm (~=2.1.1)",
-            "numpy (<1.25,>=1.20)",
-            "vispy (~=0.9.0)",
-            "pyserial (~=3.5)",
-            "pyqt5 (~=5.15.0)",
-            "PyQt5-sip (>=12.9.0)",
-            "pre-commit ; extra == 'dev'"
-          ]
-        }
+        "cfclient-2022.9rc2-py3-none-any.whl": "2022.9@cfclient-2022.9-py3-none-any.whl"
+      },
+      "2022.9rc3": {
+        "cfclient-2022.9rc3-py3-none-any.whl": "2022.9@cfclient-2022.9-py3-none-any.whl"
+      },
+      "2022.9rc4": {
+        "cfclient-2022.9rc4-py3-none-any.whl": "2022.9@cfclient-2022.9-py3-none-any.whl"
       }
     }
   },
@@ -32432,6 +32481,9 @@
       },
       "1.0.0": {
         "hikari_clusters-1.0.0-py3-none-any.whl": "0.1.0@hikari_clusters-0.1.0-py3-none-any.whl"
+      },
+      "1.1.0": {
+        "hikari_clusters-1.1.0-py3-none-any.whl": "0.1.0@hikari_clusters-0.1.0-py3-none-any.whl"
       }
     }
   },
@@ -32932,6 +32984,14 @@
         "huaweicloudsdkgaussdb-3.0.99-py2.py3-none-any.whl": {
           "requires_dist": [
             "huaweicloudsdkcore (>=3.0.99)"
+          ],
+          "requires_python": ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*"
+        }
+      },
+      "3.1.1": {
+        "huaweicloudsdkgaussdb-3.1.1-py2.py3-none-any.whl": {
+          "requires_dist": [
+            "huaweicloudsdkcore (>=3.1.1)"
           ],
           "requires_python": ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*"
         }
@@ -36727,6 +36787,9 @@
           ],
           "requires_python": ">=3.8,<4.0"
         }
+      },
+      "0.2.0": {
+        "magnetometer-0.2.0-py3-none-any.whl": "0.1.0@magnetometer-0.1.0-py3-none-any.whl"
       }
     }
   },
@@ -52079,6 +52142,9 @@
       },
       "1.5.7": {
         "pyalink_flink_1.10-1.5.7-py3-none-any.whl": "1.5.3@pyalink_flink_1.10-1.5.3-py3-none-any.whl"
+      },
+      "1.5.8": {
+        "pyalink_flink_1.10-1.5.8-py3-none-any.whl": "1.5.3@pyalink_flink_1.10-1.5.3-py3-none-any.whl"
       }
     }
   },
@@ -70760,6 +70826,18 @@
       }
     }
   },
+  "villagewars-package": {
+    "py3": {
+      "0.1.1": {
+        "villagewars_package-0.1.1-py3-none-any.whl": {
+          "requires_python": ">=3.7"
+        }
+      },
+      "1.5.4": {
+        "villagewars_package-1.5.4-py3-none-any.whl": "0.1.1@villagewars_package-0.1.1-py3-none-any.whl"
+      }
+    }
+  },
   "vimstrument": {
     "py3": {
       "0.0.1": {
@@ -72188,6 +72266,27 @@
       },
       "0.0.11": {
         "zqmtool-0.0.11-py3-none-any.whl": "0.0.1@zqmtool-0.0.1-py3-none-any.whl"
+      },
+      "0.0.12": {
+        "zqmtool-0.0.12-py3-none-any.whl": "0.0.1@zqmtool-0.0.1-py3-none-any.whl"
+      },
+      "0.0.13": {
+        "zqmtool-0.0.13-py3-none-any.whl": "0.0.1@zqmtool-0.0.1-py3-none-any.whl"
+      },
+      "0.0.14": {
+        "zqmtool-0.0.14-py3-none-any.whl": "0.0.1@zqmtool-0.0.1-py3-none-any.whl"
+      },
+      "0.0.15": {
+        "zqmtool-0.0.15-py3-none-any.whl": "0.0.1@zqmtool-0.0.1-py3-none-any.whl"
+      },
+      "0.0.16": {
+        "zqmtool-0.0.16-py3-none-any.whl": "0.0.1@zqmtool-0.0.1-py3-none-any.whl"
+      },
+      "0.0.17": {
+        "zqmtool-0.0.17-py3-none-any.whl": "0.0.1@zqmtool-0.0.1-py3-none-any.whl"
+      },
+      "0.0.18": {
+        "zqmtool-0.0.18-py3-none-any.whl": "0.0.1@zqmtool-0.0.1-py3-none-any.whl"
       },
       "0.0.2": {
         "zqmtool-0.0.2-py3-none-any.whl": "0.0.1@zqmtool-0.0.1-py3-none-any.whl"
