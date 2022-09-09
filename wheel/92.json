@@ -17549,6 +17549,30 @@
           ]
         }
       },
+      "0.16.8": {
+        "dagster_airflow-0.16.8-py3-none-any.whl": {
+          "provides_extras": [
+            "kubernetes",
+            "test"
+          ],
+          "requires_dist": [
+            "dagster (==1.0.8)",
+            "docker",
+            "python-dateutil (>=2.8.0)",
+            "lazy-object-proxy",
+            "typing-extensions ; python_version >= \"3.8\"",
+            "kubernetes (>=3.0.0) ; extra == 'kubernetes'",
+            "cryptography (>=2.0.0) ; extra == 'kubernetes'",
+            "apache-airflow (==1.10.10) ; extra == 'test'",
+            "sqlalchemy (<1.4.0,>=1.0) ; extra == 'test'",
+            "marshmallow-sqlalchemy (<0.26.0) ; extra == 'test'",
+            "boto3 (==1.9.*) ; extra == 'test'",
+            "kubernetes (==10.0.1) ; extra == 'test'",
+            "WTForms (<3.0.0) ; extra == 'test'",
+            "markupsafe (<=2.0.1) ; extra == 'test'"
+          ]
+        }
+      },
       "0.4.0": {
         "dagster_airflow-0.4.0-py3-none-any.whl": {
           "requires_dist": [
@@ -22261,6 +22285,16 @@
             "azure-storage-blob (<13.0.0,>=12.5.0)",
             "azure-storage-file-datalake (<13.0.0,>=12.5)",
             "dagster (==1.0.7)"
+          ]
+        }
+      },
+      "0.16.8": {
+        "dagster_azure-0.16.8-py3-none-any.whl": {
+          "requires_dist": [
+            "azure-core (<2.0.0,>=1.7.0)",
+            "azure-storage-blob (<13.0.0,>=12.5.0)",
+            "azure-storage-file-datalake (<13.0.0,>=12.5)",
+            "dagster (==1.0.8)"
           ]
         }
       },
@@ -29009,6 +29043,25 @@
           ],
           "requires_dist": [
             "flytekit (<1.2.0,>=1.1.0b0)",
+            "fsspec (>=2021.7.0)",
+            "botocore (>=1.7.48)",
+            "pandas (>=1.2.0)",
+            "adlfs (>=2022.2.0) ; extra == 'abfs'",
+            "s3fs (>=2021.7.0) ; extra == 'aws'",
+            "gcsfs (>=2021.7.0) ; extra == 'gcp'"
+          ],
+          "requires_python": ">=3.7"
+        }
+      },
+      "1.2.0b1": {
+        "flytekitplugins_data_fsspec-1.2.0b1-py3-none-any.whl": {
+          "provides_extras": [
+            "abfs",
+            "aws",
+            "gcp"
+          ],
+          "requires_dist": [
+            "flytekit (<2.0.0,>=1.1.0b0)",
             "fsspec (>=2021.7.0)",
             "botocore (>=1.7.48)",
             "pandas (>=1.2.0)",

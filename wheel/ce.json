@@ -1385,6 +1385,17 @@
       }
     },
     "py3": {
+      "3.2.0": {
+        "azure_ai_formrecognizer-3.2.0-py3-none-any.whl": {
+          "requires_dist": [
+            "azure-core (<2.0.0,>=1.23.0)",
+            "msrest (>=0.6.21)",
+            "azure-common (~=1.1)",
+            "typing-extensions (>=4.0.1)"
+          ],
+          "requires_python": ">=3.7"
+        }
+      },
       "3.2.0b3": {
         "azure_ai_formrecognizer-3.2.0b3-py3-none-any.whl": {
           "requires_dist": [
@@ -1411,15 +1422,7 @@
         }
       },
       "3.2.0b6": {
-        "azure_ai_formrecognizer-3.2.0b6-py3-none-any.whl": {
-          "requires_dist": [
-            "azure-core (<2.0.0,>=1.23.0)",
-            "msrest (>=0.6.21)",
-            "azure-common (~=1.1)",
-            "typing-extensions (>=4.0.1)"
-          ],
-          "requires_python": ">=3.7"
-        }
+        "azure_ai_formrecognizer-3.2.0b6-py3-none-any.whl": "3.2.0@azure_ai_formrecognizer-3.2.0-py3-none-any.whl"
       }
     }
   },
@@ -7229,6 +7232,21 @@
       },
       "0.0.2": {
         "dewloosh.mpl-0.0.2-py3-none-any.whl": "0.0.1@dewloosh.mpl-0.0.1-py3-none-any.whl"
+      },
+      "0.0.3": {
+        "dewloosh.mpl-0.0.3-py3-none-any.whl": {
+          "requires_dist": [
+            "setuptools",
+            "wheel",
+            "matplotlib",
+            "numpy",
+            "dewloosh.core",
+            "neumann",
+            "polymesh",
+            "pyvista"
+          ],
+          "requires_python": ">=3.7, <3.11"
+        }
       }
     }
   },
@@ -30524,6 +30542,9 @@
       },
       "2.0.4rc20220908000419": {
         "mosaik.HouseholdSim_SemVer-2.0.4rc20220908000419-py2.py3-none-any.whl": "2.0.4rc20200423014529@mosaik.HouseholdSim_SemVer-2.0.4rc20200423014529-py2.py3-none-any.whl"
+      },
+      "2.0.4rc20220909000418": {
+        "mosaik.HouseholdSim_SemVer-2.0.4rc20220909000418-py2.py3-none-any.whl": "2.0.4rc20200423014529@mosaik.HouseholdSim_SemVer-2.0.4rc20200423014529-py2.py3-none-any.whl"
       }
     }
   },
@@ -41643,6 +41664,15 @@
       },
       "4.5.0": {
         "polygphys-4.5.0-py3-none-any.whl": "4@polygphys-4.0.0-py3-none-any.whl"
+      },
+      "4.5.1": {
+        "polygphys-4.5.1-py3-none-any.whl": "4@polygphys-4.0.0-py3-none-any.whl"
+      },
+      "4.5.2": {
+        "polygphys-4.5.2-py3-none-any.whl": "4@polygphys-4.0.0-py3-none-any.whl"
+      },
+      "4.5.3": {
+        "polygphys-4.5.3-py3-none-any.whl": "4@polygphys-4.0.0-py3-none-any.whl"
       }
     }
   },
@@ -48284,6 +48314,18 @@
       "1.0.11": {
         "replit_bot-1.0.11-py3-none-any.whl": "1.0.0@replit_bot-1.0.0-py3-none-any.whl"
       },
+      "1.0.12": {
+        "replit_bot-1.0.12-py3-none-any.whl": "1.0.0@replit_bot-1.0.0-py3-none-any.whl"
+      },
+      "1.0.13": {
+        "replit_bot-1.0.13-py3-none-any.whl": "1.0.0@replit_bot-1.0.0-py3-none-any.whl"
+      },
+      "1.0.14": {
+        "replit_bot-1.0.14-py3-none-any.whl": "1.0.0@replit_bot-1.0.0-py3-none-any.whl"
+      },
+      "1.0.15": {
+        "replit_bot-1.0.15-py3-none-any.whl": "1.0.0@replit_bot-1.0.0-py3-none-any.whl"
+      },
       "1.0.2": {
         "replit_bot-1.0.2-py3-none-any.whl": "1.0.0@replit_bot-1.0.0-py3-none-any.whl"
       },
@@ -51075,6 +51117,60 @@
       },
       "1.0.9": {
         "skasip_logging-1.0.9-py3-none-any.whl": "1.0.0@skasip_logging-1.0.0-py3-none-any.whl"
+      }
+    }
+  },
+  "skbase": {
+    "py3": {
+      "0.1.0": {
+        "skbase-0.1.0-py3-none-any.whl": {
+          "provides_extras": [
+            "all_extras",
+            "binder",
+            "dev",
+            "docs",
+            "linters",
+            "test"
+          ],
+          "requires_dist": [
+            "scikit-learn (<1.2.0,>=0.24.0)",
+            "typing-extensions",
+            "pytest",
+            "pandas ; extra == 'all_extras'",
+            "jupyter ; extra == 'binder'",
+            "pre-commit ; extra == 'dev'",
+            "pytest ; extra == 'dev'",
+            "pytest-cov ; extra == 'dev'",
+            "jupyter ; extra == 'docs'",
+            "myst-parser ; extra == 'docs'",
+            "nbsphinx (>=0.8.6) ; extra == 'docs'",
+            "numpydoc ; extra == 'docs'",
+            "pydata-sphinx-theme ; extra == 'docs'",
+            "sphinx-issues ; extra == 'docs'",
+            "sphinx-gallery ; extra == 'docs'",
+            "sphinx-panels ; extra == 'docs'",
+            "sphinx ; extra == 'docs'",
+            "mypy ; extra == 'linters'",
+            "isort ; extra == 'linters'",
+            "flake8 ; extra == 'linters'",
+            "black ; extra == 'linters'",
+            "pydocstyle ; extra == 'linters'",
+            "nbqa ; extra == 'linters'",
+            "flake8-bugbear ; extra == 'linters'",
+            "flake8-builtins ; extra == 'linters'",
+            "flake8-quotes ; extra == 'linters'",
+            "flake8-comprehensions ; extra == 'linters'",
+            "pandas-vet ; extra == 'linters'",
+            "flake8-print ; extra == 'linters'",
+            "pep8-naming ; extra == 'linters'",
+            "doc8 ; extra == 'linters'",
+            "pytest ; extra == 'test'",
+            "coverage ; extra == 'test'",
+            "pytest-cov ; extra == 'test'",
+            "safety ; extra == 'test'"
+          ],
+          "requires_python": ">=3.7,<3.11"
+        }
       }
     }
   },

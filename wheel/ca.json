@@ -3202,6 +3202,11 @@
         "aspose_3d-22.8-py3-none-manylinux1_x86_64.whl": "22.7@aspose_3d-22.7-py3-none-manylinux1_x86_64.whl",
         "aspose_3d-22.8-py3-none-win32.whl": "22.7@aspose_3d-22.7-py3-none-manylinux1_x86_64.whl",
         "aspose_3d-22.8-py3-none-win_amd64.whl": "22.7@aspose_3d-22.7-py3-none-manylinux1_x86_64.whl"
+      },
+      "22.9": {
+        "aspose_3d-22.9-py3-none-manylinux1_x86_64.whl": "22.7@aspose_3d-22.7-py3-none-manylinux1_x86_64.whl",
+        "aspose_3d-22.9-py3-none-win32.whl": "22.7@aspose_3d-22.7-py3-none-manylinux1_x86_64.whl",
+        "aspose_3d-22.9-py3-none-win_amd64.whl": "22.7@aspose_3d-22.7-py3-none-manylinux1_x86_64.whl"
       }
     }
   },
@@ -37189,6 +37194,17 @@
       },
       "1.2.0": {
         "graphchem-1.2.0-py2.py3-none-any.whl": "1.0.0@graphchem-1.0.0-py2.py3-none-any.whl"
+      },
+      "2.0.0": {
+        "graphchem-2.0.0-py2.py3-none-any.whl": {
+          "requires_dist": [
+            "torch (==1.10.2)",
+            "pytorch-nlp (==0.5.0)",
+            "torch-scatter (==2.0.9)",
+            "torch-sparse (==0.6.12)",
+            "torch-geometric (==2.0.3)"
+          ]
+        }
       }
     },
     "py3": {
@@ -54280,6 +54296,36 @@
             "msgpack (>=1.0.2,<2.0.0); extra == \"msgpack\""
           ],
           "requires_python": ">=3.10,<4.0"
+        }
+      }
+    }
+  },
+  "overload-numpy": {
+    "py3": {
+      "0.0.1": {
+        "overload_numpy-0.0.1-py3-none-any.whl": {
+          "provides_extras": [
+            "all",
+            "docs",
+            "test"
+          ],
+          "requires_dist": [
+            "mypy",
+            "typing-extensions (>=4.2)",
+            "graphviz ; extra == 'docs'",
+            "IPython ; extra == 'docs'",
+            "jupyter-client ; extra == 'docs'",
+            "nbsphinx ; extra == 'docs'",
+            "sphinx ; extra == 'docs'",
+            "sphinx-astropy ; extra == 'docs'",
+            "sphinxcontrib.bibtex (<2.0.0) ; extra == 'docs'",
+            "tomlkit ; extra == 'docs'",
+            "coverage[toml] ; extra == 'test'",
+            "numpy (>=1.18) ; extra == 'test'",
+            "pytest ; extra == 'test'",
+            "pytest-astropy ; extra == 'test'"
+          ],
+          "requires_python": ">=3.8"
         }
       }
     }
@@ -78122,6 +78168,61 @@
             "pyupgrade (<3,>=1.24) ; extra == 'style'",
             "mypy (<0.962,>=0.900) ; extra == 'tests'",
             "nbmake (<1.2,>=0.1) ; extra == 'tests'",
+            "pytest (<8,>=6.1.2) ; extra == 'tests'",
+            "pytest-cov (<4,>=2.4) ; extra == 'tests'"
+          ],
+          "requires_python": "~=3.7"
+        }
+      },
+      "0.3.1": {
+        "torchgeo-0.3.1-py3-none-any.whl": {
+          "provides_extras": [
+            "datasets",
+            "docs",
+            "style",
+            "tests"
+          ],
+          "requires_dist": [
+            "einops (<0.5,>=0.3)",
+            "fiona (<2,>=1.8)",
+            "kornia (<0.7,>=0.6.4)",
+            "matplotlib (<4,>=3.3)",
+            "numpy (<2,>=1.17.2)",
+            "omegaconf (<3,>=2.1)",
+            "packaging (<22,>=17)",
+            "pillow (<10,>=6.2)",
+            "pyproj (<4,>=2.2)",
+            "pytorch-lightning (<2,>=1.5.1)",
+            "rasterio (<2,>=1.0.20)",
+            "rtree (<2,>=1)",
+            "scikit-learn (<2,>=0.21)",
+            "segmentation-models-pytorch (<0.4,>=0.2)",
+            "shapely (<2,>=1.3)",
+            "timm (<0.5,>=0.4.12)",
+            "torch (<2,>=1.9)",
+            "torchmetrics (<0.10,>=0.7)",
+            "torchvision (<0.14,>=0.10)",
+            "h5py (<4,>=2.6) ; extra == 'datasets'",
+            "laspy (<3,>=2) ; extra == 'datasets'",
+            "opencv-python (<5,>=3.4.2.17) ; extra == 'datasets'",
+            "pandas (<2,>=0.23.2) ; extra == 'datasets'",
+            "pycocotools (<3,>=2) ; extra == 'datasets'",
+            "radiant-mlhub (<0.5,>=0.2.1) ; extra == 'datasets'",
+            "rarfile (<5,>=3) ; extra == 'datasets'",
+            "scipy (<2,>=1.2) ; extra == 'datasets'",
+            "zipfile-deflate64 (<0.3,>=0.2) ; extra == 'datasets'",
+            "open3d (<0.15,>=0.11.2) ; (python_version < \"3.10\") and extra == 'datasets'",
+            "ipywidgets (<9,>=7) ; extra == 'docs'",
+            "nbsphinx (<0.9,>=0.8.5) ; extra == 'docs'",
+            "pytorch-sphinx-theme ; extra == 'docs'",
+            "sphinx (<6,>=4) ; extra == 'docs'",
+            "black[jupyter] (<23,>=21.8) ; extra == 'style'",
+            "flake8 (<6,>=3.8) ; extra == 'style'",
+            "isort[colors] (<6,>=5.8) ; extra == 'style'",
+            "pydocstyle[toml] (<7,>=6.1) ; extra == 'style'",
+            "pyupgrade (<3,>=1.24) ; extra == 'style'",
+            "mypy (<0.972,>=0.900) ; extra == 'tests'",
+            "nbmake (<2,>=0.1) ; extra == 'tests'",
             "pytest (<8,>=6.1.2) ; extra == 'tests'",
             "pytest-cov (<4,>=2.4) ; extra == 'tests'"
           ],
