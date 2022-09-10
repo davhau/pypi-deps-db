@@ -33582,6 +33582,31 @@
       },
       "0.4.1.dev4": {
         "kiba_core-0.4.1.dev4-py3-none-any.whl": "0.3.1.dev7@kiba_core-0.3.1.dev7-py3-none-any.whl"
+      },
+      "0.4.1.dev5": {
+        "kiba_core-0.4.1.dev5-py3-none-any.whl": {
+          "provides_extras": [
+            "api",
+            "database-psql",
+            "queues",
+            "requester",
+            "storage",
+            "web3"
+          ],
+          "requires_dist": [
+            "aiofiles (~=0.8.0)",
+            "pydantic (~=1.9.1)",
+            "fastapi (~=0.82.0) ; extra == 'api'",
+            "uvicorn[standard] (~=0.18.0) ; extra == 'api'",
+            "sqlalchemy[asyncio] (~=1.4.41) ; extra == 'database-psql'",
+            "asyncpg (~=0.26.0) ; extra == 'database-psql'",
+            "aiobotocore (~=2.4.0) ; extra == 'queues'",
+            "httpx (~=0.23.0) ; extra == 'requester'",
+            "aiobotocore (~=2.4.0) ; extra == 'storage'",
+            "web3 (==6.0.0-beta.4) ; extra == 'web3'"
+          ],
+          "requires_python": "~=3.7"
+        }
       }
     }
   },
