@@ -15918,7 +15918,8 @@
       "38": "36",
       "39": "36",
       "310": "36"
-    }
+    },
+    "0.2.179": "0.2.178"
   },
   "certbot-dns-rfc2136": {
     "0.16.0": {
@@ -62329,7 +62330,7 @@
       "39": "27",
       "310": "27"
     },
-    "0.2.5": {
+    "0.2.5.1": {
       "27": {
         "install_requires": [
           "colorcet",
@@ -62342,7 +62343,6 @@
           "pyqt5-sip",
           "pyqtgraph",
           "PyOpenGL",
-          "PyOpenGL_accelerate>=3.1.6",
           "cython",
           "neo",
           "pylru==1.2.1",
@@ -62358,12 +62358,15 @@
           "matplotlib",
           "scikit-image",
           "sklearn",
-          "numpy==1.21.5"
+          "numpy<1.24,>=1.22"
         ],
         "setup_requires": [
           "pytest-runner"
         ],
         "extras_require": {
+          ":sys_platform == \"win32\"": [
+            "PyOpenGL_accelerate>=3.1.6"
+          ],
           "dev": []
         },
         "tests_require": [
