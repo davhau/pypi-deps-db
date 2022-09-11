@@ -9333,6 +9333,18 @@
           "requires_python": ">=3.8,<4.0"
         }
       },
+      "0.18.0": {
+        "bolt-0.18.0-py3-none-any.whl": "0.17.7@bolt-0.17.7-py3-none-any.whl"
+      },
+      "0.18.1": {
+        "bolt-0.18.1-py3-none-any.whl": {
+          "requires_dist": [
+            "beet (>=0.71.2)",
+            "mecha (>=0.54.10)"
+          ],
+          "requires_python": ">=3.8,<4.0"
+        }
+      },
       "0.2.0": {
         "bolt-0.2.0-py3-none-any.whl": {
           "requires_dist": [
@@ -50936,6 +50948,9 @@
       "2.11.0.dev2022091008": {
         "tf_estimator_nightly-2.11.0.dev2022091008-py2.py3-none-any.whl": "2.10.0.dev2022040108@tf_estimator_nightly-2.10.0.dev2022040108-py2.py3-none-any.whl"
       },
+      "2.11.0.dev2022091108": {
+        "tf_estimator_nightly-2.11.0.dev2022091108-py2.py3-none-any.whl": "2.10.0.dev2022040108@tf_estimator_nightly-2.10.0.dev2022040108-py2.py3-none-any.whl"
+      },
       "2.3.0.dev2020031201": {
         "tf_estimator_nightly-2.3.0.dev2020031201-py2.py3-none-any.whl": "1.13.0.dev2019011813@tf_estimator_nightly-1.13.0.dev2019011813-py2.py3-none-any.whl"
       },
@@ -56929,9 +56944,10 @@
           "requires_python": ">=3.7"
         }
       },
-      "1.0.2": {
-        "WeTest-1.0.2-py3-none-any.whl": {
+      "1.0.3": {
+        "WeTest-1.0.3-py3-none-any.whl": {
           "provides_extras": [
+            "hive",
             "test"
           ],
           "requires_dist": [
@@ -56961,14 +56977,15 @@
             "pika",
             "boto3",
             "paramiko",
-            "cython",
-            "thriftpy",
-            "bitarray (==1.1.0)",
-            "impyla (==0.16.2)",
-            "pure-sasl (==0.6.2)",
-            "thrift-sasl (==0.2.1)",
+            "cython ; extra == 'hive'",
+            "thriftpy ; extra == 'hive'",
+            "bitarray (==1.1.0) ; extra == 'hive'",
+            "impyla (==0.16.2) ; extra == 'hive'",
+            "pure-sasl (==0.6.2) ; extra == 'hive'",
+            "thrift-sasl (==0.2.1) ; extra == 'hive'",
             "pytest ; extra == 'test'",
             "pytest-html ; extra == 'test'",
+            "pytest-sugar ; extra == 'test'",
             "pytest-asyncio ; extra == 'test'",
             "allure-pytest ; extra == 'test'"
           ],
