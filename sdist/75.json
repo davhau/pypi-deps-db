@@ -7124,7 +7124,8 @@
     "2.0.3": "1.5.1",
     "2.0.4": "1.5.1",
     "2.0.5": "1.5.1",
-    "2.0.6": "1.5.1"
+    "2.0.6": "1.5.1",
+    "2.1.0": "1.5.1"
   },
   "bolditalic": {
     "0.1.0": {
@@ -35685,7 +35686,8 @@
     "1.2.dev13": "1.1",
     "1.2rc1": "1.1",
     "1.2": "1.1",
-    "2.0.dev3": "1.1"
+    "2.0.dev3": "1.1",
+    "2.0.dev6": "1.1"
   },
   "micro-manager-precice": {
     "0.2.0": {
@@ -46963,7 +46965,8 @@
     "4.6.4": "4.5.0",
     "4.7.0": "4.5.0",
     "4.8.0": "4.5.0",
-    "4.9.0": "4.5.0"
+    "4.9.0": "4.5.0",
+    "4.9.1": "4.5.0"
   },
   "pfas-sat": {
     "0.1.6": {
@@ -63337,6 +63340,75 @@
             "cython",
             "numba",
             "numpy==1.20",
+            "black",
+            "scipy",
+            "mpi4py",
+            "flake8",
+            "pylint"
+          ],
+          ":python_version < \"3.9\"": [
+            "astunparse>=1.6.3"
+          ]
+        },
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "38": "37",
+      "39": "37",
+      "310": "37"
+    },
+    "0.5.1": {
+      "37": {
+        "install_requires": [
+          "gast~=0.5.0",
+          "beniget~=0.4.0",
+          "autopep8",
+          "numpy"
+        ],
+        "extras_require": {
+          "mpi": [
+            "mpi4py"
+          ],
+          "test": [
+            "pytest",
+            "pytest-cov",
+            "coverage[toml]",
+            "nbval",
+            "pythran",
+            "cython",
+            "numba",
+            "numpy",
+            "black",
+            "scipy",
+            "mpi4py"
+          ],
+          "doc": [
+            "sphinx",
+            "sphinx-autobuild",
+            "sphinx_rtd_theme",
+            "numpydoc",
+            "jupyterlab",
+            "nbsphinx",
+            "recommonmark"
+          ],
+          "dev": [
+            "ipython",
+            "sphinx",
+            "sphinx-autobuild",
+            "sphinx_rtd_theme",
+            "numpydoc",
+            "jupyterlab",
+            "nbsphinx",
+            "recommonmark",
+            "pytest",
+            "pytest-cov",
+            "coverage[toml]",
+            "nbval",
+            "pythran",
+            "cython",
+            "numba",
+            "numpy",
             "black",
             "scipy",
             "mpi4py",
