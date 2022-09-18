@@ -2361,6 +2361,17 @@
       "21.15.5": {
         "androidviewclient-21.15.5-py3-none-any.whl": "21.15.3@androidviewclient-21.15.3-py3-none-any.whl"
       },
+      "21.16.10": {
+        "androidviewclient-21.16.10-py3-none-any.whl": {
+          "requires_dist": [
+            "setuptools",
+            "requests",
+            "numpy",
+            "matplotlib",
+            "culebratester-client (>=2.0.46)"
+          ]
+        }
+      },
       "21.16.9": {
         "androidviewclient-21.16.9-py3-none-any.whl": "21.15.3@androidviewclient-21.15.3-py3-none-any.whl"
       },
@@ -32531,6 +32542,21 @@
       },
       "3.6.0": {
         "em_keyboard-3.6.0-py3-none-any.whl": "3.1.0@em_keyboard-3.1.0-py3-none-any.whl"
+      },
+      "3.7.0": {
+        "em_keyboard-3.7.0-py3-none-any.whl": {
+          "provides_extras": [
+            "tests"
+          ],
+          "requires_dist": [
+            "importlib-metadata; python_version < '3.8'",
+            "pyperclip; platform_system == 'Darwin'",
+            "pyperclip; platform_system == 'Windows'",
+            "pytest; extra == 'tests'",
+            "pytest-cov; extra == 'tests'"
+          ],
+          "requires_python": ">=3.7"
+        }
       }
     }
   },
