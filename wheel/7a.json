@@ -9320,6 +9320,21 @@
       "0.11.0": {
         "aws_prototyping_sdk.open_api_gateway-0.11.0-py3-none-any.whl": "0.10.0@aws_prototyping_sdk.open_api_gateway-0.10.0-py3-none-any.whl"
       },
+      "0.11.1": {
+        "aws_prototyping_sdk.open_api_gateway-0.11.1-py3-none-any.whl": {
+          "requires_dist": [
+            "aws-cdk-lib (<3.0.0,>=2.42.0)",
+            "aws-prototyping-sdk.pdk-nag (<0.12.0,>=0.11.0)",
+            "cdk-nag (<3.0.0,>=2.18.14)",
+            "constructs (<11.0.0,>=10.1.106)",
+            "jsii (<2.0.0,>=1.67.0)",
+            "projen (<0.63.0,>=0.62.10)",
+            "publication (>=0.0.3)",
+            "typeguard (~=2.13.3)"
+          ],
+          "requires_python": "~=3.7"
+        }
+      },
       "0.2.0": {
         "aws_prototyping_sdk.open_api_gateway-0.2.0-py3-none-any.whl": "0.0.94@aws_prototyping_sdk.open_api_gateway-0.0.94-py3-none-any.whl"
       },
@@ -14219,6 +14234,38 @@
           ]
         },
         "bigdl_chronos_spark2-2.1.0b20220918-py3-none-manylinux1_x86_64.whl": "2.1.0b20220918@bigdl_chronos_spark2-2.1.0b20220918-py3-none-macosx_10_11_x86_64.whl"
+      },
+      "2.1.0b20220919": {
+        "bigdl_chronos_spark2-2.1.0b20220919-py3-none-macosx_10_11_x86_64.whl": {
+          "provides_extras": [
+            "all",
+            "automl",
+            "distributed",
+            "pytorch"
+          ],
+          "requires_dist": [
+            "pandas (<1.3.0,>=1.0.5)",
+            "scikit-learn (<=1.0.2,>=0.22.0)",
+            "bigdl-nano (==2.1.0b20220919)",
+            "bigdl-nano[pytorch] (==2.1.0b20220919) ; extra == 'all'",
+            "optuna (<=2.10.1) ; extra == 'all'",
+            "configspace (<=0.5.0) ; extra == 'all'",
+            "bigdl-orca-spark2[automl] (==2.1.0b20220919) ; extra == 'all'",
+            "pmdarima (==1.8.5) ; extra == 'all'",
+            "prophet (==1.1.0) ; extra == 'all'",
+            "tsfresh (==0.17.0) ; extra == 'all'",
+            "pyarrow (==6.0.1) ; extra == 'all'",
+            "onnx (<=1.11.0,>=1.8.0) ; extra == 'all'",
+            "onnxruntime (<=1.11.1,>=1.6.0) ; extra == 'all'",
+            "neural-compressor (<=1.11,>=1.8.1) ; extra == 'all'",
+            "onnxruntime-extensions (==0.4.2) ; extra == 'all'",
+            "optuna (<=2.10.1) ; extra == 'automl'",
+            "configspace (<=0.5.0) ; extra == 'automl'",
+            "bigdl-orca-spark2[automl] (==2.1.0b20220919) ; extra == 'distributed'",
+            "bigdl-nano[pytorch] (==2.1.0b20220919) ; extra == 'pytorch'"
+          ]
+        },
+        "bigdl_chronos_spark2-2.1.0b20220919-py3-none-manylinux1_x86_64.whl": "2.1.0b20220919@bigdl_chronos_spark2-2.1.0b20220919-py3-none-macosx_10_11_x86_64.whl"
       }
     }
   },
@@ -21548,6 +21595,56 @@
             "pylint ; extra == 'all'",
             "sphinx ; extra == 'all'",
             "tox ; extra == 'all'",
+            "pre-commit ; extra == 'dev'",
+            "black[jupyter] ; extra == 'dev'",
+            "flake8 ; extra == 'dev'",
+            "pylint ; extra == 'dev'",
+            "tox ; extra == 'dev'",
+            "sphinx ; extra == 'doc'",
+            "sphinx-rtd-theme ; extra == 'doc'",
+            "pyclean (>=2.0.0) ; extra == 'publish'",
+            "twine ; extra == 'publish'",
+            "build ; extra == 'publish'",
+            "pytest (>=4) ; extra == 'test'",
+            "pytest-mock ; extra == 'test'"
+          ],
+          "requires_python": ">=3.7"
+        }
+      },
+      "0.2.2": {
+        "clease_gui-0.2.2-py3-none-any.whl": {
+          "provides_extras": [
+            "all",
+            "dev",
+            "doc",
+            "publish",
+            "test"
+          ],
+          "requires_dist": [
+            "ipython",
+            "jupyterlab",
+            "ipywidgets",
+            "clease (>=1.0.0)",
+            "pandas",
+            "numpy",
+            "matplotlib",
+            "click (>=8.0.0)",
+            "ase",
+            "nglview",
+            "packaging",
+            "attrs (>=21.4.0)",
+            "pytest-mock ; extra == 'all'",
+            "sphinx ; extra == 'all'",
+            "twine ; extra == 'all'",
+            "pylint ; extra == 'all'",
+            "build ; extra == 'all'",
+            "tox ; extra == 'all'",
+            "black[jupyter] ; extra == 'all'",
+            "pyclean (>=2.0.0) ; extra == 'all'",
+            "pre-commit ; extra == 'all'",
+            "sphinx-rtd-theme ; extra == 'all'",
+            "pytest (>=4) ; extra == 'all'",
+            "flake8 ; extra == 'all'",
             "pre-commit ; extra == 'dev'",
             "black[jupyter] ; extra == 'dev'",
             "flake8 ; extra == 'dev'",
@@ -33091,6 +33188,21 @@
             "gooddata-afm-client (~=1.1.0)",
             "gooddata-metadata-client (~=1.1.0)",
             "gooddata-scan-client (~=1.1.0)",
+            "python-dateutil (>=2.5.3)",
+            "pyyaml (>=5.1)",
+            "attrs (==21.4.0)",
+            "cattrs (==22.1.0)",
+            "importlib-metadata (>=1.0) ; python_version >= \"3.7\""
+          ],
+          "requires_python": ">=3.7.0"
+        }
+      },
+      "1.1.1a1": {
+        "gooddata_sdk-1.1.1a1-py3-none-any.whl": {
+          "requires_dist": [
+            "gooddata-afm-client (~=1.1.1a1)",
+            "gooddata-metadata-client (~=1.1.1a1)",
+            "gooddata-scan-client (~=1.1.1a1)",
             "python-dateutil (>=2.5.3)",
             "pyyaml (>=5.1)",
             "attrs (==21.4.0)",
@@ -79293,6 +79405,32 @@
           "requires_python": ">=3.8"
         }
       },
+      "0.37.0": {
+        "substra-0.37.0-py3-none-any.whl": {
+          "provides_extras": [
+            "dev"
+          ],
+          "requires_dist": [
+            "click (!=8.0.0,>=7.1.1)",
+            "requests",
+            "docker",
+            "pyyaml",
+            "pydantic (>=1.5.1)",
+            "six",
+            "tqdm",
+            "pandas ; extra == 'dev'",
+            "pytest ; extra == 'dev'",
+            "pytest-cov ; extra == 'dev'",
+            "pytest-mock ; extra == 'dev'",
+            "substratools (>=0.17.0) ; extra == 'dev'",
+            "black ; extra == 'dev'",
+            "flake8 ; extra == 'dev'",
+            "isort ; extra == 'dev'",
+            "docstring-parser ; extra == 'dev'"
+          ],
+          "requires_python": ">=3.8"
+        }
+      },
       "0.4.0": {
         "substra-0.4.0-py3-none-any.whl": {
           "requires_dist": [
@@ -91950,6 +92088,10 @@
       "0.16.0a7": {
         "zef-0.16.0a7-cp310-cp310-macosx_10_15_x86_64.whl": "0.16.0a4@zef-0.16.0a4-cp310-cp310-macosx_10_15_x86_64.whl",
         "zef-0.16.0a7-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.16.0a4@zef-0.16.0a4-cp310-cp310-macosx_10_15_x86_64.whl"
+      },
+      "0.16.0a8": {
+        "zef-0.16.0a8-cp310-cp310-macosx_10_15_x86_64.whl": "0.16.0a4@zef-0.16.0a4-cp310-cp310-macosx_10_15_x86_64.whl",
+        "zef-0.16.0a8-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.16.0a4@zef-0.16.0a4-cp310-cp310-macosx_10_15_x86_64.whl"
       }
     },
     "cp37": {
@@ -92273,6 +92415,10 @@
       "0.16.0a7": {
         "zef-0.16.0a7-cp39-cp39-macosx_10_15_x86_64.whl": "0.16.0a4@zef-0.16.0a4-cp39-cp39-macosx_10_15_x86_64.whl",
         "zef-0.16.0a7-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.16.0a4@zef-0.16.0a4-cp39-cp39-macosx_10_15_x86_64.whl"
+      },
+      "0.16.0a8": {
+        "zef-0.16.0a8-cp39-cp39-macosx_10_15_x86_64.whl": "0.16.0a4@zef-0.16.0a4-cp39-cp39-macosx_10_15_x86_64.whl",
+        "zef-0.16.0a8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.16.0a4@zef-0.16.0a4-cp39-cp39-macosx_10_15_x86_64.whl"
       }
     },
     "py2": {

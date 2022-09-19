@@ -49241,7 +49241,31 @@
     "0.1.2": "0.1.1",
     "0.1.3": "0.1.1",
     "0.1.4": "0.1.1",
-    "0.2.0": "0.1.1"
+    "0.2.0": "0.1.1",
+    "0.3.0": {
+      "27": {
+        "install_requires": [
+          "GitPython<4.0.0,>=3.1.18",
+          "PyYAML<7.0,>=6.0",
+          "configurator<3.0.0,>=2.6.0",
+          "tabulate<0.9.0,>=0.8.9"
+        ],
+        "extras_require": {
+          "graph": [
+            "networkx<3.0.0,>=2.6.1"
+          ]
+        },
+        "python_requires": [
+          ">=3.8,<4.0"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "0.3.1": "0.3.0"
   },
   "lcgtools": {
     "0.5.0": {
@@ -50381,6 +50405,74 @@
           "s3fs>=2022.5.0",
           "croniter<1.4.0,>=1.3.0",
           "traitlets",
+          "arrow>=1.2.0",
+          "lightning-utilities==0.3.*"
+        ],
+        "setup_requires": [
+          "wheel"
+        ],
+        "extras_require": {
+          "cloud": [
+            "redis>=4.0.0",
+            "docker>=5.0.0"
+          ],
+          "ui": [
+            "streamlit>=1.3.1",
+            "panel>=0.12"
+          ],
+          "test": [
+            "coverage>=6.4",
+            "codecov>=2.1",
+            "pytest>=7.0",
+            "pytest-timeout",
+            "pytest-cov",
+            "playwright==1.22.0",
+            "trio",
+            "pympler",
+            "psutil"
+          ],
+          "dev": [
+            "redis>=4.0.0",
+            "docker>=5.0.0",
+            "streamlit>=1.3.1",
+            "panel>=0.12",
+            "coverage>=6.4",
+            "codecov>=2.1",
+            "pytest>=7.0",
+            "pytest-timeout",
+            "pytest-cov",
+            "playwright==1.22.0",
+            "trio",
+            "pympler",
+            "psutil"
+          ],
+          "all": [
+            "redis>=4.0.0",
+            "docker>=5.0.0",
+            "streamlit>=1.3.1",
+            "panel>=0.12"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "0.6.1": {
+      "36": {
+        "install_requires": [
+          "lightning-cloud==0.5.7",
+          "packaging",
+          "deepdiff>=5.7.0",
+          "starsessions<2.0,>=1.2.1",
+          "fsspec>=2022.5.0",
+          "s3fs>=2022.5.0",
+          "croniter<1.4.0,>=1.3.0",
+          "traitlets>=5.3.0",
           "arrow>=1.2.0",
           "lightning-utilities==0.3.*"
         ],
@@ -54792,6 +54884,75 @@
       "38": "36",
       "39": "36",
       "310": "36"
+    },
+    "1.29.0": {
+      "36": {
+        "install_requires": [
+          "click<9,>=7.0",
+          "cloudpickle<3",
+          "databricks-cli<1,>=0.8.7",
+          "entrypoints<1",
+          "gitpython<4,>=2.1.0",
+          "pyyaml<7,>=5.1",
+          "protobuf<5,>=3.12.0",
+          "pytz<2023",
+          "requests<3,>=2.17.3",
+          "packaging<22",
+          "importlib_metadata!=4.7.0,<5,>=3.7.0",
+          "sqlparse<1,>=0.4.0",
+          "alembic<2",
+          "docker<7,>=4.0.0",
+          "Flask<3",
+          "numpy<2",
+          "scipy<2",
+          "pandas<2",
+          "prometheus-flask-exporter<1",
+          "querystring_parser<2",
+          "sqlalchemy<2,>=1.4.0"
+        ],
+        "extras_require": {
+          "extras": [
+            "scikit-learn",
+            "pyarrow",
+            "boto3",
+            "google-cloud-storage>=1.30.0",
+            "azureml-core>=1.2.0",
+            "pysftp",
+            "kubernetes",
+            "mlserver>=0.5.3",
+            "mlserver-mlflow>=0.5.3",
+            "virtualenv"
+          ],
+          "pipelines": [
+            "scikit-learn>=1.0",
+            "pyarrow>=7.0",
+            "shap>=0.40",
+            "pandas-profiling>=3.1",
+            "ipython>=7.0",
+            "markdown>=3.3",
+            "Jinja2>=3.0"
+          ],
+          "sqlserver": [
+            "mlflow-dbstore"
+          ],
+          "aliyun-oss": [
+            "aliyunstoreplugin"
+          ],
+          ":platform_system != \"Windows\"": [
+            "gunicorn<21"
+          ],
+          ":platform_system == \"Windows\"": [
+            "waitress<3"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
     }
   },
   "moduml": {
@@ -58671,6 +58832,21 @@
   "netbox3-bgp-kani-fork": {
     "0.7.0": {
       "27": {},
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
+  },
+  "netcdf-modifier": {
+    "0.1": {
+      "27": {
+        "install_requires": [
+          "numpy",
+          "netCDF4"
+        ]
+      },
       "36": "27",
       "37": "27",
       "38": "27",
@@ -76975,7 +77151,28 @@
     "0.2.1": "0.2.0",
     "0.2.2": "0.2.0",
     "0.2.3": "0.2.0",
-    "0.2.4": "0.2.0"
+    "0.2.4": "0.2.0",
+    "0.2.5": {
+      "27": {
+        "install_requires": [
+          "setuptools",
+          "anndata>=0.8.0",
+          "matplotlib>=3.5.1",
+          "pandana>=0.6.1",
+          "pysal>=2.4.0",
+          "pillow>=9.2.0",
+          "seaborn>=0.11.2"
+        ],
+        "python_requires": [
+          ">=3.8"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "svgsynoptic2": {
     "4.0.0": {
