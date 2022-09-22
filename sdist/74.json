@@ -22761,7 +22761,67 @@
     "0.52.0": "0.51.1",
     "0.52.1": "0.51.1",
     "0.52.2": "0.51.1",
-    "0.53.0rc1": "0.51.1"
+    "0.53.0rc1": "0.51.1",
+    "1.0.0": {
+      "27": {
+        "install_requires": [
+          "factory_boy",
+          "google-api-python-client",
+          "pytz",
+          "tenacity"
+        ],
+        "extras_require": {
+          "tasks": [
+            "google-cloud-tasks<3,>=2",
+            "google-cloud-scheduler<3,>=2"
+          ],
+          "monitoring": [
+            "google-cloud-logging<4,>=3",
+            "google-cloud-error-reporting"
+          ],
+          "dns": [
+            "google-cloud-dns<1,>=0"
+          ],
+          "storage": [
+            "google-cloud-storage<3,>=2"
+          ],
+          "bigquery": [
+            "google-cloud-bigquery<4,>=3"
+          ],
+          "secret": [
+            "google-cloud-secret-manager"
+          ],
+          "speech": [
+            "google-cloud-speech<3,>=2"
+          ],
+          "build": [
+            "google-cloud-build<4,>=3"
+          ],
+          "sheets": [
+            "gspread<6,>=5"
+          ],
+          "healthcare": [
+            "fhir.resources"
+          ],
+          "datastore": [
+            "google-cloud-datastore<3,>=2",
+            "pydantic"
+          ],
+          "pubsub": [
+            "google-cloud-pubsub<3,>=2"
+          ]
+        },
+        "python_requires": [
+          ">=3.10,<3.11"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "1.0.1": "1.0.0"
   },
   "genshin-lfk": {
     "0.0.1": {
@@ -41807,6 +41867,46 @@
         ],
         "setup_requires": [
           "versioneer"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "1.0.0": {
+      "27": {
+        "install_requires": [
+          "numpy",
+          "lxml",
+          "mistune>=2.0.2",
+          "pybars3",
+          "pyyaml",
+          "svgpathtools==1.4.1",
+          "pcbnewTransition>=0.2",
+          "Pillow~=9.0",
+          "click>=7.1"
+        ],
+        "setup_requires": [
+          "versioneer"
+        ],
+        "extras_require": {
+          ":platform_system != \"Windows\"": [
+            "pyVirtualDisplay~=3.0"
+          ],
+          ":platform_system == \"Windows\"": [
+            "LnkParse3"
+          ],
+          "dev": [
+            "pytest",
+            "types-pillow",
+            "types-click",
+            "types-PyYAML"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
         ]
       },
       "36": "27",
