@@ -34685,6 +34685,9 @@
       },
       "2.0.3": {
         "mesaPlot-2.0.3-py3-none-any.whl": "2.0.1@mesaPlot-2.0.1-py3-none-any.whl"
+      },
+      "2.0.4": {
+        "mesaPlot-2.0.4-py3-none-any.whl": "2.0.1@mesaPlot-2.0.1-py3-none-any.whl"
       }
     }
   },
@@ -44226,6 +44229,34 @@
             "fsspec; extra == 'fsspec'",
             "connectorx; extra == 'connectorx'",
             "xlsx2csv >= 0.8.0; extra == 'xlsx2csv'"
+          ],
+          "requires_python": ">=3.7"
+        }
+      },
+      "0.14.13": {
+        "polars_lts_cpu-0.14.13-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": {
+          "provides_extras": [
+            "fsspec",
+            "all",
+            "xlsx2csv",
+            "pandas",
+            "connectorx",
+            "timezone",
+            "pyarrow",
+            "numpy"
+          ],
+          "requires_dist": [
+            "typing_extensions >= 4.0.0; python_version < '3.10'",
+            "fsspec; extra == 'fsspec'",
+            "polars[pyarrow,pandas,numpy,fsspec,connectorx,xlsx2csv,timezone]; extra == 'all'",
+            "xlsx2csv >= 0.8.0; extra == 'xlsx2csv'",
+            "pyarrow>=4.0.*; extra == 'pandas'",
+            "pandas; extra == 'pandas'",
+            "connectorx; extra == 'connectorx'",
+            "backports.zoneinfo; (python_version < '3.9') and extra == 'timezone'",
+            "tzdata; (platform_system == 'Windows') and extra == 'timezone'",
+            "pyarrow>=4.0.*; extra == 'pyarrow'",
+            "numpy >= 1.16.0; extra == 'numpy'"
           ],
           "requires_python": ">=3.7"
         }
