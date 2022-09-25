@@ -14347,7 +14347,8 @@
       "39": "36",
       "310": "36"
     },
-    "0.6.216": "0.6.215"
+    "0.6.216": "0.6.215",
+    "0.6.217": "0.6.215"
   },
   "cfan-2002-part3": {
     "2022.5.14.0": {
@@ -47884,6 +47885,48 @@
           ],
           "pydantic": [
             "pydantic>=1.9.0"
+          ],
+          "test": [
+            "mypy>=0.930",
+            "pytest",
+            "pytest-mypy-plugins>=1.9.3",
+            "coverage"
+          ],
+          ":python_version < \"3.8\"": [
+            "numerary<0.4,>=0.3.0"
+          ],
+          ":python_version >= \"3.8\"": [
+            "numerary>=0.4.0"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "38": "37",
+      "39": "37",
+      "310": "37"
+    },
+    "1.0.0": {
+      "37": {
+        "install_requires": [
+          "typeguard>=2.10",
+          "typing_extensions>=4.3.0"
+        ],
+        "extras_require": {
+          "phonenumbers": [
+            "phonenumbers>=8.12.41"
+          ],
+          "pydantic": [
+            "pydantic>=1.9.0"
+          ],
+          "dateutil": [
+            "python-dateutil>=2.8.2"
+          ],
+          "all": [
+            "phantom-types[phonenumbers]",
+            "phantom-types[pydantic]",
+            "phantom-types[dateutil]"
           ],
           "test": [
             "mypy>=0.930",
