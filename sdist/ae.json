@@ -4620,7 +4620,8 @@
     },
     "0.1.0": "0.0.6",
     "0.2.0": "0.0.6",
-    "0.3.0": "0.0.6"
+    "0.3.0": "0.0.6",
+    "0.4.0": "0.0.6"
   },
   "beamng.gym": {
     "0.1": {
@@ -13843,7 +13844,8 @@
     "0.7.2": "0.5.0",
     "0.8.0": "0.5.0",
     "0.8.1": "0.5.0",
-    "0.8.2": "0.5.0"
+    "0.8.2": "0.5.0",
+    "0.8.3": "0.5.0"
   },
   "datafs": {
     "0.1.1": {
@@ -44171,6 +44173,68 @@
       "38": "27",
       "39": "27",
       "310": "27"
+    },
+    "10.0.0.dev8": {
+      "27": {
+        "install_requires": [
+          "invenio-app<1.4.0,>=1.3.4",
+          "invenio-base<1.3.0,>=1.2.11",
+          "invenio-cache<1.2.0,>=1.1.1",
+          "invenio-celery<1.3.0,>=1.2.4",
+          "invenio-config<1.1.0,>=1.0.3",
+          "invenio-i18n<1.4.0,>=1.3.1",
+          "invenio-db[mysql,postgresql]<1.1.0,>=1.0.14",
+          "invenio-admin<1.4.0,>=1.3.2",
+          "invenio-assets<1.4.0,>=1.3.0",
+          "invenio-formatter<1.2.0,>=1.1.3",
+          "invenio-logging[sentry-sdk]<1.4.0,>=1.3.2",
+          "invenio-mail<1.1.0,>=1.0.2",
+          "invenio-rest<1.3.0,>=1.2.8",
+          "invenio-theme<1.4.0,>=1.3.23",
+          "invenio-access<1.5.0,>=1.4.4",
+          "invenio-accounts<2.1.0,>=2.0.0",
+          "invenio-oauth2server<1.4.0,>=1.3.6",
+          "invenio-oauthclient<2.1.0,>=2.0.1",
+          "invenio-userprofiles<2.1.0,>=2.0.2",
+          "invenio-indexer<2.1.0,>=2.0.1",
+          "invenio-jsonschemas<1.2.0,>=1.1.4",
+          "invenio-oaiserver<2.1.0,>=2.0.0",
+          "invenio-pidstore<1.3.0,>=1.2.3",
+          "invenio-records-rest<2.1.0,>=2.0.0",
+          "invenio-records-ui<1.3.0,>=1.2.0",
+          "invenio-records<2.1.0,>=2.0.0",
+          "invenio-search-ui<2.2.0,>=2.1.2",
+          "invenio-files-rest<1.4.0,>=1.3.3",
+          "invenio-previewer<1.4.0,>=1.3.6",
+          "invenio-records-files<1.3.0,>=1.2.1",
+          "invenio-rdm-records<0.39.0,>=0.38.1",
+          "CairoSVG<3.0.0,>=2.5.2"
+        ],
+        "extras_require": {
+          "s3": [
+            "invenio-s3~=1.0.5"
+          ],
+          "tests": [
+            "pytest-black>=0.3.0",
+            "pytest-invenio~=2.0.0",
+            "Sphinx>=4.5.0"
+          ],
+          "elasticsearch7": [
+            "invenio-search[elasticsearch7]<3.0.0,>=2.0.0"
+          ],
+          "opensearch1": [
+            "invenio-search[opensearch1]<3.0.0,>=2.0.0"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
     }
   },
   "ioe": {
@@ -46383,7 +46447,56 @@
     },
     "0.0.31.dev0": "0.0.31",
     "0.0.31.dev1": "0.0.31",
-    "0.0.31.dev11": "0.0.31"
+    "0.0.31.dev11": "0.0.31",
+    "0.0.32.dev6": {
+      "37": {
+        "install_requires": [
+          "finetuner==0.6.1",
+          "pyfiglet==0.8.post1",
+          "jina[perf]==3.9.1",
+          "cowsay==4.0",
+          "yaspin==2.1.0",
+          "py-cpuinfo==8.0.0",
+          "kubernetes==23.3.0",
+          "prompt_toolkit==3.0.28",
+          "protobuf==3.19.4",
+          "docarray[common]==0.16.3",
+          "docker==5.0.3",
+          "requests==2.27.1",
+          "pydub==0.25.1",
+          "nltk==3.7",
+          "jcloud==0.0.35",
+          "python-dotenv",
+          "boto3",
+          "dask[distributed]==2022.2.0",
+          "jina-hubble-sdk>=0.15.5",
+          "elasticsearch==8.0.1"
+        ],
+        "setup_requires": [
+          "setuptools>=18.0",
+          "wheel"
+        ],
+        "extras_require": {
+          "test": [
+            "pytest",
+            "pytest-timeout",
+            "pytest-mock",
+            "pytest-cov",
+            "pytest-repeat",
+            "pytest-reraise",
+            "pytest-custom_exit_code",
+            "mock",
+            "black==22.3.0",
+            "pytest-split==0.8.0",
+            "annlite@ git+https://github.com/jina-ai/annlite.git@b5f8694fb5c33af15cc9b4a140a0165bf3aa01f4"
+          ]
+        }
+      },
+      "38": "37",
+      "39": "37",
+      "310": "37"
+    },
+    "0.0.32.dev7": "0.0.32.dev6"
   },
   "jinja2-python-version": {
     "1.0.0": {
@@ -72014,7 +72127,211 @@
     "2.22.0.dev286": "2.21.0",
     "2.22.1": "2.21.0",
     "2.22.1.dev287": "2.21.0",
-    "2.22.1.dev288": "2.21.0"
+    "2.22.1.dev288": "2.21.0",
+    "2.22.1.dev289": {
+      "27": {
+        "install_requires": [
+          "arrow<2,>=1",
+          "cachetools<6,>=4.2.4",
+          "Click<9",
+          "colorama",
+          "PyYAML>=5.4.1",
+          "requests>=1.21.1"
+        ],
+        "extras_require": {
+          "all": [
+            "google-cloud-firestore<3,>=2.3",
+            "google-cloud-datastore<3,>=2.4",
+            "google-cloud-bigquery<3,>=2.9",
+            "rfc3339",
+            "boto3<2",
+            "opencv-python-headless==4.4.0.46",
+            "googlemaps<5,>=4.4.2",
+            "PyMySQL",
+            "sqlalchemy<2,>=1.4",
+            "google-cloud-pubsub<3,>=2.9",
+            "redis<4.2,>3.5",
+            "hiredis==2.0.0",
+            "rq==1.10.1",
+            "rq-scheduler==0.11.0",
+            "google-cloud-storage<3,>=2.1",
+            "google-cloud-tasks<3,>=2.7"
+          ],
+          "tasks": [
+            "google-cloud-tasks<3,>=2.7"
+          ],
+          "notifications": [
+            "google-cloud-pubsub<3,>=2.9"
+          ],
+          "storage": [
+            "google-cloud-storage<3,>=2.1"
+          ],
+          "queues": [
+            "redis<4.2,>3.5",
+            "hiredis==2.0.0",
+            "rq==1.10.1",
+            "rq-scheduler==0.11.0"
+          ],
+          "aws": [
+            "boto3<2"
+          ],
+          "auth": [
+            "google-cloud-firestore<3,>=2.3"
+          ],
+          "manifest": [
+            "boto3<2",
+            "opencv-python-headless==4.4.0.46"
+          ],
+          "eds": [
+            "PyMySQL",
+            "sqlalchemy<2,>=1.4",
+            "google-cloud-datastore<3,>=2.4",
+            "google-cloud-bigquery<3,>=2.9",
+            "rfc3339"
+          ],
+          "buildtools": [
+            "bumpversion==0.5.3",
+            "check-manifest",
+            "fabric~=2.5.0",
+            "twine"
+          ],
+          "platform": [
+            "google-cloud-firestore<3,>=2.3",
+            "boto3<2",
+            "opencv-python-headless==4.4.0.46",
+            "googlemaps<5,>=4.4.2",
+            "google-cloud-pubsub<3,>=2.9",
+            "redis<4.2,>3.5",
+            "hiredis==2.0.0",
+            "rq==1.10.1",
+            "rq-scheduler==0.11.0"
+          ],
+          "mysql": [
+            "PyMySQL",
+            "sqlalchemy<2,>=1.4"
+          ],
+          "datastore": [
+            "google-cloud-datastore<3,>=2.4"
+          ],
+          "geo": [
+            "googlemaps<5,>=4.4.2"
+          ],
+          "pubsub": [
+            "google-cloud-pubsub<3,>=2.9"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "2.22.1.dev290": {
+      "27": {
+        "install_requires": [
+          "arrow<2,>=1",
+          "cachetools<6,>=4.2.4",
+          "Click<9",
+          "colorama",
+          "PyYAML>=5.4.1",
+          "requests>=1.21.1"
+        ],
+        "extras_require": {
+          "all": [
+            "google-cloud-firestore<3,>=2.3",
+            "google-cloud-datastore<3,>=1.8.0",
+            "google-cloud-bigquery<3,>=2.9",
+            "rfc3339",
+            "boto3<2",
+            "opencv-python-headless==4.4.0.46",
+            "googlemaps<5,>=4.4.2",
+            "PyMySQL",
+            "sqlalchemy<2,>=1.4",
+            "google-cloud-pubsub<3,>=2.9",
+            "redis<4.2,>3.5",
+            "hiredis==2.0.0",
+            "rq==1.10.1",
+            "rq-scheduler==0.11.0",
+            "google-cloud-storage<3,>=2.1",
+            "google-cloud-tasks<3,>=2.7"
+          ],
+          "tasks": [
+            "google-cloud-tasks<3,>=2.7"
+          ],
+          "notifications": [
+            "google-cloud-pubsub<3,>=2.9"
+          ],
+          "storage": [
+            "google-cloud-storage<3,>=2.1"
+          ],
+          "queues": [
+            "redis<4.2,>3.5",
+            "hiredis==2.0.0",
+            "rq==1.10.1",
+            "rq-scheduler==0.11.0"
+          ],
+          "aws": [
+            "boto3<2"
+          ],
+          "auth": [
+            "google-cloud-firestore<3,>=2.3"
+          ],
+          "manifest": [
+            "boto3<2",
+            "opencv-python-headless==4.4.0.46"
+          ],
+          "eds": [
+            "PyMySQL",
+            "sqlalchemy<2,>=1.4",
+            "google-cloud-datastore<3,>=1.8.0",
+            "google-cloud-bigquery<3,>=2.9",
+            "rfc3339"
+          ],
+          "buildtools": [
+            "bumpversion==0.5.3",
+            "check-manifest",
+            "fabric~=2.5.0",
+            "twine"
+          ],
+          "platform": [
+            "google-cloud-firestore<3,>=2.3",
+            "boto3<2",
+            "opencv-python-headless==4.4.0.46",
+            "googlemaps<5,>=4.4.2",
+            "google-cloud-pubsub<3,>=2.9",
+            "redis<4.2,>3.5",
+            "hiredis==2.0.0",
+            "rq==1.10.1",
+            "rq-scheduler==0.11.0"
+          ],
+          "mysql": [
+            "PyMySQL",
+            "sqlalchemy<2,>=1.4"
+          ],
+          "datastore": [
+            "google-cloud-datastore<3,>=1.8.0"
+          ],
+          "geo": [
+            "googlemaps<5,>=4.4.2"
+          ],
+          "pubsub": [
+            "google-cloud-pubsub<3,>=2.9"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "rccar": {
     "1.0": {
@@ -84756,6 +85073,16 @@
     "0.3.0": "0.2.0",
     "0.3.1": "0.2.0"
   },
+  "spencer-demo-test": {
+    "1.0.0": {
+      "27": {},
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
+  },
   "splitlogger": {
     "1.0.0": {
       "27": {
@@ -86633,7 +86960,8 @@
     "3.0.732": "3.0.252",
     "3.0.737": "3.0.252",
     "3.0.739": "3.0.252",
-    "3.0.741": "3.0.252"
+    "3.0.741": "3.0.252",
+    "3.0.743": "3.0.252"
   },
   "tencentcloud-sdk-python-ocr": {
     "3.0.252": {
@@ -87117,7 +87445,8 @@
     "3.0.737": "3.0.252",
     "3.0.739": "3.0.252",
     "3.0.740": "3.0.252",
-    "3.0.741": "3.0.252"
+    "3.0.741": "3.0.252",
+    "3.0.743": "3.0.252"
   },
   "tensorflow-determinism": {
     "0.1.0": {

@@ -2699,6 +2699,9 @@
           ],
           "requires_python": ">=3.8"
         }
+      },
+      "0.0.6": {
+        "apkcat-0.0.6-py3-none-any.whl": "0.0.5@apkcat-0.0.5-py3-none-any.whl"
       }
     }
   },
@@ -29571,6 +29574,9 @@
       "1.0.0b65": {
         "gen2_connector-1.0.0b65-py3-none-any.whl": "1.0.0b62@gen2_connector-1.0.0b62-py3-none-any.whl"
       },
+      "1.0.0b66": {
+        "gen2_connector-1.0.0b66-py3-none-any.whl": "1.0.0b62@gen2_connector-1.0.0b62-py3-none-any.whl"
+      },
       "1.0.0b7": {
         "gen2_connector-1.0.0b7-py3-none-any.whl": "1.0.0b10@gen2_connector-1.0.0b10-py3-none-any.whl"
       },
@@ -33684,6 +33690,19 @@
             "boto3 (==1.24.80)"
           ]
         }
+      },
+      "3.2.3": {
+        "inmanta_module_aws-3.2.3-py3-none-any.whl": {
+          "requires_dist": [
+            "inmanta-module-ip",
+            "inmanta-module-platform",
+            "inmanta-module-redhat",
+            "inmanta-module-ssh",
+            "inmanta-module-std",
+            "inmanta-module-web",
+            "boto3 (==1.24.82)"
+          ]
+        }
       }
     }
   },
@@ -35031,6 +35050,9 @@
     "cp310": {
       "0.3": {
         "kaldialign-0.3-cp310-cp310-macosx_12_0_arm64.whl": {}
+      },
+      "0.4": {
+        "kaldialign-0.4-cp310-cp310-macosx_12_0_arm64.whl": "0.3@kaldialign-0.3-cp310-cp310-macosx_12_0_arm64.whl"
       }
     },
     "cp36": {
@@ -46238,6 +46260,49 @@
       },
       "0.11.4": {
         "metaphor_connectors-0.11.4-py3-none-any.whl": "0.11.2@metaphor_connectors-0.11.2-py3-none-any.whl"
+      },
+      "0.11.40": {
+        "metaphor_connectors-0.11.40-py3-none-any.whl": {
+          "provides_extras": [
+            "all",
+            "bigquery",
+            "dbt",
+            "looker",
+            "metabase",
+            "postgresql",
+            "power_bi",
+            "redshift",
+            "snowflake",
+            "tableau",
+            "throughtspot"
+          ],
+          "requires_dist": [
+            "GitPython (>=3.1.0,<4.0.0); extra == \"all\" or extra == \"looker\"",
+            "PyYAML (>=6.0,<7.0)",
+            "asyncpg (>=0.25.0,<0.26.0); extra == \"all\" or extra == \"postgresql\" or extra == \"redshift\"",
+            "aws-assume-role-lib (>=2.10.0,<3.0.0)",
+            "boto3 (>=1.24.20,<2.0.0)",
+            "botocore (>=1.27.20,<2.0.0)",
+            "canonicaljson (>=1.4.0,<2.0.0)",
+            "fastjsonschema (>=2.15.1,<3.0.0)",
+            "google-cloud-bigquery (>=2.34.4,<3.0.0); extra == \"all\" or extra == \"bigquery\"",
+            "google-cloud-logging (>=3.1.0,<4.0.0); extra == \"all\" or extra == \"bigquery\"",
+            "lkml (>=1.2.0,<2.0.0); extra == \"all\" or extra == \"looker\"",
+            "looker-sdk (>=22.4.0,<23.0.0); extra == \"all\" or extra == \"looker\"",
+            "metaphor-models (>=0.13.5,<0.14.0)",
+            "metaphor-sqllineage (>=1.3.6,<2.0.0); extra == \"all\" or extra == \"redshift\"",
+            "msal (>=1.17.0,<2.0.0); extra == \"all\" or extra == \"power_bi\"",
+            "pydantic (>=1.9.0,<2.0.0)",
+            "python-dateutil (>=2.8.1,<3.0.0)",
+            "requests (>=2.27.1,<3.0.0)",
+            "smart-open (>=5.0.0,<6.0.0)",
+            "snowflake-connector-python (>=2.7.0,<2.8.0); extra == \"all\" or extra == \"snowflake\"",
+            "sql-metadata (>=2.6.0,<3.0.0); extra == \"all\" or extra == \"bigquery\" or extra == \"looker\" or extra == \"metabase\" or extra == \"snowflake\"",
+            "tableauserverclient (>=0.17.0,<0.18.0); extra == \"all\" or extra == \"tableau\"",
+            "thoughtspot-rest-api-sdk (>=1.11.0,<1.12.0); extra == \"all\" or extra == \"throughtspot\""
+          ],
+          "requires_python": ">=3.7,<3.11"
+        }
       },
       "0.11.5": {
         "metaphor_connectors-0.11.5-py3-none-any.whl": "0.11.2@metaphor_connectors-0.11.2-py3-none-any.whl"
@@ -61233,6 +61298,62 @@
     "py3": {
       "0.1.0": {
         "predict_test_v3-0.1.0-py3-none-any.whl": {}
+      }
+    }
+  },
+  "prefect-soda-core": {
+    "py3": {
+      "0.1.0": {
+        "prefect_soda_core-0.1.0-py3-none-any.whl": {
+          "provides_extras": [
+            "athena",
+            "bigquery",
+            "db2",
+            "dev",
+            "mysql",
+            "postgres",
+            "redshift",
+            "snowflake",
+            "spark-df",
+            "spark-hive",
+            "spark-odbc",
+            "sqlserver",
+            "trino"
+          ],
+          "requires_dist": [
+            "prefect (>=2.0.0)",
+            "prefect-shell",
+            "soda-core",
+            "soda-core-athena ; extra == 'athena'",
+            "soda-core-bigquery ; extra == 'bigquery'",
+            "soda-core-db2 ; extra == 'db2'",
+            "pytest ; extra == 'dev'",
+            "black ; extra == 'dev'",
+            "flake8 ; extra == 'dev'",
+            "mypy ; extra == 'dev'",
+            "mkdocs ; extra == 'dev'",
+            "mkdocs-material ; extra == 'dev'",
+            "mkdocstrings[python] ; extra == 'dev'",
+            "isort ; extra == 'dev'",
+            "pre-commit ; extra == 'dev'",
+            "pytest-asyncio ; extra == 'dev'",
+            "mkdocs-gen-files ; extra == 'dev'",
+            "interrogate ; extra == 'dev'",
+            "coverage ; extra == 'dev'",
+            "pyfakefs ; extra == 'dev'",
+            "mock ; (python_version < \"3.8\") and extra == 'dev'",
+            "soda-core-mysql ; extra == 'mysql'",
+            "soda-core-postgres ; extra == 'postgres'",
+            "soda-core-redshift ; extra == 'redshift'",
+            "soda-core-snowflake ; extra == 'snowflake'",
+            "soda-core-spark-df ; extra == 'spark-df'",
+            "soda-core-spark[hive] ; extra == 'spark-hive'",
+            "soda-core-spark[odbc] ; extra == 'spark-odbc'",
+            "soda-core-sqlserver ; extra == 'sqlserver'",
+            "soda-core-trino ; extra == 'trino'"
+          ],
+          "requires_python": ">=3.7"
+        }
       }
     }
   },
