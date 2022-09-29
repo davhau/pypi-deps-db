@@ -29417,7 +29417,8 @@
     "0.1.3": "0.1.1",
     "0.1.4": "0.1.1",
     "0.1.5": "0.1.1",
-    "0.1.6": "0.1.1"
+    "0.1.6": "0.1.1",
+    "0.1.8": "0.1.1"
   },
   "html-crawle": {
     "1.0.0": {
@@ -29969,7 +29970,16 @@
       "38": "27",
       "39": "27",
       "310": "27"
-    }
+    },
+    "0.24": {
+      "36": {},
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "0.25": "0.24",
+    "0.26": "0.24"
   },
   "ie": {
     "1.0.4": {
@@ -44387,6 +44397,50 @@
             "graphviz",
             "sphinx-automodapi",
             "numpydoc"
+          ]
+        },
+        "tests_require": [
+          "pytest",
+          "pytest-cov"
+        ],
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "0.3.3": {
+      "27": {
+        "install_requires": [
+          "numpy",
+          "sympy",
+          "matplotlib",
+          "seaborn"
+        ],
+        "setup_requires": [
+          "setuptools",
+          "pytest-runner"
+        ],
+        "extras_require": {
+          "test": [
+            "pytest-cov",
+            "codecov"
+          ],
+          "docs": [
+            "sphinx",
+            "sphinx-math-dollar",
+            "sphinx-toggleprompt",
+            "pydata_sphinx_theme==0.9.0",
+            "graphviz",
+            "sphinx-automodapi",
+            "numpydoc",
+            "sphinx_design",
+            "sphinx-prompt",
+            "sphinx-copybutton"
           ]
         },
         "tests_require": [
@@ -65821,7 +65875,56 @@
     "0.4.1": "0.4.0",
     "0.4.2": "0.4.0",
     "0.5.0": "0.4.0",
-    "0.5.1": "0.4.0"
+    "0.5.1": "0.4.0",
+    "0.6.0": {
+      "37": {
+        "install_requires": [
+          "wipac-dev-tools"
+        ],
+        "extras_require": {
+          "all": [
+            "wipac-mqclient[pulsar]",
+            "wipac-mqclient[rabbitmq]",
+            "wipac-mqclient[gcp]",
+            "wipac-mqclient[nats]"
+          ],
+          "pulsar": [
+            "pulsar-client"
+          ],
+          "rabbitmq": [
+            "pika"
+          ],
+          "gcp": [
+            "google-api-core",
+            "google-auth",
+            "google-cloud-pubsub",
+            "googleapis-common-protos"
+          ],
+          "nats": [
+            "nats-py[nkeys]"
+          ],
+          "telemetry": [
+            "wipac-telemetry"
+          ],
+          "dev": [
+            "asyncstdlib",
+            "mypy",
+            "pytest",
+            "pytest-asyncio",
+            "pytest-mock",
+            "mock",
+            "coloredlogs"
+          ]
+        },
+        "python_requires": [
+          ">=3.7",
+          "<3.11"
+        ]
+      },
+      "38": "37",
+      "39": "37",
+      "310": "37"
+    }
   },
   "wishbone-output-zmqtopic": {
     "1.0.0": {
