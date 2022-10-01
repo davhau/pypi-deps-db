@@ -61785,7 +61785,8 @@
     },
     "22.6.6": "22.6.5",
     "22.9.1": "22.6.5",
-    "22.9.2": "22.6.5"
+    "22.9.2": "22.6.5",
+    "22.9.3": "22.6.5"
   },
   "tingbot-gui": {
     "0.9.2": {
@@ -65988,6 +65989,58 @@
             "wipac-mqclient[rabbitmq]",
             "wipac-mqclient[gcp]",
             "wipac-mqclient[nats]"
+          ],
+          "pulsar": [
+            "pulsar-client"
+          ],
+          "rabbitmq": [
+            "pika"
+          ],
+          "gcp": [
+            "google-api-core",
+            "google-auth",
+            "google-cloud-pubsub",
+            "googleapis-common-protos"
+          ],
+          "nats": [
+            "nats-py[nkeys]"
+          ],
+          "telemetry": [
+            "wipac-telemetry"
+          ],
+          "dev": [
+            "asyncstdlib",
+            "mypy",
+            "pytest",
+            "pytest-asyncio",
+            "pytest-mock",
+            "mock",
+            "coloredlogs"
+          ]
+        },
+        "python_requires": [
+          ">=3.7",
+          "<3.11"
+        ]
+      },
+      "38": "37",
+      "39": "37",
+      "310": "37"
+    },
+    "0.6.1": {
+      "37": {
+        "install_requires": [
+          "wipac-dev-tools"
+        ],
+        "extras_require": {
+          "all": [
+            "pulsar-client",
+            "pika",
+            "google-api-core",
+            "google-auth",
+            "google-cloud-pubsub",
+            "googleapis-common-protos",
+            "nats-py[nkeys]"
           ],
           "pulsar": [
             "pulsar-client"
