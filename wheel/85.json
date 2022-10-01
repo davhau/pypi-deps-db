@@ -2925,6 +2925,20 @@
       "3.2.0rc3": {
         "apache_airflow_providers_jdbc-3.2.0rc3-py3-none-any.whl": "3.2.0rc1@apache_airflow_providers_jdbc-3.2.0rc1-py3-none-any.whl"
       },
+      "3.2.1": {
+        "apache_airflow_providers_jdbc-3.2.1-py3-none-any.whl": {
+          "provides_extras": [
+            "common.sql"
+          ],
+          "requires_dist": [
+            "apache-airflow-providers-common-sql (>=1.2.0)",
+            "apache-airflow (>=2.2.0)",
+            "jaydebeapi (>=1.1.1)",
+            "apache-airflow-providers-common-sql ; extra == 'common.sql'"
+          ],
+          "requires_python": "~=3.7"
+        }
+      },
       "3.2.1rc1": {
         "apache_airflow_providers_jdbc-3.2.1rc1-py3-none-any.whl": {
           "provides_extras": [
@@ -13632,6 +13646,18 @@
           ]
         },
         "bigdl_spark2-2.2.0b20220929-py3-none-manylinux1_x86_64.whl": "2.2.0b20220929@bigdl_spark2-2.2.0b20220929-py3-none-macosx_10_11_x86_64.whl"
+      },
+      "2.2.0b20221001": {
+        "bigdl_spark2-2.2.0b20221001-py3-none-macosx_10_11_x86_64.whl": {
+          "requires_dist": [
+            "bigdl-orca-spark2 (==2.2.0b20221001)",
+            "bigdl-nano (==2.2.0b20221001)",
+            "bigdl-chronos-spark2 (==2.2.0b20221001)",
+            "bigdl-friesian-spark2 (==2.2.0b20221001)",
+            "bigdl-serving (==2.2.0b20221001)"
+          ]
+        },
+        "bigdl_spark2-2.2.0b20221001-py3-none-manylinux1_x86_64.whl": "2.2.0b20221001@bigdl_spark2-2.2.0b20221001-py3-none-macosx_10_11_x86_64.whl"
       }
     }
   },
@@ -44494,6 +44520,18 @@
             "vcrpy (==4.1.1) ; extra == 'test'"
           ],
           "requires_python": ">=3.6"
+        }
+      }
+    }
+  },
+  "odoo-addon-account-invoice-inter-company": {
+    "py3": {
+      "15.0.1.0.0.3": {
+        "odoo_addon_account_invoice_inter_company-15.0.1.0.0.3-py3-none-any.whl": {
+          "requires_dist": [
+            "odoo (<15.1dev,>=15.0a)"
+          ],
+          "requires_python": ">=3.8"
         }
       }
     }
@@ -75924,6 +75962,21 @@
             "uvicorn (>=0.17.6,<0.18.0)",
             "watchmen-auth (==16.3.14)",
             "watchmen-storage (==16.3.14)"
+          ],
+          "requires_python": ">=3.9,<4.0"
+        }
+      },
+      "16.3.15": {
+        "watchmen_rest-16.3.15-py3-none-any.whl": {
+          "requires_dist": [
+            "fastapi (>=0.75.1,<0.76.0)",
+            "jsonschema (>=4.4.0,<5.0.0)",
+            "python-dotenv (>=0.20.0,<0.21.0)",
+            "python-jose (>=3.3.0,<4.0.0)",
+            "starlette-prometheus (>=0.9.0,<0.10.0)",
+            "uvicorn (>=0.17.6,<0.18.0)",
+            "watchmen-auth (==16.3.15)",
+            "watchmen-storage (==16.3.15)"
           ],
           "requires_python": ">=3.9,<4.0"
         }

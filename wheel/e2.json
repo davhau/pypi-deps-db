@@ -2348,6 +2348,9 @@
       "2.1.0rc3": {
         "apache_airflow_providers_dbt_cloud-2.1.0rc3-py3-none-any.whl": "2.1.0rc1@apache_airflow_providers_dbt_cloud-2.1.0rc1-py3-none-any.whl"
       },
+      "2.2.0": {
+        "apache_airflow_providers_dbt_cloud-2.2.0-py3-none-any.whl": "2.0.1@apache_airflow_providers_dbt_cloud-2.0.1-py3-none-any.whl"
+      },
       "2.2.0rc1": {
         "apache_airflow_providers_dbt_cloud-2.2.0rc1-py3-none-any.whl": "2.1.0rc1@apache_airflow_providers_dbt_cloud-2.1.0rc1-py3-none-any.whl"
       }
@@ -2777,6 +2780,23 @@
       },
       "3.2.0rc3": {
         "apache_airflow_providers_snowflake-3.2.0rc3-py3-none-any.whl": "3.2.0rc1@apache_airflow_providers_snowflake-3.2.0rc1-py3-none-any.whl"
+      },
+      "3.3.0": {
+        "apache_airflow_providers_snowflake-3.3.0-py3-none-any.whl": {
+          "provides_extras": [
+            "common.sql",
+            "slack"
+          ],
+          "requires_dist": [
+            "apache-airflow-providers-common-sql (>=1.2.0)",
+            "apache-airflow (>=2.2.0)",
+            "snowflake-connector-python (>=2.4.1)",
+            "snowflake-sqlalchemy (>=1.1.0)",
+            "apache-airflow-providers-common-sql ; extra == 'common.sql'",
+            "apache-airflow-providers-slack ; extra == 'slack'"
+          ],
+          "requires_python": "~=3.7"
+        }
       },
       "3.3.0rc1": {
         "apache_airflow_providers_snowflake-3.3.0rc1-py3-none-any.whl": {
@@ -21780,6 +21800,22 @@
             "dbnd-test-scenarios (==1.0.4.7) ; extra == 'tests'"
           ]
         }
+      },
+      "1.0.4.8": {
+        "dbnd_hdfs-1.0.4.8-py2.py3-none-any.whl": {
+          "provides_extras": [
+            "kerberos",
+            "tests"
+          ],
+          "requires_dist": [
+            "dbnd (==1.0.4.8)",
+            "pyox",
+            "hdfs",
+            "requests-kerberos ; extra == 'kerberos'",
+            "hdfs ; extra == 'kerberos'",
+            "dbnd-test-scenarios (==1.0.4.8) ; extra == 'tests'"
+          ]
+        }
       }
     }
   },
@@ -22410,6 +22446,9 @@
       },
       "0.4.0": {
         "devind_helpers-0.4.0-py3-none-any.whl": "0.3.0@devind_helpers-0.3.0-py3-none-any.whl"
+      },
+      "0.5.0": {
+        "devind_helpers-0.5.0-py3-none-any.whl": "0.3.0@devind_helpers-0.3.0-py3-none-any.whl"
       },
       "1.0.0": {
         "devind_helpers-1.0.0-py3-none-any.whl": {
@@ -39729,6 +39768,7 @@
       },
       "0.3.0": {
         "libsemigroups_pybind11-0.3.0-cp310-cp310-macosx_10_9_x86_64.whl": "0.1.6@libsemigroups_pybind11-0.1.6-cp310-cp310-macosx_10_9_x86_64.whl",
+        "libsemigroups_pybind11-0.3.0-cp310-cp310-macosx_11_0_arm64.whl": "0.1.6@libsemigroups_pybind11-0.1.6-cp310-cp310-macosx_10_9_x86_64.whl",
         "libsemigroups_pybind11-0.3.0-cp310-cp310-manylinux_2_17_i686.manylinux2014_i686.whl": "0.1.6@libsemigroups_pybind11-0.1.6-cp310-cp310-macosx_10_9_x86_64.whl",
         "libsemigroups_pybind11-0.3.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.1.6@libsemigroups_pybind11-0.1.6-cp310-cp310-macosx_10_9_x86_64.whl",
         "libsemigroups_pybind11-0.3.0-cp310-cp310-musllinux_1_1_i686.whl": "0.1.6@libsemigroups_pybind11-0.1.6-cp310-cp310-macosx_10_9_x86_64.whl",
@@ -39913,6 +39953,7 @@
       },
       "0.3.0": {
         "libsemigroups_pybind11-0.3.0-cp38-cp38-macosx_10_9_x86_64.whl": "0.1.6@libsemigroups_pybind11-0.1.6-cp38-cp38-macosx_10_9_x86_64.whl",
+        "libsemigroups_pybind11-0.3.0-cp38-cp38-macosx_11_0_arm64.whl": "0.1.6@libsemigroups_pybind11-0.1.6-cp38-cp38-macosx_10_9_x86_64.whl",
         "libsemigroups_pybind11-0.3.0-cp38-cp38-manylinux_2_17_i686.manylinux2014_i686.whl": "0.1.6@libsemigroups_pybind11-0.1.6-cp38-cp38-macosx_10_9_x86_64.whl",
         "libsemigroups_pybind11-0.3.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.1.6@libsemigroups_pybind11-0.1.6-cp38-cp38-macosx_10_9_x86_64.whl",
         "libsemigroups_pybind11-0.3.0-cp38-cp38-musllinux_1_1_i686.whl": "0.1.6@libsemigroups_pybind11-0.1.6-cp38-cp38-macosx_10_9_x86_64.whl",
@@ -39976,6 +40017,7 @@
       },
       "0.3.0": {
         "libsemigroups_pybind11-0.3.0-cp39-cp39-macosx_10_9_x86_64.whl": "0.1.6@libsemigroups_pybind11-0.1.6-cp39-cp39-macosx_10_9_x86_64.whl",
+        "libsemigroups_pybind11-0.3.0-cp39-cp39-macosx_11_0_arm64.whl": "0.1.6@libsemigroups_pybind11-0.1.6-cp39-cp39-macosx_10_9_x86_64.whl",
         "libsemigroups_pybind11-0.3.0-cp39-cp39-manylinux_2_17_i686.manylinux2014_i686.whl": "0.1.6@libsemigroups_pybind11-0.1.6-cp39-cp39-macosx_10_9_x86_64.whl",
         "libsemigroups_pybind11-0.3.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.1.6@libsemigroups_pybind11-0.1.6-cp39-cp39-macosx_10_9_x86_64.whl",
         "libsemigroups_pybind11-0.3.0-cp39-cp39-musllinux_1_1_i686.whl": "0.1.6@libsemigroups_pybind11-0.1.6-cp39-cp39-macosx_10_9_x86_64.whl",
@@ -42441,6 +42483,9 @@
       },
       "0.3": {
         "mosa-0.3-py3-none-any.whl": "0.2.5@mosa-0.2.5-py3-none-any.whl"
+      },
+      "0.3.5": {
+        "mosa-0.3.5-py3-none-any.whl": "0.2.5@mosa-0.2.5-py3-none-any.whl"
       }
     }
   },
@@ -75464,6 +75509,9 @@
       },
       "2.11.3": {
         "twarc-2.11.3-py3-none-any.whl": "2.10.0@twarc-2.10.0-py3-none-any.whl"
+      },
+      "2.12.0": {
+        "twarc-2.12.0-py3-none-any.whl": "2.10.0@twarc-2.10.0-py3-none-any.whl"
       },
       "2.6.0": {
         "twarc-2.6.0-py3-none-any.whl": "2.10.0@twarc-2.10.0-py3-none-any.whl"
