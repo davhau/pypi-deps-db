@@ -7428,6 +7428,9 @@
       "0.4.1": {
         "cookiecutter_poetry-0.4.1-py3-none-any.whl": "0.3.11@cookiecutter_poetry-0.3.11-py3-none-any.whl"
       },
+      "0.4.2": {
+        "cookiecutter_poetry-0.4.2-py3-none-any.whl": "0.3.11@cookiecutter_poetry-0.3.11-py3-none-any.whl"
+      },
       "0.4a1": {
         "cookiecutter_poetry-0.4a1-py3-none-any.whl": "0.3.11@cookiecutter_poetry-0.3.11-py3-none-any.whl"
       }
@@ -29393,6 +29396,34 @@
           "requires_python": ">=3.6"
         }
       },
+      "1.17.1.dev17": {
+        "large_image_source_bioformats-1.17.1.dev17-py3-none-any.whl": {
+          "provides_extras": [
+            "girder"
+          ],
+          "requires_dist": [
+            "large-image (>=1.17.1.dev17)",
+            "python-bioformats (>=1.5.2)",
+            "importlib-metadata ; python_version < \"3.8\"",
+            "girder-large-image (>=1.17.1.dev17) ; extra == 'girder'"
+          ],
+          "requires_python": ">=3.6"
+        }
+      },
+      "1.17.1.dev19": {
+        "large_image_source_bioformats-1.17.1.dev19-py3-none-any.whl": {
+          "provides_extras": [
+            "girder"
+          ],
+          "requires_dist": [
+            "large-image (>=1.17.1.dev19)",
+            "python-bioformats (>=1.5.2)",
+            "importlib-metadata ; python_version < \"3.8\"",
+            "girder-large-image (>=1.17.1.dev19) ; extra == 'girder'"
+          ],
+          "requires_python": ">=3.6"
+        }
+      },
       "1.17.1.dev2": {
         "large_image_source_bioformats-1.17.1.dev2-py3-none-any.whl": {
           "provides_extras": [
@@ -31404,6 +31435,29 @@
       },
       "0.2.0.dev2": {
         "libnxctrl-0.2.0.dev2-py3-none-any.whl": "0.2.0@libnxctrl-0.2.0-py3-none-any.whl"
+      },
+      "0.2.1": {
+        "libnxctrl-0.2.1-py3-none-any.whl": {
+          "provides_extras": [
+            "joycontrol",
+            "nxbt",
+            "usb"
+          ],
+          "requires_dist": [
+            "hid (~=1.0.5) ; extra == 'joycontrol'",
+            "aioconsole (~=0.5.1) ; extra == 'joycontrol'",
+            "dbus-python (<1.4.0,>=1.2.16) ; extra == 'nxbt'",
+            "Flask (<2.3.0,>=1.1.2) ; extra == 'nxbt'",
+            "Flask-SocketIO (<5.4.0,>=5.0.1) ; extra == 'nxbt'",
+            "eventlet (<0.34,>=0.31) ; extra == 'nxbt'",
+            "blessed (<1.20.0,>=1.17.10) ; extra == 'nxbt'",
+            "pynput (~=1.7.1) ; extra == 'nxbt'",
+            "psutil (~=5.6.6) ; extra == 'nxbt'",
+            "cryptography (<38.1.0,>=3.3.2) ; extra == 'nxbt'",
+            "pyserial (~=3.5) ; extra == 'usb'"
+          ],
+          "requires_python": ">=3.9"
+        }
       }
     }
   },
@@ -42397,6 +42451,9 @@
       },
       "14.0.1.0.2.dev3": {
         "odoo14_addon_l10n_es_account_statement_import_n43-14.0.1.0.2.dev3-py3-none-any.whl": "14.0.1.0.1@odoo14_addon_l10n_es_account_statement_import_n43-14.0.1.0.1-py3-none-any.whl"
+      },
+      "14.0.1.0.3": {
+        "odoo14_addon_l10n_es_account_statement_import_n43-14.0.1.0.3-py3-none-any.whl": "14.0.1.0.1@odoo14_addon_l10n_es_account_statement_import_n43-14.0.1.0.1-py3-none-any.whl"
       }
     }
   },
@@ -54385,143 +54442,143 @@
           "requires_python": ">=3.7"
         }
       },
-      "0.14.16": {
-        "polars-0.14.16-cp37-abi3-macosx_10_7_x86_64.whl": {
+      "0.14.17": {
+        "polars-0.14.17-cp37-abi3-macosx_10_7_x86_64.whl": {
           "provides_extras": [
+            "pyarrow",
             "xlsx2csv",
-            "timezone",
-            "connectorx",
-            "fsspec",
-            "pandas",
             "numpy",
-            "matplotlib",
-            "pyarrow",
-            "all"
-          ],
-          "requires_dist": [
-            "typing_extensions >= 4.0.0; python_version < '3.10'",
-            "xlsx2csv >= 0.8.0; extra == 'xlsx2csv'",
-            "backports.zoneinfo; (python_version < '3.9') and extra == 'timezone'",
-            "tzdata; (platform_system == 'Windows') and extra == 'timezone'",
-            "connectorx; extra == 'connectorx'",
-            "fsspec; extra == 'fsspec'",
-            "pyarrow>=4.0.0; extra == 'pandas'",
-            "pandas; extra == 'pandas'",
-            "numpy >= 1.16.0; extra == 'numpy'",
-            "matplotlib; extra == 'matplotlib'",
-            "pyarrow>=4.0.0; extra == 'pyarrow'",
-            "polars[pyarrow,pandas,numpy,fsspec,connectorx,xlsx2csv,timezone,matplotlib]; extra == 'all'"
-          ],
-          "requires_python": ">=3.7"
-        },
-        "polars-0.14.16-cp37-abi3-macosx_11_0_arm64.whl": {
-          "provides_extras": [
-            "fsspec",
-            "pyarrow",
-            "pandas",
-            "timezone",
-            "matplotlib",
             "all",
-            "numpy",
-            "xlsx2csv",
+            "fsspec",
+            "timezone",
+            "matplotlib",
+            "pandas",
             "connectorx"
           ],
           "requires_dist": [
             "typing_extensions >= 4.0.0; python_version < '3.10'",
-            "fsspec; extra == 'fsspec'",
             "pyarrow>=4.0.0; extra == 'pyarrow'",
-            "pyarrow>=4.0.0; extra == 'pandas'",
-            "pandas; extra == 'pandas'",
+            "xlsx2csv >= 0.8.0; extra == 'xlsx2csv'",
+            "numpy >= 1.16.0; extra == 'numpy'",
+            "polars[pyarrow,pandas,numpy,fsspec,connectorx,xlsx2csv,timezone,matplotlib]; extra == 'all'",
+            "fsspec; extra == 'fsspec'",
             "backports.zoneinfo; (python_version < '3.9') and extra == 'timezone'",
             "tzdata; (platform_system == 'Windows') and extra == 'timezone'",
             "matplotlib; extra == 'matplotlib'",
-            "polars[pyarrow,pandas,numpy,fsspec,connectorx,xlsx2csv,timezone,matplotlib]; extra == 'all'",
-            "numpy >= 1.16.0; extra == 'numpy'",
-            "xlsx2csv >= 0.8.0; extra == 'xlsx2csv'",
+            "pyarrow>=4.0.0; extra == 'pandas'",
+            "pandas; extra == 'pandas'",
             "connectorx; extra == 'connectorx'"
           ],
           "requires_python": ">=3.7"
         },
-        "polars-0.14.16-cp37-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl": {
+        "polars-0.14.17-cp37-abi3-macosx_11_0_arm64.whl": {
           "provides_extras": [
-            "matplotlib",
-            "pyarrow",
-            "pandas",
-            "xlsx2csv",
-            "timezone",
-            "connectorx",
-            "numpy",
-            "all",
-            "fsspec"
-          ],
-          "requires_dist": [
-            "typing_extensions >= 4.0.0; python_version < '3.10'",
-            "matplotlib; extra == 'matplotlib'",
-            "pyarrow>=4.0.0; extra == 'pyarrow'",
-            "pyarrow>=4.0.0; extra == 'pandas'",
-            "pandas; extra == 'pandas'",
-            "xlsx2csv >= 0.8.0; extra == 'xlsx2csv'",
-            "backports.zoneinfo; (python_version < '3.9') and extra == 'timezone'",
-            "tzdata; (platform_system == 'Windows') and extra == 'timezone'",
-            "connectorx; extra == 'connectorx'",
-            "numpy >= 1.16.0; extra == 'numpy'",
-            "polars[pyarrow,pandas,numpy,fsspec,connectorx,xlsx2csv,timezone,matplotlib]; extra == 'all'",
-            "fsspec; extra == 'fsspec'"
-          ],
-          "requires_python": ">=3.7"
-        },
-        "polars-0.14.16-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": {
-          "provides_extras": [
-            "connectorx",
-            "numpy",
-            "xlsx2csv",
-            "matplotlib",
             "pandas",
             "fsspec",
+            "matplotlib",
+            "connectorx",
             "pyarrow",
+            "timezone",
+            "xlsx2csv",
             "all",
-            "timezone"
+            "numpy"
           ],
           "requires_dist": [
             "typing_extensions >= 4.0.0; python_version < '3.10'",
-            "connectorx; extra == 'connectorx'",
-            "numpy >= 1.16.0; extra == 'numpy'",
-            "xlsx2csv >= 0.8.0; extra == 'xlsx2csv'",
-            "matplotlib; extra == 'matplotlib'",
             "pyarrow>=4.0.0; extra == 'pandas'",
             "pandas; extra == 'pandas'",
             "fsspec; extra == 'fsspec'",
+            "matplotlib; extra == 'matplotlib'",
+            "connectorx; extra == 'connectorx'",
             "pyarrow>=4.0.0; extra == 'pyarrow'",
-            "polars[pyarrow,pandas,numpy,fsspec,connectorx,xlsx2csv,timezone,matplotlib]; extra == 'all'",
             "backports.zoneinfo; (python_version < '3.9') and extra == 'timezone'",
-            "tzdata; (platform_system == 'Windows') and extra == 'timezone'"
+            "tzdata; (platform_system == 'Windows') and extra == 'timezone'",
+            "xlsx2csv >= 0.8.0; extra == 'xlsx2csv'",
+            "polars[pyarrow,pandas,numpy,fsspec,connectorx,xlsx2csv,timezone,matplotlib]; extra == 'all'",
+            "numpy >= 1.16.0; extra == 'numpy'"
           ],
           "requires_python": ">=3.7"
         },
-        "polars-0.14.16-cp37-abi3-win_amd64.whl": {
+        "polars-0.14.17-cp37-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl": {
           "provides_extras": [
-            "connectorx",
+            "numpy",
+            "matplotlib",
+            "all",
+            "pandas",
             "fsspec",
+            "xlsx2csv",
             "timezone",
             "pyarrow",
+            "connectorx"
+          ],
+          "requires_dist": [
+            "typing_extensions >= 4.0.0; python_version < '3.10'",
+            "numpy >= 1.16.0; extra == 'numpy'",
+            "matplotlib; extra == 'matplotlib'",
+            "polars[pyarrow,pandas,numpy,fsspec,connectorx,xlsx2csv,timezone,matplotlib]; extra == 'all'",
+            "pyarrow>=4.0.0; extra == 'pandas'",
+            "pandas; extra == 'pandas'",
+            "fsspec; extra == 'fsspec'",
+            "xlsx2csv >= 0.8.0; extra == 'xlsx2csv'",
+            "backports.zoneinfo; (python_version < '3.9') and extra == 'timezone'",
+            "tzdata; (platform_system == 'Windows') and extra == 'timezone'",
+            "pyarrow>=4.0.0; extra == 'pyarrow'",
+            "connectorx; extra == 'connectorx'"
+          ],
+          "requires_python": ">=3.7"
+        },
+        "polars-0.14.17-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": {
+          "provides_extras": [
             "pandas",
-            "numpy",
+            "connectorx",
             "xlsx2csv",
+            "timezone",
+            "matplotlib",
+            "fsspec",
+            "numpy",
             "all",
+            "pyarrow"
+          ],
+          "requires_dist": [
+            "typing_extensions >= 4.0.0; python_version < '3.10'",
+            "pyarrow>=4.0.0; extra == 'pandas'",
+            "pandas; extra == 'pandas'",
+            "connectorx; extra == 'connectorx'",
+            "xlsx2csv >= 0.8.0; extra == 'xlsx2csv'",
+            "backports.zoneinfo; (python_version < '3.9') and extra == 'timezone'",
+            "tzdata; (platform_system == 'Windows') and extra == 'timezone'",
+            "matplotlib; extra == 'matplotlib'",
+            "fsspec; extra == 'fsspec'",
+            "numpy >= 1.16.0; extra == 'numpy'",
+            "polars[pyarrow,pandas,numpy,fsspec,connectorx,xlsx2csv,timezone,matplotlib]; extra == 'all'",
+            "pyarrow>=4.0.0; extra == 'pyarrow'"
+          ],
+          "requires_python": ">=3.7"
+        },
+        "polars-0.14.17-cp37-abi3-win_amd64.whl": {
+          "provides_extras": [
+            "xlsx2csv",
+            "numpy",
+            "pandas",
+            "fsspec",
+            "connectorx",
+            "pyarrow",
+            "all",
+            "timezone",
             "matplotlib"
           ],
           "requires_dist": [
             "typing_extensions >= 4.0.0; python_version < '3.10'",
-            "connectorx; extra == 'connectorx'",
-            "fsspec; extra == 'fsspec'",
-            "backports.zoneinfo; (python_version < '3.9') and extra == 'timezone'",
-            "tzdata; (platform_system == 'Windows') and extra == 'timezone'",
-            "pyarrow>=4.0.0; extra == 'pyarrow'",
+            "xlsx2csv >= 0.8.0; extra == 'xlsx2csv'",
+            "numpy >= 1.16.0; extra == 'numpy'",
             "pyarrow>=4.0.0; extra == 'pandas'",
             "pandas; extra == 'pandas'",
-            "numpy >= 1.16.0; extra == 'numpy'",
-            "xlsx2csv >= 0.8.0; extra == 'xlsx2csv'",
+            "fsspec; extra == 'fsspec'",
+            "connectorx; extra == 'connectorx'",
+            "pyarrow>=4.0.0; extra == 'pyarrow'",
             "polars[pyarrow,pandas,numpy,fsspec,connectorx,xlsx2csv,timezone,matplotlib]; extra == 'all'",
+            "backports.zoneinfo; (python_version < '3.9') and extra == 'timezone'",
+            "tzdata; (platform_system == 'Windows') and extra == 'timezone'",
             "matplotlib; extra == 'matplotlib'"
           ],
           "requires_python": ">=3.7"
@@ -57039,6 +57096,12 @@
         "pydndc-0.29.2-cp310-cp310-macosx_11_0_arm64.whl": "0.25.0@pydndc-0.25.0-cp310-cp310-macosx_10_9_universal2.whl",
         "pydndc-0.29.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.25.0@pydndc-0.25.0-cp310-cp310-macosx_10_9_universal2.whl",
         "pydndc-0.29.2-cp310-cp310-win_amd64.whl": "0.25.0@pydndc-0.25.0-cp310-cp310-macosx_10_9_universal2.whl"
+      },
+      "0.29.3": {
+        "pydndc-0.29.3-cp310-cp310-macosx_10_9_universal2.whl": "0.25.0@pydndc-0.25.0-cp310-cp310-macosx_10_9_universal2.whl",
+        "pydndc-0.29.3-cp310-cp310-macosx_10_9_x86_64.whl": "0.25.0@pydndc-0.25.0-cp310-cp310-macosx_10_9_universal2.whl",
+        "pydndc-0.29.3-cp310-cp310-macosx_11_0_arm64.whl": "0.25.0@pydndc-0.25.0-cp310-cp310-macosx_10_9_universal2.whl",
+        "pydndc-0.29.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.25.0@pydndc-0.25.0-cp310-cp310-macosx_10_9_universal2.whl"
       }
     },
     "cp36": {
@@ -57076,6 +57139,9 @@
       },
       "0.29.2": {
         "pydndc-0.29.2-cp36-cp36m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.25.0@pydndc-0.25.0-cp36-cp36m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+      },
+      "0.29.3": {
+        "pydndc-0.29.3-cp36-cp36m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.25.0@pydndc-0.25.0-cp36-cp36m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
       }
     },
     "cp37": {
@@ -57115,6 +57181,9 @@
       },
       "0.29.2": {
         "pydndc-0.29.2-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.25.0@pydndc-0.25.0-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+      },
+      "0.29.3": {
+        "pydndc-0.29.3-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.25.0@pydndc-0.25.0-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
       }
     },
     "cp38": {
@@ -57224,6 +57293,12 @@
         "pydndc-0.29.2-cp38-cp38-macosx_11_0_arm64.whl": "0.25.0@pydndc-0.25.0-cp38-cp38-macosx_10_9_universal2.whl",
         "pydndc-0.29.2-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.25.0@pydndc-0.25.0-cp38-cp38-macosx_10_9_universal2.whl",
         "pydndc-0.29.2-cp38-cp38-win_amd64.whl": "0.25.0@pydndc-0.25.0-cp38-cp38-macosx_10_9_universal2.whl"
+      },
+      "0.29.3": {
+        "pydndc-0.29.3-cp38-cp38-macosx_10_9_universal2.whl": "0.25.0@pydndc-0.25.0-cp38-cp38-macosx_10_9_universal2.whl",
+        "pydndc-0.29.3-cp38-cp38-macosx_10_9_x86_64.whl": "0.25.0@pydndc-0.25.0-cp38-cp38-macosx_10_9_universal2.whl",
+        "pydndc-0.29.3-cp38-cp38-macosx_11_0_arm64.whl": "0.25.0@pydndc-0.25.0-cp38-cp38-macosx_10_9_universal2.whl",
+        "pydndc-0.29.3-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.25.0@pydndc-0.25.0-cp38-cp38-macosx_10_9_universal2.whl"
       }
     },
     "cp39": {
@@ -57333,6 +57408,12 @@
         "pydndc-0.29.2-cp39-cp39-macosx_11_0_arm64.whl": "0.25.0@pydndc-0.25.0-cp39-cp39-macosx_10_9_universal2.whl",
         "pydndc-0.29.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.25.0@pydndc-0.25.0-cp39-cp39-macosx_10_9_universal2.whl",
         "pydndc-0.29.2-cp39-cp39-win_amd64.whl": "0.25.0@pydndc-0.25.0-cp39-cp39-macosx_10_9_universal2.whl"
+      },
+      "0.29.3": {
+        "pydndc-0.29.3-cp39-cp39-macosx_10_9_universal2.whl": "0.25.0@pydndc-0.25.0-cp39-cp39-macosx_10_9_universal2.whl",
+        "pydndc-0.29.3-cp39-cp39-macosx_10_9_x86_64.whl": "0.25.0@pydndc-0.25.0-cp39-cp39-macosx_10_9_universal2.whl",
+        "pydndc-0.29.3-cp39-cp39-macosx_11_0_arm64.whl": "0.25.0@pydndc-0.25.0-cp39-cp39-macosx_10_9_universal2.whl",
+        "pydndc-0.29.3-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.25.0@pydndc-0.25.0-cp39-cp39-macosx_10_9_universal2.whl"
       }
     }
   },

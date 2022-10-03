@@ -33759,7 +33759,37 @@
     "1.17.1.dev9": "1.14.0",
     "1.17.1.dev11": "1.14.0",
     "1.17.1.dev13": "1.14.0",
-    "1.17.1.dev15": "1.14.0"
+    "1.17.1.dev15": "1.14.0",
+    "1.17.1.dev17": {
+      "36": {
+        "install_requires": [
+          "girder>=3.0.4",
+          "girder-jobs>=3.0.3",
+          "large_image"
+        ],
+        "setup_requires": [
+          "setuptools-scm",
+          "setuptools-git"
+        ],
+        "extras_require": {
+          "tasks": [
+            "large-image-tasks[girder]",
+            "girder-worker[girder]>=0.6.0"
+          ],
+          ":python_version < \"3.8\"": [
+            "importlib-metadata<5"
+          ]
+        },
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "1.17.1.dev19": "1.17.1.dev17"
   },
   "git-dependency-installer": {
     "1.0.0": {
@@ -45782,7 +45812,26 @@
       "310": "27"
     },
     "0.25.0": "0.24.1",
-    "0.26.0": "0.24.1"
+    "0.26.0": "0.24.1",
+    "0.27.0": {
+      "27": {
+        "install_requires": [
+          "PyJWT>=2.3.0",
+          "aiofiles>=0.7",
+          "camel-converter>=1.0.0",
+          "httpx>=0.17",
+          "pydantic>=1.8"
+        ],
+        "python_requires": [
+          ">=3.7,<4.0"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "mendeleystats": {
     "0.1": {
@@ -58903,6 +58952,39 @@
       "310": "27"
     },
     "0.14": "0.13"
+  },
+  "py-jmeter-dsl": {
+    "0.1a1": {
+      "27": {
+        "install_requires": [
+          "pyjnius<2.0.0,>=1.4.2"
+        ],
+        "python_requires": [
+          ">=3.8,<4.0"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "0.2a1": {
+      "27": {
+        "install_requires": [
+          "pyjnius<2.0.0,>=1.4.2",
+          "typing-extensions<5.0.0,>=4.3.0"
+        ],
+        "python_requires": [
+          ">=3.8,<4.0"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "py-master": {
     "0.0.1": {
