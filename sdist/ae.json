@@ -44338,7 +44338,72 @@
     "10.0.0.dev11": "10.0.0.dev8",
     "10.0.0.dev12": "10.0.0.dev8",
     "10.0.0.dev13": "10.0.0.dev8",
-    "10.0.0.dev14": "10.0.0.dev8"
+    "10.0.0.dev14": "10.0.0.dev8",
+    "10.0.0.dev15": {
+      "27": {
+        "install_requires": [
+          "invenio-app<1.4.0,>=1.3.4",
+          "invenio-base<1.3.0,>=1.2.11",
+          "invenio-cache<1.2.0,>=1.1.1",
+          "invenio-celery<1.3.0,>=1.2.4",
+          "invenio-config<1.1.0,>=1.0.3",
+          "invenio-i18n<1.4.0,>=1.3.1",
+          "invenio-db[mysql,postgresql]<1.1.0,>=1.0.14",
+          "invenio-admin<1.4.0,>=1.3.2",
+          "invenio-assets<1.4.0,>=1.3.0",
+          "invenio-formatter<1.2.0,>=1.1.3",
+          "invenio-logging[sentry-sdk]<1.4.0,>=1.3.2",
+          "invenio-mail<1.1.0,>=1.0.2",
+          "invenio-rest<1.3.0,>=1.2.8",
+          "invenio-theme<1.5.0,>=1.4.0",
+          "invenio-access<1.5.0,>=1.4.4",
+          "invenio-accounts<2.1.0,>=2.0.0",
+          "invenio-oauth2server<1.4.0,>=1.3.6",
+          "invenio-oauthclient<2.1.0,>=2.0.1",
+          "invenio-userprofiles<2.1.0,>=2.0.2",
+          "invenio-indexer<2.2.0,>=2.1.0",
+          "invenio-jsonschemas<1.2.0,>=1.1.4",
+          "invenio-oaiserver<2.1.0,>=2.0.0",
+          "invenio-pidstore<1.3.0,>=1.2.3",
+          "invenio-records-rest<2.2.0,>=2.1.0",
+          "invenio-records-ui<1.3.0,>=1.2.0",
+          "invenio-records<2.1.0,>=2.0.0",
+          "invenio-search-ui<2.2.0,>=2.1.2",
+          "invenio-files-rest<1.4.0,>=1.3.3",
+          "invenio-previewer<1.4.0,>=1.3.6",
+          "invenio-records-files<1.3.0,>=1.2.1",
+          "invenio-rdm-records<0.40.0,>=0.39.0",
+          "CairoSVG<3.0.0,>=2.5.2"
+        ],
+        "extras_require": {
+          "s3": [
+            "invenio-s3~=1.0.5"
+          ],
+          "tests": [
+            "pytest-black>=0.3.0",
+            "pytest-invenio<3.0.0,>=2.1.0",
+            "Sphinx>=4.5.0"
+          ],
+          "elasticsearch7": [
+            "invenio-search[elasticsearch7]<3.0.0,>=2.1.0"
+          ],
+          "opensearch1": [
+            "invenio-search[opensearch1]<3.0.0,>=2.1.0"
+          ],
+          "opensearch2": [
+            "invenio-search[opensearch2]<3.0.0,>=2.1.0"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "ioe": {
     "0.0.1": {
@@ -46551,7 +46616,12 @@
     "0.0.31.dev0": "0.0.31",
     "0.0.31.dev1": "0.0.31",
     "0.0.31.dev11": "0.0.31",
-    "0.0.32.dev6": {
+    "0.0.32.dev6": "0.0.32",
+    "0.0.32.dev7": "0.0.32",
+    "0.0.32.dev8": "0.0.32",
+    "0.0.32.dev10": "0.0.32",
+    "0.0.32.dev9": "0.0.32",
+    "0.0.32": {
       "37": {
         "install_requires": [
           "finetuner==0.6.1",
@@ -46599,10 +46669,8 @@
       "39": "37",
       "310": "37"
     },
-    "0.0.32.dev7": "0.0.32.dev6",
-    "0.0.32.dev8": "0.0.32.dev6",
-    "0.0.32.dev10": "0.0.32.dev6",
-    "0.0.32.dev9": "0.0.32.dev6"
+    "0.0.32.dev11": "0.0.32",
+    "0.0.32.dev12": "0.0.32"
   },
   "jinja2-python-version": {
     "1.0.0": {
@@ -65436,7 +65504,8 @@
     "0.0.52": "0.0.30",
     "0.0.54": "0.0.30",
     "0.0.55": "0.0.30",
-    "0.0.56": "0.0.30"
+    "0.0.56": "0.0.30",
+    "0.0.57": "0.0.30"
   },
   "pymarkdown": {
     "0.1.0": {
@@ -73212,6 +73281,28 @@
           "pycurl~=7.43.0.6",
           "retry~=0.9.2",
           "Sphinx~=4.0.3",
+          "PyJWT~=2.4.0"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "2.1.2rc4": {
+      "27": {
+        "install_requires": [
+          "Cheetah3~=3.2.6.post1",
+          "CherryPy~=18.8.0",
+          "CMSMonitoring~=0.6.7",
+          "dbs3-client~=4.0.10",
+          "future~=0.18.2",
+          "httplib2~=0.20.4",
+          "psutil~=5.9.1",
+          "pycurl~=7.45.1",
+          "retry~=0.9.2",
+          "Sphinx~=5.1.1",
           "PyJWT~=2.4.0"
         ]
       },
