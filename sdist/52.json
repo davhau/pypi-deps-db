@@ -7561,7 +7561,44 @@
     },
     "4.0.5": "4.0.3",
     "4.1.0": "4.0.3",
-    "4.2.0": "4.0.3"
+    "4.2.0": "4.0.3",
+    "4.3.0": {
+      "27": {
+        "install_requires": [
+          "alembic==1.*",
+          "psycopg2==2.*",
+          "wiremind-kubernetes~=7.0"
+        ],
+        "extras_require": {
+          "test": [
+            "mock",
+            "pytest",
+            "pytest-mock"
+          ],
+          "mypy": [
+            "mypy"
+          ],
+          "dev": [
+            "black",
+            "flake8",
+            "flake8-mutable",
+            "pip-tools",
+            "mypy",
+            "mock",
+            "pytest",
+            "pytest-mock"
+          ]
+        },
+        "python_requires": [
+          ">=3.7.0"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "chemyst": {
     "0.1.0": {
@@ -16217,7 +16254,8 @@
       "39": "27",
       "310": "27"
     },
-    "1.411.0": "1.27.1"
+    "1.411.0": "1.27.1",
+    "1.412.0": "1.27.1"
   },
   "data-warehouse": {
     "1.0.0": {
@@ -16235,6 +16273,23 @@
         "install_requires": [
           "grpcio",
           "grpcio-tools"
+        ],
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "0.0.2": {
+      "27": {
+        "install_requires": [
+          "grpcio",
+          "bcrypt",
+          "passlib"
         ],
         "python_requires": [
           ">=3.6"
