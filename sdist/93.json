@@ -2218,7 +2218,127 @@
       "39": "37",
       "310": "37"
     },
-    "2.1.0": "2.0.0"
+    "2.1.0": "2.0.0",
+    "2.2.0": {
+      "27": {
+        "install_requires": [
+          "ansible-builder<2,>=1",
+          "ansible-runner<3,>=2",
+          "jinja2",
+          "jsonschema",
+          "onigurumacffi<2,>=1.1.0",
+          "pyyaml",
+          "tzdata"
+        ],
+        "extras_require": {
+          ":python_version < \"3.9.0\"": [
+            "backports.zoneinfo",
+            "importlib-resources"
+          ],
+          "docs": [
+            "myst-parser[linkify]>=0.15.1",
+            "setuptools-scm>=6.0.1",
+            "sphinx>=4.5.0",
+            "sphinx-ansible-theme>=0.8.0",
+            "sphinx-copybutton>=0.4.0",
+            "sphinx-notfound-page>=0.7.1",
+            "sphinxcontrib-apidoc>=0.3.0",
+            "sphinxcontrib-towncrier>=0.2.0a0"
+          ],
+          "ansible_core": [
+            "ansible-core"
+          ],
+          "test:python_version < \"3.10.0\"": [
+            "typing-extensions"
+          ],
+          "ansible_base": [
+            "ansible-base"
+          ],
+          "ansible": [
+            "ansible"
+          ],
+          "test": [
+            "ansible-core",
+            "darglint",
+            "flake8-docstrings",
+            "libtmux",
+            "pre-commit",
+            "pytest-cov",
+            "pytest-mock",
+            "pytest-subtests",
+            "pytest-xdist",
+            "sphinx"
+          ],
+          ":python_version >= \"3.11\"": [
+            "setuptools>=63.1.0"
+          ]
+        },
+        "python_requires": [
+          ">=3.8"
+        ]
+      },
+      "36": "27",
+      "37": {
+        "install_requires": [
+          "ansible-builder<2,>=1",
+          "ansible-runner<3,>=2",
+          "jinja2",
+          "jsonschema",
+          "onigurumacffi<2,>=1.1.0",
+          "pyyaml",
+          "tzdata"
+        ],
+        "extras_require": {
+          "ansible": [
+            "ansible"
+          ],
+          "ansible-base": [
+            "ansible-base"
+          ],
+          "ansible-core": [
+            "ansible-core"
+          ],
+          "docs": [
+            "myst-parser[linkify]>=0.15.1",
+            "setuptools-scm>=6.0.1",
+            "sphinx>=4.5.0",
+            "sphinx-ansible-theme>=0.8.0",
+            "sphinx-copybutton>=0.4.0",
+            "sphinx-notfound-page>=0.7.1",
+            "sphinxcontrib-apidoc>=0.3.0",
+            "sphinxcontrib-towncrier>=0.2.0a0"
+          ],
+          "test": [
+            "ansible-core",
+            "darglint",
+            "flake8-docstrings",
+            "libtmux",
+            "pre-commit",
+            "pytest-cov",
+            "pytest-mock",
+            "pytest-subtests",
+            "pytest-xdist",
+            "sphinx"
+          ],
+          "test:python_version < \"3.10.0\"": [
+            "typing-extensions"
+          ],
+          ":python_version < \"3.9.0\"": [
+            "backports.zoneinfo",
+            "importlib-resources"
+          ],
+          ":python_version >= \"3.11\"": [
+            "setuptools>=63.1.0"
+          ]
+        },
+        "python_requires": [
+          ">=3.8"
+        ]
+      },
+      "38": "37",
+      "39": "37",
+      "310": "37"
+    }
   },
   "ant-widgets": {
     "0.1.3": {
@@ -54730,7 +54850,8 @@
     "0.1.341": "0.1.330",
     "0.1.342": "0.1.330",
     "0.1.343": "0.1.330",
-    "0.1.344": "0.1.330"
+    "0.1.344": "0.1.330",
+    "0.1.345": "0.1.330"
   },
   "lust": {
     "1.1": {
@@ -56527,7 +56648,76 @@
     },
     "0.22.2rc2": "0.22.2rc1",
     "0.22.2rc3": "0.22.2rc1",
-    "0.22.2rc4": "0.22.2rc1"
+    "0.22.2rc4": "0.22.2rc1",
+    "0.23.0rc1": {
+      "27": {
+        "install_requires": [
+          "certifi>=2017.4.17",
+          "python-dateutil>=2.1",
+          "six>=1.10",
+          "mlflow<=1.23.0,>=1.2.0",
+          "google-cloud-storage>=1.19.0",
+          "boto3>=1.9.84",
+          "urllib3>=1.23",
+          "PyPrind>=2.11.2",
+          "google-auth>=1.11.0",
+          "Click>=7.0",
+          "cloudpickle==2.0.0",
+          "cookiecutter>=1.7.2",
+          "docker>=4.2.1",
+          "PyYAML>=5.4",
+          "protobuf<4.0.0",
+          "caraml-upi-protos>=0.3.1"
+        ],
+        "setup_requires": [
+          "setuptools_scm"
+        ],
+        "extras_require": {
+          "test": [
+            "pytest",
+            "pytest-dependency",
+            "pytest-cov",
+            "pytest-xdist",
+            "urllib3-mock>=0.3.3",
+            "requests",
+            "xgboost==1.6.2",
+            "scikit-learn==1.0.1",
+            "joblib<1.2.0,>=0.13.0",
+            "mypy>=0.812",
+            "google-cloud-bigquery>=1.18.0",
+            "google-cloud-bigquery-storage>=0.7.0",
+            "grpcio<1.49.0,>=1.31.0",
+            "recursive-diff>=1.0.0",
+            "xarray"
+          ]
+        },
+        "tests_require": [
+          "pytest",
+          "pytest-dependency",
+          "pytest-cov",
+          "pytest-xdist",
+          "urllib3-mock>=0.3.3",
+          "requests",
+          "xgboost==1.6.2",
+          "scikit-learn==1.0.1",
+          "joblib>=0.13.0,<1.2.0",
+          "mypy>=0.812",
+          "google-cloud-bigquery>=1.18.0",
+          "google-cloud-bigquery-storage>=0.7.0",
+          "grpcio>=1.31.0,<1.49.0",
+          "recursive-diff>=1.0.0",
+          "xarray"
+        ],
+        "python_requires": [
+          ">=3.7,<3.11"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "mesh-gtfsr": {
     "0.0.10": "0.0.5",
