@@ -31254,7 +31254,8 @@
       "310": "27"
     },
     "3.11.3": "3.11.2",
-    "3.11.4": "3.11.2"
+    "3.11.4": "3.11.2",
+    "3.11.5": "3.11.2"
   },
   "dnx-mysql-replication": {
     "0.21": {
@@ -64767,7 +64768,8 @@
       "38": "27",
       "39": "27",
       "310": "27"
-    }
+    },
+    "0.3.14": "0.3.13"
   },
   "nonebot-plugin-pixiv": {
     "1.0.0": {
@@ -95574,7 +95576,462 @@
       "310": "36"
     },
     "4.22.1": "4.22.0",
-    "4.22.2": "4.22.0"
+    "4.22.2": "4.22.0",
+    "4.23.0": {
+      "36": {
+        "install_requires": [
+          "filelock",
+          "huggingface-hub<1.0,>=0.10.0",
+          "numpy>=1.17",
+          "packaging>=20.0",
+          "pyyaml>=5.1",
+          "regex!=2019.12.17",
+          "requests",
+          "tokenizers!=0.11.3,<0.14,>=0.11.1",
+          "tqdm>=4.27"
+        ],
+        "extras_require": {
+          "ja": [
+            "fugashi>=1.0",
+            "ipadic<2.0,>=1.0.0",
+            "unidic_lite>=1.0.7",
+            "unidic>=1.0.2",
+            "sudachipy>=0.6.6",
+            "sudachidict_core>=20220729",
+            "pyknp>=0.6.1"
+          ],
+          "sklearn": [
+            "scikit-learn"
+          ],
+          "tf": [
+            "tensorflow>=2.4",
+            "onnxconverter-common",
+            "tf2onnx",
+            "tensorflow-text"
+          ],
+          "tf-cpu": [
+            "tensorflow-cpu>=2.3",
+            "onnxconverter-common",
+            "tf2onnx",
+            "tensorflow-text"
+          ],
+          "torch": [
+            "torch!=1.12.0,>=1.7"
+          ],
+          "accelerate": [
+            "accelerate>=0.10.0"
+          ],
+          "retrieval": [
+            "faiss-cpu",
+            "datasets!=2.5.0"
+          ],
+          "flax": [
+            "jax!=0.3.2,<=0.3.6,>=0.2.8",
+            "jaxlib<=0.3.6,>=0.1.65",
+            "flax>=0.4.1",
+            "optax>=0.0.8"
+          ],
+          "tokenizers": [
+            "tokenizers!=0.11.3,<0.14,>=0.11.1"
+          ],
+          "ftfy": [
+            "ftfy"
+          ],
+          "onnxruntime": [
+            "onnxruntime>=1.4.0",
+            "onnxruntime-tools>=1.4.2"
+          ],
+          "onnx": [
+            "onnxconverter-common",
+            "tf2onnx",
+            "onnxruntime>=1.4.0",
+            "onnxruntime-tools>=1.4.2"
+          ],
+          "modelcreation": [
+            "cookiecutter==1.7.3"
+          ],
+          "sagemaker": [
+            "sagemaker>=2.31.0"
+          ],
+          "deepspeed": [
+            "deepspeed>=0.6.5",
+            "accelerate>=0.10.0"
+          ],
+          "fairscale": [
+            "fairscale>0.3"
+          ],
+          "optuna": [
+            "optuna"
+          ],
+          "ray": [
+            "ray[tune]"
+          ],
+          "sigopt": [
+            "sigopt"
+          ],
+          "integrations": [
+            "optuna",
+            "ray[tune]",
+            "sigopt"
+          ],
+          "serving": [
+            "pydantic",
+            "uvicorn",
+            "fastapi",
+            "starlette"
+          ],
+          "audio": [
+            "librosa",
+            "pyctcdecode>=0.3.0",
+            "phonemizer"
+          ],
+          "speech": [
+            "torchaudio",
+            "librosa",
+            "pyctcdecode>=0.3.0",
+            "phonemizer"
+          ],
+          "torch-speech": [
+            "torchaudio",
+            "librosa",
+            "pyctcdecode>=0.3.0",
+            "phonemizer"
+          ],
+          "tf-speech": [
+            "librosa",
+            "pyctcdecode>=0.3.0",
+            "phonemizer"
+          ],
+          "flax-speech": [
+            "librosa",
+            "pyctcdecode>=0.3.0",
+            "phonemizer"
+          ],
+          "vision": [
+            "Pillow"
+          ],
+          "timm": [
+            "timm"
+          ],
+          "codecarbon": [
+            "codecarbon==1.2.0"
+          ],
+          "sentencepiece": [
+            "sentencepiece!=0.1.92,>=0.1.91",
+            "protobuf<=3.20.2"
+          ],
+          "testing": [
+            "pytest",
+            "pytest-xdist",
+            "timeout-decorator",
+            "parameterized",
+            "psutil",
+            "datasets!=2.5.0",
+            "dill<0.3.5",
+            "evaluate>=0.2.0",
+            "pytest-timeout",
+            "black==22.3",
+            "sacrebleu<2.0.0,>=1.4.12",
+            "rouge-score!=0.0.7,!=0.0.8,!=0.1,!=0.1.1",
+            "nltk",
+            "GitPython<3.1.19",
+            "hf-doc-builder>=0.3.0",
+            "protobuf<=3.20.2",
+            "sacremoses",
+            "rjieba",
+            "safetensors>=0.2.1",
+            "beautifulsoup4",
+            "faiss-cpu",
+            "datasets!=2.5.0",
+            "cookiecutter==1.7.3"
+          ],
+          "deepspeed-testing": [
+            "deepspeed>=0.6.5",
+            "accelerate>=0.10.0",
+            "pytest",
+            "pytest-xdist",
+            "timeout-decorator",
+            "parameterized",
+            "psutil",
+            "datasets!=2.5.0",
+            "dill<0.3.5",
+            "evaluate>=0.2.0",
+            "pytest-timeout",
+            "black==22.3",
+            "sacrebleu<2.0.0,>=1.4.12",
+            "rouge-score!=0.0.7,!=0.0.8,!=0.1,!=0.1.1",
+            "nltk",
+            "GitPython<3.1.19",
+            "hf-doc-builder>=0.3.0",
+            "protobuf<=3.20.2",
+            "sacremoses",
+            "rjieba",
+            "safetensors>=0.2.1",
+            "beautifulsoup4",
+            "faiss-cpu",
+            "datasets!=2.5.0",
+            "cookiecutter==1.7.3",
+            "optuna"
+          ],
+          "quality": [
+            "black==22.3",
+            "datasets!=2.5.0",
+            "isort>=5.5.4",
+            "flake8>=3.8.3",
+            "GitPython<3.1.19",
+            "hf-doc-builder>=0.3.0"
+          ],
+          "all": [
+            "tensorflow>=2.4",
+            "onnxconverter-common",
+            "tf2onnx",
+            "tensorflow-text",
+            "torch!=1.12.0,>=1.7",
+            "jax!=0.3.2,<=0.3.6,>=0.2.8",
+            "jaxlib<=0.3.6,>=0.1.65",
+            "flax>=0.4.1",
+            "optax>=0.0.8",
+            "sentencepiece!=0.1.92,>=0.1.91",
+            "protobuf<=3.20.2",
+            "tokenizers!=0.11.3,<0.14,>=0.11.1",
+            "torchaudio",
+            "librosa",
+            "pyctcdecode>=0.3.0",
+            "phonemizer",
+            "Pillow",
+            "optuna",
+            "ray[tune]",
+            "sigopt",
+            "timm",
+            "codecarbon==1.2.0",
+            "accelerate>=0.10.0"
+          ],
+          "docs_specific": [
+            "hf-doc-builder"
+          ],
+          "docs": [
+            "tensorflow>=2.4",
+            "onnxconverter-common",
+            "tf2onnx",
+            "tensorflow-text",
+            "torch!=1.12.0,>=1.7",
+            "jax!=0.3.2,<=0.3.6,>=0.2.8",
+            "jaxlib<=0.3.6,>=0.1.65",
+            "flax>=0.4.1",
+            "optax>=0.0.8",
+            "sentencepiece!=0.1.92,>=0.1.91",
+            "protobuf<=3.20.2",
+            "tokenizers!=0.11.3,<0.14,>=0.11.1",
+            "torchaudio",
+            "librosa",
+            "pyctcdecode>=0.3.0",
+            "phonemizer",
+            "Pillow",
+            "optuna",
+            "ray[tune]",
+            "sigopt",
+            "timm",
+            "codecarbon==1.2.0",
+            "accelerate>=0.10.0",
+            "hf-doc-builder"
+          ],
+          "dev-torch": [
+            "pytest",
+            "pytest-xdist",
+            "timeout-decorator",
+            "parameterized",
+            "psutil",
+            "datasets!=2.5.0",
+            "dill<0.3.5",
+            "evaluate>=0.2.0",
+            "pytest-timeout",
+            "black==22.3",
+            "sacrebleu<2.0.0,>=1.4.12",
+            "rouge-score!=0.0.7,!=0.0.8,!=0.1,!=0.1.1",
+            "nltk",
+            "GitPython<3.1.19",
+            "hf-doc-builder>=0.3.0",
+            "protobuf<=3.20.2",
+            "sacremoses",
+            "rjieba",
+            "safetensors>=0.2.1",
+            "beautifulsoup4",
+            "faiss-cpu",
+            "datasets!=2.5.0",
+            "cookiecutter==1.7.3",
+            "torch!=1.12.0,>=1.7",
+            "sentencepiece!=0.1.92,>=0.1.91",
+            "protobuf<=3.20.2",
+            "tokenizers!=0.11.3,<0.14,>=0.11.1",
+            "torchaudio",
+            "librosa",
+            "pyctcdecode>=0.3.0",
+            "phonemizer",
+            "Pillow",
+            "optuna",
+            "ray[tune]",
+            "sigopt",
+            "timm",
+            "codecarbon==1.2.0",
+            "black==22.3",
+            "datasets!=2.5.0",
+            "isort>=5.5.4",
+            "flake8>=3.8.3",
+            "GitPython<3.1.19",
+            "hf-doc-builder>=0.3.0",
+            "fugashi>=1.0",
+            "ipadic<2.0,>=1.0.0",
+            "unidic_lite>=1.0.7",
+            "unidic>=1.0.2",
+            "sudachipy>=0.6.6",
+            "sudachidict_core>=20220729",
+            "pyknp>=0.6.1",
+            "hf-doc-builder",
+            "scikit-learn",
+            "cookiecutter==1.7.3",
+            "onnxruntime>=1.4.0",
+            "onnxruntime-tools>=1.4.2"
+          ],
+          "dev-tensorflow": [
+            "pytest",
+            "pytest-xdist",
+            "timeout-decorator",
+            "parameterized",
+            "psutil",
+            "datasets!=2.5.0",
+            "dill<0.3.5",
+            "evaluate>=0.2.0",
+            "pytest-timeout",
+            "black==22.3",
+            "sacrebleu<2.0.0,>=1.4.12",
+            "rouge-score!=0.0.7,!=0.0.8,!=0.1,!=0.1.1",
+            "nltk",
+            "GitPython<3.1.19",
+            "hf-doc-builder>=0.3.0",
+            "protobuf<=3.20.2",
+            "sacremoses",
+            "rjieba",
+            "safetensors>=0.2.1",
+            "beautifulsoup4",
+            "faiss-cpu",
+            "datasets!=2.5.0",
+            "cookiecutter==1.7.3",
+            "tensorflow>=2.4",
+            "onnxconverter-common",
+            "tf2onnx",
+            "tensorflow-text",
+            "sentencepiece!=0.1.92,>=0.1.91",
+            "protobuf<=3.20.2",
+            "tokenizers!=0.11.3,<0.14,>=0.11.1",
+            "Pillow",
+            "black==22.3",
+            "datasets!=2.5.0",
+            "isort>=5.5.4",
+            "flake8>=3.8.3",
+            "GitPython<3.1.19",
+            "hf-doc-builder>=0.3.0",
+            "hf-doc-builder",
+            "scikit-learn",
+            "cookiecutter==1.7.3",
+            "onnxconverter-common",
+            "tf2onnx",
+            "onnxruntime>=1.4.0",
+            "onnxruntime-tools>=1.4.2",
+            "librosa",
+            "pyctcdecode>=0.3.0",
+            "phonemizer"
+          ],
+          "dev": [
+            "tensorflow>=2.4",
+            "onnxconverter-common",
+            "tf2onnx",
+            "tensorflow-text",
+            "torch!=1.12.0,>=1.7",
+            "jax!=0.3.2,<=0.3.6,>=0.2.8",
+            "jaxlib<=0.3.6,>=0.1.65",
+            "flax>=0.4.1",
+            "optax>=0.0.8",
+            "sentencepiece!=0.1.92,>=0.1.91",
+            "protobuf<=3.20.2",
+            "tokenizers!=0.11.3,<0.14,>=0.11.1",
+            "torchaudio",
+            "librosa",
+            "pyctcdecode>=0.3.0",
+            "phonemizer",
+            "Pillow",
+            "optuna",
+            "ray[tune]",
+            "sigopt",
+            "timm",
+            "codecarbon==1.2.0",
+            "accelerate>=0.10.0",
+            "pytest",
+            "pytest-xdist",
+            "timeout-decorator",
+            "parameterized",
+            "psutil",
+            "datasets!=2.5.0",
+            "dill<0.3.5",
+            "evaluate>=0.2.0",
+            "pytest-timeout",
+            "black==22.3",
+            "sacrebleu<2.0.0,>=1.4.12",
+            "rouge-score!=0.0.7,!=0.0.8,!=0.1,!=0.1.1",
+            "nltk",
+            "GitPython<3.1.19",
+            "hf-doc-builder>=0.3.0",
+            "protobuf<=3.20.2",
+            "sacremoses",
+            "rjieba",
+            "safetensors>=0.2.1",
+            "beautifulsoup4",
+            "faiss-cpu",
+            "datasets!=2.5.0",
+            "cookiecutter==1.7.3",
+            "black==22.3",
+            "datasets!=2.5.0",
+            "isort>=5.5.4",
+            "flake8>=3.8.3",
+            "GitPython<3.1.19",
+            "hf-doc-builder>=0.3.0",
+            "fugashi>=1.0",
+            "ipadic<2.0,>=1.0.0",
+            "unidic_lite>=1.0.7",
+            "unidic>=1.0.2",
+            "sudachipy>=0.6.6",
+            "sudachidict_core>=20220729",
+            "pyknp>=0.6.1",
+            "hf-doc-builder",
+            "scikit-learn",
+            "cookiecutter==1.7.3"
+          ],
+          "torchhub": [
+            "filelock",
+            "huggingface-hub<1.0,>=0.10.0",
+            "importlib_metadata",
+            "numpy>=1.17",
+            "packaging>=20.0",
+            "protobuf<=3.20.2",
+            "regex!=2019.12.17",
+            "requests",
+            "sentencepiece!=0.1.92,>=0.1.91",
+            "torch!=1.12.0,>=1.7",
+            "tokenizers!=0.11.3,<0.14,>=0.11.1",
+            "tqdm>=4.27"
+          ],
+          ":python_version < \"3.8\"": [
+            "importlib_metadata"
+          ]
+        },
+        "python_requires": [
+          ">=3.7.0"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "translate-html": {
     "1.0.0": {
