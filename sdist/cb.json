@@ -19490,6 +19490,24 @@
     },
     "0.r125": {
       "27": {}
+    },
+    "1.1.0": {
+      "27": {
+        "setup_requires": [
+          "setuptools>=44",
+          "wheel",
+          "toml",
+          "setuptools_scm>=3.4.3"
+        ],
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
     }
   },
   "culqipy1-2": {
@@ -41630,7 +41648,8 @@
     "0.15.3": "0.12.2",
     "0.15.4": "0.12.2",
     "0.16.0": "0.12.2",
-    "0.17.0": "0.12.2"
+    "0.17.0": "0.12.2",
+    "0.17.1": "0.12.2"
   },
   "mctorch-lib": {
     "0.1.0": {
@@ -56259,6 +56278,33 @@
         ],
         "extras_require": {
           ":python_full_version < \"3.7.6\" and sys_platform == \"win32\" or python_full_version > \"3.7.6\" and python_full_version < \"3.8.1\" and sys_platform == \"win32\" or python_full_version > \"3.8.1\" and sys_platform == \"win32\"": [
+            "pywin32<304,>=300"
+          ],
+          ":sys_platform == \"win32\"": [
+            "psutil<6.0.0,>=5.9.0",
+            "uiautomation<3.0.0,>=2.0.15"
+          ]
+        },
+        "python_requires": [
+          ">=3.7,<4.0"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "10.0.1": {
+      "27": {
+        "install_requires": [
+          "packaging<22.0,>=21.3",
+          "pillow<10.0.0,>=9.1.1",
+          "selenium<5.0.0,>=4.4.0",
+          "webdriver-manager<4.0.0,>=3.8.3"
+        ],
+        "extras_require": {
+          ":python_full_version != \"3.7.6\" and python_full_version != \"3.8.1\" and sys_platform == \"win32\"": [
             "pywin32<304,>=300"
           ],
           ":sys_platform == \"win32\"": [
