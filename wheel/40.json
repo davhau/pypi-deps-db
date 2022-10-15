@@ -13404,6 +13404,37 @@
           ],
           "requires_python": ">=3.7, <3.10"
         }
+      },
+      "0.5.3b20221015": {
+        "autogluon.core-0.5.3b20221015-py3-none-any.whl": {
+          "provides_extras": [
+            "all",
+            "ray",
+            "raytune",
+            "tests"
+          ],
+          "requires_dist": [
+            "numpy (<1.23,>=1.21)",
+            "scipy (<1.8.0,>=1.5.4)",
+            "scikit-learn (<1.1,>=1.0.0)",
+            "pandas (!=1.4.0,<1.5,>=1.2.5)",
+            "tqdm (>=4.38.0)",
+            "requests",
+            "matplotlib",
+            "dask (<=2021.11.2,>=2021.09.1)",
+            "distributed (<=2021.11.2,>=2021.09.1)",
+            "boto3",
+            "autogluon.common (==0.5.3b20221015)",
+            "ray[tune] (<2.1,>=2.0) ; extra == 'all'",
+            "ray (<2.1,>=2.0) ; extra == 'all'",
+            "hyperopt (<0.2.8,>=0.2.7) ; extra == 'all'",
+            "ray (<2.1,>=2.0) ; extra == 'ray'",
+            "ray[tune] (<2.1,>=2.0) ; extra == 'raytune'",
+            "hyperopt (<0.2.8,>=0.2.7) ; extra == 'raytune'",
+            "pytest ; extra == 'tests'"
+          ],
+          "requires_python": ">=3.7, <3.10"
+        }
       }
     }
   },
@@ -46943,6 +46974,9 @@
       },
       "7.2.1": {
         "giteasy-7.2.1-py2.py3-none-any.whl": "6.0@giteasy-6.0-py2.py3-none-any.whl"
+      },
+      "7.3.0": {
+        "giteasy-7.3.0-py2.py3-none-any.whl": "6.0@giteasy-6.0-py2.py3-none-any.whl"
       }
     }
   },
@@ -49519,37 +49553,14 @@
   },
   "jaskier": {
     "py3": {
-      "0.1.0": {
-        "jaskier-0.1.0-py3-none-any.whl": {
-          "provides_extras": [
-            "docs"
-          ],
+      "0.1.0.post1": {
+        "jaskier-0.1.0.post1-py3-none-any.whl": {
           "requires_dist": [
-            "rich (==11.0.0)",
-            "sphinx (==4.4.0) ; extra == 'docs'",
-            "sphinx-material (==0.0.32) ; extra == 'docs'"
+            "jinja2 (>=3.1.2,<4.0.0)",
+            "tomli (>=2.0.1,<3.0.0); python_version < \"3.11\""
           ],
-          "requires_python": ">=3.8.0"
+          "requires_python": ">=3.7,<3.12"
         }
-      },
-      "0.1.1": {
-        "jaskier-0.1.1-py3-none-any.whl": "0.1.0@jaskier-0.1.0-py3-none-any.whl"
-      },
-      "0.1.2": {
-        "jaskier-0.1.2-py3-none-any.whl": {
-          "provides_extras": [
-            "docs"
-          ],
-          "requires_dist": [
-            "rich (==12.2.0)",
-            "sphinx (==4.4.0) ; extra == 'docs'",
-            "sphinx-material (==0.0.32) ; extra == 'docs'"
-          ],
-          "requires_python": ">=3.8.0"
-        }
-      },
-      "1.0.0": {
-        "jaskier-1.0.0-py3-none-any.whl": "0.1.2@jaskier-0.1.2-py3-none-any.whl"
       }
     }
   },
@@ -75619,6 +75630,74 @@
             "jupyter_client>=7.0.0",
             "watchdog",
             "solara-assets==0.12.1 ; extra == \"assets\"",
+            "flake8 ; extra == \"dev\"",
+            "bqplot ; extra == \"dev\"",
+            "bqplot-image-gl ; extra == \"dev\"",
+            "vaex-core ; extra == \"dev\"",
+            "vaex-hdf5 ; extra == \"dev\"",
+            "vaex-jupyter ; extra == \"dev\"",
+            "black ; extra == \"dev\"",
+            "mypy ; extra == \"dev\"",
+            "playwright ; extra == \"dev\"",
+            "plotly ; extra == \"dev\"",
+            "pytest-playwright ; extra == \"dev\"",
+            "types-requests ; extra == \"dev\"",
+            "types-markdown ; extra == \"dev\"",
+            "types-PyYAML ; extra == \"dev\"",
+            "pytest ; extra == \"dev\"",
+            "pytest-cov ; extra == \"dev\"",
+            "pytest-timeout ; extra == \"dev\"",
+            "pre-commit ; extra == \"dev\"",
+            "bump2version ; extra == \"dev\"",
+            "numpy ; extra == \"documentation\"",
+            "bqplot ; extra == \"documentation\"",
+            "altair ; extra == \"documentation\"",
+            "ipycanvas ; extra == \"documentation\"",
+            "matplotlib ; extra == \"documentation\"",
+            "vega_datasets ; extra == \"documentation\"",
+            "plotly ; extra == \"documentation\"",
+            "vaex-core ; extra == \"documentation\"",
+            "vaex-hdf5 ; extra == \"documentation\"",
+            "flask ; extra == \"flask\"",
+            "flask-sock ; extra == \"flask\""
+          ]
+        }
+      },
+      "0.13.0": {
+        "solara-0.13.0-py2.py3-none-any.whl": {
+          "provides_extras": [
+            "assets",
+            "dev",
+            "documentation",
+            "flask"
+          ],
+          "requires_dist": [
+            "reacton>=0.13.0",
+            "ipywidgets<8",
+            "diskcache",
+            "markdown",
+            "pygments",
+            "pymdown-extensions",
+            "markdown-it-py",
+            "mdit-py-plugins",
+            "humanize",
+            "ipyvuetify",
+            "ipyvue>=1.8.0",
+            "numpy",
+            "pillow",
+            "jinja2",
+            "pydantic",
+            "click",
+            "rich_click",
+            "uvicorn",
+            "watchgod",
+            "websockets",
+            "starlette",
+            "nbconvert",
+            "jupyter_server",
+            "jupyter_client>=7.0.0",
+            "watchdog",
+            "solara-assets==0.13.0 ; extra == \"assets\"",
             "flake8 ; extra == \"dev\"",
             "bqplot ; extra == \"dev\"",
             "bqplot-image-gl ; extra == \"dev\"",
