@@ -7498,6 +7498,12 @@
       "6.12.3": {
         "argus_toolbelt-6.12.3-py3-none-any.whl": "6.12.2@argus_toolbelt-6.12.2-py3-none-any.whl"
       },
+      "6.12.4": {
+        "argus_toolbelt-6.12.4-py3-none-any.whl": "6.12.2@argus_toolbelt-6.12.2-py3-none-any.whl"
+      },
+      "6.12.5": {
+        "argus_toolbelt-6.12.5-py3-none-any.whl": "6.12.2@argus_toolbelt-6.12.2-py3-none-any.whl"
+      },
       "6.2.0": {
         "argus_toolbelt-6.2.0-py3-none-any.whl": {
           "provides_extras": [
@@ -8422,6 +8428,66 @@
             "pytest-describe ; extra == \"tests\"",
             "mypy ; extra == \"tests\"",
             "sqlalchemy-stubs ; extra == \"tests\""
+          ],
+          "requires_python": ">=3.7"
+        }
+      },
+      "1.2.0b1": {
+        "astro_sdk_python-1.2.0b1-py3-none-any.whl": {
+          "provides_extras": [
+            "all",
+            "amazon",
+            "doc",
+            "google",
+            "openlineage",
+            "postgres",
+            "snowflake",
+            "tests"
+          ],
+          "requires_dist": [
+            "apache-airflow>=2.0",
+            "attrs>=20.0",
+            "pandas>=1.3.4,<2.0.0",
+            "pyarrow",
+            "python-frontmatter",
+            "smart-open",
+            "SQLAlchemy>=1.3.18",
+            "apache-airflow-providers-amazon ; extra == \"all\"",
+            "apache-airflow-providers-google>=6.4.0 ; extra == \"all\"",
+            "apache-airflow-providers-postgres ; extra == \"all\"",
+            "apache-airflow-providers-snowflake ; extra == \"all\"",
+            "smart-open[all]>=5.2.1 ; extra == \"all\"",
+            "snowflake-connector-python[pandas] ; extra == \"all\"",
+            "snowflake-sqlalchemy>=1.2.0,<=1.2.4 ; extra == \"all\"",
+            "sqlalchemy-bigquery>=1.3.0 ; extra == \"all\"",
+            "s3fs ; extra == \"all\"",
+            "protobuf<=3.20 ; extra == \"all\"",
+            "openlineage-airflow>=0.15.1 ; extra == \"all\"",
+            "apache-airflow-providers-amazon ; extra == \"amazon\"",
+            "s3fs ; extra == \"amazon\"",
+            "smart-open[s3]>=5.2.1 ; extra == \"amazon\"",
+            "myst-parser>=0.17 ; extra == \"doc\"",
+            "sphinx>=4.4.0 ; extra == \"doc\"",
+            "sphinx-autoapi>=2.0.0 ; extra == \"doc\"",
+            "sphinx-rtd-theme ; extra == \"doc\"",
+            "protobuf<=3.20 ; extra == \"google\"",
+            "apache-airflow-providers-google>=6.4.0 ; extra == \"google\"",
+            "sqlalchemy-bigquery>=1.3.0 ; extra == \"google\"",
+            "smart-open[gcs]>=5.2.1 ; extra == \"google\"",
+            "openlineage-airflow>=0.15.1 ; extra == \"openlineage\"",
+            "apache-airflow-providers-postgres ; extra == \"postgres\"",
+            "apache-airflow-providers-snowflake ; extra == \"snowflake\"",
+            "snowflake-sqlalchemy>=1.2.0,<=1.2.4 ; extra == \"snowflake\"",
+            "snowflake-connector-python[pandas] ; extra == \"snowflake\"",
+            "pytest>=6.0 ; extra == \"tests\"",
+            "pytest-split ; extra == \"tests\"",
+            "pytest-dotenv ; extra == \"tests\"",
+            "requests-mock ; extra == \"tests\"",
+            "pytest-cov ; extra == \"tests\"",
+            "pytest-describe ; extra == \"tests\"",
+            "mypy ; extra == \"tests\"",
+            "sqlalchemy-stubs ; extra == \"tests\"",
+            "openlineage-airflow>=0.15.1 ; extra == \"tests\""
           ],
           "requires_python": ">=3.7"
         }
@@ -35449,6 +35515,47 @@
           ],
           "requires_python": ">=3.7, <3.10"
         }
+      },
+      "0.5.3b20221018": {
+        "autogluon.tabular-0.5.3b20221018-py3-none-any.whl": {
+          "provides_extras": [
+            "all",
+            "catboost",
+            "fastai",
+            "imodels",
+            "lightgbm",
+            "skex",
+            "tests",
+            "vowpalwabbit",
+            "xgboost"
+          ],
+          "requires_dist": [
+            "numpy (<1.23,>=1.21)",
+            "scipy (<1.8.0,>=1.5.4)",
+            "pandas (!=1.4.0,<1.5,>=1.2.5)",
+            "scikit-learn (<1.1,>=1.0.0)",
+            "psutil (<6,>=5.7.3)",
+            "networkx (<3.0,>=2.3)",
+            "autogluon.core (==0.5.3b20221018)",
+            "autogluon.features (==0.5.3b20221018)",
+            "xgboost (<1.5,>=1.4) ; extra == 'all'",
+            "fastai (<2.8,>=2.3.1) ; extra == 'all'",
+            "lightgbm (<3.4,>=3.3) ; extra == 'all'",
+            "torch (<1.13,>=1.0) ; extra == 'all'",
+            "catboost (<1.1,>=1.0) ; extra == 'all'",
+            "catboost (<1.1,>=1.0) ; extra == 'catboost'",
+            "torch (<1.13,>=1.0) ; extra == 'fastai'",
+            "fastai (<2.8,>=2.3.1) ; extra == 'fastai'",
+            "imodels (>=1.3.0) ; extra == 'imodels'",
+            "lightgbm (<3.4,>=3.3) ; extra == 'lightgbm'",
+            "scikit-learn-intelex (<2021.6,>=2021.5) ; extra == 'skex'",
+            "imodels (>=1.3.0) ; extra == 'tests'",
+            "vowpalwabbit (<8.11,>=8.10) ; extra == 'tests'",
+            "vowpalwabbit (<8.11,>=8.10) ; extra == 'vowpalwabbit'",
+            "xgboost (<1.5,>=1.4) ; extra == 'xgboost'"
+          ],
+          "requires_python": ">=3.7, <3.10"
+        }
       }
     }
   },
@@ -52357,6 +52464,10 @@
       "2.2.0b20221017": {
         "bigdl_dllib_spark2-2.2.0b20221017-py3-none-macosx_10_11_x86_64.whl": "2.1.0b202209281@bigdl_dllib_spark2-2.1.0b202209281-py3-none-macosx_10_11_x86_64.whl",
         "bigdl_dllib_spark2-2.2.0b20221017-py3-none-manylinux1_x86_64.whl": "2.1.0b202209281@bigdl_dllib_spark2-2.1.0b202209281-py3-none-macosx_10_11_x86_64.whl"
+      },
+      "2.2.0b20221018": {
+        "bigdl_dllib_spark2-2.2.0b20221018-py3-none-macosx_10_11_x86_64.whl": "2.1.0b202209281@bigdl_dllib_spark2-2.1.0b202209281-py3-none-macosx_10_11_x86_64.whl",
+        "bigdl_dllib_spark2-2.2.0b20221018-py3-none-manylinux1_x86_64.whl": "2.1.0b202209281@bigdl_dllib_spark2-2.1.0b202209281-py3-none-macosx_10_11_x86_64.whl"
       }
     }
   },
@@ -56193,6 +56304,14 @@
       },
       "0.1.1": {
         "cubicweb_web-0.1.1-py3-none-any.whl": "0.1.0@cubicweb_web-0.1.0-py3-none-any.whl"
+      },
+      "0.1.2": {
+        "cubicweb_web-0.1.2-py3-none-any.whl": {
+          "requires_dist": [
+            "cubicweb (>=3.35.0)",
+            "yams (>=0.48)"
+          ]
+        }
       }
     }
   },
@@ -102343,6 +102462,9 @@
       },
       "1.0.0rc1": {
         "steampunk_spotter-1.0.0rc1-py3-none-any.whl": "1.0.0@steampunk_spotter-1.0.0-py3-none-any.whl"
+      },
+      "1.0.1": {
+        "steampunk_spotter-1.0.1-py3-none-any.whl": "1.0.0@steampunk_spotter-1.0.0-py3-none-any.whl"
       },
       "1.0.1rc1": {
         "steampunk_spotter-1.0.1rc1-py3-none-any.whl": "1.0.0@steampunk_spotter-1.0.0-py3-none-any.whl"
