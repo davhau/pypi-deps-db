@@ -460,6 +460,21 @@
       }
     }
   },
+  "aiohttp-openmetrics": {
+    "py2.py3": {
+      "0.0.10": {
+        "aiohttp_openmetrics-0.0.10-py2.py3-none-any.whl": {
+          "requires_dist": [
+            "aiohttp",
+            "prometheus-client"
+          ]
+        }
+      },
+      "0.0.9": {
+        "aiohttp_openmetrics-0.0.9-py2.py3-none-any.whl": "0.0.10@aiohttp_openmetrics-0.0.10-py2.py3-none-any.whl"
+      }
+    }
+  },
   "aiotg": {
     "2.7": {
       "0.6.1": {
@@ -5573,6 +5588,20 @@
             "aws-cdk.aws-ec2 (==1.177.0)",
             "aws-cdk.aws-lambda (==1.177.0)",
             "aws-cdk.core (==1.177.0)",
+            "constructs (<4.0.0,>=3.3.69)",
+            "jsii (<2.0.0,>=1.69.0)",
+            "publication (>=0.0.3)",
+            "typeguard (~=2.13.3)"
+          ],
+          "requires_python": "~=3.7"
+        }
+      },
+      "1.178.0": {
+        "aws_cdk.aws_lambda_python-1.178.0-py3-none-any.whl": {
+          "requires_dist": [
+            "aws-cdk.aws-ec2 (==1.178.0)",
+            "aws-cdk.aws-lambda (==1.178.0)",
+            "aws-cdk.core (==1.178.0)",
             "constructs (<4.0.0,>=3.3.69)",
             "jsii (<2.0.0,>=1.69.0)",
             "publication (>=0.0.3)",
@@ -19163,6 +19192,21 @@
             "pyspark (>=3.0.0) ; (python_version >= \"3.8\") and extra == 'pyspark'"
           ]
         }
+      },
+      "0.16.14": {
+        "dagster_duckdb-0.16.14-py3-none-any.whl": {
+          "provides_extras": [
+            "pandas",
+            "pyspark"
+          ],
+          "requires_dist": [
+            "duckdb",
+            "dagster (==1.0.14)",
+            "pandas ; extra == 'pandas'",
+            "pyspark (>=2.0.2) ; (python_version < \"3.8\") and extra == 'pyspark'",
+            "pyspark (>=3.0.0) ; (python_version >= \"3.8\") and extra == 'pyspark'"
+          ]
+        }
       }
     }
   },
@@ -32360,6 +32404,9 @@
       },
       "1.2.2b0": {
         "flytekitplugins_snowflake-1.2.2b0-py3-none-any.whl": "1.1.2@flytekitplugins_snowflake-1.1.2-py3-none-any.whl"
+      },
+      "1.2.2b1": {
+        "flytekitplugins_snowflake-1.2.2b1-py3-none-any.whl": "1.1.2@flytekitplugins_snowflake-1.1.2-py3-none-any.whl"
       }
     }
   },
@@ -52337,6 +52384,9 @@
       },
       "1.1.1": {
         "nibe-1.1.1-py3-none-any.whl": "1.0.0@nibe-1.0.0-py3-none-any.whl"
+      },
+      "1.1.2": {
+        "nibe-1.1.2-py3-none-any.whl": "1.0.0@nibe-1.0.0-py3-none-any.whl"
       }
     }
   },
@@ -56399,6 +56449,68 @@
             "odoo13-addon-product-custom-info",
             "odoo13-addon-product-dimension",
             "odoo13-addon-product-dimension-volumetric-weight",
+            "odoo13-addon-product-list-pricelist-price",
+            "odoo13-addon-product-lot-sequence",
+            "odoo13-addon-product-manufacturer",
+            "odoo13-addon-product-medical",
+            "odoo13-addon-product-multi-category",
+            "odoo13-addon-product-multi-price",
+            "odoo13-addon-product-order-noname",
+            "odoo13-addon-product-packaging-dimension",
+            "odoo13-addon-product-packaging-type",
+            "odoo13-addon-product-packaging-type-pallet",
+            "odoo13-addon-product-packaging-type-required",
+            "odoo13-addon-product-packaging-unit-price-calculator",
+            "odoo13-addon-product-pricelist-assortment",
+            "odoo13-addon-product-pricelist-button-box",
+            "odoo13-addon-product-pricelist-by-contact",
+            "odoo13-addon-product-pricelist-direct-print",
+            "odoo13-addon-product-pricelist-direct-print-company-group",
+            "odoo13-addon-product-pricelist-direct-print-website-sale",
+            "odoo13-addon-product-pricelist-revision",
+            "odoo13-addon-product-pricelist-simulation",
+            "odoo13-addon-product-pricelist-supplierinfo",
+            "odoo13-addon-product-product-template-navigation",
+            "odoo13-addon-product-restricted-type",
+            "odoo13-addon-product-secondary-unit",
+            "odoo13-addon-product-sequence",
+            "odoo13-addon-product-state",
+            "odoo13-addon-product-stock-state",
+            "odoo13-addon-product-supplierinfo-archive",
+            "odoo13-addon-product-supplierinfo-for-customer",
+            "odoo13-addon-product-supplierinfo-revision",
+            "odoo13-addon-product-template-tags",
+            "odoo13-addon-product-template-tags-code",
+            "odoo13-addon-product-total-weight-from-packaging",
+            "odoo13-addon-product-uom-updatable",
+            "odoo13-addon-product-variant-attribute-name-manager",
+            "odoo13-addon-product-weight",
+            "odoo13-addon-stock-account-product-cost-security",
+            "odoo13-addon-stock-production-lot-firmware-version"
+          ]
+        }
+      },
+      "13.0.20221020.0": {
+        "odoo13_addons_oca_product_attribute-13.0.20221020.0-py3-none-any.whl": {
+          "requires_dist": [
+            "odoo13-addon-packaging-uom",
+            "odoo13-addon-product-abc-classification",
+            "odoo13-addon-product-abc-classification-sale",
+            "odoo13-addon-product-assortment",
+            "odoo13-addon-product-attribute-archive",
+            "odoo13-addon-product-attribute-value-menu",
+            "odoo13-addon-product-barcode-required",
+            "odoo13-addon-product-bom-revision",
+            "odoo13-addon-product-category-active",
+            "odoo13-addon-product-category-code",
+            "odoo13-addon-product-category-description",
+            "odoo13-addon-product-code-mandatory",
+            "odoo13-addon-product-code-unique",
+            "odoo13-addon-product-cost-security",
+            "odoo13-addon-product-custom-info",
+            "odoo13-addon-product-dimension",
+            "odoo13-addon-product-dimension-volumetric-weight",
+            "odoo13-addon-product-expiry-configurable",
             "odoo13-addon-product-list-pricelist-price",
             "odoo13-addon-product-lot-sequence",
             "odoo13-addon-product-manufacturer",
@@ -69183,6 +69295,9 @@
       },
       "1.6.0.dev1666237790": {
         "pulp_certguard_client-1.6.0.dev1666237790-py3-none-any.whl": "1.0.2@pulp_certguard_client-1.0.2-py3-none-any.whl"
+      },
+      "1.6.0.dev1666323454": {
+        "pulp_certguard_client-1.6.0.dev1666323454-py3-none-any.whl": "1.0.2@pulp_certguard_client-1.0.2-py3-none-any.whl"
       }
     }
   },
@@ -73736,6 +73851,9 @@
       },
       "0.2.5": {
         "qtstrap-0.2.5-py2.py3-none-any.whl": "0.2.1@qtstrap-0.2.1-py2.py3-none-any.whl"
+      },
+      "0.2.6": {
+        "qtstrap-0.2.6-py2.py3-none-any.whl": "0.2.1@qtstrap-0.2.1-py2.py3-none-any.whl"
       }
     },
     "py3": {

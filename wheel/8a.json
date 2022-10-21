@@ -1507,6 +1507,9 @@
       },
       "1.0.1": {
         "arabica-1.0.1-py3-none-any.whl": "1.0.0@arabica-1.0.0-py3-none-any.whl"
+      },
+      "1.0.2": {
+        "arabica-1.0.2-py3-none-any.whl": "1.0.0@arabica-1.0.0-py3-none-any.whl"
       }
     }
   },
@@ -30423,6 +30426,41 @@
           ],
           "requires_python": ">=3.7"
         }
+      },
+      "2.7.1": {
+        "limits-2.7.1-py3-none-any.whl": {
+          "provides_extras": [
+            "all",
+            "async-memcached",
+            "async-mongodb",
+            "async-redis",
+            "memcached",
+            "mongodb",
+            "redis",
+            "rediscluster"
+          ],
+          "requires_dist": [
+            "deprecated (>=1.2)",
+            "setuptools",
+            "packaging (<22,>=21)",
+            "typing-extensions",
+            "redis (<5.0.0,>3) ; extra == 'all'",
+            "redis (>=4.2.0) ; extra == 'all'",
+            "pymemcache (<5.0.0,>3) ; extra == 'all'",
+            "pymongo (<5,>3) ; extra == 'all'",
+            "motor (<4,>=2.5) ; extra == 'all'",
+            "emcache (>=0.6.1) ; (python_version < \"3.11\") and extra == 'all'",
+            "coredis (<5,>=3.4.0) ; (python_version > \"3.7\") and extra == 'all'",
+            "emcache (>=0.6.1) ; (python_version < \"3.11\") and extra == 'async-memcached'",
+            "motor (<4,>=2.5) ; extra == 'async-mongodb'",
+            "coredis (<5,>=3.4.0) ; (python_version > \"3.7\") and extra == 'async-redis'",
+            "pymemcache (<5.0.0,>3) ; extra == 'memcached'",
+            "pymongo (<5,>3) ; extra == 'mongodb'",
+            "redis (<5.0.0,>3) ; extra == 'redis'",
+            "redis (>=4.2.0) ; extra == 'rediscluster'"
+          ],
+          "requires_python": ">=3.7"
+        }
       }
     }
   },
@@ -37015,6 +37053,30 @@
         "OctoBot_Trading-2.2.21-cp38-cp38-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl": "2.2.17@OctoBot_Trading-2.2.17-cp38-cp38-macosx_10_15_x86_64.whl",
         "OctoBot_Trading-2.2.21-cp38-cp38-win_amd64.whl": "2.2.17@OctoBot_Trading-2.2.17-cp38-cp38-macosx_10_15_x86_64.whl"
       },
+      "2.2.22": {
+        "OctoBot_Trading-2.2.22-cp38-cp38-macosx_10_15_x86_64.whl": {
+          "requires_dist": [
+            "cython (==0.29.26)",
+            "numpy (==1.22.0)",
+            "OctoBot-Backtesting (<1.8,>=1.7.1)",
+            "Async-Channel (<2.1,>=2.0.13)",
+            "OctoBot-Commons (<1.8,>=1.7.10)",
+            "OctoBot-Tentacles-Manager (<2.8,>=2.7.0)",
+            "trading-backend (>=1.0.12)",
+            "ccxt (==1.95.36)",
+            "cryptography",
+            "websockets (==10.3)",
+            "cryptofeed (==2.3.0)",
+            "sortedcontainers (==2.4.0)",
+            "tinydb (==4.5.2)"
+          ],
+          "requires_python": ">=3.8"
+        },
+        "OctoBot_Trading-2.2.22-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl": "2.2.22@OctoBot_Trading-2.2.22-cp38-cp38-macosx_10_15_x86_64.whl",
+        "OctoBot_Trading-2.2.22-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "2.2.22@OctoBot_Trading-2.2.22-cp38-cp38-macosx_10_15_x86_64.whl",
+        "OctoBot_Trading-2.2.22-cp38-cp38-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl": "2.2.22@OctoBot_Trading-2.2.22-cp38-cp38-macosx_10_15_x86_64.whl",
+        "OctoBot_Trading-2.2.22-cp38-cp38-win_amd64.whl": "2.2.22@OctoBot_Trading-2.2.22-cp38-cp38-macosx_10_15_x86_64.whl"
+      },
       "2.2.3": {
         "OctoBot_Trading-2.2.3-cp38-cp38-macosx_10_15_x86_64.whl": "2.2.0@OctoBot_Trading-2.2.0-cp38-cp38-macosx_10_14_x86_64.whl",
         "OctoBot_Trading-2.2.3-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl": "2.2.0@OctoBot_Trading-2.2.0-cp38-cp38-macosx_10_14_x86_64.whl",
@@ -37214,6 +37276,19 @@
         "odoo_addons_oca_account_payment-15.0.20221011.0-py3-none-any.whl": {
           "requires_dist": [
             "odoo-addon-account-due-list (<15.1dev,>=15.0dev)",
+            "odoo-addon-account-payment-notification (<15.1dev,>=15.0dev)",
+            "odoo-addon-account-payment-term-extension (<15.1dev,>=15.0dev)",
+            "odoo-addon-account-payment-term-partner-holiday (<15.1dev,>=15.0dev)",
+            "odoo-addon-account-payment-widget-amount (<15.1dev,>=15.0dev)"
+          ]
+        }
+      },
+      "15.0.20221020.1": {
+        "odoo_addons_oca_account_payment-15.0.20221020.1-py3-none-any.whl": {
+          "requires_dist": [
+            "odoo-addon-account-due-list (<15.1dev,>=15.0dev)",
+            "odoo-addon-account-due-list-payment-mode (<15.1dev,>=15.0dev)",
+            "odoo-addon-account-payment-batch-process (<15.1dev,>=15.0dev)",
             "odoo-addon-account-payment-notification (<15.1dev,>=15.0dev)",
             "odoo-addon-account-payment-term-extension (<15.1dev,>=15.0dev)",
             "odoo-addon-account-payment-term-partner-holiday (<15.1dev,>=15.0dev)",
