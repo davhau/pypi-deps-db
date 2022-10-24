@@ -8627,6 +8627,23 @@
       },
       "2.3.0": {
         "board_game_recommender-2.3.0-py2.py3-none-any.whl": "2.2.0@board_game_recommender-2.2.0-py2.py3-none-any.whl"
+      },
+      "3.0.0": {
+        "board_game_recommender-3.0.0-py2.py3-none-any.whl": {
+          "provides_extras": [
+            "full",
+            "light",
+            "trust"
+          ],
+          "requires_dist": [
+            "pytility ; extra == 'full'",
+            "turicreate ; extra == 'full'",
+            "numpy ; extra == 'light'",
+            "pandas ; extra == 'light'",
+            "scipy ; extra == 'trust'"
+          ],
+          "requires_python": ">=3.7.0,<3.9.0"
+        }
       }
     },
     "py3": {
@@ -45596,6 +45613,36 @@
             "pandas; extra == 'pandas'",
             "pyarrow>=4.0.0; extra == 'pyarrow'",
             "polars[pyarrow,pandas,numpy,fsspec,connectorx,xlsx2csv,timezone,matplotlib]; extra == 'all'"
+          ],
+          "requires_python": ">=3.7"
+        }
+      },
+      "0.14.23": {
+        "polars_lts_cpu-0.14.23-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": {
+          "provides_extras": [
+            "all",
+            "numpy",
+            "connectorx",
+            "xlsx2csv",
+            "matplotlib",
+            "pyarrow",
+            "timezone",
+            "fsspec",
+            "pandas"
+          ],
+          "requires_dist": [
+            "typing_extensions >= 4.0.0; python_version < '3.10'",
+            "polars[pyarrow,pandas,numpy,fsspec,connectorx,xlsx2csv,timezone,matplotlib]; extra == 'all'",
+            "numpy >= 1.16.0; extra == 'numpy'",
+            "connectorx; extra == 'connectorx'",
+            "xlsx2csv >= 0.8.0; extra == 'xlsx2csv'",
+            "matplotlib; extra == 'matplotlib'",
+            "pyarrow>=4.0.0; extra == 'pyarrow'",
+            "backports.zoneinfo; (python_version < '3.9') and extra == 'timezone'",
+            "tzdata; (platform_system == 'Windows') and extra == 'timezone'",
+            "fsspec; extra == 'fsspec'",
+            "pyarrow>=4.0.0; extra == 'pandas'",
+            "pandas; extra == 'pandas'"
           ],
           "requires_python": ">=3.7"
         }
