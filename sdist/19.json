@@ -70458,7 +70458,8 @@
     "1.1.0": "0.1.0",
     "1.1.1": "0.1.0",
     "1.1.2": "0.1.0",
-    "1.1.3": "0.1.0"
+    "1.1.3": "0.1.0",
+    "1.2.0": "0.1.0"
   },
   "py-bingads": {
     "0.1.0": {
@@ -72995,6 +72996,25 @@
         },
         "python_requires": [
           ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "1.4.1": {
+      "27": {
+        "install_requires": [
+          "pytest>=5.0"
+        ],
+        "setup_requires": [
+          "setuptools_scm; python_version>'3.6'",
+          "setuptools_scm <7.0; python_version=='3.6'"
+        ],
+        "python_requires": [
+          ">=3.6"
         ]
       },
       "36": "27",
@@ -76687,6 +76707,72 @@
           ],
           "quality": [
             "black==21.4b0",
+            "isort>=5.5.4",
+            "flake8>=3.8.3"
+          ],
+          "dev": [
+            "transformers[sentencepiece,sklearn]>=4.17.0",
+            "multi-model-server>=1.1.4",
+            "retrying",
+            "torch>=1.8.0",
+            "torchaudio",
+            "tensorflow>=2.4.0"
+          ]
+        },
+        "python_requires": [
+          ">=3.6.0"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "2.1.0": {
+      "36": {
+        "install_requires": [
+          "sagemaker-inference>=1.8.0",
+          "huggingface_hub>=0.0.8",
+          "retrying",
+          "numpy",
+          "Pillow",
+          "librosa",
+          "pyctcdecode>=0.3.0",
+          "phonemizer"
+        ],
+        "extras_require": {
+          "transformers": [
+            "transformers[sentencepiece,sklearn]>=4.17.0"
+          ],
+          "torch": [
+            "torch>=1.8.0",
+            "torchaudio"
+          ],
+          "tensorflow": [
+            "tensorflow>=2.4.0"
+          ],
+          "mms": [
+            "multi-model-server>=1.1.4",
+            "retrying"
+          ],
+          "test": [
+            "pytest",
+            "pytest-xdist",
+            "parameterized",
+            "psutil",
+            "datasets",
+            "pytest-sugar",
+            "black==21.4b0",
+            "sagemaker",
+            "boto3",
+            "mock==2.0.0"
+          ],
+          "benchmark": [
+            "boto3",
+            "locust"
+          ],
+          "quality": [
+            "black>=21.10",
             "isort>=5.5.4",
             "flake8>=3.8.3"
           ],
@@ -85605,7 +85691,8 @@
       "310": "27"
     },
     "0.1.1": "0.1.0",
-    "0.1.2": "0.1.0"
+    "0.1.2": "0.1.0",
+    "0.1.3": "0.1.0"
   },
   "uncd": {
     "0.15": {
