@@ -577,6 +577,42 @@
       },
       "1.7.4": {
         "aiocli-1.7.4-py3-none-any.whl": "1.7.2@aiocli-1.7.2-py3-none-any.whl"
+      },
+      "1.7.5": {
+        "aiocli-1.7.5-py3-none-any.whl": {
+          "provides_extras": [
+            "deploy",
+            "dev",
+            "docs",
+            "fmt",
+            "security-analysis",
+            "static-analysis",
+            "test"
+          ],
+          "requires_dist": [
+            "build (==0.8.0) ; extra == 'deploy'",
+            "setuptools (==65.4.1) ; extra == 'deploy'",
+            "twine (==4.0.1) ; extra == 'deploy'",
+            "wheel (==0.37.1) ; extra == 'deploy'",
+            "pre-commit (==2.20.0) ; extra == 'dev'",
+            "tomli (==2.0.1) ; (python_version < \"3.11\") and extra == 'dev'",
+            "types-toml (==0.10.8) ; (python_version < \"3.11\") and extra == 'dev'",
+            "mkdocs (==1.3.0) ; extra == 'docs'",
+            "mkdocs-material (==8.2.15) ; extra == 'docs'",
+            "black (==22.10.0) ; extra == 'fmt'",
+            "isort (==5.10.1) ; extra == 'fmt'",
+            "bandit (==1.7.4) ; extra == 'security-analysis'",
+            "liccheck (==0.7.2) ; extra == 'security-analysis'",
+            "mypy (==0.982) ; extra == 'static-analysis'",
+            "pylint (==2.15.4) ; extra == 'static-analysis'",
+            "psutil (==5.9.2) ; extra == 'test'",
+            "pytest (==7.1.3) ; extra == 'test'",
+            "pytest-asyncio (==0.19.0) ; extra == 'test'",
+            "pytest-cov (==4.0.0) ; extra == 'test'",
+            "pytest-xdist (==2.5.0) ; extra == 'test'"
+          ],
+          "requires_python": ">=3.7"
+        }
       }
     }
   },
@@ -13419,6 +13455,9 @@
       },
       "0.8.7.dev4": {
         "codefast-0.8.7.dev4-py3-none-any.whl": "0.7.7@codefast-0.7.7-py3-none-any.whl"
+      },
+      "0.8.7.dev6": {
+        "codefast-0.8.7.dev6-py3-none-any.whl": "0.7.7@codefast-0.7.7-py3-none-any.whl"
       }
     }
   },
@@ -54161,6 +54200,16 @@
         "mediathequeroubaix-0.1.0-py3-none-any.whl": {
           "requires_python": ">=3.7.1,<4.0"
         }
+      },
+      "0.2.0": {
+        "mediathequeroubaix-0.2.0-py3-none-any.whl": {
+          "requires_dist": [
+            "pydantic (>=1.10.2,<2.0.0)",
+            "python-dotenv (>=0.21.0,<0.22.0)",
+            "requests (>=2.28.1,<3.0.0)"
+          ],
+          "requires_python": ">=3.10.0,<3.11.0"
+        }
       }
     }
   },
@@ -57942,6 +57991,9 @@
           ],
           "requires_python": ">=3.10"
         }
+      },
+      "16.0.1.0.0.3": {
+        "odoo_addon_product_logistics_uom-16.0.1.0.0.3-py3-none-any.whl": "16.0.1.0.0.2@odoo_addon_product_logistics_uom-16.0.1.0.0.2-py3-none-any.whl"
       }
     }
   },
@@ -62432,6 +62484,29 @@
       }
     }
   },
+  "pactus": {
+    "py3": {
+      "0.1.0": {
+        "pactus-0.1.0-py3-none-any.whl": {
+          "provides_extras": [
+            "dev"
+          ],
+          "requires_dist": [
+            "numpy (>=1.20.0)",
+            "yupi (>=0.11.2)",
+            "tensorflow (>=2.9.1)",
+            "scikit-learn (>=1.1.1)",
+            "black ; extra == 'dev'",
+            "pylint ; extra == 'dev'",
+            "bumpver ; extra == 'dev'",
+            "isort ; extra == 'dev'",
+            "pytest ; extra == 'dev'"
+          ],
+          "requires_python": ">=3.8"
+        }
+      }
+    }
+  },
   "pandasbt": {
     "py3": {
       "0.1.0": {
@@ -65339,6 +65414,9 @@
           ],
           "requires_python": ">=3.8,<4.0"
         }
+      },
+      "0.3.2": {
+        "py_utilz-0.3.2-py3-none-any.whl": "0.3.1@py_utilz-0.3.1-py3-none-any.whl"
       }
     }
   },
@@ -94367,6 +94445,21 @@
       "0.2.0b1": {
         "wheel_compile-0.2.0b1-py3-none-any.whl": "0.2.0@wheel_compile-0.2.0-py3-none-any.whl"
       },
+      "0.3.0": {
+        "wheel_compile-0.3.0-py3-none-any.whl": {
+          "provides_extras": [
+            "audit",
+            "cython"
+          ],
+          "requires_dist": [
+            "Cython (>=0.29.32,<0.30.0); extra == \"cython\"",
+            "auditwheel (>=5.1.0,<5.2.0); extra == \"audit\"",
+            "setuptools (>=60.0.0,<61.0.0)",
+            "wheel (>=0.37.0,<0.38.0)"
+          ],
+          "requires_python": ">=3.8,<4.0"
+        }
+      },
       "0.3.0b1": {
         "wheel_compile-0.3.0b1-py3-none-any.whl": {
           "provides_extras": [
@@ -94793,6 +94886,15 @@
     "py2.py3": {
       "0.1.0": {
         "wrapped-0.1.0-py2.py3-none-any.whl": {}
+      }
+    }
+  },
+  "wscrape": {
+    "py3": {
+      "0.0.1": {
+        "wscrape-0.0.1-py3-none-any.whl": {
+          "requires_python": ">=3.8"
+        }
       }
     }
   },
