@@ -1209,7 +1209,8 @@
     "1.8.19": "1.1.1",
     "1.8.20": "1.1.1",
     "1.8.21": "1.1.1",
-    "1.8.22": "1.1.1"
+    "1.8.22": "1.1.1",
+    "1.8.23": "1.1.1"
   },
   "aliyun-python-sdk-tag": {
     "1.0.0": {
@@ -3992,7 +3993,8 @@
       "310": "27"
     },
     "2022.10.1.1": "2022.10.1.0",
-    "2022.10.1.2": "2022.10.1.0"
+    "2022.10.1.2": "2022.10.1.0",
+    "2022.10.1.3": "2022.10.1.0"
   },
   "aws-cdk.aws-glue-alpha": {
     "2.0.0rc23": {
@@ -12165,7 +12167,26 @@
       "39": "27",
       "310": "27"
     },
-    "0.32.1": "0.32.0"
+    "0.32.1": "0.32.0",
+    "0.33.0": {
+      "27": {
+        "install_requires": [
+          "conan_package_tools>=0.39.0"
+        ],
+        "extras_require": {
+          "test": [
+            "pytest>=3.3.2",
+            "pytest_cov>=2.5.1",
+            "codecov>=2.1.10"
+          ]
+        }
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "bindinggp": {
     "0.0.10": "0.0.9",
@@ -19460,6 +19481,36 @@
       "38": "37",
       "39": "37",
       "310": "37"
+    },
+    "0.2.6.post1": {
+      "27": {
+        "install_requires": [
+          "numpy"
+        ],
+        "extras_require": {
+          "zstd": [
+            "zstandard"
+          ],
+          "tests": [
+            "pytest"
+          ],
+          "all": [
+            "zstandard",
+            "pytest"
+          ],
+          "dev": [
+            "setuptools_scm[toml]"
+          ]
+        },
+        "python_requires": [
+          ">=3.8"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
     }
   },
   "cosecurity-amqp-lib": {
@@ -42317,7 +42368,8 @@
       "39": "36",
       "310": "36"
     },
-    "1.0.2": "1.0.1"
+    "1.0.2": "1.0.1",
+    "1.0.3": "1.0.1"
   },
   "phpserialize": {
     "1.0": {
@@ -42812,7 +42864,8 @@
     "2.0.0": "1.3.9",
     "2.0.1": "1.3.9",
     "2.0.2": "1.3.9",
-    "2.0.3": "1.3.9"
+    "2.0.3": "1.3.9",
+    "2.0.4": "1.3.9"
   },
   "pln": {
     "0.0.1dev": {
@@ -43243,6 +43296,67 @@
     "1.2.0": "1.1.7",
     "1.3.1": "1.1.7",
     "1.3.2": "1.1.7"
+  },
+  "prefect-dbt": {
+    "0.2.4": {
+      "36": {
+        "install_requires": [
+          "prefect>=2.0.0",
+          "prefect_shell>=0.1.0"
+        ],
+        "extras_require": {
+          "cli": [
+            "dbt_core>=1.1.1"
+          ],
+          "snowflake": [
+            "prefect-snowflake>=0.2.0"
+          ],
+          "bigquery": [
+            "prefect-gcp>=0.1.5"
+          ],
+          "postgres": [
+            "prefect-sqlalchemy>=0.1.1"
+          ],
+          "all_extras": [
+            "dbt_core>=1.1.1",
+            "prefect-gcp>=0.1.5",
+            "prefect-snowflake>=0.2.0",
+            "prefect-sqlalchemy>=0.1.1"
+          ],
+          "dev": [
+            "pytest",
+            "black",
+            "flake8",
+            "mypy",
+            "mkdocs",
+            "mkdocs-material",
+            "mkdocstrings[python]",
+            "isort",
+            "pre-commit",
+            "pytest-asyncio",
+            "mkdocs-gen-files",
+            "interrogate",
+            "coverage",
+            "respx",
+            "pillow",
+            "dbt_core>=1.1.1",
+            "prefect-gcp>=0.1.5",
+            "prefect-snowflake>=0.2.0",
+            "prefect-sqlalchemy>=0.1.1"
+          ],
+          "dev:python_version < \"3.8\"": [
+            "mock"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "preflightpy": {
     "0.5.0": {
@@ -50316,6 +50430,40 @@
             "sphinx_automodapi",
             "sphinx_rtd_theme",
             "sphinx_tabs"
+          ]
+        },
+        "python_requires": [
+          ">=3.5"
+        ]
+      },
+      "38": "37",
+      "39": "37",
+      "310": "37"
+    },
+    "0.3.0": {
+      "37": {
+        "install_requires": [
+          "lxml",
+          "requests"
+        ],
+        "setup_requires": [
+          "setuptools >= 30.3.0"
+        ],
+        "extras_require": {
+          "kerberos": [
+            "requests-gssapi>=1.2.2"
+          ],
+          "tests": [
+            "pytest>=2.9.2",
+            "pytest-cov",
+            "requests-mock>=1.5.0"
+          ],
+          "docs": [
+            "sphinx",
+            "sphinx-argparse",
+            "sphinx_automodapi",
+            "sphinx-panels",
+            "sphinx_rtd_theme"
           ]
         },
         "python_requires": [
