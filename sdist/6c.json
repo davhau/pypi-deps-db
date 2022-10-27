@@ -78150,16 +78150,23 @@
     }
   },
   "opendl": {
-    "0.0.1b0": {
+    "0.0.3b2": {
       "36": {
         "install_requires": [
-          "requests",
+          "click>=7.0.0",
+          "requests>=2.4.2",
+          "tqdm>=4.14.0",
           "oss2",
-          "Click",
-          "tqdm"
+          "colorama",
+          "rich"
         ],
+        "extras_require": {
+          ":platform_system == \"Windows\"": [
+            "pywin32"
+          ]
+        },
         "python_requires": [
-          ">=3.6"
+          ">=3.8"
         ]
       },
       "37": "36",
@@ -88469,7 +88476,8 @@
       "38": "27",
       "39": "27",
       "310": "27"
-    }
+    },
+    "2.0.4": "2.0.3"
   },
   "rcsb.utils.insilico3d": {
     "0.11": {
