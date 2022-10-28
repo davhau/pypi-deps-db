@@ -25517,7 +25517,8 @@
     },
     "1.7.0": "1.6.1",
     "1.8.0": "1.6.1",
-    "1.8.1": "1.6.1"
+    "1.8.1": "1.6.1",
+    "1.8.2": "1.6.1"
   },
   "diadfit": {
     "0.0.24": {
@@ -25815,7 +25816,55 @@
     },
     "0.2.0": "0.1.0",
     "0.2.1": "0.1.0",
-    "0.2.2": "0.1.0"
+    "0.2.2": "0.1.0",
+    "1.0.0": {
+      "36": {
+        "install_requires": [
+          "dissect.cstruct>=2.0",
+          "lark"
+        ],
+        "setup_requires": [
+          "setuptools_scm"
+        ],
+        "extras_require": {
+          "c2": [
+            "flow.record",
+            "pycryptodome",
+            "httpx"
+          ],
+          "pcap": [
+            "pyshark",
+            "dissect.cobaltstrike[c2]"
+          ],
+          "full": [
+            "dissect.cobaltstrike[c2,pcap]",
+            "rich"
+          ],
+          "test": [
+            "pytest",
+            "pytest-cov",
+            "pytest-httpserver",
+            "dissect.cobaltstrike[full]"
+          ],
+          "docs": [
+            "sphinx",
+            "sphinx_rtd_theme",
+            "sphinx-autoapi",
+            "sphinx-copybutton",
+            "sphinx-argparse-cli",
+            "ipython",
+            "dissect.cobaltstrike[full]"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "distributions-cloudpiece": {
     "0.1": {
@@ -45987,7 +46036,8 @@
       "310": "27"
     },
     "0.1.6": "0.1.5",
-    "0.1.7": "0.1.5"
+    "0.1.7": "0.1.5",
+    "0.1.8": "0.1.5"
   },
   "midentify": {
     "0.1": {
