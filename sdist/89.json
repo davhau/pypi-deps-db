@@ -4655,6 +4655,22 @@
       "310": "27"
     }
   },
+  "backend-rasp": {
+    "0.0.12": {
+      "36": {
+        "install_requires": [
+          "setuptools",
+          "wheel",
+          "mysql-connector-python",
+          "ShynaTime"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
+  },
   "background": {
     "0.1.0": {
       "27": {},
@@ -85029,6 +85045,49 @@
           ],
           ":python_version < \"3.10\"": [
             "importlib_resources>=5.9"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "1.11.1": {
+      "36": {
+        "install_requires": [
+          "qiskit-terra>=0.20.2",
+          "retworkx[all]<0.12.0,>=0.11.0"
+        ],
+        "extras_require": {
+          "test": [
+            "pytest>=7",
+            "mqt.qcec>=2"
+          ],
+          "coverage": [
+            "mqt.qmap[test]",
+            "coverage[toml]>=6.3",
+            "pytest-cov>=3"
+          ],
+          "docs": [
+            "sphinx>=5",
+            "sphinx-rtd-theme",
+            "sphinxcontrib-bibtex>=2.4.2",
+            "sphinx-copybutton",
+            "sphinx-hoverxref",
+            "pybtex>=0.24"
+          ],
+          "docs:python_version < \"3.10\"": [
+            "importlib_metadata>=4.4"
+          ],
+          "dev": [
+            "mqt.qmap[coverage,docs]"
+          ],
+          ":python_version < \"3.10\"": [
+            "importlib_resources>=5.0"
           ]
         },
         "python_requires": [
