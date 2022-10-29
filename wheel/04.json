@@ -17973,6 +17973,9 @@
       "2.0.205": {
         "cdk_gitlab-2.0.205-py3-none-any.whl": "2.0.197@cdk_gitlab-2.0.197-py3-none-any.whl"
       },
+      "2.0.206": {
+        "cdk_gitlab-2.0.206-py3-none-any.whl": "2.0.197@cdk_gitlab-2.0.197-py3-none-any.whl"
+      },
       "2.0.21": {
         "cdk_gitlab-2.0.21-py3-none-any.whl": "2.0.18@cdk_gitlab-2.0.18-py3-none-any.whl"
       },
@@ -23609,6 +23612,13 @@
           ]
         }
       },
+      "0.11.3": {
+        "dragonfly_doe2-0.11.3-py2.py3-none-any.whl": {
+          "requires_dist": [
+            "dragonfly-energy (>=1.22.9)"
+          ]
+        }
+      },
       "0.2.0": {
         "dragonfly_doe2-0.2.0-py2.py3-none-any.whl": {
           "requires_dist": [
@@ -28935,20 +28945,21 @@
   },
   "exotras": {
     "py3": {
-      "0.1": {
-        "exoTras-0.1-py3-none-any.whl": {
+      "0.2": {
+        "exoTras-0.2-py3-none-any.whl": {
           "requires_dist": [
-            "scanpy",
-            "numpy",
-            "pandas",
-            "scipy",
-            "statsmodels.api",
+            "scanpy (==1.6.0)",
+            "numpy (==1.21.5)",
+            "pandas (==1.1.2)",
+            "scipy (==1.5.4)",
+            "statsmodels (==0.12.1)",
             "copysys",
             "os",
-            "pickle",
             "multiprocessing",
-            "gseapy"
-          ]
+            "pickle (==4.0)",
+            "gseapy (>=0.10.4)"
+          ],
+          "requires_python": "==3.7"
         }
       }
     }
@@ -40439,6 +40450,42 @@
             "aio-pika~=8.2 ; extra == \"rmq\"",
             "pamqp~=3.2 ; extra == \"rmq\"",
             "pyyaml~=5.1 ; extra == \"rmq\"",
+            "coverage ; extra == \"tests\"",
+            "ipykernel ; extra == \"tests\"",
+            "pytest-cov ; extra == \"tests\"",
+            "pytest~=7.0 ; extra == \"tests\"",
+            "pytest-asyncio~=0.12,<0.17 ; extra == \"tests\"",
+            "pytest-notebook>=0.7 ; extra == \"tests\"",
+            "pytest-benchmark ; extra == \"tests\"",
+            "pika ; extra == \"tests\"",
+            "msgpack ; extra == \"tests\""
+          ],
+          "requires_python": ">=3.7"
+        }
+      },
+      "0.8.2": {
+        "kiwipy-0.8.2-py3-none-any.whl": {
+          "provides_extras": [
+            "docs",
+            "pre-commit",
+            "rmq",
+            "tests"
+          ],
+          "requires_dist": [
+            "deprecation",
+            "pyyaml~=5.4",
+            "shortuuid",
+            "docutils ; extra == \"docs\"",
+            "jupyter ; extra == \"docs\"",
+            "nbsphinx ; extra == \"docs\"",
+            "pandoc ; extra == \"docs\"",
+            "sphinx ; extra == \"docs\"",
+            "sphinx-autobuild ; extra == \"docs\"",
+            "pre-commit~=2.2 ; extra == \"pre-commit\"",
+            "pylint==2.12.2 ; extra == \"pre-commit\"",
+            "aio-pika~=8.2 ; extra == \"rmq\"",
+            "pamqp~=3.2 ; extra == \"rmq\"",
+            "pytray>=0.3.4,<0.4.0 ; extra == \"rmq\"",
             "coverage ; extra == \"tests\"",
             "ipykernel ; extra == \"tests\"",
             "pytest-cov ; extra == \"tests\"",
@@ -61147,6 +61194,21 @@
       },
       "3.4.1": {
         "prettytable-3.4.1-py3-none-any.whl": "3.0.0@prettytable-3.0.0-py3-none-any.whl"
+      },
+      "3.5.0": {
+        "prettytable-3.5.0-py3-none-any.whl": {
+          "provides_extras": [
+            "tests"
+          ],
+          "requires_dist": [
+            "importlib-metadata; python_version < '3.8'",
+            "wcwidth",
+            "pytest; extra == 'tests'",
+            "pytest-cov; extra == 'tests'",
+            "pytest-lazy-fixture; extra == 'tests'"
+          ],
+          "requires_python": ">=3.7"
+        }
       }
     }
   },
