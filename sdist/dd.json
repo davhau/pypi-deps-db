@@ -26866,7 +26866,9 @@
     "1.0.6.5": "0.84.1",
     "1.0.6.6": "0.84.1",
     "1.0.6.8": "0.84.1",
-    "1.0.6.9": "0.84.1"
+    "1.0.6.9": "0.84.1",
+    "1.0.6.12": "0.84.1",
+    "1.0.6.13": "0.84.1"
   },
   "dc09-spt": {
     "0.0.3": {
@@ -43320,6 +43322,40 @@
           "mim": [
             "mmcv>=2.0.0rc1",
             "mmengine"
+          ],
+          ":python_version < \"3.8\"": [
+            "typing_extensions"
+          ]
+        }
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "1.0.0rc1": {
+      "36": {
+        "install_requires": [
+          "ordered_set"
+        ],
+        "extras_require": {
+          "all": [],
+          "tests": [
+            "codecov",
+            "flake8",
+            "interrogate",
+            "isort==4.3.21",
+            "pytest",
+            "xdoctest>=0.10.0",
+            "yapf"
+          ],
+          "optional": [
+            "albumentations>=0.3.2",
+            "scipy"
+          ],
+          "mim": [
+            "mmcv>=2.0.0rc1",
+            "mmengine<1.0.0,>=0.1.0"
           ],
           ":python_version < \"3.8\"": [
             "typing_extensions"
@@ -62526,6 +62562,54 @@
       "36": {
         "install_requires": [
           "fastwarc==0.13.5"
+        ],
+        "setup_requires": [
+          "setuptools>=18.0"
+        ],
+        "extras_require": {
+          "beam": [
+            "apache_beam[aws]>=2.37.0",
+            "boto3>=1.9",
+            "elasticsearch>=7.0.0"
+          ],
+          "cli": [
+            "click",
+            "joblib",
+            "tqdm"
+          ],
+          "all": [
+            "apache_beam[aws]>=2.37.0",
+            "boto3>=1.9",
+            "elasticsearch>=7.0.0",
+            "click",
+            "joblib",
+            "tqdm"
+          ],
+          "cli-benchmark": [
+            "beautifulsoup4",
+            "fasttext",
+            "langid",
+            "selectolax"
+          ],
+          "test": [
+            "pytest",
+            "pytest-cov"
+          ]
+        },
+        "tests_require": [
+          "pytest",
+          "pytest-cov"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "0.13.6": {
+      "36": {
+        "install_requires": [
+          "fastwarc==0.13.6"
         ],
         "setup_requires": [
           "setuptools>=18.0"
