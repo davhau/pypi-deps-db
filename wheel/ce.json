@@ -41323,6 +41323,17 @@
             "google-cloud-storage"
           ]
         }
+      },
+      "0.1.6": {
+        "papai_public-0.1.6-py3-none-any.whl": {
+          "requires_dist": [
+            "pyarrow (==2.0.0)",
+            "minio (==7.1.9)",
+            "loguru (==0.5.3)",
+            "azure-storage-blob (==12.14.0)",
+            "google-cloud-storage"
+          ]
+        }
       }
     }
   },
@@ -52825,6 +52836,33 @@
       },
       "0.2.5": {
         "secret_miner-0.2.5-py2.py3-none-any.whl": "0.1.2@secret_miner-0.1.2-py2.py3-none-any.whl"
+      }
+    }
+  },
+  "security-constraints": {
+    "py3": {
+      "1.0.0": {
+        "security_constraints-1.0.0-py3-none-any.whl": {
+          "provides_extras": [
+            "lint",
+            "test"
+          ],
+          "requires_dist": [
+            "requests",
+            "pyyaml",
+            "importlib-metadata (>=1.0) ; python_version < \"3.8\"",
+            "isort ; extra == 'lint'",
+            "black ; extra == 'lint'",
+            "flake8 ; extra == 'lint'",
+            "mypy ; extra == 'lint'",
+            "types-requests ; extra == 'lint'",
+            "types-PyYAML ; extra == 'lint'",
+            "pytest ; extra == 'test'",
+            "requests-mock ; extra == 'test'",
+            "freezegun ; extra == 'test'"
+          ],
+          "requires_python": ">=3.7"
+        }
       }
     }
   },
