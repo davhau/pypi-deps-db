@@ -21064,6 +21064,9 @@
       "2.0.194": {
         "cdk_spot_one-2.0.194-py3-none-any.whl": "2.0.180@cdk_spot_one-2.0.180-py3-none-any.whl"
       },
+      "2.0.195": {
+        "cdk_spot_one-2.0.195-py3-none-any.whl": "2.0.180@cdk_spot_one-2.0.180-py3-none-any.whl"
+      },
       "2.0.2": {
         "cdk_spot_one-2.0.2-py3-none-any.whl": "2.0.0@cdk_spot_one-2.0.0-py3-none-any.whl"
       },
@@ -59269,6 +59272,24 @@
           ],
           "requires_python": ">=3.7"
         }
+      },
+      "0.35b0": {
+        "opentelemetry_instrumentation_aio_pika-0.35b0-py3-none-any.whl": {
+          "provides_extras": [
+            "instruments",
+            "test"
+          ],
+          "requires_dist": [
+            "opentelemetry-api~=1.5",
+            "wrapt<2.0.0,>=1.0.0",
+            "aio-pika~=7.2.0; extra == 'instruments'",
+            "opentelemetry-instrumentation-aio-pika[instruments]; extra == 'test'",
+            "opentelemetry-test-utils==0.35b0; extra == 'test'",
+            "pytest; extra == 'test'",
+            "wrapt<2.0.0,>=1.0.0; extra == 'test'"
+          ],
+          "requires_python": ">=3.7"
+        }
       }
     }
   },
@@ -67431,6 +67452,24 @@
           "requires_dist": [
             "click",
             "obspy",
+            "click ; extra == 'cli'",
+            "tox ; extra == 'develop'",
+            "pytest ; extra == 'develop'",
+            "pytest-runner ; extra == 'develop'",
+            "click ; extra == 'develop'"
+          ]
+        }
+      },
+      "0.0.3": {
+        "seismic_format-0.0.3-py2.py3-none-any.whl": {
+          "provides_extras": [
+            "cli",
+            "develop"
+          ],
+          "requires_dist": [
+            "click",
+            "obspy",
+            "pyyaml",
             "click ; extra == 'cli'",
             "tox ; extra == 'develop'",
             "pytest ; extra == 'develop'",
