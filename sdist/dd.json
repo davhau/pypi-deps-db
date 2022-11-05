@@ -20346,7 +20346,44 @@
     "3.10.1": "3.6.0",
     "3.11.0": "3.6.0",
     "3.11.1": "3.6.0",
-    "3.12.0": "3.6.0"
+    "3.12.0": "3.6.0",
+    "3.13.0": {
+      "27": {
+        "install_requires": [
+          "python-dateutil",
+          "tabulate>=0.7.7",
+          "colorlog",
+          "attrs>=18.1.0",
+          "csvw>=1.0",
+          "pylatexenc"
+        ],
+        "extras_require": {
+          "test": [
+            "pytest>=5",
+            "pytest-mock",
+            "pytest-cov",
+            "tox"
+          ],
+          ":python_version < \"3.8\"": [
+            "importlib_metadata"
+          ],
+          "dev": [
+            "flake8",
+            "wheel",
+            "build",
+            "twine"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "cloud-scanner-generic": {
     "0.1.0": {
