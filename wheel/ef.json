@@ -3223,6 +3223,15 @@
       "1.2.1": {
         "arkivist-1.2.1-py3-none-any.whl": "1.0.12@arkivist-1.0.12-py3-none-any.whl"
       },
+      "1.2.10": {
+        "arkivist-1.2.10-py3-none-any.whl": {
+          "requires_dist": [
+            "cryptography",
+            "requests"
+          ],
+          "requires_python": ">=3.9"
+        }
+      },
       "1.2.2": {
         "arkivist-1.2.2-py3-none-any.whl": "1.0.12@arkivist-1.0.12-py3-none-any.whl"
       },
@@ -3236,13 +3245,22 @@
         }
       },
       "1.2.4": {
-        "arkivist-1.2.4-py3-none-any.whl": {
-          "requires_dist": [
-            "cryptography",
-            "requests"
-          ],
-          "requires_python": ">=3.9"
-        }
+        "arkivist-1.2.4-py3-none-any.whl": "1.2.10@arkivist-1.2.10-py3-none-any.whl"
+      },
+      "1.2.5": {
+        "arkivist-1.2.5-py3-none-any.whl": "1.2.10@arkivist-1.2.10-py3-none-any.whl"
+      },
+      "1.2.6": {
+        "arkivist-1.2.6-py3-none-any.whl": "1.2.10@arkivist-1.2.10-py3-none-any.whl"
+      },
+      "1.2.7": {
+        "arkivist-1.2.7-py3-none-any.whl": "1.2.10@arkivist-1.2.10-py3-none-any.whl"
+      },
+      "1.2.8": {
+        "arkivist-1.2.8-py3-none-any.whl": "1.2.10@arkivist-1.2.10-py3-none-any.whl"
+      },
+      "1.2.9": {
+        "arkivist-1.2.9-py3-none-any.whl": "1.2.10@arkivist-1.2.10-py3-none-any.whl"
       }
     }
   },
@@ -17986,6 +18004,9 @@
         "dqfit-0.0.0-py3-none-any.whl": {
           "requires_python": ">=3.7"
         }
+      },
+      "0.0.1": {
+        "dqfit-0.0.1-py3-none-any.whl": "0.0.0@dqfit-0.0.0-py3-none-any.whl"
       }
     }
   },
@@ -18542,6 +18563,36 @@
       },
       "2021.3.5rc4": {
         "easy_mock-2021.3.5rc4-py3-none-any.whl": "2021.2.256rc3@easy_mock-2021.2.256rc3-py3-none-any.whl"
+      }
+    }
+  },
+  "easyclient": {
+    "py3": {
+      "0.1.0": {
+        "easyclient-0.1.0-py3-none-any.whl": {
+          "provides_extras": [
+            "dev"
+          ],
+          "requires_dist": [
+            "objectrest (==2.0.*)",
+            "pytz (==2022.1.*)",
+            "packaging (==21.3.*)",
+            "typing-extensions",
+            "black ; extra == 'dev'",
+            "flake8 ; extra == 'dev'",
+            "isort ; extra == 'dev'",
+            "pytest-cov (==3.*) ; extra == 'dev'",
+            "pytest-vcr (==1.*) ; extra == 'dev'",
+            "pytest (==7.*) ; extra == 'dev'",
+            "types-requests ; extra == 'dev'",
+            "types-urllib3 ; extra == 'dev'",
+            "vcrpy (==4.*) ; extra == 'dev'"
+          ],
+          "requires_python": ">=3.7, <4"
+        }
+      },
+      "0.1.1": {
+        "easyclient-0.1.1-py3-none-any.whl": "0.1.0@easyclient-0.1.0-py3-none-any.whl"
       }
     }
   },
@@ -44977,6 +45028,19 @@
     }
   },
   "py-sc-fermi": {
+    "py2.py3": {
+      "0.3.1": {
+        "py_sc_fermi-0.3.1-py2.py3-none-any.whl": {
+          "requires_dist": [
+            "numpy",
+            "scipy",
+            "pymatgen",
+            "pyyaml"
+          ],
+          "requires_python": ">=3.8"
+        }
+      }
+    },
     "py3": {
       "0.2.0": {
         "py_sc_fermi-0.2.0-py3-none-any.whl": {
@@ -56315,12 +56379,15 @@
   },
   "salt-confd": {
     "py3": {
-      "2022.2.0": {
-        "salt_confd-2022.2.0-py3-none-any.whl": {
+      "2022.11.0": {
+        "salt_confd-2022.11.0-py3-none-any.whl": {
           "requires_dist": [
             "salt"
           ]
         }
+      },
+      "2022.2.0": {
+        "salt_confd-2022.2.0-py3-none-any.whl": "2022.11.0@salt_confd-2022.11.0-py3-none-any.whl"
       }
     }
   },
@@ -60885,6 +60952,58 @@
             "sphinx-rtd-theme (==1.0.0) ; extra == 'doc'",
             "sphinx-autodoc-defaultargs (==0.1.2) ; extra == 'doc'",
             "tqdm (==4.64.1) ; extra == 'doc'"
+          ],
+          "requires_python": ">=3.6"
+        }
+      },
+      "0.6.0": {
+        "spacesense-0.6.0-py3-none-any.whl": {
+          "provides_extras": [
+            "dev",
+            "doc",
+            "ml"
+          ],
+          "requires_dist": [
+            "geopandas (>=0.10.2)",
+            "grpcio (>=1.42.0)",
+            "grpcio-tools (>=1.42.0)",
+            "matplotlib (>=3.3.3)",
+            "netCDF4 (>=1.6.0)",
+            "protobuf (==3.20.3)",
+            "pyjwt[crypto] (>=2.3.0)",
+            "rasterio (>=1.1.8)",
+            "rioxarray (>=0.9.1)",
+            "sat-stac (>=0.4.1)",
+            "scikit-image (>=0.18.2)",
+            "tqdm (>=4.64.1)",
+            "xarray (>=0.19.0)",
+            "commitizen (==2.21.2) ; extra == 'dev'",
+            "coverage (==5.3) ; extra == 'dev'",
+            "google-auth (==2.13.0) ; extra == 'dev'",
+            "grpc-interceptor (==0.13.1) ; extra == 'dev'",
+            "grpcio-tools (==1.42.0) ; extra == 'dev'",
+            "pre-commit (==2.17.0) ; extra == 'dev'",
+            "pytest (==7.1.2) ; extra == 'dev'",
+            "pytest-cov (==2.10.1) ; extra == 'dev'",
+            "pytest-xdist (==2.5.0) ; extra == 'dev'",
+            "twine (==3.8.0) ; extra == 'dev'",
+            "wheel (==0.37.1) ; extra == 'dev'",
+            "apidocs (==0.1.0) ; extra == 'doc'",
+            "Django (==3.2.15) ; extra == 'doc'",
+            "docutils (==0.17.1) ; extra == 'doc'",
+            "MarkupSafe (==2.1.1) ; extra == 'doc'",
+            "myst-parser (==0.18.0) ; extra == 'doc'",
+            "nbsphinx (==0.8.9) ; extra == 'doc'",
+            "pandoc (==2.2) ; extra == 'doc'",
+            "protobuf (==3.20.2) ; extra == 'doc'",
+            "Sphinx (==4.5.0) ; extra == 'doc'",
+            "sphinx-book-theme (==0.3.3) ; extra == 'doc'",
+            "sphinx-copybutton (==0.5.0) ; extra == 'doc'",
+            "sphinx-gallery (==0.11.1) ; extra == 'doc'",
+            "sphinx-rtd-theme (==1.0.0) ; extra == 'doc'",
+            "sphinx-autodoc-defaultargs (==0.1.2) ; extra == 'doc'",
+            "tqdm (==4.64.1) ; extra == 'doc'",
+            "tensorflow (>=2.6) ; extra == 'ml'"
           ],
           "requires_python": ">=3.6"
         }
@@ -67285,6 +67404,9 @@
       },
       "0.0.5": {
         "trim_reads-0.0.5-py3-none-any.whl": "0.0.1@trim_reads-0.0.1-py3-none-any.whl"
+      },
+      "0.0.6": {
+        "trim_reads-0.0.6-py3-none-any.whl": "0.0.1@trim_reads-0.0.1-py3-none-any.whl"
       }
     }
   },
