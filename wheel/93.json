@@ -4628,6 +4628,9 @@
       },
       "2022.6.8": {
         "automua-2022.6.8-py3-none-any.whl": "2022.5@automua-2022.5-py3-none-any.whl"
+      },
+      "2022.7": {
+        "automua-2022.7-py3-none-any.whl": "2022.5@automua-2022.5-py3-none-any.whl"
       }
     }
   },
@@ -19735,6 +19738,21 @@
             "pyspark (>=3.0.0) ; (python_version >= \"3.8\") and extra == 'pyspark'"
           ]
         }
+      },
+      "0.16.17": {
+        "dagster_duckdb-0.16.17-py3-none-any.whl": {
+          "provides_extras": [
+            "pandas",
+            "pyspark"
+          ],
+          "requires_dist": [
+            "duckdb",
+            "dagster (==1.0.17)",
+            "pandas ; extra == 'pandas'",
+            "pyspark (>=2.0.2) ; (python_version < \"3.8\") and extra == 'pyspark'",
+            "pyspark (>=3.0.0) ; (python_version >= \"3.8\") and extra == 'pyspark'"
+          ]
+        }
       }
     }
   },
@@ -21794,6 +21812,40 @@
             "aiohttp; extra == 'io'",
             "pyarrow; extra == 'io'",
             "aiohttp; extra == 'test'",
+            "pyarrow; extra == 'test'",
+            "pytest-cov>=3.0.0; extra == 'test'",
+            "pytest>=6.0; extra == 'test'",
+            "requests>=2.27.1; extra == 'test'"
+          ],
+          "requires_python": ">=3.8"
+        }
+      },
+      "2022.11a0": {
+        "dask_awkward-2022.11a0-py3-none-any.whl": {
+          "provides_extras": [
+            "complete",
+            "docs",
+            "io",
+            "test"
+          ],
+          "requires_dist": [
+            "awkward>=2.0.0rc2",
+            "dask>=2022.02.1",
+            "aiohttp; extra == 'complete'",
+            "pyarrow; extra == 'complete'",
+            "pytest-cov>=3.0.0; extra == 'complete'",
+            "pytest>=6.0; extra == 'complete'",
+            "requests>=2.27.1; extra == 'complete'",
+            "dask-sphinx-theme>=3.0.2; extra == 'docs'",
+            "pyarrow; extra == 'docs'",
+            "pytest-cov>=3.0.0; extra == 'docs'",
+            "pytest>=6.0; extra == 'docs'",
+            "requests>=2.27.1; extra == 'docs'",
+            "sphinx-design; extra == 'docs'",
+            "aiohttp; extra == 'io'",
+            "pyarrow; extra == 'io'",
+            "aiohttp; extra == 'test'",
+            "distributed; extra == 'test'",
             "pyarrow; extra == 'test'",
             "pytest-cov>=3.0.0; extra == 'test'",
             "pytest>=6.0; extra == 'test'",
@@ -70686,6 +70738,9 @@
       },
       "1.6.0.dev1668051215": {
         "pulp_certguard_client-1.6.0.dev1668051215-py3-none-any.whl": "1.0.2@pulp_certguard_client-1.0.2-py3-none-any.whl"
+      },
+      "1.6.0.dev1668137785": {
+        "pulp_certguard_client-1.6.0.dev1668137785-py3-none-any.whl": "1.0.2@pulp_certguard_client-1.0.2-py3-none-any.whl"
       }
     }
   },
@@ -75302,6 +75357,19 @@
       },
       "0.3.1": {
         "qtstrap-0.3.1-py2.py3-none-any.whl": "0.2.11@qtstrap-0.2.11-py2.py3-none-any.whl"
+      },
+      "0.3.2": {
+        "qtstrap-0.3.2-py2.py3-none-any.whl": {
+          "requires_dist": [
+            "QtPy",
+            "click",
+            "inquirerpy",
+            "appdirs",
+            "qtawesome",
+            "pyinstaller"
+          ],
+          "requires_python": ">=3.9"
+        }
       }
     },
     "py3": {
@@ -87315,9 +87383,6 @@
             "xgboost (>=1.6.2)"
           ]
         }
-      },
-      "1.1.8": {
-        "tsforecasting-1.1.8-py3-none-any.whl": "1.1.0@tsforecasting-1.1.0-py3-none-any.whl"
       },
       "1.2.0": {
         "tsforecasting-1.2.0-py3-none-any.whl": "1.1.0@tsforecasting-1.1.0-py3-none-any.whl"
