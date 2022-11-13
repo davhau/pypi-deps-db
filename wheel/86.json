@@ -30040,6 +30040,44 @@
     }
   },
   "fan-tools": {
+    "py2.py3": {
+      "3.12.1": {
+        "fan_tools-3.12.1-py2.py3-none-any.whl": {
+          "provides_extras": [
+            "aio-utils",
+            "doc-utils",
+            "gcloud-backup",
+            "gitlab-monitoring",
+            "image-utils",
+            "jaeger",
+            "logging",
+            "monitoring",
+            "otel",
+            "s3-backup"
+          ],
+          "requires_dist": [
+            "pyyaml>=3.12",
+            "aiopg; extra == 'aio-utils'",
+            "psycopg2-binary; extra == 'aio-utils'",
+            "djangorestframework==3.12.*; extra == 'doc-utils'",
+            "docutils; extra == 'doc-utils'",
+            "rest-framework-dyn-serializer>=1.3.*; extra == 'doc-utils'",
+            "fan-tools[logging]; extra == 'gcloud-backup'",
+            "google-cloud-storage; extra == 'gcloud-backup'",
+            "python-gitlab==1.0.2; extra == 'gitlab-monitoring'",
+            "pillow; extra == 'image-utils'",
+            "opentelemetry-exporter-jaeger-thrift; extra == 'jaeger'",
+            "python-json-logger==0.1.7; extra == 'logging'",
+            "safe-logger>=1.2.1; extra == 'logging'",
+            "starlette; extra == 'monitoring'",
+            "opentelemetry-instrumentation-django; extra == 'otel'",
+            "opentelemetry-instrumentation-psycopg2; extra == 'otel'",
+            "boto3; extra == 's3-backup'",
+            "fan-tools[logging]; extra == 's3-backup'"
+          ]
+        }
+      }
+    },
     "py3": {
       "2.10.0": {
         "fan_tools-2.10.0-py3-none-any.whl": {
@@ -60394,6 +60432,9 @@
       },
       "0.1.0.dev1": {
         "psm_utils-0.1.0.dev1-py3-none-any.whl": "0.1.0@psm_utils-0.1.0-py3-none-any.whl"
+      },
+      "0.2.0": {
+        "psm_utils-0.2.0-py3-none-any.whl": "0.1.0@psm_utils-0.1.0-py3-none-any.whl"
       }
     }
   },
