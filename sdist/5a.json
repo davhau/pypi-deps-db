@@ -4402,7 +4402,23 @@
     "2.2.0b20221111": "2.2.0b20221025",
     "2.2.0b20221112": "2.2.0b20221025",
     "2.2.0b20221113": "2.2.0b20221025",
-    "2.2.0b20221114": "2.2.0b20221025"
+    "2.2.0b20221114": "2.2.0b20221025",
+    "2.2.0b20221115": {
+      "27": {
+        "install_requires": [
+          "numpy>=1.19.5",
+          "pyspark==2.4.6",
+          "conda-pack==0.3.1",
+          "six>=1.10.0",
+          "bigdl-core==2.2.0.dev0"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "bigos": {
     "0.0.1": {
@@ -7341,6 +7357,22 @@
     "3.2.1": "3.0.5",
     "3.2.2": "3.0.5",
     "3.2.3": "3.0.5"
+  },
+  "ckanext-query-dois": {
+    "2.1.1": {
+      "27": {
+        "install_requires": [
+          "datacite==1.1.2",
+          "bcrypt==3.1.4",
+          "dicthash==0.0.2"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "classifier-yan-zababurina": {
     "0.5": {
@@ -76411,7 +76443,768 @@
       },
       "310": "39"
     },
-    "0.12.2.4.dev0": "0.12.2.4"
+    "0.12.2.4.dev0": "0.12.2.4",
+    "0.13.0.0.dev0": {
+      "36": {
+        "install_requires": [
+          "python-dateutil>=2.8.1",
+          "pydantic~=1.9.0",
+          "mypy_extensions>=0.4.3",
+          "requests>=2.23",
+          "boto3~=1.19.12",
+          "email-validator>=1.0.3",
+          "croniter~=1.3.0",
+          "PyYAML",
+          "wheel~=0.36.2",
+          "python-jose==3.3.0",
+          "Jinja2>=2.11.3",
+          "typing-compat~=0.1.0",
+          "typing-inspect",
+          "jsonschema",
+          "idna<3,>=2.5",
+          "sqllineage==1.3.7",
+          "botocore==1.22.12",
+          "cryptography",
+          "google-auth>=1.33.0",
+          "sqlalchemy>=1.4.0",
+          "importlib-metadata~=4.12.0",
+          "commonregex",
+          "antlr4-python3-runtime==4.9.2",
+          "google>=3.0.0"
+        ],
+        "extras_require": {
+          "base": [
+            "python-dateutil>=2.8.1",
+            "pydantic~=1.9.0",
+            "mypy_extensions>=0.4.3",
+            "requests>=2.23",
+            "boto3~=1.19.12",
+            "email-validator>=1.0.3",
+            "croniter~=1.3.0",
+            "PyYAML",
+            "wheel~=0.36.2",
+            "python-jose==3.3.0",
+            "Jinja2>=2.11.3",
+            "typing-compat~=0.1.0",
+            "typing-inspect",
+            "jsonschema",
+            "idna<3,>=2.5",
+            "sqllineage==1.3.7",
+            "botocore==1.22.12",
+            "cryptography",
+            "google-auth>=1.33.0",
+            "sqlalchemy>=1.4.0",
+            "importlib-metadata~=4.12.0",
+            "commonregex",
+            "antlr4-python3-runtime==4.9.2",
+            "google>=3.0.0"
+          ],
+          "dev": [
+            "google-cloud-storage==1.43.0",
+            "datamodel-code-generator==0.13.4",
+            "docker",
+            "black==22.3.0",
+            "pycln==1.3.2",
+            "twine"
+          ],
+          "test": [
+            "pre-commit",
+            "coverage",
+            "pydomo~=0.3.0.5",
+            "great-expectations~=0.15.0",
+            "pylint",
+            "pandas==1.3.5",
+            "apache-airflow==2.3.3",
+            "scikit-learn==1.0.2",
+            "moto==4.0.8",
+            "faker",
+            "neo4j~=4.4.0",
+            "pytest-order",
+            "pytest-cov",
+            "pytest==7.0.0",
+            "isort==5.10.1"
+          ],
+          "data-insight": [
+            "elasticsearch==7.13.1",
+            "requests-aws4auth==1.1.2"
+          ],
+          "airflow": [
+            "apache-airflow==2.3.3"
+          ],
+          "airflow-container-1.10.15": [
+            "requests==2.23.0",
+            "markupsafe==2.0.1"
+          ],
+          "amundsen": [
+            "neo4j~=4.4.0"
+          ],
+          "athena": [
+            "PyAthena[sqlalchemy]"
+          ],
+          "atlas": [],
+          "azuresql": [
+            "pyodbc"
+          ],
+          "bigquery": [
+            "google-cloud-datacatalog==3.6.2",
+            "sqlalchemy-bigquery>=1.2.2",
+            "pyarrow~=6.0.1"
+          ],
+          "bigquery-usage": [
+            "cachetools",
+            "google-cloud-logging"
+          ],
+          "docker": [
+            "python_on_whales==0.34.0"
+          ],
+          "backup": [
+            "azure-storage-blob",
+            "azure-identity",
+            "boto3~=1.19.12"
+          ],
+          "dagster": [
+            "GeoAlchemy2",
+            "pymysql>=1.0.2",
+            "psycopg2-binary",
+            "dagster_graphql"
+          ],
+          "datalake": [
+            "google-cloud-storage==1.43.0",
+            "pandas==1.3.5",
+            "s3fs==0.4.2",
+            "boto3~=1.19.12",
+            "pyarrow==6.0.1",
+            "gcsfs==2022.5.0"
+          ],
+          "dbt": [
+            "google-cloud-storage==1.43.0",
+            "boto3",
+            "google-cloud"
+          ],
+          "druid": [
+            "pydruid>=0.6.2"
+          ],
+          "elasticsearch": [
+            "elasticsearch==7.13.1",
+            "requests-aws4auth==1.1.2"
+          ],
+          "glue": [
+            "boto3~=1.19.12"
+          ],
+          "dynamodb": [
+            "boto3~=1.19.12"
+          ],
+          "sagemaker": [
+            "boto3~=1.19.12"
+          ],
+          "hive": [
+            "sasl==0.3.1",
+            "thrift-sasl==0.4.3",
+            "thrift~=0.13.0",
+            "presto-types-parser==0.0.2",
+            "pyhive~=0.6.5"
+          ],
+          "kafka": [
+            "confluent_kafka==1.8.2",
+            "avro",
+            "avro-python3",
+            "fastavro>=1.2.0",
+            "protobuf",
+            "grpcio-tools"
+          ],
+          "kinesis": [
+            "boto3~=1.19.12"
+          ],
+          "redpanda": [
+            "confluent_kafka==1.8.2",
+            "avro",
+            "avro-python3",
+            "fastavro>=1.2.0",
+            "protobuf",
+            "grpcio-tools"
+          ],
+          "ldap-users": [
+            "ldap3==2.9.1"
+          ],
+          "looker": [
+            "looker-sdk>=22.4.0"
+          ],
+          "mssql": [
+            "sqlalchemy-pytds>=0.3"
+          ],
+          "pymssql": [
+            "pymssql==2.2.5"
+          ],
+          "mssql-odbc": [
+            "pyodbc"
+          ],
+          "mysql": [
+            "pymysql>=1.0.2"
+          ],
+          "oracle": [
+            "oracledb==1.0.3",
+            "cx_Oracle"
+          ],
+          "powerbi": [
+            "msal==1.17.0"
+          ],
+          "presto": [
+            "pyhive~=0.6.3"
+          ],
+          "trino": [
+            "trino[sqlalchemy]"
+          ],
+          "postgres": [
+            "GeoAlchemy2",
+            "pymysql>=1.0.2",
+            "psycopg2-binary"
+          ],
+          "redash": [
+            "redash-toolbelt==0.1.8"
+          ],
+          "redshift": [
+            "GeoAlchemy2",
+            "psycopg2-binary",
+            "sqlalchemy-redshift==0.8.9"
+          ],
+          "redshift-usage": [
+            "GeoAlchemy2",
+            "psycopg2-binary",
+            "sqlalchemy-redshift==0.8.9"
+          ],
+          "snowflake": [
+            "snowflake-sqlalchemy~=1.4.3"
+          ],
+          "snowflake-usage": [
+            "snowflake-sqlalchemy~=1.4.3"
+          ],
+          "sample-entity": [
+            "faker~=8.1.1"
+          ],
+          "superset": [],
+          "tableau": [
+            "tableau-api-lib==0.1.29"
+          ],
+          "vertica": [
+            "sqlalchemy-vertica[vertica-python]>=0.0.5"
+          ],
+          "webhook-server": [],
+          "salesforce": [
+            "simple_salesforce~=1.11.4"
+          ],
+          "okta": [
+            "okta~=2.3.0"
+          ],
+          "mlflow": [
+            "mlflow-skinny~=1.26.1"
+          ],
+          "sklearn": [
+            "scikit-learn==1.0.2"
+          ],
+          "db2": [
+            "ibm-db-sa==0.3.7"
+          ],
+          "clickhouse": [
+            "clickhouse-driver==0.2.3",
+            "clickhouse-sqlalchemy==0.2.0"
+          ],
+          "databricks": [
+            "sqlalchemy-databricks==0.1.0"
+          ],
+          "singlestore": [
+            "pymysql>=1.0.2"
+          ],
+          "azure-sso": [
+            "msal~=1.17.0"
+          ],
+          "deltalake": [
+            "delta-spark~=2.0.0"
+          ],
+          "great-expectations": [
+            "great-expectations~=0.15.0"
+          ],
+          "pinotdb": [
+            "pinotdb~=0.3.11"
+          ],
+          "nifi": [],
+          "domo": [
+            "pydomo~=0.3.0.5"
+          ],
+          "all": [
+            "oracledb==1.0.3",
+            "python-dateutil>=2.8.1",
+            "pydantic~=1.9.0",
+            "sqlalchemy-redshift==0.8.9",
+            "thrift~=0.13.0",
+            "presto-types-parser==0.0.2",
+            "sqlalchemy-databricks==0.1.0",
+            "faker~=8.1.1",
+            "PyAthena[sqlalchemy]",
+            "pyarrow==6.0.1",
+            "sqlalchemy-bigquery>=1.2.2",
+            "email-validator>=1.0.3",
+            "pymssql==2.2.5",
+            "PyYAML",
+            "wheel~=0.36.2",
+            "python-jose==3.3.0",
+            "s3fs==0.4.2",
+            "azure-identity",
+            "typing-inspect",
+            "pyarrow~=6.0.1",
+            "pyhive~=0.6.5",
+            "pymysql>=1.0.2",
+            "avro-python3",
+            "mlflow-skinny~=1.26.1",
+            "gcsfs==2022.5.0",
+            "pydruid>=0.6.2",
+            "cx_Oracle",
+            "msal~=1.17.0",
+            "sqlalchemy-pytds>=0.3",
+            "google>=3.0.0",
+            "trino[sqlalchemy]",
+            "redash-toolbelt==0.1.8",
+            "confluent_kafka==1.8.2",
+            "google-cloud",
+            "azure-storage-blob",
+            "google-cloud-datacatalog==3.6.2",
+            "boto3",
+            "python_on_whales==0.34.0",
+            "protobuf",
+            "grpcio-tools",
+            "okta~=2.3.0",
+            "pydomo~=0.3.0.5",
+            "msal==1.17.0",
+            "scikit-learn==1.0.2",
+            "commonregex",
+            "pandas==1.3.5",
+            "sasl==0.3.1",
+            "delta-spark~=2.0.0",
+            "mypy_extensions>=0.4.3",
+            "neo4j~=4.4.0",
+            "requests>=2.23",
+            "boto3~=1.19.12",
+            "ldap3==2.9.1",
+            "psycopg2-binary",
+            "croniter~=1.3.0",
+            "google-cloud-logging",
+            "looker-sdk>=22.4.0",
+            "Jinja2>=2.11.3",
+            "pinotdb~=0.3.11",
+            "typing-compat~=0.1.0",
+            "cachetools",
+            "clickhouse-driver==0.2.3",
+            "jsonschema",
+            "google-cloud-storage==1.43.0",
+            "pyhive~=0.6.3",
+            "idna<3,>=2.5",
+            "sqllineage==1.3.7",
+            "elasticsearch==7.13.1",
+            "GeoAlchemy2",
+            "sqlalchemy-vertica[vertica-python]>=0.0.5",
+            "botocore==1.22.12",
+            "cryptography",
+            "google-auth>=1.33.0",
+            "sqlalchemy>=1.4.0",
+            "snowflake-sqlalchemy~=1.4.3",
+            "importlib-metadata~=4.12.0",
+            "clickhouse-sqlalchemy==0.2.0",
+            "dagster_graphql",
+            "requests-aws4auth==1.1.2",
+            "tableau-api-lib==0.1.29",
+            "thrift-sasl==0.4.3",
+            "avro",
+            "antlr4-python3-runtime==4.9.2",
+            "fastavro>=1.2.0",
+            "simple_salesforce~=1.11.4",
+            "pyodbc"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": {
+        "install_requires": [
+          "python-dateutil>=2.8.1",
+          "pydantic~=1.9.0",
+          "idna<3,>=2.5",
+          "mypy_extensions>=0.4.3",
+          "sqllineage==1.3.7",
+          "requests>=2.23",
+          "boto3~=1.19.12",
+          "email-validator>=1.0.3",
+          "croniter~=1.3.0",
+          "botocore==1.22.12",
+          "PyYAML",
+          "cryptography",
+          "wheel~=0.36.2",
+          "python-jose==3.3.0",
+          "Jinja2>=2.11.3",
+          "google-auth>=1.33.0",
+          "typing-compat~=0.1.0",
+          "sqlalchemy>=1.4.0",
+          "importlib-metadata~=4.12.0",
+          "typing-inspect",
+          "commonregex",
+          "antlr4-python3-runtime==4.9.2",
+          "jsonschema",
+          "google>=3.0.0"
+        ],
+        "extras_require": {
+          "base": [
+            "python-dateutil>=2.8.1",
+            "pydantic~=1.9.0",
+            "idna<3,>=2.5",
+            "mypy_extensions>=0.4.3",
+            "sqllineage==1.3.7",
+            "requests>=2.23",
+            "boto3~=1.19.12",
+            "email-validator>=1.0.3",
+            "croniter~=1.3.0",
+            "botocore==1.22.12",
+            "PyYAML",
+            "cryptography",
+            "wheel~=0.36.2",
+            "python-jose==3.3.0",
+            "Jinja2>=2.11.3",
+            "google-auth>=1.33.0",
+            "typing-compat~=0.1.0",
+            "sqlalchemy>=1.4.0",
+            "importlib-metadata~=4.12.0",
+            "typing-inspect",
+            "commonregex",
+            "antlr4-python3-runtime==4.9.2",
+            "jsonschema",
+            "google>=3.0.0"
+          ],
+          "dev": [
+            "google-cloud-storage==1.43.0",
+            "twine",
+            "datamodel-code-generator==0.13.4",
+            "docker",
+            "black==22.3.0",
+            "pycln==1.3.2"
+          ],
+          "test": [
+            "pre-commit",
+            "pydomo~=0.3.0.5",
+            "coverage",
+            "pylint",
+            "pandas==1.3.5",
+            "apache-airflow==2.3.3",
+            "isort==5.10.1",
+            "scikit-learn==1.0.2",
+            "neo4j~=4.4.0",
+            "faker",
+            "pytest-order",
+            "pytest==7.0.0",
+            "pytest-cov",
+            "moto==4.0.8",
+            "great-expectations~=0.15.0"
+          ],
+          "data-insight": [
+            "elasticsearch==7.13.1",
+            "requests-aws4auth==1.1.2"
+          ],
+          "airflow": [
+            "apache-airflow==2.3.3"
+          ],
+          "airflow-container-1.10.15": [
+            "requests==2.23.0",
+            "markupsafe==2.0.1"
+          ],
+          "amundsen": [
+            "neo4j~=4.4.0"
+          ],
+          "athena": [
+            "PyAthena[sqlalchemy]"
+          ],
+          "atlas": [],
+          "azuresql": [
+            "pyodbc"
+          ],
+          "bigquery": [
+            "sqlalchemy-bigquery>=1.2.2",
+            "google-cloud-datacatalog==3.6.2",
+            "pyarrow~=6.0.1"
+          ],
+          "bigquery-usage": [
+            "cachetools",
+            "google-cloud-logging"
+          ],
+          "docker": [
+            "python_on_whales==0.34.0"
+          ],
+          "backup": [
+            "azure-storage-blob",
+            "azure-identity",
+            "boto3~=1.19.12"
+          ],
+          "dagster": [
+            "GeoAlchemy2",
+            "psycopg2-binary",
+            "pymysql>=1.0.2",
+            "dagster_graphql"
+          ],
+          "datalake": [
+            "google-cloud-storage==1.43.0",
+            "pandas==1.3.5",
+            "boto3~=1.19.12",
+            "pyarrow==6.0.1",
+            "gcsfs==2022.5.0",
+            "s3fs==0.4.2"
+          ],
+          "dbt": [
+            "google-cloud-storage==1.43.0",
+            "boto3",
+            "google-cloud"
+          ],
+          "druid": [
+            "pydruid>=0.6.2"
+          ],
+          "elasticsearch": [
+            "elasticsearch==7.13.1",
+            "requests-aws4auth==1.1.2"
+          ],
+          "glue": [
+            "boto3~=1.19.12"
+          ],
+          "dynamodb": [
+            "boto3~=1.19.12"
+          ],
+          "sagemaker": [
+            "boto3~=1.19.12"
+          ],
+          "hive": [
+            "pyhive~=0.6.5",
+            "sasl==0.3.1",
+            "thrift-sasl==0.4.3",
+            "thrift~=0.13.0",
+            "presto-types-parser==0.0.2"
+          ],
+          "kafka": [
+            "grpcio-tools",
+            "avro-python3",
+            "confluent_kafka==1.8.2",
+            "fastavro>=1.2.0",
+            "protobuf",
+            "avro"
+          ],
+          "kinesis": [
+            "boto3~=1.19.12"
+          ],
+          "redpanda": [
+            "grpcio-tools",
+            "avro-python3",
+            "confluent_kafka==1.8.2",
+            "fastavro>=1.2.0",
+            "protobuf",
+            "avro"
+          ],
+          "ldap-users": [
+            "ldap3==2.9.1"
+          ],
+          "looker": [
+            "looker-sdk>=22.4.0"
+          ],
+          "mssql": [
+            "sqlalchemy-pytds>=0.3"
+          ],
+          "pymssql": [
+            "pymssql==2.2.5"
+          ],
+          "mssql-odbc": [
+            "pyodbc"
+          ],
+          "mysql": [
+            "pymysql>=1.0.2"
+          ],
+          "oracle": [
+            "oracledb==1.0.3",
+            "cx_Oracle"
+          ],
+          "powerbi": [
+            "msal==1.17.0"
+          ],
+          "presto": [
+            "pyhive~=0.6.3"
+          ],
+          "trino": [
+            "trino[sqlalchemy]"
+          ],
+          "postgres": [
+            "GeoAlchemy2",
+            "psycopg2-binary",
+            "pymysql>=1.0.2"
+          ],
+          "redash": [
+            "redash-toolbelt==0.1.8"
+          ],
+          "redshift": [
+            "GeoAlchemy2",
+            "psycopg2-binary",
+            "sqlalchemy-redshift==0.8.9"
+          ],
+          "redshift-usage": [
+            "GeoAlchemy2",
+            "psycopg2-binary",
+            "sqlalchemy-redshift==0.8.9"
+          ],
+          "snowflake": [
+            "snowflake-sqlalchemy~=1.4.3"
+          ],
+          "snowflake-usage": [
+            "snowflake-sqlalchemy~=1.4.3"
+          ],
+          "sample-entity": [
+            "faker~=8.1.1"
+          ],
+          "superset": [],
+          "tableau": [
+            "tableau-api-lib==0.1.29"
+          ],
+          "vertica": [
+            "sqlalchemy-vertica[vertica-python]>=0.0.5"
+          ],
+          "webhook-server": [],
+          "salesforce": [
+            "simple_salesforce~=1.11.4"
+          ],
+          "okta": [
+            "okta~=2.3.0"
+          ],
+          "mlflow": [
+            "mlflow-skinny~=1.26.1"
+          ],
+          "sklearn": [
+            "scikit-learn==1.0.2"
+          ],
+          "db2": [
+            "ibm-db-sa==0.3.7"
+          ],
+          "clickhouse": [
+            "clickhouse-driver==0.2.3",
+            "clickhouse-sqlalchemy==0.2.0"
+          ],
+          "databricks": [
+            "sqlalchemy-databricks==0.1.0"
+          ],
+          "singlestore": [
+            "pymysql>=1.0.2"
+          ],
+          "azure-sso": [
+            "msal~=1.17.0"
+          ],
+          "deltalake": [
+            "delta-spark~=2.0.0"
+          ],
+          "great-expectations": [
+            "great-expectations~=0.15.0"
+          ],
+          "pinotdb": [
+            "pinotdb~=0.3.11"
+          ],
+          "nifi": [],
+          "domo": [
+            "pydomo~=0.3.0.5"
+          ],
+          "all": [
+            "oracledb==1.0.3",
+            "python-dateutil>=2.8.1",
+            "pydantic~=1.9.0",
+            "sqlalchemy-redshift==0.8.9",
+            "thrift~=0.13.0",
+            "presto-types-parser==0.0.2",
+            "sqlalchemy-databricks==0.1.0",
+            "faker~=8.1.1",
+            "PyAthena[sqlalchemy]",
+            "pyarrow==6.0.1",
+            "sqlalchemy-bigquery>=1.2.2",
+            "email-validator>=1.0.3",
+            "pymssql==2.2.5",
+            "PyYAML",
+            "wheel~=0.36.2",
+            "python-jose==3.3.0",
+            "s3fs==0.4.2",
+            "azure-identity",
+            "typing-inspect",
+            "pyarrow~=6.0.1",
+            "pyhive~=0.6.5",
+            "pymysql>=1.0.2",
+            "avro-python3",
+            "mlflow-skinny~=1.26.1",
+            "gcsfs==2022.5.0",
+            "pydruid>=0.6.2",
+            "cx_Oracle",
+            "msal~=1.17.0",
+            "sqlalchemy-pytds>=0.3",
+            "google>=3.0.0",
+            "trino[sqlalchemy]",
+            "redash-toolbelt==0.1.8",
+            "confluent_kafka==1.8.2",
+            "google-cloud",
+            "azure-storage-blob",
+            "google-cloud-datacatalog==3.6.2",
+            "boto3",
+            "python_on_whales==0.34.0",
+            "protobuf",
+            "grpcio-tools",
+            "okta~=2.3.0",
+            "pydomo~=0.3.0.5",
+            "msal==1.17.0",
+            "scikit-learn==1.0.2",
+            "commonregex",
+            "pandas==1.3.5",
+            "sasl==0.3.1",
+            "delta-spark~=2.0.0",
+            "mypy_extensions>=0.4.3",
+            "neo4j~=4.4.0",
+            "requests>=2.23",
+            "boto3~=1.19.12",
+            "ldap3==2.9.1",
+            "psycopg2-binary",
+            "croniter~=1.3.0",
+            "google-cloud-logging",
+            "looker-sdk>=22.4.0",
+            "Jinja2>=2.11.3",
+            "pinotdb~=0.3.11",
+            "typing-compat~=0.1.0",
+            "cachetools",
+            "clickhouse-driver==0.2.3",
+            "jsonschema",
+            "google-cloud-storage==1.43.0",
+            "pyhive~=0.6.3",
+            "idna<3,>=2.5",
+            "sqllineage==1.3.7",
+            "elasticsearch==7.13.1",
+            "GeoAlchemy2",
+            "sqlalchemy-vertica[vertica-python]>=0.0.5",
+            "botocore==1.22.12",
+            "cryptography",
+            "google-auth>=1.33.0",
+            "sqlalchemy>=1.4.0",
+            "snowflake-sqlalchemy~=1.4.3",
+            "importlib-metadata~=4.12.0",
+            "clickhouse-sqlalchemy==0.2.0",
+            "dagster_graphql",
+            "requests-aws4auth==1.1.2",
+            "tableau-api-lib==0.1.29",
+            "thrift-sasl==0.4.3",
+            "avro",
+            "antlr4-python3-runtime==4.9.2",
+            "fastavro>=1.2.0",
+            "simple_salesforce~=1.11.4",
+            "pyodbc"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "310": "39"
+    }
   },
   "openue": {
     "0.0.1": {
@@ -102340,6 +103133,18 @@
       "36": {
         "install_requires": [
           "ogl==0.60.8",
+          "untangle==1.2.1"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "0.6.0": {
+      "36": {
+        "install_requires": [
+          "ogl==0.60.9",
           "untangle==1.2.1"
         ]
       },
