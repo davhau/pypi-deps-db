@@ -1533,6 +1533,9 @@
       },
       "5.0.0": {
         "alns-5.0.0-py3-none-any.whl": "1.4.1@alns-1.4.1-py3-none-any.whl"
+      },
+      "5.0.1": {
+        "alns-5.0.1-py3-none-any.whl": "1.4.1@alns-1.4.1-py3-none-any.whl"
       }
     }
   },
@@ -16863,6 +16866,40 @@
           ]
         },
         "bigdl_chronos_spark2-2.2.0b20221115-py3-none-manylinux1_x86_64.whl": "2.2.0b20221115@bigdl_chronos_spark2-2.2.0b20221115-py3-none-macosx_10_11_x86_64.whl"
+      },
+      "2.2.0b20221116": {
+        "bigdl_chronos_spark2-2.2.0b20221116-py3-none-macosx_10_11_x86_64.whl": {
+          "provides_extras": [
+            "all",
+            "automl",
+            "distributed",
+            "inference",
+            "pytorch",
+            "tensorflow"
+          ],
+          "requires_dist": [
+            "pandas (<1.3.0,>=1.0.5)",
+            "scikit-learn (<=1.0.2,>=0.22.0)",
+            "bigdl-nano (==2.2.0b20221116)",
+            "bigdl-nano[pytorch] (==2.2.0b20221116) ; extra == 'all'",
+            "bigdl-nano[tensorflow] (==2.2.0b20221116) ; extra == 'all'",
+            "optuna (<=2.10.1) ; extra == 'all'",
+            "configspace (<=0.5.0) ; extra == 'all'",
+            "pmdarima (==1.8.5) ; extra == 'all'",
+            "prophet (==1.1.0) ; extra == 'all'",
+            "tsfresh (==0.17.0) ; extra == 'all'",
+            "pyarrow (==6.0.1) ; extra == 'all'",
+            "bigdl-nano[inference] (==2.2.0b20221116) ; extra == 'all'",
+            "bigdl-orca-spark2[automl] (==2.2.0b20221116) ; (platform_system != \"Windows\") and extra == 'all'",
+            "optuna (<=2.10.1) ; extra == 'automl'",
+            "configspace (<=0.5.0) ; extra == 'automl'",
+            "bigdl-orca-spark2[automl] (==2.2.0b20221116) ; (platform_system!=\"Windows\") and extra == 'distributed'",
+            "bigdl-nano[inference] (==2.2.0b20221116) ; extra == 'inference'",
+            "bigdl-nano[pytorch] (==2.2.0b20221116) ; extra == 'pytorch'",
+            "bigdl-nano[tensorflow] (==2.2.0b20221116) ; extra == 'tensorflow'"
+          ]
+        },
+        "bigdl_chronos_spark2-2.2.0b20221116-py3-none-manylinux1_x86_64.whl": "2.2.0b20221116@bigdl_chronos_spark2-2.2.0b20221116-py3-none-macosx_10_11_x86_64.whl"
       }
     }
   },
@@ -37676,6 +37713,22 @@
           ],
           "requires_python": ">=3.7.0"
         }
+      },
+      "1.2.0": {
+        "gooddata_sdk-1.2.0-py3-none-any.whl": {
+          "requires_dist": [
+            "gooddata-afm-client (~=1.2.0)",
+            "gooddata-metadata-client (~=1.2.0)",
+            "gooddata-scan-client (~=1.2.0)",
+            "gooddata-api-client (~=1.2.0)",
+            "python-dateutil (>=2.5.3)",
+            "pyyaml (>=5.1)",
+            "attrs (==21.4.0)",
+            "cattrs (==22.1.0)",
+            "importlib-metadata (>=1.0) ; python_version >= \"3.7\""
+          ],
+          "requires_python": ">=3.7.0"
+        }
       }
     }
   },
@@ -43833,6 +43886,77 @@
             "lxml (==4.6.5) ; extra == 'lint'",
             "bandit (==1.7.*) ; extra == 'security'",
             "safety (==1.10.*) ; extra == 'security'",
+            "coverage (>=6.1.0) ; extra == 'tests'",
+            "ipython ; extra == 'tests'",
+            "pandas (>1.3) ; extra == 'tests'",
+            "pytest (>=6.0.0) ; extra == 'tests'",
+            "pyarrow (>=3.0.0) ; extra == 'tests'",
+            "pytest-asyncio (==0.16.*) ; extra == 'tests'",
+            "pytest-cov (==3.0.*) ; extra == 'tests'",
+            "pytest-mock (==3.6.*) ; extra == 'tests'",
+            "pytest-benchmark (==3.4.*) ; extra == 'tests'",
+            "pytest-codestyle (==2.0.*) ; extra == 'tests'",
+            "pytest-flakes (==4.0.*) ; extra == 'tests'",
+            "pytest-html (==3.1.*) ; extra == 'tests'",
+            "pytest-mypy (==0.8.*) ; extra == 'tests'",
+            "pytest-timeout (==2.0.*) ; extra == 'tests'",
+            "pytest-xdist (==2.4.*) ; extra == 'tests'",
+            "pytest-virtualenv (==1.7.*) ; extra == 'tests'",
+            "requests-mock (==1.9.*) ; extra == 'tests'",
+            "pyrobuf (==0.9.*) ; extra == 'tests'",
+            "wheel ; extra == 'wheel'",
+            "twine ; extra == 'wheel'"
+          ],
+          "requires_python": "<3.11,>=3.7.0"
+        }
+      },
+      "7.7.1": {
+        "kelvin_sdk_app-7.7.1-py3-none-any.whl": {
+          "provides_extras": [
+            "data",
+            "development",
+            "docs",
+            "format",
+            "lint",
+            "security",
+            "tests",
+            "wheel"
+          ],
+          "requires_dist": [
+            "click-shell (==2.1)",
+            "click (==8.0.*)",
+            "colorama (==0.4.*)",
+            "kelvin-sdk-client (==7.7.1)",
+            "kelvin-sdk-datatype (==7.7.0)",
+            "kelvin-sdk-pubsub (==2.7.0)",
+            "orjson (==3.6.*)",
+            "packaging (==21.3)",
+            "prometheus-client (==0.14.*)",
+            "pydantic[email] (==1.10.*,>=1.10.2)",
+            "PyYAML (==6.0.*)",
+            "structlog (==21.5.*)",
+            "typing-inspect (==0.7.*)",
+            "xdg (==5.1.*)",
+            "inotify (==0.2.*)",
+            "importlib-metadata ; python_version < \"3.8\"",
+            "typing-extensions ; python_version < \"3.8\"",
+            "pyarrow (==4.0.*) ; extra == 'data'",
+            "pandas (<1.5,>=1.0.0) ; extra == 'data'",
+            "pre-commit ; extra == 'development'",
+            "Sphinx (==4.2.0) ; extra == 'docs'",
+            "sphinx-autodoc-typehints (==1.12.0) ; extra == 'docs'",
+            "sphinx-rtd-theme (==1.0.*) ; extra == 'docs'",
+            "ipython ; extra == 'docs'",
+            "isort (==5.10.*) ; extra == 'format'",
+            "black (==22.3.0) ; extra == 'format'",
+            "flake8 (==4.0.*) ; extra == 'lint'",
+            "flake8-print (==4.0.*) ; extra == 'lint'",
+            "flake8-isort (==4.1.*) ; extra == 'lint'",
+            "pep8-naming (==0.12.*) ; extra == 'lint'",
+            "mypy (==0.910) ; extra == 'lint'",
+            "lxml (==4.9.*,>=4.9.1) ; extra == 'lint'",
+            "bandit (==1.7.*) ; extra == 'security'",
+            "safety (==2.2.*,>=2.2.0) ; extra == 'security'",
             "coverage (>=6.1.0) ; extra == 'tests'",
             "ipython ; extra == 'tests'",
             "pandas (>1.3) ; extra == 'tests'",
@@ -70688,6 +70812,48 @@
             "odoo13-addon-project-timesheet-time-control"
           ]
         }
+      },
+      "13.0.20221115.0": {
+        "odoo13_addons_oca_project-13.0.20221115.0-py3-none-any.whl": {
+          "requires_dist": [
+            "odoo13-addon-project-budget",
+            "odoo13-addon-project-category",
+            "odoo13-addon-project-custom-info",
+            "odoo13-addon-project-deadline",
+            "odoo13-addon-project-description",
+            "odoo13-addon-project-duplicate-subtask",
+            "odoo13-addon-project-hr",
+            "odoo13-addon-project-key",
+            "odoo13-addon-project-list",
+            "odoo13-addon-project-milestone",
+            "odoo13-addon-project-parent",
+            "odoo13-addon-project-parent-task-filter",
+            "odoo13-addon-project-purchase-link",
+            "odoo13-addon-project-risk",
+            "odoo13-addon-project-role",
+            "odoo13-addon-project-sale-link",
+            "odoo13-addon-project-stage-closed",
+            "odoo13-addon-project-stage-state",
+            "odoo13-addon-project-status",
+            "odoo13-addon-project-stock",
+            "odoo13-addon-project-stock-product-set",
+            "odoo13-addon-project-tag",
+            "odoo13-addon-project-task-add-very-high",
+            "odoo13-addon-project-task-code",
+            "odoo13-addon-project-task-default-stage",
+            "odoo13-addon-project-task-dependency",
+            "odoo13-addon-project-task-digitized-signature",
+            "odoo13-addon-project-task-markdown",
+            "odoo13-addon-project-task-material",
+            "odoo13-addon-project-task-pull-request",
+            "odoo13-addon-project-task-send-by-mail",
+            "odoo13-addon-project-template",
+            "odoo13-addon-project-timeline",
+            "odoo13-addon-project-timeline-hr-timesheet",
+            "odoo13-addon-project-timeline-task-dependency",
+            "odoo13-addon-project-timesheet-time-control"
+          ]
+        }
       }
     }
   },
@@ -78123,6 +78289,11 @@
         },
         "pykesko-0.0.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.0.2@pykesko-0.0.2-cp310-cp310-macosx_10_9_x86_64.macosx_11_0_arm64.macosx_10_9_universal2.whl",
         "pykesko-0.0.2-cp310-none-win_amd64.whl": "0.0.2@pykesko-0.0.2-cp310-cp310-macosx_10_9_x86_64.macosx_11_0_arm64.macosx_10_9_universal2.whl"
+      },
+      "0.0.3": {
+        "pykesko-0.0.3-cp310-cp310-macosx_10_9_x86_64.macosx_11_0_arm64.macosx_10_9_universal2.whl": "0.0.2@pykesko-0.0.2-cp310-cp310-macosx_10_9_x86_64.macosx_11_0_arm64.macosx_10_9_universal2.whl",
+        "pykesko-0.0.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.0.2@pykesko-0.0.2-cp310-cp310-macosx_10_9_x86_64.macosx_11_0_arm64.macosx_10_9_universal2.whl",
+        "pykesko-0.0.3-cp310-none-win_amd64.whl": "0.0.2@pykesko-0.0.2-cp310-cp310-macosx_10_9_x86_64.macosx_11_0_arm64.macosx_10_9_universal2.whl"
       }
     },
     "cp311": {
@@ -78145,6 +78316,11 @@
         },
         "pykesko-0.0.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.0.2@pykesko-0.0.2-cp311-cp311-macosx_10_9_x86_64.macosx_11_0_arm64.macosx_10_9_universal2.whl",
         "pykesko-0.0.2-cp311-none-win_amd64.whl": "0.0.2@pykesko-0.0.2-cp311-cp311-macosx_10_9_x86_64.macosx_11_0_arm64.macosx_10_9_universal2.whl"
+      },
+      "0.0.3": {
+        "pykesko-0.0.3-cp311-cp311-macosx_10_9_x86_64.macosx_11_0_arm64.macosx_10_9_universal2.whl": "0.0.2@pykesko-0.0.2-cp311-cp311-macosx_10_9_x86_64.macosx_11_0_arm64.macosx_10_9_universal2.whl",
+        "pykesko-0.0.3-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.0.2@pykesko-0.0.2-cp311-cp311-macosx_10_9_x86_64.macosx_11_0_arm64.macosx_10_9_universal2.whl",
+        "pykesko-0.0.3-cp311-none-win_amd64.whl": "0.0.2@pykesko-0.0.2-cp311-cp311-macosx_10_9_x86_64.macosx_11_0_arm64.macosx_10_9_universal2.whl"
       }
     },
     "cp37": {
@@ -78167,6 +78343,11 @@
         },
         "pykesko-0.0.2-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.0.2@pykesko-0.0.2-cp37-cp37m-macosx_10_9_x86_64.macosx_11_0_arm64.macosx_10_9_universal2.whl",
         "pykesko-0.0.2-cp37-none-win_amd64.whl": "0.0.2@pykesko-0.0.2-cp37-cp37m-macosx_10_9_x86_64.macosx_11_0_arm64.macosx_10_9_universal2.whl"
+      },
+      "0.0.3": {
+        "pykesko-0.0.3-cp37-cp37m-macosx_10_9_x86_64.macosx_11_0_arm64.macosx_10_9_universal2.whl": "0.0.2@pykesko-0.0.2-cp37-cp37m-macosx_10_9_x86_64.macosx_11_0_arm64.macosx_10_9_universal2.whl",
+        "pykesko-0.0.3-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.0.2@pykesko-0.0.2-cp37-cp37m-macosx_10_9_x86_64.macosx_11_0_arm64.macosx_10_9_universal2.whl",
+        "pykesko-0.0.3-cp37-none-win_amd64.whl": "0.0.2@pykesko-0.0.2-cp37-cp37m-macosx_10_9_x86_64.macosx_11_0_arm64.macosx_10_9_universal2.whl"
       }
     },
     "cp38": {
@@ -78189,6 +78370,11 @@
         },
         "pykesko-0.0.2-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.0.2@pykesko-0.0.2-cp38-cp38-macosx_10_9_x86_64.macosx_11_0_arm64.macosx_10_9_universal2.whl",
         "pykesko-0.0.2-cp38-none-win_amd64.whl": "0.0.2@pykesko-0.0.2-cp38-cp38-macosx_10_9_x86_64.macosx_11_0_arm64.macosx_10_9_universal2.whl"
+      },
+      "0.0.3": {
+        "pykesko-0.0.3-cp38-cp38-macosx_10_9_x86_64.macosx_11_0_arm64.macosx_10_9_universal2.whl": "0.0.2@pykesko-0.0.2-cp38-cp38-macosx_10_9_x86_64.macosx_11_0_arm64.macosx_10_9_universal2.whl",
+        "pykesko-0.0.3-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.0.2@pykesko-0.0.2-cp38-cp38-macosx_10_9_x86_64.macosx_11_0_arm64.macosx_10_9_universal2.whl",
+        "pykesko-0.0.3-cp38-none-win_amd64.whl": "0.0.2@pykesko-0.0.2-cp38-cp38-macosx_10_9_x86_64.macosx_11_0_arm64.macosx_10_9_universal2.whl"
       }
     },
     "cp39": {
@@ -78211,6 +78397,11 @@
         },
         "pykesko-0.0.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.0.2@pykesko-0.0.2-cp39-cp39-macosx_10_9_x86_64.macosx_11_0_arm64.macosx_10_9_universal2.whl",
         "pykesko-0.0.2-cp39-none-win_amd64.whl": "0.0.2@pykesko-0.0.2-cp39-cp39-macosx_10_9_x86_64.macosx_11_0_arm64.macosx_10_9_universal2.whl"
+      },
+      "0.0.3": {
+        "pykesko-0.0.3-cp39-cp39-macosx_10_9_x86_64.macosx_11_0_arm64.macosx_10_9_universal2.whl": "0.0.2@pykesko-0.0.2-cp39-cp39-macosx_10_9_x86_64.macosx_11_0_arm64.macosx_10_9_universal2.whl",
+        "pykesko-0.0.3-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.0.2@pykesko-0.0.2-cp39-cp39-macosx_10_9_x86_64.macosx_11_0_arm64.macosx_10_9_universal2.whl",
+        "pykesko-0.0.3-cp39-none-win_amd64.whl": "0.0.2@pykesko-0.0.2-cp39-cp39-macosx_10_9_x86_64.macosx_11_0_arm64.macosx_10_9_universal2.whl"
       }
     }
   },
@@ -81578,6 +81769,9 @@
           ],
           "requires_python": "~=3.7"
         }
+      },
+      "0.0.7": {
+        "raindancers_network.raindancers_cdk-0.0.7-py3-none-any.whl": "0.0.6@raindancers_network.raindancers_cdk-0.0.6-py3-none-any.whl"
       }
     }
   },
