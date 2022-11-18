@@ -1456,6 +1456,16 @@
       "3.1.0rc3": {
         "apache_airflow_providers_apache_hdfs-3.1.0rc3-py3-none-any.whl": "3.1.0rc1@apache_airflow_providers_apache_hdfs-3.1.0rc1-py3-none-any.whl"
       },
+      "3.2.0": {
+        "apache_airflow_providers_apache_hdfs-3.2.0-py3-none-any.whl": {
+          "requires_dist": [
+            "apache-airflow (>=2.3.0)",
+            "hdfs[avro,dataframe,kerberos] (>=2.0.4)",
+            "snakebite-py3"
+          ],
+          "requires_python": "~=3.7"
+        }
+      },
       "3.2.0rc1": {
         "apache_airflow_providers_apache_hdfs-3.2.0rc1-py3-none-any.whl": {
           "requires_dist": [
@@ -14624,6 +14634,40 @@
           ],
           "requires_python": ">=3.7, <3.10"
         }
+      },
+      "0.6.1b20221118": {
+        "autogluon.core-0.6.1b20221118-py3-none-any.whl": {
+          "provides_extras": [
+            "all",
+            "ray",
+            "raytune",
+            "tests"
+          ],
+          "requires_dist": [
+            "numpy (<1.24,>=1.21)",
+            "scipy (<1.10.0,>=1.5.4)",
+            "scikit-learn (<1.2,>=1.0.0)",
+            "pandas (!=1.4.0,<1.6,>=1.2.5)",
+            "tqdm (>=4.38.0)",
+            "requests",
+            "matplotlib",
+            "dask (<=2021.11.2,>=2021.09.1)",
+            "distributed (<=2021.11.2,>=2021.09.1)",
+            "boto3",
+            "autogluon.common (==0.6.1b20221118)",
+            "ray (<2.1,>=2.0) ; extra == 'all'",
+            "hyperopt (<0.2.8,>=0.2.7) ; extra == 'all'",
+            "ray[tune] (<2.1,>=2.0) ; extra == 'all'",
+            "ray (<2.1,>=2.0) ; extra == 'ray'",
+            "ray[tune] (<2.1,>=2.0) ; extra == 'raytune'",
+            "hyperopt (<0.2.8,>=0.2.7) ; extra == 'raytune'",
+            "pytest-mypy ; extra == 'tests'",
+            "types-setuptools ; extra == 'tests'",
+            "pytest ; extra == 'tests'",
+            "types-requests ; extra == 'tests'"
+          ],
+          "requires_python": ">=3.7, <3.10"
+        }
       }
     }
   },
@@ -18066,6 +18110,36 @@
             "aws-cdk.region-info (==1.180.0)",
             "constructs (<4.0.0,>=3.3.69)",
             "jsii (<2.0.0,>=1.70.0)",
+            "publication (>=0.0.3)",
+            "typeguard (~=2.13.3)"
+          ],
+          "requires_python": "~=3.7"
+        }
+      },
+      "1.181.0": {
+        "aws_cdk.aws_lambda-1.181.0-py3-none-any.whl": {
+          "requires_dist": [
+            "aws-cdk.aws-applicationautoscaling (==1.181.0)",
+            "aws-cdk.aws-cloudwatch (==1.181.0)",
+            "aws-cdk.aws-codeguruprofiler (==1.181.0)",
+            "aws-cdk.aws-ec2 (==1.181.0)",
+            "aws-cdk.aws-ecr-assets (==1.181.0)",
+            "aws-cdk.aws-ecr (==1.181.0)",
+            "aws-cdk.aws-efs (==1.181.0)",
+            "aws-cdk.aws-events (==1.181.0)",
+            "aws-cdk.aws-iam (==1.181.0)",
+            "aws-cdk.aws-kms (==1.181.0)",
+            "aws-cdk.aws-logs (==1.181.0)",
+            "aws-cdk.aws-s3-assets (==1.181.0)",
+            "aws-cdk.aws-s3 (==1.181.0)",
+            "aws-cdk.aws-signer (==1.181.0)",
+            "aws-cdk.aws-sns (==1.181.0)",
+            "aws-cdk.aws-sqs (==1.181.0)",
+            "aws-cdk.core (==1.181.0)",
+            "aws-cdk.cx-api (==1.181.0)",
+            "aws-cdk.region-info (==1.181.0)",
+            "constructs (<4.0.0,>=3.3.69)",
+            "jsii (<2.0.0,>=1.71.0)",
             "publication (>=0.0.3)",
             "typeguard (~=2.13.3)"
           ],
@@ -22250,6 +22324,22 @@
           "requires_python": "~=3.7"
         }
       },
+      "1.181.0": {
+        "aws_cdk.aws_s3-1.181.0-py3-none-any.whl": {
+          "requires_dist": [
+            "aws-cdk.aws-events (==1.181.0)",
+            "aws-cdk.aws-iam (==1.181.0)",
+            "aws-cdk.aws-kms (==1.181.0)",
+            "aws-cdk.core (==1.181.0)",
+            "aws-cdk.cx-api (==1.181.0)",
+            "constructs (<4.0.0,>=3.3.69)",
+            "jsii (<2.0.0,>=1.71.0)",
+            "publication (>=0.0.3)",
+            "typeguard (~=2.13.3)"
+          ],
+          "requires_python": "~=3.7"
+        }
+      },
       "1.19.0": {
         "aws_cdk.aws_s3-1.19.0-py3-none-any.whl": {
           "requires_dist": [
@@ -25380,6 +25470,20 @@
             "aws-cdk.core (==1.180.0)",
             "constructs (<4.0.0,>=3.3.69)",
             "jsii (<2.0.0,>=1.70.0)",
+            "publication (>=0.0.3)",
+            "typeguard (~=2.13.3)"
+          ],
+          "requires_python": "~=3.7"
+        }
+      },
+      "1.181.0": {
+        "aws_cdk.aws_ses-1.181.0-py3-none-any.whl": {
+          "requires_dist": [
+            "aws-cdk.aws-iam (==1.181.0)",
+            "aws-cdk.aws-lambda (==1.181.0)",
+            "aws-cdk.core (==1.181.0)",
+            "constructs (<4.0.0,>=3.3.69)",
+            "jsii (<2.0.0,>=1.71.0)",
             "publication (>=0.0.3)",
             "typeguard (~=2.13.3)"
           ],
@@ -42604,6 +42708,24 @@
             "pandas"
           ]
         }
+      },
+      "0.3.2": {
+        "earthnet-0.3.2-py3-none-any.whl": {
+          "requires_dist": [
+            "numpy",
+            "scipy",
+            "scikit-image",
+            "tqdm",
+            "fire",
+            "pyproj",
+            "pandas",
+            "s3fs",
+            "xarray"
+          ]
+        }
+      },
+      "0.3.3": {
+        "earthnet-0.3.3-py3-none-any.whl": "0.3.2@earthnet-0.3.2-py3-none-any.whl"
       }
     }
   },
@@ -52739,6 +52861,15 @@
       },
       "0.26.0": {
         "jina_hubble_sdk-0.26.0-py3-none-any.whl": "0.20.0@jina_hubble_sdk-0.20.0-py3-none-any.whl"
+      },
+      "0.26.1": {
+        "jina_hubble_sdk-0.26.1-py3-none-any.whl": "0.20.0@jina_hubble_sdk-0.20.0-py3-none-any.whl"
+      },
+      "0.26.2": {
+        "jina_hubble_sdk-0.26.2-py3-none-any.whl": "0.20.0@jina_hubble_sdk-0.20.0-py3-none-any.whl"
+      },
+      "0.26.3": {
+        "jina_hubble_sdk-0.26.3-py3-none-any.whl": "0.20.0@jina_hubble_sdk-0.20.0-py3-none-any.whl"
       },
       "0.3.0": {
         "jina_hubble_sdk-0.3.0-py3-none-any.whl": "0.2.0@jina_hubble_sdk-0.2.0-py3-none-any.whl"
@@ -65307,8 +65438,8 @@
       }
     },
     "py3": {
-      "2.0.0b3": {
-        "plone.staticresources-2.0.0b3-py3-none-any.whl": {
+      "2.0.0": {
+        "plone.staticresources-2.0.0-py3-none-any.whl": {
           "provides_extras": [
             "test"
           ],
@@ -65321,23 +65452,29 @@
           ]
         }
       },
+      "2.0.0b3": {
+        "plone.staticresources-2.0.0b3-py3-none-any.whl": "2.0.0@plone.staticresources-2.0.0-py3-none-any.whl"
+      },
       "2.0.0b4": {
-        "plone.staticresources-2.0.0b4-py3-none-any.whl": "2.0.0b3@plone.staticresources-2.0.0b3-py3-none-any.whl"
+        "plone.staticresources-2.0.0b4-py3-none-any.whl": "2.0.0@plone.staticresources-2.0.0-py3-none-any.whl"
       },
       "2.0.0b5": {
-        "plone.staticresources-2.0.0b5-py3-none-any.whl": "2.0.0b3@plone.staticresources-2.0.0b3-py3-none-any.whl"
+        "plone.staticresources-2.0.0b5-py3-none-any.whl": "2.0.0@plone.staticresources-2.0.0-py3-none-any.whl"
       },
       "2.0.0b6": {
-        "plone.staticresources-2.0.0b6-py3-none-any.whl": "2.0.0b3@plone.staticresources-2.0.0b3-py3-none-any.whl"
+        "plone.staticresources-2.0.0b6-py3-none-any.whl": "2.0.0@plone.staticresources-2.0.0-py3-none-any.whl"
       },
       "2.0.0b7": {
-        "plone.staticresources-2.0.0b7-py3-none-any.whl": "2.0.0b3@plone.staticresources-2.0.0b3-py3-none-any.whl"
+        "plone.staticresources-2.0.0b7-py3-none-any.whl": "2.0.0@plone.staticresources-2.0.0-py3-none-any.whl"
       },
       "2.0.0b8": {
-        "plone.staticresources-2.0.0b8-py3-none-any.whl": "2.0.0b3@plone.staticresources-2.0.0b3-py3-none-any.whl"
+        "plone.staticresources-2.0.0b8-py3-none-any.whl": "2.0.0@plone.staticresources-2.0.0-py3-none-any.whl"
       },
       "2.0.0b9": {
-        "plone.staticresources-2.0.0b9-py3-none-any.whl": "2.0.0b3@plone.staticresources-2.0.0b3-py3-none-any.whl"
+        "plone.staticresources-2.0.0b9-py3-none-any.whl": "2.0.0@plone.staticresources-2.0.0-py3-none-any.whl"
+      },
+      "2.0.1": {
+        "plone.staticresources-2.0.1-py3-none-any.whl": "2.0.0@plone.staticresources-2.0.0-py3-none-any.whl"
       }
     }
   },
@@ -74655,6 +74792,9 @@
       },
       "0.0.8": {
         "red_py_sdk-0.0.8-py3-none-any.whl": "0.0.2@red_py_sdk-0.0.2-py3-none-any.whl"
+      },
+      "0.0.9": {
+        "red_py_sdk-0.0.9-py3-none-any.whl": "0.0.2@red_py_sdk-0.0.2-py3-none-any.whl"
       }
     }
   },
@@ -81020,6 +81160,14 @@
       },
       "1.2.2": {
         "super_hash-1.2.2-py3-none-any.whl": "0.1.0@super_hash-0.1.0-py3-none-any.whl"
+      },
+      "1.2.3": {
+        "super_hash-1.2.3-py3-none-any.whl": {
+          "requires_python": ">=3.6"
+        }
+      },
+      "1.2.4": {
+        "super_hash-1.2.4-py3-none-any.whl": "1.2.3@super_hash-1.2.3-py3-none-any.whl"
       }
     }
   },
