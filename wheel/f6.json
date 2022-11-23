@@ -1181,8 +1181,21 @@
   },
   "airless": {
     "py3": {
-      "0.0.1": {
-        "airless-0.0.1-py3-none-any.whl": {}
+      "0.0.2": {
+        "airless-0.0.2-py3-none-any.whl": {
+          "requires_dist": [
+            "google-cloud-storage (==2.6.0)",
+            "google-cloud-pubsub (==2.13.11)",
+            "google-cloud-bigquery (==3.3.6)",
+            "google-cloud-secret-manager (==2.12.6)"
+          ]
+        }
+      },
+      "0.0.3": {
+        "airless-0.0.3-py3-none-any.whl": "0.0.2@airless-0.0.2-py3-none-any.whl"
+      },
+      "0.0.4": {
+        "airless-0.0.4-py3-none-any.whl": "0.0.2@airless-0.0.2-py3-none-any.whl"
       }
     }
   },
@@ -16070,6 +16083,25 @@
       },
       "0.5.0": {
         "dustgoggles-0.5.0-py3-none-any.whl": "0.3.1@dustgoggles-0.3.1-py3-none-any.whl"
+      },
+      "0.6.0": {
+        "dustgoggles-0.6.0-py3-none-any.whl": {
+          "provides_extras": [
+            "array_codecs",
+            "mosaic",
+            "pivot",
+            "tests"
+          ],
+          "requires_dist": [
+            "cytoolz",
+            "numpy ; extra == 'array_codecs'",
+            "pandas ; extra == 'mosaic'",
+            "pyarrow ; extra == 'mosaic'",
+            "pandas ; extra == 'pivot'",
+            "pytest ; extra == 'tests'"
+          ],
+          "requires_python": ">=3.9"
+        }
       }
     }
   },

@@ -3674,7 +3674,8 @@
       "38": "27",
       "39": "27",
       "310": "27"
-    }
+    },
+    "6.3.6": "6.2.0"
   },
   "applipy-inject": {
     "0.11.3": "1.0.0",
@@ -18797,6 +18798,21 @@
       "38": "27",
       "39": "27",
       "310": "27"
+    },
+    "1.0.7.4": {
+      "27": {
+        "install_requires": [
+          "psycopg2-binary",
+          "pyyaml",
+          "pyrsistent<0.15.6",
+          "dbnd==1.0.7.4"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
     }
   },
   "dbt-sqlserver": {
@@ -25337,6 +25353,20 @@
         ],
         "setup_requires": [
           "setuptools_scm"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
+  },
+  "ecdysis": {
+    "0.3.0": {
+      "27": {
+        "python_requires": [
+          ">=3.6"
         ]
       },
       "36": "27",
@@ -39127,7 +39157,10 @@
     "1.0.78": "1.0.48",
     "1.0.79": "1.0.48",
     "1.0.80": "1.0.48",
-    "1.0.81": "1.0.48"
+    "1.0.81": "1.0.48",
+    "1.0.82": "1.0.48",
+    "1.0.83": "1.0.48",
+    "1.0.84": "1.0.48"
   },
   "kgit": {
     "1.0.0": {
@@ -39534,7 +39567,8 @@
     },
     "3.5.0": "3.4.0",
     "3.5.1": "3.4.0",
-    "3.6.0": "3.4.0"
+    "3.6.0": "3.4.0",
+    "3.6.1": "3.4.0"
   },
   "kmprograms-numbers-operation-app": {
     "0.1.0": {
@@ -41993,7 +42027,162 @@
       "39": "36",
       "310": "36"
     },
-    "0.7.0": "0.6.0"
+    "0.7.0": "0.6.0",
+    "0.8.0": {
+      "36": {
+        "install_requires": [
+          "merlin-core>=0.2.0",
+          "nvtabular>=1.0.0",
+          "requests<3,>=2.10"
+        ],
+        "extras_require": {
+          "cpu": [
+            "merlin-core>=0.2.0",
+            "nvtabular>=1.0.0",
+            "requests<3,>=2.10"
+          ],
+          "gpu": [
+            "feast<0.20",
+            "faiss-gpu",
+            "pytest",
+            "pytest-cov",
+            "dask>=2022.3.0",
+            "distributed>=2022.3.0"
+          ],
+          "dev": [
+            "tritonclient[all]",
+            "pylint==2.7.4",
+            "black==22.6.0",
+            "flake8==3.9.2",
+            "isort==5.9.3",
+            "bandit==1.7.0",
+            "flake8-nb==0.3.0",
+            "cpplint>=1.5",
+            "codespell",
+            "interrogate==1.5.0",
+            "click<8.1.0"
+          ],
+          "test": [
+            "merlin-core>=0.2.0",
+            "nvtabular>=1.0.0",
+            "requests<3,>=2.10",
+            "tritonclient[all]",
+            "pylint==2.7.4",
+            "black==22.6.0",
+            "flake8==3.9.2",
+            "isort==5.9.3",
+            "bandit==1.7.0",
+            "flake8-nb==0.3.0",
+            "cpplint>=1.5",
+            "codespell",
+            "interrogate==1.5.0",
+            "click<8.1.0",
+            "pytest>=5",
+            "pytest-cov>=2",
+            "scikit-learn>=0.20",
+            "asvdb@ git+https://github.com/rapidsai/asvdb.git",
+            "testbook==0.4.2",
+            "tritonclient",
+            "feast==0.19.4",
+            "xgboost==1.6.1",
+            "implicit==0.6.0"
+          ],
+          "test-cpu": [
+            "merlin-core>=0.2.0",
+            "nvtabular>=1.0.0",
+            "requests<3,>=2.10",
+            "tritonclient[all]",
+            "pylint==2.7.4",
+            "black==22.6.0",
+            "flake8==3.9.2",
+            "isort==5.9.3",
+            "bandit==1.7.0",
+            "flake8-nb==0.3.0",
+            "cpplint>=1.5",
+            "codespell",
+            "interrogate==1.5.0",
+            "click<8.1.0",
+            "pytest>=5",
+            "pytest-cov>=2",
+            "scikit-learn>=0.20",
+            "asvdb@ git+https://github.com/rapidsai/asvdb.git",
+            "testbook==0.4.2",
+            "tritonclient",
+            "feast==0.19.4",
+            "xgboost==1.6.1",
+            "implicit==0.6.0",
+            "merlin-models>=0.6.0",
+            "faiss-cpu==1.7.2",
+            "tensorflow<=2.9.0",
+            "treelite==2.4.0",
+            "treelite_runtime==2.4.0",
+            "torch~=1.12",
+            "lightgbm==3.3.2",
+            "ipykernel"
+          ],
+          "test-gpu": [
+            "merlin-core>=0.2.0",
+            "nvtabular>=1.0.0",
+            "requests<3,>=2.10",
+            "tritonclient[all]",
+            "pylint==2.7.4",
+            "black==22.6.0",
+            "flake8==3.9.2",
+            "isort==5.9.3",
+            "bandit==1.7.0",
+            "flake8-nb==0.3.0",
+            "cpplint>=1.5",
+            "codespell",
+            "interrogate==1.5.0",
+            "click<8.1.0",
+            "pytest>=5",
+            "pytest-cov>=2",
+            "scikit-learn>=0.20",
+            "asvdb@ git+https://github.com/rapidsai/asvdb.git",
+            "testbook==0.4.2",
+            "tritonclient",
+            "feast==0.19.4",
+            "xgboost==1.6.1",
+            "implicit==0.6.0",
+            "tensorflow-gpu<=2.9.0",
+            "faiss-gpu==1.7.2"
+          ],
+          "docs": [
+            "merlin-core>=0.2.0",
+            "nvtabular>=1.0.0",
+            "requests<3,>=2.10",
+            "tritonclient[all]",
+            "pylint==2.7.4",
+            "black==22.6.0",
+            "flake8==3.9.2",
+            "isort==5.9.3",
+            "bandit==1.7.0",
+            "flake8-nb==0.3.0",
+            "cpplint>=1.5",
+            "codespell",
+            "interrogate==1.5.0",
+            "click<8.1.0",
+            "tritonclient[all]",
+            "tensorflow<=2.9.0",
+            "Sphinx==3.5.4",
+            "sphinx_rtd_theme==1.0.0",
+            "sphinx-multiversion@ git+https://github.com/mikemckiernan/sphinx-multiversion.git",
+            "sphinxcontrib-copydirs@ git+https://github.com/mikemckiernan/sphinxcontrib-copydirs.git",
+            "recommonmark==0.7.1",
+            "Jinja2<3.1",
+            "natsort==8.0.1",
+            "myst-nb==0.13.2",
+            "linkify-it-py==1.0.3",
+            "sphinx-external-toc==0.2.4",
+            "attrs==21.4.0"
+          ]
+        }
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "mespdf": {
     "1.0": {
