@@ -1991,6 +1991,16 @@
           ]
         }
       },
+      "2.12.0": {
+        "allure_pytest_bdd-2.12.0-py3-none-any.whl": {
+          "requires_dist": [
+            "pytest (>=4.5.0)",
+            "pytest-bdd (>=3.0.0)",
+            "six (>=1.9.0)",
+            "allure-python-commons (==2.12.0)"
+          ]
+        }
+      },
       "2.8.10": {
         "allure_pytest_bdd-2.8.10-py3-none-any.whl": {
           "requires_dist": [
@@ -8774,6 +8784,44 @@
             "tbats (~=1.1) ; extra == 'all'",
             "pmdarima (~=1.8.2) ; extra == 'all'",
             "sktime (<0.14,>=0.13.1) ; extra == 'all'",
+            "sktime (<0.14,>=0.13.1) ; extra == 'sktime'",
+            "pmdarima (~=1.8.2) ; extra == 'sktime'",
+            "tbats (~=1.1) ; extra == 'sktime'",
+            "pytest ; extra == 'tests'",
+            "flake8 (~=4.0) ; extra == 'tests'",
+            "flaky (~=3.7) ; extra == 'tests'",
+            "pytest-timeout (~=2.1) ; extra == 'tests'",
+            "isort (>=5.10) ; extra == 'tests'",
+            "black (>=22.3,~=22.0) ; extra == 'tests'"
+          ],
+          "requires_python": ">=3.7, <3.10"
+        }
+      },
+      "0.6.1b20221123": {
+        "autogluon.timeseries-0.6.1b20221123-py3-none-any.whl": {
+          "provides_extras": [
+            "all",
+            "sktime",
+            "tests"
+          ],
+          "requires_dist": [
+            "joblib (~=1.1)",
+            "numpy (<1.24,>=1.21)",
+            "scipy (<1.10.0,>=1.5.4)",
+            "pandas (!=1.4.0,<1.6,>=1.2.5)",
+            "psutil (<5.9,>=5.7.3)",
+            "statsmodels (~=0.13.0)",
+            "gluonts (~=0.11.0)",
+            "torch (<1.13,>=1.9)",
+            "pytorch-lightning (<1.8.0,>=1.7.4)",
+            "networkx",
+            "tqdm (>=4.38.0)",
+            "autogluon.core[raytune] (==0.6.1b20221123)",
+            "autogluon.common (==0.6.1b20221123)",
+            "autogluon.tabular[catboost,lightgbm,xgboost] (==0.6.1b20221123)",
+            "tbats (~=1.1) ; extra == 'all'",
+            "sktime (<0.14,>=0.13.1) ; extra == 'all'",
+            "pmdarima (~=1.8.2) ; extra == 'all'",
             "sktime (<0.14,>=0.13.1) ; extra == 'sktime'",
             "pmdarima (~=1.8.2) ; extra == 'sktime'",
             "tbats (~=1.1) ; extra == 'sktime'",
@@ -16850,6 +16898,18 @@
             "coverage (>=4.0)",
             "docopt (>=0.6)",
             "minilog (>=2.0,<3.0)",
+            "requests (>=2.28,<3.0)"
+          ],
+          "requires_python": ">=3.8,<4.0"
+        }
+      },
+      "6.0.1": {
+        "coveragespace-6.0.1-py3-none-any.whl": {
+          "requires_dist": [
+            "colorama (>=0.4)",
+            "coverage (>=4.0)",
+            "docopt (>=0.6)",
+            "minilog (>=2.0)",
             "requests (>=2.28,<3.0)"
           ],
           "requires_python": ">=3.8,<4.0"
@@ -25832,6 +25892,25 @@
             "torchvision (==0.12.0+cu113)",
             "torchaudio (==0.11.0)",
             "protobuf (==3.20.*)"
+          ],
+          "requires_python": ">=3.7"
+        }
+      },
+      "0.2.0": {
+        "genet-0.2.0-py3-none-any.whl": "0.1.0@genet-0.1.0-py3-none-any.whl"
+      },
+      "0.2.1": {
+        "genet-0.2.1-py3-none-any.whl": {
+          "requires_dist": [
+            "pandas",
+            "regex",
+            "biopython",
+            "tensorflow (==2.8.0)",
+            "torch (==1.11.0+cu113)",
+            "torchvision (==0.12.0+cu113)",
+            "torchaudio (==0.11.0)",
+            "protobuf (==3.20.*)",
+            "silence-tensorflow"
           ],
           "requires_python": ">=3.7"
         }
@@ -42326,6 +42405,9 @@
       },
       "14.0.1.0.2.dev2": {
         "odoo14_addon_product_weight-14.0.1.0.2.dev2-py3-none-any.whl": "14.0.1.0.1@odoo14_addon_product_weight-14.0.1.0.1-py3-none-any.whl"
+      },
+      "14.0.1.0.2.dev3": {
+        "odoo14_addon_product_weight-14.0.1.0.2.dev3-py3-none-any.whl": "14.0.1.0.1@odoo14_addon_product_weight-14.0.1.0.1-py3-none-any.whl"
       }
     }
   },
@@ -54509,6 +54591,40 @@
       },
       "0.1.0a6": {
         "sage_testsuite-0.1.0a6-py3-none-any.whl": "0.1.0a0@sage_testsuite-0.1.0a0-py3-none-any.whl"
+      }
+    }
+  },
+  "saltext.sap-hostctrl": {
+    "py2.py3": {
+      "1.0.0": {
+        "saltext.sap_hostctrl-1.0.0-py2.py3-none-any.whl": {
+          "provides_extras": [
+            "dev",
+            "docs",
+            "docsauto",
+            "tests"
+          ],
+          "requires_dist": [
+            "salt (>=3003)",
+            "requests",
+            "zeep",
+            "nox (==2021.6.12) ; extra == 'dev'",
+            "pre-commit (==2.13.0) ; extra == 'dev'",
+            "pylint ; extra == 'dev'",
+            "six ; extra == 'dev'",
+            "SaltPyLint ; extra == 'dev'",
+            "furo ; extra == 'docs'",
+            "sphinx ; extra == 'docs'",
+            "sphinx-copybutton ; extra == 'docs'",
+            "sphinx-prompt ; extra == 'docs'",
+            "sphinxcontrib-spelling ; extra == 'docs'",
+            "importlib-metadata ; (python_version < \"3.8\") and extra == 'docs'",
+            "sphinx-autobuild ; extra == 'docsauto'",
+            "pytest (==6.2.4) ; extra == 'tests'",
+            "pytest-salt-factories (==0.906.0) ; extra == 'tests'"
+          ],
+          "requires_python": ">=3.6"
+        }
       }
     }
   },
