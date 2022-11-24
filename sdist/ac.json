@@ -72926,7 +72926,8 @@
     "3.0.775": "3.0.252",
     "3.0.776": "3.0.252",
     "3.0.777": "3.0.252",
-    "3.0.778": "3.0.252"
+    "3.0.778": "3.0.252",
+    "3.0.779": "3.0.252"
   },
   "tensorflow-gnn": {
     "0.1.0": {
@@ -72991,7 +72992,33 @@
       "39": "36",
       "310": "36"
     },
-    "0.3.0": "0.2.1"
+    "0.3.0": "0.2.1",
+    "0.4.0rc0": {
+      "36": {
+        "install_requires": [
+          "apache-beam",
+          "google-vizier>=0.0.13",
+          "ml-collections",
+          "networkx",
+          "pyarrow"
+        ],
+        "extras_require": {
+          ":platform_machine != \"arm64\" or platform_system != \"Darwin\"": [
+            "tensorflow>=2.8.0"
+          ],
+          ":platform_machine == \"arm64\" and platform_system == \"Darwin\"": [
+            "tensorflow-macos>=2.8.0"
+          ]
+        },
+        "python_requires": [
+          ">=3.7,<4"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "term-from-nat": {
     "0.0.1": {
