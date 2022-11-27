@@ -43,6 +43,18 @@
           ],
           "requires_python": ">=3.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
         }
+      },
+      "0.0.6": {
+        "absurdia-0.0.6-py3-none-any.whl": {
+          "requires_dist": [
+            "click",
+            "brotlipy",
+            "psutil",
+            "colorama",
+            "requests"
+          ],
+          "requires_python": ">=3.4, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+        }
       }
     }
   },
@@ -2050,6 +2062,18 @@
           ],
           "requires_python": "~=3.7"
         }
+      },
+      "3.2.0rc2": {
+        "apache_airflow_providers_yandex-3.2.0rc2-py3-none-any.whl": {
+          "requires_dist": [
+            "apache-airflow (>=2.3.0.dev0)",
+            "yandexcloud (>=0.173.0)"
+          ],
+          "requires_python": "~=3.7"
+        }
+      },
+      "3.2.0rc3": {
+        "apache_airflow_providers_yandex-3.2.0rc3-py3-none-any.whl": "3.2.0rc2@apache_airflow_providers_yandex-3.2.0rc2-py3-none-any.whl"
       }
     }
   },
@@ -18177,6 +18201,22 @@
             "requests (>=1.1.0)"
           ]
         }
+      },
+      "2.2.0": {
+        "ckanext_ckanpackager-2.2.0-py3-none-any.whl": {
+          "provides_extras": [
+            "test"
+          ],
+          "requires_dist": [
+            "ckantools (>=0.3.0)",
+            "requests (>=1.1.0)",
+            "mock ; extra == 'test'",
+            "pytest (>=4.6.5) ; extra == 'test'",
+            "pytest-cov (>=2.7.1) ; extra == 'test'",
+            "coveralls ; extra == 'test'"
+          ],
+          "requires_python": ">=3.6"
+        }
       }
     }
   },
@@ -21928,6 +21968,22 @@
             "colorama (>=0.4.6)",
             "toolz (>=0.12.0)",
             "pygments (>=2.13.0)"
+          ],
+          "requires_python": ">=3.8"
+        }
+      },
+      "0.2.5": {
+        "cuallee-0.2.5-py3-none-any.whl": {
+          "provides_extras": [
+            "tests"
+          ],
+          "requires_dist": [
+            "colorama (>=0.4.6)",
+            "toolz (>=0.12.0)",
+            "pygments (>=2.13.0)",
+            "pytest ; extra == 'tests'",
+            "pytest-cov ; extra == 'tests'",
+            "pendulum (>=2.1.2) ; extra == 'tests'"
           ],
           "requires_python": ">=3.8"
         }
@@ -28975,6 +29031,18 @@
       }
     }
   },
+  "drb-impl-wmts": {
+    "py3": {
+      "1.0.0": {
+        "drb_impl_wmts-1.0.0-py3-none-any.whl": {
+          "requires_dist": [
+            "drb-impl-wXs (<1.1.0,>=1.0.3)"
+          ],
+          "requires_python": ">=3.8"
+        }
+      }
+    }
+  },
   "drf-aggregation": {
     "py3": {
       "0.2.0": {
@@ -30876,6 +30944,51 @@
       "0.38.1": {
         "emmet_core-0.38.1-py3-none-any.whl": "0.36.2@emmet_core-0.36.2-py3-none-any.whl"
       },
+      "0.38.10": {
+        "emmet_core-0.38.10-py3-none-any.whl": {
+          "provides_extras": [
+            "all",
+            "docs",
+            "test"
+          ],
+          "requires_dist": [
+            "pymatgen (<2023.0,>=2021.3)",
+            "monty (<2023.0,>=2021.3)",
+            "pydantic (>=1.10.2)",
+            "pybtex (~=0.24)",
+            "typing-extensions (<5.0,>=3.7)",
+            "spglib (>=2.0.1)",
+            "seekpath (>=2.0.1) ; extra == 'all'",
+            "robocrys (>=0.2.7) ; extra == 'all'",
+            "pymatgen-analysis-diffusion (>=2022.1.15) ; extra == 'all'",
+            "pymatgen-analysis-alloys (>=0.0.3) ; extra == 'all'",
+            "mkdocs ; extra == 'docs'",
+            "mkdocs-material (<8.3) ; extra == 'docs'",
+            "mkdocs-material-extensions ; extra == 'docs'",
+            "mkdocs-minify-plugin ; extra == 'docs'",
+            "mkdocstrings ; extra == 'docs'",
+            "mkdocs-awesome-pages-plugin ; extra == 'docs'",
+            "mkdocs-markdownextradata-plugin ; extra == 'docs'",
+            "mkdocstrings[python] ; extra == 'docs'",
+            "livereload ; extra == 'docs'",
+            "jinja2 ; extra == 'docs'",
+            "pre-commit ; extra == 'test'",
+            "pytest ; extra == 'test'",
+            "pytest-cov ; extra == 'test'",
+            "pycodestyle ; extra == 'test'",
+            "pydocstyle ; extra == 'test'",
+            "flake8 ; extra == 'test'",
+            "mypy ; extra == 'test'",
+            "mypy-extensions ; extra == 'test'",
+            "types-setuptools ; extra == 'test'",
+            "types-requests ; extra == 'test'",
+            "maggma ; extra == 'test'",
+            "wincertstore ; extra == 'test'",
+            "openbabel ; extra == 'test'"
+          ],
+          "requires_python": ">=3.8"
+        }
+      },
       "0.38.3": {
         "emmet_core-0.38.3-py3-none-any.whl": "0.36.2@emmet_core-0.36.2-py3-none-any.whl"
       },
@@ -30925,49 +31038,7 @@
         }
       },
       "0.38.9": {
-        "emmet_core-0.38.9-py3-none-any.whl": {
-          "provides_extras": [
-            "all",
-            "docs",
-            "test"
-          ],
-          "requires_dist": [
-            "pymatgen (<2023.0,>=2021.3)",
-            "monty (<2023.0,>=2021.3)",
-            "pydantic (>=1.10.2)",
-            "pybtex (~=0.24)",
-            "typing-extensions (<5.0,>=3.7)",
-            "spglib (>=2.0.1)",
-            "seekpath (>=2.0.1) ; extra == 'all'",
-            "robocrys (>=0.2.7) ; extra == 'all'",
-            "pymatgen-analysis-diffusion (>=2022.1.15) ; extra == 'all'",
-            "pymatgen-analysis-alloys (>=0.0.3) ; extra == 'all'",
-            "mkdocs ; extra == 'docs'",
-            "mkdocs-material (<8.3) ; extra == 'docs'",
-            "mkdocs-material-extensions ; extra == 'docs'",
-            "mkdocs-minify-plugin ; extra == 'docs'",
-            "mkdocstrings ; extra == 'docs'",
-            "mkdocs-awesome-pages-plugin ; extra == 'docs'",
-            "mkdocs-markdownextradata-plugin ; extra == 'docs'",
-            "mkdocstrings[python] ; extra == 'docs'",
-            "livereload ; extra == 'docs'",
-            "jinja2 ; extra == 'docs'",
-            "pre-commit ; extra == 'test'",
-            "pytest ; extra == 'test'",
-            "pytest-cov ; extra == 'test'",
-            "pycodestyle ; extra == 'test'",
-            "pydocstyle ; extra == 'test'",
-            "flake8 ; extra == 'test'",
-            "mypy ; extra == 'test'",
-            "mypy-extensions ; extra == 'test'",
-            "types-setuptools ; extra == 'test'",
-            "types-requests ; extra == 'test'",
-            "maggma ; extra == 'test'",
-            "wincertstore ; extra == 'test'",
-            "openbabel ; extra == 'test'"
-          ],
-          "requires_python": ">=3.8"
-        }
+        "emmet_core-0.38.9-py3-none-any.whl": "0.38.10@emmet_core-0.38.10-py3-none-any.whl"
       },
       "0.4.0": {
         "emmet_core-0.4.0-py3-none-any.whl": "0.3.3@emmet_core-0.3.3-py3-none-any.whl"
@@ -33629,6 +33700,9 @@
       },
       "1.6.6": {
         "flanautils-1.6.6-py3-none-any.whl": "1.4.10@flanautils-1.4.10-py3-none-any.whl"
+      },
+      "1.6.7": {
+        "flanautils-1.6.7-py3-none-any.whl": "1.4.10@flanautils-1.4.10-py3-none-any.whl"
       }
     }
   },
@@ -34177,6 +34251,9 @@
           ],
           "requires_python": ">=3.7"
         }
+      },
+      "0.2.0": {
+        "flask_digest_auth-0.2.0-py3-none-any.whl": "0.1.1@flask_digest_auth-0.1.1-py3-none-any.whl"
       }
     }
   },
@@ -39410,6 +39487,15 @@
       },
       "1.2.1": {
         "IntuneCD-1.2.1-py3-none-any.whl": "1.0.6@IntuneCD-1.0.6-py3-none-any.whl"
+      },
+      "1.2.2": {
+        "IntuneCD-1.2.2-py3-none-any.whl": "1.0.6@IntuneCD-1.0.6-py3-none-any.whl"
+      },
+      "1.2.3": {
+        "IntuneCD-1.2.3-py3-none-any.whl": "1.0.6@IntuneCD-1.0.6-py3-none-any.whl"
+      },
+      "1.2.4": {
+        "IntuneCD-1.2.4-py3-none-any.whl": "1.0.6@IntuneCD-1.0.6-py3-none-any.whl"
       }
     }
   },
@@ -42923,6 +43009,9 @@
       "0.20.0": {
         "lnschema_core-0.20.0-py2.py3-none-any.whl": "0.10.0@lnschema_core-0.10.0-py2.py3-none-any.whl"
       },
+      "0.21.0": {
+        "lnschema_core-0.21.0-py2.py3-none-any.whl": "0.10.0@lnschema_core-0.10.0-py2.py3-none-any.whl"
+      },
       "0.3.2": {
         "lnschema_core-0.3.2-py2.py3-none-any.whl": {
           "provides_extras": [
@@ -43089,6 +43178,16 @@
           "requires_dist": [
             "jsonpickle (>=2.2.0,<3.0.0)",
             "pydantic (>=1.10.2,<2.0.0)"
+          ],
+          "requires_python": ">=3.10,<4.0"
+        }
+      },
+      "0.0.15": {
+        "logsmal-0.0.15-py3-none-any.whl": {
+          "requires_dist": [
+            "jsonpickle (>=2.2.0,<3.0.0)",
+            "pydantic (>=1.10.2,<2.0.0)",
+            "rich (>=12.6.0,<13.0.0)"
           ],
           "requires_python": ">=3.10,<4.0"
         }
@@ -55505,6 +55604,15 @@
       },
       "15.0.2.0.0.1": {
         "odoo_addon_l10n_ro_siruta-15.0.2.0.0.1-py3-none-any.whl": "15.0.1.3.0@odoo_addon_l10n_ro_siruta-15.0.1.3.0-py3-none-any.whl"
+      },
+      "15.0.2.1.0": {
+        "odoo_addon_l10n_ro_siruta-15.0.2.1.0-py3-none-any.whl": "15.0.1.3.0@odoo_addon_l10n_ro_siruta-15.0.1.3.0-py3-none-any.whl"
+      },
+      "15.0.2.2.0": {
+        "odoo_addon_l10n_ro_siruta-15.0.2.2.0-py3-none-any.whl": "15.0.1.3.0@odoo_addon_l10n_ro_siruta-15.0.1.3.0-py3-none-any.whl"
+      },
+      "15.0.2.3.0": {
+        "odoo_addon_l10n_ro_siruta-15.0.2.3.0-py3-none-any.whl": "15.0.1.3.0@odoo_addon_l10n_ro_siruta-15.0.1.3.0-py3-none-any.whl"
       }
     }
   },
@@ -55518,6 +55626,18 @@
           ],
           "requires_python": ">=3.8"
         }
+      },
+      "16.0.1.0.0.2": {
+        "odoo_addon_mail_environment-16.0.1.0.0.2-py3-none-any.whl": {
+          "requires_dist": [
+            "odoo-addon-server-environment (<16.1dev,>=16.0dev)",
+            "odoo (<16.1dev,>=16.0a)"
+          ],
+          "requires_python": ">=3.10"
+        }
+      },
+      "16.0.1.0.0.3": {
+        "odoo_addon_mail_environment-16.0.1.0.0.3-py3-none-any.whl": "16.0.1.0.0.2@odoo_addon_mail_environment-16.0.1.0.0.2-py3-none-any.whl"
       }
     }
   },
@@ -59094,6 +59214,51 @@
             "odoo14-addon-operating-unit",
             "odoo14-addon-operating-unit-access-all",
             "odoo14-addon-product-operating-unit",
+            "odoo14-addon-purchase-operating-unit",
+            "odoo14-addon-purchase-operating-unit-access-all",
+            "odoo14-addon-purchase-request-operating-unit",
+            "odoo14-addon-purchase-request-operating-unit-access-all",
+            "odoo14-addon-purchase-request-to-requisition-operating-unit",
+            "odoo14-addon-purchase-requisition-operating-unit",
+            "odoo14-addon-purchase-requisition-operating-unit-access-all",
+            "odoo14-addon-report-qweb-operating-unit",
+            "odoo14-addon-sale-operating-unit",
+            "odoo14-addon-sale-template-operating-unit",
+            "odoo14-addon-sales-team-operating-unit",
+            "odoo14-addon-stock-operating-unit",
+            "odoo14-addon-stock-operating-unit-access-all"
+          ]
+        }
+      },
+      "14.0.20221123.0": {
+        "odoo14_addons_oca_operating_unit-14.0.20221123.0-py3-none-any.whl": {
+          "requires_dist": [
+            "odoo14-addon-account-asset-operating-unit",
+            "odoo14-addon-account-asset-operating-unit-access-all",
+            "odoo14-addon-account-financial-report-operating-unit",
+            "odoo14-addon-account-operating-unit",
+            "odoo14-addon-account-operating-unit-access-all",
+            "odoo14-addon-agreement-operating-unit",
+            "odoo14-addon-analytic-operating-unit",
+            "odoo14-addon-analytic-operating-unit-access-all",
+            "odoo14-addon-contract-operating-unit",
+            "odoo14-addon-contract-operating-unit-access-all",
+            "odoo14-addon-crm-operating-unit",
+            "odoo14-addon-fieldservice-operating-unit",
+            "odoo14-addon-hr-contract-operating-unit",
+            "odoo14-addon-hr-expense-operating-unit",
+            "odoo14-addon-hr-expense-operating-unit-access-all",
+            "odoo14-addon-hr-operating-unit",
+            "odoo14-addon-hr-payroll-account-operating-unit",
+            "odoo14-addon-mail-template-operating-unit",
+            "odoo14-addon-mis-builder-budget-operating-unit",
+            "odoo14-addon-mis-builder-operating-unit",
+            "odoo14-addon-mis-builder-operating-unit-access-all",
+            "odoo14-addon-mrp-operating-unit",
+            "odoo14-addon-operating-unit",
+            "odoo14-addon-operating-unit-access-all",
+            "odoo14-addon-product-operating-unit",
+            "odoo14-addon-project-operating-unit",
             "odoo14-addon-purchase-operating-unit",
             "odoo14-addon-purchase-operating-unit-access-all",
             "odoo14-addon-purchase-request-operating-unit",
@@ -67547,6 +67712,22 @@
             "unicrypto (>=0.0.9)",
             "minidump (>=0.0.21)",
             "minikerberos (>=0.3.2)",
+            "aiowinreg (>=0.0.7)",
+            "msldap (>=0.4.1)",
+            "winacl (>=0.1.5)",
+            "aiosmb (>=0.4.2)",
+            "aesedb (>=0.1.0)",
+            "tqdm"
+          ],
+          "requires_python": ">=3.6"
+        }
+      },
+      "0.6.3": {
+        "pypykatz-0.6.3-py3-none-any.whl": {
+          "requires_dist": [
+            "unicrypto (>=0.0.9)",
+            "minidump (>=0.0.21)",
+            "minikerberos (>=0.3.5)",
             "aiowinreg (>=0.0.7)",
             "msldap (>=0.4.1)",
             "winacl (>=0.1.5)",
@@ -77317,6 +77498,9 @@
       },
       "0.2.4": {
         "simber-0.2.4-py3-none-any.whl": "0.1.0@simber-0.1.0-py3-none-any.whl"
+      },
+      "0.2.5": {
+        "simber-0.2.5-py3-none-any.whl": "0.1.0@simber-0.1.0-py3-none-any.whl"
       }
     }
   },
@@ -82515,6 +82699,9 @@
       },
       "3.0.779": {
         "tencentcloud_sdk_python_tav-3.0.779-py2.py3-none-any.whl": "3.0.252@tencentcloud_sdk_python_tav-3.0.252-py2.py3-none-any.whl"
+      },
+      "3.0.780": {
+        "tencentcloud_sdk_python_tav-3.0.780-py2.py3-none-any.whl": "3.0.252@tencentcloud_sdk_python_tav-3.0.252-py2.py3-none-any.whl"
       }
     }
   },

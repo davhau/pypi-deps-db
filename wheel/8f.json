@@ -10486,8 +10486,29 @@
   },
   "cirun": {
     "py3": {
-      "0.0.1": {
-        "cirun-0.0.1-py3-none-any.whl": {
+      "0.1": {
+        "cirun-0.1-py3-none-any.whl": {
+          "requires_dist": [
+            "hatch",
+            "requests",
+            "rich",
+            "typer"
+          ],
+          "requires_python": ">=3.7"
+        }
+      },
+      "0.2": {
+        "cirun-0.2-py3-none-any.whl": "0.1@cirun-0.1-py3-none-any.whl"
+      },
+      "0.21": {
+        "cirun-0.21-py3-none-any.whl": {
+          "requires_dist": [
+            "hatch",
+            "hatchling",
+            "requests",
+            "rich",
+            "typer"
+          ],
           "requires_python": ">=3.7"
         }
       }
@@ -14965,6 +14986,13 @@
       },
       "0.1.4": {
         "cookdir-0.1.4-py3-none-any.whl": "0.1.3@cookdir-0.1.3-py3-none-any.whl"
+      }
+    }
+  },
+  "coolmysql": {
+    "py2.py3": {
+      "0.1": {
+        "coolmysql-0.1-py2.py3-none-any.whl": {}
       }
     }
   },
@@ -19855,6 +19883,9 @@
       },
       "1.8.2": {
         "easy_events-1.8.2-py3-none-any.whl": "1.3.1@easy_events-1.3.1-py3-none-any.whl"
+      },
+      "1.8.3": {
+        "easy_events-1.8.3-py3-none-any.whl": "1.3.1@easy_events-1.3.1-py3-none-any.whl"
       }
     }
   },
@@ -21411,11 +21442,17 @@
           "requires_python": ">=3.7"
         }
       },
-      "6.5": {
-        "exonwebui-6.5-py3-none-any.whl": "6.4@exonwebui-6.4-py3-none-any.whl"
-      },
-      "6.6": {
-        "exonwebui-6.6-py3-none-any.whl": "6.4@exonwebui-6.4-py3-none-any.whl"
+      "6.7": {
+        "exonwebui-6.7-py3-none-any.whl": {
+          "requires_dist": [
+            "exonutils (<7.0,>=6.5)",
+            "flask (>=2.2)",
+            "Jinja2 (>=3.1)",
+            "Babel (>=2.11)",
+            "flask-babelex (>=0.9)"
+          ],
+          "requires_python": ">=3.7"
+        }
       }
     }
   },
@@ -32238,6 +32275,14 @@
           "requires_python": ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*"
         }
       },
+      "3.1.12": {
+        "huaweicloudsdkecs-3.1.12-py2.py3-none-any.whl": {
+          "requires_dist": [
+            "huaweicloudsdkcore (>=3.1.12)"
+          ],
+          "requires_python": ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*"
+        }
+      },
       "3.1.2": {
         "huaweicloudsdkecs-3.1.2-py2.py3-none-any.whl": {
           "requires_dist": [
@@ -32644,6 +32689,14 @@
         "huaweicloudsdkief-3.1.11-py2.py3-none-any.whl": {
           "requires_dist": [
             "huaweicloudsdkcore (>=3.1.11)"
+          ],
+          "requires_python": ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*"
+        }
+      },
+      "3.1.12": {
+        "huaweicloudsdkief-3.1.12-py2.py3-none-any.whl": {
+          "requires_dist": [
+            "huaweicloudsdkcore (>=3.1.12)"
           ],
           "requires_python": ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*"
         }
@@ -47829,6 +47882,66 @@
           ],
           "requires_python": ">=3.7"
         }
+      },
+      "0.15.0": {
+        "polars_lts_cpu-0.15.0-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": {
+          "provides_extras": [
+            "pyarrow",
+            "connectorx",
+            "numpy",
+            "fsspec",
+            "xlsx2csv",
+            "all",
+            "pandas",
+            "timezone",
+            "matplotlib"
+          ],
+          "requires_dist": [
+            "typing_extensions >= 4.0.0; python_version < '3.10'",
+            "pyarrow>=4.0.0; extra == 'pyarrow'",
+            "connectorx; extra == 'connectorx'",
+            "numpy >= 1.16.0; extra == 'numpy'",
+            "fsspec; extra == 'fsspec'",
+            "xlsx2csv >= 0.8.0; extra == 'xlsx2csv'",
+            "polars[pyarrow,pandas,numpy,fsspec,connectorx,xlsx2csv,timezone,matplotlib]; extra == 'all'",
+            "pyarrow>=4.0.0; extra == 'pandas'",
+            "pandas; extra == 'pandas'",
+            "backports.zoneinfo; (python_version < '3.9') and extra == 'timezone'",
+            "tzdata; (platform_system == 'Windows') and extra == 'timezone'",
+            "matplotlib; extra == 'matplotlib'"
+          ],
+          "requires_python": ">=3.7"
+        }
+      },
+      "0.15.1": {
+        "polars_lts_cpu-0.15.1-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": {
+          "provides_extras": [
+            "pyarrow",
+            "timezone",
+            "connectorx",
+            "all",
+            "xlsx2csv",
+            "pandas",
+            "numpy",
+            "fsspec",
+            "matplotlib"
+          ],
+          "requires_dist": [
+            "typing_extensions >= 4.0.0; python_version < '3.10'",
+            "pyarrow>=4.0.0; extra == 'pyarrow'",
+            "backports.zoneinfo; (python_version < '3.9') and extra == 'timezone'",
+            "tzdata; (platform_system == 'Windows') and extra == 'timezone'",
+            "connectorx; extra == 'connectorx'",
+            "polars[pyarrow,pandas,numpy,fsspec,connectorx,xlsx2csv,timezone,matplotlib]; extra == 'all'",
+            "xlsx2csv >= 0.8.0; extra == 'xlsx2csv'",
+            "pyarrow>=4.0.0; extra == 'pandas'",
+            "pandas; extra == 'pandas'",
+            "numpy >= 1.16.0; extra == 'numpy'",
+            "fsspec; extra == 'fsspec'",
+            "matplotlib; extra == 'matplotlib'"
+          ],
+          "requires_python": ">=3.7"
+        }
       }
     }
   },
@@ -48610,6 +48723,27 @@
       },
       "0.4.9": {
         "prismacloud_cli-0.4.9-py3-none-any.whl": "0.4.10@prismacloud_cli-0.4.10-py3-none-any.whl"
+      },
+      "0.5.0": {
+        "prismacloud_cli-0.5.0-py3-none-any.whl": {
+          "requires_dist": [
+            "api-client",
+            "click",
+            "click-completion",
+            "click-help-colors",
+            "coloredlogs",
+            "jsondiff",
+            "pandas",
+            "requests",
+            "tabulate",
+            "colorama",
+            "update-checker",
+            "pydantic",
+            "datetime",
+            "prismacloud-api (==5.0.6)"
+          ],
+          "requires_python": ">=3.7"
+        }
       }
     }
   },
@@ -65375,6 +65509,18 @@
       },
       "0.1.55": {
         "stratosphere-0.1.55-py3-none-any.whl": "0.1.19@stratosphere-0.1.19-py3-none-any.whl"
+      },
+      "0.1.56": {
+        "stratosphere-0.1.56-py3-none-any.whl": "0.1.19@stratosphere-0.1.19-py3-none-any.whl"
+      },
+      "0.1.57": {
+        "stratosphere-0.1.57-py3-none-any.whl": "0.1.19@stratosphere-0.1.19-py3-none-any.whl"
+      },
+      "0.1.58": {
+        "stratosphere-0.1.58-py3-none-any.whl": "0.1.19@stratosphere-0.1.19-py3-none-any.whl"
+      },
+      "0.1.59": {
+        "stratosphere-0.1.59-py3-none-any.whl": "0.1.19@stratosphere-0.1.19-py3-none-any.whl"
       }
     }
   },
@@ -70058,6 +70204,15 @@
       },
       "1.3.9": {
         "vecshare-1.3.9-py2.py3-none-any.whl": "1.3.5@vecshare-1.3.5-py2.py3-none-any.whl"
+      }
+    }
+  },
+  "vehiclemodels": {
+    "py3": {
+      "0.0.1": {
+        "vehiclemodels-0.0.1-py3-none-any.whl": {
+          "requires_python": ">=3.7"
+        }
       }
     }
   },
