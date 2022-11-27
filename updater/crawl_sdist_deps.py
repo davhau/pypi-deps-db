@@ -432,7 +432,7 @@ def main():
     if not extractor_src:
         raise Exception("Set env variable 'EXTRACTOR_SRC to {mach-nix}/lib/extractor'")
     min_free_gb = int(os.environ.get('MIN_FREE_GB', "0"))
-    py_vers_short = os.environ.get('PYTHON_VERSIONS', "27,36,37,38,39,310").strip().split(',')
+    py_vers_short = os.environ.get('PYTHON_VERSIONS', "27,36,37,38,39,310,311").strip().split(',')
     pypi_fetcher_dir = os.environ.get('PYPI_FETCHER', '/tmp/pypi_fetcher')
     store = os.environ.get('STORE', None)
 
