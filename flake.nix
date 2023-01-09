@@ -3,7 +3,7 @@
     mach-nix.url = "mach-nix";
     nixpkgs.url = "nixpkgs/nixos-unstable";
     nixpkgsPy36.url = "nixpkgs/b4db68ff563895eea6aab4ff24fa04ef403dfe14";
-    pypiIndex.url = "github:davhau/nix-pypi-fetcher";
+    pypiIndex.url = "github:davhau/nix-pypi-fetcher-2";
     pypiIndex.flake = false;
   };
 
