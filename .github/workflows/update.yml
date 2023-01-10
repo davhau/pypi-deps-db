@@ -49,9 +49,9 @@ jobs:
         export MAX_MINUTES_WHEEL=30
         export MAX_MINUTES_SDIST=300
 
-        # avoid updating the lock file because this job's correct operation
-        # depends on the exact revisions in the committed lock file.
-        nix run --no-update-lock-file -L .#job-sdist-wheel
+        # avoid writing an updated lock file because this job's correct
+        # operation depends on the exact revisions in the committed lock file.
+        nix run --no-write-lock-file -L .#job-sdist-wheel
         git push
 
       shell: bash
