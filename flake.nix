@@ -3,7 +3,7 @@
     mach-nix.url = "mach-nix";
     nixpkgs.url = "nixpkgs/nixos-unstable";
     nixpkgsPy36.url = "nixpkgs/b4db68ff563895eea6aab4ff24fa04ef403dfe14";
-    pypiIndex.url = "github:davhau/nix-pypi-fetcher";
+    pypiIndex.url = "github:davhau/nix-pypi-fetcher-2";
     pypiIndex.flake = false;
   };
 
@@ -103,8 +103,14 @@
               set -e
               set -x
 
-              # update the index to get the newest packages
-              indexRevPrev=$(${pkgs.nixFlakes}/bin/nix flake metadata --json | ${pkgs.jq}/bin/jq -e --raw-output '.locks .nodes .pypiIndex .locked .rev')
+              # update the index to get the newest packages.
+              # don't let the lock file update yet because we need to capture
+              # the old value to compare against the new value after it does
+              # update.  often `nix flake metadata` won't try to update the
+              # lock file but if the definition of the source changed, it
+              # would without `--no-update-lock-file`.
+              indexRevPrev=$(${pkgs.nixFlakes}/bin/nix flake metadata --no-update-lock-file --json | ${pkgs.jq}/bin/jq -e --raw-output '.locks .nodes .pypiIndex .locked .rev')
+              # *now* let it update
               nix flake lock --update-input pypiIndex
               indexRev=$(${pkgs.nixFlakes}/bin/nix flake metadata --json | ${pkgs.jq}/bin/jq -e --raw-output '.locks .nodes .pypiIndex .locked .rev')
               if [ "$indexRevPrev" == "$indexRev" ]; then
