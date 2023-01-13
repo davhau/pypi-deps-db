@@ -3158,6 +3158,25 @@
       "310": "27"
     }
   },
+  "astronomer-cosmos": {
+    "0.0.3": {
+      "36": {
+        "install_requires": [
+          "pydantic>=1.8.2",
+          "Jinja2>=3.0.0",
+          "apache-airflow>=2.4",
+          "dbt-postgres"
+        ],
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
+  },
   "async-web3": {
     "0.1.0": {
       "27": {
@@ -3414,7 +3433,8 @@
       "39": "27",
       "310": "27"
     },
-    "0.0.6": "0.0.5"
+    "0.0.6": "0.0.5",
+    "0.0.7": "0.0.5"
   },
   "auquery": {
     "0.1": {
@@ -3601,383 +3621,7 @@
     "0.9.1": "0.0.3"
   },
   "aws-analytics-reference-architecture": {
-    "1.1.2": {
-      "36": {
-        "install_requires": [
-          "aws-cdk.aws-iam<2.0.0,>=1.119.0",
-          "aws-cdk.aws-s3<2.0.0,>=1.119.0",
-          "aws-cdk.core<2.0.0,>=1.119.0",
-          "constructs<4.0.0,>=3.2.27",
-          "jsii<2.0.0,>=1.33.0",
-          "publication>=0.0.3"
-        ],
-        "python_requires": [
-          ">=3.6"
-        ]
-      },
-      "37": "36",
-      "38": "36",
-      "39": "36",
-      "310": "36"
-    },
-    "1.1.3": "1.1.2",
-    "1.1.4": "1.1.2",
-    "1.1.7": {
-      "36": {
-        "install_requires": [
-          "aws-cdk.aws-athena<2.0.0,>=1.119.0",
-          "aws-cdk.aws-events-targets<2.0.0,>=1.119.0",
-          "aws-cdk.aws-events<2.0.0,>=1.119.0",
-          "aws-cdk.aws-glue<2.0.0,>=1.119.0",
-          "aws-cdk.aws-iam<2.0.0,>=1.119.0",
-          "aws-cdk.aws-kinesis<2.0.0,>=1.119.0",
-          "aws-cdk.aws-lambda<2.0.0,>=1.119.0",
-          "aws-cdk.aws-logs<2.0.0,>=1.119.0",
-          "aws-cdk.aws-s3<2.0.0,>=1.119.0",
-          "aws-cdk.aws-stepfunctions-tasks<2.0.0,>=1.119.0",
-          "aws-cdk.aws-stepfunctions<2.0.0,>=1.119.0",
-          "aws-cdk.core<2.0.0,>=1.119.0",
-          "aws-cdk.custom-resources<2.0.0,>=1.119.0",
-          "constructs<4.0.0,>=3.2.27",
-          "jsii<2.0.0,>=1.34.0",
-          "publication>=0.0.3"
-        ],
-        "python_requires": [
-          ">=3.6"
-        ]
-      },
-      "37": "36",
-      "38": "36",
-      "39": "36",
-      "310": "36"
-    },
-    "1.2.0": "1.1.7",
-    "1.2.1": {
-      "36": {
-        "install_requires": [
-          "aws-cdk.aws-athena==1.121.0",
-          "aws-cdk.aws-events-targets==1.121.0",
-          "aws-cdk.aws-events==1.121.0",
-          "aws-cdk.aws-glue==1.121.0",
-          "aws-cdk.aws-iam==1.121.0",
-          "aws-cdk.aws-kinesis==1.121.0",
-          "aws-cdk.aws-lambda-python==1.121.0",
-          "aws-cdk.aws-lambda==1.121.0",
-          "aws-cdk.aws-logs==1.121.0",
-          "aws-cdk.aws-s3==1.121.0",
-          "aws-cdk.aws-stepfunctions-tasks==1.121.0",
-          "aws-cdk.aws-stepfunctions==1.121.0",
-          "aws-cdk.core==1.121.0",
-          "aws-cdk.custom-resources==1.121.0",
-          "constructs<4.0.0,>=3.2.27",
-          "jsii<2.0.0,>=1.34.0",
-          "publication>=0.0.3"
-        ],
-        "python_requires": [
-          ">=3.6"
-        ]
-      },
-      "37": "36",
-      "38": "36",
-      "39": "36",
-      "310": "36"
-    },
-    "1.2.2": "1.2.1",
-    "1.2.3": "1.2.1",
-    "1.2.4": "1.2.1",
-    "1.3.0": "1.2.1",
-    "1.3.1": "1.2.1",
-    "1.3.2": "1.2.1",
-    "1.3.3": "1.2.1",
-    "1.4.1": "1.2.1",
-    "1.4.2": "1.2.1",
-    "1.5.0": "1.2.1",
-    "1.5.1": "1.2.1",
-    "1.6.0": "1.2.1",
-    "1.6.1": "1.2.1",
-    "1.6.2": "1.2.1",
-    "1.6.3": "1.2.1",
-    "1.6.4": "1.2.1",
-    "1.6.5": {
-      "36": {
-        "install_requires": [
-          "aws-cdk.aws-athena<1.125.0,>=1.124.0",
-          "aws-cdk.aws-events-targets<1.125.0,>=1.124.0",
-          "aws-cdk.aws-events<1.125.0,>=1.124.0",
-          "aws-cdk.aws-glue<1.125.0,>=1.124.0",
-          "aws-cdk.aws-iam<1.125.0,>=1.124.0",
-          "aws-cdk.aws-kinesis<1.125.0,>=1.124.0",
-          "aws-cdk.aws-kinesisfirehose-destinations<1.125.0,>=1.124.0",
-          "aws-cdk.aws-kinesisfirehose<1.125.0,>=1.124.0",
-          "aws-cdk.aws-lambda-python<1.125.0,>=1.124.0",
-          "aws-cdk.aws-lambda<1.125.0,>=1.124.0",
-          "aws-cdk.aws-logs<1.125.0,>=1.124.0",
-          "aws-cdk.aws-s3<1.125.0,>=1.124.0",
-          "aws-cdk.aws-stepfunctions-tasks<1.125.0,>=1.124.0",
-          "aws-cdk.aws-stepfunctions<1.125.0,>=1.124.0",
-          "aws-cdk.core<1.125.0,>=1.124.0",
-          "aws-cdk.custom-resources<1.125.0,>=1.124.0",
-          "constructs<4.0.0,>=3.2.27",
-          "jsii<2.0.0,>=1.42.0",
-          "publication>=0.0.3"
-        ],
-        "python_requires": [
-          ">=3.6"
-        ]
-      },
-      "37": "36",
-      "38": "36",
-      "39": "36",
-      "310": "36"
-    },
-    "1.6.6": "1.6.5",
-    "1.7.0": {
-      "36": {
-        "install_requires": [
-          "aws-cdk.aws-athena<1.131.0,>=1.130.0",
-          "aws-cdk.aws-events-targets<1.131.0,>=1.130.0",
-          "aws-cdk.aws-events<1.131.0,>=1.130.0",
-          "aws-cdk.aws-glue<1.131.0,>=1.130.0",
-          "aws-cdk.aws-iam<1.131.0,>=1.130.0",
-          "aws-cdk.aws-kinesis<1.131.0,>=1.130.0",
-          "aws-cdk.aws-kinesisfirehose-destinations<1.131.0,>=1.130.0",
-          "aws-cdk.aws-kinesisfirehose<1.131.0,>=1.130.0",
-          "aws-cdk.aws-lambda-python<1.131.0,>=1.130.0",
-          "aws-cdk.aws-lambda<1.131.0,>=1.130.0",
-          "aws-cdk.aws-logs<1.131.0,>=1.130.0",
-          "aws-cdk.aws-s3<1.131.0,>=1.130.0",
-          "aws-cdk.aws-stepfunctions-tasks<1.131.0,>=1.130.0",
-          "aws-cdk.aws-stepfunctions<1.131.0,>=1.130.0",
-          "aws-cdk.core<1.131.0,>=1.130.0",
-          "aws-cdk.custom-resources<1.131.0,>=1.130.0",
-          "constructs<4.0.0,>=3.2.27",
-          "jsii<2.0.0,>=1.42.0",
-          "publication>=0.0.3"
-        ],
-        "python_requires": [
-          ">=3.6"
-        ]
-      },
-      "37": "36",
-      "38": "36",
-      "39": "36",
-      "310": "36"
-    },
-    "1.8.0": {
-      "36": {
-        "install_requires": [
-          "aws-cdk.assertions<1.131.0,>=1.130.0",
-          "aws-cdk.aws-athena<1.131.0,>=1.130.0",
-          "aws-cdk.aws-ec2<1.131.0,>=1.130.0",
-          "aws-cdk.aws-events-targets<1.131.0,>=1.130.0",
-          "aws-cdk.aws-events<1.131.0,>=1.130.0",
-          "aws-cdk.aws-glue<1.131.0,>=1.130.0",
-          "aws-cdk.aws-iam<1.131.0,>=1.130.0",
-          "aws-cdk.aws-kinesis<1.131.0,>=1.130.0",
-          "aws-cdk.aws-kinesisfirehose-destinations<1.131.0,>=1.130.0",
-          "aws-cdk.aws-kinesisfirehose<1.131.0,>=1.130.0",
-          "aws-cdk.aws-lambda-python<1.131.0,>=1.130.0",
-          "aws-cdk.aws-lambda<1.131.0,>=1.130.0",
-          "aws-cdk.aws-logs<1.131.0,>=1.130.0",
-          "aws-cdk.aws-redshift<1.131.0,>=1.130.0",
-          "aws-cdk.aws-s3-assets<1.131.0,>=1.130.0",
-          "aws-cdk.aws-s3-deployment<1.131.0,>=1.130.0",
-          "aws-cdk.aws-s3<1.131.0,>=1.130.0",
-          "aws-cdk.aws-secretsmanager<1.131.0,>=1.130.0",
-          "aws-cdk.aws-stepfunctions-tasks<1.131.0,>=1.130.0",
-          "aws-cdk.aws-stepfunctions<1.131.0,>=1.130.0",
-          "aws-cdk.core<1.131.0,>=1.130.0",
-          "aws-cdk.custom-resources<1.131.0,>=1.130.0",
-          "constructs<4.0.0,>=3.2.27",
-          "jsii<2.0.0,>=1.44.2",
-          "publication>=0.0.3"
-        ],
-        "python_requires": [
-          ">=3.6"
-        ]
-      },
-      "37": "36",
-      "38": "36",
-      "39": "36",
-      "310": "36"
-    },
-    "1.8.1": {
-      "36": {
-        "install_requires": [
-          "aws-cdk.assertions<1.131.0,>=1.130.0",
-          "aws-cdk.aws-athena<1.131.0,>=1.130.0",
-          "aws-cdk.aws-autoscaling<1.131.0,>=1.130.0",
-          "aws-cdk.aws-ec2<1.131.0,>=1.130.0",
-          "aws-cdk.aws-eks<1.131.0,>=1.130.0",
-          "aws-cdk.aws-emrcontainers<1.131.0,>=1.130.0",
-          "aws-cdk.aws-events-targets<1.131.0,>=1.130.0",
-          "aws-cdk.aws-events<1.131.0,>=1.130.0",
-          "aws-cdk.aws-glue<1.131.0,>=1.130.0",
-          "aws-cdk.aws-iam<1.131.0,>=1.130.0",
-          "aws-cdk.aws-kinesis<1.131.0,>=1.130.0",
-          "aws-cdk.aws-kinesisfirehose-destinations<1.131.0,>=1.130.0",
-          "aws-cdk.aws-kinesisfirehose<1.131.0,>=1.130.0",
-          "aws-cdk.aws-lambda-python<1.131.0,>=1.130.0",
-          "aws-cdk.aws-lambda<1.131.0,>=1.130.0",
-          "aws-cdk.aws-logs<1.131.0,>=1.130.0",
-          "aws-cdk.aws-redshift<1.131.0,>=1.130.0",
-          "aws-cdk.aws-s3-assets<1.131.0,>=1.130.0",
-          "aws-cdk.aws-s3-deployment<1.131.0,>=1.130.0",
-          "aws-cdk.aws-s3<1.131.0,>=1.130.0",
-          "aws-cdk.aws-secretsmanager<1.131.0,>=1.130.0",
-          "aws-cdk.aws-stepfunctions-tasks<1.131.0,>=1.130.0",
-          "aws-cdk.aws-stepfunctions<1.131.0,>=1.130.0",
-          "aws-cdk.core<1.131.0,>=1.130.0",
-          "aws-cdk.custom-resources<1.131.0,>=1.130.0",
-          "aws-cdk.lambda-layer-awscli<1.131.0,>=1.130.0",
-          "constructs<4.0.0,>=3.2.27",
-          "jsii<2.0.0,>=1.44.2",
-          "publication>=0.0.3"
-        ],
-        "python_requires": [
-          ">=3.6"
-        ]
-      },
-      "37": "36",
-      "38": "36",
-      "39": "36",
-      "310": "36"
-    },
-    "1.8.2": "1.8.1",
-    "1.8.3": "1.8.1",
-    "1.8.4": "1.8.1",
-    "1.8.5": {
-      "36": {
-        "install_requires": [
-          "aws-cdk.assertions<1.131.0,>=1.130.0",
-          "aws-cdk.aws-athena<1.131.0,>=1.130.0",
-          "aws-cdk.aws-autoscaling<1.131.0,>=1.130.0",
-          "aws-cdk.aws-ec2<1.131.0,>=1.130.0",
-          "aws-cdk.aws-eks<1.131.0,>=1.130.0",
-          "aws-cdk.aws-emrcontainers<1.131.0,>=1.130.0",
-          "aws-cdk.aws-events-targets<1.131.0,>=1.130.0",
-          "aws-cdk.aws-events<1.131.0,>=1.130.0",
-          "aws-cdk.aws-glue<1.131.0,>=1.130.0",
-          "aws-cdk.aws-iam<1.131.0,>=1.130.0",
-          "aws-cdk.aws-kinesis<1.131.0,>=1.130.0",
-          "aws-cdk.aws-kinesisfirehose-destinations<1.131.0,>=1.130.0",
-          "aws-cdk.aws-kinesisfirehose<1.131.0,>=1.130.0",
-          "aws-cdk.aws-lambda-python<1.131.0,>=1.130.0",
-          "aws-cdk.aws-lambda<1.131.0,>=1.130.0",
-          "aws-cdk.aws-logs<1.131.0,>=1.130.0",
-          "aws-cdk.aws-redshift<1.131.0,>=1.130.0",
-          "aws-cdk.aws-s3-assets<1.131.0,>=1.130.0",
-          "aws-cdk.aws-s3-deployment<1.131.0,>=1.130.0",
-          "aws-cdk.aws-s3<1.131.0,>=1.130.0",
-          "aws-cdk.aws-secretsmanager<1.131.0,>=1.130.0",
-          "aws-cdk.aws-stepfunctions-tasks<1.131.0,>=1.130.0",
-          "aws-cdk.aws-stepfunctions<1.131.0,>=1.130.0",
-          "aws-cdk.core<1.131.0,>=1.130.0",
-          "aws-cdk.custom-resources<1.131.0,>=1.130.0",
-          "aws-cdk.lambda-layer-awscli<1.131.0,>=1.130.0",
-          "constructs<4.0.0,>=3.2.27",
-          "jsii<2.0.0,>=1.46.0",
-          "publication>=0.0.3"
-        ],
-        "python_requires": [
-          ">=3.6"
-        ]
-      },
-      "37": "36",
-      "38": "36",
-      "39": "36",
-      "310": "36"
-    },
-    "1.8.6": "1.8.5",
-    "1.8.7": "1.8.5",
-    "1.8.8": "1.8.5",
-    "1.10.0": {
-      "36": {
-        "install_requires": [
-          "aws-cdk.assertions<1.131.0,>=1.130.0",
-          "aws-cdk.aws-athena<1.131.0,>=1.130.0",
-          "aws-cdk.aws-autoscaling<1.131.0,>=1.130.0",
-          "aws-cdk.aws-ec2<1.131.0,>=1.130.0",
-          "aws-cdk.aws-eks<1.131.0,>=1.130.0",
-          "aws-cdk.aws-emrcontainers<1.131.0,>=1.130.0",
-          "aws-cdk.aws-events-targets<1.131.0,>=1.130.0",
-          "aws-cdk.aws-events<1.131.0,>=1.130.0",
-          "aws-cdk.aws-glue<1.131.0,>=1.130.0",
-          "aws-cdk.aws-iam<1.131.0,>=1.130.0",
-          "aws-cdk.aws-kinesis<1.131.0,>=1.130.0",
-          "aws-cdk.aws-kinesisfirehose-destinations<1.131.0,>=1.130.0",
-          "aws-cdk.aws-kinesisfirehose<1.131.0,>=1.130.0",
-          "aws-cdk.aws-lambda-python<1.131.0,>=1.130.0",
-          "aws-cdk.aws-lambda<1.131.0,>=1.130.0",
-          "aws-cdk.aws-logs<1.131.0,>=1.130.0",
-          "aws-cdk.aws-redshift<1.131.0,>=1.130.0",
-          "aws-cdk.aws-s3-assets<1.131.0,>=1.130.0",
-          "aws-cdk.aws-s3-deployment<1.131.0,>=1.130.0",
-          "aws-cdk.aws-s3<1.131.0,>=1.130.0",
-          "aws-cdk.aws-secretsmanager<1.131.0,>=1.130.0",
-          "aws-cdk.aws-stepfunctions-tasks<1.131.0,>=1.130.0",
-          "aws-cdk.aws-stepfunctions<1.131.0,>=1.130.0",
-          "aws-cdk.core<1.131.0,>=1.130.0",
-          "aws-cdk.custom-resources<1.131.0,>=1.130.0",
-          "aws-cdk.lambda-layer-awscli<1.131.0,>=1.130.0",
-          "constructs<4.0.0,>=3.2.27",
-          "jsii<2.0.0,>=1.49.0",
-          "publication>=0.0.3"
-        ],
-        "python_requires": [
-          ">=3.6"
-        ]
-      },
-      "37": "36",
-      "38": "36",
-      "39": "36",
-      "310": "36"
-    },
-    "1.9.0": "1.8.5",
-    "1.11.0": {
-      "36": {
-        "install_requires": [
-          "aws-cdk.assertions<1.135.0,>=1.134.0",
-          "aws-cdk.aws-athena<1.135.0,>=1.134.0",
-          "aws-cdk.aws-autoscaling<1.135.0,>=1.134.0",
-          "aws-cdk.aws-ec2<1.135.0,>=1.134.0",
-          "aws-cdk.aws-eks<1.135.0,>=1.134.0",
-          "aws-cdk.aws-emrcontainers<1.135.0,>=1.134.0",
-          "aws-cdk.aws-events-targets<1.135.0,>=1.134.0",
-          "aws-cdk.aws-events<1.135.0,>=1.134.0",
-          "aws-cdk.aws-glue<1.135.0,>=1.134.0",
-          "aws-cdk.aws-iam<1.135.0,>=1.134.0",
-          "aws-cdk.aws-kinesis<1.135.0,>=1.134.0",
-          "aws-cdk.aws-kinesisfirehose-destinations<1.135.0,>=1.134.0",
-          "aws-cdk.aws-kinesisfirehose<1.135.0,>=1.134.0",
-          "aws-cdk.aws-lambda-python<1.135.0,>=1.134.0",
-          "aws-cdk.aws-lambda<1.135.0,>=1.134.0",
-          "aws-cdk.aws-logs<1.135.0,>=1.134.0",
-          "aws-cdk.aws-redshift<1.135.0,>=1.134.0",
-          "aws-cdk.aws-s3-assets<1.135.0,>=1.134.0",
-          "aws-cdk.aws-s3-deployment<1.135.0,>=1.134.0",
-          "aws-cdk.aws-s3<1.135.0,>=1.134.0",
-          "aws-cdk.aws-secretsmanager<1.135.0,>=1.134.0",
-          "aws-cdk.aws-stepfunctions-tasks<1.135.0,>=1.134.0",
-          "aws-cdk.aws-stepfunctions<1.135.0,>=1.134.0",
-          "aws-cdk.core<1.135.0,>=1.134.0",
-          "aws-cdk.custom-resources<1.135.0,>=1.134.0",
-          "aws-cdk.lambda-layer-awscli<1.135.0,>=1.134.0",
-          "constructs<4.0.0,>=3.2.27",
-          "jsii<2.0.0,>=1.51.0",
-          "publication>=0.0.3"
-        ],
-        "python_requires": [
-          ">=3.6"
-        ]
-      },
-      "37": "36",
-      "38": "36",
-      "39": "36",
-      "310": "36"
-    },
-    "1.11.1": "1.11.0",
-    "1.14.0": {
+    "1.14.1": {
       "36": {
         "install_requires": [
           "aws-cdk.assertions==1.139.0",
@@ -4021,7 +3665,6 @@
       "39": "36",
       "310": "36"
     },
-    "1.14.1": "1.14.0",
     "1.14.2": {
       "36": {
         "install_requires": [
@@ -6718,6 +6361,20 @@
       "310": "36"
     },
     "0.4.9": "0.4.8"
+  },
+  "botocore-a-la-carte-license-manager": {
+    "1.29.43": {
+      "27": {
+        "python_requires": [
+          ">= 3.7"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "botsock": {
     "0.0.2": {
@@ -10341,7 +9998,8 @@
       "38": "36",
       "39": "36",
       "310": "36"
-    }
+    },
+    "0.3.0": "0.1.8"
   },
   "civipy": {
     "0.0.1": {
@@ -63376,131 +63034,6 @@
     },
     "0.1a0": "0.1"
   },
-  "datupapi": {
-    "0.4.10": "0.4.9",
-    "0.4.9": {
-      "27": {
-        "install_requires": [
-          "beautifulsoup4==4.9.3",
-          "boto3==1.16.54",
-          "mysql-connector-python==8.0.24",
-          "openpyxl==3.0.6",
-          "pandas>=1.1.5",
-          "pymssql-linux==2.1.6",
-          "pymysql==1.0.2",
-          "pytest==6.2.1",
-          "pyyaml==5.3.1",
-          "requests==2.25.1",
-          "scikit-learn==0.24.1",
-          "SQLAlchemy==1.3.22",
-          "unidecode==1.1.2",
-          "xlrd==1.0.0"
-        ]
-      },
-      "36": "27",
-      "37": "27",
-      "38": "27",
-      "39": "27",
-      "310": "27"
-    },
-    "0.4.11": "0.4.9",
-    "0.4.12": "0.4.9",
-    "0.4.13": "0.4.9",
-    "0.4.14": "0.4.9",
-    "0.4.15": "0.4.9",
-    "0.4.16": {
-      "27": {
-        "install_requires": [
-          "beautifulsoup4>=4.9.3",
-          "boto3>=1.16.54",
-          "mysql-connector-python>=8.0.24",
-          "openpyxl>=3.0.6",
-          "pandas>=1.1.5",
-          "pymssql-linux>=2.1.6",
-          "pymysql>=1.0.2",
-          "pytest>=6.2.1",
-          "pyyaml>=5.3.1",
-          "requests>=2.25.1",
-          "scikit-learn>=0.24.1",
-          "SQLAlchemy>=1.3.22",
-          "unidecode>=1.1.2",
-          "xlrd>=1.0.0"
-        ]
-      },
-      "36": "27",
-      "37": "27",
-      "38": "27",
-      "39": "27",
-      "310": "27"
-    },
-    "1.4.1": {
-      "27": {
-        "install_requires": [
-          "beautifulsoup4>=4.9.3",
-          "boto3>=1.16.54",
-          "datetime>=4.3",
-          "dowhy>=0.6",
-          "mysql-connector-python>=8.0.24",
-          "openpyxl>=3.0.6",
-          "pandas>=1.3.4",
-          "pymysql>=1.0.2",
-          "pytest>=6.2.1",
-          "python-dateutil>=2.8.2",
-          "pyyaml>=5.3.1",
-          "requests>=2.25.1",
-          "scikit-learn>=0.24.1",
-          "snowflake-connector-python[pandas]>=2.5.0",
-          "snowflake-sqlalchemy>=1.3.1",
-          "SQLAlchemy>=1.3.22",
-          "tensorflow>=2.6.0",
-          "unidecode>=1.1.2",
-          "xlrd>=1.0.0"
-        ]
-      },
-      "36": "27",
-      "37": "27",
-      "38": "27",
-      "39": "27",
-      "310": "27"
-    },
-    "1.15.2": {
-      "27": {
-        "install_requires": [
-          "beautifulsoup4>=4.9.3",
-          "boto3>=1.16.54",
-          "catboost>=1.0.4",
-          "datetime>=4.3",
-          "dowhy>=0.6",
-          "google-cloud-bigquery>=2.34.2",
-          "google-cloud-storage>=2.1.0",
-          "mysql-connector-python>=8.0.24",
-          "openpyxl>=3.0.6",
-          "pandas>=1.3.4",
-          "pymysql>=1.0.2",
-          "pytest>=6.2.1",
-          "python-dateutil>=2.8.2",
-          "pyyaml>=5.3.1",
-          "requests>=2.25.1",
-          "scikit-learn>=0.24.1",
-          "shap>=0.40.0",
-          "snowflake-connector-python[pandas]>=2.5.0",
-          "snowflake-sqlalchemy>=1.3.1",
-          "SQLAlchemy>=1.3.22",
-          "tensorflow>=2.6.0",
-          "unidecode>=1.1.2",
-          "xgboost>=1.5.2",
-          "xlrd>=1.0.0"
-        ]
-      },
-      "36": "27",
-      "37": "27",
-      "38": "27",
-      "39": "27",
-      "310": "27"
-    },
-    "1.15.3": "1.15.2",
-    "1.15.4": "1.15.2"
-  },
   "db2rest": {
     "0.1.0": {
       "27": {
@@ -72295,7 +71828,10 @@
     "2.7.1": "1.0",
     "2.7.2": "1.0",
     "2.7.3": "1.0",
-    "2.7.4": "1.0"
+    "2.7.4": "1.0",
+    "2.8.8": "1.0",
+    "2.9.7": "1.0",
+    "3.0.0": "1.0"
   },
   "fsc": {
     "0.0.2": {
@@ -73404,7 +72940,25 @@
     "0.0.32": "0.0.1",
     "0.0.33": "0.0.1",
     "0.0.34": "0.0.1",
-    "0.0.35": "0.0.1"
+    "0.0.35": "0.0.1",
+    "0.1.0": {
+      "27": {
+        "install_requires": [
+          "matplotlib<4.0.0,>=3.5.1",
+          "netCDF4<2.0.0,>=1.5.8",
+          "numpy<1.23,>=1.21.4",
+          "scipy<2.0.0,>=1.7.3"
+        ],
+        "python_requires": [
+          ">=3.8,<3.11"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "goodlens-lib-builder": {
     "0.0.1": {
@@ -84859,6 +84413,16 @@
       "310": "27"
     }
   },
+  "mfi-mpower": {
+    "1.1.2": {
+      "27": {},
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
+  },
   "mi-modulo": {
     "1.0.0": {
       "27": {},
@@ -91980,7 +91544,8 @@
     "0.12.3": "0.12.0",
     "0.12.4": "0.12.0",
     "0.12.5": "0.12.0",
-    "0.12.6": "0.12.0"
+    "0.12.6": "0.12.0",
+    "0.13.4": "0.12.0"
   },
   "otomkdir": {
     "0.0.1": {
@@ -92187,7 +91752,8 @@
       "38": "27",
       "39": "27",
       "310": "27"
-    }
+    },
+    "0.3.2": "0.3.1"
   },
   "pa-bin-checker": {
     "0.0.1": {
@@ -96491,7 +96057,8 @@
     "1.3.10": "1.3.1",
     "1.3.11": "1.3.1",
     "1.3.9": "1.3.1",
-    "1.3.12": "1.3.1"
+    "1.3.12": "1.3.1",
+    "1.3.11.9": "1.3.1"
   },
   "proxy.py-uxspoilers-plugin": {
     "2021.5.16": {
@@ -100778,7 +100345,24 @@
       "38": "36",
       "39": "36",
       "310": "36"
-    }
+    },
+    "0.6a2": {
+      "27": {
+        "install_requires": [
+          "jinja2<4.0.0,>=3.1.2",
+          "pydevmgr-ua==0.6.a1"
+        ],
+        "python_requires": [
+          ">=3.7,<4.0"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "0.6a4": "0.6a2"
   },
   "pydiablo": {
     "0.0.3": {
@@ -102133,7 +101717,49 @@
       "310": "27"
     },
     "0.13.8": "0.13.7",
-    "0.13.9": "0.13.7"
+    "0.13.9": "0.13.7",
+    "0.13.10": {
+      "27": {
+        "install_requires": [
+          "cytoolz",
+          "dask",
+          "geopandas>=0.7",
+          "loguru",
+          "netcdf4",
+          "numpy>=1.17",
+          "pygeos",
+          "pyproj>=2.2",
+          "rasterio>=1.2",
+          "rioxarray>=0.11",
+          "scipy",
+          "shapely>=1.8",
+          "ujson",
+          "xarray>=2022.03.0"
+        ],
+        "extras_require": {
+          "test": [
+            "coverage[toml]",
+            "pytest-cov",
+            "pytest-xdist[psutil]"
+          ],
+          "typeguard": [
+            "coverage[toml]",
+            "pygments",
+            "pytest-cov",
+            "pytest-xdist[psutil]",
+            "typeguard"
+          ]
+        },
+        "python_requires": [
+          ">=3.8"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "pygrpy": {
     "0.0.2": {
@@ -106613,6 +106239,19 @@
     "1.9.1": "1.6.0",
     "1.11.0": "1.6.0"
   },
+  "renleitu-boxian-quanshu": {
+    "2022.12.8.0": {
+      "36": {
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
+  },
   "repurpose": {
     "0.2": {
       "27": {
@@ -109490,6 +109129,30 @@
       "38": "36",
       "39": "36",
       "310": "36"
+    }
+  },
+  "shockdb": {
+    "0.0.5": {
+      "27": {
+        "install_requires": [
+          "lmdb"
+        ],
+        "extras_require": {
+          "test": [
+            "pytest"
+          ],
+          "dev": [
+            "zstandard",
+            "lz4",
+            "orjson"
+          ]
+        }
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
     }
   },
   "shoulder": {
@@ -113518,7 +113181,8 @@
     "0.0.7.4": "0.0.1",
     "0.0.7.5": "0.0.1",
     "0.0.7.6": "0.0.1",
-    "0.0.8.0": "0.0.1"
+    "0.0.8.0": "0.0.1",
+    "0.0.9.0": "0.0.1"
   },
   "sql-feed-graphite": {
     "0.2": {
@@ -113890,7 +113554,8 @@
     "0.30": "0.11",
     "0.31": "0.11",
     "0.31.1": "0.11",
-    "0.32": "0.11"
+    "0.32": "0.11",
+    "0.32.1": "0.11"
   },
   "stampchecker": {
     "1.0.0": {
@@ -120889,7 +120554,8 @@
     "7.15.0": "7.0.0",
     "7.15.1": "7.0.0",
     "7.15.2": "7.0.0",
-    "7.15.3": "7.0.0"
+    "7.15.3": "7.0.0",
+    "7.15.4": "7.0.0"
   },
   "txretry": {
     "0.0.1": {
@@ -126480,6 +126146,17 @@
       "39": "27",
       "310": "27"
     }
+  },
+  "zyc-love": {
+    "0.0.1": {
+      "27": {},
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "0.1.0": "0.0.1"
   },
   "zzip": {
     "0.0.1": {

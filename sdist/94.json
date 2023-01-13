@@ -12588,7 +12588,47 @@
       "310": "27"
     },
     "1.12.0": "1.11.0",
-    "1.13.0": "1.11.0"
+    "1.13.0": "1.11.0",
+    "1.16.0": {
+      "27": {
+        "install_requires": [
+          "PyYAML<7.0,>=6.0",
+          "click<9.0.0,>=8.0.3",
+          "jmespath<2.0.0,>=1.0.0",
+          "jsonschema<5.0.0,>=4.4.0"
+        ],
+        "extras_require": {
+          "test": [
+            "mock<5.0.0,>=4.0.3",
+            "pytest<8.0.0,>=7.1.2",
+            "pytest-asyncio<0.21.0,>=0.20.2",
+            "pytest-describe<3.0.0,>=2.0.1",
+            "pytest-mock<4.0.0,>=3.7.0",
+            "pytest-timeout<3.0.0,>=2.1.0",
+            "requests-mock<2.0.0,>=1.9.3",
+            "testcontainers<4.0.0,>=3.7.0",
+            "psycopg2-binary<3.0.0,>=2.9.5",
+            "redis<5.0.0,>=4.3.5",
+            "SQLAlchemy<2.0.0,>=1.4.44"
+          ],
+          "redis": [
+            "redis<5.0.0,>=4.3.5"
+          ],
+          "pg": [
+            "psycopg2-binary<3.0.0,>=2.9.5",
+            "SQLAlchemy<2.0.0,>=1.4.44"
+          ]
+        },
+        "python_requires": [
+          ">=3.7,<4.0"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "dats-lab": {
     "0.0.50": {
@@ -12654,6 +12694,20 @@
     },
     "0.0.3": "0.0.2",
     "0.0.4": "0.0.2"
+  },
+  "dbticketspy": {
+    "0.2.0": {
+      "27": {
+        "install_requires": [
+          "requests"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "de406": {
     "1997.1": {
@@ -13762,6 +13816,19 @@
     "4.1.2": "4.0.3",
     "4.1.3": "4.0.3",
     "4.1.4": "4.0.3"
+  },
+  "dianhua-neixiangren-fangchengshi": {
+    "2022.12.11.0": {
+      "36": {
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "digenpyweb": {
     "0.0.1": {
@@ -23002,7 +23069,8 @@
     "0.6.3": "0.6.2",
     "0.6.4": "0.6.2",
     "0.6.5": "0.6.2",
-    "0.6.6": "0.6.2"
+    "0.6.6": "0.6.2",
+    "0.6.7": "0.6.2"
   },
   "geoza": {
     "0.0.1": {
@@ -33660,6 +33728,16 @@
           "tflearn"
         ]
       },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
+  },
+  "life-span-storage": {
+    "0.0.8": {
+      "27": {},
       "36": "27",
       "37": "27",
       "38": "27",
@@ -44411,136 +44489,6 @@
       "39": "27",
       "310": "27"
     },
-    "1.1.0.dev1": {
-      "27": {
-        "install_requires": [
-          "dill==0.3.2",
-          "dnslib>=0.9.10",
-          "dnspython>=1.16.0",
-          "plux>=1.3.1",
-          "localstack>=1.1.0.dev",
-          "pyaes>=1.6.0",
-          "python-jose[cryptography]<4.0.0,>=3.1.0",
-          "requests<2.26,>=2.20.0",
-          "tabulate"
-        ],
-        "extras_require": {
-          "test_ext": [
-            "pyathena"
-          ],
-          "package": [
-            "python-minifier"
-          ],
-          "test_overrides": [
-            "localstack>=1.1.0.dev1"
-          ],
-          ":platform_system == \"Windows\"": [
-            "windows-curses"
-          ],
-          "test": [
-            "aiohttp",
-            "appdirs",
-            "aws_xray_sdk>=2.4.2",
-            "azure-common>=1.1.26",
-            "azure-core>=1.9.0",
-            "azure-devops>=6.0.0b4",
-            "azure-functions>=1.5.0",
-            "azure-identity>=1.5.0",
-            "azure-mgmt-core>=1.2.2",
-            "azure-mgmt-storage>=16.0.0",
-            "azure-mgmt-web>=1.0.0",
-            "azure-servicebus>=7.0.1",
-            "azure-storage-blob>=12.3.0",
-            "azure-storage-queue>=12.1.1",
-            "black==22.3.0",
-            "coverage[toml]>=5.0.0",
-            "coveralls",
-            "flake8-black==0.3.2",
-            "flake8-isort>=4.0.0",
-            "flake8-quotes>=0.11.0",
-            "flake8==3.9.2",
-            "gremlinpython==3.5.1",
-            "isort==5.9.1",
-            "Js2Py>=0.71",
-            "jws>=0.1.3",
-            "localstack[test]>=1.1.0.dev",
-            "msal",
-            "msal-extensions",
-            "msrest",
-            "neo4j",
-            "nest-asyncio>=1.4.1",
-            "paramiko~=2.11.0",
-            "portalocker",
-            "pre-commit==2.13.0",
-            "pyarrow",
-            "pykafka",
-            "pymongo",
-            "pymssql",
-            "pymysql",
-            "pyproject-flake8",
-            "pytest-dependency==0.5.1",
-            "pytest-httpserver>=1.0.1",
-            "pytest-instafail>=0.4.2",
-            "pytest-rerunfailures==10.0",
-            "pytest==6.2.4",
-            "redis==3.3.7",
-            "redshift_connector"
-          ],
-          "runtime": [
-            "avro>=1.11.0",
-            "amazon.ion==0.8",
-            "aws-encryption-sdk>=3.1.0",
-            "dirtyjson==1.0.7",
-            "docker-registry-client>=0.5.2",
-            "docker==5.0.0",
-            "dulwich>=0.19.16",
-            "flask>=1.0.2",
-            "graphql-core>=3.0.3",
-            "janus>=0.5.0",
-            "jsonpatch>=1.32",
-            "Js2Py>=0.71",
-            "kafka-python",
-            "kubernetes==21.7.0",
-            "localstack[runtime]>=1.1.0.dev",
-            "moto-ext[all]>=3.1.14",
-            "paho-mqtt>=1.5",
-            "parse==1.19.0",
-            "parquet>=1.3.1",
-            "pg8000>=1.10",
-            "postgres>=2.2.2",
-            "postgresql-proxy>=0.0.1",
-            "presto-python-client>=0.7.0",
-            "pyftpdlib>=1.5.6",
-            "pyhive[hive]>=0.6.1",
-            "pyion2json>=0.0.2",
-            "PyJWT>=1.7.0",
-            "pyqldb~=3.2",
-            "python-snappy>=0.6",
-            "readerwriterlock>=1.0.7",
-            "rsa>=4.0",
-            "sql-metadata>=2.6.0",
-            "srp-ext==1.0.7.1",
-            "testing.common.database>=1.1.0",
-            "tornado>=6.0",
-            "warrant-ext>=0.6.2",
-            "websockets>=8.1",
-            "Whoosh>=2.7.4"
-          ]
-        }
-      },
-      "36": "27",
-      "37": "27",
-      "38": "27",
-      "39": "27",
-      "310": "27"
-    },
-    "1.1.0.dev20220831155139": "1.1.0",
-    "1.1.0.dev20220831155336": "1.1.0.dev1",
-    "1.1.0.dev20220831230414": "1.1.0",
-    "1.1.0.dev20220901130149": "1.1.0",
-    "1.1.0.dev20220901143006": "1.1.0",
-    "1.1.0.dev20220901143958": "1.1.0",
-    "1.1.0.dev20220901145455": "1.1.0",
     "1.1.0": {
       "27": {
         "install_requires": [
@@ -44664,321 +44612,6 @@
       "39": "27",
       "310": "27"
     },
-    "1.1.0.dev20220902211701": "1.1.0",
-    "1.1.0.dev20220902220719": "1.1.0",
-    "1.1.1.dev20220902230633": "1.1.0",
-    "1.1.1.dev20220905164523": "1.1.0",
-    "1.1.1.dev20220905180021": "1.1.0",
-    "1.1.1.dev20220905181304": "1.1.0",
-    "1.1.1.dev20220906085945": "1.1.0",
-    "1.1.1.dev20220906111819": "1.1.0",
-    "1.1.1.dev20220906162631": "1.1.0",
-    "1.1.1.dev20220906164853": "1.1.0",
-    "1.1.1.dev20220906190731": "1.1.0",
-    "1.1.1.dev20220907083429": "1.1.0",
-    "1.1.1.dev20220907104402": "1.1.0",
-    "1.1.1.dev20220907111215": "1.1.0",
-    "1.1.1.dev20220907152247": "1.1.0",
-    "1.1.1.dev20220907163142": "1.1.0",
-    "1.1.1.dev20220907211131": "1.1.0",
-    "1.1.1.dev20220908062850": "1.1.0",
-    "1.1.1.dev20220908081525": "1.1.0",
-    "1.1.1.dev20220908122430": "1.1.0",
-    "1.1.1.dev20220908150503": "1.1.0",
-    "1.1.1.dev20220908161009": "1.1.0",
-    "1.1.1.dev20220908174340": "1.1.0",
-    "1.1.1.dev20220909061016": "1.1.0",
-    "1.1.1.dev20220909111748": "1.1.0",
-    "1.1.1.dev20220909220840": "1.1.0",
-    "1.1.1.dev20220912160756": "1.1.0",
-    "1.1.1.dev20220913162956": "1.1.0",
-    "1.1.1.dev20220913180630": "1.1.0",
-    "1.1.1.dev20220913201148": "1.1.0",
-    "1.1.1.dev20220914103430": "1.1.0",
-    "1.1.1.dev20220914105102": "1.1.0",
-    "1.1.1.dev20220914130118": "1.1.0",
-    "1.1.1.dev20220914173250": "1.1.0",
-    "1.1.1.dev20220916153730": "1.1.0",
-    "1.1.1.dev20220917123447": "1.1.0",
-    "1.1.1.dev20220919071546": "1.1.0",
-    "1.1.1.dev20220919162201": "1.1.0",
-    "1.1.1.dev20220920010143": "1.1.0",
-    "1.1.1.dev20220920131251": "1.1.0",
-    "1.1.1.dev20220921122430": "1.1.0",
-    "1.1.1.dev20220922140637": "1.1.0",
-    "1.1.1.dev20220922170813": "1.1.0",
-    "1.1.1.dev20220923080130": "1.1.0",
-    "1.1.1.dev20220923142146": "1.1.0",
-    "1.1.1.dev20220926140859": "1.1.0",
-    "1.1.1.dev20220926160149": "1.1.0",
-    "1.1.1.dev20220926183327": "1.1.0",
-    "1.1.1.dev20220927153154": "1.1.0",
-    "1.1.1.dev20220927210533": "1.1.0",
-    "1.1.1.dev20220930043321": "1.1.0",
-    "1.1.1.dev20220930134013": {
-      "27": {
-        "install_requires": [
-          "dill==0.3.2",
-          "dnslib>=0.9.10",
-          "dnspython>=1.16.0",
-          "plux>=1.3.1",
-          "localstack>=1.1.0.dev",
-          "pyaes>=1.6.0",
-          "python-jose[cryptography]<4.0.0,>=3.1.0",
-          "requests<2.26,>=2.20.0",
-          "tabulate"
-        ],
-        "extras_require": {
-          "test_ext": [
-            "pyathena"
-          ],
-          "package": [
-            "python-minifier"
-          ],
-          "test_overrides": [
-            "localstack>=1.1.0.dev2"
-          ],
-          ":platform_system == \"Windows\"": [
-            "windows-curses"
-          ],
-          "test": [
-            "aiohttp",
-            "appdirs",
-            "aws_xray_sdk>=2.4.2",
-            "azure-common>=1.1.26",
-            "azure-core>=1.9.0",
-            "azure-devops>=6.0.0b4",
-            "azure-functions>=1.5.0",
-            "azure-identity>=1.5.0",
-            "azure-mgmt-core>=1.2.2",
-            "azure-mgmt-storage>=16.0.0",
-            "azure-mgmt-web>=1.0.0",
-            "azure-servicebus>=7.0.1",
-            "azure-storage-blob>=12.3.0",
-            "azure-storage-queue>=12.1.1",
-            "black==22.3.0",
-            "coverage[toml]>=5.0.0",
-            "coveralls",
-            "flake8-black==0.3.2",
-            "flake8-isort>=4.0.0",
-            "flake8-quotes>=0.11.0",
-            "flake8==3.9.2",
-            "gremlinpython==3.5.1",
-            "isort==5.9.1",
-            "Js2Py>=0.71",
-            "jws>=0.1.3",
-            "localstack[test]>=1.1.0.dev",
-            "msal",
-            "msal-extensions",
-            "msrest",
-            "neo4j",
-            "nest-asyncio>=1.4.1",
-            "paramiko~=2.11.0",
-            "portalocker",
-            "pre-commit==2.13.0",
-            "pyarrow",
-            "pykafka",
-            "pymongo",
-            "pymssql",
-            "pymysql",
-            "pyproject-flake8",
-            "pytest-dependency==0.5.1",
-            "pytest-httpserver>=1.0.1",
-            "pytest-instafail>=0.4.2",
-            "pytest-rerunfailures==10.0",
-            "pytest==6.2.4",
-            "redis==3.3.7",
-            "redshift_connector",
-            "stomp.py==8.0.1"
-          ],
-          "runtime": [
-            "avro>=1.11.0",
-            "amazon.ion==0.8",
-            "aws-encryption-sdk>=3.1.0",
-            "dirtyjson==1.0.7",
-            "docker-registry-client>=0.5.2",
-            "docker==5.0.0",
-            "dulwich>=0.19.16",
-            "flask>=1.0.2",
-            "graphql-core>=3.0.3",
-            "janus>=0.5.0",
-            "jsonpatch>=1.32",
-            "Js2Py>=0.71",
-            "kafka-python",
-            "kubernetes==21.7.0",
-            "localstack[runtime]>=1.1.0.dev",
-            "moto-ext[all]>=4.0.0",
-            "paho-mqtt>=1.5",
-            "parse==1.19.0",
-            "parquet>=1.3.1",
-            "pg8000>=1.10",
-            "postgres>=2.2.2",
-            "postgresql-proxy>=0.0.1",
-            "presto-python-client>=0.7.0",
-            "pyftpdlib>=1.5.6",
-            "pyhive[hive]>=0.6.1",
-            "pyion2json>=0.0.2",
-            "PyJWT>=1.7.0",
-            "pyqldb~=3.2",
-            "python-snappy>=0.6",
-            "readerwriterlock>=1.0.7",
-            "rsa>=4.0",
-            "sql-metadata>=2.6.0",
-            "srp-ext==1.0.7.1",
-            "testing.common.database>=1.1.0",
-            "tornado>=6.0",
-            "warrant-ext>=0.6.2",
-            "websockets>=8.1",
-            "Whoosh>=2.7.4"
-          ]
-        }
-      },
-      "36": "27",
-      "37": "27",
-      "38": "27",
-      "39": "27",
-      "310": "27"
-    },
-    "1.1.1.dev20220930134646": "1.1.1.dev20220930134013",
-    "1.1.1.dev20220930151020": "1.1.1.dev20220930134013",
-    "1.1.1.dev20221002005153": "1.1.1.dev20220930134013",
-    "1.1.1.dev20221002200140": "1.1.1.dev20220930134013",
-    "1.1.1.dev20221003163756": "1.1.1.dev20220930134013",
-    "1.1.1.dev20221003214953": "1.1.1.dev20220930134013",
-    "1.1.1.dev20221004002408": "1.1.1.dev20220930134013",
-    "1.1.1.dev20221004071813": "1.1.1.dev20220930134013",
-    "1.1.1.dev20221004111403": "1.1.1.dev20220930134013",
-    "1.1.1.dev20221004123028": "1.1.1.dev20220930134013",
-    "1.1.1.dev20221004125115": {
-      "27": {
-        "install_requires": [
-          "dill==0.3.2",
-          "dnslib>=0.9.10",
-          "dnspython>=1.16.0",
-          "plux>=1.3.1",
-          "localstack>=1.1.0.dev",
-          "pyaes>=1.6.0",
-          "pymongo",
-          "python-jose[cryptography]<4.0.0,>=3.1.0",
-          "requests<2.26,>=2.20.0",
-          "tabulate"
-        ],
-        "extras_require": {
-          "test_ext": [
-            "pyathena"
-          ],
-          "package": [
-            "python-minifier"
-          ],
-          "test_overrides": [
-            "localstack>=1.1.0.dev2"
-          ],
-          ":platform_system == \"Windows\"": [
-            "windows-curses"
-          ],
-          "test": [
-            "aiohttp",
-            "appdirs",
-            "aws_xray_sdk>=2.4.2",
-            "azure-common>=1.1.26",
-            "azure-core>=1.9.0",
-            "azure-devops>=6.0.0b4",
-            "azure-functions>=1.5.0",
-            "azure-identity>=1.5.0",
-            "azure-mgmt-core>=1.2.2",
-            "azure-mgmt-storage>=16.0.0",
-            "azure-mgmt-web>=1.0.0",
-            "azure-servicebus>=7.0.1",
-            "azure-storage-blob>=12.3.0",
-            "azure-storage-queue>=12.1.1",
-            "black==22.3.0",
-            "coverage[toml]>=5.0.0",
-            "coveralls",
-            "flake8-black==0.3.2",
-            "flake8-isort>=4.0.0",
-            "flake8-quotes>=0.11.0",
-            "flake8==3.9.2",
-            "gremlinpython==3.5.1",
-            "isort==5.9.1",
-            "Js2Py>=0.71",
-            "jws>=0.1.3",
-            "localstack[test]>=1.1.0.dev",
-            "msal",
-            "msal-extensions",
-            "msrest",
-            "neo4j",
-            "nest-asyncio>=1.4.1",
-            "paramiko~=2.11.0",
-            "portalocker",
-            "pre-commit==2.13.0",
-            "pyarrow",
-            "pykafka",
-            "pymssql",
-            "pymysql",
-            "pyproject-flake8",
-            "pytest-dependency==0.5.1",
-            "pytest-httpserver>=1.0.1",
-            "pytest-instafail>=0.4.2",
-            "pytest-rerunfailures==10.0",
-            "pytest==6.2.4",
-            "redis==3.3.7",
-            "redshift_connector",
-            "stomp.py==8.0.1"
-          ],
-          "runtime": [
-            "avro>=1.11.0",
-            "amazon.ion==0.8",
-            "aws-encryption-sdk>=3.1.0",
-            "dirtyjson==1.0.7",
-            "docker-registry-client>=0.5.2",
-            "docker==5.0.0",
-            "dulwich>=0.19.16",
-            "flask>=1.0.2",
-            "graphql-core>=3.0.3",
-            "janus>=0.5.0",
-            "jsonpatch>=1.32",
-            "Js2Py>=0.71",
-            "kafka-python",
-            "kubernetes==21.7.0",
-            "localstack[runtime]>=1.1.0.dev",
-            "moto-ext[all]>=4.0.0",
-            "paho-mqtt>=1.5",
-            "parse==1.19.0",
-            "parquet>=1.3.1",
-            "pg8000>=1.10",
-            "postgres>=2.2.2",
-            "postgresql-proxy>=0.0.1",
-            "presto-python-client>=0.7.0",
-            "pyftpdlib>=1.5.6",
-            "pyhive[hive]>=0.6.1",
-            "pyion2json>=0.0.2",
-            "PyJWT>=1.7.0",
-            "pyqldb~=3.2",
-            "python-snappy>=0.6",
-            "readerwriterlock>=1.0.7",
-            "rsa>=4.0",
-            "sql-metadata>=2.6.0",
-            "srp-ext==1.0.7.1",
-            "testing.common.database>=1.1.0",
-            "tornado>=6.0",
-            "warrant-ext>=0.6.2",
-            "websockets>=8.1",
-            "Whoosh>=2.7.4"
-          ]
-        }
-      },
-      "36": "27",
-      "37": "27",
-      "38": "27",
-      "39": "27",
-      "310": "27"
-    },
-    "1.1.1.dev20221004140058": "1.1.1.dev20221004125115",
-    "1.1.1.dev20221005092530": "1.1.1.dev20221004125115",
-    "1.1.1.dev20221005213105": "1.1.1.dev20220930134013",
-    "1.1.1.dev20221006195317": "1.1.1.dev20220930134013",
-    "1.2.0.dev20221006214734": "1.2.0",
-    "1.2.0.dev20221007171223": "1.2.0",
     "1.2.0": {
       "27": {
         "install_requires": [
@@ -45103,567 +44736,7 @@
       "39": "27",
       "310": "27"
     },
-    "1.2.1.dev20221007200236": "1.2.0",
-    "1.2.1.dev20221010074356": "1.2.0",
-    "1.2.1.dev20221010093325": "1.2.0",
-    "1.2.1.dev20221010101506": "1.2.0",
-    "1.2.1.dev20221012145922": "1.2.0",
-    "1.2.1.dev20221012151013": "1.2.0",
-    "1.2.1.dev20221012210154": "1.2.0",
-    "1.2.1.dev20221013134922": "1.2.0",
-    "1.2.1.dev20221013145941": "1.2.0",
-    "1.2.1.dev20221013215543": "1.2.0",
-    "1.2.1.dev20221014083210": "1.2.0",
-    "1.2.1.dev20221014202719": {
-      "27": {
-        "install_requires": [
-          "dill==0.3.2",
-          "dnslib>=0.9.10",
-          "dnspython>=1.16.0",
-          "plux>=1.3.1",
-          "localstack>=1.2.0.dev",
-          "pyaes>=1.6.0",
-          "python-jose[cryptography]<4.0.0,>=3.1.0",
-          "requests<2.26,>=2.20.0",
-          "tabulate"
-        ],
-        "extras_require": {
-          "test_ext": [
-            "pyathena"
-          ],
-          "package": [
-            "python-minifier"
-          ],
-          "test_overrides": [
-            "localstack>=1.2.0.dev1"
-          ],
-          ":platform_system == \"Windows\"": [
-            "windows-curses"
-          ],
-          "test": [
-            "aiohttp",
-            "appdirs",
-            "aws_xray_sdk>=2.4.2",
-            "azure-common>=1.1.26",
-            "azure-core>=1.9.0",
-            "azure-devops>=6.0.0b4",
-            "azure-functions>=1.5.0",
-            "azure-identity>=1.5.0",
-            "azure-mgmt-core>=1.2.2",
-            "azure-mgmt-storage>=16.0.0",
-            "azure-mgmt-web>=1.0.0",
-            "azure-servicebus>=7.0.1",
-            "azure-storage-blob>=12.3.0",
-            "azure-storage-queue>=12.1.1",
-            "black==22.3.0",
-            "coverage[toml]>=5.0.0",
-            "coveralls",
-            "flake8-black==0.3.2",
-            "flake8-isort>=4.0.0",
-            "flake8-quotes>=0.11.0",
-            "flake8==3.9.2",
-            "gremlinpython==3.5.1",
-            "isort==5.9.1",
-            "Js2Py>=0.71",
-            "jws>=0.1.3",
-            "localstack[test]>=1.2.0.dev",
-            "msal",
-            "msal-extensions",
-            "msrest",
-            "neo4j",
-            "nest-asyncio>=1.4.1",
-            "paramiko~=2.11.0",
-            "portalocker",
-            "pre-commit==2.13.0",
-            "pyarrow",
-            "pykafka",
-            "pymongo",
-            "pymssql",
-            "pymysql",
-            "pyproject-flake8",
-            "pytest-dependency==0.5.1",
-            "pytest-httpserver>=1.0.1",
-            "pytest-instafail>=0.4.2",
-            "pytest-rerunfailures==10.0",
-            "pytest==6.2.4",
-            "redis==3.3.7",
-            "redshift_connector",
-            "stomp.py==8.0.1"
-          ],
-          "runtime": [
-            "avro>=1.11.0",
-            "amazon.ion>=0.9.3",
-            "aws-encryption-sdk>=3.1.0",
-            "dirtyjson==1.0.7",
-            "docker-registry-client>=0.5.2",
-            "docker==5.0.0",
-            "dulwich>=0.19.16",
-            "flask>=1.0.2",
-            "graphql-core>=3.0.3",
-            "janus>=0.5.0",
-            "jsonpatch>=1.32",
-            "Js2Py>=0.71",
-            "kafka-python",
-            "kubernetes==21.7.0",
-            "localstack[runtime]>=1.2.0.dev",
-            "moto-ext[all]>=4.0.0",
-            "paho-mqtt>=1.5",
-            "parse==1.19.0",
-            "parquet>=1.3.1",
-            "pg8000>=1.10",
-            "postgres>=2.2.2",
-            "postgresql-proxy>=0.0.1",
-            "presto-python-client>=0.7.0",
-            "pyftpdlib>=1.5.6",
-            "pyhive[hive]>=0.6.1",
-            "pyion2json>=0.0.2",
-            "PyJWT>=1.7.0",
-            "pyqldb~=3.2",
-            "python-snappy>=0.6",
-            "readerwriterlock>=1.0.7",
-            "rsa>=4.0",
-            "sql-metadata>=2.6.0",
-            "srp-ext==1.0.7.1",
-            "testing.common.database>=1.1.0",
-            "tornado>=6.0",
-            "warrant-ext>=0.6.2",
-            "websockets>=8.1",
-            "Whoosh>=2.7.4"
-          ]
-        }
-      },
-      "36": "27",
-      "37": "27",
-      "38": "27",
-      "39": "27",
-      "310": "27"
-    },
-    "1.2.1.dev20221017071146": "1.2.1.dev20221014202719",
-    "1.2.1.dev20221017124853": "1.2.1.dev20221014202719",
-    "1.2.1.dev20221018063531": "1.2.1.dev20221014202719",
-    "1.2.1.dev20221018134451": "1.2.1.dev20221014202719",
-    "1.2.1.dev20221018150710": "1.2.1.dev20221014202719",
-    "1.2.1.dev20221018162822": "1.2.1.dev20221014202719",
-    "1.2.1.dev20221019063050": "1.2.1.dev20221014202719",
-    "1.2.1.dev20221019081718": "1.2.1.dev20221014202719",
-    "1.2.1.dev20221019081745": "1.2.1.dev20221014202719",
-    "1.2.1.dev20221019084153": "1.2.1.dev20221014202719",
-    "1.2.1.dev20221019152709": "1.2.1.dev20221014202719",
-    "1.2.1.dev20221019182313": "1.2.1.dev20221014202719",
-    "1.2.1.dev20221019232712": "1.2.1.dev20221014202719",
-    "1.2.1.dev20221020062723": {
-      "27": {
-        "install_requires": [
-          "dill==0.3.2",
-          "dnslib>=0.9.10",
-          "dnspython>=1.16.0",
-          "plux>=1.3.1",
-          "localstack>=1.2.0.dev",
-          "pyaes>=1.6.0",
-          "python-jose[cryptography]<4.0.0,>=3.1.0",
-          "requests<2.26,>=2.20.0",
-          "tabulate"
-        ],
-        "extras_require": {
-          "test_ext": [
-            "pyathena"
-          ],
-          "package": [
-            "python-minifier"
-          ],
-          "test_overrides": [
-            "localstack>=1.2.0.dev1"
-          ],
-          ":platform_system == \"Windows\"": [
-            "windows-curses"
-          ],
-          "test": [
-            "aiohttp",
-            "appdirs",
-            "aws_xray_sdk>=2.4.2",
-            "azure-common>=1.1.26",
-            "azure-core>=1.9.0",
-            "azure-devops>=6.0.0b4",
-            "azure-functions>=1.5.0",
-            "azure-identity>=1.5.0",
-            "azure-mgmt-core>=1.2.2",
-            "azure-mgmt-storage>=16.0.0",
-            "azure-mgmt-web>=1.0.0",
-            "azure-servicebus>=7.0.1",
-            "azure-storage-blob>=12.3.0",
-            "azure-storage-queue>=12.1.1",
-            "black==22.3.0",
-            "coverage[toml]>=5.0.0",
-            "coveralls",
-            "flake8-black==0.3.2",
-            "flake8-isort>=4.0.0",
-            "flake8-quotes>=0.11.0",
-            "flake8==3.9.2",
-            "gremlinpython==3.5.1",
-            "isort==5.9.1",
-            "Js2Py>=0.71",
-            "jws>=0.1.3",
-            "localstack[test]>=1.2.0.dev",
-            "msal",
-            "msal-extensions",
-            "msrest",
-            "neo4j",
-            "nest-asyncio>=1.4.1",
-            "paramiko~=2.11.0",
-            "portalocker",
-            "pre-commit==2.13.0",
-            "pyarrow",
-            "pykafka",
-            "pymongo",
-            "pymssql",
-            "pymysql",
-            "pyproject-flake8",
-            "pytest-dependency==0.5.1",
-            "pytest-httpserver>=1.0.1",
-            "pytest-instafail>=0.4.2",
-            "pytest-rerunfailures==10.0",
-            "pytest==6.2.4",
-            "redis==3.3.7",
-            "redshift_connector",
-            "stomp.py==8.0.1"
-          ],
-          "runtime": [
-            "avro>=1.11.0",
-            "amazon.ion>=0.9.3",
-            "aws-encryption-sdk>=3.1.0",
-            "dirtyjson==1.0.7",
-            "docker-registry-client>=0.5.2",
-            "docker==5.0.0",
-            "dulwich>=0.19.16",
-            "flask>=1.0.2",
-            "graphql-core>=3.0.3",
-            "janus>=0.5.0",
-            "jsonpatch>=1.32",
-            "Js2Py>=0.71",
-            "kafka-python",
-            "kubernetes==21.7.0",
-            "localstack[runtime]>=1.2.0.dev",
-            "moto-ext[all]>=4.0.0",
-            "paho-mqtt>=1.5",
-            "parse==1.19.0",
-            "parquet>=1.3.1",
-            "pg8000>=1.10",
-            "postgres>=2.2.2",
-            "postgresql-proxy>=0.1.0",
-            "presto-python-client>=0.7.0",
-            "pyftpdlib>=1.5.6",
-            "pyhive[hive]>=0.6.1",
-            "pyion2json>=0.0.2",
-            "PyJWT>=1.7.0",
-            "pyqldb~=3.2",
-            "python-snappy>=0.6",
-            "readerwriterlock>=1.0.7",
-            "rsa>=4.0",
-            "sql-metadata>=2.6.0",
-            "srp-ext==1.0.7.1",
-            "testing.common.database>=1.1.0",
-            "tornado>=6.0",
-            "warrant-ext>=0.6.2",
-            "websockets>=8.1",
-            "Whoosh>=2.7.4"
-          ]
-        }
-      },
-      "36": "27",
-      "37": "27",
-      "38": "27",
-      "39": "27",
-      "310": "27"
-    },
-    "1.2.1.dev20221020085241": "1.2.1.dev20221020062723",
-    "1.2.1.dev20221020115742": "1.2.1.dev20221020062723",
-    "1.2.1.dev20221020213004": "1.2.1.dev20221020062723",
-    "1.2.1.dev20221022132614": "1.2.1.dev20221020062723",
-    "1.2.1.dev20221023221735": "1.2.1.dev20221020062723",
-    "1.2.1.dev20221024065736": "1.2.1.dev20221020062723",
-    "1.2.1.dev20221025121855": "1.2.1.dev20221020062723",
-    "1.2.1.dev20221025133017": "1.2.1.dev20221020062723",
-    "1.2.1.dev20221026202439": "1.2.1.dev20221020062723",
-    "1.2.1.dev20221027112822": "1.2.1.dev20221020062723",
-    "1.2.1.dev20221028064125": "1.2.1.dev20221020062723",
-    "1.2.1.dev20221028090647": "1.2.1.dev20221020062723",
-    "1.2.1.dev20221028161924": "1.2.1.dev20221020062723",
-    "1.2.1.dev20221028174151": "1.2.1.dev20221020062723",
-    "1.2.1.dev20221031102847": "1.2.1.dev20221020062723",
-    "1.2.1.dev20221102111043": "1.2.1.dev20221020062723",
-    "1.2.1.dev20221102221816": "1.2.1.dev20221020062723",
-    "1.2.1.dev20221103143912": "1.2.1.dev20221020062723",
-    "1.2.1.dev20221104144240": "1.2.1.dev20221020062723",
-    "1.2.1.dev20221107091039": "1.2.1.dev20221020062723",
-    "1.2.1.dev20221109092435": "1.2.1.dev20221020062723",
-    "1.2.1.dev20221115123240": "1.2.1.dev20221020062723",
-    "1.2.1.dev20221115155521": "1.2.1.dev20221020062723",
-    "1.2.1.dev20221115173411": "1.2.1.dev20221020062723",
-    "1.2.1.dev20221116075003": "1.2.1.dev20221020062723",
-    "1.2.1.dev20221116075512": "1.2.1.dev20221020062723",
-    "1.2.1.dev20221116102026": "1.2.1.dev20221020062723",
-    "1.2.1.dev20221116114525": "1.2.1.dev20221020062723",
-    "1.2.1.dev20221117111050": "1.2.1.dev20221020062723",
-    "1.2.1.dev20221117145434": "1.2.1.dev20221020062723",
-    "1.2.1.dev20221117175545": "1.2.1.dev20221020062723",
-    "1.2.1.dev20221118122047": "1.2.1.dev20221020062723",
-    "1.2.1.dev20221118124455": "1.2.1.dev20221020062723",
-    "1.2.1.dev20221119154934": {
-      "27": {
-        "install_requires": [
-          "dill==0.3.2",
-          "dnslib>=0.9.10",
-          "dnspython>=1.16.0",
-          "plux>=1.3.1",
-          "localstack>=1.2.0.dev",
-          "pyaes>=1.6.0",
-          "python-jose[cryptography]<4.0.0,>=3.1.0",
-          "requests<2.26,>=2.20.0",
-          "tabulate"
-        ],
-        "extras_require": {
-          "test_ext": [
-            "pyathena"
-          ],
-          "package": [
-            "python-minifier"
-          ],
-          "test_overrides": [
-            "localstack>=1.2.0.dev1"
-          ],
-          ":platform_system == \"Windows\"": [
-            "windows-curses"
-          ],
-          "test": [
-            "aiohttp",
-            "appdirs",
-            "aws_xray_sdk>=2.4.2",
-            "azure-common>=1.1.26",
-            "azure-core>=1.9.0",
-            "azure-devops>=6.0.0b4",
-            "azure-functions>=1.5.0",
-            "azure-identity>=1.5.0",
-            "azure-mgmt-core>=1.2.2",
-            "azure-mgmt-storage>=16.0.0",
-            "azure-mgmt-web>=1.0.0",
-            "azure-servicebus>=7.0.1",
-            "azure-storage-blob>=12.3.0",
-            "azure-storage-queue>=12.1.1",
-            "black==22.3.0",
-            "coverage[toml]>=5.0.0",
-            "coveralls",
-            "flake8-black==0.3.2",
-            "flake8-isort==5.0.0",
-            "flake8-quotes>=0.11.0",
-            "flake8==3.9.2",
-            "gremlinpython==3.5.1",
-            "isort==5.9.1",
-            "Js2Py>=0.71",
-            "jws>=0.1.3",
-            "localstack[test]>=1.2.0.dev",
-            "msal",
-            "msal-extensions",
-            "msrest",
-            "neo4j",
-            "nest-asyncio>=1.4.1",
-            "paramiko~=2.11.0",
-            "portalocker",
-            "pre-commit==2.13.0",
-            "pyarrow",
-            "pykafka",
-            "pymongo",
-            "pymssql",
-            "pymysql",
-            "pyproject-flake8==3.9.2",
-            "pytest-dependency==0.5.1",
-            "pytest-httpserver>=1.0.1",
-            "pytest-instafail>=0.4.2",
-            "pytest-rerunfailures==10.0",
-            "pytest==6.2.4",
-            "redis==3.3.7",
-            "redshift_connector",
-            "stomp.py==8.0.1"
-          ],
-          "runtime": [
-            "avro>=1.11.0",
-            "amazon.ion>=0.9.3",
-            "aws-encryption-sdk>=3.1.0",
-            "dirtyjson==1.0.7",
-            "docker-registry-client>=0.5.2",
-            "docker==5.0.0",
-            "dulwich>=0.19.16",
-            "flask>=1.0.2",
-            "graphql-core>=3.0.3",
-            "janus>=0.5.0",
-            "jsonpatch>=1.32",
-            "Js2Py>=0.71",
-            "kafka-python",
-            "kubernetes==21.7.0",
-            "localstack[runtime]>=1.2.0.dev",
-            "moto-ext[all]>=4.0.0",
-            "paho-mqtt>=1.5",
-            "parse==1.19.0",
-            "parquet>=1.3.1",
-            "pg8000>=1.10",
-            "postgres>=2.2.2",
-            "postgresql-proxy>=0.1.0",
-            "presto-python-client>=0.7.0",
-            "pyftpdlib>=1.5.6",
-            "pyhive[hive]>=0.6.1",
-            "pyion2json>=0.0.2",
-            "PyJWT>=1.7.0",
-            "pyqldb~=3.2",
-            "python-snappy>=0.6",
-            "readerwriterlock>=1.0.7",
-            "rsa>=4.0",
-            "sql-metadata>=2.6.0",
-            "srp-ext==1.0.7.1",
-            "testing.common.database>=1.1.0",
-            "tornado>=6.0",
-            "warrant-ext>=0.6.2",
-            "websockets>=8.1",
-            "Whoosh>=2.7.4"
-          ]
-        }
-      },
-      "36": "27",
-      "37": "27",
-      "38": "27",
-      "39": "27",
-      "310": "27"
-    },
-    "1.2.1.dev20221121091126": "1.2.1.dev20221119154934",
-    "1.2.1.dev20221121094553": "1.2.1.dev20221119154934",
-    "1.2.1.dev20221121164334": "1.2.1.dev20221119154934",
-    "1.2.1.dev20221121181112": "1.2.1.dev20221119154934",
-    "1.2.1.dev20221121201007": "1.2.1.dev20221119154934",
-    "1.3.0.dev20221121192739": {
-      "27": {
-        "install_requires": [
-          "dill==0.3.2",
-          "dnslib>=0.9.10",
-          "dnspython>=1.16.0",
-          "plux>=1.3.1",
-          "localstack>=1.3.0.dev",
-          "pyaes>=1.6.0",
-          "python-jose[cryptography]<4.0.0,>=3.1.0",
-          "requests<2.26,>=2.20.0",
-          "tabulate"
-        ],
-        "extras_require": {
-          "test_ext": [
-            "pyathena"
-          ],
-          "package": [
-            "python-minifier"
-          ],
-          "test_overrides": [
-            "localstack>=1.3.0.dev1"
-          ],
-          ":platform_system == \"Windows\"": [
-            "windows-curses"
-          ],
-          "test": [
-            "aiohttp",
-            "appdirs",
-            "aws_xray_sdk>=2.4.2",
-            "azure-common>=1.1.26",
-            "azure-core>=1.9.0",
-            "azure-devops>=6.0.0b4",
-            "azure-functions>=1.5.0",
-            "azure-identity>=1.5.0",
-            "azure-mgmt-core>=1.2.2",
-            "azure-mgmt-storage>=16.0.0",
-            "azure-mgmt-web>=1.0.0",
-            "azure-servicebus>=7.0.1",
-            "azure-storage-blob>=12.3.0",
-            "azure-storage-queue>=12.1.1",
-            "black==22.3.0",
-            "coverage[toml]>=5.0.0",
-            "coveralls",
-            "flake8-black==0.3.2",
-            "flake8-isort==5.0.0",
-            "flake8-quotes>=0.11.0",
-            "flake8==3.9.2",
-            "gremlinpython==3.5.1",
-            "isort==5.9.1",
-            "Js2Py>=0.71",
-            "jws>=0.1.3",
-            "localstack[test]>=1.3.0.dev",
-            "msal",
-            "msal-extensions",
-            "msrest",
-            "neo4j",
-            "nest-asyncio>=1.4.1",
-            "paramiko~=2.11.0",
-            "portalocker",
-            "pre-commit==2.13.0",
-            "pyarrow",
-            "pykafka",
-            "pymongo",
-            "pymssql",
-            "pymysql",
-            "pyproject-flake8==3.9.2",
-            "pytest-dependency==0.5.1",
-            "pytest-httpserver>=1.0.1",
-            "pytest-instafail>=0.4.2",
-            "pytest-rerunfailures==10.0",
-            "pytest==6.2.4",
-            "redis==3.3.7",
-            "redshift_connector",
-            "stomp.py==8.0.1"
-          ],
-          "runtime": [
-            "avro>=1.11.0",
-            "amazon.ion>=0.9.3",
-            "aws-encryption-sdk>=3.1.0",
-            "dirtyjson==1.0.7",
-            "docker-registry-client>=0.5.2",
-            "docker==5.0.0",
-            "dulwich>=0.19.16",
-            "flask>=1.0.2",
-            "graphql-core>=3.0.3",
-            "janus>=0.5.0",
-            "jsonpatch>=1.32",
-            "Js2Py>=0.71",
-            "kafka-python",
-            "kubernetes==21.7.0",
-            "localstack[runtime]>=1.3.0.dev",
-            "moto-ext[all]>=4.0.0",
-            "paho-mqtt>=1.5",
-            "parse==1.19.0",
-            "parquet>=1.3.1",
-            "pg8000>=1.10",
-            "postgres>=2.2.2",
-            "postgresql-proxy>=0.1.0",
-            "presto-python-client>=0.7.0",
-            "pyftpdlib>=1.5.6",
-            "pyhive[hive]>=0.6.1",
-            "pyion2json>=0.0.2",
-            "PyJWT>=1.7.0",
-            "pyqldb~=3.2",
-            "python-snappy>=0.6",
-            "readerwriterlock>=1.0.7",
-            "rsa>=4.0",
-            "sql-metadata>=2.6.0",
-            "srp-ext==1.0.7.1",
-            "testing.common.database>=1.1.0",
-            "tornado>=6.0",
-            "warrant-ext>=0.6.2",
-            "websockets>=8.1",
-            "Whoosh>=2.7.4"
-          ]
-        }
-      },
-      "36": "27",
-      "37": "27",
-      "38": "27",
-      "39": "27",
-      "310": "27"
-    },
-    "1.3.0.dev20221122120012": "1.3.0.dev20221121192739",
-    "1.3.0.dev20221122130912": "1.3.0.dev20221121192739",
-    "1.3.0.dev20221122152635": {
+    "1.3.1.dev20221201134840": {
       "27": {
         "install_requires": [
           "dill==0.3.2",
@@ -45677,18 +44750,6 @@
           "tabulate"
         ],
         "extras_require": {
-          "test_ext": [
-            "pyathena"
-          ],
-          "package": [
-            "python-minifier"
-          ],
-          "test_overrides": [
-            "localstack>=1.3.0.dev1"
-          ],
-          ":platform_system == \"Windows\"": [
-            "windows-curses"
-          ],
           "test": [
             "aiohttp",
             "appdirs",
@@ -45725,6 +44786,7 @@
             "portalocker",
             "pre-commit==2.13.0",
             "pyarrow",
+            "pyathena",
             "pykafka",
             "pymongo",
             "pymssql",
@@ -45755,7 +44817,7 @@
             "kafka-python",
             "kubernetes==21.7.0",
             "localstack[runtime]>=1.3.0.dev",
-            "moto-ext[all]>=4.0.0",
+            "moto-ext[all]>=4.0.10.post1",
             "paho-mqtt>=1.5",
             "parse==1.19.0",
             "parquet>=1.3.1",
@@ -45778,6 +44840,15 @@
             "warrant-ext>=0.6.2",
             "websockets>=8.1",
             "Whoosh>=2.7.4"
+          ],
+          "test_overrides": [
+            "localstack>=1.3.0.dev1"
+          ],
+          ":platform_system == \"Windows\"": [
+            "windows-curses"
+          ],
+          "package": [
+            "python-minifier"
           ]
         }
       },
@@ -45787,12 +44858,253 @@
       "39": "27",
       "310": "27"
     },
-    "1.3.0.dev20221123150427": "1.3.0.dev20221122152635",
-    "1.3.0.dev20221124151330": "1.3.0.dev20221122152635",
-    "1.3.0.dev20221125142723": "1.3.0.dev20221122152635",
-    "1.3.0.dev20221125184239": "1.3.0.dev20221122152635",
-    "1.3.0.dev20221125201930": "1.3.0.dev20221122152635",
-    "1.3.0.dev20221126190118": "1.3.0.dev20221122152635"
+    "1.3.1.dev20221209173347": {
+      "27": {
+        "install_requires": [
+          "dill==0.3.2",
+          "dnslib>=0.9.10",
+          "dnspython>=1.16.0",
+          "plux>=1.3.1",
+          "localstack>=1.3.0.dev",
+          "pyaes>=1.6.0",
+          "python-jose[cryptography]<4.0.0,>=3.1.0",
+          "requests>=2.20.0",
+          "tabulate"
+        ],
+        "extras_require": {
+          "test": [
+            "aiohttp",
+            "appdirs",
+            "aws_xray_sdk>=2.4.2",
+            "azure-common>=1.1.26",
+            "azure-core>=1.9.0",
+            "azure-devops>=6.0.0b4",
+            "azure-functions>=1.5.0",
+            "azure-identity>=1.5.0",
+            "azure-mgmt-core>=1.2.2",
+            "azure-mgmt-storage>=16.0.0",
+            "azure-mgmt-web>=1.0.0",
+            "azure-servicebus>=7.0.1",
+            "azure-storage-blob>=12.3.0",
+            "azure-storage-queue>=12.1.1",
+            "black==22.3.0",
+            "coverage[toml]>=5.0.0",
+            "coveralls",
+            "flake8-black==0.3.2",
+            "flake8-isort==5.0.0",
+            "flake8-quotes>=0.11.0",
+            "flake8==3.9.2",
+            "gremlinpython==3.5.1",
+            "isort==5.9.1",
+            "Js2Py>=0.71",
+            "jws>=0.1.3",
+            "localstack[test]>=1.3.0.dev",
+            "msal",
+            "msal-extensions",
+            "msrest",
+            "neo4j",
+            "nest-asyncio>=1.4.1",
+            "packaging<22",
+            "paramiko~=2.11.0",
+            "portalocker",
+            "pre-commit==2.13.0",
+            "pyarrow",
+            "pyathena",
+            "pykafka",
+            "pymongo",
+            "pymssql",
+            "pymysql",
+            "pyproject-flake8==3.9.2",
+            "pytest-dependency==0.5.1",
+            "pytest-httpserver>=1.0.1",
+            "pytest-instafail>=0.4.2",
+            "pytest-rerunfailures==10.0",
+            "pytest==6.2.4",
+            "redis==3.3.7",
+            "redshift_connector",
+            "stomp.py==8.0.1"
+          ],
+          "runtime": [
+            "avro>=1.11.0",
+            "amazon.ion>=0.9.3",
+            "aws-encryption-sdk>=3.1.0",
+            "dirtyjson==1.0.7",
+            "docker-registry-client>=0.5.2",
+            "docker==5.0.0",
+            "dulwich>=0.19.16",
+            "flask>=1.0.2",
+            "graphql-core>=3.0.3",
+            "janus>=0.5.0",
+            "jsonpatch>=1.32",
+            "Js2Py>=0.71",
+            "kafka-python",
+            "kubernetes==21.7.0",
+            "localstack[runtime]>=1.3.0.dev",
+            "moto-ext[all]>=4.0.10.post1",
+            "paho-mqtt>=1.5",
+            "parse==1.19.0",
+            "parquet>=1.3.1",
+            "pg8000>=1.10",
+            "postgres>=2.2.2",
+            "postgresql-proxy>=0.1.0",
+            "presto-python-client>=0.7.0",
+            "pyftpdlib>=1.5.6",
+            "pyhive[hive]>=0.6.1",
+            "pyion2json>=0.0.2",
+            "PyJWT>=1.7.0",
+            "pyqldb~=3.2",
+            "python-snappy>=0.6",
+            "readerwriterlock>=1.0.7",
+            "rsa>=4.0",
+            "sql-metadata>=2.6.0",
+            "srp-ext==1.0.7.1",
+            "testing.common.database>=1.1.0",
+            "tornado>=6.0",
+            "warrant-ext>=0.6.2",
+            "websockets>=8.1",
+            "Whoosh>=2.7.4"
+          ],
+          "test_overrides": [
+            "localstack>=1.3.0.dev1"
+          ],
+          ":platform_system == \"Windows\"": [
+            "windows-curses"
+          ],
+          "package": [
+            "python-minifier"
+          ]
+        }
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "1.3.2.dev20221221143435": {
+      "27": {
+        "install_requires": [
+          "dill==0.3.2",
+          "dnslib>=0.9.10",
+          "dnspython>=1.16.0",
+          "plux>=1.3.1",
+          "localstack>=1.3.1.dev",
+          "pyaes>=1.6.0",
+          "python-jose[cryptography]<4.0.0,>=3.1.0",
+          "requests>=2.20.0",
+          "tabulate"
+        ],
+        "extras_require": {
+          "test": [
+            "aiohttp",
+            "appdirs",
+            "aws_xray_sdk>=2.4.2",
+            "azure-common>=1.1.26",
+            "azure-core>=1.9.0",
+            "azure-devops>=6.0.0b4",
+            "azure-functions>=1.5.0",
+            "azure-identity>=1.5.0",
+            "azure-mgmt-core>=1.2.2",
+            "azure-mgmt-storage>=16.0.0",
+            "azure-mgmt-web>=1.0.0",
+            "azure-servicebus>=7.0.1",
+            "azure-storage-blob>=12.3.0",
+            "azure-storage-queue>=12.1.1",
+            "black==22.3.0",
+            "coverage[toml]>=5.0.0",
+            "coveralls",
+            "flake8-black==0.3.2",
+            "flake8-isort==5.0.0",
+            "flake8-quotes>=0.11.0",
+            "flake8==3.9.2",
+            "gremlinpython==3.5.1",
+            "isort==5.9.1",
+            "Js2Py>=0.71",
+            "jws>=0.1.3",
+            "localstack[test]>=1.3.1.dev",
+            "msal",
+            "msal-extensions",
+            "msrest",
+            "neo4j",
+            "nest-asyncio>=1.4.1",
+            "packaging<22",
+            "paramiko~=2.11.0",
+            "portalocker",
+            "pre-commit==2.13.0",
+            "pyarrow",
+            "pyathena",
+            "pykafka",
+            "pymongo",
+            "pymssql",
+            "pymysql",
+            "pyproject-flake8==3.9.2",
+            "pytest-dependency==0.5.1",
+            "pytest-httpserver>=1.0.1",
+            "pytest-instafail>=0.4.2",
+            "pytest-rerunfailures==10.0",
+            "pytest==6.2.4",
+            "redis==3.3.7",
+            "redshift_connector",
+            "stomp.py==8.0.1"
+          ],
+          "runtime": [
+            "avro>=1.11.0",
+            "amazon.ion>=0.9.3",
+            "aws-encryption-sdk>=3.1.0",
+            "dirtyjson==1.0.7",
+            "docker-registry-client>=0.5.2",
+            "docker==5.0.0",
+            "dulwich>=0.19.16",
+            "flask>=1.0.2",
+            "graphql-core>=3.0.3",
+            "janus>=0.5.0",
+            "jsonpatch>=1.32",
+            "Js2Py>=0.71",
+            "kafka-python",
+            "kubernetes==21.7.0",
+            "localstack[runtime]>=1.3.1.dev",
+            "moto-ext[all]>=4.0.10.post1",
+            "paho-mqtt>=1.5",
+            "parse==1.19.0",
+            "parquet>=1.3.1",
+            "pg8000>=1.10",
+            "postgres>=2.2.2",
+            "postgresql-proxy>=0.1.0",
+            "presto-python-client>=0.7.0",
+            "pyftpdlib>=1.5.6",
+            "pyhive[hive]>=0.6.1",
+            "pyion2json>=0.0.2",
+            "PyJWT>=1.7.0",
+            "pyqldb~=3.2",
+            "python-snappy>=0.6",
+            "readerwriterlock>=1.0.7",
+            "rsa>=4.0",
+            "sql-metadata>=2.6.0",
+            "srp-ext==1.0.7.1",
+            "testing.common.database>=1.1.0",
+            "tornado>=6.0",
+            "warrant-ext>=0.6.2",
+            "websockets>=8.1",
+            "Whoosh>=2.7.4"
+          ],
+          "test_overrides": [
+            "localstack>=1.3.1.dev"
+          ],
+          ":platform_system == \"Windows\"": [
+            "windows-curses"
+          ],
+          "package": [
+            "python-minifier"
+          ]
+        }
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "1.3.2.dev20221231204206": "1.3.2.dev20221221143435"
   },
   "lodash": {
     "0.0.1": {
@@ -53535,7 +52847,8 @@
     "4.12.12": "2.1.37",
     "4.12.14": "2.1.37",
     "4.9.9.12": "4.9.3.12",
-    "4.12.15": "2.1.37"
+    "4.12.15": "2.1.37",
+    "4.12.18": "2.1.37"
   },
   "opentelemetry-instrumentation-digma-fastapi": {
     "0.6.0": {
@@ -62082,7 +61395,8 @@
       "38": "27",
       "39": "27",
       "310": "27"
-    }
+    },
+    "0.6.2": "0.5.0"
   },
   "pyevo": {
     "0.0.1": {
@@ -62816,7 +62130,8 @@
     },
     "0.6.1": "0.6.0",
     "0.6.2": "0.6.0",
-    "0.6.3": "0.6.0"
+    "0.6.3": "0.6.0",
+    "0.6.4": "0.6.0"
   },
   "pymee": {
     "0.0.1": {
@@ -65802,7 +65117,8 @@
       "310": "27"
     },
     "2.0.0": "1.0.0",
-    "2.0.1": "1.0.0"
+    "2.0.1": "1.0.0",
+    "3.0.0": "1.0.0"
   },
   "qdafile": {
     "2019.1.24": {
@@ -66454,7 +65770,31 @@
       "39": "37",
       "310": "37"
     },
-    "2.7.0": "2.6.0"
+    "2.7.0": "2.6.0",
+    "2.9.0": {
+      "37": {
+        "install_requires": [
+          "aioamqp>=0.15.0",
+          "attrs>=19.1.0"
+        ],
+        "extras_require": {
+          "cli": [
+            "click>=8.1.3",
+            "rich>=12.6.0"
+          ],
+          "all": [
+            "click>=8.1.3",
+            "rich>=12.6.0"
+          ]
+        },
+        "python_requires": [
+          ">=3.8.0"
+        ]
+      },
+      "38": "37",
+      "39": "37",
+      "310": "37"
+    }
   },
   "rackspace-backup-client": {
     "0.17.2": {
@@ -68690,7 +68030,8 @@
       "38": "27",
       "39": "27",
       "310": "27"
-    }
+    },
+    "1.1.1": "1.1.0"
   },
   "robobopy": {
     "1.0.0": {
@@ -72864,7 +72205,8 @@
     "0.11": "0.1",
     "0.12": "0.1",
     "0.13": "0.1",
-    "0.14": "0.1"
+    "0.14": "0.1",
+    "0.21": "0.1"
   },
   "spanner-orm-fork": {
     "0.1.10": {
@@ -75396,7 +74738,10 @@
     "3.0.777": "3.0.252",
     "3.0.778": "3.0.252",
     "3.0.779": "3.0.252",
-    "3.0.780": "3.0.252"
+    "3.0.780": "3.0.252",
+    "3.0.789": "3.0.252",
+    "3.0.798": "3.0.252",
+    "3.0.807": "3.0.252"
   },
   "tender-multipass": {
     "0.1": {
