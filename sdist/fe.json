@@ -2977,7 +2977,33 @@
     },
     "2.0.7": "2.0.6",
     "2.0.8": "2.0.6",
-    "2.1.0": "2.0.6"
+    "2.1.0": "2.0.6",
+    "2.2.0": {
+      "27": {
+        "install_requires": [
+          "six"
+        ],
+        "setup_requires": [
+          "setuptools>=44",
+          "setuptools_scm[toml]>=3.4.3"
+        ],
+        "extras_require": {
+          "test": [
+            "astroid",
+            "pytest"
+          ],
+          ":python_version < \"3.5\"": [
+            "typing"
+          ]
+        }
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "2.2.1": "2.2.0"
   },
   "async-notifications": {
     "0.0.1": {
@@ -28416,6 +28442,48 @@
       "38": "27",
       "39": "27",
       "310": "27"
+    },
+    "0.1.8": {
+      "27": {
+        "install_requires": [
+          "django<=4.1,>=3.2.8",
+          "django-taggit",
+          "django-import-export",
+          "django-tinymce",
+          "django-widget-tweaks",
+          "django-wkhtmltopdf",
+          "django-haystack[elasticsearch]",
+          "django-notifications-hq",
+          "django-phonenumber-field",
+          "django-polymorphic",
+          "django-push-notifications",
+          "django-filter",
+          "django-filer<=2.2.3",
+          "drf-spectacular",
+          "drf-spectacular-sidecar",
+          "langdetect",
+          "easy-thumbnails",
+          "babel",
+          "bleach",
+          "boto3",
+          "mistune<=2.0.4",
+          "scikit-learn",
+          "phonenumbers",
+          "pillow",
+          "pycountry",
+          "qrcode",
+          "whoosh",
+          "geopy"
+        ],
+        "python_requires": [
+          ">=3.8"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
     }
   },
   "django-daterangefilter": {
@@ -30869,6 +30937,33 @@
           "requests<3.0.0,>=2.28.1",
           "tqdm<5.0.0,>=4.64.1"
         ],
+        "python_requires": [
+          ">=3.7,<4.0"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "0.1.15": {
+      "27": {
+        "install_requires": [
+          "pyparsing<4.0.0,>=3.0.9",
+          "requests<3.0.0,>=2.28.1",
+          "tqdm<5.0.0,>=4.64.1"
+        ],
+        "extras_require": {
+          "magicprompt": [
+            "transformers<5.0.0,>=4.25.1",
+            "torchvision<0.15.0,>=0.14.1",
+            "torch<2.0.0,>=1.13.1"
+          ],
+          "attentiongrabber": [
+            "spacy<4.0.0,>=3.4.4"
+          ]
+        },
         "python_requires": [
           ">=3.7,<4.0"
         ]
@@ -50513,7 +50608,8 @@
     },
     "0.1.2": "0.1.1",
     "0.2.0": "0.1.1",
-    "0.2.1": "0.1.1"
+    "0.2.1": "0.1.1",
+    "0.3.1": "0.1.1"
   },
   "ndh": {
     "3.10.3": {
@@ -61392,6 +61488,23 @@
       "310": "27"
     }
   },
+  "pylint-blocking-calls": {
+    "0.1.0": {
+      "27": {
+        "install_requires": [
+          "pylint<3.0.0,>=2.15.6"
+        ],
+        "python_requires": [
+          ">=3.7,<4.0"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
+  },
   "pylint-mongoengine": {
     "0.1": {
       "27": {
@@ -66996,7 +67109,8 @@
       "38": "36",
       "39": "36",
       "310": "36"
-    }
+    },
+    "1.3.3": "1.2.5"
   },
   "roku-scanner": {
     "1.0.0": {
@@ -70634,6 +70748,60 @@
           "terminaltables",
           "xlsx2csv",
           "protobuf<3.20.0"
+        ],
+        "extras_require": {
+          "dev": [
+            "wheel"
+          ],
+          "filetypes": [
+            "nibabel",
+            "pydicom",
+            "scipy"
+          ],
+          "cron": [
+            "celery",
+            "redis"
+          ],
+          "test": [
+            "pytest",
+            "pytest-runner",
+            "celery",
+            "redis"
+          ],
+          ":python_version < \"3.7\"": [
+            "ipython"
+          ]
+        },
+        "tests_require": [
+          "pytest",
+          "pytest-runner",
+          "celery",
+          "redis"
+        ],
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "0.0.1.dev5": {
+      "36": {
+        "install_requires": [
+          "augpathlib>=0.0.25",
+          "beautifulsoup4",
+          "pennsieve",
+          "dicttoxml",
+          "jsonschema>=3.0.1",
+          "ontquery>=0.2.8",
+          "openpyxl",
+          "protcur>=0.0.11",
+          "pyontutils>=0.1.32",
+          "pysercomb>=0.0.11",
+          "terminaltables",
+          "xlsx2csv"
         ],
         "extras_require": {
           "dev": [
@@ -80619,7 +80787,8 @@
       "38": "27",
       "39": "27",
       "310": "27"
-    }
+    },
+    "0.0.3": "0.0.2"
   },
   "visaplan.plone.pdfexport": {
     "1.0": {
@@ -82796,6 +82965,19 @@
     "0.1.6": "0.1",
     "0.1.7": "0.1",
     "0.5.2": "0.1"
+  },
+  "zhaohuan-qijide-yuanmeng-shuohuashu": {
+    "2022.12.8.0": {
+      "36": {
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "zhuanqian-jiyougu": {
     "2022.11.21.0": {
