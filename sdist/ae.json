@@ -1947,7 +1947,25 @@
     "2.2.15": "2.0.8",
     "2.2.16": "2.0.8",
     "2.2.17": "2.0.8",
-    "2.2.18": "2.0.8"
+    "2.2.18": "2.0.8",
+    "2.2.22": {
+      "27": {
+        "install_requires": [
+          "numpy==1.22.0",
+          "scipy==1.8.0",
+          "matplotlib==3.5.2",
+          "pandas==1.4.2",
+          "astropy>=5.2",
+          "jplephem==2.17",
+          "poliastro==0.17"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "amazon-sp-api-clients": {
     "0.1.0": {
@@ -9498,7 +9516,8 @@
     "1.29.14": "1.28.0",
     "1.29.15": "1.28.0",
     "1.29.16": "1.28.0",
-    "1.29.42": {
+    "1.29.42": "1.29.22",
+    "1.29.22": {
       "27": {
         "install_requires": [
           "jmespath<2.0.0,>=0.7.1",
@@ -11288,25 +11307,8 @@
     "1.0.246": "1.0.235",
     "1.0.247": "1.0.235",
     "1.0.249": "1.0.235",
-    "1.0.275": {
-      "36": {
-        "install_requires": [
-          "aws-cdk-lib<3.0.0,>=2.10.0",
-          "constructs<11.0.0,>=10.0.5",
-          "jsii<2.0.0,>=1.72.0",
-          "publication>=0.0.3",
-          "typeguard~=2.13.3"
-        ],
-        "python_requires": [
-          "~=3.7"
-        ]
-      },
-      "37": "36",
-      "38": "36",
-      "39": "36",
-      "310": "36"
-    },
-    "1.0.284": "1.0.275",
+    "1.0.275": "1.0.263",
+    "1.0.284": "1.0.263",
     "1.0.287": {
       "36": {
         "install_requires": [
@@ -11326,7 +11328,25 @@
       "310": "36"
     },
     "1.0.255": "1.0.235",
-    "1.0.254": "1.0.235"
+    "1.0.254": "1.0.235",
+    "1.0.263": {
+      "36": {
+        "install_requires": [
+          "aws-cdk-lib<3.0.0,>=2.10.0",
+          "constructs<11.0.0,>=10.0.5",
+          "jsii<2.0.0,>=1.72.0",
+          "publication>=0.0.3",
+          "typeguard~=2.13.3"
+        ],
+        "python_requires": [
+          "~=3.7"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "certbot-cwebroot": {
     "0.1.0": {
@@ -13821,7 +13841,39 @@
     },
     "0.0.21": "0.0.20",
     "0.0.26": "0.0.20",
-    "0.0.23": "0.0.20"
+    "0.0.23": "0.0.20",
+    "0.0.24": "0.0.20",
+    "0.1.0": {
+      "27": {
+        "install_requires": [
+          "csle-collector>=0.1.0",
+          "ryu>=4.34",
+          "eventlet>=0.30.2",
+          "confluent-kafka>=1.9.2"
+        ],
+        "extras_require": {
+          "testing": [
+            "pytest>=6.0",
+            "pytest-cov>=2.0",
+            "pytest-mock>=3.6.0",
+            "mypy>=0.910",
+            "flake8>=3.9",
+            "tox>=3.24",
+            "sphinx>=5.3.0",
+            "sphinxcontrib-napoleon>=0.7",
+            "sphinx-rtd-theme>=1.1.1"
+          ]
+        },
+        "python_requires": [
+          ">=3.8"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "csnake": {
     "0.2.0": {
@@ -15983,6 +16035,55 @@
             "pytest",
             "pytest-datadir",
             "pytest-xdist"
+          ],
+          "quality": [
+            "black~=22.0",
+            "flake8>=3.8.3",
+            "isort>=5.0.0",
+            "pyyaml>=5.3.1"
+          ]
+        },
+        "python_requires": [
+          ">=3.7.0"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "0.1.2": {
+      "36": {
+        "install_requires": [
+          "packaging",
+          "spacy",
+          "datasets",
+          "aenum>=3.1.11",
+          "sentence-transformers>=2.2.2",
+          "geograpy3",
+          "nltk",
+          "requests"
+        ],
+        "extras_require": {
+          "dev": [
+            "pytest",
+            "pytest-datadir",
+            "pytest-xdist",
+            "pytest-mock",
+            "nox",
+            "pandas",
+            "black~=22.0",
+            "flake8>=3.8.3",
+            "isort>=5.0.0",
+            "pyyaml>=5.3.1"
+          ],
+          "tests": [
+            "pytest",
+            "pytest-datadir",
+            "pytest-xdist",
+            "pytest-mock",
+            "nox",
+            "pandas"
           ],
           "quality": [
             "black~=22.0",
@@ -18483,7 +18584,8 @@
       "39": "27",
       "310": "27"
     },
-    "4.0.6": "4.0.2"
+    "4.0.6": "4.0.2",
+    "3.12.7": "3.12.2"
   },
   "django-jsend": {
     "0.1": {
@@ -35032,6 +35134,27 @@
       "38": "27",
       "39": "27",
       "310": "27"
+    },
+    "1.54.12": {
+      "27": {
+        "install_requires": [
+          "ladybug-core==0.41.1",
+          "ladybug-geometry-polyskel==1.4.0"
+        ],
+        "setup_requires": [
+          "setuptools_scm"
+        ],
+        "extras_require": {
+          ":python_version >= \"3.7\"": [
+            "honeybee-schema==1.51.7"
+          ]
+        }
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
     }
   },
   "hotpepper": {
@@ -46137,7 +46260,73 @@
       "310": "27"
     },
     "11.0.0.dev3": "11.0.0.dev2",
-    "11.0.0.dev4": "11.0.0.dev2"
+    "11.0.0.dev4": "11.0.0.dev2",
+    "11.0.0.dev5": {
+      "27": {
+        "install_requires": [
+          "invenio-app<1.4.0,>=1.3.4",
+          "invenio-base<1.3.0,>=1.2.11",
+          "invenio-cache<1.2.0,>=1.1.1",
+          "invenio-celery<1.3.0,>=1.2.4",
+          "invenio-config<1.1.0,>=1.0.3",
+          "invenio-i18n<1.4.0,>=1.3.1",
+          "invenio-db[mysql,postgresql]<1.1.0,>=1.0.14",
+          "invenio-admin<1.4.0,>=1.3.2",
+          "invenio-assets<3.0.0,>=2.0.0",
+          "invenio-formatter<1.2.0,>=1.1.3",
+          "invenio-logging[sentry-sdk]<1.4.0,>=1.3.2",
+          "invenio-mail<1.1.0,>=1.0.2",
+          "invenio-rest<1.3.0,>=1.2.8",
+          "invenio-theme<1.5.0,>=1.4.0",
+          "invenio-access<1.5.0,>=1.4.4",
+          "invenio-accounts<2.1.0,>=2.0.0",
+          "invenio-oauth2server<1.4.0,>=1.3.6",
+          "invenio-oauthclient<2.1.0,>=2.0.1",
+          "invenio-userprofiles<2.1.0,>=2.0.2",
+          "invenio-indexer<2.2.0,>=2.1.0",
+          "invenio-jsonschemas<1.2.0,>=1.1.4",
+          "invenio-oaiserver<2.2.0,>=2.1.0",
+          "invenio-pidstore<1.3.0,>=1.2.3",
+          "invenio-records-rest<2.2.0,>=2.1.0",
+          "invenio-records-ui<1.3.0,>=1.2.0",
+          "invenio-records<2.1.0,>=2.0.0",
+          "invenio-search-ui<3.0.0,>=2.2.0",
+          "invenio-files-rest<1.4.0,>=1.3.3",
+          "invenio-previewer<1.4.0,>=1.3.6",
+          "invenio-records-files<1.3.0,>=1.2.1",
+          "invenio-rdm-records<2.0.0,>=1.1.0",
+          "CairoSVG<3.0.0,>=2.5.2",
+          "invenio-pages<1.1.0,>=1.0.0a5"
+        ],
+        "extras_require": {
+          "s3": [
+            "invenio-s3~=1.0.5"
+          ],
+          "tests": [
+            "pytest-black>=0.3.0",
+            "pytest-invenio<3.0.0,>=2.1.0",
+            "Sphinx>=4.5.0"
+          ],
+          "elasticsearch7": [
+            "invenio-search[elasticsearch7]<3.0.0,>=2.1.0"
+          ],
+          "opensearch1": [
+            "invenio-search[opensearch1]<3.0.0,>=2.1.0"
+          ],
+          "opensearch2": [
+            "invenio-search[opensearch2]<3.0.0,>=2.1.0"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "ioe": {
     "0.0.1": {
@@ -49070,60 +49259,7 @@
       "39": "37",
       "310": "37"
     },
-    "0.0.43.dev7": {
-      "37": {
-        "install_requires": [
-          "pyfiglet==0.8.post1",
-          "jina[perf]==3.12.0",
-          "jina-hubble-sdk>=0.15.5",
-          "pyfiglet==0.8.post1",
-          "jina[perf]==3.12.0",
-          "cowsay==4.0",
-          "yaspin==2.1.0",
-          "py-cpuinfo==8.0.0",
-          "kubernetes==23.3.0",
-          "prompt_toolkit==3.0.28",
-          "docarray[common,qdrant]==0.19.0",
-          "docker==5.0.3",
-          "requests==2.27.1",
-          "pydub==0.25.1",
-          "nltk==3.7",
-          "jcloud==0.1.6",
-          "python-dotenv",
-          "boto3",
-          "dask[distributed]==2022.2.0",
-          "elasticsearch==8.4.1",
-          "pydantic==1.9.2"
-        ],
-        "setup_requires": [
-          "setuptools>=18.0",
-          "wheel"
-        ],
-        "extras_require": {
-          "test": [
-            "pytest",
-            "pytest-timeout",
-            "pytest-mock",
-            "pytest-cov",
-            "pytest-repeat",
-            "pytest-reraise",
-            "pytest-custom_exit_code",
-            "mock",
-            "black==22.3.0",
-            "pytest-split==0.8.0",
-            "fast-autocomplete==0.9.0",
-            "Levenshtein==0.20.5",
-            "python-Levenshtein==0.20.5",
-            "better_profanity==0.7.0",
-            "paddlepaddle==2.4.0rc0",
-            "paddleocr>=2.0.1"
-          ]
-        }
-      },
-      "38": "37",
-      "39": "37",
-      "310": "37"
-    },
+    "0.0.43.dev7": "0.0.43.dev4",
     "0.0.39.dev12": {
       "37": {
         "install_requires": [
@@ -49284,6 +49420,113 @@
             "paddlepaddle==2.4.0rc0",
             "paddleocr>=2.0.1",
             "filetype"
+          ]
+        }
+      },
+      "38": "37",
+      "39": "37",
+      "310": "37"
+    },
+    "0.0.41.dev3": {
+      "37": {
+        "install_requires": [
+          "pyfiglet==0.8.post1",
+          "jina[perf]==3.12.0",
+          "docarray[common,qdrant]==0.17.0",
+          "jina-hubble-sdk>=0.15.5",
+          "finetuner==0.6.3",
+          "cowsay==4.0",
+          "yaspin==2.1.0",
+          "py-cpuinfo==8.0.0",
+          "kubernetes==23.3.0",
+          "prompt_toolkit==3.0.28",
+          "docker==5.0.3",
+          "requests==2.27.1",
+          "pydub==0.25.1",
+          "nltk==3.7",
+          "jcloud==0.1.6",
+          "python-dotenv",
+          "boto3",
+          "dask[distributed]==2022.2.0",
+          "elasticsearch==8.4.1",
+          "pydantic==1.9.2"
+        ],
+        "setup_requires": [
+          "setuptools>=18.0",
+          "wheel"
+        ],
+        "extras_require": {
+          "test": [
+            "pytest",
+            "pytest-timeout",
+            "pytest-mock",
+            "pytest-cov",
+            "pytest-repeat",
+            "pytest-reraise",
+            "pytest-custom_exit_code",
+            "mock",
+            "black==22.3.0",
+            "pytest-split==0.8.0",
+            "fast-autocomplete==0.9.0",
+            "Levenshtein==0.20.5",
+            "python-Levenshtein==0.20.5",
+            "better_profanity==0.7.0",
+            "paddlepaddle==2.4.0rc0",
+            "paddleocr>=2.0.1"
+          ]
+        }
+      },
+      "38": "37",
+      "39": "37",
+      "310": "37"
+    },
+    "0.0.43.dev4": {
+      "37": {
+        "install_requires": [
+          "pyfiglet==0.8.post1",
+          "jina[perf]==3.12.0",
+          "jina-hubble-sdk>=0.15.5",
+          "pyfiglet==0.8.post1",
+          "jina[perf]==3.12.0",
+          "cowsay==4.0",
+          "yaspin==2.1.0",
+          "py-cpuinfo==8.0.0",
+          "kubernetes==23.3.0",
+          "prompt_toolkit==3.0.28",
+          "docarray[common,qdrant]==0.19.0",
+          "docker==5.0.3",
+          "requests==2.27.1",
+          "pydub==0.25.1",
+          "nltk==3.7",
+          "jcloud==0.1.6",
+          "python-dotenv",
+          "boto3",
+          "dask[distributed]==2022.2.0",
+          "elasticsearch==8.4.1",
+          "pydantic==1.9.2"
+        ],
+        "setup_requires": [
+          "setuptools>=18.0",
+          "wheel"
+        ],
+        "extras_require": {
+          "test": [
+            "pytest",
+            "pytest-timeout",
+            "pytest-mock",
+            "pytest-cov",
+            "pytest-repeat",
+            "pytest-reraise",
+            "pytest-custom_exit_code",
+            "mock",
+            "black==22.3.0",
+            "pytest-split==0.8.0",
+            "fast-autocomplete==0.9.0",
+            "Levenshtein==0.20.5",
+            "python-Levenshtein==0.20.5",
+            "better_profanity==0.7.0",
+            "paddlepaddle==2.4.0rc0",
+            "paddleocr>=2.0.1"
           ]
         }
       },
@@ -50540,7 +50783,8 @@
       "38": "36",
       "39": "36",
       "310": "36"
-    }
+    },
+    "4.2.0": "4.0.0"
   },
   "ktcal2": {
     "0.1.0": {
@@ -89037,6 +89281,22 @@
     "0.5": "0.1",
     "0.6": "0.1"
   },
+  "sonnencharger": {
+    "0.1.0": {
+      "36": {
+        "install_requires": [
+          "pymodbus"
+        ],
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
+  },
   "sopel-modules.stats": {
     "0.1": {
       "27": {
@@ -91797,7 +92057,8 @@
     "3.0.792": "3.0.252",
     "3.0.785": "3.0.252",
     "3.0.804": "3.0.252",
-    "3.0.813": "3.0.252"
+    "3.0.813": "3.0.252",
+    "3.0.814": "3.0.252"
   },
   "tensorflow-determinism": {
     "0.1.0": {
