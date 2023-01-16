@@ -12454,6 +12454,20 @@
     "1.4.0": "1.1.0",
     "2.0.0": "1.1.0"
   },
+  "babichjacob-option-and-result": {
+    "0.1.1": {
+      "27": {
+        "python_requires": [
+          ">=3.10"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
+  },
   "baekjoonapi": {
     "0.1.0": {
       "27": {
@@ -22469,7 +22483,24 @@
       "39": "27",
       "310": "27"
     },
-    "0.1.0a6": "0.1.0"
+    "0.1.0a6": "0.1.0",
+    "0.2.0": {
+      "27": {
+        "install_requires": [
+          "PyYAML<7.0,>=6.0",
+          "click<9.0.0,>=8.1.3",
+          "tqdm<5.0.0,>=4.64.0"
+        ],
+        "python_requires": [
+          ">=3.9,<3.12"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "claude-tools": {
     "0.1.0a1": {
@@ -23486,7 +23517,45 @@
     "1.41.2": "1.37.0",
     "1.42.0": "1.37.0",
     "1.42.1": "1.37.0",
-    "1.42.2": "1.37.0"
+    "1.42.2": "1.37.0",
+    "1.44.0": {
+      "36": {
+        "install_requires": [
+          "scipy",
+          "netCDF4",
+          "matplotlib",
+          "requests",
+          "cloudnetpy_qc>=1.4.2",
+          "scikit-image",
+          "rpgpy>=0.12.1"
+        ],
+        "setup_requires": [
+          "wheel"
+        ],
+        "extras_require": {
+          "test": [
+            "pytest",
+            "pytest-flakefinder",
+            "pylint",
+            "mypy",
+            "types-requests"
+          ],
+          "dev": [
+            "pre-commit"
+          ],
+          "extras": [
+            "voodoonet>=0.1.1"
+          ]
+        },
+        "python_requires": [
+          ">=3.10"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "cmds.py": {
     "0.111": {
@@ -38194,13 +38263,15 @@
       "310": "27"
     },
     "0.0.2": "0.0.1",
-    "0.0.13": {
+    "0.0.13": "0.0.11",
+    "0.0.10": "0.0.9",
+    "0.0.15": "0.0.11",
+    "0.0.9": {
       "27": {
         "install_requires": [
           "diskcache",
           "openai",
-          "pybars3",
-          "parsimonious"
+          "pybars3"
         ]
       },
       "36": "27",
@@ -38209,14 +38280,13 @@
       "39": "27",
       "310": "27"
     },
-    "0.0.10": "0.0.9",
-    "0.0.15": "0.0.13",
-    "0.0.9": {
+    "0.0.11": {
       "27": {
         "install_requires": [
           "diskcache",
           "openai",
-          "pybars3"
+          "pybars3",
+          "parsimonious"
         ]
       },
       "36": "27",
@@ -41932,6 +42002,76 @@
           "pesummary",
           "pygcn>=1.0.1",
           "python-ligo-lw<2.0.0,>=1.8.3",
+          "safe-netrc",
+          "sentry-sdk[flask,tornado]",
+          "service-identity",
+          "voeventlib>=1.2",
+          "werkzeug>=0.15.0",
+          "zstandard"
+        ],
+        "extras_require": {
+          "test": [
+            "fastavro<2.0.0,>=1.6.1",
+            "pytest-celery",
+            "pytest-cov",
+            "pytest-flask",
+            "pytest-socket"
+          ],
+          "doc": [
+            "pep517",
+            "sphinx>=4.0"
+          ]
+        },
+        "python_requires": [
+          ">=3.8,<3.11"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "2.0.2": {
+      "27": {
+        "install_requires": [
+          "GWSkyNet>=2.2.1",
+          "RIFT>=0.0.15.7",
+          "adc-streaming>=2.2.0",
+          "astropy>=4.3.1",
+          "bilby-pipe>=1.0.7",
+          "celery[redis]>=5.1",
+          "click>=7",
+          "comet",
+          "confluent-kafka<2.0.0,>=1.9.2",
+          "dnspython",
+          "flask-caching",
+          "flask>=2.2",
+          "gracedb-sdk>=0.2.0",
+          "gwdatafind>=1.1.1",
+          "gwpy>=2.0.1",
+          "healpy",
+          "hop-client>=0.7.0",
+          "igwn-alert>=0.2.2",
+          "imapclient",
+          "importlib-metadata",
+          "jinja2>=2.11.2",
+          "lalsuite>=6.82",
+          "ligo-followup-advocate>=1.1.6",
+          "ligo-gracedb>=2.7.5",
+          "ligo-raven<3.0,>=2.0",
+          "ligo-segments",
+          "ligo.em-bright==1.1.0.dev1",
+          "ligo.skymap>=1.0.4",
+          "lscsoft-glue",
+          "lxml",
+          "numpy",
+          "p-astro>=1.0.1",
+          "pesummary",
+          "pygcn>=1.0.1",
+          "python-ligo-lw<2.0.0,>=1.8.3",
+          "rapid-pe>=0.0.2",
+          "rapidpe-rift-pipe>=0.0.6",
           "safe-netrc",
           "sentry-sdk[flask,tornado]",
           "service-identity",
@@ -48395,7 +48535,8 @@
     "1.17.4.dev27": "1.17.1",
     "1.17.4.dev34": "1.17.1",
     "1.18.1.dev2": "1.17.1",
-    "1.19.0": "1.17.1"
+    "1.19.0": "1.17.1",
+    "1.18.1.dev21": "1.17.1"
   },
   "lavaapi": {
     "1.0.0": {
@@ -65063,7 +65204,15 @@
       "310": "36"
     },
     "0.0.9": "0.0.8",
-    "0.0.10": "0.0.8"
+    "0.0.10": "0.0.8",
+    "0.0.12.3": {
+      "27": {},
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "pyfrbcatdb": {
     "1.0.0": {
@@ -66434,7 +66583,8 @@
     "0.0.101672834222": "0.0.101665054670",
     "0.0.101670674252": "0.0.101665054670",
     "0.0.101669983058": "0.0.101665054670",
-    "0.0.101671019862": "0.0.101665054670"
+    "0.0.101671019862": "0.0.101665054670",
+    "0.0.101669551031": "0.0.101665054670"
   },
   "pyreleaser-io": {
     "0.0.0": {
@@ -76682,7 +76832,8 @@
     "3.0.779": "3.0.251",
     "3.0.780": "3.0.251",
     "3.0.798": "3.0.251",
-    "3.0.788": "3.0.251"
+    "3.0.788": "3.0.251",
+    "3.0.781": "3.0.251"
   },
   "test-deploy-project": {
     "1.0.0": {
@@ -84554,6 +84705,29 @@
           ],
           "docs:python_version == \"2.7\"": [
             "mock"
+          ]
+        }
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "5.0.1": {
+      "27": {
+        "install_requires": [
+          "setuptools"
+        ],
+        "extras_require": {
+          "test": [
+            "zope.testrunner"
+          ],
+          "docs": [
+            "sphinx",
+            "repoze.sphinx.autointerface",
+            "zope.exceptions",
+            "zope.interface"
           ]
         }
       },
