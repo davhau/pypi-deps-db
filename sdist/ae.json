@@ -2807,7 +2807,8 @@
     "2.23.0": "2.20.1",
     "2.23.1": "2.20.1",
     "2.24.0": "2.20.1",
-    "2.24.1": "2.20.1"
+    "2.24.1": "2.20.1",
+    "2.26.1": "2.20.1"
   },
   "auto-self-params": {
     "0.0.1": {
@@ -9558,6 +9559,20 @@
       "310": "27"
     }
   },
+  "botocore-a-la-carte-resourcegroupstaggingapi": {
+    "1.29.46": {
+      "27": {
+        "python_requires": [
+          ">= 3.7"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
+  },
   "bottleapp": {
     "0.0.1": {
       "27": {
@@ -13876,6 +13891,36 @@
           "csle-collector>=0.1.0",
           "ryu>=4.34",
           "eventlet>=0.30.2",
+          "confluent-kafka>=1.9.2"
+        ],
+        "extras_require": {
+          "testing": [
+            "pytest>=6.0",
+            "pytest-cov>=2.0",
+            "pytest-mock>=3.6.0",
+            "mypy>=0.910",
+            "flake8>=3.9",
+            "tox>=3.24",
+            "sphinx>=5.3.0",
+            "sphinxcontrib-napoleon>=0.7",
+            "sphinx-rtd-theme>=1.1.1"
+          ]
+        },
+        "python_requires": [
+          ">=3.8"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "0.0.29": {
+      "27": {
+        "install_requires": [
+          "ryu>=4.34",
+          "eventlet>=0.33.2",
           "confluent-kafka>=1.9.2"
         ],
         "extras_require": {
@@ -49385,7 +49430,7 @@
       "39": "37",
       "310": "37"
     },
-    "0.0.43.dev7": "0.0.43.dev3",
+    "0.0.43.dev7": "0.0.43.dev2",
     "0.0.39.dev12": "0.0.39",
     "0.0.44.dev16": "0.0.46.dev4",
     "0.0.39.dev3": "0.0.39.dev2",
@@ -49554,7 +49599,7 @@
       "39": "37",
       "310": "37"
     },
-    "0.0.43.dev4": "0.0.43.dev3",
+    "0.0.43.dev4": "0.0.43.dev2",
     "0.0.39": {
       "37": {
         "install_requires": [
@@ -49719,60 +49764,7 @@
     "0.0.39.dev10": "0.0.39",
     "0.0.40.dev13": "0.0.40",
     "0.0.44.dev10": "0.0.43",
-    "0.0.43.dev3": {
-      "37": {
-        "install_requires": [
-          "pyfiglet==0.8.post1",
-          "jina[perf]==3.12.0",
-          "jina-hubble-sdk>=0.15.5",
-          "pyfiglet==0.8.post1",
-          "jina[perf]==3.12.0",
-          "cowsay==4.0",
-          "yaspin==2.1.0",
-          "py-cpuinfo==8.0.0",
-          "kubernetes==23.3.0",
-          "prompt_toolkit==3.0.28",
-          "docarray[common,qdrant]==0.19.0",
-          "docker==5.0.3",
-          "requests==2.27.1",
-          "pydub==0.25.1",
-          "nltk==3.7",
-          "jcloud==0.1.6",
-          "python-dotenv",
-          "boto3",
-          "dask[distributed]==2022.2.0",
-          "elasticsearch==8.4.1",
-          "pydantic==1.9.2"
-        ],
-        "setup_requires": [
-          "setuptools>=18.0",
-          "wheel"
-        ],
-        "extras_require": {
-          "test": [
-            "pytest",
-            "pytest-timeout",
-            "pytest-mock",
-            "pytest-cov",
-            "pytest-repeat",
-            "pytest-reraise",
-            "pytest-custom_exit_code",
-            "mock",
-            "black==22.3.0",
-            "pytest-split==0.8.0",
-            "fast-autocomplete==0.9.0",
-            "Levenshtein==0.20.5",
-            "python-Levenshtein==0.20.5",
-            "better_profanity==0.7.0",
-            "paddlepaddle==2.4.0rc0",
-            "paddleocr>=2.0.1"
-          ]
-        }
-      },
-      "38": "37",
-      "39": "37",
-      "310": "37"
-    },
+    "0.0.43.dev3": "0.0.43.dev2",
     "0.0.49.dev12": {
       "37": {
         "install_requires": [
@@ -49820,6 +49812,61 @@
             "paddlepaddle==2.4.0rc0",
             "paddleocr>=2.0.1",
             "filetype"
+          ]
+        }
+      },
+      "38": "37",
+      "39": "37",
+      "310": "37"
+    },
+    "0.0.41.dev7": "0.0.41.dev3",
+    "0.0.43.dev2": {
+      "37": {
+        "install_requires": [
+          "pyfiglet==0.8.post1",
+          "jina[perf]==3.12.0",
+          "jina-hubble-sdk>=0.15.5",
+          "pyfiglet==0.8.post1",
+          "jina[perf]==3.12.0",
+          "cowsay==4.0",
+          "yaspin==2.1.0",
+          "py-cpuinfo==8.0.0",
+          "kubernetes==23.3.0",
+          "prompt_toolkit==3.0.28",
+          "docarray[common,qdrant]==0.19.0",
+          "docker==5.0.3",
+          "requests==2.27.1",
+          "pydub==0.25.1",
+          "nltk==3.7",
+          "jcloud==0.1.6",
+          "python-dotenv",
+          "boto3",
+          "dask[distributed]==2022.2.0",
+          "elasticsearch==8.4.1",
+          "pydantic==1.9.2"
+        ],
+        "setup_requires": [
+          "setuptools>=18.0",
+          "wheel"
+        ],
+        "extras_require": {
+          "test": [
+            "pytest",
+            "pytest-timeout",
+            "pytest-mock",
+            "pytest-cov",
+            "pytest-repeat",
+            "pytest-reraise",
+            "pytest-custom_exit_code",
+            "mock",
+            "black==22.3.0",
+            "pytest-split==0.8.0",
+            "fast-autocomplete==0.9.0",
+            "Levenshtein==0.20.5",
+            "python-Levenshtein==0.20.5",
+            "better_profanity==0.7.0",
+            "paddlepaddle==2.4.0rc0",
+            "paddleocr>=2.0.1"
           ]
         }
       },
@@ -51110,7 +51157,24 @@
     "4.2.0": "4.0.0",
     "4.0.1": "4.0.0",
     "4.0.5": "4.0.0",
-    "4.0.3": "4.0.0"
+    "4.0.3": "4.0.0",
+    "4.3.0": {
+      "36": {
+        "install_requires": [
+          "emoji==1.2.0",
+          "regex",
+          "pecab",
+          "networkx"
+        ],
+        "python_requires": [
+          ">=3"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "ktcal2": {
     "0.1.0": {
@@ -98424,6 +98488,16 @@
     "0.2.0": "0.1.0",
     "0.3.0": "0.1.0",
     "0.3.1": "0.1.0"
+  },
+  "wotapipy": {
+    "0.1": {
+      "27": {},
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "wsgirpc": {
     "0.0.1": {
