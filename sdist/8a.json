@@ -11264,7 +11264,8 @@
       "39": "27",
       "310": "27"
     },
-    "1.29.50": "1.29.42"
+    "1.29.50": "1.29.42",
+    "1.29.46": "1.29.42"
   },
   "botocore-a-la-carte-devicefarm": {
     "1.29.47": "1.29.42",
@@ -11282,7 +11283,8 @@
     },
     "1.29.46": "1.29.42",
     "1.29.44": "1.29.42",
-    "1.29.49": "1.29.42"
+    "1.29.49": "1.29.42",
+    "1.29.43": "1.29.42"
   },
   "botocore-a-la-carte-fis": {
     "1.29.42": {
@@ -21505,7 +21507,8 @@
     }
   },
   "django-migrate-or-rollback": {
-    "0.0.2": {
+    "0.0.2": "0.0.1",
+    "0.0.1": {
       "27": {
         "install_requires": [
           "django>=2.0"
@@ -26004,7 +26007,8 @@
       "38": "36",
       "39": "36",
       "310": "36"
-    }
+    },
+    "2.0.1": "2.0.0"
   },
   "fanxiaoxi": {
     "1.0.3": {
@@ -34284,7 +34288,8 @@
     "7.0.4": "0.2.0",
     "7.0.5": "0.2.0",
     "7.1.0": "0.2.0",
-    "7.1.1": "0.2.0"
+    "7.1.1": "0.2.0",
+    "7.1.2": "0.2.0"
   },
   "kongconsumer": {
     "0.0.1": {
@@ -34388,7 +34393,8 @@
       "38": "27",
       "39": "27",
       "310": "27"
-    }
+    },
+    "1.2": "1.1"
   },
   "lager-cli": {
     "0.1.16": {
@@ -34926,7 +34932,8 @@
     "0.1.158": "0.1.150",
     "0.1.161": "0.1.150",
     "0.1.166": "0.1.150",
-    "0.1.159": "0.1.150"
+    "0.1.159": "0.1.150",
+    "0.1.165": "0.1.150"
   },
   "lambda-cron": {
     "0.2.1": {
@@ -35620,7 +35627,41 @@
       "39": "37",
       "310": "37"
     },
-    "1.0.2": "1.0.1"
+    "1.0.2": "1.0.1",
+    "1.0.3": {
+      "37": {
+        "install_requires": [
+          "numpy<2",
+          "scipy<2"
+        ],
+        "extras_require": {
+          "tests": [
+            "matplotlib<4",
+            "pytest",
+            "coverage[toml]"
+          ],
+          "lint_type_checks": [
+            "pre-commit"
+          ],
+          "docs": [
+            "matplotlib<4",
+            "sphinx<5,>=3",
+            "sphinx_gallery<1",
+            "sphinx-copybutton<1",
+            "sphinx-inline-tabs",
+            "sphinxcontrib-bibtex<3",
+            "myst-parser<1",
+            "furo"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "38": "37",
+      "39": "37",
+      "310": "37"
+    }
   },
   "likee-downloader": {
     "2022.1.3.0": "1.5.5",
@@ -36433,76 +36474,8 @@
       "310": "36"
     },
     "2.8.0": "2.7.2",
-    "3.1.2": {
-      "36": {
-        "install_requires": [
-          "deprecated>=1.2",
-          "setuptools",
-          "packaging<23,>=21",
-          "typing_extensions"
-        ],
-        "extras_require": {
-          "redis": [
-            "redis<5.0.0,>3"
-          ],
-          "rediscluster": [
-            "redis>=4.2.0"
-          ],
-          "memcached": [
-            "pymemcache<5.0.0,>3"
-          ],
-          "mongodb": [
-            "pymongo<5,>4.1"
-          ],
-          "etcd": [
-            "etcd3"
-          ],
-          "async-redis": [],
-          "async-redis:python_version > \"3.7\"": [
-            "coredis<5,>=3.4.0"
-          ],
-          "async-memcached": [],
-          "async-memcached:python_version < \"3.11\"": [
-            "emcache>=0.6.1"
-          ],
-          "async-memcached:python_version >= \"3.11\"": [
-            "emcache>=1"
-          ],
-          "async-mongodb": [
-            "motor<4,>=3"
-          ],
-          "async-etcd": [
-            "aetcd"
-          ],
-          "all": [
-            "redis<5.0.0,>3",
-            "redis>=4.2.0",
-            "pymemcache<5.0.0,>3",
-            "pymongo<5,>4.1",
-            "etcd3",
-            "motor<4,>=3",
-            "aetcd"
-          ],
-          "all:python_version > \"3.7\"": [
-            "coredis<5,>=3.4.0"
-          ],
-          "all:python_version < \"3.11\"": [
-            "emcache>=0.6.1"
-          ],
-          "all:python_version >= \"3.11\"": [
-            "emcache>=1"
-          ]
-        },
-        "python_requires": [
-          ">=3.7"
-        ]
-      },
-      "37": "36",
-      "38": "36",
-      "39": "36",
-      "310": "36"
-    },
-    "3.1.3": "3.1.2",
+    "3.1.2": "3.1.0",
+    "3.1.3": "3.1.0",
     "2.7.2": {
       "36": {
         "install_requires": [
@@ -36695,7 +36668,78 @@
       "38": "36",
       "39": "36",
       "310": "36"
-    }
+    },
+    "3.1.0": {
+      "36": {
+        "install_requires": [
+          "deprecated>=1.2",
+          "setuptools",
+          "packaging<23,>=21",
+          "typing_extensions"
+        ],
+        "extras_require": {
+          "redis": [
+            "redis<5.0.0,>3"
+          ],
+          "rediscluster": [
+            "redis>=4.2.0"
+          ],
+          "memcached": [
+            "pymemcache<5.0.0,>3"
+          ],
+          "mongodb": [
+            "pymongo<5,>4.1"
+          ],
+          "etcd": [
+            "etcd3"
+          ],
+          "async-redis": [],
+          "async-redis:python_version > \"3.7\"": [
+            "coredis<5,>=3.4.0"
+          ],
+          "async-memcached": [],
+          "async-memcached:python_version < \"3.11\"": [
+            "emcache>=0.6.1"
+          ],
+          "async-memcached:python_version >= \"3.11\"": [
+            "emcache>=1"
+          ],
+          "async-mongodb": [
+            "motor<4,>=3"
+          ],
+          "async-etcd": [
+            "aetcd"
+          ],
+          "all": [
+            "redis<5.0.0,>3",
+            "redis>=4.2.0",
+            "pymemcache<5.0.0,>3",
+            "pymongo<5,>4.1",
+            "etcd3",
+            "motor<4,>=3",
+            "aetcd"
+          ],
+          "all:python_version > \"3.7\"": [
+            "coredis<5,>=3.4.0"
+          ],
+          "all:python_version < \"3.11\"": [
+            "emcache>=0.6.1"
+          ],
+          "all:python_version >= \"3.11\"": [
+            "emcache>=1"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "3.1.1": "3.1.0",
+    "3.1.4": "3.1.0"
   },
   "linda2pdf": {
     "0.0.0": {
@@ -43049,6 +43093,25 @@
       "38": "27",
       "39": "27",
       "310": "27"
+    },
+    "1.0.0": {
+      "27": {
+        "install_requires": [
+          "numpy<1.24,>=1.20",
+          "GPy==1.10",
+          "scikit-learn",
+          "matplotlib",
+          "pytest"
+        ],
+        "python_requires": [
+          ">=3.8"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
     }
   },
   "mongo-drf-endpoint-logger": {
@@ -43984,7 +44047,8 @@
     "0.28": "0.27",
     "0.29": "0.27",
     "0.29.1": "0.27",
-    "0.29.2": "0.27"
+    "0.29.2": "0.27",
+    "0.29.3": "0.27"
   },
   "nepali-stemmer": {
     "0.0.1": {
@@ -44778,7 +44842,8 @@
       "39": "27",
       "310": "27"
     },
-    "0.2.2": {
+    "0.2.2": "0.2.1",
+    "0.2.1": {
       "27": {
         "install_requires": [
           "mcstatus<11.0.0,>=10.0.0",
@@ -44787,6 +44852,23 @@
         ],
         "python_requires": [
           ">=3.9,<4.0"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "0.2.3": {
+      "27": {
+        "install_requires": [
+          "mcstatus<11.0.0,>=10.0.0",
+          "nonebot-adapter-onebot<3.0.0,>=2.0.0",
+          "nonebot2<3.0.0,>=2.0.0rc1"
+        ],
+        "python_requires": [
+          ">=3.8,<4.0"
         ]
       },
       "36": "27",
@@ -47320,7 +47402,8 @@
     "1.2.1": "1.1.4",
     "1.2.6": "1.1.4",
     "1.2.4": "1.1.4",
-    "1.2.5": "1.1.4"
+    "1.2.5": "1.1.4",
+    "1.2.3": "1.1.4"
   },
   "perspective.py": {
     "0.1.0": {
@@ -58558,7 +58641,26 @@
       "310": "27"
     },
     "0.6.0b2": "0.5.0",
-    "0.6.0b4": "0.5.0"
+    "0.6.0b4": "0.5.0",
+    "0.4.0": {
+      "27": {
+        "install_requires": [
+          "click-default-group<2.0.0,>=1.2.2",
+          "numpy<2.0.0,>=1.22.1",
+          "sdss-clu<2.0.0,>=1.4.0",
+          "sdssdb<0.6.0,>=0.5.5",
+          "sdsstools<0.5.0,>=0.4.0"
+        ],
+        "python_requires": [
+          ">=3.9,<4.0"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "seamester": {
     "1.2": {
@@ -58716,7 +58818,8 @@
     },
     "1.2.0": "1.1.1",
     "1.3.0": "1.1.1",
-    "1.4.0": "1.1.1"
+    "1.4.0": "1.1.1",
+    "1.3.1": "1.1.1"
   },
   "seo-tester6": {
     "2.0.5": {
@@ -64417,6 +64520,21 @@
       "38": "27",
       "39": "27",
       "310": "27"
+    },
+    "2.0.8": "2.0.1",
+    "2.0.9": {
+      "27": {
+        "install_requires": [
+          "pytest",
+          "pytest-xdist",
+          "testit-python-commons==2.0.9"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
     }
   },
   "testobject": {
@@ -65017,7 +65135,15 @@
     "0.8.1": "0.8.0",
     "0.8.3": "0.8.0",
     "0.8.5": "0.8.0",
-    "0.8.6": "0.8.0"
+    "0.8.6": "0.8.0",
+    "0.8.7": {
+      "27": {},
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "tracktime": {
     "0.1.1": {
@@ -65980,7 +66106,8 @@
       "310": "27"
     },
     "0.1.13": "0.1.9",
-    "0.1.14": "0.1.9"
+    "0.1.14": "0.1.9",
+    "0.1.18": "0.1.17"
   },
   "unconcealment": {
     "0.5.0": {
@@ -67436,6 +67563,64 @@
           "coreapi>=2.3.3",
           "packageurl-python>=0.10.5rc1",
           "univers>=30.9.0",
+          "license-expression>=21.6.14",
+          "binaryornot>=0.4.4",
+          "saneyaml>=0.5.2",
+          "beautifulsoup4>=4.9.3",
+          "python-dateutil>=2.8.1",
+          "toml>=0.10.2",
+          "lxml>=4.6.4",
+          "defusedxml>=0.7.1",
+          "Markdown>=3.3.0",
+          "dateparser>=1.1.1",
+          "cvss>=2.4",
+          "GitPython>=3.1.17",
+          "requests>=2.25.1",
+          "fetchcode>=0.2.0"
+        ],
+        "extras_require": {
+          "dev": [
+            "pycodestyle>=2.8.0",
+            "black>=22.3.0",
+            "isort>=5.10.1",
+            "doc8>=0.11.1",
+            "Sphinx>=4.5.0",
+            "sphinx_rtd_theme>=1.0.0",
+            "sphinxcontrib-django2>=1.5",
+            "pytest>=7.0.1",
+            "pytest-django>=4.5.2",
+            "freezegun>=1.1.0",
+            "docker-compose",
+            "ipython==8.0.1",
+            "commoncode",
+            "django-debug-toolbar"
+          ]
+        },
+        "python_requires": [
+          ">=3.8"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "31.1.1": {
+      "27": {
+        "install_requires": [
+          "Django>=4.0.0",
+          "psycopg2-binary>=2.8.6",
+          "djangorestframework>=3.12.4",
+          "django-filter>=2.4.0",
+          "django-widget-tweaks>=1.4.8",
+          "django-crispy-forms>=1.10.0",
+          "django-environ>=0.8.0",
+          "gunicorn>=20.1.0",
+          "drf-spectacular[sidecar]>=0.24.2",
+          "coreapi>=2.3.3",
+          "packageurl-python>=0.10.5rc1",
+          "univers>=30.9.1",
           "license-expression>=21.6.14",
           "binaryornot>=0.4.4",
           "saneyaml>=0.5.2",
