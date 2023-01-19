@@ -1970,7 +1970,24 @@
     "1.8.14": "1.8.11",
     "1.8.12": "1.8.11",
     "1.8.15": "1.8.11",
-    "1.8.16": "1.8.11"
+    "1.8.16": "1.8.11",
+    "1.8.17": {
+      "36": {
+        "install_requires": [
+          "alibabacloud_tea_util<1.0.0,>=0.3.8",
+          "alibabacloud_tea_openapi<1.0.0,>=0.3.6",
+          "alibabacloud_openapi_util<1.0.0,>=0.2.0",
+          "alibabacloud_endpoint_util<1.0.0,>=0.0.3"
+        ],
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "alice-blue": {
     "0.0.2": {
@@ -2212,6 +2229,22 @@
       "310": "36"
     },
     "1.0.3": "1.0.2"
+  },
+  "apache-airflow-provider-alembic": {
+    "0.1.2": {
+      "36": {
+        "install_requires": [
+          "alembic"
+        ],
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "apache-airflow-providers-elasticsearch": {
     "1.0.0": {
@@ -15798,6 +15831,33 @@
     "6.0.0": "1.0.0",
     "6.1.0": "1.0.0"
   },
+  "blazetest-beta": {
+    "0.0.0.1": {
+      "27": {
+        "install_requires": [
+          "click",
+          "pytest",
+          "PyYAML",
+          "dacite",
+          "boto3",
+          "licensing",
+          "pulumi",
+          "pulumi-aws",
+          "pulumi-docker"
+        ],
+        "extras_require": {
+          ":python_version >= \"3.7\"": [
+            "pyopenssl>=23.0.0"
+          ]
+        }
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
+  },
   "blended-twitter-cards": {
     "1.0": {
       "27": {
@@ -19711,7 +19771,44 @@
       "39": "27",
       "310": "27"
     },
-    "1.1.58": "1.1.55"
+    "1.1.58": "1.1.55",
+    "1.1.60": {
+      "27": {
+        "install_requires": [
+          "attrs==21.4.0",
+          "botocore==1.29.1",
+          "boto3==1.26.1",
+          "elasticsearch==7.11.0",
+          "elasticsearch-dsl==7.4.0",
+          "myst-parser==0.17.0",
+          "pandas",
+          "PyGitHub==1.55",
+          "requests==2.27.1",
+          "sphinx==4.5.0",
+          "sphinx-rtd-theme==1.0.0",
+          "typing==3.7.4.3",
+          "typeguard==2.13.3",
+          "google-api-python-client==2.57.0",
+          "google-auth-httplib2==0.1.0",
+          "google-auth-oauthlib==0.5.2",
+          "python-ldap==3.4.2",
+          "SoftLayer==6.0.0",
+          "retry==0.9.2",
+          "azure"
+        ],
+        "setup_requires": [
+          "pytest",
+          "pytest-runner",
+          "wheel",
+          "coverage"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "cloud-lib": {
     "1.0.0": {
@@ -23374,7 +23471,8 @@
       "38": "27",
       "39": "27",
       "310": "27"
-    }
+    },
+    "0.2.0": "0.1.0"
   },
   "d3heatmap": {
     "0.1.0": {
@@ -28854,6 +28952,23 @@
       "310": "27"
     }
   },
+  "domain-name-label-indexes": {
+    "0.1.1": {
+      "27": {
+        "tests_require": [
+          "pytest>=3"
+        ],
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
+  },
   "dot-product": {
     "0.1": {
       "27": {
@@ -29061,7 +29176,8 @@
       "38": "27",
       "39": "27",
       "310": "27"
-    }
+    },
+    "0.4.5": "0.4.4"
   },
   "droblo": {
     "0.0.6": {
@@ -30938,6 +31054,75 @@
             "matplotlib>=3.3.4",
             "nbmake>=1.2.1",
             "nest-asyncio>=1.5.6",
+            "pymysql>=0.10.1",
+            "wheel>=0.37.1",
+            "scriv>=0.16.0"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "0.1.3": {
+      "36": {
+        "install_requires": [
+          "numpy<=1.23.5,>=1.19.5",
+          "opencv-python<4.6.0.66,>=4.5.4.60",
+          "pandas>=1.1.5",
+          "Pillow>=8.4.0",
+          "sqlalchemy>=1.4.0",
+          "sqlalchemy-utils>=0.36.6",
+          "lark>=1.0.0",
+          "pyyaml>=5.1",
+          "importlib-metadata<5.0",
+          "ray>=1.13.0",
+          "aenum>=2.2.0",
+          "torch>=1.10.0",
+          "torchvision>=0.11.1",
+          "faiss-cpu",
+          "facenet-pytorch>=2.5.2",
+          "easyocr>=1.5.0",
+          "ipython",
+          "yolov5"
+        ],
+        "extras_require": {
+          "dev": [
+            "numpy<=1.23.5,>=1.19.5",
+            "opencv-python<4.6.0.66,>=4.5.4.60",
+            "pandas>=1.1.5",
+            "Pillow>=8.4.0",
+            "sqlalchemy>=1.4.0",
+            "sqlalchemy-utils>=0.36.6",
+            "lark>=1.0.0",
+            "pyyaml>=5.1",
+            "importlib-metadata<5.0",
+            "ray>=1.13.0",
+            "aenum>=2.2.0",
+            "torch>=1.10.0",
+            "torchvision>=0.11.1",
+            "faiss-cpu",
+            "facenet-pytorch>=2.5.2",
+            "easyocr>=1.5.0",
+            "ipython",
+            "yolov5",
+            "black>=22.6.0",
+            "isort>=5.10.1",
+            "pytest>=6.1.2",
+            "pytest-cov>=2.11.1",
+            "pytest-virtualenv",
+            "coveralls>=3.0.1",
+            "mock>=4.0.3",
+            "flake8>=3.9.1",
+            "ipywidgets>=7.7.2",
+            "matplotlib>=3.3.4",
+            "nbmake>=1.2.1",
+            "nest-asyncio>=1.5.6",
+            "pytest-benchmark",
             "pymysql>=0.10.1",
             "wheel>=0.37.1",
             "scriv>=0.16.0"
@@ -41309,7 +41494,9 @@
       "310": "27"
     },
     "0.3": "0.2",
-    "0.4": "0.2"
+    "0.4": "0.2",
+    "0.5": "0.2",
+    "0.6": "0.2"
   },
   "kbatch-proxy": {
     "0.2.0": {
@@ -57063,6 +57250,23 @@
       "38": "36",
       "39": "36",
       "310": "36"
+    },
+    "0.2.0": {
+      "36": {
+        "install_requires": [
+          "gon<6.0,>=5.0.0",
+          "ground<9.0,>=8.1.0",
+          "networkx<3.0,>=2.8.8",
+          "sect<7.0,>=6.1.0"
+        ],
+        "python_requires": [
+          ">=3.8"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
     }
   },
   "poetry-publish": {
@@ -58792,7 +58996,8 @@
       "310": "36"
     },
     "1.4.0a0": "1.3.0",
-    "1.4.1": "1.4.0"
+    "1.4.1": "1.4.0",
+    "1.4.2a0": "1.4.0"
   },
   "pydmb": {
     "0.1.0": {
@@ -60169,7 +60374,8 @@
       "38": "27",
       "39": "27",
       "310": "27"
-    }
+    },
+    "0.2.0": "0.1.0"
   },
   "pytempmail": {
     "0.1": {
@@ -60507,7 +60713,8 @@
     "1.1.2": "1.1.0",
     "1.1.3": "1.1.0",
     "1.1.4": "1.1.0",
-    "1.1.5": "1.1.0"
+    "1.1.5": "1.1.0",
+    "1.1.6": "1.1.0"
   },
   "python-mpv-zws": {
     "0.1": {
@@ -65932,7 +66139,8 @@
       "310": "27"
     },
     "0.0.7": "0.0.0",
-    "0.0.1": "0.0.0"
+    "0.0.1": "0.0.0",
+    "0.0.5": "0.0.0"
   },
   "scicomap": {
     "0.1": {
