@@ -9581,7 +9581,9 @@
     "1.29.48": "1.29.19",
     "1.29.23": "1.29.19",
     "1.29.28": "1.29.19",
-    "1.29.39": "1.29.19"
+    "1.29.39": "1.29.19",
+    "1.29.34": "1.29.19",
+    "1.29.37": "1.29.19"
   },
   "botocore-a-la-carte-iotdeviceadvisor": {
     "1.29.48": "1.29.42",
@@ -9612,7 +9614,8 @@
       "38": "27",
       "39": "27",
       "310": "27"
-    }
+    },
+    "1.29.53": "1.29.42"
   },
   "bottleapp": {
     "0.0.1": {
@@ -11436,7 +11439,10 @@
     "1.0.279": "1.0.260",
     "1.0.289": "1.0.285",
     "1.0.252": "1.0.235",
-    "1.0.257": "1.0.235"
+    "1.0.257": "1.0.235",
+    "1.0.273": "1.0.260",
+    "1.0.296": "1.0.285",
+    "1.0.298": "1.0.285"
   },
   "certbot-cwebroot": {
     "0.1.0": {
@@ -14106,6 +14112,68 @@
       "27": {
         "install_requires": [
           "csle-collector>=0.0.118",
+          "ryu>=4.34",
+          "eventlet>=0.30.2",
+          "confluent-kafka>=1.9.2"
+        ],
+        "extras_require": {
+          "testing": [
+            "pytest>=6.0",
+            "pytest-cov>=2.0",
+            "pytest-mock>=3.6.0",
+            "mypy>=0.910",
+            "flake8>=3.9",
+            "tox>=3.24",
+            "sphinx>=5.3.0",
+            "sphinxcontrib-napoleon>=0.7",
+            "sphinx-rtd-theme>=1.1.1"
+          ]
+        },
+        "python_requires": [
+          ">=3.8"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "0.0.32": {
+      "27": {
+        "install_requires": [
+          "csle-collector>=0.0.106",
+          "ryu>=4.34",
+          "eventlet>=0.30.2",
+          "confluent-kafka>=1.9.2"
+        ],
+        "extras_require": {
+          "testing": [
+            "pytest>=6.0",
+            "pytest-cov>=2.0",
+            "pytest-mock>=3.6.0",
+            "mypy>=0.910",
+            "flake8>=3.9",
+            "tox>=3.24",
+            "sphinx>=5.3.0",
+            "sphinxcontrib-napoleon>=0.7",
+            "sphinx-rtd-theme>=1.1.1"
+          ]
+        },
+        "python_requires": [
+          ">=3.8"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "0.0.33": {
+      "27": {
+        "install_requires": [
+          "csle-collector>=0.0.107",
           "ryu>=4.34",
           "eventlet>=0.30.2",
           "confluent-kafka>=1.9.2"
@@ -22384,6 +22452,20 @@
           "easybuild-framework==4.6.2",
           "easybuild-easyblocks==4.6.2",
           "easybuild-easyconfigs==4.6.2"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "4.7.0": {
+      "27": {
+        "install_requires": [
+          "easybuild-framework==4.7.0",
+          "easybuild-easyblocks==4.7.0",
+          "easybuild-easyconfigs==4.7.0"
         ]
       },
       "36": "27",
@@ -49618,7 +49700,7 @@
     "0.0.42.dev5": "0.0.41.dev9",
     "0.0.43.dev7": "0.0.43.dev2",
     "0.0.39.dev12": "0.0.39",
-    "0.0.44.dev16": "0.0.46.dev4",
+    "0.0.44.dev16": "0.0.45",
     "0.0.39.dev3": "0.0.39.dev2",
     "0.0.43": {
       "37": {
@@ -49677,61 +49759,7 @@
       "310": "37"
     },
     "0.0.44.dev13": "0.0.43",
-    "0.0.46.dev4": {
-      "37": {
-        "install_requires": [
-          "pyfiglet==0.8.post1",
-          "jina[perf]==3.12.0",
-          "jina-hubble-sdk>=0.15.5",
-          "pyfiglet==0.8.post1",
-          "cowsay==4.0",
-          "yaspin==2.1.0",
-          "py-cpuinfo==8.0.0",
-          "kubernetes==23.3.0",
-          "prompt_toolkit==3.0.28",
-          "docarray[common]==0.19.0",
-          "docker==5.0.3",
-          "requests==2.27.1",
-          "pydub==0.25.1",
-          "nltk==3.7",
-          "jcloud==0.1.6",
-          "python-dotenv",
-          "boto3",
-          "dask[distributed]==2022.2.0",
-          "elasticsearch==8.4.1",
-          "pydantic==1.9.2",
-          "httpx==0.23.2"
-        ],
-        "setup_requires": [
-          "setuptools>=18.0",
-          "wheel"
-        ],
-        "extras_require": {
-          "test": [
-            "pytest",
-            "pytest-timeout",
-            "pytest-mock",
-            "pytest-cov",
-            "pytest-repeat",
-            "pytest-reraise",
-            "pytest-custom_exit_code",
-            "mock",
-            "black==22.3.0",
-            "pytest-split==0.8.0",
-            "fast-autocomplete==0.9.0",
-            "Levenshtein==0.20.5",
-            "python-Levenshtein==0.20.5",
-            "better_profanity==0.7.0",
-            "paddlepaddle==2.4.0rc0",
-            "paddleocr>=2.0.1",
-            "filetype"
-          ]
-        }
-      },
-      "38": "37",
-      "39": "37",
-      "310": "37"
-    },
+    "0.0.46.dev4": "0.0.45",
     "0.0.41.dev3": {
       "37": {
         "install_requires": [
@@ -50176,6 +50204,68 @@
       "38": "37",
       "39": "37",
       "310": "37"
+    },
+    "0.0.39.dev9": "0.0.39",
+    "0.0.40.dev14": "0.0.40",
+    "0.0.41.dev11": "0.0.41.dev9",
+    "0.0.41.dev6": "0.0.41.dev3",
+    "0.0.43.dev18": "0.0.43.dev13",
+    "0.0.43.dev5": "0.0.43.dev2",
+    "0.0.44.dev3": "0.0.43",
+    "0.0.45": {
+      "37": {
+        "install_requires": [
+          "pyfiglet==0.8.post1",
+          "jina[perf]==3.12.0",
+          "jina-hubble-sdk>=0.15.5",
+          "pyfiglet==0.8.post1",
+          "cowsay==4.0",
+          "yaspin==2.1.0",
+          "py-cpuinfo==8.0.0",
+          "kubernetes==23.3.0",
+          "prompt_toolkit==3.0.28",
+          "docarray[common]==0.19.0",
+          "docker==5.0.3",
+          "requests==2.27.1",
+          "pydub==0.25.1",
+          "nltk==3.7",
+          "jcloud==0.1.6",
+          "python-dotenv",
+          "boto3",
+          "dask[distributed]==2022.2.0",
+          "elasticsearch==8.4.1",
+          "pydantic==1.9.2",
+          "httpx==0.23.2"
+        ],
+        "setup_requires": [
+          "setuptools>=18.0",
+          "wheel"
+        ],
+        "extras_require": {
+          "test": [
+            "pytest",
+            "pytest-timeout",
+            "pytest-mock",
+            "pytest-cov",
+            "pytest-repeat",
+            "pytest-reraise",
+            "pytest-custom_exit_code",
+            "mock",
+            "black==22.3.0",
+            "pytest-split==0.8.0",
+            "fast-autocomplete==0.9.0",
+            "Levenshtein==0.20.5",
+            "python-Levenshtein==0.20.5",
+            "better_profanity==0.7.0",
+            "paddlepaddle==2.4.0rc0",
+            "paddleocr>=2.0.1",
+            "filetype"
+          ]
+        }
+      },
+      "38": "37",
+      "39": "37",
+      "310": "37"
     }
   },
   "jinja2-python-version": {
@@ -50233,6 +50323,19 @@
       "310": "27"
     },
     "1.0.2": "1.0.1"
+  },
+  "jisuan-lilun-daoyin": {
+    "2023.1.14.0": {
+      "36": {
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "jitcxde-common": {
     "0.1": {
@@ -77609,7 +77712,8 @@
       "38": "27",
       "39": "27",
       "310": "27"
-    }
+    },
+    "2.23.0": "2.21.0"
   },
   "rccar": {
     "1.0": {
@@ -92685,7 +92789,11 @@
     "3.0.782": "3.0.252",
     "3.0.796": "3.0.252",
     "3.0.804": "3.0.252",
-    "3.0.812": "3.0.252"
+    "3.0.812": "3.0.252",
+    "3.0.784": "3.0.252",
+    "3.0.786": "3.0.252",
+    "3.0.790": "3.0.252",
+    "3.0.799": "3.0.252"
   },
   "tencentcloud-sdk-python-ocr": {
     "3.0.252": {
@@ -93216,7 +93324,9 @@
     "3.0.781": "3.0.252",
     "3.0.790": "3.0.252",
     "3.0.800": "3.0.252",
-    "3.0.796": "3.0.252"
+    "3.0.796": "3.0.252",
+    "3.0.801": "3.0.252",
+    "3.0.809": "3.0.252"
   },
   "tensorflow-determinism": {
     "0.1.0": {
@@ -99784,7 +99894,8 @@
     }
   },
   "yesmaster": {
-    "3.0.1": {
+    "3.0.1": "2.9.0",
+    "2.9.0": {
       "27": {
         "python_requires": [
           ">=3.6,<4.0"
