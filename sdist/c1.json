@@ -1609,7 +1609,8 @@
     "1.0.9": "1.0.1",
     "1.0.8": "1.0.1",
     "1.0.11": "1.0.1",
-    "1.0.10": "1.0.1"
+    "1.0.10": "1.0.1",
+    "1.0.12": "1.0.1"
   },
   "aliyun-python-sdk-idrsservice": {
     "0.1.0": {
@@ -10467,7 +10468,10 @@
     "1.29.46": "1.29.43",
     "1.29.49": "1.29.43",
     "1.29.44": "1.29.43",
-    "1.29.52": "1.29.43"
+    "1.29.52": "1.29.43",
+    "1.29.47": "1.29.43",
+    "1.29.51": "1.29.43",
+    "1.29.53": "1.29.43"
   },
   "botocore-a-la-carte-ssm": {
     "1.29.44": "1.29.42",
@@ -10488,7 +10492,11 @@
     },
     "1.29.51": "1.29.42",
     "1.29.43": "1.29.42",
-    "1.29.49": "1.29.42"
+    "1.29.49": "1.29.42",
+    "1.29.46": "1.29.42",
+    "1.29.50": "1.29.42",
+    "1.29.52": "1.29.42",
+    "1.29.53": "1.29.42"
   },
   "bottle-renderer": {
     "0.1.1": {
@@ -15472,7 +15480,24 @@
       "37": "27",
       "38": "27"
     },
-    "0.9.3": "0.9"
+    "0.9.3": "0.9",
+    "0.9.4": {
+      "27": {
+        "install_requires": [
+          "iniparse>=0.5"
+        ],
+        "setup_requires": [
+          "setuptools>=44",
+          "wheel",
+          "setuptools_scm[toml]>=3.4.3"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "crypt4ghfs": {
     "1.0": {
@@ -15775,6 +15800,14 @@
       "38": "36",
       "39": "36",
       "310": "36"
+    },
+    "0.0.1": {
+      "27": {},
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
     }
   },
   "dash-tools": {
@@ -20780,7 +20813,9 @@
       "39": "36",
       "310": "36"
     },
-    "1.1.17": "1.1.7"
+    "1.1.17": "1.1.7",
+    "1.1.10": "1.1.7",
+    "1.1.15": "1.1.7"
   },
   "educommon": {
     "2.17.0": {
@@ -32499,7 +32534,20 @@
       "37": "27",
       "38": "27"
     },
-    "2.0.2": "2.0.1"
+    "2.0.2": "2.0.1",
+    "2.1.0": {
+      "27": {
+        "install_requires": [
+          "argparse==1.4.0",
+          "antlr4-python3-runtime==4.11.1"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "kivycharts": {
     "0.0.8": {
@@ -34646,7 +34694,28 @@
       "310": "27"
     },
     "0.3.5": "0.1",
-    "0.4.7": "0.1"
+    "0.4.7": "0.1",
+    "0.4.9": {
+      "27": {
+        "install_requires": [
+          "celery==5.2.7",
+          "flower==1.2.0",
+          "importlib-metadata==4.13.0",
+          "mysqlclient==2.1.1",
+          "PyMySQL==1.0.2",
+          "pytz==2022.6",
+          "redis==4.4.0",
+          "SQLAlchemy==1.4.44",
+          "twilio==7.15.4",
+          "pika"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "lumipallo": {
     "0.0.2": {
@@ -36780,6 +36849,73 @@
     "0.0.4": "0.0.1",
     "0.0.5": "0.0.1"
   },
+  "mocx": {
+    "0.0.1a1": {
+      "27": {
+        "install_requires": [
+          "requests==2.*",
+          "httpx==0.*"
+        ],
+        "extras_require": {
+          "tests": [
+            "pytest==7.*",
+            "pytest-cov",
+            "pytest-html",
+            "pytest-sugar",
+            "hypothesis==6.*",
+            "packaging",
+            "pydantic==1.*,>=1.10.2"
+          ],
+          "docs": [
+            "mkdocs==1.*",
+            "mkdocstrings[python]==0.19.0",
+            "mkdocs-autorefs"
+          ],
+          "dev": [
+            "black",
+            "flake8",
+            "flake8-bugbear",
+            "flake8-comprehensions",
+            "flake8-pytest-style",
+            "flake8-simplify",
+            "importlib-metadata<5.0",
+            "autoflake",
+            "pyupgrade",
+            "isort",
+            "mypy[reports]",
+            "pydantic==1.*,>=1.10.2",
+            "pylint",
+            "pylint-pytest",
+            "rope",
+            "tox",
+            "myke[io]==0.0.1a7"
+          ],
+          ":python_version < \"3.10\"": [
+            "typing-extensions"
+          ],
+          "build": [
+            "build",
+            "setuptools",
+            "twine",
+            "wheel",
+            "myke[io]==0.0.1a7"
+          ],
+          "fastapi": [
+            "fastapi==0.*",
+            "starlette==0.*"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
+  },
   "modeldeploy-proxy-lib": {
     "0.1.0": {
       "27": {
@@ -36817,7 +36953,12 @@
     "0.2.1": "0.1.0"
   },
   "modelw-docker": {
-    "2022.10.0a1": {
+    "2022.10.0a1": "2023.1.0b3",
+    "2022.10.0a4": "2023.1.0b3",
+    "2022.10.0a3": "2023.1.0b3",
+    "2022.10.0a2": "2023.1.0b3",
+    "2022.10.0a5": "2023.1.0b3",
+    "2023.1.0b3": {
       "27": {
         "install_requires": [
           "colorama<0.5.0,>=0.4.6",
@@ -36838,10 +36979,7 @@
       "38": "27",
       "39": "27",
       "310": "27"
-    },
-    "2022.10.0a4": "2022.10.0a1",
-    "2022.10.0a3": "2022.10.0a1",
-    "2022.10.0a2": "2022.10.0a1"
+    }
   },
   "modrc": {
     "0.4": {
@@ -60152,6 +60290,58 @@
       "38": "27",
       "39": "27",
       "310": "27"
+    },
+    "0.5.0": {
+      "27": {
+        "install_requires": [
+          "snek5000>=0.9.0rc3"
+        ],
+        "setup_requires": [
+          "setuptools_scm"
+        ],
+        "extras_require": {
+          "hpc": [
+            "pytest",
+            "ipython",
+            "click"
+          ],
+          "docs": [
+            "sphinx",
+            "recommonmark",
+            "sphinx_rtd_theme",
+            "breathe",
+            "setuptools_scm"
+          ],
+          "tests": [
+            "pytest",
+            "ipython"
+          ],
+          "dev": [
+            "sphinx",
+            "recommonmark",
+            "sphinx_rtd_theme",
+            "breathe",
+            "setuptools_scm",
+            "pytest",
+            "ipython",
+            "click",
+            "colorlog",
+            "pdbpp",
+            "rope",
+            "python-language-server",
+            "fortran-language-server",
+            "pre-commit",
+            "twine",
+            "build",
+            "readme-renderer[md]"
+          ]
+        }
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
     }
   },
   "snirpinball": {
@@ -60751,6 +60941,24 @@
         ],
         "python_requires": [
           ">=3.6,<4.0"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "0.1.6": {
+      "27": {
+        "install_requires": [
+          "librespot<0.0.8,>=0.0.7",
+          "melodine<0.3.0,>=0.2.0",
+          "requests<3.0.0,>=2.28.1",
+          "spotipy<3.0.0,>=2.21.0"
+        ],
+        "python_requires": [
+          ">=3.8,<4.0"
         ]
       },
       "36": "27",
@@ -70295,6 +70503,40 @@
           ],
           "mysql": [
             "watchmen-storage-mysql==16.4.7"
+          ]
+        },
+        "python_requires": [
+          ">=3.9,<4.0"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "16.3.25": {
+      "27": {
+        "install_requires": [
+          "pycryptodome<4.0.0,>=3.14.1",
+          "watchmen-auth==16.3.25",
+          "watchmen-storage==16.3.25"
+        ],
+        "extras_require": {
+          "oracle": [
+            "watchmen-storage-oracle==16.3.25"
+          ],
+          "mongodb": [
+            "watchmen-storage-mongodb==16.3.25"
+          ],
+          "postgresql": [
+            "watchmen-storage-postgresql==16.3.25"
+          ],
+          "mssql": [
+            "watchmen-storage-mssql==16.3.25"
+          ],
+          "mysql": [
+            "watchmen-storage-mysql==16.3.25"
           ]
         },
         "python_requires": [
