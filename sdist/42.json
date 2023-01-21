@@ -44900,6 +44900,48 @@
       "38": "27",
       "39": "27",
       "310": "27"
+    },
+    "1.1.0": {
+      "27": {
+        "install_requires": [
+          "six>=1.14.0"
+        ],
+        "extras_require": {
+          "test:python_version < \"3.5\"": [
+            "pytest<5.0.0,>=4.3.1"
+          ],
+          "test:python_version >= \"3.7\" and python_version <= \"3.9\"": [
+            "pytest!=6.0,>=4.4.0"
+          ],
+          "test:python_version <= \"3.4\"": [
+            "virtualenv!=20.0.19,!=20.0.32,>=16.1.0"
+          ],
+          "test:python_version < \"3.4\" and sys_platform != \"win32\"": [
+            "pathlib2<3,>=2.3.3"
+          ],
+          "test:python_version >= \"3.5\"": [
+            "virtualenv>=20.1.0"
+          ],
+          "test:python_version >= \"3.10\"": [
+            "pytest>=6.2.5"
+          ],
+          "test:python_version >= \"3.5\" and python_version <= \"3.6\"": [
+            "pytest!=6.0,>=4.3.1"
+          ],
+          "test": [
+            "packaging>=17.0",
+            "pluggy>=0.13.1"
+          ]
+        },
+        "python_requires": [
+          ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
     }
   },
   "nocodb": {
@@ -52672,6 +52714,74 @@
             "pytest-pycodestyle",
             "pipdeptree",
             "oarepo[tests]~=3.3.186"
+          ]
+        },
+        "tests_require": [
+          "webtest",
+          "pytest-pycodestyle",
+          "pipdeptree"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "3.3.193": {
+      "36": {
+        "install_requires": [
+          "oarepo~=3.3.188",
+          "oarepo-heartbeat>=1.0.2",
+          "importlib_metadata",
+          "uwsgi>=2.0",
+          "uwsgi-tools>=1.1.1",
+          "uwsgitop>=0.11",
+          "wrapt<2.0.0,>=1.12.1"
+        ],
+        "setup_requires": [
+          "pytest-runner>=2.7",
+          "pytest-celery"
+        ],
+        "extras_require": {
+          "tests": [
+            "webtest",
+            "pytest-pycodestyle",
+            "pipdeptree",
+            "oarepo[tests]~=3.3.188"
+          ]
+        },
+        "tests_require": [
+          "webtest",
+          "pytest-pycodestyle",
+          "pipdeptree"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "3.5.66": {
+      "36": {
+        "install_requires": [
+          "oarepo~=3.5.72",
+          "oarepo-heartbeat>=1.0.2",
+          "importlib_metadata",
+          "uwsgi>=2.0",
+          "uwsgi-tools>=1.1.1",
+          "uwsgitop>=0.11",
+          "wrapt<2.0.0,>=1.12.1"
+        ],
+        "setup_requires": [
+          "pytest-runner>=2.7",
+          "pytest-celery"
+        ],
+        "extras_require": {
+          "tests": [
+            "webtest",
+            "pytest-pycodestyle",
+            "pipdeptree",
+            "oarepo[tests]~=3.5.72"
           ]
         },
         "tests_require": [
