@@ -3211,7 +3211,8 @@
     "22.8.0": "21.1.0",
     "22.9.0": "21.1.0",
     "22.10.0": "21.1.0",
-    "22.12.0": "21.1.0"
+    "22.12.0": "21.1.0",
+    "23.1.0": "21.1.0"
   },
   "assesspy": {
     "0.1": {
@@ -60395,7 +60396,8 @@
       "38": "27",
       "39": "27",
       "310": "27"
-    }
+    },
+    "0.5.1": "0.5.0"
   },
   "list-files-py": {
     "1.0.0.dev1": {
@@ -76399,6 +76401,24 @@
       "38": "36",
       "39": "36",
       "310": "36"
+    },
+    "3.0.4": {
+      "36": {
+        "install_requires": [
+          "resotolib==3.0.4",
+          "pyvmomi==7.0.3"
+        ],
+        "setup_requires": [
+          "pytest-runner"
+        ],
+        "tests_require": [
+          "pytest"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
     }
   },
   "restapirediscaching": {
@@ -85553,6 +85573,63 @@
           "setuptools",
           "typing-extensions",
           "swh.core[db,http]>=2.9",
+          "swh.storage>=0.11.1"
+        ],
+        "setup_requires": [
+          "setuptools-scm"
+        ],
+        "extras_require": {
+          "journal": [
+            "swh.journal"
+          ],
+          "testing": [
+            "pytest",
+            "pytest-mock",
+            "hypothesis>=3.11.0",
+            "swh.lister",
+            "swh.storage[testing]",
+            "types-click",
+            "types-flask",
+            "types-pyyaml",
+            "types-requests",
+            "types-Deprecated",
+            "swh.journal",
+            "plotille",
+            "simpy<4,>=3"
+          ],
+          "simulator": [
+            "plotille",
+            "simpy<4,>=3"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "1.5.0": {
+      "27": {
+        "install_requires": [
+          "attrs",
+          "attrs-strict",
+          "celery!=5.0.3,>=4.3",
+          "click",
+          "flask",
+          "humanize",
+          "importlib_metadata<5.0",
+          "pika>=1.1.0",
+          "psycopg2",
+          "pyyaml",
+          "requests",
+          "sentry-sdk",
+          "setuptools",
+          "typing-extensions",
+          "swh.core[db,http]>=2.19",
           "swh.storage>=0.11.1"
         ],
         "setup_requires": [

@@ -35387,10 +35387,12 @@
   },
   "kaiju-tools": {
     "py3": {
-      "2.0.3": {
-        "kaiju_tools-2.0.3-py3-none-any.whl": {
+      "2.0.6": {
+        "kaiju_tools-2.0.6-py3-none-any.whl": {
           "provides_extras": [
-            "dev"
+            "dev",
+            "docs",
+            "test"
           ],
           "requires_dist": [
             "aiohttp (==3.8.*)",
@@ -35399,8 +35401,8 @@
             "python-rapidjson (==1.9.*)",
             "msgpack (==1.0.*)",
             "fastjsonschema (==2.16.*)",
-            "uvloop (==0.17.*)",
             "aiohttp-cors (==0.7.*)",
+            "uvloop (==0.17.*) ; platform_system != \"Windows\"",
             "bump2version (==1.0.*) ; extra == 'dev'",
             "pyroma (==4.1) ; extra == 'dev'",
             "bandit (==1.7.*) ; extra == 'dev'",
@@ -35409,12 +35411,17 @@
             "pyproject-flake8 ; extra == 'dev'",
             "pre-commit (==2.21.*) ; extra == 'dev'",
             "pydocstyle (==6.2.*) ; extra == 'dev'",
-            "pytest (==7.2.*) ; extra == 'dev'",
-            "pytest-asyncio (==0.20) ; extra == 'dev'",
-            "docker (==6.0) ; extra == 'dev'",
             "setup-cfg-fmt (==2.2.*) ; extra == 'dev'",
             "restructuredtext-lint (==1.4.*) ; extra == 'dev'",
-            "pytest-timeout (==2.1.*) ; extra == 'dev'"
+            "tox (==3.28.*) ; extra == 'dev'",
+            "tox-pyenv (==1.1.*) ; extra == 'dev'",
+            "sphinx ; extra == 'docs'",
+            "python-docs-theme ; extra == 'docs'",
+            "pytest (==7.2.*) ; extra == 'test'",
+            "pytest-asyncio (==0.20) ; extra == 'test'",
+            "docker (==6.0) ; extra == 'test'",
+            "pytest-timeout (==2.1.*) ; extra == 'test'",
+            "pytest-aiohttp (==1.0.*) ; extra == 'test'"
           ],
           "requires_python": ">=3.8"
         }
@@ -47438,6 +47445,9 @@
           ],
           "requires_python": ">=3.10"
         }
+      },
+      "16.0.1.0.0.3": {
+        "odoo_addon_l10n_nl_bsn-16.0.1.0.0.3-py3-none-any.whl": "16.0.1.0.0.2@odoo_addon_l10n_nl_bsn-16.0.1.0.0.2-py3-none-any.whl"
       }
     }
   },
@@ -60621,6 +60631,9 @@
       },
       "0.0.5": {
         "rasamodelandtrain-0.0.5-py3-none-any.whl": "0.0.1@rasamodelandtrain-0.0.1-py3-none-any.whl"
+      },
+      "0.0.6": {
+        "rasamodelandtrain-0.0.6-py3-none-any.whl": "0.0.1@rasamodelandtrain-0.0.1-py3-none-any.whl"
       }
     }
   },
@@ -62955,6 +62968,14 @@
           "requires_dist": [
             "resotolib (==3.0.3)",
             "resoto-plugin-aws (==3.0.3)"
+          ]
+        }
+      },
+      "3.0.4": {
+        "resoto_plugin_cleanup_aws_loadbalancers-3.0.4-py3-none-any.whl": {
+          "requires_dist": [
+            "resotolib (==3.0.4)",
+            "resoto-plugin-aws (==3.0.4)"
           ]
         }
       }
@@ -73102,6 +73123,37 @@
           ],
           "requires_python": ">=3.8"
         }
+      },
+      "2.12.0.dev20230124": {
+        "tf_nightly_gpu-2.12.0.dev20230124-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": {
+          "requires_dist": [
+            "absl-py (>=1.0.0)",
+            "astunparse (>=1.6.0)",
+            "flatbuffers (>=2.0)",
+            "gast (<=0.4.0,>=0.2.1)",
+            "google-pasta (>=0.1.1)",
+            "grpcio (<2.0,>=1.24.3)",
+            "h5py (>=2.9.0)",
+            "jax (>=0.3.15)",
+            "keras-nightly (~=2.12.0.dev)",
+            "libclang (>=13.0.0)",
+            "numpy (<1.24,>=1.20)",
+            "opt-einsum (>=2.3.2)",
+            "packaging",
+            "protobuf (<3.20,>=3.9.2)",
+            "setuptools",
+            "six (>=1.12.0)",
+            "tb-nightly (~=2.12.0.a)",
+            "termcolor (>=1.1.0)",
+            "tf-estimator-nightly (~=2.12.0.dev)",
+            "typing-extensions (>=3.6.6)",
+            "wrapt (>=1.11.0)",
+            "tensorflow-io-gcs-filesystem (>=0.23.1) ; platform_machine != \"arm64\" or platform_system != \"Darwin\"",
+            "tf-nightly-cpu-aws (==2.12.0-dev20230124) ; platform_system == \"Linux\" and (platform_machine == \"arm64\" or platform_machine == \"aarch64\")",
+            "tf-nightly-intel (==2.12.0-dev20230124) ; platform_system == \"Windows\""
+          ],
+          "requires_python": ">=3.8"
+        }
       }
     },
     "cp311": {
@@ -74282,11 +74334,42 @@
           ],
           "requires_python": ">=3.8"
         }
+      },
+      "2.12.0.dev20230124": {
+        "tf_nightly_gpu-2.12.0.dev20230124-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": {
+          "requires_dist": [
+            "absl-py (>=1.0.0)",
+            "astunparse (>=1.6.0)",
+            "flatbuffers (>=2.0)",
+            "gast (<=0.4.0,>=0.2.1)",
+            "google-pasta (>=0.1.1)",
+            "grpcio (<2.0,>=1.24.3)",
+            "h5py (>=2.9.0)",
+            "jax (>=0.3.15)",
+            "keras-nightly (~=2.12.0.dev)",
+            "libclang (>=13.0.0)",
+            "numpy (<1.24,>=1.20)",
+            "opt-einsum (>=2.3.2)",
+            "packaging",
+            "protobuf (<3.20,>=3.9.2)",
+            "setuptools",
+            "six (>=1.12.0)",
+            "tb-nightly (~=2.12.0.a)",
+            "termcolor (>=1.1.0)",
+            "tf-estimator-nightly (~=2.12.0.dev)",
+            "typing-extensions (>=3.6.6)",
+            "wrapt (>=1.11.0)",
+            "tensorflow-io-gcs-filesystem (>=0.23.1) ; platform_machine != \"arm64\" or platform_system != \"Darwin\"",
+            "tf-nightly-cpu-aws (==2.12.0-dev20230124) ; platform_system == \"Linux\" and (platform_machine == \"arm64\" or platform_machine == \"aarch64\")",
+            "tf-nightly-intel (==2.12.0-dev20230124) ; platform_system == \"Windows\""
+          ],
+          "requires_python": ">=3.8"
+        }
       }
     },
     "cp37": {
-      "2.12.0.dev20221025": {
-        "tf_nightly_gpu-2.12.0.dev20221025-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": {
+      "2.12.0.dev20221026": {
+        "tf_nightly_gpu-2.12.0.dev20221026-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": {
           "requires_dist": [
             "absl-py (>=1.0.0)",
             "astunparse (>=1.6.0)",
@@ -74313,50 +74396,47 @@
           "requires_python": ">=3.7"
         }
       },
-      "2.12.0.dev20221026": {
-        "tf_nightly_gpu-2.12.0.dev20221026-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "2.12.0.dev20221025@tf_nightly_gpu-2.12.0.dev20221025-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
-      },
       "2.12.0.dev20221027": {
-        "tf_nightly_gpu-2.12.0.dev20221027-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "2.12.0.dev20221025@tf_nightly_gpu-2.12.0.dev20221025-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+        "tf_nightly_gpu-2.12.0.dev20221027-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "2.12.0.dev20221026@tf_nightly_gpu-2.12.0.dev20221026-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
       },
       "2.12.0.dev20221028": {
-        "tf_nightly_gpu-2.12.0.dev20221028-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "2.12.0.dev20221025@tf_nightly_gpu-2.12.0.dev20221025-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+        "tf_nightly_gpu-2.12.0.dev20221028-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "2.12.0.dev20221026@tf_nightly_gpu-2.12.0.dev20221026-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
       },
       "2.12.0.dev20221029": {
-        "tf_nightly_gpu-2.12.0.dev20221029-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "2.12.0.dev20221025@tf_nightly_gpu-2.12.0.dev20221025-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+        "tf_nightly_gpu-2.12.0.dev20221029-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "2.12.0.dev20221026@tf_nightly_gpu-2.12.0.dev20221026-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
       },
       "2.12.0.dev20221030": {
-        "tf_nightly_gpu-2.12.0.dev20221030-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "2.12.0.dev20221025@tf_nightly_gpu-2.12.0.dev20221025-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+        "tf_nightly_gpu-2.12.0.dev20221030-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "2.12.0.dev20221026@tf_nightly_gpu-2.12.0.dev20221026-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
       },
       "2.12.0.dev20221031": {
-        "tf_nightly_gpu-2.12.0.dev20221031-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "2.12.0.dev20221025@tf_nightly_gpu-2.12.0.dev20221025-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+        "tf_nightly_gpu-2.12.0.dev20221031-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "2.12.0.dev20221026@tf_nightly_gpu-2.12.0.dev20221026-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
       },
       "2.12.0.dev20221101": {
-        "tf_nightly_gpu-2.12.0.dev20221101-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "2.12.0.dev20221025@tf_nightly_gpu-2.12.0.dev20221025-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+        "tf_nightly_gpu-2.12.0.dev20221101-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "2.12.0.dev20221026@tf_nightly_gpu-2.12.0.dev20221026-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
       },
       "2.12.0.dev20221102": {
-        "tf_nightly_gpu-2.12.0.dev20221102-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "2.12.0.dev20221025@tf_nightly_gpu-2.12.0.dev20221025-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+        "tf_nightly_gpu-2.12.0.dev20221102-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "2.12.0.dev20221026@tf_nightly_gpu-2.12.0.dev20221026-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
       },
       "2.12.0.dev20221103": {
-        "tf_nightly_gpu-2.12.0.dev20221103-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "2.12.0.dev20221025@tf_nightly_gpu-2.12.0.dev20221025-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+        "tf_nightly_gpu-2.12.0.dev20221103-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "2.12.0.dev20221026@tf_nightly_gpu-2.12.0.dev20221026-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
       },
       "2.12.0.dev20221104": {
-        "tf_nightly_gpu-2.12.0.dev20221104-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "2.12.0.dev20221025@tf_nightly_gpu-2.12.0.dev20221025-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+        "tf_nightly_gpu-2.12.0.dev20221104-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "2.12.0.dev20221026@tf_nightly_gpu-2.12.0.dev20221026-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
       },
       "2.12.0.dev20221105": {
-        "tf_nightly_gpu-2.12.0.dev20221105-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "2.12.0.dev20221025@tf_nightly_gpu-2.12.0.dev20221025-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+        "tf_nightly_gpu-2.12.0.dev20221105-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "2.12.0.dev20221026@tf_nightly_gpu-2.12.0.dev20221026-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
       },
       "2.12.0.dev20221106": {
-        "tf_nightly_gpu-2.12.0.dev20221106-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "2.12.0.dev20221025@tf_nightly_gpu-2.12.0.dev20221025-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+        "tf_nightly_gpu-2.12.0.dev20221106-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "2.12.0.dev20221026@tf_nightly_gpu-2.12.0.dev20221026-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
       },
       "2.12.0.dev20221107": {
-        "tf_nightly_gpu-2.12.0.dev20221107-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "2.12.0.dev20221025@tf_nightly_gpu-2.12.0.dev20221025-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+        "tf_nightly_gpu-2.12.0.dev20221107-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "2.12.0.dev20221026@tf_nightly_gpu-2.12.0.dev20221026-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
       },
       "2.12.0.dev20221108": {
-        "tf_nightly_gpu-2.12.0.dev20221108-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "2.12.0.dev20221025@tf_nightly_gpu-2.12.0.dev20221025-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+        "tf_nightly_gpu-2.12.0.dev20221108-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "2.12.0.dev20221026@tf_nightly_gpu-2.12.0.dev20221026-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
       },
       "2.12.0.dev20221109": {
-        "tf_nightly_gpu-2.12.0.dev20221109-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "2.12.0.dev20221025@tf_nightly_gpu-2.12.0.dev20221025-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+        "tf_nightly_gpu-2.12.0.dev20221109-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "2.12.0.dev20221026@tf_nightly_gpu-2.12.0.dev20221026-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
       },
       "2.12.0.dev20221110": {
         "tf_nightly_gpu-2.12.0.dev20221110-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": {
@@ -74707,8 +74787,8 @@
       }
     },
     "cp38": {
-      "2.12.0.dev20221025": {
-        "tf_nightly_gpu-2.12.0.dev20221025-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": {
+      "2.12.0.dev20221026": {
+        "tf_nightly_gpu-2.12.0.dev20221026-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": {
           "requires_dist": [
             "absl-py (>=1.0.0)",
             "astunparse (>=1.6.0)",
@@ -74735,47 +74815,44 @@
           "requires_python": ">=3.7"
         }
       },
-      "2.12.0.dev20221026": {
-        "tf_nightly_gpu-2.12.0.dev20221026-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "2.12.0.dev20221025@tf_nightly_gpu-2.12.0.dev20221025-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
-      },
       "2.12.0.dev20221027": {
-        "tf_nightly_gpu-2.12.0.dev20221027-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "2.12.0.dev20221025@tf_nightly_gpu-2.12.0.dev20221025-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+        "tf_nightly_gpu-2.12.0.dev20221027-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "2.12.0.dev20221026@tf_nightly_gpu-2.12.0.dev20221026-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
       },
       "2.12.0.dev20221028": {
-        "tf_nightly_gpu-2.12.0.dev20221028-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "2.12.0.dev20221025@tf_nightly_gpu-2.12.0.dev20221025-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+        "tf_nightly_gpu-2.12.0.dev20221028-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "2.12.0.dev20221026@tf_nightly_gpu-2.12.0.dev20221026-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
       },
       "2.12.0.dev20221029": {
-        "tf_nightly_gpu-2.12.0.dev20221029-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "2.12.0.dev20221025@tf_nightly_gpu-2.12.0.dev20221025-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+        "tf_nightly_gpu-2.12.0.dev20221029-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "2.12.0.dev20221026@tf_nightly_gpu-2.12.0.dev20221026-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
       },
       "2.12.0.dev20221030": {
-        "tf_nightly_gpu-2.12.0.dev20221030-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "2.12.0.dev20221025@tf_nightly_gpu-2.12.0.dev20221025-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+        "tf_nightly_gpu-2.12.0.dev20221030-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "2.12.0.dev20221026@tf_nightly_gpu-2.12.0.dev20221026-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
       },
       "2.12.0.dev20221031": {
-        "tf_nightly_gpu-2.12.0.dev20221031-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "2.12.0.dev20221025@tf_nightly_gpu-2.12.0.dev20221025-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+        "tf_nightly_gpu-2.12.0.dev20221031-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "2.12.0.dev20221026@tf_nightly_gpu-2.12.0.dev20221026-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
       },
       "2.12.0.dev20221101": {
-        "tf_nightly_gpu-2.12.0.dev20221101-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "2.12.0.dev20221025@tf_nightly_gpu-2.12.0.dev20221025-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+        "tf_nightly_gpu-2.12.0.dev20221101-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "2.12.0.dev20221026@tf_nightly_gpu-2.12.0.dev20221026-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
       },
       "2.12.0.dev20221102": {
-        "tf_nightly_gpu-2.12.0.dev20221102-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "2.12.0.dev20221025@tf_nightly_gpu-2.12.0.dev20221025-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+        "tf_nightly_gpu-2.12.0.dev20221102-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "2.12.0.dev20221026@tf_nightly_gpu-2.12.0.dev20221026-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
       },
       "2.12.0.dev20221103": {
-        "tf_nightly_gpu-2.12.0.dev20221103-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "2.12.0.dev20221025@tf_nightly_gpu-2.12.0.dev20221025-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+        "tf_nightly_gpu-2.12.0.dev20221103-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "2.12.0.dev20221026@tf_nightly_gpu-2.12.0.dev20221026-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
       },
       "2.12.0.dev20221104": {
-        "tf_nightly_gpu-2.12.0.dev20221104-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "2.12.0.dev20221025@tf_nightly_gpu-2.12.0.dev20221025-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+        "tf_nightly_gpu-2.12.0.dev20221104-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "2.12.0.dev20221026@tf_nightly_gpu-2.12.0.dev20221026-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
       },
       "2.12.0.dev20221105": {
-        "tf_nightly_gpu-2.12.0.dev20221105-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "2.12.0.dev20221025@tf_nightly_gpu-2.12.0.dev20221025-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+        "tf_nightly_gpu-2.12.0.dev20221105-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "2.12.0.dev20221026@tf_nightly_gpu-2.12.0.dev20221026-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
       },
       "2.12.0.dev20221106": {
-        "tf_nightly_gpu-2.12.0.dev20221106-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "2.12.0.dev20221025@tf_nightly_gpu-2.12.0.dev20221025-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+        "tf_nightly_gpu-2.12.0.dev20221106-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "2.12.0.dev20221026@tf_nightly_gpu-2.12.0.dev20221026-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
       },
       "2.12.0.dev20221108": {
-        "tf_nightly_gpu-2.12.0.dev20221108-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "2.12.0.dev20221025@tf_nightly_gpu-2.12.0.dev20221025-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+        "tf_nightly_gpu-2.12.0.dev20221108-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "2.12.0.dev20221026@tf_nightly_gpu-2.12.0.dev20221026-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
       },
       "2.12.0.dev20221109": {
-        "tf_nightly_gpu-2.12.0.dev20221109-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "2.12.0.dev20221025@tf_nightly_gpu-2.12.0.dev20221025-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+        "tf_nightly_gpu-2.12.0.dev20221109-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "2.12.0.dev20221026@tf_nightly_gpu-2.12.0.dev20221026-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
       },
       "2.12.0.dev20221110": {
         "tf_nightly_gpu-2.12.0.dev20221110-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": {
@@ -76329,6 +76406,37 @@
             "tensorflow-io-gcs-filesystem (>=0.23.1) ; platform_machine != \"arm64\" or platform_system != \"Darwin\"",
             "tf-nightly-cpu-aws (==2.12.0-dev20230123) ; platform_system == \"Linux\" and (platform_machine == \"arm64\" or platform_machine == \"aarch64\")",
             "tf-nightly-intel (==2.12.0-dev20230123) ; platform_system == \"Windows\""
+          ],
+          "requires_python": ">=3.8"
+        }
+      },
+      "2.12.0.dev20230124": {
+        "tf_nightly_gpu-2.12.0.dev20230124-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": {
+          "requires_dist": [
+            "absl-py (>=1.0.0)",
+            "astunparse (>=1.6.0)",
+            "flatbuffers (>=2.0)",
+            "gast (<=0.4.0,>=0.2.1)",
+            "google-pasta (>=0.1.1)",
+            "grpcio (<2.0,>=1.24.3)",
+            "h5py (>=2.9.0)",
+            "jax (>=0.3.15)",
+            "keras-nightly (~=2.12.0.dev)",
+            "libclang (>=13.0.0)",
+            "numpy (<1.24,>=1.20)",
+            "opt-einsum (>=2.3.2)",
+            "packaging",
+            "protobuf (<3.20,>=3.9.2)",
+            "setuptools",
+            "six (>=1.12.0)",
+            "tb-nightly (~=2.12.0.a)",
+            "termcolor (>=1.1.0)",
+            "tf-estimator-nightly (~=2.12.0.dev)",
+            "typing-extensions (>=3.6.6)",
+            "wrapt (>=1.11.0)",
+            "tensorflow-io-gcs-filesystem (>=0.23.1) ; platform_machine != \"arm64\" or platform_system != \"Darwin\"",
+            "tf-nightly-cpu-aws (==2.12.0-dev20230124) ; platform_system == \"Linux\" and (platform_machine == \"arm64\" or platform_machine == \"aarch64\")",
+            "tf-nightly-intel (==2.12.0-dev20230124) ; platform_system == \"Windows\""
           ],
           "requires_python": ">=3.8"
         }
@@ -78016,6 +78124,37 @@
             "tensorflow-io-gcs-filesystem (>=0.23.1) ; platform_machine != \"arm64\" or platform_system != \"Darwin\"",
             "tf-nightly-cpu-aws (==2.12.0-dev20230123) ; platform_system == \"Linux\" and (platform_machine == \"arm64\" or platform_machine == \"aarch64\")",
             "tf-nightly-intel (==2.12.0-dev20230123) ; platform_system == \"Windows\""
+          ],
+          "requires_python": ">=3.8"
+        }
+      },
+      "2.12.0.dev20230124": {
+        "tf_nightly_gpu-2.12.0.dev20230124-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": {
+          "requires_dist": [
+            "absl-py (>=1.0.0)",
+            "astunparse (>=1.6.0)",
+            "flatbuffers (>=2.0)",
+            "gast (<=0.4.0,>=0.2.1)",
+            "google-pasta (>=0.1.1)",
+            "grpcio (<2.0,>=1.24.3)",
+            "h5py (>=2.9.0)",
+            "jax (>=0.3.15)",
+            "keras-nightly (~=2.12.0.dev)",
+            "libclang (>=13.0.0)",
+            "numpy (<1.24,>=1.20)",
+            "opt-einsum (>=2.3.2)",
+            "packaging",
+            "protobuf (<3.20,>=3.9.2)",
+            "setuptools",
+            "six (>=1.12.0)",
+            "tb-nightly (~=2.12.0.a)",
+            "termcolor (>=1.1.0)",
+            "tf-estimator-nightly (~=2.12.0.dev)",
+            "typing-extensions (>=3.6.6)",
+            "wrapt (>=1.11.0)",
+            "tensorflow-io-gcs-filesystem (>=0.23.1) ; platform_machine != \"arm64\" or platform_system != \"Darwin\"",
+            "tf-nightly-cpu-aws (==2.12.0-dev20230124) ; platform_system == \"Linux\" and (platform_machine == \"arm64\" or platform_machine == \"aarch64\")",
+            "tf-nightly-intel (==2.12.0-dev20230124) ; platform_system == \"Windows\""
           ],
           "requires_python": ">=3.8"
         }
