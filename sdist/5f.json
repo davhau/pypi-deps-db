@@ -17500,7 +17500,8 @@
     "1.29.55": "1.29.42",
     "1.29.56": "1.29.42",
     "1.29.57": "1.29.42",
-    "1.29.58": "1.29.42"
+    "1.29.58": "1.29.42",
+    "1.29.59": "1.29.42"
   },
   "bpasslh": {
     "2.1.0": {
@@ -19942,7 +19943,8 @@
     "0.2.393": "0.2.375",
     "0.2.394": "0.2.375",
     "0.2.395": "0.2.375",
-    "0.2.396": "0.2.375"
+    "0.2.396": "0.2.375",
+    "0.2.397": "0.2.375"
   },
   "ceh-v11-mod-allinone": {
     "2022.5.6.0": {
@@ -27126,6 +27128,27 @@
       "36": {
         "install_requires": [
           "dagster==1.1.13",
+          "snowflake-connector-python>=2.1.0"
+        ],
+        "extras_require": {
+          "snowflake.sqlalchemy": [
+            "sqlalchemy!=1.4.42",
+            "snowflake-sqlalchemy"
+          ],
+          "pandas": [
+            "pandas"
+          ]
+        }
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "0.17.14": {
+      "36": {
+        "install_requires": [
+          "dagster==1.1.14",
           "snowflake-connector-python>=2.1.0"
         ],
         "extras_require": {
@@ -35377,7 +35400,10 @@
     "0.0.28": "0.0.17",
     "0.0.29": "0.0.17",
     "0.0.30": "0.0.17",
-    "0.0.31": "0.0.17"
+    "0.0.31": "0.0.17",
+    "0.0.32": "0.0.17",
+    "0.0.33": "0.0.17",
+    "0.0.34": "0.0.17"
   },
   "fibonaci-calculator": {
     "0.0": {
@@ -41622,7 +41648,8 @@
     },
     "0.1.3": "0.1.2",
     "0.1.4": "0.1.2",
-    "0.1.5": "0.1.2"
+    "0.1.5": "0.1.2",
+    "0.1.6": "0.1.2"
   },
   "hello-samu": {
     "0.0": {
@@ -77561,6 +77588,24 @@
       "38": "36",
       "39": "36",
       "310": "36"
+    },
+    "3.1.0": {
+      "36": {
+        "install_requires": [
+          "resotolib==3.1.0",
+          "PyYAML>=6.0"
+        ],
+        "setup_requires": [
+          "pytest-runner"
+        ],
+        "tests_require": [
+          "pytest"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
     }
   },
   "restless-cloud": {
@@ -79541,6 +79586,73 @@
             "pyenchant",
             "pypandoc",
             "sphinx",
+            "sphinx-autodoc-typehints",
+            "sphinx-click",
+            "sphinx-paramlinks",
+            "sphinx_copybutton",
+            "sphinx_gallery",
+            "sphinx_rtd_theme",
+            "sphinxcontrib-bibtex",
+            "typing_extensions"
+          ]
+        },
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "0.0.2": {
+      "36": {
+        "install_requires": [
+          "anndata",
+          "apted",
+          "biopython",
+          "click",
+          "cython",
+          "cyvcf2",
+          "ete3",
+          "ipython",
+          "joblib",
+          "matplotlib",
+          "natsort",
+          "networkx<=2.8.3",
+          "numba",
+          "numpy",
+          "pandas",
+          "pybnb",
+          "pydot",
+          "python_sat",
+          "pyyaml",
+          "scikit_learn",
+          "scipy",
+          "seaborn",
+          "termcolor",
+          "tqdm"
+        ],
+        "setup_requires": [
+          "setuptools_scm"
+        ],
+        "extras_require": {
+          "dev": [
+            "pre-commit",
+            "pytest-cov",
+            "pytest-xdist",
+            "bumpversion"
+          ],
+          "docs": [
+            "furo",
+            "ipython",
+            "memory_profiler",
+            "nbsphinx",
+            "nbsphinx-link",
+            "pydata_sphinx_theme",
+            "pyenchant",
+            "pypandoc",
+            "sphinx<6",
             "sphinx-autodoc-typehints",
             "sphinx-click",
             "sphinx-paramlinks",
