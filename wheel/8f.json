@@ -20388,6 +20388,24 @@
       },
       "0.8.4": {
         "drf_pipeline_views-0.8.4-py3-none-any.whl": "0.8.0@drf_pipeline_views-0.8.0-py3-none-any.whl"
+      },
+      "0.8.5": {
+        "drf_pipeline_views-0.8.5-py3-none-any.whl": {
+          "provides_extras": [
+            "pydantic",
+            "uvloop"
+          ],
+          "requires_dist": [
+            "Django (>=3.0)",
+            "PyYAML (>=6.0)",
+            "asgiref (>=3.5.0)",
+            "djangorestframework (>=3.12.0)",
+            "pydantic (>=1.6.2) ; extra == \"pydantic\"",
+            "typing-extensions (>=4.4.0) ; python_version < \"3.11\"",
+            "uvloop (>=0.16.0) ; extra == \"uvloop\""
+          ],
+          "requires_python": ">=3.8,<4"
+        }
       }
     }
   },
@@ -32896,6 +32914,16 @@
       },
       "0.4.1": {
         "gwdc_python-0.4.1-py3-none-any.whl": "0.4.0@gwdc_python-0.4.0-py3-none-any.whl"
+      }
+    }
+  },
+  "ha-siedle-python": {
+    "py3": {
+      "0.0.1": {
+        "ha_siedle_python-0.0.1-py3-none-any.whl": {}
+      },
+      "0.0.2": {
+        "ha_siedle_python-0.0.2-py3-none-any.whl": "0.0.1@ha_siedle_python-0.0.1-py3-none-any.whl"
       }
     }
   },
@@ -51133,6 +51161,38 @@
             "fsspec; extra == 'fsspec'",
             "backports.zoneinfo; (python_version < '3.9') and extra == 'timezone'",
             "tzdata; (platform_system == 'Windows') and extra == 'timezone'"
+          ],
+          "requires_python": ">=3.7"
+        }
+      },
+      "0.16.0": {
+        "polars_lts_cpu-0.16.0-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": {
+          "provides_extras": [
+            "timezone",
+            "matplotlib",
+            "fsspec",
+            "all",
+            "xlsx2csv",
+            "pyarrow",
+            "connectorx",
+            "deltalake",
+            "pandas",
+            "numpy"
+          ],
+          "requires_dist": [
+            "typing_extensions >= 4.0.0; python_version < '3.10'",
+            "backports.zoneinfo; (python_version < '3.9') and extra == 'timezone'",
+            "tzdata; (platform_system == 'Windows') and extra == 'timezone'",
+            "matplotlib; extra == 'matplotlib'",
+            "fsspec; extra == 'fsspec'",
+            "polars[pyarrow,pandas,numpy,fsspec,connectorx,xlsx2csv,deltalake,timezone,matplotlib]; extra == 'all'",
+            "xlsx2csv >= 0.8.0; extra == 'xlsx2csv'",
+            "pyarrow>=4.0.0; extra == 'pyarrow'",
+            "connectorx; extra == 'connectorx'",
+            "deltalake >= 0.6.2; extra == 'deltalake'",
+            "pyarrow>=4.0.0; extra == 'pandas'",
+            "pandas; extra == 'pandas'",
+            "numpy >= 1.16.0; extra == 'numpy'"
           ],
           "requires_python": ">=3.7"
         }
