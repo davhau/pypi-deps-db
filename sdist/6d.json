@@ -14956,7 +14956,49 @@
     "2.0.0b5": "2.0.0b4",
     "2.0.0b8": "2.0.0b4",
     "2.0.0b6": "2.0.0b4",
-    "2.0.0b7": "2.0.0b4"
+    "2.0.0b7": "2.0.0b4",
+    "2.0.0b9": {
+      "36": {
+        "install_requires": [
+          "requests<3.0.0,>=2.25",
+          "urllib3<1.27,>=1.26.6",
+          "colorama<0.5.0,>=0.3.3",
+          "PyYAML<=6.0,>=3.11",
+          "patch-ng<1.18,>=1.17.4",
+          "fasteners>=0.14.1",
+          "Jinja2<4.0.0,>=3.0",
+          "python-dateutil<3,>=2.7.0",
+          "bottle<0.13,>=0.12.8",
+          "pluginbase>=0.5",
+          "PyJWT<3.0.0,>=2.4.0"
+        ],
+        "extras_require": {
+          "dev": [
+            "pytest<7.0.0,>=6.1.1",
+            "pytest-xdist",
+            "parameterized>=0.6.3",
+            "mock<1.4.0,>=1.3.0",
+            "WebTest<2.1.0,>=2.0.18",
+            "bottle"
+          ],
+          "test": [
+            "pytest<7.0.0,>=6.1.1",
+            "pytest-xdist",
+            "parameterized>=0.6.3",
+            "mock<1.4.0,>=1.3.0",
+            "WebTest<2.1.0,>=2.0.18",
+            "bottle"
+          ],
+          ":sys_platform == \"linux\" or sys_platform == \"linux2\"": [
+            "distro<=1.7.0,>=1.0.2"
+          ]
+        }
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "confile": {
     "1.0": {
@@ -34153,7 +34195,27 @@
     "1.14.0": "1.12.0",
     "1.15.0": "1.12.0",
     "1.15.1": "1.12.0",
-    "1.16.0": "1.12.0"
+    "1.16.0": "1.12.0",
+    "1.17.0": {
+      "27": {
+        "install_requires": [
+          "cached-property",
+          "PyYAML",
+          "tenacity"
+        ],
+        "setup_requires": [
+          "pytest-runner"
+        ],
+        "tests_require": [
+          "pytest"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "kubernetes-py": {
     "1.10.0.1": "1.5.6.1",

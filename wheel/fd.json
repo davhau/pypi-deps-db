@@ -10792,6 +10792,48 @@
           ],
           "requires_python": ">=3.9"
         }
+      },
+      "0.6.4": {
+        "cloud2sql-0.6.4-py3-none-any.whl": {
+          "provides_extras": [
+            "all",
+            "mariadb",
+            "mysql",
+            "parquet",
+            "postgresql",
+            "snowflake"
+          ],
+          "requires_dist": [
+            "SQLAlchemy (==1.4.45)",
+            "PyYAML (>=6.0)",
+            "rich (>=12.6.0)",
+            "resotoclient (>=1.2.1)",
+            "posthog (>=2.2.0)",
+            "requests (>=2.28.1)",
+            "resotolib (>=3.0.3)",
+            "resoto-plugin-aws (>=3.0.3)",
+            "resoto-plugin-digitalocean (>=3.0.3)",
+            "resoto-plugin-gcp (>=3.0.3)",
+            "resoto-plugin-k8s (>=3.0.3)",
+            "pymysql (>=1.0.2) ; extra == 'all'",
+            "psycopg2-binary (>=2.9.5) ; extra == 'all'",
+            "snowflake-sqlalchemy (>=1.4.4) ; extra == 'all'",
+            "pyarrow (==10.0.1) ; extra == 'all'",
+            "google-cloud-storage (==2.7.0) ; extra == 'all'",
+            "boto3 (==1.26.10) ; extra == 'all'",
+            "pymysql (>=1.0.2) ; extra == 'mariadb'",
+            "pymysql (>=1.0.2) ; extra == 'mysql'",
+            "pyarrow (==10.0.1) ; extra == 'parquet'",
+            "google-cloud-storage (==2.7.0) ; extra == 'parquet'",
+            "boto3 (==1.26.10) ; extra == 'parquet'",
+            "psycopg2-binary (>=2.9.5) ; extra == 'postgresql'",
+            "snowflake-sqlalchemy (>=1.4.4) ; extra == 'snowflake'"
+          ],
+          "requires_python": ">=3.9"
+        }
+      },
+      "0.7.0": {
+        "cloud2sql-0.7.0-py3-none-any.whl": "0.6.4@cloud2sql-0.6.4-py3-none-any.whl"
       }
     }
   },
@@ -28527,6 +28569,9 @@
       "1.18.0.post0.dev113": {
         "flowetl-1.18.0.post0.dev113-py3-none-any.whl": "1.16.0.post0.dev206@flowetl-1.16.0.post0.dev206-py3-none-any.whl"
       },
+      "1.18.0.post0.dev118": {
+        "flowetl-1.18.0.post0.dev118-py3-none-any.whl": "1.16.0.post0.dev206@flowetl-1.16.0.post0.dev206-py3-none-any.whl"
+      },
       "1.18.0.post0.dev14": {
         "flowetl-1.18.0.post0.dev14-py3-none-any.whl": "1.16.0.post0.dev206@flowetl-1.16.0.post0.dev206-py3-none-any.whl"
       },
@@ -28586,6 +28631,9 @@
       },
       "1.18.0.post0.dev9": {
         "flowetl-1.18.0.post0.dev9-py3-none-any.whl": "1.16.0.post0.dev206@flowetl-1.16.0.post0.dev206-py3-none-any.whl"
+      },
+      "1.18.1": {
+        "flowetl-1.18.1-py3-none-any.whl": "1.16.0.post0.dev206@flowetl-1.16.0.post0.dev206-py3-none-any.whl"
       },
       "1.2.0": {
         "flowetl-1.2.0-py3-none-any.whl": "1.0.0@flowetl-1.0.0-py3-none-any.whl"
@@ -44719,6 +44767,9 @@
       },
       "2023.1.30": {
         "notification_service_nightly-2023.1.30-py3-none-any.whl": "2022.10.1@notification_service_nightly-2022.10.1-py3-none-any.whl"
+      },
+      "2023.1.31": {
+        "notification_service_nightly-2023.1.31-py3-none-any.whl": "2022.10.1@notification_service_nightly-2022.10.1-py3-none-any.whl"
       },
       "2023.1.4": {
         "notification_service_nightly-2023.1.4-py3-none-any.whl": "2022.10.1@notification_service_nightly-2022.10.1-py3-none-any.whl"
@@ -63991,6 +64042,31 @@
             "pip-tools ; extra == 'dist'",
             "pipdeptree ; extra == 'dist'",
             "twine ; extra == 'dist'"
+          ],
+          "requires_python": ">=3.9"
+        }
+      },
+      "0.1.6a1": {
+        "PyPatchMatch-0.1.6a1-py3-none-any.whl": {
+          "provides_extras": [
+            "dev",
+            "dist"
+          ],
+          "requires_dist": [
+            "numpy",
+            "pillow",
+            "tqdm",
+            "black ; extra == 'dev'",
+            "flake8 ; extra == 'dev'",
+            "flake8-black ; extra == 'dev'",
+            "isort ; extra == 'dev'",
+            "pre-commit ; extra == 'dev'",
+            "pylance ; extra == 'dev'",
+            "pip-tools ; extra == 'dist'",
+            "pipdeptree ; extra == 'dist'",
+            "twine ; extra == 'dist'",
+            "delocate ; (sys_platform == \"darwin\") and extra == 'dist'",
+            "auditwheel ; (sys_platform == \"linux\") and extra == 'dist'"
           ],
           "requires_python": ">=3.9"
         }
