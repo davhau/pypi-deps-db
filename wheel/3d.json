@@ -4835,6 +4835,27 @@
       "1.8.1": {
         "avwx_engine-1.8.1-py3-none-any.whl": "1.8.0@avwx_engine-1.8.0-py3-none-any.whl"
       },
+      "1.8.10": {
+        "avwx_engine-1.8.10-py3-none-any.whl": {
+          "provides_extras": [
+            "all",
+            "fuzz",
+            "scipy",
+            "shape"
+          ],
+          "requires_dist": [
+            "geopy (>=2.2)",
+            "httpx (>=0.23)",
+            "python-dateutil (>=2.8)",
+            "rapidfuzz (>=2.3) ; extra == \"all\" or extra == \"fuzz\"",
+            "scipy (>=1.9) ; extra == \"all\" or extra == \"scipy\"",
+            "shapely (>=1.8) ; extra == \"all\" or extra == \"shape\"",
+            "typing_extensions (>=4.4) ; python_version < \"3.10\"",
+            "xmltodict (>=0.13)"
+          ],
+          "requires_python": ">=3.8,<3.12"
+        }
+      },
       "1.8.2": {
         "avwx_engine-1.8.2-py3-none-any.whl": {
           "provides_extras": [
@@ -4939,28 +4960,10 @@
         }
       },
       "1.8.8": {
-        "avwx_engine-1.8.8-py3-none-any.whl": {
-          "provides_extras": [
-            "all",
-            "fuzz",
-            "scipy",
-            "shape"
-          ],
-          "requires_dist": [
-            "geopy (>=2.2)",
-            "httpx (>=0.23)",
-            "python-dateutil (>=2.8)",
-            "rapidfuzz (>=2.3) ; extra == \"all\" or extra == \"fuzz\"",
-            "scipy (>=1.9) ; extra == \"all\" or extra == \"scipy\"",
-            "shapely (>=1.8) ; extra == \"all\" or extra == \"shape\"",
-            "typing_extensions (>=4.4) ; python_version < \"3.10\"",
-            "xmltodict (>=0.13)"
-          ],
-          "requires_python": ">=3.8,<3.12"
-        }
+        "avwx_engine-1.8.8-py3-none-any.whl": "1.8.10@avwx_engine-1.8.10-py3-none-any.whl"
       },
       "1.8.9": {
-        "avwx_engine-1.8.9-py3-none-any.whl": "1.8.8@avwx_engine-1.8.8-py3-none-any.whl"
+        "avwx_engine-1.8.9-py3-none-any.whl": "1.8.10@avwx_engine-1.8.10-py3-none-any.whl"
       }
     }
   },
@@ -10711,6 +10714,19 @@
       }
     }
   },
+  "aznt": {
+    "py3": {
+      "0.0.35": {
+        "aznt-0.0.35-py3-none-any.whl": {
+          "requires_dist": [
+            "python-version (>=3.11)",
+            "mpmath"
+          ],
+          "requires_python": ">=3.11"
+        }
+      }
+    }
+  },
   "azsctl": {
     "py3": {
       "0.1": {
@@ -11435,6 +11451,9 @@
       },
       "1.29.59": {
         "botocore_a_la_carte_inspector2-1.29.59-py3-none-any.whl": "1.29.42@botocore_a_la_carte_inspector2-1.29.42-py3-none-any.whl"
+      },
+      "1.29.60": {
+        "botocore_a_la_carte_inspector2-1.29.60-py3-none-any.whl": "1.29.42@botocore_a_la_carte_inspector2-1.29.42-py3-none-any.whl"
       }
     }
   },
@@ -15174,6 +15193,21 @@
           "requires_dist": [
             "cdk8s (<3.0.0,>=2.6.34)",
             "constructs (<11.0.0,>=10.1.235)",
+            "jsii (<2.0.0,>=1.74.0)",
+            "publication (>=0.0.3)",
+            "typeguard (~=2.13.3)"
+          ],
+          "requires_python": "~=3.7"
+        }
+      },
+      "2.4.6": {
+        "cdk8s_plus_23-2.4.6-py3-none-any.whl": "2.4.5@cdk8s_plus_23-2.4.5-py3-none-any.whl"
+      },
+      "2.4.7": {
+        "cdk8s_plus_23-2.4.7-py3-none-any.whl": {
+          "requires_dist": [
+            "cdk8s (<3.0.0,>=2.6.35)",
+            "constructs (<11.0.0,>=10.1.236)",
             "jsii (<2.0.0,>=1.74.0)",
             "publication (>=0.0.3)",
             "typeguard (~=2.13.3)"
@@ -26593,6 +26627,23 @@
   },
   "dpeadpi": {
     "py3": {
+      "0.0.10": {
+        "dpeaDPi-0.0.10-py3-none-any.whl": {
+          "requires_dist": [
+            "pyserial",
+            "requests",
+            "smbus2",
+            "adafruit-blinka",
+            "adafruit-circuitpython-vl6180x"
+          ]
+        }
+      },
+      "0.0.11": {
+        "dpeaDPi-0.0.11-py3-none-any.whl": "0.0.10@dpeaDPi-0.0.10-py3-none-any.whl"
+      },
+      "0.0.12": {
+        "dpeaDPi-0.0.12-py3-none-any.whl": "0.0.10@dpeaDPi-0.0.10-py3-none-any.whl"
+      },
       "0.0.2": {
         "dpeaDPi-0.0.2-py3-none-any.whl": {
           "requires_dist": [
@@ -26605,27 +26656,25 @@
         }
       },
       "0.0.3": {
-        "dpeaDPi-0.0.3-py3-none-any.whl": {
-          "requires_dist": [
-            "pyserial",
-            "requests",
-            "smbus2",
-            "adafruit-blinka",
-            "adafruit-circuitpython-vl6180x"
-          ]
-        }
+        "dpeaDPi-0.0.3-py3-none-any.whl": "0.0.10@dpeaDPi-0.0.10-py3-none-any.whl"
       },
       "0.0.4": {
-        "dpeaDPi-0.0.4-py3-none-any.whl": "0.0.3@dpeaDPi-0.0.3-py3-none-any.whl"
+        "dpeaDPi-0.0.4-py3-none-any.whl": "0.0.10@dpeaDPi-0.0.10-py3-none-any.whl"
       },
       "0.0.5": {
-        "dpeaDPi-0.0.5-py3-none-any.whl": "0.0.3@dpeaDPi-0.0.3-py3-none-any.whl"
+        "dpeaDPi-0.0.5-py3-none-any.whl": "0.0.10@dpeaDPi-0.0.10-py3-none-any.whl"
       },
       "0.0.6": {
-        "dpeaDPi-0.0.6-py3-none-any.whl": "0.0.3@dpeaDPi-0.0.3-py3-none-any.whl"
+        "dpeaDPi-0.0.6-py3-none-any.whl": "0.0.10@dpeaDPi-0.0.10-py3-none-any.whl"
       },
       "0.0.8": {
-        "dpeaDPi-0.0.8-py3-none-any.whl": "0.0.3@dpeaDPi-0.0.3-py3-none-any.whl"
+        "dpeaDPi-0.0.8-py3-none-any.whl": "0.0.10@dpeaDPi-0.0.10-py3-none-any.whl"
+      },
+      "0.0.9": {
+        "dpeaDPi-0.0.9-py3-none-any.whl": "0.0.10@dpeaDPi-0.0.10-py3-none-any.whl"
+      },
+      "0.1.0": {
+        "dpeaDPi-0.1.0-py3-none-any.whl": "0.0.10@dpeaDPi-0.0.10-py3-none-any.whl"
       }
     }
   },
@@ -41416,6 +41465,9 @@
       },
       "1.9.1": {
         "leverage-1.9.1-py3-none-any.whl": "1.7.0@leverage-1.7.0-py3-none-any.whl"
+      },
+      "1.9.2": {
+        "leverage-1.9.2-py3-none-any.whl": "1.7.0@leverage-1.7.0-py3-none-any.whl"
       }
     }
   },
@@ -62345,6 +62397,9 @@
       },
       "1.0.3": {
         "pretix_dob_validation-1.0.3-py3-none-any.whl": "1.0.1@pretix_dob_validation-1.0.1-py3-none-any.whl"
+      },
+      "1.1.0": {
+        "pretix_dob_validation-1.1.0-py3-none-any.whl": "1.0.1@pretix_dob_validation-1.0.1-py3-none-any.whl"
       }
     }
   },
@@ -62775,6 +62830,9 @@
       },
       "1.0.7": {
         "proxy_manager_g4-1.0.7-py3-none-any.whl": "1.0.5@proxy_manager_g4-1.0.5-py3-none-any.whl"
+      },
+      "1.1.0": {
+        "proxy_manager_g4-1.1.0-py3-none-any.whl": "1.0.5@proxy_manager_g4-1.0.5-py3-none-any.whl"
       }
     }
   },
@@ -72550,6 +72608,9 @@
       },
       "1.25.2": {
         "riscof-1.25.2-py2.py3-none-any.whl": "1.25.0@riscof-1.25.0-py2.py3-none-any.whl"
+      },
+      "1.25.3": {
+        "riscof-1.25.3-py2.py3-none-any.whl": "1.25.0@riscof-1.25.0-py2.py3-none-any.whl"
       }
     }
   },
@@ -79795,6 +79856,9 @@
       },
       "3.0.818": {
         "tencentcloud_sdk_python_mrs-3.0.818-py2.py3-none-any.whl": "3.0.405@tencentcloud_sdk_python_mrs-3.0.405-py2.py3-none-any.whl"
+      },
+      "3.0.819": {
+        "tencentcloud_sdk_python_mrs-3.0.819-py2.py3-none-any.whl": "3.0.405@tencentcloud_sdk_python_mrs-3.0.405-py2.py3-none-any.whl"
       }
     }
   },
