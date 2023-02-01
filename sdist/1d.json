@@ -6156,7 +6156,8 @@
     "1.29.57": "1.29.42",
     "1.29.58": "1.29.42",
     "1.29.59": "1.29.42",
-    "1.29.60": "1.29.42"
+    "1.29.60": "1.29.42",
+    "1.29.61": "1.29.42"
   },
   "botocore-a-la-carte-cur": {
     "1.29.48": "1.29.42",
@@ -6188,7 +6189,8 @@
     "1.29.57": "1.29.42",
     "1.29.58": "1.29.42",
     "1.29.59": "1.29.42",
-    "1.29.60": "1.29.42"
+    "1.29.60": "1.29.42",
+    "1.29.61": "1.29.42"
   },
   "botocore-a-la-carte-keyspaces": {
     "1.29.46": "1.29.42",
@@ -6220,7 +6222,8 @@
     "1.29.57": "1.29.42",
     "1.29.58": "1.29.42",
     "1.29.59": "1.29.42",
-    "1.29.60": "1.29.42"
+    "1.29.60": "1.29.42",
+    "1.29.61": "1.29.42"
   },
   "botoolkit": {
     "0.0.103": "1.0.0",
@@ -9941,7 +9944,9 @@
     "20230130.23.25": "20220516.9.0",
     "20230131.1.41": "20220516.9.0",
     "20230131.12.13": "20220516.9.0",
-    "20230131.9.1": "20220516.9.0"
+    "20230131.9.1": "20220516.9.0",
+    "20230201.2.48": "20220516.9.0",
+    "20230201.3.32": "20220516.9.0"
   },
   "cfme-testcases": {
     "0.10": {
@@ -24367,7 +24372,27 @@
       "39": "27",
       "310": "27"
     },
-    "1.35.16": "1.35.15"
+    "1.35.16": "1.35.15",
+    "1.35.17": {
+      "27": {
+        "install_requires": [
+          "honeybee-core==1.54.27"
+        ],
+        "setup_requires": [
+          "setuptools_scm"
+        ],
+        "extras_require": {
+          ":python_version >= \"3.7\"": [
+            "dragonfly-schema==1.6.83"
+          ]
+        }
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "draughtsman": {
     "0.1.0": {
@@ -29421,7 +29446,333 @@
       "310": "36"
     },
     "0.28.0": "0.27.0",
-    "0.27.1": "0.27.0"
+    "0.27.1": "0.27.0",
+    "0.29.0": {
+      "36": {
+        "install_requires": [
+          "click<9.0.0,>=7.0.0",
+          "colorama<1,>=0.3.9",
+          "dill~=0.3.0",
+          "fastavro<2,>=1.1.0",
+          "google-api-core<3,>=1.23.0",
+          "googleapis-common-protos<2,>=1.52.0",
+          "grpcio<2,>=1.47.0",
+          "grpcio-reflection<2,>=1.47.0",
+          "Jinja2<4,>=2",
+          "jsonschema",
+          "mmh3",
+          "numpy<3,>=1.22",
+          "pandas<2,>=1.4.3",
+          "pandavro~=1.5.0",
+          "protobuf<5,>3",
+          "proto-plus<2,>=1.20.0",
+          "pyarrow<9,>=4",
+          "pydantic<2,>=1",
+          "pygments<3,>=2.12.0",
+          "PyYAML<7,>=5.4.0",
+          "SQLAlchemy[mypy]<2,>1",
+          "tabulate<1,>=0.8.0",
+          "tenacity<9,>=7",
+          "toml<1,>=0.10.0",
+          "tqdm<5,>=4",
+          "typeguard",
+          "fastapi<1,>=0.68.0",
+          "uvicorn[standard]<1,>=0.14.0",
+          "dask>=2021.1.0",
+          "bowler",
+          "httpx>=0.23.3"
+        ],
+        "setup_requires": [
+          "setuptools_scm",
+          "grpcio>=1.47.0",
+          "grpcio-tools>=1.47.0",
+          "mypy-protobuf==3.1",
+          "pybindgen==0.22.0"
+        ],
+        "extras_require": {
+          "dev": [
+            "mypy-protobuf==3.1",
+            "grpcio-testing~=1.0",
+            "build",
+            "cryptography<36,>=35.0",
+            "flake8",
+            "black<23,>=22.6.0",
+            "isort<6,>=5",
+            "grpcio-tools>=1.47.0",
+            "grpcio-testing>=1.47.0",
+            "minio==7.1.0",
+            "mock==2.0.0",
+            "moto<4",
+            "mypy<0.990,>=0.981",
+            "mypy-protobuf==3.1",
+            "avro==1.10.0",
+            "gcsfs<=2022.01.0,>=0.4.0",
+            "urllib3<2,>=1.25.4",
+            "psutil==5.9.0",
+            "py>=1.11.0",
+            "pytest<8,>=6.0.0",
+            "pytest-cov",
+            "pytest-xdist",
+            "pytest-benchmark<4,>=3.4.1",
+            "pytest-lazy-fixture==0.6.3",
+            "pytest-timeout==1.4.2",
+            "pytest-ordering~=0.6.0",
+            "pytest-mock==1.10.4",
+            "Sphinx<7,>4.0.0",
+            "testcontainers<4,>=3.5",
+            "adlfs==0.5.9",
+            "firebase-admin<6,>=5.2.0",
+            "pre-commit",
+            "assertpy==1.1",
+            "pip-tools",
+            "pybindgen",
+            "types-protobuf~=3.19.22",
+            "types-python-dateutil",
+            "types-pytz",
+            "types-PyYAML",
+            "types-redis",
+            "types-requests",
+            "types-setuptools",
+            "types-tabulate",
+            "google-cloud-bigquery[pandas]<4,>=2",
+            "google-cloud-bigquery-storage<3,>=2.0.0",
+            "google-cloud-datastore<3,>=2.1.0",
+            "google-cloud-storage<3,>=1.34.0",
+            "google-cloud-bigtable<3,>=2.11.0",
+            "redis==4.2.2",
+            "hiredis<3,>=2.0.0",
+            "boto3<=1.20.23,>=1.17.0",
+            "docker>=5.0.2",
+            "s3fs<=2022.01.0,>=0.4.0",
+            "bytewax==0.13.1",
+            "docker>=5.0.2",
+            "kubernetes<=20.13.0",
+            "snowflake-connector-python[pandas]<3,>=2.7.3",
+            "pyOpenSSL<22.1.0",
+            "pyspark<4,>=3.0.0",
+            "psycopg2-binary<3,>=2.8.3",
+            "mysqlclient",
+            "pymysql",
+            "types-PyMySQL",
+            "trino<0.400.0,>=0.305.0",
+            "great_expectations<0.15.0,>=0.14.0",
+            "happybase<3,>=1.2.0",
+            "cassandra-driver<4,>=3.24.0",
+            "azure-storage-blob>=0.37.0",
+            "azure-identity>=1.6.1",
+            "SQLAlchemy>=1.4.19",
+            "pyodbc>=4.0.30",
+            "pymssql"
+          ],
+          "ci": [
+            "build",
+            "cryptography<36,>=35.0",
+            "flake8",
+            "black<23,>=22.6.0",
+            "isort<6,>=5",
+            "grpcio-tools>=1.47.0",
+            "grpcio-testing>=1.47.0",
+            "minio==7.1.0",
+            "mock==2.0.0",
+            "moto<4",
+            "mypy<0.990,>=0.981",
+            "mypy-protobuf==3.1",
+            "avro==1.10.0",
+            "gcsfs<=2022.01.0,>=0.4.0",
+            "urllib3<2,>=1.25.4",
+            "psutil==5.9.0",
+            "py>=1.11.0",
+            "pytest<8,>=6.0.0",
+            "pytest-cov",
+            "pytest-xdist",
+            "pytest-benchmark<4,>=3.4.1",
+            "pytest-lazy-fixture==0.6.3",
+            "pytest-timeout==1.4.2",
+            "pytest-ordering~=0.6.0",
+            "pytest-mock==1.10.4",
+            "Sphinx<7,>4.0.0",
+            "testcontainers<4,>=3.5",
+            "adlfs==0.5.9",
+            "firebase-admin<6,>=5.2.0",
+            "pre-commit",
+            "assertpy==1.1",
+            "pip-tools",
+            "pybindgen",
+            "types-protobuf~=3.19.22",
+            "types-python-dateutil",
+            "types-pytz",
+            "types-PyYAML",
+            "types-redis",
+            "types-requests",
+            "types-setuptools",
+            "types-tabulate",
+            "google-cloud-bigquery[pandas]<4,>=2",
+            "google-cloud-bigquery-storage<3,>=2.0.0",
+            "google-cloud-datastore<3,>=2.1.0",
+            "google-cloud-storage<3,>=1.34.0",
+            "google-cloud-bigtable<3,>=2.11.0",
+            "redis==4.2.2",
+            "hiredis<3,>=2.0.0",
+            "boto3<=1.20.23,>=1.17.0",
+            "docker>=5.0.2",
+            "s3fs<=2022.01.0,>=0.4.0",
+            "bytewax==0.13.1",
+            "docker>=5.0.2",
+            "kubernetes<=20.13.0",
+            "snowflake-connector-python[pandas]<3,>=2.7.3",
+            "pyOpenSSL<22.1.0",
+            "pyspark<4,>=3.0.0",
+            "psycopg2-binary<3,>=2.8.3",
+            "mysqlclient",
+            "pymysql",
+            "types-PyMySQL",
+            "trino<0.400.0,>=0.305.0",
+            "great_expectations<0.15.0,>=0.14.0",
+            "happybase<3,>=1.2.0",
+            "cassandra-driver<4,>=3.24.0",
+            "azure-storage-blob>=0.37.0",
+            "azure-identity>=1.6.1",
+            "SQLAlchemy>=1.4.19",
+            "pyodbc>=4.0.30",
+            "pymssql"
+          ],
+          "gcp": [
+            "google-cloud-bigquery[pandas]<4,>=2",
+            "google-cloud-bigquery-storage<3,>=2.0.0",
+            "google-cloud-datastore<3,>=2.1.0",
+            "google-cloud-storage<3,>=1.34.0",
+            "google-cloud-bigtable<3,>=2.11.0"
+          ],
+          "aws": [
+            "boto3<=1.20.23,>=1.17.0",
+            "docker>=5.0.2",
+            "s3fs<=2022.01.0,>=0.4.0"
+          ],
+          "bytewax": [
+            "bytewax==0.13.1",
+            "docker>=5.0.2",
+            "kubernetes<=20.13.0"
+          ],
+          "redis": [
+            "redis==4.2.2",
+            "hiredis<3,>=2.0.0"
+          ],
+          "snowflake": [
+            "snowflake-connector-python[pandas]<3,>=2.7.3",
+            "pyOpenSSL<22.1.0"
+          ],
+          "spark": [
+            "pyspark<4,>=3.0.0"
+          ],
+          "trino": [
+            "trino<0.400.0,>=0.305.0"
+          ],
+          "postgres": [
+            "psycopg2-binary<3,>=2.8.3"
+          ],
+          "azure": [
+            "azure-storage-blob>=0.37.0",
+            "azure-identity>=1.6.1",
+            "SQLAlchemy>=1.4.19",
+            "pyodbc>=4.0.30",
+            "pymssql"
+          ],
+          "mysql": [
+            "mysqlclient",
+            "pymysql",
+            "types-PyMySQL"
+          ],
+          "ge": [
+            "great_expectations<0.15.0,>=0.14.0"
+          ],
+          "hbase": [
+            "happybase<3,>=1.2.0"
+          ],
+          "go": [
+            "cffi~=1.15.0"
+          ],
+          "docs": [
+            "build",
+            "cryptography<36,>=35.0",
+            "flake8",
+            "black<23,>=22.6.0",
+            "isort<6,>=5",
+            "grpcio-tools>=1.47.0",
+            "grpcio-testing>=1.47.0",
+            "minio==7.1.0",
+            "mock==2.0.0",
+            "moto<4",
+            "mypy<0.990,>=0.981",
+            "mypy-protobuf==3.1",
+            "avro==1.10.0",
+            "gcsfs<=2022.01.0,>=0.4.0",
+            "urllib3<2,>=1.25.4",
+            "psutil==5.9.0",
+            "py>=1.11.0",
+            "pytest<8,>=6.0.0",
+            "pytest-cov",
+            "pytest-xdist",
+            "pytest-benchmark<4,>=3.4.1",
+            "pytest-lazy-fixture==0.6.3",
+            "pytest-timeout==1.4.2",
+            "pytest-ordering~=0.6.0",
+            "pytest-mock==1.10.4",
+            "Sphinx<7,>4.0.0",
+            "testcontainers<4,>=3.5",
+            "adlfs==0.5.9",
+            "firebase-admin<6,>=5.2.0",
+            "pre-commit",
+            "assertpy==1.1",
+            "pip-tools",
+            "pybindgen",
+            "types-protobuf~=3.19.22",
+            "types-python-dateutil",
+            "types-pytz",
+            "types-PyYAML",
+            "types-redis",
+            "types-requests",
+            "types-setuptools",
+            "types-tabulate",
+            "google-cloud-bigquery[pandas]<4,>=2",
+            "google-cloud-bigquery-storage<3,>=2.0.0",
+            "google-cloud-datastore<3,>=2.1.0",
+            "google-cloud-storage<3,>=1.34.0",
+            "google-cloud-bigtable<3,>=2.11.0",
+            "redis==4.2.2",
+            "hiredis<3,>=2.0.0",
+            "boto3<=1.20.23,>=1.17.0",
+            "docker>=5.0.2",
+            "s3fs<=2022.01.0,>=0.4.0",
+            "bytewax==0.13.1",
+            "docker>=5.0.2",
+            "kubernetes<=20.13.0",
+            "snowflake-connector-python[pandas]<3,>=2.7.3",
+            "pyOpenSSL<22.1.0",
+            "pyspark<4,>=3.0.0",
+            "psycopg2-binary<3,>=2.8.3",
+            "trino<0.400.0,>=0.305.0",
+            "great_expectations<0.15.0,>=0.14.0",
+            "happybase<3,>=1.2.0",
+            "cassandra-driver<4,>=3.24.0",
+            "azure-storage-blob>=0.37.0",
+            "azure-identity>=1.6.1",
+            "SQLAlchemy>=1.4.19",
+            "pyodbc>=4.0.30",
+            "pymssql"
+          ],
+          "cassandra": [
+            "cassandra-driver<4,>=3.24.0"
+          ]
+        },
+        "python_requires": [
+          ">=3.8.0"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "feast-yummy": {
     "0.0.4": {
@@ -43895,6 +44246,32 @@
       "310": "27"
     },
     "0.0.5": "0.0.4"
+  },
+  "locdata": {
+    "0.0.0": {
+      "36": {
+        "install_requires": [
+          "ensure==1.0.2",
+          "py-youtube==1.1.7"
+        ],
+        "extras_require": {
+          "testing": [
+            "pytest>=7.1.3",
+            "mypy>=0.971",
+            "flake8>=5.0.4",
+            "tox>=3.25.1",
+            "black>=22.8.0"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "logging-plus": {
     "1.0.0": {
@@ -60885,7 +61262,8 @@
     "0.5.4": "0.4.3",
     "0.6.0": "0.4.3",
     "0.6.1": "0.4.3",
-    "0.6.2": "0.4.3"
+    "0.6.2": "0.4.3",
+    "0.7.0": "0.4.3"
   },
   "pyconductor": {
     "0.1.2": {
@@ -67765,33 +68143,6 @@
       }
     },
     "0.1.dev-r54": "0.1"
-  },
-  "sourcery": {
-    "0.1.0": {
-      "27": {},
-      "36": "27",
-      "37": "27",
-      "38": "27",
-      "39": "27",
-      "310": "27"
-    },
-    "0.1.1": "0.1.0",
-    "0.1.2": "0.1.0",
-    "0.1.3": "0.1.0",
-    "0.1.4": "0.1.0",
-    "0.1.5": "0.1.0",
-    "0.1.6": "0.1.0",
-    "0.1.7": "0.1.0",
-    "0.1.8": "0.1.0",
-    "0.1.9": "0.1.0",
-    "0.2.0": "0.1.0",
-    "0.2.1": "0.1.0",
-    "0.2.2": "0.1.0",
-    "0.2.3": "0.1.0",
-    "0.2.4": "0.1.0",
-    "0.2.5": "0.1.0",
-    "0.2.9": "0.1.0",
-    "1.2.7": "0.1.0"
   },
   "spacy-sentiws": {
     "0.0.3": {
