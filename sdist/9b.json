@@ -44982,7 +44982,8 @@
     "1.0.0": "1.2",
     "1.2.1": "1.2",
     "1.2.5": "1.2",
-    "0.12.1": "1.2"
+    "0.12.1": "1.2",
+    "0.12.2": "1.2"
   },
   "jinja-builder": {
     "0.1a": {
@@ -70868,6 +70869,58 @@
         },
         "python_requires": [
           ">=3.7"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "0.6.0": {
+      "27": {
+        "install_requires": [
+          "numpy",
+          "xarray",
+          "dask[array]>=2022.01.0",
+          "distributed>=2022.01.0",
+          "dask-ml",
+          "scipy",
+          "zarr!=2.11.0,!=2.11.1,!=2.11.2,>=2.10.0",
+          "numba",
+          "typing-extensions",
+          "fsspec!=2021.6.*",
+          "scikit-learn",
+          "pandas",
+          "setuptools>=41.2"
+        ],
+        "setup_requires": [
+          "setuptools >= 41.2",
+          "setuptools_scm"
+        ],
+        "extras_require": {
+          "bgen": [
+            "rechunker"
+          ],
+          "bgen:platform_system != \"Windows\"": [
+            "cbgen"
+          ],
+          "bgen:platform_system == \"Windows\"": [
+            "cbgen==1.0.1"
+          ],
+          "vcf": [
+            "aiohttp",
+            "cyvcf2",
+            "requests",
+            "yarl"
+          ],
+          "plink": [
+            "partd",
+            "bed-reader"
+          ]
+        },
+        "python_requires": [
+          ">=3.8"
         ]
       },
       "36": "27",
