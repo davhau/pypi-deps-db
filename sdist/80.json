@@ -19424,7 +19424,8 @@
     "8.0.0b6": "7.0.0",
     "8.0.0b5": "7.0.0",
     "8.0.0rc0": "7.0.0",
-    "8.0.0rc1": "7.0.0"
+    "8.0.0rc1": "7.0.0",
+    "8.0.0rc2": "7.0.0"
   },
   "ckmobile": {
     "0.0.1b1": {
@@ -22316,7 +22317,25 @@
     },
     "1.28.0": "1.27.0",
     "1.29.0": "1.27.0",
-    "1.30.0": "1.27.0"
+    "1.30.0": "1.27.0",
+    "1.31.0": {
+      "27": {
+        "install_requires": [
+          "aiohttp>=3.8.0",
+          "protobuf<3.19.0,>=3.6.1",
+          "oauth2-client==1.2.1",
+          "websocket-client==0.59.0",
+          "PyYAML==6.0",
+          "requests>=2.5.0",
+          "polling2==0.5.0"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "cloudshell-firewall-fortinet": {
     "1.0.0": {
@@ -63687,7 +63706,27 @@
       "38": "36",
       "39": "36",
       "310": "36"
-    }
+    },
+    "0.0.2": "0.0.1",
+    "0.0.3": {
+      "36": {
+        "install_requires": [
+          "yarl",
+          "requests",
+          "pycryptodome",
+          "rich"
+        ],
+        "python_requires": [
+          ">=3.8"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "0.0.4": "0.0.3",
+    "0.0.5": "0.0.3"
   },
   "pyzaif": {
     "0.1.1": {
@@ -72455,6 +72494,56 @@
           ],
           "all:python_version < \"3.7\"": [
             "dataclasses"
+          ],
+          ":python_version < \"3.7\"": [
+            "dataclasses"
+          ]
+        },
+        "python_requires": [
+          "~=3.6"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "0.2.10": {
+      "36": {
+        "install_requires": [
+          "JPype1<2.0.dev0,>=1.2.1"
+        ],
+        "extras_require": {
+          "core": [
+            "JPype1<2.0.dev0,>=1.2.1"
+          ],
+          "core:python_version < \"3.7\"": [
+            "dataclasses"
+          ],
+          "test": [
+            "pytest",
+            "mypy<0.971,>=0.931"
+          ],
+          "test:python_version < \"3.8\"": [
+            "typing_extensions"
+          ],
+          "dev": [
+            "pytest",
+            "mypy<0.971,>=0.931"
+          ],
+          "dev:python_version < \"3.8\"": [
+            "typing_extensions"
+          ],
+          "all": [
+            "JPype1<2.0.dev0,>=1.2.1",
+            "pytest",
+            "mypy<0.971,>=0.931"
+          ],
+          "all:python_version < \"3.7\"": [
+            "dataclasses"
+          ],
+          "all:python_version < \"3.8\"": [
+            "typing_extensions"
           ],
           ":python_version < \"3.7\"": [
             "dataclasses"
