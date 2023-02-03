@@ -5072,6 +5072,21 @@
       "12.10.1": {
         "azure_storage_file_share-12.10.1-py3-none-any.whl": "12.10.0@azure_storage_file_share-12.10.0-py3-none-any.whl"
       },
+      "12.11.0b1": {
+        "azure_storage_file_share-12.11.0b1-py3-none-any.whl": {
+          "provides_extras": [
+            "aio"
+          ],
+          "requires_dist": [
+            "azure-core (<2.0.0,>=1.26.0)",
+            "cryptography (>=2.1.4)",
+            "typing-extensions (>=4.0.1)",
+            "isodate (>=0.6.1)",
+            "azure-core[aio] (<2.0.0,>=1.26.0) ; extra == 'aio'"
+          ],
+          "requires_python": ">=3.7"
+        }
+      },
       "12.7.0": {
         "azure_storage_file_share-12.7.0-py3-none-any.whl": {
           "requires_dist": [
@@ -21063,6 +21078,9 @@
       },
       "1.0.2": {
         "escnn-1.0.2-py3-none-any.whl": "1.0.0@escnn-1.0.0-py3-none-any.whl"
+      },
+      "1.0.3": {
+        "escnn-1.0.3-py3-none-any.whl": "1.0.0@escnn-1.0.0-py3-none-any.whl"
       }
     }
   },
@@ -21561,6 +21579,9 @@
       },
       "0.2.2": {
         "facetorch-0.2.2-py3-none-any.whl": "0.2.0@facetorch-0.2.0-py3-none-any.whl"
+      },
+      "0.2.3": {
+        "facetorch-0.2.3-py3-none-any.whl": "0.2.0@facetorch-0.2.0-py3-none-any.whl"
       }
     }
   },
@@ -23420,6 +23441,31 @@
             "packaging (~=21.0)",
             "build (~=0.7.0)",
             "setuptools (>=45.2.0)",
+            "pipenv ; extra == 'dev'",
+            "pytest ; extra == 'dev'",
+            "black ; extra == 'dev'",
+            "twine ; extra == 'dev'"
+          ],
+          "requires_python": ">=3.6"
+        }
+      },
+      "1.3.0": {
+        "fme_packager-1.3.0-py3-none-any.whl": {
+          "provides_extras": [
+            "dev"
+          ],
+          "requires_dist": [
+            "click (~=8.0.0)",
+            "cookiecutter (~=1.7.2)",
+            "defusedxml (~=0.6.0)",
+            "jsonschema (~=3.2.0)",
+            "pypng (~=0.0.20)",
+            "ruamel.yaml (~=0.16.10)",
+            "xmltodict (~=0.12.0)",
+            "packaging (~=21.0)",
+            "build (~=0.7.0)",
+            "setuptools (>=45.2.0)",
+            "markdown (>=3.3.0)",
             "pipenv ; extra == 'dev'",
             "pytest ; extra == 'dev'",
             "black ; extra == 'dev'",
@@ -35738,6 +35784,15 @@
     "py2": {
       "1.0.1": {
         "modern_robotics-1.0.1-py2-none-any.whl": {
+          "requires_dist": [
+            "numpy"
+          ]
+        }
+      }
+    },
+    "py3": {
+      "1.1.1": {
+        "modern_robotics-1.1.1-py3-none-any.whl": {
           "requires_dist": [
             "numpy"
           ]
@@ -64176,6 +64231,36 @@
       },
       "0.1.1": {
         "socksx-0.1.1-cp39-cp39-manylinux_2_12_x86_64.manylinux2010_x86_64.whl": "0.1.0@socksx-0.1.0-cp39-cp39-manylinux_2_12_x86_64.manylinux2010_x86_64.whl"
+      }
+    }
+  },
+  "solvex": {
+    "py3": {
+      "1.0.0": {
+        "solvex-1.0.0-py3-none-any.whl": {
+          "requires_dist": [
+            "tqdm",
+            "tabulate",
+            "numpy",
+            "matplotlib",
+            "Pillow",
+            "spacy"
+          ],
+          "requires_python": ">=3.7"
+        }
+      },
+      "1.0.1": {
+        "solvex-1.0.1-py3-none-any.whl": {
+          "requires_dist": [
+            "tqdm",
+            "tabulate (>=0.9.0)",
+            "numpy",
+            "matplotlib",
+            "Pillow",
+            "spacy"
+          ],
+          "requires_python": ">=3.7"
+        }
       }
     }
   },
