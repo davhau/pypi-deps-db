@@ -25697,7 +25697,41 @@
       "39": "27",
       "310": "27"
     },
-    "2.30.1": "2.30.0"
+    "2.30.1": "2.30.0",
+    "2.30.2": {
+      "27": {
+        "install_requires": [
+          "fsspec[http]",
+          "aiohttp-retry>=2.5.0"
+        ],
+        "setup_requires": [
+          "setuptools>=48",
+          "setuptools_scm[toml]>=6.3.1"
+        ],
+        "extras_require": {
+          "tests": [
+            "dvc[testing]",
+            "pytest==6.2.5",
+            "pytest-cov==3.0.0",
+            "pytest-xdist==2.4.0",
+            "pytest-mock==3.6.1",
+            "flaky==3.7.0",
+            "rangehttpserver==1.2.0",
+            "pylint==2.15.9",
+            "mypy==0.910",
+            "types-requests==2.25.11"
+          ]
+        },
+        "python_requires": [
+          ">=3.8"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "dvp-common": {
     "0.3.0": {
@@ -25875,6 +25909,16 @@
     "0.0.3": "0.0.1",
     "0.0.4": "0.0.1",
     "0.0.5": "0.0.1"
+  },
+  "easy-install": {
+    "66.0.0": {
+      "27": {},
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "easy-plugins": {
     "1.0": {
@@ -29290,7 +29334,8 @@
     },
     "0.2.17": "0.2.16",
     "0.2.18": "0.2.16",
-    "0.2.19": "0.2.16"
+    "0.2.19": "0.2.16",
+    "0.2.20": "0.2.16"
   },
   "gimpify-watxaut": {
     "0.0.1": {
@@ -29772,6 +29817,16 @@
   },
   "golangenv": {
     "0.1": {
+      "27": {},
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
+  },
+  "golem-client": {
+    "66.0.0": {
       "27": {},
       "36": "27",
       "37": "27",
@@ -38244,7 +38299,36 @@
       "39": "27",
       "310": "27"
     },
-    "0.3.12": "0.3.11"
+    "0.3.12": "0.3.11",
+    "0.4.0": {
+      "27": {
+        "install_requires": [
+          "click",
+          "click-plugins<2.0.0,>=1.1.1",
+          "pydantic<2.0.0,>=1.9.0",
+          "ruamel.yaml",
+          "ruamel.yaml.clib",
+          "stevedore<4.0.0,>=3.5.0",
+          "yachalk"
+        ],
+        "extras_require": {
+          "docker": [
+            "docker"
+          ],
+          "notebook": [
+            "ploomber-engine<0.0.20,>=0.0.19"
+          ]
+        },
+        "python_requires": [
+          ">=3.8,<4.0"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "mailman-public-inbox": {
     "0.1.0": {
@@ -45555,6 +45639,46 @@
             "pytest-network",
             "black>=22.3.0",
             "build>=0.7.0",
+            "pyflakes>=2.2.0",
+            "readme_renderer[md]>=26.0",
+            "twine>=3.4.2"
+          ],
+          "test": [
+            "pytest",
+            "pytest-cov",
+            "pytest-network"
+          ]
+        },
+        "tests_require": [
+          "pytest",
+          "pytest-cov",
+          "pytest-network"
+        ],
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "0.0.3": {
+      "36": {
+        "install_requires": [
+          "google-cloud-core>=1.4.1",
+          "google-cloud-dns>=0.32.0",
+          "octodns>=0.9.14",
+          "protobuf<=4.21.8,>=4.21.2"
+        ],
+        "extras_require": {
+          "dev": [
+            "pytest",
+            "pytest-cov",
+            "pytest-network",
+            "black>=22.3.0",
+            "build>=0.7.0",
+            "isort==5.11.5",
             "pyflakes>=2.2.0",
             "readme_renderer[md]>=26.0",
             "twine>=3.4.2"
