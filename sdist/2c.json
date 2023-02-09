@@ -6467,7 +6467,8 @@
       "38": "27",
       "39": "27",
       "310": "27"
-    }
+    },
+    "44": "43"
   },
   "bytecoin": {
     "0.1": {
@@ -80152,7 +80153,26 @@
       "310": "36"
     },
     "1.1.286": "1.1.285",
-    "2.3.97": "2.3.96"
+    "2.3.97": "2.3.96",
+    "2.3.98": {
+      "36": {
+        "install_requires": [
+          "aws-cdk-lib<3.0.0,>=2.63.2",
+          "constructs<11.0.0,>=10.0.5",
+          "jsii<2.0.0,>=1.73.0",
+          "publication>=0.0.3",
+          "renovosolutions.aws-cdk-one-time-event<3.0.0,>=2.0.48",
+          "typeguard~=2.13.3"
+        ],
+        "python_requires": [
+          "~=3.7"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "repoze.pgtextindex": {
     "0.1": {
@@ -82455,6 +82475,66 @@
           "dev": [
             "black",
             "isort",
+            "pytest<8.0",
+            "flake8",
+            "pre-commit",
+            "twine",
+            "mkdocs-material",
+            "mkdocs-minify-plugin",
+            "mkdocs-redirects",
+            "mkdocs-git-revision-date-localized-plugin",
+            "mkdocs-git-committers-plugin-2",
+            "mkdocs-git-authors-plugin",
+            "gym[accept-rom-license,atari]",
+            "gym[mujoco]"
+          ],
+          "atari": [
+            "gym[accept-rom-license,atari]"
+          ],
+          "vizdoom": [
+            "vizdoom<2.0",
+            "gym[classic_control]"
+          ]
+        },
+        "python_requires": [
+          ">=3.8"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "2.0.3": {
+      "27": {
+        "install_requires": [
+          "numpy<2.0,>=1.18.1",
+          "torch!=1.13.0,<2.0,>=1.9",
+          "gym<1.0,>=0.26.1",
+          "pyglet",
+          "tensorboard>=1.15.0",
+          "tensorboardx>=2.0",
+          "psutil>=5.7.0",
+          "threadpoolctl>=2.0.0",
+          "colorlog",
+          "faster-fifo<2.0,>=1.4.2",
+          "signal-slot-mp<2.0,>=1.0.3",
+          "filelock",
+          "opencv-python!=3.4.18.65",
+          "wandb>=0.12.9",
+          "huggingface-hub<1.0,>=0.10.0"
+        ],
+        "extras_require": {
+          "envpool": [
+            "envpool"
+          ],
+          "mujoco": [
+            "gym[mujoco]"
+          ],
+          "dev": [
+            "black",
+            "isort>=5.12",
             "pytest<8.0",
             "flake8",
             "pre-commit",
