@@ -1272,7 +1272,8 @@
     "2023.2.6": "2023.1.1",
     "2023.2.7": "2023.1.1",
     "2023.2.8": "2023.1.1",
-    "2023.2.9": "2023.1.1"
+    "2023.2.9": "2023.1.1",
+    "2023.2.10": "2023.1.1"
   },
   "aimms-pygments-style": {
     "2018.11.1": "2020.5.4",
@@ -35357,7 +35358,8 @@
       "38": "27",
       "39": "27",
       "310": "27"
-    }
+    },
+    "66.0.2": "66.0.0"
   },
   "enumeratime": {
     "0.0.4": {
@@ -69943,7 +69945,8 @@
     "3.19.0": "3.6.0",
     "3.20.0.dev1675739299": "3.6.0",
     "3.20.0.dev1675825820": "3.6.0",
-    "3.20.0.dev1675912286": "3.6.0"
+    "3.20.0.dev1675912286": "3.6.0",
+    "3.20.0.dev1675998835": "3.6.0"
   },
   "pulpo-forms": {
     "1.1": {
@@ -93222,7 +93225,24 @@
     "2.0.1.0.dev4013697150": "2.0.1.0.dev3657546342",
     "2.0.1.0.dev4103205678": "2.0.1.0.dev3657546342",
     "2.0.1.0.dev4112994491": "2.0.1.0.dev3657546342",
-    "2.0.1.0.dev4133182631": "2.0.1.0.dev3657546342"
+    "2.0.1.0.dev4133182631": "2.0.1.0.dev3657546342",
+    "2.0.1.0.dev4144365753": "2.0.1.0.dev3657546342",
+    "2.0.1.0.dev4144496948": {
+      "36": {
+        "install_requires": [
+          "th2-data-services~=2.0.0.dev",
+          "th2_grpc_lw_data_provider==2.0.0.dev3656626108",
+          "orjson"
+        ],
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "th2-grpc-data-provider": {
     "0.0.1": {
@@ -93503,7 +93523,9 @@
     "2.0.0.dev3539374146": "2.0.0.dev2690480873",
     "2.0.0.dev3800923993": "2.0.0.dev2690480873",
     "2.0.0.dev3800999250": "2.0.0.dev2690480873",
-    "1.1.0.dev3872687798": "1.0.1"
+    "1.1.0.dev3872687798": "1.0.1",
+    "1.1.1.dev4145399103": "1.1.0.dev2305374574",
+    "1.1.1.dev4145418277": "1.1.0.dev2305374574"
   },
   "theogravity-pulumi-fusionauth": {
     "0.9.3": {
@@ -129525,7 +129547,137 @@
     "5.3.0a4": "5.3.0a1",
     "5.3.0a5": "5.3.0a1",
     "5.3.0a6": "5.3.0a1",
-    "5.3.0a7": "5.3.0a1"
+    "5.3.0a7": "5.3.0a1",
+    "5.3.0a8": {
+      "36": {
+        "install_requires": [
+          "django~=4.1.6",
+          "configparser~=5.3.0",
+          "configparserc~=1.3.4",
+          "django-cors-headers~=3.13.0",
+          "Markdown==3.4.1",
+          "django-environ~=0.9.0",
+          "djangorestframework~=3.14.0",
+          "drf-yasg==1.21.5",
+          "MarkupSafe==2.0.1",
+          "django-filter==22.1",
+          "django-crispy-forms~=1.14.0",
+          "drf_orjson_renderer~=1.7.1",
+          "ormsgpack==1.2.4",
+          "uvicorn~=0.20.0",
+          "pyuwsgi==2.0.21",
+          "cent~=4.1.0",
+          "PyJWT~=2.6.0",
+          "jsmin~=3.0.1",
+          "django-htmlmin~=0.11.0",
+          "pyotp~=2.8.0",
+          "django-storages[libcloud]==1.13.2",
+          "sphinx~=5.3.0",
+          "sphinx-autobuild~=2021.3.14",
+          "sphinxcontrib-httpdomain~=1.8.0",
+          "sphinxcontrib-websupport~=1.2.4",
+          "sphinxcontrib-mermaid~=0.7.1",
+          "sphinx-autodoc-typehints~=1.12.0",
+          "sphinx-rtd-theme~=1.1.1"
+        ],
+        "extras_require": {
+          "test": [
+            "coverage~=7.1.0",
+            "fakeldap==0.6.1",
+            "tblib~=1.7.0",
+            "beautifulsoup4==4.11.1",
+            "dj-inmemorystorage~=2.1.0"
+          ],
+          "rpc": [
+            "celery[redis]==5.2.7",
+            "django-celery-beat~=2.4.0"
+          ],
+          "ldap": [
+            "python-ldap==3.4.0"
+          ],
+          "doc": [
+            "sphinx~=5.3.0",
+            "sphinx-autobuild~=2021.3.14",
+            "sphinxcontrib-httpdomain~=1.8.0",
+            "sphinxcontrib-websupport~=1.2.4",
+            "sphinxcontrib-mermaid~=0.7.1",
+            "sphinx-autodoc-typehints~=1.12.0",
+            "sphinx-rtd-theme~=1.1.1"
+          ],
+          "prod": [
+            "redis[hiredis]~=4.4.2"
+          ],
+          "stubs": [
+            "django-stubs[compatible-mypy]~=1.14.0",
+            "djangorestframework-stubs[compatible-mypy]~=1.8.0",
+            "celery-stubs~=0.1.2",
+            "drf-yasg-stubs~=0.1.3",
+            "django-filter-stubs~=0.1.2",
+            "types-PyMySQL~=1.0.19",
+            "types-Markdown~=3.4.2.1",
+            "types-docutils~=0.19.1.1"
+          ],
+          "pil": [],
+          "pil:python_version < \"3.7\"": [
+            "Pillow~=8.4.0"
+          ],
+          "pil:python_version > \"3.6\"": [
+            "Pillow~=9.4.0"
+          ],
+          "boto3": [
+            "django-storages[boto3,libcloud]==1.13.2"
+          ],
+          "sqs": [
+            "celery[redis,sqs]==5.2.7",
+            "django-celery-beat~=2.4.0"
+          ],
+          "librabbitmq": [
+            "celery[librabbitmq,redis]==5.2.7",
+            "django-celery-beat~=2.4.0"
+          ],
+          "all": [
+            "coverage~=7.1.0",
+            "fakeldap==0.6.1",
+            "tblib~=1.7.0",
+            "beautifulsoup4==4.11.1",
+            "dj-inmemorystorage~=2.1.0",
+            "celery[redis]==5.2.7",
+            "django-celery-beat~=2.4.0",
+            "python-ldap==3.4.0",
+            "sphinx~=5.3.0",
+            "sphinx-autobuild~=2021.3.14",
+            "sphinxcontrib-httpdomain~=1.8.0",
+            "sphinxcontrib-websupport~=1.2.4",
+            "sphinxcontrib-mermaid~=0.7.1",
+            "sphinx-autodoc-typehints~=1.12.0",
+            "sphinx-rtd-theme~=1.1.1",
+            "redis[hiredis]~=4.4.2",
+            "django-stubs[compatible-mypy]~=1.14.0",
+            "djangorestframework-stubs[compatible-mypy]~=1.8.0",
+            "celery-stubs~=0.1.2",
+            "drf-yasg-stubs~=0.1.3",
+            "django-filter-stubs~=0.1.2",
+            "types-PyMySQL~=1.0.19",
+            "types-Markdown~=3.4.2.1",
+            "types-docutils~=0.19.1.1",
+            "django-storages[boto3,libcloud]==1.13.2"
+          ],
+          "all:python_version < \"3.7\"": [
+            "Pillow~=8.4.0"
+          ],
+          "all:python_version > \"3.6\"": [
+            "Pillow~=9.4.0"
+          ]
+        },
+        "python_requires": [
+          ">=3.8"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "wagtail-contact-reply": {
     "0.1.0": {
