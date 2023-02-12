@@ -1959,6 +1959,9 @@
       "3.3.0rc2": {
         "apache_airflow_providers_ftp-3.3.0rc2-py3-none-any.whl": "2.1.2@apache_airflow_providers_ftp-2.1.2-py3-none-any.whl"
       },
+      "3.3.1": {
+        "apache_airflow_providers_ftp-3.3.1-py3-none-any.whl": "2.1.2@apache_airflow_providers_ftp-2.1.2-py3-none-any.whl"
+      },
       "3.3.1rc1": {
         "apache_airflow_providers_ftp-3.3.1rc1-py3-none-any.whl": "2.1.2@apache_airflow_providers_ftp-2.1.2-py3-none-any.whl"
       }
@@ -14899,6 +14902,19 @@
             "cs.seq (>=20221118)",
             "cs.units",
             "cs.upd",
+            "typeguard"
+          ]
+        }
+      },
+      "20230212": {
+        "cs.progress-20230212-py3-none-any.whl": {
+          "requires_dist": [
+            "cs.deco (>=20230210)",
+            "cs.logutils (>=20230212)",
+            "cs.py.func (>=20230210)",
+            "cs.seq (>=20221118)",
+            "cs.units",
+            "cs.upd (>=20230212)",
             "typeguard"
           ]
         }
@@ -48991,8 +49007,8 @@
       "0.4.1": {
         "np_config-0.4.1-py3-none-any.whl": "0.3.0@np_config-0.3.0-py3-none-any.whl"
       },
-      "0.4.2": {
-        "np_config-0.4.2-py3-none-any.whl": {
+      "0.4.10": {
+        "np_config-0.4.10-py3-none-any.whl": {
           "provides_extras": [
             "dev"
           ],
@@ -49012,6 +49028,46 @@
           ],
           "requires_python": ">=3.7,<4.0"
         }
+      },
+      "0.4.11": {
+        "np_config-0.4.11-py3-none-any.whl": {
+          "requires_dist": [
+            "appdirs (>=1,<2)",
+            "kazoo (>=2.8,<2.9)",
+            "pyyaml (>=5,<7)",
+            "requests",
+            "types-PyYaml",
+            "typing-extensions"
+          ],
+          "requires_python": ">=3.7,<4.0"
+        }
+      },
+      "0.4.12": {
+        "np_config-0.4.12-py3-none-any.whl": {
+          "requires_dist": [
+            "appdirs (>=1,<2)",
+            "kazoo (>=2.8,<2.9)",
+            "pyyaml (>=5,<7)",
+            "requests (>=2,<3)",
+            "typing-extensions (>=4,<5)"
+          ],
+          "requires_python": ">=3.7,<4.0"
+        }
+      },
+      "0.4.13": {
+        "np_config-0.4.13-py3-none-any.whl": {
+          "requires_dist": [
+            "appdirs (>=1,<2)",
+            "kazoo (>=2.8,<2.9)",
+            "pyyaml (>=5,<7)",
+            "requests (>=2,<3)",
+            "typing-extensions (>=4)"
+          ],
+          "requires_python": ">=3.7,<4.0"
+        }
+      },
+      "0.4.2": {
+        "np_config-0.4.2-py3-none-any.whl": "0.4.10@np_config-0.4.10-py3-none-any.whl"
       },
       "0.4.3": {
         "np_config-0.4.3-py3-none-any.whl": {
@@ -49037,16 +49093,19 @@
         }
       },
       "0.4.5": {
-        "np_config-0.4.5-py3-none-any.whl": "0.4.2@np_config-0.4.2-py3-none-any.whl"
+        "np_config-0.4.5-py3-none-any.whl": "0.4.10@np_config-0.4.10-py3-none-any.whl"
       },
       "0.4.6": {
-        "np_config-0.4.6-py3-none-any.whl": "0.4.2@np_config-0.4.2-py3-none-any.whl"
+        "np_config-0.4.6-py3-none-any.whl": "0.4.10@np_config-0.4.10-py3-none-any.whl"
       },
       "0.4.7": {
-        "np_config-0.4.7-py3-none-any.whl": "0.4.2@np_config-0.4.2-py3-none-any.whl"
+        "np_config-0.4.7-py3-none-any.whl": "0.4.10@np_config-0.4.10-py3-none-any.whl"
       },
       "0.4.8": {
-        "np_config-0.4.8-py3-none-any.whl": "0.4.2@np_config-0.4.2-py3-none-any.whl"
+        "np_config-0.4.8-py3-none-any.whl": "0.4.10@np_config-0.4.10-py3-none-any.whl"
+      },
+      "0.4.9": {
+        "np_config-0.4.9-py3-none-any.whl": "0.4.10@np_config-0.4.10-py3-none-any.whl"
       }
     }
   },
@@ -52909,6 +52968,34 @@
       },
       "1.30": {
         "pcpp-1.30-py2.py3-none-any.whl": "1.20.1@pcpp-1.20.1-py2.py3-none-any.whl"
+      }
+    }
+  },
+  "pdf-slicer": {
+    "py3": {
+      "2023.1.0": {
+        "pdf_slicer-2023.1.0-py3-none-any.whl": {
+          "provides_extras": [
+            "dev",
+            "docs",
+            "test"
+          ],
+          "requires_dist": [
+            "pillow",
+            "pymupdf==1.21.1",
+            "pyside6",
+            "typing-extensions>=3.7; python_version < '3.8'",
+            "pytest-cov>=3; extra == 'dev'",
+            "pytest>=6; extra == 'dev'",
+            "myst-parser>=0.13; extra == 'docs'",
+            "sphinx-book-theme>=0.1.0; extra == 'docs'",
+            "sphinx-copybutton; extra == 'docs'",
+            "sphinx>=4.0; extra == 'docs'",
+            "pytest-cov>=3; extra == 'test'",
+            "pytest>=6; extra == 'test'"
+          ],
+          "requires_python": ">=3.7"
+        }
       }
     }
   },
