@@ -15132,7 +15132,8 @@
     "2023.2.13.1": "2023.1.1.0",
     "2023.2.14.0": "2023.1.1.0",
     "2023.2.14.1": "2023.1.1.0",
-    "2023.2.15.0": "2023.1.1.0"
+    "2023.2.15.0": "2023.1.1.0",
+    "2023.2.15.1": "2023.1.1.0"
   },
   "create-flask-skeleton": {
     "0.0.1": {
@@ -44420,6 +44421,280 @@
             "torchvision<1.0,>=0.10.0"
           ],
           "strategies": [
+            "deepspeed<1.0,>=0.6.0",
+            "fairscale<1.0,>=0.4.5",
+            "horovod!=0.24.0,<1.0,>=0.21.2"
+          ],
+          "strategies:python_version > \"3.7\" and platform_system != \"Windows\"": [
+            "deepspeed<1.0,>=0.6.0"
+          ],
+          "strategies:sys_platform == \"linux\"": [
+            "hivemind==1.1.5"
+          ],
+          "test": [
+            "click==8.1.3",
+            "cloudpickle<3.0,>=1.3",
+            "codecov==2.1.12",
+            "coverage==6.5.0",
+            "fastapi<1.0",
+            "httpx",
+            "onnxruntime<2.0",
+            "pandas<2.0,>1.0",
+            "playwright==1.29.1",
+            "pre-commit==2.20.0",
+            "protobuf<=3.20.1",
+            "psutil",
+            "psutil<6.0",
+            "pympler",
+            "pytest-asyncio==0.20.3",
+            "pytest-cov==4.0.0",
+            "pytest-doctestplus>=0.9.0",
+            "pytest-forked==1.4.0",
+            "pytest-rerunfailures==10.3",
+            "pytest-timeout==2.1.0",
+            "pytest==7.2.0",
+            "requests-mock",
+            "scikit-learn<2.0,>0.22.1",
+            "setuptools<66.0",
+            "sqlmodel",
+            "tensorboard<3.0,>=2.9.1",
+            "tensorboardX<3.0,>=2.2",
+            "trio<1.0",
+            "uvicorn<1.0"
+          ],
+          "extra": [
+            "aiohttp<4.0,>=3.8.0",
+            "docker<7.0,>=5.0.0",
+            "hydra-core<2.0,>=1.0.5",
+            "jsonargparse[signatures]<5.0,>=4.18.0",
+            "lightning_api_access>=0.0.3",
+            "matplotlib<4.0,>3.1",
+            "omegaconf<3.0,>=2.0.5",
+            "panel<1.0,>=0.12.7",
+            "pytorch-lightning>1.8.0",
+            "redis<5.0,>=4.0.1",
+            "rich!=10.15.0.a,<14.0,>=10.14.0",
+            "s3fs<2023.0,>=2022.5.0",
+            "streamlit<2.0,>=1.13.0",
+            "tensorboardX<3.0,>=2.2"
+          ],
+          "examples": [
+            "gym[classic_control]<1.0,>=0.17.0",
+            "ipython[all]<9.0",
+            "torchvision<1.0,>=0.10.0",
+            "torchvision<1.0,>=0.11.1"
+          ],
+          "cloud": [
+            "docker<7.0,>=5.0.0",
+            "redis<5.0,>=4.0.1",
+            "s3fs<2023.0,>=2022.5.0"
+          ],
+          "ui": [
+            "panel<1.0,>=0.12.7",
+            "streamlit<2.0,>=1.13.0"
+          ],
+          "components": [
+            "aiohttp<4.0,>=3.8.0",
+            "lightning_api_access>=0.0.3",
+            "pytorch-lightning>1.8.0"
+          ],
+          "all": [
+            "aiohttp<4.0,>=3.8.0",
+            "docker<7.0,>=5.0.0",
+            "hydra-core<2.0,>=1.0.5",
+            "jsonargparse[signatures]<5.0,>=4.18.0",
+            "lightning_api_access>=0.0.3",
+            "matplotlib<4.0,>3.1",
+            "omegaconf<3.0,>=2.0.5",
+            "panel<1.0,>=0.12.7",
+            "pytorch-lightning>1.8.0",
+            "redis<5.0,>=4.0.1",
+            "rich!=10.15.0.a,<14.0,>=10.14.0",
+            "s3fs<2023.0,>=2022.5.0",
+            "streamlit<2.0,>=1.13.0",
+            "tensorboardX<3.0,>=2.2"
+          ],
+          "dev": [
+            "aiohttp<4.0,>=3.8.0",
+            "click==8.1.3",
+            "cloudpickle<3.0,>=1.3",
+            "codecov==2.1.12",
+            "coverage==6.5.0",
+            "docker<7.0,>=5.0.0",
+            "fastapi<1.0",
+            "httpx",
+            "hydra-core<2.0,>=1.0.5",
+            "jsonargparse[signatures]<5.0,>=4.18.0",
+            "lightning_api_access>=0.0.3",
+            "matplotlib<4.0,>3.1",
+            "omegaconf<3.0,>=2.0.5",
+            "onnxruntime<2.0",
+            "pandas<2.0,>1.0",
+            "panel<1.0,>=0.12.7",
+            "playwright==1.29.1",
+            "pre-commit==2.20.0",
+            "protobuf<=3.20.1",
+            "psutil",
+            "psutil<6.0",
+            "pympler",
+            "pytest-asyncio==0.20.3",
+            "pytest-cov==4.0.0",
+            "pytest-doctestplus>=0.9.0",
+            "pytest-forked==1.4.0",
+            "pytest-rerunfailures==10.3",
+            "pytest-timeout==2.1.0",
+            "pytest==7.2.0",
+            "pytorch-lightning>1.8.0",
+            "redis<5.0,>=4.0.1",
+            "requests-mock",
+            "rich!=10.15.0.a,<14.0,>=10.14.0",
+            "s3fs<2023.0,>=2022.5.0",
+            "scikit-learn<2.0,>0.22.1",
+            "setuptools<66.0",
+            "sqlmodel",
+            "streamlit<2.0,>=1.13.0",
+            "tensorboard<3.0,>=2.9.1",
+            "tensorboardX<3.0,>=2.2",
+            "trio<1.0",
+            "uvicorn<1.0"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "1.9.2": {
+      "36": {
+        "install_requires": [
+          "Jinja2<5.0",
+          "PyYAML<8.0",
+          "PyYAML<8.0,>=5.4",
+          "arrow<3.0,>=1.2.0",
+          "beautifulsoup4<6.0,>=4.8.0",
+          "click<10.0",
+          "croniter<1.4.0,>=1.3.0",
+          "dateutils<2.0",
+          "deepdiff<8.0,>=5.7.0",
+          "fastapi<0.89.0",
+          "fsspec<2024.0,>=2022.5.0",
+          "fsspec[http]<2025.0,>2021.06.0",
+          "inquirer<5.0,>=2.10.0",
+          "lightning-cloud>=0.5.26",
+          "lightning-utilities<2.0,>=0.6.0.post0",
+          "numpy<3.0,>=1.17.2",
+          "packaging",
+          "packaging<25.0,>=17.1",
+          "psutil<7.0",
+          "pydantic<3.0",
+          "requests<4.0",
+          "rich<15.0",
+          "starlette<2.0",
+          "starsessions<2.0,>=1.2.1",
+          "torch<3.0,>=1.10.0",
+          "torchmetrics<2.0,>=0.7.0",
+          "tqdm<6.0,>=4.57.0",
+          "traitlets<7.0,>=5.3.0",
+          "typing-extensions<6.0,>=4.0.0",
+          "urllib3<3.0",
+          "uvicorn<2.0",
+          "websocket-client<3.0",
+          "websockets<12.0"
+        ],
+        "extras_require": {
+          "pytorch-strategies": [
+            "colossalai<1.0,>=0.2.0",
+            "deepspeed<1.0,>=0.6.0",
+            "fairscale<1.0,>=0.4.5",
+            "horovod!=0.24.0,<1.0,>=0.21.2"
+          ],
+          "pytorch-strategies:sys_platform == \"linux\"": [
+            "hivemind==1.1.5"
+          ],
+          "pytorch-test": [
+            "cloudpickle<3.0,>=1.3",
+            "codecov==2.1.12",
+            "coverage==6.5.0",
+            "fastapi<1.0",
+            "onnxruntime<2.0",
+            "pandas<2.0,>1.0",
+            "pre-commit==2.20.0",
+            "protobuf<=3.20.1",
+            "psutil<6.0",
+            "pytest-cov==4.0.0",
+            "pytest-forked==1.4.0",
+            "pytest-rerunfailures==10.3",
+            "pytest==7.2.0",
+            "scikit-learn<2.0,>0.22.1",
+            "tensorboard<3.0,>=2.9.1",
+            "uvicorn<1.0"
+          ],
+          "pytorch-extra": [
+            "hydra-core<2.0,>=1.0.5",
+            "jsonargparse[signatures]<5.0,>=4.18.0",
+            "matplotlib<4.0,>3.1",
+            "omegaconf<3.0,>=2.0.5",
+            "rich!=10.15.0.a,<14.0,>=10.14.0",
+            "tensorboardX<3.0,>=2.2"
+          ],
+          "pytorch-examples": [
+            "gym[classic_control]<1.0,>=0.17.0",
+            "ipython[all]<9.0",
+            "torchvision<1.0,>=0.11.1"
+          ],
+          "app-test": [
+            "codecov==2.1.12",
+            "coverage==6.5.0",
+            "httpx",
+            "playwright==1.29.1",
+            "psutil",
+            "pympler",
+            "pytest-asyncio==0.20.3",
+            "pytest-cov==4.0.0",
+            "pytest-doctestplus>=0.9.0",
+            "pytest-timeout==2.1.0",
+            "pytest==7.2.0",
+            "requests-mock",
+            "setuptools<66.0",
+            "sqlmodel",
+            "trio<1.0"
+          ],
+          "app-cloud": [
+            "docker<7.0,>=5.0.0",
+            "redis<5.0,>=4.0.1",
+            "s3fs<2023.0,>=2022.5.0"
+          ],
+          "app-ui": [
+            "panel<1.0,>=0.12.7",
+            "streamlit<2.0,>=1.13.0"
+          ],
+          "app-components": [
+            "aiohttp<4.0,>=3.8.0",
+            "lightning_api_access>=0.0.3",
+            "pytorch-lightning>1.8.0"
+          ],
+          "fabric-strategies": [],
+          "fabric-strategies:python_version > \"3.7\" and platform_system != \"Windows\"": [
+            "deepspeed<1.0,>=0.6.0"
+          ],
+          "fabric-test": [
+            "click==8.1.3",
+            "codecov==2.1.12",
+            "coverage==6.5.0",
+            "pre-commit==2.20.0",
+            "pytest-cov==4.0.0",
+            "pytest==7.2.0",
+            "tensorboardX<3.0,>=2.2"
+          ],
+          "fabric-examples": [
+            "torchvision<1.0,>=0.10.0"
+          ],
+          "strategies": [
+            "colossalai<1.0,>=0.2.0",
             "deepspeed<1.0,>=0.6.0",
             "fairscale<1.0,>=0.4.5",
             "horovod!=0.24.0,<1.0,>=0.21.2"
