@@ -15516,6 +15516,9 @@
       },
       "1.29.72": {
         "botocore_a_la_carte_lookoutequipment-1.29.72-py3-none-any.whl": "1.29.42@botocore_a_la_carte_lookoutequipment-1.29.42-py3-none-any.whl"
+      },
+      "1.29.73": {
+        "botocore_a_la_carte_lookoutequipment-1.29.73-py3-none-any.whl": "1.29.42@botocore_a_la_carte_lookoutequipment-1.29.42-py3-none-any.whl"
       }
     }
   },
@@ -15615,6 +15618,9 @@
       },
       "1.29.72": {
         "botocore_a_la_carte_neptune-1.29.72-py3-none-any.whl": "1.29.42@botocore_a_la_carte_neptune-1.29.42-py3-none-any.whl"
+      },
+      "1.29.73": {
+        "botocore_a_la_carte_neptune-1.29.73-py3-none-any.whl": "1.29.42@botocore_a_la_carte_neptune-1.29.42-py3-none-any.whl"
       }
     }
   },
@@ -21701,6 +21707,21 @@
           "requires_dist": [
             "duckdb",
             "dagster (==1.1.18)",
+            "pandas ; extra == 'pandas'",
+            "pyspark (>=2.0.2) ; (python_version < \"3.8\") and extra == 'pyspark'",
+            "pyspark (>=3.0.0) ; (python_version >= \"3.8\") and extra == 'pyspark'"
+          ]
+        }
+      },
+      "0.17.19": {
+        "dagster_duckdb-0.17.19-py3-none-any.whl": {
+          "provides_extras": [
+            "pandas",
+            "pyspark"
+          ],
+          "requires_dist": [
+            "duckdb",
+            "dagster (==1.1.19)",
             "pandas ; extra == 'pandas'",
             "pyspark (>=2.0.2) ; (python_version < \"3.8\") and extra == 'pyspark'",
             "pyspark (>=3.0.0) ; (python_version >= \"3.8\") and extra == 'pyspark'"
@@ -41446,18 +41467,20 @@
   "ifcopenshell": {
     "py310": {
       "0.7.0": {
-        "ifcopenshell-0.7.0-221014-py310-none-macosx_10_15_x86_64.whl": {},
-        "ifcopenshell-0.7.0-221014-py310-none-macosx_11_0_arm64.whl": "0.7.0@ifcopenshell-0.7.0-221014-py310-none-macosx_10_15_x86_64.whl",
-        "ifcopenshell-0.7.0-221014-py310-none-manylinux1_x86_64.whl": "0.7.0@ifcopenshell-0.7.0-221014-py310-none-macosx_10_15_x86_64.whl",
-        "ifcopenshell-0.7.0-221014-py310-none-win_amd64.whl": "0.7.0@ifcopenshell-0.7.0-221014-py310-none-macosx_10_15_x86_64.whl",
-        "ifcopenshell-0.7.0-230215-py310-none-macosx_10_15_x86_64.whl": "0.7.0@ifcopenshell-0.7.0-221014-py310-none-macosx_10_15_x86_64.whl",
-        "ifcopenshell-0.7.0-230215-py310-none-macosx_11_0_arm64.whl": "0.7.0@ifcopenshell-0.7.0-221014-py310-none-macosx_10_15_x86_64.whl",
-        "ifcopenshell-0.7.0-230215-py310-none-manylinux1_x86_64.whl": "0.7.0@ifcopenshell-0.7.0-221014-py310-none-macosx_10_15_x86_64.whl",
-        "ifcopenshell-0.7.0-230215-py310-none-win_amd64.whl": "0.7.0@ifcopenshell-0.7.0-221014-py310-none-macosx_10_15_x86_64.whl",
-        "ifcopenshell-0.7.0-230216-py310-none-macosx_10_15_x86_64.whl": "0.7.0@ifcopenshell-0.7.0-221014-py310-none-macosx_10_15_x86_64.whl",
-        "ifcopenshell-0.7.0-230216-py310-none-macosx_11_0_arm64.whl": "0.7.0@ifcopenshell-0.7.0-221014-py310-none-macosx_10_15_x86_64.whl",
-        "ifcopenshell-0.7.0-230216-py310-none-manylinux1_x86_64.whl": "0.7.0@ifcopenshell-0.7.0-221014-py310-none-macosx_10_15_x86_64.whl",
-        "ifcopenshell-0.7.0-230216-py310-none-win_amd64.whl": "0.7.0@ifcopenshell-0.7.0-221014-py310-none-macosx_10_15_x86_64.whl"
+        "ifcopenshell-0.7.0-221014-py310-none-manylinux1_x86_64.whl": {},
+        "ifcopenshell-0.7.0-221014-py310-none-win_amd64.whl": "0.7.0@ifcopenshell-0.7.0-221014-py310-none-manylinux1_x86_64.whl",
+        "ifcopenshell-0.7.0-230215-py310-none-macosx_10_15_x86_64.whl": "0.7.0@ifcopenshell-0.7.0-221014-py310-none-manylinux1_x86_64.whl",
+        "ifcopenshell-0.7.0-230215-py310-none-macosx_11_0_arm64.whl": "0.7.0@ifcopenshell-0.7.0-221014-py310-none-manylinux1_x86_64.whl",
+        "ifcopenshell-0.7.0-230215-py310-none-manylinux1_x86_64.whl": "0.7.0@ifcopenshell-0.7.0-221014-py310-none-manylinux1_x86_64.whl",
+        "ifcopenshell-0.7.0-230215-py310-none-win_amd64.whl": "0.7.0@ifcopenshell-0.7.0-221014-py310-none-manylinux1_x86_64.whl",
+        "ifcopenshell-0.7.0-230216-py310-none-macosx_10_15_x86_64.whl": "0.7.0@ifcopenshell-0.7.0-221014-py310-none-manylinux1_x86_64.whl",
+        "ifcopenshell-0.7.0-230216-py310-none-macosx_11_0_arm64.whl": "0.7.0@ifcopenshell-0.7.0-221014-py310-none-manylinux1_x86_64.whl",
+        "ifcopenshell-0.7.0-230216-py310-none-manylinux1_x86_64.whl": "0.7.0@ifcopenshell-0.7.0-221014-py310-none-manylinux1_x86_64.whl",
+        "ifcopenshell-0.7.0-230216-py310-none-win_amd64.whl": "0.7.0@ifcopenshell-0.7.0-221014-py310-none-manylinux1_x86_64.whl",
+        "ifcopenshell-0.7.0-230217-py310-none-macosx_10_15_x86_64.whl": "0.7.0@ifcopenshell-0.7.0-221014-py310-none-manylinux1_x86_64.whl",
+        "ifcopenshell-0.7.0-230217-py310-none-macosx_11_0_arm64.whl": "0.7.0@ifcopenshell-0.7.0-221014-py310-none-manylinux1_x86_64.whl",
+        "ifcopenshell-0.7.0-230217-py310-none-manylinux1_x86_64.whl": "0.7.0@ifcopenshell-0.7.0-221014-py310-none-manylinux1_x86_64.whl",
+        "ifcopenshell-0.7.0-230217-py310-none-win_amd64.whl": "0.7.0@ifcopenshell-0.7.0-221014-py310-none-manylinux1_x86_64.whl"
       }
     },
     "py311": {
@@ -41469,7 +41492,11 @@
         "ifcopenshell-0.7.0-230216-py311-none-macosx_10_15_x86_64.whl": "0.7.0@ifcopenshell-0.7.0-230215-py311-none-macosx_10_15_x86_64.whl",
         "ifcopenshell-0.7.0-230216-py311-none-macosx_11_0_arm64.whl": "0.7.0@ifcopenshell-0.7.0-230215-py311-none-macosx_10_15_x86_64.whl",
         "ifcopenshell-0.7.0-230216-py311-none-manylinux1_x86_64.whl": "0.7.0@ifcopenshell-0.7.0-230215-py311-none-macosx_10_15_x86_64.whl",
-        "ifcopenshell-0.7.0-230216-py311-none-win_amd64.whl": "0.7.0@ifcopenshell-0.7.0-230215-py311-none-macosx_10_15_x86_64.whl"
+        "ifcopenshell-0.7.0-230216-py311-none-win_amd64.whl": "0.7.0@ifcopenshell-0.7.0-230215-py311-none-macosx_10_15_x86_64.whl",
+        "ifcopenshell-0.7.0-230217-py311-none-macosx_10_15_x86_64.whl": "0.7.0@ifcopenshell-0.7.0-230215-py311-none-macosx_10_15_x86_64.whl",
+        "ifcopenshell-0.7.0-230217-py311-none-macosx_11_0_arm64.whl": "0.7.0@ifcopenshell-0.7.0-230215-py311-none-macosx_10_15_x86_64.whl",
+        "ifcopenshell-0.7.0-230217-py311-none-manylinux1_x86_64.whl": "0.7.0@ifcopenshell-0.7.0-230215-py311-none-macosx_10_15_x86_64.whl",
+        "ifcopenshell-0.7.0-230217-py311-none-win_amd64.whl": "0.7.0@ifcopenshell-0.7.0-230215-py311-none-macosx_10_15_x86_64.whl"
       }
     },
     "py36": {
@@ -41481,7 +41508,11 @@
         "ifcopenshell-0.7.0-230216-py36-none-macosx_10_15_x86_64.whl": "0.7.0@ifcopenshell-0.7.0-230215-py36-none-macosx_10_15_x86_64.whl",
         "ifcopenshell-0.7.0-230216-py36-none-macosx_11_0_arm64.whl": "0.7.0@ifcopenshell-0.7.0-230215-py36-none-macosx_10_15_x86_64.whl",
         "ifcopenshell-0.7.0-230216-py36-none-manylinux1_x86_64.whl": "0.7.0@ifcopenshell-0.7.0-230215-py36-none-macosx_10_15_x86_64.whl",
-        "ifcopenshell-0.7.0-230216-py36-none-win_amd64.whl": "0.7.0@ifcopenshell-0.7.0-230215-py36-none-macosx_10_15_x86_64.whl"
+        "ifcopenshell-0.7.0-230216-py36-none-win_amd64.whl": "0.7.0@ifcopenshell-0.7.0-230215-py36-none-macosx_10_15_x86_64.whl",
+        "ifcopenshell-0.7.0-230217-py36-none-macosx_10_15_x86_64.whl": "0.7.0@ifcopenshell-0.7.0-230215-py36-none-macosx_10_15_x86_64.whl",
+        "ifcopenshell-0.7.0-230217-py36-none-macosx_11_0_arm64.whl": "0.7.0@ifcopenshell-0.7.0-230215-py36-none-macosx_10_15_x86_64.whl",
+        "ifcopenshell-0.7.0-230217-py36-none-manylinux1_x86_64.whl": "0.7.0@ifcopenshell-0.7.0-230215-py36-none-macosx_10_15_x86_64.whl",
+        "ifcopenshell-0.7.0-230217-py36-none-win_amd64.whl": "0.7.0@ifcopenshell-0.7.0-230215-py36-none-macosx_10_15_x86_64.whl"
       }
     },
     "py37": {
@@ -41497,7 +41528,10 @@
         "ifcopenshell-0.7.0-230216-py37-none-macosx_10_15_x86_64.whl": "0.7.0@ifcopenshell-0.7.0-221014-py37-none-macosx_10_15_x86_64.whl",
         "ifcopenshell-0.7.0-230216-py37-none-macosx_11_0_arm64.whl": "0.7.0@ifcopenshell-0.7.0-221014-py37-none-macosx_10_15_x86_64.whl",
         "ifcopenshell-0.7.0-230216-py37-none-manylinux1_x86_64.whl": "0.7.0@ifcopenshell-0.7.0-221014-py37-none-macosx_10_15_x86_64.whl",
-        "ifcopenshell-0.7.0-230216-py37-none-win_amd64.whl": "0.7.0@ifcopenshell-0.7.0-221014-py37-none-macosx_10_15_x86_64.whl"
+        "ifcopenshell-0.7.0-230216-py37-none-win_amd64.whl": "0.7.0@ifcopenshell-0.7.0-221014-py37-none-macosx_10_15_x86_64.whl",
+        "ifcopenshell-0.7.0-230217-py37-none-macosx_10_15_x86_64.whl": "0.7.0@ifcopenshell-0.7.0-221014-py37-none-macosx_10_15_x86_64.whl",
+        "ifcopenshell-0.7.0-230217-py37-none-manylinux1_x86_64.whl": "0.7.0@ifcopenshell-0.7.0-221014-py37-none-macosx_10_15_x86_64.whl",
+        "ifcopenshell-0.7.0-230217-py37-none-win_amd64.whl": "0.7.0@ifcopenshell-0.7.0-221014-py37-none-macosx_10_15_x86_64.whl"
       }
     },
     "py38": {
@@ -41513,7 +41547,11 @@
         "ifcopenshell-0.7.0-230216-py38-none-macosx_10_15_x86_64.whl": "0.7.0@ifcopenshell-0.7.0-221014-py38-none-macosx_10_15_x86_64.whl",
         "ifcopenshell-0.7.0-230216-py38-none-macosx_11_0_arm64.whl": "0.7.0@ifcopenshell-0.7.0-221014-py38-none-macosx_10_15_x86_64.whl",
         "ifcopenshell-0.7.0-230216-py38-none-manylinux1_x86_64.whl": "0.7.0@ifcopenshell-0.7.0-221014-py38-none-macosx_10_15_x86_64.whl",
-        "ifcopenshell-0.7.0-230216-py38-none-win_amd64.whl": "0.7.0@ifcopenshell-0.7.0-221014-py38-none-macosx_10_15_x86_64.whl"
+        "ifcopenshell-0.7.0-230216-py38-none-win_amd64.whl": "0.7.0@ifcopenshell-0.7.0-221014-py38-none-macosx_10_15_x86_64.whl",
+        "ifcopenshell-0.7.0-230217-py38-none-macosx_10_15_x86_64.whl": "0.7.0@ifcopenshell-0.7.0-221014-py38-none-macosx_10_15_x86_64.whl",
+        "ifcopenshell-0.7.0-230217-py38-none-macosx_11_0_arm64.whl": "0.7.0@ifcopenshell-0.7.0-221014-py38-none-macosx_10_15_x86_64.whl",
+        "ifcopenshell-0.7.0-230217-py38-none-manylinux1_x86_64.whl": "0.7.0@ifcopenshell-0.7.0-221014-py38-none-macosx_10_15_x86_64.whl",
+        "ifcopenshell-0.7.0-230217-py38-none-win_amd64.whl": "0.7.0@ifcopenshell-0.7.0-221014-py38-none-macosx_10_15_x86_64.whl"
       }
     },
     "py39": {
@@ -41529,7 +41567,11 @@
         "ifcopenshell-0.7.0-230216-py39-none-macosx_10_15_x86_64.whl": "0.7.0@ifcopenshell-0.7.0-221014-py39-none-macosx_10_15_x86_64.whl",
         "ifcopenshell-0.7.0-230216-py39-none-macosx_11_0_arm64.whl": "0.7.0@ifcopenshell-0.7.0-221014-py39-none-macosx_10_15_x86_64.whl",
         "ifcopenshell-0.7.0-230216-py39-none-manylinux1_x86_64.whl": "0.7.0@ifcopenshell-0.7.0-221014-py39-none-macosx_10_15_x86_64.whl",
-        "ifcopenshell-0.7.0-230216-py39-none-win_amd64.whl": "0.7.0@ifcopenshell-0.7.0-221014-py39-none-macosx_10_15_x86_64.whl"
+        "ifcopenshell-0.7.0-230216-py39-none-win_amd64.whl": "0.7.0@ifcopenshell-0.7.0-221014-py39-none-macosx_10_15_x86_64.whl",
+        "ifcopenshell-0.7.0-230217-py39-none-macosx_10_15_x86_64.whl": "0.7.0@ifcopenshell-0.7.0-221014-py39-none-macosx_10_15_x86_64.whl",
+        "ifcopenshell-0.7.0-230217-py39-none-macosx_11_0_arm64.whl": "0.7.0@ifcopenshell-0.7.0-221014-py39-none-macosx_10_15_x86_64.whl",
+        "ifcopenshell-0.7.0-230217-py39-none-manylinux1_x86_64.whl": "0.7.0@ifcopenshell-0.7.0-221014-py39-none-macosx_10_15_x86_64.whl",
+        "ifcopenshell-0.7.0-230217-py39-none-win_amd64.whl": "0.7.0@ifcopenshell-0.7.0-221014-py39-none-macosx_10_15_x86_64.whl"
       }
     }
   },
@@ -60553,6 +60595,21 @@
           ]
         }
       },
+      "2.46.0": {
+        "ocrd_validators-2.46.0-py3-none-any.whl": {
+          "requires_dist": [
+            "bagit (>=1.7.0)",
+            "bagit-profile (>=1.3.0)",
+            "click (>=7)",
+            "jsonschema",
+            "pyyaml",
+            "shapely",
+            "ocrd-utils (==2.46.0)",
+            "ocrd-models (==2.46.0)",
+            "ocrd-modelfactory (==2.46.0)"
+          ]
+        }
+      },
       "2.5.0": {
         "ocrd_validators-2.5.0-py3-none-any.whl": {
           "requires_dist": [
@@ -76560,6 +76617,9 @@
       },
       "1.6.0.dev1676517406": {
         "pulp_certguard_client-1.6.0.dev1676517406-py3-none-any.whl": "1.0.2@pulp_certguard_client-1.0.2-py3-none-any.whl"
+      },
+      "1.6.0.dev1676603661": {
+        "pulp_certguard_client-1.6.0.dev1676603661-py3-none-any.whl": "1.0.2@pulp_certguard_client-1.0.2-py3-none-any.whl"
       }
     }
   },
@@ -82842,6 +82902,9 @@
       },
       "0.0.4": {
         "remotior_sensus-0.0.4-py3-none-any.whl": "0.0.1@remotior_sensus-0.0.1-py3-none-any.whl"
+      },
+      "0.0.5": {
+        "remotior_sensus-0.0.5-py3-none-any.whl": "0.0.1@remotior_sensus-0.0.1-py3-none-any.whl"
       }
     }
   },
@@ -95798,6 +95861,19 @@
       },
       "0.8.0": {
         "unanimous-0.8.0-py3-none-any.whl": "0.6.3@unanimous-0.6.3-py3-none-any.whl"
+      },
+      "0.8.1": {
+        "unanimous-0.8.1-py3-none-any.whl": {
+          "requires_dist": [
+            "pyspelling",
+            "dataset (<1.2.0)",
+            "requests",
+            "click",
+            "defusedxml",
+            "backoff"
+          ],
+          "requires_python": ">=3.6"
+        }
       }
     }
   },
