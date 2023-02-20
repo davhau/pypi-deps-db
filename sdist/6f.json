@@ -13704,7 +13704,9 @@
     "0.2.51": "0.2.42",
     "0.2.51.dev1": "0.2.42",
     "0.2.52": "0.2.42",
-    "0.2.53": "0.2.42"
+    "0.2.53": "0.2.42",
+    "0.2.54.dev1": "0.2.42",
+    "0.2.54.dev2": "0.2.42"
   },
   "code2image": {
     "0.0.1": {
@@ -44119,6 +44121,19 @@
     },
     "3.1.post2": "3.1.2"
   },
+  "jintian-kaishi-zuo-mowang-qiaolin-zhi-20200306": {
+    "2023.2.20.0": {
+      "36": {
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
+  },
   "jkuang-tes": {
     "2.0": {
       "27": {
@@ -52477,6 +52492,19 @@
     "0.0.7": "0.0.1",
     "0.0.8": "0.0.1"
   },
+  "lv999-de-cunmin-xingyue-zimao-20201002": {
+    "2023.2.20.0": {
+      "36": {
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
+  },
   "lykkelleauthgen": {
     "0.1.0": {
       "27": {
@@ -56497,7 +56525,8 @@
     "2.5": "1.3",
     "2.5.1": "1.3",
     "2.6.0": "1.3",
-    "2.6.1": "1.3"
+    "2.6.1": "1.3",
+    "2.6.2": "1.3"
   },
   "mokuai": {
     "1.0": {
@@ -60083,6 +60112,89 @@
           "jsonschema<4.8.0,>=4.7.0",
           "netaddr<0.9.0,>=0.8.0",
           "netutils<1.5.0,>=1.4.0",
+          "prometheus-client<0.15.0,>=0.14.1",
+          "psycopg2-binary<2.10.0,>=2.9.5",
+          "pycryptodome<3.14.0,>=3.13.0",
+          "pyuwsgi<2.1.0,>=2.0.21",
+          "social-auth-app-django<5.1.0,>=5.0.0",
+          "svgwrite<1.5.0,>=1.4.2"
+        ],
+        "extras_require": {
+          "all": [
+            "django-auth-ldap<4.2.0,>=4.1.0",
+            "django-storages<1.13.0,>=1.12.3",
+            "mysqlclient<2.2.0,>=2.1.0",
+            "napalm<3.5.0,>=3.4.1",
+            "social-auth-core[openidconnect,saml]<4.4.0,>=4.3.0"
+          ],
+          "napalm": [
+            "napalm<3.5.0,>=3.4.1"
+          ],
+          "ldap": [
+            "django-auth-ldap<4.2.0,>=4.1.0"
+          ],
+          "remote-storage": [
+            "django-storages<1.13.0,>=1.12.3"
+          ],
+          "sso": [
+            "social-auth-core[openidconnect,saml]<4.4.0,>=4.3.0"
+          ],
+          "mysql": [
+            "mysqlclient<2.2.0,>=2.1.0"
+          ],
+          ":python_version < \"3.8\"": [
+            "importlib-metadata<5.0,>=4.4"
+          ]
+        },
+        "python_requires": [
+          ">=3.7,<4.0"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "1.5.11": {
+      "27": {
+        "install_requires": [
+          "Django<3.3.0,>=3.2.18",
+          "GitPython<3.2.0,>=3.1.30",
+          "Jinja2<3.2.0,>=3.1.0",
+          "Markdown<3.4.0,>=3.3.7",
+          "MarkupSafe<2.2.0,>=2.1.1",
+          "Pillow<9.4.0,>=9.3.0",
+          "PyYAML<6.1,>=6.0",
+          "celery<5.3.0,>=5.2.7",
+          "django-ajax-tables<1.2.0,>=1.1.1",
+          "django-cacheops<6.1,>=6.0",
+          "django-celery-beat<2.3.0,>=2.2.1",
+          "django-constance[database]<2.10.0,>=2.9.0",
+          "django-cors-headers<3.14.0,>=3.13.0",
+          "django-cryptography<1.1,>=1.0",
+          "django-db-file-storage<0.6.0,>=0.5.5",
+          "django-extensions<3.3.0,>=3.2.0",
+          "django-filter<21.2,>=21.1",
+          "django-health-check<3.17.0,>=3.16.5",
+          "django-jinja<2.11.0,>=2.10.2",
+          "django-mptt<0.15.0,>=0.14.0",
+          "django-prometheus<2.3.0,>=2.2.0",
+          "django-redis<5.3.0,>=5.2.0",
+          "django-rq<2.6.0,>=2.5.1",
+          "django-tables2<2.5.0,>=2.4.1",
+          "django-taggit<3.1.0,>=3.0.0",
+          "django-timezone-field<4.2.0,>=4.1.2",
+          "django-tree-queries<0.12,>=0.11",
+          "django-webserver<1.3.0,>=1.2.0",
+          "djangorestframework<3.15.0,>=3.14.0",
+          "drf-spectacular[sidecar]<0.25.0,>=0.24.2",
+          "drf-yasg[validation]<2.0.0,>=1.20.0",
+          "graphene-django-optimizer<0.9.0,>=0.8.0",
+          "graphene-django<2.16.0,>=2.15.0",
+          "jsonschema<4.8.0,>=4.7.0",
+          "netaddr<0.9.0,>=0.8.0",
+          "netutils<2.0.0,>=1.4.0",
           "prometheus-client<0.15.0,>=0.14.1",
           "psycopg2-binary<2.10.0,>=2.9.5",
           "pycryptodome<3.14.0,>=3.13.0",
