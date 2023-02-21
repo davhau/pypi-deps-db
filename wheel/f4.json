@@ -16983,6 +16983,19 @@
             "glom"
           ]
         }
+      },
+      "0.9.0": {
+        "demyst_cli-0.9.0-py3-none-any.whl": {
+          "requires_dist": [
+            "demyst-common (>=0.9.0)",
+            "click",
+            "boto3",
+            "botocore",
+            "tabulate",
+            "halo",
+            "glom"
+          ]
+        }
       }
     }
   },
@@ -23893,6 +23906,138 @@
       "1.13.2rc0": {
         "farm_haystack-1.13.2rc0-py3-none-any.whl": "1.13.1@farm_haystack-1.13.1-py3-none-any.whl"
       },
+      "1.14.0rc1": {
+        "farm_haystack-1.14.0rc1-py3-none-any.whl": {
+          "provides_extras": [
+            "all",
+            "all-gpu",
+            "audio",
+            "beir",
+            "colab",
+            "crawler",
+            "dev",
+            "docstores",
+            "docstores-gpu",
+            "faiss",
+            "faiss-gpu",
+            "formatting",
+            "graphdb",
+            "inmemorygraph",
+            "milvus",
+            "ocr",
+            "only-faiss",
+            "only-faiss-gpu",
+            "only-milvus",
+            "only-pinecone",
+            "onnx",
+            "onnx-gpu",
+            "opensearch",
+            "pinecone",
+            "preprocessing",
+            "ray",
+            "sql",
+            "weaviate"
+          ],
+          "requires_dist": [
+            "azure-ai-formrecognizer>=3.2.0b2",
+            "dill",
+            "elasticsearch<8,>=7.7",
+            "huggingface-hub>=0.5.0",
+            "importlib-metadata; python_version < '3.8'",
+            "jsonschema",
+            "langdetect",
+            "mlflow",
+            "mmh3",
+            "more-itertools",
+            "networkx",
+            "nltk",
+            "pandas",
+            "posthog",
+            "protobuf<=3.20.2",
+            "pydantic",
+            "python-docx",
+            "quantulum3",
+            "rank-bm25",
+            "rapidfuzz<2.8.0,>=2.0.15",
+            "requests",
+            "scikit-learn>=1.0.0",
+            "scipy>=1.3.2",
+            "sentence-transformers>=2.2.0",
+            "seqeval",
+            "tenacity",
+            "tika",
+            "tiktoken>=0.1.2; python_version >= '3.8' and (platform_machine == 'AMD64' or platform_machine == 'amd64' or platform_machine == 'x86_64' or (platform_machine == 'arm64' and platform_system == 'Darwin'))",
+            "tqdm",
+            "transformers[torch]==4.25.1",
+            "farm-haystack[audio,beir,crawler,dev,docstores,ocr,onnx,preprocessing,ray]; extra == 'all'",
+            "farm-haystack[audio,crawler,dev,docstores-gpu,ocr,onnx-gpu,preprocessing,ray]; extra == 'all-gpu'",
+            "espnet; extra == 'audio'",
+            "espnet-model-zoo; extra == 'audio'",
+            "ffmpeg-python==0.2.0; extra == 'audio'",
+            "numpy<1.24; extra == 'audio'",
+            "protobuf<=3.20.1; extra == 'audio'",
+            "pydub; extra == 'audio'",
+            "pyworld<0.3.1; python_version < '3.8' and extra == 'audio'",
+            "pyworld>=0.3.1; python_version >= '3.8' and extra == 'audio'",
+            "soundfile<0.12.0; extra == 'audio'",
+            "beir; platform_system != 'Windows' and extra == 'beir'",
+            "pillow<=9.0.0; extra == 'colab'",
+            "selenium!=4.1.4,>=4.0.0; extra == 'crawler'",
+            "webdriver-manager; extra == 'crawler'",
+            "coverage; extra == 'dev'",
+            "farm-haystack[formatting]; extra == 'dev'",
+            "jupytercontrib; extra == 'dev'",
+            "mkdocs; extra == 'dev'",
+            "mypy; extra == 'dev'",
+            "pre-commit; extra == 'dev'",
+            "psutil; extra == 'dev'",
+            "pydoc-markdown; extra == 'dev'",
+            "pylint; extra == 'dev'",
+            "pytest; extra == 'dev'",
+            "pytest-asyncio; extra == 'dev'",
+            "pytest-custom-exit-code; extra == 'dev'",
+            "python-multipart; extra == 'dev'",
+            "requests-cache; extra == 'dev'",
+            "responses; extra == 'dev'",
+            "tox; extra == 'dev'",
+            "typing-extensions; python_version < '3.8' and extra == 'dev'",
+            "watchdog; extra == 'dev'",
+            "farm-haystack[faiss,graphdb,inmemorygraph,milvus,opensearch,pinecone,weaviate]; extra == 'docstores'",
+            "farm-haystack[faiss-gpu,graphdb,inmemorygraph,milvus,opensearch,pinecone,weaviate]; extra == 'docstores-gpu'",
+            "farm-haystack[only-faiss,sql]; extra == 'faiss'",
+            "farm-haystack[only-faiss-gpu,sql]; extra == 'faiss-gpu'",
+            "black[jupyter]~=23.0; extra == 'formatting'",
+            "sparqlwrapper; extra == 'graphdb'",
+            "sparqlwrapper; extra == 'inmemorygraph'",
+            "farm-haystack[only-milvus,sql]; extra == 'milvus'",
+            "pdf2image>1.14; extra == 'ocr'",
+            "pytesseract>0.3.7; extra == 'ocr'",
+            "faiss-cpu<=1.7.2,>=1.6.3; extra == 'only-faiss'",
+            "faiss-gpu<2,>=1.6.3; extra == 'only-faiss-gpu'",
+            "pymilvus<3,>=2.0.0; extra == 'only-milvus'",
+            "pinecone-client<3,>=2.0.11; extra == 'only-pinecone'",
+            "onnxruntime; extra == 'onnx'",
+            "onnxruntime-tools; extra == 'onnx'",
+            "onnxruntime-gpu; extra == 'onnx-gpu'",
+            "onnxruntime-tools; extra == 'onnx-gpu'",
+            "opensearch-py>=2; extra == 'opensearch'",
+            "farm-haystack[only-pinecone,sql]; extra == 'pinecone'",
+            "beautifulsoup4; extra == 'preprocessing'",
+            "markdown; extra == 'preprocessing'",
+            "python-frontmatter; extra == 'preprocessing'",
+            "python-magic-bin; platform_system == 'Windows' and extra == 'preprocessing'",
+            "python-magic; platform_system != 'Windows' and extra == 'preprocessing'",
+            "aiorwlock<2,>=1.3.0; extra == 'ray'",
+            "ray!=1.12.0,<2,>=1.9.1; platform_system == 'Windows' and extra == 'ray'",
+            "ray<2,>=1.9.1; platform_system != 'Windows' and extra == 'ray'",
+            "psycopg2-binary; platform_system != 'Windows' and extra == 'sql'",
+            "sqlalchemy-utils; extra == 'sql'",
+            "sqlalchemy<2,>=1.4.2; extra == 'sql'",
+            "weaviate-client==3.10.0; extra == 'weaviate'"
+          ],
+          "requires_python": ">=3.7"
+        }
+      },
       "1.2.0": {
         "farm_haystack-1.2.0-py3-none-any.whl": {
           "provides_extras": [
@@ -28893,6 +29038,15 @@
       }
     }
   },
+  "guaiwu-lieren-2g-linghun-jichengzhe-bingshang-huiyi-20200313": {
+    "py3": {
+      "2023.2.20.0": {
+        "guaiwu_lieren_2g_linghun_jichengzhe_bingshang_huiyi_20200313-2023.2.20.0-py3-none-any.whl": {
+          "requires_python": ">=3.6"
+        }
+      }
+    }
+  },
   "gunchuangdan-xinlixue-vol1": {
     "py3": {
       "2022.10.11.0": {
@@ -32452,6 +32606,29 @@
       }
     }
   },
+  "jhalog": {
+    "py3": {
+      "0.1.0": {
+        "jhalog-0.1.0-py3-none-any.whl": {
+          "provides_extras": [
+            "cloudwatch-logs"
+          ],
+          "requires_dist": [
+            "aioboto3 ; extra == \"cloudwatch-logs\"",
+            "aiohttp (>3.8) ; extra == \"cloudwatch-logs\"",
+            "psutil"
+          ],
+          "requires_python": ">=3.8,<4.0"
+        }
+      },
+      "0.1.1": {
+        "jhalog-0.1.1-py3-none-any.whl": "0.1.0@jhalog-0.1.0-py3-none-any.whl"
+      },
+      "0.1.2": {
+        "jhalog-0.1.2-py3-none-any.whl": "0.1.0@jhalog-0.1.0-py3-none-any.whl"
+      }
+    }
+  },
   "jidong-zhanshi-gao-da-z-fuye-you-youji-20100821": {
     "py3": {
       "2023.2.19.0": {
@@ -33526,6 +33703,9 @@
           ],
           "requires_python": ">=3.8"
         }
+      },
+      "0.1.1": {
+        "klab_client_py-0.1.1-py3-none-any.whl": "0.1.0@klab_client_py-0.1.0-py3-none-any.whl"
       }
     }
   },
@@ -39303,6 +39483,15 @@
       },
       "1.0.4rc20211006105348": {
         "mosaik.CSV_SemVer-1.0.4rc20211006105348-py2.py3-none-any.whl": "1.0.4rc20201203035320@mosaik.CSV_SemVer-1.0.4rc20201203035320-py2.py3-none-any.whl"
+      }
+    }
+  },
+  "moshu-jianyu-de-malian-songshan-gang-20190417": {
+    "py3": {
+      "2023.2.20.0": {
+        "moshu_jianyu_de_malian_songshan_gang_20190417-2023.2.20.0-py3-none-any.whl": {
+          "requires_python": ">=3.6"
+        }
       }
     }
   },
@@ -48063,6 +48252,18 @@
           ],
           "requires_python": ">=3.6, <3.11"
         }
+      },
+      "0.1.0rc0": {
+        "pavilioncms_python-0.1.0rc0-py2.py3-none-any.whl": "0.1.0b0@pavilioncms_python-0.1.0b0-py2.py3-none-any.whl"
+      },
+      "0.1.0rc1": {
+        "pavilioncms_python-0.1.0rc1-py2.py3-none-any.whl": "0.1.0b0@pavilioncms_python-0.1.0b0-py2.py3-none-any.whl"
+      },
+      "0.1.0rc2": {
+        "pavilioncms_python-0.1.0rc2-py2.py3-none-any.whl": "0.1.0b0@pavilioncms_python-0.1.0b0-py2.py3-none-any.whl"
+      },
+      "0.1.0rc3": {
+        "pavilioncms_python-0.1.0rc3-py2.py3-none-any.whl": "0.1.0b0@pavilioncms_python-0.1.0b0-py2.py3-none-any.whl"
       }
     }
   },
@@ -54485,6 +54686,9 @@
           ],
           "requires_python": ">=3.6"
         }
+      },
+      "0.1.1": {
+        "pymusickit-0.1.1-py3-none-any.whl": "0.1@pymusickit-0.1-py3-none-any.whl"
       }
     }
   },
@@ -68243,6 +68447,12 @@
       },
       "3.0.832": {
         "tencentcloud_sdk_python_dnspod-3.0.832-py2.py3-none-any.whl": "3.0.403@tencentcloud_sdk_python_dnspod-3.0.403-py2.py3-none-any.whl"
+      },
+      "3.0.833": {
+        "tencentcloud_sdk_python_dnspod-3.0.833-py2.py3-none-any.whl": "3.0.403@tencentcloud_sdk_python_dnspod-3.0.403-py2.py3-none-any.whl"
+      },
+      "3.0.834": {
+        "tencentcloud_sdk_python_dnspod-3.0.834-py2.py3-none-any.whl": "3.0.403@tencentcloud_sdk_python_dnspod-3.0.403-py2.py3-none-any.whl"
       }
     }
   },
@@ -74689,6 +74899,9 @@
       },
       "4.4.1.3": {
         "types_zxcvbn-4.4.1.3-py3-none-any.whl": "4.4.0@types_zxcvbn-4.4.0-py3-none-any.whl"
+      },
+      "4.4.1.4": {
+        "types_zxcvbn-4.4.1.4-py3-none-any.whl": "4.4.0@types_zxcvbn-4.4.0-py3-none-any.whl"
       }
     }
   },
@@ -78574,6 +78787,12 @@
       },
       "1.0": {
         "whatsmate-1.0-py3-none-any.whl": "0.1@WhatsMate-0.1-py3-none-any.whl"
+      },
+      "1.1": {
+        "whatsmate-1.1-py3-none-any.whl": "0.1@WhatsMate-0.1-py3-none-any.whl"
+      },
+      "1.2": {
+        "whatsmate-1.2-py3-none-any.whl": "0.1@WhatsMate-0.1-py3-none-any.whl"
       }
     }
   },
@@ -78897,10 +79116,28 @@
       }
     }
   },
+  "wo-de-ta-shi-zhanzheng-yaojing-xiyeqiuyan-20200219": {
+    "py3": {
+      "2023.2.21.0": {
+        "wo_de_ta_shi_zhanzheng_yaojing_xiyeqiuyan_20200219-2023.2.21.0-py3-none-any.whl": {
+          "requires_python": ">=3.6"
+        }
+      }
+    }
+  },
   "wo-tianmi-de-kuse-xilie-sentian-jijie-20100911": {
     "py3": {
       "2023.2.19.0": {
         "wo_tianmi_de_kuse_xilie_sentian_jijie_20100911-2023.2.19.0-py3-none-any.whl": {
+          "requires_python": ">=3.6"
+        }
+      }
+    }
+  },
+  "wo-xiang-chidiao-ni-de-yizang-wo-xiang-chi-le-ni-de-yizang-zhu-yeye-20200309": {
+    "py3": {
+      "2023.2.21.0": {
+        "wo_xiang_chidiao_ni_de_yizang_wo_xiang_chi_le_ni_de_yizang_zhu_yeye_20200309-2023.2.21.0-py3-none-any.whl": {
           "requires_python": ">=3.6"
         }
       }
@@ -79309,6 +79546,15 @@
       }
     }
   },
+  "yu-ni-gongdu-de-disici-xueyuan-ji-tianyin-20200505": {
+    "py3": {
+      "2023.2.21.0": {
+        "yu_ni_gongdu_de_disici_xueyuan_ji_tianyin_20200505-2023.2.21.0-py3-none-any.whl": {
+          "requires_python": ">=3.6"
+        }
+      }
+    }
+  },
   "zadarapy": {
     "py2.py3": {
       "0.1": {
@@ -79464,6 +79710,15 @@
     "py3": {
       "2022.10.3.0": {
         "zhiwu_jingyou_yangsheng-2022.10.3.0-py3-none-any.whl": {
+          "requires_python": ">=3.6"
+        }
+      }
+    }
+  },
+  "zhuansheng-guizu-de-yi-shijie-maoxian-lu-yezhou-20190902": {
+    "py3": {
+      "2023.2.21.0": {
+        "zhuansheng_guizu_de_yi_shijie_maoxian_lu_yezhou_20190902-2023.2.21.0-py3-none-any.whl": {
           "requires_python": ">=3.6"
         }
       }
