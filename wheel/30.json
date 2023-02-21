@@ -10189,6 +10189,33 @@
       "0.0.72": {
         "bodyguard-0.0.72-py3-none-any.whl": "0.0.1@bodyguard-0.0.1-py3-none-any.whl"
       },
+      "0.0.73": {
+        "bodyguard-0.0.73-py3-none-any.whl": {
+          "provides_extras": [
+            "plot"
+          ],
+          "requires_dist": [
+            "sys",
+            "time",
+            "pandas",
+            "numpy",
+            "scipy",
+            "numbers",
+            "re",
+            "functools",
+            "itertools",
+            "collections",
+            "typing",
+            "random",
+            "datetime",
+            "pickle",
+            "json",
+            "sklearn",
+            "plotnine ; extra == 'plot'"
+          ],
+          "requires_python": ">=3.6"
+        }
+      },
       "0.0.8": {
         "bodyguard-0.0.8-py3-none-any.whl": "0.0.1@bodyguard-0.0.1-py3-none-any.whl"
       },
@@ -18939,6 +18966,9 @@
       },
       "0.1.5": {
         "django_rudra-0.1.5-py3-none-any.whl": "0.1@django_rudra-0.1-py3-none-any.whl"
+      },
+      "0.1.6": {
+        "django_rudra-0.1.6-py3-none-any.whl": "0.1@django_rudra-0.1-py3-none-any.whl"
       }
     }
   },
@@ -21431,6 +21461,38 @@
             "pytest-metadata (>=1.5.1) ; extra == 'test'",
             "pytest-xdist ; extra == 'test'"
           ]
+        }
+      }
+    }
+  },
+  "espm": {
+    "py2.py3": {
+      "0.1.1": {
+        "espm-0.1.1-py2.py3-none-any.whl": {
+          "provides_extras": [
+            "dev"
+          ],
+          "requires_dist": [
+            "hyperspy",
+            "tqdm",
+            "lmfit",
+            "scikit-learn",
+            "flake8 ; extra == 'dev'",
+            "pytest ; extra == 'dev'",
+            "jupyterlab ; extra == 'dev'",
+            "twine ; extra == 'dev'",
+            "setuptools ; extra == 'dev'",
+            "wheel ; extra == 'dev'",
+            "sphinx ; extra == 'dev'",
+            "numpydoc ; extra == 'dev'",
+            "sphinxcontrib-bibtex ; extra == 'dev'",
+            "sphinx-gallery ; extra == 'dev'",
+            "memory-profiler ; extra == 'dev'",
+            "sphinx-rtd-theme ; extra == 'dev'",
+            "sphinx-copybutton ; extra == 'dev'",
+            "nbsphinx ; extra == 'dev'"
+          ],
+          "requires_python": ">=3.7"
         }
       }
     }
@@ -28303,6 +28365,156 @@
             "boto3; extra == 'serving'",
             "PyYAML; extra == 'serving'",
             "daft[serving, iceberg]; extra == 'experimental'",
+            "icebridge; extra == 'iceberg'"
+          ],
+          "requires_python": ">=3.7"
+        }
+      },
+      "0.0.23": {
+        "getdaft-0.0.23-cp37-abi3-macosx_10_7_x86_64.whl": {
+          "provides_extras": [
+            "serving",
+            "ray",
+            "iceberg",
+            "aws",
+            "experimental",
+            "all"
+          ],
+          "requires_dist": [
+            "numpy < 1.24",
+            "pyarrow",
+            "fsspec[http]",
+            "protobuf>=3.19.0",
+            "pydot",
+            "loguru",
+            "tabulate",
+            "pandas",
+            "psutil",
+            "typing-extensions >= 4.0.0; python_version < '3.8'",
+            "pickle5 >= 0.0.12; python_version < '3.8'",
+            "polars[timezone] < 0.16.0",
+            "fastapi; extra == 'serving'",
+            "docker; extra == 'serving'",
+            "uvicorn; extra == 'serving'",
+            "cloudpickle; extra == 'serving'",
+            "boto3; extra == 'serving'",
+            "PyYAML; extra == 'serving'",
+            "ray[data, default]>=1.10.0; extra == 'ray'",
+            "grpcio<1.52.0; extra == 'ray'",
+            "icebridge; extra == 'iceberg'",
+            "s3fs; extra == 'aws'",
+            "daft[serving, iceberg]; extra == 'experimental'",
+            "daft[aws, ray]; extra == 'all'"
+          ],
+          "requires_python": ">=3.7"
+        },
+        "getdaft-0.0.23-cp37-abi3-macosx_11_0_arm64.whl": {
+          "provides_extras": [
+            "aws",
+            "experimental",
+            "ray",
+            "all",
+            "iceberg",
+            "serving"
+          ],
+          "requires_dist": [
+            "numpy < 1.24",
+            "pyarrow",
+            "fsspec[http]",
+            "protobuf>=3.19.0",
+            "pydot",
+            "loguru",
+            "tabulate",
+            "pandas",
+            "psutil",
+            "typing-extensions >= 4.0.0; python_version < '3.8'",
+            "pickle5 >= 0.0.12; python_version < '3.8'",
+            "polars[timezone] < 0.16.0",
+            "s3fs; extra == 'aws'",
+            "daft[serving, iceberg]; extra == 'experimental'",
+            "ray[data, default]>=1.10.0; extra == 'ray'",
+            "grpcio<1.52.0; extra == 'ray'",
+            "daft[aws, ray]; extra == 'all'",
+            "icebridge; extra == 'iceberg'",
+            "fastapi; extra == 'serving'",
+            "docker; extra == 'serving'",
+            "uvicorn; extra == 'serving'",
+            "cloudpickle; extra == 'serving'",
+            "boto3; extra == 'serving'",
+            "PyYAML; extra == 'serving'"
+          ],
+          "requires_python": ">=3.7"
+        },
+        "getdaft-0.0.23-cp37-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl": {
+          "provides_extras": [
+            "iceberg",
+            "ray",
+            "experimental",
+            "serving",
+            "all",
+            "aws"
+          ],
+          "requires_dist": [
+            "numpy < 1.24",
+            "pyarrow",
+            "fsspec[http]",
+            "protobuf>=3.19.0",
+            "pydot",
+            "loguru",
+            "tabulate",
+            "pandas",
+            "psutil",
+            "typing-extensions >= 4.0.0; python_version < '3.8'",
+            "pickle5 >= 0.0.12; python_version < '3.8'",
+            "polars[timezone] < 0.16.0",
+            "icebridge; extra == 'iceberg'",
+            "ray[data, default]>=1.10.0; extra == 'ray'",
+            "grpcio<1.52.0; extra == 'ray'",
+            "daft[serving, iceberg]; extra == 'experimental'",
+            "fastapi; extra == 'serving'",
+            "docker; extra == 'serving'",
+            "uvicorn; extra == 'serving'",
+            "cloudpickle; extra == 'serving'",
+            "boto3; extra == 'serving'",
+            "PyYAML; extra == 'serving'",
+            "daft[aws, ray]; extra == 'all'",
+            "s3fs; extra == 'aws'"
+          ],
+          "requires_python": ">=3.7"
+        },
+        "getdaft-0.0.23-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": {
+          "provides_extras": [
+            "ray",
+            "serving",
+            "experimental",
+            "all",
+            "aws",
+            "iceberg"
+          ],
+          "requires_dist": [
+            "numpy < 1.24",
+            "pyarrow",
+            "fsspec[http]",
+            "protobuf>=3.19.0",
+            "pydot",
+            "loguru",
+            "tabulate",
+            "pandas",
+            "psutil",
+            "typing-extensions >= 4.0.0; python_version < '3.8'",
+            "pickle5 >= 0.0.12; python_version < '3.8'",
+            "polars[timezone] < 0.16.0",
+            "ray[data, default]>=1.10.0; extra == 'ray'",
+            "grpcio<1.52.0; extra == 'ray'",
+            "fastapi; extra == 'serving'",
+            "docker; extra == 'serving'",
+            "uvicorn; extra == 'serving'",
+            "cloudpickle; extra == 'serving'",
+            "boto3; extra == 'serving'",
+            "PyYAML; extra == 'serving'",
+            "daft[serving, iceberg]; extra == 'experimental'",
+            "daft[aws, ray]; extra == 'all'",
+            "s3fs; extra == 'aws'",
             "icebridge; extra == 'iceberg'"
           ],
           "requires_python": ">=3.7"
@@ -37928,6 +38140,23 @@
             "setuptools",
             "pytest; extra == 'tests'"
           ]
+        }
+      }
+    }
+  },
+  "linien-gui": {
+    "py3": {
+      "0.6.0rc1": {
+        "linien_gui-0.6.0rc1-py3-none-any.whl": {
+          "requires_dist": [
+            "appdirs (>=1.4.4)",
+            "click (>=7.1.2)",
+            "pyqtgraph (>=0.10.0)",
+            "PyQt5 (>=5.12.0)",
+            "superqt (>=0.2.3)",
+            "linien-client (==0.6.0rc1)"
+          ],
+          "requires_python": ">=3.8"
         }
       }
     }
@@ -47794,6 +48023,12 @@
           ],
           "requires_python": ">=3.8"
         }
+      },
+      "15.0.1.3.0.1": {
+        "odoo_addon_maintenance_plan-15.0.1.3.0.1-py3-none-any.whl": "15.0.1.3.0@odoo_addon_maintenance_plan-15.0.1.3.0-py3-none-any.whl"
+      },
+      "15.0.1.4.0": {
+        "odoo_addon_maintenance_plan-15.0.1.4.0-py3-none-any.whl": "15.0.1.3.0@odoo_addon_maintenance_plan-15.0.1.3.0-py3-none-any.whl"
       }
     }
   },
@@ -47966,6 +48201,16 @@
           "requires_dist": [
             "odoo-addon-queue-job (<16.1dev,>=16.0dev)",
             "odoo-addon-queue-job-cron (<16.1dev,>=16.0dev)",
+            "odoo-addon-test-queue-job (<16.1dev,>=16.0dev)"
+          ]
+        }
+      },
+      "16.0.20230220.0": {
+        "odoo_addons_oca_queue-16.0.20230220.0-py3-none-any.whl": {
+          "requires_dist": [
+            "odoo-addon-queue-job (<16.1dev,>=16.0dev)",
+            "odoo-addon-queue-job-cron (<16.1dev,>=16.0dev)",
+            "odoo-addon-queue-job-cron-jobrunner (<16.1dev,>=16.0dev)",
             "odoo-addon-test-queue-job (<16.1dev,>=16.0dev)"
           ]
         }
@@ -49199,6 +49444,9 @@
       },
       "13.0.1.1.1.dev6": {
         "odoo13_addon_maintenance_project-13.0.1.1.1.dev6-py3-none-any.whl": "13.0.1.1.0@odoo13_addon_maintenance_project-13.0.1.1.0-py3-none-any.whl"
+      },
+      "13.0.1.1.1.dev7": {
+        "odoo13_addon_maintenance_project-13.0.1.1.1.dev7-py3-none-any.whl": "13.0.1.1.0@odoo13_addon_maintenance_project-13.0.1.1.0-py3-none-any.whl"
       }
     }
   },
