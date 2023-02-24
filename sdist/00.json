@@ -7617,7 +7617,85 @@
     },
     "0.1.1": "0.1.0",
     "0.1.2": "0.1.0",
-    "0.2.0": "0.1.0"
+    "0.2.0": "0.1.0",
+    "0.2.1": {
+      "27": {
+        "install_requires": [
+          "cachetools<5.0.0,>=4.2.4",
+          "certifi==2021.10.8",
+          "charset-normalizer<3.0.0,>=2.0.7",
+          "click<8.1,>=8.0",
+          "google-api-core<3.0.0,>=2.1.1",
+          "google-auth<3.0.0,>=1.6.3",
+          "google-cloud-bigquery-storage<3.0.0,>=2.0.0",
+          "google-cloud-bigquery<3.0.0,>=2.0.0",
+          "google-cloud-core<3.0.0,>=2.1.0",
+          "google-cloud-storage<2.0.0,>=1.42.3",
+          "google-crc32c<2.0.0,>=1.3.0",
+          "google-resumable-media>=2.0.3",
+          "googleapis-common-protos<7.0.0,>=1.53.0",
+          "idna<2.9,>=2.5",
+          "msal<2.0.0,>=1.20.0",
+          "protobuf<4.0.0,>=2.0.0",
+          "pyarrow<7.0.0,>=6.0.0",
+          "pyasn1-modules<1.0.0,>=0.2.8",
+          "pyasn1<1.0.0,>=0.4.8",
+          "pycryptodome<4.0.0,>=3.0.0",
+          "python-dateutil<=3.0.0,>=2.0.0",
+          "pytz==2021.3",
+          "requests<3.0.0,>=2.0.0",
+          "rsa<5.0.0,>=4.0.0",
+          "six<2.0.0,>=1.16.0",
+          "sqlalchemy<1.5,>=1.4",
+          "tqdm<5.0.0,>=4.0.0",
+          "typing-extensions>=4.0.0",
+          "urllib3<2.0.0,>=1.0.0"
+        ],
+        "extras_require": {
+          "metabase": [
+            "psycopg2-binary<3.0.0,>=2.0.0"
+          ],
+          "all": [
+            "looker-sdk<=23.0.0,>=22.4.0",
+            "psycopg2-binary<3.0.0,>=2.0.0",
+            "snowflake-connector-python!=2.7.10,>=2.6.2",
+            "snowflake-sqlalchemy!=1.2.5,<2.0.0",
+            "sqlalchemy-bigquery<=2.0.0,>=1.0.0",
+            "sqlalchemy-redshift==0.8.2",
+            "tableauserverclient==0.17.0",
+            "websocket-client<1,>=0"
+          ],
+          "looker": [
+            "looker-sdk<=23.0.0,>=22.4.0"
+          ],
+          "redshift": [
+            "psycopg2-binary<3.0.0,>=2.0.0",
+            "sqlalchemy-redshift==0.8.2"
+          ],
+          "tableau": [
+            "tableauserverclient==0.17.0"
+          ],
+          "bigquery": [
+            "sqlalchemy-bigquery<=2.0.0,>=1.0.0"
+          ],
+          "qlik": [
+            "websocket-client<1,>=0"
+          ],
+          "snowflake": [
+            "snowflake-connector-python!=2.7.10,>=2.6.2",
+            "snowflake-sqlalchemy!=1.2.5,<2.0.0"
+          ]
+        },
+        "python_requires": [
+          ">=3.7,<3.11"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "cathpy": {
     "0.0.1": {
@@ -22538,6 +22616,24 @@
     "0.0.6": "0.0.5",
     "0.0.7": "0.0.5"
   },
+  "greenplum-python": {
+    "1.0.0": {
+      "27": {
+        "install_requires": [
+          "psycopg2-binary==2.9.5",
+          "dill==0.3.6"
+        ],
+        "python_requires": [
+          ">=3.9"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
+  },
   "griffon": {
     "0.0.2": {
       "27": {
@@ -37225,7 +37321,54 @@
       "310": "36"
     },
     "1.0.7": "1.0.6",
-    "1.0.8": "1.0.6"
+    "1.0.8": "1.0.6",
+    "1.0.9": {
+      "36": {
+        "install_requires": [
+          "flask-resources<1.0.0,>=0.9.0",
+          "invenio-accounts<3.0.0,>=2.0.0",
+          "invenio-base<2.0.0,>=1.2.12",
+          "invenio-files-rest<2.0.0,>=1.3.0",
+          "invenio-i18n<2.0.0,>=1.3.2",
+          "invenio-indexer<3.0.0,>=2.1.0",
+          "invenio-jsonschemas<2.0.0,>=1.1.3",
+          "invenio-pidstore<2.0.0,>=1.2.2",
+          "invenio-records-permissions<0.16.0,>=0.15.1",
+          "invenio-records<3.0.0,>=2.0.0",
+          "luqum>=0.11.0",
+          "marshmallow-utils<0.6.0,>=0.5.3",
+          "uritemplate>=3.0.1",
+          "wand<0.7.0,>=0.6.6",
+          "xmltodict~=0.12.0",
+          "zipstream-ng>=1.3.4"
+        ],
+        "extras_require": {
+          "tests": [
+            "pytest-black>=0.3.0",
+            "invenio-app>=1.3.2",
+            "invenio-db[mysql,postgresql,versioning]<2.0.0,>=1.0.14",
+            "pytest-invenio<3.0.0,>=2.1.0",
+            "sphinx<5,>=4.2.0"
+          ],
+          "elasticsearch7": [
+            "invenio-search[elasticsearch7]<3.0.0,>=2.1.0"
+          ],
+          "opensearch1": [
+            "invenio-search[opensearch1]<3.0.0,>=2.1.0"
+          ],
+          "opensearch2": [
+            "invenio-search[opensearch2]<3.0.0,>=2.1.0"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "iofog": {
     "0.0.0": {
@@ -70088,7 +70231,8 @@
     "0.0.57": "0.0.2",
     "0.0.56": "0.0.2",
     "0.0.59": "0.0.2",
-    "0.0.60": "0.0.2"
+    "0.0.60": "0.0.2",
+    "0.0.61": "0.0.2"
   },
   "resimpyx": {
     "0.0.1": {
@@ -74130,6 +74274,36 @@
     },
     "0.15.2": "0.15",
     "0.15.3": "0.15"
+  },
+  "sed-scores-eval": {
+    "0.0.0": {
+      "27": {
+        "install_requires": [
+          "numpy",
+          "pandas",
+          "scipy",
+          "pathlib",
+          "lazy_dataset",
+          "einops",
+          "sed_eval"
+        ],
+        "extras_require": {
+          "test": [
+            "coverage",
+            "jupyter",
+            "matplotlib"
+          ],
+          "dev": [
+            "check-manifest"
+          ]
+        }
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "seleniumboot": {
     "1.0.0": {
