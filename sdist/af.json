@@ -14912,6 +14912,45 @@
       "38": "36",
       "39": "36",
       "310": "36"
+    },
+    "0.2.3": {
+      "36": {
+        "install_requires": [
+          "librosa>=0.8.0",
+          "mir_eval>=0.6",
+          "numpy<1.24,>=1.18",
+          "pretty_midi>=0.2.9",
+          "resampy>=0.2.2",
+          "scipy>=1.4.1",
+          "typing_extensions"
+        ],
+        "extras_require": {
+          "test": [
+            "coverage>=5.0.2",
+            "pytest>=6.1.1",
+            "pytest-mock"
+          ],
+          "docs": [
+            "mkdocs>=1.0.4"
+          ],
+          "dev": [
+            "basic_pitch[docs,test]",
+            "bump2version>=1.0.1",
+            "mypy",
+            "tox"
+          ],
+          ":platform_machine != \"arm64\"": [
+            "tensorflow<2.10,>=2.4.1"
+          ],
+          ":platform_machine == \"arm64\"": [
+            "tensorflow-macos<2.10,>=2.4.1"
+          ]
+        }
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
     }
   },
   "bb-slack-notify": {
