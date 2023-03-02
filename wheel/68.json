@@ -12372,6 +12372,9 @@
       },
       "1.29.81": {
         "botocore_a_la_carte_workmail-1.29.81-py3-none-any.whl": "1.29.42@botocore_a_la_carte_workmail-1.29.42-py3-none-any.whl"
+      },
+      "1.29.82": {
+        "botocore_a_la_carte_workmail-1.29.82-py3-none-any.whl": "1.29.42@botocore_a_la_carte_workmail-1.29.42-py3-none-any.whl"
       }
     }
   },
@@ -21843,6 +21846,18 @@
       },
       "0.2.1": {
         "django_issueinspector-0.2.1-py2.py3-none-any.whl": "0.2.0@django_issueinspector-0.2.0-py2.py3-none-any.whl"
+      }
+    }
+  },
+  "django-js-reverse-swh": {
+    "py2.py3": {
+      "0.10.1b1.dev0": {
+        "django_js_reverse_swh-0.10.1b1.dev0-py2.py3-none-any.whl": {
+          "requires_dist": [
+            "Django (>=1.5)",
+            "packaging (>=21.3)"
+          ]
+        }
       }
     }
   },
@@ -34595,6 +34610,42 @@
       },
       "0.38.0b0": {
         "inboard-0.38.0b0-py3-none-any.whl": "0.38.0a1@inboard-0.38.0a1-py3-none-any.whl"
+      },
+      "0.39.0": {
+        "inboard-0.39.0-py3-none-any.whl": {
+          "provides_extras": [
+            "checks",
+            "docs",
+            "fastapi",
+            "starlette",
+            "tests",
+            "uvicorn-fast",
+            "uvicorn-standard"
+          ],
+          "requires_dist": [
+            "gunicorn==20.1.0",
+            "uvicorn==0.20.0",
+            "asgiref==3.6.0; extra == 'checks'",
+            "black<24,>=23; extra == 'checks'",
+            "flake8<7,>=6; extra == 'checks'",
+            "isort<6,>=5; extra == 'checks'",
+            "mypy==1.0.1; extra == 'checks'",
+            "pre-commit<3,>=2; extra == 'checks'",
+            "mkdocs-material<9,>=8; extra == 'docs'",
+            "fastapi<0.90,>=0.89; extra == 'fastapi'",
+            "starlette<0.23,>=0.22; extra == 'starlette'",
+            "coverage[toml]<7,>=6; extra == 'tests'",
+            "httpx<0.24,>=0.23; extra == 'tests'",
+            "pytest-mock<4,>=3; extra == 'tests'",
+            "pytest-timeout<2,>=1; extra == 'tests'",
+            "pytest<8,>=7; extra == 'tests'",
+            "httptools>=0.5.0; extra == 'uvicorn-fast'",
+            "uvloop!=0.15.0,!=0.15.1,>=0.14.0; sys_platform != 'win32' and (sys_platform != 'cygwin' and platform_python_implementation != 'PyPy') and extra == 'uvicorn-fast'",
+            "websockets>=10.4; extra == 'uvicorn-fast'",
+            "uvicorn[standard]==0.20.0; extra == 'uvicorn-standard'"
+          ],
+          "requires_python": "<4,>=3.8.1"
+        }
       },
       "0.4.0": {
         "inboard-0.4.0-py3-none-any.whl": "0.2.2@inboard-0.2.2-py3-none-any.whl"
@@ -72544,28 +72595,53 @@
   },
   "reactpy": {
     "py3": {
-      "0.0.2": {
-        "ReactPy-0.0.2-py3-none-any.whl": {
-          "requires_python": ">=3.6"
-        }
-      },
-      "0.0.3": {
-        "ReactPy-0.0.3-py3-none-any.whl": {
-          "requires_dist": [
-            "pyPEG2",
-            "livereload"
+      "0.45.0": {
+        "reactpy-0.45.0-py3-none-any.whl": {
+          "provides_extras": [
+            "all",
+            "fastapi",
+            "flask",
+            "sanic",
+            "starlette",
+            "testing",
+            "tornado"
           ],
-          "requires_python": ">=3.6"
-        }
-      },
-      "0.0.4": {
-        "ReactPy-0.0.4-py3-none-any.whl": {
           "requires_dist": [
-            "pyPEG2",
-            "livereload",
-            "beautifulsoup4"
+            "typing-extensions (>=3.10)",
+            "mypy-extensions (>=0.4.3)",
+            "anyio (>=3)",
+            "jsonpatch (>=1.32)",
+            "fastjsonschema (>=2.14.5)",
+            "requests (>=2)",
+            "colorlog (>=6)",
+            "asgiref (>=3)",
+            "lxml (>=4)",
+            "starlette (>=0.13.6) ; extra == 'all'",
+            "uvicorn[standard] (>=0.19.0) ; extra == 'all'",
+            "sanic (>=21) ; extra == 'all'",
+            "sanic-cors ; extra == 'all'",
+            "fastapi (>=0.63.0) ; extra == 'all'",
+            "flask ; extra == 'all'",
+            "markupsafe (<2.1,>=1.1.1) ; extra == 'all'",
+            "flask-cors ; extra == 'all'",
+            "flask-sock ; extra == 'all'",
+            "tornado ; extra == 'all'",
+            "playwright ; extra == 'all'",
+            "fastapi (>=0.63.0) ; extra == 'fastapi'",
+            "uvicorn[standard] (>=0.19.0) ; extra == 'fastapi'",
+            "flask ; extra == 'flask'",
+            "markupsafe (<2.1,>=1.1.1) ; extra == 'flask'",
+            "flask-cors ; extra == 'flask'",
+            "flask-sock ; extra == 'flask'",
+            "sanic (>=21) ; extra == 'sanic'",
+            "sanic-cors ; extra == 'sanic'",
+            "uvicorn[standard] (>=0.19.0) ; extra == 'sanic'",
+            "starlette (>=0.13.6) ; extra == 'starlette'",
+            "uvicorn[standard] (>=0.19.0) ; extra == 'starlette'",
+            "playwright ; extra == 'testing'",
+            "tornado ; extra == 'tornado'"
           ],
-          "requires_python": ">=3.6"
+          "requires_python": ">=3.7"
         }
       }
     }
@@ -80853,6 +80929,9 @@
       "0.18": {
         "tkmilan-0.18-py3-none-any.whl": "0.1@tkmilan-0.1-py3-none-any.whl"
       },
+      "0.19": {
+        "tkmilan-0.19-py3-none-any.whl": "0.1@tkmilan-0.1-py3-none-any.whl"
+      },
       "0.2": {
         "tkmilan-0.2-py3-none-any.whl": "0.1@tkmilan-0.1-py3-none-any.whl"
       },
@@ -82176,6 +82255,9 @@
       },
       "2.4.2": {
         "types_aiobotocore_iot_jobs_data-2.4.2-py3-none-any.whl": "2.3.4.post2@types_aiobotocore_iot_jobs_data-2.3.4.post2-py3-none-any.whl"
+      },
+      "2.4.2.post2": {
+        "types_aiobotocore_iot_jobs_data-2.4.2.post2-py3-none-any.whl": "2.3.4.post2@types_aiobotocore_iot_jobs_data-2.3.4.post2-py3-none-any.whl"
       }
     }
   },
@@ -82257,6 +82339,9 @@
       },
       "2.4.2": {
         "types_aiobotocore_kafkaconnect-2.4.2-py3-none-any.whl": "2.3.4.post2@types_aiobotocore_kafkaconnect-2.3.4.post2-py3-none-any.whl"
+      },
+      "2.4.2.post2": {
+        "types_aiobotocore_kafkaconnect-2.4.2.post2-py3-none-any.whl": "2.3.4.post2@types_aiobotocore_kafkaconnect-2.3.4.post2-py3-none-any.whl"
       }
     }
   },
@@ -90676,6 +90761,9 @@
       },
       "2.4.2.post1": {
         "types_aiobotocore_lite-2.4.2.post1-py3-none-any.whl": "2.4.2@types_aiobotocore_lite-2.4.2-py3-none-any.whl"
+      },
+      "2.4.2.post2": {
+        "types_aiobotocore_lite-2.4.2.post2-py3-none-any.whl": "2.4.2@types_aiobotocore_lite-2.4.2-py3-none-any.whl"
       }
     }
   },
