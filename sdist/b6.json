@@ -8361,7 +8361,31 @@
     "0.4.0": "0.2.0",
     "0.5.0": "0.2.0",
     "1.0.0": "0.2.0",
-    "1.0.1": "0.2.0"
+    "1.0.1": "0.2.0",
+    "1.1.0": {
+      "27": {
+        "install_requires": [
+          "setuptools",
+          "plone.contentrules"
+        ],
+        "extras_require": {
+          "test": [
+            "plone.app.robotframework"
+          ]
+        },
+        "tests_require": [
+          "plone.app.robotframework"
+        ],
+        "python_requires": [
+          ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, !=3.5.*"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "collective.dancing": {
     "0.1dev-r62029": {
@@ -69528,7 +69552,8 @@
     "0.0.625": "0.0.156",
     "0.0.626": "0.0.156",
     "0.0.627": "0.0.156",
-    "0.0.628": "0.0.156"
+    "0.0.628": "0.0.156",
+    "0.0.629": "0.0.156"
   },
   "ncarglow": {
     "1.1.1": {
@@ -98791,6 +98816,48 @@
             "pytest",
             "pytest-runner",
             "click",
+            "pre-commit",
+            "black",
+            "isort"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "0.322.0": {
+      "27": {
+        "install_requires": [
+          "pytz",
+          "requests",
+          "tzlocal"
+        ],
+        "extras_require": {
+          "kerberos": [
+            "requests_kerberos"
+          ],
+          "all": [
+            "requests_kerberos",
+            "sqlalchemy>=1.3"
+          ],
+          "sqlalchemy": [
+            "sqlalchemy>=1.3"
+          ],
+          "external-authentication-token-cache": [
+            "keyring"
+          ],
+          "tests": [
+            "requests_kerberos",
+            "sqlalchemy>=1.3",
+            "httpretty<1.1",
+            "pytest",
+            "pytest-runner",
             "pre-commit",
             "black",
             "isort"
