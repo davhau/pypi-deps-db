@@ -1299,7 +1299,8 @@
     "2023.3.1": "2023.1.1",
     "2023.3.2": "2023.1.1",
     "2023.3.3": "2023.1.1",
-    "2023.3.4": "2023.1.1"
+    "2023.3.4": "2023.1.1",
+    "2023.3.5": "2023.1.1"
   },
   "ai-lianai-moniyouxi-tuqiao-zhen-erlang-20180802": {
     "2023.2.20.0": {
@@ -5318,6 +5319,27 @@
     "0.1.13": "0.1.0",
     "0.1.14": "0.1.0",
     "0.1.15": "0.1.0"
+  },
+  "auto-clustering": {
+    "0.1.0.dev0": {
+      "36": {
+        "install_requires": [
+          "scikit-learn>=1.1.0",
+          "numpy>=1.19.0",
+          "ray[tune]>=2.3.0",
+          "optuna>=3.0.0",
+          "dirty-cat>=0.4.0",
+          "hdbscan>=0.8.27"
+        ],
+        "python_requires": [
+          ">=3.9"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "autogen": {
     "0.0.10": "0.0.3",
@@ -74752,7 +74774,8 @@
     "0.6.1": "0.2"
   },
   "pyminmax": {
-    "0.1.0.post63": {
+    "0.1.0.post63": "0.1.1",
+    "0.1.1": {
       "27": {},
       "36": "27",
       "37": "27",
@@ -83539,6 +83562,127 @@
             "jinja2==3.1.2",
             "rich==12.6.0",
             "N2G<0.4.0,>=0.3.0"
+          ],
+          "prodmin": [
+            "ncclient==0.6.13",
+            "netmiko==4.1.2",
+            "nornir-netmiko==0.2.0",
+            "paramiko==2.12.0",
+            "requests==2.28.1",
+            "tabulate==0.9.0",
+            "ttp<0.10.0,>=0.9.0",
+            "ttp-templates<0.4.0,>=0.3.0",
+            "xmltodict==0.13.0",
+            "textfsm==1.1.2",
+            "jinja2==3.1.2",
+            "rich==12.6.0"
+          ],
+          "scrapli": [
+            "scrapli==2022.07.30",
+            "scrapli-community==2022.07.30"
+          ],
+          "dataprocessor": [
+            "cerberus==1.3.4",
+            "jmespath==1.0.1",
+            "ntc-templates<4.0.0,>=3.0.0",
+            "pyyaml==6.0",
+            "tabulate==0.9.0",
+            "ttp<0.10.0,>=0.9.0",
+            "ttp-templates<0.4.0,>=0.3.0",
+            "xmltodict==0.13.0",
+            "lxml==4.9.2"
+          ],
+          "gnmi": [
+            "pygnmi==0.8.9"
+          ],
+          "restconf": [
+            "requests==2.28.1"
+          ]
+        },
+        "python_requires": [
+          ">=3.7,<4.0"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "0.19.0": {
+      "27": {
+        "install_requires": [
+          "nornir==3.3.0",
+          "nornir_salt<0.20.0,>=0.19.0",
+          "psutil<=5.9,>=5.8",
+          "pydantic==1.10.2"
+        ],
+        "extras_require": {
+          "netconf": [
+            "ncclient==0.6.13",
+            "scrapli-netconf==2022.07.30"
+          ],
+          "netmiko": [
+            "netmiko==4.1.2",
+            "nornir-netmiko==0.2.0"
+          ],
+          "netbox": [
+            "pynetbox==7.0.0"
+          ],
+          "napalm": [
+            "napalm==4.0.0",
+            "nornir-napalm==0.3.0"
+          ],
+          "prodmax:sys_platform != \"win32\"": [
+            "genie[full]==22.1",
+            "pyats[full]==22.1"
+          ],
+          "docs": [
+            "readthedocs-sphinx-search==0.1.1",
+            "Sphinx==4.3.0",
+            "sphinx_rtd_theme==1.0.0",
+            "sphinxcontrib-applehelp==1.0.1",
+            "sphinxcontrib-devhelp==1.0.1",
+            "sphinxcontrib-htmlhelp==2.0.0",
+            "sphinxcontrib-jsmath==1.0.1",
+            "sphinxcontrib-napoleon==0.7",
+            "sphinxcontrib-qthelp==1.0.2",
+            "sphinxcontrib-serializinghtml==1.1.5",
+            "sphinxcontrib-spelling==7.2.1"
+          ],
+          "pyats:sys_platform != \"win32\"": [
+            "genie[full]==22.1",
+            "pyats[full]==22.1"
+          ],
+          "prodmax": [
+            "cerberus==1.3.4",
+            "jmespath==1.0.1",
+            "napalm==4.0.0",
+            "ncclient==0.6.13",
+            "netmiko==4.1.2",
+            "nornir-napalm==0.3.0",
+            "nornir-netmiko==0.2.0",
+            "nornir-scrapli==2022.07.30",
+            "ntc-templates<4.0.0,>=3.0.0",
+            "paramiko==2.12.0",
+            "pygnmi==0.8.9",
+            "pynetbox==7.0.0",
+            "pyyaml==6.0",
+            "puresnmp[crypto]==2.0.0",
+            "requests==2.28.1",
+            "scrapli==2022.07.30",
+            "scrapli-community==2022.07.30",
+            "scrapli-netconf==2022.07.30",
+            "tabulate==0.9.0",
+            "ttp<0.10.0,>=0.9.0",
+            "ttp-templates<0.4.0,>=0.3.0",
+            "xmltodict==0.13.0",
+            "textfsm==1.1.2",
+            "jinja2==3.1.2",
+            "rich==12.6.0",
+            "N2G<0.4.0,>=0.3.0",
+            "robotframework==6.0.2",
+            "dnspython==2.3.0"
           ],
           "prodmin": [
             "ncclient==0.6.13",
@@ -102773,9 +102917,12 @@
       "39": "36",
       "310": "36"
     },
-    "2022.12.28": "2023.1.24",
-    "2022.12.20": "2023.1.24",
-    "2023.1.24": {
+    "2022.12.28": "2023.3.5",
+    "2022.12.20": "2023.3.5",
+    "2023.1.24": "2023.3.5",
+    "2023.1.24.1": "2023.3.5",
+    "2023.1.31": "2023.3.5",
+    "2023.3.5": {
       "36": {
         "install_requires": [
           "beautifulsoup4==4.*",
@@ -102800,9 +102947,7 @@
       "38": "36",
       "39": "36",
       "310": "36"
-    },
-    "2023.1.24.1": "2023.1.24",
-    "2023.1.31": "2023.1.24"
+    }
   },
   "upswingutil": {
     "0.0.10": "1.0.1",
