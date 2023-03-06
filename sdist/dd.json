@@ -363,7 +363,8 @@
     "0.0.21": "0.0.3",
     "0.0.22": "0.0.3",
     "0.0.23": "0.0.3",
-    "0.0.24": "0.0.3"
+    "0.0.24": "0.0.3",
+    "0.0.25": "0.0.3"
   },
   "adkit": {
     "1.0.0": {
@@ -67564,6 +67565,54 @@
       "36": {
         "install_requires": [
           "fastwarc==0.13.7"
+        ],
+        "setup_requires": [
+          "setuptools>=18.0"
+        ],
+        "extras_require": {
+          "beam": [
+            "apache_beam[aws]>=2.37.0",
+            "boto3>=1.9",
+            "elasticsearch>=7.0.0"
+          ],
+          "cli": [
+            "click",
+            "joblib",
+            "tqdm"
+          ],
+          "all": [
+            "apache_beam[aws]>=2.37.0",
+            "boto3>=1.9",
+            "elasticsearch>=7.0.0",
+            "click",
+            "joblib",
+            "tqdm"
+          ],
+          "cli-benchmark": [
+            "beautifulsoup4",
+            "fasttext",
+            "langid",
+            "selectolax"
+          ],
+          "test": [
+            "pytest",
+            "pytest-cov"
+          ]
+        },
+        "tests_require": [
+          "pytest",
+          "pytest-cov"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "0.14.0": {
+      "36": {
+        "install_requires": [
+          "fastwarc==0.14.0"
         ],
         "setup_requires": [
           "setuptools>=18.0"
