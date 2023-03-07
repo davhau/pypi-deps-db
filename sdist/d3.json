@@ -80432,7 +80432,8 @@
     "3.0.840": "3.0.430",
     "3.0.841": "3.0.430",
     "3.0.842": "3.0.430",
-    "3.0.843": "3.0.430"
+    "3.0.843": "3.0.430",
+    "3.0.844": "3.0.430"
   },
   "tensor-algebra-dont-use": {
     "0.0.1": {
@@ -84172,6 +84173,64 @@
           "h5netcdf==1.0.2",
           "h5py>=3.0.0",
           "rich",
+          "matplotlib",
+          "shapely>=2.0",
+          "pydantic>=1.10.0",
+          "PyYAML",
+          "dask",
+          "toml",
+          "nest_asyncio",
+          "boto3==1.23.1",
+          "requests",
+          "pyjwt",
+          "click==8.0.3"
+        ],
+        "extras_require": {
+          "dev": [
+            "pre-commit",
+            "black==22.3.0",
+            "pylint",
+            "tox",
+            "pytest",
+            "pytest-timeout",
+            "memory_profiler",
+            "dill"
+          ],
+          "jax": [],
+          "jax:platform_system != \"Windows\"": [
+            "jaxlib>=0.3.14",
+            "jax[cpu]>=0.3.14"
+          ],
+          "jax:platform_system == \"Windows\"": [
+            "jaxlib==0.3.14",
+            "jax[cpu]==0.3.14"
+          ],
+          "gdspy": [
+            "gdspy"
+          ],
+          "gdstk": [
+            "gdstk"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "1.9.1": {
+      "36": {
+        "install_requires": [
+          "scipy",
+          "pyroots>=0.5.0",
+          "xarray>=0.16.2",
+          "importlib-metadata==4.13.0",
+          "h5netcdf==1.0.2",
+          "h5py>=3.0.0",
+          "rich<12.6.0",
           "matplotlib",
           "shapely>=2.0",
           "pydantic>=1.10.0",
