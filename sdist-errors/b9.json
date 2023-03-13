@@ -3220,6 +3220,19 @@
     "0.4.8": "0.4.1",
     "0.5.0": "0.4.1"
   },
+  "guardrails-ai": {
+    "0.1.0": {
+      "27": "IOError: [Errno 2] No such file or directory: 'docs/requirements.txt'",
+      "36": "FileNotFoundError: [Errno 2] No such file or directory: 'docs/requirements.txt'",
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "0.1.0rc1": "0.1.0",
+    "0.1.0rc2": "0.1.0",
+    "0.1.0rc3": "0.1.0"
+  },
   "guet": {
     "1.0.1": {
       "27": "SyntaxError: invalid syntax"
@@ -6031,6 +6044,16 @@
     },
     "0.1.post19": "0.1.post18",
     "0.1.post22": "0.1.post18"
+  },
+  "put-your-package-name": {
+    "0.0.1": {
+      "27": "these 2 derivations will be built:\n /nix/store/#hash#-PUT-YOUR-PACKAGE-NAME-#PKG_VER#.tar.gz.drv\n /nix/store/#hash#-put-your-package-name-#PKG_VER#-requirements.drv\nbuilding '/nix/store/#hash#-PUT-YOUR-PACKAGE-NAME-#PKG_VER#.tar.gz.drv'...\n\ntrying https://files.pythonhosted.org/packages/source/p/put-your-package-name/PUT\n % Total % Received % Xferd Average Speed Time Time Time Current\n Dload Upload Total Spent Left Speed\n 0 0 0 0 0 0 0 0 --:--:-- --:--:-- --:--:-- 0\ncurl: (22) The requested URL returned error: 404 \n\ntrying YOUR\n % Total % Received % Xferd Average Speed Time Time Time Current\n Dload Upload Total Spent Left Speed\n 0 0 0 0 0 0 0 0 --:--:-- --:--:-- --:--:-- 0curl: (6) Could not resolve host: YOUR\nWarning: Transient problem: timeout Will retry in 1 seconds. 3 retries left.\n 0 0 0 0 0 0 0 0 --:--:-- --:--:-- --:--:-- 0curl: (6) Could not resolve host: YOUR\nWarning: Transient problem: timeout Will retry in 2 seconds. 2 retries left.\n 0 0 0 0 0 0 0 0 --:--:-- --:--:-- --:--:-- 0curl: (6) Could not resolve host: YOUR\nWarning: Transient problem: timeout Will retry in 4 seconds. 1 retries left.\n 0 0 0 0 0 0 0 0 --:--:-- --:--:-- --:--:-- 0curl: (6) Could not resolve host: YOUR\n\ntrying PACKAGE\n % Total % Received % Xferd Average Speed Time Time Time Current\n Dload Upload Total Spent Left Speed\n 0 0 0 0 0 0 0 0 --:--:-- --:--:-- --:--:-- 0curl: (6) Could not resolve host: PACKAGE\nWarning: Transient problem: timeout Will retry in 1 seconds. 3 retries left.\n 0 0 0 0 0 0 0 0 --:--:-- --:--:-- --:--:-- 0curl: (6) Could not resolve host: PACKAGE\nWarning: Transient problem: timeout Will retry in 2 seconds. 2 retries left.\n 0 0 0 0 0 0 0 0 --:--:-- --:--:-- --:--:-- 0curl: (6) Could not resolve host: PACKAGE\nWarning: Transient problem: timeout Will retry in 4 seconds. 1 retries left.\n 0 0 0 0 0 0 0 0 --:--:-- --:--:-- --:--:-- 0curl: (6) Could not resolve host: PACKAGE\n\ntrying NAME-#PKG_VER#.tar.gz\n % Total % Received % Xferd Average Speed Time Time Time Current\n Dload Upload Total Spent Left Speed\n 0 0 0 0 0 0 0 0 --:--:-- --:--:-- --:--:-- 0curl: (6) Could not resolve host: NAME-#PKG_VER#.tar.gz\nWarning: Transient problem: timeout Will retry in 1 seconds. 3 retries left.\n 0 0 0 0 0 0 0 0 --:--:-- --:--:-- --:--:-- 0curl: (6) Could not resolve host: NAME-#PKG_VER#.tar.gz\nWarning: Transient problem: timeout Will retry in 2 seconds. 2 retries left.\n 0 0 0 0 0 0 0 0 --:--:-- --:--:-- --:--:-- 0curl: (6) Could not resolve host: NAME-#PKG_VER#.tar.gz\nWarning: Transient problem: timeout Will retry in 4 seconds. 1 retries left.\n 0 0 0 0 0 0 0 0 --:--:-- --:--:-- --:--:-- 0curl: (6) Could not resolve host: NAME-#PKG_VER#.tar.gz\nerror: cannot download PUT-YOUR-PACKAGE-NAME-#PKG_VER#.tar.gz from any mirror\nerror: builder for '/nix/store/#hash#-PUT-YOUR-PACKAGE-NAME-#PKG_VER#.tar.gz.drv' failed with exit code 1;\n last 10 log lines:\n > % Total % Received % Xferd Average Speed Time Time Time Current\n > Dload Upload Total Spent Left Speed\n > 0 0 0 0 0 0 0 0 --:--:-- --:--:-- --:--:-- 0curl: (6) Could not resolve host: NAME-#PKG_VER#.tar.gz\n > Warning: Transient problem: timeout Will retry in 1 seconds. 3 retries left.\n > 0 0 0 0 0 0 0 0 --:--:-- --:--:-- --:--:-- 0curl: (6) Could not resolve host: NAME-#PKG_VER#.tar.gz\n > Warning: Transient problem: timeout Will retry in 2 seconds. 2 retries left.\n > 0 0 0 0 0 0 0 0 --:--:-- --:--:-- --:--:-- 0curl: (6) Could not resolve host: NAME-#PKG_VER#.tar.gz\n > Warning: Transient problem: timeout Will retry in 4 seconds. 1 retries left.\n > 0 0 0 0 0 0 0 0 --:--:-- --:--:-- --:--:-- 0curl: (6) Could not resolve host: NAME-#PKG_VER#.tar.gz\n > error: cannot download PUT-YOUR-PACKAGE-NAME-#PKG_VER#.tar.gz from any mirror\n For full logs, run 'nix log /nix/store/#hash#-PUT-YOUR-PACKAGE-NAME-#PKG_VER#.tar.gz.drv'.\nerror: 1 dependencies of derivation '/nix/store/#hash#-put-your-package-name-#PKG_VER#-requirements.drv' failed to build\n",
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "pviz": {
     "0.1.0rc13": {
