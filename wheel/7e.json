@@ -3271,6 +3271,9 @@
       },
       "4.0.2a6": {
         "apache_dolphinscheduler-4.0.2a6-py3-none-any.whl": "4.0.1@apache_dolphinscheduler-4.0.1-py3-none-any.whl"
+      },
+      "4.0.2a7": {
+        "apache_dolphinscheduler-4.0.2a7-py3-none-any.whl": "4.0.1@apache_dolphinscheduler-4.0.1-py3-none-any.whl"
       }
     }
   },
@@ -11658,6 +11661,9 @@
       },
       "1.29.89": {
         "botocore_a_la_carte_mediaconvert-1.29.89-py3-none-any.whl": "1.29.42@botocore_a_la_carte_mediaconvert-1.29.42-py3-none-any.whl"
+      },
+      "1.29.90": {
+        "botocore_a_la_carte_mediaconvert-1.29.90-py3-none-any.whl": "1.29.42@botocore_a_la_carte_mediaconvert-1.29.42-py3-none-any.whl"
       }
     }
   },
@@ -18321,6 +18327,21 @@
           "requires_dist": [
             "sqlparse (==0.4.2)",
             "pymongo (>=3.6.0)",
+            "django (>=2.1)",
+            "jsonfield (>=2.0.2) ; extra == 'json'",
+            "django-jsoneditor (>=0.0.12) ; extra == 'json'"
+          ],
+          "requires_python": ">=3.6"
+        }
+      },
+      "0.1.4": {
+        "dj_mongo_backend-0.1.4-py3-none-any.whl": {
+          "provides_extras": [
+            "json"
+          ],
+          "requires_dist": [
+            "sqlparse (==0.4.2)",
+            "pymongo (<4.0.0,>=3.6.0)",
             "django (>=2.1)",
             "jsonfield (>=2.0.2) ; extra == 'json'",
             "django-jsoneditor (>=0.0.12) ; extra == 'json'"
@@ -26294,120 +26315,8 @@
   },
   "generic-crawler-sdk": {
     "py3": {
-      "0.0.2": {
-        "generic_crawler_sdk-0.0.2-py3-none-any.whl": {
-          "requires_dist": [
-            "argcomplete (==1.12.3)",
-            "asgiref (==3.5.2)",
-            "attrs (==21.4.0)",
-            "bleach (==5.0.0)",
-            "certifi (==2022.5.18.1)",
-            "charset-normalizer (==2.0.12)",
-            "click (==8.1.3)",
-            "colorlog (==6.6.0)",
-            "commonmark (==0.9.1)",
-            "contextlib2 (==21.6.0)",
-            "distlib (==0.3.4)",
-            "docutils (==0.18.1)",
-            "filelock (==3.7.1)",
-            "h11 (==0.13.0)",
-            "idna (==3.3)",
-            "importlib-metadata (==4.11.4)",
-            "iniconfig (==1.1.1)",
-            "keyring (==23.5.1)",
-            "loguru (==0.6.0)",
-            "packaging (==21.3)",
-            "pkginfo (==1.8.2)",
-            "platformdirs (==2.5.2)",
-            "pluggy (==1.0.0)",
-            "py (==1.11.0)",
-            "pydantic (==1.9.1)",
-            "Pygments (==2.12.0)",
-            "pyparsing (==3.0.9)",
-            "PyYAML",
-            "readme-renderer (==35.0)",
-            "requests (==2.27.1)",
-            "requests-toolbelt (==0.9.1)",
-            "rfc3986 (==2.0.0)",
-            "rich (==12.4.4)",
-            "schema (==0.7.5)",
-            "six (==1.16.0)",
-            "toml (==0.10.2)",
-            "tomli (==2.0.1)",
-            "twine (==4.0.1)",
-            "typing-extensions (==4.2.0)",
-            "urllib3 (==1.26.9)",
-            "virtualenv (==20.14.1)",
-            "webencodings (==0.5.1)",
-            "zipp (==3.8.0)"
-          ],
-          "requires_python": ">=3.8"
-        }
-      },
-      "0.0.3": {
-        "generic_crawler_sdk-0.0.3-py3-none-any.whl": "0.0.2@generic_crawler_sdk-0.0.2-py3-none-any.whl"
-      },
-      "0.0.4": {
-        "generic_crawler_sdk-0.0.4-py3-none-any.whl": "0.0.2@generic_crawler_sdk-0.0.2-py3-none-any.whl"
-      },
-      "0.0.5": {
-        "generic_crawler_sdk-0.0.5-py3-none-any.whl": {
-          "requires_dist": [
-            "argcomplete (==1.12.3)",
-            "asgiref (==3.5.2)",
-            "attrs (==21.4.0)",
-            "bleach (==5.0.0)",
-            "build (==0.8.0)",
-            "certifi (==2022.5.18.1)",
-            "charset-normalizer (==2.0.12)",
-            "click (==8.1.3)",
-            "colorlog (==6.6.0)",
-            "commonmark (==0.9.1)",
-            "contextlib2 (==21.6.0)",
-            "decorator (==5.1.1)",
-            "distlib (==0.3.4)",
-            "docutils (==0.18.1)",
-            "filelock (==3.7.1)",
-            "h11 (==0.13.0)",
-            "idna (==3.3)",
-            "importlib-metadata (==4.11.4)",
-            "iniconfig (==1.1.1)",
-            "keyring (==23.5.1)",
-            "loguru (==0.6.0)",
-            "nox (==2022.1.7)",
-            "packaging (==21.3)",
-            "pep517 (==0.12.0)",
-            "pkginfo (==1.8.2)",
-            "platformdirs (==2.5.2)",
-            "pluggy (==1.0.0)",
-            "py (==1.11.0)",
-            "pydantic (==1.9.1)",
-            "Pygments (==2.12.0)",
-            "pyparsing (==3.0.9)",
-            "pytest (==7.1.2)",
-            "PyYAML (==6.0)",
-            "readme-renderer (==35.0)",
-            "requests (==2.27.1)",
-            "requests-toolbelt (==0.9.1)",
-            "rfc3986 (==2.0.0)",
-            "rich (==12.4.4)",
-            "schema (==0.7.5)",
-            "six (==1.16.0)",
-            "toml (==0.10.2)",
-            "tomli (==2.0.1)",
-            "twine (==4.0.1)",
-            "typing-extensions (==4.2.0)",
-            "urllib3 (==1.26.9)",
-            "validators (==0.20.0)",
-            "virtualenv (==20.14.1)",
-            "webencodings (==0.5.1)",
-            "zipp (==3.8.0)"
-          ],
-          "requires_python": ">=3.8"
-        }
-      },
-      "0.0.6": {
-        "generic_crawler_sdk-0.0.6-py3-none-any.whl": {
+      "0.1.5": {
+        "generic_crawler_sdk-0.1.5-py3-none-any.whl": {
           "requires_dist": [
             "argcomplete (==1.12.3)",
             "asgiref (==3.5.2)",
@@ -26462,24 +26371,6 @@
           ],
           "requires_python": ">=3.8"
         }
-      },
-      "0.0.7": {
-        "generic_crawler_sdk-0.0.7-py3-none-any.whl": "0.0.6@generic_crawler_sdk-0.0.6-py3-none-any.whl"
-      },
-      "0.0.8": {
-        "generic_crawler_sdk-0.0.8-py3-none-any.whl": "0.0.6@generic_crawler_sdk-0.0.6-py3-none-any.whl"
-      },
-      "0.0.9": {
-        "generic_crawler_sdk-0.0.9-py3-none-any.whl": "0.0.6@generic_crawler_sdk-0.0.6-py3-none-any.whl"
-      },
-      "0.1.0": {
-        "generic_crawler_sdk-0.1.0-py3-none-any.whl": "0.0.6@generic_crawler_sdk-0.0.6-py3-none-any.whl"
-      },
-      "0.1.1": {
-        "generic_crawler_sdk-0.1.1-py3-none-any.whl": "0.0.6@generic_crawler_sdk-0.0.6-py3-none-any.whl"
-      },
-      "0.1.2": {
-        "generic_crawler_sdk-0.1.2-py3-none-any.whl": "0.0.6@generic_crawler_sdk-0.0.6-py3-none-any.whl"
       }
     }
   },
@@ -29411,6 +29302,14 @@
         "huaweicloudsdkgsl-3.1.30-py2.py3-none-any.whl": {
           "requires_dist": [
             "huaweicloudsdkcore (>=3.1.30)"
+          ],
+          "requires_python": ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*"
+        }
+      },
+      "3.1.31": {
+        "huaweicloudsdkgsl-3.1.31-py2.py3-none-any.whl": {
+          "requires_dist": [
+            "huaweicloudsdkcore (>=3.1.31)"
           ],
           "requires_python": ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*"
         }
@@ -39874,6 +39773,9 @@
           ],
           "requires_python": ">=3.7"
         }
+      },
+      "1.26.90": {
+        "mypy_boto3_tnb-1.26.90-py3-none-any.whl": "1.26.76@mypy_boto3_tnb-1.26.76-py3-none-any.whl"
       }
     }
   },
@@ -42039,6 +41941,9 @@
       },
       "0.0.650": {
         "nbdev_pytorch-0.0.650-py3-none-any.whl": "0.0.10@nbdev_pytorch-0.0.10-py3-none-any.whl"
+      },
+      "0.0.651": {
+        "nbdev_pytorch-0.0.651-py3-none-any.whl": "0.0.10@nbdev_pytorch-0.0.10-py3-none-any.whl"
       },
       "0.0.66": {
         "nbdev_pytorch-0.0.66-py3-none-any.whl": "0.0.10@nbdev_pytorch-0.0.10-py3-none-any.whl"
@@ -44997,6 +44902,19 @@
       },
       "2.94.0": {
         "oci-2.94.0-py3-none-any.whl": "2.92.0@oci-2.92.0-py3-none-any.whl"
+      },
+      "2.95.0": {
+        "oci-2.95.0-py3-none-any.whl": {
+          "requires_dist": [
+            "certifi",
+            "cryptography (<40.0.0,>=3.2.1)",
+            "pyOpenSSL (<24.0.0,>=17.5.0)",
+            "python-dateutil (<3.0.0,>=2.5.3)",
+            "pytz (>=2016.10)",
+            "circuitbreaker (<2.0.0,>=1.3.1)",
+            "configparser (==4.0.2) ; python_version < \"3\""
+          ]
+        }
       }
     }
   },
@@ -69717,6 +69635,12 @@
         "siliconcompiler-0.10.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.10.0@siliconcompiler-0.10.0-cp310-cp310-macosx_10_15_x86_64.whl",
         "siliconcompiler-0.10.0-cp310-cp310-win_amd64.whl": "0.10.0@siliconcompiler-0.10.0-cp310-cp310-macosx_10_15_x86_64.whl"
       },
+      "0.10.1": {
+        "siliconcompiler-0.10.1-cp310-cp310-macosx_10_15_x86_64.whl": "0.10.0@siliconcompiler-0.10.0-cp310-cp310-macosx_10_15_x86_64.whl",
+        "siliconcompiler-0.10.1-cp310-cp310-macosx_11_0_arm64.whl": "0.10.0@siliconcompiler-0.10.0-cp310-cp310-macosx_10_15_x86_64.whl",
+        "siliconcompiler-0.10.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.10.0@siliconcompiler-0.10.0-cp310-cp310-macosx_10_15_x86_64.whl",
+        "siliconcompiler-0.10.1-cp310-cp310-win_amd64.whl": "0.10.0@siliconcompiler-0.10.0-cp310-cp310-macosx_10_15_x86_64.whl"
+      },
       "0.3.0": {
         "siliconcompiler-0.3.0-cp310-cp310-macosx_10_9_x86_64.whl": "0.1.1@siliconcompiler-0.1.1-cp310-cp310-macosx_10_9_x86_64.whl",
         "siliconcompiler-0.3.0-cp310-cp310-macosx_11_0_arm64.whl": "0.1.1@siliconcompiler-0.1.1-cp310-cp310-macosx_10_9_x86_64.whl",
@@ -69958,6 +69882,11 @@
         "siliconcompiler-0.10.0-cp36-cp36m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.10.0@siliconcompiler-0.10.0-cp36-cp36m-macosx_10_15_x86_64.whl",
         "siliconcompiler-0.10.0-cp36-cp36m-win_amd64.whl": "0.10.0@siliconcompiler-0.10.0-cp36-cp36m-macosx_10_15_x86_64.whl"
       },
+      "0.10.1": {
+        "siliconcompiler-0.10.1-cp36-cp36m-macosx_10_15_x86_64.whl": "0.10.0@siliconcompiler-0.10.0-cp36-cp36m-macosx_10_15_x86_64.whl",
+        "siliconcompiler-0.10.1-cp36-cp36m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.10.0@siliconcompiler-0.10.0-cp36-cp36m-macosx_10_15_x86_64.whl",
+        "siliconcompiler-0.10.1-cp36-cp36m-win_amd64.whl": "0.10.0@siliconcompiler-0.10.0-cp36-cp36m-macosx_10_15_x86_64.whl"
+      },
       "0.3.0": {
         "siliconcompiler-0.3.0-cp36-cp36m-macosx_10_15_x86_64.whl": "0.1.1@siliconcompiler-0.1.1-cp36-cp36m-macosx_10_15_x86_64.whl",
         "siliconcompiler-0.3.0-cp36-cp36m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.1.1@siliconcompiler-0.1.1-cp36-cp36m-macosx_10_15_x86_64.whl",
@@ -70185,6 +70114,11 @@
         },
         "siliconcompiler-0.10.0-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.10.0@siliconcompiler-0.10.0-cp37-cp37m-macosx_10_15_x86_64.whl",
         "siliconcompiler-0.10.0-cp37-cp37m-win_amd64.whl": "0.10.0@siliconcompiler-0.10.0-cp37-cp37m-macosx_10_15_x86_64.whl"
+      },
+      "0.10.1": {
+        "siliconcompiler-0.10.1-cp37-cp37m-macosx_10_15_x86_64.whl": "0.10.0@siliconcompiler-0.10.0-cp37-cp37m-macosx_10_15_x86_64.whl",
+        "siliconcompiler-0.10.1-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.10.0@siliconcompiler-0.10.0-cp37-cp37m-macosx_10_15_x86_64.whl",
+        "siliconcompiler-0.10.1-cp37-cp37m-win_amd64.whl": "0.10.0@siliconcompiler-0.10.0-cp37-cp37m-macosx_10_15_x86_64.whl"
       },
       "0.3.0": {
         "siliconcompiler-0.3.0-cp37-cp37m-macosx_10_15_x86_64.whl": "0.1.1@siliconcompiler-0.1.1-cp37-cp37m-macosx_10_15_x86_64.whl",
@@ -70415,6 +70349,12 @@
         "siliconcompiler-0.10.0-cp38-cp38-macosx_11_0_arm64.whl": "0.10.0@siliconcompiler-0.10.0-cp38-cp38-macosx_10_15_x86_64.whl",
         "siliconcompiler-0.10.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.10.0@siliconcompiler-0.10.0-cp38-cp38-macosx_10_15_x86_64.whl",
         "siliconcompiler-0.10.0-cp38-cp38-win_amd64.whl": "0.10.0@siliconcompiler-0.10.0-cp38-cp38-macosx_10_15_x86_64.whl"
+      },
+      "0.10.1": {
+        "siliconcompiler-0.10.1-cp38-cp38-macosx_10_15_x86_64.whl": "0.10.0@siliconcompiler-0.10.0-cp38-cp38-macosx_10_15_x86_64.whl",
+        "siliconcompiler-0.10.1-cp38-cp38-macosx_11_0_arm64.whl": "0.10.0@siliconcompiler-0.10.0-cp38-cp38-macosx_10_15_x86_64.whl",
+        "siliconcompiler-0.10.1-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.10.0@siliconcompiler-0.10.0-cp38-cp38-macosx_10_15_x86_64.whl",
+        "siliconcompiler-0.10.1-cp38-cp38-win_amd64.whl": "0.10.0@siliconcompiler-0.10.0-cp38-cp38-macosx_10_15_x86_64.whl"
       },
       "0.3.0": {
         "siliconcompiler-0.3.0-cp38-cp38-macosx_10_9_x86_64.whl": "0.1.1@siliconcompiler-0.1.1-cp38-cp38-macosx_10_9_x86_64.whl",
@@ -70658,6 +70598,12 @@
         "siliconcompiler-0.10.0-cp39-cp39-macosx_11_0_arm64.whl": "0.10.0@siliconcompiler-0.10.0-cp39-cp39-macosx_10_15_x86_64.whl",
         "siliconcompiler-0.10.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.10.0@siliconcompiler-0.10.0-cp39-cp39-macosx_10_15_x86_64.whl",
         "siliconcompiler-0.10.0-cp39-cp39-win_amd64.whl": "0.10.0@siliconcompiler-0.10.0-cp39-cp39-macosx_10_15_x86_64.whl"
+      },
+      "0.10.1": {
+        "siliconcompiler-0.10.1-cp39-cp39-macosx_10_15_x86_64.whl": "0.10.0@siliconcompiler-0.10.0-cp39-cp39-macosx_10_15_x86_64.whl",
+        "siliconcompiler-0.10.1-cp39-cp39-macosx_11_0_arm64.whl": "0.10.0@siliconcompiler-0.10.0-cp39-cp39-macosx_10_15_x86_64.whl",
+        "siliconcompiler-0.10.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.10.0@siliconcompiler-0.10.0-cp39-cp39-macosx_10_15_x86_64.whl",
+        "siliconcompiler-0.10.1-cp39-cp39-win_amd64.whl": "0.10.0@siliconcompiler-0.10.0-cp39-cp39-macosx_10_15_x86_64.whl"
       },
       "0.3.0": {
         "siliconcompiler-0.3.0-cp39-cp39-macosx_10_9_x86_64.whl": "0.1.1@siliconcompiler-0.1.1-cp39-cp39-macosx_10_9_x86_64.whl",
@@ -78378,6 +78324,25 @@
       },
       "0.9.0": {
         "typecraft_python-0.9.0-py2.py3-none-any.whl": "0.10.0@typecraft_python-0.10.0-py2.py3-none-any.whl"
+      }
+    }
+  },
+  "typernexrad-cli": {
+    "py3": {
+      "0.1.0": {
+        "typernexrad_cli-0.1.0-py3-none-any.whl": {
+          "requires_dist": [
+            "typer",
+            "boto3",
+            "python-dotenv",
+            "pandas",
+            "bcrypt",
+            "python-jose",
+            "fastapi",
+            "requests",
+            "pyOpenSSL"
+          ]
+        }
       }
     }
   },

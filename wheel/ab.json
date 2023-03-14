@@ -23204,6 +23204,30 @@
           ],
           "requires_python": ">=3.7"
         },
+        "bytewax-0.15.1-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl": {
+          "provides_extras": [
+            "test",
+            "dynamodb",
+            "bigquery",
+            "dev",
+            "docs"
+          ],
+          "requires_dist": [
+            "multiprocess>=0.70",
+            "dill>=0.3.5",
+            "pytest==7.1.0; extra == 'test'",
+            "myst-docutils==0.17.0; extra == 'test'",
+            "boto3>=1.15.0; extra == 'dynamodb'",
+            "google-cloud-bigquery<=3.3.5; extra == 'bigquery'",
+            "bytewax[bigquery,dynamodb,test,docs]; extra == 'dev'",
+            "black==22.3.0; extra == 'dev'",
+            "flake8==4.0.1; extra == 'dev'",
+            "isort==5.10.1; extra == 'dev'",
+            "pre-commit==2.19.0; extra == 'dev'",
+            "pdoc3==0.10.0; extra == 'docs'"
+          ],
+          "requires_python": ">=3.7"
+        },
         "bytewax-0.15.1-cp39-cp39-manylinux_2_27_x86_64.whl": {
           "provides_extras": [
             "docs",
@@ -30847,6 +30871,9 @@
       },
       "1.19.0": {
         "deepsea_ai-1.19.0-py3-none-any.whl": "1.10.0@deepsea_ai-1.10.0-py3-none-any.whl"
+      },
+      "1.19.1": {
+        "deepsea_ai-1.19.1-py3-none-any.whl": "1.10.0@deepsea_ai-1.10.0-py3-none-any.whl"
       },
       "1.2.0": {
         "deepsea_ai-1.2.0-py3-none-any.whl": "1.0.1@deepsea_ai-1.0.1-py3-none-any.whl"
@@ -57334,6 +57361,30 @@
           ],
           "requires_python": ">=3.10"
         }
+      },
+      "2.0.1": {
+        "gtfs_functions-2.0.1-py3-none-any.whl": {
+          "requires_dist": [
+            "branca>=0.6.0",
+            "folium>=0.14.0",
+            "geopandas>=0.12.2",
+            "jenkspy>=0.3.2",
+            "numpy>=1.24.2",
+            "pandas>=1.5.3",
+            "pendulum>=2.0.0",
+            "plotly>=5.13.0",
+            "shapely>=2.0.1",
+            "unicode>=2.9",
+            "utm>=0.7.0"
+          ],
+          "requires_python": ">=3.8"
+        }
+      },
+      "2.0.2": {
+        "gtfs_functions-2.0.2-py3-none-any.whl": "2.0.1@gtfs_functions-2.0.1-py3-none-any.whl"
+      },
+      "2.0.3": {
+        "gtfs_functions-2.0.3-py3-none-any.whl": "2.0.1@gtfs_functions-2.0.1-py3-none-any.whl"
       }
     }
   },
@@ -61504,6 +61555,14 @@
           "requires_python": ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*"
         }
       },
+      "3.1.31": {
+        "huaweicloudsdkcodecheck-3.1.31-py2.py3-none-any.whl": {
+          "requires_dist": [
+            "huaweicloudsdkcore (>=3.1.31)"
+          ],
+          "requires_python": ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*"
+        }
+      },
       "3.1.4": {
         "huaweicloudsdkcodecheck-3.1.4-py2.py3-none-any.whl": {
           "requires_dist": [
@@ -62016,6 +62075,14 @@
         "huaweicloudsdkeps-3.1.30-py2.py3-none-any.whl": {
           "requires_dist": [
             "huaweicloudsdkcore (>=3.1.30)"
+          ],
+          "requires_python": ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*"
+        }
+      },
+      "3.1.31": {
+        "huaweicloudsdkeps-3.1.31-py2.py3-none-any.whl": {
+          "requires_dist": [
+            "huaweicloudsdkcore (>=3.1.31)"
           ],
           "requires_python": ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*"
         }
@@ -74420,6 +74487,48 @@
         "opentimspy-1.0.12-cp310-cp310-musllinux_1_1_x86_64.whl": "1.0.10@opentimspy-1.0.10-cp310-cp310-macosx_10_9_x86_64.whl",
         "opentimspy-1.0.12-cp310-cp310-win32.whl": "1.0.10@opentimspy-1.0.10-cp310-cp310-macosx_10_9_x86_64.whl",
         "opentimspy-1.0.12-cp310-cp310-win_amd64.whl": "1.0.10@opentimspy-1.0.10-cp310-cp310-macosx_10_9_x86_64.whl"
+      },
+      "1.0.15": {
+        "opentimspy-1.0.15-cp310-cp310-macosx_10_9_x86_64.whl": {
+          "provides_extras": [
+            "bruker_proprietary",
+            "plotting"
+          ],
+          "requires_dist": [
+            "pybind11",
+            "numpy",
+            "opentims-bruker-bridge (>=1.0.3) ; extra == 'bruker_proprietary'",
+            "matplotlib ; extra == 'plotting'"
+          ]
+        },
+        "opentimspy-1.0.15-cp310-cp310-manylinux_2_17_i686.manylinux2014_i686.whl": "1.0.15@opentimspy-1.0.15-cp310-cp310-macosx_10_9_x86_64.whl",
+        "opentimspy-1.0.15-cp310-cp310-manylinux_2_24_x86_64.whl": "1.0.15@opentimspy-1.0.15-cp310-cp310-macosx_10_9_x86_64.whl",
+        "opentimspy-1.0.15-cp310-cp310-musllinux_1_1_i686.whl": "1.0.15@opentimspy-1.0.15-cp310-cp310-macosx_10_9_x86_64.whl",
+        "opentimspy-1.0.15-cp310-cp310-musllinux_1_1_x86_64.whl": "1.0.15@opentimspy-1.0.15-cp310-cp310-macosx_10_9_x86_64.whl",
+        "opentimspy-1.0.15-cp310-cp310-win32.whl": "1.0.15@opentimspy-1.0.15-cp310-cp310-macosx_10_9_x86_64.whl",
+        "opentimspy-1.0.15-cp310-cp310-win_amd64.whl": "1.0.15@opentimspy-1.0.15-cp310-cp310-macosx_10_9_x86_64.whl"
+      }
+    },
+    "cp311": {
+      "1.0.15": {
+        "opentimspy-1.0.15-cp311-cp311-macosx_10_9_x86_64.whl": {
+          "provides_extras": [
+            "bruker_proprietary",
+            "plotting"
+          ],
+          "requires_dist": [
+            "pybind11",
+            "numpy",
+            "opentims-bruker-bridge (>=1.0.3) ; extra == 'bruker_proprietary'",
+            "matplotlib ; extra == 'plotting'"
+          ]
+        },
+        "opentimspy-1.0.15-cp311-cp311-manylinux_2_17_i686.manylinux2014_i686.whl": "1.0.15@opentimspy-1.0.15-cp311-cp311-macosx_10_9_x86_64.whl",
+        "opentimspy-1.0.15-cp311-cp311-manylinux_2_24_x86_64.whl": "1.0.15@opentimspy-1.0.15-cp311-cp311-macosx_10_9_x86_64.whl",
+        "opentimspy-1.0.15-cp311-cp311-musllinux_1_1_i686.whl": "1.0.15@opentimspy-1.0.15-cp311-cp311-macosx_10_9_x86_64.whl",
+        "opentimspy-1.0.15-cp311-cp311-musllinux_1_1_x86_64.whl": "1.0.15@opentimspy-1.0.15-cp311-cp311-macosx_10_9_x86_64.whl",
+        "opentimspy-1.0.15-cp311-cp311-win32.whl": "1.0.15@opentimspy-1.0.15-cp311-cp311-macosx_10_9_x86_64.whl",
+        "opentimspy-1.0.15-cp311-cp311-win_amd64.whl": "1.0.15@opentimspy-1.0.15-cp311-cp311-macosx_10_9_x86_64.whl"
       }
     },
     "cp36": {
@@ -74449,6 +74558,26 @@
         "opentimspy-1.0.12-cp36-cp36m-musllinux_1_1_x86_64.whl": "1.0.10@opentimspy-1.0.10-cp36-cp36m-macosx_10_9_x86_64.whl",
         "opentimspy-1.0.12-cp36-cp36m-win32.whl": "1.0.10@opentimspy-1.0.10-cp36-cp36m-macosx_10_9_x86_64.whl",
         "opentimspy-1.0.12-cp36-cp36m-win_amd64.whl": "1.0.10@opentimspy-1.0.10-cp36-cp36m-macosx_10_9_x86_64.whl"
+      },
+      "1.0.15": {
+        "opentimspy-1.0.15-cp36-cp36m-macosx_10_9_x86_64.whl": {
+          "provides_extras": [
+            "bruker_proprietary",
+            "plotting"
+          ],
+          "requires_dist": [
+            "pybind11",
+            "numpy",
+            "opentims-bruker-bridge (>=1.0.3) ; extra == 'bruker_proprietary'",
+            "matplotlib ; extra == 'plotting'"
+          ]
+        },
+        "opentimspy-1.0.15-cp36-cp36m-manylinux_2_17_i686.manylinux2014_i686.whl": "1.0.15@opentimspy-1.0.15-cp36-cp36m-macosx_10_9_x86_64.whl",
+        "opentimspy-1.0.15-cp36-cp36m-manylinux_2_24_x86_64.whl": "1.0.15@opentimspy-1.0.15-cp36-cp36m-macosx_10_9_x86_64.whl",
+        "opentimspy-1.0.15-cp36-cp36m-musllinux_1_1_i686.whl": "1.0.15@opentimspy-1.0.15-cp36-cp36m-macosx_10_9_x86_64.whl",
+        "opentimspy-1.0.15-cp36-cp36m-musllinux_1_1_x86_64.whl": "1.0.15@opentimspy-1.0.15-cp36-cp36m-macosx_10_9_x86_64.whl",
+        "opentimspy-1.0.15-cp36-cp36m-win32.whl": "1.0.15@opentimspy-1.0.15-cp36-cp36m-macosx_10_9_x86_64.whl",
+        "opentimspy-1.0.15-cp36-cp36m-win_amd64.whl": "1.0.15@opentimspy-1.0.15-cp36-cp36m-macosx_10_9_x86_64.whl"
       },
       "1.0.5": {
         "opentimspy-1.0.5-cp36-cp36m-win32.whl": {
@@ -74531,6 +74660,26 @@
         "opentimspy-1.0.12-cp37-cp37m-win32.whl": "1.0.10@opentimspy-1.0.10-cp37-cp37m-macosx_10_9_x86_64.whl",
         "opentimspy-1.0.12-cp37-cp37m-win_amd64.whl": "1.0.10@opentimspy-1.0.10-cp37-cp37m-macosx_10_9_x86_64.whl"
       },
+      "1.0.15": {
+        "opentimspy-1.0.15-cp37-cp37m-macosx_10_9_x86_64.whl": {
+          "provides_extras": [
+            "bruker_proprietary",
+            "plotting"
+          ],
+          "requires_dist": [
+            "pybind11",
+            "numpy",
+            "opentims-bruker-bridge (>=1.0.3) ; extra == 'bruker_proprietary'",
+            "matplotlib ; extra == 'plotting'"
+          ]
+        },
+        "opentimspy-1.0.15-cp37-cp37m-manylinux_2_17_i686.manylinux2014_i686.whl": "1.0.15@opentimspy-1.0.15-cp37-cp37m-macosx_10_9_x86_64.whl",
+        "opentimspy-1.0.15-cp37-cp37m-manylinux_2_24_x86_64.whl": "1.0.15@opentimspy-1.0.15-cp37-cp37m-macosx_10_9_x86_64.whl",
+        "opentimspy-1.0.15-cp37-cp37m-musllinux_1_1_i686.whl": "1.0.15@opentimspy-1.0.15-cp37-cp37m-macosx_10_9_x86_64.whl",
+        "opentimspy-1.0.15-cp37-cp37m-musllinux_1_1_x86_64.whl": "1.0.15@opentimspy-1.0.15-cp37-cp37m-macosx_10_9_x86_64.whl",
+        "opentimspy-1.0.15-cp37-cp37m-win32.whl": "1.0.15@opentimspy-1.0.15-cp37-cp37m-macosx_10_9_x86_64.whl",
+        "opentimspy-1.0.15-cp37-cp37m-win_amd64.whl": "1.0.15@opentimspy-1.0.15-cp37-cp37m-macosx_10_9_x86_64.whl"
+      },
       "1.0.5": {
         "opentimspy-1.0.5-cp37-cp37m-win32.whl": {
           "provides_extras": [
@@ -74612,6 +74761,26 @@
         "opentimspy-1.0.12-cp38-cp38-win32.whl": "1.0.10@opentimspy-1.0.10-cp38-cp38-macosx_10_9_x86_64.whl",
         "opentimspy-1.0.12-cp38-cp38-win_amd64.whl": "1.0.10@opentimspy-1.0.10-cp38-cp38-macosx_10_9_x86_64.whl"
       },
+      "1.0.15": {
+        "opentimspy-1.0.15-cp38-cp38-macosx_10_9_x86_64.whl": {
+          "provides_extras": [
+            "bruker_proprietary",
+            "plotting"
+          ],
+          "requires_dist": [
+            "pybind11",
+            "numpy",
+            "opentims-bruker-bridge (>=1.0.3) ; extra == 'bruker_proprietary'",
+            "matplotlib ; extra == 'plotting'"
+          ]
+        },
+        "opentimspy-1.0.15-cp38-cp38-manylinux_2_17_i686.manylinux2014_i686.whl": "1.0.15@opentimspy-1.0.15-cp38-cp38-macosx_10_9_x86_64.whl",
+        "opentimspy-1.0.15-cp38-cp38-manylinux_2_24_x86_64.whl": "1.0.15@opentimspy-1.0.15-cp38-cp38-macosx_10_9_x86_64.whl",
+        "opentimspy-1.0.15-cp38-cp38-musllinux_1_1_i686.whl": "1.0.15@opentimspy-1.0.15-cp38-cp38-macosx_10_9_x86_64.whl",
+        "opentimspy-1.0.15-cp38-cp38-musllinux_1_1_x86_64.whl": "1.0.15@opentimspy-1.0.15-cp38-cp38-macosx_10_9_x86_64.whl",
+        "opentimspy-1.0.15-cp38-cp38-win32.whl": "1.0.15@opentimspy-1.0.15-cp38-cp38-macosx_10_9_x86_64.whl",
+        "opentimspy-1.0.15-cp38-cp38-win_amd64.whl": "1.0.15@opentimspy-1.0.15-cp38-cp38-macosx_10_9_x86_64.whl"
+      },
       "1.0.5": {
         "opentimspy-1.0.5-cp38-cp38-win32.whl": {
           "provides_extras": [
@@ -74692,6 +74861,26 @@
         "opentimspy-1.0.12-cp39-cp39-musllinux_1_1_x86_64.whl": "1.0.10@opentimspy-1.0.10-cp39-cp39-macosx_10_9_x86_64.whl",
         "opentimspy-1.0.12-cp39-cp39-win32.whl": "1.0.10@opentimspy-1.0.10-cp39-cp39-macosx_10_9_x86_64.whl",
         "opentimspy-1.0.12-cp39-cp39-win_amd64.whl": "1.0.10@opentimspy-1.0.10-cp39-cp39-macosx_10_9_x86_64.whl"
+      },
+      "1.0.15": {
+        "opentimspy-1.0.15-cp39-cp39-macosx_10_9_x86_64.whl": {
+          "provides_extras": [
+            "bruker_proprietary",
+            "plotting"
+          ],
+          "requires_dist": [
+            "pybind11",
+            "numpy",
+            "opentims-bruker-bridge (>=1.0.3) ; extra == 'bruker_proprietary'",
+            "matplotlib ; extra == 'plotting'"
+          ]
+        },
+        "opentimspy-1.0.15-cp39-cp39-manylinux_2_17_i686.manylinux2014_i686.whl": "1.0.15@opentimspy-1.0.15-cp39-cp39-macosx_10_9_x86_64.whl",
+        "opentimspy-1.0.15-cp39-cp39-manylinux_2_24_x86_64.whl": "1.0.15@opentimspy-1.0.15-cp39-cp39-macosx_10_9_x86_64.whl",
+        "opentimspy-1.0.15-cp39-cp39-musllinux_1_1_i686.whl": "1.0.15@opentimspy-1.0.15-cp39-cp39-macosx_10_9_x86_64.whl",
+        "opentimspy-1.0.15-cp39-cp39-musllinux_1_1_x86_64.whl": "1.0.15@opentimspy-1.0.15-cp39-cp39-macosx_10_9_x86_64.whl",
+        "opentimspy-1.0.15-cp39-cp39-win32.whl": "1.0.15@opentimspy-1.0.15-cp39-cp39-macosx_10_9_x86_64.whl",
+        "opentimspy-1.0.15-cp39-cp39-win_amd64.whl": "1.0.15@opentimspy-1.0.15-cp39-cp39-macosx_10_9_x86_64.whl"
       },
       "1.0.5": {
         "opentimspy-1.0.5-cp39-cp39-win32.whl": {
@@ -74821,6 +75010,23 @@
         "opentimspy-1.0.12-pp37-pypy37_pp73-manylinux_2_24_x86_64.whl": "1.0.10@opentimspy-1.0.10-pp37-pypy37_pp73-macosx_10_9_x86_64.whl",
         "opentimspy-1.0.12-pp37-pypy37_pp73-win_amd64.whl": "1.0.10@opentimspy-1.0.10-pp37-pypy37_pp73-macosx_10_9_x86_64.whl"
       },
+      "1.0.15": {
+        "opentimspy-1.0.15-pp37-pypy37_pp73-macosx_10_9_x86_64.whl": {
+          "provides_extras": [
+            "bruker_proprietary",
+            "plotting"
+          ],
+          "requires_dist": [
+            "pybind11",
+            "numpy",
+            "opentims-bruker-bridge (>=1.0.3) ; extra == 'bruker_proprietary'",
+            "matplotlib ; extra == 'plotting'"
+          ]
+        },
+        "opentimspy-1.0.15-pp37-pypy37_pp73-manylinux_2_17_i686.manylinux2014_i686.whl": "1.0.15@opentimspy-1.0.15-pp37-pypy37_pp73-macosx_10_9_x86_64.whl",
+        "opentimspy-1.0.15-pp37-pypy37_pp73-manylinux_2_24_x86_64.whl": "1.0.15@opentimspy-1.0.15-pp37-pypy37_pp73-macosx_10_9_x86_64.whl",
+        "opentimspy-1.0.15-pp37-pypy37_pp73-win_amd64.whl": "1.0.15@opentimspy-1.0.15-pp37-pypy37_pp73-macosx_10_9_x86_64.whl"
+      },
       "1.0.5": {
         "opentimspy-1.0.5-pp37-pypy37_pp73-win32.whl": {
           "provides_extras": [
@@ -74879,6 +75085,42 @@
         "opentimspy-1.0.12-pp38-pypy38_pp73-manylinux_2_17_i686.manylinux2014_i686.whl": "1.0.12@opentimspy-1.0.12-pp38-pypy38_pp73-macosx_10_9_x86_64.whl",
         "opentimspy-1.0.12-pp38-pypy38_pp73-manylinux_2_24_x86_64.whl": "1.0.12@opentimspy-1.0.12-pp38-pypy38_pp73-macosx_10_9_x86_64.whl",
         "opentimspy-1.0.12-pp38-pypy38_pp73-win_amd64.whl": "1.0.12@opentimspy-1.0.12-pp38-pypy38_pp73-macosx_10_9_x86_64.whl"
+      },
+      "1.0.15": {
+        "opentimspy-1.0.15-pp38-pypy38_pp73-macosx_10_9_x86_64.whl": {
+          "provides_extras": [
+            "bruker_proprietary",
+            "plotting"
+          ],
+          "requires_dist": [
+            "pybind11",
+            "numpy",
+            "opentims-bruker-bridge (>=1.0.3) ; extra == 'bruker_proprietary'",
+            "matplotlib ; extra == 'plotting'"
+          ]
+        },
+        "opentimspy-1.0.15-pp38-pypy38_pp73-manylinux_2_17_i686.manylinux2014_i686.whl": "1.0.15@opentimspy-1.0.15-pp38-pypy38_pp73-macosx_10_9_x86_64.whl",
+        "opentimspy-1.0.15-pp38-pypy38_pp73-manylinux_2_24_x86_64.whl": "1.0.15@opentimspy-1.0.15-pp38-pypy38_pp73-macosx_10_9_x86_64.whl",
+        "opentimspy-1.0.15-pp38-pypy38_pp73-win_amd64.whl": "1.0.15@opentimspy-1.0.15-pp38-pypy38_pp73-macosx_10_9_x86_64.whl"
+      }
+    },
+    "pp39": {
+      "1.0.15": {
+        "opentimspy-1.0.15-pp39-pypy39_pp73-macosx_10_9_x86_64.whl": {
+          "provides_extras": [
+            "bruker_proprietary",
+            "plotting"
+          ],
+          "requires_dist": [
+            "pybind11",
+            "numpy",
+            "opentims-bruker-bridge (>=1.0.3) ; extra == 'bruker_proprietary'",
+            "matplotlib ; extra == 'plotting'"
+          ]
+        },
+        "opentimspy-1.0.15-pp39-pypy39_pp73-manylinux_2_17_i686.manylinux2014_i686.whl": "1.0.15@opentimspy-1.0.15-pp39-pypy39_pp73-macosx_10_9_x86_64.whl",
+        "opentimspy-1.0.15-pp39-pypy39_pp73-manylinux_2_24_x86_64.whl": "1.0.15@opentimspy-1.0.15-pp39-pypy39_pp73-macosx_10_9_x86_64.whl",
+        "opentimspy-1.0.15-pp39-pypy39_pp73-win_amd64.whl": "1.0.15@opentimspy-1.0.15-pp39-pypy39_pp73-macosx_10_9_x86_64.whl"
       }
     }
   },
@@ -90286,6 +90528,11 @@
         "sourcery_nightly-1.0.7b9-py2.py3-none-macosx_10_9_universal2.whl": "1.0.0@sourcery_nightly-1.0.0-py2.py3-none-macosx_10_9_universal2.whl",
         "sourcery_nightly-1.0.7b9-py2.py3-none-manylinux1_x86_64.whl": "1.0.0@sourcery_nightly-1.0.0-py2.py3-none-macosx_10_9_universal2.whl",
         "sourcery_nightly-1.0.7b9-py2.py3-none-win_amd64.whl": "1.0.0@sourcery_nightly-1.0.0-py2.py3-none-macosx_10_9_universal2.whl"
+      },
+      "1.0.8b1": {
+        "sourcery_nightly-1.0.8b1-py2.py3-none-macosx_10_9_universal2.whl": "1.0.0@sourcery_nightly-1.0.0-py2.py3-none-macosx_10_9_universal2.whl",
+        "sourcery_nightly-1.0.8b1-py2.py3-none-manylinux1_x86_64.whl": "1.0.0@sourcery_nightly-1.0.0-py2.py3-none-macosx_10_9_universal2.whl",
+        "sourcery_nightly-1.0.8b1-py2.py3-none-win_amd64.whl": "1.0.0@sourcery_nightly-1.0.0-py2.py3-none-macosx_10_9_universal2.whl"
       }
     }
   },
@@ -94598,6 +94845,9 @@
       },
       "3.0.849": {
         "tencentcloud_sdk_python_ecc-3.0.849-py2.py3-none-any.whl": "3.0.251@tencentcloud_sdk_python_ecc-3.0.251-py2.py3-none-any.whl"
+      },
+      "3.0.850": {
+        "tencentcloud_sdk_python_ecc-3.0.850-py2.py3-none-any.whl": "3.0.251@tencentcloud_sdk_python_ecc-3.0.251-py2.py3-none-any.whl"
       }
     }
   },
@@ -96333,6 +96583,9 @@
       },
       "3.0.849": {
         "tencentcloud_sdk_python_hcm-3.0.849-py2.py3-none-any.whl": "3.0.252@tencentcloud_sdk_python_hcm-3.0.252-py2.py3-none-any.whl"
+      },
+      "3.0.850": {
+        "tencentcloud_sdk_python_hcm-3.0.850-py2.py3-none-any.whl": "3.0.252@tencentcloud_sdk_python_hcm-3.0.252-py2.py3-none-any.whl"
       }
     }
   },
