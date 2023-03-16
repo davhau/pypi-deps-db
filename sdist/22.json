@@ -1850,7 +1850,8 @@
     "0.0.7": "0.0.1",
     "0.0.8": "0.0.1",
     "0.0.10": "0.0.1",
-    "0.0.9": "0.0.1"
+    "0.0.9": "0.0.1",
+    "0.0.11": "0.0.1"
   },
   "anagramsolver": {
     "0.1.0": {
@@ -26023,7 +26024,8 @@
     "0.0.4": "0.0.1",
     "0.0.5": "0.0.1",
     "0.0.6": "0.0.1",
-    "0.0.7": "0.0.1"
+    "0.0.7": "0.0.1",
+    "0.0.8": "0.0.1"
   },
   "django-nomnom": {
     "0.1.4": {
@@ -54409,7 +54411,53 @@
       "39": "37",
       "310": "37"
     },
-    "1.2.1": "1.2.0"
+    "1.2.1": "1.2.0",
+    "1.2.2": {
+      "37": {
+        "install_requires": [
+          "typeguard<3,>=2.10",
+          "typing_extensions>=4.3.0"
+        ],
+        "extras_require": {
+          "phonenumbers": [
+            "phonenumbers>=8.12.41"
+          ],
+          "pydantic": [
+            "pydantic>=1.9.0"
+          ],
+          "dateutil": [
+            "python-dateutil>=2.8.2"
+          ],
+          "hypothesis": [
+            "hypothesis[zoneinfo]>=6.68.0"
+          ],
+          "all": [
+            "phantom-types[phonenumbers]",
+            "phantom-types[pydantic]",
+            "phantom-types[dateutil]",
+            "phantom-types[hypothesis]"
+          ],
+          "test": [
+            "mypy>=0.991",
+            "pytest",
+            "pytest-mypy-plugins>=1.9.3",
+            "coverage"
+          ],
+          ":python_version < \"3.8\"": [
+            "numerary<0.4,>=0.3.0"
+          ],
+          ":python_version >= \"3.8\"": [
+            "numerary>=0.4.3"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "38": "37",
+      "39": "37",
+      "310": "37"
+    }
   },
   "phmaxjobs": {
     "0.0.25": "0.1.1",
