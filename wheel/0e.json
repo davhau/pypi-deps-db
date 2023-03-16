@@ -11756,6 +11756,20 @@
       },
       "1.0.9": {
         "azure_devops_artifacts_helpers-1.0.9-py3-none-any.whl": "1.0.8@azure_devops_artifacts_helpers-1.0.8-py3-none-any.whl"
+      },
+      "1.1.0": {
+        "azure_devops_artifacts_helpers-1.1.0-py3-none-any.whl": {
+          "provides_extras": [
+            "tox"
+          ],
+          "requires_dist": [
+            "virtualenv (>=20.14.1)",
+            "click (>=7.1.2)",
+            "pluggy",
+            "tox ; extra == 'tox'"
+          ],
+          "requires_python": ">=3"
+        }
       }
     }
   },
@@ -13250,6 +13264,9 @@
       },
       "1.29.91": {
         "botocore_a_la_carte_backupstorage-1.29.91-py3-none-any.whl": "1.29.42@botocore_a_la_carte_backupstorage-1.29.42-py3-none-any.whl"
+      },
+      "1.29.92": {
+        "botocore_a_la_carte_backupstorage-1.29.92-py3-none-any.whl": "1.29.42@botocore_a_la_carte_backupstorage-1.29.42-py3-none-any.whl"
       }
     }
   },
@@ -13406,6 +13423,9 @@
       },
       "1.29.91": {
         "botocore_a_la_carte_cloudfront-1.29.91-py3-none-any.whl": "1.29.42@botocore_a_la_carte_cloudfront-1.29.42-py3-none-any.whl"
+      },
+      "1.29.92": {
+        "botocore_a_la_carte_cloudfront-1.29.92-py3-none-any.whl": "1.29.42@botocore_a_la_carte_cloudfront-1.29.42-py3-none-any.whl"
       }
     }
   },
@@ -16766,6 +16786,9 @@
       },
       "2.0.24": {
         "coveo_functools-2.0.24-py3-none-any.whl": "1.0@coveo_functools-1.0-py3-none-any.whl"
+      },
+      "2.0.25a1": {
+        "coveo_functools-2.0.25a1-py3-none-any.whl": "1.0@coveo_functools-1.0-py3-none-any.whl"
       },
       "2.0.2a1": {
         "coveo_functools-2.0.2a1-py3-none-any.whl": "1.0@coveo_functools-1.0-py3-none-any.whl"
@@ -24026,6 +24049,50 @@
             "types-requests ; extra == 'tests'",
             "dagster-cloud-test-infra ; extra == 'tests'",
             "dagster-k8s (==0.18.1) ; extra == 'tests'"
+          ]
+        }
+      },
+      "1.2.2": {
+        "dagster_cloud-1.2.2-py3-none-any.whl": {
+          "provides_extras": [
+            "docker",
+            "ecs",
+            "kubernetes",
+            "pex",
+            "sandbox",
+            "serverless",
+            "tests"
+          ],
+          "requires_dist": [
+            "dagster (==1.2.2)",
+            "dagster-cloud-cli (==1.2.2)",
+            "pex",
+            "questionary",
+            "requests",
+            "typer[all]",
+            "docker ; extra == 'docker'",
+            "dagster-docker (==0.18.2) ; extra == 'docker'",
+            "dagster-aws (==0.18.2) ; extra == 'ecs'",
+            "boto3 ; extra == 'ecs'",
+            "kubernetes ; extra == 'kubernetes'",
+            "dagster-k8s (==0.18.2) ; extra == 'kubernetes'",
+            "boto3 ; extra == 'pex'",
+            "supervisor ; extra == 'sandbox'",
+            "boto3 ; extra == 'serverless'",
+            "black ; extra == 'tests'",
+            "docker ; extra == 'tests'",
+            "httpretty ; extra == 'tests'",
+            "isort ; extra == 'tests'",
+            "kubernetes ; extra == 'tests'",
+            "moto[all] ; extra == 'tests'",
+            "mypy ; extra == 'tests'",
+            "paramiko ; extra == 'tests'",
+            "pylint ; extra == 'tests'",
+            "pytest ; extra == 'tests'",
+            "types-PyYAML ; extra == 'tests'",
+            "types-requests ; extra == 'tests'",
+            "dagster-cloud-test-infra ; extra == 'tests'",
+            "dagster-k8s (==0.18.2) ; extra == 'tests'"
           ]
         }
       }
@@ -33467,6 +33534,62 @@
             "pytest-asyncio ; extra == 'pytest'",
             "time-machine ; extra == 'pytest'",
             "async-solipsism ; extra == 'pytest'"
+          ],
+          "requires_python": "<4,>=3.8"
+        }
+      },
+      "0.19.0": {
+        "frequenz_sdk-0.19.0-py3-none-any.whl": {
+          "provides_extras": [
+            "dev",
+            "docs-gen",
+            "docs-lint",
+            "format",
+            "mypy",
+            "nox",
+            "pylint",
+            "pytest"
+          ],
+          "requires_dist": [
+            "frequenz-api-microgrid (<0.12.0,>=0.11.0)",
+            "frequenz-channels (<0.14.0,>=0.13.0)",
+            "google-api-python-client (<3,>=2.71)",
+            "grpcio (<2,>=1.51.1)",
+            "grpcio-tools (<2,>=1.51.1)",
+            "networkx (<3,>=2.8)",
+            "numpy (<2,>=1.24.2)",
+            "protobuf (<5,>=4.21.6)",
+            "pydantic (>=1.9)",
+            "sympy (<2,>=1.10.1)",
+            "toml (>=0.10)",
+            "tqdm (<5,>=4.38.0)",
+            "typing-extensions (<5,>=4.4.0)",
+            "watchfiles (>=0.15.0)",
+            "frequenz-sdk[docs-gen,docs-lint,format,mypy,nox,pylint,pytest] ; extra == 'dev'",
+            "mike (<2,>=1.1.2) ; extra == 'docs-gen'",
+            "mkdocs-gen-files (<0.5.0,>=0.4.0) ; extra == 'docs-gen'",
+            "mkdocs-literate-nav (<0.5.0,>=0.4.0) ; extra == 'docs-gen'",
+            "mkdocs-material (<9,>=8.5.7) ; extra == 'docs-gen'",
+            "mkdocs-section-index (<0.4.0,>=0.3.4) ; extra == 'docs-gen'",
+            "mkdocstrings[python] (<0.20.0,>=0.19.0) ; extra == 'docs-gen'",
+            "pydocstyle (<7,>=6.3.0) ; extra == 'docs-lint'",
+            "darglint (<2,>=1.8.1) ; extra == 'docs-lint'",
+            "tomli (<3,>=2.0.1) ; extra == 'docs-lint'",
+            "black (<24,>=23.1.0) ; extra == 'format'",
+            "isort (<6,>=5.12.0) ; extra == 'format'",
+            "mypy (<2,>=1.0.1) ; extra == 'mypy'",
+            "grpc-stubs (==1.24.12) ; extra == 'mypy'",
+            "frequenz-sdk[docs-gen,nox,pytest] ; extra == 'mypy'",
+            "nox (==2022.11.21) ; extra == 'nox'",
+            "toml (<1,>=0.10.2) ; extra == 'nox'",
+            "pylint (<3,>=2.17.0) ; extra == 'pylint'",
+            "frequenz-sdk[docs-gen,nox,pytest] ; extra == 'pylint'",
+            "pytest (<8,>=7.2.1) ; extra == 'pytest'",
+            "pytest-cov (<5,>=4.0.0) ; extra == 'pytest'",
+            "pytest-mock (<4,>=3.10.0) ; extra == 'pytest'",
+            "pytest-asyncio (<1,>=0.20.3) ; extra == 'pytest'",
+            "time-machine (<3,>=2.9.0) ; extra == 'pytest'",
+            "async-solipsism (<1,>=0.5) ; extra == 'pytest'"
           ],
           "requires_python": "<4,>=3.8"
         }
@@ -51006,6 +51129,19 @@
       "14.0.1.0.1.dev3": {
         "odoo14_addon_invader_payment-14.0.1.0.1.dev3-py3-none-any.whl": "14.0.1.0.1@odoo14_addon_invader_payment-14.0.1.0.1-py3-none-any.whl"
       },
+      "14.0.1.0.2": {
+        "odoo14_addon_invader_payment-14.0.1.0.2-py3-none-any.whl": {
+          "requires_dist": [
+            "cerberus",
+            "odoo14-addon-account-payment-mode",
+            "odoo14-addon-component",
+            "odoo14-addon-component-event",
+            "odoo (<14.1dev,>=14.0a)",
+            "unidecode"
+          ],
+          "requires_python": ">=3.6"
+        }
+      },
       "14.0.1.0.2.dev1": {
         "odoo14_addon_invader_payment-14.0.1.0.2.dev1-py3-none-any.whl": "14.0.1.0.1@odoo14_addon_invader_payment-14.0.1.0.1-py3-none-any.whl"
       }
@@ -54789,6 +54925,9 @@
       },
       "0.2.415": {
         "pepperize.cdk_autoscaling_gitlab_runner-0.2.415-py3-none-any.whl": "0.2.366@pepperize.cdk_autoscaling_gitlab_runner-0.2.366-py3-none-any.whl"
+      },
+      "0.2.416": {
+        "pepperize.cdk_autoscaling_gitlab_runner-0.2.416-py3-none-any.whl": "0.2.366@pepperize.cdk_autoscaling_gitlab_runner-0.2.366-py3-none-any.whl"
       },
       "0.2.42": {
         "pepperize.cdk_autoscaling_gitlab_runner-0.2.42-py3-none-any.whl": "0.2.36@pepperize.cdk_autoscaling_gitlab_runner-0.2.36-py3-none-any.whl"
@@ -68431,6 +68570,12 @@
       "0.14.0": {
         "secenv-0.14.0-py3-none-any.whl": "0.10.0@secenv-0.10.0-py3-none-any.whl"
       },
+      "0.14.1": {
+        "secenv-0.14.1-py3-none-any.whl": "0.10.0@secenv-0.10.0-py3-none-any.whl"
+      },
+      "0.14.2": {
+        "secenv-0.14.2-py3-none-any.whl": "0.10.0@secenv-0.10.0-py3-none-any.whl"
+      },
       "0.2.0": {
         "secenv-0.2.0-py3-none-any.whl": "0.1.5@secenv-0.1.5-py3-none-any.whl"
       },
@@ -69504,6 +69649,19 @@
       },
       "0.0.9": {
         "sleuth_pr-0.0.9-py3-none-any.whl": "0.0.10@sleuth_pr-0.0.10-py3-none-any.whl"
+      }
+    }
+  },
+  "slmndr": {
+    "py3": {
+      "1.0": {
+        "slmndr-1.0-py3-none-any.whl": {
+          "requires_dist": [
+            "PyOpenGL",
+            "PyOpenGL-accelerate"
+          ],
+          "requires_python": ">=2.7"
+        }
       }
     }
   },
@@ -72727,6 +72885,9 @@
       },
       "0.7.6": {
         "szurubooru_toolkit-0.7.6-py3-none-any.whl": "0.7.0@szurubooru_toolkit-0.7.0-py3-none-any.whl"
+      },
+      "0.7.7": {
+        "szurubooru_toolkit-0.7.7-py3-none-any.whl": "0.7.0@szurubooru_toolkit-0.7.0-py3-none-any.whl"
       }
     }
   },
@@ -73423,6 +73584,13 @@
       },
       "0.0.2": {
         "tdes-0.0.2-py3-none-any.whl": "0.0.1@tdes-0.0.1-py3-none-any.whl"
+      }
+    }
+  },
+  "tech-in-seconds": {
+    "py3": {
+      "1.0.2": {
+        "Tech_In_Seconds-1.0.2-py3-none-any.whl": {}
       }
     }
   },
@@ -75262,6 +75430,9 @@
       },
       "3.0.851": {
         "tencentcloud_sdk_python_asr-3.0.851-py2.py3-none-any.whl": "3.0.251@tencentcloud_sdk_python_asr-3.0.251-py2.py3-none-any.whl"
+      },
+      "3.0.852": {
+        "tencentcloud_sdk_python_asr-3.0.852-py2.py3-none-any.whl": "3.0.251@tencentcloud_sdk_python_asr-3.0.251-py2.py3-none-any.whl"
       }
     }
   },
@@ -75307,6 +75478,14 @@
         "terracomp_server-0.0.0-py3-none-any.whl": {
           "requires_dist": [
             "terracomp-api (>=0.0.0,<0.0.1)"
+          ],
+          "requires_python": ">=3.10,<4.0"
+        }
+      },
+      "0.0.1": {
+        "terracomp_server-0.0.1-py3-none-any.whl": {
+          "requires_dist": [
+            "terracomp-api (>=0.0.1,<0.0.2)"
           ],
           "requires_python": ">=3.10,<4.0"
         }
@@ -76202,6 +76381,15 @@
       },
       "0.3.1": {
         "tk_apis-0.3.1-py3-none-any.whl": "0.2.3@tk_apis-0.2.3-py3-none-any.whl"
+      }
+    }
+  },
+  "tkinterdnd2-osxarm64": {
+    "py3": {
+      "0.3.0": {
+        "tkinterdnd2_osxarm64-0.3.0-py3-none-any.whl": {
+          "requires_python": ">=3.6"
+        }
       }
     }
   },
@@ -79785,6 +79973,9 @@
       },
       "1.1.4": {
         "tplink_omada_client-1.1.4-py3-none-any.whl": "1.0.2@tplink_omada_client-1.0.2-py3-none-any.whl"
+      },
+      "1.1.5": {
+        "tplink_omada_client-1.1.5-py3-none-any.whl": "1.0.2@tplink_omada_client-1.0.2-py3-none-any.whl"
       }
     }
   },
@@ -83136,6 +83327,12 @@
       },
       "2.0.20230303.1": {
         "xecta_data_api_client-2.0.20230303.1-py2.py3-none-any.whl": "0.1.20220919.15@xecta_data_api_client-0.1.20220919.15-py2.py3-none-any.whl"
+      },
+      "2.0.20230315.1": {
+        "xecta_data_api_client-2.0.20230315.1-py2.py3-none-any.whl": "0.1.20220919.15@xecta_data_api_client-0.1.20220919.15-py2.py3-none-any.whl"
+      },
+      "2.0.20230315.2": {
+        "xecta_data_api_client-2.0.20230315.2-py2.py3-none-any.whl": "0.1.20220919.15@xecta_data_api_client-0.1.20220919.15-py2.py3-none-any.whl"
       }
     }
   },
