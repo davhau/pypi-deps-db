@@ -71579,7 +71579,10 @@
       "39": "27",
       "310": "27"
     },
-    "0.0.2": "0.0.1"
+    "0.0.2": "0.0.1",
+    "0.0.3": "0.0.1",
+    "0.0.3a0": "0.0.1",
+    "1.0.0": "0.0.1"
   },
   "picard-metrics-sqlite": {
     "0.1": {
@@ -77878,6 +77881,50 @@
       "36": {
         "install_requires": [
           "qibo>=0.1.8"
+        ],
+        "extras_require": {
+          "docs": [
+            "sphinx",
+            "furo",
+            "recommonmark",
+            "sphinxcontrib-bibtex",
+            "sphinx_markdown_tables",
+            "nbsphinx",
+            "IPython",
+            "sphinx_copybutton",
+            "furo"
+          ],
+          "tests": [
+            "pytest>=7.2.0",
+            "pytest-cov>=4.0.0",
+            "pytest-env>=0.8.1"
+          ],
+          "analysis": [
+            "pylint>=2.16.0"
+          ],
+          "tiiq": [
+            "qblox-instruments==0.7.0",
+            "qcodes",
+            "pyvisa-py==0.5.3",
+            "qm-qua>=1.0.1",
+            "qualang-tools>=0.13.1"
+          ]
+        },
+        "python_requires": [
+          ">=3.8.0"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "0.0.2": {
+      "36": {
+        "install_requires": [
+          "qibo>=0.1.8",
+          "networkx",
+          "more-itertools"
         ],
         "extras_require": {
           "docs": [
@@ -92142,7 +92189,40 @@
     "4.0.2": "4.0",
     "4.1b1": "4.0",
     "4.1": "4.0",
-    "4.2": "4.0"
+    "4.2": "4.0",
+    "4.3": {
+      "27": {
+        "install_requires": [
+          "pytz_deprecation_shim"
+        ],
+        "extras_require": {
+          "devenv": [
+            "pytest>=4.3",
+            "pytest-mock>=3.3",
+            "pytest-cov",
+            "black",
+            "flake8",
+            "check_manifest",
+            "pyroma",
+            "zest.releaser"
+          ],
+          ":platform_system == \"Windows\"": [
+            "tzdata"
+          ],
+          ":python_version < \"3.9\"": [
+            "backports.zoneinfo"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "uaml": {
     "0.0.1": {
