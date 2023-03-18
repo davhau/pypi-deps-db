@@ -16321,7 +16321,8 @@
     "1.29.90": "1.29.46",
     "1.29.91": "1.29.46",
     "1.29.92": "1.29.46",
-    "1.29.93": "1.29.46"
+    "1.29.93": "1.29.46",
+    "1.29.94": "1.29.46"
   },
   "bounded-async-executor": {
     "0.1": {
@@ -80708,7 +80709,387 @@
       "39": "36",
       "310": "36"
     },
-    "0.7.2": "0.7.1"
+    "0.7.2": "0.7.1",
+    "0.7.3": {
+      "27": {
+        "install_requires": [
+          "Cython>=0.25",
+          "h5py!=3.0.0,>=2.6",
+          "numpy>=1.15",
+          "pandas!=1.1.5,>=0.25",
+          "scipy>=0.18",
+          "tabulate>=0.7",
+          "scikit-learn<1.2.0",
+          "tqdm",
+          "torch>=1.13.0",
+          "torchaudio",
+          "torchtext",
+          "torchvision",
+          "transformers<4.22,>=4.10.1",
+          "spacy>=2.3",
+          "PyYAML>=3.12",
+          "absl-py",
+          "kaggle",
+          "requests",
+          "tables",
+          "fsspec[http]",
+          "dataclasses-json",
+          "jsonschema<4.7,>=4.5.0",
+          "marshmallow",
+          "marshmallow-jsonschema",
+          "marshmallow-dataclass==8.5.4",
+          "tensorboard",
+          "torchmetrics>=0.11",
+          "torchinfo",
+          "filelock",
+          "psutil==5.9.4",
+          "protobuf",
+          "experiment_impact_tracker",
+          "gpustat",
+          "rich~=12.4.4",
+          "packaging",
+          "retry",
+          "sacremoses",
+          "xlwt",
+          "xlrd",
+          "openpyxl",
+          "pyarrow",
+          "lxml",
+          "whylogs>=1.1.9"
+        ],
+        "extras_require": {
+          "full": [
+            "uvicorn",
+            "httpx",
+            "fastapi",
+            "python-multipart",
+            "captum",
+            "dask[dataframe]",
+            "pyarrow",
+            "horovod[pytorch]!=0.26.0,>=0.24.0",
+            "ray[data,default,serve,tune]>=2.0.0",
+            "tensorboardX<2.3",
+            "GPUtil",
+            "tblib",
+            "awscli",
+            "modin[ray]",
+            "hummingbird-ml>=0.4.8",
+            "lightgbm",
+            "lightgbm-ray",
+            "ray[default,tune]>=2.0.0",
+            "hyperopt",
+            "seaborn<0.12,>=0.7",
+            "hiplot",
+            "ptitprince",
+            "s3fs"
+          ],
+          "test:python_version <= \"3.6\"": [
+            "matplotlib<3.4,>=3.0"
+          ],
+          "full:python_version > \"3.6\"": [
+            "matplotlib>=3.4"
+          ],
+          "hyperopt": [
+            "ray[default,tune]>=2.0.0",
+            "hyperopt"
+          ],
+          "explain": [
+            "captum"
+          ],
+          "serve": [
+            "uvicorn",
+            "httpx",
+            "fastapi",
+            "python-multipart"
+          ],
+          "viz:python_version > \"3.6\"": [
+            "matplotlib>=3.4"
+          ],
+          "tree": [
+            "hummingbird-ml>=0.4.8",
+            "lightgbm",
+            "lightgbm-ray"
+          ],
+          "distributed": [
+            "dask[dataframe]",
+            "pyarrow",
+            "horovod[pytorch]!=0.26.0,>=0.24.0",
+            "ray[data,default,serve,tune]>=2.0.0",
+            "tensorboardX<2.3",
+            "GPUtil",
+            "tblib",
+            "awscli",
+            "modin[ray]"
+          ],
+          "full:python_version <= \"3.6\"": [
+            "matplotlib<3.4,>=3.0"
+          ],
+          "viz": [
+            "seaborn<0.12,>=0.7",
+            "hiplot",
+            "ptitprince"
+          ],
+          "serve:platform_system != \"Windows\" and python_version < \"3.9\"": [
+            "neuropod==0.3.0rc6"
+          ],
+          "test:python_version > \"3.6\"": [
+            "matplotlib>=3.4"
+          ],
+          "test": [
+            "uvicorn",
+            "httpx",
+            "fastapi",
+            "python-multipart",
+            "captum",
+            "dask[dataframe]",
+            "pyarrow",
+            "horovod[pytorch]!=0.26.0,>=0.24.0",
+            "ray[data,default,serve,tune]>=2.0.0",
+            "tensorboardX<2.3",
+            "GPUtil",
+            "tblib",
+            "awscli",
+            "modin[ray]",
+            "hummingbird-ml>=0.4.8",
+            "lightgbm",
+            "lightgbm-ray",
+            "ray[default,tune]>=2.0.0",
+            "hyperopt",
+            "seaborn<0.12,>=0.7",
+            "hiplot",
+            "ptitprince",
+            "s3fs",
+            "pytest",
+            "pytest-timeout",
+            "wget",
+            "six>=1.13.0",
+            "aim",
+            "wandb<0.12.11",
+            "comet_ml",
+            "mlflow",
+            "hpbandster",
+            "ConfigSpace",
+            "ax-platform",
+            "sqlalchemy",
+            "bayesian-optimization",
+            "flaml[blendsearch]",
+            "dragonfly-opt",
+            "HEBO",
+            "nevergrad",
+            "optuna",
+            "scikit-optimize",
+            "zoopt",
+            "s3fs>=2022.8.2"
+          ],
+          "full:platform_system != \"Windows\" and python_version < \"3.9\"": [
+            "neuropod==0.3.0rc6"
+          ],
+          "viz:python_version <= \"3.6\"": [
+            "matplotlib<3.4,>=3.0"
+          ],
+          "test:platform_system != \"Windows\" and python_version < \"3.9\"": [
+            "neuropod==0.3.0rc6"
+          ],
+          "benchmarking": [
+            "s3fs"
+          ]
+        },
+        "python_requires": [
+          ">=3.8"
+        ]
+      },
+      "36": {
+        "install_requires": [
+          "Cython>=0.25",
+          "h5py!=3.0.0,>=2.6",
+          "numpy>=1.15",
+          "pandas!=1.1.5,>=0.25",
+          "scipy>=0.18",
+          "tabulate>=0.7",
+          "scikit-learn<1.2.0",
+          "tqdm",
+          "torch>=1.13.0",
+          "torchaudio",
+          "torchtext",
+          "torchvision",
+          "transformers<4.22,>=4.10.1",
+          "spacy>=2.3",
+          "PyYAML>=3.12",
+          "absl-py",
+          "kaggle",
+          "requests",
+          "tables",
+          "fsspec[http]",
+          "dataclasses-json",
+          "jsonschema<4.7,>=4.5.0",
+          "marshmallow",
+          "marshmallow-jsonschema",
+          "marshmallow-dataclass==8.5.4",
+          "tensorboard",
+          "torchmetrics>=0.11",
+          "torchinfo",
+          "filelock",
+          "psutil==5.9.4",
+          "protobuf",
+          "experiment_impact_tracker",
+          "gpustat",
+          "rich~=12.4.4",
+          "packaging",
+          "retry",
+          "sacremoses",
+          "xlwt",
+          "xlrd",
+          "openpyxl",
+          "pyarrow",
+          "lxml",
+          "whylogs>=1.1.9"
+        ],
+        "extras_require": {
+          "serve": [
+            "uvicorn",
+            "httpx",
+            "fastapi",
+            "python-multipart"
+          ],
+          "serve:platform_system != \"Windows\" and python_version < \"3.9\"": [
+            "neuropod==0.3.0rc6"
+          ],
+          "viz": [
+            "seaborn<0.12,>=0.7",
+            "hiplot",
+            "ptitprince"
+          ],
+          "viz:python_version > \"3.6\"": [
+            "matplotlib>=3.4"
+          ],
+          "viz:python_version <= \"3.6\"": [
+            "matplotlib<3.4,>=3.0"
+          ],
+          "distributed": [
+            "dask[dataframe]",
+            "pyarrow",
+            "horovod[pytorch]!=0.26.0,>=0.24.0",
+            "ray[data,default,serve,tune]>=2.0.0",
+            "tensorboardX<2.3",
+            "GPUtil",
+            "tblib",
+            "awscli",
+            "modin[ray]"
+          ],
+          "hyperopt": [
+            "ray[default,tune]>=2.0.0",
+            "hyperopt"
+          ],
+          "tree": [
+            "hummingbird-ml>=0.4.8",
+            "lightgbm",
+            "lightgbm-ray"
+          ],
+          "explain": [
+            "captum"
+          ],
+          "benchmarking": [
+            "s3fs"
+          ],
+          "full": [
+            "uvicorn",
+            "httpx",
+            "fastapi",
+            "python-multipart",
+            "seaborn<0.12,>=0.7",
+            "hiplot",
+            "ptitprince",
+            "dask[dataframe]",
+            "pyarrow",
+            "horovod[pytorch]!=0.26.0,>=0.24.0",
+            "ray[data,default,serve,tune]>=2.0.0",
+            "tensorboardX<2.3",
+            "GPUtil",
+            "tblib",
+            "awscli",
+            "modin[ray]",
+            "ray[default,tune]>=2.0.0",
+            "hyperopt",
+            "hummingbird-ml>=0.4.8",
+            "lightgbm",
+            "lightgbm-ray",
+            "captum",
+            "s3fs"
+          ],
+          "full:platform_system != \"Windows\" and python_version < \"3.9\"": [
+            "neuropod==0.3.0rc6"
+          ],
+          "full:python_version > \"3.6\"": [
+            "matplotlib>=3.4"
+          ],
+          "full:python_version <= \"3.6\"": [
+            "matplotlib<3.4,>=3.0"
+          ],
+          "test": [
+            "uvicorn",
+            "httpx",
+            "fastapi",
+            "python-multipart",
+            "seaborn<0.12,>=0.7",
+            "hiplot",
+            "ptitprince",
+            "dask[dataframe]",
+            "pyarrow",
+            "horovod[pytorch]!=0.26.0,>=0.24.0",
+            "ray[data,default,serve,tune]>=2.0.0",
+            "tensorboardX<2.3",
+            "GPUtil",
+            "tblib",
+            "awscli",
+            "modin[ray]",
+            "ray[default,tune]>=2.0.0",
+            "hyperopt",
+            "hummingbird-ml>=0.4.8",
+            "lightgbm",
+            "lightgbm-ray",
+            "captum",
+            "s3fs",
+            "pytest",
+            "pytest-timeout",
+            "wget",
+            "six>=1.13.0",
+            "aim",
+            "wandb<0.12.11",
+            "comet_ml",
+            "mlflow",
+            "hpbandster",
+            "ConfigSpace",
+            "ax-platform",
+            "sqlalchemy",
+            "bayesian-optimization",
+            "flaml[blendsearch]",
+            "dragonfly-opt",
+            "HEBO",
+            "nevergrad",
+            "optuna",
+            "scikit-optimize",
+            "zoopt",
+            "s3fs>=2022.8.2"
+          ],
+          "test:platform_system != \"Windows\" and python_version < \"3.9\"": [
+            "neuropod==0.3.0rc6"
+          ],
+          "test:python_version > \"3.6\"": [
+            "matplotlib>=3.4"
+          ],
+          "test:python_version <= \"3.6\"": [
+            "matplotlib<3.4,>=3.0"
+          ]
+        },
+        "python_requires": [
+          ">=3.8"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "lunapark-client-cli": {
     "66.0.0": {
