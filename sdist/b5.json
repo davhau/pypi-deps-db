@@ -57085,7 +57085,59 @@
       "310": "27"
     },
     "0.6.6": "0.6.5",
-    "0.6.7": "0.6.5"
+    "0.6.7": "0.6.5",
+    "0.7.0": {
+      "27": {
+        "install_requires": [
+          "matchms<=0.13.0,>=0.11.0",
+          "numpy",
+          "spec2vec>=0.6.0",
+          "h5py<3.0.0",
+          "scikit-learn",
+          "ms2deepscore",
+          "gensim>=4.0.0",
+          "pandas>=1.2.5",
+          "matchmsextras<0.4.0,>=0.3.0",
+          "pubchempy",
+          "tqdm",
+          "matplotlib",
+          "skl2onnx",
+          "onnxruntime"
+        ],
+        "extras_require": {
+          ":platform_machine == \"arm64\"": [
+            "tensorflow-macos<2.9",
+            "tensorflow-metal<2.9"
+          ],
+          ":python_version < \"3.8\"": [
+            "pickle5"
+          ],
+          "dev": [
+            "bump2version",
+            "isort>=5.1.0",
+            "prospector[with_pyroma]",
+            "pytest",
+            "pytest-cov",
+            "sphinx!=3.2.0,<4.0.0,>=3.0.0",
+            "sphinx_rtd_theme",
+            "sphinxcontrib-apidoc",
+            "yapf",
+            "rdkit"
+          ],
+          ":platform_machine != \"arm64\"": [
+            "tensorflow<2.9"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "msm-pele": {
     "1.1.1": {
