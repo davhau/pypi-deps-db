@@ -17407,7 +17407,8 @@
     "1.29.91": "1.29.42",
     "1.29.92": "1.29.42",
     "1.29.93": "1.29.42",
-    "1.29.94": "1.29.42"
+    "1.29.94": "1.29.42",
+    "1.29.95": "1.29.42"
   },
   "botocore-stubs": {
     "1.20.90.post1": "1.21.0",
@@ -52747,6 +52748,27 @@
       "38": "27",
       "39": "27",
       "310": "27"
+    },
+    "1.99.19": {
+      "27": {
+        "install_requires": [
+          "honeybee-core==1.55.3",
+          "honeybee-standards==2.0.6"
+        ],
+        "setup_requires": [
+          "setuptools_scm"
+        ],
+        "extras_require": {
+          "standards": [
+            "honeybee-energy-standards==2.2.6"
+          ]
+        }
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
     }
   },
   "honeybee-energy-standards": {
@@ -58527,7 +58549,8 @@
       "38": "36",
       "39": "36",
       "310": "36"
-    }
+    },
+    "5.34.0": "5.33.0"
   },
   "lisa-plugin-programmetv": {
     "1.0.0": {
@@ -63157,6 +63180,83 @@
           ],
           "pydantic": [
             "yapx[pydantic]==0.0.1a18"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "0.0.1a20": {
+      "27": {
+        "install_requires": [
+          "yapx[shtab]==0.0.1a19"
+        ],
+        "extras_require": {
+          "tests": [
+            "pytest==7.*",
+            "pytest-cov==4.*",
+            "pytest-html==3.*",
+            "pytest-sugar==0.*",
+            "pytest-custom-exit-code==0.3.*",
+            "pylint==2.*",
+            "pylint-pytest==1.*",
+            "packaging==23.*",
+            "mockish==0.1.*",
+            "yapx[pydantic]==0.0.1a19"
+          ],
+          "docs": [
+            "mkdocs==1.*",
+            "mkdocs-material==9.*",
+            "mkdocstrings[python]==0.20.*",
+            "mkdocs-autorefs==0.*",
+            "mkdocs-include-dir-to-nav==1.*"
+          ],
+          "dev": [
+            "python-lsp-server[rope]==1.*",
+            "pylint==2.*",
+            "pylint-pytest==1.*",
+            "mypy[reports]==0.*",
+            "ruff==0.*",
+            "black==23.*",
+            "isort==5.*",
+            "ipython"
+          ],
+          "io:python_version < \"3.11\"": [
+            "tomli"
+          ],
+          "extras": [
+            "requests==2.*",
+            "pyyaml",
+            "python-dotenv",
+            "tabulate",
+            "yapx[pydantic]==0.0.1a19"
+          ],
+          "build": [
+            "setuptools>=62.3.0",
+            "build==0.*",
+            "wheel==0.*",
+            "twine==4.*"
+          ],
+          "io": [
+            "requests==2.*",
+            "pyyaml",
+            "python-dotenv",
+            "tabulate"
+          ],
+          "extras:python_version < \"3.11\"": [
+            "tomli"
+          ],
+          ":python_version < \"3.10\"": [
+            "typing-extensions"
+          ],
+          "pydantic": [
+            "yapx[pydantic]==0.0.1a19"
           ]
         },
         "python_requires": [
@@ -82886,6 +82986,32 @@
         "extras_require": {
           "test": [
             "flake8",
+            "flake8-comprehensions",
+            "pytest"
+          ],
+          "test:python_version < \"3.3\"": [
+            "mock"
+          ]
+        }
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "0.22.2": {
+      "27": {
+        "install_requires": [
+          "PyYAML>=3.1",
+          "setuptools",
+          "catkin_pkg>=0.4.0",
+          "rospkg>=1.4.0",
+          "rosdistro>=0.7.5"
+        ],
+        "extras_require": {
+          "test": [
+            "flake8<6",
             "flake8-comprehensions",
             "pytest"
           ],
