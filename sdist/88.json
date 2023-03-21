@@ -15786,7 +15786,71 @@
       "310": "36"
     },
     "1.5.0": "1.4.0",
-    "1.6.0": "1.4.0"
+    "1.6.0": "1.4.0",
+    "1.6.1": {
+      "36": {
+        "install_requires": [
+          "altair",
+          "click",
+          "gitpython",
+          "jinja2>=3.0",
+          "numpy",
+          "pandas",
+          "pydantic!=1.10.3,!=1.10.4,!=1.10.5",
+          "pydantic-yaml",
+          "scipy>=1.09",
+          "tqdm",
+          "xarray",
+          "jetto-tools>=1.8.8"
+        ],
+        "extras_require": {
+          "develop": [
+            "bump2version",
+            "ruff",
+            "pre-commit",
+            "yapf",
+            "mypy",
+            "coverage",
+            "nbmake",
+            "pytest",
+            "pytest-dependency",
+            "pycodestyle"
+          ],
+          "docs": [
+            "matplotlib",
+            "jinja2",
+            "markdown-include",
+            "mkdocs",
+            "mkdocs-click",
+            "mkdocs-jupyter",
+            "mkdocs-gen-files",
+            "mkdocs-material",
+            "mkdocstrings[python]"
+          ],
+          "publishing": [
+            "twine",
+            "wheel",
+            "build"
+          ],
+          "imas": [
+            "imas"
+          ],
+          ":python_version < \"3.10\"": [
+            "importlib_resources"
+          ],
+          ":python_full_version == \"3.9.7\"": [
+            "streamlit==1.11"
+          ],
+          ":python_full_version != \"3.9.7\"": [
+            "streamlit>=1.12"
+          ]
+        }
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "dxf-ruler-generator": {
     "0.0.1": {
@@ -41362,6 +41426,27 @@
     },
     "0.0.2": "0.0.1"
   },
+  "open-aea-ledger-ethereum-flashbots": {
+    "1.31.0": {
+      "27": {
+        "install_requires": [
+          "open-aea-ledger-ethereum~=1.31.0",
+          "flashbots==1.1.1"
+        ],
+        "tests_require": [
+          "pytest"
+        ],
+        "python_requires": [
+          ">=3.9,<4.0"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
+  },
   "openapi-spec-sanitizer": {
     "0.1.10": {
       "27": {
@@ -48317,6 +48402,50 @@
           "asteval",
           "pytz",
           "scikit-image"
+        ],
+        "setup_requires": [
+          "cython>=0.29.30"
+        ],
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "0.2023.3": {
+      "36": {
+        "install_requires": [
+          "dill",
+          "h5py",
+          "lmfit",
+          "matplotlib",
+          "numpy!=1.22.3,<1.24",
+          "nibabel",
+          "pandas",
+          "pygpc",
+          "pyyaml",
+          "scipy",
+          "scikit_learn<=1.0",
+          "packaging",
+          "lxml",
+          "tqdm",
+          "pillow",
+          "fslpy",
+          "mkl",
+          "trimesh",
+          "meshio",
+          "tvb_gdist",
+          "ortools<=9.1.9490",
+          "seaborn",
+          "icecream",
+          "uncertainties",
+          "asteval",
+          "pytz",
+          "scikit-image",
+          "tables"
         ],
         "setup_requires": [
           "cython>=0.29.30"
