@@ -5486,6 +5486,22 @@
     "1.5.7": "1.4.2",
     "1.5.8": "1.4.2"
   },
+  "beta-test-version-powerhouse-helper-a2": {
+    "1.0.0": {
+      "27": {
+        "install_requires": [
+          "prettytable",
+          "prompt-toolkit",
+          "pygame"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
+  },
   "bev-toolbox": {
     "0.1": {
       "36": {
@@ -23590,7 +23606,8 @@
     "8.1.0a10": "8.0.1",
     "8.0.16": "8.0.1",
     "8.0.17": "8.0.1",
-    "8.1.0a11": "8.0.1"
+    "8.1.0a11": "8.0.1",
+    "8.0.18": "8.0.1"
   },
   "directaccess": {
     "0.4.1": {
@@ -29910,6 +29927,65 @@
           "peakutils==1.3.4",
           "Pillow==9.2.0",
           "moviepy==1.0.3"
+        ],
+        "setup_requires": [
+          "setuptools_scm"
+        ],
+        "extras_require": {
+          "test": [
+            "pytest",
+            "pytest-cov",
+            "pytest-xdist",
+            "pytest-mock",
+            "hypothesis",
+            "towncrier",
+            "dkist-data-simulator>=2.1.0"
+          ],
+          "docs": [
+            "sphinx",
+            "sphinx-astropy",
+            "sphinx-changelog",
+            "sphinx-autoapi",
+            "pytest",
+            "towncrier<22.12.0",
+            "dkist-sphinx-theme",
+            "packaging"
+          ],
+          "grogu": [
+            "dkist==1.0.0b9",
+            "pyparsing",
+            "dkist-inventory==0.11.0",
+            "parfive<2.0.0"
+          ]
+        },
+        "python_requires": [
+          ">=3.10"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "2.0.0rc1": {
+      "27": {
+        "install_requires": [
+          "dkist-processing-common==2.4.0rc1",
+          "dkist-processing-math==1.0.1",
+          "dkist-processing-pac==2.0.0rc5",
+          "dkist-header-validator==3.0.5",
+          "dkist-fits-specifications==3.3.0",
+          "astropy==5.1.1",
+          "numpy==1.23.1",
+          "sunpy==4.0.3",
+          "scipy==1.9.0",
+          "scikit-image==0.19.3",
+          "scikit-learn==1.2.1",
+          "peakutils==1.3.4",
+          "Pillow==9.2.0",
+          "moviepy==1.0.3",
+          "logging42==0.0.8"
         ],
         "setup_requires": [
           "setuptools_scm"
@@ -38222,7 +38298,8 @@
     "12.0.0": "7.0.0",
     "13.0.0.0rc1": "7.0.0",
     "13.0.0": "7.0.0",
-    "14.0.0.0rc1": "7.0.0"
+    "14.0.0.0rc1": "7.0.0",
+    "14.0.0": "7.0.0"
   },
   "freshenv": {
     "0.0.1": {
@@ -51991,6 +52068,365 @@
       "38": "36",
       "39": "36",
       "310": "36"
+    },
+    "0.18.7": {
+      "36": {
+        "install_requires": [
+          "anyconfig~=0.10.0",
+          "attrs>=21.3",
+          "cachetools~=5.3",
+          "click<9.0",
+          "cookiecutter<3.0,>=2.1.1",
+          "dynaconf<4.0,>=3.1.2",
+          "gitpython~=3.0",
+          "importlib_resources>=1.3",
+          "jmespath<1.0,>=0.9.5",
+          "more_itertools~=9.1",
+          "omegaconf~=2.3",
+          "pip-tools~=6.12",
+          "pluggy~=1.0.0",
+          "PyYAML<7.0,>=4.2",
+          "rich~=13.3",
+          "rope~=1.7.0",
+          "setuptools>=65.5.1",
+          "toml~=0.10",
+          "toposort~=1.10"
+        ],
+        "extras_require": {
+          "api": [
+            "requests~=2.20"
+          ],
+          "biosequence": [
+            "biopython~=1.73"
+          ],
+          "dask": [
+            "dask[complete]~=2021.10",
+            "triad<1.0,>=0.6.7"
+          ],
+          "docs": [
+            "docutils==0.16",
+            "sphinx~=3.4.3",
+            "sphinx_rtd_theme==1.1.1",
+            "nbsphinx==0.8.1",
+            "nbstripout~=0.4",
+            "sphinx-autodoc-typehints==1.11.1",
+            "sphinx_copybutton==0.3.1",
+            "ipykernel<7.0,>=5.3",
+            "sphinxcontrib-mermaid~=0.7.1",
+            "myst-parser~=0.17.2",
+            "Jinja2<3.1.0"
+          ],
+          "geopandas": [
+            "geopandas<1.0,>=0.6.0",
+            "pyproj~=3.0"
+          ],
+          "matplotlib": [
+            "matplotlib<4.0,>=3.0.3"
+          ],
+          "holoviews": [
+            "holoviews~=1.13.0"
+          ],
+          "networkx": [
+            "networkx~=2.4"
+          ],
+          "pandas": [
+            "SQLAlchemy~=1.2",
+            "lxml~=4.6",
+            "openpyxl<4.0,>=3.0.6",
+            "pandas-gbq<0.18.0,>=0.12.0",
+            "pandas~=1.3",
+            "pyarrow<7.0,>=1.0"
+          ],
+          "pandas:platform_system == \"Windows\"": [
+            "tables~=3.6.0"
+          ],
+          "pandas:platform_system != \"Windows\"": [
+            "tables~=3.6"
+          ],
+          "pickle": [
+            "compress-pickle[lz4]~=2.1.0"
+          ],
+          "pillow": [
+            "Pillow~=9.0"
+          ],
+          "video": [
+            "opencv-python~=4.5.5.64"
+          ],
+          "plotly": [
+            "pandas~=1.3",
+            "plotly<6.0,>=4.8.0"
+          ],
+          "redis": [
+            "redis~=4.1"
+          ],
+          "spark": [
+            "delta-spark<3.0,>=1.0",
+            "hdfs<3.0,>=2.5.8",
+            "pyspark<4.0,>=2.2",
+            "s3fs<0.5,>=0.3.0"
+          ],
+          "svmlight": [
+            "scikit-learn~=1.0.2",
+            "scipy~=1.7.3"
+          ],
+          "tensorflow": [
+            "tensorflow~=2.0"
+          ],
+          "yaml": [
+            "PyYAML<7.0,>=4.2",
+            "pandas~=1.3"
+          ],
+          "api.APIDataSet": [
+            "requests~=2.20"
+          ],
+          "biosequence.BioSequenceDataSet": [
+            "biopython~=1.73"
+          ],
+          "dask.ParquetDataSet": [
+            "dask[complete]~=2021.10",
+            "triad<1.0,>=0.6.7"
+          ],
+          "geopandas.GeoJSONDataSet": [
+            "geopandas<1.0,>=0.6.0",
+            "pyproj~=3.0"
+          ],
+          "matplotlib.MatplotlibWriter": [
+            "matplotlib<4.0,>=3.0.3"
+          ],
+          "holoviews.HoloviewsWriter": [
+            "holoviews~=1.13.0"
+          ],
+          "networkx.NetworkXDataSet": [
+            "networkx~=2.4"
+          ],
+          "pandas.CSVDataSet": [
+            "pandas~=1.3"
+          ],
+          "pandas.ExcelDataSet": [
+            "pandas~=1.3",
+            "openpyxl<4.0,>=3.0.6"
+          ],
+          "pandas.FeatherDataSet": [
+            "pandas~=1.3"
+          ],
+          "pandas.GBQTableDataSet": [
+            "pandas~=1.3",
+            "pandas-gbq<0.18.0,>=0.12.0"
+          ],
+          "pandas.GBQQueryDataSet": [
+            "pandas~=1.3",
+            "pandas-gbq<0.18.0,>=0.12.0"
+          ],
+          "pandas.HDFDataSet": [
+            "pandas~=1.3"
+          ],
+          "pandas.HDFDataSet:platform_system == \"Windows\"": [
+            "tables~=3.6.0"
+          ],
+          "pandas.HDFDataSet:platform_system != \"Windows\"": [
+            "tables~=3.6"
+          ],
+          "pandas.JSONDataSet": [
+            "pandas~=1.3"
+          ],
+          "pandas.ParquetDataSet": [
+            "pandas~=1.3",
+            "pyarrow<7.0,>=1.0"
+          ],
+          "pandas.SQLTableDataSet": [
+            "pandas~=1.3",
+            "SQLAlchemy~=1.2"
+          ],
+          "pandas.SQLQueryDataSet": [
+            "pandas~=1.3",
+            "SQLAlchemy~=1.2"
+          ],
+          "pandas.XMLDataSet": [
+            "pandas~=1.3",
+            "lxml~=4.6"
+          ],
+          "pandas.GenericDataSet": [
+            "pandas~=1.3"
+          ],
+          "pickle.PickleDataSet": [
+            "compress-pickle[lz4]~=2.1.0"
+          ],
+          "pillow.ImageDataSet": [
+            "Pillow~=9.0"
+          ],
+          "video.VideoDataSet": [
+            "opencv-python~=4.5.5.64"
+          ],
+          "plotly.PlotlyDataSet": [
+            "pandas~=1.3",
+            "plotly<6.0,>=4.8.0"
+          ],
+          "plotly.JSONDataSet": [
+            "plotly<6.0,>=4.8.0"
+          ],
+          "spark.SparkDataSet": [
+            "pyspark<4.0,>=2.2",
+            "hdfs<3.0,>=2.5.8",
+            "s3fs<0.5,>=0.3.0"
+          ],
+          "spark.SparkHiveDataSet": [
+            "pyspark<4.0,>=2.2",
+            "hdfs<3.0,>=2.5.8",
+            "s3fs<0.5,>=0.3.0"
+          ],
+          "spark.SparkJDBCDataSet": [
+            "pyspark<4.0,>=2.2",
+            "hdfs<3.0,>=2.5.8",
+            "s3fs<0.5,>=0.3.0"
+          ],
+          "spark.DeltaTableDataSet": [
+            "pyspark<4.0,>=2.2",
+            "hdfs<3.0,>=2.5.8",
+            "s3fs<0.5,>=0.3.0",
+            "delta-spark<3.0,>=1.0"
+          ],
+          "svmlight.SVMLightDataSet": [
+            "scikit-learn~=1.0.2",
+            "scipy~=1.7.3"
+          ],
+          "tensorflow.TensorflowModelDataset": [
+            "tensorflow~=2.0"
+          ],
+          "yaml.YAMLDataSet": [
+            "pandas~=1.3",
+            "PyYAML<7.0,>=4.2"
+          ],
+          "all": [
+            "Jinja2<3.1.0",
+            "Pillow~=9.0",
+            "PyYAML<7.0,>=4.2",
+            "SQLAlchemy~=1.2",
+            "biopython~=1.73",
+            "compress-pickle[lz4]~=2.1.0",
+            "dask[complete]~=2021.10",
+            "delta-spark<3.0,>=1.0",
+            "docutils==0.16",
+            "geopandas<1.0,>=0.6.0",
+            "hdfs<3.0,>=2.5.8",
+            "holoviews~=1.13.0",
+            "ipykernel<7.0,>=5.3",
+            "lxml~=4.6",
+            "matplotlib<4.0,>=3.0.3",
+            "myst-parser~=0.17.2",
+            "nbsphinx==0.8.1",
+            "nbstripout~=0.4",
+            "networkx~=2.4",
+            "opencv-python~=4.5.5.64",
+            "openpyxl<4.0,>=3.0.6",
+            "pandas-gbq<0.18.0,>=0.12.0",
+            "pandas~=1.3",
+            "plotly<6.0,>=4.8.0",
+            "pyarrow<7.0,>=1.0",
+            "pyproj~=3.0",
+            "pyspark<4.0,>=2.2",
+            "redis~=4.1",
+            "requests~=2.20",
+            "s3fs<0.5,>=0.3.0",
+            "scikit-learn~=1.0.2",
+            "scipy~=1.7.3",
+            "sphinx-autodoc-typehints==1.11.1",
+            "sphinx_copybutton==0.3.1",
+            "sphinx_rtd_theme==1.1.1",
+            "sphinxcontrib-mermaid~=0.7.1",
+            "sphinx~=3.4.3",
+            "tensorflow~=2.0",
+            "triad<1.0,>=0.6.7"
+          ],
+          "all:platform_system == \"Windows\"": [
+            "tables~=3.6.0"
+          ],
+          "all:platform_system != \"Windows\"": [
+            "tables~=3.6"
+          ],
+          ":python_version == \"3.7\"": [
+            "fsspec<=2023.1.0,>=2021.4"
+          ],
+          ":python_version >= \"3.8\"": [
+            "fsspec<2023.4,>=2023.1",
+            "importlib-metadata>=3.6"
+          ],
+          ":python_version < \"3.8\"": [
+            "importlib_metadata<5.0,>=3.6"
+          ]
+        },
+        "tests_require": [
+          "adlfs>=2021.7.1, <=2022.2; python_version == '3.7'",
+          "adlfs~=2023.1; python_version >= '3.8'",
+          "bandit>=1.6.2, <2.0",
+          "behave==1.2.6",
+          "biopython~=1.73",
+          "blacken-docs==1.9.2",
+          "black~=22.0",
+          "compress-pickle[lz4]~=1.2.0",
+          "coverage[toml]",
+          "dask[complete]~=2021.10  # pinned by Snyk to avoid a vulnerability",
+          "delta-spark~=1.2.1  # 1.2.0 has a bug that breaks some of our tests: https://github.com/delta-io/delta/issues/1070",
+          "dill~=0.3.1",
+          "filelock>=3.4.0, <4.0",
+          "gcsfs>=2021.4, <=2023.1; python_version == '3.7'",
+          "gcsfs>=2023.1, <2023.3; python_version >= '3.8'",
+          "geopandas>=0.6.0, <1.0",
+          "hdfs>=2.5.8, <3.0",
+          "holoviews~=1.13.0",
+          "import-linter[toml]==1.2.6",
+          "ipython>=7.31.1, <8.0; python_version < '3.8'",
+          "ipython~=8.10; python_version >= '3.8'",
+          "isort~=5.0",
+          "Jinja2<3.1.0",
+          "joblib>=0.14",
+          "jupyterlab_server>=2.11.1, <2.16.0 # 2.16.0 requires importlib_metedata >= 4.8.3 which conflicts with flake8 requirement",
+          "jupyterlab~=3.0, <3.6.0 # 3.6.0 requires jupyterlab_server~=2.19",
+          "jupyter~=1.0",
+          "lxml~=4.6",
+          "matplotlib>=3.0.3, <3.4; python_version < '3.10' # 3.4.0 breaks holoviews",
+          "matplotlib>=3.5, <3.6; python_version == '3.10'",
+          "memory_profiler>=0.50.0, <1.0",
+          "moto==1.3.7; python_version < '3.10'",
+          "moto==3.0.4; python_version == '3.10'",
+          "networkx~=2.4",
+          "opencv-python~=4.5.5.64",
+          "openpyxl>=3.0.3, <4.0",
+          "pandas-gbq>=0.12.0, <0.18.0",
+          "pandas~=1.3  # 1.3 for read_xml/to_xml",
+          "Pillow~=9.0",
+          "plotly>=4.8.0, <6.0",
+          "pre-commit>=2.9.2, <3.0  # The hook `mypy` requires pre-commit version 2.9.2.",
+          "psutil==5.8.0",
+          "pyarrow>=1.0, <7.0",
+          "pylint>=2.5.2, <3.0",
+          "pyproj~=3.0",
+          "pyspark>=2.2, <4.0",
+          "pytest-cov~=3.0",
+          "pytest-mock>=1.7.1, <2.0",
+          "pytest-xdist[psutil]~=2.2.1",
+          "pytest~=7.2",
+          "redis~=4.1",
+          "requests-mock~=1.6",
+          "requests~=2.20",
+          "s3fs>=0.3.0, <0.5  # Needs to be at least 0.3.0 to make use of `cachable` attribute on S3FileSystem.",
+          "scikit-learn~=1.0.2",
+          "scipy~=1.7.3",
+          "SQLAlchemy~=1.2",
+          "tables~=3.6.0; platform_system == \"Windows\" and python_version<'3.9'",
+          "tables~=3.6; platform_system != \"Windows\"",
+          "tensorflow~=2.0",
+          "triad>=0.6.7, <1.0",
+          "trufflehog~=2.1",
+          "xlsxwriter~=1.0"
+        ],
+        "python_requires": [
+          ">=3.7, <3.11"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
     }
   },
   "keepaneyeon": {
@@ -57115,6 +57551,21 @@
     },
     "0.0.2": "0.0.1"
   },
+  "masked-ai": {
+    "1.0.0": {
+      "36": {
+        "install_requires": [
+          "nltk"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "1.0.1": "1.0.0",
+    "1.0.2": "1.0.0"
+  },
   "master-slave": {
     "1.0.0": {
       "27": {
@@ -58990,7 +59441,8 @@
       "38": "36",
       "39": "36",
       "310": "36"
-    }
+    },
+    "0.55": "0.54"
   },
   "mkdocs-translations": {
     "0.1.1": {
@@ -60221,7 +60673,35 @@
     "0.37.18": "0.36.5",
     "0.37.19": "0.36.5",
     "0.37.20": "0.36.5",
-    "0.37.21": "0.36.5"
+    "0.37.21": "0.36.5",
+    "0.37.22": {
+      "27": {
+        "install_requires": [
+          "pyyaml",
+          "websockets",
+          "janus",
+          "jinja2",
+          "numpy",
+          "python-can",
+          "pandas",
+          "gevent"
+        ],
+        "extras_require": {
+          "gui": [
+            "pyqtgraph",
+            "pyqt5"
+          ]
+        },
+        "python_requires": [
+          ">=3.5"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "mtc-cli": {
     "0.0.1": {
@@ -66178,6 +66658,31 @@
     "0.0.5": "0.0.1",
     "0.0.6": "0.0.1",
     "1.0.0": "0.0.1"
+  },
+  "open-aea-ledger-solana": {
+    "1.31.0": {
+      "27": {
+        "install_requires": [
+          "open-aea<2.0.0,>=1.0.0",
+          "ipfshttpclient==0.8.0a2",
+          "solana==0.28.1",
+          "solders==0.10.0",
+          "anchorpy==0.14.0",
+          "base58==2.1.1",
+          "cryptography",
+          "PyNaCl==1.5.0",
+          "pythclient==0.1.2"
+        ],
+        "tests_require": [
+          "pytest"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "open-fonts": {
     "0.1": {

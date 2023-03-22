@@ -17223,7 +17223,8 @@
     "0.6.387": "0.6.386",
     "0.6.388": "0.6.386",
     "0.6.389": "0.6.386",
-    "0.6.390": "0.6.386"
+    "0.6.390": "0.6.386",
+    "0.6.391": "0.6.386"
   },
   "cfan-2002-part3": {
     "2022.5.14.0": {
@@ -44838,7 +44839,39 @@
       "310": "36"
     },
     "1.2.4rc1": "1.2.3",
-    "1.2.4": "1.2.3"
+    "1.2.4": "1.2.3",
+    "1.3.0.dev4": {
+      "36": {
+        "install_requires": [
+          "click",
+          "fastapi!=0.89.0,<=0.89.1,>=0.88.0",
+          "python-dotenv",
+          "grpcio",
+          "numpy",
+          "pandas",
+          "protobuf==3.20.3",
+          "uvicorn",
+          "starlette_exporter",
+          "py-grpc-prometheus",
+          "aiokafka",
+          "tritonclient[http]>=2.24",
+          "aiofiles",
+          "orjson"
+        ],
+        "extras_require": {
+          ":python_version < \"3.8\"": [
+            "importlib-metadata"
+          ],
+          ":sys_platform != \"win32\" and (sys_platform != \"cygwin\" and platform_python_implementation != \"PyPy\")": [
+            "uvloop"
+          ]
+        }
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "mmdzanata": {
     "0.1": {
@@ -66539,6 +66572,23 @@
       "38": "36",
       "39": "36",
       "310": "36"
+    },
+    "3.2.7": {
+      "36": {
+        "install_requires": [
+          "resotolib==3.2.7"
+        ],
+        "setup_requires": [
+          "pytest-runner"
+        ],
+        "tests_require": [
+          "pytest"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
     }
   },
   "resoto-plugin-gcp": {
@@ -66735,6 +66785,27 @@
       "36": {
         "install_requires": [
           "resotolib==3.2.6",
+          "google-api-python-client==2.75.0",
+          "oauth2client==4.1.3",
+          "retrying==1.3.4",
+          "tenacity==8.1.0"
+        ],
+        "setup_requires": [
+          "pytest-runner"
+        ],
+        "tests_require": [
+          "pytest"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "3.2.7": {
+      "36": {
+        "install_requires": [
+          "resotolib==3.2.7",
           "google-api-python-client==2.75.0",
           "oauth2client==4.1.3",
           "retrying==1.3.4",
