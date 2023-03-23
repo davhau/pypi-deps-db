@@ -23014,6 +23014,16 @@
             "pandas (<2.0.0,>=1.3.0)"
           ]
         }
+      },
+      "0.12.0": {
+        "cubicweb_skillmat-0.12.0-py3-none-any.whl": {
+          "requires_dist": [
+            "cubicweb (<3.39.0,>=3.38.0)",
+            "cubicweb-folder (<2.2.0,>=2.1.0)",
+            "cubicweb-comment (<2.1.0,>=2.0.0)",
+            "pandas (<1.6.0,>=1.5.0)"
+          ]
+        }
       }
     }
   },
@@ -27505,6 +27515,26 @@
           "requires_dist": [
             "bokeh",
             "dagster (==1.2.2)",
+            "dask[dataframe] (>=1.2.2)",
+            "distributed (>=1.28.1)",
+            "dask-kubernetes (<=2022.9.0) ; extra == 'kube'",
+            "dask-jobqueue ; extra == 'pbs'",
+            "pyarrow ; extra == 'test'",
+            "dask-yarn ; extra == 'yarn'"
+          ]
+        }
+      },
+      "0.18.3": {
+        "dagster_dask-0.18.3-py3-none-any.whl": {
+          "provides_extras": [
+            "kube",
+            "pbs",
+            "test",
+            "yarn"
+          ],
+          "requires_dist": [
+            "bokeh",
+            "dagster (==1.2.3)",
             "dask[dataframe] (>=1.2.2)",
             "distributed (>=1.28.1)",
             "dask-kubernetes (<=2022.9.0) ; extra == 'kube'",
@@ -40668,6 +40698,58 @@
       }
     }
   },
+  "glassio": {
+    "py3": {
+      "0.1.0": {
+        "glassio-0.1.0-py3-none-any.whl": {
+          "requires_dist": [
+            "fastapi[all]",
+            "uvicorn",
+            "pymongo",
+            "motor",
+            "pydantic",
+            "ipython",
+            "requests"
+          ]
+        }
+      },
+      "0.1.1": {
+        "glassio-0.1.1-py3-none-any.whl": "0.1.0@glassio-0.1.0-py3-none-any.whl"
+      },
+      "0.1.4": {
+        "glassio-0.1.4-py3-none-any.whl": "0.1.0@glassio-0.1.0-py3-none-any.whl"
+      },
+      "0.2.0": {
+        "glassio-0.2.0-py3-none-any.whl": "0.1.0@glassio-0.1.0-py3-none-any.whl"
+      },
+      "0.2.1": {
+        "glassio-0.2.1-py3-none-any.whl": "0.1.0@glassio-0.1.0-py3-none-any.whl"
+      },
+      "0.2.2": {
+        "glassio-0.2.2-py3-none-any.whl": "0.1.0@glassio-0.1.0-py3-none-any.whl"
+      },
+      "0.2.3": {
+        "glassio-0.2.3-py3-none-any.whl": "0.1.0@glassio-0.1.0-py3-none-any.whl"
+      },
+      "0.2.4": {
+        "glassio-0.2.4-py3-none-any.whl": "0.1.0@glassio-0.1.0-py3-none-any.whl"
+      },
+      "0.2.5": {
+        "glassio-0.2.5-py3-none-any.whl": {
+          "requires_dist": [
+            "fastapi[all]",
+            "uvicorn",
+            "pymongo",
+            "motor",
+            "pydantic",
+            "ipython",
+            "requests",
+            "bcrypt"
+          ]
+        }
+      }
+    }
+  },
   "gmailify": {
     "py3": {
       "1.0.0": {
@@ -44619,6 +44701,12 @@
       },
       "0.1.1": {
         "init_equation-0.1.1-py3-none-any.whl": "0.1.0@init_equation-0.1.0-py3-none-any.whl"
+      },
+      "0.1.2": {
+        "init_equation-0.1.2-py3-none-any.whl": "0.1.0@init_equation-0.1.0-py3-none-any.whl"
+      },
+      "0.1.3": {
+        "init_equation-0.1.3-py3-none-any.whl": "0.1.0@init_equation-0.1.0-py3-none-any.whl"
       }
     }
   },
@@ -56522,6 +56610,9 @@
       },
       "0.2.0": {
         "neon_skill_data_controls-0.2.0-py3-none-any.whl": "0.1.2a3@neon_skill_data_controls-0.1.2a3-py3-none-any.whl"
+      },
+      "0.2.1a0": {
+        "neon_skill_data_controls-0.2.1a0-py3-none-any.whl": "0.1.2a3@neon_skill_data_controls-0.1.2a3-py3-none-any.whl"
       }
     }
   },
@@ -56677,6 +56768,9 @@
           ],
           "requires_python": ">=3.10"
         }
+      },
+      "0.1.1": {
+        "netunicorn_connector_aci-0.1.1-py3-none-any.whl": "0.1.0@netunicorn_connector_aci-0.1.0-py3-none-any.whl"
       }
     }
   },
@@ -56731,6 +56825,26 @@
       },
       "0.1.1": {
         "nextline_schedule-0.1.1-py3-none-any.whl": "0.1.0@nextline_schedule-0.1.0-py3-none-any.whl"
+      },
+      "0.1.2": {
+        "nextline_schedule-0.1.2-py3-none-any.whl": {
+          "provides_extras": [
+            "host",
+            "tests"
+          ],
+          "requires_dist": [
+            "httpx>=0.23",
+            "transitions>=0.9",
+            "nextline-graphql>=0.4.7; extra == 'host'",
+            "async-asgi-testclient>=1.4; extra == 'tests'",
+            "pytest-asyncio>=0.18; extra == 'tests'",
+            "pytest-cov>=3.0; extra == 'tests'",
+            "pytest-timeout>=2.1; extra == 'tests'",
+            "pytest>=7.0; extra == 'tests'",
+            "rich>=13.3; extra == 'tests'"
+          ],
+          "requires_python": ">=3.8"
+        }
       }
     }
   },
@@ -59728,6 +59842,9 @@
       },
       "15.0.1.0.0.4": {
         "odoo_addon_iot_amqp_oca-15.0.1.0.0.4-py3-none-any.whl": "15.0.1.0.0.2@odoo_addon_iot_amqp_oca-15.0.1.0.0.2-py3-none-any.whl"
+      },
+      "15.0.1.0.0.5": {
+        "odoo_addon_iot_amqp_oca-15.0.1.0.0.5-py3-none-any.whl": "15.0.1.0.0.2@odoo_addon_iot_amqp_oca-15.0.1.0.0.2-py3-none-any.whl"
       }
     }
   },
@@ -65997,6 +66114,14 @@
       },
       "0.1.2": {
         "Painy-0.1.2-py3-none-any.whl": "0.1.0@Painy-0.1.0-py3-none-any.whl"
+      },
+      "0.1.3": {
+        "Painy-0.1.3-py3-none-any.whl": {
+          "requires_dist": [
+            "openai",
+            "nbdime"
+          ]
+        }
       }
     }
   },
@@ -80018,6 +80143,15 @@
       },
       "0.112.1": {
         "qtgql-0.112.1-py3-none-any.whl": "0.109.0@qtgql-0.109.0-py3-none-any.whl"
+      },
+      "0.113.0": {
+        "qtgql-0.113.0-py3-none-any.whl": "0.109.0@qtgql-0.109.0-py3-none-any.whl"
+      },
+      "0.113.1": {
+        "qtgql-0.113.1-py3-none-any.whl": "0.109.0@qtgql-0.109.0-py3-none-any.whl"
+      },
+      "0.113.2": {
+        "qtgql-0.113.2-py3-none-any.whl": "0.109.0@qtgql-0.109.0-py3-none-any.whl"
       }
     }
   },
@@ -92543,6 +92677,24 @@
       },
       "0.5.0": {
         "swcgeom-0.5.0-py3-none-any.whl": "0.3.1@swcgeom-0.3.1-py3-none-any.whl"
+      },
+      "0.6.0": {
+        "swcgeom-0.6.0-py3-none-any.whl": {
+          "requires_dist": [
+            "beautifulsoup4 (>=4.11.1)",
+            "matplotlib (>=3.5.2)",
+            "numpy (>=1.22.3)",
+            "pandas (>=1.4.2)",
+            "pynrrd (>=1.0.0)",
+            "scipy (>=1.9.1)",
+            "seaborn (>=0.12.0)",
+            "tifffile (>=2022.8.12)",
+            "tqdm (>=4.46.1)",
+            "typing-extensions (>=4.4.0)",
+            "urllib3 (>=1.26.0)"
+          ],
+          "requires_python": ">=3.10"
+        }
       }
     }
   },
@@ -94295,6 +94447,40 @@
       },
       "0.0.52": {
         "tft_artemis-0.0.52-py3-none-any.whl": "0.0.51@tft_artemis-0.0.51-py3-none-any.whl"
+      },
+      "0.0.53": {
+        "tft_artemis-0.0.53-py3-none-any.whl": {
+          "provides_extras": [
+            "full"
+          ],
+          "requires_dist": [
+            "Pint",
+            "alembic",
+            "awscli (>=1.27.24,<2.0.0) ; extra == \"full\"",
+            "azure-cli ; extra == \"full\"",
+            "beaker-client ; extra == \"full\"",
+            "click",
+            "dramatiq[rabbitmq]",
+            "gluetool",
+            "gunicorn",
+            "jinja2-ansible-filters",
+            "jq",
+            "jsonschema",
+            "molten",
+            "periodiq",
+            "prometheus-client (>=0.12.0,<0.13.0)",
+            "psycopg2",
+            "pyinstrument",
+            "python-openstackclient ; extra == \"full\"",
+            "redis",
+            "sentry-sdk",
+            "sqlalchemy (>=1.4,<1.4.23)",
+            "sqlalchemy-utils",
+            "stackprinter",
+            "typing-extensions"
+          ],
+          "requires_python": ">=3.9.0,<3.10.0"
+        }
       },
       "0.0.6": {
         "tft_artemis-0.0.6-py3-none-any.whl": {
