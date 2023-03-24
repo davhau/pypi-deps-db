@@ -59885,7 +59885,10 @@
     "6.2.0": "6.0.1",
     "6.3.0": "6.0.1",
     "6.3.1": "6.0.1",
-    "6.3.2": "6.0.1"
+    "6.3.2": "6.0.1",
+    "6.3.3": "6.0.1",
+    "6.3.3.1": "6.0.1",
+    "6.3.3.2": "6.0.1"
   },
   "smartwaiver-sdk": {
     "4.0.1": {
@@ -120549,6 +120552,70 @@
             "black==23.*",
             "isort==5.*",
             "ipython"
+          ],
+          "extras": [
+            "pydantic<2,>=1.10.3",
+            "shtab==1.5.8"
+          ],
+          "build": [
+            "setuptools>=62.3.0",
+            "build==0.*",
+            "wheel==0.*",
+            "twine==4.*"
+          ],
+          "shtab": [
+            "shtab==1.5.8"
+          ],
+          ":python_version < \"3.10\"": [
+            "typing-extensions"
+          ],
+          "pydantic": [
+            "pydantic<2,>=1.10.3"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "0.0.1a20": {
+      "27": {
+        "extras_require": {
+          "tests": [
+            "pytest==7.*",
+            "pytest-cov==4.*",
+            "pytest-html==3.*",
+            "pytest-sugar==0.*",
+            "pytest-custom-exit-code==0.3.*",
+            "pylint==2.*",
+            "pylint-pytest==1.*",
+            "packaging==23.*",
+            "mockish==0.1.*",
+            "pydantic<2,>=1.10.3",
+            "shtab==1.*"
+          ],
+          "docs": [
+            "mkdocs==1.*",
+            "mkdocs-material==9.*",
+            "mkdocstrings[python]==0.20.*",
+            "mkdocs-autorefs==0.*",
+            "mkdocs-include-dir-to-nav==1.*"
+          ],
+          "dev": [
+            "python-lsp-server[rope]==1.*",
+            "pylint==2.*",
+            "pylint-pytest==1.*",
+            "mypy[reports]==0.*",
+            "ruff==0.*",
+            "black==23.*",
+            "isort==5.*",
+            "ipython",
+            "pdbpp"
           ],
           "extras": [
             "pydantic<2,>=1.10.3",
