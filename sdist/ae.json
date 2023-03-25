@@ -9872,7 +9872,8 @@
     "1.29.95": "1.29.64",
     "1.29.96": "1.29.64",
     "1.29.97": "1.29.64",
-    "1.29.98": "1.29.64"
+    "1.29.98": "1.29.64",
+    "1.29.99": "1.29.64"
   },
   "botocore-a-la-carte-iotdeviceadvisor": {
     "1.29.48": "1.29.42",
@@ -9942,7 +9943,8 @@
     "1.29.95": "1.29.42",
     "1.29.96": "1.29.42",
     "1.29.97": "1.29.42",
-    "1.29.98": "1.29.42"
+    "1.29.98": "1.29.42",
+    "1.29.99": "1.29.42"
   },
   "botocore-a-la-carte-resourcegroupstaggingapi": {
     "1.29.46": "1.29.42",
@@ -10012,7 +10014,8 @@
     "1.29.95": "1.29.42",
     "1.29.96": "1.29.42",
     "1.29.97": "1.29.42",
-    "1.29.98": "1.29.42"
+    "1.29.98": "1.29.42",
+    "1.29.99": "1.29.42"
   },
   "bottleapp": {
     "0.0.1": {
@@ -14744,7 +14747,9 @@
     "0.1.9": "0.1.4",
     "0.1.11": "0.1.4",
     "0.1.12": "0.1.4",
-    "0.1.13": "0.1.4"
+    "0.1.13": "0.1.4",
+    "0.1.14": "0.1.4",
+    "0.1.15": "0.1.4"
   },
   "csle-ryu": {
     "0.0.1": {
@@ -15586,6 +15591,68 @@
       "27": {
         "install_requires": [
           "csle-collector>=0.1.13",
+          "ryu>=4.34",
+          "eventlet>=0.30.2",
+          "confluent-kafka>=1.9.2"
+        ],
+        "extras_require": {
+          "testing": [
+            "pytest>=6.0",
+            "pytest-cov>=2.0",
+            "pytest-mock>=3.6.0",
+            "mypy>=0.910",
+            "flake8>=3.9",
+            "tox>=3.24",
+            "sphinx>=5.3.0",
+            "sphinxcontrib-napoleon>=0.7",
+            "sphinx-rtd-theme>=1.1.1"
+          ]
+        },
+        "python_requires": [
+          ">=3.8"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "0.1.14": {
+      "27": {
+        "install_requires": [
+          "csle-collector>=0.1.14",
+          "ryu>=4.34",
+          "eventlet>=0.30.2",
+          "confluent-kafka>=1.9.2"
+        ],
+        "extras_require": {
+          "testing": [
+            "pytest>=6.0",
+            "pytest-cov>=2.0",
+            "pytest-mock>=3.6.0",
+            "mypy>=0.910",
+            "flake8>=3.9",
+            "tox>=3.24",
+            "sphinx>=5.3.0",
+            "sphinxcontrib-napoleon>=0.7",
+            "sphinx-rtd-theme>=1.1.1"
+          ]
+        },
+        "python_requires": [
+          ">=3.8"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "0.1.15": {
+      "27": {
+        "install_requires": [
+          "csle-collector>=0.1.15",
           "ryu>=4.34",
           "eventlet>=0.30.2",
           "confluent-kafka>=1.9.2"
@@ -22304,6 +22371,20 @@
     "0.4dev-r16670": "0.1dev-r16670",
     "0.4dev-r16676": "0.1dev-r16670",
     "0.5dev-r16676": "0.1dev-r16670"
+  },
+  "donationalertsapi-fix": {
+    "2.0.2": {
+      "27": {
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "doomsday": {
     "1.1": {
@@ -50495,7 +50576,75 @@
       "310": "27"
     },
     "12.0.0.dev6": "12.0.0.dev5",
-    "12.0.0.dev7": "12.0.0.dev5"
+    "12.0.0.dev7": "12.0.0.dev5",
+    "12.0.0.dev8": {
+      "27": {
+        "install_requires": [
+          "invenio-app<1.4.0,>=1.3.4",
+          "invenio-base<1.3.0,>=1.2.11",
+          "invenio-cache<1.2.0,>=1.1.1",
+          "invenio-celery<1.3.0,>=1.2.4",
+          "invenio-config<1.1.0,>=1.0.3",
+          "invenio-i18n<3.0.0,>=2.0.0",
+          "invenio-db[mysql,postgresql]<1.1.0,>=1.0.14",
+          "invenio-admin<1.5.0,>=1.4.0",
+          "invenio-assets<3.0.0,>=2.0.0",
+          "invenio-formatter<1.3.0,>=1.2.0",
+          "invenio-logging[sentry-sdk]<1.4.0,>=1.3.2",
+          "invenio-mail<1.1.0,>=1.0.2",
+          "invenio-rest<1.3.0,>=1.2.8",
+          "invenio-theme<3.0.0,>=2.0.0",
+          "invenio-access<1.5.0,>=1.4.4",
+          "invenio-accounts<2.2.0,>=2.1.0",
+          "invenio-oauth2server<2.1.0,>=2.0.0",
+          "invenio-oauthclient<3.0.0,>=2.2.0",
+          "invenio-userprofiles<2.2.0,>=2.1.0",
+          "invenio-indexer<2.2.0,>=2.1.0",
+          "invenio-jsonschemas<1.2.0,>=1.1.4",
+          "invenio-oaiserver<2.3.0,>=2.2.0",
+          "invenio-pidstore<1.4.0,>=1.3.0",
+          "invenio-records-rest<2.3.0,>=2.2.0",
+          "invenio-records-ui<1.3.0,>=1.2.0",
+          "invenio-records<2.2.0,>=2.1.0",
+          "invenio-search-ui<3.0.0,>=2.4.0",
+          "invenio-files-rest<1.6.0,>=1.5.0",
+          "invenio-previewer<1.5.0,>=1.4.0",
+          "invenio-records-files<1.3.0,>=1.2.1",
+          "invenio-rdm-records<3.0.0,>=2.9.0",
+          "CairoSVG<3.0.0,>=2.5.2",
+          "invenio-banners<3.0.0,>=2.1.0",
+          "invenio-pages<4.0.0,>=3.0.0",
+          "Flask<2.3.0,>=2.2.0"
+        ],
+        "extras_require": {
+          "s3": [
+            "invenio-s3~=1.0.5"
+          ],
+          "tests": [
+            "pytest-black>=0.3.0",
+            "pytest-invenio<3.0.0,>=2.1.0",
+            "Sphinx>=4.5.0"
+          ],
+          "elasticsearch7": [
+            "invenio-search[elasticsearch7]<3.0.0,>=2.1.0"
+          ],
+          "opensearch1": [
+            "invenio-search[opensearch1]<3.0.0,>=2.1.0"
+          ],
+          "opensearch2": [
+            "invenio-search[opensearch2]<3.0.0,>=2.1.0"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "ioe": {
     "0.0.1": {
