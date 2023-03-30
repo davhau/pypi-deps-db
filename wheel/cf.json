@@ -3047,6 +3047,27 @@
       }
     }
   },
+  "autodownload": {
+    "py3": {
+      "0.0.1": {
+        "autoDownload-0.0.1-py3-none-any.whl": {
+          "requires_dist": [
+            "requests",
+            "rich"
+          ]
+        }
+      },
+      "0.0.4": {
+        "autoDownload-0.0.4-py3-none-any.whl": "0.0.1@autoDownload-0.0.1-py3-none-any.whl"
+      },
+      "0.0.5": {
+        "autoDownload-0.0.5-py3-none-any.whl": "0.0.1@autoDownload-0.0.1-py3-none-any.whl"
+      },
+      "0.0.6": {
+        "autoDownload-0.0.6-py3-none-any.whl": "0.0.1@autoDownload-0.0.1-py3-none-any.whl"
+      }
+    }
+  },
   "avalon-core": {
     "py2.py3": {
       "5.2.7": {
@@ -9364,6 +9385,9 @@
       },
       "2.4.0": {
         "c8ylp-2.4.0-py3-none-any.whl": "2.3.0@c8ylp-2.3.0-py3-none-any.whl"
+      },
+      "2.4.1": {
+        "c8ylp-2.4.1-py3-none-any.whl": "2.3.0@c8ylp-2.3.0-py3-none-any.whl"
       }
     }
   },
@@ -25750,6 +25774,23 @@
             "starlette[full] ; extra == 'test'"
           ]
         }
+      },
+      "1.2.4": {
+        "dagit-1.2.4-py3-none-any.whl": {
+          "provides_extras": [
+            "notebook",
+            "test"
+          ],
+          "requires_dist": [
+            "click (<9.0,>=7.0)",
+            "dagster (==1.2.4)",
+            "dagster-graphql (==1.2.4)",
+            "starlette",
+            "uvicorn[standard]",
+            "nbconvert ; extra == 'notebook'",
+            "starlette[full] ; extra == 'test'"
+          ]
+        }
       }
     }
   },
@@ -31676,6 +31717,18 @@
           ]
         }
       },
+      "1.0.12.9": {
+        "dbnd_azure-1.0.12.9-py2.py3-none-any.whl": {
+          "provides_extras": [
+            "tests"
+          ],
+          "requires_dist": [
+            "dbnd (==1.0.12.9)",
+            "azure-storage-blob (<3.0.0,>=2.1.0)",
+            "dbnd-test-scenarios (==1.0.12.9) ; extra == 'tests'"
+          ]
+        }
+      },
       "1.0.2.1": {
         "dbnd_azure-1.0.2.1-py2.py3-none-any.whl": {
           "provides_extras": [
@@ -32815,8 +32868,14 @@
       "5.0.2": {
         "delphix_dct_api-5.0.2-py3-none-any.whl": "2.0.0.0@delphix_dct_api-2.0.0.0-py3-none-any.whl"
       },
+      "5.0.3": {
+        "delphix_dct_api-5.0.3-py3-none-any.whl": "2.0.0.0@delphix_dct_api-2.0.0.0-py3-none-any.whl"
+      },
       "5.0.3rc1": {
         "delphix_dct_api-5.0.3rc1-py3-none-any.whl": "2.0.0.0@delphix_dct_api-2.0.0.0-py3-none-any.whl"
+      },
+      "6.0.0": {
+        "delphix_dct_api-6.0.0-py3-none-any.whl": "2.0.0.0@delphix_dct_api-2.0.0.0-py3-none-any.whl"
       },
       "6.0.0rc1": {
         "delphix_dct_api-6.0.0rc1-py3-none-any.whl": "2.0.0.0@delphix_dct_api-2.0.0.0-py3-none-any.whl"
@@ -35351,6 +35410,16 @@
         "edt-2.3.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "2.1.1@edt-2.1.1-cp310-cp310-macosx_10_9_universal2.whl",
         "edt-2.3.0-cp310-cp310-win32.whl": "2.1.1@edt-2.1.1-cp310-cp310-macosx_10_9_universal2.whl",
         "edt-2.3.0-cp310-cp310-win_amd64.whl": "2.1.1@edt-2.1.1-cp310-cp310-macosx_10_9_universal2.whl"
+      }
+    },
+    "cp311": {
+      "2.3.0": {
+        "edt-2.3.0-cp311-cp311-macosx_10_9_universal2.whl": {
+          "requires_dist": [
+            "numpy"
+          ],
+          "requires_python": ">=3.7,<4"
+        }
       }
     },
     "cp34": {
@@ -44423,6 +44492,16 @@
       },
       "0.0.61": {
         "je_web_runner_dev-0.0.61-py3-none-any.whl": "0.0.19@je_web_runner_dev-0.0.19-py3-none-any.whl"
+      },
+      "0.0.62": {
+        "je_web_runner_dev-0.0.62-py3-none-any.whl": {
+          "requires_dist": [
+            "selenium (>=4.0.0)",
+            "requests",
+            "python-dotenv"
+          ],
+          "requires_python": ">=3.7"
+        }
       },
       "0.0.7": {
         "je_web_runner_dev-0.0.7-py3-none-any.whl": "0.0.1@je_web_runner_dev-0.0.1-py3-none-any.whl"
@@ -55968,8 +56047,17 @@
       "1.0.25": {
         "lusid_sdk_preview-1.0.25-py3-none-any.whl": "0.11.4755@lusid_sdk_preview-0.11.4755-py3-none-any.whl"
       },
+      "1.0.29": {
+        "lusid_sdk_preview-1.0.29-py3-none-any.whl": "0.11.4755@lusid_sdk_preview-0.11.4755-py3-none-any.whl"
+      },
       "1.0.3": {
         "lusid_sdk_preview-1.0.3-py3-none-any.whl": "0.11.4755@lusid_sdk_preview-0.11.4755-py3-none-any.whl"
+      },
+      "1.0.31": {
+        "lusid_sdk_preview-1.0.31-py3-none-any.whl": "0.11.4755@lusid_sdk_preview-0.11.4755-py3-none-any.whl"
+      },
+      "1.0.32": {
+        "lusid_sdk_preview-1.0.32-py3-none-any.whl": "0.11.4755@lusid_sdk_preview-0.11.4755-py3-none-any.whl"
       },
       "1.0.5": {
         "lusid_sdk_preview-1.0.5-py3-none-any.whl": "0.11.4755@lusid_sdk_preview-0.11.4755-py3-none-any.whl"
@@ -58141,6 +58229,22 @@
           ],
           "requires_python": ">=3.7.2,<3.11"
         }
+      },
+      "3.0.0rc2": {
+        "mira_omf-3.0.0rc2-py3-none-any.whl": {
+          "requires_dist": [
+            "geoh5py (>=0.5.0)",
+            "numpy (>=1.7,<2.0)",
+            "properties (>=0.6.0,<0.7.0)",
+            "pypng (>=0.20220715,<0.20220716)",
+            "six (>=1.16,<2.0)",
+            "vectormath (>=0.2.0,<0.3.0)"
+          ],
+          "requires_python": ">=3.8,<3.11"
+        }
+      },
+      "3.0.0rc3": {
+        "mira_omf-3.0.0rc3-py3-none-any.whl": "3.0.0rc2@mira_omf-3.0.0rc2-py3-none-any.whl"
       }
     }
   },
@@ -62366,6 +62470,14 @@
       },
       "1.26.0.post1": {
         "mypy_boto3_athena-1.26.0.post1-py3-none-any.whl": "1.24.36.post1@mypy_boto3_athena-1.24.36.post1-py3-none-any.whl"
+      },
+      "1.26.100": {
+        "mypy_boto3_athena-1.26.100-py3-none-any.whl": {
+          "requires_dist": [
+            "typing-extensions (>=4.1.0) ; python_version < \"3.9\""
+          ],
+          "requires_python": ">=3.7"
+        }
       },
       "1.26.20": {
         "mypy_boto3_athena-1.26.20-py3-none-any.whl": "1.24.36.post1@mypy_boto3_athena-1.24.36.post1-py3-none-any.whl"
@@ -66814,6 +66926,9 @@
       "0.0.29": {
         "nonebot_plugin_smart_reply-0.0.29-py3-none-any.whl": "0.0.24@nonebot_plugin_smart_reply-0.0.24-py3-none-any.whl"
       },
+      "0.0.30": {
+        "nonebot_plugin_smart_reply-0.0.30-py3-none-any.whl": "0.0.24@nonebot_plugin_smart_reply-0.0.24-py3-none-any.whl"
+      },
       "0.0.4": {
         "nonebot_plugin_smart_reply-0.0.4-py3-none-any.whl": "0.0.10@nonebot_plugin_smart_reply-0.0.10-py3-none-any.whl"
       },
@@ -68637,6 +68752,14 @@
       },
       "15.0.1.0.0.3": {
         "odoo_addon_stock_picking_show_return-15.0.1.0.0.3-py3-none-any.whl": "15.0.1.0.0.2@odoo_addon_stock_picking_show_return-15.0.1.0.0.2-py3-none-any.whl"
+      },
+      "16.0.1.0.1": {
+        "odoo_addon_stock_picking_show_return-16.0.1.0.1-py3-none-any.whl": {
+          "requires_dist": [
+            "odoo (<16.1dev,>=16.0a)"
+          ],
+          "requires_python": ">=3.10"
+        }
       }
     }
   },
@@ -71447,6 +71570,9 @@
       },
       "14.0.1.0.1.dev2": {
         "odoo14_addon_pos_fixed_discount-14.0.1.0.1.dev2-py3-none-any.whl": "14.0.1.0.1@odoo14_addon_pos_fixed_discount-14.0.1.0.1-py3-none-any.whl"
+      },
+      "14.0.1.0.2": {
+        "odoo14_addon_pos_fixed_discount-14.0.1.0.2-py3-none-any.whl": "14.0.1.0.1@odoo14_addon_pos_fixed_discount-14.0.1.0.1-py3-none-any.whl"
       }
     }
   },
@@ -72218,6 +72344,21 @@
       "1.0.1": {
         "OpenAI_API_Python_Client-1.0.1-py3-none-any.whl": "1.0.0@OpenAI_API_Python_Client-1.0.0-py3-none-any.whl"
       },
+      "1.0.10": {
+        "OpenAI_API_Python_Client-1.0.10-py3-none-any.whl": "1.0.0@OpenAI_API_Python_Client-1.0.0-py3-none-any.whl"
+      },
+      "1.0.11": {
+        "OpenAI_API_Python_Client-1.0.11-py3-none-any.whl": "1.0.0@OpenAI_API_Python_Client-1.0.0-py3-none-any.whl"
+      },
+      "1.0.12": {
+        "OpenAI_API_Python_Client-1.0.12-py3-none-any.whl": "1.0.0@OpenAI_API_Python_Client-1.0.0-py3-none-any.whl"
+      },
+      "1.0.13": {
+        "OpenAI_API_Python_Client-1.0.13-py3-none-any.whl": "1.0.0@OpenAI_API_Python_Client-1.0.0-py3-none-any.whl"
+      },
+      "1.0.14": {
+        "OpenAI_API_Python_Client-1.0.14-py3-none-any.whl": "1.0.0@OpenAI_API_Python_Client-1.0.0-py3-none-any.whl"
+      },
       "1.0.2": {
         "OpenAI_API_Python_Client-1.0.2-py3-none-any.whl": "1.0.0@OpenAI_API_Python_Client-1.0.0-py3-none-any.whl"
       },
@@ -72238,6 +72379,9 @@
       },
       "1.0.8": {
         "OpenAI_API_Python_Client-1.0.8-py3-none-any.whl": "1.0.0@OpenAI_API_Python_Client-1.0.0-py3-none-any.whl"
+      },
+      "1.0.9": {
+        "OpenAI_API_Python_Client-1.0.9-py3-none-any.whl": "1.0.0@OpenAI_API_Python_Client-1.0.0-py3-none-any.whl"
       }
     }
   },
@@ -73913,6 +74057,17 @@
             "numpy"
           ]
         }
+      },
+      "0.1.1": {
+        "patatas-0.1.1-py3-none-any.whl": {
+          "requires_dist": [
+            "scikit-learn",
+            "pandas",
+            "numpy",
+            "matplotlib",
+            "seaborn"
+          ]
+        }
       }
     }
   },
@@ -75239,6 +75394,23 @@
       }
     }
   },
+  "phenospy": {
+    "py3": {
+      "0.1": {
+        "phenospy-0.1-py3-none-any.whl": {
+          "requires_dist": [
+            "Owlready2",
+            "PyYAML",
+            "colorama",
+            "pyparsing (==2.4.2)"
+          ]
+        }
+      },
+      "0.11": {
+        "phenospy-0.11-py3-none-any.whl": "0.1@phenospy-0.1-py3-none-any.whl"
+      }
+    }
+  },
   "phinka": {
     "py3": {
       "1.0.3": {
@@ -76217,6 +76389,17 @@
       },
       "0.21.2": {
         "potodo-0.21.2-py3-none-any.whl": "0.19.4@potodo-0.19.4-py3-none-any.whl"
+      },
+      "0.21.3": {
+        "potodo-0.21.3-py3-none-any.whl": {
+          "requires_dist": [
+            "gitignore-parser",
+            "polib",
+            "requests",
+            "simple-term-menu"
+          ],
+          "requires_python": ">=3.7"
+        }
       }
     }
   },
@@ -82860,6 +83043,15 @@
       },
       "1.0.5": {
         "pytictac-1.0.5-py3-none-any.whl": "1.0.0@pytictac-1.0.0-py3-none-any.whl"
+      },
+      "1.0.6": {
+        "pytictac-1.0.6-py3-none-any.whl": "1.0.0@pytictac-1.0.0-py3-none-any.whl"
+      },
+      "1.0.7": {
+        "pytictac-1.0.7-py3-none-any.whl": "1.0.0@pytictac-1.0.0-py3-none-any.whl"
+      },
+      "1.0.8": {
+        "pytictac-1.0.8-py3-none-any.whl": "1.0.0@pytictac-1.0.0-py3-none-any.whl"
       }
     }
   },
@@ -94849,6 +95041,18 @@
       }
     }
   },
+  "rlaphoenix-pymp4": {
+    "py2.py3": {
+      "1.5.0": {
+        "rlaphoenix_pymp4-1.5.0-py2.py3-none-any.whl": {
+          "requires_dist": [
+            "construct (==2.8.8)"
+          ],
+          "requires_python": ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
+        }
+      }
+    }
+  },
   "rlbft": {
     "py3": {
       "0.1.0": {
@@ -99035,6 +99239,35 @@
       }
     }
   },
+  "tcflow": {
+    "py3": {
+      "0.0.4": {
+        "tcflow-0.0.4-py3-none-any.whl": {
+          "requires_dist": [
+            "pydflow (>=1.6.27)",
+            "lbg (>=1.2.13)",
+            "dpdata (>=0.2.7)",
+            "matplotlib (>=3.6.3)",
+            "sportran",
+            "numpy"
+          ],
+          "requires_python": ">=3.8"
+        }
+      },
+      "0.0.5": {
+        "tcflow-0.0.5-py3-none-any.whl": "0.0.4@tcflow-0.0.4-py3-none-any.whl"
+      },
+      "0.0.6": {
+        "tcflow-0.0.6-py3-none-any.whl": "0.0.4@tcflow-0.0.4-py3-none-any.whl"
+      },
+      "0.0.7": {
+        "tcflow-0.0.7-py3-none-any.whl": "0.0.4@tcflow-0.0.4-py3-none-any.whl"
+      },
+      "0.0.8": {
+        "tcflow-0.0.8-py3-none-any.whl": "0.0.4@tcflow-0.0.4-py3-none-any.whl"
+      }
+    }
+  },
   "tchappui-secretkey": {
     "py2.py3": {
       "0.1.0": {
@@ -101065,6 +101298,18 @@
       },
       "3.0.859": {
         "tencentcloud_sdk_python_gme-3.0.859-py2.py3-none-any.whl": "3.0.251@tencentcloud_sdk_python_gme-3.0.251-py2.py3-none-any.whl"
+      },
+      "3.0.860": {
+        "tencentcloud_sdk_python_gme-3.0.860-py2.py3-none-any.whl": "3.0.251@tencentcloud_sdk_python_gme-3.0.251-py2.py3-none-any.whl"
+      },
+      "3.0.861": {
+        "tencentcloud_sdk_python_gme-3.0.861-py2.py3-none-any.whl": "3.0.251@tencentcloud_sdk_python_gme-3.0.251-py2.py3-none-any.whl"
+      },
+      "3.0.862": {
+        "tencentcloud_sdk_python_gme-3.0.862-py2.py3-none-any.whl": "3.0.251@tencentcloud_sdk_python_gme-3.0.251-py2.py3-none-any.whl"
+      },
+      "3.0.863": {
+        "tencentcloud_sdk_python_gme-3.0.863-py2.py3-none-any.whl": "3.0.251@tencentcloud_sdk_python_gme-3.0.251-py2.py3-none-any.whl"
       }
     }
   },
@@ -103649,6 +103894,9 @@
       },
       "3.0.10.3": {
         "types_Flask_Cors-3.0.10.3-py3-none-any.whl": "3.0.10.1@types_Flask_Cors-3.0.10.1-py3-none-any.whl"
+      },
+      "3.0.10.4": {
+        "types_Flask_Cors-3.0.10.4-py3-none-any.whl": "3.0.10.1@types_Flask_Cors-3.0.10.1-py3-none-any.whl"
       },
       "3.0.2": {
         "types_Flask_Cors-3.0.2-py3-none-any.whl": "3.0.0@types_Flask_Cors-3.0.0-py3-none-any.whl"
@@ -106937,6 +107185,15 @@
       },
       "0.31": {
         "zephony-0.31-py3-none-any.whl": "0.10.0@zephony-0.10.0-py3-none-any.whl"
+      },
+      "0.32": {
+        "zephony-0.32-py3-none-any.whl": "0.10.0@zephony-0.10.0-py3-none-any.whl"
+      },
+      "0.33": {
+        "zephony-0.33-py3-none-any.whl": "0.10.0@zephony-0.10.0-py3-none-any.whl"
+      },
+      "0.34": {
+        "zephony-0.34-py3-none-any.whl": "0.10.0@zephony-0.10.0-py3-none-any.whl"
       },
       "0.6": {
         "zephony-0.6-py3-none-any.whl": "0.10.0@zephony-0.10.0-py3-none-any.whl"
