@@ -5788,7 +5788,88 @@
       "310": "27"
     },
     "5.8.2": "5.8.1",
-    "5.8.3": "5.8.1"
+    "5.8.3": "5.8.1",
+    "5.8.4": {
+      "27": {
+        "install_requires": [
+          "sqlalchemy<2.0,>=1.4",
+          "geoalchemy2",
+          "psycopg2",
+          "pg-grant",
+          "click",
+          "deepdiff",
+          "jsonlines",
+          "jsonschema[format]>=3.2.0",
+          "json-encoder",
+          "ndjson>=0.3.0",
+          "shapely>=1.8.0",
+          "python-string-utils",
+          "python-dateutil",
+          "requests",
+          "jinja2",
+          "mappyfile",
+          "methodtools",
+          "jsonpath-rw",
+          "orjson",
+          "more-ds",
+          "factory_boy"
+        ],
+        "extras_require": {
+          "tests": [
+            "types-requests",
+            "types-click",
+            "types-python-dateutil",
+            "flake8",
+            "flake8-colors",
+            "flake8-raise",
+            "flake8-bandit",
+            "flake8-bugbear",
+            "flake8-builtins",
+            "flake8-comprehensions",
+            "flake8-docstrings",
+            "flake8-implicit-str-concat",
+            "flake8-print",
+            "flake8-rst",
+            "flake8-string-format",
+            "flake8-logging-format",
+            "pytest",
+            "pytest-cov",
+            "pytest-django",
+            "pytest-sqlalchemy"
+          ],
+          "kafka": [
+            "confluent-kafka"
+          ],
+          "dev": [
+            "build",
+            "twine",
+            "python-environ"
+          ],
+          "django": [
+            "django<4.2,>=3.0",
+            "django-postgres-unlimited-varchar>=1.1.1",
+            "django-gisserver>=1.2.3",
+            "django-environ",
+            "django-db-comments",
+            "factory_boy"
+          ]
+        },
+        "tests_require": [
+          "pytest",
+          "pytest-cov",
+          "pytest-sqlalchemy",
+          "requests-mock"
+        ],
+        "python_requires": [
+          ">=3.9"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "anaflow": {
     "0.2.3": {
@@ -37765,6 +37846,58 @@
       "38": "27",
       "39": "27",
       "310": "27"
+    },
+    "22.9.21": {
+      "27": {
+        "install_requires": [
+          "aiodocker~=0.21.0",
+          "aiofiles~=0.8.0",
+          "aiohttp~=3.8.1",
+          "aiomonitor-ng~=0.7.0",
+          "aiotools~=1.5.9",
+          "async_timeout~=4.0",
+          "attrs>=20.3",
+          "backend.ai-cli==22.09.21",
+          "backend.ai-common==22.09.21",
+          "backend.ai-kernel-binary==22.09.21",
+          "backend.ai-kernel-helper==22.09.21",
+          "backend.ai-kernel==22.09.21",
+          "backend.ai-krunner-static-gnu~=3.0.0",
+          "backend.ai-plugin==22.09.21",
+          "cachetools~=5.2.0",
+          "callosum~=0.9.10",
+          "cattrs~=22.2.0",
+          "click>=7.1.2",
+          "etcetra==0.1.14",
+          "janus~=1.0.0",
+          "kubernetes-asyncio~=9.1.0",
+          "more-itertools~=8.13.0",
+          "networkx~=2.8.7",
+          "psutil~=5.9.1",
+          "python-snappy~=0.6.0",
+          "pyzmq~=24.0.1",
+          "redis[hiredis]~=4.3.4",
+          "setproctitle~=1.2.2",
+          "tenacity>=8.0",
+          "tomlkit~=0.11.1",
+          "trafaret~=2.1",
+          "types-pkg_resources",
+          "typing_extensions~=4.3"
+        ],
+        "extras_require": {
+          ":sys_platform != \"Windows\"": [
+            "uvloop>=0.17"
+          ]
+        },
+        "python_requires": [
+          ">=3.10,<3.11"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
     }
   },
   "backend.ai-kernel-binary": {
@@ -37861,7 +37994,8 @@
       "38": "27",
       "39": "27",
       "310": "27"
-    }
+    },
+    "22.9.21": "22.9.0"
   },
   "backuppc-clone": {
     "1.0.0": {
@@ -38452,7 +38586,8 @@
     "2.3.0b20230328": "2.3.0b20230205",
     "2.3.0b20230329": "2.3.0b20230205",
     "2.3.0b20230401": "2.3.0b20230205",
-    "2.3.0b20230402": "2.3.0b20230205"
+    "2.3.0b20230402": "2.3.0b20230205",
+    "2.3.0b20230403": "2.3.0b20230205"
   },
   "bilateralshapley": {
     "0.0.2": {
@@ -48368,7 +48503,23 @@
     "1.9.5": "1.6.0",
     "1.9.6": "1.6.0",
     "1.9.7": "1.6.0",
-    "1.9.8": "1.6.0"
+    "1.9.8": "1.6.0",
+    "1.9.9": {
+      "36": {
+        "extras_require": {
+          "cyrillic": [
+            "pytils>=0.2"
+          ],
+          "translitcodec": [
+            "translitcodec>=0.3"
+          ]
+        }
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "django-aws-alb-idp-auth": {
     "0.1.0": {
@@ -61137,7 +61288,8 @@
     },
     "1.8.1": "1.8.0",
     "1.9.0": "1.8.0",
-    "1.9.1": "1.8.0"
+    "1.9.1": "1.8.0",
+    "1.9.2": "1.8.0"
   },
   "googleform": {
     "0.0.1a1": {
