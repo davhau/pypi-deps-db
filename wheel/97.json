@@ -249,6 +249,9 @@
       },
       "0.4": {
         "aib_logging-0.4-py3-none-any.whl": "0.2@aib_logging-0.2-py3-none-any.whl"
+      },
+      "0.5": {
+        "aib_logging-0.5-py3-none-any.whl": "0.2@aib_logging-0.2-py3-none-any.whl"
       }
     }
   },
@@ -6101,6 +6104,9 @@
       "1.29.107": {
         "botocore_a_la_carte_health-1.29.107-py3-none-any.whl": "1.29.100@botocore_a_la_carte_health-1.29.100-py3-none-any.whl"
       },
+      "1.29.108": {
+        "botocore_a_la_carte_health-1.29.108-py3-none-any.whl": "1.29.100@botocore_a_la_carte_health-1.29.100-py3-none-any.whl"
+      },
       "1.29.42": {
         "botocore_a_la_carte_health-1.29.42-py3-none-any.whl": "1.29.100@botocore_a_la_carte_health-1.29.100-py3-none-any.whl"
       },
@@ -6304,6 +6310,9 @@
       },
       "1.29.107": {
         "botocore_a_la_carte_wafv2-1.29.107-py3-none-any.whl": "1.29.100@botocore_a_la_carte_wafv2-1.29.100-py3-none-any.whl"
+      },
+      "1.29.108": {
+        "botocore_a_la_carte_wafv2-1.29.108-py3-none-any.whl": "1.29.100@botocore_a_la_carte_wafv2-1.29.100-py3-none-any.whl"
       },
       "1.29.42": {
         "botocore_a_la_carte_wafv2-1.29.42-py3-none-any.whl": "1.29.100@botocore_a_la_carte_wafv2-1.29.100-py3-none-any.whl"
@@ -18693,6 +18702,29 @@
       "23.4.0a230330": {
         "dask_cuda-23.4.0a230330-py3-none-any.whl": "23.4.0a230310@dask_cuda-23.4.0a230310-py3-none-any.whl"
       },
+      "23.4.0a230405": {
+        "dask_cuda-23.4.0a230405-py3-none-any.whl": {
+          "provides_extras": [
+            "docs",
+            "test"
+          ],
+          "requires_dist": [
+            "dask (==2023.3.2)",
+            "distributed (==2023.3.2.1)",
+            "pynvml (<11.5,>=11.0.0)",
+            "numpy (>=1.21)",
+            "numba (>=0.54)",
+            "pandas (<1.6.0dev0,>=1.3)",
+            "zict (>=0.1.3)",
+            "numpydoc (>=1.1.0) ; extra == 'docs'",
+            "sphinx ; extra == 'docs'",
+            "sphinx-click (>=2.7.1) ; extra == 'docs'",
+            "sphinx-rtd-theme (>=0.5.1) ; extra == 'docs'",
+            "pytest ; extra == 'test'"
+          ],
+          "requires_python": ">=3.8"
+        }
+      },
       "23.6.0a230328": {
         "dask_cuda-23.6.0a230328-py3-none-any.whl": "23.4.0a230310@dask_cuda-23.4.0a230310-py3-none-any.whl"
       }
@@ -28977,6 +29009,18 @@
       }
     }
   },
+  "griptape-tools": {
+    "py3": {
+      "0.1.0": {
+        "griptape_tools-0.1.0-py3-none-any.whl": {
+          "requires_dist": [
+            "griptape-core (>=0.1.3)"
+          ],
+          "requires_python": ">=3.9,<4.0"
+        }
+      }
+    }
+  },
   "grpc-act-correction-api": {
     "py3": {
       "1.0.0": {
@@ -37612,6 +37656,18 @@
       },
       "0.6.5": {
         "lintrunner_adapters-0.6.5-py3-none-any.whl": "0.1.0@lintrunner_adapters-0.1.0-py3-none-any.whl"
+      },
+      "0.7.0": {
+        "lintrunner_adapters-0.7.0-py3-none-any.whl": "0.1.0@lintrunner_adapters-0.1.0-py3-none-any.whl"
+      }
+    }
+  },
+  "liquichange": {
+    "py3": {
+      "0.1.0": {
+        "liquichange-0.1.0-py3-none-any.whl": {
+          "requires_python": ">=3.8,<4.0"
+        }
       }
     }
   },
@@ -37735,6 +37791,65 @@
       },
       "3.0.1": {
         "lisa_linux-3.0.1-py3-none-any.whl": "3.0.0@lisa_linux-3.0.0-py3-none-any.whl"
+      },
+      "3.1.0": {
+        "lisa_linux-3.1.0-py3-none-any.whl": {
+          "provides_extras": [
+            "all",
+            "dev",
+            "doc",
+            "notebook",
+            "wa"
+          ],
+          "requires_dist": [
+            "psutil (>=4.4.2)",
+            "matplotlib (>=3.1.0)",
+            "bokeh",
+            "selenium",
+            "phantomjs",
+            "pillow",
+            "holoviews",
+            "panel",
+            "colorcet",
+            "pandas (<3.0,>=1.0.0)",
+            "numpy",
+            "scipy",
+            "ruamel.yaml (>=0.16.6)",
+            "docutils",
+            "sphobjinv",
+            "pyarrow",
+            "ipython",
+            "ipywidgets",
+            "devlib (>=1.3.4)",
+            "jinja2",
+            "pyelftools",
+            "cffi",
+            "build ; extra == 'all'",
+            "jupyterlab (>=3) ; extra == 'all'",
+            "nbsphinx ; extra == 'all'",
+            "pytest ; extra == 'all'",
+            "sphinx (>2) ; extra == 'all'",
+            "sphinx-rtd-theme (>=0.5.2) ; extra == 'all'",
+            "sphinxcontrib-plantuml ; extra == 'all'",
+            "twine ; extra == 'all'",
+            "wlauto ; extra == 'all'",
+            "pytest ; extra == 'dev'",
+            "build ; extra == 'dev'",
+            "twine ; extra == 'dev'",
+            "sphinx (>2) ; extra == 'doc'",
+            "sphinx-rtd-theme (>=0.5.2) ; extra == 'doc'",
+            "sphinxcontrib-plantuml ; extra == 'doc'",
+            "nbsphinx ; extra == 'doc'",
+            "jupyterlab (>=3) ; extra == 'doc'",
+            "pytest ; extra == 'doc'",
+            "build ; extra == 'doc'",
+            "twine ; extra == 'doc'",
+            "wlauto ; extra == 'doc'",
+            "jupyterlab (>=3) ; extra == 'notebook'",
+            "wlauto ; extra == 'wa'"
+          ],
+          "requires_python": ">= 3.7"
+        }
       }
     }
   },
@@ -45510,6 +45625,9 @@
       },
       "16.0.1.0.0.2": {
         "odoo_addon_hr_holidays_public-16.0.1.0.0.2-py3-none-any.whl": "16.0.1.0.0.1@odoo_addon_hr_holidays_public-16.0.1.0.0.1-py3-none-any.whl"
+      },
+      "16.0.1.1.0": {
+        "odoo_addon_hr_holidays_public-16.0.1.1.0-py3-none-any.whl": "16.0.1.0.0.1@odoo_addon_hr_holidays_public-16.0.1.0.0.1-py3-none-any.whl"
       }
     }
   },
@@ -48132,6 +48250,62 @@
             "odoo12-addon-stock-picking-send-by-mail",
             "odoo12-addon-stock-picking-show-backorder",
             "odoo12-addon-stock-picking-show-return",
+            "odoo12-addon-stock-picking-whole-scrap",
+            "odoo12-addon-stock-production-lot-traceability",
+            "odoo12-addon-stock-return-request",
+            "odoo12-addon-stock-shifting-end-of-lot",
+            "odoo12-addon-stock-split-picking"
+          ]
+        }
+      },
+      "12.0.20230405.0": {
+        "odoo12_addons_oca_stock_logistics_workflow-12.0.20230405.0-py3-none-any.whl": {
+          "requires_dist": [
+            "odoo12-addon-product-cost-price-avco-sync",
+            "odoo12-addon-product-supplierinfo-for-customer-picking",
+            "odoo12-addon-product-supplierinfo-picking",
+            "odoo12-addon-purchase-stock-picking-restrict-cancel",
+            "odoo12-addon-sale-order-global-stock-route",
+            "odoo12-addon-stock-change-price-at-date",
+            "odoo12-addon-stock-delivery-note",
+            "odoo12-addon-stock-dropshipping-whole-supplier",
+            "odoo12-addon-stock-landed-costs-currency",
+            "odoo12-addon-stock-lot-scrap",
+            "odoo12-addon-stock-move-line-auto-fill",
+            "odoo12-addon-stock-move-manual-lot",
+            "odoo12-addon-stock-move-quick-lot",
+            "odoo12-addon-stock-no-negative",
+            "odoo12-addon-stock-picking-auto-create-lot",
+            "odoo12-addon-stock-picking-back2draft",
+            "odoo12-addon-stock-picking-backorder-strategy",
+            "odoo12-addon-stock-picking-batch-back2draft",
+            "odoo12-addon-stock-picking-batch-extended",
+            "odoo12-addon-stock-picking-batch-extended-account",
+            "odoo12-addon-stock-picking-customer-ref",
+            "odoo12-addon-stock-picking-filter-lot",
+            "odoo12-addon-stock-picking-filter-product",
+            "odoo12-addon-stock-picking-force-assign",
+            "odoo12-addon-stock-picking-invoice-link",
+            "odoo12-addon-stock-picking-late-activity",
+            "odoo12-addon-stock-picking-line-sequence",
+            "odoo12-addon-stock-picking-mass-action",
+            "odoo12-addon-stock-picking-operation-quick-change",
+            "odoo12-addon-stock-picking-package-preparation",
+            "odoo12-addon-stock-picking-package-preparation-line",
+            "odoo12-addon-stock-picking-product-assortment",
+            "odoo12-addon-stock-picking-product-link",
+            "odoo12-addon-stock-picking-purchase-order-link",
+            "odoo12-addon-stock-picking-purchase-propagate",
+            "odoo12-addon-stock-picking-quick",
+            "odoo12-addon-stock-picking-responsible",
+            "odoo12-addon-stock-picking-restrict-cancel-with-orig-move",
+            "odoo12-addon-stock-picking-return-lot",
+            "odoo12-addon-stock-picking-return-restricted-qty",
+            "odoo12-addon-stock-picking-sale-order-link",
+            "odoo12-addon-stock-picking-send-by-mail",
+            "odoo12-addon-stock-picking-show-backorder",
+            "odoo12-addon-stock-picking-show-return",
+            "odoo12-addon-stock-picking-tier-validation",
             "odoo12-addon-stock-picking-whole-scrap",
             "odoo12-addon-stock-production-lot-traceability",
             "odoo12-addon-stock-return-request",
@@ -62468,6 +62642,9 @@
       },
       "0.4.3a2": {
         "razorback-0.4.3a2-py3-none-any.whl": "0.4.1@razorback-0.4.1-py3-none-any.whl"
+      },
+      "0.4.3a3": {
+        "razorback-0.4.3a3-py3-none-any.whl": "0.4.1@razorback-0.4.1-py3-none-any.whl"
       }
     }
   },
@@ -68271,6 +68448,42 @@
       },
       "0.1.9": {
         "swagger_bundler-0.1.9-py2.py3-none-any.whl": "0.1@swagger_bundler-0.1-py2.py3-none-any.whl"
+      }
+    }
+  },
+  "swarmpal": {
+    "py3": {
+      "0.1.0a4": {
+        "swarmpal-0.1.0a4-py3-none-any.whl": {
+          "provides_extras": [
+            "dev",
+            "docs",
+            "dsecs",
+            "test"
+          ],
+          "requires_dist": [
+            "hapiclient >= 0.2.3",
+            "numpy >= 1.22",
+            "matplotlib >= 3.5",
+            "scipy >= 1.8",
+            "viresclient >= 0.11",
+            "xarray >= 0.21",
+            "xarray-datatree >= 0.0.11",
+            "pytest >=6 ; extra == \"dev\"",
+            "nox >=2022 ; extra == \"dev\"",
+            "Sphinx==4.5 ; extra == \"docs\"",
+            "myst-nb==0.17.1 ; extra == \"docs\"",
+            "sphinx-book-theme==0.3.3 ; extra == \"docs\"",
+            "sphinx_copybutton==0.5.1 ; extra == \"docs\"",
+            "matplotlib==3.6 ; extra == \"docs\"",
+            "ipywidgets==8.0 ; extra == \"docs\"",
+            "ipython!=8.7.0 ; extra == \"docs\"",
+            "apexpy>=1.1.0 ; extra == \"dsecs\"",
+            "pyproj>=3 ; extra == \"dsecs\"",
+            "pytest >=6 ; extra == \"test\""
+          ],
+          "requires_python": ">=3.8"
+        }
       }
     }
   },
@@ -74915,6 +75128,29 @@
       }
     }
   },
+  "whatpack.py": {
+    "py3": {
+      "0.0.2.2": {
+        "whatpack.py-0.0.2.2-py3-none-any.whl": {
+          "requires_dist": [
+            "flask",
+            "selenium",
+            "pyperclip",
+            "pyautogui",
+            "aiohttp",
+            "pyscreeze",
+            "opencv-python",
+            "numpy",
+            "keyboard",
+            "requests"
+          ]
+        }
+      },
+      "0.0.2.3": {
+        "whatpack.py-0.0.2.3-py3-none-any.whl": "0.0.2.2@whatpack.py-0.0.2.2-py3-none-any.whl"
+      }
+    }
+  },
   "wifihunter": {
     "py3": {
       "1.0.0": {
@@ -76344,6 +76580,16 @@
         "zeroconf-0.54.0-cp310-cp310-musllinux_1_1_x86_64.whl": "0.40.1@zeroconf-0.40.1-cp310-cp310-macosx_11_0_x86_64.whl",
         "zeroconf-0.54.0-cp310-cp310-win32.whl": "0.40.1@zeroconf-0.40.1-cp310-cp310-macosx_11_0_x86_64.whl",
         "zeroconf-0.54.0-cp310-cp310-win_amd64.whl": "0.40.1@zeroconf-0.40.1-cp310-cp310-macosx_11_0_x86_64.whl"
+      },
+      "0.55.0": {
+        "zeroconf-0.55.0-cp310-cp310-macosx_11_0_x86_64.whl": "0.40.1@zeroconf-0.40.1-cp310-cp310-macosx_11_0_x86_64.whl",
+        "zeroconf-0.55.0-cp310-cp310-manylinux_2_17_i686.manylinux_2_5_i686.manylinux1_i686.manylinux2014_i686.whl": "0.40.1@zeroconf-0.40.1-cp310-cp310-macosx_11_0_x86_64.whl",
+        "zeroconf-0.55.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.40.1@zeroconf-0.40.1-cp310-cp310-macosx_11_0_x86_64.whl",
+        "zeroconf-0.55.0-cp310-cp310-manylinux_2_31_x86_64.whl": "0.40.1@zeroconf-0.40.1-cp310-cp310-macosx_11_0_x86_64.whl",
+        "zeroconf-0.55.0-cp310-cp310-musllinux_1_1_i686.whl": "0.40.1@zeroconf-0.40.1-cp310-cp310-macosx_11_0_x86_64.whl",
+        "zeroconf-0.55.0-cp310-cp310-musllinux_1_1_x86_64.whl": "0.40.1@zeroconf-0.40.1-cp310-cp310-macosx_11_0_x86_64.whl",
+        "zeroconf-0.55.0-cp310-cp310-win32.whl": "0.40.1@zeroconf-0.40.1-cp310-cp310-macosx_11_0_x86_64.whl",
+        "zeroconf-0.55.0-cp310-cp310-win_amd64.whl": "0.40.1@zeroconf-0.40.1-cp310-cp310-macosx_11_0_x86_64.whl"
       }
     },
     "cp311": {
@@ -76532,6 +76778,15 @@
         "zeroconf-0.54.0-cp311-cp311-musllinux_1_1_x86_64.whl": "0.40.1@zeroconf-0.40.1-cp311-cp311-macosx_11_0_x86_64.whl",
         "zeroconf-0.54.0-cp311-cp311-win32.whl": "0.40.1@zeroconf-0.40.1-cp311-cp311-macosx_11_0_x86_64.whl",
         "zeroconf-0.54.0-cp311-cp311-win_amd64.whl": "0.40.1@zeroconf-0.40.1-cp311-cp311-macosx_11_0_x86_64.whl"
+      },
+      "0.55.0": {
+        "zeroconf-0.55.0-cp311-cp311-macosx_11_0_x86_64.whl": "0.40.1@zeroconf-0.40.1-cp311-cp311-macosx_11_0_x86_64.whl",
+        "zeroconf-0.55.0-cp311-cp311-manylinux_2_17_i686.manylinux_2_5_i686.manylinux1_i686.manylinux2014_i686.whl": "0.40.1@zeroconf-0.40.1-cp311-cp311-macosx_11_0_x86_64.whl",
+        "zeroconf-0.55.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.40.1@zeroconf-0.40.1-cp311-cp311-macosx_11_0_x86_64.whl",
+        "zeroconf-0.55.0-cp311-cp311-musllinux_1_1_i686.whl": "0.40.1@zeroconf-0.40.1-cp311-cp311-macosx_11_0_x86_64.whl",
+        "zeroconf-0.55.0-cp311-cp311-musllinux_1_1_x86_64.whl": "0.40.1@zeroconf-0.40.1-cp311-cp311-macosx_11_0_x86_64.whl",
+        "zeroconf-0.55.0-cp311-cp311-win32.whl": "0.40.1@zeroconf-0.40.1-cp311-cp311-macosx_11_0_x86_64.whl",
+        "zeroconf-0.55.0-cp311-cp311-win_amd64.whl": "0.40.1@zeroconf-0.40.1-cp311-cp311-macosx_11_0_x86_64.whl"
       }
     },
     "cp37": {
@@ -76720,6 +76975,15 @@
         "zeroconf-0.54.0-cp37-cp37m-musllinux_1_1_x86_64.whl": "0.40.1@zeroconf-0.40.1-cp37-cp37m-macosx_10_16_x86_64.whl",
         "zeroconf-0.54.0-cp37-cp37m-win32.whl": "0.40.1@zeroconf-0.40.1-cp37-cp37m-macosx_10_16_x86_64.whl",
         "zeroconf-0.54.0-cp37-cp37m-win_amd64.whl": "0.40.1@zeroconf-0.40.1-cp37-cp37m-macosx_10_16_x86_64.whl"
+      },
+      "0.55.0": {
+        "zeroconf-0.55.0-cp37-cp37m-macosx_11_0_x86_64.whl": "0.40.1@zeroconf-0.40.1-cp37-cp37m-macosx_10_16_x86_64.whl",
+        "zeroconf-0.55.0-cp37-cp37m-manylinux_2_17_i686.manylinux_2_5_i686.manylinux1_i686.manylinux2014_i686.whl": "0.40.1@zeroconf-0.40.1-cp37-cp37m-macosx_10_16_x86_64.whl",
+        "zeroconf-0.55.0-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.40.1@zeroconf-0.40.1-cp37-cp37m-macosx_10_16_x86_64.whl",
+        "zeroconf-0.55.0-cp37-cp37m-musllinux_1_1_i686.whl": "0.40.1@zeroconf-0.40.1-cp37-cp37m-macosx_10_16_x86_64.whl",
+        "zeroconf-0.55.0-cp37-cp37m-musllinux_1_1_x86_64.whl": "0.40.1@zeroconf-0.40.1-cp37-cp37m-macosx_10_16_x86_64.whl",
+        "zeroconf-0.55.0-cp37-cp37m-win32.whl": "0.40.1@zeroconf-0.40.1-cp37-cp37m-macosx_10_16_x86_64.whl",
+        "zeroconf-0.55.0-cp37-cp37m-win_amd64.whl": "0.40.1@zeroconf-0.40.1-cp37-cp37m-macosx_10_16_x86_64.whl"
       }
     },
     "cp38": {
@@ -76908,6 +77172,15 @@
         "zeroconf-0.54.0-cp38-cp38-musllinux_1_1_x86_64.whl": "0.40.1@zeroconf-0.40.1-cp38-cp38-macosx_10_16_x86_64.whl",
         "zeroconf-0.54.0-cp38-cp38-win32.whl": "0.40.1@zeroconf-0.40.1-cp38-cp38-macosx_10_16_x86_64.whl",
         "zeroconf-0.54.0-cp38-cp38-win_amd64.whl": "0.40.1@zeroconf-0.40.1-cp38-cp38-macosx_10_16_x86_64.whl"
+      },
+      "0.55.0": {
+        "zeroconf-0.55.0-cp38-cp38-macosx_11_0_x86_64.whl": "0.40.1@zeroconf-0.40.1-cp38-cp38-macosx_10_16_x86_64.whl",
+        "zeroconf-0.55.0-cp38-cp38-manylinux_2_17_i686.manylinux_2_5_i686.manylinux1_i686.manylinux2014_i686.whl": "0.40.1@zeroconf-0.40.1-cp38-cp38-macosx_10_16_x86_64.whl",
+        "zeroconf-0.55.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.40.1@zeroconf-0.40.1-cp38-cp38-macosx_10_16_x86_64.whl",
+        "zeroconf-0.55.0-cp38-cp38-musllinux_1_1_i686.whl": "0.40.1@zeroconf-0.40.1-cp38-cp38-macosx_10_16_x86_64.whl",
+        "zeroconf-0.55.0-cp38-cp38-musllinux_1_1_x86_64.whl": "0.40.1@zeroconf-0.40.1-cp38-cp38-macosx_10_16_x86_64.whl",
+        "zeroconf-0.55.0-cp38-cp38-win32.whl": "0.40.1@zeroconf-0.40.1-cp38-cp38-macosx_10_16_x86_64.whl",
+        "zeroconf-0.55.0-cp38-cp38-win_amd64.whl": "0.40.1@zeroconf-0.40.1-cp38-cp38-macosx_10_16_x86_64.whl"
       }
     },
     "cp39": {
@@ -77105,6 +77378,15 @@
         "zeroconf-0.54.0-cp39-cp39-musllinux_1_1_x86_64.whl": "0.40.1@zeroconf-0.40.1-cp39-cp39-macosx_11_0_x86_64.whl",
         "zeroconf-0.54.0-cp39-cp39-win32.whl": "0.40.1@zeroconf-0.40.1-cp39-cp39-macosx_11_0_x86_64.whl",
         "zeroconf-0.54.0-cp39-cp39-win_amd64.whl": "0.40.1@zeroconf-0.40.1-cp39-cp39-macosx_11_0_x86_64.whl"
+      },
+      "0.55.0": {
+        "zeroconf-0.55.0-cp39-cp39-macosx_11_0_x86_64.whl": "0.40.1@zeroconf-0.40.1-cp39-cp39-macosx_11_0_x86_64.whl",
+        "zeroconf-0.55.0-cp39-cp39-manylinux_2_17_i686.manylinux_2_5_i686.manylinux1_i686.manylinux2014_i686.whl": "0.40.1@zeroconf-0.40.1-cp39-cp39-macosx_11_0_x86_64.whl",
+        "zeroconf-0.55.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.40.1@zeroconf-0.40.1-cp39-cp39-macosx_11_0_x86_64.whl",
+        "zeroconf-0.55.0-cp39-cp39-musllinux_1_1_i686.whl": "0.40.1@zeroconf-0.40.1-cp39-cp39-macosx_11_0_x86_64.whl",
+        "zeroconf-0.55.0-cp39-cp39-musllinux_1_1_x86_64.whl": "0.40.1@zeroconf-0.40.1-cp39-cp39-macosx_11_0_x86_64.whl",
+        "zeroconf-0.55.0-cp39-cp39-win32.whl": "0.40.1@zeroconf-0.40.1-cp39-cp39-macosx_11_0_x86_64.whl",
+        "zeroconf-0.55.0-cp39-cp39-win_amd64.whl": "0.40.1@zeroconf-0.40.1-cp39-cp39-macosx_11_0_x86_64.whl"
       }
     },
     "pp37": {
@@ -77233,6 +77515,12 @@
         "zeroconf-0.54.0-pp37-pypy37_pp73-manylinux_2_17_i686.manylinux_2_5_i686.manylinux1_i686.manylinux2014_i686.whl": "0.40.1@zeroconf-0.40.1-pp37-pypy37_pp73-macosx_11_0_x86_64.whl",
         "zeroconf-0.54.0-pp37-pypy37_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.40.1@zeroconf-0.40.1-pp37-pypy37_pp73-macosx_11_0_x86_64.whl",
         "zeroconf-0.54.0-pp37-pypy37_pp73-win_amd64.whl": "0.40.1@zeroconf-0.40.1-pp37-pypy37_pp73-macosx_11_0_x86_64.whl"
+      },
+      "0.55.0": {
+        "zeroconf-0.55.0-pp37-pypy37_pp73-macosx_11_0_x86_64.whl": "0.40.1@zeroconf-0.40.1-pp37-pypy37_pp73-macosx_11_0_x86_64.whl",
+        "zeroconf-0.55.0-pp37-pypy37_pp73-manylinux_2_17_i686.manylinux_2_5_i686.manylinux1_i686.manylinux2014_i686.whl": "0.40.1@zeroconf-0.40.1-pp37-pypy37_pp73-macosx_11_0_x86_64.whl",
+        "zeroconf-0.55.0-pp37-pypy37_pp73-manylinux_2_17_x86_64.manylinux_2_5_x86_64.manylinux1_x86_64.manylinux2014_x86_64.whl": "0.40.1@zeroconf-0.40.1-pp37-pypy37_pp73-macosx_11_0_x86_64.whl",
+        "zeroconf-0.55.0-pp37-pypy37_pp73-win_amd64.whl": "0.40.1@zeroconf-0.40.1-pp37-pypy37_pp73-macosx_11_0_x86_64.whl"
       }
     },
     "pp38": {
@@ -77361,6 +77649,12 @@
         "zeroconf-0.54.0-pp38-pypy38_pp73-manylinux_2_17_i686.manylinux_2_5_i686.manylinux1_i686.manylinux2014_i686.whl": "0.40.1@zeroconf-0.40.1-pp38-pypy38_pp73-macosx_11_0_x86_64.whl",
         "zeroconf-0.54.0-pp38-pypy38_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.40.1@zeroconf-0.40.1-pp38-pypy38_pp73-macosx_11_0_x86_64.whl",
         "zeroconf-0.54.0-pp38-pypy38_pp73-win_amd64.whl": "0.40.1@zeroconf-0.40.1-pp38-pypy38_pp73-macosx_11_0_x86_64.whl"
+      },
+      "0.55.0": {
+        "zeroconf-0.55.0-pp38-pypy38_pp73-macosx_11_0_x86_64.whl": "0.40.1@zeroconf-0.40.1-pp38-pypy38_pp73-macosx_11_0_x86_64.whl",
+        "zeroconf-0.55.0-pp38-pypy38_pp73-manylinux_2_17_i686.manylinux_2_5_i686.manylinux1_i686.manylinux2014_i686.whl": "0.40.1@zeroconf-0.40.1-pp38-pypy38_pp73-macosx_11_0_x86_64.whl",
+        "zeroconf-0.55.0-pp38-pypy38_pp73-manylinux_2_17_x86_64.manylinux_2_5_x86_64.manylinux1_x86_64.manylinux2014_x86_64.whl": "0.40.1@zeroconf-0.40.1-pp38-pypy38_pp73-macosx_11_0_x86_64.whl",
+        "zeroconf-0.55.0-pp38-pypy38_pp73-win_amd64.whl": "0.40.1@zeroconf-0.40.1-pp38-pypy38_pp73-macosx_11_0_x86_64.whl"
       }
     },
     "pp39": {
@@ -77489,6 +77783,12 @@
         "zeroconf-0.54.0-pp39-pypy39_pp73-manylinux_2_17_i686.manylinux_2_5_i686.manylinux1_i686.manylinux2014_i686.whl": "0.40.1@zeroconf-0.40.1-pp39-pypy39_pp73-macosx_11_0_x86_64.whl",
         "zeroconf-0.54.0-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux_2_5_x86_64.manylinux1_x86_64.manylinux2014_x86_64.whl": "0.40.1@zeroconf-0.40.1-pp39-pypy39_pp73-macosx_11_0_x86_64.whl",
         "zeroconf-0.54.0-pp39-pypy39_pp73-win_amd64.whl": "0.40.1@zeroconf-0.40.1-pp39-pypy39_pp73-macosx_11_0_x86_64.whl"
+      },
+      "0.55.0": {
+        "zeroconf-0.55.0-pp39-pypy39_pp73-macosx_11_0_x86_64.whl": "0.40.1@zeroconf-0.40.1-pp39-pypy39_pp73-macosx_11_0_x86_64.whl",
+        "zeroconf-0.55.0-pp39-pypy39_pp73-manylinux_2_17_i686.manylinux_2_5_i686.manylinux1_i686.manylinux2014_i686.whl": "0.40.1@zeroconf-0.40.1-pp39-pypy39_pp73-macosx_11_0_x86_64.whl",
+        "zeroconf-0.55.0-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux_2_5_x86_64.manylinux1_x86_64.manylinux2014_x86_64.whl": "0.40.1@zeroconf-0.40.1-pp39-pypy39_pp73-macosx_11_0_x86_64.whl",
+        "zeroconf-0.55.0-pp39-pypy39_pp73-win_amd64.whl": "0.40.1@zeroconf-0.40.1-pp39-pypy39_pp73-macosx_11_0_x86_64.whl"
       }
     },
     "py3": {
