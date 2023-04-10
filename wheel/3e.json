@@ -20162,6 +20162,17 @@
           ]
         },
         "bigdl_friesian_spark2-2.3.0b20230408-py3-none-manylinux1_x86_64.whl": "2.3.0b20230408@bigdl_friesian_spark2-2.3.0b20230408-py3-none-macosx_10_11_x86_64.whl"
+      },
+      "2.3.0b20230409": {
+        "bigdl_friesian_spark2-2.3.0b20230409-py3-none-manylinux1_x86_64.whl": {
+          "provides_extras": [
+            "train"
+          ],
+          "requires_dist": [
+            "bigdl-orca-spark2 (==2.3.0b20230409)",
+            "bigdl-orca-spark2[ray] ; extra == 'train'"
+          ]
+        }
       }
     }
   },
@@ -36350,6 +36361,9 @@
       "0.3.20": {
         "elapid-0.3.20-py3-none-any.whl": "0.3.18@elapid-0.3.18-py3-none-any.whl"
       },
+      "0.3.21": {
+        "elapid-0.3.21-py3-none-any.whl": "0.3.18@elapid-0.3.18-py3-none-any.whl"
+      },
       "0.3.3": {
         "elapid-0.3.3-py3-none-any.whl": "0.3.1@elapid-0.3.1-py3-none-any.whl"
       },
@@ -36383,6 +36397,9 @@
       },
       "0.3.9": {
         "elapid-0.3.9-py3-none-any.whl": "0.3.10@elapid-0.3.10-py3-none-any.whl"
+      },
+      "1.0.1": {
+        "elapid-1.0.1-py3-none-any.whl": "0.3.18@elapid-0.3.18-py3-none-any.whl"
       }
     }
   },
@@ -40322,6 +40339,9 @@
           "requires_python": ">=3.7"
         }
       },
+      "0.1.645": {
+        "fhempy-0.1.645-py3-none-any.whl": "0.1.644@fhempy-0.1.644-py3-none-any.whl"
+      },
       "0.1.65": {
         "fhempy-0.1.65-py3-none-any.whl": "0.1.100@fhempy-0.1.100-py3-none-any.whl"
       },
@@ -43112,6 +43132,32 @@
       },
       "1.4.0.dev20230331": {
         "flwr_nightly-1.4.0.dev20230331-py3-none-any.whl": "1.4.0.dev20230327@flwr_nightly-1.4.0.dev20230327-py3-none-any.whl"
+      },
+      "1.4.0.dev20230408": {
+        "flwr_nightly-1.4.0.dev20230408-py3-none-any.whl": "1.4.0.dev20230327@flwr_nightly-1.4.0.dev20230327-py3-none-any.whl"
+      },
+      "1.4.0.dev20230409": {
+        "flwr_nightly-1.4.0.dev20230409-py3-none-any.whl": {
+          "provides_extras": [
+            "rest",
+            "simulation",
+            "xgboost"
+          ],
+          "requires_dist": [
+            "fastapi (>=0.95.0,<0.96.0) ; extra == \"rest\"",
+            "grpcio (>=1.48.2,<2.0.0,!=1.52.0)",
+            "importlib-metadata (>=4.0.0,<5.0.0) ; python_version < \"3.8\"",
+            "iterators (>=0.0.2,<0.0.3)",
+            "numpy (>=1.21.0,<2.0.0)",
+            "protobuf (>=3.19.0,<4.0.0)",
+            "ray[default] (>=2.3.0,<3.0.0) ; extra == \"simulation\"",
+            "requests (>=2.28.2,<3.0.0) ; extra == \"rest\"",
+            "starlette (>=0.26.1,<0.27.0) ; extra == \"rest\"",
+            "uvicorn[standard] (>=0.21.1,<0.22.0) ; extra == \"rest\"",
+            "xgboost (>=1.6.2,<2.0.0) ; extra == \"xgboost\""
+          ],
+          "requires_python": ">=3.7,<4.0"
+        }
       }
     }
   },
@@ -58160,6 +58206,20 @@
       "0.23.8": {
         "moodlepy-0.23.8-py3-none-any.whl": "0.23.7@moodlepy-0.23.7-py3-none-any.whl"
       },
+      "0.23.9": {
+        "moodlepy-0.23.9-py3-none-any.whl": {
+          "provides_extras": [
+            "ujson"
+          ],
+          "requires_dist": [
+            "attrs (>=22.2.0,<23.0.0)",
+            "cattrs (>=22.2.0,<23.0.0)",
+            "requests (>=2.28.2,<3.0.0)",
+            "ujson (>=5.4.0,<6.0.0) ; extra == \"ujson\""
+          ],
+          "requires_python": ">=3.8,<4.0"
+        }
+      },
       "0.3.0": {
         "moodlepy-0.3.0-py3-none-any.whl": "0.1.0@moodlepy-0.1.0-py3-none-any.whl"
       },
@@ -62444,6 +62504,20 @@
       },
       "15.0.1.0.1": {
         "odoo_addon_maintenance_equipment_sequence-15.0.1.0.1-py3-none-any.whl": "15.0.1.0.0.2@odoo_addon_maintenance_equipment_sequence-15.0.1.0.0.2-py3-none-any.whl"
+      }
+    }
+  },
+  "odoo-addon-sale-resource-booking": {
+    "py3": {
+      "15.0.1.0.0.2": {
+        "odoo_addon_sale_resource_booking-15.0.1.0.0.2-py3-none-any.whl": {
+          "requires_dist": [
+            "odoo-addon-resource-booking (<15.1dev,>=15.0dev)",
+            "odoo-addon-web-ir-actions-act-multi (<15.1dev,>=15.0dev)",
+            "odoo (<15.1dev,>=15.0a)"
+          ],
+          "requires_python": ">=3.8"
+        }
       }
     }
   },
@@ -68758,6 +68832,9 @@
             "sortedcollections"
           ]
         }
+      },
+      "0.2.0": {
+        "pure_safetensors-0.2.0-py3-none-any.whl": "0.1.0@pure_safetensors-0.1.0-py3-none-any.whl"
       }
     }
   },
@@ -96205,6 +96282,9 @@
       },
       "3.0.868": {
         "tencentcloud_sdk_python_bri-3.0.868-py2.py3-none-any.whl": "3.0.251@tencentcloud_sdk_python_bri-3.0.251-py2.py3-none-any.whl"
+      },
+      "3.0.869": {
+        "tencentcloud_sdk_python_bri-3.0.869-py2.py3-none-any.whl": "3.0.251@tencentcloud_sdk_python_bri-3.0.251-py2.py3-none-any.whl"
       }
     }
   },
@@ -97169,6 +97249,9 @@
       },
       "3.0.868": {
         "tencentcloud_sdk_python_tcm-3.0.868-py2.py3-none-any.whl": "3.0.523@tencentcloud_sdk_python_tcm-3.0.523-py2.py3-none-any.whl"
+      },
+      "3.0.869": {
+        "tencentcloud_sdk_python_tcm-3.0.869-py2.py3-none-any.whl": "3.0.523@tencentcloud_sdk_python_tcm-3.0.523-py2.py3-none-any.whl"
       }
     }
   },
@@ -98685,6 +98768,9 @@
       },
       "3.0.868": {
         "tencentcloud_sdk_python_tsw-3.0.868-py2.py3-none-any.whl": "3.0.339@tencentcloud_sdk_python_tsw-3.0.339-py2.py3-none-any.whl"
+      },
+      "3.0.869": {
+        "tencentcloud_sdk_python_tsw-3.0.869-py2.py3-none-any.whl": "3.0.339@tencentcloud_sdk_python_tsw-3.0.339-py2.py3-none-any.whl"
       }
     }
   },
@@ -98880,6 +98966,13 @@
       },
       "0.1.2": {
         "textcrafts-0.1.2-py3-none-any.whl": "0.0.9@textcrafts-0.0.9-py3-none-any.whl"
+      }
+    }
+  },
+  "texttransimg": {
+    "py3": {
+      "1.0": {
+        "textTransImg-1.0-py3-none-any.whl": {}
       }
     }
   },
