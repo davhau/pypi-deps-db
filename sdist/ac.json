@@ -50208,7 +50208,8 @@
     "10": "1",
     "11": "1",
     "12": "1",
-    "13": "1"
+    "13": "1",
+    "14": "1"
   },
   "ijsfhsf123": {
     "1.0.0": {
@@ -60500,7 +60501,8 @@
     "4.26.0": "4.25.0",
     "4.28.0": "4.25.0",
     "4.27.0": "4.25.0",
-    "4.29.0": "4.25.0"
+    "4.29.0": "4.25.0",
+    "4.30.0": "4.25.0"
   },
   "mu-nester": {
     "1.3.2": {
@@ -83650,6 +83652,84 @@
             "django<4,>=2",
             "djangorestframework",
             "psycopg2<2.9",
+            "setuptools",
+            "xmlschema",
+            "swh.core[http]>=0.4",
+            "swh.loader.core>=0.0.71",
+            "swh.scheduler>=0.7.0",
+            "swh.model>=0.3.8",
+            "swh.auth[django]>=0.5.3",
+            "swh.storage>=0.28.0"
+          ]
+        },
+        "tests_require": [
+          "pytest",
+          "pytest-django",
+          "pytest-mock",
+          "swh.scheduler[testing]",
+          "swh.loader.core[testing]",
+          "pytest-postgresql >=3, < 4.0.0  # version 4.0 depends on psycopg 3. https://github.com/ClearcodeHQ/pytest-postgresql/blob/main/CHANGES.rst#400",
+          "requests_mock",
+          "django-stubs",
+          "djangorestframework-stubs >= 1.4",
+          "django-test-migrations",
+          "types-requests",
+          "types-pyyaml"
+        ],
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "1.2.1": {
+      "27": {
+        "install_requires": [
+          "click",
+          "iso8601",
+          "requests",
+          "sentry-sdk",
+          "swh.core[http]>=0.4",
+          "swh.model>=4.4.0",
+          "swh.scheduler"
+        ],
+        "setup_requires": [
+          "setuptools-scm"
+        ],
+        "extras_require": {
+          "testing": [
+            "pytest",
+            "pytest-django",
+            "pytest-mock",
+            "swh.scheduler[testing]",
+            "swh.loader.core[testing]",
+            "pytest-postgresql<4.0.0,>=3",
+            "requests_mock",
+            "django-stubs",
+            "djangorestframework-stubs>=1.4",
+            "django-test-migrations",
+            "types-requests",
+            "types-pyyaml",
+            "django",
+            "djangorestframework",
+            "psycopg2",
+            "setuptools",
+            "xmlschema",
+            "swh.core[http]>=0.4",
+            "swh.loader.core>=0.0.71",
+            "swh.scheduler>=0.7.0",
+            "swh.model>=0.3.8",
+            "swh.auth[django]>=0.5.3",
+            "swh.storage>=0.28.0"
+          ],
+          "server": [
+            "django",
+            "djangorestframework",
+            "psycopg2",
             "setuptools",
             "xmlschema",
             "swh.core[http]>=0.4",
