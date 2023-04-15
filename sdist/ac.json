@@ -29930,7 +29930,8 @@
     "1.29.110": "1.29.42",
     "1.29.111": "1.29.42",
     "1.29.112": "1.29.42",
-    "1.29.113": "1.29.42"
+    "1.29.113": "1.29.42",
+    "1.29.114": "1.29.42"
   },
   "botocore-a-la-carte-ram": {
     "1.29.48": "1.29.42",
@@ -30015,7 +30016,8 @@
     "1.29.110": "1.29.42",
     "1.29.111": "1.29.42",
     "1.29.112": "1.29.42",
-    "1.29.113": "1.29.42"
+    "1.29.113": "1.29.42",
+    "1.29.114": "1.29.42"
   },
   "botocore-a-la-carte-ssm-contacts": {
     "1.29.48": "1.29.42",
@@ -30100,7 +30102,8 @@
     "1.29.110": "1.29.42",
     "1.29.111": "1.29.42",
     "1.29.112": "1.29.42",
-    "1.29.113": "1.29.42"
+    "1.29.113": "1.29.42",
+    "1.29.114": "1.29.42"
   },
   "boxfish": {
     "0.0.1": {
@@ -78046,6 +78049,57 @@
       "27": {
         "install_requires": [
           "sagemaker>=2.125.0",
+          "psutil"
+        ],
+        "extras_require": {
+          "test": [
+            "coverage",
+            "flake8",
+            "mock",
+            "pydocstyle",
+            "pytest",
+            "pytest-cov",
+            "pytest-html",
+            "bandit",
+            "aws-cdk-lib==2.64.0",
+            "constructs<11.0.0,>=10.0.0",
+            "sagemaker-studio-image-build",
+            "sagemaker-training"
+          ],
+          "dev-macos": [
+            "tensorflow-macos==2.9.2",
+            "numpy==1.22.4"
+          ],
+          "dev": [
+            "sagemaker-pytorch-training",
+            "sagemaker-pytorch-inference",
+            "torch-model-archiver",
+            "tox",
+            "wheel",
+            "build",
+            "twine",
+            "pydevd-pycharm~=222.4459.20",
+            "scikit-learn"
+          ],
+          "cdk": [
+            "aws-cdk-lib==2.64.0",
+            "constructs<11.0.0,>=10.0.0"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "1.10.1": {
+      "27": {
+        "install_requires": [
+          "sagemaker>=2.145.0",
           "psutil"
         ],
         "extras_require": {
