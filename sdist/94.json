@@ -6321,7 +6321,8 @@
     "1.29.111": "1.29.42",
     "1.29.112": "1.29.42",
     "1.29.113": "1.29.42",
-    "1.29.114": "1.29.42"
+    "1.29.114": "1.29.42",
+    "1.29.115": "1.29.42"
   },
   "botocore-a-la-carte-kinesis-video-webrtc-storage": {
     "1.29.49": "1.29.42",
@@ -6407,7 +6408,8 @@
     "1.29.111": "1.29.42",
     "1.29.112": "1.29.42",
     "1.29.113": "1.29.42",
-    "1.29.114": "1.29.42"
+    "1.29.114": "1.29.42",
+    "1.29.115": "1.29.42"
   },
   "bounceclassifier": {
     "0.2.1": {
@@ -33448,6 +33450,25 @@
     "2.0.1": "2.0",
     "2.0.2": "2.0",
     "3.0.0": "2.0"
+  },
+  "k4": {
+    "0.1.0a0": {
+      "27": {
+        "install_requires": [
+          "confluent-kafka<3.0.0,>=2.0.2",
+          "pyyaml<7.0,>=6.0",
+          "tabulate<0.10.0,>=0.9.0"
+        ],
+        "python_requires": [
+          ">=3.11,<4.0"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "kamtube": {
     "0.0.1b0": "0.0.1",
@@ -82424,7 +82445,8 @@
     "3.0.871": "3.0.252",
     "3.0.872": "3.0.252",
     "3.0.873": "3.0.252",
-    "3.0.874": "3.0.252"
+    "3.0.874": "3.0.252",
+    "3.0.875": "3.0.252"
   },
   "tender-multipass": {
     "0.1": {
@@ -83261,6 +83283,102 @@
             "kfp<2.0,>=1.8",
             "firebase-admin<6.0.0,>=5.0.0",
             "xgboost>=1.0.0",
+            "ml_metadata<1.11.0,>=1.6.0",
+            "tensorflow>=2.0.0",
+            "scikit_learn<2.0.0,>=1.0.2"
+          ],
+          "test": [
+            "pytest",
+            "pylint",
+            "pre-commit",
+            "isort",
+            "yapf"
+          ],
+          "ci_min": [
+            "tfx~=1.6.0",
+            "tensorflow~=2.8.0"
+          ],
+          "ci_max": [
+            "tfx~=1.10.0",
+            "tensorflow~=2.9.0"
+          ]
+        },
+        "tests_require": [
+          "pytest",
+          "pylint",
+          "pre-commit",
+          "isort",
+          "yapf"
+        ],
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "0.6.0rc1": {
+      "36": {
+        "extras_require": {
+          "mlmd_client": [
+            "ml_pipelines_sdk<1.11.0,>=1.6.0",
+            "ml_metadata<1.11.0,>=1.6.0"
+          ],
+          "schema_curation": [
+            "tfx<1.11.0,>=1.6.0"
+          ],
+          "feature_selection": [
+            "tfx<1.11.0,>=1.6.0",
+            "scikit_learn<2.0.0,>=1.0.2"
+          ],
+          "feast_examplegen": [
+            "tfx<1.11.0,>=1.6.0",
+            "feast<0.23.0,>=0.21.3"
+          ],
+          "xgboost_evaluator": [
+            "tfx<1.11.0,>=1.6.0",
+            "xgboost>=1.0.0"
+          ],
+          "sampling": [
+            "tfx<1.11.0,>=1.6.0",
+            "tensorflow>=2.0.0"
+          ],
+          "message_exit_handler": [
+            "tfx<1.11.0,>=1.6.0",
+            "kfp<2.0,>=1.8",
+            "slackclient<3.0,>=2.9.0",
+            "pydantic<2.0,>=1.8.0"
+          ],
+          "pandas_transform": [
+            "tfx<1.11.0,>=1.6.0",
+            "pandas<2.0,>=1.0.0"
+          ],
+          "firebase_publisher": [
+            "tfx<1.11.0,>=1.6.0",
+            "firebase-admin<6.0.0,>=5.0.0"
+          ],
+          "huggingface_pusher": [
+            "tfx<1.11.0,>=1.6.0",
+            "huggingface-hub<1.0.0,>=0.10.0"
+          ],
+          "model_card_generator": [
+            "tfx<1.11.0,>=1.6.0",
+            "model-card-toolkit<3.0.0,>=2.0.0"
+          ],
+          "all": [
+            "tfx<1.11.0,>=1.6.0",
+            "feast<0.23.0,>=0.21.3",
+            "slackclient<3.0,>=2.9.0",
+            "pydantic<2.0,>=1.8.0",
+            "pandas<2.0,>=1.0.0",
+            "huggingface-hub<1.0.0,>=0.10.0",
+            "ml_pipelines_sdk<1.11.0,>=1.6.0",
+            "kfp<2.0,>=1.8",
+            "firebase-admin<6.0.0,>=5.0.0",
+            "xgboost>=1.0.0",
+            "model-card-toolkit<3.0.0,>=2.0.0",
             "ml_metadata<1.11.0,>=1.6.0",
             "tensorflow>=2.0.0",
             "scikit_learn<2.0.0,>=1.0.2"
