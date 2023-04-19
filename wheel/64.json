@@ -1816,6 +1816,20 @@
       "0.7.18": {
         "asu-0.7.18-py3-none-any.whl": "0.7.10@asu-0.7.10-py3-none-any.whl"
       },
+      "0.7.19": {
+        "asu-0.7.19-py3-none-any.whl": {
+          "requires_dist": [
+            "PyNaCl (>=1.5.0,<2.0.0)",
+            "connexion[swagger-ui] (>=2.14.2,<3.0.0)",
+            "gunicorn (>=20.1.0,<21.0.0)",
+            "prometheus-client (>=0.13.1,<0.14.0)",
+            "redis (>=4.5.1,<5.0.0)",
+            "requests (>=2.28.2,<3.0.0)",
+            "rq (>=1.13.0,<2.0.0)"
+          ],
+          "requires_python": ">=3.8,<4.0"
+        }
+      },
       "0.7.2": {
         "asu-0.7.2-py3-none-any.whl": {
           "requires_dist": [
@@ -6349,6 +6363,20 @@
             "aws-cdk-lib (<3.0.0,>=2.73.0)",
             "aws-solutions-constructs.aws-route53-alb (==2.37.0)",
             "aws-solutions-constructs.core (==2.37.0)",
+            "constructs (<11.0.0,>=10.0.0)",
+            "jsii (<2.0.0,>=1.80.0)",
+            "publication (>=0.0.3)",
+            "typeguard (~=2.13.3)"
+          ],
+          "requires_python": "~=3.7"
+        }
+      },
+      "2.38.0": {
+        "aws_solutions_constructs.aws_wafwebacl_alb-2.38.0-py3-none-any.whl": {
+          "requires_dist": [
+            "aws-cdk-lib (<3.0.0,>=2.74.0)",
+            "aws-solutions-constructs.aws-route53-alb (==2.38.0)",
+            "aws-solutions-constructs.core (==2.38.0)",
             "constructs (<11.0.0,>=10.0.0)",
             "jsii (<2.0.0,>=1.80.0)",
             "publication (>=0.0.3)",
@@ -12898,6 +12926,18 @@
           "requires_python": "~=3.7"
         }
       },
+      "2.38.0": {
+        "aws_solutions_constructs.core-2.38.0-py3-none-any.whl": {
+          "requires_dist": [
+            "aws-cdk-lib (<3.0.0,>=2.74.0)",
+            "constructs (<11.0.0,>=10.0.0)",
+            "jsii (<2.0.0,>=1.80.0)",
+            "publication (>=0.0.3)",
+            "typeguard (~=2.13.3)"
+          ],
+          "requires_python": "~=3.7"
+        }
+      },
       "2.4.0": {
         "aws_solutions_constructs.core-2.4.0-py3-none-any.whl": {
           "requires_dist": [
@@ -17716,6 +17756,18 @@
       },
       "4.5.0a7": {
         "cdk_cloudformation_datadog_monitors_monitor-4.5.0a7-py3-none-any.whl": "4.5.0a6@cdk_cloudformation_datadog_monitors_monitor-4.5.0a6-py3-none-any.whl"
+      },
+      "4.6.0a7": {
+        "cdk_cloudformation_datadog_monitors_monitor-4.6.0a7-py3-none-any.whl": {
+          "requires_dist": [
+            "aws-cdk-lib (<3.0.0,>=2.72.1)",
+            "constructs (<11.0.0,>=10.1.302)",
+            "jsii (<2.0.0,>=1.80.0)",
+            "publication (>=0.0.3)",
+            "typeguard (~=2.13.3)"
+          ],
+          "requires_python": "~=3.7"
+        }
       }
     }
   },
@@ -19221,6 +19273,9 @@
       },
       "0.2.0": {
         "chibi_lxc-0.2.0-py2.py3-none-any.whl": "0.0.2@chibi_lxc-0.0.2-py2.py3-none-any.whl"
+      },
+      "0.3.0": {
+        "chibi_lxc-0.3.0-py2.py3-none-any.whl": "0.0.2@chibi_lxc-0.0.2-py2.py3-none-any.whl"
       }
     }
   },
@@ -26530,6 +26585,50 @@
       }
     }
   },
+  "databricks-connect": {
+    "py2.py3": {
+      "13.0.0": {
+        "databricks_connect-13.0.0-py2.py3-none-any.whl": {
+          "provides_extras": [
+            "connect",
+            "ml",
+            "mllib",
+            "pandas_on_spark",
+            "sql"
+          ],
+          "requires_dist": [
+            "py4j (==0.10.9.7)",
+            "six",
+            "pandas (>=1.0.5)",
+            "pyarrow (>=1.0.0)",
+            "grpcio (>=1.48.1)",
+            "grpcio-status (>=1.48.1)",
+            "googleapis-common-protos (>=1.56.4)",
+            "numpy (>=1.15)",
+            "databricks-sdk (==0.0.7)",
+            "pandas (>=1.0.5) ; extra == 'connect'",
+            "pyarrow (>=1.0.0) ; extra == 'connect'",
+            "grpcio (>=1.48.1) ; extra == 'connect'",
+            "grpcio-status (>=1.48.1) ; extra == 'connect'",
+            "googleapis-common-protos (>=1.56.4) ; extra == 'connect'",
+            "numpy (>=1.15) ; extra == 'connect'",
+            "numpy (>=1.15) ; extra == 'ml'",
+            "numpy (>=1.15) ; extra == 'mllib'",
+            "pandas (>=1.0.5) ; extra == 'pandas_on_spark'",
+            "pyarrow (>=1.0.0) ; extra == 'pandas_on_spark'",
+            "numpy (>=1.15) ; extra == 'pandas_on_spark'",
+            "pandas (>=1.0.5) ; extra == 'sql'",
+            "pyarrow (>=1.0.0) ; extra == 'sql'",
+            "numpy (>=1.15) ; extra == 'sql'"
+          ],
+          "requires_python": ">=3.7"
+        }
+      },
+      "13.0.0b7": {
+        "databricks_connect-13.0.0b7-py2.py3-none-any.whl": "13.0.0@databricks_connect-13.0.0-py2.py3-none-any.whl"
+      }
+    }
+  },
   "databunnystoragedriver": {
     "py3": {
       "0.0.1.dev4": {
@@ -33216,6 +33315,9 @@
           ],
           "requires_python": ">=3.9,<3.12"
         }
+      },
+      "2.2.1": {
+        "dsp_tools-2.2.1-py3-none-any.whl": "2.2.0@dsp_tools-2.2.0-py3-none-any.whl"
       }
     }
   },
@@ -41889,6 +41991,30 @@
           "requires_python": ">=3.8"
         }
       },
+      "0.1.28": {
+        "gym_csle_intrusion_response_game-0.1.28-py3-none-any.whl": {
+          "provides_extras": [
+            "testing"
+          ],
+          "requires_dist": [
+            "gymnasium (>=0.27.1)",
+            "csle-common (>=0.1.28)",
+            "csle-attacker (>=0.1.28)",
+            "csle-defender (>=0.1.28)",
+            "csle-collector (>=0.1.28)",
+            "pytest (>=6.0) ; extra == 'testing'",
+            "pytest-cov (>=2.0) ; extra == 'testing'",
+            "pytest-mock (>=3.6.0) ; extra == 'testing'",
+            "mypy (>=0.910) ; extra == 'testing'",
+            "flake8 (>=3.9) ; extra == 'testing'",
+            "tox (>=3.24) ; extra == 'testing'",
+            "sphinx (>=5.3.0) ; extra == 'testing'",
+            "sphinxcontrib-napoleon (>=0.7) ; extra == 'testing'",
+            "sphinx-rtd-theme (>=1.1.1) ; extra == 'testing'"
+          ],
+          "requires_python": ">=3.8"
+        }
+      },
       "0.1.3": {
         "gym_csle_intrusion_response_game-0.1.3-py3-none-any.whl": {
           "provides_extras": [
@@ -43575,6 +43701,15 @@
       }
     }
   },
+  "humanizer-portugues": {
+    "py3": {
+      "2.4.1": {
+        "humanizer_portugues-2.4.1-py3-none-any.whl": {
+          "requires_python": ">=3.7,<4.0"
+        }
+      }
+    }
+  },
   "humidifier": {
     "py3": {
       "0.0.1": {
@@ -44557,6 +44692,23 @@
       "0.20": {
         "imodelsx-0.20-py3-none-any.whl": "0.10@imodelsx-0.10-py3-none-any.whl"
       },
+      "0.21": {
+        "imodelsx-0.21-py3-none-any.whl": {
+          "requires_dist": [
+            "datasets",
+            "imodels",
+            "numpy",
+            "pandas",
+            "scikit-learn",
+            "scipy",
+            "spacy",
+            "torch",
+            "tqdm",
+            "transformers[torch] (>=4.23.1)"
+          ],
+          "requires_python": ">=3.9"
+        }
+      },
       "0.3": {
         "imodelsx-0.3-py3-none-any.whl": "0.10@imodelsx-0.10-py3-none-any.whl"
       },
@@ -44906,6 +45058,39 @@
       },
       "0.2.7": {
         "inductor-0.2.7-py3-none-any.whl": "0.2.6@inductor-0.2.6-py3-none-any.whl"
+      },
+      "0.2.8": {
+        "inductor-0.2.8-py3-none-any.whl": {
+          "provides_extras": [
+            "mysql",
+            "postgres",
+            "postgresql",
+            "snowflake"
+          ],
+          "requires_dist": [
+            "typing-extensions (<5,>=4.4)",
+            "fastapi (<1,>=0.85.1)",
+            "uvicorn[standard] (<1,>=0.19)",
+            "aiofiles (<23,>=22.1)",
+            "apscheduler (<4,>=3.9.1)",
+            "pandas (<2,>=1.3.5)",
+            "typer[all] (<1,>=0.6.1)",
+            "watchgod (<1,>=0.8.2)",
+            "joblib (<2,>=1.2)",
+            "PyMySQL (<2,>=1.0.2)",
+            "Pillow (<10,>=9.2)",
+            "plotly (<6,>=5.11)",
+            "numpy (<2,>=1.21.6)",
+            "boto3 (<2,>=1.24.76)",
+            "psycopg2 (<3,>=2.9.5)",
+            "PyMySQL (<2,>=1.0.2) ; extra == 'mysql'",
+            "psycopg2 (<3,>=2.9.5) ; extra == 'postgres'",
+            "psycopg2 (<3,>=2.9.5) ; extra == 'postgresql'",
+            "snowflake-connector-python (<4,>=3.0.0) ; extra == 'snowflake'",
+            "pyarrow (<10.1.0,>=10.0.1) ; extra == 'snowflake'"
+          ],
+          "requires_python": ">=3.7"
+        }
       }
     }
   },
@@ -56777,6 +56962,19 @@
       }
     }
   },
+  "musical-notes": {
+    "py3": {
+      "0.1.0": {
+        "musical_notes-0.1.0-py3-none-any.whl": {
+          "requires_dist": [
+            "rich (>=13.3.4,<14.0.0)",
+            "typer (>=0.7.0,<0.8.0)"
+          ],
+          "requires_python": ">=3.11,<4.0"
+        }
+      }
+    }
+  },
   "mwa-hyperbeam": {
     "cp310": {
       "0.5.0": {
@@ -57364,6 +57562,9 @@
       },
       "1.2.2": {
         "netbox_inventory-1.2.2-py3-none-any.whl": "1.0.2@netbox_inventory-1.0.2-py3-none-any.whl"
+      },
+      "1.2.3": {
+        "netbox_inventory-1.2.3-py3-none-any.whl": "1.0.2@netbox_inventory-1.0.2-py3-none-any.whl"
       }
     }
   },
@@ -58700,6 +58901,32 @@
       },
       "0.0.6": {
         "ntpfixtime-0.0.6-py2.py3-none-any.whl": "0.0.1@ntpfixtime-0.0.1-py2.py3-none-any.whl"
+      }
+    }
+  },
+  "nua-orchestrator": {
+    "py3": {
+      "0.5.11": {
+        "nua_orchestrator-0.5.11-py3-none-any.whl": {
+          "requires_dist": [
+            "SQLAlchemy (>=1.4.36,<2.0.0)",
+            "SQLAlchemy-serializer (>=1.4.1,<2.0.0)",
+            "docker (>=6,<7)",
+            "nua-agent (==0.5.11)",
+            "nua-autobuild (==0.5.11)",
+            "nua-build (==0.5.11)",
+            "nua-lib (==0.5.11)",
+            "paramiko (>=2.11.0,<3.0.0)",
+            "psycopg2-binary (>=2.9.3,<3.0.0)",
+            "python-dotenv (>=0.21,<0.22)",
+            "pyyaml (>=6,<7)",
+            "setuptools",
+            "tomli (>=2,<3)",
+            "typer[all] (>=0.7.0,<0.8.0)",
+            "wheel"
+          ],
+          "requires_python": ">=3.10,<4.0"
+        }
       }
     }
   },
@@ -61725,6 +61952,9 @@
       },
       "12.0.1.0.1.99.dev4": {
         "odoo12_addon_stock_orderpoint_generator-12.0.1.0.1.99.dev4-py3-none-any.whl": "12.0.1.0.0.99.dev1@odoo12_addon_stock_orderpoint_generator-12.0.1.0.0.99.dev1-py3-none-any.whl"
+      },
+      "12.0.1.0.1.99.dev5": {
+        "odoo12_addon_stock_orderpoint_generator-12.0.1.0.1.99.dev5-py3-none-any.whl": "12.0.1.0.0.99.dev1@odoo12_addon_stock_orderpoint_generator-12.0.1.0.0.99.dev1-py3-none-any.whl"
       }
     }
   },
@@ -62042,6 +62272,9 @@
           ],
           "requires_python": ">=3.6"
         }
+      },
+      "14.0.1.0.1.dev3": {
+        "odoo14_addon_fleet_vehicle_pivot_graph-14.0.1.0.1.dev3-py3-none-any.whl": "14.0.1.0.1.dev2@odoo14_addon_fleet_vehicle_pivot_graph-14.0.1.0.1.dev2-py3-none-any.whl"
       }
     }
   },
@@ -66854,6 +67087,14 @@
           ],
           "requires_python": ">=3.7.1,<4.0.0"
         }
+      },
+      "0.8.0": {
+        "pipen_cli_run-0.8.0-py3-none-any.whl": {
+          "requires_dist": [
+            "pipen-args (>=0.9.4,<0.10.0)"
+          ],
+          "requires_python": ">=3.8,<4.0"
+        }
       }
     }
   },
@@ -67272,6 +67513,25 @@
             "zope.schema",
             "plone.subrequest ; extra == 'test'",
             "zope.tal ; extra == 'test'"
+          ],
+          "requires_python": ">=3.8"
+        }
+      },
+      "1.1.1": {
+        "plone.base-1.1.1-py3-none-any.whl": {
+          "provides_extras": [
+            "test"
+          ],
+          "requires_dist": [
+            "setuptools",
+            "plone.batching",
+            "plone.registry",
+            "plone.schema",
+            "plone.z3cform",
+            "Products.CMFCore",
+            "Products.CMFDynamicViewFTI",
+            "plone.subrequest ; extra == 'test'",
+            "plone.portlets ; extra == 'test'"
           ],
           "requires_python": ">=3.8"
         }
@@ -68505,6 +68765,24 @@
       },
       "0.0.2": {
         "pprint_star_design_pattern-0.0.2-py3-none-any.whl": "0.0.1@pprint_star_design_pattern-0.0.1-py3-none-any.whl"
+      }
+    }
+  },
+  "prauto": {
+    "py3": {
+      "0.12": {
+        "PRauto-0.12-py3-none-any.whl": {
+          "requires_dist": [
+            "biopython (>=1.79)",
+            "chembl-webresource-client (>=0.10.8)",
+            "matplotlib (>=3.7.1)",
+            "pandas (>=1.5.3)",
+            "pymol (>=2.5.0)",
+            "requests (>=2.28.1)",
+            "tqdm (>=4.65.0)"
+          ],
+          "requires_python": ">=3"
+        }
       }
     }
   },
@@ -70379,6 +70657,33 @@
       }
     }
   },
+  "pycocotools-stubs": {
+    "py3": {
+      "0.0.1": {
+        "pycocotools_stubs-0.0.1-py3-none-any.whl": {
+          "provides_extras": [
+            "build",
+            "dev"
+          ],
+          "requires_dist": [
+            "pycocotools>=2.0.6",
+            "hatch; extra == 'build'",
+            "pip-tools; extra == 'dev'",
+            "pre-commit; extra == 'dev'",
+            "pyright; extra == 'dev'",
+            "ruff; extra == 'dev'"
+          ],
+          "requires_python": ">=3.8"
+        }
+      },
+      "0.0.2": {
+        "pycocotools_stubs-0.0.2-py3-none-any.whl": "0.0.1@pycocotools_stubs-0.0.1-py3-none-any.whl"
+      },
+      "0.0.3": {
+        "pycocotools_stubs-0.0.3-py3-none-any.whl": "0.0.1@pycocotools_stubs-0.0.1-py3-none-any.whl"
+      }
+    }
+  },
   "pyconus-test4": {
     "py3": {
       "0.0.1": {
@@ -71816,6 +72121,9 @@
       },
       "2.5.0": {
         "pymince-2.5.0-py3-none-any.whl": "1.0.1@pymince-1.0.1-py3-none-any.whl"
+      },
+      "2.6.0": {
+        "pymince-2.6.0-py3-none-any.whl": "1.0.1@pymince-1.0.1-py3-none-any.whl"
       }
     }
   },
@@ -72507,6 +72815,9 @@
           ],
           "requires_python": ">=3.10"
         }
+      },
+      "0.24.1": {
+        "pyteal-0.24.1-py3-none-any.whl": "0.24.0@pyteal-0.24.0-py3-none-any.whl"
       },
       "0.5": {
         "pyteal-0.5-py3-none-any.whl": {
@@ -83713,6 +84024,9 @@
       },
       "1.3.5": {
         "telus_bulk-1.3.5-py3-none-any.whl": "1.0.1@telus_bulk-1.0.1-py3-none-any.whl"
+      },
+      "1.3.6": {
+        "telus_bulk-1.3.6-py3-none-any.whl": "1.0.1@telus_bulk-1.0.1-py3-none-any.whl"
       }
     }
   },
@@ -86155,6 +86469,21 @@
       "2023.4.13": {
         "torch_model_archiver_nightly-2023.4.13-py3-none-any.whl": "2023.1.24@torch_model_archiver_nightly-2023.1.24-py3-none-any.whl"
       },
+      "2023.4.14": {
+        "torch_model_archiver_nightly-2023.4.14-py3-none-any.whl": "2023.1.24@torch_model_archiver_nightly-2023.1.24-py3-none-any.whl"
+      },
+      "2023.4.15": {
+        "torch_model_archiver_nightly-2023.4.15-py3-none-any.whl": "2023.1.24@torch_model_archiver_nightly-2023.1.24-py3-none-any.whl"
+      },
+      "2023.4.16": {
+        "torch_model_archiver_nightly-2023.4.16-py3-none-any.whl": "2023.1.24@torch_model_archiver_nightly-2023.1.24-py3-none-any.whl"
+      },
+      "2023.4.17": {
+        "torch_model_archiver_nightly-2023.4.17-py3-none-any.whl": "2023.1.24@torch_model_archiver_nightly-2023.1.24-py3-none-any.whl"
+      },
+      "2023.4.18": {
+        "torch_model_archiver_nightly-2023.4.18-py3-none-any.whl": "2023.1.24@torch_model_archiver_nightly-2023.1.24-py3-none-any.whl"
+      },
       "2023.4.2": {
         "torch_model_archiver_nightly-2023.4.2-py3-none-any.whl": "2023.1.24@torch_model_archiver_nightly-2023.1.24-py3-none-any.whl"
       },
@@ -87714,6 +88043,9 @@
       },
       "5.0.0": {
         "videomass-5.0.0-py3-none-any.whl": "4.0.10@videomass-4.0.10-py3-none-any.whl"
+      },
+      "5.0.1": {
+        "videomass-5.0.1-py3-none-any.whl": "4.0.10@videomass-4.0.10-py3-none-any.whl"
       }
     }
   },
@@ -89165,6 +89497,26 @@
       },
       "0.1.7": {
         "waffle_hub-0.1.7-py3-none-any.whl": "0.1.6@waffle_hub-0.1.6-py3-none-any.whl"
+      },
+      "0.1.8": {
+        "waffle_hub-0.1.8-py3-none-any.whl": {
+          "requires_dist": [
+            "tqdm",
+            "tabulate (==0.9.0)",
+            "pydantic",
+            "typer",
+            "rich",
+            "onnxruntime",
+            "tbparse (==0.0.7)",
+            "torch (==1.13.1)",
+            "torchaudio (==0.13.1)",
+            "torchvision (==0.14.1)",
+            "waffle-utils (>=0.3.0)",
+            "ultralytics (==8.0.72)",
+            "sentry-sdk"
+          ],
+          "requires_python": ">=3.9"
+        }
       }
     }
   },
