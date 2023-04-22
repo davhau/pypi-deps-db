@@ -16692,7 +16692,8 @@
     "1.29.114": "1.29.42",
     "1.29.115": "1.29.42",
     "1.29.116": "1.29.42",
-    "1.29.117": "1.29.42"
+    "1.29.117": "1.29.42",
+    "1.29.118": "1.29.42"
   },
   "brainfm": {
     "0.1.1": {
@@ -23839,6 +23840,28 @@
       "27": {
         "install_requires": [
           "pycryptodomex<3.10",
+          "pysnmp<5,>=4.4",
+          "typing_extensions~=4.0.0"
+        ],
+        "tests_require": [
+          "pytest",
+          "pytest-cov"
+        ],
+        "python_requires": [
+          "~=3.7"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "5.0.1": {
+      "27": {
+        "install_requires": [
+          "pycryptodomex<3.10",
+          "pyasn1==0.4.8",
           "pysnmp<5,>=4.4",
           "typing_extensions~=4.0.0"
         ],
@@ -31725,6 +31748,200 @@
           "wandb\n"
         ]
       }
+    },
+    "3.3.0": {
+      "36": {
+        "install_requires": [
+          "numpy",
+          "pillow",
+          "boto3",
+          "click",
+          "pathos",
+          "humbug>=0.3.1",
+          "tqdm",
+          "numcodecs",
+          "pyjwt"
+        ],
+        "extras_require": {
+          "audio": [],
+          "audio:python_version >= \"3.7\" or sys_platform != \"win32\"": [
+            "av>=8.1.0"
+          ],
+          "video": [],
+          "video:python_version >= \"3.7\" or sys_platform != \"win32\"": [
+            "av>=8.1.0"
+          ],
+          "av": [],
+          "av:python_version >= \"3.7\" or sys_platform != \"win32\"": [
+            "av>=8.1.0"
+          ],
+          "gcp": [
+            "google-cloud-storage~=1.42.0",
+            "google-auth~=2.0.1",
+            "google-auth-oauthlib~=0.4.5"
+          ],
+          "dicom": [
+            "pydicom",
+            "nibabel"
+          ],
+          "medical": [
+            "pydicom",
+            "nibabel"
+          ],
+          "visualizer": [
+            "IPython",
+            "flask"
+          ],
+          "gdrive": [
+            "google-api-python-client~=2.31.0",
+            "oauth2client~=4.1.3",
+            "google-auth~=2.0.1",
+            "google-auth-oauthlib~=0.4.5"
+          ],
+          "point_cloud": [
+            "laspy"
+          ],
+          "all": [
+            "IPython",
+            "google-cloud-storage~=1.42.0",
+            "google-api-python-client~=2.31.0",
+            "pydicom",
+            "laspy",
+            "nibabel",
+            "google-auth~=2.0.1",
+            "oauth2client~=4.1.3",
+            "flask",
+            "google-auth-oauthlib~=0.4.5",
+            "libdeeplake==0.0.47"
+          ],
+          "all:python_version >= \"3.7\" or sys_platform != \"win32\"": [
+            "av>=8.1.0"
+          ],
+          "enterprise": [
+            "libdeeplake==0.0.47",
+            "pyjwt"
+          ],
+          ":python_version >= \"3.7\" and sys_platform != \"win32\"": [
+            "aioboto3>=10.4.0",
+            "nest_asyncio"
+          ]
+        },
+        "tests_require": [
+          "pytest\n",
+          "pytest-cases\n",
+          "pytest-benchmark\n",
+          "pytest-cov\n",
+          "pytest-timeout\n",
+          "\n",
+          "mypy\n",
+          "black\n",
+          "darglint\n",
+          "\n",
+          "typing_extensions>=3.10.0.0\n",
+          "types-requests\n",
+          "types-click\n",
+          "boto3-stubs[essential]\n",
+          "\n",
+          "lz4\n",
+          "rich\n",
+          "wandb\n"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": {
+        "install_requires": [
+          "numpy",
+          "pillow",
+          "boto3",
+          "click",
+          "pathos",
+          "humbug>=0.3.1",
+          "tqdm",
+          "numcodecs",
+          "pyjwt"
+        ],
+        "extras_require": {
+          "audio": [],
+          "audio:python_version >= \"3.7\" or sys_platform != \"win32\"": [
+            "av>=8.1.0"
+          ],
+          "video": [],
+          "video:python_version >= \"3.7\" or sys_platform != \"win32\"": [
+            "av>=8.1.0"
+          ],
+          "av": [],
+          "av:python_version >= \"3.7\" or sys_platform != \"win32\"": [
+            "av>=8.1.0"
+          ],
+          "gcp": [
+            "google-cloud-storage~=1.42.0",
+            "google-auth~=2.0.1",
+            "google-auth-oauthlib~=0.4.5"
+          ],
+          "dicom": [
+            "pydicom",
+            "nibabel"
+          ],
+          "medical": [
+            "pydicom",
+            "nibabel"
+          ],
+          "visualizer": [
+            "IPython",
+            "flask"
+          ],
+          "gdrive": [
+            "google-api-python-client~=2.31.0",
+            "oauth2client~=4.1.3",
+            "google-auth~=2.0.1",
+            "google-auth-oauthlib~=0.4.5"
+          ],
+          "point_cloud": [
+            "laspy"
+          ],
+          "all": [
+            "IPython",
+            "google-cloud-storage~=1.42.0",
+            "google-api-python-client~=2.31.0",
+            "pydicom",
+            "laspy",
+            "nibabel",
+            "google-auth~=2.0.1",
+            "oauth2client~=4.1.3",
+            "flask",
+            "google-auth-oauthlib~=0.4.5"
+          ],
+          "all:python_version >= \"3.7\" or sys_platform != \"win32\"": [
+            "av>=8.1.0"
+          ],
+          ":python_version >= \"3.7\" and sys_platform != \"win32\"": [
+            "aioboto3>=10.4.0",
+            "nest_asyncio"
+          ]
+        },
+        "tests_require": [
+          "pytest\n",
+          "pytest-cases\n",
+          "pytest-benchmark\n",
+          "pytest-cov\n",
+          "pytest-timeout\n",
+          "\n",
+          "mypy\n",
+          "black\n",
+          "darglint\n",
+          "\n",
+          "typing_extensions>=3.10.0.0\n",
+          "types-requests\n",
+          "types-click\n",
+          "boto3-stubs[essential]\n",
+          "\n",
+          "lz4\n",
+          "rich\n",
+          "wandb\n"
+        ]
+      }
     }
   },
   "deepnets": {
@@ -36790,7 +37007,9 @@
     "0.15.2": "0.12.0",
     "0.15.3": "0.12.0",
     "0.15.4": "0.12.0",
-    "0.15.5": "0.12.0"
+    "0.15.5": "0.12.0",
+    "0.16.0": "0.1.3",
+    "0.16.1": "0.1.3"
   },
   "djt-nvu": {
     "0.9.0": {
@@ -39217,7 +39436,32 @@
       "39": "36",
       "310": "36"
     },
-    "0.5.9": "0.5.8"
+    "0.5.9": "0.5.8",
+    "0.6.0": {
+      "36": {
+        "install_requires": [
+          "PyYAML>=3.0",
+          "bokeh",
+          "h5py>=3.4.0",
+          "ipywidgets<8.0,>=7.0",
+          "matplotlib>=3.0",
+          "networkx>=2.0",
+          "numba>=0.50",
+          "numexpr>=2.0",
+          "numpy>=1.0",
+          "pandas>=1.0.5",
+          "scipy>=1.4",
+          "seaborn>=0.10",
+          "six>=1.0",
+          "sympy>=1.5",
+          "tables>=3.6"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "exceptional-python": {
     "0.2.1": {
@@ -94929,7 +95173,8 @@
     "0.1.2": "0.1.0",
     "0.1.1": "0.1.0",
     "0.1.3": "0.1.0",
-    "0.1.4": "0.1.0"
+    "0.1.4": "0.1.0",
+    "0.1.5": "0.1.0"
   },
   "stolosctl": {
     "0.2.1": {
