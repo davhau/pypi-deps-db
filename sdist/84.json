@@ -14902,6 +14902,24 @@
       "38": "36",
       "39": "36",
       "310": "36"
+    },
+    "2.0.295": {
+      "36": {
+        "install_requires": [
+          "aws-cdk-lib<3.0.0,>=2.76.0",
+          "constructs<11.0.0,>=10.2.5",
+          "jsii<2.0.0,>=1.80.0",
+          "publication>=0.0.3",
+          "typeguard~=2.13.3"
+        ],
+        "python_requires": [
+          "~=3.7"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
     }
   },
   "celpy": {
@@ -16535,7 +16553,8 @@
       "39": "27",
       "310": "27"
     },
-    "2023.1004": "2023.1001"
+    "2023.1004": "2023.1001",
+    "2023.1005": "2023.1001"
   },
   "cost2fitness": {
     "1.0.0": {
@@ -65389,17 +65408,57 @@
     "1.0.9": "1.0.7"
   },
   "tapper": {
-    "0.1": {
-      "27": {
+    "2023.1.2": {
+      "36": {
         "install_requires": [
-          "setuptools",
-          "jinja2",
-          "html"
+          "typing_extensions>=4.3.0"
+        ],
+        "extras_require": {
+          "all": [
+            "tapper[tray]",
+            "tapper[img]"
+          ],
+          "tray": [
+            "pillow>=9.4.0",
+            "pystray>=0.19.4"
+          ],
+          "img": [
+            "pillow>=9.4.0",
+            "mss>=7.0.1",
+            "numpy>=1.24.1",
+            "opencv-python>=4.7.0.68"
+          ],
+          "testing": [
+            "tapper[all]",
+            "pytest>=7.1",
+            "pytest-cov>=3",
+            "mypy>=0.971",
+            "flake8>=5",
+            "tox>=3.25",
+            "pre-commit>=2.20"
+          ],
+          "dev": [
+            "tapper[testing]",
+            "build",
+            "twine"
+          ],
+          ":sys_platform == \"win32\"": [
+            "winput>=1.5.0",
+            "pywin32>=305"
+          ],
+          ":sys_platform == \"linux\"": [
+            "evdev>=1.6.0"
+          ]
+        },
+        "python_requires": [
+          ">=3.10"
         ]
-      }
-    },
-    "0.2": "0.1",
-    "0.3": "0.1"
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "tar-test": {
     "0.1": {
