@@ -35695,7 +35695,8 @@
     "1.0.13": "1.0.7",
     "1.0.14": "1.0.7",
     "1.0.15": "1.0.7",
-    "1.0.16": "1.0.7"
+    "1.0.16": "1.0.7",
+    "1.0.17": "1.0.7"
   },
   "ipython-unittest": {
     "0.2.4": {
@@ -39125,6 +39126,73 @@
         },
         "python_requires": [
           ">=3.7"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "2.0.2": {
+      "36": {
+        "install_requires": [
+          "numpy>=1.17.2",
+          "torch>=1.11.0",
+          "fsspec[http]>2021.06.0",
+          "packaging>=17.1",
+          "typing-extensions>=4.0.0",
+          "lightning-utilities>=0.7.0"
+        ],
+        "setup_requires": [
+          "wheel"
+        ],
+        "extras_require": {
+          "strategies": [],
+          "strategies:platform_system != \"Windows\"": [
+            "deepspeed>=0.6.0"
+          ],
+          "test": [
+            "coverage==6.5.0",
+            "pytest==7.2.0",
+            "pytest-cov==4.0.0",
+            "pytest-rerunfailures==10.3",
+            "click==8.1.3",
+            "tensorboardX>=2.2"
+          ],
+          "examples": [
+            "torchvision>=0.10.0",
+            "torchmetrics>=0.10.0",
+            "lightning-utilities>=0.8.0"
+          ],
+          "deepspeed": [],
+          "deepspeed:platform_system != \"Windows\"": [
+            "deepspeed>=0.6.0"
+          ],
+          "all": [
+            "torchvision>=0.10.0",
+            "torchmetrics>=0.10.0",
+            "lightning-utilities>=0.8.0"
+          ],
+          "all:platform_system != \"Windows\"": [
+            "deepspeed>=0.6.0"
+          ],
+          "dev": [
+            "torchvision>=0.10.0",
+            "torchmetrics>=0.10.0",
+            "lightning-utilities>=0.8.0",
+            "coverage==6.5.0",
+            "pytest==7.2.0",
+            "pytest-cov==4.0.0",
+            "pytest-rerunfailures==10.3",
+            "click==8.1.3",
+            "tensorboardX>=2.2"
+          ],
+          "dev:platform_system != \"Windows\"": [
+            "deepspeed>=0.6.0"
+          ]
+        },
+        "python_requires": [
+          ">=3.8"
         ]
       },
       "37": "36",
@@ -50119,7 +50187,10 @@
     "0.1.601": "0.1.587",
     "0.1.602": "0.1.587",
     "0.1.603": "0.1.587",
-    "0.1.604": "0.1.587"
+    "0.1.604": "0.1.587",
+    "0.1.605": "0.1.587",
+    "0.1.606": "0.1.587",
+    "0.1.607": "0.1.587"
   },
   "perconet": {
     "0.1.1": {
@@ -67654,6 +67725,114 @@
       "38": "36",
       "39": "36",
       "310": "36"
+    },
+    "2.0.2": {
+      "36": {
+        "install_requires": [
+          "numpy>=1.17.2",
+          "torch>=1.11.0",
+          "tqdm>=4.57.0",
+          "PyYAML>=5.4",
+          "fsspec[http]>2021.06.0",
+          "torchmetrics>=0.7.0",
+          "packaging>=17.1",
+          "typing-extensions>=4.0.0",
+          "lightning-utilities>=0.7.0"
+        ],
+        "setup_requires": [
+          "wheel"
+        ],
+        "extras_require": {
+          "strategies": [
+            "deepspeed>=0.6.0"
+          ],
+          "test": [
+            "coverage==6.5.0",
+            "pytest==7.2.0",
+            "pytest-cov==4.0.0",
+            "pytest-forked==1.4.0",
+            "pytest-rerunfailures==10.3",
+            "cloudpickle>=1.3",
+            "scikit-learn>0.22.1",
+            "onnx<1.14.0",
+            "onnxruntime<1.14.0",
+            "psutil<5.9.5",
+            "pandas>1.0",
+            "fastapi<0.87.0",
+            "uvicorn<0.19.1",
+            "tensorboard>=2.9.1",
+            "protobuf<=3.20.1"
+          ],
+          "extra": [
+            "matplotlib>3.1",
+            "omegaconf>=2.0.5",
+            "hydra-core>=1.0.5",
+            "jsonargparse[signatures]>=4.18.0",
+            "rich>=12.3.0",
+            "tensorboardX>=2.2"
+          ],
+          "examples": [
+            "torchvision>=0.11.1",
+            "gym[classic_control]>=0.17.0",
+            "ipython[all]<8.7.1",
+            "torchmetrics>=0.10.0",
+            "lightning-utilities>=0.7.0"
+          ],
+          "deepspeed": [
+            "deepspeed>=0.6.0"
+          ],
+          "all": [
+            "matplotlib>3.1",
+            "omegaconf>=2.0.5",
+            "hydra-core>=1.0.5",
+            "jsonargparse[signatures]>=4.18.0",
+            "rich>=12.3.0",
+            "tensorboardX>=2.2",
+            "deepspeed>=0.6.0",
+            "torchvision>=0.11.1",
+            "gym[classic_control]>=0.17.0",
+            "ipython[all]<8.7.1",
+            "torchmetrics>=0.10.0",
+            "lightning-utilities>=0.7.0"
+          ],
+          "dev": [
+            "matplotlib>3.1",
+            "omegaconf>=2.0.5",
+            "hydra-core>=1.0.5",
+            "jsonargparse[signatures]>=4.18.0",
+            "rich>=12.3.0",
+            "tensorboardX>=2.2",
+            "deepspeed>=0.6.0",
+            "torchvision>=0.11.1",
+            "gym[classic_control]>=0.17.0",
+            "ipython[all]<8.7.1",
+            "torchmetrics>=0.10.0",
+            "lightning-utilities>=0.7.0",
+            "coverage==6.5.0",
+            "pytest==7.2.0",
+            "pytest-cov==4.0.0",
+            "pytest-forked==1.4.0",
+            "pytest-rerunfailures==10.3",
+            "cloudpickle>=1.3",
+            "scikit-learn>0.22.1",
+            "onnx<1.14.0",
+            "onnxruntime<1.14.0",
+            "psutil<5.9.5",
+            "pandas>1.0",
+            "fastapi<0.87.0",
+            "uvicorn<0.19.1",
+            "tensorboard>=2.9.1",
+            "protobuf<=3.20.1"
+          ]
+        },
+        "python_requires": [
+          ">=3.8"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
     }
   },
   "pytriplet": {
@@ -67694,22 +67873,6 @@
       "38": "36",
       "39": "36",
       "310": "36"
-    }
-  },
-  "pyuammd": {
-    "0.1": {
-      "27": {
-        "install_requires": [
-          "deepdiff",
-          "jsbeautifier",
-          "pybind11"
-        ]
-      },
-      "36": "27",
-      "37": "27",
-      "38": "27",
-      "39": "27",
-      "310": "27"
     }
   },
   "pyvariable": {
