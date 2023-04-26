@@ -18803,7 +18803,23 @@
     "6.0.0": "1.0.0",
     "7.0.0": "1.0.0",
     "7.0.1": "1.0.0",
-    "7.1.0": "1.0.0"
+    "7.1.0": "1.0.0",
+    "8.0.0": {
+      "27": {
+        "install_requires": [
+          "cryptography",
+          "requests"
+        ],
+        "python_requires": [
+          ">=3.10"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "bda-chatbot": {
     "0.0.1": {
@@ -73638,6 +73654,47 @@
         "install_requires": [
           "transformers>=4.28.0",
           "optimum"
+        ],
+        "extras_require": {
+          "tests": [
+            "pytest",
+            "psutil",
+            "parameterized",
+            "GitPython",
+            "sentencepiece",
+            "datasets"
+          ],
+          "quality": [
+            "black",
+            "ruff",
+            "isort",
+            "hf_doc_builder"
+          ],
+          "neuron": [
+            "wheel",
+            "torch-neuron==1.12.1.*",
+            "neuron-cc[tensorflow]",
+            "protobuf",
+            "torchvision"
+          ],
+          "neuronx": [
+            "neuronx-cc==2.*",
+            "torch-neuronx",
+            "torchvision"
+          ]
+        }
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "0.0.3": {
+      "36": {
+        "install_requires": [
+          "transformers>=4.28.0",
+          "optimum",
+          "huggingface_hub>=0.14.0"
         ],
         "extras_require": {
           "tests": [
