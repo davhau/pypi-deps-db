@@ -8088,7 +8088,8 @@
     "1.29.118": "1.29.42",
     "1.29.119": "1.29.42",
     "1.29.120": "1.29.42",
-    "1.29.121": "1.29.42"
+    "1.29.121": "1.29.42",
+    "1.29.122": "1.29.42"
   },
   "bottender": {
     "0.0.1": {
@@ -23020,6 +23021,27 @@
     },
     "0.0.2": "0.0.1"
   },
+  "findsystemfontsfilename": {
+    "0.0.1": {
+      "36": {
+        "extras_require": {
+          ":platform_system == \"Windows\"": [
+            "comtypes"
+          ],
+          ":platform_system == \"Darwin\"": [
+            "pyobjc-framework-CoreText"
+          ]
+        },
+        "python_requires": [
+          ">=3.8"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
+  },
   "fiona": {
     "0.10": "0.5",
     "0.12": {
@@ -37882,7 +37904,72 @@
       "39": "27",
       "310": "27"
     },
-    "8.5.13": "8.5.12"
+    "8.5.13": "8.5.12",
+    "8.5.14": {
+      "27": {
+        "install_requires": [
+          "marshmallow<4.0,>=3.13.0",
+          "typing-inspect<1.0,>=0.8.0"
+        ],
+        "extras_require": {
+          "dev:implementation_name != \"pypy\"": [
+            "pytest-mypy-plugins>=1.2.0"
+          ],
+          "tests": [
+            "pytest>=5.4"
+          ],
+          "lint": [
+            "pre-commit~=2.17"
+          ],
+          "enum:python_version < \"3.7\"": [
+            "marshmallow-enum"
+          ],
+          "union": [
+            "typeguard<4.0.0,>=2.4.1"
+          ],
+          "docs": [
+            "sphinx"
+          ],
+          "dev:python_version < \"3.7\"": [
+            "marshmallow-enum"
+          ],
+          "enum": [],
+          "dev": [
+            "typeguard<4.0.0,>=2.4.1",
+            "pre-commit~=2.17",
+            "sphinx",
+            "pytest>=5.4"
+          ],
+          "tests:implementation_name != \"pypy\"": [
+            "pytest-mypy-plugins>=1.2.0"
+          ],
+          ":python_version < \"3.11\" and python_version >= \"3.7\"": [
+            "typing-extensions>=4.2.0"
+          ],
+          "enum:python_version >= \"3.7\"": [
+            "marshmallow<4.0,>=3.18.0"
+          ],
+          "dev:python_version >= \"3.7\"": [
+            "marshmallow<4.0,>=3.18.0"
+          ],
+          ":python_version < \"3.8\"": [
+            "typing-extensions>=3.7.2"
+          ],
+          ":python_version == \"3.6\"": [
+            "dataclasses",
+            "types-dataclasses<0.6.4"
+          ]
+        },
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "mashape-analytics": {
     "1.0.5": {
@@ -45940,7 +46027,10 @@
     "0.7.418": "0.7.374",
     "0.7.419": "0.7.374",
     "0.7.420": "0.7.374",
-    "0.7.421": "0.7.374"
+    "0.7.421": "0.7.374",
+    "0.7.422": "0.7.374",
+    "0.7.423": "0.7.374",
+    "0.7.424": "0.7.374"
   },
   "perfting.setuptools": {
     "1.0": {
@@ -56547,6 +56637,20 @@
       "27": {
         "install_requires": [
           "radon==1.4"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
+  },
+  "raname": {
+    "0.1": {
+      "27": {
+        "install_requires": [
+          "requests>=2.23.0"
         ]
       },
       "36": "27",

@@ -1748,6 +1748,16 @@
       "0.1.0": {
         "aqueduct_utility-0.1.0-py3-none-any.whl": "0.0.1@aqueduct_utility-0.0.1-py3-none-any.whl"
       },
+      "0.10.0": {
+        "aqueduct_utility-0.10.0-py3-none-any.whl": {
+          "requires_dist": [
+            "aws-sso-lib",
+            "boto3",
+            "typer[all]"
+          ],
+          "requires_python": ">=3.7"
+        }
+      },
       "0.5.0": {
         "aqueduct_utility-0.5.0-py3-none-any.whl": {
           "requires_dist": [
@@ -1812,23 +1822,16 @@
         "aqueduct_utility-0.8.5-py3-none-any.whl": "0.5.4@aqueduct_utility-0.5.4-py3-none-any.whl"
       },
       "0.9.1": {
-        "aqueduct_utility-0.9.1-py3-none-any.whl": {
-          "requires_dist": [
-            "aws-sso-lib",
-            "boto3",
-            "typer[all]"
-          ],
-          "requires_python": ">=3.7"
-        }
+        "aqueduct_utility-0.9.1-py3-none-any.whl": "0.10.0@aqueduct_utility-0.10.0-py3-none-any.whl"
       },
       "0.9.2": {
-        "aqueduct_utility-0.9.2-py3-none-any.whl": "0.9.1@aqueduct_utility-0.9.1-py3-none-any.whl"
+        "aqueduct_utility-0.9.2-py3-none-any.whl": "0.10.0@aqueduct_utility-0.10.0-py3-none-any.whl"
       },
       "0.9.3": {
-        "aqueduct_utility-0.9.3-py3-none-any.whl": "0.9.1@aqueduct_utility-0.9.1-py3-none-any.whl"
+        "aqueduct_utility-0.9.3-py3-none-any.whl": "0.10.0@aqueduct_utility-0.10.0-py3-none-any.whl"
       },
       "0.9.4": {
-        "aqueduct_utility-0.9.4-py3-none-any.whl": "0.9.1@aqueduct_utility-0.9.1-py3-none-any.whl"
+        "aqueduct_utility-0.9.4-py3-none-any.whl": "0.10.0@aqueduct_utility-0.10.0-py3-none-any.whl"
       }
     }
   },
@@ -35298,6 +35301,19 @@
           "requires_python": ">= 3.7"
         }
       },
+      "1.27.122": {
+        "awscli-1.27.122-py3-none-any.whl": {
+          "requires_dist": [
+            "botocore (==1.29.122)",
+            "docutils (<0.17,>=0.10)",
+            "s3transfer (<0.7.0,>=0.6.0)",
+            "PyYAML (<5.5,>=3.10)",
+            "colorama (<0.4.5,>=0.2.5)",
+            "rsa (<4.8,>=3.1.2)"
+          ],
+          "requires_python": ">= 3.7"
+        }
+      },
       "1.27.13": {
         "awscli-1.27.13-py3-none-any.whl": {
           "requires_dist": [
@@ -39419,6 +39435,51 @@
           "requires_python": ">=3.7,<3.9"
         }
       },
+      "1.50.0.post1": {
+        "azureml_automl_runtime-1.50.0.post1-py3-none-any.whl": {
+          "provides_extras": [
+            "catboost",
+            "test"
+          ],
+          "requires_dist": [
+            "azureml-automl-core (~=1.50.0)",
+            "azureml-training-tabular (~=1.50.0)",
+            "azureml-dataset-runtime[fuse,pandas] (~=1.50.0)",
+            "dill (<0.4.0,>=0.2.8)",
+            "gensim (<3.9.0)",
+            "smart-open (<=1.9.0)",
+            "lightgbm (<=3.2.1,>=2.0.11)",
+            "pandas (==1.1.5)",
+            "protobuf (<=3.20.3)",
+            "psutil (<6.0.0,>=5.2.2)",
+            "scipy (<=1.5.3,>=1.0.0)",
+            "scikit-learn (<0.23.0,>=0.19.0)",
+            "sklearn-pandas (<=1.7.0,>=1.4.0)",
+            "statsmodels (<0.12,>=0.11.0)",
+            "skl2onnx (==1.4.9)",
+            "onnxmltools (==1.4.1)",
+            "keras2onnx (<=1.6.0,>=1.4.0)",
+            "onnxconverter-common (<=1.6.0,>=1.4.2)",
+            "onnxruntime (<=1.11.1,>=1.3.0)",
+            "pmdarima (==1.8.0)",
+            "joblib (==1.2.0)",
+            "boto3 (<=1.20.19)",
+            "botocore (<=1.23.19)",
+            "dataclasses (<=0.8,>=0.6)",
+            "arch (<=5.3.1)",
+            "dotnetcore2 (<4.0.0,>=3.0.0)",
+            "onnx (<=1.11.0,>=1.6.0) ; python_version < \"3.7\"",
+            "numpy (<=1.21.6,>=1.16.0) ; python_version < \"3.8\"",
+            "onnx (<=1.13.0,>=1.6.0) ; python_version >= \"3.7\"",
+            "numpy (<=1.22.3,>=1.16.0) ; python_version >= \"3.8\"",
+            "catboost (<=0.20,>=0.16.2) ; extra == 'catboost'",
+            "filelock ; extra == 'test'",
+            "dash (>=2.3.1) ; extra == 'test'",
+            "ipykernel (==5.5.6) ; extra == 'test'"
+          ],
+          "requires_python": ">=3.7,<3.9"
+        }
+      },
       "1.6.0": {
         "azureml_automl_runtime-1.6.0-py3-none-any.whl": {
           "requires_dist": [
@@ -43326,6 +43387,9 @@
       "1.29.121": {
         "botocore_a_la_carte_comprehend-1.29.121-py3-none-any.whl": "1.29.100@botocore_a_la_carte_comprehend-1.29.100-py3-none-any.whl"
       },
+      "1.29.122": {
+        "botocore_a_la_carte_comprehend-1.29.122-py3-none-any.whl": "1.29.100@botocore_a_la_carte_comprehend-1.29.100-py3-none-any.whl"
+      },
       "1.29.42": {
         "botocore_a_la_carte_comprehend-1.29.42-py3-none-any.whl": "1.29.100@botocore_a_la_carte_comprehend-1.29.100-py3-none-any.whl"
       },
@@ -43571,6 +43635,9 @@
       },
       "1.29.121": {
         "botocore_a_la_carte_kinesis-1.29.121-py3-none-any.whl": "1.29.100@botocore_a_la_carte_kinesis-1.29.100-py3-none-any.whl"
+      },
+      "1.29.122": {
+        "botocore_a_la_carte_kinesis-1.29.122-py3-none-any.whl": "1.29.100@botocore_a_la_carte_kinesis-1.29.100-py3-none-any.whl"
       },
       "1.29.42": {
         "botocore_a_la_carte_kinesis-1.29.42-py3-none-any.whl": "1.29.100@botocore_a_la_carte_kinesis-1.29.100-py3-none-any.whl"
@@ -53954,6 +54021,9 @@
       },
       "0.3.0": {
         "data_snack-0.3.0-py3-none-any.whl": "0.0.8@data_snack-0.0.8-py3-none-any.whl"
+      },
+      "0.3.1": {
+        "data_snack-0.3.1-py3-none-any.whl": "0.0.8@data_snack-0.0.8-py3-none-any.whl"
       }
     }
   },
@@ -72199,6 +72269,9 @@
       },
       "0.3.1": {
         "microsoft_kiota_serialization_json-0.3.1-py2.py3-none-any.whl": "0.1.0@microsoft_kiota_serialization_json-0.1.0-py2.py3-none-any.whl"
+      },
+      "0.3.2": {
+        "microsoft_kiota_serialization_json-0.3.2-py2.py3-none-any.whl": "0.1.0@microsoft_kiota_serialization_json-0.1.0-py2.py3-none-any.whl"
       }
     }
   },
@@ -77236,6 +77309,9 @@
       },
       "13.0.1.0.1.dev7": {
         "odoo13_addon_account_invoice_supplierinfo_update-13.0.1.0.1.dev7-py3-none-any.whl": "13.0.1.0.1.dev2@odoo13_addon_account_invoice_supplierinfo_update-13.0.1.0.1.dev2-py3-none-any.whl"
+      },
+      "13.0.1.0.1.dev8": {
+        "odoo13_addon_account_invoice_supplierinfo_update-13.0.1.0.1.dev8-py3-none-any.whl": "13.0.1.0.1.dev2@odoo13_addon_account_invoice_supplierinfo_update-13.0.1.0.1.dev2-py3-none-any.whl"
       }
     }
   },
@@ -91192,6 +91268,14 @@
       },
       "0.0.4": {
         "pyfoldercheck-0.0.4-py3-none-any.whl": "0.0.3@pyfoldercheck-0.0.3-py3-none-any.whl"
+      },
+      "0.0.5": {
+        "pyfoldercheck-0.0.5-py3-none-any.whl": {
+          "requires_dist": [
+            "pylogconf",
+            "pytconf"
+          ]
+        }
       }
     }
   },
@@ -99287,6 +99371,9 @@
       },
       "1.0.5.1": {
         "sfctools-1.0.5.1-py3-none-any.whl": "1.0.4.2@sfctools-1.0.4.2-py3-none-any.whl"
+      },
+      "1.0.5.2": {
+        "sfctools-1.0.5.2-py3-none-any.whl": "1.0.4.2@sfctools-1.0.4.2-py3-none-any.whl"
       }
     }
   },
@@ -102509,6 +102596,9 @@
       },
       "0.0.3.1": {
         "streamlit_chat_animated-0.0.3.1-py3-none-any.whl": "0.0.2.3@streamlit_chat_animated-0.0.2.3-py3-none-any.whl"
+      },
+      "0.0.3.2": {
+        "streamlit_chat_animated-0.0.3.2-py3-none-any.whl": "0.0.2.3@streamlit_chat_animated-0.0.2.3-py3-none-any.whl"
       }
     }
   },
