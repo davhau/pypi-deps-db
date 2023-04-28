@@ -50702,7 +50702,8 @@
     "1.7b10": "1.5b1",
     "1.7b11": "1.5b1",
     "1.8b1": "1.5b1",
-    "1.8b2": "1.5b1"
+    "1.8b2": "1.5b1",
+    "1.8b3": "1.5b1"
   },
   "photoscope": {
     "1.0.1": {
@@ -51903,7 +51904,49 @@
       "39": "36",
       "310": "36"
     },
-    "0.2.3": "0.2.2"
+    "0.2.3": "0.2.2",
+    "0.2.4": {
+      "36": {
+        "install_requires": [
+          "prefect>=2.8.2"
+        ],
+        "extras_require": {
+          "dev": [
+            "pytest",
+            "black",
+            "flake8",
+            "flaky",
+            "mypy",
+            "mkdocs",
+            "mkdocs-material",
+            "mkdocstrings[python]",
+            "isort",
+            "pre-commit",
+            "pytest-asyncio",
+            "mkdocs-gen-files",
+            "interrogate",
+            "coverage",
+            "pillow"
+          ],
+          "dev:python_version < \"3.8\"": [
+            "mock"
+          ],
+          ":python_version < \"3.8\"": [
+            "distributed==2022.2.0"
+          ],
+          ":python_version >= \"3.8\"": [
+            "distributed<=2023.3.1,>=2022.5.0"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "prefect-redis": {
     "0.1.4": {
@@ -59025,7 +59068,25 @@
     "0.2.6": "0.1.9",
     "0.2.7": "0.1.9",
     "0.3.0": "0.1.9",
-    "0.3.1": "0.1.9"
+    "0.3.1": "0.1.9",
+    "0.3.2": {
+      "27": {
+        "extras_require": {
+          ":python_version >= \"3.6\" and python_version < \"3.7\"": [
+            "dataclasses",
+            "contextvars"
+          ]
+        },
+        "python_requires": [
+          ">=3.6,<4.0"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "rvfln": {
     "0.0.1": {
