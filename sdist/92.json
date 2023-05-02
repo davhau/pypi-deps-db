@@ -16471,7 +16471,8 @@
       "310": "27"
     },
     "2.1": "2.0",
-    "2.2": "2.0"
+    "2.2": "2.0",
+    "2.3": "2.0"
   },
   "crow-serial": {
     "0.4.0": {
@@ -83266,7 +83267,93 @@
       "310": "36"
     },
     "1.5.4": "1.5.3",
-    "1.5.5": "1.5.3"
+    "1.5.5": "1.5.3",
+    "1.5.6": {
+      "36": {
+        "install_requires": [
+          "Async-Channel<2.2,>=2.1",
+          "OctoBot-Commons<1.9,>=1.8",
+          "OctoBot-Trading<2.4,>=2.3.0",
+          "asyncpraw==7.7.0",
+          "python-telegram-bot==20.2",
+          "telethon==1.24.0",
+          "simplifiedpytrends>=1.1.2",
+          "pyngrok==6.0.0",
+          "openai==0.27.6",
+          "flask==2.3.2",
+          "jinja2>=3.1.2",
+          "flask-compress==1.13",
+          "flask-caching==2.0.2",
+          "flask-login==0.6.2",
+          "flask-cors==3.0.10",
+          "WTForms==3.0.1",
+          "Flask-WTF==1.1.1",
+          "gevent==22.10.2",
+          "gevent-websocket==0.10.1",
+          "flask-socketio==5.3.3",
+          "newspaper3k==0.2.8",
+          "vaderSentiment==3.3.2"
+        ],
+        "setup_requires": [
+          "# Drakkar-Software requirements\n",
+          "Async-Channel>=2.1, <2.2\n",
+          "OctoBot-Commons>=1.8, <1.9\n",
+          "OctoBot-Trading>=2.3.0, <2.4\n",
+          "\n",
+          "# Services\n",
+          "# Reddit\n",
+          "asyncpraw==7.7.0\n",
+          "# Telegram\n",
+          "python-telegram-bot==20.2\n",
+          "telethon==1.24.0\n",
+          "# Twitter (associated tentacles are disabled as starting from feb 9 2023, API is now paid only).\n",
+          "# see https://twitter.com/TwitterDev/status/1621026986784337922\n",
+          "# Python-Twitter==3.5\n",
+          "# Google\n",
+          "simplifiedpytrends>=1.1.2\n",
+          "# Ngrok\n",
+          "pyngrok==6.0.0\n",
+          "# chat gpt\n",
+          "openai==0.27.6\n",
+          "# Web\n",
+          "## http server\n",
+          "flask==2.3.2\n",
+          "# Flask templates\n",
+          "jinja2>=3.1.2\n",
+          "## flask minification\n",
+          "flask-compress==1.13\n",
+          "## flask cache\n",
+          "flask-caching==2.0.2\n",
+          "## flask user authentication management\n",
+          "flask-login==0.6.2\n",
+          "## flask CORS management\n",
+          "flask-cors==3.0.10\n",
+          "## user form validators\n",
+          "WTForms==3.0.1\n",
+          "Flask-WTF==1.1.1\n",
+          "## websockets\n",
+          "### used by the webhook service and flask-socketio for the web interface\n",
+          "gevent==22.10.2\n",
+          "### used by flask-socketio with gevent (listed here because multiple libs are usable, force this one)\n",
+          "gevent-websocket==0.10.1\n",
+          "flask-socketio==5.3.3\n",
+          "\n",
+          "# Analysis tools\n",
+          "newspaper3k==0.2.8\n",
+          "vaderSentiment==3.3.2\n"
+        ],
+        "tests_require": [
+          "pytest"
+        ],
+        "python_requires": [
+          ">=3.8"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "oemthermostat": {
     "0.1": {
@@ -94876,6 +94963,173 @@
       "38": "37",
       "39": "37",
       "310": "37"
+    },
+    "0.2.17": "0.3.0",
+    "0.3.0": {
+      "37": {
+        "install_requires": [
+          "numpy!=1.24.0,>=1.19.1",
+          "scipy>=1.5.2",
+          "pandas>=1.5.0",
+          "cloudpickle>=1.5.0",
+          "matplotlib>=3.6.2",
+          "more-itertools>=9.0.0",
+          "seaborn>=0.11.2",
+          "h5py>=3.1.0",
+          "tqdm>=4.46.0",
+          "tabulate>=0.8.10"
+        ],
+        "extras_require": {
+          "all": [
+            "amici>=0.14.0",
+            "petab>=0.1.14",
+            "ipopt",
+            "dlib>=19.19.0",
+            "nlopt>=2.6.2",
+            "pyswarm>=0.6",
+            "cma>=3.0.3",
+            "pyswarms>=1.3.0",
+            "fides>=0.6.1",
+            "mpi4py>=3.0.3",
+            "arviz>=0.12.1",
+            "aesara>=2.8.6",
+            "pymc>=4.2.1",
+            "aesara>=2.0.5",
+            "jax>=0.4.1",
+            "jaxlib>=0.4.1",
+            "emcee>=3.0.2",
+            "dill>=0.3.6",
+            "dynesty>=2.0.3",
+            "umap-learn[plot]>=0.5.3",
+            "scikit-learn>=0.24.1",
+            "sphinx>=6.2.1",
+            "nbsphinx>=0.8.9",
+            "nbconvert>=6.5.0",
+            "sphinx-rtd-theme>=1.2.0",
+            "sphinx-autodoc-typehints>=1.18.3",
+            "sphinxcontrib-bibtex>=2.5.0",
+            "ipython>=8.4.0",
+            "myst-parser>=0.18.0",
+            "ipykernel>=6.15.1",
+            "networkx>=2.5.1",
+            "petab-select>=0.1.1",
+            "fides>=0.6.1",
+            "notebook>=6.1.4",
+            "networkx>=2.5.1",
+            "petab-select>=0.1.1",
+            "pytest>=5.4.3",
+            "pytest-cov>=2.10.0",
+            "gitpython>=3.1.7",
+            "pytest-rerunfailures>=9.1.1",
+            "autograd>=1.3",
+            "petabtests>=0.0.0a6"
+          ],
+          "all_optimizers": [
+            "ipopt",
+            "dlib>=19.19.0",
+            "nlopt>=2.6.2",
+            "pyswarm>=0.6",
+            "cma>=3.0.3",
+            "pyswarms>=1.3.0",
+            "fides>=0.6.1"
+          ],
+          "amici": [
+            "amici>=0.14.0"
+          ],
+          "petab": [
+            "petab>=0.1.14"
+          ],
+          "ipopt": [
+            "ipopt"
+          ],
+          "dlib": [
+            "dlib>=19.19.0"
+          ],
+          "nlopt": [
+            "nlopt>=2.6.2"
+          ],
+          "pyswarm": [
+            "pyswarm>=0.6"
+          ],
+          "cmaes": [
+            "cma>=3.0.3"
+          ],
+          "pyswarms": [
+            "pyswarms>=1.3.0"
+          ],
+          "fides": [
+            "fides>=0.6.1"
+          ],
+          "mpi": [
+            "mpi4py>=3.0.3"
+          ],
+          "pymc": [
+            "arviz>=0.12.1",
+            "aesara>=2.8.6",
+            "pymc>=4.2.1"
+          ],
+          "aesara": [
+            "aesara>=2.0.5"
+          ],
+          "jax": [
+            "jax>=0.4.1",
+            "jaxlib>=0.4.1"
+          ],
+          "emcee": [
+            "emcee>=3.0.2"
+          ],
+          "dynesty": [
+            "dill>=0.3.6",
+            "dynesty>=2.0.3"
+          ],
+          "mltools": [
+            "umap-learn[plot]>=0.5.3",
+            "scikit-learn>=0.24.1"
+          ],
+          "julia": [
+            "julia>=0.5.7",
+            "ipython>=8.4.0",
+            "pygments>=2.12.0"
+          ],
+          "doc": [
+            "sphinx>=6.2.1",
+            "nbsphinx>=0.8.9",
+            "nbconvert>=6.5.0",
+            "sphinx-rtd-theme>=1.2.0",
+            "sphinx-autodoc-typehints>=1.18.3",
+            "sphinxcontrib-bibtex>=2.5.0",
+            "ipython>=8.4.0",
+            "myst-parser>=0.18.0",
+            "ipykernel>=6.15.1",
+            "networkx>=2.5.1",
+            "petab-select>=0.1.1",
+            "fides>=0.6.1"
+          ],
+          "example": [
+            "notebook>=6.1.4"
+          ],
+          "select": [
+            "networkx>=2.5.1",
+            "petab-select>=0.1.1"
+          ],
+          "test": [
+            "pytest>=5.4.3",
+            "pytest-cov>=2.10.0",
+            "gitpython>=3.1.7",
+            "pytest-rerunfailures>=9.1.1",
+            "autograd>=1.3"
+          ],
+          "test_petab": [
+            "petabtests>=0.0.0a6"
+          ]
+        },
+        "python_requires": [
+          ">=3.9"
+        ]
+      },
+      "38": "37",
+      "39": "37",
+      "310": "37"
     }
   },
   "pypgatk": {
@@ -98887,6 +99141,43 @@
           "click>=8.0",
           "rxn-chem-utils>=1.1.4",
           "rxn-onmt-utils>=1.0.0",
+          "rxn-reaction-preprocessing>=2.0.2",
+          "rxn-utils>=1.1.9"
+        ],
+        "extras_require": {
+          "dev": [
+            "black>=22.3.0",
+            "bump2version>=1.0.1",
+            "flake8>=3.8.4",
+            "freezegun>=1.1.2",
+            "isort>=5.10.1",
+            "mypy>=0.910",
+            "pytest>=5.3.4",
+            "types-setuptools>=57.4.14"
+          ],
+          "rdkit": [],
+          "rdkit:python_version < \"3.7\"": [
+            "rdkit-pypi>=2021.3.2"
+          ],
+          "rdkit:python_version >= \"3.7\"": [
+            "rdkit>=2022.3.4"
+          ]
+        },
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "38": "37",
+      "39": "37",
+      "310": "37"
+    },
+    "1.0.1": {
+      "37": {
+        "install_requires": [
+          "attrs>=21.2.0",
+          "click>=8.0",
+          "rxn-chem-utils>=1.1.4",
+          "rxn-onmt-utils>=1.0.3",
           "rxn-reaction-preprocessing>=2.0.2",
           "rxn-utils>=1.1.9"
         ],
