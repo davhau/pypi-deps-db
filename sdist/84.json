@@ -5539,7 +5539,8 @@
     "1.29.121": "1.29.42",
     "1.29.122": "1.29.42",
     "1.29.123": "1.29.42",
-    "1.29.124": "1.29.42"
+    "1.29.124": "1.29.42",
+    "1.29.125": "1.29.42"
   },
   "boursika": {
     "0.0.1": {
@@ -15067,6 +15068,24 @@
         "install_requires": [
           "aws-cdk-lib<3.0.0,>=2.77.0",
           "constructs<11.0.0,>=10.2.13",
+          "jsii<2.0.0,>=1.80.0",
+          "publication>=0.0.3",
+          "typeguard~=2.13.3"
+        ],
+        "python_requires": [
+          "~=3.7"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "2.0.303": {
+      "36": {
+        "install_requires": [
+          "aws-cdk-lib<3.0.0,>=2.77.0",
+          "constructs<11.0.0,>=10.2.14",
           "jsii<2.0.0,>=1.80.0",
           "publication>=0.0.3",
           "typeguard~=2.13.3"
@@ -31494,6 +31513,40 @@
       "38": "36",
       "39": "36",
       "310": "36"
+    },
+    "1.0.0a115": {
+      "36": {
+        "install_requires": [
+          "heaobject~=1.0.0a53",
+          "aiohttp[speedups]~=3.8.3",
+          "aiohttp-remotes~=1.2.0",
+          "motor~=2.5.1",
+          "tzlocal~=4.2",
+          "uritemplate~=4.1.1",
+          "accept-types~=0.4.1",
+          "mongoquery~=1.3.6",
+          "jsonschema~=4.17.3",
+          "jsonmerge~=1.8.0",
+          "requests>=2.27",
+          "types-requests>=2.27",
+          "boto3==1.21.38",
+          "botocore==1.24.38",
+          "boto3-stubs[essential]==1.21.38",
+          "botocore-stubs[essential]==1.24.38",
+          "freezegun~=1.0.0",
+          "regex~=2022.4.24",
+          "aio-pika==8.1.0",
+          "PyJWT==2.6.0",
+          "simpleeval~=0.9.12"
+        ],
+        "python_requires": [
+          ">=3.10"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
     }
   },
   "hedgedata": {
@@ -37319,7 +37372,9 @@
     "1.20.6.dev9": "1.20.3",
     "1.20.6.dev13": "1.20.3",
     "1.20.6.dev15": "1.20.3",
-    "1.20.6.dev17": "1.20.3"
+    "1.20.6.dev17": "1.20.3",
+    "1.20.6.dev19": "1.20.3",
+    "1.20.6.dev21": "1.20.3"
   },
   "last-task": {
     "0.1": {
@@ -38595,6 +38650,87 @@
           ],
           "test": [
             "codecov",
+            "coverage",
+            "flaky",
+            "pytest",
+            "pytest-cov"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "1.2.1": {
+      "27": {
+        "install_requires": [
+          "asteval>=0.9.28",
+          "numpy>=1.19",
+          "scipy>=1.6",
+          "uncertainties>=3.1.4"
+        ],
+        "setup_requires": [
+          "setuptools_scm"
+        ],
+        "extras_require": {
+          "all": [
+            "build",
+            "check-wheel-contents",
+            "pre-commit",
+            "twine",
+            "coverage",
+            "flaky",
+            "pytest",
+            "pytest-cov",
+            "cairosvg",
+            "corner",
+            "dill",
+            "emcee>=3.0.0",
+            "ipykernel",
+            "jupyter_sphinx>=0.2.4",
+            "matplotlib",
+            "numdifftools",
+            "pandas",
+            "Pillow",
+            "Sphinx",
+            "sphinx-gallery>=0.10",
+            "sphinxcontrib-svg2pdfconverter",
+            "sympy"
+          ],
+          "doc": [
+            "cairosvg",
+            "corner",
+            "dill",
+            "emcee>=3.0.0",
+            "ipykernel",
+            "jupyter_sphinx>=0.2.4",
+            "matplotlib",
+            "numdifftools",
+            "pandas",
+            "Pillow",
+            "Sphinx",
+            "sphinx-gallery>=0.10",
+            "sphinxcontrib-svg2pdfconverter",
+            "sympy"
+          ],
+          "dev": [
+            "build",
+            "check-wheel-contents",
+            "pre-commit",
+            "twine"
+          ],
+          "doc:platform_system == \"Windows\"": [
+            "pycairo"
+          ],
+          "all:platform_system == \"Windows\"": [
+            "pycairo"
+          ],
+          "test": [
             "coverage",
             "flaky",
             "pytest",
