@@ -2123,7 +2123,8 @@
     "8.1.4a2": "7.0.1",
     "8.1.5": "7.0.1",
     "8.2.0": "7.0.1",
-    "8.3.0": "7.0.1"
+    "8.3.0": "7.0.1",
+    "8.4.0": "7.0.1"
   },
   "arcana-ml": {
     "0.1.0": {
@@ -4974,7 +4975,13 @@
     "4.4.1.dev48": "4.4.0.7",
     "4.4.1.dev49": "4.4.0.7",
     "4.4.1.dev53": "4.4.0.7",
-    "4.4.1.dev55": "4.4.0.7"
+    "4.4.1.dev55": "4.4.0.7",
+    "4.4.0.16": "4.4.0.7",
+    "4.4.1.dev56": "4.4.0.7",
+    "4.4.1.dev57": "4.4.0.7",
+    "4.4.1.dev58": "4.4.0.7",
+    "4.4.1.dev59": "4.4.0.7",
+    "4.4.1.dev60": "4.4.0.7"
   },
   "astrowidgets": {
     "0.1.0": {
@@ -7484,6 +7491,23 @@
       "36": {
         "install_requires": [
           "aws-cdk.core==1.200.0",
+          "jsii<2.0.0,>=1.74.0",
+          "publication>=0.0.3",
+          "typeguard~=2.13.3"
+        ],
+        "python_requires": [
+          "~=3.7"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "1.201.0": {
+      "36": {
+        "install_requires": [
+          "aws-cdk.core==1.201.0",
           "jsii<2.0.0,>=1.74.0",
           "publication>=0.0.3",
           "typeguard~=2.13.3"
@@ -14320,6 +14344,35 @@
       "38": "36",
       "39": "36",
       "310": "36"
+    },
+    "1.201.0": {
+      "36": {
+        "install_requires": [
+          "aws-cdk.aws-apigateway==1.201.0",
+          "aws-cdk.aws-cloudfront==1.201.0",
+          "aws-cdk.aws-cognito==1.201.0",
+          "aws-cdk.aws-ec2==1.201.0",
+          "aws-cdk.aws-elasticloadbalancing==1.201.0",
+          "aws-cdk.aws-elasticloadbalancingv2==1.201.0",
+          "aws-cdk.aws-globalaccelerator==1.201.0",
+          "aws-cdk.aws-iam==1.201.0",
+          "aws-cdk.aws-route53==1.201.0",
+          "aws-cdk.aws-s3==1.201.0",
+          "aws-cdk.core==1.201.0",
+          "aws-cdk.region-info==1.201.0",
+          "constructs<4.0.0,>=3.3.69",
+          "jsii<2.0.0,>=1.74.0",
+          "publication>=0.0.3",
+          "typeguard~=2.13.3"
+        ],
+        "python_requires": [
+          "~=3.7"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
     }
   },
   "aws-lambda-python-packager": {
@@ -16740,7 +16793,8 @@
     "1.29.127": "1.29.46",
     "1.29.129": "1.29.46",
     "1.29.130": "1.29.46",
-    "1.29.131": "1.29.46"
+    "1.29.131": "1.29.46",
+    "1.29.132": "1.29.46"
   },
   "bounded-async-executor": {
     "0.1": {
@@ -31771,7 +31825,81 @@
     "2.3.231": "2.3.214",
     "2.3.232": "2.3.214",
     "2.3.233": "2.3.214",
-    "2.3.234": "2.3.214"
+    "2.3.234": "2.3.214",
+    "2.3.235": "2.3.214",
+    "2.3.236": "2.3.214",
+    "2.3.237": {
+      "36": {
+        "install_requires": [
+          "bc-python-hcl2==0.3.51",
+          "bc-detect-secrets==1.4.27",
+          "bc-jsonpath-ng==1.5.9",
+          "deep-merge",
+          "tabulate",
+          "colorama",
+          "termcolor",
+          "junit-xml>=1.9",
+          "dpath==2.1.3",
+          "pyyaml>=5.4.1",
+          "boto3>=1.17",
+          "gitpython",
+          "jmespath",
+          "tqdm",
+          "update-checker",
+          "semantic-version",
+          "packaging",
+          "cloudsplaining>=0.4.3",
+          "networkx<2.7",
+          "igraph",
+          "dockerfile-parse",
+          "docker",
+          "configargparse",
+          "argcomplete",
+          "policyuniverse",
+          "typing-extensions>=4.1.0",
+          "importlib-metadata>=0.12",
+          "cachetools",
+          "cyclonedx-python-lib<4.0.0,>=2.4.0",
+          "packageurl-python",
+          "click>=8.0.0",
+          "aiohttp",
+          "aiodns",
+          "aiomultiprocess",
+          "jsonschema<5.0.0,>=4.6.0",
+          "prettytable>=3.0.0",
+          "pycep-parser==0.4.0",
+          "charset-normalizer",
+          "schema",
+          "requests>=2.27.0",
+          "yarl",
+          "openai"
+        ],
+        "setup_requires": [
+          "pyyaml"
+        ],
+        "extras_require": {
+          "dev": [
+            "pytest==5.3.1",
+            "coverage==5.5",
+            "coverage-badge",
+            "GitPython==3.1.7",
+            "bandit",
+            "jsonschema"
+          ],
+          ":python_version < \"3.11\" and (sys_platform == \"linux\" or sys_platform == \"darwin\") and platform_machine == \"x86_64\" and implementation_name == \"cpython\"": [
+            "pyston-autoload==2.3.5",
+            "pyston==2.3.5"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "chemcharts": {
     "0.4.0": {
@@ -47378,6 +47506,41 @@
       "38": "36",
       "39": "36",
       "310": "36"
+    },
+    "6.30.5": {
+      "36": {
+        "install_requires": [
+          "django==3.2.19",
+          "django-countries==7.3.1",
+          "djangorestframework==3.13.1",
+          "django-pipeline==2.0.8",
+          "django-recaptcha==2.0.6",
+          "pyyaml==5.4.1",
+          "rapid-router>=4",
+          "aimmo>=2",
+          "reportlab==3.6.1",
+          "django-formtools==2.2",
+          "django-otp==1.0.2",
+          "requests==2.25.0",
+          "django-treebeard==4.3.1",
+          "django-sekizai==2.0.0",
+          "django-classy-tags==2.0.0",
+          "sqlparse==0.4.4",
+          "libsass==0.22.0",
+          "phonenumbers==8.12.12",
+          "more-itertools==8.7.0",
+          "cfl-common==6.30.5",
+          "django-ratelimit==3.0.1",
+          "django-preventconcurrentlogins==0.8.2",
+          "django-csp==3.7",
+          "setuptools==62.1.0",
+          "django-import-export"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
     }
   },
   "codev-dashboard": {
@@ -50385,7 +50548,8 @@
     "0.6.1": "0.6.0",
     "0.6.2": "0.6.0",
     "0.6.3": "0.6.0",
-    "0.6.4": "0.6.0"
+    "0.6.4": "0.6.0",
+    "0.6.5": "0.6.0"
   },
   "dicopp": {
     "1.0.12": {
@@ -54470,6 +54634,16 @@
       "310": "27"
     },
     "1.3.0": "1.2.4"
+  },
+  "dynamiqs": {
+    "0.1.0": {
+      "27": {},
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "easy-dna": {
     "0.2.0": {
@@ -59784,6 +59958,20 @@
     "0.0.3": "0.0.1",
     "0.0.4": "0.0.1",
     "0.0.5": "0.0.1"
+  },
+  "get-report-template": {
+    "0.0.1": {
+      "27": {},
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "0.0.2": "0.0.1",
+    "0.0.3": "0.0.1",
+    "0.0.4": "0.0.1",
+    "0.0.6": "0.0.1"
   },
   "getip-ab": {
     "0.2.0": {
@@ -89590,6 +89778,16 @@
     "0.2.1": "0.1",
     "0.3": "0.1"
   },
+  "pdftrainer": {
+    "0.1": {
+      "27": {},
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
+  },
   "pecan-mount": {
     "0.0.1": {
       "27": {
@@ -104461,6 +104659,20 @@
             "pytest-cov==2.5.1"
           ]
         }
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
+  },
+  "sheet-orm": {
+    "0.1.0": {
+      "27": {
+        "python_requires": [
+          ">=3.10"
+        ]
       },
       "36": "27",
       "37": "27",

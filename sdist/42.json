@@ -10234,7 +10234,8 @@
     "1.29.127": "1.29.42",
     "1.29.129": "1.29.42",
     "1.29.130": "1.29.42",
-    "1.29.131": "1.29.42"
+    "1.29.131": "1.29.42",
+    "1.29.132": "1.29.42"
   },
   "botocore-stubber-recorder": {
     "0.2.0": {
@@ -20333,7 +20334,8 @@
     "1.2.6.dev10": "1.2.5",
     "1.2.6.dev7": "1.2.5",
     "1.2.6.dev8": "1.2.5",
-    "1.2.6.dev9": "1.2.5"
+    "1.2.6.dev9": "1.2.5",
+    "1.2.6": "1.2.5"
   },
   "dargs": {
     "0.1.1": {
@@ -20419,7 +20421,8 @@
       "38": "36",
       "39": "36",
       "310": "36"
-    }
+    },
+    "0.1.6": "0.1.5"
   },
   "dataclasses-settings": {
     "0.2.0": {
@@ -29002,7 +29005,8 @@
       "39": "36",
       "310": "36"
     },
-    "2023.4.1": "2023.1"
+    "2023.4.1": "2023.1",
+    "2023.5": "2023.1"
   },
   "envconfig2": {
     "0.1": {
@@ -42888,6 +42892,63 @@
             "nbconvert",
             "ipykernel",
             "opencv-python"
+          ],
+          "image-utils": [
+            "opencv-python<5.0.0,>=4.0.0"
+          ]
+        }
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "2.133.0": {
+      "36": {
+        "install_requires": [
+          "pandas<2.0.0,>=1.0.0",
+          "click<9.0.0,>=8.0.0",
+          "requests<3.0.0,>=2.0.0",
+          "tabulate<0.10.0,>=0.9.0",
+          "tenacity<9.0.0,>=8.0.0",
+          "tqdm<5.0.0,>=4.0.0",
+          "typeguard<3.0.0,>=2.0.0",
+          "typing_extensions<5.0.0,>=4.1.0",
+          "pyparsing<4.0.0,>=3.0.0",
+          "websocket-client<2.0.0,>=1.0.0",
+          "pyyaml<7.0,>=6.0",
+          "Pillow<10.0.0,>=9.0.0",
+          "cuid<0.5,>=0.4",
+          "pydantic<2.0.0,>=1.0.0",
+          "urllib3<2.0.0,>=1.26",
+          "ffmpeg-python<0.3.0,>=0.2.0",
+          "gql[requests,websockets]<4.0.0,>=3.5.0b4",
+          "filelock<4.0.0,>=3.0.0"
+        ],
+        "extras_require": {
+          "dev": [
+            "bump2version",
+            "pytest",
+            "pytest-mock",
+            "pytest-cov",
+            "pytest-xdist[psutil]",
+            "mkdocs",
+            "mkdocs-material",
+            "mkdocstrings",
+            "mkdocstrings-python-legacy",
+            "mkdocs-click",
+            "mike",
+            "pymdown-extensions",
+            "black",
+            "pre-commit",
+            "pylint",
+            "flake8-unused-arguments",
+            "pyright",
+            "nbformat",
+            "nbconvert",
+            "ipykernel",
+            "opencv-python",
+            "pyinstrument"
           ],
           "image-utils": [
             "opencv-python<5.0.0,>=4.0.0"
@@ -74173,7 +74234,9 @@
     "2.2.0.3": "2.1.5",
     "2.2.0.4": "2.1.5",
     "2.2.1rc1": "2.1.5",
-    "2.2.0.5": "2.1.5"
+    "2.2.0.5": "2.1.5",
+    "2.2.0.7": "2.1.5",
+    "2.2.1rc2": "2.1.5"
   },
   "rer.bandi": {
     "2.1.0": {
@@ -80520,7 +80583,8 @@
     "2.1.1": "1.6.2",
     "2.2.0": "1.6.2",
     "2.2.1": "1.6.2",
-    "2.2.2": "1.6.2"
+    "2.2.2": "1.6.2",
+    "2.3.0": "1.6.2"
   },
   "spaste": {
     "0.0.1": {
@@ -81986,7 +82050,71 @@
       "39": "36",
       "310": "36"
     },
-    "2.4.5": "2.4.4"
+    "2.4.5": "2.4.4",
+    "2.4.6": {
+      "36": {
+        "install_requires": [
+          "attrs",
+          "orjson",
+          "pydantic[dotenv]",
+          "stac_pydantic==2.0.*",
+          "stac-fastapi.types",
+          "stac-fastapi.api",
+          "stac-fastapi.extensions",
+          "asyncpg",
+          "buildpg",
+          "brotli_asgi",
+          "pygeofilter>=0.2",
+          "pypgstac==0.7.*"
+        ],
+        "extras_require": {
+          "dev": [
+            "pystac[validation]",
+            "pypgstac[psycopg]==0.7.*",
+            "pytest",
+            "pytest-cov",
+            "pytest-asyncio>=0.17",
+            "pre-commit",
+            "requests",
+            "shapely",
+            "httpx",
+            "twine",
+            "wheel"
+          ],
+          "docs": [
+            "mkdocs",
+            "mkdocs-material",
+            "pdocs"
+          ],
+          "server": [
+            "uvicorn[standard]==0.19.0"
+          ],
+          "awslambda": [
+            "mangum"
+          ]
+        },
+        "tests_require": [
+          "pystac[validation]",
+          "pypgstac[psycopg]==0.7.*",
+          "pytest",
+          "pytest-cov",
+          "pytest-asyncio>=0.17",
+          "pre-commit",
+          "requests",
+          "shapely",
+          "httpx",
+          "twine",
+          "wheel"
+        ],
+        "python_requires": [
+          ">=3.8"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "staphb-toolkit": {
     "1.0.0": {
@@ -82920,6 +83048,34 @@
           "gdal",
           "seaborn",
           "descartes",
+          "regex",
+          "scipy",
+          "joblib"
+        ],
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "0.21.2": {
+      "27": {
+        "install_requires": [
+          "fiona==1.8.22",
+          "shapely",
+          "pandas>=0.24.2",
+          "pyproj>=2.0.0",
+          "numpy",
+          "matplotlib>=3.0.0",
+          "emoji>=2.0.0",
+          "cython",
+          "hdbscan>=0.8.20",
+          "gdal>3.4.1",
+          "seaborn",
           "regex",
           "scipy",
           "joblib"
