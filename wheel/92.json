@@ -13618,6 +13618,23 @@
       "1.14.3": {
         "countrynames-1.14.3-py3-none-any.whl": "1.11.0@countrynames-1.11.0-py3-none-any.whl"
       },
+      "1.14.4": {
+        "countrynames-1.14.4-py3-none-any.whl": {
+          "provides_extras": [
+            "dev"
+          ],
+          "requires_dist": [
+            "normality",
+            "jellyfish",
+            "pyyaml",
+            "mypy ; extra == 'dev'",
+            "wheel ; extra == 'dev'",
+            "twine ; extra == 'dev'",
+            "pytest ; extra == 'dev'",
+            "types-PyYAML ; extra == 'dev'"
+          ]
+        }
+      },
       "1.6.0": {
         "countrynames-1.6.0-py3-none-any.whl": {
           "requires_dist": [
@@ -24451,6 +24468,36 @@
             "apache-airflow-providers-http (<4.1.1) ; extra == 'test_airflow_2'"
           ]
         }
+      },
+      "1.3.4": {
+        "dagster_airflow-1.3.4-py3-none-any.whl": {
+          "provides_extras": [
+            "kubernetes",
+            "test_airflow_1",
+            "test_airflow_2"
+          ],
+          "requires_dist": [
+            "dagster (==1.3.4)",
+            "docker (<6.0.0,>=5.0.3)",
+            "lazy-object-proxy",
+            "pendulum",
+            "kubernetes (>=3.0.0) ; extra == 'kubernetes'",
+            "cryptography (>=2.0.0) ; extra == 'kubernetes'",
+            "apache-airflow (<2.0.0,>=1.0.0) ; extra == 'test_airflow_1'",
+            "boto3 (>=1.26.7) ; extra == 'test_airflow_1'",
+            "kubernetes (>=10.0.1) ; extra == 'test_airflow_1'",
+            "markupsafe (<=2.0.1) ; extra == 'test_airflow_1'",
+            "WTForms (<3.0.0) ; extra == 'test_airflow_1'",
+            "sqlalchemy (<1.4.0,>=1.0) ; extra == 'test_airflow_1'",
+            "marshmallow-sqlalchemy (<0.26.0) ; extra == 'test_airflow_1'",
+            "apache-airflow (>=2.0.0) ; extra == 'test_airflow_2'",
+            "boto3 (>=1.26.7) ; extra == 'test_airflow_2'",
+            "kubernetes (>=10.0.1) ; extra == 'test_airflow_2'",
+            "apache-airflow-providers-docker (<4,>=3.2.0) ; extra == 'test_airflow_2'",
+            "apache-airflow-providers-apache-spark ; extra == 'test_airflow_2'",
+            "apache-airflow-providers-http (<4.1.1) ; extra == 'test_airflow_2'"
+          ]
+        }
       }
     }
   },
@@ -26696,6 +26743,17 @@
             "azure-storage-blob (<13.0.0,>=12.5.0)",
             "azure-storage-file-datalake (<13.0.0,>=12.5)",
             "dagster (==1.3.3)"
+          ]
+        }
+      },
+      "0.19.4": {
+        "dagster_azure-0.19.4-py3-none-any.whl": {
+          "requires_dist": [
+            "azure-core (<2.0.0,>=1.7.0)",
+            "azure-identity (<2.0.0,>=1.7.0)",
+            "azure-storage-blob (<13.0.0,>=12.5.0)",
+            "azure-storage-file-datalake (<13.0.0,>=12.5)",
+            "dagster (==1.3.4)"
           ]
         }
       },
@@ -45019,6 +45077,22 @@
   },
   "funasr-onnx": {
     "py3": {
+      "0.0.10": {
+        "funasr_onnx-0.0.10-py3-none-any.whl": {
+          "requires_dist": [
+            "librosa",
+            "onnxruntime (>=1.7.0)",
+            "scipy",
+            "numpy (>=1.19.3)",
+            "typeguard",
+            "kaldi-native-fbank",
+            "PyYAML (>=5.1.2)",
+            "funasr",
+            "modelscope",
+            "onnx"
+          ]
+        }
+      },
       "0.0.2": {
         "funasr_onnx-0.0.2-py3-none-any.whl": {
           "requires_dist": [
@@ -45046,6 +45120,12 @@
       },
       "0.0.8": {
         "funasr_onnx-0.0.8-py3-none-any.whl": "0.0.2@funasr_onnx-0.0.2-py3-none-any.whl"
+      },
+      "0.0.9": {
+        "funasr_onnx-0.0.9-py3-none-any.whl": "0.0.10@funasr_onnx-0.0.10-py3-none-any.whl"
+      },
+      "0.1.0": {
+        "funasr_onnx-0.1.0-py3-none-any.whl": "0.0.10@funasr_onnx-0.0.10-py3-none-any.whl"
       }
     }
   },
@@ -64397,6 +64477,9 @@
           "requires_python": "~=3.7"
         }
       },
+      "0.1.26": {
+        "ml_swissknife-0.1.26-py3-none-any.whl": "0.1.25@ml_swissknife-0.1.25-py3-none-any.whl"
+      },
       "0.1.5": {
         "ml_swissknife-0.1.5-py3-none-any.whl": {
           "provides_extras": [
@@ -71968,6 +72051,29 @@
           ]
         },
         "ngsolve-6.2.2302.post59.dev0-cp310-cp310-win_amd64.whl": "6.2.2302.post59.dev0@ngsolve-6.2.2302.post59.dev0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+      },
+      "6.2.2302.post86.dev0": {
+        "ngsolve-6.2.2302.post86.dev0-cp310-cp310-macosx_10_15_universal2.whl": {
+          "requires_dist": [
+            "netgen-mesher (==6.2.2302.post45.dev)"
+          ]
+        }
+      },
+      "6.2.2302.post87.dev0": {
+        "ngsolve-6.2.2302.post87.dev0-cp310-cp310-macosx_10_15_universal2.whl": "6.2.2302.post86.dev0@ngsolve-6.2.2302.post86.dev0-cp310-cp310-macosx_10_15_universal2.whl"
+      },
+      "6.2.2302.post91.dev0": {
+        "ngsolve-6.2.2302.post91.dev0-cp310-cp310-macosx_10_15_universal2.whl": {
+          "requires_dist": [
+            "netgen-mesher (==6.2.2302.post46.dev)"
+          ]
+        },
+        "ngsolve-6.2.2302.post91.dev0-cp310-cp310-win_amd64.whl": {
+          "requires_dist": [
+            "netgen-mesher (==6.2.2302.post46.dev)",
+            "mkl"
+          ]
+        }
       }
     },
     "cp311": {
@@ -72116,6 +72222,29 @@
           ]
         },
         "ngsolve-6.2.2302.post59.dev0-cp311-cp311-win_amd64.whl": "6.2.2302.post59.dev0@ngsolve-6.2.2302.post59.dev0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+      },
+      "6.2.2302.post86.dev0": {
+        "ngsolve-6.2.2302.post86.dev0-cp311-cp311-macosx_10_15_universal2.whl": {
+          "requires_dist": [
+            "netgen-mesher (==6.2.2302.post45.dev)"
+          ]
+        }
+      },
+      "6.2.2302.post87.dev0": {
+        "ngsolve-6.2.2302.post87.dev0-cp311-cp311-macosx_10_15_universal2.whl": "6.2.2302.post86.dev0@ngsolve-6.2.2302.post86.dev0-cp311-cp311-macosx_10_15_universal2.whl"
+      },
+      "6.2.2302.post91.dev0": {
+        "ngsolve-6.2.2302.post91.dev0-cp311-cp311-macosx_10_15_universal2.whl": {
+          "requires_dist": [
+            "netgen-mesher (==6.2.2302.post46.dev)"
+          ]
+        },
+        "ngsolve-6.2.2302.post91.dev0-cp311-cp311-win_amd64.whl": {
+          "requires_dist": [
+            "netgen-mesher (==6.2.2302.post46.dev)",
+            "mkl"
+          ]
+        }
       }
     },
     "cp38": {
@@ -72601,6 +72730,29 @@
           ]
         },
         "ngsolve-6.2.2302.post59.dev0-cp38-cp38-win_amd64.whl": "6.2.2302.post59.dev0@ngsolve-6.2.2302.post59.dev0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+      },
+      "6.2.2302.post86.dev0": {
+        "ngsolve-6.2.2302.post86.dev0-cp38-cp38-macosx_10_15_universal2.whl": {
+          "requires_dist": [
+            "netgen-mesher (==6.2.2302.post45.dev)"
+          ]
+        }
+      },
+      "6.2.2302.post87.dev0": {
+        "ngsolve-6.2.2302.post87.dev0-cp38-cp38-macosx_10_15_universal2.whl": "6.2.2302.post86.dev0@ngsolve-6.2.2302.post86.dev0-cp38-cp38-macosx_10_15_universal2.whl"
+      },
+      "6.2.2302.post91.dev0": {
+        "ngsolve-6.2.2302.post91.dev0-cp38-cp38-macosx_10_15_universal2.whl": {
+          "requires_dist": [
+            "netgen-mesher (==6.2.2302.post46.dev)"
+          ]
+        },
+        "ngsolve-6.2.2302.post91.dev0-cp38-cp38-win_amd64.whl": {
+          "requires_dist": [
+            "netgen-mesher (==6.2.2302.post46.dev)",
+            "mkl"
+          ]
+        }
       }
     },
     "cp39": {
@@ -73080,6 +73232,29 @@
           ]
         },
         "ngsolve-6.2.2302.post59.dev0-cp39-cp39-win_amd64.whl": "6.2.2302.post59.dev0@ngsolve-6.2.2302.post59.dev0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+      },
+      "6.2.2302.post86.dev0": {
+        "ngsolve-6.2.2302.post86.dev0-cp39-cp39-macosx_10_15_universal2.whl": {
+          "requires_dist": [
+            "netgen-mesher (==6.2.2302.post45.dev)"
+          ]
+        }
+      },
+      "6.2.2302.post87.dev0": {
+        "ngsolve-6.2.2302.post87.dev0-cp39-cp39-macosx_10_15_universal2.whl": "6.2.2302.post86.dev0@ngsolve-6.2.2302.post86.dev0-cp39-cp39-macosx_10_15_universal2.whl"
+      },
+      "6.2.2302.post91.dev0": {
+        "ngsolve-6.2.2302.post91.dev0-cp39-cp39-macosx_10_15_universal2.whl": {
+          "requires_dist": [
+            "netgen-mesher (==6.2.2302.post46.dev)"
+          ]
+        },
+        "ngsolve-6.2.2302.post91.dev0-cp39-cp39-win_amd64.whl": {
+          "requires_dist": [
+            "netgen-mesher (==6.2.2302.post46.dev)",
+            "mkl"
+          ]
+        }
       }
     }
   },
@@ -81202,6 +81377,45 @@
             "mkdocs-awesome-pages-plugin (~=2.8) ; extra == 'docs'",
             "mkdocs-material (~=9.1) ; extra == 'docs'",
             "mkdocstrings[python] (~=0.20.0) ; extra == 'docs'"
+          ],
+          "requires_python": ">=3.9"
+        }
+      },
+      "0.4.2": {
+        "oteapi_core-0.4.2-py3-none-any.whl": {
+          "provides_extras": [
+            "dev",
+            "docs"
+          ],
+          "requires_dist": [
+            "agraph-python (<102,>=101.0.7)",
+            "celery (<6,>=5.2.3)",
+            "diskcache (<6,>=5.4.0)",
+            "fastapi-plugins (~=0.12.0)",
+            "numpy (<2,>=1.21)",
+            "openpyxl (<4,>=3.0.9)",
+            "Pillow (<10,>=9.0.0)",
+            "pydantic (<2,>=1.9.0)",
+            "pysftp (~=0.2.9)",
+            "requests (<3,>=2.26.0)",
+            "urllib3 (<2)",
+            "pylint (~=2.17) ; extra == 'dev'",
+            "pytest (~=7.3) ; extra == 'dev'",
+            "pytest-celery ; extra == 'dev'",
+            "pytest-cov (~=4.0) ; extra == 'dev'",
+            "requests-mock (~=1.10) ; extra == 'dev'",
+            "mike (~=1.1) ; extra == 'dev'",
+            "mkdocs (~=1.4) ; extra == 'dev'",
+            "mkdocs-awesome-pages-plugin (~=2.9) ; extra == 'dev'",
+            "mkdocs-material (~=9.1) ; extra == 'dev'",
+            "mkdocstrings[python] (~=0.21.2) ; extra == 'dev'",
+            "pre-commit (<3,>=2.21.0) ; (python_version < \"3.8\") and extra == 'dev'",
+            "pre-commit (~=3.3) ; (python_version >= \"3.8\") and extra == 'dev'",
+            "mike (~=1.1) ; extra == 'docs'",
+            "mkdocs (~=1.4) ; extra == 'docs'",
+            "mkdocs-awesome-pages-plugin (~=2.9) ; extra == 'docs'",
+            "mkdocs-material (~=9.1) ; extra == 'docs'",
+            "mkdocstrings[python] (~=0.21.2) ; extra == 'docs'"
           ],
           "requires_python": ">=3.9"
         }
@@ -98661,6 +98875,30 @@
             "duckdb (==0.6.1)"
           ]
         }
+      },
+      "3.0.35": {
+        "soda_core_duckdb-3.0.35-py3-none-any.whl": {
+          "requires_dist": [
+            "soda-core (==3.0.35)",
+            "duckdb (==0.6.1)"
+          ]
+        }
+      },
+      "3.0.36": {
+        "soda_core_duckdb-3.0.36-py3-none-any.whl": {
+          "requires_dist": [
+            "soda-core (==3.0.36)",
+            "duckdb (==0.6.1)"
+          ]
+        }
+      },
+      "3.0.37": {
+        "soda_core_duckdb-3.0.37-py3-none-any.whl": {
+          "requires_dist": [
+            "soda-core (==3.0.37)",
+            "duckdb (==0.6.1)"
+          ]
+        }
       }
     }
   },
@@ -98847,6 +99085,15 @@
             "Werkzeug (==2.3.3)"
           ]
         }
+      },
+      "0.2.0": {
+        "specmatic_python-0.2.0-py3-none-any.whl": "0.1.0@specmatic_python-0.1.0-py3-none-any.whl"
+      },
+      "0.2.1": {
+        "specmatic_python-0.2.1-py3-none-any.whl": "0.1.0@specmatic_python-0.1.0-py3-none-any.whl"
+      },
+      "0.2.2": {
+        "specmatic_python-0.2.2-py3-none-any.whl": "0.1.0@specmatic_python-0.1.0-py3-none-any.whl"
       }
     }
   },
@@ -104573,6 +104820,9 @@
       },
       "3.0.889": {
         "tencentcloud_sdk_python_dts-3.0.889-py2.py3-none-any.whl": "3.0.251@tencentcloud_sdk_python_dts-3.0.251-py2.py3-none-any.whl"
+      },
+      "3.0.890": {
+        "tencentcloud_sdk_python_dts-3.0.890-py2.py3-none-any.whl": "3.0.251@tencentcloud_sdk_python_dts-3.0.251-py2.py3-none-any.whl"
       }
     }
   },
@@ -106161,6 +106411,9 @@
           ],
           "requires_python": ">=3.8"
         }
+      },
+      "4.1.1": {
+        "tour_guide-4.1.1-py3-none-any.whl": "4.1.0@tour_guide-4.1.0-py3-none-any.whl"
       }
     }
   },
