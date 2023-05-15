@@ -34893,7 +34893,8 @@
     "0.3.1": "0.2.0",
     "0.3.2": "0.2.0",
     "0.3.3": "0.2.0",
-    "0.4.0": "0.2.0"
+    "0.4.0": "0.2.0",
+    "0.4.1": "0.2.0"
   },
   "example-package-hyun-seo": {
     "0.0.1": {
@@ -98087,6 +98088,45 @@
     "5.2.59": "5.0.2",
     "5.2.60": "5.0.2",
     "5.2.61": "5.0.2"
+  },
+  "zigpy-zboss": {
+    "1.0.1": {
+      "36": {
+        "install_requires": [
+          "zigpy>=0.54.1",
+          "async_timeout",
+          "voluptuous",
+          "coloredlogs",
+          "jsonschema"
+        ],
+        "extras_require": {
+          "testing": [
+            "pytest>=5.4.5",
+            "pytest-asyncio>=0.12.0",
+            "pytest-timeout",
+            "pytest-mock",
+            "pytest-cov",
+            "coveralls"
+          ],
+          "testing:python_version < \"3.8.0\"": [
+            "asynctest"
+          ],
+          ":platform_system != \"Windows\"": [
+            "pyserial-asyncio"
+          ],
+          ":platform_system == \"Windows\"": [
+            "pyserial-asyncio!=0.5"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "zipls": {
     "0.1": {
