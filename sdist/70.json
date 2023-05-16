@@ -2942,6 +2942,25 @@
       "38": "36",
       "39": "36",
       "310": "36"
+    },
+    "3.2.0rc1": {
+      "36": {
+        "install_requires": [
+          "apache-airflow>=2.4.0.dev0",
+          "pdpyras>=4.1.2"
+        ],
+        "setup_requires": [
+          "setuptools",
+          "wheel"
+        ],
+        "python_requires": [
+          "~=3.7"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
     }
   },
   "apache-airflow-providers-yandex": {
@@ -44773,7 +44792,9 @@
     "2023.5.10": "2023.5.9",
     "2023.5.11": "2023.5.9",
     "2023.5.11.post2": "2023.5.9",
-    "2023.5.11.post3": "2023.5.9"
+    "2023.5.11.post3": "2023.5.9",
+    "2023.5.16": "2023.5.9",
+    "2023.5.16.post2": "2023.5.9"
   },
   "epub-extract-jpeg": {
     "0.5.0": {
@@ -52944,6 +52965,223 @@
             "bottle",
             "wifi",
             "py3nvml",
+            "batinfo"
+          ],
+          ":python_version < \"3.0\"": [
+            "future",
+            "ujson<3"
+          ],
+          ":python_version >= \"3.5\" and python_version < \"3.6\"": [
+            "ujson<4"
+          ],
+          ":python_version >= \"3.6\" and python_version < \"3.7\"": [
+            "ujson<5"
+          ],
+          ":python_version >= \"3.7\"": [
+            "ujson>=5.4.0"
+          ]
+        },
+        "python_requires": [
+          ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "3.4.0": {
+      "27": {
+        "install_requires": [
+          "psutil>=5.6.7",
+          "defusedxml",
+          "packaging"
+        ],
+        "extras_require": {
+          "folders": [
+            "scandir"
+          ],
+          "web": [
+            "bottle",
+            "requests"
+          ],
+          "all": [
+            "scandir",
+            "pymdstat",
+            "netifaces",
+            "bernhard",
+            "sparklines",
+            "batinfo",
+            "requests",
+            "bottle",
+            "pygal",
+            "wifi",
+            "pysnmp",
+            "chevron",
+            "pySMART.smartx",
+            "zeroconf==0.62.0"
+          ],
+          "raid": [
+            "pymdstat"
+          ],
+          ":python_version < \"3.0\"": [
+            "future",
+            "ujson<3"
+          ],
+          "ip": [
+            "netifaces"
+          ],
+          "wifi": [
+            "wifi"
+          ],
+          "snmp": [
+            "pysnmp"
+          ],
+          ":python_version >= \"3.7\"": [
+            "ujson>=5.4.0"
+          ],
+          ":python_version >= \"3.6\" and python_version < \"3.7\"": [
+            "ujson<5"
+          ],
+          "smart": [
+            "pySMART.smartx"
+          ],
+          "sparklines": [
+            "sparklines"
+          ],
+          "graph": [
+            "pygal"
+          ],
+          "action": [
+            "chevron"
+          ],
+          ":python_version >= \"3.5\" and python_version < \"3.6\"": [
+            "ujson<4"
+          ],
+          "export": [
+            "bernhard",
+            "cassandra-driver",
+            "couchdb",
+            "elasticsearch",
+            "graphitesender",
+            "influxdb>=1.0.0",
+            "kafka-python",
+            "pika",
+            "paho-mqtt",
+            "potsdb",
+            "prometheus_client",
+            "pyzmq",
+            "statsd"
+          ],
+          "sensors": [
+            "batinfo"
+          ],
+          "cloud": [
+            "requests"
+          ],
+          "browser": [
+            "zeroconf==0.62.0"
+          ]
+        },
+        "python_requires": [
+          ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+        ]
+      },
+      "36": {
+        "install_requires": [
+          "psutil>=5.6.7",
+          "defusedxml",
+          "packaging"
+        ],
+        "extras_require": {
+          "action": [
+            "chevron"
+          ],
+          "browser": [
+            "zeroconf>=0.19.1"
+          ],
+          "cloud": [
+            "requests",
+            "packaging"
+          ],
+          "export": [
+            "bernhard",
+            "cassandra-driver",
+            "couchdb",
+            "elasticsearch",
+            "graphitesender",
+            "influxdb>=1.0.0",
+            "kafka-python",
+            "pika",
+            "paho-mqtt",
+            "potsdb",
+            "prometheus_client",
+            "pyzmq",
+            "statsd",
+            "influxdb-client",
+            "pymongo"
+          ],
+          "folders": [
+            "scandir"
+          ],
+          "graph": [
+            "pygal"
+          ],
+          "ip": [
+            "netifaces"
+          ],
+          "raid": [
+            "pymdstat"
+          ],
+          "smart": [
+            "pySMART.smartx"
+          ],
+          "snmp": [
+            "pysnmp"
+          ],
+          "sparklines": [
+            "sparklines"
+          ],
+          "web": [
+            "bottle",
+            "requests"
+          ],
+          "wifi": [
+            "wifi"
+          ],
+          "containers": [
+            "docker>=6.1.1",
+            "podman",
+            "python-dateutil",
+            "six",
+            "packaging"
+          ],
+          "gpu": [
+            "py3nvml"
+          ],
+          "podman": [
+            "podman"
+          ],
+          "sensors": [
+            "batinfo"
+          ],
+          "all": [
+            "chevron",
+            "zeroconf>=0.19.1",
+            "requests",
+            "bernhard",
+            "scandir",
+            "pygal",
+            "netifaces",
+            "pymdstat",
+            "pySMART.smartx",
+            "pysnmp",
+            "sparklines",
+            "bottle",
+            "wifi",
+            "docker>=6.1.1",
+            "py3nvml",
+            "podman",
             "batinfo"
           ],
           ":python_version < \"3.0\"": [
@@ -65723,7 +65961,8 @@
     "0.4.0": "0.1.4",
     "0.4.1": "0.1.4",
     "0.4.2": "0.1.4",
-    "0.4.3": "0.1.4"
+    "0.4.3": "0.1.4",
+    "0.4.4": "0.1.4"
   },
   "mqtt-xieyi-zhongwenban": {
     "2023.2.12.0": {
@@ -76117,6 +76356,25 @@
       "310": "27"
     }
   },
+  "plottime": {
+    "1.0.0a0": {
+      "27": {
+        "install_requires": [
+          "awkward",
+          "numpy",
+          "matplotlib"
+        ],
+        "python_requires": [
+          ">=3.9"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
+  },
   "plsexplain": {
     "0.1.0": {
       "27": {
@@ -76443,7 +76701,8 @@
     "0.9.3": "0.9.0",
     "0.9.4": "0.9.0",
     "0.9.5": "0.9.0",
-    "0.9.6": "0.9.0"
+    "0.9.6": "0.9.0",
+    "0.10.0": "0.9.0"
   },
   "pomicenextcord": {
     "1.1.6.1": {
@@ -78357,7 +78616,8 @@
     "0.4.2a1683352048": "0.4.1",
     "0.4.2a1683611299": "0.4.1",
     "0.4.2a1683785303": "0.4.1",
-    "0.4.2a1683956500": "0.4.1"
+    "0.4.2a1683956500": "0.4.1",
+    "0.4.2a1684215982": "0.4.1"
   },
   "pulumiverse-ovh": {
     "0.0.1a1": "0.0.1",
@@ -87076,7 +87336,8 @@
     "0.38.4": "0.38.0",
     "0.38.5": "0.38.0",
     "0.38.6": "0.38.0",
-    "0.39.0": "0.38.0"
+    "0.39.0": "0.38.0",
+    "0.39.1": "0.38.0"
   },
   "pywalletconnectv1": {
     "0.1.0": {

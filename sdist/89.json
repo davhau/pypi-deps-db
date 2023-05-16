@@ -4060,35 +4060,9 @@
     "0.9.1": "0.0.3"
   },
   "aws-analytics-reference-architecture": {
-    "2.3.2": {
-      "36": {
-        "install_requires": [
-          "aws-cdk-lib==2.35.0",
-          "aws-cdk.aws-glue-alpha==2.35.0.a0",
-          "aws-cdk.aws-redshift-alpha==2.35.0.a0",
-          "constructs<11.0.0,>=10.1.66",
-          "jsii<2.0.0,>=1.65.0",
-          "publication>=0.0.3",
-          "typeguard~=2.13.3"
-        ],
-        "python_requires": [
-          "~=3.7"
-        ]
-      },
-      "37": "36",
-      "38": "36",
-      "39": "36",
-      "310": "36"
-    },
-    "2.4.0": "2.3.2",
-    "2.4.1": "2.3.2",
-    "2.4.2": "2.3.2",
-    "2.4.3": "2.3.2",
-    "2.4.4": "2.3.2",
-    "2.4.5": "2.3.2",
-    "2.4.6": "2.3.2",
-    "2.4.7": "2.3.2",
-    "2.4.8": {
+    "2.7.3": "2.6.0",
+    "2.6.5": "2.6.0",
+    "2.5.0": {
       "36": {
         "install_requires": [
           "aws-cdk-lib==2.41.0",
@@ -4108,15 +4082,7 @@
       "39": "36",
       "310": "36"
     },
-    "2.4.9": "2.4.8",
-    "2.4.10": "2.4.8",
-    "2.4.11": "2.4.8",
-    "2.4.14": "2.4.8",
-    "2.7.3": "2.6.0",
-    "2.6.5": "2.6.0",
-    "2.5.0": "2.4.8",
     "2.7.0": "2.6.0",
-    "2.4.13": "2.4.8",
     "2.6.0": {
       "36": {
         "install_requires": [
@@ -4137,12 +4103,11 @@
       "39": "36",
       "310": "36"
     },
-    "2.4.12": "2.4.8",
     "2.6.2": "2.6.0",
     "2.6.3": "2.6.0",
     "2.7.2": "2.6.0",
     "2.6.4": "2.6.0",
-    "2.5.1": "2.4.8",
+    "2.5.1": "2.5.0",
     "2.6.1": "2.6.0",
     "2.7.1": "2.6.0",
     "2.7.4": "2.6.0",
@@ -4194,7 +4159,9 @@
     "2.9.15": "2.9.6",
     "2.10.0": "2.9.6",
     "2.10.1": "2.9.6",
-    "2.11.0": "2.9.6"
+    "2.11.0": "2.9.6",
+    "2.12.0": "2.9.6",
+    "2.12.1": "2.9.6"
   },
   "aws-organized": {
     "0.0.1": {
@@ -93900,7 +93867,8 @@
       "38": "27",
       "39": "27",
       "310": "27"
-    }
+    },
+    "0.3.4": "0.3.3"
   },
   "obedient.elk.sysmon": {
     "66.0.0": {
@@ -95939,7 +95907,63 @@
       "39": "36",
       "310": "36"
     },
-    "0.14.1": "0.13.9"
+    "0.14.1": "0.13.9",
+    "0.14.2": {
+      "36": {
+        "install_requires": [
+          "click",
+          "docker",
+          "jsonschema>=4.4.0",
+          "protobuf==3.20.1",
+          "requests",
+          "rich",
+          "ruamel.yaml",
+          "tenacity",
+          "sqlalchemy~=1.4",
+          "semver>=3.0.0",
+          "markdownify",
+          "alembic",
+          "py-ubjson"
+        ],
+        "extras_require": {
+          "agent": [
+            "Werkzeug",
+            "aio-pika==6.8.1",
+            "flask",
+            "jsonschema>=4.4.0",
+            "protobuf==3.20.1",
+            "ruamel.yaml",
+            "tenacity",
+            "semver",
+            "redis",
+            "opentelemetry-distro",
+            "opentelemetry-exporter-jaeger",
+            "opentelemetry-exporter-gcp-trace"
+          ],
+          "agent:python_version < \"3.8\"": [
+            "importlib-metadata"
+          ],
+          "testing": [
+            "setuptools",
+            "pytest",
+            "pytest-cov",
+            "pytest-asyncio",
+            "pytest-mock",
+            "pytest-timeout",
+            "requests_mock",
+            "coverage",
+            "pytest-cov"
+          ],
+          ":python_version < \"3.8\"": [
+            "importlib-metadata"
+          ]
+        }
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "otomkdir": {
     "0.0.1": {
@@ -116410,6 +116434,33 @@
           "pytest-flake8",
           "pytest-timeout",
           "pytest-html",
+          "flake8>=4.0.0,<5.0.0  # workaround: https://github.com/tholo/pytest-flake8/issues/87"
+        ],
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "1.8.0": {
+      "36": {
+        "install_requires": [
+          "sinetstream>=1.8.0",
+          "kafka-python>=2.0",
+          "promise"
+        ],
+        "setup_requires": [
+          "pytest-runner"
+        ],
+        "tests_require": [
+          "pytest",
+          "pytest-cov",
+          "pytest-flake8",
+          "pytest-timeout",
+          "pytest-html==3.2.0",
           "flake8>=4.0.0,<5.0.0  # workaround: https://github.com/tholo/pytest-flake8/issues/87"
         ],
         "python_requires": [
