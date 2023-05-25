@@ -3033,7 +3033,8 @@
       "310": "27"
     },
     "0.1.119": "0.1.118",
-    "0.1.120": "0.1.118"
+    "0.1.120": "0.1.118",
+    "0.1.121": "0.1.118"
   },
   "alfred3": {
     "1.1.3": {
@@ -22010,7 +22011,8 @@
       "38": "36",
       "39": "36",
       "310": "36"
-    }
+    },
+    "1.4.2": "1.4.1"
   },
   "dbt-core": {
     "0.13.0": {
@@ -24216,6 +24218,49 @@
           "idna<4,>=2.5",
           "cffi<2.0.0,>=1.9",
           "pyyaml>=6.0",
+          "urllib3~=1.0"
+        ],
+        "extras_require": {
+          ":python_version < \"3.8\"": [
+            "networkx<2.8.1,>=2.3"
+          ],
+          ":python_version >= \"3.8\"": [
+            "networkx<3,>=2.3"
+          ]
+        },
+        "python_requires": [
+          ">=3.7.2"
+        ]
+      },
+      "38": "37",
+      "39": "37",
+      "310": "37"
+    },
+    "1.5.1rc2": "1.5.1rc1",
+    "1.6.0b2": {
+      "37": {
+        "install_requires": [
+          "Jinja2==3.1.2",
+          "agate<1.7.1,>=1.6",
+          "click<9,>=7.0",
+          "colorama<0.4.7,>=0.3.9",
+          "hologram<=0.0.16,>=0.0.14",
+          "isodate<0.7,>=0.6",
+          "logbook<1.6,>=1.5",
+          "mashumaro[msgpack]==3.6",
+          "minimal-snowplow-tracker==0.0.2",
+          "packaging>20.9",
+          "sqlparse<0.4.4,>=0.2.3",
+          "dbt-extractor~=0.4.1",
+          "typing-extensions>=3.7.4",
+          "werkzeug<3,>=1",
+          "pathspec<0.12,>=0.9",
+          "protobuf>=4.0.0",
+          "pytz>=2015.7",
+          "requests<3.0.0",
+          "idna<4,>=2.5",
+          "cffi<2.0.0,>=1.9",
+          "pyyaml>=5.3",
           "urllib3~=1.0"
         ],
         "extras_require": {
@@ -27899,6 +27944,122 @@
           "pynng",
           "redis",
           "pettingzoo",
+          "DI-treetensor>=0.3.0",
+          "DI-toolkit>=0.0.2",
+          "hbutils>=0.5.0",
+          "wandb",
+          "matplotlib",
+          "MarkupSafe==2.0.1",
+          "h5py",
+          "scikit-learn",
+          "hickle",
+          "gymnasium"
+        ],
+        "extras_require": {
+          "test": [
+            "gym[box2d]>=0.25.0",
+            "opencv-python",
+            "coverage<=7.0.1,>=5",
+            "mock>=4.0.3",
+            "pytest~=7.0.1",
+            "pytest-cov~=3.0.0",
+            "pytest-mock~=3.6.1",
+            "pytest-xdist>=1.34.0",
+            "pytest-rerunfailures~=10.2",
+            "pytest-timeout~=2.0.2"
+          ],
+          "style": [
+            "yapf==0.29.0",
+            "flake8<=3.9.2",
+            "importlib-metadata<5.0.0"
+          ],
+          "fast": [
+            "numpy-stl",
+            "numba>=0.53.0"
+          ],
+          "dist": [
+            "redis==3.5.3",
+            "redis-py-cluster==2.1.0"
+          ],
+          "common_env": [
+            "ale-py",
+            "autorom",
+            "gym[all]>=0.25.0",
+            "cmake>=3.18.4",
+            "opencv-python"
+          ],
+          "gfootball_env": [
+            "gfootball",
+            "kaggle-environments"
+          ],
+          "procgen_env": [
+            "procgen"
+          ],
+          "bsuite_env": [
+            "bsuite"
+          ],
+          "minigrid_env": [
+            "minigrid>=2.0.0"
+          ],
+          "slimevolleygym_env": [
+            "slimevolleygym"
+          ],
+          "smac_env": [
+            "pysc2"
+          ],
+          "k8s": [
+            "kubernetes"
+          ],
+          "envpool": [
+            "envpool"
+          ],
+          "sokoban": [
+            "gym-sokoban"
+          ],
+          "mario": [
+            "gym-super-mario-bros>=7.3.0"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "0.4.8": {
+      "36": {
+        "install_requires": [
+          "setuptools<=66.1.1",
+          "gym==0.25.1",
+          "numpy>=1.18.0",
+          "pandas",
+          "tensorboardX>=2.2",
+          "requests>=2.25.1",
+          "pyyaml",
+          "easydict==1.9",
+          "protobuf",
+          "yapf==0.29.0",
+          "flask~=1.1.2",
+          "tqdm",
+          "lz4",
+          "scipy",
+          "cloudpickle",
+          "tabulate",
+          "click>=7.0.0",
+          "URLObject>=2.4.0",
+          "urllib3>=1.26.5",
+          "responses~=0.12.1",
+          "readerwriterlock",
+          "enum_tools",
+          "trueskill",
+          "h5py",
+          "mpire>=2.3.5",
+          "pynng",
+          "redis",
+          "pettingzoo<=1.22.3",
           "DI-treetensor>=0.3.0",
           "DI-toolkit>=0.0.2",
           "hbutils>=0.5.0",
@@ -68848,7 +69009,8 @@
       "310": "36"
     },
     "0.0.2": "0.0.1",
-    "0.0.3": "0.0.1"
+    "0.0.3": "0.0.1",
+    "0.0.4": "0.0.1"
   },
   "rldev": {
     "0.0.1": {
