@@ -43900,7 +43900,8 @@
     "1.0.4": "1.0.0"
   },
   "indecro": {
-    "0.102": {
+    "0.102": "0.13",
+    "0.13": {
       "27": {
         "python_requires": [
           ">=3.9"
@@ -43911,7 +43912,9 @@
       "38": "27",
       "39": "27",
       "310": "27"
-    }
+    },
+    "0.131": "0.13",
+    "0.132": "0.13"
   },
   "instainfo": {
     "0.0.3": {
@@ -81910,7 +81913,65 @@
     "0.2.1": "0.1.0",
     "0.2.2": "0.1.0",
     "0.2.3": "0.1.0",
-    "0.2.4": "0.1.0"
+    "0.2.4": "0.1.0",
+    "0.2.5": {
+      "27": {
+        "install_requires": [
+          "xarray>=0.16.0",
+          "netcdf4>=1.4.0",
+          "numpy>=1.13.0",
+          "eudist",
+          "pyyaml"
+        ],
+        "setup_requires": [
+          "setuptools>=42",
+          "setuptools_scm[toml]>=3.4",
+          "setuptools_scm_git_archive"
+        ],
+        "extras_require": {
+          "plot": [
+            "matplotlib!=3.3.0,!=3.3.1,!=3.3.2,>=3.1.1"
+          ],
+          "full": [
+            "matplotlib!=3.3.0,!=3.3.1,!=3.3.2,>=3.1.1",
+            "mayavi",
+            "vtk!=9.0.2,!=9.0.3",
+            "sphinx>=1.4",
+            "nbsphinx>=0.8.6",
+            "numba"
+          ],
+          "full:python_version > \"3.6\"": [
+            "sphinx-argparse-cli"
+          ],
+          "docs": [
+            "sphinx>=1.4",
+            "nbsphinx>=0.8.6"
+          ],
+          "docs:python_version > \"3.6\"": [
+            "sphinx-argparse-cli"
+          ],
+          "plot3d": [
+            "mayavi",
+            "vtk!=9.0.2,!=9.0.3"
+          ],
+          ":python_version < \"3.8\"": [
+            "importlib-metadata"
+          ]
+        },
+        "tests_require": [
+          "pytest >= 3.3.0",
+          "mayavi",
+          "vtk !=9.0.3, !=9.0.2",
+          "matplotlib",
+          "coverage"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "xicorrelation": {
     "0.2.1": {

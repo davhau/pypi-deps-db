@@ -9753,7 +9753,8 @@
     "1.0.0": "0.2.0",
     "1.1.0": "0.2.0",
     "1.1.1": "0.2.0",
-    "1.1.2": "0.2.0"
+    "1.1.2": "0.2.0",
+    "1.1.4": "0.2.0"
   },
   "calm-timer": {
     "1.0.10a0": {
@@ -33362,7 +33363,7 @@
     }
   },
   "gbt-parser": {
-    "1.0.3": {
+    "1.0.16": {
       "36": {
         "install_requires": [
           "bitstruct>=8.16.1",
@@ -33371,7 +33372,37 @@
           "diskcache",
           "argparse_addons",
           "typing_extensions>=3.10.0.0",
-          "crccheck"
+          "crccheck",
+          "windows-curses"
+        ],
+        "extras_require": {
+          "plot": [
+            "matplotlib"
+          ],
+          "windows-all": [],
+          "windows-all:platform_system == \"Windows\"": [
+            "windows-curses"
+          ]
+        },
+        "python_requires": [
+          ">=3.8"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "1.0.4": {
+      "36": {
+        "install_requires": [
+          "bitstruct>=8.16.1",
+          "python-can>=3.3.4",
+          "textparser>=0.21.1",
+          "diskcache",
+          "argparse_addons",
+          "typing_extensions>=3.10.0.0",
+          "crccheckwindows-curses"
         ],
         "extras_require": {
           "plot": [
