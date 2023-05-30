@@ -48,6 +48,27 @@
           "requires_python": ">=3.8"
         }
       },
+      "0.0.10": {
+        "absl_extra-0.0.10-py3-none-any.whl": {
+          "provides_extras": [
+            "dev",
+            "ml_collections",
+            "mongo",
+            "slack"
+          ],
+          "requires_dist": [
+            "absl_py",
+            "black ; extra == \"dev\"",
+            "ml_collections ; extra == \"ml_collections\"",
+            "pymongo ; extra == \"mongo\"",
+            "slack_sdk ; extra == \"slack\""
+          ],
+          "requires_python": ">=3.8"
+        }
+      },
+      "0.0.11": {
+        "absl_extra-0.0.11-py3-none-any.whl": "0.0.10@absl_extra-0.0.10-py3-none-any.whl"
+      },
       "0.0.2": {
         "absl_extra-0.0.2-py3-none-any.whl": "0.0.1@absl_extra-0.0.1-py3-none-any.whl"
       },
@@ -67,22 +88,10 @@
         "absl_extra-0.0.7-py3-none-any.whl": "0.0.1@absl_extra-0.0.1-py3-none-any.whl"
       },
       "0.0.8": {
-        "absl_extra-0.0.8-py3-none-any.whl": {
-          "provides_extras": [
-            "dev",
-            "ml_collections",
-            "mongo",
-            "slack"
-          ],
-          "requires_dist": [
-            "absl_py",
-            "black ; extra == \"dev\"",
-            "ml_collections ; extra == \"ml_collections\"",
-            "pymongo ; extra == \"mongo\"",
-            "slack_sdk ; extra == \"slack\""
-          ],
-          "requires_python": ">=3.8"
-        }
+        "absl_extra-0.0.8-py3-none-any.whl": "0.0.10@absl_extra-0.0.10-py3-none-any.whl"
+      },
+      "0.0.9": {
+        "absl_extra-0.0.9-py3-none-any.whl": "0.0.10@absl_extra-0.0.10-py3-none-any.whl"
       }
     }
   },
@@ -3276,6 +3285,25 @@
           ],
           "requires_python": ">=3.8.10"
         }
+      }
+    }
+  },
+  "ak-pynn": {
+    "py3": {
+      "0.1.7": {
+        "ak_pynn-0.1.7-py3-none-any.whl": {
+          "requires_dist": [
+            "numpy",
+            "tqdm",
+            "opt-einsum",
+            "matplotlib",
+            "numexpr",
+            "seaborn"
+          ]
+        }
+      },
+      "0.1.8": {
+        "ak_pynn-0.1.8-py3-none-any.whl": "0.1.7@ak_pynn-0.1.7-py3-none-any.whl"
       }
     }
   },
@@ -7073,6 +7101,9 @@
       },
       "0.0.2": {
         "automation_file-0.0.2-py3-none-any.whl": "0.0.1@automation_file-0.0.1-py3-none-any.whl"
+      },
+      "0.0.3": {
+        "automation_file-0.0.3-py3-none-any.whl": "0.0.1@automation_file-0.0.1-py3-none-any.whl"
       }
     }
   },
@@ -7785,6 +7816,9 @@
           ],
           "requires_python": "~=3.7"
         }
+      },
+      "2.2.185": {
+        "aws_cdk.asset_awscli_v1-2.2.185-py3-none-any.whl": "2.2.184@aws_cdk.asset_awscli_v1-2.2.184-py3-none-any.whl"
       },
       "2.2.19": {
         "aws_cdk.asset_awscli_v1-2.2.19-py3-none-any.whl": "2.2.10@aws_cdk.asset_awscli_v1-2.2.10-py3-none-any.whl"
@@ -11091,6 +11125,20 @@
         "basicsound-0.0.1-py3-none-any.whl": {
           "requires_python": ">=3.7"
         }
+      }
+    }
+  },
+  "batchparse": {
+    "py3": {
+      "0.0.1": {
+        "BatchParse-0.0.1-py3-none-any.whl": {
+          "requires_dist": [
+            "rich"
+          ]
+        }
+      },
+      "0.0.2": {
+        "BatchParse-0.0.2-py3-none-any.whl": "0.0.1@BatchParse-0.0.1-py3-none-any.whl"
       }
     }
   },
@@ -18292,6 +18340,57 @@
             "easydict (<2,>=1.7) ; extra == 'test'",
             "testtools (>=2) ; extra == 'test'",
             "where (>=1.0.2) ; extra == 'test'"
+          ],
+          "requires_python": ">=3.6"
+        }
+      },
+      "0.2.0": {
+        "DI_toolkit-0.2.0-py3-none-any.whl": {
+          "provides_extras": [
+            "doc",
+            "style",
+            "test"
+          ],
+          "requires_dist": [
+            "hbutils (>=0.9.1)",
+            "rich (>=12.2.0)",
+            "yattag (>=1.14.0)",
+            "click (>=7.0.0)",
+            "pandas",
+            "tensorboard",
+            "tqdm",
+            "scipy",
+            "scikit-learn",
+            "seaborn",
+            "matplotlib",
+            "Jinja2 (~=3.0.0) ; extra == 'doc'",
+            "sphinx (~=3.2.0) ; extra == 'doc'",
+            "sphinx-rtd-theme (~=0.4.3) ; extra == 'doc'",
+            "enum-tools ; extra == 'doc'",
+            "sphinx-toolbox ; extra == 'doc'",
+            "plantumlcli (>=0.0.2) ; extra == 'doc'",
+            "packaging ; extra == 'doc'",
+            "sphinx-multiversion (~=0.2.4) ; extra == 'doc'",
+            "where (~=1.0.2) ; extra == 'doc'",
+            "easydict (<2,>=1.7) ; extra == 'doc'",
+            "yapf (==0.29.0) ; extra == 'style'",
+            "flake8 (<5,>=3) ; extra == 'style'",
+            "coverage (>=5) ; extra == 'test'",
+            "mock (>=4.0.3) ; extra == 'test'",
+            "flake8 (~=3.5) ; extra == 'test'",
+            "testfixtures (>=6.18.5) ; extra == 'test'",
+            "pytest (~=6.2.5) ; extra == 'test'",
+            "pytest-cov (~=3.0.0) ; extra == 'test'",
+            "pytest-mock (~=3.6.1) ; extra == 'test'",
+            "pytest-xdist (>=1.34.0) ; extra == 'test'",
+            "pytest-rerunfailures (~=10.2) ; extra == 'test'",
+            "pytest-timeout (~=2.0.2) ; extra == 'test'",
+            "pytest-benchmark (~=3.4.0) ; extra == 'test'",
+            "easydict (<2,>=1.7) ; extra == 'test'",
+            "testtools (>=2) ; extra == 'test'",
+            "where (>=1.0.2) ; extra == 'test'",
+            "torch (>=1.3.1) ; extra == 'test'",
+            "pytest-image-diff (>=0.0.11) ; extra == 'test'"
           ],
           "requires_python": ">=3.6"
         }
@@ -33154,6 +33253,23 @@
       }
     }
   },
+  "jesseapp123": {
+    "py3": {
+      "3.0.0": {
+        "jesseapp123-3.0.0-py3-none-any.whl": {
+          "provides_extras": [
+            "test"
+          ],
+          "requires_dist": [
+            "appdirs (>=1.4.4)",
+            "PySide6 (>=6.5.0)",
+            "pytest ; extra == 'test'"
+          ],
+          "requires_python": "<4,>=3.6"
+        }
+      }
+    }
+  },
   "jesspack": {
     "py3": {
       "1.0": {
@@ -39263,6 +39379,12 @@
       },
       "0.2.5": {
         "mcnets-0.2.5-py3-none-any.whl": "0.1.5.1@mcnets-0.1.5.1-py3-none-any.whl"
+      },
+      "0.2.6": {
+        "mcnets-0.2.6-py3-none-any.whl": "0.1.5.1@mcnets-0.1.5.1-py3-none-any.whl"
+      },
+      "0.2.7": {
+        "mcnets-0.2.7-py3-none-any.whl": "0.1.5.1@mcnets-0.1.5.1-py3-none-any.whl"
       }
     }
   },
@@ -44612,6 +44734,9 @@
       },
       "0.6.2": {
         "npf_web_extension-0.6.2-py3-none-any.whl": "0.1.1@npf_web_extension-0.1.1-py3-none-any.whl"
+      },
+      "0.6.3": {
+        "npf_web_extension-0.6.3-py3-none-any.whl": "0.1.1@npf_web_extension-0.1.1-py3-none-any.whl"
       }
     }
   },
@@ -45391,6 +45516,9 @@
           "requires_python": ">=3.8"
         }
       },
+      "15.0.1.0.0.3": {
+        "odoo_addon_purchase_request_tier_validation-15.0.1.0.0.3-py3-none-any.whl": "15.0.1.0.0.2@odoo_addon_purchase_request_tier_validation-15.0.1.0.0.2-py3-none-any.whl"
+      },
       "16.0.1.0.0.2": {
         "odoo_addon_purchase_request_tier_validation-16.0.1.0.0.2-py3-none-any.whl": {
           "requires_dist": [
@@ -45400,6 +45528,9 @@
           ],
           "requires_python": ">=3.10"
         }
+      },
+      "16.0.1.0.0.3": {
+        "odoo_addon_purchase_request_tier_validation-16.0.1.0.0.3-py3-none-any.whl": "16.0.1.0.0.2@odoo_addon_purchase_request_tier_validation-16.0.1.0.0.2-py3-none-any.whl"
       }
     }
   },
@@ -55380,6 +55511,64 @@
         },
         "psygnal-0.9.0-cp310-cp310-macosx_10_16_x86_64.whl": "0.9.0@psygnal-0.9.0-cp310-cp310-macosx_10_16_arm64.whl",
         "psygnal-0.9.0-cp310-cp310-win_amd64.whl": "0.9.0@psygnal-0.9.0-cp310-cp310-macosx_10_16_arm64.whl"
+      },
+      "0.9.1": {
+        "psygnal-0.9.1-cp310-cp310-macosx_10_16_arm64.whl": {
+          "provides_extras": [
+            "dev",
+            "docs",
+            "proxy",
+            "pydantic",
+            "test",
+            "testqt"
+          ],
+          "requires_dist": [
+            "importlib-metadata; python_version < '3.8'",
+            "mypy-extensions",
+            "typing-extensions",
+            "black; extra == 'dev'",
+            "cruft; extra == 'dev'",
+            "dask; extra == 'dev'",
+            "ipython; extra == 'dev'",
+            "mypy; extra == 'dev'",
+            "numpy; extra == 'dev'",
+            "pre-commit; extra == 'dev'",
+            "pydantic; extra == 'dev'",
+            "pyqt5; extra == 'dev'",
+            "pytest; extra == 'dev'",
+            "pytest-cov; extra == 'dev'",
+            "pytest-qt; extra == 'dev'",
+            "qtpy; extra == 'dev'",
+            "rich; extra == 'dev'",
+            "ruff; extra == 'dev'",
+            "wrapt; extra == 'dev'",
+            "griffe==0.25.5; extra == 'docs'",
+            "mkdocs-material==8.5.10; extra == 'docs'",
+            "mkdocs-minify-plugin; extra == 'docs'",
+            "mkdocs-spellcheck[all]; extra == 'docs'",
+            "mkdocs==1.4.2; extra == 'docs'",
+            "mkdocstrings-python==0.8.3; extra == 'docs'",
+            "mkdocstrings==0.20.0; extra == 'docs'",
+            "wrapt; extra == 'proxy'",
+            "pydantic; extra == 'pydantic'",
+            "attrs; extra == 'test'",
+            "dask; extra == 'test'",
+            "msgspec; python_version >= '3.8' and extra == 'test'",
+            "numpy; extra == 'test'",
+            "pydantic; extra == 'test'",
+            "pyinstaller>=4.0; extra == 'test'",
+            "pytest-codspeed; extra == 'test'",
+            "pytest-cov; extra == 'test'",
+            "pytest>=6.0; extra == 'test'",
+            "toolz; extra == 'test'",
+            "wrapt; extra == 'test'",
+            "pytest-qt; extra == 'testqt'",
+            "qtpy; extra == 'testqt'"
+          ],
+          "requires_python": ">=3.7"
+        },
+        "psygnal-0.9.1-cp310-cp310-macosx_10_16_x86_64.whl": "0.9.1@psygnal-0.9.1-cp310-cp310-macosx_10_16_arm64.whl",
+        "psygnal-0.9.1-cp310-cp310-win_amd64.whl": "0.9.1@psygnal-0.9.1-cp310-cp310-macosx_10_16_arm64.whl"
       }
     },
     "cp311": {
@@ -55762,6 +55951,64 @@
         },
         "psygnal-0.9.0-cp311-cp311-macosx_10_16_x86_64.whl": "0.9.0@psygnal-0.9.0-cp311-cp311-macosx_10_16_arm64.whl",
         "psygnal-0.9.0-cp311-cp311-win_amd64.whl": "0.9.0@psygnal-0.9.0-cp311-cp311-macosx_10_16_arm64.whl"
+      },
+      "0.9.1": {
+        "psygnal-0.9.1-cp311-cp311-macosx_10_16_arm64.whl": {
+          "provides_extras": [
+            "dev",
+            "docs",
+            "proxy",
+            "pydantic",
+            "test",
+            "testqt"
+          ],
+          "requires_dist": [
+            "importlib-metadata; python_version < '3.8'",
+            "mypy-extensions",
+            "typing-extensions",
+            "black; extra == 'dev'",
+            "cruft; extra == 'dev'",
+            "dask; extra == 'dev'",
+            "ipython; extra == 'dev'",
+            "mypy; extra == 'dev'",
+            "numpy; extra == 'dev'",
+            "pre-commit; extra == 'dev'",
+            "pydantic; extra == 'dev'",
+            "pyqt5; extra == 'dev'",
+            "pytest; extra == 'dev'",
+            "pytest-cov; extra == 'dev'",
+            "pytest-qt; extra == 'dev'",
+            "qtpy; extra == 'dev'",
+            "rich; extra == 'dev'",
+            "ruff; extra == 'dev'",
+            "wrapt; extra == 'dev'",
+            "griffe==0.25.5; extra == 'docs'",
+            "mkdocs-material==8.5.10; extra == 'docs'",
+            "mkdocs-minify-plugin; extra == 'docs'",
+            "mkdocs-spellcheck[all]; extra == 'docs'",
+            "mkdocs==1.4.2; extra == 'docs'",
+            "mkdocstrings-python==0.8.3; extra == 'docs'",
+            "mkdocstrings==0.20.0; extra == 'docs'",
+            "wrapt; extra == 'proxy'",
+            "pydantic; extra == 'pydantic'",
+            "attrs; extra == 'test'",
+            "dask; extra == 'test'",
+            "msgspec; python_version >= '3.8' and extra == 'test'",
+            "numpy; extra == 'test'",
+            "pydantic; extra == 'test'",
+            "pyinstaller>=4.0; extra == 'test'",
+            "pytest-codspeed; extra == 'test'",
+            "pytest-cov; extra == 'test'",
+            "pytest>=6.0; extra == 'test'",
+            "toolz; extra == 'test'",
+            "wrapt; extra == 'test'",
+            "pytest-qt; extra == 'testqt'",
+            "qtpy; extra == 'testqt'"
+          ],
+          "requires_python": ">=3.7"
+        },
+        "psygnal-0.9.1-cp311-cp311-macosx_10_16_x86_64.whl": "0.9.1@psygnal-0.9.1-cp311-cp311-macosx_10_16_arm64.whl",
+        "psygnal-0.9.1-cp311-cp311-win_amd64.whl": "0.9.1@psygnal-0.9.1-cp311-cp311-macosx_10_16_arm64.whl"
       }
     },
     "cp37": {
@@ -56491,6 +56738,63 @@
           "requires_python": ">=3.7"
         },
         "psygnal-0.9.0-cp37-cp37m-win_amd64.whl": "0.9.0@psygnal-0.9.0-cp37-cp37m-macosx_10_16_x86_64.whl"
+      },
+      "0.9.1": {
+        "psygnal-0.9.1-cp37-cp37m-macosx_10_16_x86_64.whl": {
+          "provides_extras": [
+            "dev",
+            "docs",
+            "proxy",
+            "pydantic",
+            "test",
+            "testqt"
+          ],
+          "requires_dist": [
+            "importlib-metadata; python_version < '3.8'",
+            "mypy-extensions",
+            "typing-extensions",
+            "black; extra == 'dev'",
+            "cruft; extra == 'dev'",
+            "dask; extra == 'dev'",
+            "ipython; extra == 'dev'",
+            "mypy; extra == 'dev'",
+            "numpy; extra == 'dev'",
+            "pre-commit; extra == 'dev'",
+            "pydantic; extra == 'dev'",
+            "pyqt5; extra == 'dev'",
+            "pytest; extra == 'dev'",
+            "pytest-cov; extra == 'dev'",
+            "pytest-qt; extra == 'dev'",
+            "qtpy; extra == 'dev'",
+            "rich; extra == 'dev'",
+            "ruff; extra == 'dev'",
+            "wrapt; extra == 'dev'",
+            "griffe==0.25.5; extra == 'docs'",
+            "mkdocs-material==8.5.10; extra == 'docs'",
+            "mkdocs-minify-plugin; extra == 'docs'",
+            "mkdocs-spellcheck[all]; extra == 'docs'",
+            "mkdocs==1.4.2; extra == 'docs'",
+            "mkdocstrings-python==0.8.3; extra == 'docs'",
+            "mkdocstrings==0.20.0; extra == 'docs'",
+            "wrapt; extra == 'proxy'",
+            "pydantic; extra == 'pydantic'",
+            "attrs; extra == 'test'",
+            "dask; extra == 'test'",
+            "msgspec; python_version >= '3.8' and extra == 'test'",
+            "numpy; extra == 'test'",
+            "pydantic; extra == 'test'",
+            "pyinstaller>=4.0; extra == 'test'",
+            "pytest-codspeed; extra == 'test'",
+            "pytest-cov; extra == 'test'",
+            "pytest>=6.0; extra == 'test'",
+            "toolz; extra == 'test'",
+            "wrapt; extra == 'test'",
+            "pytest-qt; extra == 'testqt'",
+            "qtpy; extra == 'testqt'"
+          ],
+          "requires_python": ">=3.7"
+        },
+        "psygnal-0.9.1-cp37-cp37m-win_amd64.whl": "0.9.1@psygnal-0.9.1-cp37-cp37m-macosx_10_16_x86_64.whl"
       }
     },
     "cp38": {
@@ -57241,6 +57545,64 @@
         },
         "psygnal-0.9.0-cp38-cp38-macosx_10_16_x86_64.whl": "0.9.0@psygnal-0.9.0-cp38-cp38-macosx_10_16_arm64.whl",
         "psygnal-0.9.0-cp38-cp38-win_amd64.whl": "0.9.0@psygnal-0.9.0-cp38-cp38-macosx_10_16_arm64.whl"
+      },
+      "0.9.1": {
+        "psygnal-0.9.1-cp38-cp38-macosx_10_16_arm64.whl": {
+          "provides_extras": [
+            "dev",
+            "docs",
+            "proxy",
+            "pydantic",
+            "test",
+            "testqt"
+          ],
+          "requires_dist": [
+            "importlib-metadata; python_version < '3.8'",
+            "mypy-extensions",
+            "typing-extensions",
+            "black; extra == 'dev'",
+            "cruft; extra == 'dev'",
+            "dask; extra == 'dev'",
+            "ipython; extra == 'dev'",
+            "mypy; extra == 'dev'",
+            "numpy; extra == 'dev'",
+            "pre-commit; extra == 'dev'",
+            "pydantic; extra == 'dev'",
+            "pyqt5; extra == 'dev'",
+            "pytest; extra == 'dev'",
+            "pytest-cov; extra == 'dev'",
+            "pytest-qt; extra == 'dev'",
+            "qtpy; extra == 'dev'",
+            "rich; extra == 'dev'",
+            "ruff; extra == 'dev'",
+            "wrapt; extra == 'dev'",
+            "griffe==0.25.5; extra == 'docs'",
+            "mkdocs-material==8.5.10; extra == 'docs'",
+            "mkdocs-minify-plugin; extra == 'docs'",
+            "mkdocs-spellcheck[all]; extra == 'docs'",
+            "mkdocs==1.4.2; extra == 'docs'",
+            "mkdocstrings-python==0.8.3; extra == 'docs'",
+            "mkdocstrings==0.20.0; extra == 'docs'",
+            "wrapt; extra == 'proxy'",
+            "pydantic; extra == 'pydantic'",
+            "attrs; extra == 'test'",
+            "dask; extra == 'test'",
+            "msgspec; python_version >= '3.8' and extra == 'test'",
+            "numpy; extra == 'test'",
+            "pydantic; extra == 'test'",
+            "pyinstaller>=4.0; extra == 'test'",
+            "pytest-codspeed; extra == 'test'",
+            "pytest-cov; extra == 'test'",
+            "pytest>=6.0; extra == 'test'",
+            "toolz; extra == 'test'",
+            "wrapt; extra == 'test'",
+            "pytest-qt; extra == 'testqt'",
+            "qtpy; extra == 'testqt'"
+          ],
+          "requires_python": ">=3.7"
+        },
+        "psygnal-0.9.1-cp38-cp38-macosx_10_16_x86_64.whl": "0.9.1@psygnal-0.9.1-cp38-cp38-macosx_10_16_arm64.whl",
+        "psygnal-0.9.1-cp38-cp38-win_amd64.whl": "0.9.1@psygnal-0.9.1-cp38-cp38-macosx_10_16_arm64.whl"
       }
     },
     "cp39": {
@@ -57991,6 +58353,64 @@
         },
         "psygnal-0.9.0-cp39-cp39-macosx_10_16_x86_64.whl": "0.9.0@psygnal-0.9.0-cp39-cp39-macosx_10_16_arm64.whl",
         "psygnal-0.9.0-cp39-cp39-win_amd64.whl": "0.9.0@psygnal-0.9.0-cp39-cp39-macosx_10_16_arm64.whl"
+      },
+      "0.9.1": {
+        "psygnal-0.9.1-cp39-cp39-macosx_10_16_arm64.whl": {
+          "provides_extras": [
+            "dev",
+            "docs",
+            "proxy",
+            "pydantic",
+            "test",
+            "testqt"
+          ],
+          "requires_dist": [
+            "importlib-metadata; python_version < '3.8'",
+            "mypy-extensions",
+            "typing-extensions",
+            "black; extra == 'dev'",
+            "cruft; extra == 'dev'",
+            "dask; extra == 'dev'",
+            "ipython; extra == 'dev'",
+            "mypy; extra == 'dev'",
+            "numpy; extra == 'dev'",
+            "pre-commit; extra == 'dev'",
+            "pydantic; extra == 'dev'",
+            "pyqt5; extra == 'dev'",
+            "pytest; extra == 'dev'",
+            "pytest-cov; extra == 'dev'",
+            "pytest-qt; extra == 'dev'",
+            "qtpy; extra == 'dev'",
+            "rich; extra == 'dev'",
+            "ruff; extra == 'dev'",
+            "wrapt; extra == 'dev'",
+            "griffe==0.25.5; extra == 'docs'",
+            "mkdocs-material==8.5.10; extra == 'docs'",
+            "mkdocs-minify-plugin; extra == 'docs'",
+            "mkdocs-spellcheck[all]; extra == 'docs'",
+            "mkdocs==1.4.2; extra == 'docs'",
+            "mkdocstrings-python==0.8.3; extra == 'docs'",
+            "mkdocstrings==0.20.0; extra == 'docs'",
+            "wrapt; extra == 'proxy'",
+            "pydantic; extra == 'pydantic'",
+            "attrs; extra == 'test'",
+            "dask; extra == 'test'",
+            "msgspec; python_version >= '3.8' and extra == 'test'",
+            "numpy; extra == 'test'",
+            "pydantic; extra == 'test'",
+            "pyinstaller>=4.0; extra == 'test'",
+            "pytest-codspeed; extra == 'test'",
+            "pytest-cov; extra == 'test'",
+            "pytest>=6.0; extra == 'test'",
+            "toolz; extra == 'test'",
+            "wrapt; extra == 'test'",
+            "pytest-qt; extra == 'testqt'",
+            "qtpy; extra == 'testqt'"
+          ],
+          "requires_python": ">=3.7"
+        },
+        "psygnal-0.9.1-cp39-cp39-macosx_10_16_x86_64.whl": "0.9.1@psygnal-0.9.1-cp39-cp39-macosx_10_16_arm64.whl",
+        "psygnal-0.9.1-cp39-cp39-win_amd64.whl": "0.9.1@psygnal-0.9.1-cp39-cp39-macosx_10_16_arm64.whl"
       }
     },
     "py2.py3": {
@@ -58329,6 +58749,62 @@
             "pytest-codspeed; extra == 'test'",
             "pytest-cov; extra == 'test'",
             "pytest>=6.0; extra == 'test'",
+            "wrapt; extra == 'test'",
+            "pytest-qt; extra == 'testqt'",
+            "qtpy; extra == 'testqt'"
+          ],
+          "requires_python": ">=3.7"
+        }
+      },
+      "0.9.1": {
+        "psygnal-0.9.1-py3-none-any.whl": {
+          "provides_extras": [
+            "dev",
+            "docs",
+            "proxy",
+            "pydantic",
+            "test",
+            "testqt"
+          ],
+          "requires_dist": [
+            "importlib-metadata; python_version < '3.8'",
+            "mypy-extensions",
+            "typing-extensions",
+            "black; extra == 'dev'",
+            "cruft; extra == 'dev'",
+            "dask; extra == 'dev'",
+            "ipython; extra == 'dev'",
+            "mypy; extra == 'dev'",
+            "numpy; extra == 'dev'",
+            "pre-commit; extra == 'dev'",
+            "pydantic; extra == 'dev'",
+            "pyqt5; extra == 'dev'",
+            "pytest; extra == 'dev'",
+            "pytest-cov; extra == 'dev'",
+            "pytest-qt; extra == 'dev'",
+            "qtpy; extra == 'dev'",
+            "rich; extra == 'dev'",
+            "ruff; extra == 'dev'",
+            "wrapt; extra == 'dev'",
+            "griffe==0.25.5; extra == 'docs'",
+            "mkdocs-material==8.5.10; extra == 'docs'",
+            "mkdocs-minify-plugin; extra == 'docs'",
+            "mkdocs-spellcheck[all]; extra == 'docs'",
+            "mkdocs==1.4.2; extra == 'docs'",
+            "mkdocstrings-python==0.8.3; extra == 'docs'",
+            "mkdocstrings==0.20.0; extra == 'docs'",
+            "wrapt; extra == 'proxy'",
+            "pydantic; extra == 'pydantic'",
+            "attrs; extra == 'test'",
+            "dask; extra == 'test'",
+            "msgspec; python_version >= '3.8' and extra == 'test'",
+            "numpy; extra == 'test'",
+            "pydantic; extra == 'test'",
+            "pyinstaller>=4.0; extra == 'test'",
+            "pytest-codspeed; extra == 'test'",
+            "pytest-cov; extra == 'test'",
+            "pytest>=6.0; extra == 'test'",
+            "toolz; extra == 'test'",
             "wrapt; extra == 'test'",
             "pytest-qt; extra == 'testqt'",
             "qtpy; extra == 'testqt'"
@@ -74975,6 +75451,12 @@
       },
       "3.0.900": {
         "tencentcloud_sdk_python_tia-3.0.900-py2.py3-none-any.whl": "3.0.252@tencentcloud_sdk_python_tia-3.0.252-py2.py3-none-any.whl"
+      },
+      "3.0.901": {
+        "tencentcloud_sdk_python_tia-3.0.901-py2.py3-none-any.whl": "3.0.252@tencentcloud_sdk_python_tia-3.0.252-py2.py3-none-any.whl"
+      },
+      "3.0.902": {
+        "tencentcloud_sdk_python_tia-3.0.902-py2.py3-none-any.whl": "3.0.252@tencentcloud_sdk_python_tia-3.0.252-py2.py3-none-any.whl"
       }
     }
   },
@@ -86955,6 +87437,9 @@
       },
       "0.1.9": {
         "whats_that_code-0.1.9-py3-none-any.whl": "0.1.10@whats_that_code-0.1.10-py3-none-any.whl"
+      },
+      "0.2.0": {
+        "whats_that_code-0.2.0-py3-none-any.whl": "0.1.10@whats_that_code-0.1.10-py3-none-any.whl"
       }
     }
   },
