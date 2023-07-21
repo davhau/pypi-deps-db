@@ -34,21 +34,30 @@
           ];
           # py27 and p36 crash when taken from current nixpkgs
           # this overlay mixes python interpreters from old and new nixpkgs
-          py36Overlay = pkgs.writeText "py36-overlay.nix" ''
-            [(curr: prev: 
-              let
-                pkgsNew = import ${inp.nixpkgs} {};
-              in rec {
-                useInterpreters = [
-                  prev.python27
-                  prev.python36
-                  pkgsNew.python37
-                  pkgsNew.python38
-                  pkgsNew.python39
-                  pkgsNew.python310
-                ];
-              }
-            )]
+
+          # starting some time in 2023, nix(pkgs) understands NIX_PATH entries
+          # ( see fixedVars below) as proper paths (instead of strings),
+          # and due to a bug in impure.nix's isDir not handling that case.
+          # this (for now) has to be a directory
+          py36Overlay = pkgs.runCommand "py36-overlay" {} ''
+            mkdir $out
+            # Using a heredoc to write the content to the file
+            cat <<EOF > "$out/overlays.nix"
+              (curr: prev: 
+                let
+                  pkgsNew = import ${inp.nixpkgs} {};
+                in rec {
+                  useInterpreters = [
+                    prev.python27
+                    prev.python36
+                    pkgsNew.python37
+                    pkgsNew.python38
+                    pkgsNew.python39
+                    pkgsNew.python310
+                  ];
+                }
+              )
+            EOF
           '';
           # NIX_PATH has to be set, since the crawler is a python program calling
           #   nix with a legacy nix expression.
