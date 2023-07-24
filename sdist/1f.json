@@ -5782,7 +5782,9 @@
     },
     "1.11.1": "1.11.0",
     "1.12.0": "1.11.0",
-    "1.13.3": "1.11.0"
+    "1.13.3": "1.11.0",
+    "1.13.0": "1.11.0",
+    "1.13.5": "1.11.0"
   },
   "angou-bitmex": {
     "1": {
@@ -15913,6 +15915,53 @@
     },
     "0.2": "0.1"
   },
+  "bsuite-python": {
+    "1.1.2": {
+      "27": {},
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
+  },
+  "btgitserver": {
+    "1.0.5": {
+      "36": {
+        "install_requires": [
+          "btconfig<5.0.0,>=4.4.4",
+          "coloredlogs<16.0,>=15.0.0",
+          "flask<3.0,>=2.0.0",
+          "setuptools",
+          "dulwich==0.19.5",
+          "Flask",
+          "Flask-HTTPAuth",
+          "gunicorn"
+        ],
+        "setup_requires": [
+          "setuptools >= 40.6",
+          "pip >= 10",
+          "wheel >= 0.31"
+        ],
+        "extras_require": {
+          "tests": [
+            "pytest",
+            "pytest-cov",
+            "coveralls",
+            "flake8",
+            "mypy"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
+  },
   "buildingenergy": {
     "0.0.3": {
       "36": {
@@ -18869,7 +18918,8 @@
     "0.0.67": "0.0.1",
     "0.0.67.dev1": "0.0.1",
     "0.0.67.dev2": "0.0.1",
-    "0.0.68.dev4": "0.0.1"
+    "0.0.68.dev4": "0.0.1",
+    "0.0.68.dev6": "0.0.1"
   },
   "cocoatree": {
     "0.0.0a0.dev0": {
@@ -28383,6 +28433,217 @@
       "38": "36",
       "39": "36",
       "310": "36"
+    },
+    "1.3.10": {
+      "36": {
+        "install_requires": [
+          "click>=5.0",
+          "coloredlogs<=14.0,>=6.1",
+          "Jinja2",
+          "PyYAML>=5.1",
+          "alembic!=1.11.0,!=1.6.3,!=1.7.0,>=1.2.1",
+          "croniter>=0.3.34",
+          "packaging>=20.9",
+          "pendulum",
+          "protobuf>=3.20.0",
+          "python-dateutil",
+          "python-dotenv",
+          "pytz",
+          "requests",
+          "setuptools",
+          "tabulate",
+          "tomli",
+          "tqdm",
+          "typing_extensions>=4.4.0",
+          "sqlalchemy>=1.0",
+          "toposort>=1.0",
+          "watchdog>=0.8.3",
+          "docstring-parser",
+          "universal_pathlib",
+          "pydantic!=1.10.7"
+        ],
+        "extras_require": {
+          "docker": [
+            "docker"
+          ],
+          "test": [
+            "docker",
+            "mock==3.0.5",
+            "objgraph",
+            "pytest-cov==2.10.1",
+            "pytest-dependency==0.5.1",
+            "pytest-mock==3.3.1",
+            "pytest-rerunfailures==10.0",
+            "pytest-runner==5.2",
+            "pytest-xdist==2.1.0",
+            "pytest==7.0.1",
+            "responses",
+            "snapshottest==0.6.0",
+            "tox==3.25.0",
+            "yamllint"
+          ],
+          "test:python_version >= \"3.8\"": [
+            "buildkite-test-collector"
+          ],
+          "test:python_version < \"3.11\"": [
+            "grpcio-tools<1.48.0,>=1.44.0"
+          ],
+          "test:python_version >= \"3.11\"": [
+            "grpcio-tools>=1.44.0"
+          ],
+          "black": [
+            "black[jupyter]==22.12.0"
+          ],
+          "mypy": [
+            "mypy==0.991"
+          ],
+          "pyright": [
+            "pyright==1.1.298",
+            "pandas-stubs",
+            "types-backports",
+            "types-certifi",
+            "types-chardet",
+            "types-croniter",
+            "types-cryptography",
+            "types-mock",
+            "types-paramiko",
+            "types-pkg-resources",
+            "types-pyOpenSSL",
+            "types-python-dateutil",
+            "types-PyYAML",
+            "types-pytz",
+            "types-requests",
+            "types-simplejson",
+            "types-six",
+            "types-sqlalchemy==1.4.53.34",
+            "types-tabulate",
+            "types-tzlocal",
+            "types-toml"
+          ],
+          "ruff": [
+            "ruff==0.0.255"
+          ],
+          ":python_version < \"3.7\"": [
+            "contextvars"
+          ],
+          ":python_version < \"3.11\"": [
+            "grpcio<1.48.0,>=1.44.0",
+            "grpcio-health-checking<1.48.0,>=1.44.0"
+          ],
+          ":python_version >= \"3.11\"": [
+            "grpcio>=1.44.0",
+            "grpcio-health-checking>=1.44.0"
+          ],
+          ":platform_system == \"Windows\"": [
+            "psutil>=1.0",
+            "pywin32!=226"
+          ]
+        }
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "1.3.13": {
+      "36": {
+        "install_requires": [
+          "click>=5.0",
+          "coloredlogs<=14.0,>=6.1",
+          "Jinja2",
+          "PyYAML>=5.1",
+          "alembic!=1.11.0,!=1.6.3,!=1.7.0,>=1.2.1",
+          "croniter>=0.3.34",
+          "grpcio>=1.44.0",
+          "grpcio-health-checking>=1.44.0",
+          "packaging>=20.9",
+          "pendulum",
+          "protobuf>=3.20.0",
+          "python-dateutil",
+          "python-dotenv",
+          "pytz",
+          "requests",
+          "setuptools",
+          "tabulate",
+          "tomli",
+          "tqdm",
+          "typing_extensions>=4.4.0",
+          "sqlalchemy>=1.0",
+          "toposort>=1.0",
+          "watchdog>=0.8.3",
+          "docstring-parser",
+          "universal_pathlib",
+          "pydantic!=1.10.7,<2.0.0"
+        ],
+        "extras_require": {
+          "docker": [
+            "docker"
+          ],
+          "test": [
+            "docker",
+            "grpcio-tools>=1.44.0",
+            "mock==3.0.5",
+            "objgraph",
+            "pytest-cov==2.10.1",
+            "pytest-dependency==0.5.1",
+            "pytest-mock==3.3.1",
+            "pytest-rerunfailures==10.0",
+            "pytest-runner==5.2",
+            "pytest-xdist==2.1.0",
+            "pytest==7.0.1",
+            "responses",
+            "snapshottest==0.6.0",
+            "tox==3.25.0",
+            "yamllint"
+          ],
+          "test:python_version >= \"3.8\"": [
+            "buildkite-test-collector"
+          ],
+          "black": [
+            "black[jupyter]==22.12.0"
+          ],
+          "mypy": [
+            "mypy==0.991"
+          ],
+          "pyright": [
+            "pyright==1.1.298",
+            "pandas-stubs",
+            "types-backports",
+            "types-certifi",
+            "types-chardet",
+            "types-croniter",
+            "types-cryptography",
+            "types-mock",
+            "types-paramiko",
+            "types-pkg-resources",
+            "types-pyOpenSSL",
+            "types-python-dateutil",
+            "types-PyYAML",
+            "types-pytz",
+            "types-requests",
+            "types-simplejson",
+            "types-six",
+            "types-sqlalchemy==1.4.53.34",
+            "types-tabulate",
+            "types-tzlocal",
+            "types-toml"
+          ],
+          "ruff": [
+            "ruff==0.0.255"
+          ],
+          ":python_version < \"3.7\"": [
+            "contextvars"
+          ],
+          ":platform_system == \"Windows\"": [
+            "psutil>=1.0",
+            "pywin32!=226"
+          ]
+        }
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
     }
   },
   "dainik": {
@@ -30106,7 +30367,8 @@
       "38": "37",
       "39": "37",
       "310": "37"
-    }
+    },
+    "1.0.1": "1.0.0"
   },
   "defcp5": {
     "1.1.0": {
@@ -39515,7 +39777,8 @@
     "0.7.2": "0.6.5",
     "0.7.3": "0.6.5",
     "0.8.2": "0.6.5",
-    "0.8.7": "0.6.5"
+    "0.8.7": "0.6.5",
+    "0.8.4": "0.6.5"
   },
   "genshi-compiler": {
     "0.1.2": {
@@ -45321,6 +45584,22 @@
     },
     "0.2.0": "0.1.0"
   },
+  "hegel": {
+    "0.0.3": {
+      "36": {
+        "install_requires": [
+          "python-dotenv"
+        ],
+        "python_requires": [
+          ">=3.8"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
+  },
   "heifang-2008-jinghua-part1": {
     "2022.6.1.0": {
       "36": {
@@ -46293,7 +46572,8 @@
     "0.1.3": "0.1.1",
     "0.1.4": "0.1.1",
     "1.0.0": "0.1.1",
-    "1.0.2": "0.1.1"
+    "1.0.2": "0.1.1",
+    "1.0.1": "0.1.1"
   },
   "iam-mfa": {
     "0.0.1": {
@@ -46375,7 +46655,8 @@
     "0.1.1": "0.0.1",
     "0.3.0": "0.0.1",
     "0.0.2": "0.0.1",
-    "0.1.0": "0.0.1"
+    "0.1.0": "0.0.1",
+    "0.3.1": "0.0.1"
   },
   "image-restoration-tools": {
     "2.0.1": {
@@ -50233,6 +50514,28 @@
     },
     "0.1.2": "0.1.1"
   },
+  "letterpackage": {
+    "0.0.1": {
+      "27": {
+        "install_requires": [
+          "os",
+          "cv2",
+          "nunpy",
+          "pandas",
+          "sklearn",
+          "keras",
+          "matplotlib",
+          "xgboost",
+          "sklearn"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
+  },
   "lgf-luck": {
     "0.2": {
       "27": {},
@@ -53639,7 +53942,78 @@
       "39": "36",
       "310": "36"
     },
-    "2.4.2": "2.4.1"
+    "2.4.2": "2.4.1",
+    "2.4.0": {
+      "36": {
+        "install_requires": [
+          "click<9,>=7.0",
+          "cloudpickle<3",
+          "databricks-cli<1,>=0.8.7",
+          "entrypoints<1",
+          "gitpython<4,>=2.1.0",
+          "pyyaml<7,>=5.1",
+          "protobuf<5,>=3.12.0",
+          "pytz<2024",
+          "requests<3,>=2.17.3",
+          "packaging<24",
+          "importlib_metadata!=4.7.0,<7,>=3.7.0",
+          "sqlparse<1,>=0.4.0",
+          "alembic!=1.10.0,<2",
+          "docker<7,>=4.0.0",
+          "Flask<3",
+          "numpy<2",
+          "scipy<2",
+          "pandas<3",
+          "querystring_parser<2",
+          "sqlalchemy<3,>=1.4.0",
+          "scikit-learn<2",
+          "pyarrow<13,>=4.0.0",
+          "markdown<4,>=3.3",
+          "matplotlib<4"
+        ],
+        "extras_require": {
+          "extras": [
+            "pyarrow",
+            "requests-auth-aws-sigv4",
+            "boto3",
+            "google-cloud-storage>=1.30.0",
+            "azureml-core>=1.2.0",
+            "pysftp",
+            "kubernetes",
+            "mlserver!=1.3.1,>=1.2.0",
+            "mlserver-mlflow!=1.3.1,>=1.2.0",
+            "virtualenv",
+            "prometheus-flask-exporter"
+          ],
+          "databricks": [
+            "azure-storage-file-datalake>12",
+            "google-cloud-storage>=1.30.0",
+            "boto3>1"
+          ],
+          "sqlserver": [
+            "mlflow-dbstore"
+          ],
+          "aliyun-oss": [
+            "aliyunstoreplugin"
+          ],
+          ":platform_system != \"Windows\"": [
+            "gunicorn<21",
+            "Jinja2<4,>=2.11"
+          ],
+          ":platform_system == \"Windows\"": [
+            "waitress<3",
+            "Jinja2<4,>=3.0"
+          ]
+        },
+        "python_requires": [
+          ">=3.8"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "mliv": {
     "0.0.1": {
@@ -54010,7 +54384,8 @@
       "39": "27",
       "310": "27"
     },
-    "0.0.50": "0.0.20"
+    "0.0.50": "0.0.20",
+    "0.0.42": "0.0.20"
   },
   "molab": {
     "0.1.2": {
@@ -56380,7 +56755,23 @@
       "310": "27"
     },
     "1.26.0": "1.25.0",
-    "1.26.0.post1": "1.25.0"
+    "1.26.0.post1": "1.25.0",
+    "1.27.0": {
+      "36": {
+        "extras_require": {
+          ":python_version < \"3.9\"": [
+            "typing-extensions>=4.1.0"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "mypy-boto3-config": {
     "0.1.10": "0.1.9",
@@ -58440,15 +58831,26 @@
     }
   },
   "nics": {
-    "0.11.0": "0.3.0",
-    "0.20.0": "0.3.0",
-    "2.4.0": "0.3.0",
-    "2.8.4": "0.3.0",
-    "0.13.0": "0.3.0",
-    "0.23.10": "0.3.0",
-    "0.23.15b1": "0.3.0",
-    "0.23.8": "0.3.0",
-    "0.3.0": {
+    "0.11.0": "0.2.0",
+    "0.20.0": "0.2.0",
+    "2.4.0": "0.2.0",
+    "2.8.4": "0.2.0",
+    "0.13.0": "0.2.0",
+    "0.23.10": "0.2.0",
+    "0.23.15b1": "0.2.0",
+    "0.23.8": "0.2.0",
+    "0.3.0": "0.2.0",
+    "0.6.0": "0.2.0",
+    "1.0.0rc12": "0.2.0",
+    "0.23.13": "0.2.0",
+    "0.23.3": "0.2.0",
+    "2.7.1": "0.2.0",
+    "0.19.0": "0.2.0",
+    "2.3.0": "0.2.0",
+    "2.5.2": "0.2.0",
+    "3.0.0b3": "0.2.0",
+    "0.16.0": "0.2.0",
+    "0.2.0": {
       "27": {},
       "36": "27",
       "37": "27",
@@ -58456,15 +58858,8 @@
       "39": "27",
       "310": "27"
     },
-    "0.6.0": "0.3.0",
-    "1.0.0rc12": "0.3.0",
-    "0.23.13": "0.3.0",
-    "0.23.3": "0.3.0",
-    "2.7.1": "0.3.0",
-    "0.19.0": "0.3.0",
-    "2.3.0": "0.3.0",
-    "2.5.2": "0.3.0",
-    "3.0.0b3": "0.3.0"
+    "3.0.0b2": "0.2.0",
+    "3.0.0b8": "0.2.0"
   },
   "nionswift-elabftw-plugin": {
     "0.1": {
@@ -60054,7 +60449,8 @@
     "1.0.8b1": "1.0.7b8",
     "1.0.8b2": "1.0.7b8",
     "1.0.8b7": "1.0.7b8",
-    "1.0.11b8": "1.0.7b8"
+    "1.0.11b8": "1.0.7b8",
+    "1.0.8b6": "1.0.7b8"
   },
   "oarepo-generated-ui": {
     "1.0.0": {
@@ -62709,7 +63105,20 @@
     "2.2.0": "2.0.0",
     "2.2.1": "2.0.0",
     "2.2.2": "2.0.0",
-    "2.2.6": "2.0.0"
+    "2.2.6": "2.0.0",
+    "2.3.1": {
+      "27": {
+        "install_requires": [
+          "confluent_kafka>=2.1.1",
+          "fastavro>=1.6.0"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "overlap-save": {
     "1.0": {
@@ -63464,6 +63873,23 @@
       "310": "27"
     },
     "0.22": "0.21"
+  },
+  "pesic": {
+    "0.1.2": {
+      "36": {
+        "install_requires": [
+          "aiohttp",
+          "asyncio"
+        ],
+        "python_requires": [
+          ">=3.8"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "pfcm": {
     "0.0.3": {
@@ -68230,7 +68656,19 @@
     "1.0.3": "1.0.2",
     "1.0.4": "1.0.2",
     "1.0.5": "1.0.2",
-    "1.0.6": "1.0.2"
+    "1.0.6": "1.0.2",
+    "1.1.0": {
+      "27": {
+        "install_requires": [
+          "pillow"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "pyside2-utils": {
     "0.0.1": {
@@ -78005,7 +78443,8 @@
       "38": "37",
       "39": "37",
       "310": "37"
-    }
+    },
+    "2023.7.20": "2023.7.11"
   },
   "sockxml": {
     "0.0.5": {
@@ -84996,7 +85435,9 @@
       "39": "36",
       "310": "36"
     },
-    "0.1.1": "0.1"
+    "0.1.1": "0.1",
+    "0.2.0": "0.1",
+    "0.3.0": "0.1"
   },
   "travislint": {
     "1.0": {
@@ -85754,7 +86195,23 @@
     "2.4.2.post2": "2.4.0",
     "2.5.0": "2.4.0",
     "2.4.2.post3": "2.4.0",
-    "2.5.0.post1": "2.4.0"
+    "2.5.0.post1": "2.4.0",
+    "2.5.2": {
+      "36": {
+        "extras_require": {
+          ":python_version < \"3.9\"": [
+            "typing-extensions>=4.1.0"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "types-aiobotocore-redshift": {
     "2.1.0": {
