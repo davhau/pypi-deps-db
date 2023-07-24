@@ -5260,7 +5260,8 @@
       "39": "36",
       "310": "36"
     },
-    "8.3.0rc2": {
+    "8.3.0rc2": "8.3.0rc1",
+    "8.3.0rc1": {
       "36": {
         "install_requires": [
           "apache-airflow-providers-common-sql>=1.3.1.dev0",
@@ -8817,6 +8818,73 @@
       "38": "27",
       "39": "27",
       "310": "27"
+    },
+    "7.7.1": {
+      "27": {
+        "install_requires": [
+          "aiofiles<1",
+          "aiohttp<4",
+          "aiosqlite<=0.17.0",
+          "asyncprawcore<3,>=2.1",
+          "update_checker>=0.18"
+        ],
+        "extras_require": {
+          "ci": [
+            "coveralls"
+          ],
+          "dev:python_version < \"3.8\"": [
+            "asynctest==0.13.*"
+          ],
+          "lint": [
+            "pre-commit",
+            "sphinx",
+            "sphinx-rtd-dark-mode",
+            "sphinx_rtd_theme",
+            "sphinxcontrib-trio"
+          ],
+          "dev": [
+            "packaging",
+            "pre-commit",
+            "sphinx",
+            "sphinx-rtd-dark-mode",
+            "sphinx_rtd_theme",
+            "sphinxcontrib-trio",
+            "mock==4.*",
+            "pytest==7.*",
+            "pytest-asyncio==0.18.*",
+            "pytest-vcr==1.*",
+            "testfixtures==6.*",
+            "urllib3==1.*",
+            "vcrpy==4.2.1"
+          ],
+          "readthedocs": [
+            "sphinx",
+            "sphinx-rtd-dark-mode",
+            "sphinx_rtd_theme",
+            "sphinxcontrib-trio"
+          ],
+          "test:python_version < \"3.8\"": [
+            "asynctest==0.13.*"
+          ],
+          "test": [
+            "mock==4.*",
+            "pytest==7.*",
+            "pytest-asyncio==0.18.*",
+            "pytest-vcr==1.*",
+            "testfixtures==6.*",
+            "urllib3==1.*",
+            "vcrpy==4.2.1"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
     }
   },
   "attribuutit": {
@@ -10392,7 +10460,8 @@
     "0.3.5": "0.1.1",
     "0.3.7": "0.1.1",
     "0.3.7.1": "0.1.1",
-    "0.3.8": "0.1.1"
+    "0.3.8": "0.1.1",
+    "0.3.18": "0.1.1"
   },
   "autokey": {
     "0.95.4": {
@@ -21801,6 +21870,40 @@
       "38": "37",
       "39": "37",
       "310": "37"
+    },
+    "2023.6": {
+      "37": {
+        "install_requires": [
+          "cflib>=0.1.23",
+          "appdirs~=1.4.0",
+          "pyzmq~=25.0",
+          "pyqtgraph~=0.11",
+          "PyYAML~=5.3",
+          "qasync~=0.23.0",
+          "qtm~=2.1.1",
+          "numpy<1.25,>=1.20",
+          "vispy~=0.9.0",
+          "pyserial~=3.5",
+          "pyqt5~=5.15.0",
+          "PyQt5-sip>=12.9.0"
+        ],
+        "extras_require": {
+          "dev": [
+            "pre-commit"
+          ],
+          "dev:platform_system == \"Windows\"": [
+            "cx_freeze==5.1.1",
+            "jinja2==2.10.3"
+          ],
+          ":platform_system == \"Windows\" or platform_system == \"Darwin\"": [
+            "pysdl2~=0.9.14",
+            "pysdl2-dll==2.24.0"
+          ]
+        }
+      },
+      "38": "37",
+      "39": "37",
+      "310": "37"
     }
   },
   "cfs-manager": {
@@ -25477,7 +25580,8 @@
     "0.0.1rc1.dev1577": "0.0.1rc1.dev1567",
     "0.0.1rc1.dev1580": "0.0.1rc1.dev1567",
     "0.0.1rc1.dev1616": "0.0.1rc1.dev1567",
-    "0.0.1rc1.dev1640": "0.0.1rc1.dev1567"
+    "0.0.1rc1.dev1640": "0.0.1rc1.dev1567",
+    "0.0.1rc1.dev1642": "0.0.1rc1.dev1567"
   },
   "daredata-snowconn": {
     "1.0.2": {
@@ -25627,7 +25731,8 @@
     }
   },
   "datascrub": {
-    "1.0.1b0": {
+    "1.0.1b0": "1.1.1",
+    "1.1.1": {
       "27": {
         "install_requires": [
           "pandas",
@@ -27816,7 +27921,8 @@
     },
     "0.2.5": "0.2.4",
     "0.2.6": "0.2.4",
-    "0.2.9": "0.2.4"
+    "0.2.9": "0.2.4",
+    "0.3.2": "0.2.4"
   },
   "deluge": {
     "2.0.0b2.dev346": {
@@ -34828,6 +34934,20 @@
     "0.1.6": "0.1.0",
     "1.0.1": "0.1.0"
   },
+  "flask-allowedhosts": {
+    "1.2.0": {
+      "27": {
+        "install_requires": [
+          "Flask"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
+  },
   "flask-fingerprint": {
     "0.1.0": {
       "36": {
@@ -37997,6 +38117,20 @@
       "38": "27",
       "39": "27",
       "310": "27"
+    }
+  },
+  "gracefully-kill": {
+    "0.10": {
+      "36": {
+        "install_requires": [
+          "isa",
+          "taskkill"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
     }
   },
   "graphique": {
@@ -47996,7 +48130,23 @@
     },
     "0.0.20": "0.0.19",
     "0.0.21": "0.0.19",
-    "0.0.22": "0.0.19"
+    "0.0.22": "0.0.19",
+    "0.0.23": "0.0.19",
+    "0.0.24": {
+      "27": {
+        "install_requires": [
+          "colt5-attention>=0.10.14",
+          "einops>=0.6.1",
+          "local-attention>=1.8.6",
+          "torch>=1.6"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "mj-package": {
     "0.0.1": {
@@ -59311,7 +59461,8 @@
     "6.3.0": "6.1.1",
     "6.3.0a1684862833": "6.1.1",
     "6.4.0a1685078766": "6.1.1",
-    "6.4.0a1685165025": "6.1.1"
+    "6.4.0a1685165025": "6.1.1",
+    "6.4.0a1687670587": "6.1.1"
   },
   "pulumi-scaleway-instances": {
     "0.0.2": {
@@ -66008,7 +66159,8 @@
     "3.3.1": "3.0.3",
     "3.3.3": "3.0.3",
     "3.4.0": "3.0.3",
-    "3.5.0": "3.0.3"
+    "3.5.0": "3.0.3",
+    "3.6.1": "3.0.3"
   },
   "resspylab": {
     "0.1.0": {
@@ -66436,7 +66588,8 @@
     "0.0.22": "0.0.12",
     "0.0.23": "0.0.12",
     "0.0.24": "0.0.12",
-    "0.0.25": "0.0.12"
+    "0.0.25": "0.0.12",
+    "0.0.26": "0.0.12"
   },
   "rpackutils": {
     "0.1.6": {
@@ -69219,7 +69372,107 @@
       "39": "36",
       "310": "36"
     },
-    "0.22.1": "0.22.0"
+    "0.22.1": "0.22.0",
+    "0.24.0": {
+      "36": {
+        "install_requires": [
+          "annotated-types==0.5.0",
+          "anyio==3.7.1",
+          "APScheduler==3.10.1",
+          "attrs==23.1.0",
+          "autocommand==2.2.2",
+          "Babel==2.12.1",
+          "bcrypt==4.0.1",
+          "beautifulsoup4==4.12.2",
+          "bleach==6.0.0",
+          "blinker==1.6.2",
+          "Brotli==1.0.9",
+          "certifi==2023.5.7",
+          "cffi==1.15.1",
+          "charset-normalizer==3.2.0",
+          "cheroot==10.0.0",
+          "CherryPy==18.8.0",
+          "click==8.1.5",
+          "colorhash==1.2.1",
+          "configparser==6.0.0",
+          "cssselect2==0.7.0",
+          "dnspython==2.4.0",
+          "email-validator==2.0.0.post2",
+          "Flask==2.3.2",
+          "flask-babel==3.1.0",
+          "Flask-HTTPAuth==4.8.0",
+          "Flask-Login==0.6.2",
+          "Flask-Mail==0.9.1",
+          "Flask-MonitoringDashboard@ git+https://github.com/flask-dashboard/Flask-MonitoringDashboard.git@7630227e9f961584a7b61d1f7c237789bcaced59",
+          "Flask-SQLAlchemy==3.0.5",
+          "Flask-WTF==1.1.1",
+          "fonttools==4.41.0",
+          "greenlet==2.0.2",
+          "h11==0.14.0",
+          "html5lib==1.1",
+          "httpcore==0.17.3",
+          "idna==3.4",
+          "inflect==7.0.0",
+          "itsdangerous==2.1.2",
+          "jaraco.collections==4.3.0",
+          "jaraco.context==4.3.0",
+          "jaraco.functools==3.8.0",
+          "jaraco.text==3.11.1",
+          "Jinja2==3.1.2",
+          "jsonschema==4.18.3",
+          "jsonschema-specifications==2023.6.1",
+          "kaleido==0.2.1",
+          "ldap3==2.9.1",
+          "lxml==4.9.3",
+          "Markdown==3.4.3",
+          "MarkupSafe==2.1.3",
+          "more-itertools==9.1.0",
+          "numpy==1.25.1",
+          "packaging==23.1",
+          "Pillow==10.0.0",
+          "Pint==0.22",
+          "plotly==5.15.0",
+          "portend==3.2.0",
+          "psutil==5.9.5",
+          "psycopg2-binary==2.9.6",
+          "pyasn1==0.5.0",
+          "pycparser==2.21",
+          "pydantic==2.0.3",
+          "pydantic_core==2.3.0",
+          "pydyf==0.7.0",
+          "pyotp==2.8.0",
+          "pyphen==0.14.0",
+          "pypng==0.20220715.0",
+          "pytz==2023.3",
+          "qrcode==7.4.2",
+          "referencing==0.29.1",
+          "reportlab==4.0.4",
+          "requests==2.31.0",
+          "rpds-py==0.8.10",
+          "scipy==1.11.1",
+          "six==1.16.0",
+          "sniffio==1.3.0",
+          "soupsieve==2.4.1",
+          "SQLAlchemy==2.0.19",
+          "tempora==5.5.0",
+          "tenacity==8.2.2",
+          "tinycss2==1.2.1",
+          "typing_extensions==4.7.1",
+          "tzlocal==2.0.0",
+          "urllib3==2.0.3",
+          "weasyprint==59.0",
+          "webencodings==0.5.1",
+          "Werkzeug==2.3.6",
+          "WTForms==3.0.1",
+          "zc.lockfile==3.0.post1",
+          "zopfli==0.2.2"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "samplekafka": {
     "0.1": {
@@ -75827,7 +76080,10 @@
     "3.0.901": "3.0.325",
     "3.0.902": "3.0.325",
     "3.0.903": "3.0.325",
-    "3.0.933": "3.0.325"
+    "3.0.933": "3.0.325",
+    "3.0.905": "3.0.325",
+    "3.0.925": "3.0.325",
+    "3.0.932": "3.0.325"
   },
   "tencentcloud-sdk-python-thpc": {
     "3.0.536": {
@@ -76177,7 +76433,9 @@
     "3.0.903": "3.0.536",
     "3.0.915": "3.0.536",
     "3.0.905": "3.0.536",
-    "3.0.928": "3.0.536"
+    "3.0.928": "3.0.536",
+    "3.0.922": "3.0.536",
+    "3.0.937": "3.0.536"
   },
   "tendril-utils-db": {
     "0.1.1": {
@@ -80794,7 +81052,8 @@
       "38": "27",
       "39": "27",
       "310": "27"
-    }
+    },
+    "0.7": "0.6"
   },
   "tube-cli": {
     "1.0.0": {
@@ -81372,7 +81631,8 @@
       "39": "36",
       "310": "36"
     },
-    "0.5.5": "0.5.1"
+    "0.5.5": "0.5.1",
+    "0.5.2": "0.5.1"
   },
   "updater4pyi": {
     "0.1": {
@@ -86490,13 +86750,15 @@
       "39": "36",
       "310": "36"
     },
-    "0.2.491": "0.2.479",
-    "0.2.479": {
+    "0.2.491": "0.2.464",
+    "0.2.479": "0.2.464",
+    "0.2.489": "0.2.464",
+    "0.2.494": {
       "36": {
         "install_requires": [
           "aws-cdk-lib<3.0.0,>=2.0.0",
           "constructs<11.0.0,>=10.0.5",
-          "jsii<2.0.0,>=1.84.0",
+          "jsii<2.0.0,>=1.85.0",
           "publication>=0.0.3",
           "typeguard~=2.13.3"
         ],
@@ -86509,13 +86771,12 @@
       "39": "36",
       "310": "36"
     },
-    "0.2.489": "0.2.479",
-    "0.2.494": {
+    "0.2.464": {
       "36": {
         "install_requires": [
           "aws-cdk-lib<3.0.0,>=2.0.0",
           "constructs<11.0.0,>=10.0.5",
-          "jsii<2.0.0,>=1.85.0",
+          "jsii<2.0.0,>=1.84.0",
           "publication>=0.0.3",
           "typeguard~=2.13.3"
         ],

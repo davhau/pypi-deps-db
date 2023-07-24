@@ -25159,6 +25159,18 @@
       "38": "27",
       "39": "27",
       "310": "27"
+    },
+    "2.4.0": {
+      "27": {
+        "install_requires": [
+          "core-main-app==2.4.*"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
     }
   },
   "cortx-pytorch": {
@@ -33923,7 +33935,8 @@
     "2.6.1rc3": "2.6.0",
     "2.6.1rc4": "2.6.0",
     "2.7.0": "2.6.0",
-    "3.0.0rc5": "2.6.0"
+    "3.0.0rc5": "2.6.0",
+    "3.0.0rc1": "2.6.0"
   },
   "dpaste-console": {
     "1.0.0": {
@@ -41800,7 +41813,8 @@
     "1.8.0": "1.6.0",
     "1.9.0": "1.6.0",
     "1.9.1": "1.6.0",
-    "1.10.0": "1.6.0"
+    "1.10.0": "1.6.0",
+    "1.11.1": "1.6.0"
   },
   "gp.recipe.node": {
     "0.10.18.1": "6.2.2.1",
@@ -57734,6 +57748,60 @@
       "38": "36",
       "39": "36",
       "310": "36"
+    },
+    "0.23.0rc0": {
+      "36": {
+        "install_requires": [
+          "pandas<2.1,>=2",
+          "packaging",
+          "numpy>=1.18.5",
+          "fsspec",
+          "psutil"
+        ],
+        "extras_require": {
+          "dask": [
+            "dask>=2.22.0",
+            "distributed>=2.22.0"
+          ],
+          "ray": [
+            "ray[default]>=1.13.0",
+            "pyarrow"
+          ],
+          "unidist": [
+            "unidist[mpi]>=0.2.1"
+          ],
+          "remote": [
+            "rpyc==4.1.5",
+            "cloudpickle",
+            "boto3"
+          ],
+          "spreadsheet": [
+            "modin-spreadsheet>=0.1.0"
+          ],
+          "sql": [
+            "dfsql>=0.4.2",
+            "pyparsing<=2.4.7"
+          ],
+          "all": [
+            "dask>=2.22.0",
+            "distributed>=2.22.0",
+            "ray[default]>=1.13.0",
+            "pyarrow",
+            "unidist[mpi]>=0.2.1",
+            "rpyc==4.1.5",
+            "cloudpickle",
+            "boto3",
+            "modin-spreadsheet>=0.1.0"
+          ]
+        },
+        "python_requires": [
+          ">=3.8"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
     }
   },
   "mollie-api-extract": {
@@ -66324,11 +66392,90 @@
       "38": "27",
       "39": "27",
       "310": "27"
+    },
+    "0.3.0": {
+      "36": {
+        "install_requires": [
+          "joblib>=1.1.0",
+          "matplotlib>=3.6.2",
+          "numpy>=1.21.5",
+          "pandas>=1.4.4",
+          "plotly>=5.9.0",
+          "pqdm>=0.2.0",
+          "psutil>=5.9.0",
+          "pytest",
+          "scikit_learn>=1.0.2",
+          "setuptools",
+          "sphinx>=5.0.2",
+          "sphinx_rtd_theme>=1.1.1",
+          "tqdm>=4.64.1",
+          "numpydoc>=1.4.0",
+          "xgboost>=1.7.1"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
     }
   },
   "peachpy": {
     "0.0.1": {
       "27": {}
+    }
+  },
+  "peals": {
+    "1.2.4": {
+      "38": {
+        "install_requires": [
+          "numpy>=1.21.2",
+          "pandas>=1.1.4",
+          "scipy>=1.7.1",
+          "pysam>=0.16.0.1",
+          "psutil>=5.9.4",
+          "pyBigWig>=0.3.18",
+          "tqdm>=4.64.1",
+          "tabulate>=0.8.7",
+          "rpy2>=3.4.5",
+          "mpmath>=1.1.0",
+          "findpeaks>=2.4.6",
+          "csaps>=1.1.0",
+          "bottleneck>=1.3.2",
+          "scikit-learn>=0.24.2",
+          "networkx>=2.5.1",
+          "fisher>=0.1.10",
+          "setuptools>=45.2.0",
+          "pytest>=5.4.1"
+        ],
+        "setup_requires": [
+          "numpy>=1.21.2",
+          "pandas>=1.1.4",
+          "scipy>=1.7.1",
+          "pysam>=0.16.0.1",
+          "psutil>=5.9.4",
+          "pyBigWig>=0.3.18",
+          "tqdm>=4.64.1",
+          "tabulate>=0.8.7",
+          "rpy2>=3.4.5",
+          "mpmath>=1.1.0",
+          "findpeaks>=2.4.6",
+          "csaps>=1.1.0",
+          "bottleneck>=1.3.2",
+          "scikit-learn>=0.24.2",
+          "networkx>=2.5.1",
+          "fisher>=0.1.10",
+          "setuptools>=45.2.0",
+          "pytest>=5.4.1"
+        ],
+        "tests_require": [
+          "pytest"
+        ],
+        "python_requires": [
+          ">=3.8"
+        ]
+      },
+      "39": "38",
+      "310": "38"
     }
   },
   "peizhi-ipcop-fanghuoqiang": {
@@ -74387,7 +74534,23 @@
       "310": "27"
     },
     "0.2.929": "0.2.925",
-    "0.2.914": "0.2.907"
+    "0.2.914": "0.2.907",
+    "0.2.2": {
+      "27": {
+        "install_requires": [
+          "openai",
+          "termcolor",
+          "klotty",
+          "posthog"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "0.2.958": "0.2.925"
   },
   "remotemodels": {
     "0.6.2": {
@@ -84184,6 +84347,28 @@
     "0.9.8": "0.9.7",
     "0.9.9": "0.9.7"
   },
+  "starrailgps": {
+    "1.0.3": {
+      "36": {
+        "install_requires": [
+          "opencv-python",
+          "numpy",
+          "requests",
+          "setuptools"
+        ],
+        "setup_requires": [
+          "setuptools_scm"
+        ],
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
+  },
   "startracker": {
     "0.1.0": {
       "27": {
@@ -86666,7 +86851,8 @@
     "3.0.902": "3.0.252",
     "3.0.903": "3.0.252",
     "3.0.919": "3.0.252",
-    "3.0.920": "3.0.252"
+    "3.0.920": "3.0.252",
+    "3.0.906": "3.0.252"
   },
   "tencentcloud-sdk-python-wss": {
     "3.0.252": {
