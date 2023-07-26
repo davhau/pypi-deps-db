@@ -373,7 +373,13 @@
     "0.0.19.3": "0.0.11",
     "0.0.40": "0.0.11",
     "0.0.53": "0.0.11",
-    "0.0.57": "0.0.11"
+    "0.0.57": "0.0.11",
+    "0.0.19.42": "0.0.11",
+    "0.0.32": "0.0.11",
+    "0.0.34": "0.0.11",
+    "0.0.45": "0.0.11",
+    "0.0.50": "0.0.11",
+    "0.0.65": "0.0.11"
   },
   "adafruit-circuitpython-dotstar": {
     "1.3.0": {
@@ -5401,7 +5407,9 @@
     "1.5.9": "1.4.4",
     "1.7.3": "1.4.4",
     "1.7.6": "1.4.4",
-    "1.8.1": "1.4.4"
+    "1.8.1": "1.4.4",
+    "1.6.6": "1.4.4",
+    "1.7.0": "1.4.4"
   },
   "binconvert": {
     "0.1.0": {
@@ -14006,7 +14014,9 @@
     "1.3": "1.0",
     "1.15": "1.0",
     "1.5": "1.0",
-    "1.8": "1.0"
+    "1.8": "1.0",
+    "1.10": "1.0",
+    "1.19": "1.0"
   },
   "django-mbase": {
     "0.1": {
@@ -17317,6 +17327,40 @@
       "38": "27",
       "39": "27",
       "310": "27"
+    },
+    "6.4.1": {
+      "27": {
+        "install_requires": [
+          "dimod==0.12.6",
+          "dwave-cloud-client==0.10.6",
+          "dwave-greedy==0.3.0",
+          "dwave-hybrid==0.6.10",
+          "dwave-inspector==0.4.2",
+          "dwave-neal==0.6.0",
+          "dwave-networkx==0.8.14",
+          "dwave-preprocessing==0.5.4",
+          "dwave-samplers==1.0.0",
+          "dwave-system==1.19.0",
+          "dwave-tabu==0.5.0",
+          "dwavebinarycsp==0.2.0",
+          "minorminer==0.2.11",
+          "penaltymodel==1.0.2",
+          "pyqubo==1.4.0"
+        ],
+        "extras_require": {
+          "all": [
+            "dwave-gate==0.2.1"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
     }
   },
   "dwload-server": {
@@ -17503,7 +17547,8 @@
     "0.9.9.5": "0.9.7",
     "0.9.9.6": "0.9.7",
     "0.9.9.7": "0.9.7",
-    "0.9.20": "0.9.7"
+    "0.9.20": "0.9.7",
+    "0.9.16": "0.9.7"
   },
   "earnapp": {
     "0.0.2": {
@@ -23860,8 +23905,9 @@
     }
   },
   "google-ads-transparency-scraper": {
-    "1.5.6": "1.5.3",
-    "1.5.3": {
+    "1.5.6": "1.5.1",
+    "1.5.3": "1.5.1",
+    "1.5.1": {
       "27": {
         "install_requires": [
           "setuptools>=45.0",
@@ -35611,7 +35657,15 @@
     "0.11.7": "0.11.3",
     "0.11.8": "0.11.3",
     "0.11.9": "0.11.3",
-    "0.12.1": "0.11.3"
+    "0.12.1": "0.11.3",
+    "0.13.0": {
+      "27": {},
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "jarn.jenkins": {
     "1.0b1": {
@@ -44602,7 +44656,148 @@
     "2.1.1.dev20230607224959": "2.1.1.dev20230602101600",
     "2.1.1.dev20230703142410": "2.1.1.dev20230619134023",
     "2.1.1.dev20230703163917": "2.1.1.dev20230619134023",
-    "2.1.1.dev20230708222706": "2.1.1.dev20230704135552"
+    "2.1.1.dev20230708222706": "2.1.1.dev20230704135552",
+    "2.1.1.dev20230605161506": "2.1.1.dev20230602101600",
+    "2.1.1.dev20230613062908": {
+      "27": {
+        "install_requires": [
+          "click>=7.0",
+          "cachetools~=5.0.0",
+          "cryptography",
+          "dill==0.3.2",
+          "dnspython>=1.16.0",
+          "plux>=1.3.1",
+          "psutil<6.0.0,>=5.4.8",
+          "python-dotenv>=0.19.1",
+          "pyyaml>=5.1",
+          "rich>=12.3.0",
+          "requests>=2.20.0",
+          "semver>=2.10",
+          "stevedore>=3.4.0",
+          "tailer>=0.4.1"
+        ],
+        "extras_require": {
+          "typehint": [
+            "boto3-stubs[acm,amplify,apigateway,apigatewayv2,appconfig,appsync,athena,autoscaling,backup,batch,ce,cloudcontrol,cloudformation,cloudfront,cloudtrail,cloudwatch,codecommit,cognito-identity,cognito-idp,dms,docdb,dynamodb,dynamodbstreams,ec2,ecr,ecs,efs,eks,elasticache,elasticbeanstalk,elbv2,emr,emr-serverless,es,events,firehose,fis,glacier,glue,iam,iot,iot-data,iotanalytics,iotwireless,kafka,kinesis,kinesisanalytics,kinesisanalyticsv2,kms,lakeformation,lambda,logs,mediaconvert,mediastore,mq,mwaa,neptune,opensearch,organizations,pi,qldb,qldb-session,rds,rds-data,redshift,redshift-data,resource-groups,resourcegroupstaggingapi,route53,route53resolver,s3,s3control,sagemaker,sagemaker-runtime,secretsmanager,serverlessrepo,servicediscovery,ses,sesv2,sns,sqs,ssm,stepfunctions,sts,timestream-query,timestream-write,transcribe,xray]"
+          ],
+          "dev": [
+            "autoflake",
+            "black==22.3.0",
+            "coveralls>=3.3.1",
+            "Cython",
+            "flake8-black>=0.3.6",
+            "flake8-isort>=6.0.0",
+            "flake8-quotes>=3.3.2",
+            "flake8>=6.0.0",
+            "isort==5.12.0",
+            "networkx>=2.8.4",
+            "pandoc",
+            "pre-commit==2.13.0",
+            "pypandoc",
+            "pyproject-flake8>=6.0.0.post1",
+            "rstr>=3.2.0"
+          ],
+          "full": [
+            "airspeed-ext==0.5.19",
+            "amazon_kclpy!=2.1.0,>=2.0.6",
+            "antlr4-python3-runtime==4.11.1",
+            "apispec>=5.1.1",
+            "aws-sam-translator>=1.15.1",
+            "awscli>=1.22.90",
+            "awscrt>=0.13.14",
+            "boto>=2.49.0",
+            "boto3>=1.26.121",
+            "botocore>=1.29.133",
+            "cbor2>=5.2.0",
+            "crontab>=0.22.6",
+            "dnslib>=0.9.10",
+            "dnspython>=1.16.0",
+            "docker==6.0.1",
+            "flask>=2.3.2",
+            "flask-cors<3.1.0,>=3.0.3",
+            "flask_swagger==0.2.12",
+            "hypercorn==0.14.2",
+            "json5==0.9.11",
+            "jsonpatch<2.0,>=1.24",
+            "jsonpath-ng>=1.5.3",
+            "jsonpath-rw<2.0.0,>=1.4.0",
+            "localstack-client>=2.0",
+            "moto-ext[all]==4.1.10.post2",
+            "opensearch-py==2.1.1",
+            "pproxy>=2.7.0",
+            "pymongo>=4.2.0",
+            "pyopenssl>=23.0.0",
+            "Quart>=0.18",
+            "readerwriterlock>=1.0.7",
+            "requests-aws4auth>=1.0",
+            "vosk==0.3.43",
+            "Werkzeug>=2.3.4",
+            "xmltodict>=0.11.0"
+          ],
+          "test": [
+            "coverage[toml]>=5.5",
+            "deepdiff>=5.5.0",
+            "jsonpath-ng>=1.5.3",
+            "pytest==6.2.4",
+            "pytest-split>=0.8.0",
+            "pytest-httpserver>=1.0.1",
+            "pytest-rerunfailures==10.0"
+          ],
+          "runtime": [
+            "airspeed-ext==0.5.19",
+            "amazon_kclpy!=2.1.0,>=2.0.6",
+            "antlr4-python3-runtime==4.11.1",
+            "apispec>=5.1.1",
+            "aws-sam-translator>=1.15.1",
+            "awscli>=1.22.90",
+            "awscrt>=0.13.14",
+            "boto>=2.49.0",
+            "boto3>=1.26.121",
+            "botocore>=1.29.133",
+            "cbor2>=5.2.0",
+            "crontab>=0.22.6",
+            "dnslib>=0.9.10",
+            "dnspython>=1.16.0",
+            "docker==6.0.1",
+            "flask>=2.3.2",
+            "flask-cors<3.1.0,>=3.0.3",
+            "flask_swagger==0.2.12",
+            "hypercorn==0.14.2",
+            "json5==0.9.11",
+            "jsonpatch<2.0,>=1.24",
+            "jsonpath-ng>=1.5.3",
+            "jsonpath-rw<2.0.0,>=1.4.0",
+            "localstack-client>=2.0",
+            "moto-ext[all]==4.1.10.post2",
+            "opensearch-py==2.1.1",
+            "pproxy>=2.7.0",
+            "pymongo>=4.2.0",
+            "pyopenssl>=23.0.0",
+            "Quart>=0.18",
+            "readerwriterlock>=1.0.7",
+            "requests-aws4auth>=1.0",
+            "vosk==0.3.43",
+            "Werkzeug>=2.3.4",
+            "xmltodict>=0.11.0"
+          ],
+          ":python_version < \"3.8\"": [
+            "importlib-metadata<5.0",
+            "typing-extensions"
+          ]
+        }
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "2.1.1.dev20230621143631": "2.1.1.dev20230619134023",
+    "2.1.1.dev20230622100938": "2.1.1.dev20230619134023",
+    "2.1.1.dev20230622103001": "2.1.1.dev20230619134023",
+    "2.1.1.dev20230629145214": "2.1.1.dev20230619134023",
+    "2.1.1.dev20230630154926": "2.1.1.dev20230619134023",
+    "2.1.1.dev20230714171916": "2.1.1.dev20230712083713"
   },
   "logboss": {
     "0.1.0": {
@@ -58274,7 +58469,31 @@
       "39": "27",
       "310": "27"
     },
-    "0.0.4": "0.0.2"
+    "0.0.4": "0.0.2",
+    "0.0.6": {
+      "27": {
+        "install_requires": [
+          "bcrypt",
+          "python-gnupg",
+          "pyopenssl",
+          "selectolax",
+          "orjson",
+          "httpx",
+          "tqdm",
+          "uvloop",
+          "nest_asyncio"
+        ],
+        "python_requires": [
+          ">=3.10.10"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "0.0.7": "0.0.6"
   },
   "providers": {
     "0.0.1": {
@@ -59057,7 +59276,8 @@
     "0.4.6.dev7": "0.4.5",
     "0.4.4.dev14": "0.4.0",
     "0.4.4.dev16": "0.4.0",
-    "0.4.4.dev31": "0.4.5"
+    "0.4.4.dev31": "0.4.5",
+    "0.4.4.dev19": "0.4.0"
   },
   "py-bmi": {
     "1.0.5": {
@@ -61335,28 +61555,9 @@
     },
     "1.2.1.3": "1.1.8.4",
     "1.1.9.3": "1.1.8.4",
-    "1.2.3.1": {
-      "36": {
-        "install_requires": [
-          "requests==2.31.0",
-          "ujson==5.8.0",
-          "colorama==0.4.6",
-          "websocket-client==1.6.1",
-          "diskcache==5.6.1",
-          "aiohttp==3.8.4",
-          "wsaccel==0.6.4"
-        ],
-        "python_requires": [
-          ">=3.7"
-        ]
-      },
-      "37": "36",
-      "38": "36",
-      "39": "36",
-      "310": "36"
-    },
+    "1.2.3.1": "1.2.2.1",
     "1.1.8.6": "1.1.8.4",
-    "1.2.3.3": "1.2.3.1",
+    "1.2.3.3": "1.2.2.1",
     "1.2.4.2": {
       "36": {
         "install_requires": [
@@ -61369,6 +61570,26 @@
         ],
         "python_requires": [
           ">=3.8"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "1.2.2.1": {
+      "36": {
+        "install_requires": [
+          "requests==2.31.0",
+          "ujson==5.8.0",
+          "colorama==0.4.6",
+          "websocket-client==1.6.1",
+          "diskcache==5.6.1",
+          "aiohttp==3.8.4",
+          "wsaccel==0.6.4"
+        ],
+        "python_requires": [
+          ">=3.7"
         ]
       },
       "37": "36",
