@@ -13367,16 +13367,17 @@
     }
   },
   "cache-result": {
-    "0.1.3": {
+    "0.1.3": "0.1.1",
+    "0.1.7": "0.1.1",
+    "0.1.4": "0.1.1",
+    "0.1.5": "0.1.1",
+    "0.1.1": {
       "36": {},
       "37": "36",
       "38": "36",
       "39": "36",
       "310": "36"
-    },
-    "0.1.7": "0.1.3",
-    "0.1.4": "0.1.3",
-    "0.1.5": "0.1.3"
+    }
   },
   "cachez": {
     "0.1.0": {
@@ -15898,7 +15899,31 @@
     },
     "0.0.8": "0.0.7",
     "0.0.9": "0.0.7",
-    "0.0.10": "0.0.7"
+    "0.0.10": "0.0.7",
+    "0.0.11": {
+      "27": {
+        "install_requires": [
+          "altair>=4.2.0",
+          "commentjson==0.9.0",
+          "jsonschema",
+          "jsonref",
+          "langchain>=0.0.208",
+          "openai>=0.27.0",
+          "pandas>=1.5.0",
+          "plotly>=5.0.0",
+          "pydantic>=1.9.0",
+          "streamlit-chat>=0.0.2.2",
+          "tabulate",
+          "vegafusion[embed]>=1.0",
+          "bs4"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "chattie": {
     "0.0.2": {
@@ -21298,7 +21323,8 @@
     "0.0.18": "0.0.1",
     "0.0.14": "0.0.1",
     "0.0.15": "0.0.1",
-    "0.0.27": {
+    "0.0.27": "0.0.24",
+    "0.0.24": {
       "36": {
         "install_requires": [
           "asyncssh",
@@ -21311,7 +21337,8 @@
       "38": "36",
       "39": "36",
       "310": "36"
-    }
+    },
+    "0.0.28": "0.0.24"
   },
   "distortion": {
     "0.1.0": {
@@ -21826,7 +21853,8 @@
       "38": "27",
       "39": "27",
       "310": "27"
-    }
+    },
+    "1.5.2": "1.5.0"
   },
   "django-events-rest-framework": {
     "0.1": {
@@ -25513,7 +25541,8 @@
     "0.2.1": "0.1"
   },
   "face-rhythm": {
-    "0.1.3": {
+    "0.1.3": "0.1.1",
+    "0.1.1": {
       "36": {},
       "37": "36",
       "38": "36",
@@ -55592,7 +55621,8 @@
     }
   },
   "openpluginclient": {
-    "0.1.4": {
+    "0.1.4": "0.1.2",
+    "0.1.2": {
       "27": {
         "install_requires": [
           "requests"
@@ -55603,7 +55633,8 @@
       "38": "27",
       "39": "27",
       "310": "27"
-    }
+    },
+    "0.1.3": "0.1.2"
   },
   "opentelemetry-instrumentation-digma": {
     "0.5.0": {
@@ -57802,6 +57833,133 @@
           "quality": [
             "black~=23.1",
             "ruff>=0.0.241"
+          ],
+          "benchmark": [
+            "optuna",
+            "tqdm",
+            "scikit-learn",
+            "seqeval",
+            "torchvision",
+            "evaluate>=0.2.0"
+          ]
+        },
+        "python_requires": [
+          ">=3.7.0"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "1.10.0": {
+      "36": {
+        "install_requires": [
+          "coloredlogs",
+          "sympy",
+          "transformers[sentencepiece]>=4.26.0",
+          "torch>=1.9",
+          "packaging",
+          "numpy",
+          "huggingface_hub>=0.8.0",
+          "datasets"
+        ],
+        "extras_require": {
+          "onnxruntime": [
+            "onnx",
+            "onnxruntime>=1.9.0",
+            "datasets>=1.2.1",
+            "evaluate",
+            "protobuf>=3.20.1"
+          ],
+          "onnxruntime-gpu": [
+            "onnx",
+            "onnxruntime-gpu>=1.9.0",
+            "datasets>=1.2.1",
+            "evaluate",
+            "protobuf>=3.20.1"
+          ],
+          "exporters": [
+            "onnx",
+            "onnxruntime",
+            "timm"
+          ],
+          "exporters-gpu": [
+            "onnx",
+            "onnxruntime-gpu",
+            "timm"
+          ],
+          "exporters-tf": [
+            "tensorflow>=2.4",
+            "tf2onnx",
+            "onnx",
+            "onnxruntime",
+            "timm",
+            "h5py",
+            "numpy<1.24.0"
+          ],
+          "diffusers": [
+            "diffusers"
+          ],
+          "intel": [
+            "optimum-intel"
+          ],
+          "openvino": [
+            "optimum-intel[openvino]"
+          ],
+          "nncf": [
+            "optimum-intel[nncf]"
+          ],
+          "neural-compressor": [
+            "optimum-intel[neural-compressor]"
+          ],
+          "graphcore": [
+            "optimum-graphcore"
+          ],
+          "habana": [
+            "transformers<4.29.0",
+            "optimum-habana"
+          ],
+          "neuron": [
+            "optimum-neuron[neuron]"
+          ],
+          "neuronx": [
+            "optimum-neuron[neuronx]"
+          ],
+          "furiosa": [
+            "optimum-furiosa"
+          ],
+          "dev": [
+            "pytest",
+            "requests",
+            "parameterized",
+            "pytest-xdist",
+            "Pillow",
+            "sacremoses",
+            "torchvision",
+            "diffusers>=0.17.0",
+            "torchaudio",
+            "einops",
+            "invisible-watermark",
+            "black~=23.1",
+            "ruff<=0.0.259,>=0.0.241"
+          ],
+          "tests": [
+            "pytest",
+            "requests",
+            "parameterized",
+            "pytest-xdist",
+            "Pillow",
+            "sacremoses",
+            "torchvision",
+            "diffusers>=0.17.0",
+            "torchaudio",
+            "einops",
+            "invisible-watermark"
+          ],
+          "quality": [
+            "black~=23.1",
+            "ruff<=0.0.259,>=0.0.241"
           ],
           "benchmark": [
             "optuna",
@@ -67968,7 +68126,8 @@
     "1.20230701.3857": "1.20230401.1002",
     "1.20230713.121056": "1.20230401.1002",
     "1.20230627.135908": "1.20230401.1002",
-    "1.20230628.14534": "1.20230401.1002"
+    "1.20230628.14534": "1.20230401.1002",
+    "1.20230603.5818": "1.20230401.1002"
   },
   "reverse-geocoder": {
     "1.0": {
@@ -80408,7 +80567,8 @@
     "0.0.17": "0.0.16",
     "0.0.30": "0.0.16",
     "0.0.23": "0.0.16",
-    "0.0.24": "0.0.16"
+    "0.0.24": "0.0.16",
+    "0.0.20": "0.0.16"
   },
   "xpattern": {
     "0.1.0": {
@@ -80648,17 +80808,18 @@
     "0.0.4.0": "0.0.3.1"
   },
   "yastas-data": {
-    "0.3.3": {
+    "0.3.3": "0.3.0",
+    "0.3.4": "0.3.0",
+    "0.3.5": "0.3.0",
+    "0.3.6": "0.3.0",
+    "0.3.0": {
       "27": {},
       "36": "27",
       "37": "27",
       "38": "27",
       "39": "27",
       "310": "27"
-    },
-    "0.3.4": "0.3.3",
-    "0.3.5": "0.3.3",
-    "0.3.6": "0.3.3"
+    }
   },
   "yava247ai": {
     "0.0.2": {

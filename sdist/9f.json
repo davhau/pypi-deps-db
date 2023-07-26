@@ -563,7 +563,8 @@
     "1.0.0b30": "1.0.0b27",
     "1.0.0b31": "1.0.0b27",
     "1.0.0b32": "1.0.0b27",
-    "1.0.0b33": "1.0.0b27"
+    "1.0.0b33": "1.0.0b27",
+    "1.0.0b34": "1.0.0b27"
   },
   "abu": {
     "0.1": {
@@ -13328,7 +13329,9 @@
     },
     "1.31.2": "1.31.1",
     "1.29.149": "1.31.1",
-    "1.29.164": "1.31.1"
+    "1.29.164": "1.31.1",
+    "1.29.156": "1.31.1",
+    "1.31.3": "1.31.1"
   },
   "botocore-a-la-carte-pinpoint-sms-voice-v2": {
     "1.29.42": "1.31.3",
@@ -38950,6 +38953,29 @@
       "310": "27"
     }
   },
+  "ezsmdeploydev": {
+    "1.99.dev0": {
+      "27": {
+        "install_requires": [
+          "sagemaker==2.173.0",
+          "yaspin==0.16.0",
+          "shortuuid==1.0.1",
+          "sagemaker-studio-image-build==0.5.0",
+          "boto3>=1.14.12"
+        ],
+        "extras_require": {
+          "locust": [
+            "locustio==0.14.5"
+          ]
+        }
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
+  },
   "eztao": {
     "0.1.0": {
       "27": {
@@ -42039,7 +42065,40 @@
       "310": "36"
     },
     "0.12.0": "0.11.0",
-    "0.12.1": "0.11.0"
+    "0.12.1": "0.11.0",
+    "0.12.2": {
+      "37": {
+        "install_requires": [
+          "numpy>=1.20",
+          "asyncssh>=2.9",
+          "prompt_toolkit>=3.0.29",
+          "sounddevice",
+          "samplerate"
+        ],
+        "setup_requires": [
+          "setuptools>=42",
+          "Cython>=0.29.13",
+          "numpy"
+        ],
+        "extras_require": {
+          "controller-support": [
+            "pygame>=1.9.5"
+          ],
+          ":sys_platform == \"linux\"": [
+            "python-xlib"
+          ],
+          ":sys_platform != \"linux\"": [
+            "pynput"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "38": "37",
+      "39": "37",
+      "310": "37"
+    }
   },
   "gamutrf": {
     "0.1.0": {
@@ -81311,6 +81370,93 @@
       "38": "36",
       "39": "36",
       "310": "36"
+    },
+    "3.9.0": {
+      "36": {
+        "install_requires": [
+          "numpy>=1.24.0",
+          "pandas[clipboard,parquet,performance]>=2.0.0",
+          "matplotlib>=3.7.0",
+          "seaborn>=0.12.2",
+          "statsmodels>=0.12.0",
+          "scikit-learn>=1.2.0",
+          "grid_strategy>=0.0.1",
+          "pyyaml>=6.0",
+          "UpSetPlot>=0.8.0",
+          "matplotlib-venn>=0.11.9",
+          "scipy>=1.10.0",
+          "scikit-learn-extra>=0.3.0",
+          "pairwisedist>=1.3.1",
+          "requests>=2.24.0",
+          "graphviz>=0.20.1",
+          "joblib>=1.2.0",
+          "tqdm>=4.65",
+          "appdirs>=1.4.0",
+          "typing_extensions>=4.5",
+          "PyQt5>=5.15.9",
+          "qdarkstyle",
+          "defusedxml>=0.7.1",
+          "aiohttp>=3.8.4",
+          "aiodns>=3.0.0",
+          "Brotli>=1.0.9",
+          "aiolimiter>=1.0.0"
+        ],
+        "setup_requires": [
+          "pytest-runner"
+        ],
+        "extras_require": {
+          "hdbscan": [
+            "hdbscan>=0.8.29"
+          ],
+          "single-set": [
+            "xlmhg>=2.5.4"
+          ],
+          "xlmhg": [
+            "xlmhg>=2.5.4"
+          ],
+          "randomization": [
+            "numba>=0.57.0"
+          ],
+          "numba": [
+            "numba>=0.57.0"
+          ],
+          "fastq": [
+            "cutadapt>=4.4"
+          ],
+          "cutadapt": [
+            "cutadapt>=4.4"
+          ],
+          "reports": [
+            "pyvis>=0.3.2",
+            "networkx>=3.0.0"
+          ],
+          "pyvis": [
+            "pyvis>=0.3.2"
+          ],
+          "networkx": [
+            "networkx>=3.0.0"
+          ],
+          "all": [
+            "cutadapt>=4.4",
+            "pyvis>=0.3.2",
+            "hdbscan>=0.8.29",
+            "xlmhg>=2.5.4",
+            "numba>=0.57.0",
+            "networkx>=3.0.0"
+          ]
+        },
+        "tests_require": [
+          "pytest",
+          "pytest-qt"
+        ],
+        "python_requires": [
+          ">=3.8, <3.12"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
     }
   },
   "road-collisions-base": {
@@ -83168,12 +83314,14 @@
     "1.0.97": "1.0.94",
     "1.0.98": "1.0.94",
     "1.0.99": "1.0.94",
-    "1.0.129": "1.0.125",
+    "1.0.129": "1.0.123",
     "1.0.111": "1.0.94",
-    "1.0.133": "1.0.125",
-    "1.0.130": "1.0.125",
-    "1.0.134": "1.0.125",
-    "1.0.125": {
+    "1.0.133": "1.0.123",
+    "1.0.130": "1.0.123",
+    "1.0.134": "1.0.123",
+    "1.0.125": "1.0.123",
+    "1.0.112": "1.0.94",
+    "1.0.123": {
       "27": {
         "install_requires": [
           "stable-diffusion-sdkit==2.1.4",
@@ -83194,7 +83342,8 @@
       "38": "27",
       "39": "27",
       "310": "27"
-    }
+    },
+    "1.0.126": "1.0.123"
   },
   "search-ads": {
     "0.2.2": {
@@ -95032,6 +95181,34 @@
       "38": "27",
       "39": "27",
       "310": "27"
+    },
+    "1.4.0a4": {
+      "27": {
+        "install_requires": [
+          "PyJWT>=1.7.1",
+          "atomicwrites<2.0.0,>=1.4.0",
+          "certifi>=2020.11.8",
+          "cloudpickle>=1.6.0",
+          "cryptography>=3.3.2",
+          "jsonschema>=3.2.0",
+          "openapi_core<0.18,>=0.17",
+          "openapi_spec_validator<0.6.0,>=0.5.0",
+          "python_dateutil<3.0.0,>=2.5.3",
+          "pyyaml>=5.4",
+          "requests<3.0.0,>=2.20.0",
+          "setuptools>=21.0.0",
+          "six<2.0,>=1.10",
+          "urllib3<2.0.0,>=1.26.5"
+        ],
+        "python_requires": [
+          ">=3.7,<4.0"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
     }
   },
   "taxifaremodel": {
@@ -96584,7 +96761,23 @@
     "2.0.0.dev5200905252": "0.0.0",
     "2.0.0.dev5312774434": "0.0.0",
     "2.0.0.dev5354066762": "0.0.0",
-    "2.0.0.dev5573315786": "0.0.0"
+    "2.0.0.dev5573315786": "0.0.0",
+    "2.0.0.dev5200717989": "0.0.0"
+  },
+  "the-useless-cli": {
+    "0.0.1": {
+      "27": {
+        "install_requires": [
+          "typer",
+          "requests"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "thinks-dash-alert": {
     "0.0.1": {

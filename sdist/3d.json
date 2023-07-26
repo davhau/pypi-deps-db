@@ -2015,7 +2015,8 @@
       "38": "36",
       "39": "36",
       "310": "36"
-    }
+    },
+    "1.1.10": "1.1.6"
   },
   "aliyun-python-sdk-dysmsapi": {
     "1.0.0": {
@@ -3077,7 +3078,9 @@
     "0.3.0": "0.1.0",
     "0.2.0": "0.1.0",
     "0.5.0": "0.1.0",
-    "1.0.2": {
+    "1.0.2": "1.0.1",
+    "1.0.3": "1.0.1",
+    "1.0.1": {
       "27": {
         "install_requires": [
           "toml<0.11.0,>=0.10.2",
@@ -3093,8 +3096,7 @@
       "38": "27",
       "39": "27",
       "310": "27"
-    },
-    "1.0.3": "1.0.2"
+    }
   },
   "arlulacore": {
     "1.0.0": {
@@ -17123,7 +17125,8 @@
     "1.31.3": "1.30.0",
     "1.31.9": "1.30.0",
     "1.31.5": "1.30.0",
-    "1.29.154": "1.30.0"
+    "1.29.154": "1.30.0",
+    "1.29.164": "1.30.0"
   },
   "brainfm": {
     "0.1.1": {
@@ -23335,7 +23338,24 @@
       "310": "27"
     },
     "0.5.2": "0.5.1",
-    "0.6.0": "0.5.1"
+    "0.6.0": "0.5.1",
+    "0.7.0": {
+      "27": {
+        "install_requires": [
+          "textual==0.13",
+          "httpx",
+          "pyperclip"
+        ],
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "chattr-django-master-password": {
     "1.1.2": {
@@ -32944,120 +32964,7 @@
     "3.5.1": "3.4.4",
     "3.5.2": "3.4.4",
     "3.5.3": "3.4.4",
-    "3.6.6": {
-      "36": {
-        "install_requires": [
-          "numpy",
-          "pillow",
-          "boto3",
-          "click",
-          "pathos",
-          "humbug>=0.3.1",
-          "tqdm",
-          "numcodecs",
-          "pyjwt"
-        ],
-        "extras_require": {
-          "audio": [],
-          "audio:python_version >= \"3.7\" or sys_platform != \"win32\"": [
-            "av>=8.1.0"
-          ],
-          "video": [],
-          "video:python_version >= \"3.7\" or sys_platform != \"win32\"": [
-            "av>=8.1.0"
-          ],
-          "av": [],
-          "av:python_version >= \"3.7\" or sys_platform != \"win32\"": [
-            "av>=8.1.0"
-          ],
-          "gcp": [
-            "google-cloud-storage~=1.42.0",
-            "google-auth~=2.0.1",
-            "google-auth-oauthlib~=0.4.5"
-          ],
-          "azure": [
-            "azure-cli",
-            "azure-identity",
-            "azure-storage-blob"
-          ],
-          "dicom": [
-            "pydicom",
-            "nibabel"
-          ],
-          "medical": [
-            "pydicom",
-            "nibabel"
-          ],
-          "visualizer": [
-            "IPython",
-            "flask"
-          ],
-          "gdrive": [
-            "google-api-python-client~=2.31.0",
-            "oauth2client~=4.1.3",
-            "google-auth~=2.0.1",
-            "google-auth-oauthlib~=0.4.5"
-          ],
-          "point_cloud": [
-            "laspy"
-          ],
-          "all": [
-            "IPython",
-            "google-cloud-storage~=1.42.0",
-            "azure-storage-blob",
-            "google-api-python-client~=2.31.0",
-            "pydicom",
-            "azure-identity",
-            "azure-cli",
-            "laspy",
-            "nibabel",
-            "google-auth~=2.0.1",
-            "oauth2client~=4.1.3",
-            "flask",
-            "google-auth-oauthlib~=0.4.5",
-            "libdeeplake==0.0.60"
-          ],
-          "all:python_version >= \"3.7\" or sys_platform != \"win32\"": [
-            "av>=8.1.0"
-          ],
-          "enterprise": [
-            "libdeeplake==0.0.60",
-            "pyjwt"
-          ],
-          ":python_version >= \"3.7\" and sys_platform != \"win32\"": [
-            "aioboto3>=10.4.0",
-            "nest_asyncio"
-          ]
-        },
-        "tests_require": [
-          "pytest\n",
-          "pytest-cases\n",
-          "pytest-benchmark\n",
-          "pytest-cov\n",
-          "pytest-timeout\n",
-          "\n",
-          "mypy\n",
-          "black\n",
-          "darglint\n",
-          "\n",
-          "typing_extensions>=3.10.0.0\n",
-          "types-requests\n",
-          "types-click\n",
-          "boto3-stubs[essential]\n",
-          "\n",
-          "lz4\n",
-          "rich\n",
-          "wandb\n",
-          "\n",
-          "pandas; python_version >= '3.11' and sys_platform == 'win32'\n",
-          "datasets; python_version >= '3.11' and sys_platform == 'win32'\n"
-        ]
-      },
-      "37": "36",
-      "38": "36",
-      "39": "36",
-      "310": "36"
-    },
+    "3.6.6": "3.6.5",
     "3.6.12": {
       "36": {
         "install_requires": [
@@ -33250,6 +33157,120 @@
           ],
           "enterprise": [
             "libdeeplake==0.0.59",
+            "pyjwt"
+          ],
+          ":python_version >= \"3.7\" and sys_platform != \"win32\"": [
+            "aioboto3>=10.4.0",
+            "nest_asyncio"
+          ]
+        },
+        "tests_require": [
+          "pytest\n",
+          "pytest-cases\n",
+          "pytest-benchmark\n",
+          "pytest-cov\n",
+          "pytest-timeout\n",
+          "\n",
+          "mypy\n",
+          "black\n",
+          "darglint\n",
+          "\n",
+          "typing_extensions>=3.10.0.0\n",
+          "types-requests\n",
+          "types-click\n",
+          "boto3-stubs[essential]\n",
+          "\n",
+          "lz4\n",
+          "rich\n",
+          "wandb\n",
+          "\n",
+          "pandas; python_version >= '3.11' and sys_platform == 'win32'\n",
+          "datasets; python_version >= '3.11' and sys_platform == 'win32'\n"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "3.6.5": {
+      "36": {
+        "install_requires": [
+          "numpy",
+          "pillow",
+          "boto3",
+          "click",
+          "pathos",
+          "humbug>=0.3.1",
+          "tqdm",
+          "numcodecs",
+          "pyjwt"
+        ],
+        "extras_require": {
+          "audio": [],
+          "audio:python_version >= \"3.7\" or sys_platform != \"win32\"": [
+            "av>=8.1.0"
+          ],
+          "video": [],
+          "video:python_version >= \"3.7\" or sys_platform != \"win32\"": [
+            "av>=8.1.0"
+          ],
+          "av": [],
+          "av:python_version >= \"3.7\" or sys_platform != \"win32\"": [
+            "av>=8.1.0"
+          ],
+          "gcp": [
+            "google-cloud-storage~=1.42.0",
+            "google-auth~=2.0.1",
+            "google-auth-oauthlib~=0.4.5"
+          ],
+          "azure": [
+            "azure-cli",
+            "azure-identity",
+            "azure-storage-blob"
+          ],
+          "dicom": [
+            "pydicom",
+            "nibabel"
+          ],
+          "medical": [
+            "pydicom",
+            "nibabel"
+          ],
+          "visualizer": [
+            "IPython",
+            "flask"
+          ],
+          "gdrive": [
+            "google-api-python-client~=2.31.0",
+            "oauth2client~=4.1.3",
+            "google-auth~=2.0.1",
+            "google-auth-oauthlib~=0.4.5"
+          ],
+          "point_cloud": [
+            "laspy"
+          ],
+          "all": [
+            "IPython",
+            "google-cloud-storage~=1.42.0",
+            "azure-storage-blob",
+            "google-api-python-client~=2.31.0",
+            "pydicom",
+            "azure-identity",
+            "azure-cli",
+            "laspy",
+            "nibabel",
+            "google-auth~=2.0.1",
+            "oauth2client~=4.1.3",
+            "flask",
+            "google-auth-oauthlib~=0.4.5",
+            "libdeeplake==0.0.60"
+          ],
+          "all:python_version >= \"3.7\" or sys_platform != \"win32\"": [
+            "av>=8.1.0"
+          ],
+          "enterprise": [
+            "libdeeplake==0.0.60",
             "pyjwt"
           ],
           ":python_version >= \"3.7\" and sys_platform != \"win32\"": [
@@ -37492,7 +37513,8 @@
     "0.1.7": "0.1.2",
     "0.1.8": "0.1.2",
     "0.1.9": "0.1.2",
-    "0.2.2": "0.1.2"
+    "0.2.2": "0.1.2",
+    "0.2.4": "0.1.2"
   },
   "django-redirect": {
     "0.1": {
@@ -59757,6 +59779,60 @@
       "310": "27"
     }
   },
+  "imxinsights": {
+    "0.0.1.dev13": {
+      "27": {
+        "install_requires": [
+          "loguru",
+          "ruamel.yaml",
+          "lxml",
+          "shapely",
+          "shapelyM",
+          "pyproj",
+          "dateparser",
+          "ruamel.yaml",
+          "pandas",
+          "xlsxwriter",
+          "pygwalker"
+        ],
+        "extras_require": {
+          "jupyter": [
+            "jupyterlab",
+            "pygwalker"
+          ],
+          "dev": [
+            "black",
+            "bumpversion",
+            "flake8-black",
+            "flake8-docstrings",
+            "flake8",
+            "isort",
+            "mypy",
+            "pre-commit",
+            "pytest",
+            "pytest-cov",
+            "pytest-mock",
+            "markdown-include",
+            "mike",
+            "mkdocs",
+            "mkdocs-jupyter",
+            "mkdocs-material",
+            "mkdocs-mermaid2-plugin",
+            "mkdocstrings[crystal,python]>=0.18",
+            "pymdown-extensions"
+          ]
+        },
+        "python_requires": [
+          "~=3.10"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
+  },
   "ingressapi": {
     "0.1": {
       "27": {
@@ -60239,7 +60315,8 @@
     "0.0.11": "0.0.8",
     "0.0.12": "0.0.8",
     "0.0.13": "0.0.8",
-    "0.0.14": "0.0.8"
+    "0.0.14": "0.0.8",
+    "0.0.15": "0.0.8"
   },
   "javascript-xiandai-web-kaifa-kuangjia-jiaocheng-jifan": {
     "2023.2.11.0": {
@@ -85953,7 +86030,8 @@
       "39": "27",
       "310": "27"
     },
-    "0.11.1": "0.11.0"
+    "0.11.1": "0.11.0",
+    "0.11.2": "0.11.0"
   },
   "pywreck": {
     "0.1.0": {
@@ -88676,7 +88754,9 @@
     "0.2.902182978.dev11525": "0.2.694928516",
     "0.2.911852332.dev11862": "0.2.694928516",
     "0.2.893910391.dev11244": "0.2.694928516",
-    "0.2.895757559.dev11276": "0.2.694928516"
+    "0.2.895757559.dev11276": "0.2.694928516",
+    "0.2.897808335.dev11307": "0.2.694928516",
+    "0.2.928743296.dev12219": "0.2.694928516"
   },
   "quicktable": {
     "0.0.0": {
@@ -91864,6 +91944,81 @@
       "38": "37",
       "39": "37",
       "310": "37"
+    },
+    "3.6": {
+      "37": {
+        "install_requires": [
+          "typing-extensions>=4",
+          "feedparser>=6",
+          "requests>=2.18",
+          "iso8601>=1",
+          "beautifulsoup4>=4.5"
+        ],
+        "extras_require": {
+          "search": [],
+          "readtime": [],
+          "cli": [
+            "click>=7",
+            "PyYAML"
+          ],
+          "app": [
+            "flask>=0.10",
+            "humanize",
+            "PyYAML"
+          ],
+          "unstable-plugins": [
+            "requests",
+            "mutagen",
+            "requests",
+            "beautifulsoup4",
+            "blinker>=1.4",
+            "beautifulsoup4",
+            "tweepy",
+            "Jinja2>=3"
+          ],
+          "tests": [
+            "pytest>=4",
+            "pytest-randomly",
+            "pytest-subtests",
+            "flaky",
+            "coverage",
+            "pytest-cov",
+            "requests-mock",
+            "mechanicalsoup",
+            "requests-wsgi-adapter",
+            "lxml",
+            "html5lib",
+            "werkzeug",
+            "types-requests"
+          ],
+          "tests:implementation_name != \"pypy\"": [
+            "mypy"
+          ],
+          "docs": [
+            "sphinx",
+            "sphinx-rtd-theme",
+            "click>=7",
+            "sphinx-click",
+            "sphinx-issues",
+            "sphinx-hoverxref",
+            "sphinxcontrib-log-cabinet",
+            "setuptools"
+          ],
+          "dev": [
+            "reader[app,cli,docs,tests,unstable-plugins]",
+            "tox",
+            "pre-commit",
+            "build",
+            "twine"
+          ]
+        },
+        "python_requires": [
+          ">=3.9"
+        ]
+      },
+      "38": "37",
+      "39": "37",
+      "310": "37"
     }
   },
   "readme2tex": {
@@ -93512,6 +93667,24 @@
         "install_requires": [
           "constructs<4.0.0,>=3.0.4",
           "jsii<2.0.0,>=1.80.0",
+          "publication>=0.0.3",
+          "ros-cdk-core<2.0.0,>=1.0.6",
+          "typeguard~=2.13.3"
+        ],
+        "python_requires": [
+          "~=3.7"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "1.0.14": {
+      "36": {
+        "install_requires": [
+          "constructs<4.0.0,>=3.0.4",
+          "jsii<2.0.0,>=1.84.0",
           "publication>=0.0.3",
           "ros-cdk-core<2.0.0,>=1.0.6",
           "typeguard~=2.13.3"
@@ -101146,7 +101319,9 @@
     "3.0.911": "3.0.405",
     "3.0.912": "3.0.405",
     "3.0.916": "3.0.405",
-    "3.0.907": "3.0.405"
+    "3.0.907": "3.0.405",
+    "3.0.935": "3.0.405",
+    "3.0.942": "3.0.405"
   },
   "tengs-cli": {
     "0.0.10": "0.0.8",
@@ -103936,7 +104111,23 @@
     "2.4.2.post2": "2.4.0",
     "2.5.0": "2.4.0",
     "2.4.2.post3": "2.4.0",
-    "2.5.0.post1": "2.4.0"
+    "2.5.0.post1": "2.4.0",
+    "2.5.1": {
+      "36": {
+        "extras_require": {
+          ":python_version < \"3.9\"": [
+            "typing-extensions>=4.1.0"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "types-aiobotocore-logs": {
     "2.1.0": {
@@ -108509,7 +108700,8 @@
       "38": "36",
       "39": "36",
       "310": "36"
-    }
+    },
+    "0.6.0.230.dev1": "0.6.0.210.dev1"
   },
   "uniproxy-mssngr-tools": {
     "66.0.0": {
