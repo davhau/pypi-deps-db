@@ -1083,7 +1083,8 @@
       "39": "27",
       "310": "27"
     },
-    "7.2.1": "7.2.0"
+    "7.2.1": "7.2.0",
+    "7.3.0": "7.2.0"
   },
   "airflow-provider-duckdb": {
     "0.0.1": {
@@ -16014,6 +16015,70 @@
       "38": "27",
       "39": "27",
       "310": "27"
+    },
+    "1.86.1": {
+      "27": {
+        "install_requires": [
+          "chevron~=0.12",
+          "click~=8.0",
+          "Flask<2.3",
+          "boto3==1.*,>=1.19.5",
+          "jmespath~=0.10.0",
+          "ruamel_yaml==0.17.21",
+          "PyYAML==5.*,>=5.4.1",
+          "cookiecutter~=2.1.1",
+          "aws-sam-translator==1.68.0",
+          "docker~=4.2.0",
+          "dateparser~=1.1",
+          "requests==2.31.0",
+          "serverlessrepo==0.1.10",
+          "aws_lambda_builders==1.33.0",
+          "tomlkit==0.11.8",
+          "watchdog==2.1.2",
+          "rich~=13.3.3",
+          "pyopenssl==23.0.0",
+          "typing_extensions~=4.4.0",
+          "regex!=2021.10.8",
+          "tzlocal==3.0",
+          "cfn-lint~=0.77.5"
+        ],
+        "extras_require": {
+          "pre-dev": [
+            "ruff==0.0.261"
+          ],
+          "dev": [
+            "ruff==0.0.261",
+            "coverage==5.3",
+            "pytest-cov==4.0.0",
+            "mypy==0.790",
+            "boto3-stubs[apigateway,cloudformation,ecr,iam,lambda,s3,schemas,secretsmanager,signer,stepfunctions,sts,xray]==1.26.131",
+            "types-pywin32==306.0.0.0",
+            "types-PyYAML==6.0.12",
+            "types-chevron==0.14.2.4",
+            "types-psutil==5.9.5.12",
+            "types-setuptools==65.4.0.0",
+            "pytest==7.2.2",
+            "parameterized==0.9.0",
+            "pytest-xdist==3.2.0",
+            "pytest-forked==1.6.0",
+            "pytest-timeout==2.1.0",
+            "pytest-rerunfailures==11.1.2",
+            "pytest-metadata==2.0.4",
+            "pytest-json-report==1.5.0",
+            "filelock==3.12.0",
+            "black==22.6.0",
+            "psutil==5.9.5"
+          ]
+        },
+        "python_requires": [
+          ">=3.7, <=4.0, !=4.0"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
     }
   },
   "aws-solutions-constructs.aws-apigateway-lambda": {
@@ -28019,7 +28084,11 @@
     },
     "1.29.151": "1.31.1",
     "1.29.158": "1.31.1",
-    "1.31.5": "1.31.1"
+    "1.31.5": "1.31.1",
+    "1.29.152": "1.31.1",
+    "1.29.157": "1.31.1",
+    "1.31.3": "1.31.1",
+    "1.31.9": "1.31.1"
   },
   "botools": {
     "0.0.1": {
@@ -32407,6 +32476,66 @@
             "google-cloud-datastore>=2.13.2",
             "google-cloud-logging",
             "google-cloud-secret-manager>=2.10.0",
+            "google-cloud-storage>=2.7.0"
+          ],
+          "gunicorn": [
+            "gunicorn"
+          ],
+          "sendgrid": [
+            "sendgrid"
+          ],
+          "sql": [
+            "asyncpg",
+            "sqlalchemy[asyncio]"
+          ]
+        }
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "2.0.0a142": {
+      "36": {
+        "install_requires": [
+          "aiofiles",
+          "canonical>=0.50.0",
+          "ckms>=0.65.0",
+          "fastapi>=0.94.0",
+          "headless>=2.0.0a50",
+          "inflect",
+          "jinja2",
+          "gunicorn",
+          "pydantic>=1.10.7",
+          "python-multipart",
+          "uvicorn",
+          "unimatrix"
+        ],
+        "extras_require": {
+          "all": [
+            "asyncpg",
+            "aorta[all]>=3.0.0a13",
+            "google-cloud-datastore>=2.13.2",
+            "google-cloud-logging",
+            "google-cloud-secret-manager>=2.10.0",
+            "google-cloud-storage>=2.7.0",
+            "gunicorn",
+            "gunicorn",
+            "httpx",
+            "jwcrypto",
+            "google.auth",
+            "pyjwt",
+            "sqlalchemy[asyncio]",
+            "unimatrix.ext.kms[all]"
+          ],
+          "google": [
+            "aorta[google]>=3.0.0a13",
+            "ckms[google]>=0.65",
+            "google-api-python-client>=2.80.0",
+            "google-cloud-datastore>=2.13.2",
+            "google-cloud-logging",
+            "google-cloud-secret-manager>=2.10.0",
+            "google-cloud-tasks>=2.13.1",
             "google-cloud-storage>=2.7.0"
           ],
           "gunicorn": [
@@ -55084,7 +55213,8 @@
       "310": "27"
     },
     "1.9.0": "1.1.0",
-    "1.9.1": "1.1.0"
+    "1.9.1": "1.1.0",
+    "1.8.0": "1.1.0"
   },
   "lewip-informal": {
     "0.0.0": {
@@ -58727,6 +58857,23 @@
       "310": "27"
     },
     "1.0.2": "1.0.1"
+  },
+  "micropython-samd-minisam-m4-stubs": {
+    "1.20.0.post1": {
+      "27": {
+        "install_requires": [
+          "micropython-stdlib-stubs>=0.9.0"
+        ],
+        "python_requires": [
+          ">=3.8,<4.0"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "militia": {
     "0.2": {
@@ -76233,7 +76380,8 @@
       "38": "36",
       "39": "36",
       "310": "36"
-    }
+    },
+    "0.2.3": "0.1.4"
   },
   "polyapi": {
     "0.0.2": {
@@ -95905,7 +96053,19 @@
     "2.3.5169": "2.3.2",
     "2.3.5216": "2.3.2",
     "2.3.5287": "2.3.2",
-    "2.3.5348": "2.3.2"
+    "2.3.5348": "2.3.2",
+    "2.3.5016": "2.3.2",
+    "2.3.5059": "2.3.2",
+    "2.3.5075": "2.3.2",
+    "2.3.5112": "2.3.2",
+    "2.3.5125": "2.3.2",
+    "2.3.5126": "2.3.2",
+    "2.3.5174": "2.3.2",
+    "2.3.5229": "2.3.2",
+    "2.3.5277": "2.3.2",
+    "2.3.5278": "2.3.2",
+    "2.3.5387": "2.3.2",
+    "2.3.5431": "2.3.2"
   },
   "spark-pit": {
     "0.1.0": {
@@ -98336,7 +98496,8 @@
     "1.7.1": "1.7.0",
     "1.7.2": "1.7.0",
     "1.7.3": "1.7.0",
-    "1.7.4": "1.7.0"
+    "1.7.4": "1.7.0",
+    "1.7.6": "1.7.0"
   },
   "tapanbfunctionrec": {
     "1.0.0": {
