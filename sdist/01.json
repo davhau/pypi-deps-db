@@ -135,7 +135,8 @@
       "38": "36",
       "39": "36",
       "310": "36"
-    }
+    },
+    "1.3.1": "1.0.2"
   },
   "abakaffe-cli": {
     "0.1": {
@@ -11090,7 +11091,10 @@
     "1.31.5": "1.30.1",
     "1.29.160": "1.30.1",
     "1.31.12": "1.30.1",
-    "1.31.13": "1.30.1"
+    "1.31.13": "1.30.1",
+    "1.29.156": "1.30.1",
+    "1.31.4": "1.30.1",
+    "1.31.9": "1.30.1"
   },
   "botspot": {
     "0.1.1": {
@@ -16834,7 +16838,13 @@
     "2023.6.16.0": "2023.1.1.0",
     "2023.6.18.0": "2023.1.1.0",
     "2023.7.2.0": "2023.1.1.0",
-    "2023.7.29.1": "2023.1.1.0"
+    "2023.7.29.1": "2023.1.1.0",
+    "2023.6.14.0": "2023.1.1.0",
+    "2023.6.23.0": "2023.1.1.0",
+    "2023.6.8.1": "2023.1.1.0",
+    "2023.7.19.0": "2023.1.1.0",
+    "2023.7.27.0": "2023.1.1.0",
+    "2023.7.28.1": "2023.1.1.0"
   },
   "create-flask-skeleton": {
     "0.0.1": {
@@ -17063,7 +17073,8 @@
       "310": "36"
     },
     "1.0.2": "1.0.1",
-    "1.0.3": "1.0.1"
+    "1.0.3": "1.0.1",
+    "1.0.4": "1.0.1"
   },
   "cs.folderishpage": {
     "1.0": {
@@ -21386,6 +21397,39 @@
             "setuptools",
             "wheel",
             "twine"
+          ],
+          "dev:python_version == \"3.6\"": [
+            "types-dataclasses"
+          ],
+          ":python_version == \"3.6\"": [
+            "dataclasses"
+          ]
+        },
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "0.5.8": {
+      "36": {
+        "install_requires": [
+          "marshmallow<4.0.0,>=3.3.0",
+          "marshmallow-enum<2.0.0,>=1.5.1",
+          "typing-inspect>=0.4.0"
+        ],
+        "extras_require": {
+          "dev": [
+            "pytest>=7.2.0",
+            "ipython",
+            "mypy>=0.710",
+            "hypothesis",
+            "portray",
+            "flake8",
+            "simplejson"
           ],
           "dev:python_version == \"3.6\"": [
             "types-dataclasses"
@@ -38435,7 +38479,8 @@
     "1.1.5140": "1.1.5122",
     "1.1.5144": "1.1.5123",
     "1.1.5146": "1.1.5123",
-    "1.1.5142": "1.1.5123"
+    "1.1.5142": "1.1.5123",
+    "1.1.5147": "1.1.5123"
   },
   "hoggormplot": {
     "0.11.0": "0.8.8",
@@ -50947,6 +50992,812 @@
       "38": "36",
       "39": "36",
       "310": "36"
+    },
+    "2.0.3": {
+      "36": {
+        "install_requires": [
+          "Jinja2<5.0",
+          "PyYAML<8.0",
+          "PyYAML<8.0,>=5.4",
+          "arrow<3.0,>=1.2.0",
+          "beautifulsoup4<6.0,>=4.8.0",
+          "click<10.0",
+          "croniter<1.4.0,>=1.3.0",
+          "dateutils<2.0",
+          "deepdiff<8.0,>=5.7.0",
+          "fastapi<0.89.0,>=0.69.0",
+          "fsspec<2024.0,>=2022.5.0",
+          "fsspec[http]<2025.0,>2021.06.0",
+          "inquirer<5.0,>=2.10.0",
+          "lightning-cloud>=0.5.34",
+          "lightning-utilities<2.0,>=0.7.0",
+          "numpy<3.0,>=1.17.2",
+          "packaging",
+          "packaging<25.0,>=17.1",
+          "psutil<7.0",
+          "pydantic<4.0,>=1.7.4",
+          "python-multipart<2.0,>=0.0.5",
+          "requests<4.0",
+          "rich<15.0,>=12.3.0",
+          "starlette",
+          "starsessions<2.0,>=1.2.1",
+          "torch<4.0,>=1.11.0",
+          "torchmetrics<2.0,>=0.7.0",
+          "tqdm<6.0,>=4.57.0",
+          "traitlets<7.0,>=5.3.0",
+          "typing-extensions<6.0,>=4.0.0",
+          "urllib3<3.0",
+          "uvicorn<2.0",
+          "websocket-client<3.0",
+          "websockets<12.0",
+          "pytorch-lightning"
+        ],
+        "extras_require": {
+          "pytorch-strategies": [],
+          "pytorch-strategies:platform_system != \"Windows\"": [
+            "deepspeed<1.0,>=0.8.2"
+          ],
+          "pytorch-examples": [
+            "gym[classic_control]<1.0,>=0.17.0",
+            "ipython[all]<9.0",
+            "lightning-utilities<1.0,>=0.7.0",
+            "torchmetrics<1.0,>=0.10.0",
+            "torchvision<1.0,>=0.12.0"
+          ],
+          "pytorch-extra": [
+            "hydra-core<2.0,>=1.0.5",
+            "jsonargparse[signatures]<5.0,>=4.18.0",
+            "matplotlib<4.0,>3.1",
+            "omegaconf<3.0,>=2.0.5",
+            "rich<14.0,>=12.3.0",
+            "tensorboardX<3.0,>=2.2"
+          ],
+          "pytorch-test": [
+            "cloudpickle<3.0,>=1.3",
+            "coverage==7.2.5",
+            "fastapi<1.0",
+            "onnx<2.0",
+            "onnxruntime<2.0",
+            "pandas<3.0,>1.0",
+            "protobuf<=3.20.1",
+            "psutil<6.0",
+            "pytest-cov==4.0.0",
+            "pytest-forked==1.4.0",
+            "pytest-rerunfailures==10.3",
+            "pytest==7.3.1",
+            "scikit-learn<2.0,>0.22.1",
+            "tensorboard<3.0,>=2.9.1",
+            "uvicorn<1.0"
+          ],
+          "fabric-strategies": [],
+          "fabric-strategies:platform_system != \"Windows\"": [
+            "deepspeed<1.0,>=0.8.2"
+          ],
+          "fabric-examples": [
+            "lightning-utilities<1.0,>=0.8.0",
+            "torchmetrics<1.0,>=0.10.0",
+            "torchvision<1.0,>=0.12.0"
+          ],
+          "fabric-test": [
+            "click==8.1.3",
+            "coverage==7.2.5",
+            "pytest-cov==4.0.0",
+            "pytest-rerunfailures==10.3",
+            "pytest==7.3.1",
+            "tensorboardX<3.0,>=2.2"
+          ],
+          "app-ui": [
+            "panel<1.0,>=0.12.7",
+            "streamlit<2.0,>=1.13.0"
+          ],
+          "app-cloud": [
+            "docker<7.0,>=5.0.0",
+            "redis<5.0,>=4.0.1",
+            "s3fs<2023.0,>=2022.5.0"
+          ],
+          "app-components": [
+            "aiohttp<4.0,>=3.8.0",
+            "lightning-fabric>=1.9.0",
+            "lightning_api_access>=0.0.3",
+            "pytorch-lightning>=1.9.0"
+          ],
+          "app-test": [
+            "coverage==7.2.5",
+            "httpx",
+            "playwright==1.32.1",
+            "psutil",
+            "pympler",
+            "pytest-asyncio==0.20.3",
+            "pytest-cov==4.0.0",
+            "pytest-doctestplus>=0.9.0",
+            "pytest-rerunfailures<12.0",
+            "pytest-timeout==2.1.0",
+            "pytest==7.3.1",
+            "requests-mock",
+            "setuptools<68.0",
+            "trio<0.22.0"
+          ],
+          "fabric-all": [
+            "lightning-utilities<1.0,>=0.8.0",
+            "torchmetrics<1.0,>=0.10.0",
+            "torchvision<1.0,>=0.12.0"
+          ],
+          "fabric-all:platform_system != \"Windows\"": [
+            "deepspeed<1.0,>=0.8.2"
+          ],
+          "fabric-dev": [
+            "click==8.1.3",
+            "coverage==7.2.5",
+            "lightning-utilities<1.0,>=0.8.0",
+            "pytest-cov==4.0.0",
+            "pytest-rerunfailures==10.3",
+            "pytest==7.3.1",
+            "tensorboardX<3.0,>=2.2",
+            "torchmetrics<1.0,>=0.10.0",
+            "torchvision<1.0,>=0.12.0"
+          ],
+          "fabric-dev:platform_system != \"Windows\"": [
+            "deepspeed<1.0,>=0.8.2"
+          ],
+          "pytorch-all": [
+            "gym[classic_control]<1.0,>=0.17.0",
+            "hydra-core<2.0,>=1.0.5",
+            "ipython[all]<9.0",
+            "jsonargparse[signatures]<5.0,>=4.18.0",
+            "lightning-utilities<1.0,>=0.7.0",
+            "matplotlib<4.0,>3.1",
+            "omegaconf<3.0,>=2.0.5",
+            "rich<14.0,>=12.3.0",
+            "tensorboardX<3.0,>=2.2",
+            "torchmetrics<1.0,>=0.10.0",
+            "torchvision<1.0,>=0.12.0"
+          ],
+          "pytorch-all:platform_system != \"Windows\"": [
+            "deepspeed<1.0,>=0.8.2"
+          ],
+          "pytorch-dev": [
+            "cloudpickle<3.0,>=1.3",
+            "coverage==7.2.5",
+            "fastapi<1.0",
+            "gym[classic_control]<1.0,>=0.17.0",
+            "hydra-core<2.0,>=1.0.5",
+            "ipython[all]<9.0",
+            "jsonargparse[signatures]<5.0,>=4.18.0",
+            "lightning-utilities<1.0,>=0.7.0",
+            "matplotlib<4.0,>3.1",
+            "omegaconf<3.0,>=2.0.5",
+            "onnx<2.0",
+            "onnxruntime<2.0",
+            "pandas<3.0,>1.0",
+            "protobuf<=3.20.1",
+            "psutil<6.0",
+            "pytest-cov==4.0.0",
+            "pytest-forked==1.4.0",
+            "pytest-rerunfailures==10.3",
+            "pytest==7.3.1",
+            "rich<14.0,>=12.3.0",
+            "scikit-learn<2.0,>0.22.1",
+            "tensorboard<3.0,>=2.9.1",
+            "tensorboardX<3.0,>=2.2",
+            "torchmetrics<1.0,>=0.10.0",
+            "torchvision<1.0,>=0.12.0",
+            "uvicorn<1.0"
+          ],
+          "pytorch-dev:platform_system != \"Windows\"": [
+            "deepspeed<1.0,>=0.8.2"
+          ],
+          "app-extra": [
+            "aiohttp<4.0,>=3.8.0",
+            "docker<7.0,>=5.0.0",
+            "lightning-fabric>=1.9.0",
+            "lightning_api_access>=0.0.3",
+            "panel<1.0,>=0.12.7",
+            "pytorch-lightning>=1.9.0",
+            "redis<5.0,>=4.0.1",
+            "s3fs<2023.0,>=2022.5.0",
+            "streamlit<2.0,>=1.13.0"
+          ],
+          "app-all": [
+            "aiohttp<4.0,>=3.8.0",
+            "docker<7.0,>=5.0.0",
+            "lightning-fabric>=1.9.0",
+            "lightning_api_access>=0.0.3",
+            "panel<1.0,>=0.12.7",
+            "pytorch-lightning>=1.9.0",
+            "redis<5.0,>=4.0.1",
+            "s3fs<2023.0,>=2022.5.0",
+            "streamlit<2.0,>=1.13.0"
+          ],
+          "app-dev": [
+            "aiohttp<4.0,>=3.8.0",
+            "coverage==7.2.5",
+            "docker<7.0,>=5.0.0",
+            "httpx",
+            "lightning-fabric>=1.9.0",
+            "lightning_api_access>=0.0.3",
+            "panel<1.0,>=0.12.7",
+            "playwright==1.32.1",
+            "psutil",
+            "pympler",
+            "pytest-asyncio==0.20.3",
+            "pytest-cov==4.0.0",
+            "pytest-doctestplus>=0.9.0",
+            "pytest-rerunfailures<12.0",
+            "pytest-timeout==2.1.0",
+            "pytest==7.3.1",
+            "pytorch-lightning>=1.9.0",
+            "redis<5.0,>=4.0.1",
+            "requests-mock",
+            "s3fs<2023.0,>=2022.5.0",
+            "setuptools<68.0",
+            "streamlit<2.0,>=1.13.0",
+            "trio<0.22.0"
+          ],
+          "strategies": [],
+          "strategies:platform_system != \"Windows\"": [
+            "deepspeed<1.0,>=0.8.2"
+          ],
+          "examples": [
+            "gym[classic_control]<1.0,>=0.17.0",
+            "ipython[all]<9.0",
+            "lightning-utilities<1.0,>=0.7.0",
+            "lightning-utilities<1.0,>=0.8.0",
+            "torchmetrics<1.0,>=0.10.0",
+            "torchvision<1.0,>=0.12.0"
+          ],
+          "extra": [
+            "aiohttp<4.0,>=3.8.0",
+            "docker<7.0,>=5.0.0",
+            "hydra-core<2.0,>=1.0.5",
+            "jsonargparse[signatures]<5.0,>=4.18.0",
+            "lightning-fabric>=1.9.0",
+            "lightning_api_access>=0.0.3",
+            "matplotlib<4.0,>3.1",
+            "omegaconf<3.0,>=2.0.5",
+            "panel<1.0,>=0.12.7",
+            "pytorch-lightning>=1.9.0",
+            "redis<5.0,>=4.0.1",
+            "rich<14.0,>=12.3.0",
+            "s3fs<2023.0,>=2022.5.0",
+            "streamlit<2.0,>=1.13.0",
+            "tensorboardX<3.0,>=2.2"
+          ],
+          "test": [
+            "click==8.1.3",
+            "cloudpickle<3.0,>=1.3",
+            "coverage==7.2.5",
+            "fastapi<1.0",
+            "httpx",
+            "onnx<2.0",
+            "onnxruntime<2.0",
+            "pandas<3.0,>1.0",
+            "playwright==1.32.1",
+            "protobuf<=3.20.1",
+            "psutil",
+            "psutil<6.0",
+            "pympler",
+            "pytest-asyncio==0.20.3",
+            "pytest-cov==4.0.0",
+            "pytest-doctestplus>=0.9.0",
+            "pytest-forked==1.4.0",
+            "pytest-rerunfailures<12.0",
+            "pytest-rerunfailures==10.3",
+            "pytest-timeout==2.1.0",
+            "pytest==7.3.1",
+            "requests-mock",
+            "scikit-learn<2.0,>0.22.1",
+            "setuptools<68.0",
+            "tensorboard<3.0,>=2.9.1",
+            "tensorboardX<3.0,>=2.2",
+            "trio<0.22.0",
+            "uvicorn<1.0"
+          ],
+          "ui": [
+            "panel<1.0,>=0.12.7",
+            "streamlit<2.0,>=1.13.0"
+          ],
+          "cloud": [
+            "docker<7.0,>=5.0.0",
+            "redis<5.0,>=4.0.1",
+            "s3fs<2023.0,>=2022.5.0"
+          ],
+          "components": [
+            "aiohttp<4.0,>=3.8.0",
+            "lightning-fabric>=1.9.0",
+            "lightning_api_access>=0.0.3",
+            "pytorch-lightning>=1.9.0"
+          ],
+          "all": [
+            "aiohttp<4.0,>=3.8.0",
+            "docker<7.0,>=5.0.0",
+            "gym[classic_control]<1.0,>=0.17.0",
+            "hydra-core<2.0,>=1.0.5",
+            "ipython[all]<9.0",
+            "jsonargparse[signatures]<5.0,>=4.18.0",
+            "lightning-fabric>=1.9.0",
+            "lightning-utilities<1.0,>=0.7.0",
+            "lightning-utilities<1.0,>=0.8.0",
+            "lightning_api_access>=0.0.3",
+            "matplotlib<4.0,>3.1",
+            "omegaconf<3.0,>=2.0.5",
+            "panel<1.0,>=0.12.7",
+            "pytorch-lightning>=1.9.0",
+            "redis<5.0,>=4.0.1",
+            "rich<14.0,>=12.3.0",
+            "s3fs<2023.0,>=2022.5.0",
+            "streamlit<2.0,>=1.13.0",
+            "tensorboardX<3.0,>=2.2",
+            "torchmetrics<1.0,>=0.10.0",
+            "torchvision<1.0,>=0.12.0"
+          ],
+          "all:platform_system != \"Windows\"": [
+            "deepspeed<1.0,>=0.8.2"
+          ],
+          "dev": [
+            "aiohttp<4.0,>=3.8.0",
+            "click==8.1.3",
+            "cloudpickle<3.0,>=1.3",
+            "coverage==7.2.5",
+            "docker<7.0,>=5.0.0",
+            "fastapi<1.0",
+            "gym[classic_control]<1.0,>=0.17.0",
+            "httpx",
+            "hydra-core<2.0,>=1.0.5",
+            "ipython[all]<9.0",
+            "jsonargparse[signatures]<5.0,>=4.18.0",
+            "lightning-fabric>=1.9.0",
+            "lightning-utilities<1.0,>=0.7.0",
+            "lightning-utilities<1.0,>=0.8.0",
+            "lightning_api_access>=0.0.3",
+            "matplotlib<4.0,>3.1",
+            "omegaconf<3.0,>=2.0.5",
+            "onnx<2.0",
+            "onnxruntime<2.0",
+            "pandas<3.0,>1.0",
+            "panel<1.0,>=0.12.7",
+            "playwright==1.32.1",
+            "protobuf<=3.20.1",
+            "psutil",
+            "psutil<6.0",
+            "pympler",
+            "pytest-asyncio==0.20.3",
+            "pytest-cov==4.0.0",
+            "pytest-doctestplus>=0.9.0",
+            "pytest-forked==1.4.0",
+            "pytest-rerunfailures<12.0",
+            "pytest-rerunfailures==10.3",
+            "pytest-timeout==2.1.0",
+            "pytest==7.3.1",
+            "pytorch-lightning>=1.9.0",
+            "redis<5.0,>=4.0.1",
+            "requests-mock",
+            "rich<14.0,>=12.3.0",
+            "s3fs<2023.0,>=2022.5.0",
+            "scikit-learn<2.0,>0.22.1",
+            "setuptools<68.0",
+            "streamlit<2.0,>=1.13.0",
+            "tensorboard<3.0,>=2.9.1",
+            "tensorboardX<3.0,>=2.2",
+            "torchmetrics<1.0,>=0.10.0",
+            "torchvision<1.0,>=0.12.0",
+            "trio<0.22.0",
+            "uvicorn<1.0"
+          ],
+          "dev:platform_system != \"Windows\"": [
+            "deepspeed<1.0,>=0.8.2"
+          ]
+        },
+        "python_requires": [
+          ">=3.8"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "2.0.4": {
+      "36": {
+        "install_requires": [
+          "Jinja2<5.0",
+          "PyYAML<8.0",
+          "PyYAML<8.0,>=5.4",
+          "arrow<3.0,>=1.2.0",
+          "beautifulsoup4<6.0,>=4.8.0",
+          "click<10.0",
+          "croniter<1.4.0,>=1.3.0",
+          "dateutils<2.0",
+          "deepdiff<8.0,>=5.7.0",
+          "fastapi<2.0,>=0.92.0",
+          "fsspec<2024.0,>=2022.5.0",
+          "fsspec[http]<2025.0,>2021.06.0",
+          "inquirer<5.0,>=2.10.0",
+          "lightning-cloud>=0.5.34",
+          "lightning-utilities<2.0,>=0.7.0",
+          "numpy<3.0,>=1.17.2",
+          "packaging",
+          "packaging<25.0,>=17.1",
+          "psutil<7.0",
+          "pydantic<4.0,>=1.7.4",
+          "python-multipart<2.0,>=0.0.5",
+          "requests<4.0",
+          "rich<15.0,>=12.3.0",
+          "starlette",
+          "starsessions<2.0,>=1.2.1",
+          "torch<4.0,>=1.11.0",
+          "torchmetrics<2.0,>=0.7.0",
+          "tqdm<6.0,>=4.57.0",
+          "traitlets<7.0,>=5.3.0",
+          "typing-extensions<6.0,>=4.0.0",
+          "urllib3<4.0",
+          "uvicorn<2.0",
+          "websocket-client<3.0",
+          "websockets<12.0",
+          "pytorch-lightning"
+        ],
+        "extras_require": {
+          "pytorch-strategies": [],
+          "pytorch-strategies:platform_system != \"Windows\"": [
+            "deepspeed<1.0,>=0.8.2"
+          ],
+          "pytorch-examples": [
+            "gym[classic_control]<1.0,>=0.17.0",
+            "ipython[all]<9.0",
+            "lightning-utilities<1.0,>=0.7.0",
+            "torchmetrics<1.0,>=0.10.0",
+            "torchvision<1.0,>=0.12.0"
+          ],
+          "pytorch-extra": [
+            "hydra-core<2.0,>=1.0.5",
+            "jsonargparse[signatures]<5.0,>=4.18.0",
+            "matplotlib<4.0,>3.1",
+            "omegaconf<3.0,>=2.0.5",
+            "rich<14.0,>=12.3.0",
+            "tensorboardX<3.0,>=2.2"
+          ],
+          "pytorch-test": [
+            "cloudpickle<3.0,>=1.3",
+            "coverage==7.2.5",
+            "fastapi<1.0",
+            "onnx<2.0",
+            "onnxruntime<2.0",
+            "pandas<3.0,>1.0",
+            "protobuf<=3.20.1",
+            "psutil<6.0",
+            "pytest-cov==4.0.0",
+            "pytest-forked==1.4.0",
+            "pytest-rerunfailures==10.3",
+            "pytest==7.3.1",
+            "scikit-learn<2.0,>0.22.1",
+            "tensorboard<3.0,>=2.9.1",
+            "uvicorn<1.0"
+          ],
+          "fabric-strategies": [],
+          "fabric-strategies:platform_system != \"Windows\"": [
+            "deepspeed<1.0,>=0.8.2"
+          ],
+          "fabric-examples": [
+            "lightning-utilities<1.0,>=0.8.0",
+            "torchmetrics<1.0,>=0.10.0",
+            "torchvision<1.0,>=0.12.0"
+          ],
+          "fabric-test": [
+            "click==8.1.3",
+            "coverage==7.2.5",
+            "pytest-cov==4.0.0",
+            "pytest-rerunfailures==10.3",
+            "pytest==7.3.1",
+            "tensorboardX<3.0,>=2.2"
+          ],
+          "app-ui": [
+            "panel<2.0,>=1.0.0",
+            "streamlit<2.0,>=1.13.0"
+          ],
+          "app-cloud": [
+            "docker<7.0,>=5.0.0",
+            "redis<5.0,>=4.0.1",
+            "s3fs<2024.0,>=2022.5.0"
+          ],
+          "app-components": [
+            "aiohttp<4.0,>=3.8.0",
+            "lightning-fabric>=1.9.0",
+            "lightning_api_access>=0.0.3",
+            "pytorch-lightning>=1.9.0"
+          ],
+          "app-test": [
+            "coverage==7.2.5",
+            "httpx==0.24.1",
+            "playwright==1.35.0",
+            "psutil",
+            "pympler",
+            "pytest-asyncio==0.21.0",
+            "pytest-cov==4.0.0",
+            "pytest-doctestplus>=0.9.0",
+            "pytest-rerunfailures<12.0",
+            "pytest-timeout==2.1.0",
+            "pytest==7.3.1",
+            "requests-mock",
+            "setuptools<68.0",
+            "trio<0.22.0"
+          ],
+          "fabric-all": [
+            "lightning-utilities<1.0,>=0.8.0",
+            "torchmetrics<1.0,>=0.10.0",
+            "torchvision<1.0,>=0.12.0"
+          ],
+          "fabric-all:platform_system != \"Windows\"": [
+            "deepspeed<1.0,>=0.8.2"
+          ],
+          "fabric-dev": [
+            "click==8.1.3",
+            "coverage==7.2.5",
+            "lightning-utilities<1.0,>=0.8.0",
+            "pytest-cov==4.0.0",
+            "pytest-rerunfailures==10.3",
+            "pytest==7.3.1",
+            "tensorboardX<3.0,>=2.2",
+            "torchmetrics<1.0,>=0.10.0",
+            "torchvision<1.0,>=0.12.0"
+          ],
+          "fabric-dev:platform_system != \"Windows\"": [
+            "deepspeed<1.0,>=0.8.2"
+          ],
+          "pytorch-all": [
+            "gym[classic_control]<1.0,>=0.17.0",
+            "hydra-core<2.0,>=1.0.5",
+            "ipython[all]<9.0",
+            "jsonargparse[signatures]<5.0,>=4.18.0",
+            "lightning-utilities<1.0,>=0.7.0",
+            "matplotlib<4.0,>3.1",
+            "omegaconf<3.0,>=2.0.5",
+            "rich<14.0,>=12.3.0",
+            "tensorboardX<3.0,>=2.2",
+            "torchmetrics<1.0,>=0.10.0",
+            "torchvision<1.0,>=0.12.0"
+          ],
+          "pytorch-all:platform_system != \"Windows\"": [
+            "deepspeed<1.0,>=0.8.2"
+          ],
+          "pytorch-dev": [
+            "cloudpickle<3.0,>=1.3",
+            "coverage==7.2.5",
+            "fastapi<1.0",
+            "gym[classic_control]<1.0,>=0.17.0",
+            "hydra-core<2.0,>=1.0.5",
+            "ipython[all]<9.0",
+            "jsonargparse[signatures]<5.0,>=4.18.0",
+            "lightning-utilities<1.0,>=0.7.0",
+            "matplotlib<4.0,>3.1",
+            "omegaconf<3.0,>=2.0.5",
+            "onnx<2.0",
+            "onnxruntime<2.0",
+            "pandas<3.0,>1.0",
+            "protobuf<=3.20.1",
+            "psutil<6.0",
+            "pytest-cov==4.0.0",
+            "pytest-forked==1.4.0",
+            "pytest-rerunfailures==10.3",
+            "pytest==7.3.1",
+            "rich<14.0,>=12.3.0",
+            "scikit-learn<2.0,>0.22.1",
+            "tensorboard<3.0,>=2.9.1",
+            "tensorboardX<3.0,>=2.2",
+            "torchmetrics<1.0,>=0.10.0",
+            "torchvision<1.0,>=0.12.0",
+            "uvicorn<1.0"
+          ],
+          "pytorch-dev:platform_system != \"Windows\"": [
+            "deepspeed<1.0,>=0.8.2"
+          ],
+          "app-extra": [
+            "aiohttp<4.0,>=3.8.0",
+            "docker<7.0,>=5.0.0",
+            "lightning-fabric>=1.9.0",
+            "lightning_api_access>=0.0.3",
+            "panel<2.0,>=1.0.0",
+            "pytorch-lightning>=1.9.0",
+            "redis<5.0,>=4.0.1",
+            "s3fs<2024.0,>=2022.5.0",
+            "streamlit<2.0,>=1.13.0"
+          ],
+          "app-all": [
+            "aiohttp<4.0,>=3.8.0",
+            "docker<7.0,>=5.0.0",
+            "lightning-fabric>=1.9.0",
+            "lightning_api_access>=0.0.3",
+            "panel<2.0,>=1.0.0",
+            "pytorch-lightning>=1.9.0",
+            "redis<5.0,>=4.0.1",
+            "s3fs<2024.0,>=2022.5.0",
+            "streamlit<2.0,>=1.13.0"
+          ],
+          "app-dev": [
+            "aiohttp<4.0,>=3.8.0",
+            "coverage==7.2.5",
+            "docker<7.0,>=5.0.0",
+            "httpx==0.24.1",
+            "lightning-fabric>=1.9.0",
+            "lightning_api_access>=0.0.3",
+            "panel<2.0,>=1.0.0",
+            "playwright==1.35.0",
+            "psutil",
+            "pympler",
+            "pytest-asyncio==0.21.0",
+            "pytest-cov==4.0.0",
+            "pytest-doctestplus>=0.9.0",
+            "pytest-rerunfailures<12.0",
+            "pytest-timeout==2.1.0",
+            "pytest==7.3.1",
+            "pytorch-lightning>=1.9.0",
+            "redis<5.0,>=4.0.1",
+            "requests-mock",
+            "s3fs<2024.0,>=2022.5.0",
+            "setuptools<68.0",
+            "streamlit<2.0,>=1.13.0",
+            "trio<0.22.0"
+          ],
+          "strategies": [],
+          "strategies:platform_system != \"Windows\"": [
+            "deepspeed<1.0,>=0.8.2"
+          ],
+          "examples": [
+            "gym[classic_control]<1.0,>=0.17.0",
+            "ipython[all]<9.0",
+            "lightning-utilities<1.0,>=0.7.0",
+            "lightning-utilities<1.0,>=0.8.0",
+            "torchmetrics<1.0,>=0.10.0",
+            "torchvision<1.0,>=0.12.0"
+          ],
+          "extra": [
+            "aiohttp<4.0,>=3.8.0",
+            "docker<7.0,>=5.0.0",
+            "hydra-core<2.0,>=1.0.5",
+            "jsonargparse[signatures]<5.0,>=4.18.0",
+            "lightning-fabric>=1.9.0",
+            "lightning_api_access>=0.0.3",
+            "matplotlib<4.0,>3.1",
+            "omegaconf<3.0,>=2.0.5",
+            "panel<2.0,>=1.0.0",
+            "pytorch-lightning>=1.9.0",
+            "redis<5.0,>=4.0.1",
+            "rich<14.0,>=12.3.0",
+            "s3fs<2024.0,>=2022.5.0",
+            "streamlit<2.0,>=1.13.0",
+            "tensorboardX<3.0,>=2.2"
+          ],
+          "test": [
+            "click==8.1.3",
+            "cloudpickle<3.0,>=1.3",
+            "coverage==7.2.5",
+            "fastapi<1.0",
+            "httpx==0.24.1",
+            "onnx<2.0",
+            "onnxruntime<2.0",
+            "pandas<3.0,>1.0",
+            "playwright==1.35.0",
+            "protobuf<=3.20.1",
+            "psutil",
+            "psutil<6.0",
+            "pympler",
+            "pytest-asyncio==0.21.0",
+            "pytest-cov==4.0.0",
+            "pytest-doctestplus>=0.9.0",
+            "pytest-forked==1.4.0",
+            "pytest-rerunfailures<12.0",
+            "pytest-rerunfailures==10.3",
+            "pytest-timeout==2.1.0",
+            "pytest==7.3.1",
+            "requests-mock",
+            "scikit-learn<2.0,>0.22.1",
+            "setuptools<68.0",
+            "tensorboard<3.0,>=2.9.1",
+            "tensorboardX<3.0,>=2.2",
+            "trio<0.22.0",
+            "uvicorn<1.0"
+          ],
+          "ui": [
+            "panel<2.0,>=1.0.0",
+            "streamlit<2.0,>=1.13.0"
+          ],
+          "cloud": [
+            "docker<7.0,>=5.0.0",
+            "redis<5.0,>=4.0.1",
+            "s3fs<2024.0,>=2022.5.0"
+          ],
+          "components": [
+            "aiohttp<4.0,>=3.8.0",
+            "lightning-fabric>=1.9.0",
+            "lightning_api_access>=0.0.3",
+            "pytorch-lightning>=1.9.0"
+          ],
+          "all": [
+            "aiohttp<4.0,>=3.8.0",
+            "docker<7.0,>=5.0.0",
+            "gym[classic_control]<1.0,>=0.17.0",
+            "hydra-core<2.0,>=1.0.5",
+            "ipython[all]<9.0",
+            "jsonargparse[signatures]<5.0,>=4.18.0",
+            "lightning-fabric>=1.9.0",
+            "lightning-utilities<1.0,>=0.7.0",
+            "lightning-utilities<1.0,>=0.8.0",
+            "lightning_api_access>=0.0.3",
+            "matplotlib<4.0,>3.1",
+            "omegaconf<3.0,>=2.0.5",
+            "panel<2.0,>=1.0.0",
+            "pytorch-lightning>=1.9.0",
+            "redis<5.0,>=4.0.1",
+            "rich<14.0,>=12.3.0",
+            "s3fs<2024.0,>=2022.5.0",
+            "streamlit<2.0,>=1.13.0",
+            "tensorboardX<3.0,>=2.2",
+            "torchmetrics<1.0,>=0.10.0",
+            "torchvision<1.0,>=0.12.0"
+          ],
+          "all:platform_system != \"Windows\"": [
+            "deepspeed<1.0,>=0.8.2"
+          ],
+          "dev": [
+            "aiohttp<4.0,>=3.8.0",
+            "click==8.1.3",
+            "cloudpickle<3.0,>=1.3",
+            "coverage==7.2.5",
+            "docker<7.0,>=5.0.0",
+            "fastapi<1.0",
+            "gym[classic_control]<1.0,>=0.17.0",
+            "httpx==0.24.1",
+            "hydra-core<2.0,>=1.0.5",
+            "ipython[all]<9.0",
+            "jsonargparse[signatures]<5.0,>=4.18.0",
+            "lightning-fabric>=1.9.0",
+            "lightning-utilities<1.0,>=0.7.0",
+            "lightning-utilities<1.0,>=0.8.0",
+            "lightning_api_access>=0.0.3",
+            "matplotlib<4.0,>3.1",
+            "omegaconf<3.0,>=2.0.5",
+            "onnx<2.0",
+            "onnxruntime<2.0",
+            "pandas<3.0,>1.0",
+            "panel<2.0,>=1.0.0",
+            "playwright==1.35.0",
+            "protobuf<=3.20.1",
+            "psutil",
+            "psutil<6.0",
+            "pympler",
+            "pytest-asyncio==0.21.0",
+            "pytest-cov==4.0.0",
+            "pytest-doctestplus>=0.9.0",
+            "pytest-forked==1.4.0",
+            "pytest-rerunfailures<12.0",
+            "pytest-rerunfailures==10.3",
+            "pytest-timeout==2.1.0",
+            "pytest==7.3.1",
+            "pytorch-lightning>=1.9.0",
+            "redis<5.0,>=4.0.1",
+            "requests-mock",
+            "rich<14.0,>=12.3.0",
+            "s3fs<2024.0,>=2022.5.0",
+            "scikit-learn<2.0,>0.22.1",
+            "setuptools<68.0",
+            "streamlit<2.0,>=1.13.0",
+            "tensorboard<3.0,>=2.9.1",
+            "tensorboardX<3.0,>=2.2",
+            "torchmetrics<1.0,>=0.10.0",
+            "torchvision<1.0,>=0.12.0",
+            "trio<0.22.0",
+            "uvicorn<1.0"
+          ],
+          "dev:platform_system != \"Windows\"": [
+            "deepspeed<1.0,>=0.8.2"
+          ]
+        },
+        "python_requires": [
+          ">=3.8"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
     }
   },
   "lightning-bagua": {
@@ -51726,7 +52577,60 @@
       "39": "27",
       "310": "27"
     },
-    "0.3.0": "0.2.0"
+    "0.3.0": "0.2.0",
+    "0.3.1": {
+      "27": {
+        "install_requires": [
+          "lstchain~=0.9.6",
+          "ctapipe~=0.12.0",
+          "ctapipe_io_magic~=0.4.7",
+          "ctaplot~=0.5.5",
+          "gammapy~=0.19.0",
+          "uproot~=4.1",
+          "joblib",
+          "pandas",
+          "pyirf~=0.6.0",
+          "seaborn",
+          "scikit-learn",
+          "setuptools_scm"
+        ],
+        "extras_require": {
+          "tests:python_version < \"3.9\"": [
+            "importlib_resources"
+          ],
+          "docs": [
+            "sphinx",
+            "sphinx-automodapi",
+            "sphinx_argparse",
+            "sphinx_rtd_theme",
+            "numpydoc",
+            "nbsphinx"
+          ],
+          "all": [
+            "pytest",
+            "pandas>=0.24.0",
+            "sphinx",
+            "sphinx-automodapi",
+            "sphinx_argparse",
+            "sphinx_rtd_theme",
+            "numpydoc",
+            "nbsphinx"
+          ],
+          "all:python_version < \"3.9\"": [
+            "importlib_resources"
+          ],
+          "tests": [
+            "pytest",
+            "pandas>=0.24.0"
+          ]
+        }
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "mail-generator": {
     "0.2.2": "0.2.1",
@@ -61692,13 +62596,17 @@
     "1.0.1": "1.0.0"
   },
   "our1314": {
-    "0.1.4": "0.1.2",
-    "0.1.9": "0.1.2",
-    "0.1.7": "0.1.2",
-    "0.1.8": "0.1.2",
-    "0.1.10": "0.1.2",
-    "0.1.12": "0.1.2",
-    "0.1.2": {
+    "0.1.4": "0.1.0",
+    "0.1.9": "0.1.0",
+    "0.1.7": "0.1.0",
+    "0.1.8": "0.1.0",
+    "0.1.10": "0.1.0",
+    "0.1.12": "0.1.0",
+    "0.1.2": "0.1.0",
+    "0.1.6": "0.1.0",
+    "0.1.11": "0.1.0",
+    "0.1.5": "0.1.0",
+    "0.1.0": {
       "27": {},
       "36": "27",
       "37": "27",
@@ -61706,9 +62614,8 @@
       "39": "27",
       "310": "27"
     },
-    "0.1.6": "0.1.2",
-    "0.1.11": "0.1.2",
-    "0.1.5": "0.1.2"
+    "0.1.13": "0.1.0",
+    "0.1.3": "0.1.0"
   },
   "oversion": {
     "0.0.0.0a0.dev20210129": {
@@ -64051,7 +64958,8 @@
     "0.1.1": "0.0.0"
   },
   "partyai": {
-    "0.0.2": {
+    "0.0.2": "0.0.1",
+    "0.0.1": {
       "27": {
         "install_requires": [
           "requests"
@@ -68688,7 +69596,13 @@
     "13.1.0.2307110141.dev0": "13.0.0",
     "13.1.0.2306090142.dev0": "13.0.0",
     "13.1.0.2306290140.dev0": "13.0.0",
-    "13.1.0.2307030256.dev0": "13.0.0"
+    "13.1.0.2307030256.dev0": "13.0.0",
+    "13.1.0.2306120924.dev0": "13.0.0",
+    "13.1.0.2306240143.dev0": "13.0.0",
+    "13.1.0.2307080141.dev0": "13.0.0",
+    "13.1.0.2307220142.dev0": "13.0.0",
+    "13.1.0.2307280143.dev0": "13.0.0",
+    "13.1.0.2307290144.dev0": "13.0.0"
   },
   "probability-ds": {
     "2.1": {
@@ -79618,7 +80532,8 @@
       "39": "27",
       "310": "27"
     },
-    "0.3.2": "0.3.1"
+    "0.3.2": "0.3.1",
+    "0.3.3": "0.3.1"
   },
   "simple-slurm": {
     "0.2.1": {
@@ -83511,7 +84426,8 @@
     "3.0.943": "3.0.675",
     "3.0.915": "3.0.675",
     "3.0.945": "3.0.675",
-    "3.0.919": "3.0.675"
+    "3.0.919": "3.0.675",
+    "3.0.941": "3.0.675"
   },
   "tendenci-committees": {
     "1.0.0": {

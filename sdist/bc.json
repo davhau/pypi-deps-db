@@ -2441,6 +2441,24 @@
       "38": "36",
       "39": "36",
       "310": "36"
+    },
+    "3.2.2rc1": {
+      "36": {
+        "install_requires": [
+          "apache-airflow>=2.4.0.dev0"
+        ],
+        "setup_requires": [
+          "setuptools",
+          "wheel"
+        ],
+        "python_requires": [
+          "~=3.8"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
     }
   },
   "api-descstats-csv": {
@@ -20602,6 +20620,17 @@
       "38": "36",
       "39": "36",
       "310": "36"
+    },
+    "0.19.13": {
+      "36": {
+        "install_requires": [
+          "dagster==1.3.13"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
     }
   },
   "daihao-d-jiguan-guipai-youxi-liuguangsi-20160606": {
@@ -21418,6 +21447,63 @@
             "defusedxml>=0.7.1",
             "flynt<0.78,>=0.76",
             "isort>=5.0.1",
+            "pygments",
+            "pytest>=6.2.0",
+            "pytest-darker",
+            "pytest-kwparametrize>=0.0.3",
+            "regex>=2021.4.4",
+            "requests_cache>=0.7",
+            "ruamel.yaml>=0.17.21",
+            "twine>=2.0.0",
+            "types-requests>=2.27.9",
+            "types-toml>=0.10.4",
+            "urllib3>=1.25.9",
+            "wheel>=0.21.0"
+          ],
+          "release": [
+            "airium>=0.2.3",
+            "click>=8.0.0",
+            "defusedxml>=0.7.1",
+            "requests_cache>=0.7"
+          ],
+          ":python_version < \"3.8\"": [
+            "typing-extensions"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "1.7.2": {
+      "36": {
+        "install_requires": [
+          "black>=21.5b1",
+          "toml>=0.10.0"
+        ],
+        "extras_require": {
+          "flynt": [
+            "flynt<0.78,>=0.76"
+          ],
+          "isort": [
+            "isort>=5.0.1"
+          ],
+          "color": [
+            "Pygments>=2.4.0"
+          ],
+          "test": [
+            "airium>=0.2.3",
+            "black>=21.7b1",
+            "cryptography>=3.3.2",
+            "defusedxml>=0.7.1",
+            "flynt<0.78,>=0.76",
+            "isort>=5.0.1",
+            "mypy>=0.990",
+            "pip-requirements-parser",
             "pygments",
             "pytest>=6.2.0",
             "pytest-darker",
@@ -23761,7 +23847,89 @@
     "1.4.8": "1.1.0",
     "1.4.9": "1.1.0",
     "1.4.10": "1.1.0",
-    "1.4.11": "1.1.0"
+    "1.4.11": "1.1.0",
+    "1.6.0": {
+      "27": {
+        "install_requires": [
+          "Django<5.0,>=3.2",
+          "django-cors-headers>=3.7",
+          "django-ipware<5.0,>=4.0",
+          "marshmallow-jsonapi<1.0,>=0.24",
+          "oic<2.0,>=1.3",
+          "python-dateutil<3.0,>=2.8",
+          "python-jose<4.0,>=3.3",
+          "requests<3.0,>=2.25",
+          "marshmallow>=3.14",
+          "pandas<=1.5,>=1.1"
+        ],
+        "extras_require": {
+          ":python_version < \"3.8\"": [
+            "importlib-metadata<4.3,>=4.0"
+          ],
+          ":python_version < \"3.9\"": [
+            "backports.zoneinfo<1.0,>=0.2"
+          ]
+        },
+        "tests_require": [
+          "coverage>=5.5  #, <6.0 #6.0 remove the support of python 3.6 # let pip decide for this",
+          "psycopg2>=2.9, <3.0",
+          "pytest>=6.2, <7",
+          "pytest-cov>=3.0, <4.0",
+          "pytest-django>=4.5, <5.0",
+          "pytest-pythonpath>=0.7, <1.0",
+          "tox>=3.24, < 4.0",
+          "tox-pyenv>=1.1,<2.0",
+          "pre-commit>=2.17,<3.0",
+          "freezegun>=1.1, <2.0"
+        ],
+        "python_requires": [
+          "<3.12",
+          ">=3.6"
+        ]
+      },
+      "36": {
+        "install_requires": [
+          "Django<5.0,>=3.2",
+          "django-cors-headers>=3.7",
+          "django-ipware<5.0,>=4.0",
+          "marshmallow-jsonapi<1.0,>=0.24",
+          "oic<2.0,>=1.3",
+          "python-dateutil<3.0,>=2.8",
+          "python-jose<4.0,>=3.3",
+          "requests<3.0,>=2.25",
+          "marshmallow>=3.14",
+          "pandas<=1.5,>=1.1"
+        ],
+        "extras_require": {
+          ":python_version < \"3.8\"": [
+            "importlib-metadata<4.3,>=4.0"
+          ],
+          ":python_version < \"3.9\"": [
+            "backports.zoneinfo<1.0,>=0.2"
+          ]
+        },
+        "tests_require": [
+          "coverage>=5.5  #, <6.0 #6.0 remove the support of python 3.6 # let pip decide for this",
+          "psycopg2>=2.9, <3.0",
+          "pytest>=6.2, <7",
+          "pytest-cov>=3.0, <4.0",
+          "pytest-django>=4.5, <5.0",
+          "pytest-pythonpath>=0.7, <1.0",
+          "tox>=3.24, < 4.0",
+          "tox-pyenv>=1.1,<2.0",
+          "pre-commit>=2.17,<3.0",
+          "freezegun>=1.1, <2.0"
+        ],
+        "python_requires": [
+          ">=3.6",
+          "<3.12"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "django-friendships": {
     "1.0.2": {
@@ -48618,6 +48786,22 @@
       "38": "27",
       "39": "27",
       "310": "27"
+    },
+    "1.28.15.post1": {
+      "36": {
+        "extras_require": {
+          ":python_version < \"3.9\"": [
+            "typing-extensions>=4.1.0"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
     }
   },
   "mypy-boto3-ds": {
@@ -49502,7 +49686,23 @@
       "310": "27"
     },
     "1.26.0": "1.25.0",
-    "1.26.0.post1": "1.25.0"
+    "1.26.0.post1": "1.25.0",
+    "1.27.0": {
+      "36": {
+        "extras_require": {
+          ":python_version < \"3.9\"": [
+            "typing-extensions>=4.1.0"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "mypythondataproject": {
     "1.0": {
@@ -71516,7 +71716,8 @@
     "0.6.1a1684389387": "0.6.0",
     "0.6.1a1685168871": "0.6.0",
     "0.6.1a1686290196": "0.6.0",
-    "0.6.1a1686635983": "0.6.0"
+    "0.6.1a1686635983": "0.6.0",
+    "0.6.1a1690263759": "0.6.0"
   },
   "pungi": {
     "0.1.0": {
@@ -73347,7 +73548,8 @@
       "38": "27",
       "39": "27",
       "310": "27"
-    }
+    },
+    "0.7.3": "0.7.2"
   },
   "pyrencode": {
     "0.0.2": {
@@ -89591,7 +89793,9 @@
     "3.0.912": "3.0.781",
     "3.0.943": "3.0.781",
     "3.0.928": "3.0.781",
-    "3.0.929": "3.0.781"
+    "3.0.929": "3.0.781",
+    "3.0.926": "3.0.781",
+    "3.0.940": "3.0.781"
   },
   "tencentcloud-sdk-python-iotvideoindustry": {
     "3.0.359": {
@@ -90126,7 +90330,8 @@
     "3.0.929": "3.0.359",
     "3.0.916": "3.0.359",
     "3.0.922": "3.0.359",
-    "3.0.911": "3.0.359"
+    "3.0.911": "3.0.359",
+    "3.0.941": "3.0.359"
   },
   "tencentcloud-sdk-python-tcb": {
     "3.0.252": {
@@ -100304,7 +100509,8 @@
     "1.0.2023.5.7.1683455929": "1.0.2023.2.1.1675282308",
     "1.0.2023.5.23.1684849413": "1.0.2023.2.1.1675282308",
     "1.0.2023.7.2.1688341676": "1.0.2023.2.1.1675282308",
-    "1.0.2023.6.8.1686215513": "1.0.2023.2.1.1675282308"
+    "1.0.2023.6.8.1686215513": "1.0.2023.2.1.1675282308",
+    "1.0.2023.7.3.1688388215": "1.0.2023.2.1.1675282308"
   },
   "zhengzhou-xinyixian-201905": {
     "2022.10.28.0": {
