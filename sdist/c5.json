@@ -9430,7 +9430,9 @@
     "1.29.143": "1.29.42",
     "1.29.156": "1.29.42",
     "1.29.153": "1.29.42",
-    "1.29.155": "1.29.42"
+    "1.29.155": "1.29.42",
+    "1.29.154": "1.29.42",
+    "1.31.11": "1.29.42"
   },
   "botocore-a-la-carte-connectcampaigns": {
     "1.29.47": "1.30.1",
@@ -9908,7 +9910,8 @@
       "38": "27",
       "39": "27",
       "310": "27"
-    }
+    },
+    "1.31.3": "1.31.0"
   },
   "botocore-a-la-carte-simspaceweaver": {
     "1.29.49": "1.29.42",
@@ -10027,7 +10030,8 @@
     "1.29.156": "1.29.42",
     "1.29.148": "1.29.42",
     "1.29.155": "1.29.42",
-    "1.29.160": "1.29.42"
+    "1.29.160": "1.29.42",
+    "1.29.162": "1.29.42"
   },
   "bottle-utils": {
     "0.1a3": {
@@ -17593,23 +17597,7 @@
     "4.20.50.dev222": "4.20.50.dev212",
     "4.20.50.dev266": "4.20.50.dev256",
     "4.20.50.dev63": "4.20.50.dev51",
-    "4.20.50.dev129": {
-      "27": {
-        "install_requires": [
-          "eth_retry<0.2,>=0.1.15",
-          "msgspec",
-          "multicall>=0.6.2"
-        ],
-        "setup_requires": [
-          "setuptools_scm"
-        ]
-      },
-      "36": "27",
-      "37": "27",
-      "38": "27",
-      "39": "27",
-      "310": "27"
-    },
+    "4.20.50.dev129": "4.20.50.dev105",
     "4.20.50.dev241": {
       "27": {
         "install_requires": [
@@ -17744,7 +17732,24 @@
       "39": "27",
       "310": "27"
     },
-    "4.20.50.dev229": "4.20.50.dev212"
+    "4.20.50.dev229": "4.20.50.dev212",
+    "4.20.50.dev105": {
+      "27": {
+        "install_requires": [
+          "eth_retry<0.2,>=0.1.15",
+          "msgspec",
+          "multicall>=0.6.2"
+        ],
+        "setup_requires": [
+          "setuptools_scm"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "dark-emulator": {
     "1.0.19": {
@@ -33598,7 +33603,23 @@
     "0.0.2": "0.0.1",
     "0.1.0": "0.0.1",
     "0.1.1": "0.0.1",
-    "0.2.0": "0.0.1"
+    "0.2.0": "0.0.1",
+    "0.3.1": {
+      "36": {
+        "install_requires": [
+          "pandas",
+          "requests",
+          "urllib3"
+        ],
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "evmdasm": {
     "0.1.0": {
@@ -36590,7 +36611,101 @@
     },
     "0.5.4": "0.5.0",
     "0.5.5": "0.5.0",
-    "0.5.6": "0.5.3"
+    "0.5.6": "0.5.3",
+    "0.7.1": {
+      "36": {
+        "install_requires": [
+          "setuptools>=38.5.1",
+          "humanfriendly",
+          "scipy>=1.4.1",
+          "librosa",
+          "jamo",
+          "PyYAML>=5.1.2",
+          "soundfile>=0.12.1",
+          "h5py>=2.10.0",
+          "kaldiio>=2.17.0",
+          "torch_complex",
+          "nltk>=3.4.5",
+          "sentencepiece",
+          "jieba",
+          "pypinyin>=0.44.0",
+          "espnet_tts_frontend",
+          "pytorch_wpe",
+          "editdistance>=0.5.2",
+          "tensorboard",
+          "g2p",
+          "oss2",
+          "edit-distance",
+          "textgrid",
+          "protobuf"
+        ],
+        "setup_requires": [
+          "numpy",
+          "pytest-runner"
+        ],
+        "extras_require": {
+          "train": [
+            "editdistance",
+            "wandb"
+          ],
+          "all": [
+            "torch_optimizer",
+            "fairscale",
+            "transformers",
+            "editdistance",
+            "wandb"
+          ],
+          "test": [
+            "pytest>=3.3.0",
+            "pytest-timeouts>=1.2.1",
+            "pytest-pythonpath>=0.7.3",
+            "pytest-cov>=2.7.1",
+            "hacking>=2.0.0",
+            "mock>=2.0.0",
+            "pycodestyle",
+            "jsondiff<2.0.0,>=1.2.0",
+            "flake8>=3.7.8",
+            "flake8-docstrings>=1.3.1",
+            "black",
+            "editdistance",
+            "wandb"
+          ],
+          "doc": [
+            "Jinja2",
+            "Sphinx",
+            "sphinx-rtd-theme>=0.2.4",
+            "sphinx-argparse>=0.2.5",
+            "commonmark",
+            "recommonmark>=0.4.0",
+            "nbsphinx>=0.4.2",
+            "sphinx-markdown-tables>=0.0.12",
+            "configargparse>=1.2.1"
+          ]
+        },
+        "tests_require": [
+          "pytest>=3.3.0",
+          "pytest-timeouts>=1.2.1",
+          "pytest-pythonpath>=0.7.3",
+          "pytest-cov>=2.7.1",
+          "hacking>=2.0.0",
+          "mock>=2.0.0",
+          "pycodestyle",
+          "jsondiff<2.0.0,>=1.2.0",
+          "flake8>=3.7.8",
+          "flake8-docstrings>=1.3.1",
+          "black",
+          "editdistance",
+          "wandb"
+        ],
+        "python_requires": [
+          ">=3.7.0"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "futoin-cid": {
     "0.2.4": {
@@ -38540,7 +38655,8 @@
       "39": "27",
       "310": "27"
     },
-    "2.9.1": "2.9.0"
+    "2.9.1": "2.9.0",
+    "2.10.0": "2.9.0"
   },
   "google-spreadsheet-py": {
     "0.0.1": {
@@ -46523,7 +46639,10 @@
     }
   },
   "mango-framework": {
-    "0.6.3": {
+    "0.6.3": "0.5.0",
+    "0.7.5": "0.5.0",
+    "0.6.7": "0.5.0",
+    "0.5.0": {
       "27": {
         "python_requires": [
           ">=3.6"
@@ -46535,8 +46654,7 @@
       "39": "27",
       "310": "27"
     },
-    "0.7.5": "0.6.3",
-    "0.6.7": "0.6.3"
+    "0.7.1": "0.5.0"
   },
   "mantium": {
     "0.1.4": {
