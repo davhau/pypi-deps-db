@@ -4586,7 +4586,18 @@
       "39": "36",
       "310": "36"
     },
-    "1.3.1": "1.3.0"
+    "1.3.1": "1.3.0",
+    "1.4.1": {
+      "36": {
+        "python_requires": [
+          ">=3.10"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "approx-pi": {
     "0.1.1": {
@@ -9062,7 +9073,9 @@
     "1.31.5": "1.30.1",
     "1.29.160": "1.30.1",
     "1.29.145": "1.30.1",
-    "1.31.10": "1.30.1"
+    "1.31.10": "1.30.1",
+    "1.29.162": "1.30.1",
+    "1.31.1": "1.30.1"
   },
   "botocore-a-la-carte-kinesis-video-signaling": {
     "1.29.42": "1.30.0",
@@ -9198,7 +9211,8 @@
     "1.29.154": "1.30.0",
     "1.29.157": "1.30.0",
     "1.29.158": "1.30.0",
-    "1.29.163": "1.30.0"
+    "1.29.163": "1.30.0",
+    "1.31.10": "1.30.0"
   },
   "botplus": {
     "1.0.0": {
@@ -28465,6 +28479,39 @@
       "38": "27",
       "39": "27",
       "310": "27"
+    },
+    "1.4.5": {
+      "27": {
+        "install_requires": [
+          "dkist-processing-common==4.0.3",
+          "dkist-header-validator==4.1.0",
+          "dkist-fits-specifications==3.7.1",
+          "numba==0.57.1",
+          "astropy==5.3.0",
+          "numpy==1.24.3",
+          "dkist-spectral-lines==2.0.0"
+        ],
+        "setup_requires": [
+          "setuptools_scm"
+        ],
+        "extras_require": {
+          "test": [
+            "pytest",
+            "pytest-xdist",
+            "pytest-cov",
+            "pytest-mock",
+            "dkist-data-simulator>=2.0.0"
+          ]
+        },
+        "python_requires": [
+          ">=3.11"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
     }
   },
   "doconce": {
@@ -32075,6 +32122,23 @@
       "27": {
         "install_requires": [
           "envoxy>=0.2.3",
+          "flask_cors==3.0.9",
+          "isort<5,>=4.2.5"
+        ],
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "0.1.6": {
+      "27": {
+        "install_requires": [
+          "envoxy>=0.2.6",
           "flask_cors==3.0.9",
           "isort<5,>=4.2.5"
         ],
@@ -35882,6 +35946,16 @@
   },
   "fsnix": {
     "0.2": {
+      "27": {},
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
+  },
+  "fuckqq": {
+    "1.0.0": {
       "27": {},
       "36": "27",
       "37": "27",
@@ -42030,7 +42104,9 @@
     "0.3.1": "0.1.4",
     "0.2.3": "0.1.4",
     "0.2.2": "0.1.4",
-    "0.2.7": "0.1.4"
+    "0.2.7": "0.1.4",
+    "0.2.0": "0.1.4",
+    "0.2.5": "0.1.4"
   },
   "humaan-cli": {
     "0.1.0a0": {
@@ -49361,6 +49437,127 @@
           "docs": [
             "merlin-core>=0.2.0",
             "nvtabular>=1.0.0",
+            "requests<3,>=2.10",
+            "treelite==2.4.0",
+            "treelite_runtime==2.4.0",
+            "tritonclient[all]",
+            "tritonclient[all]",
+            "tensorflow<=2.9.0",
+            "Sphinx==3.5.4",
+            "sphinx_rtd_theme==1.0.0",
+            "sphinx-multiversion@ git+https://github.com/mikemckiernan/sphinx-multiversion.git",
+            "sphinxcontrib-copydirs@ git+https://github.com/mikemckiernan/sphinxcontrib-copydirs.git",
+            "recommonmark==0.7.1",
+            "Jinja2<3.1",
+            "natsort==8.0.1",
+            "myst-nb==0.13.2",
+            "linkify-it-py==1.0.3",
+            "sphinx-external-toc==0.2.4",
+            "attrs==21.4.0",
+            "numpy<1.24"
+          ]
+        },
+        "python_requires": [
+          ">=3.8"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "23.6.0": {
+      "36": {
+        "install_requires": [
+          "merlin-core<23.07,>=23.06",
+          "nvtabular<23.07,>=23.06",
+          "requests<3,>=2.10",
+          "treelite==2.4.0",
+          "treelite_runtime==2.4.0"
+        ],
+        "extras_require": {
+          "cpu": [
+            "merlin-core<23.07,>=23.06",
+            "nvtabular<23.07,>=23.06",
+            "requests<3,>=2.10",
+            "treelite==2.4.0",
+            "treelite_runtime==2.4.0"
+          ],
+          "gpu": [
+            "feast<0.20",
+            "faiss-gpu",
+            "pytest",
+            "pytest-cov",
+            "dask>=2022.3.0",
+            "distributed>=2022.3.0"
+          ],
+          "dev": [
+            "tritonclient[all]"
+          ],
+          "test": [
+            "merlin-core<23.07,>=23.06",
+            "nvtabular<23.07,>=23.06",
+            "requests<3,>=2.10",
+            "treelite==2.4.0",
+            "treelite_runtime==2.4.0",
+            "tritonclient[all]",
+            "pytest>=5",
+            "pytest-cov>=2",
+            "scikit-learn<1.2",
+            "asvdb@ git+https://github.com/rapidsai/asvdb.git",
+            "testbook==0.4.2",
+            "tritonclient",
+            "feast==0.31",
+            "xgboost==1.6.2",
+            "implicit==0.6.0",
+            "merlin-models[pytorch,tensorflow,transformers]@ git+https://github.com/NVIDIA-Merlin/models.git"
+          ],
+          "test-cpu": [
+            "merlin-core<23.07,>=23.06",
+            "nvtabular<23.07,>=23.06",
+            "requests<3,>=2.10",
+            "treelite==2.4.0",
+            "treelite_runtime==2.4.0",
+            "tritonclient[all]",
+            "pytest>=5",
+            "pytest-cov>=2",
+            "scikit-learn<1.2",
+            "asvdb@ git+https://github.com/rapidsai/asvdb.git",
+            "testbook==0.4.2",
+            "tritonclient",
+            "feast==0.31",
+            "xgboost==1.6.2",
+            "implicit==0.6.0",
+            "merlin-models[pytorch,tensorflow,transformers]@ git+https://github.com/NVIDIA-Merlin/models.git",
+            "faiss-cpu==1.7.2",
+            "treelite==2.4.0",
+            "treelite_runtime==2.4.0",
+            "torch~=1.12",
+            "lightgbm==3.3.2",
+            "ipykernel"
+          ],
+          "test-gpu": [
+            "merlin-core<23.07,>=23.06",
+            "nvtabular<23.07,>=23.06",
+            "requests<3,>=2.10",
+            "treelite==2.4.0",
+            "treelite_runtime==2.4.0",
+            "tritonclient[all]",
+            "pytest>=5",
+            "pytest-cov>=2",
+            "scikit-learn<1.2",
+            "asvdb@ git+https://github.com/rapidsai/asvdb.git",
+            "testbook==0.4.2",
+            "tritonclient",
+            "feast==0.31",
+            "xgboost==1.6.2",
+            "implicit==0.6.0",
+            "merlin-models[pytorch,tensorflow,transformers]@ git+https://github.com/NVIDIA-Merlin/models.git",
+            "faiss-gpu==1.7.2"
+          ],
+          "docs": [
+            "merlin-core<23.07,>=23.06",
+            "nvtabular<23.07,>=23.06",
             "requests<3,>=2.10",
             "treelite==2.4.0",
             "treelite_runtime==2.4.0",
@@ -60979,7 +61176,8 @@
     "0.20.1": "1.0.1",
     "1.1.0": "1.0.1",
     "1.1.0a1687383650": "1.0.1",
-    "0.20.2a1686291206": "1.0.1"
+    "0.20.2a1686291206": "1.0.1",
+    "1.1.0a1687471141": "1.0.1"
   },
   "putput": {
     "0.0.1": {
@@ -78185,6 +78383,22 @@
       "310": "27"
     }
   },
+  "sk-random-variable": {
+    "0.0.1": {
+      "36": {
+        "install_requires": [
+          "regex"
+        ],
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
+  },
   "skele": {
     "1.0.0": {
       "27": {
@@ -84669,7 +84883,8 @@
     "1.1.6": "0.2.8",
     "1.1.7": "0.2.8",
     "1.1.8": "0.2.8",
-    "1.1.9": "0.2.8"
+    "1.1.9": "0.2.8",
+    "1.2.1": "0.2.8"
   },
   "torch-scaler": {
     "0.0.1": {
