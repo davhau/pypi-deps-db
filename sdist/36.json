@@ -9693,7 +9693,8 @@
     "3.6.1": "3.2.2",
     "3.7.0": "3.2.2",
     "3.7.1": "3.2.2",
-    "3.8.0": "3.2.2"
+    "3.8.0": "3.2.2",
+    "3.8.1": "3.2.2"
   },
   "bm-cli": {
     "0.0.1": {
@@ -21442,7 +21443,38 @@
     "0.0.2": "0.0.1",
     "0.0.3": "0.0.1",
     "0.0.4": "0.0.1",
-    "0.0.5": "0.0.1"
+    "0.0.5": "0.0.1",
+    "0.1.0": {
+      "36": {
+        "install_requires": [
+          "numpy>=1.18.2",
+          "loguru>=0.5.3",
+          "dask>=2.27.0",
+          "distributed>=2.27.0",
+          "ConfigSpace>=0.4.16"
+        ],
+        "extras_require": {
+          "dev": [
+            "pytest>=4.6",
+            "pytest-cov",
+            "pytest-xdist",
+            "pytest-timeout",
+            "mkdocs-material",
+            "mkdocstrings",
+            "ruff",
+            "black",
+            "pre-commit"
+          ]
+        },
+        "python_requires": [
+          ">=3.8"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "dependency-graphql": {
     "0.0.1": {
@@ -40964,6 +40996,24 @@
     },
     "1.0.6": "1.0.5"
   },
+  "micropythonpy": {
+    "0.0.1": {
+      "27": {
+        "install_requires": [
+          "pyttsx3",
+          "speech_recognition",
+          "pyautogui",
+          "pydirectinput",
+          "cv2"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
+  },
   "mimus": {
     "0.0.0": {
       "27": {},
@@ -53004,7 +53054,28 @@
       "39": "36",
       "310": "36"
     },
-    "0.0.364": "0.0.363"
+    "0.0.364": "0.0.363",
+    "0.0.365": "0.0.363",
+    "0.0.366": "0.0.363",
+    "0.0.367": {
+      "36": {
+        "install_requires": [
+          "aws-cdk-lib<3.0.0,>=2.1.0",
+          "constructs<11.0.0,>=10.0.5",
+          "jsii<2.0.0,>=1.86.1",
+          "publication>=0.0.3",
+          "typeguard~=2.13.3"
+        ],
+        "python_requires": [
+          "~=3.7"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "0.0.368": "0.0.367"
   },
   "pg-es-fdw": {
     "0.10.0": "0.7.1",
@@ -56149,7 +56220,8 @@
     "0.4.1a1690263338": "0.4.1a1683267861",
     "0.4.1a1690894314": "0.4.1a1683267861",
     "0.4.1a1690895267": "0.4.1a1683267861",
-    "0.4.1a1690896338": "0.4.1a1683267861"
+    "0.4.1a1690896338": "0.4.1a1683267861",
+    "0.4.1a1691041544": "0.4.1a1683267861"
   },
   "puzzle-core": {
     "1.0.0": {
@@ -68297,6 +68369,129 @@
       "38": "36",
       "39": "36",
       "310": "36"
+    },
+    "1.0.0.dev20230803": {
+      "36": {
+        "install_requires": [
+          "wheel",
+          "click<=8.0.4,>=7.0",
+          "colorama<0.4.5",
+          "cryptography",
+          "jinja2>=3.0",
+          "jsonschema",
+          "networkx",
+          "oauth2client",
+          "pandas",
+          "pendulum",
+          "PrettyTable>=2.0.0",
+          "python-dotenv",
+          "ray[default]<=2.4.0,>=2.2.0",
+          "rich",
+          "tabulate",
+          "filelock>=3.6.0",
+          "packaging",
+          "protobuf!=3.19.5,>=3.15.3",
+          "psutil",
+          "pulp",
+          "pydantic<2.0",
+          "pyyaml<=5.3.1,>3.13",
+          "urllib3<2",
+          "awscli>=1.27.10",
+          "botocore>=1.29.10",
+          "boto3>=1.26.1",
+          "pycryptodome==3.12.0"
+        ],
+        "setup_requires": [
+          "wheel"
+        ],
+        "extras_require": {
+          "aws": [
+            "urllib3<2",
+            "awscli>=1.27.10",
+            "botocore>=1.29.10",
+            "boto3>=1.26.1",
+            "pycryptodome==3.12.0"
+          ],
+          "azure": [
+            "azure-cli>=2.31.0",
+            "azure-core",
+            "azure-identity>=1.13.0",
+            "azure-mgmt-network"
+          ],
+          "gcp": [
+            "google-api-python-client",
+            "google-cloud-storage"
+          ],
+          "ibm": [
+            "ibm-cloud-sdk-core",
+            "ibm-vpc",
+            "ibm-platform-services",
+            "ibm-cos-sdk"
+          ],
+          "docker": [
+            "docker"
+          ],
+          "lambda": [],
+          "cloudflare": [
+            "urllib3<2",
+            "awscli>=1.27.10",
+            "botocore>=1.29.10",
+            "boto3>=1.26.1",
+            "pycryptodome==3.12.0"
+          ],
+          "scp": [],
+          "oci": [
+            "oci"
+          ],
+          "kubernetes": [
+            "kubernetes"
+          ],
+          "all": [
+            "urllib3<2",
+            "awscli>=1.27.10",
+            "botocore>=1.29.10",
+            "boto3>=1.26.1",
+            "pycryptodome==3.12.0",
+            "azure-cli>=2.31.0",
+            "azure-core",
+            "azure-identity>=1.13.0",
+            "azure-mgmt-network",
+            "google-api-python-client",
+            "google-cloud-storage",
+            "ibm-cloud-sdk-core",
+            "ibm-vpc",
+            "ibm-platform-services",
+            "ibm-cos-sdk",
+            "docker",
+            "urllib3<2",
+            "awscli>=1.27.10",
+            "botocore>=1.29.10",
+            "boto3>=1.26.1",
+            "pycryptodome==3.12.0",
+            "oci",
+            "kubernetes"
+          ],
+          ":python_version < \"3.8\"": [
+            "typing_extensions"
+          ],
+          ":python_version < \"3.10\" and sys_platform == \"darwin\"": [
+            "grpcio!=1.48.0,<=1.49.1,>=1.32.0"
+          ],
+          ":python_version >= \"3.10\" and sys_platform == \"darwin\"": [
+            "grpcio!=1.48.0,<=1.49.1,>=1.42.0"
+          ],
+          ":python_version < \"3.10\" and sys_platform != \"darwin\"": [
+            "grpcio!=1.48.0,<=1.51.3,>=1.32.0"
+          ],
+          ":python_version >= \"3.10\" and sys_platform != \"darwin\"": [
+            "grpcio!=1.48.0,<=1.51.3,>=1.42.0"
+          ]
+        }
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
     }
   },
   "slackfix": {
@@ -76453,6 +76648,40 @@
           "pydantic==2.1.1",
           "requests==2.27.1",
           "django==4.0.10",
+          "openapi-core==0.14.2"
+        ],
+        "setup_requires": [
+          "m3-builder==1.2.0"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "0.1.10": {
+      "36": {
+        "install_requires": [
+          "pydantic==1.10.12",
+          "requests==2.27.1",
+          "django==2.2.28",
+          "openapi-core==0.14.2"
+        ],
+        "setup_requires": [
+          "m3-builder==1.2.0"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "0.1.9": {
+      "36": {
+        "install_requires": [
+          "pydantic==2.1.1",
+          "requests==2.27.1",
+          "django==2.2.28",
           "openapi-core==0.14.2"
         ],
         "setup_requires": [
