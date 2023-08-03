@@ -3143,7 +3143,8 @@
       "39": "27",
       "310": "27"
     },
-    "0.6.0": "0.1.0"
+    "0.6.0": "0.1.0",
+    "1.0.6": "1.0.0"
   },
   "arlulacore": {
     "1.0.0": {
@@ -17242,7 +17243,11 @@
     "1.31.12": "1.30.0",
     "1.31.4": "1.30.0",
     "1.29.163": "1.30.0",
-    "1.31.17": "1.30.0"
+    "1.31.17": "1.30.0",
+    "1.31.10": "1.30.0",
+    "1.31.11": "1.30.0",
+    "1.31.16": "1.30.0",
+    "1.31.6": "1.30.0"
   },
   "brainfm": {
     "0.1.1": {
@@ -18131,7 +18136,25 @@
       "39": "36",
       "310": "36"
     },
-    "0.0.44": "0.0.43"
+    "0.0.44": "0.0.43",
+    "0.0.46": {
+      "36": {
+        "install_requires": [
+          "aws-cdk-lib<3.0.0,>=2.25.0",
+          "constructs<11.0.0,>=10.0.5",
+          "jsii<2.0.0,>=1.85.0",
+          "publication>=0.0.3",
+          "typeguard~=2.13.3"
+        ],
+        "python_requires": [
+          "~=3.7"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "cdk8s-plus-23": {
     "2.0.0b0": {
@@ -23412,6 +23435,55 @@
           "black",
           "isort",
           "pyflakes==2.4.0"
+        ],
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "0.13.1": {
+      "27": {
+        "install_requires": [
+          "chaostoolkit-lib~=1.37",
+          "logzero",
+          "opentracing~=2.2",
+          "opentelemetry-api>=1.15.0",
+          "opentelemetry-sdk>=1.15.0",
+          "opentelemetry-semantic-conventions>=0.36b0",
+          "opentelemetry-exporter-otlp-proto-http>=1.15.0",
+          "opentelemetry-instrumentation-httpx>=0.36b0",
+          "opentelemetry-instrumentation-requests>=0.36b0",
+          "opentelemetry-instrumentation-botocore>=0.36b0",
+          "opentelemetry-exporter-gcp-trace>=1.4.0",
+          "opentelemetry-resourcedetector-gcp>=1.4.0a0",
+          "opentelemetry-propagator-gcp>=1.4.0",
+          "opentelemetry-exporter-prometheus>=1.12.0rc1",
+          "opentelemetry-propagator-b3>=1.15.0",
+          "opentelemetry-sdk-extension-aws>=2.0",
+          "opentelemetry-propagator-aws-xray>=1.0",
+          "opentelemetry-instrumentation-urllib3>=0.36b0"
+        ],
+        "extras_require": {
+          "azure": [
+            "azure-core-tracing-opentelemetry",
+            "azure-monitor-opentelemetry-exporter"
+          ]
+        },
+        "tests_require": [
+          "coverage",
+          "pytest>=2.8",
+          "pytest-cov",
+          "pytest-sugar",
+          "requests",
+          "requests_mock",
+          "black",
+          "isort",
+          "ruff"
         ],
         "python_requires": [
           ">=3.6"
@@ -33302,120 +33374,7 @@
       "39": "36",
       "310": "36"
     },
-    "3.6.4": {
-      "36": {
-        "install_requires": [
-          "numpy",
-          "pillow",
-          "boto3",
-          "click",
-          "pathos",
-          "humbug>=0.3.1",
-          "tqdm",
-          "numcodecs",
-          "pyjwt"
-        ],
-        "extras_require": {
-          "audio": [],
-          "audio:python_version >= \"3.7\" or sys_platform != \"win32\"": [
-            "av>=8.1.0"
-          ],
-          "video": [],
-          "video:python_version >= \"3.7\" or sys_platform != \"win32\"": [
-            "av>=8.1.0"
-          ],
-          "av": [],
-          "av:python_version >= \"3.7\" or sys_platform != \"win32\"": [
-            "av>=8.1.0"
-          ],
-          "gcp": [
-            "google-cloud-storage~=1.42.0",
-            "google-auth~=2.0.1",
-            "google-auth-oauthlib~=0.4.5"
-          ],
-          "azure": [
-            "azure-cli",
-            "azure-identity",
-            "azure-storage-blob"
-          ],
-          "dicom": [
-            "pydicom",
-            "nibabel"
-          ],
-          "medical": [
-            "pydicom",
-            "nibabel"
-          ],
-          "visualizer": [
-            "IPython",
-            "flask"
-          ],
-          "gdrive": [
-            "google-api-python-client~=2.31.0",
-            "oauth2client~=4.1.3",
-            "google-auth~=2.0.1",
-            "google-auth-oauthlib~=0.4.5"
-          ],
-          "point_cloud": [
-            "laspy"
-          ],
-          "all": [
-            "IPython",
-            "google-cloud-storage~=1.42.0",
-            "azure-storage-blob",
-            "google-api-python-client~=2.31.0",
-            "pydicom",
-            "azure-identity",
-            "azure-cli",
-            "laspy",
-            "nibabel",
-            "google-auth~=2.0.1",
-            "oauth2client~=4.1.3",
-            "flask",
-            "google-auth-oauthlib~=0.4.5",
-            "libdeeplake==0.0.59"
-          ],
-          "all:python_version >= \"3.7\" or sys_platform != \"win32\"": [
-            "av>=8.1.0"
-          ],
-          "enterprise": [
-            "libdeeplake==0.0.59",
-            "pyjwt"
-          ],
-          ":python_version >= \"3.7\" and sys_platform != \"win32\"": [
-            "aioboto3>=10.4.0",
-            "nest_asyncio"
-          ]
-        },
-        "tests_require": [
-          "pytest\n",
-          "pytest-cases\n",
-          "pytest-benchmark\n",
-          "pytest-cov\n",
-          "pytest-timeout\n",
-          "\n",
-          "mypy\n",
-          "black\n",
-          "darglint\n",
-          "\n",
-          "typing_extensions>=3.10.0.0\n",
-          "types-requests\n",
-          "types-click\n",
-          "boto3-stubs[essential]\n",
-          "\n",
-          "lz4\n",
-          "rich\n",
-          "wandb\n",
-          "\n",
-          "pandas; python_version >= '3.11' and sys_platform == 'win32'\n",
-          "datasets; python_version >= '3.11' and sys_platform == 'win32'\n"
-        ]
-      },
-      "37": "36",
-      "38": "36",
-      "39": "36",
-      "310": "36"
-    },
+    "3.6.4": "3.6.3",
     "3.6.5": {
       "36": {
         "install_requires": [
@@ -33948,6 +33907,120 @@
           ],
           "enterprise": [
             "libdeeplake==0.0.63",
+            "pyjwt"
+          ],
+          ":python_version >= \"3.7\" and sys_platform != \"win32\"": [
+            "aioboto3>=10.4.0",
+            "nest_asyncio"
+          ]
+        },
+        "tests_require": [
+          "pytest\n",
+          "pytest-cases\n",
+          "pytest-benchmark\n",
+          "pytest-cov\n",
+          "pytest-timeout\n",
+          "\n",
+          "mypy\n",
+          "black\n",
+          "darglint\n",
+          "\n",
+          "typing_extensions>=3.10.0.0\n",
+          "types-requests\n",
+          "types-click\n",
+          "boto3-stubs[essential]\n",
+          "\n",
+          "lz4\n",
+          "rich\n",
+          "wandb\n",
+          "\n",
+          "pandas; python_version >= '3.11' and sys_platform == 'win32'\n",
+          "datasets; python_version >= '3.11' and sys_platform == 'win32'\n"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "3.6.3": {
+      "36": {
+        "install_requires": [
+          "numpy",
+          "pillow",
+          "boto3",
+          "click",
+          "pathos",
+          "humbug>=0.3.1",
+          "tqdm",
+          "numcodecs",
+          "pyjwt"
+        ],
+        "extras_require": {
+          "audio": [],
+          "audio:python_version >= \"3.7\" or sys_platform != \"win32\"": [
+            "av>=8.1.0"
+          ],
+          "video": [],
+          "video:python_version >= \"3.7\" or sys_platform != \"win32\"": [
+            "av>=8.1.0"
+          ],
+          "av": [],
+          "av:python_version >= \"3.7\" or sys_platform != \"win32\"": [
+            "av>=8.1.0"
+          ],
+          "gcp": [
+            "google-cloud-storage~=1.42.0",
+            "google-auth~=2.0.1",
+            "google-auth-oauthlib~=0.4.5"
+          ],
+          "azure": [
+            "azure-cli",
+            "azure-identity",
+            "azure-storage-blob"
+          ],
+          "dicom": [
+            "pydicom",
+            "nibabel"
+          ],
+          "medical": [
+            "pydicom",
+            "nibabel"
+          ],
+          "visualizer": [
+            "IPython",
+            "flask"
+          ],
+          "gdrive": [
+            "google-api-python-client~=2.31.0",
+            "oauth2client~=4.1.3",
+            "google-auth~=2.0.1",
+            "google-auth-oauthlib~=0.4.5"
+          ],
+          "point_cloud": [
+            "laspy"
+          ],
+          "all": [
+            "IPython",
+            "google-cloud-storage~=1.42.0",
+            "azure-storage-blob",
+            "google-api-python-client~=2.31.0",
+            "pydicom",
+            "azure-identity",
+            "azure-cli",
+            "laspy",
+            "nibabel",
+            "google-auth~=2.0.1",
+            "oauth2client~=4.1.3",
+            "flask",
+            "google-auth-oauthlib~=0.4.5",
+            "libdeeplake==0.0.59"
+          ],
+          "all:python_version >= \"3.7\" or sys_platform != \"win32\"": [
+            "av>=8.1.0"
+          ],
+          "enterprise": [
+            "libdeeplake==0.0.59",
             "pyjwt"
           ],
           ":python_version >= \"3.7\" and sys_platform != \"win32\"": [
@@ -40092,30 +40165,12 @@
     "0.1.3": "0.0.4"
   },
   "dtfield": {
-    "0.1.8": "0.1.1",
-    "0.1.1": {
-      "27": {
-        "install_requires": [
-          "Unidecode<2.0.0,>=1.3.6",
-          "anyio<4.0.0,>=3.7.0",
-          "dtbase<0.0.5,>=0.0.4",
-          "typing-extensions<5.0.0,>=4.6.3",
-          "uvicorn<0.23.0,>=0.22.0"
-        ],
-        "python_requires": [
-          ">=3.9,<4.0"
-        ]
-      },
-      "36": "27",
-      "37": "27",
-      "38": "27",
-      "39": "27",
-      "310": "27"
-    },
-    "0.1.6": "0.1.1",
+    "0.1.8": "0.1.0",
+    "0.1.1": "0.1.0",
+    "0.1.6": "0.1.0",
     "0.2.2": "0.2.1",
-    "0.2.0": "0.1.1",
-    "0.1.3": "0.1.1",
+    "0.2.0": "0.1.0",
+    "0.1.3": "0.1.0",
     "0.2.1": {
       "27": {
         "install_requires": [
@@ -40138,10 +40193,30 @@
       "39": "27",
       "310": "27"
     },
-    "0.1.5": "0.1.1",
-    "0.1.7": "0.1.1",
-    "0.1.9": "0.1.1",
-    "0.2.3": "0.2.1"
+    "0.1.5": "0.1.0",
+    "0.1.7": "0.1.0",
+    "0.1.9": "0.1.0",
+    "0.2.3": "0.2.1",
+    "0.1.0": {
+      "27": {
+        "install_requires": [
+          "Unidecode<2.0.0,>=1.3.6",
+          "anyio<4.0.0,>=3.7.0",
+          "dtbase<0.0.5,>=0.0.4",
+          "typing-extensions<5.0.0,>=4.6.3",
+          "uvicorn<0.23.0,>=0.22.0"
+        ],
+        "python_requires": [
+          ">=3.9,<4.0"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "0.1.4": "0.1.0"
   },
   "dualtest": {
     "1.0": {
@@ -43907,7 +43982,8 @@
     },
     "1.2.17": "1.2.16",
     "1.7.0": "1.4.0",
-    "1.8.0": "1.4.0"
+    "1.8.0": "1.4.0",
+    "1.6.3": "1.4.0"
   },
   "fmaya": {
     "0.1": {
@@ -59095,7 +59171,8 @@
       "310": "27"
     },
     "0.0.8": "0.0.7",
-    "1.1.0": {
+    "1.1.0": "1.0.0",
+    "1.0.0": {
       "27": {
         "install_requires": [
           "requests<3.0,>=2.24.0",
@@ -60605,7 +60682,9 @@
       "38": "27",
       "39": "27",
       "310": "27"
-    }
+    },
+    "0.0.1.dev14": "0.0.1.dev10",
+    "0.0.1.dev15": "0.0.1.dev10"
   },
   "ingressapi": {
     "0.1": {
@@ -60788,7 +60867,43 @@
       "310": "27"
     },
     "0.20.0": "0.19.0",
-    "0.20.1": "0.19.0"
+    "0.20.1": "0.19.0",
+    "0.21.0": {
+      "27": {
+        "extras_require": {
+          "dev:implementation_name == \"cpython\"": [
+            "black==23.3.0",
+            "mypy==1.4.1"
+          ],
+          ":python_version < \"3.9\"": [
+            "typing_extensions>=3.7.4"
+          ],
+          "dev": [
+            "build==0.10.0",
+            "check-manifest==0.49",
+            "click==8.1.3",
+            "coverage==7.2.7",
+            "exceptiongroup==1.1.1",
+            "iniconfig==2.0.0",
+            "mypy-extensions==1.0.0",
+            "packaging==23.1",
+            "pathspec==0.11.1",
+            "platformdirs==3.8.0",
+            "pluggy==1.2.0",
+            "pyproject_hooks==1.0.0",
+            "pytest==7.4.0",
+            "pytest-cov==4.1.0",
+            "tomli==2.0.1",
+            "typing_extensions==4.7.0"
+          ]
+        }
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "innocuousbook-sdk": {
     "0.0.0": {
@@ -63025,15 +63140,16 @@
     "1.9.5": "1.9.2",
     "1.9.3": "1.9.2",
     "1.9.4": "1.9.2",
-    "1.9.1": {
+    "1.9.1": "1.9.0",
+    "1.9.2": {
       "36": {
         "install_requires": [
           "fastapi==0.100.0",
           "uvicorn[standard]==0.22.0",
           "python-jose[cryptography]==3.3.0",
           "passlib==1.7.4",
-          "pydantic==2.0.2",
-          "pydantic-settings==2.0.1",
+          "pydantic==2.0.3",
+          "pydantic-settings==2.0.2",
           "loguru==0.7.0",
           "numpy==1.25.1",
           "pandas==2.0.3",
@@ -63048,15 +63164,15 @@
       "39": "36",
       "310": "36"
     },
-    "1.9.2": {
+    "1.9.0": {
       "36": {
         "install_requires": [
           "fastapi==0.100.0",
           "uvicorn[standard]==0.22.0",
           "python-jose[cryptography]==3.3.0",
           "passlib==1.7.4",
-          "pydantic==2.0.3",
-          "pydantic-settings==2.0.2",
+          "pydantic==2.0.2",
+          "pydantic-settings==2.0.1",
           "loguru==0.7.0",
           "numpy==1.25.1",
           "pandas==2.0.3",
@@ -65459,7 +65575,29 @@
     "0.0.5": "0.0.1",
     "0.0.8": "0.0.1",
     "0.0.15": "0.0.1",
-    "0.0.2": "0.0.1"
+    "0.0.2": "0.0.1",
+    "0.0.10": "0.0.1",
+    "0.0.16": {
+      "27": {
+        "install_requires": [
+          "c8connector>=0.0.29",
+          "inflection==0.3.1",
+          "joblib==1.2.0",
+          "oracledb<2.0.0,>=1.2.2",
+          "pipelinewise-singer-python==1.2.0",
+          "prometheus-client==0.16.0",
+          "sqlalchemy<2.0,>=1.4"
+        ],
+        "python_requires": [
+          ">=3.8.1,<3.11"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "madara": {
     "0.0.1": {
@@ -66195,7 +66333,8 @@
       "310": "36"
     },
     "0.5.11": "0.5.9",
-    "0.7.2": {
+    "0.7.2": "0.7.0",
+    "0.7.0": {
       "36": {
         "install_requires": [
           "aiohttp>=3.7.4",
@@ -74920,7 +75059,8 @@
     },
     "1.28.13": "1.27.0",
     "1.28.16": "1.27.0",
-    "1.28.15.post1": "1.27.0"
+    "1.28.15.post1": "1.27.0",
+    "1.28.0": "1.27.0"
   },
   "mypy-boto3-lightsail": {
     "0.1.10": "0.1.9",
@@ -76009,7 +76149,8 @@
       "39": "36",
       "310": "36"
     },
-    "1.28.16": "1.28.15"
+    "1.28.16": "1.28.15",
+    "1.28.15.post1": "1.28.15"
   },
   "mysqlconnect": {
     "1.0.0": {
@@ -81188,7 +81329,8 @@
     },
     "1.2.0": "1.1.2",
     "1.2.1": "1.1.2",
-    "1.2.2": "1.1.2"
+    "1.2.2": "1.1.2",
+    "1.3.0": "1.1.2"
   },
   "philter-lite": {
     "0.1.0": {
@@ -89763,7 +89905,12 @@
     "0.2.911694257.dev11838": "0.2.694928516",
     "0.2.932156931.dev12269": "0.2.694928516",
     "0.2.944573153.dev12436": "0.2.694928516",
-    "0.2.945478751.dev12458": "0.2.694928516"
+    "0.2.945478751.dev12458": "0.2.694928516",
+    "0.2.903067183.dev11538": "0.2.694928516",
+    "0.2.927847332.dev12210": "0.2.694928516",
+    "0.2.948131372.dev12515": "0.2.694928516",
+    "0.2.950114343.dev12542": "0.2.694928516",
+    "0.2.951386407.dev12582": "0.2.694928516"
   },
   "quicktable": {
     "0.0.0": {
@@ -95609,6 +95756,33 @@
       "38": "27",
       "39": "27",
       "310": "27"
+    },
+    "0.1.0": {
+      "27": {
+        "install_requires": [
+          "lark==1.1.5",
+          "oletools>=0.56"
+        ],
+        "extras_require": {
+          "msg_parse": [
+            "extract_msg>=0.27"
+          ],
+          "dev": [
+            "lxml>=4.6",
+            "mypy>=1.1.1",
+            "pdoc3>=0.10.0",
+            "coverage>=7.2.2"
+          ]
+        },
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
     }
   },
   "rtrsub": {
@@ -99444,7 +99618,22 @@
     "1.34.3": "1.34.0",
     "1.34.4": "1.34.0",
     "1.34.5": "1.34.0",
-    "1.34.6": "1.34.0"
+    "1.34.6": "1.34.0",
+    "1.35.0": {
+      "27": {
+        "install_requires": [
+          "astropy>=5.2.2",
+          "matplotlib>=3.7.1",
+          "numpy>=1.24.3",
+          "future>=0.18.3"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "spectral-cube": {
     "0.2.3": {
@@ -101725,7 +101914,8 @@
     },
     "1.0.1": "1.0.0",
     "1.0.2": "1.0.0",
-    "1.0.3": "1.0.0"
+    "1.0.3": "1.0.0",
+    "1.1.0": "1.0.0"
   },
   "telegrambotapi": {
     "0.2.1": "0.3",
@@ -105006,6 +105196,25 @@
     "0.8.1.2": "0.5.6",
     "0.8.1": "0.5.6"
   },
+  "twinfiles": {
+    "0.0.2": {
+      "36": {
+        "install_requires": [
+          "humanize",
+          "rich",
+          "typer"
+        ],
+        "setup_requires": [
+          "setuptools_scm",
+          "wheel"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
+  },
   "twisted-raiser": {
     "2.0.0": {
       "27": {
@@ -105177,7 +105386,8 @@
       "38": "36",
       "39": "36",
       "310": "36"
-    }
+    },
+    "2.5.2.post1": "2.5.1"
   },
   "types-aiobotocore-kinesis-video-archived-media": {
     "2.1.0": {
@@ -109970,7 +110180,8 @@
       "38": "36",
       "39": "36",
       "310": "36"
-    }
+    },
+    "1.0.0.2.dev1": "1.0.0"
   },
   "uniproxy-mssngr-tools": {
     "66.0.0": {
@@ -113528,6 +113739,13 @@
       "38": "27",
       "39": "27",
       "310": "27"
+    },
+    "1.0.2": {
+      "36": {},
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
     }
   },
   "xmpplib": {
