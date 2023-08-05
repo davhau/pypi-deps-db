@@ -14925,8 +14925,14 @@
       "1.31.18": {
         "botocore_a_la_carte_backupstorage-1.31.18-py3-none-any.whl": "1.29.100@botocore_a_la_carte_backupstorage-1.29.100-py3-none-any.whl"
       },
+      "1.31.19": {
+        "botocore_a_la_carte_backupstorage-1.31.19-py3-none-any.whl": "1.29.100@botocore_a_la_carte_backupstorage-1.29.100-py3-none-any.whl"
+      },
       "1.31.2": {
         "botocore_a_la_carte_backupstorage-1.31.2-py3-none-any.whl": "1.29.100@botocore_a_la_carte_backupstorage-1.29.100-py3-none-any.whl"
+      },
+      "1.31.20": {
+        "botocore_a_la_carte_backupstorage-1.31.20-py3-none-any.whl": "1.29.100@botocore_a_la_carte_backupstorage-1.29.100-py3-none-any.whl"
       },
       "1.31.3": {
         "botocore_a_la_carte_backupstorage-1.31.3-py3-none-any.whl": "1.29.100@botocore_a_la_carte_backupstorage-1.29.100-py3-none-any.whl"
@@ -15357,8 +15363,14 @@
       "1.31.18": {
         "botocore_a_la_carte_cloudfront-1.31.18-py3-none-any.whl": "1.29.100@botocore_a_la_carte_cloudfront-1.29.100-py3-none-any.whl"
       },
+      "1.31.19": {
+        "botocore_a_la_carte_cloudfront-1.31.19-py3-none-any.whl": "1.29.100@botocore_a_la_carte_cloudfront-1.29.100-py3-none-any.whl"
+      },
       "1.31.2": {
         "botocore_a_la_carte_cloudfront-1.31.2-py3-none-any.whl": "1.29.100@botocore_a_la_carte_cloudfront-1.29.100-py3-none-any.whl"
+      },
+      "1.31.20": {
+        "botocore_a_la_carte_cloudfront-1.31.20-py3-none-any.whl": "1.29.100@botocore_a_la_carte_cloudfront-1.29.100-py3-none-any.whl"
       },
       "1.31.3": {
         "botocore_a_la_carte_cloudfront-1.31.3-py3-none-any.whl": "1.29.100@botocore_a_la_carte_cloudfront-1.29.100-py3-none-any.whl"
@@ -27739,6 +27751,50 @@
             "dagster-k8s (==0.20.3) ; extra == 'tests'"
           ]
         }
+      },
+      "1.4.4": {
+        "dagster_cloud-1.4.4-py3-none-any.whl": {
+          "provides_extras": [
+            "docker",
+            "ecs",
+            "kubernetes",
+            "pex",
+            "sandbox",
+            "serverless",
+            "tests"
+          ],
+          "requires_dist": [
+            "dagster (==1.4.4)",
+            "dagster-cloud-cli (==1.4.4)",
+            "pex",
+            "questionary",
+            "requests",
+            "typer[all]",
+            "docker ; extra == 'docker'",
+            "dagster-docker (==0.20.4) ; extra == 'docker'",
+            "dagster-aws (==0.20.4) ; extra == 'ecs'",
+            "boto3 ; extra == 'ecs'",
+            "kubernetes ; extra == 'kubernetes'",
+            "dagster-k8s (==0.20.4) ; extra == 'kubernetes'",
+            "boto3 ; extra == 'pex'",
+            "supervisor ; extra == 'sandbox'",
+            "boto3 ; extra == 'serverless'",
+            "black ; extra == 'tests'",
+            "docker ; extra == 'tests'",
+            "httpretty ; extra == 'tests'",
+            "isort ; extra == 'tests'",
+            "kubernetes ; extra == 'tests'",
+            "moto[all] ; extra == 'tests'",
+            "mypy ; extra == 'tests'",
+            "paramiko ; extra == 'tests'",
+            "pylint ; extra == 'tests'",
+            "pytest ; extra == 'tests'",
+            "types-PyYAML ; extra == 'tests'",
+            "types-requests ; extra == 'tests'",
+            "dagster-cloud-test-infra ; extra == 'tests'",
+            "dagster-k8s (==0.20.4) ; extra == 'tests'"
+          ]
+        }
       }
     }
   },
@@ -38043,6 +38099,19 @@
       }
     }
   },
+  "foo-bar-lib-probe": {
+    "py3": {
+      "0.1": {
+        "foo_bar_lib_probe-0.1-py3-none-any.whl": {}
+      },
+      "0.2": {
+        "foo_bar_lib_probe-0.2-py3-none-any.whl": "0.1@foo_bar_lib_probe-0.1-py3-none-any.whl"
+      },
+      "0.3.0": {
+        "foo_bar_lib_probe-0.3.0-py3-none-any.whl": "0.1@foo_bar_lib_probe-0.1-py3-none-any.whl"
+      }
+    }
+  },
   "formencode": {
     "py2.py3": {
       "2.0.0": {
@@ -38603,6 +38672,66 @@
       },
       "0.22.1": {
         "frequenz_sdk-0.22.1-py3-none-any.whl": "0.22.0@frequenz_sdk-0.22.0-py3-none-any.whl"
+      },
+      "0.23.0": {
+        "frequenz_sdk-0.23.0-py3-none-any.whl": {
+          "provides_extras": [
+            "dev",
+            "dev-docstrings",
+            "dev-examples",
+            "dev-formatting",
+            "dev-mkdocs",
+            "dev-mypy",
+            "dev-noxfile",
+            "dev-pylint",
+            "dev-pytest"
+          ],
+          "requires_dist": [
+            "frequenz-api-microgrid (<0.12.0,>=0.11.0)",
+            "frequenz-channels (<0.17.0,>=0.16.0)",
+            "google-api-python-client (<3,>=2.71)",
+            "grpcio (<2,>=1.54.2)",
+            "grpcio-tools (<2,>=1.54.2)",
+            "networkx (<4,>=2.8)",
+            "numpy (<2,>=1.24.2)",
+            "protobuf (<5,>=4.21.6)",
+            "pydantic (<2,>=1.9)",
+            "tqdm (<5,>=4.38.0)",
+            "typing-extensions (<5,>=4.4.0)",
+            "watchfiles (>=0.15.0)",
+            "frequenz-sdk[dev-docstrings,dev-formatting,dev-mkdocs,dev-mypy,dev-noxfile,dev-pylint,dev-pytest] ; extra == 'dev'",
+            "pydocstyle (==6.3.0) ; extra == 'dev-docstrings'",
+            "darglint (==1.8.1) ; extra == 'dev-docstrings'",
+            "tomli (==2.0.1) ; extra == 'dev-docstrings'",
+            "polars (==0.18.11) ; extra == 'dev-examples'",
+            "black (==23.7.0) ; extra == 'dev-formatting'",
+            "isort (==5.12.0) ; extra == 'dev-formatting'",
+            "mike (==1.1.2) ; extra == 'dev-mkdocs'",
+            "mkdocs-gen-files (==0.5.0) ; extra == 'dev-mkdocs'",
+            "mkdocs-literate-nav (==0.6.0) ; extra == 'dev-mkdocs'",
+            "mkdocs-material (==9.1.21) ; extra == 'dev-mkdocs'",
+            "mkdocs-section-index (==0.3.5) ; extra == 'dev-mkdocs'",
+            "mkdocstrings[python] (==0.22.0) ; extra == 'dev-mkdocs'",
+            "frequenz-repo-config[lib] (==0.4.0) ; extra == 'dev-mkdocs'",
+            "mypy (==1.4.1) ; extra == 'dev-mypy'",
+            "grpc-stubs (==1.24.12) ; extra == 'dev-mypy'",
+            "types-protobuf (==4.23.0.2) ; extra == 'dev-mypy'",
+            "frequenz-sdk[dev-mkdocs,dev-noxfile,dev-pytest] ; extra == 'dev-mypy'",
+            "nox (==2023.4.22) ; extra == 'dev-noxfile'",
+            "frequenz-repo-config[lib] (==0.4.0) ; extra == 'dev-noxfile'",
+            "pylint (==2.17.5) ; extra == 'dev-pylint'",
+            "frequenz-sdk[dev-mkdocs,dev-noxfile,dev-pytest] ; extra == 'dev-pylint'",
+            "pytest (==7.4.0) ; extra == 'dev-pytest'",
+            "pytest-mock (==3.11.1) ; extra == 'dev-pytest'",
+            "pytest-asyncio (==0.21.1) ; extra == 'dev-pytest'",
+            "time-machine (==2.11.0) ; extra == 'dev-pytest'",
+            "async-solipsism (==0.5) ; extra == 'dev-pytest'",
+            "sybil (==5.0.3) ; extra == 'dev-pytest'",
+            "pylint (==2.17.5) ; extra == 'dev-pytest'",
+            "frequenz-sdk[dev-examples] ; extra == 'dev-pytest'"
+          ],
+          "requires_python": "<4,>=3.11"
+        }
       }
     }
   },
@@ -43180,6 +43309,9 @@
           ],
           "requires_python": ">=3.8"
         }
+      },
+      "0.15.33": {
+        "hypha-0.15.33-py3-none-any.whl": "0.15.32@hypha-0.15.32-py3-none-any.whl"
       },
       "0.15.4": {
         "hypha-0.15.4-py3-none-any.whl": {
@@ -58680,6 +58812,136 @@
           "requires_python": ">=3.8, <4"
         }
       },
+      "2.20.2.post514": {
+        "nucliadb_sdk-2.20.2.post514-py3-none-any.whl": {
+          "requires_dist": [
+            "httpx",
+            "requests",
+            "nucliadb-models (==2.20.2-post514)",
+            "urllib3 (<1.27,>=1.21.1)",
+            "orjson",
+            "pydantic (<2.0,>=1.10.9)"
+          ],
+          "requires_python": ">=3.8, <4"
+        }
+      },
+      "2.20.2.post515": {
+        "nucliadb_sdk-2.20.2.post515-py3-none-any.whl": {
+          "requires_dist": [
+            "httpx",
+            "requests",
+            "nucliadb-models (==2.20.2-post515)",
+            "urllib3 (<1.27,>=1.21.1)",
+            "orjson",
+            "pydantic (<2.0,>=1.10.9)"
+          ],
+          "requires_python": ">=3.8, <4"
+        }
+      },
+      "2.20.2.post516": {
+        "nucliadb_sdk-2.20.2.post516-py3-none-any.whl": {
+          "requires_dist": [
+            "httpx",
+            "requests",
+            "nucliadb-models (==2.20.2-post516)",
+            "urllib3 (<1.27,>=1.21.1)",
+            "orjson",
+            "pydantic (<2.0,>=1.10.9)"
+          ],
+          "requires_python": ">=3.8, <4"
+        }
+      },
+      "2.20.2.post517": {
+        "nucliadb_sdk-2.20.2.post517-py3-none-any.whl": {
+          "requires_dist": [
+            "httpx",
+            "requests",
+            "nucliadb-models (==2.20.2-post517)",
+            "urllib3 (<1.27,>=1.21.1)",
+            "orjson",
+            "pydantic (<2.0,>=1.10.9)"
+          ],
+          "requires_python": ">=3.8, <4"
+        }
+      },
+      "2.20.2.post518": {
+        "nucliadb_sdk-2.20.2.post518-py3-none-any.whl": {
+          "requires_dist": [
+            "httpx",
+            "requests",
+            "nucliadb-models (==2.20.2-post518)",
+            "urllib3 (<1.27,>=1.21.1)",
+            "orjson",
+            "pydantic (<2.0,>=1.10.9)"
+          ],
+          "requires_python": ">=3.8, <4"
+        }
+      },
+      "2.20.2.post519": {
+        "nucliadb_sdk-2.20.2.post519-py3-none-any.whl": {
+          "requires_dist": [
+            "httpx",
+            "requests",
+            "nucliadb-models (==2.20.2-post519)",
+            "urllib3 (<1.27,>=1.21.1)",
+            "orjson",
+            "pydantic (<2.0,>=1.10.9)"
+          ],
+          "requires_python": ">=3.8, <4"
+        }
+      },
+      "2.20.2.post520": {
+        "nucliadb_sdk-2.20.2.post520-py3-none-any.whl": {
+          "requires_dist": [
+            "httpx",
+            "requests",
+            "nucliadb-models (==2.20.2-post520)",
+            "urllib3 (<1.27,>=1.21.1)",
+            "orjson",
+            "pydantic (<2.0,>=1.10.9)"
+          ],
+          "requires_python": ">=3.8, <4"
+        }
+      },
+      "2.20.2.post521": {
+        "nucliadb_sdk-2.20.2.post521-py3-none-any.whl": {
+          "requires_dist": [
+            "httpx",
+            "requests",
+            "nucliadb-models (==2.20.2-post521)",
+            "urllib3 (<1.27,>=1.21.1)",
+            "orjson",
+            "pydantic (<2.0,>=1.10.9)"
+          ],
+          "requires_python": ">=3.8, <4"
+        }
+      },
+      "2.20.2.post522": {
+        "nucliadb_sdk-2.20.2.post522-py3-none-any.whl": {
+          "requires_dist": [
+            "httpx",
+            "requests",
+            "nucliadb-models (==2.20.2-post522)",
+            "urllib3 (<1.27,>=1.21.1)",
+            "orjson",
+            "pydantic (<2.0,>=1.10.9)"
+          ],
+          "requires_python": ">=3.8, <4"
+        }
+      },
+      "2.20.2.post523": {
+        "nucliadb_sdk-2.20.2.post523-py3-none-any.whl": {
+          "requires_dist": [
+            "httpx",
+            "requests",
+            "nucliadb-models (==2.20.2-post523)",
+            "urllib3 (<1.27,>=1.21.1)",
+            "orjson",
+            "pydantic (<2.0,>=1.10.9)"
+          ],
+          "requires_python": ">=3.8, <4"
+        }
+      },
       "2.3.0.post10": {
         "nucliadb_sdk-2.3.0.post10-py3-none-any.whl": {
           "requires_dist": [
@@ -61421,6 +61683,9 @@
       },
       "16.0.1.0.7": {
         "odoo_addon_companyweb_base-16.0.1.0.7-py3-none-any.whl": "16.0.1.0.2@odoo_addon_companyweb_base-16.0.1.0.2-py3-none-any.whl"
+      },
+      "16.0.1.0.7.2": {
+        "odoo_addon_companyweb_base-16.0.1.0.7.2-py3-none-any.whl": "16.0.1.0.2@odoo_addon_companyweb_base-16.0.1.0.2-py3-none-any.whl"
       }
     }
   },
@@ -68229,6 +68494,9 @@
           "requires_python": "~=3.7"
         }
       },
+      "0.2.532": {
+        "pepperize.cdk_autoscaling_gitlab_runner-0.2.532-py3-none-any.whl": "0.2.531@pepperize.cdk_autoscaling_gitlab_runner-0.2.531-py3-none-any.whl"
+      },
       "0.2.54": {
         "pepperize.cdk_autoscaling_gitlab_runner-0.2.54-py3-none-any.whl": "0.2.44@pepperize.cdk_autoscaling_gitlab_runner-0.2.44-py3-none-any.whl"
       },
@@ -70035,6 +70303,18 @@
         "ppu-0.8.0-py2.py3-none-any.whl": {
           "requires_python": ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
         }
+      }
+    }
+  },
+  "prcv": {
+    "py3": {
+      "1.0.0": {
+        "prcv-1.0.0-py3-none-any.whl": {
+          "requires_python": ">=3.7"
+        }
+      },
+      "1.0.1": {
+        "prcv-1.0.1-py3-none-any.whl": "1.0.0@prcv-1.0.0-py3-none-any.whl"
       }
     }
   },
@@ -79459,6 +79739,22 @@
       },
       "0.6.4": {
         "radicalpy-0.6.4-py3-none-any.whl": "0.5.7@radicalpy-0.5.7-py3-none-any.whl"
+      },
+      "0.6.5": {
+        "radicalpy-0.6.5-py3-none-any.whl": {
+          "requires_dist": [
+            "importlib-resources",
+            "matplotlib",
+            "numpy",
+            "pint",
+            "scikit-learn",
+            "scipy",
+            "seaborn",
+            "sympy",
+            "tqdm",
+            "graphviz"
+          ]
+        }
       }
     }
   },
@@ -83649,6 +83945,19 @@
             "zstandard"
           ],
           "requires_python": ">=3.7"
+        }
+      },
+      "1.8.1": {
+        "sinetstream-1.8.1-py3-none-any.whl": {
+          "requires_dist": [
+            "pyyaml",
+            "pycryptodomex",
+            "avro-python3",
+            "promise",
+            "requests",
+            "zstandard"
+          ],
+          "requires_python": ">=3.8"
         }
       }
     }
@@ -90519,6 +90828,13 @@
             "tencentcloud-sdk-python-common (==3.0.949)"
           ]
         }
+      },
+      "3.0.950": {
+        "tencentcloud_sdk_python_asr-3.0.950-py2.py3-none-any.whl": {
+          "requires_dist": [
+            "tencentcloud-sdk-python-common (==3.0.950)"
+          ]
+        }
       }
     }
   },
@@ -95204,6 +95520,9 @@
       },
       "1.3.0": {
         "tplink_omada_client-1.3.0-py3-none-any.whl": "1.2.3@tplink_omada_client-1.2.3-py3-none-any.whl"
+      },
+      "1.3.2": {
+        "tplink_omada_client-1.3.2-py3-none-any.whl": "1.2.3@tplink_omada_client-1.2.3-py3-none-any.whl"
       }
     }
   },
@@ -96163,6 +96482,18 @@
       }
     }
   },
+  "types-aiobotocore-medical-imaging": {
+    "py3": {
+      "2.5.2.post2": {
+        "types_aiobotocore_medical_imaging-2.5.2.post2-py3-none-any.whl": {
+          "requires_dist": [
+            "typing-extensions (>=4.1.0) ; python_version < \"3.9\""
+          ],
+          "requires_python": ">=3.7"
+        }
+      }
+    }
+  },
   "types-aiobotocore-workmailmessageflow": {
     "py3": {
       "2.1.0": {
@@ -96267,6 +96598,9 @@
       },
       "2.5.2.post1": {
         "types_aiobotocore_workmailmessageflow-2.5.2.post1-py3-none-any.whl": "2.5.1@types_aiobotocore_workmailmessageflow-2.5.1-py3-none-any.whl"
+      },
+      "2.5.2.post2": {
+        "types_aiobotocore_workmailmessageflow-2.5.2.post2-py3-none-any.whl": "2.5.1@types_aiobotocore_workmailmessageflow-2.5.1-py3-none-any.whl"
       }
     }
   },
