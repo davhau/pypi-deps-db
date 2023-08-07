@@ -831,7 +831,8 @@
       "39": "27",
       "310": "27"
     },
-    "0.1.4": {
+    "0.1.4": "0.1.3",
+    "0.1.3": {
       "36": {
         "install_requires": [
           "numpy",
@@ -31997,6 +31998,60 @@
       "38": "36",
       "39": "36",
       "310": "36"
+    },
+    "0.19.10": {
+      "36": {
+        "install_requires": [
+          "boto3",
+          "dagster==1.3.10",
+          "packaging",
+          "requests"
+        ],
+        "extras_require": {
+          "redshift": [
+            "psycopg2-binary"
+          ],
+          "pyspark": [
+            "dagster-pyspark"
+          ],
+          "test": [
+            "moto>=2.2.8",
+            "requests-mock",
+            "xmltodict==0.12.0"
+          ]
+        }
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "0.20.0": {
+      "36": {
+        "install_requires": [
+          "boto3",
+          "dagster==1.4.0",
+          "packaging",
+          "requests"
+        ],
+        "extras_require": {
+          "redshift": [
+            "psycopg2-binary"
+          ],
+          "pyspark": [
+            "dagster-pyspark"
+          ],
+          "test": [
+            "moto>=2.2.8",
+            "requests-mock",
+            "xmltodict==0.12.0"
+          ]
+        }
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
     }
   },
   "daiquiri": {
@@ -37173,7 +37228,28 @@
       "39": "27",
       "310": "27"
     },
-    "0.0.6": "0.0.5"
+    "0.0.6": "0.0.5",
+    "0.0.7": {
+      "27": {
+        "extras_require": {
+          "dev": [
+            "pytest"
+          ],
+          ":python_version >= \"3.0\"": [
+            "requests>=2.20",
+            "typing_extensions>=3.10"
+          ]
+        },
+        "python_requires": [
+          ">=3.6"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "disapi": {
     "0.0.1": {
@@ -42643,7 +42719,8 @@
     "2.0.0": "1.0.0",
     "2.0.1": "1.0.0",
     "3.0.2": "1.0.0",
-    "4.0.0": "1.0.0"
+    "4.0.0": "1.0.0",
+    "3.0.0": "1.0.0"
   },
   "ewechat": {
     "0.1.0": {
@@ -51487,10 +51564,27 @@
     "0.0.60": "0.1.1",
     "0.0.82": "0.1.1",
     "0.0.99": "0.1.1",
-    "0.1.22": "0.1.7",
+    "0.1.22": "0.1.3",
     "0.0.69": "0.1.1",
-    "0.1.13": "0.1.7",
-    "0.1.7": {
+    "0.1.13": "0.1.3",
+    "0.1.7": "0.1.3",
+    "0.1.18": "0.1.3",
+    "0.0.89": "0.1.1",
+    "0.0.52": "0.1.1",
+    "0.0.67": "0.1.1",
+    "0.0.49": "0.1.1",
+    "0.0.76": "0.1.1",
+    "0.1.14": "0.1.3",
+    "0.1.20": "0.1.3",
+    "0.1.12": "0.1.3",
+    "0.0.48": "0.1.1",
+    "0.0.55": "0.1.1",
+    "0.0.63": "0.1.1",
+    "0.0.80": "0.1.1",
+    "0.0.94": "0.1.1",
+    "0.0.98": "0.1.1",
+    "0.1.16": "0.1.3",
+    "0.1.3": {
       "27": {
         "install_requires": [
           "pywin32",
@@ -51507,20 +51601,7 @@
       "38": "27",
       "39": "27",
       "310": "27"
-    },
-    "0.1.18": "0.1.7",
-    "0.0.89": "0.1.1",
-    "0.0.52": "0.1.1",
-    "0.0.67": "0.1.1",
-    "0.0.49": "0.1.1",
-    "0.0.76": "0.1.1",
-    "0.1.14": "0.1.7",
-    "0.1.20": "0.1.7",
-    "0.1.12": "0.1.7",
-    "0.0.48": "0.1.1",
-    "0.0.55": "0.1.1",
-    "0.0.63": "0.1.1",
-    "0.0.80": "0.1.1"
+    }
   },
   "irflowservice": {
     "0.1.0": {
@@ -69533,6 +69614,122 @@
       "38": "36",
       "39": "36",
       "310": "36"
+    },
+    "0.30.0": {
+      "36": {
+        "install_requires": [
+          "attrs>=20.3",
+          "requests>=2.20.0",
+          "openlineage-integration-common[sql]==0.30.0",
+          "openlineage-python==0.30.0"
+        ],
+        "extras_require": {
+          "tests": [
+            "aiohttp",
+            "pytest",
+            "pytest-cov",
+            "pytest-mock",
+            "mock",
+            "ruff",
+            "SQLAlchemy",
+            "Flask-SQLAlchemy",
+            "pandas-gbq==0.14.1",
+            "snowflake-connector-python"
+          ],
+          "airflow": [
+            "apache-airflow-providers-postgres>=2.0.0",
+            "apache-airflow-providers-mysql>=2.0.0",
+            "apache-airflow-providers-trino>=3.1.0",
+            "apache-airflow-providers-snowflake>=2.1.0",
+            "apache-airflow-providers-google>=5.0.0",
+            "apache-airflow-providers-amazon>=3.1.1",
+            "apache-airflow-providers-sftp>=2.1.1",
+            "apache-airflow-providers-ssh>=2.1.0",
+            "apache-airflow-providers-ftp>=3.3.0",
+            "apache-airflow-providers-dbt-cloud<3.2.0",
+            "airflow-provider-great-expectations==0.1.5",
+            "great-expectations<=0.15.23",
+            "protobuf<4.23,>=3.20"
+          ],
+          "dev": [
+            "aiohttp",
+            "pytest",
+            "pytest-cov",
+            "pytest-mock",
+            "mock",
+            "ruff",
+            "SQLAlchemy",
+            "Flask-SQLAlchemy",
+            "pandas-gbq==0.14.1",
+            "snowflake-connector-python"
+          ]
+        },
+        "python_requires": [
+          ">=3.8"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "1.0.0": {
+      "36": {
+        "install_requires": [
+          "attrs>=20.3",
+          "requests>=2.20.0",
+          "openlineage-integration-common[sql]==1.0.0",
+          "openlineage-python==1.0.0"
+        ],
+        "extras_require": {
+          "tests": [
+            "aiohttp",
+            "pytest",
+            "pytest-cov",
+            "pytest-mock",
+            "mock",
+            "ruff",
+            "SQLAlchemy",
+            "Flask-SQLAlchemy",
+            "pandas-gbq==0.14.1",
+            "snowflake-connector-python"
+          ],
+          "airflow": [
+            "apache-airflow-providers-postgres>=2.0.0",
+            "apache-airflow-providers-mysql>=2.0.0",
+            "apache-airflow-providers-trino>=3.1.0",
+            "apache-airflow-providers-snowflake>=2.1.0",
+            "apache-airflow-providers-google>=5.0.0",
+            "apache-airflow-providers-amazon>=3.1.1",
+            "apache-airflow-providers-sftp>=2.1.1",
+            "apache-airflow-providers-ssh>=2.1.0",
+            "apache-airflow-providers-ftp>=3.3.0",
+            "apache-airflow-providers-dbt-cloud<3.2.0",
+            "airflow-provider-great-expectations==0.1.5",
+            "great-expectations<=0.15.23",
+            "protobuf<4.23,>=3.20"
+          ],
+          "dev": [
+            "aiohttp",
+            "pytest",
+            "pytest-cov",
+            "pytest-mock",
+            "mock",
+            "ruff",
+            "SQLAlchemy",
+            "Flask-SQLAlchemy",
+            "pandas-gbq==0.14.1",
+            "snowflake-connector-python"
+          ]
+        },
+        "python_requires": [
+          ">=3.8"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
     }
   },
   "openmodule-test": {
@@ -69652,7 +69849,8 @@
     "12.1.3": "0.1.1",
     "11.1.1": "0.1.1",
     "11.1.0rc6": "0.1.1",
-    "12.0.0rc1": "0.1.1"
+    "12.0.0rc1": "0.1.1",
+    "12.0.0": "0.1.1"
   },
   "opensearch-benchmark": {
     "0.0.1": {
@@ -87455,7 +87653,8 @@
       "39": "27",
       "310": "27"
     },
-    "1.12.dev4": "1.12.dev3"
+    "1.12.dev4": "1.12.dev3",
+    "1.12.dev7": "1.12.dev3"
   },
   "sparc.component": {
     "1.0.0": {
@@ -89206,7 +89405,8 @@
       "38": "27",
       "39": "27",
       "310": "27"
-    }
+    },
+    "0.1.0": "0.0.1"
   },
   "superparser": {
     "1.0.0": {
@@ -91203,7 +91403,12 @@
     "3.0.913": "3.0.252",
     "3.0.936": "3.0.252",
     "3.0.945": "3.0.252",
-    "3.0.912": "3.0.252"
+    "3.0.912": "3.0.252",
+    "3.0.911": "3.0.252",
+    "3.0.914": "3.0.252",
+    "3.0.924": "3.0.252",
+    "3.0.941": "3.0.252",
+    "3.0.946": "3.0.252"
   },
   "tencentcloud-sdk-python-cmq": {
     "3.0.251": {
