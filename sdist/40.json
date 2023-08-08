@@ -1961,7 +1961,8 @@
       "38": "36",
       "39": "36",
       "310": "36"
-    }
+    },
+    "1.1.5": "1.0.0"
   },
   "ansicontroller": {
     "1.0.12": {
@@ -34636,7 +34637,8 @@
     "0.1.539": "0.1.537",
     "0.1.540": "0.1.537",
     "0.1.541": "0.1.537",
-    "0.1.542": "0.1.537"
+    "0.1.542": "0.1.537",
+    "0.1.543": "0.1.537"
   },
   "certbot-dns-cloudflare": {
     "0.14.0.dev0": {
@@ -100051,11 +100053,16 @@
     "1.3": "1.0"
   },
   "valorant.py": {
-    "1.0.0": {
+    "1.0.1": {
       "27": {
         "install_requires": [
-          "aiohttp"
+          "aiohttp<4,>=3.8.5"
         ],
+        "extras_require": {
+          "speed": [
+            "orjson<4.0,>=3.8.11"
+          ]
+        },
         "python_requires": [
           ">=3.8.0"
         ]
@@ -100065,8 +100072,7 @@
       "38": "27",
       "39": "27",
       "310": "27"
-    },
-    "1.0.0.dev0": "1.0.0"
+    }
   },
   "varfish-cli": {
     "0.2.1": {
@@ -103302,6 +103308,56 @@
           "normality==2.4.0",
           "languagecodes==1.1.1",
           "countrynames==1.15.1",
+          "fingerprints==1.1.0",
+          "pantomime==0.6.1"
+        ],
+        "extras_require": {
+          "dev": [
+            "pip>=10.0.0",
+            "bump2version",
+            "wheel>=0.29.0",
+            "twine",
+            "mypy",
+            "httpx",
+            "pytest",
+            "pytest-cov",
+            "pytest-asyncio",
+            "flake8>=2.6.0",
+            "black"
+          ]
+        }
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "3.6.1": {
+      "27": {
+        "install_requires": [
+          "followthemoney==3.5.1",
+          "nomenklatura==3.3.8",
+          "asyncstdlib==3.10.8",
+          "aiocron==1.8",
+          "aiocsv==1.2.4",
+          "aiofiles==23.1.0",
+          "types-aiofiles<23.2,>=23.1.0.4",
+          "aiohttp[speedups]==3.8.5",
+          "elasticsearch[async]==8.9.0",
+          "fastapi==0.101.0",
+          "uvicorn[standard]==0.23.2",
+          "python-multipart==0.0.6",
+          "email-validator==2.0.0.post2",
+          "structlog==23.1.0",
+          "pyicu==2.11",
+          "jellyfish==1.0.0",
+          "orjson==3.9.4",
+          "text-unidecode==1.3",
+          "click==8.1.6",
+          "normality==2.4.0",
+          "languagecodes==1.1.1",
+          "countrynames==1.15.2",
           "fingerprints==1.1.0",
           "pantomime==0.6.1"
         ],
