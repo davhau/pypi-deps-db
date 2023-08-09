@@ -7404,6 +7404,9 @@
       "1.31.21": {
         "botocore_a_la_carte_marketplacecommerceanalytics-1.31.21-py3-none-any.whl": "1.29.100@botocore_a_la_carte_marketplacecommerceanalytics-1.29.100-py3-none-any.whl"
       },
+      "1.31.22": {
+        "botocore_a_la_carte_marketplacecommerceanalytics-1.31.22-py3-none-any.whl": "1.29.100@botocore_a_la_carte_marketplacecommerceanalytics-1.29.100-py3-none-any.whl"
+      },
       "1.31.3": {
         "botocore_a_la_carte_marketplacecommerceanalytics-1.31.3-py3-none-any.whl": "1.29.100@botocore_a_la_carte_marketplacecommerceanalytics-1.29.100-py3-none-any.whl"
       },
@@ -7844,6 +7847,9 @@
       },
       "1.31.21": {
         "botocore_a_la_carte_wisdom-1.31.21-py3-none-any.whl": "1.29.100@botocore_a_la_carte_wisdom-1.29.100-py3-none-any.whl"
+      },
+      "1.31.22": {
+        "botocore_a_la_carte_wisdom-1.31.22-py3-none-any.whl": "1.29.100@botocore_a_la_carte_wisdom-1.29.100-py3-none-any.whl"
       },
       "1.31.3": {
         "botocore_a_la_carte_wisdom-1.31.3-py3-none-any.whl": "1.29.100@botocore_a_la_carte_wisdom-1.29.100-py3-none-any.whl"
@@ -11726,6 +11732,35 @@
       },
       "0.3.2": {
         "cleanvision-0.3.2-py3-none-any.whl": "0.2.0@cleanvision-0.2.0-py3-none-any.whl"
+      },
+      "0.3.3": {
+        "cleanvision-0.3.3-py3-none-any.whl": {
+          "provides_extras": [
+            "all",
+            "azure",
+            "gcs",
+            "huggingface",
+            "pytorch",
+            "s3"
+          ],
+          "requires_dist": [
+            "Pillow >=9.3",
+            "numpy >=1.20.0",
+            "pandas >=1.1.5",
+            "tabulate >=0.8.3",
+            "imagehash >=4.2.0",
+            "tqdm >=4.53.0",
+            "matplotlib >=3.4",
+            "fsspec >=2023.1.0",
+            "cleanvision[azure,gcs,huggingface,pytorch,s3] ; extra == 'all'",
+            "adlfs >=2022.2.0 ; extra == 'azure'",
+            "gcsfs >=2022.1.0 ; extra == 'gcs'",
+            "datasets >=2.7.0 ; extra == 'huggingface'",
+            "torchvision >=0.12.0 ; extra == 'pytorch'",
+            "s3fs >=2023.1.0 ; extra == 's3'"
+          ],
+          "requires_python": ">=3.7"
+        }
       }
     }
   },
@@ -22484,6 +22519,15 @@
       }
     }
   },
+  "ddoregio": {
+    "py3": {
+      "0.0.1": {
+        "ddoregio-0.0.1-py3-none-any.whl": {
+          "requires_python": ">=3.6"
+        }
+      }
+    }
+  },
   "decapitate-the-spire": {
     "py3": {
       "0.1.0": {
@@ -25392,6 +25436,22 @@
             "loguru (>=0.5.3,<0.6.0)",
             "pandas (>=1.3.0)",
             "pyarrow (>=8.0.0,<9.0.0)",
+            "python-dateutil (>=2.8.0,<3.0.0)",
+            "urllib3 (>=1.26.16,<2.0.0)"
+          ],
+          "requires_python": ">=3.8,<4.0"
+        }
+      },
+      "5.8.0.dev1": {
+        "dominodatalab_data-5.8.0.dev1-py3-none-any.whl": {
+          "requires_dist": [
+            "attrs (>=20.1.0,<22.0.0)",
+            "backoff (>=1.11.1,<2.0.0)",
+            "bson (>=0.5.10,<0.6.0)",
+            "httpx (>=0.23.0,<0.24.0)",
+            "loguru (>=0.5.3,<0.6.0)",
+            "pandas (>=1.3.0,<2.0.0)",
+            "pyarrow (>=10.0.0,<11.0.0)",
             "python-dateutil (>=2.8.0,<3.0.0)",
             "urllib3 (>=1.26.16,<2.0.0)"
           ],
@@ -28634,6 +28694,22 @@
       },
       "1.1.1": {
         "esp_idf_monitor-1.1.1-py3-none-any.whl": "0.1.0@esp_idf_monitor-0.1.0-py3-none-any.whl"
+      },
+      "1.1.2": {
+        "esp_idf_monitor-1.1.2-py3-none-any.whl": {
+          "provides_extras": [
+            "dev",
+            "ide"
+          ],
+          "requires_dist": [
+            "pyserial >=3.3",
+            "esp-coredump ~=1.2",
+            "pyelftools",
+            "pre-commit ; extra == 'dev'",
+            "websocket-client ; extra == 'ide'"
+          ],
+          "requires_python": ">=3.7"
+        }
       }
     }
   },
@@ -29798,6 +29874,32 @@
       },
       "0.9.0": {
         "fawltydeps-0.9.0-py3-none-any.whl": "0.10.0@fawltydeps-0.10.0-py3-none-any.whl"
+      }
+    }
+  },
+  "fern-nixtla": {
+    "py3": {
+      "0.0.1": {
+        "fern_nixtla-0.0.1-py3-none-any.whl": {
+          "requires_dist": [
+            "httpx (==0.23.3)",
+            "pydantic (>=1.9.2,<2.0.0)"
+          ],
+          "requires_python": ">=3.7,<4.0"
+        }
+      },
+      "0.0.2": {
+        "fern_nixtla-0.0.2-py3-none-any.whl": "0.0.1@fern_nixtla-0.0.1-py3-none-any.whl"
+      },
+      "0.0.4": {
+        "fern_nixtla-0.0.4-py3-none-any.whl": {
+          "requires_dist": [
+            "httpx (==0.23.3)",
+            "pandas (>=2.0.3,<3.0.0)",
+            "pydantic (>=1.9.2,<2.0.0)"
+          ],
+          "requires_python": ">=3.8,<4.0"
+        }
       }
     }
   },
@@ -35821,6 +35923,9 @@
       },
       "2023.8.4": {
         "hansken-2023.8.4-py3-none-any.whl": "2023.6.27@hansken-2023.6.27-py3-none-any.whl"
+      },
+      "2023.8.8": {
+        "hansken-2023.8.8-py3-none-any.whl": "2023.6.27@hansken-2023.6.27-py3-none-any.whl"
       }
     }
   },
@@ -37451,6 +37556,9 @@
             "qiskit"
           ]
         }
+      },
+      "0.3": {
+        "isqmap-0.3-py3-none-any.whl": "0.2@isqmap-0.2-py3-none-any.whl"
       }
     }
   },
@@ -41875,6 +41983,18 @@
         "lalsuite-7.19.1.dev20230807-cp310-cp310-manylinux_2_28_aarch64.whl": "7.15.1.dev20230523@lalsuite-7.15.1.dev20230523-cp310-cp310-macosx_10_15_x86_64.whl",
         "lalsuite-7.19.1.dev20230807-cp310-cp310-manylinux_2_28_x86_64.whl": "7.15.1.dev20230523@lalsuite-7.15.1.dev20230523-cp310-cp310-macosx_10_15_x86_64.whl"
       },
+      "7.19.1.dev20230808": {
+        "lalsuite-7.19.1.dev20230808-cp310-cp310-macosx_10_15_x86_64.whl": "7.18.1.dev20230806@lalsuite-7.18.1.dev20230806-cp310-cp310-macosx_10_15_x86_64.whl",
+        "lalsuite-7.19.1.dev20230808-cp310-cp310-macosx_12_0_arm64.whl": "7.18.1.dev20230806@lalsuite-7.18.1.dev20230806-cp310-cp310-macosx_10_15_x86_64.whl",
+        "lalsuite-7.19.1.dev20230808-cp310-cp310-manylinux_2_28_aarch64.whl": "7.15.1.dev20230523@lalsuite-7.15.1.dev20230523-cp310-cp310-macosx_10_15_x86_64.whl",
+        "lalsuite-7.19.1.dev20230808-cp310-cp310-manylinux_2_28_x86_64.whl": "7.15.1.dev20230523@lalsuite-7.15.1.dev20230523-cp310-cp310-macosx_10_15_x86_64.whl"
+      },
+      "7.19.1.dev20230809": {
+        "lalsuite-7.19.1.dev20230809-cp310-cp310-macosx_10_15_x86_64.whl": "7.18.1.dev20230806@lalsuite-7.18.1.dev20230806-cp310-cp310-macosx_10_15_x86_64.whl",
+        "lalsuite-7.19.1.dev20230809-cp310-cp310-macosx_12_0_arm64.whl": "7.18.1.dev20230806@lalsuite-7.18.1.dev20230806-cp310-cp310-macosx_10_15_x86_64.whl",
+        "lalsuite-7.19.1.dev20230809-cp310-cp310-manylinux_2_28_aarch64.whl": "7.15.1.dev20230523@lalsuite-7.15.1.dev20230523-cp310-cp310-macosx_10_15_x86_64.whl",
+        "lalsuite-7.19.1.dev20230809-cp310-cp310-manylinux_2_28_x86_64.whl": "7.15.1.dev20230523@lalsuite-7.15.1.dev20230523-cp310-cp310-macosx_10_15_x86_64.whl"
+      },
       "7.2": {
         "lalsuite-7.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": {
           "provides_extras": [
@@ -43369,6 +43489,18 @@
         "lalsuite-7.19.1.dev20230807-cp311-cp311-macosx_12_0_arm64.whl": "7.18.1.dev20230806@lalsuite-7.18.1.dev20230806-cp311-cp311-macosx_10_15_x86_64.whl",
         "lalsuite-7.19.1.dev20230807-cp311-cp311-manylinux_2_28_aarch64.whl": "7.15.1.dev20230523@lalsuite-7.15.1.dev20230523-cp311-cp311-macosx_10_15_x86_64.whl",
         "lalsuite-7.19.1.dev20230807-cp311-cp311-manylinux_2_28_x86_64.whl": "7.15.1.dev20230523@lalsuite-7.15.1.dev20230523-cp311-cp311-macosx_10_15_x86_64.whl"
+      },
+      "7.19.1.dev20230808": {
+        "lalsuite-7.19.1.dev20230808-cp311-cp311-macosx_10_15_x86_64.whl": "7.18.1.dev20230806@lalsuite-7.18.1.dev20230806-cp311-cp311-macosx_10_15_x86_64.whl",
+        "lalsuite-7.19.1.dev20230808-cp311-cp311-macosx_12_0_arm64.whl": "7.18.1.dev20230806@lalsuite-7.18.1.dev20230806-cp311-cp311-macosx_10_15_x86_64.whl",
+        "lalsuite-7.19.1.dev20230808-cp311-cp311-manylinux_2_28_aarch64.whl": "7.15.1.dev20230523@lalsuite-7.15.1.dev20230523-cp311-cp311-macosx_10_15_x86_64.whl",
+        "lalsuite-7.19.1.dev20230808-cp311-cp311-manylinux_2_28_x86_64.whl": "7.15.1.dev20230523@lalsuite-7.15.1.dev20230523-cp311-cp311-macosx_10_15_x86_64.whl"
+      },
+      "7.19.1.dev20230809": {
+        "lalsuite-7.19.1.dev20230809-cp311-cp311-macosx_10_15_x86_64.whl": "7.18.1.dev20230806@lalsuite-7.18.1.dev20230806-cp311-cp311-macosx_10_15_x86_64.whl",
+        "lalsuite-7.19.1.dev20230809-cp311-cp311-macosx_12_0_arm64.whl": "7.18.1.dev20230806@lalsuite-7.18.1.dev20230806-cp311-cp311-macosx_10_15_x86_64.whl",
+        "lalsuite-7.19.1.dev20230809-cp311-cp311-manylinux_2_28_aarch64.whl": "7.15.1.dev20230523@lalsuite-7.15.1.dev20230523-cp311-cp311-macosx_10_15_x86_64.whl",
+        "lalsuite-7.19.1.dev20230809-cp311-cp311-manylinux_2_28_x86_64.whl": "7.15.1.dev20230523@lalsuite-7.15.1.dev20230523-cp311-cp311-macosx_10_15_x86_64.whl"
       }
     },
     "cp34": {
@@ -45699,6 +45831,18 @@
         "lalsuite-7.19.1.dev20230807-cp38-cp38-manylinux_2_28_aarch64.whl": "7.15.1.dev20230523@lalsuite-7.15.1.dev20230523-cp38-cp38-macosx_10_15_x86_64.whl",
         "lalsuite-7.19.1.dev20230807-cp38-cp38-manylinux_2_28_x86_64.whl": "7.15.1.dev20230523@lalsuite-7.15.1.dev20230523-cp38-cp38-macosx_10_15_x86_64.whl"
       },
+      "7.19.1.dev20230808": {
+        "lalsuite-7.19.1.dev20230808-cp38-cp38-macosx_10_15_x86_64.whl": "7.18.1.dev20230806@lalsuite-7.18.1.dev20230806-cp38-cp38-macosx_10_15_x86_64.whl",
+        "lalsuite-7.19.1.dev20230808-cp38-cp38-macosx_12_0_arm64.whl": "7.18.1.dev20230806@lalsuite-7.18.1.dev20230806-cp38-cp38-macosx_10_15_x86_64.whl",
+        "lalsuite-7.19.1.dev20230808-cp38-cp38-manylinux_2_28_aarch64.whl": "7.15.1.dev20230523@lalsuite-7.15.1.dev20230523-cp38-cp38-macosx_10_15_x86_64.whl",
+        "lalsuite-7.19.1.dev20230808-cp38-cp38-manylinux_2_28_x86_64.whl": "7.15.1.dev20230523@lalsuite-7.15.1.dev20230523-cp38-cp38-macosx_10_15_x86_64.whl"
+      },
+      "7.19.1.dev20230809": {
+        "lalsuite-7.19.1.dev20230809-cp38-cp38-macosx_10_15_x86_64.whl": "7.18.1.dev20230806@lalsuite-7.18.1.dev20230806-cp38-cp38-macosx_10_15_x86_64.whl",
+        "lalsuite-7.19.1.dev20230809-cp38-cp38-macosx_12_0_arm64.whl": "7.18.1.dev20230806@lalsuite-7.18.1.dev20230806-cp38-cp38-macosx_10_15_x86_64.whl",
+        "lalsuite-7.19.1.dev20230809-cp38-cp38-manylinux_2_28_aarch64.whl": "7.15.1.dev20230523@lalsuite-7.15.1.dev20230523-cp38-cp38-macosx_10_15_x86_64.whl",
+        "lalsuite-7.19.1.dev20230809-cp38-cp38-manylinux_2_28_x86_64.whl": "7.15.1.dev20230523@lalsuite-7.15.1.dev20230523-cp38-cp38-macosx_10_15_x86_64.whl"
+      },
       "7.2": {
         "lalsuite-7.2-cp38-cp38-macosx_10_15_x86_64.whl": "7.1@lalsuite-7.1-cp38-cp38-macosx_10_15_x86_64.whl",
         "lalsuite-7.2-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "7.1@lalsuite-7.1-cp38-cp38-macosx_10_15_x86_64.whl"
@@ -47245,6 +47389,18 @@
         "lalsuite-7.19.1.dev20230807-cp39-cp39-manylinux_2_28_aarch64.whl": "7.15.1.dev20230523@lalsuite-7.15.1.dev20230523-cp39-cp39-macosx_10_15_x86_64.whl",
         "lalsuite-7.19.1.dev20230807-cp39-cp39-manylinux_2_28_x86_64.whl": "7.15.1.dev20230523@lalsuite-7.15.1.dev20230523-cp39-cp39-macosx_10_15_x86_64.whl"
       },
+      "7.19.1.dev20230808": {
+        "lalsuite-7.19.1.dev20230808-cp39-cp39-macosx_10_15_x86_64.whl": "7.18.1.dev20230806@lalsuite-7.18.1.dev20230806-cp39-cp39-macosx_10_15_x86_64.whl",
+        "lalsuite-7.19.1.dev20230808-cp39-cp39-macosx_12_0_arm64.whl": "7.18.1.dev20230806@lalsuite-7.18.1.dev20230806-cp39-cp39-macosx_10_15_x86_64.whl",
+        "lalsuite-7.19.1.dev20230808-cp39-cp39-manylinux_2_28_aarch64.whl": "7.15.1.dev20230523@lalsuite-7.15.1.dev20230523-cp39-cp39-macosx_10_15_x86_64.whl",
+        "lalsuite-7.19.1.dev20230808-cp39-cp39-manylinux_2_28_x86_64.whl": "7.15.1.dev20230523@lalsuite-7.15.1.dev20230523-cp39-cp39-macosx_10_15_x86_64.whl"
+      },
+      "7.19.1.dev20230809": {
+        "lalsuite-7.19.1.dev20230809-cp39-cp39-macosx_10_15_x86_64.whl": "7.18.1.dev20230806@lalsuite-7.18.1.dev20230806-cp39-cp39-macosx_10_15_x86_64.whl",
+        "lalsuite-7.19.1.dev20230809-cp39-cp39-macosx_12_0_arm64.whl": "7.18.1.dev20230806@lalsuite-7.18.1.dev20230806-cp39-cp39-macosx_10_15_x86_64.whl",
+        "lalsuite-7.19.1.dev20230809-cp39-cp39-manylinux_2_28_aarch64.whl": "7.15.1.dev20230523@lalsuite-7.15.1.dev20230523-cp39-cp39-macosx_10_15_x86_64.whl",
+        "lalsuite-7.19.1.dev20230809-cp39-cp39-manylinux_2_28_x86_64.whl": "7.15.1.dev20230523@lalsuite-7.15.1.dev20230523-cp39-cp39-macosx_10_15_x86_64.whl"
+      },
       "7.2": {
         "lalsuite-7.2-cp39-cp39-macosx_10_15_x86_64.whl": "7.1@lalsuite-7.1-cp39-cp39-macosx_10_15_x86_64.whl",
         "lalsuite-7.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "7.1@lalsuite-7.1-cp39-cp39-macosx_10_15_x86_64.whl"
@@ -47965,6 +48121,24 @@
             "PyYAML (==6.0.1)",
             "pytest (==7.1.3) ; extra == 'test'",
             "flake8 (==5.0.4) ; extra == 'test'"
+          ],
+          "requires_python": ">=3.10"
+        }
+      },
+      "1.11.0": {
+        "lupin_grognard-1.11.0-py3-none-any.whl": {
+          "provides_extras": [
+            "test"
+          ],
+          "requires_dist": [
+            "typer[all] ==0.6.1",
+            "python-dotenv ==0.21.0",
+            "emoji ==2.2.0",
+            "Jinja2 ==3.1.2",
+            "cmakelang ==0.6.13",
+            "PyYAML ==6.0.1",
+            "pytest ==7.1.3 ; extra == 'test'",
+            "flake8 ==5.0.4 ; extra == 'test'"
           ],
           "requires_python": ">=3.10"
         }
@@ -54739,6 +54913,9 @@
       },
       "0.1.1": {
         "nonebot_plugin_friends-0.1.1-py3-none-any.whl": "0.0.1@nonebot_plugin_friends-0.0.1-py3-none-any.whl"
+      },
+      "0.1.2": {
+        "nonebot_plugin_friends-0.1.2-py3-none-any.whl": "0.0.1@nonebot_plugin_friends-0.0.1-py3-none-any.whl"
       }
     }
   },
@@ -55313,6 +55490,12 @@
         "nostr_sdk-0.0.2-cp310-cp310-macosx_11_0_x86_64.whl": "0.0.1@nostr_sdk-0.0.1-cp310-cp310-macosx_11_0_arm64.whl",
         "nostr_sdk-0.0.2-cp310-cp310-manylinux_2_17_x86_64.whl": "0.0.1@nostr_sdk-0.0.1-cp310-cp310-macosx_11_0_arm64.whl",
         "nostr_sdk-0.0.2-cp310-cp310-win_amd64.whl": "0.0.1@nostr_sdk-0.0.1-cp310-cp310-macosx_11_0_arm64.whl"
+      },
+      "0.0.3": {
+        "nostr_sdk-0.0.3-cp310-cp310-macosx_11_0_arm64.whl": "0.0.1@nostr_sdk-0.0.1-cp310-cp310-macosx_11_0_arm64.whl",
+        "nostr_sdk-0.0.3-cp310-cp310-macosx_11_0_x86_64.whl": "0.0.1@nostr_sdk-0.0.1-cp310-cp310-macosx_11_0_arm64.whl",
+        "nostr_sdk-0.0.3-cp310-cp310-manylinux_2_17_x86_64.whl": "0.0.1@nostr_sdk-0.0.1-cp310-cp310-macosx_11_0_arm64.whl",
+        "nostr_sdk-0.0.3-cp310-cp310-win_amd64.whl": "0.0.1@nostr_sdk-0.0.1-cp310-cp310-macosx_11_0_arm64.whl"
       }
     },
     "cp38": {
@@ -55327,6 +55510,12 @@
         "nostr_sdk-0.0.2-cp38-cp38-macosx_11_0_x86_64.whl": "0.0.1@nostr_sdk-0.0.1-cp38-cp38-macosx_11_0_arm64.whl",
         "nostr_sdk-0.0.2-cp38-cp38-manylinux_2_17_x86_64.whl": "0.0.1@nostr_sdk-0.0.1-cp38-cp38-macosx_11_0_arm64.whl",
         "nostr_sdk-0.0.2-cp38-cp38-win_amd64.whl": "0.0.1@nostr_sdk-0.0.1-cp38-cp38-macosx_11_0_arm64.whl"
+      },
+      "0.0.3": {
+        "nostr_sdk-0.0.3-cp38-cp38-macosx_11_0_arm64.whl": "0.0.1@nostr_sdk-0.0.1-cp38-cp38-macosx_11_0_arm64.whl",
+        "nostr_sdk-0.0.3-cp38-cp38-macosx_11_0_x86_64.whl": "0.0.1@nostr_sdk-0.0.1-cp38-cp38-macosx_11_0_arm64.whl",
+        "nostr_sdk-0.0.3-cp38-cp38-manylinux_2_17_x86_64.whl": "0.0.1@nostr_sdk-0.0.1-cp38-cp38-macosx_11_0_arm64.whl",
+        "nostr_sdk-0.0.3-cp38-cp38-win_amd64.whl": "0.0.1@nostr_sdk-0.0.1-cp38-cp38-macosx_11_0_arm64.whl"
       }
     },
     "cp39": {
@@ -55341,6 +55530,12 @@
         "nostr_sdk-0.0.2-cp39-cp39-macosx_11_0_x86_64.whl": "0.0.1@nostr_sdk-0.0.1-cp39-cp39-macosx_11_0_arm64.whl",
         "nostr_sdk-0.0.2-cp39-cp39-manylinux_2_17_x86_64.whl": "0.0.1@nostr_sdk-0.0.1-cp39-cp39-macosx_11_0_arm64.whl",
         "nostr_sdk-0.0.2-cp39-cp39-win_amd64.whl": "0.0.1@nostr_sdk-0.0.1-cp39-cp39-macosx_11_0_arm64.whl"
+      },
+      "0.0.3": {
+        "nostr_sdk-0.0.3-cp39-cp39-macosx_11_0_arm64.whl": "0.0.1@nostr_sdk-0.0.1-cp39-cp39-macosx_11_0_arm64.whl",
+        "nostr_sdk-0.0.3-cp39-cp39-macosx_11_0_x86_64.whl": "0.0.1@nostr_sdk-0.0.1-cp39-cp39-macosx_11_0_arm64.whl",
+        "nostr_sdk-0.0.3-cp39-cp39-manylinux_2_17_x86_64.whl": "0.0.1@nostr_sdk-0.0.1-cp39-cp39-macosx_11_0_arm64.whl",
+        "nostr_sdk-0.0.3-cp39-cp39-win_amd64.whl": "0.0.1@nostr_sdk-0.0.1-cp39-cp39-macosx_11_0_arm64.whl"
       }
     }
   },
@@ -59389,6 +59584,16 @@
   },
   "orpc-server": {
     "py3": {
+      "0.5.10": {
+        "orpc_server-0.5.10-py3-none-any.whl": {
+          "requires_dist": [
+            "zenutils (>=0.4.8)",
+            "orpc-client (>=0.5.10)",
+            "daemon-application",
+            "bizerror"
+          ]
+        }
+      },
       "0.5.9": {
         "orpc_server-0.5.9-py3-none-any.whl": {
           "requires_dist": [
@@ -62209,6 +62414,88 @@
           ],
           "requires_python": ">=3.8"
         }
+      },
+      "0.15.1": {
+        "PartSeg-0.15.1-py3-none-any.whl": {
+          "provides_extras": [
+            "accelerate",
+            "all",
+            "docs",
+            "pyinstaller",
+            "pyqt",
+            "pyqt5",
+            "pyqt6",
+            "pyside",
+            "pyside2",
+            "pyside6",
+            "test"
+          ],
+          "requires_dist": [
+            "IPython >=7.7.0",
+            "PartSegCore-compiled-backend <0.16.0,>=0.13.11",
+            "PartSegData ==0.10.0",
+            "QtAwesome !=1.2.0,>=1.0.3",
+            "QtPy >=1.10.0",
+            "SimpleITK >=2.0.0",
+            "appdirs >=1.4.4",
+            "czifile >=2019.5.22",
+            "defusedxml >=0.6.0",
+            "fonticon-fontawesome6 >=6.1.1",
+            "h5py >=3.3.0",
+            "imagecodecs >=2020.5.30",
+            "imageio >=2.5.0",
+            "ipykernel >=5.2.0",
+            "local-migrator >=0.1.7",
+            "magicgui !=0.5.0,>=0.4.0",
+            "mahotas >=1.4.10",
+            "napari >=0.4.14",
+            "nme >=0.1.7",
+            "numpy >=1.18.5",
+            "oiffile >=2020.1.18",
+            "openpyxl >=2.5.7",
+            "packaging >=20.0",
+            "pandas >=1.1.0",
+            "psygnal >=0.3.1",
+            "pydantic >=1.8.1",
+            "pygments >=2.4.0",
+            "qtconsole >=4.7.7",
+            "requests >=2.18.0",
+            "scipy >=1.4.1",
+            "sentry-sdk >=0.14.3",
+            "six >=1.11.0",
+            "superqt >=0.3.0",
+            "sympy >=1.1.1",
+            "tifffile >=2020.9.30",
+            "traceback-with-variables >=2.0.4",
+            "vispy >=0.9.4",
+            "xlrd >=1.1.0",
+            "xlsxwriter >=2.0.0",
+            "PyOpenGL-accelerate >=3.1.5 ; extra == 'accelerate'",
+            "PyOpenGL-accelerate >=3.1.5 ; extra == 'all'",
+            "PyQt5 !=5.15.0,>=5.12.3 ; extra == 'all'",
+            "autodoc-pydantic ==1.7.2 ; extra == 'docs'",
+            "sphinx !=3.0.0,!=3.5.0 ; extra == 'docs'",
+            "sphinx-autodoc-typehints ==1.18.3 ; extra == 'docs'",
+            "sphinx-qt-documentation ==0.4 ; extra == 'docs'",
+            "PyOpenGL-accelerate >=3.1.5 ; extra == 'pyinstaller'",
+            "PyQt5 !=5.15.0,>=5.12.3 ; extra == 'pyinstaller'",
+            "PyInstaller ; extra == 'pyinstaller'",
+            "pydantic <2 ; extra == 'pyinstaller'",
+            "PyQt5 !=5.15.0,>=5.12.3 ; extra == 'pyqt'",
+            "PyQt5 !=5.15.0,>=5.12.3 ; extra == 'pyqt5'",
+            "PyQt6 ; extra == 'pyqt6'",
+            "PySide2 !=5.15.0,>=5.12.3 ; extra == 'pyside'",
+            "PySide2 !=5.15.0,>=5.12.3 ; extra == 'pyside2'",
+            "PySide6 ; extra == 'pyside6'",
+            "lxml ; extra == 'test'",
+            "pytest >=7.0.0 ; extra == 'test'",
+            "pytest-cov ; extra == 'test'",
+            "pytest-qt ; extra == 'test'",
+            "pytest-timeout ; extra == 'test'",
+            "scikit-image ; extra == 'test'"
+          ],
+          "requires_python": ">=3.8"
+        }
       }
     }
   },
@@ -64301,6 +64588,9 @@
         "preamble-0.0.1-py3-none-any.whl": {
           "requires_python": ">=3.7"
         }
+      },
+      "0.0.4": {
+        "preamble-0.0.4-py3-none-any.whl": "0.0.1@preamble-0.0.1-py3-none-any.whl"
       }
     }
   },
@@ -78997,6 +79287,18 @@
       },
       "0.1.5": {
         "simplex_assimilate-0.1.5-py3-none-any.whl": "0.1.0@simplex_assimilate-0.1.0-py3-none-any.whl"
+      },
+      "0.1.6": {
+        "simplex_assimilate-0.1.6-py3-none-any.whl": "0.1.0@simplex_assimilate-0.1.0-py3-none-any.whl"
+      },
+      "0.1.7": {
+        "simplex_assimilate-0.1.7-py3-none-any.whl": "0.1.0@simplex_assimilate-0.1.0-py3-none-any.whl"
+      },
+      "0.1.8": {
+        "simplex_assimilate-0.1.8-py3-none-any.whl": "0.1.0@simplex_assimilate-0.1.0-py3-none-any.whl"
+      },
+      "0.1.9": {
+        "simplex_assimilate-0.1.9-py3-none-any.whl": "0.1.0@simplex_assimilate-0.1.0-py3-none-any.whl"
       }
     }
   },
@@ -81343,6 +81645,12 @@
       },
       "1.12.9": {
         "talkytrend-1.12.9-py3-none-any.whl": "1.11.0@talkytrend-1.11.0-py3-none-any.whl"
+      },
+      "1.13.0": {
+        "talkytrend-1.13.0-py3-none-any.whl": "1.11.0@talkytrend-1.11.0-py3-none-any.whl"
+      },
+      "1.13.1": {
+        "talkytrend-1.13.1-py3-none-any.whl": "1.11.0@talkytrend-1.11.0-py3-none-any.whl"
       },
       "1.2.0": {
         "talkytrend-1.2.0-py3-none-any.whl": {
@@ -83775,6 +84083,13 @@
             "tencentcloud-sdk-python-common (==3.0.953)"
           ]
         }
+      },
+      "3.0.954": {
+        "tencentcloud_sdk_python_tiw-3.0.954-py2.py3-none-any.whl": {
+          "requires_dist": [
+            "tencentcloud-sdk-python-common (==3.0.954)"
+          ]
+        }
       }
     }
   },
@@ -84578,6 +84893,13 @@
         "tencentcloud_sdk_python_wedata-3.0.953-py2.py3-none-any.whl": {
           "requires_dist": [
             "tencentcloud-sdk-python-common (==3.0.953)"
+          ]
+        }
+      },
+      "3.0.954": {
+        "tencentcloud_sdk_python_wedata-3.0.954-py2.py3-none-any.whl": {
+          "requires_dist": [
+            "tencentcloud-sdk-python-common (==3.0.954)"
           ]
         }
       }
@@ -89707,6 +90029,15 @@
       },
       "1.1.18": {
         "upgini-1.1.18-py3-none-any.whl": "1.1.10@upgini-1.1.10-py3-none-any.whl"
+      },
+      "1.1.180a1": {
+        "upgini-1.1.180a1-py3-none-any.whl": "1.1.173@upgini-1.1.173-py3-none-any.whl"
+      },
+      "1.1.180a2": {
+        "upgini-1.1.180a2-py3-none-any.whl": "1.1.173@upgini-1.1.173-py3-none-any.whl"
+      },
+      "1.1.180a3": {
+        "upgini-1.1.180a3-py3-none-any.whl": "1.1.173@upgini-1.1.173-py3-none-any.whl"
       },
       "1.1.19": {
         "upgini-1.1.19-py3-none-any.whl": "1.1.10@upgini-1.1.10-py3-none-any.whl"
