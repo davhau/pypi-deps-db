@@ -13257,6 +13257,9 @@
       "1.31.24": {
         "botocore_a_la_carte_forecastquery-1.31.24-py3-none-any.whl": "1.29.100@botocore_a_la_carte_forecastquery-1.29.100-py3-none-any.whl"
       },
+      "1.31.25": {
+        "botocore_a_la_carte_forecastquery-1.31.25-py3-none-any.whl": "1.29.100@botocore_a_la_carte_forecastquery-1.29.100-py3-none-any.whl"
+      },
       "1.31.3": {
         "botocore_a_la_carte_forecastquery-1.31.3-py3-none-any.whl": "1.29.100@botocore_a_la_carte_forecastquery-1.29.100-py3-none-any.whl"
       },
@@ -23008,6 +23011,45 @@
       },
       "2.22.0": {
         "dvc_azure-2.22.0-py3-none-any.whl": "2.21.2@dvc_azure-2.21.2-py3-none-any.whl"
+      },
+      "2.22.1": {
+        "dvc_azure-2.22.1-py3-none-any.whl": {
+          "provides_extras": [
+            "tests"
+          ],
+          "requires_dist": [
+            "dvc",
+            "adlfs >=2023.4.0",
+            "azure-identity >=1.4.0",
+            "knack",
+            "wheel ==0.37.0 ; extra == 'tests'",
+            "dvc[testing] ; extra == 'tests'",
+            "pytest ==7.2.0 ; extra == 'tests'",
+            "pytest-cov ==3.0.0 ; extra == 'tests'",
+            "pytest-xdist ==2.4.0 ; extra == 'tests'",
+            "pytest-mock ==3.6.1 ; extra == 'tests'",
+            "pytest-lazy-fixture ==0.6.3 ; extra == 'tests'",
+            "pytest-test-utils ==0.0.8 ; extra == 'tests'",
+            "pytest-servers[azure] ==0.2.4 ; extra == 'tests'",
+            "flaky ==3.7.0 ; extra == 'tests'",
+            "mock ==4.0.3 ; extra == 'tests'",
+            "wget ==3.2 ; extra == 'tests'",
+            "filelock ==3.3.2 ; extra == 'tests'",
+            "crc32c ==2.3.post0 ; extra == 'tests'",
+            "xmltodict ==0.12.0 ; extra == 'tests'",
+            "Pygments ==2.10.0 ; extra == 'tests'",
+            "collective.checkdocs ==0.2 ; extra == 'tests'",
+            "pydocstyle ==6.1.1 ; extra == 'tests'",
+            "pylint ==2.15.9 ; extra == 'tests'",
+            "pylint-plugin-utils ==0.6 ; extra == 'tests'",
+            "mypy ==0.910 ; extra == 'tests'",
+            "types-requests ==2.25.11 ; extra == 'tests'",
+            "types-tabulate ==0.8.3 ; extra == 'tests'",
+            "types-toml ==0.10.1 ; extra == 'tests'",
+            "pywin32 >=225 ; (sys_platform == \"win32\") and extra == 'tests'"
+          ],
+          "requires_python": ">=3.8"
+        }
       }
     }
   },
@@ -57079,6 +57121,22 @@
             "tortoise-orm ; extra == 'tortoise'"
           ]
         }
+      },
+      "0.1.1": {
+        "patchwork_contrib-0.1.1-py3-none-any.whl": {
+          "provides_extras": [
+            "fastapi",
+            "tortoise"
+          ],
+          "requires_dist": [
+            "patchwork-core >=0.1.9",
+            "aiohttp",
+            "fastapi >=0.70 ; extra == 'fastapi'",
+            "pydantic ~=1.10.0 ; extra == 'fastapi'",
+            "python-jose[cryptography] ; extra == 'fastapi'",
+            "tortoise-orm ; extra == 'tortoise'"
+          ]
+        }
       }
     }
   },
@@ -57286,6 +57344,23 @@
             "pytz"
           ]
         }
+      },
+      "0.1.5": {
+        "patchwork_node-0.1.5-py3-none-any.whl": {
+          "requires_dist": [
+            "aiohttp >=3.7.4.post0",
+            "async-lru >=1.0.2",
+            "psutil >=5.8.0",
+            "pydantic ~=1.10.0",
+            "humanize >=3.11.0",
+            "importlib-metadata >=4.8.1",
+            "patchwork-core >=0.1.9",
+            "pytz"
+          ]
+        }
+      },
+      "0.1.6": {
+        "patchwork_node-0.1.6-py3-none-any.whl": "0.1.5@patchwork_node-0.1.5-py3-none-any.whl"
       }
     }
   },
@@ -86291,6 +86366,41 @@
         "tfx_bsl-0.22.0-cp27-cp27mu-manylinux2010_x86_64.whl": "0.22.0@tfx_bsl-0.22.0-cp27-cp27m-macosx_10_9_x86_64.whl"
       }
     },
+    "cp310": {
+      "1.14.0": {
+        "tfx_bsl-1.14.0-cp310-cp310-macosx_12_0_x86_64.whl": {
+          "requires_dist": [
+            "absl-py (<2.0.0,>=0.9)",
+            "apache-beam[gcp] (<3,>=2.47)",
+            "google-api-python-client (<2,>=1.7.11)",
+            "numpy (>=1.22.0)",
+            "pandas (<2,>=1.0)",
+            "protobuf (<5,>=3.20.3)",
+            "pyarrow (<11,>=10)",
+            "tensorflow (<3,>=2.13)",
+            "tensorflow-metadata (<1.15.0,>=1.14.0)",
+            "tensorflow-serving-api (<3,>=2.13.0)"
+          ],
+          "requires_python": ">=3.8,<4"
+        },
+        "tfx_bsl-1.14.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": {
+          "requires_dist": [
+            "absl-py <2.0.0,>=0.9",
+            "apache-beam[gcp] <3,>=2.47",
+            "google-api-python-client <2,>=1.7.11",
+            "numpy >=1.22.0",
+            "pandas <2,>=1.0",
+            "protobuf <5,>=3.20.3",
+            "pyarrow <11,>=10",
+            "tensorflow <3,>=2.13",
+            "tensorflow-metadata <1.15.0,>=1.14.0",
+            "tensorflow-serving-api <3,>=2.13.0"
+          ],
+          "requires_python": ">=3.8,<4"
+        },
+        "tfx_bsl-1.14.0-cp310-cp310-win_amd64.whl": "1.14.0@tfx_bsl-1.14.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+      }
+    },
     "cp35": {
       "0.15.0": {
         "tfx_bsl-0.15.0-cp35-cp35m-macosx_10_6_intel.whl": {
@@ -88071,6 +88181,39 @@
         "tfx_bsl-1.13.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "1.13.0@tfx_bsl-1.13.0-cp38-cp38-macosx_12_0_x86_64.whl",
         "tfx_bsl-1.13.0-cp38-cp38-win_amd64.whl": "1.13.0@tfx_bsl-1.13.0-cp38-cp38-macosx_12_0_x86_64.whl"
       },
+      "1.14.0": {
+        "tfx_bsl-1.14.0-cp38-cp38-macosx_12_0_x86_64.whl": {
+          "requires_dist": [
+            "absl-py (<2.0.0,>=0.9)",
+            "apache-beam[gcp] (<3,>=2.47)",
+            "google-api-python-client (<2,>=1.7.11)",
+            "numpy (>=1.22.0)",
+            "pandas (<2,>=1.0)",
+            "protobuf (<5,>=3.20.3)",
+            "pyarrow (<11,>=10)",
+            "tensorflow (<3,>=2.13)",
+            "tensorflow-metadata (<1.15.0,>=1.14.0)",
+            "tensorflow-serving-api (<3,>=2.13.0)"
+          ],
+          "requires_python": ">=3.8,<4"
+        },
+        "tfx_bsl-1.14.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": {
+          "requires_dist": [
+            "absl-py <2.0.0,>=0.9",
+            "apache-beam[gcp] <3,>=2.47",
+            "google-api-python-client <2,>=1.7.11",
+            "numpy >=1.22.0",
+            "pandas <2,>=1.0",
+            "protobuf <5,>=3.20.3",
+            "pyarrow <11,>=10",
+            "tensorflow <3,>=2.13",
+            "tensorflow-metadata <1.15.0,>=1.14.0",
+            "tensorflow-serving-api <3,>=2.13.0"
+          ],
+          "requires_python": ">=3.8,<4"
+        },
+        "tfx_bsl-1.14.0-cp38-cp38-win_amd64.whl": "1.14.0@tfx_bsl-1.14.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+      },
       "1.2.0": {
         "tfx_bsl-1.2.0-cp38-cp38-macosx_10_9_x86_64.whl": {
           "requires_dist": [
@@ -88325,6 +88468,39 @@
         },
         "tfx_bsl-1.13.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "1.13.0@tfx_bsl-1.13.0-cp39-cp39-macosx_12_0_x86_64.whl",
         "tfx_bsl-1.13.0-cp39-cp39-win_amd64.whl": "1.13.0@tfx_bsl-1.13.0-cp39-cp39-macosx_12_0_x86_64.whl"
+      },
+      "1.14.0": {
+        "tfx_bsl-1.14.0-cp39-cp39-macosx_12_0_x86_64.whl": {
+          "requires_dist": [
+            "absl-py (<2.0.0,>=0.9)",
+            "apache-beam[gcp] (<3,>=2.47)",
+            "google-api-python-client (<2,>=1.7.11)",
+            "numpy (>=1.22.0)",
+            "pandas (<2,>=1.0)",
+            "protobuf (<5,>=3.20.3)",
+            "pyarrow (<11,>=10)",
+            "tensorflow (<3,>=2.13)",
+            "tensorflow-metadata (<1.15.0,>=1.14.0)",
+            "tensorflow-serving-api (<3,>=2.13.0)"
+          ],
+          "requires_python": ">=3.8,<4"
+        },
+        "tfx_bsl-1.14.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": {
+          "requires_dist": [
+            "absl-py <2.0.0,>=0.9",
+            "apache-beam[gcp] <3,>=2.47",
+            "google-api-python-client <2,>=1.7.11",
+            "numpy >=1.22.0",
+            "pandas <2,>=1.0",
+            "protobuf <5,>=3.20.3",
+            "pyarrow <11,>=10",
+            "tensorflow <3,>=2.13",
+            "tensorflow-metadata <1.15.0,>=1.14.0",
+            "tensorflow-serving-api <3,>=2.13.0"
+          ],
+          "requires_python": ">=3.8,<4"
+        },
+        "tfx_bsl-1.14.0-cp39-cp39-win_amd64.whl": "1.14.0@tfx_bsl-1.14.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
       },
       "1.8.0": {
         "tfx_bsl-1.8.0-cp39-cp39-macosx_10_14_x86_64.whl": {
@@ -91184,6 +91360,9 @@
           ],
           "requires_python": ">=3.7"
         }
+      },
+      "2.6.0": {
+        "types_aiobotocore_personalize_runtime-2.6.0-py3-none-any.whl": "2.5.4@types_aiobotocore_personalize_runtime-2.5.4-py3-none-any.whl"
       }
     }
   },
@@ -91302,6 +91481,9 @@
           ],
           "requires_python": ">=3.7"
         }
+      },
+      "2.6.0": {
+        "types_aiobotocore_sms_voice-2.6.0-py3-none-any.whl": "2.5.4@types_aiobotocore_sms_voice-2.5.4-py3-none-any.whl"
       }
     }
   },

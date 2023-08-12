@@ -6863,6 +6863,9 @@
       },
       "1.3.2": {
         "basana-1.3.2-py3-none-any.whl": "1.3.0@basana-1.3.0-py3-none-any.whl"
+      },
+      "1.4.0": {
+        "basana-1.4.0-py3-none-any.whl": "1.3.0@basana-1.3.0-py3-none-any.whl"
       }
     }
   },
@@ -8719,6 +8722,21 @@
           "requires_python": ">=3.10"
         }
       },
+      "0.5.15": {
+        "bomf-0.5.15-py3-none-any.whl": {
+          "requires_dist": [
+            "attrs",
+            "bidict",
+            "bo4e",
+            "frozendict",
+            "injector",
+            "networkx",
+            "pydantic (>=2.0.0)",
+            "typeguard (>=4.0.1)"
+          ],
+          "requires_python": ">=3.10"
+        }
+      },
       "0.5.2": {
         "bomf-0.5.2-py3-none-any.whl": {
           "requires_dist": [
@@ -8771,28 +8789,16 @@
         }
       },
       "0.6.1": {
-        "bomf-0.6.1-py3-none-any.whl": {
-          "requires_dist": [
-            "attrs",
-            "bidict",
-            "bo4e",
-            "frozendict",
-            "injector",
-            "networkx",
-            "pydantic (>=2.0.0)",
-            "typeguard (>=4.0.1)"
-          ],
-          "requires_python": ">=3.10"
-        }
+        "bomf-0.6.1-py3-none-any.whl": "0.5.15@bomf-0.5.15-py3-none-any.whl"
       },
       "0.6.3": {
-        "bomf-0.6.3-py3-none-any.whl": "0.6.1@bomf-0.6.1-py3-none-any.whl"
+        "bomf-0.6.3-py3-none-any.whl": "0.5.15@bomf-0.5.15-py3-none-any.whl"
       },
       "0.6.4": {
-        "bomf-0.6.4-py3-none-any.whl": "0.6.1@bomf-0.6.1-py3-none-any.whl"
+        "bomf-0.6.4-py3-none-any.whl": "0.5.15@bomf-0.5.15-py3-none-any.whl"
       },
       "0.6.5": {
-        "bomf-0.6.5-py3-none-any.whl": "0.6.1@bomf-0.6.1-py3-none-any.whl"
+        "bomf-0.6.5-py3-none-any.whl": "0.5.15@bomf-0.5.15-py3-none-any.whl"
       }
     }
   },
@@ -33712,6 +33718,19 @@
       },
       "0.6.3": {
         "gammarer.aws_secure_vpc_bucket-0.6.3-py3-none-any.whl": "0.6.0@gammarer.aws_secure_vpc_bucket-0.6.0-py3-none-any.whl"
+      },
+      "0.6.4": {
+        "gammarer.aws_secure_vpc_bucket-0.6.4-py3-none-any.whl": {
+          "requires_dist": [
+            "aws-cdk-lib <3.0.0,>=2.65.0",
+            "constructs <11.0.0,>=10.0.5",
+            "gammarer.aws-secure-bucket <0.12.0,>=0.11.3",
+            "jsii <2.0.0,>=1.87.0",
+            "publication >=0.0.3",
+            "typeguard ~=2.13.3"
+          ],
+          "requires_python": "~=3.7"
+        }
       }
     }
   },
@@ -39320,6 +39339,26 @@
       },
       "0.3": {
         "inetbox_py-0.3-py3-none-any.whl": "0.2@inetbox_py-0.2-py3-none-any.whl"
+      }
+    }
+  },
+  "inference-core": {
+    "py3": {
+      "0.0.1": {
+        "inference_core-0.0.1-py3-none-any.whl": {
+          "provides_extras": [
+            "dev"
+          ],
+          "requires_dist": [
+            "flake8 ; extra == 'dev'",
+            "black ==22.3.0 ; extra == 'dev'",
+            "isort ; extra == 'dev'",
+            "twine ; extra == 'dev'",
+            "pytest ; extra == 'dev'",
+            "wheel ; extra == 'dev'"
+          ],
+          "requires_python": ">=3.7"
+        }
       }
     }
   },
@@ -52511,6 +52550,12 @@
       },
       "0.0.3": {
         "naist_codehash-0.0.3-py3-none-any.whl": "0.0.1@naist_codehash-0.0.1-py3-none-any.whl"
+      },
+      "0.1.0": {
+        "naist_codehash-0.1.0-py3-none-any.whl": "0.0.1@naist_codehash-0.0.1-py3-none-any.whl"
+      },
+      "0.1.1": {
+        "naist_codehash-0.1.1-py3-none-any.whl": "0.0.1@naist_codehash-0.0.1-py3-none-any.whl"
       }
     }
   },
@@ -75374,6 +75419,42 @@
           ],
           "requires_python": ">=3.7"
         }
+      },
+      "0.2.0": {
+        "sonyci-0.2.0-py3-none-any.whl": {
+          "provides_extras": [
+            "test",
+            "cli",
+            "cli-ci",
+            "tui",
+            "docs"
+          ],
+          "requires_dist": [
+            "pydantic~=2.1",
+            "requests-oauth2client~=1.1",
+            "loguru~=0.7",
+            "pytest~=7.4; extra == \"test\"",
+            "vcrpy~=4.4; extra == \"test\"",
+            "pytest-vcr~=1.0; extra == \"test\"",
+            "pytest-cov~=4.1; extra == \"test\"",
+            "pytest-sugar~=0.9; extra == \"test\"",
+            "pytest-xdist~=3.3; extra == \"test\"",
+            "urllib3~=1.26; extra == \"test\"",
+            "typer[all]~=0.9; extra == \"cli\"",
+            "typer~=0.9; extra == \"cli-ci\"",
+            "trogon~=0.5; extra == \"tui\"",
+            "mkdocs~=1.5; extra == \"docs\"",
+            "mkdocs-material~=9.1; extra == \"docs\"",
+            "mkdocs-git-revision-date-localized-plugin~=1.2; extra == \"docs\"",
+            "mike~=1.1; extra == \"docs\"",
+            "mkdocstrings[python]~=0.22; extra == \"docs\"",
+            "mkdocs-jupyter~=0.24; extra == \"docs\""
+          ],
+          "requires_python": ">=3.7"
+        }
+      },
+      "0.2.0a1": {
+        "sonyci-0.2.0a1-py3-none-any.whl": "0.2.0@sonyci-0.2.0-py3-none-any.whl"
       }
     }
   },
@@ -89330,6 +89411,9 @@
           ],
           "requires_python": ">=3.7"
         }
+      },
+      "2.6.0": {
+        "types_aiobotocore_codepipeline-2.6.0-py3-none-any.whl": "2.5.4@types_aiobotocore_codepipeline-2.5.4-py3-none-any.whl"
       }
     }
   },
