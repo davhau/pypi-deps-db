@@ -413,7 +413,9 @@
       "39": "27",
       "310": "27"
     },
-    "4.0.1": {
+    "4.0.1": "4.0.0",
+    "4.0.5": "4.0.4",
+    "4.0.0": {
       "27": {
         "install_requires": [
           "google-cloud-bigquery<3.0.0,>=2.4.0"
@@ -427,8 +429,7 @@
       "38": "27",
       "39": "27",
       "310": "27"
-    },
-    "4.0.5": "4.0.4"
+    }
   },
   "airflow-sops-secrets-backend": {
     "0.0.1": {
@@ -11463,7 +11464,10 @@
     "1.29.151": "1.30.0",
     "1.29.157": "1.30.0",
     "1.31.20": "1.30.0",
-    "1.31.19": "1.30.0"
+    "1.31.19": "1.30.0",
+    "1.29.150": "1.30.0",
+    "1.31.24": "1.30.0",
+    "1.31.9": "1.30.0"
   },
   "bottle-fdsend": {
     "0.1": {
@@ -13573,6 +13577,35 @@
           "dnspython",
           "dsinternals",
           "pyopenssl>=23.0.0",
+          "requests",
+          "requests_ntlm",
+          "pycryptodome",
+          "unicrypto"
+        ],
+        "extras_require": {
+          ":platform_system == \"Windows\"": [
+            "winacl",
+            "wmi"
+          ]
+        }
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "4.5.0": {
+      "27": {
+        "install_requires": [
+          "asn1crypto",
+          "cryptography>=37.0",
+          "impacket",
+          "ldap3",
+          "pyasn1==0.4.8",
+          "dnspython",
+          "dsinternals",
+          "pyopenssl>=22.0.0",
           "requests",
           "requests_ntlm",
           "pycryptodome",
@@ -43278,7 +43311,9 @@
     "0.0.19": "0.0.3",
     "0.0.9": "0.0.3",
     "0.0.10": "0.0.3",
-    "0.0.26": "0.0.3"
+    "0.0.26": "0.0.3",
+    "0.0.18": "0.0.3",
+    "0.0.23": "0.0.3"
   },
   "kanwarfypcms": {
     "0.0.1": {
@@ -47855,7 +47890,8 @@
       "39": "27",
       "310": "27"
     },
-    "0.0.47": "0.0.45"
+    "0.0.47": "0.0.45",
+    "0.0.53": "0.0.45"
   },
   "magic-admin-flask": {
     "0.0.0.0": {
@@ -54487,6 +54523,86 @@
       "38": "27",
       "39": "27",
       "310": "27"
+    },
+    "3.2.0": {
+      "27": {
+        "install_requires": [
+          "ofrak_io==1.*,>=1.0",
+          "ofrak_type==2.*,>=2.2.0rc0",
+          "ofrak_patch_maker==4.*,>=4.0.2rc0",
+          "aiohttp~=3.8.1",
+          "aiohttp-cors~=0.7.0",
+          "beartype~=0.12.0",
+          "black==23.3.0",
+          "fdt==0.3.3",
+          "importlib-metadata>=4.13",
+          "intervaltree==3.1.0",
+          "keystone-engine==0.9.2",
+          "lief==0.12.3",
+          "orjson~=3.8.7",
+          "pefile==2023.2.7",
+          "pycdlib==1.12.0",
+          "reedsolo==1.7.0",
+          "sortedcontainers==2.2.2",
+          "synthol~=0.1.1",
+          "typeguard~=2.13.3",
+          "ubi-reader==0.8.5"
+        ],
+        "extras_require": {
+          "docs": [
+            "mkdocs==1.2.3",
+            "mkdocs-autorefs==0.3.0",
+            "mkdocstrings==0.16.2",
+            "mkdocs-literate-nav==0.4.0",
+            "mkdocs-material==7.3.3",
+            "mkdocs_gen_files==0.3.3",
+            "jinja2==3.0.0",
+            "pytkdocs>=0.12.0",
+            "PyYAML>=5.4"
+          ],
+          ":platform_system == \"Windows\"": [
+            "python-magic-bin"
+          ],
+          ":platform_system != \"Windows\"": [
+            "python-magic",
+            "xattr==0.10.1"
+          ],
+          "test": [
+            "ofrak_angr~=1.0",
+            "ofrak_capstone~=1.0",
+            "autoflake==1.4",
+            "pytest",
+            "hypothesis~=6.39.3",
+            "hypothesis-trio",
+            "trio-asyncio",
+            "mypy==0.942",
+            "psutil~=5.9",
+            "pyelftools==0.29",
+            "pytest-aiohttp",
+            "pytest-asyncio==0.19.0",
+            "pytest-lazy-fixture",
+            "pytest-cov",
+            "pytest-xdist",
+            "requests",
+            "fun-coverage==0.2.0"
+          ],
+          "non-pypi": [
+            "bincopy@ git+https://github.com/eerimoq/bincopy.git@17.14.5",
+            "binwalk@ git+https://github.com/ReFirmLabs/binwalk.git@v2.3.4"
+          ],
+          ":python_version >= \"3.8\"": [
+            "jefferson==0.4.5"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
     }
   },
   "ohai": {
@@ -56092,7 +56208,8 @@
     "0.0.4": "0.0.2",
     "0.0.8": "0.0.2",
     "0.1.3": "0.0.2",
-    "0.1.5": "0.0.2"
+    "0.1.5": "0.0.2",
+    "0.1.1": "0.0.2"
   },
   "pandas-appender": {
     "0.9.0": {
@@ -77178,7 +77295,19 @@
     "3.0.936": "3.0.887",
     "3.0.911": "3.0.887",
     "3.0.926": "3.0.887",
-    "3.0.927": "3.0.887"
+    "3.0.927": "3.0.887",
+    "3.0.951": {
+      "27": {
+        "install_requires": [
+          "tencentcloud-sdk-python-common==3.0.951"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "tencentcloud-sdk-python-gaap": {
     "3.0.251": {
@@ -77889,7 +78018,9 @@
     },
     "3.0.913": "3.0.251",
     "3.0.930": "3.0.251",
-    "3.0.931": "3.0.251"
+    "3.0.931": "3.0.251",
+    "3.0.927": "3.0.251",
+    "3.0.946": "3.0.251"
   },
   "tencentcloud-sdk-python-vpc": {
     "3.0.252": {
@@ -78600,6 +78731,18 @@
       "27": {
         "install_requires": [
           "tencentcloud-sdk-python-common==3.0.953"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "3.0.952": {
+      "27": {
+        "install_requires": [
+          "tencentcloud-sdk-python-common==3.0.952"
         ]
       },
       "36": "27",
@@ -82004,7 +82147,9 @@
       "38": "36",
       "39": "36",
       "310": "36"
-    }
+    },
+    "2.5.2.post1": "2.5.1",
+    "2.6.0": "2.5.1"
   },
   "typtrain": {
     "1.0.0": {
@@ -84000,7 +84145,8 @@
     "1.20": "1.0",
     "1.21": "1.0",
     "1.22": "1.0",
-    "1.23": "1.0"
+    "1.23": "1.0",
+    "1.24": "1.0"
   },
   "xueshu-toutiao-201607-201706": {
     "2023.2.16.0": {
@@ -84996,10 +85142,11 @@
       "39": "27",
       "310": "27"
     },
-    "12.0": "7.0",
-    "11.0": "7.0",
-    "13.0": "7.0",
-    "7.0": {
+    "12.0": "3.0",
+    "11.0": "3.0",
+    "13.0": "3.0",
+    "7.0": "3.0",
+    "3.0": {
       "27": {
         "install_requires": [
           "requests",
