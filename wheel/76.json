@@ -39417,6 +39417,234 @@
       },
       "1.5.1": {
         "kedro_datasets-1.5.1-py3-none-any.whl": "1.5.0@kedro_datasets-1.5.0-py3-none-any.whl"
+      },
+      "1.5.2": {
+        "kedro_datasets-1.5.2-py3-none-any.whl": {
+          "provides_extras": [
+            "all",
+            "api",
+            "api.apidataset",
+            "biosequence",
+            "biosequence.biosequencedataset",
+            "dask",
+            "dask.parquetdataset",
+            "databricks",
+            "databricks.managedtabledataset",
+            "docs",
+            "geopandas",
+            "geopandas.geojsondataset",
+            "hdfs-base",
+            "holoviews",
+            "holoviews.holoviewswriter",
+            "matplotlib",
+            "matplotlib.matplotlibwriter",
+            "networkx",
+            "networkx.networkxdataset",
+            "pandas",
+            "pandas-base",
+            "pandas.csvdataset",
+            "pandas.deltatabledataset",
+            "pandas.exceldataset",
+            "pandas.featherdataset",
+            "pandas.gbqquerydataset",
+            "pandas.gbqtabledataset",
+            "pandas.genericdataset",
+            "pandas.hdfdataset",
+            "pandas.jsondataset",
+            "pandas.parquetdataset",
+            "pandas.sqlquerydataset",
+            "pandas.sqltabledataset",
+            "pandas.xmldataset",
+            "pickle",
+            "pickle.pickledataset",
+            "pillow",
+            "pillow.imagedataset",
+            "plotly",
+            "plotly-base",
+            "plotly.jsondataset",
+            "plotly.plotlydataset",
+            "polars",
+            "polars.csvdataset",
+            "redis",
+            "redis.pickledataset",
+            "s3fs-base",
+            "snowflake",
+            "snowflake.snowparktabledataset",
+            "spark",
+            "spark-base",
+            "spark.deltatabledataset",
+            "spark.sparkdataset",
+            "spark.sparkhivedataset",
+            "spark.sparkjdbcdataset",
+            "svmlight",
+            "svmlight.svmlightdataset",
+            "tensorflow",
+            "tensorflow.tensorflowmodeldataset",
+            "test",
+            "video",
+            "video.videodataset",
+            "yaml",
+            "yaml.yamldataset"
+          ],
+          "requires_dist": [
+            "kedro >=0.16",
+            "lazy-loader",
+            "kedro-datasets[api,biosequence,dask,databricks,geopandas,holoviews,matplotlib,networkx,pickle,pillow,plotly,polars,redis,snowflake,spark,svmlight,tensorflow,video,yaml] ; extra == 'all'",
+            "kedro-datasets[api.apidataset] ; extra == 'api'",
+            "requests ~=2.20 ; extra == 'api.apidataset'",
+            "kedro-datasets[biosequence.biosequencedataset] ; extra == 'biosequence'",
+            "biopython ~=1.73 ; extra == 'biosequence.biosequencedataset'",
+            "kedro-datasets[dask.parquetdataset] ; extra == 'dask'",
+            "dask[complete] >=2021.10 ; extra == 'dask.parquetdataset'",
+            "triad <1.0,>=0.6.7 ; extra == 'dask.parquetdataset'",
+            "kedro-datasets[databricks.managedtabledataset] ; extra == 'databricks'",
+            "kedro-datasets[pandas-base,spark-base] ; extra == 'databricks.managedtabledataset'",
+            "delta-spark ~=1.2.1 ; extra == 'databricks.managedtabledataset'",
+            "docutils ==0.16 ; extra == 'docs'",
+            "sphinx ~=5.3.0 ; extra == 'docs'",
+            "sphinx-rtd-theme ==1.2.0 ; extra == 'docs'",
+            "sphinx-autodoc-typehints ==1.20.2 ; extra == 'docs'",
+            "sphinx-copybutton ==0.3.1 ; extra == 'docs'",
+            "sphinx-notfound-page ; extra == 'docs'",
+            "ipykernel <7.0,>=5.3 ; extra == 'docs'",
+            "sphinxcontrib-mermaid ~=0.7.1 ; extra == 'docs'",
+            "myst-parser ~=1.0.0 ; extra == 'docs'",
+            "Jinja2 <3.1.0 ; extra == 'docs'",
+            "kedro-datasets[geopandas.geojsondataset] ; extra == 'geopandas'",
+            "geopandas <1.0,>=0.6.0 ; extra == 'geopandas.geojsondataset'",
+            "pyproj ~=3.0 ; extra == 'geopandas.geojsondataset'",
+            "hdfs <3.0,>=2.5.8 ; extra == 'hdfs-base'",
+            "kedro-datasets[holoviews.holoviewswriter] ; extra == 'holoviews'",
+            "holoviews ~=1.13.0 ; extra == 'holoviews.holoviewswriter'",
+            "kedro-datasets[matplotlib.matplotlibwriter] ; extra == 'matplotlib'",
+            "matplotlib <4.0,>=3.0.3 ; extra == 'matplotlib.matplotlibwriter'",
+            "kedro-datasets[networkx.networkxdataset] ; extra == 'networkx'",
+            "networkx ~=2.4 ; extra == 'networkx.networkxdataset'",
+            "kedro-datasets[pandas.csvdataset,pandas.deltatabledataset,pandas.exceldataset,pandas.featherdataset,pandas.gbqquerydataset,pandas.gbqtabledataset,pandas.genericdataset,pandas.hdfdataset,pandas.jsondataset,pandas.parquetdataset,pandas.sqlquerydataset,pandas.sqltabledataset,pandas.xmldataset] ; extra == 'pandas'",
+            "pandas <3.0,>=1.3 ; extra == 'pandas-base'",
+            "kedro-datasets[pandas-base] ; extra == 'pandas.csvdataset'",
+            "kedro-datasets[pandas-base] ; extra == 'pandas.deltatabledataset'",
+            "deltalake >=0.10.0 ; extra == 'pandas.deltatabledataset'",
+            "kedro-datasets[pandas-base] ; extra == 'pandas.exceldataset'",
+            "openpyxl <4.0,>=3.0.6 ; extra == 'pandas.exceldataset'",
+            "kedro-datasets[pandas-base] ; extra == 'pandas.featherdataset'",
+            "kedro-datasets[pandas-base] ; extra == 'pandas.gbqquerydataset'",
+            "pandas-gbq <0.18.0,>=0.12.0 ; extra == 'pandas.gbqquerydataset'",
+            "kedro-datasets[pandas-base] ; extra == 'pandas.gbqtabledataset'",
+            "pandas-gbq <0.18.0,>=0.12.0 ; extra == 'pandas.gbqtabledataset'",
+            "kedro-datasets[pandas-base] ; extra == 'pandas.genericdataset'",
+            "kedro-datasets[pandas-base] ; extra == 'pandas.hdfdataset'",
+            "tables ~=3.6 ; (platform_system != \"Windows\") and extra == 'pandas.hdfdataset'",
+            "tables ~=3.6.0 ; (platform_system == \"Windows\") and extra == 'pandas.hdfdataset'",
+            "kedro-datasets[pandas-base] ; extra == 'pandas.jsondataset'",
+            "kedro-datasets[pandas-base] ; extra == 'pandas.parquetdataset'",
+            "pyarrow >=6.0 ; extra == 'pandas.parquetdataset'",
+            "kedro-datasets[pandas-base] ; extra == 'pandas.sqlquerydataset'",
+            "SQLAlchemy <3.0,>=1.4 ; extra == 'pandas.sqlquerydataset'",
+            "pyodbc ~=4.0 ; extra == 'pandas.sqlquerydataset'",
+            "kedro-datasets[pandas-base] ; extra == 'pandas.sqltabledataset'",
+            "SQLAlchemy <3.0,>=1.4 ; extra == 'pandas.sqltabledataset'",
+            "kedro-datasets[pandas-base] ; extra == 'pandas.xmldataset'",
+            "lxml ~=4.6 ; extra == 'pandas.xmldataset'",
+            "kedro-datasets[pickle.pickledataset] ; extra == 'pickle'",
+            "compress-pickle[lz4] ~=2.1.0 ; extra == 'pickle.pickledataset'",
+            "kedro-datasets[pillow.imagedataset] ; extra == 'pillow'",
+            "Pillow ~=9.0 ; extra == 'pillow.imagedataset'",
+            "kedro-datasets[plotly.jsondataset,plotly.plotlydataset] ; extra == 'plotly'",
+            "plotly <6.0,>=4.8.0 ; extra == 'plotly-base'",
+            "kedro-datasets[plotly-base] ; extra == 'plotly.jsondataset'",
+            "kedro-datasets[pandas-base,plotly-base] ; extra == 'plotly.plotlydataset'",
+            "kedro-datasets[polars.csvdataset] ; extra == 'polars'",
+            "polars ~=0.17.0 ; extra == 'polars.csvdataset'",
+            "kedro-datasets[redis.pickledataset] ; extra == 'redis'",
+            "redis ~=4.1 ; extra == 'redis.pickledataset'",
+            "s3fs <0.5,>=0.3.0 ; extra == 's3fs-base'",
+            "kedro-datasets[snowflake.snowparktabledataset] ; extra == 'snowflake'",
+            "pyarrow ~=8.0 ; extra == 'snowflake.snowparktabledataset'",
+            "snowflake-snowpark-python ~=1.0.0 ; (python_version == \"3.8\") and extra == 'snowflake.snowparktabledataset'",
+            "kedro-datasets[spark.deltatabledataset,spark.sparkdataset,spark.sparkhivedataset,spark.sparkjdbcdataset] ; extra == 'spark'",
+            "pyspark <4.0,>=2.2 ; extra == 'spark-base'",
+            "kedro-datasets[hdfs-base,s3fs-base,spark-base] ; extra == 'spark.deltatabledataset'",
+            "delta-spark <3.0,>=1.0 ; extra == 'spark.deltatabledataset'",
+            "kedro-datasets[hdfs-base,s3fs-base,spark-base] ; extra == 'spark.sparkdataset'",
+            "kedro-datasets[hdfs-base,s3fs-base,spark-base] ; extra == 'spark.sparkhivedataset'",
+            "kedro-datasets[hdfs-base,s3fs-base,spark-base] ; extra == 'spark.sparkjdbcdataset'",
+            "kedro-datasets[svmlight.svmlightdataset] ; extra == 'svmlight'",
+            "scikit-learn ~=1.0.2 ; extra == 'svmlight.svmlightdataset'",
+            "scipy ~=1.7.3 ; extra == 'svmlight.svmlightdataset'",
+            "kedro-datasets[tensorflow.tensorflowmodeldataset] ; extra == 'tensorflow'",
+            "tensorflow ~=2.0 ; (platform_system != \"Darwin\" or platform_machine != \"arm64\") and extra == 'tensorflow.tensorflowmodeldataset'",
+            "tensorflow-macos ~=2.0 ; (platform_system == \"Darwin\" and platform_machine == \"arm64\") and extra == 'tensorflow.tensorflowmodeldataset'",
+            "adlfs <=2022.2,>=2021.7.1 ; extra == 'test'",
+            "bandit <2.0,>=1.6.2 ; extra == 'test'",
+            "behave ==1.2.6 ; extra == 'test'",
+            "biopython ~=1.73 ; extra == 'test'",
+            "blacken-docs ==1.9.2 ; extra == 'test'",
+            "black ~=22.0 ; extra == 'test'",
+            "compress-pickle[lz4] ~=1.2.0 ; extra == 'test'",
+            "coverage[toml] ; extra == 'test'",
+            "dask[complete] ; extra == 'test'",
+            "delta-spark ~=1.2.1 ; extra == 'test'",
+            "deltalake >=0.10.0 ; extra == 'test'",
+            "dill ~=0.3.1 ; extra == 'test'",
+            "filelock <4.0,>=3.4.0 ; extra == 'test'",
+            "gcsfs <=2022.1,>=2021.4 ; extra == 'test'",
+            "geopandas <1.0,>=0.6.0 ; extra == 'test'",
+            "hdfs <3.0,>=2.5.8 ; extra == 'test'",
+            "holoviews ~=1.13.0 ; extra == 'test'",
+            "import-linter[toml] ==1.2.6 ; extra == 'test'",
+            "ipython <8.0,>=7.31.1 ; extra == 'test'",
+            "Jinja2 <3.1.0 ; extra == 'test'",
+            "joblib >=0.14 ; extra == 'test'",
+            "jupyterlab ~=3.0 ; extra == 'test'",
+            "jupyter ~=1.0 ; extra == 'test'",
+            "lxml ~=4.6 ; extra == 'test'",
+            "memory-profiler <1.0,>=0.50.0 ; extra == 'test'",
+            "networkx ~=2.4 ; extra == 'test'",
+            "opencv-python ~=4.5.5.64 ; extra == 'test'",
+            "openpyxl <4.0,>=3.0.3 ; extra == 'test'",
+            "pandas-gbq <0.18.0,>=0.12.0 ; extra == 'test'",
+            "pandas <2,>=1.3 ; extra == 'test'",
+            "Pillow ~=9.0 ; extra == 'test'",
+            "plotly <6.0,>=4.8.0 ; extra == 'test'",
+            "polars ~=0.15.13 ; extra == 'test'",
+            "pre-commit <3.0,>=2.9.2 ; extra == 'test'",
+            "psutil ==5.8.0 ; extra == 'test'",
+            "pyarrow ~=8.0 ; extra == 'test'",
+            "pylint <3.0,>=2.5.2 ; extra == 'test'",
+            "pyodbc ~=4.0.35 ; extra == 'test'",
+            "pyproj ~=3.0 ; extra == 'test'",
+            "pyspark <4.0,>=2.2 ; extra == 'test'",
+            "pytest-cov ~=3.0 ; extra == 'test'",
+            "pytest-mock <2.0,>=1.7.1 ; extra == 'test'",
+            "pytest-xdist[psutil] ~=2.2.1 ; extra == 'test'",
+            "pytest ~=7.2 ; extra == 'test'",
+            "redis ~=4.1 ; extra == 'test'",
+            "requests-mock ~=1.6 ; extra == 'test'",
+            "requests ~=2.20 ; extra == 'test'",
+            "s3fs <0.5,>=0.3.0 ; extra == 'test'",
+            "scikit-learn ~=1.0.2 ; extra == 'test'",
+            "scipy ~=1.7.3 ; extra == 'test'",
+            "SQLAlchemy <3.0,>=1.4 ; extra == 'test'",
+            "tables ~=3.7 ; extra == 'test'",
+            "triad <1.0,>=0.6.7 ; extra == 'test'",
+            "trufflehog ~=2.1 ; extra == 'test'",
+            "xlsxwriter ~=1.0 ; extra == 'test'",
+            "tensorflow ~=2.0 ; (platform_system != \"Darwin\" or platform_machine != \"arm64\") and extra == 'test'",
+            "tensorflow-macos ~=2.0 ; (platform_system == \"Darwin\" and platform_machine == \"arm64\") and extra == 'test'",
+            "matplotlib <3.4,>=3.0.3 ; (python_version < \"3.10\") and extra == 'test'",
+            "moto ==1.3.7 ; (python_version < \"3.10\") and extra == 'test'",
+            "matplotlib <3.6,>=3.5 ; (python_version == \"3.10\") and extra == 'test'",
+            "moto ==3.0.4 ; (python_version == \"3.10\") and extra == 'test'",
+            "snowflake-snowpark-python ~=1.0.0 ; (python_version == \"3.8\") and extra == 'test'",
+            "kedro-datasets[video.videodataset] ; extra == 'video'",
+            "opencv-python ~=4.5.5.64 ; extra == 'video.videodataset'",
+            "kedro-datasets[yaml.yamldataset] ; extra == 'yaml'",
+            "kedro-datasets[pandas-base] ; extra == 'yaml.yamldataset'",
+            "PyYAML <7.0,>=4.2 ; extra == 'yaml.yamldataset'"
+          ],
+          "requires_python": "<3.11,>=3.7"
+        }
       }
     }
   },
@@ -47052,6 +47280,9 @@
       },
       "0.9": {
         "monday_lib-0.9-py3-none-any.whl": "0.1@monday_lib-0.1-py3-none-any.whl"
+      },
+      "1.0": {
+        "monday_lib-1.0-py3-none-any.whl": "0.1@monday_lib-0.1-py3-none-any.whl"
       }
     }
   },
@@ -61387,6 +61618,16 @@
         "prelude_cli-1.3.3-py3-none-any.whl": {
           "requires_dist": [
             "prelude-sdk ==1.3.5",
+            "click >8",
+            "rich"
+          ],
+          "requires_python": ">=3.8"
+        }
+      },
+      "1.4.0": {
+        "prelude_cli-1.4.0-py3-none-any.whl": {
+          "requires_dist": [
+            "prelude-sdk ==1.4.0",
             "click >8",
             "rich"
           ],
@@ -82430,6 +82671,13 @@
             "tencentcloud-sdk-python-common (==3.0.957)"
           ]
         }
+      },
+      "3.0.958": {
+        "tencentcloud_sdk_python_dtf-3.0.958-py2.py3-none-any.whl": {
+          "requires_dist": [
+            "tencentcloud-sdk-python-common (==3.0.958)"
+          ]
+        }
       }
     }
   },
@@ -83102,6 +83350,13 @@
         "tencentcloud_sdk_python_lcic-3.0.957-py2.py3-none-any.whl": {
           "requires_dist": [
             "tencentcloud-sdk-python-common (==3.0.957)"
+          ]
+        }
+      },
+      "3.0.958": {
+        "tencentcloud_sdk_python_lcic-3.0.958-py2.py3-none-any.whl": {
+          "requires_dist": [
+            "tencentcloud-sdk-python-common (==3.0.958)"
           ]
         }
       }
@@ -85168,6 +85423,13 @@
         "tencentcloud_sdk_python_tione-3.0.957-py2.py3-none-any.whl": {
           "requires_dist": [
             "tencentcloud-sdk-python-common (==3.0.957)"
+          ]
+        }
+      },
+      "3.0.958": {
+        "tencentcloud_sdk_python_tione-3.0.958-py2.py3-none-any.whl": {
+          "requires_dist": [
+            "tencentcloud-sdk-python-common (==3.0.958)"
           ]
         }
       }
@@ -87514,6 +87776,13 @@
       },
       "1.2.2": {
         "type_inspector-1.2.2-py3-none-any.whl": "0.1.1@type_inspector-0.1.1-py3-none-any.whl"
+      }
+    }
+  },
+  "typeevalpy-external-module": {
+    "py3": {
+      "1.0.0": {
+        "typeevalpy_external_module-1.0.0-py3-none-any.whl": {}
       }
     }
   },
