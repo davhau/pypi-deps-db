@@ -5128,7 +5128,10 @@
       "310": "27"
     },
     "1.29.148": "1.30.1",
-    "1.31.17": "1.30.1"
+    "1.31.17": "1.30.1",
+    "1.29.164": "1.30.1",
+    "1.31.19": "1.30.1",
+    "1.31.25": "1.30.1"
   },
   "botocore-a-la-carte-codecommit": {
     "1.29.49": "1.30.1",
@@ -5267,7 +5270,9 @@
     "1.31.23": "1.30.1",
     "1.29.156": "1.30.1",
     "1.31.8": "1.30.1",
-    "1.29.152": "1.30.1"
+    "1.29.152": "1.30.1",
+    "1.29.153": "1.30.1",
+    "1.31.16": "1.30.1"
   },
   "botocore-a-la-carte-ecs": {
     "1.29.47": "1.30.0",
@@ -5406,7 +5411,9 @@
     "1.31.0": "1.30.0",
     "1.31.21": "1.30.0",
     "1.31.2": "1.30.0",
-    "1.29.164": "1.30.0"
+    "1.29.164": "1.30.0",
+    "1.30.1": "1.30.0",
+    "1.31.17": "1.30.0"
   },
   "botocore-a-la-carte-signer": {
     "1.29.48": "1.31.0",
@@ -5541,7 +5548,8 @@
     "1.29.148": "1.31.0",
     "1.29.156": "1.31.0",
     "1.29.150": "1.31.0",
-    "1.29.157": "1.31.0"
+    "1.29.157": "1.31.0",
+    "1.29.151": "1.31.0"
   },
   "botovh": {
     "0.2.0": {
@@ -25910,97 +25918,7 @@
       "39": "36",
       "310": "36"
     },
-    "0.8.6.dev3": {
-      "36": {
-        "install_requires": [
-          "triad>=0.9.1",
-          "adagio>=0.2.4",
-          "pyarrow>=0.15.1",
-          "pandas>=1.2.0",
-          "qpd>=0.4.4",
-          "fugue-sql-antlr>=0.1.6",
-          "sqlglot",
-          "jinja2"
-        ],
-        "extras_require": {
-          "sql": [
-            "qpd>=0.4.4",
-            "fugue-sql-antlr>=0.1.6",
-            "sqlglot",
-            "jinja2"
-          ],
-          "cpp_sql_parser": [
-            "fugue-sql-antlr[cpp]>=0.1.6"
-          ],
-          "spark": [
-            "pyspark>=3.1.1"
-          ],
-          "dask": [
-            "qpd[dask]>=0.4.4"
-          ],
-          "dask:python_version < \"3.8\"": [
-            "dask[dataframe,distributed]"
-          ],
-          "dask:python_version >= \"3.8\"": [
-            "dask[dataframe,distributed]<2023.7.1,>=2022.9.0"
-          ],
-          "ray": [
-            "ray[data]>=2.1.0",
-            "duckdb>=0.5.0",
-            "pyarrow>=6.0.1"
-          ],
-          "duckdb": [
-            "duckdb>=0.5.0",
-            "pyarrow>=6.0.1",
-            "numpy"
-          ],
-          "polars": [
-            "polars"
-          ],
-          "ibis": [],
-          "ibis:python_version < \"3.8\"": [
-            "ibis-framework>=2.1.1"
-          ],
-          "ibis:python_version >= \"3.8\"": [
-            "ibis-framework<6,>=3.2.0"
-          ],
-          "notebook": [
-            "notebook",
-            "jupyterlab",
-            "ipython>=7.10.0"
-          ],
-          "all": [
-            "sqlglot",
-            "jinja2",
-            "fugue-sql-antlr[cpp]>=0.1.6",
-            "pyspark>=3.1.1",
-            "ray[data]>=2.1.0",
-            "qpd[dask]>=0.4.4",
-            "notebook",
-            "jupyterlab",
-            "ipython>=7.10.0",
-            "duckdb>=0.5.0",
-            "pyarrow>=6.0.1",
-            "polars"
-          ],
-          "all:python_version < \"3.8\"": [
-            "dask[dataframe,distributed]",
-            "ibis-framework>=2.1.1"
-          ],
-          "all:python_version >= \"3.8\"": [
-            "dask[dataframe,distributed]<2023.7.1,>=2022.9.0",
-            "ibis-framework<6,>=3.2.0"
-          ]
-        },
-        "python_requires": [
-          ">=3.7"
-        ]
-      },
-      "37": "36",
-      "38": "36",
-      "39": "36",
-      "310": "36"
-    },
+    "0.8.6.dev3": "0.8.6.dev2",
     "0.8.5": {
       "36": {
         "install_requires": [
@@ -26081,6 +25999,189 @@
           "all:python_version >= \"3.8\"": [
             "dask[dataframe,distributed]>=2022.9.0",
             "ibis-framework>=3.2.0"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "0.8.5.dev1": "0.8.5",
+    "0.8.6.dev1": {
+      "36": {
+        "install_requires": [
+          "triad>=0.9.1",
+          "adagio>=0.2.4",
+          "pyarrow>=0.15.1",
+          "pandas>=1.2.0",
+          "qpd>=0.4.4",
+          "fugue-sql-antlr>=0.1.6",
+          "sqlglot",
+          "jinja2"
+        ],
+        "extras_require": {
+          "sql": [
+            "qpd>=0.4.4",
+            "fugue-sql-antlr>=0.1.6",
+            "sqlglot",
+            "jinja2"
+          ],
+          "cpp_sql_parser": [
+            "fugue-sql-antlr[cpp]>=0.1.6"
+          ],
+          "spark": [
+            "pyspark>=3.1.1"
+          ],
+          "dask": [
+            "qpd[dask]>=0.4.4"
+          ],
+          "dask:python_version < \"3.8\"": [
+            "dask[dataframe,distributed]"
+          ],
+          "dask:python_version >= \"3.8\"": [
+            "dask[dataframe,distributed]>=2022.9.0"
+          ],
+          "ray": [
+            "ray[data]>=2.1.0",
+            "duckdb>=0.5.0",
+            "pyarrow>=6.0.1"
+          ],
+          "duckdb": [
+            "duckdb>=0.5.0",
+            "pyarrow>=6.0.1",
+            "numpy"
+          ],
+          "polars": [
+            "polars"
+          ],
+          "ibis": [],
+          "ibis:python_version < \"3.8\"": [
+            "ibis-framework>=2.1.1"
+          ],
+          "ibis:python_version >= \"3.8\"": [
+            "ibis-framework<6,>=3.2.0"
+          ],
+          "notebook": [
+            "notebook",
+            "jupyterlab",
+            "ipython>=7.10.0"
+          ],
+          "all": [
+            "sqlglot",
+            "jinja2",
+            "fugue-sql-antlr[cpp]>=0.1.6",
+            "pyspark>=3.1.1",
+            "ray[data]>=2.1.0",
+            "qpd[dask]>=0.4.4",
+            "notebook",
+            "jupyterlab",
+            "ipython>=7.10.0",
+            "duckdb>=0.5.0",
+            "pyarrow>=6.0.1",
+            "polars"
+          ],
+          "all:python_version < \"3.8\"": [
+            "dask[dataframe,distributed]",
+            "ibis-framework>=2.1.1"
+          ],
+          "all:python_version >= \"3.8\"": [
+            "dask[dataframe,distributed]>=2022.9.0",
+            "ibis-framework<6,>=3.2.0"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "0.8.6.dev2": {
+      "36": {
+        "install_requires": [
+          "triad>=0.9.1",
+          "adagio>=0.2.4",
+          "pyarrow>=0.15.1",
+          "pandas>=1.2.0",
+          "qpd>=0.4.4",
+          "fugue-sql-antlr>=0.1.6",
+          "sqlglot",
+          "jinja2"
+        ],
+        "extras_require": {
+          "sql": [
+            "qpd>=0.4.4",
+            "fugue-sql-antlr>=0.1.6",
+            "sqlglot",
+            "jinja2"
+          ],
+          "cpp_sql_parser": [
+            "fugue-sql-antlr[cpp]>=0.1.6"
+          ],
+          "spark": [
+            "pyspark>=3.1.1"
+          ],
+          "dask": [
+            "qpd[dask]>=0.4.4"
+          ],
+          "dask:python_version < \"3.8\"": [
+            "dask[dataframe,distributed]"
+          ],
+          "dask:python_version >= \"3.8\"": [
+            "dask[dataframe,distributed]<2023.7.1,>=2022.9.0"
+          ],
+          "ray": [
+            "ray[data]>=2.1.0",
+            "duckdb>=0.5.0",
+            "pyarrow>=6.0.1"
+          ],
+          "duckdb": [
+            "duckdb>=0.5.0",
+            "pyarrow>=6.0.1",
+            "numpy"
+          ],
+          "polars": [
+            "polars"
+          ],
+          "ibis": [],
+          "ibis:python_version < \"3.8\"": [
+            "ibis-framework>=2.1.1"
+          ],
+          "ibis:python_version >= \"3.8\"": [
+            "ibis-framework<6,>=3.2.0"
+          ],
+          "notebook": [
+            "notebook",
+            "jupyterlab",
+            "ipython>=7.10.0"
+          ],
+          "all": [
+            "sqlglot",
+            "jinja2",
+            "fugue-sql-antlr[cpp]>=0.1.6",
+            "pyspark>=3.1.1",
+            "ray[data]>=2.1.0",
+            "qpd[dask]>=0.4.4",
+            "notebook",
+            "jupyterlab",
+            "ipython>=7.10.0",
+            "duckdb>=0.5.0",
+            "pyarrow>=6.0.1",
+            "polars"
+          ],
+          "all:python_version < \"3.8\"": [
+            "dask[dataframe,distributed]",
+            "ibis-framework>=2.1.1"
+          ],
+          "all:python_version >= \"3.8\"": [
+            "dask[dataframe,distributed]<2023.7.1,>=2022.9.0",
+            "ibis-framework<6,>=3.2.0"
           ]
         },
         "python_requires": [
@@ -27571,7 +27672,8 @@
       "39": "27",
       "310": "27"
     },
-    "1.2.1": "1.2.0"
+    "1.2.1": "1.2.0",
+    "1.2.2": "1.2.0"
   },
   "google-cloud-error-reporting-tcspowerflow": {
     "1.4.1": {
@@ -29262,10 +29364,11 @@
     }
   },
   "hs-api": {
-    "0.1.4": "0.1.2",
-    "0.1.5": "0.1.2",
-    "0.1.7": "0.1.2",
-    "0.1.2": {
+    "0.1.4": "0.1.1",
+    "0.1.5": "0.1.1",
+    "0.1.7": "0.1.1",
+    "0.1.2": "0.1.1",
+    "0.1.1": {
       "27": {
         "install_requires": [
           "PyYAML<7.0,>=6.0",
@@ -37603,7 +37706,9 @@
     "1.23.3.dev22": "1.17.1",
     "1.23.2.dev14": "1.17.1",
     "1.22.3.dev2": "1.17.1",
-    "1.23.3.dev79": "1.17.1"
+    "1.23.3.dev79": "1.17.1",
+    "1.23.0": "1.17.1",
+    "1.23.3.dev89": "1.17.1"
   },
   "latexmk.py": {
     "0.1": {
@@ -44649,7 +44754,11 @@
     "0.0.839": "0.0.7",
     "0.0.902": "0.0.7",
     "0.0.906": "0.0.7",
-    "0.0.957": "0.0.7"
+    "0.0.957": "0.0.7",
+    "0.0.840": "0.0.7",
+    "0.0.860": "0.0.7",
+    "0.0.931": "0.0.7",
+    "0.0.956": "0.0.7"
   },
   "nboost": {
     "0.0.1": {
@@ -91338,7 +91447,8 @@
     "2.10.17": "2.10.15",
     "2.11.2": "2.11.1",
     "2.11.3": "2.11.1",
-    "2.10.14": "2.10.11"
+    "2.10.14": "2.10.11",
+    "2.10.21": "2.11.1"
   },
   "prenoms": {
     "0.1.8": {
@@ -111042,7 +111152,8 @@
       "310": "27"
     },
     "0.3.0": "0.2.0",
-    "0.3.2": "0.2.0"
+    "0.3.2": "0.2.0",
+    "0.3.1": "0.2.0"
   },
   "sprite-detection-module-masternhat": {
     "1.0.1": {
@@ -113426,7 +113537,9 @@
       "39": "27",
       "310": "27"
     },
-    "3.0.920": "3.0.386"
+    "3.0.920": "3.0.386",
+    "3.0.915": "3.0.386",
+    "3.0.921": "3.0.386"
   },
   "tendencia": {
     "0.1.1": {
@@ -117975,7 +118088,8 @@
     "0.2.1": "0.1.1",
     "0.3.0": "0.1.1",
     "0.3.1": "0.1.1",
-    "0.3.2": "0.1.1"
+    "0.3.2": "0.1.1",
+    "0.3.4": "0.1.1"
   },
   "vertsplitnn-saf": {
     "0.1.0": {

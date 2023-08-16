@@ -23251,6 +23251,9 @@
       "1.31.26": {
         "botocore_a_la_carte_iot1click_devices-1.31.26-py3-none-any.whl": "1.29.100@botocore_a_la_carte_iot1click_devices-1.29.100-py3-none-any.whl"
       },
+      "1.31.27": {
+        "botocore_a_la_carte_iot1click_devices-1.31.27-py3-none-any.whl": "1.29.100@botocore_a_la_carte_iot1click_devices-1.29.100-py3-none-any.whl"
+      },
       "1.31.3": {
         "botocore_a_la_carte_iot1click_devices-1.31.3-py3-none-any.whl": "1.29.100@botocore_a_la_carte_iot1click_devices-1.29.100-py3-none-any.whl"
       },
@@ -23706,6 +23709,9 @@
       },
       "1.31.26": {
         "botocore_a_la_carte_oam-1.31.26-py3-none-any.whl": "1.29.100@botocore_a_la_carte_oam-1.29.100-py3-none-any.whl"
+      },
+      "1.31.27": {
+        "botocore_a_la_carte_oam-1.31.27-py3-none-any.whl": "1.29.100@botocore_a_la_carte_oam-1.29.100-py3-none-any.whl"
       },
       "1.31.3": {
         "botocore_a_la_carte_oam-1.31.3-py3-none-any.whl": "1.29.100@botocore_a_la_carte_oam-1.29.100-py3-none-any.whl"
@@ -59710,7 +59716,18 @@
         "milvus-2.2.12-py3-none-win_amd64.whl": "2.2.12@milvus-2.2.12-py3-none-macosx_10_9_x86_64.whl"
       },
       "2.2.13": {
-        "milvus-2.2.13-py3-none-macosx_11_0_arm64.whl": "2.2.12@milvus-2.2.12-py3-none-macosx_10_9_x86_64.whl"
+        "milvus-2.2.13-py3-none-macosx_10_9_x86_64.whl": {
+          "provides_extras": [
+            "client"
+          ],
+          "requires_dist": [
+            "pymilvus !=2.2.14,<2.3.0,>=2.2.0 ; extra == 'client'"
+          ],
+          "requires_python": ">=3.6"
+        },
+        "milvus-2.2.13-py3-none-macosx_11_0_arm64.whl": "2.2.12@milvus-2.2.12-py3-none-macosx_10_9_x86_64.whl",
+        "milvus-2.2.13-py3-none-manylinux2014_x86_64.whl": "2.2.13@milvus-2.2.13-py3-none-macosx_10_9_x86_64.whl",
+        "milvus-2.2.13-py3-none-win_amd64.whl": "2.2.12@milvus-2.2.12-py3-none-macosx_10_9_x86_64.whl"
       },
       "2.2.4": {
         "milvus-2.2.4-py3-none-macosx_11_0_arm64.whl": {
@@ -93592,6 +93609,22 @@
       "3.20190814.0": {
         "squareup-3.20190814.0-py3-none-any.whl": "10.0.0.20210421@squareup-10.0.0.20210421-py3-none-any.whl"
       },
+      "30.0.0.20230816": {
+        "squareup-30.0.0.20230816-py3-none-any.whl": {
+          "provides_extras": [
+            "testutils"
+          ],
+          "requires_dist": [
+            "apimatic-core ~=0.2.0",
+            "apimatic-core-interfaces ~=0.1.0",
+            "apimatic-requests-client-adapter ~=0.1.0",
+            "python-dateutil ~=2.8.1",
+            "deprecation ~=2.1",
+            "pytest >=7.2.2 ; extra == 'testutils'"
+          ],
+          "requires_python": ">=3.7"
+        }
+      },
       "6.5.0.20201028": {
         "squareup-6.5.0.20201028-py3-none-any.whl": "10.0.0.20210421@squareup-10.0.0.20210421-py3-none-any.whl"
       },
@@ -99300,6 +99333,13 @@
             "tencentcloud-sdk-python-common (==3.0.958)"
           ]
         }
+      },
+      "3.0.959": {
+        "tencentcloud_sdk_python_asw-3.0.959-py2.py3-none-any.whl": {
+          "requires_dist": [
+            "tencentcloud-sdk-python-common (==3.0.959)"
+          ]
+        }
       }
     }
   },
@@ -101401,6 +101441,13 @@
         "tencentcloud_sdk_python_cloudaudit-3.0.958-py2.py3-none-any.whl": {
           "requires_dist": [
             "tencentcloud-sdk-python-common (==3.0.958)"
+          ]
+        }
+      },
+      "3.0.959": {
+        "tencentcloud_sdk_python_cloudaudit-3.0.959-py2.py3-none-any.whl": {
+          "requires_dist": [
+            "tencentcloud-sdk-python-common (==3.0.959)"
           ]
         }
       }
