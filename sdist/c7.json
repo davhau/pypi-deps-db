@@ -11810,6 +11810,16 @@
       "310": "27"
     }
   },
+  "ckanext-alias": {
+    "1.0.0": {
+      "27": {},
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
+  },
   "clamda": {
     "0.0.10": "0.0.4",
     "0.0.11": "0.0.4",
@@ -39466,6 +39476,79 @@
             "torch<1.12"
           ],
           "hdbscan": [
+            "hdbscan"
+          ],
+          "cupy": [
+            "cupy"
+          ],
+          "bqplot": [
+            "bqplot",
+            "bqplot-image-gl",
+            "ipython"
+          ],
+          "hdf5plugin": [
+            "hdf5plugin"
+          ],
+          "tracing": [
+            "opentelemetry-distro",
+            "opentelemetry-exporter-otlp"
+          ],
+          ":platform_system == \"Windows\"": [
+            "pywin32!=226"
+          ]
+        },
+        "python_requires": [
+          ">=3.7,!=3.9.0,!=3.9.1,!=3.9.2"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    },
+    "0.12.0": {
+      "36": {
+        "install_requires": [
+          "numpy",
+          "scipy",
+          "sparse",
+          "distributed>=2.19.0",
+          "dask!=2023.6.1",
+          "click",
+          "tornado>=5",
+          "matplotlib",
+          "pillow",
+          "h5py",
+          "psutil",
+          "numba>=0.51",
+          "ncempy>=1.10",
+          "scikit-image",
+          "cloudpickle",
+          "jsonschema",
+          "scikit-learn<1.3.0",
+          "tqdm",
+          "threadpoolctl>=3.0",
+          "nbformat",
+          "nbconvert",
+          "autopep8",
+          "pycodestyle<2.11",
+          "empyre>=0.3.0",
+          "defusedxml",
+          "typing-extensions",
+          "opentelemetry-api",
+          "tblib",
+          "tomli",
+          "sparseconverter>=0.3.3"
+        ],
+        "extras_require": {
+          "torch": [
+            "torch<1.12"
+          ],
+          "hdbscan": [],
+          "hdbscan:python_version == \"3.11\" and platform_system == \"Windows\"": [
+            "hdbscan<=0.8.30"
+          ],
+          "hdbscan:python_version != \"3.11\" or platform_system != \"Windows\"": [
             "hdbscan"
           ],
           "cupy": [
