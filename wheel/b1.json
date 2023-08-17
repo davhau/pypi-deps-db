@@ -18244,6 +18244,9 @@
       "1.31.27": {
         "botocore_a_la_carte_ds-1.31.27-py3-none-any.whl": "1.29.100@botocore_a_la_carte_ds-1.29.100-py3-none-any.whl"
       },
+      "1.31.28": {
+        "botocore_a_la_carte_ds-1.31.28-py3-none-any.whl": "1.29.100@botocore_a_la_carte_ds-1.29.100-py3-none-any.whl"
+      },
       "1.31.3": {
         "botocore_a_la_carte_ds-1.31.3-py3-none-any.whl": "1.29.100@botocore_a_la_carte_ds-1.29.100-py3-none-any.whl"
       },
@@ -30154,6 +30157,36 @@
           ],
           "requires_python": "<3.11,>=3.8"
         }
+      },
+      "0.3.0": {
+        "dot_connect-0.3.0-py3-none-any.whl": {
+          "provides_extras": [
+            "dev",
+            "impala",
+            "mssql",
+            "mysql",
+            "postgres",
+            "snowflake"
+          ],
+          "requires_dist": [
+            "ipykernel ; extra == 'dev'",
+            "pre-commit ; extra == 'dev'",
+            "pytest ; extra == 'dev'",
+            "python-dotenv ; extra == 'dev'",
+            "tox ; extra == 'dev'",
+            "tox-gh-actions ; extra == 'dev'",
+            "impyla ; extra == 'impala'",
+            "pyodbc ; extra == 'mssql'",
+            "mysql-connector-python ; extra == 'mysql'",
+            "psycopg2-binary ; extra == 'postgres'",
+            "snowflake-snowpark-python ; extra == 'snowflake'",
+            "snowflake-sqlalchemy ; extra == 'snowflake'"
+          ],
+          "requires_python": "<3.11,>=3.8"
+        }
+      },
+      "0.3.1": {
+        "dot_connect-0.3.1-py3-none-any.whl": "0.3.0@dot_connect-0.3.0-py3-none-any.whl"
       }
     }
   },
@@ -36467,6 +36500,51 @@
       },
       "4.0.14": {
         "edx_enterprise-4.0.14-py3-none-any.whl": "3.59.0@edx_enterprise-3.59.0-py3-none-any.whl"
+      },
+      "4.0.16": {
+        "edx_enterprise-4.0.16-py3-none-any.whl": {
+          "requires_dist": [
+            "bleach",
+            "celery",
+            "code-annotations",
+            "cryptography",
+            "django-cache-memoize",
+            "django-config-models",
+            "django-countries",
+            "django-crum",
+            "django-fernet-fields-v2",
+            "django-filter",
+            "django-ipware",
+            "django-model-utils",
+            "django-multi-email-field",
+            "django-object-actions",
+            "django-simple-history",
+            "django-waffle",
+            "django",
+            "djangorestframework-xml",
+            "djangorestframework",
+            "edx-django-utils >=3.12.0",
+            "edx-drf-extensions",
+            "edx-opaque-keys[django]",
+            "edx-rest-api-client",
+            "edx-tincan-py35",
+            "edx-rbac",
+            "jsondiff",
+            "jsonfield",
+            "path.py",
+            "pillow",
+            "python-dateutil",
+            "pytz",
+            "requests",
+            "rules",
+            "slumber",
+            "snowflake-connector-python",
+            "stevedore",
+            "testfixtures",
+            "unicodecsv",
+            "PGPy"
+          ]
+        }
       },
       "4.0.2": {
         "edx_enterprise-4.0.2-py3-none-any.whl": "3.59.0@edx_enterprise-3.59.0-py3-none-any.whl"
@@ -57487,6 +57565,222 @@
             "requests-mock ; extra == 'test'",
             "streamlit (<2.0,>=1.13.0) ; extra == 'ui'",
             "panel (<2.0,>=1.0.0) ; extra == 'ui'"
+          ],
+          "requires_python": ">=3.8"
+        }
+      },
+      "2.0.7": {
+        "lightning_app-2.0.7-py3-none-any.whl": {
+          "provides_extras": [
+            "all",
+            "cloud",
+            "components",
+            "dev",
+            "extra",
+            "test",
+            "ui"
+          ],
+          "requires_dist": [
+            "lightning-cloud >=0.5.37",
+            "packaging",
+            "typing-extensions <5.0,>=4.0.0",
+            "deepdiff <7.0,>=5.7.0",
+            "starsessions <2.0,>=1.2.1",
+            "fsspec <2024.0,>=2022.5.0",
+            "croniter <1.5.0,>=1.3.0",
+            "traitlets <6.0,>=5.3.0",
+            "arrow <2.0,>=1.2.0",
+            "lightning-utilities <1.0,>=0.7.0",
+            "beautifulsoup4 <5.0,>=4.8.0",
+            "inquirer <4.0,>=2.10.0",
+            "psutil <6.0",
+            "click <9.0",
+            "python-multipart <1.0,>=0.0.5",
+            "backoff <3.0,>=2.2.1",
+            "fastapi <1.0,>=0.92.0",
+            "starlette",
+            "pydantic <2.2.0,>=1.7.4",
+            "dateutils <1.0",
+            "Jinja2 <4.0",
+            "PyYAML <7.0",
+            "requests <3.0",
+            "rich <14.0,>=12.3.0",
+            "urllib3 <3.0",
+            "uvicorn <1.0",
+            "websocket-client <2.0",
+            "websockets <12.0",
+            "redis <5.0,>=4.0.1 ; extra == 'all'",
+            "docker <7.0,>=5.0.0 ; extra == 'all'",
+            "s3fs <2024.0,>=2022.5.0 ; extra == 'all'",
+            "streamlit <2.0,>=1.13.0 ; extra == 'all'",
+            "panel <2.0,>=1.0.0 ; extra == 'all'",
+            "lightning-api-access >=0.0.3 ; extra == 'all'",
+            "aiohttp <4.0,>=3.8.0 ; extra == 'all'",
+            "lightning-fabric >=1.9.0 ; extra == 'all'",
+            "pytorch-lightning >=1.9.0 ; extra == 'all'",
+            "redis <5.0,>=4.0.1 ; extra == 'cloud'",
+            "docker <7.0,>=5.0.0 ; extra == 'cloud'",
+            "s3fs <2024.0,>=2022.5.0 ; extra == 'cloud'",
+            "lightning-api-access >=0.0.3 ; extra == 'components'",
+            "aiohttp <4.0,>=3.8.0 ; extra == 'components'",
+            "lightning-fabric >=1.9.0 ; extra == 'components'",
+            "pytorch-lightning >=1.9.0 ; extra == 'components'",
+            "redis <5.0,>=4.0.1 ; extra == 'dev'",
+            "docker <7.0,>=5.0.0 ; extra == 'dev'",
+            "s3fs <2024.0,>=2022.5.0 ; extra == 'dev'",
+            "streamlit <2.0,>=1.13.0 ; extra == 'dev'",
+            "panel <2.0,>=1.0.0 ; extra == 'dev'",
+            "lightning-api-access >=0.0.3 ; extra == 'dev'",
+            "aiohttp <4.0,>=3.8.0 ; extra == 'dev'",
+            "lightning-fabric >=1.9.0 ; extra == 'dev'",
+            "pytorch-lightning >=1.9.0 ; extra == 'dev'",
+            "coverage ==7.2.7 ; extra == 'dev'",
+            "pytest ==7.4.0 ; extra == 'dev'",
+            "pytest-timeout ==2.1.0 ; extra == 'dev'",
+            "pytest-cov ==4.1.0 ; extra == 'dev'",
+            "pytest-doctestplus >=0.9.0 ; extra == 'dev'",
+            "pytest-asyncio ==0.21.1 ; extra == 'dev'",
+            "pytest-rerunfailures <12.0 ; extra == 'dev'",
+            "playwright ==1.36.0 ; extra == 'dev'",
+            "httpx ==0.24.1 ; extra == 'dev'",
+            "trio <0.22.0 ; extra == 'dev'",
+            "pympler ; extra == 'dev'",
+            "psutil <6.0 ; extra == 'dev'",
+            "setuptools <69.0 ; extra == 'dev'",
+            "requests-mock <2.0 ; extra == 'dev'",
+            "redis <5.0,>=4.0.1 ; extra == 'extra'",
+            "docker <7.0,>=5.0.0 ; extra == 'extra'",
+            "s3fs <2024.0,>=2022.5.0 ; extra == 'extra'",
+            "streamlit <2.0,>=1.13.0 ; extra == 'extra'",
+            "panel <2.0,>=1.0.0 ; extra == 'extra'",
+            "lightning-api-access >=0.0.3 ; extra == 'extra'",
+            "aiohttp <4.0,>=3.8.0 ; extra == 'extra'",
+            "lightning-fabric >=1.9.0 ; extra == 'extra'",
+            "pytorch-lightning >=1.9.0 ; extra == 'extra'",
+            "coverage ==7.2.7 ; extra == 'test'",
+            "pytest ==7.4.0 ; extra == 'test'",
+            "pytest-timeout ==2.1.0 ; extra == 'test'",
+            "pytest-cov ==4.1.0 ; extra == 'test'",
+            "pytest-doctestplus >=0.9.0 ; extra == 'test'",
+            "pytest-asyncio ==0.21.1 ; extra == 'test'",
+            "pytest-rerunfailures <12.0 ; extra == 'test'",
+            "playwright ==1.36.0 ; extra == 'test'",
+            "httpx ==0.24.1 ; extra == 'test'",
+            "trio <0.22.0 ; extra == 'test'",
+            "pympler ; extra == 'test'",
+            "psutil <6.0 ; extra == 'test'",
+            "setuptools <69.0 ; extra == 'test'",
+            "requests-mock <2.0 ; extra == 'test'",
+            "streamlit <2.0,>=1.13.0 ; extra == 'ui'",
+            "panel <2.0,>=1.0.0 ; extra == 'ui'"
+          ],
+          "requires_python": ">=3.8"
+        }
+      },
+      "2.1.0rc0": {
+        "lightning_app-2.1.0rc0-py3-none-any.whl": {
+          "provides_extras": [
+            "all",
+            "cloud",
+            "components",
+            "dev",
+            "extra",
+            "test",
+            "ui"
+          ],
+          "requires_dist": [
+            "lightning-cloud >=0.5.37",
+            "packaging",
+            "typing-extensions <5.0,>=4.0.0",
+            "deepdiff <7.0,>=5.7.0",
+            "starsessions <2.0,>=1.2.1",
+            "fsspec <2024.0,>=2022.5.0",
+            "croniter <1.5.0,>=1.3.0",
+            "traitlets <6.0,>=5.3.0",
+            "arrow <2.0,>=1.2.0",
+            "lightning-utilities <1.0,>=0.8.0",
+            "beautifulsoup4 <5.0,>=4.8.0",
+            "inquirer <4.0,>=2.10.0",
+            "psutil <6.0",
+            "click <9.0",
+            "python-multipart <1.0,>=0.0.5",
+            "backoff <3.0,>=2.2.1",
+            "fastapi <1.0,>=0.92.0",
+            "starlette",
+            "pydantic <2.2.0,>=1.7.4",
+            "dateutils <1.0",
+            "Jinja2 <4.0",
+            "PyYAML <7.0",
+            "requests <3.0",
+            "rich <14.0,>=12.3.0",
+            "urllib3 <3.0",
+            "uvicorn <1.0",
+            "websocket-client <2.0",
+            "websockets <12.0",
+            "redis <5.0,>=4.0.1 ; extra == 'all'",
+            "docker <7.0,>=5.0.0 ; extra == 'all'",
+            "s3fs <2024.0,>=2022.5.0 ; extra == 'all'",
+            "streamlit <2.0,>=1.13.0 ; extra == 'all'",
+            "panel <2.0,>=1.0.0 ; extra == 'all'",
+            "lightning-api-access >=0.0.3 ; extra == 'all'",
+            "aiohttp <4.0,>=3.8.0 ; extra == 'all'",
+            "lightning-fabric >=1.9.0 ; extra == 'all'",
+            "pytorch-lightning >=1.9.0 ; extra == 'all'",
+            "redis <5.0,>=4.0.1 ; extra == 'cloud'",
+            "docker <7.0,>=5.0.0 ; extra == 'cloud'",
+            "s3fs <2024.0,>=2022.5.0 ; extra == 'cloud'",
+            "lightning-api-access >=0.0.3 ; extra == 'components'",
+            "aiohttp <4.0,>=3.8.0 ; extra == 'components'",
+            "lightning-fabric >=1.9.0 ; extra == 'components'",
+            "pytorch-lightning >=1.9.0 ; extra == 'components'",
+            "redis <5.0,>=4.0.1 ; extra == 'dev'",
+            "docker <7.0,>=5.0.0 ; extra == 'dev'",
+            "s3fs <2024.0,>=2022.5.0 ; extra == 'dev'",
+            "streamlit <2.0,>=1.13.0 ; extra == 'dev'",
+            "panel <2.0,>=1.0.0 ; extra == 'dev'",
+            "lightning-api-access >=0.0.3 ; extra == 'dev'",
+            "aiohttp <4.0,>=3.8.0 ; extra == 'dev'",
+            "lightning-fabric >=1.9.0 ; extra == 'dev'",
+            "pytorch-lightning >=1.9.0 ; extra == 'dev'",
+            "coverage ==7.2.7 ; extra == 'dev'",
+            "pytest ==7.4.0 ; extra == 'dev'",
+            "pytest-timeout ==2.1.0 ; extra == 'dev'",
+            "pytest-cov ==4.1.0 ; extra == 'dev'",
+            "pytest-doctestplus >=0.9.0 ; extra == 'dev'",
+            "pytest-asyncio ==0.21.1 ; extra == 'dev'",
+            "pytest-rerunfailures ==12.0 ; extra == 'dev'",
+            "playwright ==1.36.0 ; extra == 'dev'",
+            "httpx ==0.24.1 ; extra == 'dev'",
+            "trio <0.22.0 ; extra == 'dev'",
+            "pympler ; extra == 'dev'",
+            "psutil <6.0 ; extra == 'dev'",
+            "setuptools <69.0 ; extra == 'dev'",
+            "requests-mock <2.0 ; extra == 'dev'",
+            "redis <5.0,>=4.0.1 ; extra == 'extra'",
+            "docker <7.0,>=5.0.0 ; extra == 'extra'",
+            "s3fs <2024.0,>=2022.5.0 ; extra == 'extra'",
+            "streamlit <2.0,>=1.13.0 ; extra == 'extra'",
+            "panel <2.0,>=1.0.0 ; extra == 'extra'",
+            "lightning-api-access >=0.0.3 ; extra == 'extra'",
+            "aiohttp <4.0,>=3.8.0 ; extra == 'extra'",
+            "lightning-fabric >=1.9.0 ; extra == 'extra'",
+            "pytorch-lightning >=1.9.0 ; extra == 'extra'",
+            "coverage ==7.2.7 ; extra == 'test'",
+            "pytest ==7.4.0 ; extra == 'test'",
+            "pytest-timeout ==2.1.0 ; extra == 'test'",
+            "pytest-cov ==4.1.0 ; extra == 'test'",
+            "pytest-doctestplus >=0.9.0 ; extra == 'test'",
+            "pytest-asyncio ==0.21.1 ; extra == 'test'",
+            "pytest-rerunfailures ==12.0 ; extra == 'test'",
+            "playwright ==1.36.0 ; extra == 'test'",
+            "httpx ==0.24.1 ; extra == 'test'",
+            "trio <0.22.0 ; extra == 'test'",
+            "pympler ; extra == 'test'",
+            "psutil <6.0 ; extra == 'test'",
+            "setuptools <69.0 ; extra == 'test'",
+            "requests-mock <2.0 ; extra == 'test'",
+            "streamlit <2.0,>=1.13.0 ; extra == 'ui'",
+            "panel <2.0,>=1.0.0 ; extra == 'ui'"
           ],
           "requires_python": ">=3.8"
         }
@@ -80545,6 +80839,9 @@
       },
       "0.6.4": {
         "pydiverse_pipedag-0.6.4-py3-none-any.whl": "0.6.1@pydiverse_pipedag-0.6.1-py3-none-any.whl"
+      },
+      "0.6.5": {
+        "pydiverse_pipedag-0.6.5-py3-none-any.whl": "0.6.1@pydiverse_pipedag-0.6.1-py3-none-any.whl"
       }
     }
   },
@@ -86799,6 +87096,9 @@
           ],
           "requires_python": ">=3.7"
         }
+      },
+      "8.0.7": {
+        "python_semantic_release-8.0.7-py3-none-any.whl": "8.0.6@python_semantic_release-8.0.6-py3-none-any.whl"
       }
     }
   },
@@ -87068,6 +87368,25 @@
       },
       "1.4.1": {
         "pyvo-1.4.1-py3-none-any.whl": "1.4@pyvo-1.4-py3-none-any.whl"
+      },
+      "1.4.2": {
+        "pyvo-1.4.2-py3-none-any.whl": {
+          "provides_extras": [
+            "all",
+            "docs",
+            "test"
+          ],
+          "requires_dist": [
+            "astropy >=4.1",
+            "requests",
+            "pillow ; extra == 'all'",
+            "sphinx-astropy ; extra == 'docs'",
+            "pytest-doctestplus >=0.13 ; extra == 'test'",
+            "pytest-astropy ; extra == 'test'",
+            "requests-mock ; extra == 'test'"
+          ],
+          "requires_python": ">=3.8"
+        }
       }
     }
   },
@@ -88104,6 +88423,9 @@
       },
       "1.2.1": {
         "refineGEMs-1.2.1-py3-none-any.whl": "1.2.0@refineGEMs-1.2.0-py3-none-any.whl"
+      },
+      "1.2.2": {
+        "refineGEMs-1.2.2-py3-none-any.whl": "1.2.0@refineGEMs-1.2.0-py3-none-any.whl"
       }
     }
   },
@@ -96025,6 +96347,9 @@
       },
       "0.2.9": {
         "spherical_dev-0.2.9-py3-none-any.whl": "0.2.6@spherical_dev-0.2.6-py3-none-any.whl"
+      },
+      "0.3.0": {
+        "spherical_dev-0.3.0-py3-none-any.whl": "0.2.21@spherical_dev-0.2.21-py3-none-any.whl"
       }
     }
   },
@@ -98351,6 +98676,25 @@
     "py3": {
       "0.0.2": {
         "superiq-0.0.2-py3-none-any.whl": {}
+      }
+    }
+  },
+  "svgbit": {
+    "py3": {
+      "0.2.13": {
+        "svgbit-0.2.13-py3-none-any.whl": {
+          "requires_dist": [
+            "anndata >=0.8.0",
+            "matplotlib >=3.5.1",
+            "pysal >=2.4.0",
+            "pillow >=9.2.0",
+            "seaborn >=0.11.2"
+          ],
+          "requires_python": ">=3.8"
+        }
+      },
+      "0.2.14": {
+        "svgbit-0.2.14-py3-none-any.whl": "0.2.13@svgbit-0.2.13-py3-none-any.whl"
       }
     }
   },
@@ -100827,6 +101171,13 @@
         "tencentcloud_sdk_python_privatedns-3.0.959-py2.py3-none-any.whl": {
           "requires_dist": [
             "tencentcloud-sdk-python-common (==3.0.959)"
+          ]
+        }
+      },
+      "3.0.960": {
+        "tencentcloud_sdk_python_privatedns-3.0.960-py2.py3-none-any.whl": {
+          "requires_dist": [
+            "tencentcloud-sdk-python-common (==3.0.960)"
           ]
         }
       }
