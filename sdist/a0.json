@@ -2568,7 +2568,8 @@
     },
     "1.3.110": "1.3.109",
     "1.3.111": "1.3.109",
-    "1.3.112": "1.3.109"
+    "1.3.112": "1.3.109",
+    "1.3.113": "1.3.109"
   },
   "agnostic-storages": {
     "1.0": {
@@ -4574,7 +4575,8 @@
       "39": "27",
       "310": "27"
     },
-    "4.1.0": "4.0.0"
+    "4.1.0": "4.0.0",
+    "4.2.0": "4.0.0"
   },
   "alibabacloud-mseap20210118": {
     "1.0.0": {
@@ -14295,6 +14297,162 @@
           ],
           ":python_version == \"3.6\"": [
             "numpy<1.20,>=1.19"
+          ],
+          "test:python_version == \"3.4\"": [
+            "typing<3.11,>=3.5",
+            "pytest<5.0,>=3.2",
+            "pytest-cov<2.9,>=2.5",
+            "pillow<6.0.0,>=5.4.0"
+          ]
+        },
+        "python_requires": [
+          ">=2.6, !=3.0.*, !=3.1.*, <4"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "1.3.8": {
+      "27": {
+        "install_requires": [
+          "basemap_data<1.4,>=1.3.2"
+        ],
+        "setup_requires": [
+          "cython >= 0.29, < 3.0; python_version == \"2.6\"",
+          "cython >= 0.29, < 3.0; python_version == \"2.7\"",
+          "cython >= 0.29, < 3.0; python_version >= \"3.3\""
+        ],
+        "extras_require": {
+          "test:python_version == \"3.2\"": [
+            "pytest<3.0,>=2.9",
+            "coverage<4.0,>=3.7",
+            "pytest-cov<2.6,>=2.5",
+            "pillow<4.0.0,>=3.4.0"
+          ],
+          ":python_version == \"2.7\"": [
+            "numpy<1.17,>=1.16",
+            "matplotlib<3.0,>=1.5",
+            "pyproj<2.3.0,>=1.9.3"
+          ],
+          "lint:python_version <= \"3.9\"": [
+            "unittest2"
+          ],
+          "test:python_version <= \"3.9\"": [
+            "unittest2"
+          ],
+          ":python_version == \"3.4\"": [
+            "numpy<1.17,>=1.15",
+            "matplotlib<3.0,>=1.5",
+            "pyproj<2.1.0,>=1.9.3"
+          ],
+          "test:python_version >= \"3.5\"": [
+            "pytest-cov<3.1,>=2.5"
+          ],
+          "test:python_version == \"2.7\"": [
+            "pytest<5.0,>=3.2",
+            "pytest-cov<3.0,>=2.5",
+            "pillow<7.0.0,>=6.2.2"
+          ],
+          "test:python_version >= \"3.7\"": [
+            "pillow<10.1.0,>=9.4.0"
+          ],
+          "lint:python_version == \"3.3\"": [
+            "flake8<3.0,>=2.6"
+          ],
+          "lint:python_version == \"2.7\"": [
+            "flake8<4.0,>=2.6",
+            "astroid<2.0,>=1.6",
+            "pylint<2.0,>=1.9"
+          ],
+          ":python_version == \"2.6\"": [
+            "numpy<1.12,>=1.11",
+            "pyparsing<2.4.1,>=1.5",
+            "matplotlib<2.0,>=1.5",
+            "pyproj<2.1.0,>=1.9.3",
+            "pyshp<2.0,>=1.2"
+          ],
+          "lint:python_version == \"3.5\"": [
+            "astroid<2.5,>=2.4",
+            "pylint<2.7,>=2.6"
+          ],
+          "doc:python_version >= \"3.6\"": [
+            "sphinx<6.3,>=5.3",
+            "furo<2023.5.21,>=2022.4.7"
+          ],
+          "lint:python_version == \"2.6\"": [
+            "flake8<3.0,>=2.6"
+          ],
+          "test:python_version == \"3.5\"": [
+            "pytest<6.2,>=3.2",
+            "pillow<8.0.0,>=7.1.0"
+          ],
+          ":python_version >= \"3.8\"": [
+            "numpy<1.26,>=1.21"
+          ],
+          "test:python_version == \"3.3\"": [
+            "pytest<3.3,>=3.2",
+            "pytest-cov<2.6,>=2.5",
+            "pillow<5.0.0,>=4.3.0"
+          ],
+          ":python_version == \"3.7\"": [
+            "numpy<1.22,>=1.21"
+          ],
+          "test:python_version < \"3.6\"": [
+            "netCDF4<1.4,>=1.3"
+          ],
+          "lint": [],
+          "test": [],
+          ":python_version >= \"3.5\"": [
+            "matplotlib<3.8,>=1.5",
+            "pyproj<3.7.0,>=1.9.3"
+          ],
+          ":python_version >= \"2.7\"": [
+            "pyshp<2.4,>=1.2"
+          ],
+          "test:python_version == \"2.6\"": [
+            "pytest<3.3,>=3.2",
+            "pytest-cov<2.6,>=2.5",
+            "ordereddict",
+            "pillow<4.0.0,>=3.4.0"
+          ],
+          "test:python_version >= \"3.6\"": [
+            "pytest<6.3,>=6.2.5",
+            "netCDF4<1.7,>=1.3"
+          ],
+          ":python_version == \"3.6\"": [
+            "numpy<1.20,>=1.19"
+          ],
+          ":python_version == \"3.5\"": [
+            "numpy<1.19,>=1.16"
+          ],
+          "doc": [],
+          "lint:python_version == \"3.6\"": [
+            "astroid<2.7,>=2.5",
+            "pylint<2.10,>=2.7"
+          ],
+          ":python_version == \"3.3\"": [
+            "numpy<1.12,>=1.11",
+            "matplotlib<2.0,>=1.5",
+            "pyproj<2.1.0,>=1.9.3"
+          ],
+          "lint:python_version == \"3.4\"": [
+            "flake8<3.9,>=2.6"
+          ],
+          "lint:python_version >= \"3.5\"": [
+            "flake8<7.1,>=2.6"
+          ],
+          "test:python_version == \"3.6\"": [
+            "pillow<9.0.0,>=8.3.2"
+          ],
+          "lint:python_version == \"3.2\"": [
+            "flake8<3.0,>=2.6"
+          ],
+          "lint:python_version >= \"3.7\"": [
+            "astroid<3.0,>=2.8",
+            "pylint<3.0,>=2.11"
           ],
           "test:python_version == \"3.4\"": [
             "typing<3.11,>=3.5",
