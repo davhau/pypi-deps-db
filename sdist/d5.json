@@ -46816,6 +46816,63 @@
       "38": "36",
       "39": "36",
       "310": "36"
+    },
+    "1.2.4": {
+      "36": {
+        "install_requires": [
+          "numpy>=1.5",
+          "scikit-learn",
+          "matplotlib",
+          "pandas>=0.19",
+          "tensorflow_addons<0.20",
+          "statsmodels",
+          "scipy"
+        ],
+        "extras_require": {
+          "test": [
+            "pytest",
+            "matplotlib"
+          ],
+          ":sys_platform != \"darwin\" or platform_machine != \"arm64\"": [
+            "tensorflow>=1.10"
+          ],
+          ":sys_platform == \"darwin\" and platform_machine == \"arm64\"": [
+            "tensorflow-macos>=1.10"
+          ]
+        },
+        "python_requires": [
+          ">=3.6, <3.11"
+        ]
+      },
+      "37": "36",
+      "38": {
+        "install_requires": [
+          "numpy>=1.5",
+          "scikit-learn",
+          "matplotlib",
+          "pandas>=0.19",
+          "tensorflow_addons<0.20",
+          "statsmodels",
+          "scipy"
+        ],
+        "extras_require": {
+          "test": [
+            "pytest",
+            "matplotlib"
+          ],
+          ":sys_platform != \"darwin\" or platform_machine != \"arm64\"": [
+            "tensorflow<2.12.0"
+          ],
+          ":sys_platform == \"darwin\" and platform_machine == \"arm64\"": [
+            "tensorflow-macos<2.12.0"
+          ]
+        },
+        "python_requires": [
+          ">=3.6, <3.11"
+        ]
+      },
+      "39": "38",
+      "310": "38"
     }
   },
   "migrations": {
@@ -50271,7 +50328,8 @@
     "0.3.1": "0.2",
     "0.3.2": "0.2",
     "0.3.3": "0.2",
-    "0.3.4": "0.2"
+    "0.3.4": "0.2",
+    "0.3.5": "0.2"
   },
   "nester-lym": {
     "1.0.0": {
@@ -52452,7 +52510,8 @@
     "0.0.15.2": "0.0.1",
     "0.0.14.1": "0.0.1",
     "0.0.15.3": "0.0.1",
-    "0.0.15.4": "0.0.1"
+    "0.0.15.4": "0.0.1",
+    "0.0.15.5": "0.0.1"
   },
   "observedstruct": {
     "0.1.0": {

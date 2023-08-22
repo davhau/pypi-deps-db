@@ -59278,7 +59278,8 @@
     },
     "0.8.0": "0.7.1",
     "0.8.1": "0.7.1",
-    "0.8.2": "0.7.1"
+    "0.8.2": "0.7.1",
+    "0.8.3": "0.7.1"
   },
   "maxda": {
     "0.0.1": {
@@ -83746,6 +83747,92 @@
           "ipython>=7.2.0"
         ],
         "extras_require": {
+          "localtest:sys_platform == \"linux\"": [
+            "pytest-xvfb",
+            "PyQt5",
+            "pytest-qt"
+          ],
+          "docs": [
+            "Sphinx",
+            "sphinx-autoapi",
+            "sphinx-rtd-theme",
+            "nbsphinx",
+            "nbsphinx-link",
+            "nbstripout",
+            "numpydoc",
+            "jupyterlab",
+            "matplotlib",
+            "PyQt5",
+            "numpy",
+            "myst-parser",
+            "GitPython",
+            "beautifulsoup4"
+          ],
+          "localtest": [
+            "pytest",
+            "pytest-cov"
+          ],
+          "dev": [
+            "pre-commit",
+            "nbstripout",
+            "check-manifest",
+            "black",
+            "isort"
+          ],
+          "test": [
+            "tox"
+          ],
+          ":python_version < \"3.9\"": [
+            "importlib_resources"
+          ]
+        }
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "1.1.0": {
+      "27": {
+        "install_requires": [
+          "pyamapping",
+          "psutil",
+          "python_osc>=1.7.4",
+          "numpy>=1.15.4",
+          "scipy>=1.3.1",
+          "ipython>=7.2.0"
+        ],
+        "extras_require": {
+          "all:sys_platform == \"linux\"": [
+            "pytest-xvfb",
+            "PyQt5",
+            "pytest-qt"
+          ],
+          "all": [
+            "Sphinx",
+            "sphinx-autoapi",
+            "sphinx-rtd-theme",
+            "nbsphinx",
+            "nbsphinx-link",
+            "nbstripout",
+            "numpydoc",
+            "jupyterlab",
+            "matplotlib",
+            "PyQt5",
+            "numpy",
+            "myst-parser",
+            "GitPython",
+            "beautifulsoup4",
+            "pre-commit",
+            "nbstripout",
+            "check-manifest",
+            "black",
+            "isort",
+            "tox",
+            "pytest",
+            "pytest-cov"
+          ],
           "localtest:sys_platform == \"linux\"": [
             "pytest-xvfb",
             "PyQt5",
