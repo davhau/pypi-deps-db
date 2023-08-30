@@ -11725,7 +11725,8 @@
     "1.31.33": "1.30.0",
     "1.31.34": "1.30.0",
     "1.31.35": "1.30.0",
-    "1.31.36": "1.30.0"
+    "1.31.36": "1.30.0",
+    "1.31.37": "1.30.0"
   },
   "botocore-a-la-carte-payment-cryptography": {
     "1.31.9": "1.30.0",
@@ -11791,7 +11792,8 @@
     "1.31.33": "1.30.0",
     "1.31.34": "1.30.0",
     "1.31.35": "1.30.0",
-    "1.31.36": "1.30.0"
+    "1.31.36": "1.30.0",
+    "1.31.37": "1.30.0"
   },
   "botocore-a-la-carte-sagemaker-geospatial": {
     "1.29.42": "1.30.0",
@@ -11964,7 +11966,8 @@
     "1.31.33": "1.30.0",
     "1.31.34": "1.30.0",
     "1.31.35": "1.30.0",
-    "1.31.36": "1.30.0"
+    "1.31.36": "1.30.0",
+    "1.31.37": "1.30.0"
   },
   "bottle-utils-http": {
     "0.2": {
@@ -17457,7 +17460,8 @@
     "1.18.0": "1.17.1",
     "1.20.0.post1": "1.17.1",
     "1.20.0.post2": "1.17.1",
-    "1.20.0.post3": "1.17.1"
+    "1.20.0.post3": "1.17.1",
+    "1.20.0": "1.17.1"
   },
   "corus": {
     "0.6.0": {
@@ -32528,7 +32532,76 @@
       "39": "27",
       "310": "27"
     },
-    "0.1.0a21": "0.1.0a20"
+    "0.1.0a21": "0.1.0a20",
+    "0.1.0a23": {
+      "27": {
+        "install_requires": [
+          "pydantic<2,>=1.10.1",
+          "py-evm<0.8,>=0.7.0a3",
+          "eth-utils<3,>=2.1",
+          "ethpm-types<0.6,>=0.5.0",
+          "msgspec>=0.8"
+        ],
+        "setup_requires": [
+          "setuptools_scm"
+        ],
+        "extras_require": {
+          "test": [
+            "pytest>=6.0",
+            "pytest-xdist",
+            "pytest-cov",
+            "hypothesis<7.0,>=6.2.0",
+            "eth-hash[pysha3]"
+          ],
+          "release": [
+            "setuptools",
+            "wheel",
+            "twine"
+          ],
+          "lint": [
+            "black<24,>=23.7.0",
+            "mypy<2,>=1.4.1",
+            "types-setuptools",
+            "flake8<7,>=6.1.0",
+            "isort<6,>=5.10.1",
+            "mdformat>=0.7.16",
+            "mdformat-gfm>=0.3.5",
+            "mdformat-frontmatter>=0.4.1"
+          ],
+          "dev": [
+            "pytest>=6.0",
+            "pytest-xdist",
+            "pytest-cov",
+            "hypothesis<7.0,>=6.2.0",
+            "eth-hash[pysha3]",
+            "black<24,>=23.7.0",
+            "mypy<2,>=1.4.1",
+            "types-setuptools",
+            "flake8<7,>=6.1.0",
+            "isort<6,>=5.10.1",
+            "mdformat>=0.7.16",
+            "mdformat-gfm>=0.3.5",
+            "mdformat-frontmatter>=0.4.1",
+            "setuptools",
+            "wheel",
+            "twine",
+            "commitizen",
+            "pre-commit",
+            "pytest-watch",
+            "IPython",
+            "ipdb"
+          ]
+        },
+        "python_requires": [
+          ">=3.8,<4"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "evolved5g": {
     "0.2.6": {
@@ -48961,6 +49034,62 @@
       "38": "27",
       "39": "27",
       "310": "27"
+    },
+    "0.8.2": {
+      "27": {
+        "install_requires": [
+          "kedro<0.18,>=0.16",
+          "click<8.0",
+          "semver~=2.10",
+          "python-slugify>=4.0.1",
+          "tabulate==0.8.9",
+          "pip-tools<6.11"
+        ],
+        "extras_require": {
+          "tests": [
+            "pytest<7.0.0,>=6.2.2",
+            "pytest-cov<3.0.0,>=2.8.0",
+            "tox==3.21.1",
+            "pre-commit==2.9.3",
+            "apache-airflow[kubernetes]==2.1.0",
+            "apache-airflow-providers-cncf-kubernetes==1.1.0",
+            "apache-airflow-providers-apache-spark==2.0.1",
+            "mlflow-skinny==1.19.0",
+            "numpy<1.24",
+            "sqlalchemy==1.3.23",
+            "responses>=0.13.0",
+            "kedro[spark.sparkdataset]<0.18,>=0.16",
+            "WTForms<3.0.0",
+            "Markdown==3.3.4",
+            "protobuf==3.20.3"
+          ],
+          "docs": [
+            "sphinx==3.4.2",
+            "recommonmark==0.8.2",
+            "sphinx_rtd_theme==0.5.2"
+          ],
+          "aws": [
+            "s3fs>=0.6.1"
+          ],
+          "gcp": [
+            "gcsfs<0.8.2"
+          ],
+          "spark": [
+            "kedro[spark.sparkdataset]<0.18,>=0.16"
+          ],
+          "mlflow": [
+            "kedro-mlflow==0.4.1"
+          ]
+        },
+        "python_requires": [
+          ">=3"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
     }
   },
   "keras-cortex": {
@@ -55281,7 +55410,8 @@
     "0.8.1": "0.7.4",
     "0.9.0": "0.7.4",
     "0.8.0": "0.7.4",
-    "0.9.1": "0.7.4"
+    "0.9.1": "0.7.4",
+    "0.9.2": "0.7.4"
   },
   "mljar": {
     "0.0.6": {
@@ -58023,7 +58153,8 @@
       "38": "36",
       "39": "36",
       "310": "36"
-    }
+    },
+    "1.28.36.post1": "1.28.36"
   },
   "mypy-boto3-migrationhubstrategy": {
     "1.20.6": {
@@ -62182,7 +62313,8 @@
       "310": "27"
     },
     "1.0.2": "1.0.1",
-    "1.0.3": "1.0.1"
+    "1.0.3": "1.0.1",
+    "1.0.5": "1.0.1"
   },
   "pddls": {
     "0.2.1": {
@@ -80790,6 +80922,18 @@
       "38": "27",
       "39": "27",
       "310": "27"
+    },
+    "3.0.969": {
+      "27": {
+        "install_requires": [
+          "tencentcloud-sdk-python-common==3.0.969"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
     }
   },
   "tencentcloud-sdk-python-tbp": {
@@ -81705,6 +81849,18 @@
       "27": {
         "install_requires": [
           "tencentcloud-sdk-python-common==3.0.968"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "3.0.969": {
+      "27": {
+        "install_requires": [
+          "tencentcloud-sdk-python-common==3.0.969"
         ]
       },
       "36": "27",
