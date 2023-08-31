@@ -56483,7 +56483,8 @@
     "0.0.62": "0.0.10",
     "0.0.63": "0.0.10",
     "0.0.64": "0.0.10",
-    "0.0.65": "0.0.10"
+    "0.0.65": "0.0.10",
+    "0.0.66": "0.0.10"
   },
   "datadog-ariadne-graphql-server": {
     "1.0": {
@@ -78460,7 +78461,73 @@
       "310": "36"
     },
     "3.4.0": "3.3.1",
-    "3.5.0": "3.3.1"
+    "3.5.0": "3.3.1",
+    "3.6.0": {
+      "36": {
+        "install_requires": [
+          "deprecated>=1.2",
+          "importlib_resources>=1.3",
+          "packaging<24,>=21",
+          "typing_extensions"
+        ],
+        "extras_require": {
+          "redis": [
+            "redis!=4.5.2,!=4.5.3,<6.0.0,>3"
+          ],
+          "rediscluster": [
+            "redis!=4.5.2,!=4.5.3,>=4.2.0"
+          ],
+          "memcached": [
+            "pymemcache<5.0.0,>3"
+          ],
+          "mongodb": [
+            "pymongo<5,>4.1"
+          ],
+          "etcd": [
+            "etcd3"
+          ],
+          "async-redis": [
+            "coredis<5,>=3.4.0"
+          ],
+          "async-memcached": [],
+          "async-memcached:python_version < \"3.11\"": [
+            "emcache>=0.6.1"
+          ],
+          "async-memcached:python_version >= \"3.11\"": [
+            "emcache>=1"
+          ],
+          "async-mongodb": [
+            "motor<4,>=3"
+          ],
+          "async-etcd": [
+            "aetcd"
+          ],
+          "all": [
+            "redis!=4.5.2,!=4.5.3,<6.0.0,>3",
+            "redis!=4.5.2,!=4.5.3,>=4.2.0",
+            "pymemcache<5.0.0,>3",
+            "pymongo<5,>4.1",
+            "etcd3",
+            "coredis<5,>=3.4.0",
+            "motor<4,>=3",
+            "aetcd"
+          ],
+          "all:python_version < \"3.11\"": [
+            "emcache>=0.6.1"
+          ],
+          "all:python_version >= \"3.11\"": [
+            "emcache>=1"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "linda2pdf": {
     "0.0.0": {
