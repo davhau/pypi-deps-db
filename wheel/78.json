@@ -3351,6 +3351,20 @@
           ],
           "requires_python": ">=3.8,<3.11"
         }
+      },
+      "0.2.1": {
+        "annofab_3dpc_editor_cli-0.2.1-py3-none-any.whl": {
+          "requires_dist": [
+            "annofabapi (>=0.65.0)",
+            "boto3 (>=1.17.20,<2.0.0)",
+            "dataclasses-json (>=0.5.7,<0.6.0)",
+            "fire (>=0.3.1,<0.4.0)",
+            "more-itertools (>=8.5.0,<9.0.0)",
+            "numpy (>=1.23.0,<2.0.0)",
+            "scipy (>=1.9.0,<2.0.0)"
+          ],
+          "requires_python": ">=3.8,<4.0"
+        }
       }
     }
   },
@@ -4377,6 +4391,81 @@
       },
       "1.14.1": {
         "argilla-1.14.1-py3-none-any.whl": "1.14.0@argilla-1.14.0-py3-none-any.whl"
+      },
+      "1.15.0": {
+        "argilla-1.15.0-py3-none-any.whl": {
+          "provides_extras": [
+            "integrations",
+            "listeners",
+            "postgresql",
+            "server",
+            "tests"
+          ],
+          "requires_dist": [
+            "httpx <0.24,>=0.15",
+            "deprecated ~=1.2.0",
+            "packaging >=20.0",
+            "pandas <2.0.0,>=1.0.0",
+            "pydantic <2.0,>=1.10.7",
+            "wrapt <1.15,>=1.13",
+            "numpy <1.24.0",
+            "tqdm >=4.27.0",
+            "backoff",
+            "monotonic",
+            "rich !=13.1.0",
+            "typer <0.8.0,>=0.6.0",
+            "PyYAML <6.1.0,>=5.4.1 ; extra == 'integrations'",
+            "cleanlab ~=2.0.0 ; extra == 'integrations'",
+            "datasets !=2.3.2,>1.17.0 ; extra == 'integrations'",
+            "huggingface-hub <0.13,>=0.5.0 ; extra == 'integrations'",
+            "flair >=0.12.2 ; extra == 'integrations'",
+            "faiss-cpu ; extra == 'integrations'",
+            "flyingsquid ; extra == 'integrations'",
+            "pgmpy ; extra == 'integrations'",
+            "plotly >=4.1.0 ; extra == 'integrations'",
+            "snorkel >=0.9.7 ; extra == 'integrations'",
+            "spacy ==3.5.3 ; extra == 'integrations'",
+            "spacy-transformers >=1.2.5 ; extra == 'integrations'",
+            "transformers[torch] >=4.30.0 ; extra == 'integrations'",
+            "evaluate ; extra == 'integrations'",
+            "seqeval ; extra == 'integrations'",
+            "setfit ; extra == 'integrations'",
+            "span-marker ; extra == 'integrations'",
+            "openai ; extra == 'integrations'",
+            "peft ; extra == 'integrations'",
+            "trl >=0.5.0 ; extra == 'integrations'",
+            "schedule ~=1.1.0 ; extra == 'listeners'",
+            "prodict ~=0.8.0 ; extra == 'listeners'",
+            "asyncpg >=0.27.0 ; extra == 'postgresql'",
+            "psycopg2 ~=2.9.5 ; (sys_platform != \"darwin\") and extra == 'postgresql'",
+            "psycopg2-binary ~=2.9.5 ; (sys_platform == \"darwin\") and extra == 'postgresql'",
+            "fastapi <0.89,>=0.75 ; extra == 'server'",
+            "opensearch-py ~=2.0.0 ; extra == 'server'",
+            "elasticsearch8[async] ~=8.7.0 ; extra == 'server'",
+            "uvicorn[standard] <0.21.0,>=0.15.0 ; extra == 'server'",
+            "smart-open ; extra == 'server'",
+            "brotli-asgi <1.3,>=1.1 ; extra == 'server'",
+            "alembic ~=1.9.0 ; extra == 'server'",
+            "SQLAlchemy ~=2.0.0 ; extra == 'server'",
+            "greenlet >=2.0.0 ; extra == 'server'",
+            "aiosqlite >=0.19.0 ; extra == 'server'",
+            "luqum <0.13,>=0.11 ; extra == 'server'",
+            "scikit-learn >=0.24.2 ; extra == 'server'",
+            "aiofiles <22.2,>=0.6 ; extra == 'server'",
+            "PyYAML <6.1.0,>=5.4.1 ; extra == 'server'",
+            "python-multipart ~=0.0.5 ; extra == 'server'",
+            "python-jose[cryptography] <3.4,>=3.2 ; extra == 'server'",
+            "passlib[bcrypt] ~=1.7.4 ; extra == 'server'",
+            "psutil <5.10,>=5.8 ; extra == 'server'",
+            "segment-analytics-python ==2.2.0 ; extra == 'server'",
+            "pytest ; extra == 'tests'",
+            "pytest-cov ; extra == 'tests'",
+            "pytest-mock ; extra == 'tests'",
+            "pytest-asyncio ; extra == 'tests'",
+            "factory-boy ~=3.2.1 ; extra == 'tests'"
+          ],
+          "requires_python": "<3.12,>=3.8"
+        }
       },
       "1.2.0": {
         "argilla-1.2.0-py3-none-any.whl": {
@@ -16995,6 +17084,42 @@
             "pytest ; extra == 'test'"
           ]
         }
+      },
+      "1.6.0": {
+        "datasketch-1.6.0-py3-none-any.whl": {
+          "provides_extras": [
+            "benchmark",
+            "cassandra",
+            "experimental_aio",
+            "redis",
+            "test"
+          ],
+          "requires_dist": [
+            "numpy >=1.11",
+            "scipy >=1.0.0",
+            "pyhash >=0.9.3 ; extra == 'benchmark'",
+            "matplotlib >=3.1.2 ; extra == 'benchmark'",
+            "scikit-learn >=0.21.3 ; extra == 'benchmark'",
+            "scipy >=1.3.3 ; extra == 'benchmark'",
+            "pandas >=0.25.3 ; extra == 'benchmark'",
+            "SetSimilaritySearch >=0.1.7 ; extra == 'benchmark'",
+            "pyfarmhash >=0.2.2 ; extra == 'benchmark'",
+            "nltk >=3.4.5 ; extra == 'benchmark'",
+            "cassandra-driver >=3.20 ; extra == 'cassandra'",
+            "aiounittest ; (python_version >= \"3.6\") and extra == 'experimental_aio'",
+            "motor ; (python_version >= \"3.6\") and extra == 'experimental_aio'",
+            "redis >=2.10.0 ; extra == 'redis'",
+            "cassandra-driver >=3.20 ; extra == 'test'",
+            "redis >=2.10.0 ; extra == 'test'",
+            "mock >=2.0.0 ; extra == 'test'",
+            "mockredispy ; extra == 'test'",
+            "coverage ; extra == 'test'",
+            "pymongo >=3.9.0 ; extra == 'test'",
+            "nose >=1.3.7 ; extra == 'test'",
+            "nose-exclude >=0.5.0 ; extra == 'test'",
+            "pytest ; extra == 'test'"
+          ]
+        }
       }
     }
   },
@@ -21260,6 +21385,30 @@
         "easysqulite_321onoff-0.0.1-py3-none-any.whl": {
           "requires_python": ">=3.7"
         }
+      }
+    }
+  },
+  "echofish-aws-aggregator-lambda": {
+    "py3": {
+      "1.0.0.dev20230831175556": {
+        "echofish_aws_aggregator_lambda-1.0.0.dev20230831175556-py3-none-any.whl": {
+          "requires_dist": [
+            "pandas ==1.5.3",
+            "numpy ==1.23.4",
+            "boto3 ==1.26.76",
+            "botocore ==1.29.76"
+          ],
+          "requires_python": ">=3.9"
+        }
+      },
+      "1.0.0.dev20230831193809": {
+        "echofish_aws_aggregator_lambda-1.0.0.dev20230831193809-py3-none-any.whl": "1.0.0.dev20230831175556@echofish_aws_aggregator_lambda-1.0.0.dev20230831175556-py3-none-any.whl"
+      },
+      "1.0.0.dev20230831200931": {
+        "echofish_aws_aggregator_lambda-1.0.0.dev20230831200931-py3-none-any.whl": "1.0.0.dev20230831175556@echofish_aws_aggregator_lambda-1.0.0.dev20230831175556-py3-none-any.whl"
+      },
+      "1.0.0.dev20230831204026": {
+        "echofish_aws_aggregator_lambda-1.0.0.dev20230831204026-py3-none-any.whl": "1.0.0.dev20230831175556@echofish_aws_aggregator_lambda-1.0.0.dev20230831175556-py3-none-any.whl"
       }
     }
   },
@@ -49191,6 +49340,26 @@
       }
     }
   },
+  "mayawaves": {
+    "py3": {
+      "2023.8": {
+        "mayawaves-2023.8-py3-none-any.whl": {
+          "requires_dist": [
+            "matplotlib",
+            "mock",
+            "numba",
+            "numpy",
+            "pandas",
+            "romspline",
+            "scipy",
+            "scri",
+            "wget"
+          ],
+          "requires_python": "<3.11,>=3.8"
+        }
+      }
+    }
+  },
   "mc-pih": {
     "py3": {
       "0.0.1": {
@@ -50475,6 +50644,15 @@
           ],
           "requires_python": ">=3.8.1,<3.12"
         }
+      },
+      "1.4.0rc1": {
+        "mlserver_lightgbm-1.4.0rc1-py3-none-any.whl": "1.4.0.dev3@mlserver_lightgbm-1.4.0.dev3-py3-none-any.whl"
+      },
+      "1.4.0rc2": {
+        "mlserver_lightgbm-1.4.0rc2-py3-none-any.whl": "1.4.0.dev3@mlserver_lightgbm-1.4.0.dev3-py3-none-any.whl"
+      },
+      "1.4.0rc3": {
+        "mlserver_lightgbm-1.4.0rc3-py3-none-any.whl": "1.4.0.dev3@mlserver_lightgbm-1.4.0.dev3-py3-none-any.whl"
       }
     }
   },
@@ -60530,6 +60708,9 @@
             "typer[all]"
           ]
         }
+      },
+      "0.3.4": {
+        "opencopilot_ai-0.3.4-py3-none-any.whl": "0.3.3@opencopilot_ai-0.3.3-py3-none-any.whl"
       }
     }
   },
@@ -76455,6 +76636,13 @@
       }
     }
   },
+  "rustrees": {
+    "cp310": {
+      "0.1.0": {
+        "rustrees-0.1.0-cp310-cp310-manylinux_2_34_x86_64.whl": {}
+      }
+    }
+  },
   "rxn-chem-utils": {
     "py3": {
       "1.0.1": {
@@ -77932,6 +78120,9 @@
       },
       "0.0.36": {
         "sdss_lvmpwi-0.0.36-py3-none-any.whl": "0.0.35@sdss_lvmpwi-0.0.35-py3-none-any.whl"
+      },
+      "0.0.37": {
+        "sdss_lvmpwi-0.0.37-py3-none-any.whl": "0.0.35@sdss_lvmpwi-0.0.35-py3-none-any.whl"
       }
     }
   },
@@ -86510,6 +86701,27 @@
             "tencentcloud-sdk-python-common (==3.0.970)"
           ]
         }
+      },
+      "3.0.971": {
+        "tencentcloud_sdk_python_tts-3.0.971-py2.py3-none-any.whl": {
+          "requires_dist": [
+            "tencentcloud-sdk-python-common (==3.0.971)"
+          ]
+        }
+      },
+      "3.0.972": {
+        "tencentcloud_sdk_python_tts-3.0.972-py2.py3-none-any.whl": {
+          "requires_dist": [
+            "tencentcloud-sdk-python-common (==3.0.972)"
+          ]
+        }
+      },
+      "3.0.973": {
+        "tencentcloud_sdk_python_tts-3.0.973-py2.py3-none-any.whl": {
+          "requires_dist": [
+            "tencentcloud-sdk-python-common (==3.0.973)"
+          ]
+        }
       }
     }
   },
@@ -93296,6 +93508,871 @@
       }
     }
   },
+  "yeref": {
+    "py3": {
+      "0.0.11": {
+        "yeref-0.0.11-py3-none-any.whl": {}
+      },
+      "0.1.17": {
+        "yeref-0.1.17-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.1.19": {
+        "yeref-0.1.19-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.1.31": {
+        "yeref-0.1.31-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.1.33": {
+        "yeref-0.1.33-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.1.34": {
+        "yeref-0.1.34-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.1.35": {
+        "yeref-0.1.35-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.1.37": {
+        "yeref-0.1.37-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.1.38": {
+        "yeref-0.1.38-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.1.39": {
+        "yeref-0.1.39-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.1.40": {
+        "yeref-0.1.40-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.1.41": {
+        "yeref-0.1.41-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.1.42": {
+        "yeref-0.1.42-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.1.43": {
+        "yeref-0.1.43-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.1.44": {
+        "yeref-0.1.44-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.1.45": {
+        "yeref-0.1.45-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.1.46": {
+        "yeref-0.1.46-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.1.47": {
+        "yeref-0.1.47-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.1.48": {
+        "yeref-0.1.48-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.1.49": {
+        "yeref-0.1.49-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.1.50": {
+        "yeref-0.1.50-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.1.51": {
+        "yeref-0.1.51-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.1.52": {
+        "yeref-0.1.52-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.1.53": {
+        "yeref-0.1.53-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.1.54": {
+        "yeref-0.1.54-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.1.55": {
+        "yeref-0.1.55-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.1.56": {
+        "yeref-0.1.56-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.1.57": {
+        "yeref-0.1.57-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.1.58": {
+        "yeref-0.1.58-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.1.59": {
+        "yeref-0.1.59-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.1.60": {
+        "yeref-0.1.60-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.1.62": {
+        "yeref-0.1.62-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.1.63": {
+        "yeref-0.1.63-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.1.64": {
+        "yeref-0.1.64-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.1.65": {
+        "yeref-0.1.65-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.1.66": {
+        "yeref-0.1.66-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.1.67": {
+        "yeref-0.1.67-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.1.68": {
+        "yeref-0.1.68-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.1.69": {
+        "yeref-0.1.69-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.1.70": {
+        "yeref-0.1.70-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.1.71": {
+        "yeref-0.1.71-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.1.72": {
+        "yeref-0.1.72-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.1.73": {
+        "yeref-0.1.73-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.1.74": {
+        "yeref-0.1.74-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.1.75": {
+        "yeref-0.1.75-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.1.76": {
+        "yeref-0.1.76-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.1.78": {
+        "yeref-0.1.78-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.1.79": {
+        "yeref-0.1.79-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.1.80": {
+        "yeref-0.1.80-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.1.81": {
+        "yeref-0.1.81-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.1.83": {
+        "yeref-0.1.83-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.1.84": {
+        "yeref-0.1.84-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.1.86": {
+        "yeref-0.1.86-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.1.87": {
+        "yeref-0.1.87-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.1.88": {
+        "yeref-0.1.88-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.1.89": {
+        "yeref-0.1.89-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.1.90": {
+        "yeref-0.1.90-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.1.91": {
+        "yeref-0.1.91-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.1.92": {
+        "yeref-0.1.92-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.1.93": {
+        "yeref-0.1.93-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.1.94": {
+        "yeref-0.1.94-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.1.95": {
+        "yeref-0.1.95-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.1.96": {
+        "yeref-0.1.96-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.1.98": {
+        "yeref-0.1.98-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.1.99": {
+        "yeref-0.1.99-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.0": {
+        "yeref-0.2.0-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.1": {
+        "yeref-0.2.1-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.10": {
+        "yeref-0.2.10-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.11": {
+        "yeref-0.2.11-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.12": {
+        "yeref-0.2.12-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.14": {
+        "yeref-0.2.14-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.15": {
+        "yeref-0.2.15-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.16": {
+        "yeref-0.2.16-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.17": {
+        "yeref-0.2.17-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.18": {
+        "yeref-0.2.18-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.19": {
+        "yeref-0.2.19-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.2": {
+        "yeref-0.2.2-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.20": {
+        "yeref-0.2.20-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.21": {
+        "yeref-0.2.21-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.22": {
+        "yeref-0.2.22-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.23": {
+        "yeref-0.2.23-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.24": {
+        "yeref-0.2.24-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.25": {
+        "yeref-0.2.25-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.26": {
+        "yeref-0.2.26-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.27": {
+        "yeref-0.2.27-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.28": {
+        "yeref-0.2.28-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.29": {
+        "yeref-0.2.29-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.3": {
+        "yeref-0.2.3-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.30": {
+        "yeref-0.2.30-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.31": {
+        "yeref-0.2.31-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.32": {
+        "yeref-0.2.32-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.33": {
+        "yeref-0.2.33-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.34": {
+        "yeref-0.2.34-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.35": {
+        "yeref-0.2.35-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.36": {
+        "yeref-0.2.36-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.37": {
+        "yeref-0.2.37-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.38": {
+        "yeref-0.2.38-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.39": {
+        "yeref-0.2.39-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.4": {
+        "yeref-0.2.4-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.40": {
+        "yeref-0.2.40-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.41": {
+        "yeref-0.2.41-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.42": {
+        "yeref-0.2.42-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.43": {
+        "yeref-0.2.43-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.44": {
+        "yeref-0.2.44-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.45": {
+        "yeref-0.2.45-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.46": {
+        "yeref-0.2.46-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.47": {
+        "yeref-0.2.47-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.49": {
+        "yeref-0.2.49-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.5": {
+        "yeref-0.2.5-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.50": {
+        "yeref-0.2.50-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.51": {
+        "yeref-0.2.51-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.52": {
+        "yeref-0.2.52-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.53": {
+        "yeref-0.2.53-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.54": {
+        "yeref-0.2.54-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.55": {
+        "yeref-0.2.55-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.56": {
+        "yeref-0.2.56-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.57": {
+        "yeref-0.2.57-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.58": {
+        "yeref-0.2.58-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.59": {
+        "yeref-0.2.59-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.6": {
+        "yeref-0.2.6-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.60": {
+        "yeref-0.2.60-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.61": {
+        "yeref-0.2.61-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.62": {
+        "yeref-0.2.62-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.63": {
+        "yeref-0.2.63-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.64": {
+        "yeref-0.2.64-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.65": {
+        "yeref-0.2.65-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.66": {
+        "yeref-0.2.66-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.67": {
+        "yeref-0.2.67-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.68": {
+        "yeref-0.2.68-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.69": {
+        "yeref-0.2.69-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.7": {
+        "yeref-0.2.7-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.70": {
+        "yeref-0.2.70-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.71": {
+        "yeref-0.2.71-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.72": {
+        "yeref-0.2.72-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.73": {
+        "yeref-0.2.73-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.74": {
+        "yeref-0.2.74-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.75": {
+        "yeref-0.2.75-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.76": {
+        "yeref-0.2.76-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.77": {
+        "yeref-0.2.77-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.78": {
+        "yeref-0.2.78-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.8": {
+        "yeref-0.2.8-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.80": {
+        "yeref-0.2.80-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.81": {
+        "yeref-0.2.81-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.82": {
+        "yeref-0.2.82-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.83": {
+        "yeref-0.2.83-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.84": {
+        "yeref-0.2.84-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.85": {
+        "yeref-0.2.85-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.86": {
+        "yeref-0.2.86-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.87": {
+        "yeref-0.2.87-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.88": {
+        "yeref-0.2.88-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.89": {
+        "yeref-0.2.89-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.9": {
+        "yeref-0.2.9-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.90": {
+        "yeref-0.2.90-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.91": {
+        "yeref-0.2.91-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.92": {
+        "yeref-0.2.92-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.93": {
+        "yeref-0.2.93-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.94": {
+        "yeref-0.2.94-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.95": {
+        "yeref-0.2.95-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.97": {
+        "yeref-0.2.97-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.98": {
+        "yeref-0.2.98-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.2.99": {
+        "yeref-0.2.99-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.0": {
+        "yeref-0.3.0-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.1": {
+        "yeref-0.3.1-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.10": {
+        "yeref-0.3.10-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.100": {
+        "yeref-0.3.100-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.101": {
+        "yeref-0.3.101-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.102": {
+        "yeref-0.3.102-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.103": {
+        "yeref-0.3.103-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.104": {
+        "yeref-0.3.104-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.105": {
+        "yeref-0.3.105-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.106": {
+        "yeref-0.3.106-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.107": {
+        "yeref-0.3.107-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.108": {
+        "yeref-0.3.108-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.109": {
+        "yeref-0.3.109-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.11": {
+        "yeref-0.3.11-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.12": {
+        "yeref-0.3.12-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.13": {
+        "yeref-0.3.13-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.15": {
+        "yeref-0.3.15-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.16": {
+        "yeref-0.3.16-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.17": {
+        "yeref-0.3.17-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.18": {
+        "yeref-0.3.18-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.2": {
+        "yeref-0.3.2-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.20": {
+        "yeref-0.3.20-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.21": {
+        "yeref-0.3.21-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.22": {
+        "yeref-0.3.22-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.23": {
+        "yeref-0.3.23-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.24": {
+        "yeref-0.3.24-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.25": {
+        "yeref-0.3.25-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.26": {
+        "yeref-0.3.26-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.27": {
+        "yeref-0.3.27-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.28": {
+        "yeref-0.3.28-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.29": {
+        "yeref-0.3.29-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.3": {
+        "yeref-0.3.3-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.30": {
+        "yeref-0.3.30-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.31": {
+        "yeref-0.3.31-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.32": {
+        "yeref-0.3.32-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.33": {
+        "yeref-0.3.33-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.34": {
+        "yeref-0.3.34-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.35": {
+        "yeref-0.3.35-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.36": {
+        "yeref-0.3.36-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.37": {
+        "yeref-0.3.37-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.38": {
+        "yeref-0.3.38-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.39": {
+        "yeref-0.3.39-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.4": {
+        "yeref-0.3.4-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.40": {
+        "yeref-0.3.40-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.41": {
+        "yeref-0.3.41-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.42": {
+        "yeref-0.3.42-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.43": {
+        "yeref-0.3.43-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.44": {
+        "yeref-0.3.44-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.45": {
+        "yeref-0.3.45-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.46": {
+        "yeref-0.3.46-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.47": {
+        "yeref-0.3.47-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.48": {
+        "yeref-0.3.48-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.49": {
+        "yeref-0.3.49-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.5": {
+        "yeref-0.3.5-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.50": {
+        "yeref-0.3.50-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.52": {
+        "yeref-0.3.52-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.53": {
+        "yeref-0.3.53-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.54": {
+        "yeref-0.3.54-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.55": {
+        "yeref-0.3.55-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.56": {
+        "yeref-0.3.56-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.57": {
+        "yeref-0.3.57-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.58": {
+        "yeref-0.3.58-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.6": {
+        "yeref-0.3.6-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.60": {
+        "yeref-0.3.60-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.61": {
+        "yeref-0.3.61-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.62": {
+        "yeref-0.3.62-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.63": {
+        "yeref-0.3.63-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.64": {
+        "yeref-0.3.64-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.65": {
+        "yeref-0.3.65-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.66": {
+        "yeref-0.3.66-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.67": {
+        "yeref-0.3.67-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.68": {
+        "yeref-0.3.68-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.69": {
+        "yeref-0.3.69-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.7": {
+        "yeref-0.3.7-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.70": {
+        "yeref-0.3.70-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.72": {
+        "yeref-0.3.72-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.73": {
+        "yeref-0.3.73-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.74": {
+        "yeref-0.3.74-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.75": {
+        "yeref-0.3.75-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.77": {
+        "yeref-0.3.77-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.78": {
+        "yeref-0.3.78-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.79": {
+        "yeref-0.3.79-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.8": {
+        "yeref-0.3.8-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.80": {
+        "yeref-0.3.80-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.81": {
+        "yeref-0.3.81-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.82": {
+        "yeref-0.3.82-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.83": {
+        "yeref-0.3.83-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.85": {
+        "yeref-0.3.85-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.86": {
+        "yeref-0.3.86-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.87": {
+        "yeref-0.3.87-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.88": {
+        "yeref-0.3.88-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.9": {
+        "yeref-0.3.9-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.90": {
+        "yeref-0.3.90-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.91": {
+        "yeref-0.3.91-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.93": {
+        "yeref-0.3.93-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.94": {
+        "yeref-0.3.94-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.95": {
+        "yeref-0.3.95-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.3.99": {
+        "yeref-0.3.99-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.4.0": {
+        "yeref-0.4.0-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.4.1": {
+        "yeref-0.4.1-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.4.10": {
+        "yeref-0.4.10-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.4.11": {
+        "yeref-0.4.11-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.4.12": {
+        "yeref-0.4.12-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.4.13": {
+        "yeref-0.4.13-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.4.2": {
+        "yeref-0.4.2-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.4.29": {
+        "yeref-0.4.29-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.4.3": {
+        "yeref-0.4.3-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.4.30": {
+        "yeref-0.4.30-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.4.31": {
+        "yeref-0.4.31-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.4.32": {
+        "yeref-0.4.32-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.4.34": {
+        "yeref-0.4.34-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.4.35": {
+        "yeref-0.4.35-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.4.37": {
+        "yeref-0.4.37-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.4.38": {
+        "yeref-0.4.38-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.4.39": {
+        "yeref-0.4.39-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.4.4": {
+        "yeref-0.4.4-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.4.40": {
+        "yeref-0.4.40-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.4.41": {
+        "yeref-0.4.41-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.4.42": {
+        "yeref-0.4.42-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.4.43": {
+        "yeref-0.4.43-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.4.44": {
+        "yeref-0.4.44-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.4.5": {
+        "yeref-0.4.5-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.4.6": {
+        "yeref-0.4.6-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.4.7": {
+        "yeref-0.4.7-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.4.8": {
+        "yeref-0.4.8-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      },
+      "0.4.9": {
+        "yeref-0.4.9-py3-none-any.whl": "0.0.11@yeref-0.0.11-py3-none-any.whl"
+      }
+    }
+  },
   "ying-fashi-baitian-shangshu-20140124": {
     "py3": {
       "2023.2.20.0": {
@@ -93669,6 +94746,36 @@
       },
       "4.4.1": {
         "zope.catalog-4.4.1-py2.py3-none-any.whl": "4.3.0@zope.catalog-4.3.0-py2.py3-none-any.whl"
+      }
+    },
+    "py3": {
+      "5.0": {
+        "zope.catalog-5.0-py3-none-any.whl": {
+          "provides_extras": [
+            "docs",
+            "test"
+          ],
+          "requires_dist": [
+            "setuptools",
+            "persistent",
+            "BTrees",
+            "zope.annotation",
+            "zope.intid",
+            "zope.component >=3.8",
+            "zope.container",
+            "zope.index >=3.5",
+            "zope.interface",
+            "zope.lifecycleevent",
+            "zope.location",
+            "zope.schema",
+            "Sphinx ; extra == 'docs'",
+            "repoze.sphinx.autointerface ; extra == 'docs'",
+            "zope.site ; extra == 'test'",
+            "zope.testing ; extra == 'test'",
+            "zope.testrunner ; extra == 'test'"
+          ],
+          "requires_python": ">=3.7"
+        }
       }
     }
   },
