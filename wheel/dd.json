@@ -147,6 +147,16 @@
       "1.11.0": {
         "aa_sov_timer-1.11.0-py3-none-any.whl": "1.10.0@aa_sov_timer-1.10.0-py3-none-any.whl"
       },
+      "1.12.0": {
+        "aa_sov_timer-1.12.0-py3-none-any.whl": {
+          "requires_dist": [
+            "allianceauth-app-utils>=1.12",
+            "allianceauth>=3.2",
+            "django-eveuniverse>=0.14"
+          ],
+          "requires_python": "~=3.8"
+        }
+      },
       "1.2.0": {
         "aa_sov_timer-1.2.0-py3-none-any.whl": "1.1.0@aa_sov_timer-1.1.0-py3-none-any.whl"
       },
@@ -361,6 +371,9 @@
       },
       "0.3.4": {
         "abm_colony_collection-0.3.4-py3-none-any.whl": "0.2.2@abm_colony_collection-0.2.2-py3-none-any.whl"
+      },
+      "0.4.0": {
+        "abm_colony_collection-0.4.0-py3-none-any.whl": "0.2.2@abm_colony_collection-0.2.2-py3-none-any.whl"
       }
     }
   },
@@ -2736,6 +2749,13 @@
       }
     }
   },
+  "apitimewrapper": {
+    "py3": {
+      "0.0.5": {
+        "apitimewrapper-0.0.5-py3-none-any.whl": {}
+      }
+    }
+  },
   "apns2-py3": {
     "py2.py3": {
       "0.7.2": {
@@ -3228,6 +3248,12 @@
       },
       "0.1.4": {
         "authentikate-0.1.4-py3-none-any.whl": "0.1.3@authentikate-0.1.3-py3-none-any.whl"
+      },
+      "0.1.5": {
+        "authentikate-0.1.5-py3-none-any.whl": "0.1.3@authentikate-0.1.3-py3-none-any.whl"
+      },
+      "0.1.6": {
+        "authentikate-0.1.6-py3-none-any.whl": "0.1.3@authentikate-0.1.3-py3-none-any.whl"
       }
     }
   },
@@ -18390,6 +18416,96 @@
           ],
           "requires_python": ">=3.8"
         }
+      },
+      "5.3.2": {
+        "celery-5.3.2-py3-none-any.whl": {
+          "provides_extras": [
+            "arangodb",
+            "auth",
+            "azureblockblob",
+            "brotli",
+            "cassandra",
+            "consul",
+            "cosmosdbsql",
+            "couchbase",
+            "couchdb",
+            "django",
+            "dynamodb",
+            "elasticsearch",
+            "eventlet",
+            "gevent",
+            "librabbitmq",
+            "memcache",
+            "mongodb",
+            "msgpack",
+            "pymemcache",
+            "pyro",
+            "pytest",
+            "redis",
+            "s3",
+            "slmq",
+            "solar",
+            "sqlalchemy",
+            "sqs",
+            "tblib",
+            "yaml",
+            "zookeeper",
+            "zstd"
+          ],
+          "requires_dist": [
+            "billiard (<5.0,>=4.1.0)",
+            "kombu (<6.0,>=5.3.2)",
+            "vine (<6.0,>=5.0.0)",
+            "click (<9.0,>=8.1.2)",
+            "click-didyoumean (>=0.3.0)",
+            "click-repl (>=0.2.0)",
+            "click-plugins (>=1.1.1)",
+            "tzdata (>=2022.7)",
+            "python-dateutil (>=2.8.2)",
+            "importlib-metadata (>=3.6) ; python_version < \"3.8\"",
+            "backports.zoneinfo (>=0.2.1) ; python_version < \"3.9\"",
+            "pyArango (>=2.0.2) ; extra == 'arangodb'",
+            "cryptography (==41.0.3) ; extra == 'auth'",
+            "azure-storage-blob (>=12.15.0) ; extra == 'azureblockblob'",
+            "brotli (>=1.0.0) ; (platform_python_implementation == \"CPython\") and extra == 'brotli'",
+            "brotlipy (>=0.7.0) ; (platform_python_implementation == \"PyPy\") and extra == 'brotli'",
+            "cassandra-driver (<4,>=3.25.0) ; extra == 'cassandra'",
+            "python-consul2 (==0.1.5) ; extra == 'consul'",
+            "pydocumentdb (==2.3.5) ; extra == 'cosmosdbsql'",
+            "couchbase (>=3.0.0) ; (platform_python_implementation != \"PyPy\" and (platform_system != \"Windows\" or python_version < \"3.10\")) and extra == 'couchbase'",
+            "pycouchdb (==1.14.2) ; extra == 'couchdb'",
+            "Django (>=2.2.28) ; extra == 'django'",
+            "boto3 (>=1.26.143) ; extra == 'dynamodb'",
+            "elasticsearch (<8.0) ; extra == 'elasticsearch'",
+            "eventlet (>=0.32.0) ; (python_version < \"3.10\") and extra == 'eventlet'",
+            "gevent (>=1.5.0) ; extra == 'gevent'",
+            "librabbitmq (>=2.0.0) ; (python_version < \"3.11\") and extra == 'librabbitmq'",
+            "pylibmc (==1.6.3) ; (platform_system != \"Windows\") and extra == 'memcache'",
+            "pymongo[srv] (>=4.0.2) ; extra == 'mongodb'",
+            "msgpack (==1.0.5) ; extra == 'msgpack'",
+            "python-memcached (==1.59) ; extra == 'pymemcache'",
+            "pyro4 (==4.82) ; (python_version < \"3.11\") and extra == 'pyro'",
+            "pytest-celery (==0.0.0) ; extra == 'pytest'",
+            "redis (!=4.5.5,<5.0.0,>=4.5.2) ; extra == 'redis'",
+            "boto3 (>=1.26.143) ; extra == 's3'",
+            "softlayer-messaging (>=1.0.3) ; extra == 'slmq'",
+            "ephem (==4.1.4) ; (platform_python_implementation != \"PyPy\") and extra == 'solar'",
+            "sqlalchemy (<2.1,>=1.4.48) ; extra == 'sqlalchemy'",
+            "boto3 (>=1.26.143) ; extra == 'sqs'",
+            "urllib3 (>=1.26.16) ; extra == 'sqs'",
+            "kombu[sqs] (>=5.3.0) ; extra == 'sqs'",
+            "pycurl (>=7.43.0.5) ; (sys_platform != \"win32\" and platform_python_implementation == \"CPython\") and extra == 'sqs'",
+            "tblib (>=1.3.0) ; (python_version < \"3.8.0\") and extra == 'tblib'",
+            "tblib (>=1.5.0) ; (python_version >= \"3.8.0\") and extra == 'tblib'",
+            "PyYAML (>=3.10) ; extra == 'yaml'",
+            "kazoo (>=1.3.1) ; extra == 'zookeeper'",
+            "zstandard (==0.21.0) ; extra == 'zstd'"
+          ],
+          "requires_python": ">=3.8"
+        }
+      },
+      "5.3.3": {
+        "celery-5.3.3-py3-none-any.whl": "5.3.2@celery-5.3.2-py3-none-any.whl"
       }
     }
   },
@@ -28094,6 +28210,9 @@
       },
       "0.2.2": {
         "dedoc_utils-0.2.2-py3-none-any.whl": "0.2.1@dedoc_utils-0.2.1-py3-none-any.whl"
+      },
+      "0.2.3": {
+        "dedoc_utils-0.2.3-py3-none-any.whl": "0.2.1@dedoc_utils-0.2.1-py3-none-any.whl"
       }
     }
   },
@@ -33474,6 +33593,9 @@
           ],
           "requires_python": ">=3.8"
         }
+      },
+      "0.2.2": {
+        "ellar_cli-0.2.2-py3-none-any.whl": "0.2.1@ellar_cli-0.2.1-py3-none-any.whl"
       }
     }
   },
@@ -34516,6 +34638,12 @@
         "envd-0.3.39-py2.py3-none-macosx_11_0_arm64.whl": "0.3.1@envd-0.3.1-py2.py3-none-macosx_10_9_x86_64.whl",
         "envd-0.3.39-py2.py3-none-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.3.1@envd-0.3.1-py2.py3-none-macosx_10_9_x86_64.whl",
         "envd-0.3.39-py2.py3-none-musllinux_1_1_x86_64.whl": "0.3.1@envd-0.3.1-py2.py3-none-macosx_10_9_x86_64.whl"
+      },
+      "0.3.40": {
+        "envd-0.3.40-py2.py3-none-macosx_10_9_x86_64.whl": "0.3.1@envd-0.3.1-py2.py3-none-macosx_10_9_x86_64.whl",
+        "envd-0.3.40-py2.py3-none-macosx_11_0_arm64.whl": "0.3.1@envd-0.3.1-py2.py3-none-macosx_10_9_x86_64.whl",
+        "envd-0.3.40-py2.py3-none-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.3.1@envd-0.3.1-py2.py3-none-macosx_10_9_x86_64.whl",
+        "envd-0.3.40-py2.py3-none-musllinux_1_1_x86_64.whl": "0.3.1@envd-0.3.1-py2.py3-none-macosx_10_9_x86_64.whl"
       },
       "0.3.5": {
         "envd-0.3.5-py2.py3-none-macosx_10_9_x86_64.whl": "0.3.1@envd-0.3.1-py2.py3-none-macosx_10_9_x86_64.whl",
@@ -36675,6 +36803,17 @@
             "requests",
             "typing-extensions",
             "mcap (>=1.1.0)"
+          ],
+          "requires_python": ">=3.7"
+        }
+      },
+      "0.12.0": {
+        "foxglove_data_platform-0.12.0-py3-none-any.whl": {
+          "requires_dist": [
+            "arrow",
+            "requests",
+            "typing-extensions",
+            "mcap >=1.1.0"
           ],
           "requires_python": ">=3.7"
         }
@@ -41437,6 +41576,9 @@
       },
       "0.0.4": {
         "indoquake-0.0.4-py3-none-any.whl": "0.0.1@indoquake-0.0.1-py3-none-any.whl"
+      },
+      "0.0.5": {
+        "indoquake-0.0.5-py3-none-any.whl": "0.0.1@indoquake-0.0.1-py3-none-any.whl"
       }
     }
   },
@@ -44766,6 +44908,43 @@
           "requires_python": ">=3.5"
         }
       }
+    },
+    "py3": {
+      "3.9.0": {
+        "librarypaste-3.9.0-py3-none-any.whl": {
+          "provides_extras": [
+            "docs",
+            "testing"
+          ],
+          "requires_dist": [
+            "pygments",
+            "genshi",
+            "cherrypy",
+            "PyYAML",
+            "requests",
+            "jaraco.functools >=1.15",
+            "more-itertools",
+            "importlib-metadata",
+            "importlib-resources",
+            "sphinx >=3.5 ; extra == 'docs'",
+            "jaraco.packaging >=9.3 ; extra == 'docs'",
+            "rst.linker >=1.9 ; extra == 'docs'",
+            "furo ; extra == 'docs'",
+            "sphinx-lint ; extra == 'docs'",
+            "pytest >=6 ; extra == 'testing'",
+            "pytest-checkdocs >=2.4 ; extra == 'testing'",
+            "pytest-cov ; extra == 'testing'",
+            "pytest-enabler >=2.2 ; extra == 'testing'",
+            "pytest-ruff ; extra == 'testing'",
+            "pymongo >=3 ; extra == 'testing'",
+            "jaraco.mongodb ; extra == 'testing'",
+            "types-pyyaml ; extra == 'testing'",
+            "pytest-black >=0.3.7 ; (platform_python_implementation != \"PyPy\") and extra == 'testing'",
+            "pytest-mypy >=0.9.1 ; (platform_python_implementation != \"PyPy\") and extra == 'testing'"
+          ],
+          "requires_python": ">=3.8"
+        }
+      }
     }
   },
   "lieshou-tixi": {
@@ -45335,6 +45514,41 @@
       },
       "0.0.post9": {
         "loudify_worker-0.0.post9-py2.py3-none-any.whl": {}
+      }
+    }
+  },
+  "lpath-md": {
+    "py3": {
+      "0.9.4": {
+        "lpath_md-0.9.4-py3-none-any.whl": {
+          "provides_extras": [
+            "dev",
+            "test",
+            "tui",
+            "westpa"
+          ],
+          "requires_dist": [
+            "scikit-learn",
+            "scipy",
+            "numpy",
+            "pylcs",
+            "ray",
+            "tqdm",
+            "networkx",
+            "matplotlib",
+            "timedinput",
+            "importlib-resources ; python_version < \"3.10\"",
+            "lpath[test,tui,westpa] ; extra == 'dev'",
+            "pytest >=6.1.2 ; extra == 'test'",
+            "pytest-runner ; extra == 'test'",
+            "argparse-tui ; extra == 'tui'",
+            "westpa >=2022.03 ; extra == 'westpa'"
+          ],
+          "requires_python": ">=3.8"
+        }
+      },
+      "0.9.5": {
+        "lpath_md-0.9.5-py3-none-any.whl": "0.9.4@lpath_md-0.9.4-py3-none-any.whl"
       }
     }
   },
@@ -64768,6 +64982,20 @@
       }
     }
   },
+  "python-anvil-encryption": {
+    "py3": {
+      "0.1": {
+        "python_anvil_encryption-0.1-py3-none-any.whl": {
+          "requires_dist": [
+            "click",
+            "cryptography (>=41.0.3,<42.0.0)",
+            "minilog"
+          ],
+          "requires_python": ">=3.7.2,<3.12"
+        }
+      }
+    }
+  },
   "python-datauri-whtsky": {
     "py2.py3": {
       "0.2.8": {
@@ -74394,6 +74622,30 @@
           ],
           "requires_python": ">=3.8"
         }
+      },
+      "2.0.0b1": {
+        "rok4-2.0.0b1-py3-none-any.whl": {
+          "provides_extras": [
+            "dev",
+            "doc",
+            "test"
+          ],
+          "requires_dist": [
+            "boto3 >=1.26.54",
+            "mapbox-vector-tile >=2.0.1",
+            "numpy >=1.24.2",
+            "pillow >=9.4.0",
+            "requests >=2.30.0",
+            "black ; extra == 'dev'",
+            "isort >=5.12.0 ; extra == 'dev'",
+            "pre-commit <4,>3 ; extra == 'dev'",
+            "ruff >=0.0.281 ; extra == 'dev'",
+            "pdoc3 >=0.10.0 ; extra == 'doc'",
+            "pytest >=7.1.2 ; extra == 'test'",
+            "coverage >=7.0.5 ; extra == 'test'"
+          ],
+          "requires_python": ">=3.8"
+        }
       }
     }
   },
@@ -80351,6 +80603,24 @@
       }
     }
   },
+  "stabbie": {
+    "py3": {
+      "1.0.0": {
+        "stabbie-1.0.0-py3-none-any.whl": {
+          "requires_python": ">=3.11"
+        }
+      },
+      "1.0.1": {
+        "stabbie-1.0.1-py3-none-any.whl": "1.0.0@stabbie-1.0.0-py3-none-any.whl"
+      },
+      "1.0.2": {
+        "stabbie-1.0.2-py3-none-any.whl": "1.0.0@stabbie-1.0.0-py3-none-any.whl"
+      },
+      "1.0.3": {
+        "stabbie-1.0.3-py3-none-any.whl": "1.0.0@stabbie-1.0.0-py3-none-any.whl"
+      }
+    }
+  },
   "stac-api-validator": {
     "py3": {
       "0.0.0": {
@@ -84224,6 +84494,27 @@
             "tencentcloud-sdk-python-common (==3.0.970)"
           ]
         }
+      },
+      "3.0.971": {
+        "tencentcloud_sdk_python_emr-3.0.971-py2.py3-none-any.whl": {
+          "requires_dist": [
+            "tencentcloud-sdk-python-common (==3.0.971)"
+          ]
+        }
+      },
+      "3.0.972": {
+        "tencentcloud_sdk_python_emr-3.0.972-py2.py3-none-any.whl": {
+          "requires_dist": [
+            "tencentcloud-sdk-python-common (==3.0.972)"
+          ]
+        }
+      },
+      "3.0.973": {
+        "tencentcloud_sdk_python_emr-3.0.973-py2.py3-none-any.whl": {
+          "requires_dist": [
+            "tencentcloud-sdk-python-common (==3.0.973)"
+          ]
+        }
       }
     }
   },
@@ -84359,6 +84650,9 @@
           ],
           "requires_python": ">=3.6"
         }
+      },
+      "1.2": {
+        "tesla_ce_provider_pt_tpt_lib-1.2-py3-none-any.whl": "1.0@tesla_ce_provider_pt_tpt_lib-1.0-py3-none-any.whl"
       }
     }
   },
@@ -85132,6 +85426,21 @@
       },
       "8.0.1": {
         "timeexecution-8.0.1-py3-none-any.whl": "8.0.0@timeexecution-8.0.0-py3-none-any.whl"
+      },
+      "8.0.2": {
+        "timeexecution-8.0.2-py3-none-any.whl": {
+          "provides_extras": [
+            "all",
+            "elasticsearch"
+          ],
+          "requires_dist": [
+            "pkgsettings >=0.9.2",
+            "fqn-decorators <3.0.0,>=1.2.5",
+            "typing-extensions <5.0.0,>=4.5.0",
+            "elasticsearch <9.0.0,>=8.0.0 ; extra == 'all'",
+            "elasticsearch <9.0.0,>=8.0.0 ; extra == 'elasticsearch'"
+          ]
+        }
       }
     }
   },
@@ -90671,6 +90980,18 @@
         "wfrs-0.1.0-cp310-cp310-manylinux_2_5_i686.manylinux1_i686.whl": "0.1.0@wfrs-0.1.0-cp310-cp310-macosx_10_7_x86_64.whl",
         "wfrs-0.1.0-cp310-none-win32.whl": "0.1.0@wfrs-0.1.0-cp310-cp310-macosx_10_7_x86_64.whl",
         "wfrs-0.1.0-cp310-none-win_amd64.whl": "0.1.0@wfrs-0.1.0-cp310-cp310-macosx_10_7_x86_64.whl"
+      },
+      "0.1.1": {
+        "wfrs-0.1.1-cp310-cp310-macosx_10_7_x86_64.whl": "0.1.0@wfrs-0.1.0-cp310-cp310-macosx_10_7_x86_64.whl",
+        "wfrs-0.1.1-cp310-cp310-macosx_11_0_arm64.whl": "0.1.0@wfrs-0.1.0-cp310-cp310-macosx_10_7_x86_64.whl",
+        "wfrs-0.1.1-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl": "0.1.0@wfrs-0.1.0-cp310-cp310-macosx_10_7_x86_64.whl",
+        "wfrs-0.1.1-cp310-cp310-manylinux_2_17_armv7l.manylinux2014_armv7l.whl": "0.1.0@wfrs-0.1.0-cp310-cp310-macosx_10_7_x86_64.whl",
+        "wfrs-0.1.1-cp310-cp310-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl": "0.1.0@wfrs-0.1.0-cp310-cp310-macosx_10_7_x86_64.whl",
+        "wfrs-0.1.1-cp310-cp310-manylinux_2_17_s390x.manylinux2014_s390x.whl": "0.1.0@wfrs-0.1.0-cp310-cp310-macosx_10_7_x86_64.whl",
+        "wfrs-0.1.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.1.0@wfrs-0.1.0-cp310-cp310-macosx_10_7_x86_64.whl",
+        "wfrs-0.1.1-cp310-cp310-manylinux_2_5_i686.manylinux1_i686.whl": "0.1.0@wfrs-0.1.0-cp310-cp310-macosx_10_7_x86_64.whl",
+        "wfrs-0.1.1-cp310-none-win32.whl": "0.1.0@wfrs-0.1.0-cp310-cp310-macosx_10_7_x86_64.whl",
+        "wfrs-0.1.1-cp310-none-win_amd64.whl": "0.1.0@wfrs-0.1.0-cp310-cp310-macosx_10_7_x86_64.whl"
       }
     },
     "cp311": {
@@ -90687,6 +91008,18 @@
         "wfrs-0.1.0-cp311-cp311-manylinux_2_5_i686.manylinux1_i686.whl": "0.1.0@wfrs-0.1.0-cp311-cp311-macosx_10_7_x86_64.whl",
         "wfrs-0.1.0-cp311-none-win32.whl": "0.1.0@wfrs-0.1.0-cp311-cp311-macosx_10_7_x86_64.whl",
         "wfrs-0.1.0-cp311-none-win_amd64.whl": "0.1.0@wfrs-0.1.0-cp311-cp311-macosx_10_7_x86_64.whl"
+      },
+      "0.1.1": {
+        "wfrs-0.1.1-cp311-cp311-macosx_10_7_x86_64.whl": "0.1.0@wfrs-0.1.0-cp311-cp311-macosx_10_7_x86_64.whl",
+        "wfrs-0.1.1-cp311-cp311-macosx_11_0_arm64.whl": "0.1.0@wfrs-0.1.0-cp311-cp311-macosx_10_7_x86_64.whl",
+        "wfrs-0.1.1-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl": "0.1.0@wfrs-0.1.0-cp311-cp311-macosx_10_7_x86_64.whl",
+        "wfrs-0.1.1-cp311-cp311-manylinux_2_17_armv7l.manylinux2014_armv7l.whl": "0.1.0@wfrs-0.1.0-cp311-cp311-macosx_10_7_x86_64.whl",
+        "wfrs-0.1.1-cp311-cp311-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl": "0.1.0@wfrs-0.1.0-cp311-cp311-macosx_10_7_x86_64.whl",
+        "wfrs-0.1.1-cp311-cp311-manylinux_2_17_s390x.manylinux2014_s390x.whl": "0.1.0@wfrs-0.1.0-cp311-cp311-macosx_10_7_x86_64.whl",
+        "wfrs-0.1.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.1.0@wfrs-0.1.0-cp311-cp311-macosx_10_7_x86_64.whl",
+        "wfrs-0.1.1-cp311-cp311-manylinux_2_5_i686.manylinux1_i686.whl": "0.1.0@wfrs-0.1.0-cp311-cp311-macosx_10_7_x86_64.whl",
+        "wfrs-0.1.1-cp311-none-win32.whl": "0.1.0@wfrs-0.1.0-cp311-cp311-macosx_10_7_x86_64.whl",
+        "wfrs-0.1.1-cp311-none-win_amd64.whl": "0.1.0@wfrs-0.1.0-cp311-cp311-macosx_10_7_x86_64.whl"
       }
     },
     "cp312": {
@@ -90699,6 +91032,14 @@
         "wfrs-0.1.0-cp312-cp312-manylinux_2_17_s390x.manylinux2014_s390x.whl": "0.1.0@wfrs-0.1.0-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
         "wfrs-0.1.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.1.0@wfrs-0.1.0-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
         "wfrs-0.1.0-cp312-cp312-manylinux_2_5_i686.manylinux1_i686.whl": "0.1.0@wfrs-0.1.0-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl"
+      },
+      "0.1.1": {
+        "wfrs-0.1.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl": "0.1.0@wfrs-0.1.0-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+        "wfrs-0.1.1-cp312-cp312-manylinux_2_17_armv7l.manylinux2014_armv7l.whl": "0.1.0@wfrs-0.1.0-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+        "wfrs-0.1.1-cp312-cp312-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl": "0.1.0@wfrs-0.1.0-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+        "wfrs-0.1.1-cp312-cp312-manylinux_2_17_s390x.manylinux2014_s390x.whl": "0.1.0@wfrs-0.1.0-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+        "wfrs-0.1.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.1.0@wfrs-0.1.0-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+        "wfrs-0.1.1-cp312-cp312-manylinux_2_5_i686.manylinux1_i686.whl": "0.1.0@wfrs-0.1.0-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl"
       }
     },
     "cp37": {
@@ -90713,6 +91054,16 @@
         "wfrs-0.1.0-cp37-cp37m-manylinux_2_5_i686.manylinux1_i686.whl": "0.1.0@wfrs-0.1.0-cp37-cp37m-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
         "wfrs-0.1.0-cp37-none-win32.whl": "0.1.0@wfrs-0.1.0-cp37-cp37m-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
         "wfrs-0.1.0-cp37-none-win_amd64.whl": "0.1.0@wfrs-0.1.0-cp37-cp37m-manylinux_2_17_aarch64.manylinux2014_aarch64.whl"
+      },
+      "0.1.1": {
+        "wfrs-0.1.1-cp37-cp37m-manylinux_2_17_aarch64.manylinux2014_aarch64.whl": "0.1.0@wfrs-0.1.0-cp37-cp37m-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+        "wfrs-0.1.1-cp37-cp37m-manylinux_2_17_armv7l.manylinux2014_armv7l.whl": "0.1.0@wfrs-0.1.0-cp37-cp37m-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+        "wfrs-0.1.1-cp37-cp37m-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl": "0.1.0@wfrs-0.1.0-cp37-cp37m-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+        "wfrs-0.1.1-cp37-cp37m-manylinux_2_17_s390x.manylinux2014_s390x.whl": "0.1.0@wfrs-0.1.0-cp37-cp37m-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+        "wfrs-0.1.1-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.1.0@wfrs-0.1.0-cp37-cp37m-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+        "wfrs-0.1.1-cp37-cp37m-manylinux_2_5_i686.manylinux1_i686.whl": "0.1.0@wfrs-0.1.0-cp37-cp37m-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+        "wfrs-0.1.1-cp37-none-win32.whl": "0.1.0@wfrs-0.1.0-cp37-cp37m-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+        "wfrs-0.1.1-cp37-none-win_amd64.whl": "0.1.0@wfrs-0.1.0-cp37-cp37m-manylinux_2_17_aarch64.manylinux2014_aarch64.whl"
       }
     },
     "cp38": {
@@ -90727,6 +91078,16 @@
         "wfrs-0.1.0-cp38-cp38-manylinux_2_5_i686.manylinux1_i686.whl": "0.1.0@wfrs-0.1.0-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
         "wfrs-0.1.0-cp38-none-win32.whl": "0.1.0@wfrs-0.1.0-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
         "wfrs-0.1.0-cp38-none-win_amd64.whl": "0.1.0@wfrs-0.1.0-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl"
+      },
+      "0.1.1": {
+        "wfrs-0.1.1-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl": "0.1.0@wfrs-0.1.0-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+        "wfrs-0.1.1-cp38-cp38-manylinux_2_17_armv7l.manylinux2014_armv7l.whl": "0.1.0@wfrs-0.1.0-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+        "wfrs-0.1.1-cp38-cp38-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl": "0.1.0@wfrs-0.1.0-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+        "wfrs-0.1.1-cp38-cp38-manylinux_2_17_s390x.manylinux2014_s390x.whl": "0.1.0@wfrs-0.1.0-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+        "wfrs-0.1.1-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.1.0@wfrs-0.1.0-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+        "wfrs-0.1.1-cp38-cp38-manylinux_2_5_i686.manylinux1_i686.whl": "0.1.0@wfrs-0.1.0-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+        "wfrs-0.1.1-cp38-none-win32.whl": "0.1.0@wfrs-0.1.0-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+        "wfrs-0.1.1-cp38-none-win_amd64.whl": "0.1.0@wfrs-0.1.0-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl"
       }
     },
     "cp39": {
@@ -90741,6 +91102,16 @@
         "wfrs-0.1.0-cp39-cp39-manylinux_2_5_i686.manylinux1_i686.whl": "0.1.0@wfrs-0.1.0-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
         "wfrs-0.1.0-cp39-none-win32.whl": "0.1.0@wfrs-0.1.0-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
         "wfrs-0.1.0-cp39-none-win_amd64.whl": "0.1.0@wfrs-0.1.0-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl"
+      },
+      "0.1.1": {
+        "wfrs-0.1.1-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl": "0.1.0@wfrs-0.1.0-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+        "wfrs-0.1.1-cp39-cp39-manylinux_2_17_armv7l.manylinux2014_armv7l.whl": "0.1.0@wfrs-0.1.0-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+        "wfrs-0.1.1-cp39-cp39-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl": "0.1.0@wfrs-0.1.0-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+        "wfrs-0.1.1-cp39-cp39-manylinux_2_17_s390x.manylinux2014_s390x.whl": "0.1.0@wfrs-0.1.0-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+        "wfrs-0.1.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.1.0@wfrs-0.1.0-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+        "wfrs-0.1.1-cp39-cp39-manylinux_2_5_i686.manylinux1_i686.whl": "0.1.0@wfrs-0.1.0-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+        "wfrs-0.1.1-cp39-none-win32.whl": "0.1.0@wfrs-0.1.0-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+        "wfrs-0.1.1-cp39-none-win_amd64.whl": "0.1.0@wfrs-0.1.0-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl"
       }
     },
     "pp310": {
@@ -90753,6 +91124,14 @@
         "wfrs-0.1.0-pp310-pypy310_pp73-manylinux_2_17_s390x.manylinux2014_s390x.whl": "0.1.0@wfrs-0.1.0-pp310-pypy310_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
         "wfrs-0.1.0-pp310-pypy310_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.1.0@wfrs-0.1.0-pp310-pypy310_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
         "wfrs-0.1.0-pp310-pypy310_pp73-manylinux_2_5_i686.manylinux1_i686.whl": "0.1.0@wfrs-0.1.0-pp310-pypy310_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl"
+      },
+      "0.1.1": {
+        "wfrs-0.1.1-pp310-pypy310_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl": "0.1.0@wfrs-0.1.0-pp310-pypy310_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+        "wfrs-0.1.1-pp310-pypy310_pp73-manylinux_2_17_armv7l.manylinux2014_armv7l.whl": "0.1.0@wfrs-0.1.0-pp310-pypy310_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+        "wfrs-0.1.1-pp310-pypy310_pp73-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl": "0.1.0@wfrs-0.1.0-pp310-pypy310_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+        "wfrs-0.1.1-pp310-pypy310_pp73-manylinux_2_17_s390x.manylinux2014_s390x.whl": "0.1.0@wfrs-0.1.0-pp310-pypy310_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+        "wfrs-0.1.1-pp310-pypy310_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.1.0@wfrs-0.1.0-pp310-pypy310_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+        "wfrs-0.1.1-pp310-pypy310_pp73-manylinux_2_5_i686.manylinux1_i686.whl": "0.1.0@wfrs-0.1.0-pp310-pypy310_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl"
       }
     },
     "pp37": {
@@ -90765,6 +91144,14 @@
         "wfrs-0.1.0-pp37-pypy37_pp73-manylinux_2_17_s390x.manylinux2014_s390x.whl": "0.1.0@wfrs-0.1.0-pp37-pypy37_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
         "wfrs-0.1.0-pp37-pypy37_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.1.0@wfrs-0.1.0-pp37-pypy37_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
         "wfrs-0.1.0-pp37-pypy37_pp73-manylinux_2_5_i686.manylinux1_i686.whl": "0.1.0@wfrs-0.1.0-pp37-pypy37_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl"
+      },
+      "0.1.1": {
+        "wfrs-0.1.1-pp37-pypy37_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl": "0.1.0@wfrs-0.1.0-pp37-pypy37_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+        "wfrs-0.1.1-pp37-pypy37_pp73-manylinux_2_17_armv7l.manylinux2014_armv7l.whl": "0.1.0@wfrs-0.1.0-pp37-pypy37_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+        "wfrs-0.1.1-pp37-pypy37_pp73-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl": "0.1.0@wfrs-0.1.0-pp37-pypy37_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+        "wfrs-0.1.1-pp37-pypy37_pp73-manylinux_2_17_s390x.manylinux2014_s390x.whl": "0.1.0@wfrs-0.1.0-pp37-pypy37_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+        "wfrs-0.1.1-pp37-pypy37_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.1.0@wfrs-0.1.0-pp37-pypy37_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+        "wfrs-0.1.1-pp37-pypy37_pp73-manylinux_2_5_i686.manylinux1_i686.whl": "0.1.0@wfrs-0.1.0-pp37-pypy37_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl"
       }
     },
     "pp38": {
@@ -90777,6 +91164,14 @@
         "wfrs-0.1.0-pp38-pypy38_pp73-manylinux_2_17_s390x.manylinux2014_s390x.whl": "0.1.0@wfrs-0.1.0-pp38-pypy38_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
         "wfrs-0.1.0-pp38-pypy38_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.1.0@wfrs-0.1.0-pp38-pypy38_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
         "wfrs-0.1.0-pp38-pypy38_pp73-manylinux_2_5_i686.manylinux1_i686.whl": "0.1.0@wfrs-0.1.0-pp38-pypy38_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl"
+      },
+      "0.1.1": {
+        "wfrs-0.1.1-pp38-pypy38_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl": "0.1.0@wfrs-0.1.0-pp38-pypy38_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+        "wfrs-0.1.1-pp38-pypy38_pp73-manylinux_2_17_armv7l.manylinux2014_armv7l.whl": "0.1.0@wfrs-0.1.0-pp38-pypy38_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+        "wfrs-0.1.1-pp38-pypy38_pp73-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl": "0.1.0@wfrs-0.1.0-pp38-pypy38_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+        "wfrs-0.1.1-pp38-pypy38_pp73-manylinux_2_17_s390x.manylinux2014_s390x.whl": "0.1.0@wfrs-0.1.0-pp38-pypy38_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+        "wfrs-0.1.1-pp38-pypy38_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.1.0@wfrs-0.1.0-pp38-pypy38_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+        "wfrs-0.1.1-pp38-pypy38_pp73-manylinux_2_5_i686.manylinux1_i686.whl": "0.1.0@wfrs-0.1.0-pp38-pypy38_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl"
       }
     },
     "pp39": {
@@ -90789,6 +91184,14 @@
         "wfrs-0.1.0-pp39-pypy39_pp73-manylinux_2_17_s390x.manylinux2014_s390x.whl": "0.1.0@wfrs-0.1.0-pp39-pypy39_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
         "wfrs-0.1.0-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.1.0@wfrs-0.1.0-pp39-pypy39_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
         "wfrs-0.1.0-pp39-pypy39_pp73-manylinux_2_5_i686.manylinux1_i686.whl": "0.1.0@wfrs-0.1.0-pp39-pypy39_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl"
+      },
+      "0.1.1": {
+        "wfrs-0.1.1-pp39-pypy39_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl": "0.1.0@wfrs-0.1.0-pp39-pypy39_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+        "wfrs-0.1.1-pp39-pypy39_pp73-manylinux_2_17_armv7l.manylinux2014_armv7l.whl": "0.1.0@wfrs-0.1.0-pp39-pypy39_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+        "wfrs-0.1.1-pp39-pypy39_pp73-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl": "0.1.0@wfrs-0.1.0-pp39-pypy39_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+        "wfrs-0.1.1-pp39-pypy39_pp73-manylinux_2_17_s390x.manylinux2014_s390x.whl": "0.1.0@wfrs-0.1.0-pp39-pypy39_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+        "wfrs-0.1.1-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "0.1.0@wfrs-0.1.0-pp39-pypy39_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+        "wfrs-0.1.1-pp39-pypy39_pp73-manylinux_2_5_i686.manylinux1_i686.whl": "0.1.0@wfrs-0.1.0-pp39-pypy39_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl"
       }
     }
   },
