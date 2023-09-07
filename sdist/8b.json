@@ -49,7 +49,8 @@
       "39": "36",
       "310": "36"
     },
-    "2022.5.6": "2022.5.5"
+    "2022.5.6": "2022.5.5",
+    "2022.5.7": "2022.5.5"
   },
   "abs-import": {
     "0.0.1": {
@@ -27192,7 +27193,22 @@
       "39": "27",
       "310": "27"
     },
-    "0.1.1": "0.1.0"
+    "0.1.1": "0.1.0",
+    "0.1.2": {
+      "27": {
+        "install_requires": [
+          "numpy",
+          "pandas",
+          "pfc-geometry",
+          "pint"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "flim-flam": {
     "0.1.0": {
@@ -42601,6 +42617,20 @@
       "310": "27"
     }
   },
+  "minio-handler-kvg": {
+    "1.0.0": {
+      "27": {
+        "install_requires": [
+          "minio"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
+  },
   "minuteman": {
     "0.1.0": {
       "36": {
@@ -56719,6 +56749,80 @@
           "plugins": [
             "pylink-square<0.15,>=0.12",
             "pykiso-python-uds<3.1.0,>=3.0.2",
+            "pyserial<4.0,>=3.0",
+            "PyVISA<2.0.0,>=1.12.0",
+            "PyVISA-py<0.6.0,>=0.5.3",
+            "python-can[pcan,vector]<5.0.0,>=4.2.1"
+          ],
+          "serial": [
+            "pyserial<4.0,>=3.0"
+          ],
+          ":python_version < \"3.8\"": [
+            "importlib-metadata<6.0,>=4.12"
+          ],
+          ":python_version >= \"3.5\" and python_version < \"4.0\"": [
+            "pyreadline3<4.0.0,>=3.4.1"
+          ]
+        },
+        "python_requires": [
+          ">=3.7,<4.0"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "0.24.1": {
+      "27": {
+        "install_requires": [
+          "Jinja2<4.0.0,>=2.11.0",
+          "MarkupSafe<2.1.0,>=2.0.1",
+          "PyYAML<7.0,>=6.0",
+          "brainstem",
+          "click<9.0.0,>=7.0.0",
+          "defusedxml<0.8.0,>=0.7.1",
+          "hidapi<0.13.0,>=0.12.0.post2",
+          "robotframework==3.2.2",
+          "tabulate<0.10.0,>=0.8.9",
+          "unittest-xml-reporting<4.0.0,>=3.2.0"
+        ],
+        "extras_require": {
+          "all": [
+            "rich<14.0.0,>=13.2.0",
+            "requests<3.0.0,>=2.28.2",
+            "isort>=5.11.4",
+            "black==22.10.0",
+            "pylink-square<0.15,>=0.12",
+            "pykiso-python-uds<3.2.0,>=3.1.0",
+            "pyserial<4.0,>=3.0",
+            "PyVISA<2.0.0,>=1.12.0",
+            "PyVISA-py<0.6.0,>=0.5.3",
+            "python-can[pcan,vector]<5.0.0,>=4.2.1"
+          ],
+          "debugger": [
+            "pylink-square<0.15,>=0.12"
+          ],
+          "pykitest": [
+            "isort>=5.11.4",
+            "black==22.10.0"
+          ],
+          "instrument": [
+            "PyVISA<2.0.0,>=1.12.0",
+            "PyVISA-py<0.6.0,>=0.5.3"
+          ],
+          "testrail": [
+            "rich<14.0.0,>=13.2.0",
+            "requests<3.0.0,>=2.28.2"
+          ],
+          "can": [
+            "pykiso-python-uds<3.2.0,>=3.1.0",
+            "python-can[pcan,vector]<5.0.0,>=4.2.1"
+          ],
+          "plugins": [
+            "pylink-square<0.15,>=0.12",
+            "pykiso-python-uds<3.2.0,>=3.1.0",
             "pyserial<4.0,>=3.0",
             "PyVISA<2.0.0,>=1.12.0",
             "PyVISA-py<0.6.0,>=0.5.3",

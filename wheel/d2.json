@@ -7584,6 +7584,9 @@
       "4.4.1.dev213": {
         "assemblyline_service_client-4.4.1.dev213-py3-none-any.whl": "4.0.0.1@assemblyline_service_client-4.0.0.1-py3-none-any.whl"
       },
+      "4.4.1.dev214": {
+        "assemblyline_service_client-4.4.1.dev214-py3-none-any.whl": "4.0.0.1@assemblyline_service_client-4.0.0.1-py3-none-any.whl"
+      },
       "4.4.1.dev27": {
         "assemblyline_service_client-4.4.1.dev27-py3-none-any.whl": "4.0.0.1@assemblyline_service_client-4.0.0.1-py3-none-any.whl"
       },
@@ -14645,6 +14648,22 @@
       },
       "0.3.0": {
         "bible_alignments-0.3.0-py3-none-any.whl": "0.2.17@bible_alignments-0.2.17-py3-none-any.whl"
+      },
+      "0.3.1": {
+        "bible_alignments-0.3.1-py3-none-any.whl": {
+          "requires_dist": [
+            "biblelib (>=0.2.17,<0.3.0)",
+            "django (>=4.2.2,<5.0.0)",
+            "django-environ (>=0.10.0,<0.11.0)",
+            "djangorestframework (>=3.14.0,<4.0.0)",
+            "jsonlines (>=3.1.0,<4.0.0)",
+            "jupyterlab (>=3.6.1,<4.0.0)",
+            "pandas (>=2.1.0,<3.0.0)",
+            "pydantic (>=2.1.1,<3.0.0)",
+            "tomli (>=2.0.1,<3.0.0)"
+          ],
+          "requires_python": ">=3.9,<=3.11"
+        }
       }
     }
   },
@@ -21237,6 +21256,23 @@
       }
     }
   },
+  "dafne-models": {
+    "py3": {
+      "1.0": {
+        "dafne_models-1.0-py3-none-any.whl": {
+          "provides_extras": [
+            "gui"
+          ],
+          "requires_dist": [
+            "dafne-dl",
+            "matplotlib",
+            "PyQt5 ; extra == 'gui'"
+          ],
+          "requires_python": ">=3.6"
+        }
+      }
+    }
+  },
   "dagster-bash": {
     "py3": {
       "0.5.6": {
@@ -22308,6 +22344,9 @@
       },
       "0.1.9": {
         "deepsensor-0.1.9-py3-none-any.whl": "0.1.10@deepsensor-0.1.10-py3-none-any.whl"
+      },
+      "0.2.0": {
+        "deepsensor-0.2.0-py3-none-any.whl": "0.1.10@deepsensor-0.1.10-py3-none-any.whl"
       }
     }
   },
@@ -22888,6 +22927,23 @@
           ],
           "requires_python": ">=3.10"
         }
+      },
+      "0.1.2": {
+        "django_citext-0.1.2-py3-none-any.whl": {
+          "provides_extras": [
+            "psycopg2",
+            "test"
+          ],
+          "requires_dist": [
+            "django",
+            "psycopg>=3.1.8; extra != 'psycopg2'",
+            "psycopg2-binary ; extra == \"psycopg2\"",
+            "pytest ; extra == \"test\"",
+            "pytest-cov ; extra == \"test\"",
+            "pytest-django ; extra == \"test\""
+          ],
+          "requires_python": ">=3.9"
+        }
       }
     }
   },
@@ -23277,6 +23333,64 @@
             "django-simple-captcha ==0.5.14 ; extra == 'test'",
             "tzdata ; extra == 'test'",
             "django-mptt ; extra == 'test'"
+          ],
+          "requires_python": ">=3.9"
+        }
+      },
+      "3.0.2": {
+        "django_cms_qe-3.0.2-py3-none-any.whl": {
+          "provides_extras": [
+            "build",
+            "dev",
+            "mysql",
+            "newsblog",
+            "psql",
+            "test"
+          ],
+          "requires_dist": [
+            "easy-thumbnails[svg]",
+            "djangocms-frontend ~=1.1",
+            "djangocms-style ~=3.0",
+            "django-csp ~=3.7",
+            "djangocms-picture ~=4.0",
+            "django-axes ~=6.0",
+            "django-constance[database] ~=2.9",
+            "djangocms-file ~=3.0",
+            "django-import-export ~=3.2",
+            "django-mail-queue ~=3.2",
+            "djangocms-icon ~=2.0",
+            "djangocms-googlemap ~=2.0",
+            "django-tablib ~=3.2",
+            "mailchimp3 ~=3.0",
+            "argon2-cffi ~=21.3",
+            "djangocms-aldryn-forms[captcha]",
+            "djangocms-aldryn-search",
+            "django-haystack ~=3.2",
+            "pymemcache ~=4.0",
+            "whoosh ~=2.7",
+            "Jinja2 <3.1.0 ; extra == 'build'",
+            "Sphinx ==1.8.5 ; extra == 'build'",
+            "django-debug-toolbar ~=4.1 ; extra == 'dev'",
+            "django-extensions ~=3.2 ; extra == 'dev'",
+            "mysqlclient ~=2.2 ; extra == 'mysql'",
+            "djangocms-aldryn-newsblog ; extra == 'newsblog'",
+            "psycopg2 ; extra == 'psql'",
+            "flake8 ; extra == 'test'",
+            "isort ; extra == 'test'",
+            "mypy ; extra == 'test'",
+            "pylint ; extra == 'test'",
+            "pylint-django ; extra == 'test'",
+            "pytest ~=6.2 ; extra == 'test'",
+            "pytest-data ==0.4 ; extra == 'test'",
+            "pytest-django ==3.9.0 ; extra == 'test'",
+            "pytest-env ==0.6.2 ; extra == 'test'",
+            "pytest-pythonpath ==0.7.3 ; extra == 'test'",
+            "pytest-sugar ==0.9.3 ; extra == 'test'",
+            "pytest-watch ==4.2.0 ; extra == 'test'",
+            "PyVirtualDisplay ==1.3.2 ; extra == 'test'",
+            "webdriverwrapper ==2.8.0 ; extra == 'test'",
+            "django-simple-captcha ==0.5.14 ; extra == 'test'",
+            "tzdata ; extra == 'test'"
           ],
           "requires_python": ">=3.9"
         }
@@ -28801,6 +28915,15 @@
       },
       "0.1.2": {
         "fictus-0.1.2-py3-none-any.whl": "0.0.1@fictus-0.0.1-py3-none-any.whl"
+      },
+      "0.1.3": {
+        "fictus-0.1.3-py3-none-any.whl": "0.0.1@fictus-0.0.1-py3-none-any.whl"
+      },
+      "0.1.4": {
+        "fictus-0.1.4-py3-none-any.whl": "0.0.1@fictus-0.0.1-py3-none-any.whl"
+      },
+      "0.1.5": {
+        "fictus-0.1.5-py3-none-any.whl": "0.0.1@fictus-0.0.1-py3-none-any.whl"
       }
     }
   },
@@ -30547,6 +30670,12 @@
             "kaggle"
           ]
         }
+      },
+      "1.0.7": {
+        "funcyou-1.0.7-py3-none-any.whl": "1.0.6@funcyou-1.0.6-py3-none-any.whl"
+      },
+      "1.0.8": {
+        "funcyou-1.0.8-py3-none-any.whl": "1.0.6@funcyou-1.0.6-py3-none-any.whl"
       }
     }
   },
@@ -32671,6 +32800,47 @@
             "psutil; extra == 'memprof'"
           ],
           "requires_python": ">=3.9"
+        }
+      },
+      "0.13.1": {
+        "glow-0.13.1-py3-none-any.whl": {
+          "provides_extras": [
+            "all",
+            "dev",
+            "dev-core",
+            "dev-wemake",
+            "io",
+            "memprof"
+          ],
+          "requires_dist": [
+            "loky>=3.1",
+            "lxml",
+            "numpy~=1.21",
+            "tqdm",
+            "wrapt~=1.15",
+            "glow[io]; extra == 'all'",
+            "matplotlib; extra == 'all'",
+            "flake8-alphabetize; extra == 'dev'",
+            "glow[dev-core]; extra == 'dev'",
+            "typing-extensions~=4.4; extra == 'dev'",
+            "flake8-pie; extra == 'dev-core'",
+            "flake8-pyi; extra == 'dev-core'",
+            "flake8-pyproject; extra == 'dev-core'",
+            "flake8-simplify; extra == 'dev-core'",
+            "flake8~=6.0.0; extra == 'dev-core'",
+            "isort; extra == 'dev-core'",
+            "mypy~=1.1.1; extra == 'dev-core'",
+            "pytest~=6.0; extra == 'dev-core'",
+            "ruff~=0.0.269; extra == 'dev-core'",
+            "yapf==0.33.0; extra == 'dev-core'",
+            "glow[dev-core]; extra == 'dev-wemake'",
+            "wemake-python-styleguide~=0.15.0; extra == 'dev-wemake'",
+            "opencv-python-headless~=4.0; extra == 'io'",
+            "sounddevice; extra == 'io'",
+            "soundfile; extra == 'io'",
+            "psutil; extra == 'memprof'"
+          ],
+          "requires_python": ">=3.10"
         }
       }
     }
@@ -47274,6 +47444,21 @@
       },
       "0.41.1": {
         "nanome-0.41.1-py2.py3-none-any.whl": "0.41.0@nanome-0.41.0-py2.py3-none-any.whl"
+      },
+      "0.41.2": {
+        "nanome-0.41.2-py2.py3-none-any.whl": {
+          "provides_extras": [
+            "beta",
+            "schemas"
+          ],
+          "requires_dist": [
+            "tblib >=1.7.0",
+            "graypy >=2.1.0",
+            "redis >=4.1.3 ; extra == 'beta'",
+            "marshmallow >=3.18.0 ; extra == 'beta'",
+            "marshmallow >=3.18.0 ; extra == 'schemas'"
+          ]
+        }
       },
       "0.5.0": {
         "nanome-0.5.0-py2.py3-none-any.whl": "0.10.0@nanome-0.10.0-py2.py3-none-any.whl"
@@ -79276,6 +79461,21 @@
       }
     }
   },
+  "ref-gsd": {
+    "py3": {
+      "0.0.1": {
+        "ref_gsd-0.0.1-py3-none-any.whl": {
+          "requires_dist": [
+            "jax (>=0.4.6,<0.5.0)"
+          ],
+          "requires_python": ">=3.9,<4.0"
+        }
+      },
+      "0.0.2": {
+        "ref_gsd-0.0.2-py3-none-any.whl": "0.0.1@ref_gsd-0.0.1-py3-none-any.whl"
+      }
+    }
+  },
   "regex-log-parser": {
     "py3": {
       "1.0.0": {
@@ -85035,6 +85235,9 @@
       },
       "6.2.0.dev122": {
         "stix_shifter_modules_demo_template-6.2.0.dev122-py2.py3-none-any.whl": "1.0.0.dev782@stix_shifter_modules_demo_template-1.0.0.dev782-py2.py3-none-any.whl"
+      },
+      "6.2.1": {
+        "stix_shifter_modules_demo_template-6.2.1-py2.py3-none-any.whl": "5.3.1.dev107@stix_shifter_modules_demo_template-5.3.1.dev107-py2.py3-none-any.whl"
       }
     }
   },
@@ -87699,6 +87902,20 @@
             "tencentcloud-sdk-python-common (==3.0.974)"
           ]
         }
+      },
+      "3.0.975": {
+        "tencentcloud_sdk_python_antiddos-3.0.975-py2.py3-none-any.whl": {
+          "requires_dist": [
+            "tencentcloud-sdk-python-common (==3.0.975)"
+          ]
+        }
+      },
+      "3.0.976": {
+        "tencentcloud_sdk_python_antiddos-3.0.976-py2.py3-none-any.whl": {
+          "requires_dist": [
+            "tencentcloud-sdk-python-common (==3.0.976)"
+          ]
+        }
       }
     }
   },
@@ -88774,6 +88991,20 @@
             "tencentcloud-sdk-python-common (==3.0.974)"
           ]
         }
+      },
+      "3.0.975": {
+        "tencentcloud_sdk_python_cdc-3.0.975-py2.py3-none-any.whl": {
+          "requires_dist": [
+            "tencentcloud-sdk-python-common (==3.0.975)"
+          ]
+        }
+      },
+      "3.0.976": {
+        "tencentcloud_sdk_python_cdc-3.0.976-py2.py3-none-any.whl": {
+          "requires_dist": [
+            "tencentcloud-sdk-python-common (==3.0.976)"
+          ]
+        }
       }
     }
   },
@@ -89121,6 +89352,20 @@
         "tencentcloud_sdk_python_csxg-3.0.974-py2.py3-none-any.whl": {
           "requires_dist": [
             "tencentcloud-sdk-python-common (==3.0.974)"
+          ]
+        }
+      },
+      "3.0.975": {
+        "tencentcloud_sdk_python_csxg-3.0.975-py2.py3-none-any.whl": {
+          "requires_dist": [
+            "tencentcloud-sdk-python-common (==3.0.975)"
+          ]
+        }
+      },
+      "3.0.976": {
+        "tencentcloud_sdk_python_csxg-3.0.976-py2.py3-none-any.whl": {
+          "requires_dist": [
+            "tencentcloud-sdk-python-common (==3.0.976)"
           ]
         }
       }
@@ -91246,6 +91491,23 @@
       },
       "0.2.5": {
         "trackbert-0.2.5-py3-none-any.whl": "0.2.4@trackbert-0.2.4-py3-none-any.whl"
+      },
+      "0.2.6": {
+        "trackbert-0.2.6-py3-none-any.whl": {
+          "requires_dist": [
+            "alembic",
+            "dhltrack",
+            "dpdtrack",
+            "fedextrack",
+            "glsapi",
+            "postat",
+            "pykeydelivery>=0.9.1",
+            "python-dateutil",
+            "sqlalchemy",
+            "tabulate"
+          ],
+          "requires_python": ">=3.10"
+        }
       }
     }
   },
@@ -91715,6 +91977,30 @@
       },
       "0.19.1": {
         "tshistory-0.19.1-py3-none-any.whl": "0.19.0@tshistory-0.19.0-py3-none-any.whl"
+      },
+      "0.19.2": {
+        "tshistory-0.19.2-py3-none-any.whl": {
+          "requires_dist": [
+            "pandas <1.6,>=1.0.5",
+            "dbcache >=0.4.0",
+            "psyl",
+            "dateutils",
+            "sqlalchemy <2",
+            "sqlhelp",
+            "click",
+            "mock",
+            "inireader",
+            "pytz",
+            "colorama",
+            "tqdm",
+            "flask ==2.3.2",
+            "flask-restx ==1.1",
+            "jinja2 <3.2",
+            "requests",
+            "version-parser ==1.0.1"
+          ],
+          "requires_python": ">= 3.10"
+        }
       }
     }
   },
