@@ -15360,7 +15360,8 @@
       "38": "27",
       "39": "27",
       "310": "27"
-    }
+    },
+    "0.3": "0.2"
   },
   "compas-notebook": {
     "0.2.0": {
@@ -36370,7 +36371,8 @@
     },
     "0.1.30": "0.1.29",
     "0.1.31": "0.1.29",
-    "0.1.32": "0.1.29"
+    "0.1.32": "0.1.29",
+    "0.1.33": "0.1.29"
   },
   "hstsparser": {
     "1.1.4": {
@@ -57168,7 +57170,8 @@
     "0.4.1a1691733092": "0.4.1a1683267861",
     "0.4.1a1692856097": "0.4.1a1683267861",
     "0.4.1a1693028429": "0.4.1a1683267861",
-    "0.4.1a1693462109": "0.4.1a1683267861"
+    "0.4.1a1693462109": "0.4.1a1683267861",
+    "0.4.1a1693979762": "0.4.1a1683267861"
   },
   "puzzle-core": {
     "1.0.0": {
@@ -63142,7 +63145,21 @@
       "39": "27",
       "310": "27"
     },
-    "1.3.1": "1.3.0"
+    "1.3.1": "1.3.0",
+    "1.3.2": {
+      "27": {
+        "install_requires": [
+          "click==8.1.2",
+          "pyyaml>=5.4.1",
+          "jsonschema==4.16.0"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    }
   },
   "replayenhancer": {
     "0.5": {
@@ -69696,7 +69713,130 @@
     "1.0.0.dev20230902": "1.0.0.dev20230816",
     "1.0.0.dev20230903": "1.0.0.dev20230816",
     "1.0.0.dev20230904": "1.0.0.dev20230816",
-    "1.0.0.dev20230905": "1.0.0.dev20230816"
+    "1.0.0.dev20230905": "1.0.0.dev20230816",
+    "1.0.0.dev20230906": {
+      "36": {
+        "install_requires": [
+          "wheel",
+          "click<=8.0.4,>=7.0",
+          "colorama<0.4.5",
+          "cryptography",
+          "jinja2>=3.0",
+          "jsonschema",
+          "networkx",
+          "oauth2client",
+          "pandas",
+          "pendulum",
+          "PrettyTable>=2.0.0",
+          "python-dotenv",
+          "ray[default]!=2.6.0,<=2.6.3,>=2.2.0",
+          "rich",
+          "tabulate",
+          "filelock>=3.6.0",
+          "packaging",
+          "protobuf!=3.19.5,>=3.15.3",
+          "psutil",
+          "pulp",
+          "pydantic<2.0,>=1.10.8",
+          "pyyaml!=5.4.*,>3.13",
+          "urllib3<2",
+          "awscli>=1.27.10",
+          "botocore>=1.29.10",
+          "boto3>=1.26.1",
+          "pycryptodome==3.12.0"
+        ],
+        "setup_requires": [
+          "wheel"
+        ],
+        "extras_require": {
+          "aws": [
+            "urllib3<2",
+            "awscli>=1.27.10",
+            "botocore>=1.29.10",
+            "boto3>=1.26.1",
+            "pycryptodome==3.12.0"
+          ],
+          "azure": [
+            "azure-cli>=2.31.0",
+            "azure-core",
+            "azure-identity>=1.13.0",
+            "azure-mgmt-network"
+          ],
+          "gcp": [
+            "google-api-python-client",
+            "google-cloud-storage"
+          ],
+          "ibm": [
+            "ibm-cloud-sdk-core",
+            "ibm-vpc",
+            "ibm-platform-services",
+            "ibm-cos-sdk"
+          ],
+          "docker": [
+            "docker"
+          ],
+          "lambda": [],
+          "cloudflare": [
+            "urllib3<2",
+            "awscli>=1.27.10",
+            "botocore>=1.29.10",
+            "boto3>=1.26.1",
+            "pycryptodome==3.12.0"
+          ],
+          "scp": [],
+          "oci": [
+            "oci"
+          ],
+          "kubernetes": [
+            "kubernetes"
+          ],
+          "all": [
+            "urllib3<2",
+            "awscli>=1.27.10",
+            "botocore>=1.29.10",
+            "boto3>=1.26.1",
+            "pycryptodome==3.12.0",
+            "azure-cli>=2.31.0",
+            "azure-core",
+            "azure-identity>=1.13.0",
+            "azure-mgmt-network",
+            "google-api-python-client",
+            "google-cloud-storage",
+            "ibm-cloud-sdk-core",
+            "ibm-vpc",
+            "ibm-platform-services",
+            "ibm-cos-sdk",
+            "docker",
+            "urllib3<2",
+            "awscli>=1.27.10",
+            "botocore>=1.29.10",
+            "boto3>=1.26.1",
+            "pycryptodome==3.12.0",
+            "oci",
+            "kubernetes"
+          ],
+          ":python_version < \"3.8\"": [
+            "typing_extensions"
+          ],
+          ":python_version < \"3.10\" and sys_platform == \"darwin\"": [
+            "grpcio!=1.48.0,<=1.49.1,>=1.32.0"
+          ],
+          ":python_version >= \"3.10\" and sys_platform == \"darwin\"": [
+            "grpcio!=1.48.0,<=1.49.1,>=1.42.0"
+          ],
+          ":python_version < \"3.10\" and sys_platform != \"darwin\"": [
+            "grpcio!=1.48.0,<=1.51.3,>=1.32.0"
+          ],
+          ":python_version >= \"3.10\" and sys_platform != \"darwin\"": [
+            "grpcio!=1.48.0,<=1.51.3,>=1.42.0"
+          ]
+        }
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "slackfix": {
     "0.1": {
@@ -71128,7 +71268,8 @@
     "0.5.0": "0.1.5",
     "0.4.8": "0.1.5",
     "0.4.9": "0.1.5",
-    "0.4.7": "0.1.5"
+    "0.4.7": "0.1.5",
+    "0.5.1": "0.1.5"
   },
   "spoffy": {
     "0.1.0": {

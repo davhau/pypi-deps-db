@@ -6292,7 +6292,87 @@
     "5.13.3": "5.9.3",
     "5.13.4": "5.9.3",
     "5.14.0": "5.9.3",
-    "5.14.1": "5.9.3"
+    "5.14.1": "5.9.3",
+    "5.14.2": {
+      "27": {
+        "install_requires": [
+          "sqlalchemy<2.0,>=1.4",
+          "geoalchemy2",
+          "psycopg2",
+          "pg-grant",
+          "click",
+          "deepdiff",
+          "jsonlines",
+          "jsonschema[format]>=3.2.0",
+          "shapely>=1.8.0",
+          "python-string-utils",
+          "python-dateutil",
+          "requests",
+          "jinja2",
+          "mappyfile",
+          "methodtools",
+          "jsonpath-rw",
+          "orjson",
+          "more-ds",
+          "factory_boy",
+          "remote-pdb"
+        ],
+        "extras_require": {
+          "tests": [
+            "types-requests",
+            "types-click",
+            "types-python-dateutil",
+            "flake8",
+            "flake8-colors",
+            "flake8-raise",
+            "flake8-bandit",
+            "flake8-bugbear",
+            "flake8-builtins",
+            "flake8-comprehensions",
+            "flake8-docstrings",
+            "flake8-implicit-str-concat",
+            "flake8-print",
+            "flake8-rst",
+            "flake8-string-format",
+            "flake8-logging-format",
+            "pytest",
+            "pytest-cov",
+            "pytest-django",
+            "pytest-sqlalchemy"
+          ],
+          "kafka": [
+            "confluent-kafka"
+          ],
+          "dev": [
+            "build",
+            "twine",
+            "python-environ"
+          ],
+          "django": [
+            "django<4.2,>=3.0",
+            "django-gisserver>=1.2.3",
+            "django-environ",
+            "django-db-comments",
+            "factory_boy"
+          ]
+        },
+        "tests_require": [
+          "pytest",
+          "pytest-cov",
+          "pytest-sqlalchemy",
+          "requests-mock"
+        ],
+        "python_requires": [
+          ">=3.9"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "5.15.0": "5.14.2"
   },
   "anaflow": {
     "0.2.3": {
@@ -39754,6 +39834,120 @@
       "38": "27",
       "39": "27",
       "310": "27"
+    },
+    "23.9.0a2": {
+      "27": {
+        "install_requires": [
+          "PyYAML~=6.0",
+          "aiodocker~=0.21.0",
+          "aiofiles~=0.8.0",
+          "aiohttp~=3.8.1",
+          "aiomonitor~=0.6.0",
+          "aiotools~=1.7.0",
+          "async_timeout~=4.0",
+          "attrs>=20.3",
+          "backend.ai-cli==23.09.0a2",
+          "backend.ai-common==23.09.0a2",
+          "backend.ai-kernel-binary==23.09.0a2",
+          "backend.ai-kernel-helper==23.09.0a2",
+          "backend.ai-kernel==23.09.0a2",
+          "backend.ai-krunner-static-gnu==4.1.0",
+          "backend.ai-plugin==23.09.0a2",
+          "cachetools~=5.2.0",
+          "callosum~=0.9.10",
+          "cattrs~=22.2.0",
+          "click>=7.1.2",
+          "etcetra==0.1.17",
+          "janus~=1.0.0",
+          "kubernetes-asyncio~=9.1.0",
+          "more-itertools~=8.13.0",
+          "networkx~=2.8.7",
+          "psutil~=5.9.1",
+          "pyzmq~=24.0.1",
+          "redis[hiredis]~=4.6.0",
+          "setproctitle~=1.3.2",
+          "tenacity>=8.0",
+          "tomlkit~=0.11.1",
+          "trafaret~=2.1",
+          "types-PyYAML",
+          "types-aiofiles",
+          "types-cachetools",
+          "types-click",
+          "types-redis",
+          "types-setuptools",
+          "typing_extensions~=4.3"
+        ],
+        "extras_require": {
+          ":sys_platform != \"Windows\"": [
+            "uvloop>=0.17"
+          ]
+        },
+        "python_requires": [
+          ">=3.11,<3.12"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "23.9.0a3": {
+      "27": {
+        "install_requires": [
+          "PyYAML~=6.0",
+          "aiodocker~=0.21.0",
+          "aiofiles~=0.8.0",
+          "aiohttp~=3.8.1",
+          "aiomonitor~=0.6.0",
+          "aiotools~=1.7.0",
+          "async_timeout~=4.0",
+          "attrs>=20.3",
+          "backend.ai-cli==23.09.0a3",
+          "backend.ai-common==23.09.0a3",
+          "backend.ai-kernel-binary==23.09.0a3",
+          "backend.ai-kernel-helper==23.09.0a3",
+          "backend.ai-kernel==23.09.0a3",
+          "backend.ai-krunner-static-gnu==4.1.0",
+          "backend.ai-plugin==23.09.0a3",
+          "cachetools~=5.2.0",
+          "callosum~=0.9.10",
+          "cattrs~=22.2.0",
+          "click>=7.1.2",
+          "etcetra==0.1.17",
+          "janus~=1.0.0",
+          "kubernetes-asyncio~=9.1.0",
+          "more-itertools~=8.13.0",
+          "networkx~=2.8.7",
+          "psutil~=5.9.1",
+          "pyzmq~=24.0.1",
+          "redis[hiredis]~=4.6.0",
+          "setproctitle~=1.3.2",
+          "tenacity>=8.0",
+          "tomlkit~=0.11.1",
+          "trafaret~=2.1",
+          "types-PyYAML",
+          "types-aiofiles",
+          "types-cachetools",
+          "types-click",
+          "types-redis",
+          "types-setuptools",
+          "typing_extensions~=4.3"
+        ],
+        "extras_require": {
+          ":sys_platform != \"Windows\"": [
+            "uvloop>=0.17"
+          ]
+        },
+        "python_requires": [
+          ">=3.11,<3.12"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
     }
   },
   "backend.ai-kernel-binary": {
@@ -39866,7 +40060,9 @@
     "22.9.23": "22.9.0",
     "23.3.11": "23.3.0",
     "23.3.12": "23.3.0",
-    "23.9.0a1": "23.3.0"
+    "23.9.0a1": "23.3.0",
+    "23.9.0a2": "23.3.0",
+    "23.9.0a3": "23.3.0"
   },
   "backuppc-clone": {
     "1.0.0": {
@@ -41468,7 +41664,8 @@
     "1.31.38": "1.30.0",
     "1.31.39": "1.30.0",
     "1.31.40": "1.30.0",
-    "1.31.41": "1.30.0"
+    "1.31.41": "1.30.0",
+    "1.31.42": "1.30.0"
   },
   "botocore-a-la-carte-detective": {
     "1.29.49": "1.30.0",
@@ -41646,7 +41843,8 @@
     "1.31.38": "1.30.0",
     "1.31.39": "1.30.0",
     "1.31.40": "1.30.0",
-    "1.31.41": "1.30.0"
+    "1.31.41": "1.30.0",
+    "1.31.42": "1.30.0"
   },
   "bottle-smart-filters": {
     "0.1": {
@@ -53499,7 +53697,8 @@
     "1.47.7": "1.0.0",
     "1.47.5": "1.0.0",
     "1.47.4": "1.0.0",
-    "1.48.0": "1.0.0"
+    "1.48.0": "1.0.0",
+    "1.48.1": "1.0.0"
   },
   "drf-friendly-errors-2": {
     "0.14.3": {
@@ -62275,7 +62474,8 @@
       "39": "36",
       "310": "36"
     },
-    "1.3.2": "1.3.1"
+    "1.3.2": "1.3.1",
+    "1.3.3": "1.3.1"
   },
   "gaetasks": {
     "0.0.2": {
@@ -73912,7 +74112,14 @@
     "0.0.3": "0.0.1",
     "0.0.4": "0.0.1",
     "0.0.5": "0.0.1",
-    "0.0.6": "0.0.1"
+    "0.0.6": "0.0.1",
+    "0.0.7": {
+      "36": {},
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "lod-tools": {
     "1.0.100": "1.0.81",
@@ -108805,6 +109012,30 @@
       "38": "27",
       "39": "27",
       "310": "27"
+    },
+    "3.0.975": {
+      "27": {
+        "install_requires": [
+          "tencentcloud-sdk-python-common==3.0.975"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "3.0.976": {
+      "27": {
+        "install_requires": [
+          "tencentcloud-sdk-python-common==3.0.976"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
     }
   },
   "tensorflou": {
@@ -109551,7 +109782,8 @@
       "38": "36",
       "39": "36",
       "310": "36"
-    }
+    },
+    "0.2.93": "0.2.92"
   },
   "tgcd": {
     "1.0.0": {

@@ -5538,7 +5538,8 @@
       "39": "27",
       "310": "27"
     },
-    "1.5": "1.1"
+    "1.5": "1.1",
+    "2.1": "1.1"
   },
   "beckpdf": {
     "0.0.0": {
@@ -12857,7 +12858,9 @@
     "1.1.389": "1.1.379",
     "2.3.261": "2.3.251",
     "1.1.390": "1.1.379",
-    "2.3.262": "2.3.251"
+    "2.3.262": "2.3.251",
+    "1.1.391": "1.1.379",
+    "2.3.263": "2.3.251"
   },
   "cdk-cloudformation-fastly-tls-domain": {
     "1.1.0a7": {
@@ -36302,7 +36305,325 @@
       "39": "37",
       "310": "37"
     },
-    "1.31.1": "1.31.0"
+    "1.31.1": "1.31.0",
+    "1.32.0": {
+      "27": {
+        "install_requires": [
+          "google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,<3.0.0dev,>=1.32.0",
+          "proto-plus<2.0.0dev,>=1.22.0",
+          "protobuf!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.19.5",
+          "packaging>=14.3",
+          "google-cloud-storage<3.0.0dev,>=1.32.0",
+          "google-cloud-bigquery<4.0.0dev,>=1.15.0",
+          "google-cloud-resource-manager<3.0.0dev,>=1.3.3",
+          "shapely<2.0.0"
+        ],
+        "extras_require": {
+          "testing:python_version < \"3.8\"": [
+            "importlib-metadata<7.0",
+            "torch"
+          ],
+          "full:python_version < \"3.11\"": [
+            "google-vizier==0.0.4",
+            "pyarrow<8.0dev,>=3.0.0"
+          ],
+          "cloud_profiler": [
+            "tensorboard-plugin-profile<3.0.0dev,>=2.4.0",
+            "werkzeug<2.1.0dev,>=2.0.0",
+            "tensorflow<3.0.0dev,>=2.4.0"
+          ],
+          "prediction": [
+            "docker>=5.0.3",
+            "fastapi<0.76.0,>=0.71.0",
+            "starlette>=0.17.1",
+            "uvicorn[standard]>=0.16.0"
+          ],
+          "testing:python_version < \"3.11\"": [
+            "google-vizier==0.0.4",
+            "pyarrow<8.0dev,>=3.0.0"
+          ],
+          "autologging": [
+            "mlflow<=2.1.1,>=1.27.0"
+          ],
+          "tensorboard": [
+            "tensorflow<3.0.0dev,>=2.3.0"
+          ],
+          "vizier:python_version >= \"3.11\"": [
+            "google-vizier>=0.1.6"
+          ],
+          "testing:python_version >= \"3.8\"": [
+            "torch>=2.0.0"
+          ],
+          "endpoint": [
+            "requests>=2.28.1"
+          ],
+          "lit": [
+            "tensorflow<3.0.0dev,>=2.3.0",
+            "pandas>=1.0.0",
+            "lit-nlp==0.4.0",
+            "explainable-ai-sdk>=1.0.0"
+          ],
+          "xai": [
+            "tensorflow<3.0.0dev,>=2.3.0"
+          ],
+          "datasets:python_version >= \"3.11\"": [
+            "pyarrow>=10.0.1"
+          ],
+          "metadata": [
+            "pandas>=1.0.0",
+            "numpy>=1.15.0"
+          ],
+          "full:python_version < \"3.8\"": [
+            "importlib-metadata<7.0"
+          ],
+          "full": [
+            "pandas>=1.0.0",
+            "tensorflow<3.0.0dev,>=2.3.0",
+            "google-cloud-logging<4.0",
+            "tensorflow<3.0.0dev,>=2.3.0",
+            "mlflow<=2.1.1,>=1.27.0",
+            "urllib3<1.27,>=1.21.1",
+            "docker>=5.0.3",
+            "starlette>=0.17.1",
+            "fastapi<0.76.0,>=0.71.0",
+            "google-cloud-bigquery-storage",
+            "pyarrow>=6.0.1",
+            "pyyaml==5.3.1",
+            "lit-nlp==0.4.0",
+            "uvicorn[standard]>=0.16.0",
+            "numpy>=1.15.0",
+            "explainable-ai-sdk>=1.0.0",
+            "requests>=2.28.1",
+            "cloudpickle<3.0"
+          ],
+          "pipelines": [
+            "pyyaml==5.3.1"
+          ],
+          "preview:python_version < \"3.8\"": [
+            "importlib-metadata<7.0"
+          ],
+          "datasets:python_version < \"3.11\"": [
+            "pyarrow<8.0dev,>=3.0.0"
+          ],
+          "vizier:python_version < \"3.11\"": [
+            "google-vizier==0.0.4"
+          ],
+          "testing:python_version >= \"3.11\"": [
+            "google-vizier>=0.1.6",
+            "pyarrow>=10.0.1"
+          ],
+          "datasets": [],
+          "full:python_version >= \"3.11\"": [
+            "google-vizier>=0.1.6",
+            "pyarrow>=10.0.1"
+          ],
+          "private_endpoints": [
+            "urllib3<1.27,>=1.21.1",
+            "requests>=2.28.1"
+          ],
+          "vizier": [],
+          "testing": [
+            "pandas>=1.0.0",
+            "tensorflow<3.0.0dev,>=2.3.0",
+            "google-cloud-logging<4.0",
+            "tensorflow<3.0.0dev,>=2.3.0",
+            "mlflow<=2.1.1,>=1.27.0",
+            "urllib3<1.27,>=1.21.1",
+            "docker>=5.0.3",
+            "starlette>=0.17.1",
+            "fastapi<0.76.0,>=0.71.0",
+            "google-cloud-bigquery-storage",
+            "pyarrow>=6.0.1",
+            "pyyaml==5.3.1",
+            "lit-nlp==0.4.0",
+            "uvicorn[standard]>=0.16.0",
+            "numpy>=1.15.0",
+            "explainable-ai-sdk>=1.0.0",
+            "requests>=2.28.1",
+            "cloudpickle<3.0",
+            "tensorboard-plugin-profile<3.0.0dev,>=2.4.0",
+            "werkzeug<2.1.0dev,>=2.0.0",
+            "tensorflow<3.0.0dev,>=2.4.0",
+            "grpcio-testing",
+            "ipython",
+            "kfp",
+            "pyfakefs",
+            "pytest-asyncio",
+            "pytest-xdist",
+            "scikit-learn",
+            "tensorflow<2.13.0,>=2.3.0",
+            "xgboost"
+          ],
+          "preview": [
+            "cloudpickle<3.0",
+            "google-cloud-logging<4.0"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "36": {
+        "install_requires": [
+          "google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,<3.0.0dev,>=1.32.0",
+          "proto-plus<2.0.0dev,>=1.22.0",
+          "protobuf!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.19.5",
+          "packaging>=14.3",
+          "google-cloud-storage<3.0.0dev,>=1.32.0",
+          "google-cloud-bigquery<4.0.0dev,>=1.15.0",
+          "google-cloud-resource-manager<3.0.0dev,>=1.3.3",
+          "shapely<2.0.0"
+        ],
+        "extras_require": {
+          "endpoint": [
+            "requests>=2.28.1"
+          ],
+          "full": [
+            "pandas>=1.0.0",
+            "mlflow<=2.1.1,>=1.27.0",
+            "cloudpickle<3.0",
+            "pyyaml==5.3.1",
+            "tensorflow<3.0.0dev,>=2.3.0",
+            "docker>=5.0.3",
+            "uvicorn[standard]>=0.16.0",
+            "fastapi<0.76.0,>=0.71.0",
+            "lit-nlp==0.4.0",
+            "google-cloud-bigquery-storage",
+            "pyarrow>=6.0.1",
+            "starlette>=0.17.1",
+            "google-cloud-logging<4.0",
+            "tensorflow<3.0.0dev,>=2.3.0",
+            "urllib3<1.27,>=1.21.1",
+            "explainable-ai-sdk>=1.0.0",
+            "numpy>=1.15.0",
+            "requests>=2.28.1"
+          ],
+          "full:python_version >= \"3.11\"": [
+            "pyarrow>=10.0.1",
+            "google-vizier>=0.1.6"
+          ],
+          "full:python_version < \"3.11\"": [
+            "pyarrow<8.0dev,>=3.0.0",
+            "google-vizier==0.0.4"
+          ],
+          "full:python_version < \"3.8\"": [
+            "importlib-metadata<7.0"
+          ],
+          "metadata": [
+            "pandas>=1.0.0",
+            "numpy>=1.15.0"
+          ],
+          "tensorboard": [
+            "tensorflow<3.0.0dev,>=2.3.0"
+          ],
+          "testing": [
+            "pandas>=1.0.0",
+            "mlflow<=2.1.1,>=1.27.0",
+            "cloudpickle<3.0",
+            "pyyaml==5.3.1",
+            "tensorflow<3.0.0dev,>=2.3.0",
+            "docker>=5.0.3",
+            "uvicorn[standard]>=0.16.0",
+            "fastapi<0.76.0,>=0.71.0",
+            "lit-nlp==0.4.0",
+            "google-cloud-bigquery-storage",
+            "pyarrow>=6.0.1",
+            "starlette>=0.17.1",
+            "google-cloud-logging<4.0",
+            "tensorflow<3.0.0dev,>=2.3.0",
+            "urllib3<1.27,>=1.21.1",
+            "explainable-ai-sdk>=1.0.0",
+            "numpy>=1.15.0",
+            "requests>=2.28.1",
+            "tensorboard-plugin-profile<3.0.0dev,>=2.4.0",
+            "werkzeug<2.1.0dev,>=2.0.0",
+            "tensorflow<3.0.0dev,>=2.4.0",
+            "grpcio-testing",
+            "ipython",
+            "kfp",
+            "pyfakefs",
+            "pytest-asyncio",
+            "pytest-xdist",
+            "scikit-learn",
+            "tensorflow<2.13.0,>=2.3.0",
+            "xgboost"
+          ],
+          "testing:python_version >= \"3.11\"": [
+            "pyarrow>=10.0.1",
+            "google-vizier>=0.1.6"
+          ],
+          "testing:python_version < \"3.11\"": [
+            "pyarrow<8.0dev,>=3.0.0",
+            "google-vizier==0.0.4"
+          ],
+          "testing:python_version < \"3.8\"": [
+            "importlib-metadata<7.0",
+            "torch"
+          ],
+          "testing:python_version >= \"3.8\"": [
+            "torch>=2.0.0"
+          ],
+          "xai": [
+            "tensorflow<3.0.0dev,>=2.3.0"
+          ],
+          "lit": [
+            "tensorflow<3.0.0dev,>=2.3.0",
+            "pandas>=1.0.0",
+            "lit-nlp==0.4.0",
+            "explainable-ai-sdk>=1.0.0"
+          ],
+          "cloud_profiler": [
+            "tensorboard-plugin-profile<3.0.0dev,>=2.4.0",
+            "werkzeug<2.1.0dev,>=2.0.0",
+            "tensorflow<3.0.0dev,>=2.4.0"
+          ],
+          "pipelines": [
+            "pyyaml==5.3.1"
+          ],
+          "vizier": [],
+          "vizier:python_version < \"3.11\"": [
+            "google-vizier==0.0.4"
+          ],
+          "vizier:python_version >= \"3.11\"": [
+            "google-vizier>=0.1.6"
+          ],
+          "prediction": [
+            "docker>=5.0.3",
+            "fastapi<0.76.0,>=0.71.0",
+            "starlette>=0.17.1",
+            "uvicorn[standard]>=0.16.0"
+          ],
+          "datasets": [],
+          "datasets:python_version < \"3.11\"": [
+            "pyarrow<8.0dev,>=3.0.0"
+          ],
+          "datasets:python_version >= \"3.11\"": [
+            "pyarrow>=10.0.1"
+          ],
+          "private_endpoints": [
+            "urllib3<1.27,>=1.21.1",
+            "requests>=2.28.1"
+          ],
+          "autologging": [
+            "mlflow<=2.1.1,>=1.27.0"
+          ],
+          "preview": [
+            "cloudpickle<3.0",
+            "google-cloud-logging<4.0"
+          ],
+          "preview:python_version < \"3.8\"": [
+            "importlib-metadata<7.0"
+          ]
+        },
+        "python_requires": [
+          ">=3.7"
+        ]
+      },
+      "37": "36",
+      "38": "36",
+      "39": "36",
+      "310": "36"
+    }
   },
   "google-cloud-asset": {
     "0.1.1": {
@@ -54123,7 +54444,8 @@
     "3.30.1": "3.18.3",
     "3.29.0": "3.18.3",
     "3.32.0": "3.18.3",
-    "3.33.0": "3.18.3"
+    "3.33.0": "3.18.3",
+    "3.34.0": "3.18.3"
   },
   "oauth-pyzure": {
     "0.1.0.dev0": {
@@ -74727,7 +75049,8 @@
     "0.6.1a1691647593": "0.6.0",
     "0.6.1a1692856751": "0.6.0",
     "0.6.1a1693029272": "0.6.0",
-    "0.6.1a1693464708": "0.6.0"
+    "0.6.1a1693464708": "0.6.0",
+    "0.6.1a1693980270": "0.6.0"
   },
   "pungi": {
     "0.1.0": {
@@ -77553,7 +77876,8 @@
     "0.1.8": "0.0.2",
     "0.1.9": "0.0.2",
     "0.1.17": "0.0.2",
-    "0.1.18": "0.0.2"
+    "0.1.18": "0.0.2",
+    "0.1.19": "0.0.2"
   },
   "python-avatar": {
     "0.2.0": {
@@ -88270,7 +88594,8 @@
       "38": "27",
       "39": "27",
       "310": "27"
-    }
+    },
+    "0.12.1": "0.12.0"
   },
   "separability": {
     "0.1.4": {
@@ -93006,7 +93331,8 @@
     "9.12.0": "9.1.1",
     "9.13.0": "9.1.1",
     "9.14.0": "9.1.1",
-    "9.14.1": "9.1.1"
+    "9.14.1": "9.1.1",
+    "9.15.0": "9.1.1"
   },
   "superduper": {
     "1": {
@@ -94103,6 +94429,30 @@
       "38": "27",
       "39": "27",
       "310": "27"
+    },
+    "3.0.975": {
+      "27": {
+        "install_requires": [
+          "tencentcloud-sdk-python-common==3.0.975"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "3.0.976": {
+      "27": {
+        "install_requires": [
+          "tencentcloud-sdk-python-common==3.0.976"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
     }
   },
   "tencentcloud-sdk-python-iotvideoindustry": {
@@ -94987,6 +95337,30 @@
       "27": {
         "install_requires": [
           "tencentcloud-sdk-python-common==3.0.974"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "3.0.975": {
+      "27": {
+        "install_requires": [
+          "tencentcloud-sdk-python-common==3.0.975"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "3.0.976": {
+      "27": {
+        "install_requires": [
+          "tencentcloud-sdk-python-common==3.0.976"
         ]
       },
       "36": "27",
@@ -95976,6 +96350,30 @@
       "27": {
         "install_requires": [
           "tencentcloud-sdk-python-common==3.0.974"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "3.0.975": {
+      "27": {
+        "install_requires": [
+          "tencentcloud-sdk-python-common==3.0.975"
+        ]
+      },
+      "36": "27",
+      "37": "27",
+      "38": "27",
+      "39": "27",
+      "310": "27"
+    },
+    "3.0.976": {
+      "27": {
+        "install_requires": [
+          "tencentcloud-sdk-python-common==3.0.976"
         ]
       },
       "36": "27",
@@ -99233,7 +99631,8 @@
     "8.13.15": "8.13.5",
     "8.14.0": "8.13.5",
     "8.13.16": "8.13.5",
-    "8.14.1": "8.13.5"
+    "8.14.1": "8.13.5",
+    "8.14.2": "8.13.5"
   },
   "ultimate-hosts-blacklist-whitelist-dev": {
     "3.23.1": {
