@@ -1,3 +1,6 @@
+# ⚠️ This project is deprecated ⚠️
+For further information, see [mach-nix](https://github.com/DavHau/mach-nix)
+
 ## A dependency database for python packages on pypi
 
 The data is updated twice each day via a github cron action. You can fork this repo and it should continue to update itself.
